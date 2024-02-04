@@ -1,0 +1,215 @@
+{
+  "env": {
+    "dev": {
+      "domain": "auto-communication-plb.myshopbase.net",
+      "api": "https://gapi.dev.shopbase.net",
+      "shop_name": "auto-communication-plb",
+      "username": "plus-qe-1@beeketing.net",
+      "password": "rC2zo652s!F@",
+      "user_id": 90043,
+      "shop_id": 10327346,
+      "odoo_host": "https://odoo.dev.shopbase.net/",
+      "odoo_db": "sbase_fulfillment_dev",
+      "odoo_username": "admin",
+      "odoo_password": "admin",
+      "plb_template": {
+        "domain": "plusbase-checkout.myshopbase.net",
+        "shop_name": "plusbase-checkout.myshopbase.net",
+        "user_id": 87262,
+        "shop_id": 10060862,
+        "username": "phuongpham@beeketing.net",
+        "password": "123456",
+        "shop": "plusbase-checkout"
+      },
+      "cases": {
+        "SB_PLB_CSP_13": {
+          "product_template_id": 1014337
+        },
+        "SB_PLB_CSP_14": {
+          "product_template_id": 1014337,
+          "mapped_options": [
+            {
+              "index": 0,
+              "name": "Color",
+              "values": [
+                {
+                  "id": 557,
+                  "label": "A",
+                  "origin_value": "A",
+                  "value": "A"
+                },
+                {
+                  "id": 557,
+                  "label": "A",
+                  "origin_value": "A",
+                  "value": "A"
+                }
+              ]
+            }
+          ],
+          "product_name": "European Virgin Mary Silicone Mold DIY Prayer Virgin Statue Sculpture Candle Plaster Decoration Mold Home Party Gift Mold",
+          "user_id": 87262,
+          "target_shop_id": 10327346,
+          "sbcn_product_id": 1155538
+        }
+      }
+    },
+    "prod": {
+      "domain": "auto-communication-plb.onshopbase.com",
+      "api": "https://api.shopbase.com",
+      "shop_name": "auto-communication-plb",
+      "username": "plus-qe-1@beeketing.net",
+      "password": "zeH0^kP3$Kf8",
+      "user_id": 11248582,
+      "shop_id": 10458436,
+      "odoo_host": "https://autotest-erp-plus.shopbase.dev",
+      "odoo_db": "shopbase_fulfillment",
+      "odoo_username": "qaocg",
+      "odoo_password": "LFmy=qGLvwW^E63b",
+      "plb_template": {
+        "domain": "template-store.onshopbase.com",
+        "shop_name": "template-store",
+        "user_id": 9131323,
+        "shop_id": 10258217,
+        "username": "qas@beeketing.net",
+        "password": "123456",
+        "shop": "template-store"
+      },
+      "cases": {
+        "SB_PLB_CSP_13": {
+          "product_template_id": 1987299
+        },
+        "SB_PLB_CSP_14": {
+          "product_template_id": 1987299,
+          "mapped_options": [
+            {
+              "index": 0,
+              "name": "Color",
+              "values": [
+                {
+                  "id": 13532902,
+                  "label": "A",
+                  "origin_value": "A",
+                  "value": "A"
+                },
+                {
+                  "id": 13532902,
+                  "label": "A",
+                  "origin_value": "A",
+                  "value": "A"
+                }
+              ]
+            }
+          ],
+          "product_name": "European Virgin Mary Silicone Mold DIY Prayer Virgin Statue Sculpture Candle Plaster Decoration Mold Home Party Gift Mold",
+          "user_id": 9131323,
+          "target_shop_id": 10458436,
+          "sbcn_product_id": 1987342
+        },
+        "SB_PLB_CSP_18": {
+          "product_template_id": 2081000,
+          "so_id": 2610674
+        }
+      }
+    }
+  },
+  "time_out": 3000000,
+  "email_scheduler": "trahoang@beeketing.net",
+  "cases": {
+    "SB_PLB_CSP_13": {
+      "variant_name": "Top only",
+      "ali_url": "https://www.aliexpress.com/item/1005005478615655.html",
+
+      "product_name": "European Virgin Mary Silicone Mold DIY Prayer Virgin Statue Sculpture Candle Plaster Decoration Mold Home Party Gift Mold",
+      "alert_message_in_product_detail": "You may want to hide product in storefront temporarily so that there will be no more orders from this product until we update your correct product variant. To continue fulfilling existing orders please provide alternative links. Learn more Please note that without receiving the alternative link, orders may be canceled or have adjusted profit after a specific time. Check the order details screen for individual timelines."
+    },
+    "SB_PLB_CSP_14": {
+      "variant_name": "Top only",
+      "ali_url": "https://www.aliexpress.com/item/1005005478615655.html",
+      "alternative_link": "https://aliexpress.com/item/1005004833758894.html",
+      "payment_fee_percent": 0.03,
+      "processing_fee_percent": 0.04,
+      "data": {
+        "orders": [
+          {
+            "id": 0,
+            "shipping_method_id": 0,
+            "line_item_ids": [],
+            "line_items": [
+              {
+                "id": 0,
+                "shipping_method_id": 1000008
+              }
+            ]
+          }
+        ],
+        "type": "selected_orders"
+      }
+    },
+    "SB_PLB_CSP_18": {
+      "ali_url": "https://www.aliexpress.com/item/3256805911597000.html",
+      "variant_name": "Red",
+      "alert_message_in_product_line": "Faild to map variants. Please check your product.",
+      "alert_message_in_order_detail": "We are unable to fulfill certain products in your order. Please click the product link below to review details of each product that has an error and provide alternative links within the next",
+      "fulfillment_status": "Cannot fulfill",
+      "orig_profit": "(on hold)",
+      "product_name": "Christmas Wreath With Christmas Pine Cone Pine Needle Merry Christmas Garlands Decorations Ornaments Noel New Year 2022 Navidad",
+      "shipping_types": ["PlusBase Standard Shipping"],
+      "data": {
+        "orders": [
+          {
+            "id": 0,
+            "shipping_method_id": 0,
+            "line_item_ids": [],
+            "line_items": [
+              {
+                "id": 0,
+                "shipping_method_id": 1000293
+              }
+            ]
+          }
+        ],
+        "type": "selected_orders"
+      }
+    }
+  },
+  "email": "testerOCG@maildrop.cc",
+  "shipping_address": {
+    "address1": "814 Mission Street",
+    "address2": "",
+    "city": "New York",
+    "company": "",
+    "country": "United States",
+    "province": "New York",
+    "country_code": "US",
+    "country_name": "United States",
+    "cpf_or_cnpj_number": "",
+    "first_name": "Shopbase",
+    "last_name": "Auto",
+    "name": "",
+    "phone": "505-646-2276",
+    "province_code": "NY",
+    "zip": "10001"
+  },
+  "data_analytics": {
+    "summary": {
+      "view_content": 0,
+      "total_profit": 0
+    },
+    "auto_upsell": {
+      "total_profit": 0
+    }
+  },
+  "timeline": "Order was pending fulfillment due to product issues.",
+  "card_info": {
+    "number": "4242424242424242",
+    "holder_name": "Shopbase",
+    "expire_date": "12 / 30",
+    "cvv": "119"
+  },
+  "products_checkout": [
+    {
+      "quantity": 1
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "comment-blogpost-v2.myshopbase.net",
+      "shop_name": "comment-blogpost-v2",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "43AhIn|VWp;[?9&",
+      "user_id": 89797
+    },
+    "local": {
+      "api": "https://api.shopbase.com",
+      "domain": "comment-blogpost-v2-prod.onshopbase.com",
+      "shop_name": "comment-blogpost-v2-prod",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "comment-blogpost-v2-prodtest.onshopbase.com",
+      "shop_name": "comment-blogpost-v2-prodtest",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "comment-blogpost-v2-prod.onshopbase.com",
+      "shop_name": "comment-blogpost-v2-prod",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582
+    }
+  },
+  "cases": {
+    "SB_BL_13": {
+      "keywords": [
+        {
+          "keyword": "very good",
+          "expected": ["This is a very good article", "Thank you for being a part of the ShopBase. Very good"]
+        },
+        {
+          "keyword": "article",
+          "expected": ["This is a very good article"]
+        },
+        {
+          "keyword": "TEST comment",
+          "expected": ["test comment"]
+        }
+      ],
+      "no_result": {
+        "keyword": "no comment",
+        "expected": "No Comment found"
+      }
+    }
+  }
+}

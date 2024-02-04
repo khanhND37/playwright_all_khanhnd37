@@ -1,0 +1,135 @@
+{
+  "cases": {
+    "TC_PLB_OTP_4": {
+      "api": "https://gapi.stag.shopbase.net",
+      "shop_name": "ngocshop.stag.myshopbase.net",
+      "username": "ngocpham3@beeketing.net",
+      "password": "123456",
+      "domain": "ngocshop.stag.myshopbase.net",
+      "shipmentStatus": [
+        {
+          "Description": "order có status = Synchronizing và color = màu vàng",
+          "order_name": "#plb10080687_1173",
+          "order_id": 6088528
+        },
+        {
+          "Description": "order có status = Delivered và color = màu xanh",
+          "order_name": "#plb10080687_1143",
+          "order_id": 6087390
+        },
+        {
+          "Description": "order có status = Ready for pickup và color = màu xanh",
+          "order_name": "#plb10080687_1123",
+          "order_id": 6082931
+        },
+        {
+          "Description": "order có status = tracking created và color = màu xanh",
+          "order_name": "#plb10080687_1105",
+          "order_id": 6081447
+        },
+        {
+          "Description": "order có status = In transit và color = màu xanh",
+          "order_name": "#plb10080687_1145",
+          "order_id": 6087402
+        },
+        {
+          "Description": "order có status = Undelivered và color = màu đỏ",
+          "order_name": "#plb10080687_1146",
+          "order_id": 6087409
+        },
+        {
+          "Description": "order có status = Processing và color = màu vàng",
+          "order_name": "#plb10080687_1148",
+          "order_id": 6087416
+        }
+      ]
+    },
+    "TC_PLB_OTP_2": {
+      "Description": "tc có shipment= Delivered, không hiện view tracking log trên Thank you page ",
+      "api": "https://gapi.stag.shopbase.net",
+      "shop_name": "ngocshop.stag.myshopbase.net",
+      "username": "ngocpham3@beeketing.net",
+      "password": "123456",
+      "domain": "ngocshop.stag.myshopbase.net",
+      "order_id": 6088528,
+      "tracking_steps_Plb": [
+        {
+          "created_at": "2022-03-21T08:40:00Z",
+          "location": "BICKNELL, UT 84715",
+          "message": "Delivered, Parcel Locker"
+        },
+        {
+          "created_at": "2022-03-21T07:58:00Z",
+          "location": "BICKNELL, UT 84715",
+          "message": "Arrived at Post Office"
+        },
+        {
+          "created_at": "2022-03-20T03:42:00Z",
+          "location": "PROVO UT PROCESSING CENTER",
+          "message": "Departed USPS Regional Destination Facility"
+        },
+        {
+          "created_at": "2022-03-19T17:28:00Z",
+          "location": "PROVO UT PROCESSING CENTER",
+          "message": "Arrived at USPS Regional Facility"
+        },
+        {
+          "created_at": "2022-03-19T16:36:00Z",
+          "location": "SALT LAKE CITY UT NETWORK DISTRIBUTION CENTER",
+          "message": "Departed USPS Regional Facility"
+        },
+        {
+          "created_at": "2022-03-19T16:35:00Z",
+          "location": "SALT LAKE CITY UT NETWORK DISTRIBUTION CENTER",
+          "message": "Arrived at USPS Regional Facility"
+        },
+        {
+          "created_at": "2022-03-19T16:27:00Z",
+          "location": "SALT LAKE CITY DISTRIBUTION CENTER",
+          "message": "Departed USPS Regional Facility"
+        },
+        {
+          "created_at": "2022-03-18T18:53:00Z",
+          "location": "SALT LAKE CITY DISTRIBUTION CENTER",
+          "message": "Arrived at USPS Regional Facility"
+        },
+        {
+          "created_at": "2022-03-18T15:03:00Z",
+          "location": "",
+          "message": "In Transit to Next Facility"
+        },
+        {
+          "created_at": "2022-03-18T09:30:00Z",
+          "location": "",
+          "message": "In Transit to Next Facility"
+        },
+        {
+          "created_at": "2022-03-18T05:24:00Z",
+          "location": "LOS ANGELES CA DISTRIBUTION CENTER",
+          "message": "Departed USPS Regional Facility"
+        },
+        {
+          "created_at": "2022-03-17T17:56:00Z",
+          "location": "LOS ANGELES CA DISTRIBUTION CENTER",
+          "message": "Arrived at USPS Regional Origin Facility"
+        },
+        {
+          "created_at": "2022-03-17T16:41:00Z",
+          "location": "LOS ANGELES, CA 90058",
+          "message": "Accepted at USPS Origin Facility"
+        },
+        {
+          "created_at": "2022-03-07T05:36:00Z",
+          "location": "LOS ANGELES, CA 90058",
+          "message": "Shipping Label Created, USPS Awaiting Item"
+        }
+      ]
+    }
+  },
+  "env": {
+    "prodtest": {
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://prod-test-api.shopbase.com"
+    }
+  }
+}

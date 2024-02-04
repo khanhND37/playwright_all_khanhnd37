@@ -1,0 +1,61 @@
+{
+  "env": {
+    "local": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "manual-ne-live-preview-sb.myshopbase.net",
+      "shop_name": "manual-ne-live-preview-sb",
+      "user_id": 89797,
+      "shop_id": 10332227,
+      "username": "dpro-qe-1@beeketing.net  ",
+      "password": "43AhIn|VWp;[?9&"
+    }
+  },
+  "cases": {
+    "SB_SET_GM_MC_231": {
+      "precondition": {
+        "add_market": [
+          {
+            "name": "North America",
+            "is_active": true,
+            "global_market_countries": [
+              {
+                "country_code": "CA",
+                "country_id": 38,
+                "country_name": "Canada"
+              },
+              {
+                "country_code": "MX",
+                "country_id": 140,
+                "country_name": "Mexico"
+              }
+            ]
+          },
+          {
+            "name": "Eurozone",
+            "is_active": true,
+            "global_market_countries": [
+              {
+                "country_code": "DE",
+                "country_id": 82,
+                "country_name": "Germany"
+              }
+            ]
+          },
+          {
+            "name": "Asia",
+            "is_active": true,
+            "global_market_countries": [
+              {
+                "country_code": "BD",
+                "country_id": 17,
+                "country_name": "Bangladesh"
+              }
+            ]
+          }
+        ]
+      },
+      "market_name": "Market B",
+      "countries": "Canada,Mexico,Germany,Bangladesh,Chile,China"
+    }
+  }
+}

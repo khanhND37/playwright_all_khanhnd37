@@ -1,0 +1,103 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-product-page-sf.onshopbase.com",
+      "shop_name": "au-product-page-sf",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10432073,
+      "user_id": 73782,
+      "timeout": 1000000
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-product-page-sf-prodtest.onshopbase.com",
+      "shop_name": "au-product-page-sf-prodtest",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10432079,
+      "user_id": 73782,
+      "timeout": 1000000,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-product-page-sf-dev.myshopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_name": "au-product-page-sf-dev",
+      "user_id": 73800,
+      "shop_id": 10327418,
+      "timeout": 1000000
+    }
+  },
+  "cases": {
+    "SB_PRO_PG_SF_2": {
+      "clipart_folder_info": {
+        "folder_name": "Thumbnail clipart",
+        "group_name": "Clipart 1",
+        "images": ["BD_1.png>anh2.jpg", "BD_4.png"]
+      },
+      "product_all_info": {
+        "title": "Product with Custom Option",
+        "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+        "image_name": "Logo1.jpg",
+        "vendor": "Uniqlo",
+        "price": "10",
+        "compare_at_price": "20"
+      },
+      "custom_option_info": {
+        "custom_name": "Picture choice",
+        "default_name": "Custom Option 1",
+        "label": "Picture choice",
+        "type": "Picture choice",
+        "target_layer": "No",
+        "index": 1,
+        "type_clipart": "Folder",
+        "values": "Thumbnail clipart",
+        "type_display_clipart": "Show with Thumbnail images",
+        "hide_option": "no"
+      },
+      "custom_option_SF": [
+        {
+          "type": "Picture choice",
+          "custom_name": "Picture choice",
+          "value": "BD_1"
+        },
+        {
+          "type": "Picture choice",
+          "custom_name": "Picture choice",
+          "value": "BD_4"
+        }
+      ],
+      "picture": {
+        "picture_choice_sf": "picture-choice-SB_PRO_PG_SF_2.png",
+        "product_in_cart": "product_in_cart-SB_PRO_PG_SF_2.png",
+        "custom_option": "custom_option_SB_PRO_PG_SF_2.png"
+      }
+    },
+    "SB_PRO_PG_SF_3": {
+      "product_all_info": {
+        "title": "Product filter tag",
+        "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+        "image_name": "Logo1.jpg",
+        "vendor": "Uniqlo",
+        "price": "10",
+        "tag": "test tag",
+        "compare_at_price": "20"
+      }
+    },
+    "SB_PRO_PG_SF_6": {
+      "product_all_info": {
+        "title": "Product filter tag",
+        "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+        "image_name": "Logo1.jpg",
+        "vendor": "Uniqlo",
+        "price": "10",
+        "tag": "test tag",
+        "compare_at_price": "20"
+      }
+    }
+  }
+}

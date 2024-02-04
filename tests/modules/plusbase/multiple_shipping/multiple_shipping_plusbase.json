@@ -1,0 +1,153 @@
+{
+  "env": {
+    "prod": {
+      "domain": "au-multipleshipping-plb.onshopbase.com",
+      "api": "https://api.shopbase.com",
+      "shop_name": "au-multipleshipping-plb",
+      "username": "shopbase3@beeketing.net",
+      "password": "aAeg*PJR4.t6V:P",
+      "user_id": 206811,
+      "shop_id": 10363885,
+      "product1": {
+        "variant_id": 1000009877847393,
+        "quantity": 1
+      },
+      "product2": {
+        "variant_id": 1000009877342880,
+        "quantity": 1
+      },
+      "product3": {
+        "variant_id": 1000009878342382,
+        "quantity": 1
+      },
+      "product_id": 1129027,
+      "odoo_host": "https://autotest-erp-plus.shopbase.dev",
+      "odoo_db": "shopbase_fulfillment",
+      "odoo_username": "qaocg",
+      "odoo_password": "LFmy=qGLvwW^E63b",
+      "shipping_types": ["PlusBase Standard Shipping", "PlusBase Eco Shipping", "PlusBase Express Shipping"]
+    },
+    "prodtest": {
+      "domain": "au-multipleshipping-plb-prodtest.onshopbase.com",
+      "api": "https://prod-test-api.shopbase.com",
+      "shop_name": "au-multipleshipping-plb-prodtest",
+      "username": "shopbase3@beeketing.net",
+      "password": "aAeg*PJR4.t6V:P",
+      "user_id": 206811,
+      "shop_id": 10364805,
+      "product1": {
+        "variant_id": 1000010088782509,
+        "quantity": 1
+      },
+      "product2": {
+        "variant_id": 1000009885693610,
+        "quantity": 1
+      },
+      "product3": {
+        "variant_id": 1000009885462424,
+        "quantity": 1
+      },
+      "product_id": 1129027,
+      "odoo_host": "https://autotest-erp-plus.shopbase.dev",
+      "odoo_db": "shopbase_fulfillment",
+      "odoo_username": "qaocg",
+      "odoo_password": "LFmy=qGLvwW^E63b",
+      "shipping_types": ["PlusBase Standard Shipping", "PlusBase Eco Shipping", "PlusBase Express Shipping"],
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "domain": "au-multipleshipping-plb.myshopbase.net",
+      "api": "https://gapi.dev.shopbase.net",
+      "shop_name": "au-multipleshipping-plb",
+      "username": "shopbase3@beeketing.net",
+      "password": "=l-N&YG}g<'KLJk",
+      "user_id": 86961,
+      "shop_id": 10321505,
+      "product1": {
+        "variant_id": 1000001766752547,
+        "quantity": 1
+      },
+      "product2": {
+        "variant_id": 1000001766752904,
+        "quantity": 1
+      },
+      "product3": {
+        "variant_id": 1000001766752949,
+        "quantity": 1
+      },
+      "product_id": 1144247,
+      "odoo_host": "https://odoo.dev.shopbase.net/",
+      "odoo_db": "sbase_fulfillment_dev",
+      "odoo_username": "admin",
+      "odoo_password": "admin",
+      "shipping_types": ["Standard Shipping", "PlusBase Eco Shipping", "PlusBase Express Shipping"]
+    }
+  },
+  "email_buyer": "shopbase@beeketing.net",
+  "shipping_address": {
+    "address1": "814 Mission Street",
+    "address2": "",
+    "city": "Los Angeles",
+    "company": "",
+    "country": "United States",
+    "country_code": "US",
+    "country_name": "United States",
+    "cpf_or_cnpj_number": "",
+    "first_name": "Shop",
+    "last_name": "Base",
+    "name": "Jena",
+    "phone": "505-646-2276",
+    "province": "California",
+    "province_code": "CA",
+    "zip": "90001",
+    "remember_me": false
+  },
+  "card_info": {
+    "number": "4242424242424242",
+    "holder_name": "Shopbase Auto",
+    "expire_date": "12 / 30",
+    "cvv": "116"
+  },
+  "cases": {
+    "TC_SB_PLB_MS_4": {
+      "data": [
+        {
+          "case_id": "TC_SB_PLB_MS_4",
+          "product_to_add": ["product1"],
+          "country_code": "US",
+          "total_line_ship": 3,
+          "shipping_checkout": "Eco Shipping"
+        },
+        {
+          "case_id": "TC_SB_PLB_MS_5",
+          "country_code": "US",
+          "total_line_ship": 1,
+          "product_to_add": ["product2"],
+          "shipping_checkout": "Standard Shipping"
+        },
+        {
+          "case_id": "TC_SB_PLB_MS_6",
+          "country_code": "US",
+          "total_line_ship": 1,
+          "product_to_add": ["product1", "product2"],
+          "shipping_for_product": {
+            "product1": "Standard Shipping",
+            "product2": "Standard Shipping"
+          },
+          "shipping_checkout": "Standard Shipping"
+        },
+        {
+          "case_id": "TC_SB_PLB_MS_7",
+          "country_code": "US",
+          "total_line_ship": 1,
+          "product_to_add": ["product2", "product3"],
+          "shipping_for_product": {
+            "product2": "Standard Shipping",
+            "product3": "Eco Shipping"
+          },
+          "shipping_checkout": "Eco Shipping"
+        }
+      ]
+    }
+  }
+}

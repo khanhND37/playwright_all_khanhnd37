@@ -1,0 +1,333 @@
+{
+  "api": "https://api.shopbase.com",
+  "domain": "au-digital-product-list-dashboard-prodtest.onshopbase.com",
+  "shop_name": "au-digital-product-list-dashboard-prodtest",
+  "user_id": 11244582,
+  "shop_id": 10429570,
+  "username": "dpro-qe-1@beeketing.net",
+  "password": "Wb]$s>mZIm6We,x",
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-digital-product-list-dashboard.onshopbase.com",
+      "shop_name": "au-digital-product-list-dashboard",
+      "user_id": 11244582,
+      "shop_id": 10429473,
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "digital-product-list-dashboard-1-prodtest.onshopbase.com",
+      "shop_name": "digital-product-list-dashboard-1-prodtest",
+      "user_id": 74303,
+      "shop_id": 10379178,
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-digital-product-list-dashboard.myshopbase.net",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "43AhIn|VWp;[?9&",
+      "user_id": 89797,
+      "shop_id": 10326900,
+      "shop_name": "au-digital-product-list-dashboard"
+    }
+  },
+  "product_list": [
+    {
+      "product": {
+        "title": "Digital Product 04",
+        "product_type": "online_course"
+      }
+    },
+    {
+      "product": {
+        "title": "Digital Product 01",
+        "product_type": "coaching_session"
+      }
+    },
+    {
+      "product": {
+        "title": "Product Title 255 characters",
+        "product_type": "coaching_session"
+      }
+    },
+    {
+      "product": {
+        "title": "Product Title has Special Characters !@$#%#$#^%(",
+        "product_type": "online_course"
+      }
+    },
+    {
+      "product": {
+        "title": "Product test publish multi product",
+        "product_type": "online_course"
+      }
+    },
+    {
+      "product": {
+        "title": "Product test unpublish multi product",
+        "product_type": "digital_download"
+      }
+    },
+    {
+      "product": {
+        "title": "Product test delete multi product",
+        "product_type": "digital_download"
+      }
+    },
+    {
+      "product": {
+        "title": "Digital Product 02",
+        "product_type": "digital_download"
+      }
+    },
+    {
+      "product": {
+        "title": "Digital Product 03",
+        "product_type": "customization_service"
+      }
+    }
+  ],
+  "set_pricing": {
+    "product_name": "Digital Product 02",
+    "status": "Publish",
+    "email": "shopcreator@beeketing.net",
+    "pricing_type": "Paid",
+    "pricing_title": "One-time payment",
+    "pricing_amount": "10"
+  },
+  "cases": {
+    "SB_SC_SCP_10": {
+      "pre_thumnail": {
+        "product_name": "Digital Product 04",
+        "type": "Thumbnail image",
+        "file_path": "data/dpro/e-learning.jpg"
+      },
+      "product_thumbnails": [
+        {
+          "product_name": "Digital Product 02",
+          "image_thumbnail": "data:image/png;",
+          "image_default": "yes"
+        },
+        {
+          "product_name": "Digital Product 01",
+          "image_thumbnail": "data:image/png;",
+          "image_default": "yes"
+        },
+        {
+          "product_name": "Digital Product 04"
+        }
+      ],
+      "verify_click_thumbnail": "Digital Product 04",
+      "verify_click_name": "Digital Product 04",
+      "verify_names": [
+        {
+          "product_name": "Product Title 255 characters"
+        },
+        {
+          "product_name": "Product Title has Special Characters !@$#%#$#^%("
+        }
+      ],
+      "verify_types": [
+        {
+          "product_name": "Digital Product 04",
+          "product_type": "Online course"
+        },
+        {
+          "product_name": "Digital Product 02",
+          "product_type": "Digital download"
+        },
+        {
+          "product_name": "Digital Product 01",
+          "product_type": "Coaching session"
+        },
+        {
+          "product_name": "Digital Product 03",
+          "product_type": "Customization service"
+        }
+      ],
+      "verify_sales": [
+        {
+          "product_name": "Digital Product 04",
+          "product_sales": "$0.00"
+        },
+        {
+          "product_name": "Digital Product 02",
+          "product_sales": "$0.00"
+        }
+      ],
+      "verify_members": [
+        {
+          "product_name": "Digital Product 04",
+          "product_member": "0"
+        },
+        {
+          "product_name": "Digital Product 02",
+          "product_member": "0"
+        }
+      ],
+      "has_member": {
+        "product_name": "Digital Product 02",
+        "product_member": "0"
+      },
+      "verify_create_dates": [
+        {
+          "product_name": "Digital Product 04",
+          "create_date": ""
+        }
+      ],
+      "verify_status": [
+        {
+          "product_name": "Digital Product 04",
+          "status": "unpublished"
+        },
+        {
+          "product_name": "Digital Product 02",
+          "status": "published"
+        }
+      ]
+    },
+    "SB_SC_SCP_7": {
+      "filters_status": [
+        {
+          "description": "Filter theo trường Status = Published > Click \"Done\"",
+          "type": "Status",
+          "value": "Published",
+          "status": "published"
+        },
+        {
+          "description": "Filter theo trường Status = Unpublished > Click \"Done\"",
+          "type": "Status",
+          "value": "Unpublished",
+          "status": "unpublished"
+        }
+      ]
+    },
+    "SB_SC_SCP_6": {
+      "filters_type_product": [
+        {
+          "description": "Filter theo trường Product type = Online course > Click \"Done\"",
+          "type": "Product type",
+          "value": "Online course"
+        },
+        {
+          "description": "Filter theo trường Product type = Digital download > Click \"Done\"",
+          "type": "Product type",
+          "value": "Digital download"
+        },
+        {
+          "description": "FFilter theo trường Product type = Coaching session > Click \"Done\"",
+          "type": "Product type",
+          "value": "Coaching session"
+        },
+        {
+          "description": "Filter theo trường Product type = Customization service > Click \"Done\"",
+          "type": "Product type",
+          "value": "Customization service"
+        }
+      ]
+    },
+    "SB_SC_SCP_5": {
+      "filters_title": [
+        {
+          "description": "Filter theo trường Title: Contains = \"Product\" > Click \"Done\"",
+          "type": "Title",
+          "value": "Contains",
+          "text_filter": "Product"
+        },
+        {
+          "description": "Filter theo trường Title: Doesn't contain = \"!@$#%#$#^%(\" > Click \"Done\"",
+          "type": "Title",
+          "value": "Contains",
+          "text_filter": "!@$#%#$#^%("
+        },
+        {
+          "description": "Filter theo trường Title: Contains = \"PrOdUct\" > Click \"Done\"",
+          "type": "Title",
+          "value": "Doesn't contains",
+          "text_filter": "PrOdUct"
+        }
+      ],
+      "type": "Title",
+      "value": "Doesn't contains",
+      "text_filter": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbb"
+    },
+    "SB_SC_SCP_2": {
+      "more_actions": [
+        {
+          "description": "Click chọn product > Click button \"More Actions\" > chọn option \"Publish\" product",
+          "product_name": "Product test publish multi product",
+          "action": "Publish",
+          "status_verify": "published"
+        },
+        {
+          "description": "Click chọn product > Click button \"More Actions\" > chọn option \"Unpublish\" product",
+          "product_name": "Product test unpublish multi product",
+          "action": "Unpublish",
+          "status_verify": "unpublished"
+        },
+        {
+          "description": "Click chọn product > Click button \"More Actions\" > chọn option \"Delete\" product",
+          "product_name": "Product test delete multi product",
+          "action": "Delete"
+        }
+      ]
+    },
+    "SB_SC_SCP_1": {
+      "product_name": "Digital Product Coaching Session",
+      "more_actions": [
+        {
+          "product_name": "Digital Product 03",
+          "description": "Cuối dòng product > Click button \"More Actions\" > chọn option \"Published\" product",
+          "action": "Publish",
+          "status_verify": "published"
+        },
+        {
+          "product_name": "Digital Product 03",
+          "description": "Cuối dòng product > Click button \"More Actions\" > chọn option \"Unpublished\" product",
+          "action": "Unpublish",
+          "status_verify": "unpublished"
+        },
+        {
+          "product_name": "Product test publish multi product",
+          "description": "Cuối dòng product > Click button \"More Actions\" > chọn option \"Duplicate\" product",
+          "action": "Duplicate",
+          "product_copy": "Copy of Product test publish multi product"
+        },
+        {
+          "product_name": "Product Title 255 characters",
+          "description": "Cuối dòng product > Click button \"More Actions\" > chọn option \"Delete\" product",
+          "action": "Delete"
+        }
+      ]
+    },
+    "SB_SC_SCP_8": {
+      "filters": [
+        {
+          "type": "Status",
+          "value": ["Published", "Unpublished"]
+        },
+        {
+          "type": "Product type",
+          "value": ["Online course", "Coaching session", "Digital download"]
+        },
+        {
+          "type": "Title",
+          "value": ["Contains", "Doesn't contains"],
+          "placeholder": "Enter title",
+          "fill_text": "product"
+        },
+        {
+          "type": "Number of members",
+          "value": ["Equals to", "More than", "Less than"],
+          "placeholder": "Enter value",
+          "fill_text": "2"
+        }
+      ]
+    }
+  }
+}

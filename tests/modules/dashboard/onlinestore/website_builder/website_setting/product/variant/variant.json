@@ -1,0 +1,300 @@
+{
+  "env": {
+    "local": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-web-setting-variant.myshopbase.net",
+      "shop_name": "au-web-setting-variant",
+      "shop_id": 10326794,
+      "username": "dpro-qe-1@beeketing.net  ",
+      "password": "43AhIn|VWp;[?9&",
+      "user_id": 89797,
+      "theme_id": 3163967
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-web-setting-variant.myshopbase.net",
+      "shop_name": "au-web-setting-variant",
+      "shop_id": 10326794,
+      "username": "dpro-qe-1@beeketing.net  ",
+      "password": "43AhIn|VWp;[?9&",
+      "user_id": 89797,
+      "theme_id": 3163967
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-web-setting-variant.onshopbase.com",
+      "shop_name": "au-web-setting-variant",
+      "shop_id": 10428023,
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "theme_id": 1390829
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-web-setting-variant-prod-test.onshopbase.com",
+      "shop_name": "au-web-setting-variant-prod-test",
+      "shop_id": 10427712,
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "theme_id": 1391137,
+      "accounts_domain": "accounts-test.shopbase.com"
+    }
+  },
+  "cases": {
+    "SB_NEWECOM_WS_PDV_01": {
+      "excluded_option": "Size",
+      "expected": {
+        "step_1": [
+          {
+            "product_title": "Product nhiều variant",
+            "active_count": 0
+          },
+          {
+            "product_title": "Product 1 variant",
+            "active_count": 1
+          }
+        ],
+        "step_2": [
+          {
+            "product_title": "Product nhiều variant",
+            "active_count": 2
+          },
+          {
+            "product_title": "Product 1 variant",
+            "active_count": 1
+          }
+        ],
+        "step_3": [
+          {
+            "product_title": "Product nhiều variant",
+            "active_count": 1
+          },
+          {
+            "product_title": "Product 1 variant",
+            "active_count": 1
+          }
+        ]
+      }
+    },
+    "SB_NEWECOM_WS_PDV_02": {
+      "expected": {
+        "step_1": [
+          {
+            "product_title": "Product nhiều variant",
+            "active_count": 4
+          },
+          {
+            "product_title": "Product 1 variant",
+            "active_count": 1
+          }
+        ],
+        "step_2": [
+          {
+            "product_title": "Product nhiều variant",
+            "active_count": 4
+          },
+          {
+            "product_title": "Product 1 variant",
+            "active_count": 1
+          }
+        ]
+      }
+    },
+    "SB_NEWECOM_WS_PDV_03": {
+      "expected": {
+        "step_1": [
+          {
+            "product_title": "Multiple variant product",
+            "variants": ["S", "M", "While", "Red"]
+          },
+          {
+            "product_title": "POD 100041755",
+            "variants": [
+              "Beverage Mug",
+              "Ladies T-shirt",
+              "white",
+              "Black",
+              "Heliconia",
+              "black",
+              "11oz",
+              "15oz",
+              "XS",
+              "S",
+              "M",
+              "L",
+              "XL",
+              "2XL",
+              "3XL"
+            ]
+          }
+        ],
+        "step_2": [
+          {
+            "product_title": "Multiple variant product",
+            "cases": [
+              {
+                "on_click": "S",
+                "variants": ["S", "M", "Red"]
+              },
+              {
+                "on_click": "M",
+                "variants": ["S", "M", "While", "Red"]
+              }
+            ]
+          },
+          {
+            "product_title": "POD 100041755",
+            "cases": [
+              {
+                "on_click": "Beverage Mug",
+                "variants": ["Beverage Mug", "Ladies T-shirt", "white", "black", "11oz", "15oz"]
+              },
+              {
+                "on_click": "Ladies T-shirt",
+                "variants": ["Beverage Mug", "Ladies T-shirt", "Black", "Heliconia", "S", "M", "L", "XL", "2XL", "3XL"]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "SB_NEWECOM_WS_PDV_04": {
+      "excluded_option": "Size",
+      "expected": {
+        "step_1": [
+          {
+            "product_handle": "product-nhieu-variant",
+            "active_count": 0
+          },
+          {
+            "product_handle": "product-1-variant",
+            "active_count": 1
+          }
+        ],
+        "step_2": [
+          {
+            "product_handle": "product-nhieu-variant",
+            "active_count": 2
+          },
+          {
+            "product_handle": "product-1-variant",
+            "active_count": 1
+          }
+        ],
+        "step_3": [
+          {
+            "product_handle": "product-nhieu-variant",
+            "active_count": 1
+          },
+          {
+            "product_handle": "product-1-variant",
+            "active_count": 1
+          }
+        ],
+        "step_4": [
+          {
+            "product_handle": "product-nhieu-variant",
+            "active_count": 4
+          },
+          {
+            "product_handle": "product-1-variant",
+            "active_count": 0
+          }
+        ],
+        "step_5": [
+          {
+            "product_handle": "product-nhieu-variant",
+            "active_count": 4
+          },
+          {
+            "product_handle": "product-1-variant",
+            "active_count": 1
+          }
+        ],
+        "step_6": [
+          {
+            "product_handle": "green-shirt",
+            "variants": ["S", "M", "While", "Red"]
+          },
+          {
+            "product_handle": "pod-100041755",
+            "variants": [
+              "Beverage Mug",
+              "Ladies T-shirt",
+              "white",
+              "Black",
+              "Heliconia",
+              "black",
+              "11oz",
+              "15oz",
+              "XS",
+              "S",
+              "M",
+              "L",
+              "XL",
+              "2XL",
+              "3XL"
+            ]
+          }
+        ],
+        "step_7": [
+          {
+            "product_handle": "green-shirt",
+            "cases": [
+              {
+                "on_click": "S",
+                "variants": ["S", "M", "Red"]
+              },
+              {
+                "on_click": "M",
+                "variants": ["S", "M", "While", "Red"]
+              }
+            ]
+          },
+          {
+            "product_handle": "pod-100041755",
+            "cases": [
+              {
+                "on_click": "Beverage Mug",
+                "variants": ["Beverage Mug", "Ladies T-shirt", "white", "black", "11oz", "15oz"]
+              },
+              {
+                "on_click": "Ladies T-shirt",
+                "variants": ["Beverage Mug", "Ladies T-shirt", "Black", "Heliconia", "S", "M", "L", "XL", "2XL", "3XL"]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "SB_NEWECOM_WS_PDV_06": {
+      "expected": [
+        {
+          "id": "default_variant",
+          "label": "Default variant selection"
+        },
+        {
+          "id": "exclude_options",
+          "labels": [
+            "Exclude some options from auto section",
+            "You can exclude an option, such as option size,\nform auto selection and require buyer to make a \nchoice before adding to cart or checking out\n to prevent mistake."
+          ]
+        },
+        {
+          "id": "hide_has_one",
+          "label": "Hide selector when option has one value"
+        },
+        {
+          "id": "only_combination",
+          "label": "Only show available variant combination"
+        },
+        {
+          "id": "sticky_add_cart_enabled",
+          "label": "Show custom field when have 1 custom text option"
+        }
+      ]
+    }
+  }
+}

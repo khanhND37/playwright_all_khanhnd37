@@ -1,0 +1,426 @@
+{
+  "env": {
+    "local": {
+      "api": "https://api.shopbase.com",
+      "shop_name": "au-ne-sb-gmc-prod",
+      "domain": "au-ne-sb-gmc-prod.onshopbase.com",
+      "shop_id": 10443495,
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "add_blank_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 3
+          },
+          "isBottom": false
+        }
+      },
+      "style_block_policy_default": {
+        "background": {
+          "color": {
+            "preset": 1
+          }
+        },
+        "border": {
+          "thickness": "none"
+        },
+        "padding": {
+          "top": 0,
+          "left": 0,
+          "bottom": 0,
+          "right": 0,
+          "input": true
+        }
+      }
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "shop_name": "au-ne-sb-gmc-2",
+      "domain": "au-ne-sb-gmc-2.myshopbase.net",
+      "shop_id": 10328494,
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "43AhIn|VWp;[?9&",
+      "user_id": 89797,
+      "add_blank_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 3
+          },
+          "isBottom": false
+        }
+      },
+      "style_block_policy_default": {
+        "background": {
+          "color": {
+            "preset": 1
+          }
+        },
+        "border": {
+          "thickness": "none"
+        },
+        "padding": {
+          "top": 0,
+          "left": 0,
+          "bottom": 0,
+          "right": 0,
+          "input": true
+        }
+      }
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "shop_name": "au-ne-sb-gmc-1-prodtest",
+      "domain": "au-ne-sb-gmc-1-prodtest.onshopbase.com",
+      "shop_id": 10442821,
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "add_blank_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 3
+          },
+          "isBottom": false
+        }
+      },
+      "style_block_policy_default": {
+        "background": {
+          "color": {
+            "preset": 1
+          }
+        },
+        "border": {
+          "thickness": "none"
+        },
+        "padding": {
+          "top": 0,
+          "left": 0,
+          "bottom": 0,
+          "right": 0,
+          "input": true
+        }
+      }
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "shop_name": "au-ne-sb-gmc-prod",
+      "domain": "au-ne-sb-gmc-prod.onshopbase.com",
+      "shop_id": 10443495,
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "add_blank_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 3
+          },
+          "isBottom": false
+        }
+      },
+      "style_block_policy_default": {
+        "background": {
+          "color": {
+            "preset": 1
+          }
+        },
+        "border": {
+          "thickness": "none"
+        },
+        "padding": {
+          "top": 0,
+          "left": 0,
+          "bottom": 0,
+          "right": 0,
+          "input": true
+        }
+      }
+    }
+  },
+  "cases": {
+    "SB_NEWECOM_NEPM_17": {
+      "edit_policy_page": {
+        "visible_page": {
+          "refund_policy": true,
+          "privacy_policy": false,
+          "shipping_policy": false,
+          "terms_of_service": true,
+          "return_policy": true
+        }
+      },
+      "result_visible": ["Refund policy", "Terms of service", "Return policy"],
+      "result_hidden": ["Privacy policy", "Shipping policy"],
+      "result_all": ["Refund policy", "Privacy policy", "Shipping policy", "Terms of service", "Return policy"]
+    },
+    "SB_NEWECOM_NEPM_18": {
+      "edit_policy_page": {
+        "visible_page": {
+          "refund_policy": true,
+          "privacy_policy": false,
+          "shipping_policy": false,
+          "terms_of_service": true,
+          "return_policy": true,
+          "Shipping_info_in_product_page": true,
+          "Refund_return_in_product_page": true
+        }
+      },
+      "text_number_selected_page": "7 items selected",
+      "more_actions": ["Show selected pages", "Hide selected pages"],
+      "number_page": 7,
+      "pages": [
+        "Refund policy",
+        "Privacy policy",
+        "Shipping policy",
+        "Terms of service",
+        "Return policy",
+        "Shipping info in product page",
+        "Refund and return in product page"
+      ],
+      "select_page": [
+        {
+          "title": ["Refund policy"],
+          "number_page_select": 1
+        },
+        {
+          "title": ["Return policy", "Shipping policy"],
+          "number_page_select": 2
+        }
+      ]
+    },
+    "SB_NEWECOM_NEPM_19": {
+      "pages": [
+        {
+          "title": "Refund policy",
+          "handle": "refund-policy",
+          "expected_title": "Refund Policy",
+          "expected_content": "Our policy lasts 30 days. If 30 days have gone by since your purchase, unfortunately we can't offer you a refund or exchange."
+        },
+        {
+          "title": "Shipping policy",
+          "handle": "shipping-policy",
+          "expected_title": "Shipping Policy",
+          "expected_content": "We provide worldwide shipping."
+        }
+      ],
+      "edit_policy_page": {
+        "shipping_policy": "We provide worldwide shipping.",
+        "refund_policy": "Our policy lasts 30 days. If 30 days have gone by since your purchase, unfortunately we can't offer you a refund or exchange.",
+        "visible_page": {
+          "shipping_policy": true,
+          "refund_policy": true
+        }
+      },
+      "input_content": "Test input text block.",
+      "block_paragraph": {
+        "section": 3,
+        "block": 1
+      },
+      "data": {
+        "section": {
+          "dnd_block": {
+            "parent_position": {
+              "section": 3,
+              "column": 1
+            },
+            "template": "Paragraph"
+          }
+        },
+        "blockSetting": {
+          "background": {
+            "color": {
+              "preset": 6,
+              "hexText": "#E8D4D4"
+            }
+          },
+          "border": {
+            "thickness": "m",
+            "color": {
+              "preset": 6,
+              "hexText": "#EA7FE8"
+            }
+          },
+          "padding": {
+            "top": 8,
+            "left": 4,
+            "bottom": 8,
+            "right": 4,
+            "input": true
+          }
+        }
+      },
+      "expected": {
+        "background_color": "rgb(232, 212, 212)",
+        "border": {
+          "boder_bottom_color": "rgb(234, 127, 232)",
+          "boder_bottom_style": "solid",
+          "boder_bottom_width": "4px",
+          "boder_top_color": "rgb(234, 127, 232)",
+          "boder_top_style": "solid",
+          "boder_top_width": "4px",
+          "boder_left_color": "rgb(234, 127, 232)",
+          "boder_left_style": "solid",
+          "boder_left_width": "4px",
+          "boder_right_color": "rgb(234, 127, 232)",
+          "boder_right_style": "solid",
+          "boder_right_width": "4px"
+        },
+        "padding": {
+          "padding_top": "8px",
+          "padding_bottom": "8px",
+          "padding_left": "4px",
+          "padding_right": "4px"
+        }
+      }
+    },
+    "SB_NEWECOM_NEPM_20": {
+      "page_title": "Refund policy",
+      "exp_content_title": "Refund Policy",
+      "edit_policy_page": {
+        "refund_policy": "If 30 days have gone by since your purchase, unfortunately we can't offer you a refund or exchange.",
+        "seo": {
+          "refund_policy": {
+            "search_engine_meta_description": "Description contact page"
+          }
+        },
+        "visible_page": {
+          "refund_policy": true
+        }
+      },
+      "data": [
+        {
+          "variable": "Page title",
+          "key": "page.title",
+          "value": "Refund Policy"
+        },
+        {
+          "variable": "Page description",
+          "key": "page.meta_description",
+          "value": "Description contact page"
+        }
+      ],
+      "page_status": true,
+      "handle": "refund-policy",
+      "source_type_section": "Page",
+      "section": [
+        {
+          "dnd_block": {
+            "from": {
+              "category": "Basics",
+              "template": "Heading"
+            },
+            "to": {
+              "position": {
+                "section": 3,
+                "column": 1
+              },
+              "isBottom": false
+            }
+          }
+        },
+        {
+          "dnd_block": {
+            "from": {
+              "category": "Basics",
+              "template": "Paragraph"
+            },
+            "to": {
+              "position": {
+                "section": 3,
+                "column": 1
+              },
+              "isBottom": false
+            }
+          }
+        }
+      ]
+    },
+    "SB_NEWECOM_NEPM_21": {
+      "pages": [
+        {
+          "title": "Terms of service",
+          "id": 0,
+          "status": true,
+          "handle": "terms-of-service"
+        },
+        {
+          "title": "Refund policy",
+          "id": 0,
+          "status": true,
+          "handle": "refund-policy"
+        },
+        {
+          "title": "Privacy policy",
+          "id": 0,
+          "status": false,
+          "handle": "privacy-policy"
+        },
+        {
+          "title": "Shipping policy",
+          "id": 0,
+          "status": false,
+          "handle": "shipping-policy"
+        },
+        {
+          "title": "Return policy",
+          "id": 0,
+          "status": true,
+          "handle": "return-policy"
+        }
+      ]
+    },
+    "SB_NEWECOM_NEPM_22": {
+      "edit_policy_page": {
+        "shipping_policy": "We provide worldwide shipping.",
+        "terms_of_service": "By visiting our site and/ or purchasing something from us, you engage in our “Service” and agree to be bound by the following terms and conditions (“Terms of Service”, “Terms”).",
+        "visible_page": {
+          "shipping_policy": true,
+          "terms_of_service": true
+        }
+      },
+      "pages": [
+        {
+          "title": "Terms of service",
+          "handle": "terms-of-service",
+          "expected_title": "Terms Of Service",
+          "expected_content": "By visiting our site and/ or purchasing something from us, you engage in our “Service” and agree to be bound by the following terms and conditions (“Terms of Service”, “Terms”)."
+        },
+        {
+          "title": "Shipping policy",
+          "handle": "shipping-policy",
+          "expected_title": "Shipping Policy",
+          "expected_content": "We provide worldwide shipping."
+        }
+      ]
+    },
+    "SB_NEWECOM_NEPM_25": {
+      "edit_policy_page": {
+        "terms_of_service": "By visiting our site and/ or purchasing something from us, you engage in our “Service” and agree to be bound by the following terms and conditions (“Terms of Service”, “Terms”).",
+        "visible_page": {
+          "terms_of_service": true
+        }
+      },
+      "page_title": "Terms of service",
+      "edit_seo": {
+        "page_title": "Page new information",
+        "page_description": "Description here"
+      },
+      "toast_success": "Your page was updated"
+    }
+  }
+}

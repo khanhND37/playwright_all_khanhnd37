@@ -1,0 +1,405 @@
+{
+  "env": {
+    "dev": {
+      "domain": "ne-header-footer.myshopbase.net",
+      "shop_name": "ne-header-footer.myshopbase.net",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_id": 10322727,
+      "user_id": 73800,
+      "pre_condition": {
+        "template": "Packwise",
+        "page_title": "Page test"
+      },
+      "cases": {
+        "SB_NEWECOM_HF_1": {
+          "snapshot_sf": "UI_storefront-dev.png"
+        },
+        "SB_NEWECOM_HF_3": {
+          "snapshot_webfront": "add_section_by_dnd_webfront-dev.png"
+        },
+        "SB_NEWECOM_HF_7": {
+          "data": [
+            {},
+            {},
+            {
+              "collapse_section": "Section"
+            },
+            {},
+            {},
+            {
+              "collapse_section": "Section"
+            }
+          ],
+          "snapshot_sidebar": "add_section_at-header_footer_on_webfront_sidebar-dev.png",
+          "snapshot_webfront": "add_section_at-header_footer_on_webfront-dev.png"
+        },
+        "SB_NEWECOM_HF_9": {
+          "data": [
+            {},
+            {
+              "dnd_section": {
+                "position_1": "Header",
+                "position_2": "Section"
+              }
+            },
+            {}
+          ]
+        }
+      }
+    },
+    "prodtest": {
+      "domain": "ne-header-footer-prodtest.onshopbase.com",
+      "shop_name": "ne-header-footer-prodtest",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10384175,
+      "user_id": 73782,
+      "pre_condition": {
+        "template": "Packwise",
+        "page_title": "Page test"
+      },
+      "accounts_domain": "accounts-test.shopbase.com",
+      "cases": {
+        "SB_NEWECOM_HF_1": {
+          "snapshot_sf": "UI_storefront-prodtest.png"
+        },
+        "SB_NEWECOM_HF_3": {
+          "snapshot_webfront": "add_section_by_dnd_webfront-prodtest.png"
+        },
+        "SB_NEWECOM_HF_7": {
+          "snapshot_sidebar": "add_section_at-header_footer_on_webfront_sidebar-prodtest.png",
+          "snapshot_webfront": "add_section_at-header_footer_on_webfront-prodtest.png"
+        }
+      }
+    },
+    "prod": {
+      "domain": "ne-header-footer.onshopbase.com",
+      "shop_name": "ne-header-footer",
+      "api": "https://api.shopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10384176,
+      "user_id": 73782,
+      "pre_condition": {
+        "template": "Packwise",
+        "page_title": "Page test"
+      }
+    }
+  },
+  "cases": {
+    "SB_NEWECOM_HF_1": {
+      "description": "Check UI sidebar của section nằm ở Header/Footer",
+      "hide_section": {
+        "section_name": "Popup"
+      },
+      "snapshot_wf": "UI_sidebar.png",
+      "snapshot_sf": "UI_storefront.png"
+    },
+    "SB_NEWECOM_HF_3": {
+      "description": "Add section at Header/Footer area on webfront",
+      "data": [
+        {
+          "step": "Drag and drop section vào khu vực Header",
+          "position_section": {
+            "from": {
+              "category": "Test",
+              "template": "Header test"
+            },
+            "to": {
+              "position": {
+                "section": 1
+              },
+              "isBottom": false
+            }
+          }
+        },
+        {
+          "step": "Drag and drop section vào vị trí giữa khu vực Header và Body",
+          "position_section": {
+            "from": {
+              "category": "Test",
+              "template": "Body Header"
+            },
+            "to": {
+              "position": {
+                "section": 4
+              },
+              "isBottom": false
+            }
+          }
+        },
+        {
+          "step": "Drag and drop section vào vị trí giữa khu vực Footer và Body",
+          "position_section": {
+            "from": {
+              "category": "Test",
+              "template": "Body Footer"
+            },
+            "to": {
+              "position": {
+                "section": 5
+              },
+              "isBottom": true
+            }
+          }
+        },
+        {
+          "step": "Drag and drop section vào khu vực Footer",
+          "position_section": {
+            "from": {
+              "category": "Test",
+              "template": "Footer test"
+            },
+            "to": {
+              "position": {
+                "section": 7
+              },
+              "isBottom": true
+            }
+          }
+        }
+      ],
+      "snapshot_sidebar": "add_section_by_dnd_sidebar.png",
+      "snapshot_webfront": "add_section_by_dnd_webfront.png"
+    },
+    "SB_NEWECOM_HF_7": {
+      "description": "Check add section ở Header/Footer khi add section ở màn webfront",
+      "data": [
+        {
+          "step": "Add section thuộc khu vực Header",
+          "sidebar": {
+            "area": "header",
+            "section_index": 1
+          },
+          "webfront": {
+            "parent_position": {
+              "section": 2
+            },
+            "position": "Top",
+            "template": "Header test",
+            "category": "Test"
+          },
+          "collapse_section": "Header"
+        },
+        {
+          "step": "Add section nằm giữa khu vực Body và Header khi đang select vào section thuộc khu vực Header",
+          "sidebar": {
+            "area": "header",
+            "section_index": 2
+          },
+          "webfront": {
+            "parent_position": {
+              "section": 3
+            },
+            "position": "Bottom",
+            "template": "Header test",
+            "category": "Test"
+          },
+          "collapse_section": "Header"
+        },
+        {
+          "step": "Add section nằm giữa khu vực Body và Header khi đang select vào section thuộc khu vực Body",
+          "sidebar": {
+            "area": "body",
+            "section_index": 0
+          },
+          "webfront": {
+            "parent_position": {
+              "section": 5
+            },
+            "position": "Top",
+            "template": "Body Header",
+            "category": "Test"
+          },
+          "collapse_section": "Secction"
+        },
+        {
+          "step": "Add section thuộc khu vực Footer",
+          "sidebar": {
+            "area": "footer",
+            "section_index": 0
+          },
+          "webfront": {
+            "parent_position": {
+              "section": 7
+            },
+            "position": "Bottom",
+            "template": "Footer test",
+            "category": "Test"
+          },
+          "collapse_section": "Footer"
+        },
+        {
+          "step": "Add section nằm giữa khu vực Body và Footer khi đang select vào section thuộc khu vực Footer",
+          "area": "footer",
+          "sidebar": {
+            "area": "footer",
+            "section_index": 0
+          },
+          "webfront": {
+            "parent_position": {
+              "section": 7
+            },
+            "position": "Top",
+            "template": "Footer test",
+            "category": "Test"
+          },
+          "collapse_section": "Footer"
+        },
+        {
+          "step": "Add section nằm giữa khu vực Body và Footer khi đang select vào section thuộc khu vực Body",
+          "sidebar": {
+            "area": "body",
+            "section_index": 1
+          },
+          "webfront": {
+            "parent_position": {
+              "section": 6
+            },
+            "position": "Bottom",
+            "template": "Body Footer",
+            "category": "Test"
+          },
+          "collapse_section": "Secction"
+        }
+      ],
+      "snapshot_sidebar": "add_section_at-header_footer_on_webfront_sidebar.png",
+      "snapshot_webfront": "add_section_at-header_footer_on_webfront.png"
+    },
+    "SB_NEWECOM_HF_9": {
+      "description": "Check drag and drop section",
+      "data": [
+        {
+          "step": "drag and drop section từ khu vực Header xuống Footer",
+          "dnd_section": {
+            "position_1": "Header",
+            "position_2": "Footer"
+          },
+          "area": "footer"
+        },
+        {
+          "step": "drag and drop section từ khu vực Footer lên Body",
+          "dnd_section": {
+            "position_1": "Header",
+            "position_2": "Secction"
+          },
+          "area": "body"
+        },
+        {
+          "step": "drag and drop section từ khu vực Body lên Header",
+          "dnd_section": {
+            "position_1": "Header",
+            "position_2": "Annoucement"
+          },
+          "area": "header"
+        }
+      ]
+    },
+    "SB_NEWECOM_HF_10": {
+      "description": "Check sync data khi có thay đổi ở khu vực Header/Footer",
+      "edit_section": [
+        {
+          "area": "header",
+          "section_index": 0,
+          "section": 1,
+          "setting": {
+            "settings_section": {
+              "styles": {
+                "background": {
+                  "color": {
+                    "preset": 2
+                  }
+                },
+                "padding": {
+                  "top": 40,
+                  "left": 0,
+                  "bottom": 40,
+                  "right": 0,
+                  "input": true
+                }
+              }
+            }
+          }
+        },
+        {
+          "area": "footer",
+          "section_index": 0,
+          "setting": {
+            "settings_section": {
+              "styles": {
+                "background": {
+                  "color": {
+                    "preset": 2
+                  }
+                },
+                "padding": {
+                  "top": 40,
+                  "left": 0,
+                  "bottom": 40,
+                  "right": 150,
+                  "input": true
+                }
+              }
+            }
+          }
+        }
+      ],
+      "page": [
+        {
+          "page_title": "Checkout",
+          "type": "/checkouts/token",
+          "has_header_footer": false
+        },
+        {
+          "page_title": "Thank you",
+          "type": "/orders/token",
+          "has_header_footer": false
+        },
+        {
+          "page_title": "Blog post",
+          "type": "/blogs/news/preview",
+          "has_header_footer": true
+        },
+        {
+          "page_title": "My profile",
+          "type": "/my-profile",
+          "has_header_footer": true
+        },
+        {
+          "page_title": "Home",
+          "type": "/",
+          "has_header_footer": true
+        },
+        {
+          "page_title": "About us",
+          "type": "/pages/about-us",
+          "has_header_footer": true
+        },
+        {
+          "page_title": "All collections",
+          "type": "/collections",
+          "has_header_footer": true
+        },
+        {
+          "page_title": "Collection detail",
+          "type": "/collections/all",
+          "has_header_footer": true
+        },
+        {
+          "page_title": "Product detail",
+          "type": "/products/",
+          "has_header_footer": true
+        },
+        {
+          "page_title": "404",
+          "type": "/not-found",
+          "has_header_footer": true
+        }
+      ],
+      "snapshot_sf": "header_footer_on_sf.png"
+    }
+  }
+}

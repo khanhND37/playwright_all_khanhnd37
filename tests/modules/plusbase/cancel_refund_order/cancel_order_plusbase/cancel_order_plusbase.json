@@ -1,0 +1,245 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "plusbase-auto.onshopbase.com",
+      "shop_name": "plusbase-auto.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10269907,
+      "user_id": 73782,
+      "plb_template": {
+        "domain": "template-store.onshopbase.com",
+        "shop_name": "template-store.onshopbase.com",
+        "user_id": "9131323",
+        "shop_id": "10258217",
+        "username": "qas@beeketing.net",
+        "password": "123456",
+        "shop": "template-store"
+      },
+      "time_out": 400000
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "plusbase-auto-prodtest.onshopbase.com",
+      "shop_name": "plusbase-auto-prodtest.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10370177,
+      "user_id": 73782,
+      "plb_template": {
+        "domain": "plusbase-templateprodtest.onshopbase.com",
+        "shop_name": "plusbase-templateprodtest.onshopbase.com",
+        "user_id": "9131323",
+        "shop_id": "10364655",
+        "username": "qas@beeketing.net",
+        "password": "123456",
+        "shop": "plusbase-templateprodtest"
+      },
+      "time_out": 400000,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "plusbase-auto.myshopbase.net",
+      "shop_name": "plusbase-auto.myshopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_id": 10321495,
+      "user_id": 73800,
+      "plb_template": {
+        "domain": "plusbase-checkout.myshopbase.net",
+        "shop_name": "plusbase-checkout.myshopbase.net",
+        "user_id": "87262",
+        "shop_id": "10060862",
+        "username": "phuongpham@beeketing.net",
+        "password": "123456",
+        "shop": "plusbase-checkout"
+      },
+      "time_out": 800000
+    }
+  },
+  "customer_info": {
+    "email": "testCancelRefund@maildrop.cc",
+    "first_name": "Plus",
+    "last_name": "Base",
+    "address": "1845 Johnny Lane Milwaukee",
+    "country": "United States",
+    "state": "California",
+    "city": "Los Angeles",
+    "zipcode": "90001",
+    "phone_number": "0123456789"
+  },
+  "card_info": {
+    "number": "4242424242424242",
+    "holder_name": "Shopbase",
+    "expire_date": "12 / 26",
+    "cvv": "119"
+  },
+  "cases": {
+    "TC_SB_PLB_ROPLB_57": {
+      "Description": "Cancel partially combo line items order unapproved",
+      "tax_include": true,
+      "products": [
+        {
+          "name": "(Test product) Dresses Woman Casual Solid Backless - auto",
+          "quantity": "2",
+          "options": ["white", "L"],
+          "productQtyClass": "product__quantity"
+        },
+        {
+          "name": "(Test product) Dresses Woman Casual Solid Backless - auto",
+          "quantity": "2",
+          "options": ["Set of 2 (1xblack + 1xwhite)", "L"],
+          "productQtyClass": "product__quantity"
+        }
+      ],
+      "discount": "discount 10%",
+      "refunds": [
+        {
+          "lines": [
+            {
+              "product_name": "(Test product) Dresses Woman Casual Solid Backless - auto",
+              "variant_title": "Set of 2 (1xblack + 1xwhite) / L",
+              "quantity": 1,
+              "is_combo": false,
+              "is_ppc": false
+            }
+          ],
+          "input": {
+            "refund_buyer_selling": 45,
+            "refund_buyer_tip": 0,
+            "refund_buyer_shipping": 1.49,
+            "refund_buyer_payment": 1.56,
+            "refund_buyer_tax": 0,
+            "refund_seller_base_cost": 30,
+            "refund_seller_shipping": 0,
+            "refund_seller_tax": 4.55,
+            "refund_seller_payment": 1.56,
+            "refund_seller_processing": 0.58
+          }
+        }
+      ]
+    },
+    "TC_SB_PLB_ROPLB_51": {
+      "Description": "Cancel partially unit line items order unapproved",
+      "tax_include": true,
+      "products": [
+        {
+          "name": "(Test product) Dresses Woman Casual Solid Backless - auto",
+          "quantity": "2",
+          "options": ["white", "L"],
+          "productQtyClass": "product__quantity"
+        },
+        {
+          "name": "(Test product) Dresses Woman Casual Solid Backless - auto",
+          "quantity": "2",
+          "options": ["Set of 2 (1xblack + 1xwhite)", "L"],
+          "productQtyClass": "product__quantity"
+        }
+      ],
+      "discount": "Fixed amount 5",
+      "refunds": [
+        {
+          "lines": [
+            {
+              "product_name": "(Test product) Dresses Woman Casual Solid Backless - auto",
+              "variant_title": "white / L",
+              "quantity": 1,
+              "is_combo": false,
+              "is_ppc": false
+            }
+          ],
+          "input": {
+            "refund_buyer_selling": 29.06,
+            "refund_buyer_tip": 0,
+            "refund_buyer_shipping": 3.65,
+            "refund_buyer_payment": 1.01,
+            "refund_buyer_tax": 0,
+            "refund_seller_base_cost": 15,
+            "refund_seller_shipping": 0,
+            "refund_seller_tax": 2.61,
+            "refund_seller_payment": 1.01,
+            "refund_seller_processing": 0.46
+          }
+        }
+      ]
+    },
+    "TC_SB_PLB_ROPLB_56": {
+      "Description": "Cancel combo line items order approved",
+      "tax_include": false,
+      "products": [
+        {
+          "name": "(Test product) Dresses Woman Casual Solid Backless - auto",
+          "quantity": "2",
+          "options": ["white", "XL"],
+          "productQtyClass": "product__quantity"
+        },
+        {
+          "name": "(Test product) Dresses Woman Casual Solid Backless - auto",
+          "quantity": "2",
+          "options": ["Set of 2 (1xblack + 1xwhite)", "XL"],
+          "productQtyClass": "product__quantity"
+        }
+      ],
+      "discount": "freeship"
+    },
+    "TC_SB_PLB_ROPLB_52": {
+      "Description": "Cancel unit line items order approved",
+      "tax_include": false,
+      "products": [
+        {
+          "name": "(Test product) Dresses Woman Casual Solid Backless - auto",
+          "quantity": "2",
+          "options": ["white", "XL"],
+          "productQtyClass": "product__quantity"
+        },
+        {
+          "name": "(Test product) Dresses Woman Casual Solid Backless - auto",
+          "quantity": "2",
+          "options": ["Set of 2 (1xblack + 1xwhite)", "XL"],
+          "productQtyClass": "product__quantity"
+        }
+      ],
+      "discount": "buyXgetY-refund"
+    },
+    "TC_SB_PLB_ROPLB_60": {
+      "Description": "Cancel order có variant bị xoá khỏi báo giá",
+      "tax_include": true,
+      "products": [
+        {
+          "name": "(Test product) Auto - variant delete SO",
+          "quantity": "2",
+          "options": ["White"],
+          "productQtyClass": "product__quantity"
+        },
+        {
+          "name": "(Test product) Auto - variant delete SO",
+          "quantity": "2",
+          "options": ["Set of 2 (1xOrange + 1xWhite)"],
+          "productQtyClass": "product__quantity"
+        }
+      ],
+      "discount": "discount 10%"
+    },
+    "TC_SB_PLB_ROPLB_63": {
+      "Description": "Auto cancel order profit < 0 ",
+      "tax_include": false,
+      "products": [
+        {
+          "name": "(Test product) Dresses Woman Casual Solid Backless - auto",
+          "quantity": "2",
+          "options": ["white", "XXL"],
+          "productQtyClass": "product__quantity"
+        },
+        {
+          "name": "(Test product) Dresses Woman Casual Solid Backless - auto",
+          "quantity": "2",
+          "options": ["Set of 2 (1xblack + 1xwhite)", "XXL"],
+          "productQtyClass": "product__quantity"
+        }
+      ],
+      "discount": "Fixed amount 5"
+    }
+  }
+}

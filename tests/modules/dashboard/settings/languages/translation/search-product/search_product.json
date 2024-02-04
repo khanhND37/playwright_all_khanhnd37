@@ -1,0 +1,92 @@
+{
+  "env": {
+    "local": {
+      "domain": "au-trans-search-product.myshopbase.net",
+      "shop_name": "au-trans-search-product",
+      "api": "https://gapi.dev.shopbase.net",
+      "accounts_domain": "accounts.dev.shopbase.net",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "43AhIn|VWp;[?9&",
+      "shop_id": 10333719,
+      "user_id": 89797,
+      "theme_id": 3218350
+    },
+    "dev": {
+      "domain": "au-trans-search-product.myshopbase.net",
+      "shop_name": "au-trans-search-product",
+      "api": "https://gapi.dev.shopbase.net",
+      "accounts_domain": "accounts.dev.shopbase.net",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "43AhIn|VWp;[?9&",
+      "shop_id": 10333719,
+      "user_id": 89797,
+      "theme_id": 3218350
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "accounts_domain": "accounts.shopbase.com",
+      "domain": "au-trans-search-product-prodtest.onshopbase.com",
+      "shop_name": "au-trans-search-product-prodtest",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "shop_id": 10486315,
+      "theme_id": 1618292
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "accounts_domain": "accounts.shopbase.com",
+      "domain": "au-trans-search-product-prod.onshopbase.com",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "shop_name": "au-trans-search-product-prod",
+      "user_id": 11244582,
+      "shop_id": 10486886,
+      "theme_id": 1619717
+    }
+  },
+  "cases": {
+    "SB_NEWECOM_PS_179": {
+      "default_language_sf": "English (EN)",
+      "language_sf": "Tiếng Việt (VI)",
+      "data": [
+        {
+          "step_desc": "1. Mở SF shop, click vào Search bar, nhập keyword theo ngôn ngữ default 2. Ấn btn Search",
+          "key": "unisex",
+          "expected_result": ["unisex basic T-shirt", "Áo phông in tên unisex", "Áo phông nam nữ"]
+        },
+        {
+          "step_desc": "1. Mở SF shop, click vào Search bar, nhập keyword theo ngôn ngữ đã chọn 2. Ấn btn Search",
+          "key": "nam",
+          "expected_result": ["Áo phông trơn nam nữ", "Tên ABCD", "Áo phông in tên unisex", "Áo phông nam nữ"]
+        }
+      ],
+      "data_step_3": {
+        "step_desc": "Chọn về ngôn ngữ English ngoài SF, search keyword tiếng Việt",
+        "key": "nam",
+        "expected_result": ["T-shirt trơn nam nữ", "Name ABCD", "T-shirts with printed names"]
+      }
+    },
+    "SB_NEWECOM_PS_178": {
+      "default_language_sf": "English (EN)",
+      "language_sf": "Tiếng Việt (VI)",
+      "data": [
+        {
+          "step_desc": "1. Mở SF shop, click vào Search bar, nhập keyword theo ngôn ngữ default 2. Ấn btn Search",
+          "key": "unisex",
+          "expected_result": ["unisex basic T-shirt", "Áo phông in tên unisex", "Áo phông nam nữ"]
+        },
+        {
+          "step_desc": "1. Mở SF shop, click vào Search bar, nhập keyword theo ngôn ngữ đã chọn 2. Ấn btn Search",
+          "key": "nam",
+          "expected_result": ["Áo phông trơn nam nữ", "Tên ABCD", "Áo phông in tên unisex", "Áo phông nam nữ"]
+        }
+      ],
+      "data_step_3": {
+        "step_desc": "Chọn về ngôn ngữ English ngoài SF, search keyword tiếng Việt",
+        "key": "nam",
+        "expected_result": ["T-shirt trơn nam nữ", "Name ABCD", "T-shirts with printed names"]
+      }
+    }
+  }
+}

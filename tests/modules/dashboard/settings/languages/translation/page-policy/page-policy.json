@@ -1,0 +1,753 @@
+{
+  "env": {
+    "local": {
+      "api": "https://gapi.dev.shopbase.net",
+      "accounts_domain": "accounts.dev.shopbase.net",
+      "domain": "au-trans-page-policy.myshopbase.net",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "43AhIn|VWp;[?9&",
+      "shop_name": "au-trans-page-policy",
+      "user_id": 89797,
+      "shop_id": 10333826,
+      "theme_data": 3219577,
+      "customize_theme_id": 3221505,
+      "printbase": {
+        "domain": "au-trans-pb-page-policy.myshopbase.net",
+        "shop_name": "au-trans-pb-page-policy",
+        "shop_id": 10333826,
+        "theme_data": 3221482,
+        "customize_theme_id": 3221567
+      },
+      "plusbase": {
+        "domain": "au-trans-plb-page-policy.myshopbase.net",
+        "shop_name": "au-trans-plb-page-policy",
+        "shop_id": 10333826,
+        "theme_data": 3221496,
+        "customize_theme_id": 3221565
+      }
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "accounts_domain": "accounts.dev.shopbase.net",
+      "domain": "au-trans-page-policy.myshopbase.net",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "43AhIn|VWp;[?9&",
+      "shop_name": "au-trans-page-policy",
+      "user_id": 89797,
+      "shop_id": 10333826,
+      "theme_data": 3219577,
+      "customize_theme_id": 3221505,
+      "printbase": {
+        "domain": "au-trans-pb-page-policy.myshopbase.net",
+        "shop_name": "au-trans-pb-page-policy",
+        "shop_id": 10333826,
+        "theme_data": 3221482,
+        "customize_theme_id": 3221567
+      },
+      "plusbase": {
+        "domain": "au-trans-plb-page-policy.myshopbase.net",
+        "shop_name": "au-trans-plb-page-policy",
+        "shop_id": 10333826,
+        "theme_data": 3221496,
+        "customize_theme_id": 3221565
+      }
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "accounts_domain": "accounts.shopbase.com",
+      "domain": "au-trans-sb-page-policy-prodtest.onshopbase.com",
+      "shop_name": "au-trans-sb-page-policy-prodtest",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "shop_id": 10486377,
+      "theme_data": 1619764,
+      "customize_theme_id": 1618450,
+      "printbase": {
+        "domain": "au-trans-pb-page-policy-prodtest.onshopbase.com",
+        "shop_name": "au-trans-pb-page-policy-prodtest",
+        "shop_id": 10486379,
+        "theme_data": 1619791,
+        "customize_theme_id": 1618451
+      },
+      "plusbase": {
+        "domain": "au-trans-plb-page-policy-prodtest.onshopbase.com",
+        "shop_name": "au-trans-plb-page-policy-prodtest",
+        "shop_id": 10486380,
+        "theme_data": 1619818,
+        "customize_theme_id": 1618453
+      }
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "accounts_domain": "accounts.shopbase.com",
+      "domain": "au-trans-sb-page-policy-prod.onshopbase.com",
+      "shop_name": "au-trans-sb-page-policy-prod",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "shop_id": 10486899,
+      "theme_data": 1619783,
+      "customize_theme_id": 1619782,
+      "printbase": {
+        "domain": "au-trans-pb-page-policy-prod1.onshopbase.com",
+        "shop_name": "au-trans-pb-page-policy-prod1",
+        "shop_id": 10486919,
+        "theme_data": 1619816,
+        "customize_theme_id": 1619814
+      },
+      "plusbase": {
+        "domain": "au-trans-plb-page-policy-prod.onshopbase.com",
+        "shop_name": "au-trans-plb-page-policy-prod",
+        "shop_id": 10486925,
+        "theme_data": 1619822,
+        "customize_theme_id": 1619819
+      }
+    }
+  },
+  "default_language_data": {
+    "language": "English",
+    "locale": "en-us"
+  },
+  "list_page_policy": [
+    "Refund policy",
+    "Privacy policy",
+    "Shipping policy",
+    "Terms of service",
+    "Return policy",
+    "Shipping info in product page",
+    "Refund and return in product page"
+  ],
+  "cases": {
+    "SB_SET_LG_TLL_66": {
+      "case_description": "[Shopbase] [DB+SF - Function] Kiểm tra tính năng auto translate khi enable auto translate Pages - Page policy",
+      "language_data": {
+        "language": "Vietnamese",
+        "language_code": "vi",
+        "locale": "vi-us",
+        "status": "Published languages",
+        "entity": "Policy",
+        "placeholder_entity": "Policy page"
+      },
+      "page_handle": "refund_policy",
+      "policy_page": {
+        "title": "Refund policy",
+        "handle": "refund_policy",
+        "content": "Our policy lasts 30 days. If 30 days have gone by since your purchase, unfortunately we can not offer you a refund or exchange.",
+        "seo": {
+          "meta_description": "Refund policy meta description"
+        },
+        "visible_page": true,
+        "expected_result_translation": [
+          {
+            "field_name": "Content",
+            "source_value": "<p>Our policy lasts 30 days. If 30 days have gone by since your purchase, unfortunately we can not offer you a refund or exchange.</p>",
+            "source_type": "tiny_mce",
+            "target_value": "<p>translated</p><p>Our policy lasts 30 days. If 30 days have gone by since your purchase, unfortunately we can not offer you a refund or exchange.</p><p>to Vietnamese</p>",
+            "target_type": "tiny_mce"
+          },
+          {
+            "field_name": "Meta description",
+            "source_value": "Refund policy meta description",
+            "source_type": "text",
+            "target_value": "translated Refund policy meta description to Vietnamese",
+            "target_type": "text"
+          }
+        ],
+        "expected_translation_sf": {
+          "body_html": "translated <p>Our policy lasts 30 days. If 30 days have gone by since your purchase, unfortunately we can not offer you a refund or exchange.</p> to Vietnamese",
+          "meta_description": "translated Refund policy meta description to Vietnamese",
+          "page_template": "page-72912511159",
+          "title": "translated Refund Policy to Vietnamese"
+        }
+      },
+      "policy_page_edit": {
+        "title": "Refund policy",
+        "handle": "refund_policy",
+        "content": "Edit content Refund policy",
+        "seo": {
+          "meta_description": "Edit meta description Refund policy"
+        },
+        "visible_page": true,
+        "expected_result_translation": [
+          {
+            "field_name": "Content",
+            "source_value": "<p>Edit content Refund policy</p>",
+            "source_type": "tiny_mce",
+            "target_value": "<p>translated</p><p>Edit content Refund policy</p><p>to Vietnamese</p>",
+            "target_type": "tiny_mce"
+          },
+          {
+            "field_name": "Meta description",
+            "source_value": "Edit meta description Refund policy",
+            "source_type": "text",
+            "target_value": "translated Edit meta description Refund policy to Vietnamese",
+            "target_type": "text"
+          }
+        ],
+        "expected_translation_sf": {
+          "body_html": "translated <p>Edit content Refund policy</p> to Vietnamese",
+          "meta_description": "translated Edit meta description Refund policy to Vietnamese",
+          "title": "translated Refund Policy to Vietnamese"
+        }
+      },
+      "manual_data": {
+        "edit_translate": [
+          {
+            "input_data_type": "html",
+            "field_name": "Content",
+            "content": "Content manual Refund policy"
+          },
+          {
+            "input_data_type": "text",
+            "field_name": "Meta description",
+            "content": "Meta description manual Refund policy"
+          }
+        ],
+        "expected_result_translation": [
+          {
+            "field_name": "Content",
+            "source_value": "<p>Edit content Refund policy</p>",
+            "source_type": "tiny_mce",
+            "target_value": "<p>Content manual Refund policy</p>",
+            "target_type": "tiny_mce"
+          },
+          {
+            "field_name": "Meta description",
+            "source_value": "Edit meta description Refund policy",
+            "source_type": "text",
+            "target_value": "Meta description manual Refund policy",
+            "target_type": "text"
+          }
+        ],
+        "expected_translation_sf": {
+          "body_html": "<p>Content manual Refund policy</p>",
+          "meta_description": "Meta description manual Refund policy",
+          "title": "translated Refund Policy to Vietnamese"
+        }
+      },
+      "delete_data": {
+        "edit_translate": [
+          {
+            "input_data_type": "html",
+            "field_name": "Content",
+            "content": ""
+          },
+          {
+            "input_data_type": "text",
+            "field_name": "Meta description",
+            "content": ""
+          }
+        ],
+        "expected_translation_sf": {
+          "body_html": "<p>Edit content Refund policy</p>",
+          "meta_description": "Edit meta description Refund policy",
+          "title": "translated Refund Policy to Vietnamese"
+        }
+      },
+      "toast_success": "Successfully update this language"
+    },
+    "SB_SET_LG_TLL_64": {
+      "language_data": {
+        "language": ["Vietnamese", "German"],
+        "status": "Published languages",
+        "language_sf": ["Tiếng Việt (VI)", "Deutsch (DE)"]
+      },
+      "pages": [
+        {
+          "handle": "pages/dmca",
+          "title": "DMCA"
+        },
+        {
+          "handle": "pages/intellectual-property-violation",
+          "title": "Intellectual Property Violation"
+        }
+      ]
+    },
+    "SB_SET_LG_TLL_62": {
+      "language_data": {
+        "language": ["Vietnamese", "German"],
+        "status": "Published languages",
+        "language_sf": ["Tiếng Việt (VI)", "Deutsch (DE)"]
+      },
+      "pages": [
+        {
+          "handle": "policies/refund-policy",
+          "title": "Refund policy"
+        },
+        {
+          "handle": "policies/privacy-policy",
+          "title": "Privacy policy"
+        },
+        {
+          "handle": "policies/shipping-policy",
+          "title": "Shipping policy"
+        },
+        {
+          "handle": "policies/terms-of-service",
+          "title": "Terms of service"
+        },
+        {
+          "handle": "policies/return-policy",
+          "title": "Return policy"
+        },
+        {
+          "handle": "policies/shipping-info-in-product-page",
+          "title": "Shipping info in product page"
+        },
+        {
+          "handle": "policies/refund-and-return-in-product-page",
+          "title": "Refund and return in product page"
+        },
+        {
+          "handle": "pages/dmca",
+          "title": "DMCA"
+        },
+        {
+          "handle": "pages/intellectual-property-violation",
+          "title": "Intellectual Property Violation"
+        },
+        {
+          "handle": "pages/submitting-evidence-guidance",
+          "title": "Submitting evidence guidance"
+        }
+      ]
+    },
+    "SB_SET_LG_TLL_88": {
+      "language_data": {
+        "language": ["Vietnamese", "German"],
+        "status": "Published languages",
+        "language_sf": ["Tiếng Việt (VI)", "Deutsch (DE)"]
+      },
+      "pages": [
+        {
+          "handle": "policies/refund-policy",
+          "title": "Refund policy"
+        },
+        {
+          "handle": "policies/privacy-policy",
+          "title": "Privacy policy"
+        },
+        {
+          "handle": "policies/shipping-policy",
+          "title": "Shipping policy"
+        },
+        {
+          "handle": "policies/terms-of-service",
+          "title": "Terms of service"
+        },
+        {
+          "handle": "policies/return-policy",
+          "title": "Return policy"
+        },
+        {
+          "handle": "policies/shipping-info-in-product-page",
+          "title": "Shipping info in product page"
+        },
+        {
+          "handle": "policies/refund-and-return-in-product-page",
+          "title": "Refund and return in product page"
+        },
+        {
+          "handle": "pages/dmca",
+          "title": "DMCA"
+        },
+        {
+          "handle": "pages/intellectual-property-violation",
+          "title": "Intellectual Property Violation"
+        },
+        {
+          "handle": "pages/submitting-evidence-guidance",
+          "title": "Submitting evidence guidance"
+        }
+      ]
+    },
+    "SB_SET_LG_TLL_72": {
+      "case_description": "[Shopbase] [DB+SF - Function] Kiểm tra tính năng dịch với shop đã setup page có đầy đủ các block trong WB khi enable Auto translate - All pages content - Page Policy",
+      "language_data": {
+        "language": "German",
+        "locale_code": "de",
+        "language_sf": "Deutsch (DE)",
+        "status": "Published languages",
+        "entity": "Policy pages",
+        "placeholder_entity": "Policy page"
+      },
+      "dnd_block": [
+        {
+          "parent_position": {
+            "section": 3,
+            "column": 1
+          },
+          "template": "Heading",
+          "edit": {
+            "section": 3,
+            "block": 1,
+            "content": "Test input text block heading",
+            "content_edit": "Edit text block heading"
+          }
+        },
+        {
+          "parent_position": {
+            "section": 4,
+            "column": 1
+          },
+          "template": "Paragraph",
+          "edit": {
+            "section": 4,
+            "block": 1,
+            "content": "Test input text block paragraph",
+            "content_edit": "Edit text block paragraph"
+          }
+        }
+      ],
+      "page_handle": "return_policy",
+      "policy_page": {
+        "title": "Return policy",
+        "handle": "return_policy",
+        "content": "Return policy content",
+        "visible_page": true,
+        "expected_result_translation": [
+          {
+            "field_name": "Heading",
+            "source_value": "Test input text block heading",
+            "source_type": "tiptap",
+            "target_value": "translatedTest input text block heading to German",
+            "target_type": "tiptap"
+          },
+          {
+            "field_name": "Paragraph",
+            "source_value": "Test input text block paragraph",
+            "source_type": "tiptap",
+            "target_value": "translatedTest input text block paragraph to German",
+            "target_type": "tiptap"
+          }
+        ]
+      },
+      "policy_page_edit": {
+        "expected_result_translation": [
+          {
+            "field_name": "Heading",
+            "source_value": "Edit text block heading",
+            "source_type": "tiptap",
+            "target_value": "translatedEdit text block heading to German",
+            "target_type": "tiptap"
+          },
+          {
+            "field_name": "Paragraph",
+            "source_value": "Edit text block paragraph",
+            "source_type": "tiptap",
+            "target_value": "translatedEdit text block paragraph to German",
+            "target_type": "tiptap"
+          }
+        ]
+      },
+      "manual_data": {
+        "edit_translate": [
+          {
+            "input_data_type": "text",
+            "field_name": "Heading",
+            "content": "Heading manual Return policy",
+            "field_index": 0
+          },
+          {
+            "input_data_type": "text",
+            "field_name": "Paragraph",
+            "content": "Paragraph manual Return policy",
+            "field_index": 0
+          }
+        ],
+        "expected_result_translation": [
+          {
+            "field_name": "Heading",
+            "source_value": "Edit text block heading",
+            "source_type": "tiptap",
+            "target_value": "Heading manual Return policy",
+            "target_type": "tiptap"
+          },
+          {
+            "field_name": "Paragraph",
+            "source_value": "Edit text block paragraph",
+            "source_type": "tiptap",
+            "target_value": "Paragraph manual Return policy",
+            "target_type": "tiptap"
+          }
+        ]
+      },
+      "delete_data": {
+        "edit_translate": [
+          {
+            "input_data_type": "text",
+            "field_name": "Heading",
+            "content": "",
+            "field_index": 0
+          },
+          {
+            "input_data_type": "text",
+            "field_name": "Paragraph",
+            "content": "",
+            "field_index": 0
+          }
+        ]
+      },
+      "toast_success": "Successfully update this language"
+    },
+    "SB_SET_LG_TLL_70": {
+      "case_description": "[Plusbase] [DB+SF - Function] Kiểm tra tính năng dịch với shop đã setup page có đầy đủ các block trong WB khi enable Auto translate - All pages content - Page Policy",
+      "language_data": {
+        "language": "German",
+        "locale_code": "de",
+        "language_sf": "Deutsch (DE)",
+        "status": "Published languages",
+        "entity": "Policy pages",
+        "placeholder_entity": "Policy page"
+      },
+      "dnd_block": [
+        {
+          "parent_position": {
+            "section": 4,
+            "column": 1
+          },
+          "template": "Heading",
+          "edit": {
+            "section": 4,
+            "block": 1,
+            "content": "Test input text block heading",
+            "content_edit": "Edit text block heading"
+          }
+        },
+        {
+          "parent_position": {
+            "section": 5,
+            "column": 1
+          },
+          "template": "Paragraph",
+          "edit": {
+            "section": 5,
+            "block": 1,
+            "content": "Test input text block paragraph",
+            "content_edit": "Edit text block paragraph"
+          }
+        }
+      ],
+      "page_handle": "return_policy",
+      "policy_page": {
+        "title": "Return policy",
+        "handle": "return_policy",
+        "content": "Return policy content",
+        "visible_page": true,
+        "expected_result_translation": [
+          {
+            "field_name": "Heading",
+            "source_value": "Test input text block heading",
+            "source_type": "tiptap",
+            "target_value": "translatedTest input text block heading to German",
+            "target_type": "tiptap"
+          },
+          {
+            "field_name": "Paragraph",
+            "source_value": "Test input text block paragraph",
+            "source_type": "tiptap",
+            "target_value": "translatedTest input text block paragraph to German",
+            "target_type": "tiptap"
+          }
+        ]
+      },
+      "policy_page_edit": {
+        "expected_result_translation": [
+          {
+            "field_name": "Heading",
+            "source_value": "Edit text block heading",
+            "source_type": "tiptap",
+            "target_value": "translatedEdit text block heading to German",
+            "target_type": "tiptap"
+          },
+          {
+            "field_name": "Paragraph",
+            "source_value": "Edit text block paragraph",
+            "source_type": "tiptap",
+            "target_value": "translatedEdit text block paragraph to German",
+            "target_type": "tiptap"
+          }
+        ]
+      },
+      "manual_data": {
+        "edit_translate": [
+          {
+            "input_data_type": "text",
+            "field_name": "Heading",
+            "content": "Heading manual Return policy",
+            "field_index": 1
+          },
+          {
+            "input_data_type": "text",
+            "field_name": "Paragraph",
+            "content": "Paragraph manual Return policy",
+            "field_index": 0
+          }
+        ],
+        "expected_result_translation": [
+          {
+            "field_name": "Heading",
+            "source_value": "Edit text block heading",
+            "source_type": "tiptap",
+            "target_value": "Heading manual Return policy",
+            "target_type": "tiptap"
+          },
+          {
+            "field_name": "Paragraph",
+            "source_value": "Edit text block paragraph",
+            "source_type": "tiptap",
+            "target_value": "Paragraph manual Return policy",
+            "target_type": "tiptap"
+          }
+        ]
+      },
+      "delete_data": {
+        "edit_translate": [
+          {
+            "input_data_type": "text",
+            "field_name": "Heading",
+            "content": "",
+            "field_index": 1
+          },
+          {
+            "input_data_type": "text",
+            "field_name": "Paragraph",
+            "content": "",
+            "field_index": 0
+          }
+        ]
+      },
+      "toast_success": "Successfully update this language"
+    },
+    "SB_SET_LG_TLL_71": {
+      "case_description": "[Printbase] [DB+SF - Function] Kiểm tra tính năng dịch với shop đã setup page có đầy đủ các block trong WB khi enable Auto translate - All pages content - Page Policy",
+      "language_data": {
+        "language": "German",
+        "locale_code": "de",
+        "language_sf": "Deutsch (DE)",
+        "status": "Published languages",
+        "entity": "Policy pages",
+        "placeholder_entity": "Policy page"
+      },
+      "dnd_block": [
+        {
+          "parent_position": {
+            "section": 4,
+            "column": 1
+          },
+          "template": "Heading",
+          "edit": {
+            "section": 4,
+            "block": 1,
+            "content": "Test input text block heading",
+            "content_edit": "Edit text block heading"
+          }
+        },
+        {
+          "parent_position": {
+            "section": 5,
+            "column": 1
+          },
+          "template": "Paragraph",
+          "edit": {
+            "section": 5,
+            "block": 1,
+            "content": "Test input text block paragraph",
+            "content_edit": "Edit text block paragraph"
+          }
+        }
+      ],
+      "page_handle": "return_policy",
+      "policy_page": {
+        "title": "Return policy",
+        "handle": "return_policy",
+        "content": "Return policy content",
+        "visible_page": true,
+        "expected_result_translation": [
+          {
+            "field_name": "Heading",
+            "source_value": "Test input text block heading",
+            "source_type": "tiptap",
+            "target_value": "translatedTest input text block heading to German",
+            "target_type": "tiptap"
+          },
+          {
+            "field_name": "Paragraph",
+            "source_value": "Test input text block paragraph",
+            "source_type": "tiptap",
+            "target_value": "translatedTest input text block paragraph to German",
+            "target_type": "tiptap"
+          }
+        ]
+      },
+      "policy_page_edit": {
+        "expected_result_translation": [
+          {
+            "field_name": "Heading",
+            "source_value": "Edit text block heading",
+            "source_type": "tiptap",
+            "target_value": "translatedEdit text block heading to German",
+            "target_type": "tiptap"
+          },
+          {
+            "field_name": "Paragraph",
+            "source_value": "Edit text block paragraph",
+            "source_type": "tiptap",
+            "target_value": "translatedEdit text block paragraph to German",
+            "target_type": "tiptap"
+          }
+        ]
+      },
+      "manual_data": {
+        "edit_translate": [
+          {
+            "input_data_type": "text",
+            "field_name": "Heading",
+            "content": "Heading manual Return policy",
+            "field_index": 1
+          },
+          {
+            "input_data_type": "text",
+            "field_name": "Paragraph",
+            "content": "Paragraph manual Return policy",
+            "field_index": 0
+          }
+        ],
+        "expected_result_translation": [
+          {
+            "field_name": "Heading",
+            "source_value": "Edit text block heading",
+            "source_type": "tiptap",
+            "target_value": "Heading manual Return policy",
+            "target_type": "tiptap"
+          },
+          {
+            "field_name": "Paragraph",
+            "source_value": "Edit text block paragraph",
+            "source_type": "tiptap",
+            "target_value": "Paragraph manual Return policy",
+            "target_type": "tiptap"
+          }
+        ]
+      },
+      "delete_data": {
+        "edit_translate": [
+          {
+            "input_data_type": "text",
+            "field_name": "Heading",
+            "content": "",
+            "field_index": 1
+          },
+          {
+            "input_data_type": "text",
+            "field_name": "Paragraph",
+            "content": "",
+            "field_index": 0
+          }
+        ]
+      },
+      "toast_success": "Successfully update this language"
+    }
+  }
+}

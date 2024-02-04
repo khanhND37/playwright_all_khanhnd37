@@ -1,0 +1,1109 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-preview-image-sb.onshopbase.com",
+      "shop_name": "au-preview-image-sb",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10380619,
+      "user_id": 73782,
+      "timeout": "380000"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-preview-image-sb-prodtest.onshopbase.com",
+      "shop_name": "au-preview-image-sb-prodtest",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10380945,
+      "user_id": 73782,
+      "timeout": "380000",
+      "accounts_domain": "accounts-test.shopbase.com",
+      "cases": {
+        "SB_PRO_SBP_1540": {
+          "product_all_info": {
+            "title": "Product preview image",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "snapshot_name": {
+            "preview_image_default": "preview-image-default_SB_PRO_SBP_1540.png",
+            "preview_image": "preview-image-SB_PRO_SBP_1540.png",
+            "preview_image_delete_mockup": "preview-image-delete-mockup_SB_PRO_SBP_1540.png",
+            "preview_image_replace_mockup": "preview-image-replace-mockup_SB_PRO_SBP_1540.png"
+          },
+          "image_invalid": {
+            "image_upload": "image6.psd",
+            "message_error": "This file type isn't supported. Please try again with PNG, JPG, JPEG"
+          },
+          "image_more_20MB": {
+            "s3_path": "files/SB_PRO_VAD_17_imgMore20MB.jpg",
+            "file_path": "data/shopbase/imgMore20MB.jpg",
+            "message_error": "This file is too large. The allowed size is under 20 MB"
+          },
+          "image_preview": "BD_7.png",
+          "image_replace": "BD_10.png"
+        },
+        "ADD_NEW_LAYER": {
+          "data": [
+            {
+              "description": "[Create preview] Add mới layer text cho preview image",
+              "case_id": "SB_PRO_SBP_1539",
+              "product_all_info": {
+                "title": "Product preview image add layer text ",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "image_preview": "BD_7.png",
+              "add_layer": {
+                "layer_type": "Text",
+                "not_back_layer_list": true,
+                "not_layer_list": true
+              },
+              "layer": {
+                "layer_type": "Text",
+                "layer_name": "Text layer 1",
+                "layer_name_edit": "Layer text",
+                "layer_value": "Test text value 1",
+                "font_size": "210",
+                "location_layer_x": "86",
+                "location_layer_y": "86",
+                "not_back_layer_list": true,
+                "not_layer_list": false
+              },
+              "snapshot_name": {
+                "preview_image": "preview-image-SB_PRO_SBP_1539.png",
+                "preview_image_add_text": "preview-image-add-text_SB_PRO_SBP_1539.png",
+                "preview_image_layer_data": "preview-image-layer-data_SB_PRO_SBP_1539.png",
+                "preview_image_layer_edit_name": "preview-image-layer-edit-name_SB_PRO_SBP_1539.png",
+                "preview_image_layer_edit_data": "preview-image-layer-edit-data_SB_PRO_SBP_1539.png",
+                "preview_image_reset_all": "preview-image-reset-all_SB_PRO_SBP_1539.png"
+              }
+            },
+            {
+              "description": "[Create preview] Add mới layer image cho preview image",
+              "case_id": "SB_PRO_SBP_1544",
+              "product_all_info": {
+                "title": "Product preview image add layer image ",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "image_preview": "BD_7.png",
+              "add_layer": {
+                "layer_type": "Image",
+                "image_name": "BD_2.png"
+              },
+              "layer": {
+                "layer_type": "Image",
+                "layer_name_edit": "Layer image",
+                "image_name": "BD_2.png",
+                "layer_name": "BD_2",
+                "image_invalid": "image6.psd",
+                "location_layer_x": "86",
+                "location_layer_y": "86",
+                "not_back_layer_list": true,
+                "not_layer_list": false
+              },
+              "snapshot_name": {
+                "preview_image": "preview-image-SB_PRO_SBP_1544.png",
+                "preview_image_add_text": "preview-image-add-text_SB_PRO_SBP_1544.png",
+                "preview_image_layer_data": "preview-image-layer-data_SB_PRO_SBP_1544.png",
+                "preview_image_layer_edit_name": "preview-image-layer-edit-name_SB_PRO_SBP_1544.png",
+                "preview_image_layer_edit_data": "preview-image-layer-edit-data_SB_PRO_SBP_1544.png",
+                "preview_image_reset_all": "preview-image-reset-all_SB_PRO_SBP_1544.png"
+              }
+            }
+          ]
+        },
+        "ADD_MULTI_LAYER": {
+          "data": [
+            {
+              "description": "[Create preview] Add mới layer text cho preview image",
+              "case_id": "SB_PRO_SBP_1543",
+              "product_all_info": {
+                "title": "Product preview image add multi layer text ",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "image_preview": "BD_7.png",
+              "layers": [
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 1",
+                  "layer_value": "Text 1",
+                  "location_layer_x": "23",
+                  "location_layer_y": "36",
+                  "layer_size_w": "188",
+                  "layer_size_h": "28"
+                },
+                {
+                  "layer_type": "Text",
+                  "layer_value": "Text 2",
+                  "layer_name": "Text layer 2",
+                  "location_layer_x": "23",
+                  "location_layer_y": "110",
+                  "layer_size_w": "188",
+                  "layer_size_h": "28"
+                },
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 3",
+                  "layer_value": "Text 3",
+                  "location_layer_x": "23",
+                  "location_layer_y": "192",
+                  "layer_size_w": "188",
+                  "layer_size_h": "28"
+                }
+              ],
+              "snapshot_name": {
+                "preview_image": "preview-image-SB_PRO_SBP_1543.png",
+                "preview_image_layer_list": "preview-image-layer-list-SB_PRO_SBP_1543.png"
+              }
+            },
+            {
+              "description": "[Create preview] Add mới layer image cho preview image",
+              "case_id": "SB_PRO_SBP_1545",
+              "product_all_info": {
+                "title": "Product preview image add multi layer image ",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "image_preview": "BD_7.png",
+              "layers": [
+                {
+                  "layer_type": "Image",
+                  "layer_name": "BD_2",
+                  "image_name": "BD_2.png",
+                  "location_layer_x": "211",
+                  "location_layer_y": "39",
+                  "layer_size_w": "106",
+                  "layer_size_h": "141"
+                },
+                {
+                  "layer_type": "Image",
+                  "layer_name": "icon",
+                  "image_name": "icon.png",
+                  "location_layer_x": "198",
+                  "location_layer_y": "200",
+                  "layer_size_w": "132",
+                  "layer_size_h": "132"
+                },
+                {
+                  "layer_type": "Image",
+                  "layer_name": "BD_27",
+                  "image_name": "BD_27.png",
+                  "location_layer_x": "60",
+                  "location_layer_y": "229",
+                  "layer_size_w": "113",
+                  "layer_size_h": "151"
+                }
+              ],
+              "snapshot_name": {
+                "preview_image": "preview-image-SB_PRO_SBP_1545.png",
+                "preview_image_layer_list": "preview-image-layer-list-SB_PRO_SBP_1545.png"
+              }
+            },
+            {
+              "description": "[Create preview image] Add kết hợp layer text và layer image cho preview image",
+              "case_id": "SB_PRO_SBP_1546",
+              "product_all_info": {
+                "title": "Product preview image add layer text and layer image",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "image_preview": "BD_7.png",
+              "layers": [
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 1",
+                  "layer_value": "Text 1",
+                  "location_layer_x": "23",
+                  "location_layer_y": "36",
+                  "layer_size_w": "188",
+                  "layer_size_h": "28"
+                },
+                {
+                  "layer_type": "Text",
+                  "layer_value": "Text 2",
+                  "layer_name": "Text layer 2",
+                  "location_layer_x": "23",
+                  "location_layer_y": "110",
+                  "layer_size_w": "188",
+                  "layer_size_h": "28"
+                },
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 3",
+                  "layer_value": "Text 3",
+                  "location_layer_x": "23",
+                  "location_layer_y": "192",
+                  "layer_size_w": "188",
+                  "layer_size_h": "28"
+                },
+                {
+                  "layer_type": "Image",
+                  "layer_name": "BD_1",
+                  "image_name": "BD_1.png",
+                  "location_layer_x": "211",
+                  "location_layer_y": "39",
+                  "layer_size_w": "106",
+                  "layer_size_h": "141"
+                },
+                {
+                  "layer_type": "Image",
+                  "layer_name": "icon",
+                  "image_name": "icon.png",
+                  "location_layer_x": "198",
+                  "location_layer_y": "200",
+                  "layer_size_w": "132",
+                  "layer_size_h": "132"
+                },
+                {
+                  "layer_type": "Image",
+                  "layer_name": "BD_27",
+                  "image_name": "BD_27.png",
+                  "location_layer_x": "60",
+                  "location_layer_y": "229",
+                  "layer_size_w": "113",
+                  "layer_size_h": "151"
+                }
+              ],
+              "snapshot_name": {
+                "preview_image": "preview-image-SB_PRO_SBP_1546.png",
+                "preview_image_layer_list": "preview-image-layer-list-SB_PRO_SBP_1546.png"
+              }
+            }
+          ]
+        },
+        "SB_PRO_SBP_1547": {
+          "product_all_info": {
+            "title": "Product preview image check actions",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "image_preview": "BD_7.png",
+          "tooltip_eye_layer": "Hide option on the Preview image. Your buyers can customize it normally on the Storefront.",
+          "layer_delete": [
+            {
+              "layer_name": "Text layer 2"
+            },
+            {
+              "layer_name": "BD_9"
+            }
+          ],
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 1",
+              "layer_value": "Text 1",
+              "location_layer_x": "23",
+              "location_layer_y": "36",
+              "layer_size_w": "188",
+              "layer_size_h": "28"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 2",
+              "layer_name": "Text layer 2",
+              "location_layer_x": "23",
+              "location_layer_y": "110",
+              "layer_size_w": "188",
+              "layer_size_h": "28"
+            },
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 3",
+              "layer_value": "Text 3",
+              "location_layer_x": "23",
+              "location_layer_y": "192",
+              "layer_size_w": "188",
+              "layer_size_h": "28"
+            },
+            {
+              "layer_type": "Image",
+              "layer_name": "BD_9",
+              "image_name": "BD_9.png",
+              "location_layer_x": "211",
+              "location_layer_y": "39",
+              "layer_size_w": "106",
+              "layer_size_h": "141"
+            },
+            {
+              "layer_type": "Image",
+              "layer_name": "icon",
+              "image_name": "icon.png",
+              "location_layer_x": "198",
+              "location_layer_y": "200",
+              "layer_size_w": "132",
+              "layer_size_h": "132"
+            },
+            {
+              "layer_type": "Image",
+              "layer_name": "BD_27",
+              "image_name": "BD_27.png",
+              "location_layer_x": "60",
+              "location_layer_y": "229",
+              "layer_size_w": "113",
+              "layer_size_h": "151"
+            }
+          ],
+          "snapshot_name": {
+            "preview_image_hide_layer": "prodtest-preview-image-hide-layer-SB_PRO_SBP_1547.png",
+            "preview_image_show_layer": "prodtest-preview-image-show-layer-SB_PRO_SBP_1547.png",
+            "preview_image_drag_drop_layer": "prodtest-preview-image-drag-drop-layer-SB_PRO_SBP_1547.png",
+            "preview_image_delete_layer": "prodtest-preview-image-delete-layer-SB_PRO_SBP_1547.png"
+          }
+        }
+      }
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-preview-image-sb.myshopbase.net",
+      "shop_name": "au-preview-image-sb",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_id": 10323082,
+      "user_id": 73800,
+      "timeout": "380000",
+      "cases": {
+        "SB_PRO_SBP_1540": {
+          "product_all_info": {
+            "title": "Product preview image",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "snapshot_name": {
+            "preview_image_default": "dev-preview-image-default_SB_PRO_SBP_1540.png",
+            "preview_image": "dev-preview-image-SB_PRO_SBP_1540.png",
+            "preview_image_delete_mockup": "dev-preview-image-delete-mockup_SB_PRO_SBP_1540.png",
+            "preview_image_replace_mockup": "dev-preview-image-replace-mockup_SB_PRO_SBP_1540.png"
+          },
+          "image_invalid": {
+            "image_upload": "image6.psd",
+            "message_error": "This file type isn't supported. Please try again with PNG, JPG, JPEG"
+          },
+          "image_more_20MB": {
+            "s3_path": "files/SB_PRO_VAD_17_imgMore20MB.jpg",
+            "file_path": "data/shopbase/imgMore20MB.jpg",
+            "message_error": "This file is too large. The allowed size is under 20 MB"
+          },
+          "image_preview": "BD_7.png",
+          "image_replace": "BD_10.png"
+        },
+        "ADD_NEW_LAYER": {
+          "data": [
+            {
+              "description": "[Create preview] Add mới layer text cho preview image",
+              "case_id": "SB_PRO_SBP_1539",
+              "product_all_info": {
+                "title": "Product preview image add layer text ",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "image_preview": "BD_7.png",
+              "add_layer": {
+                "layer_type": "Text",
+                "not_back_layer_list": true,
+                "not_layer_list": true
+              },
+              "layer": {
+                "layer_type": "Text",
+                "layer_name": "Text layer 1",
+                "layer_name_edit": "Layer text",
+                "layer_value": "Test text value 1",
+                "font_size": "210",
+                "location_layer_x": "86",
+                "location_layer_y": "86",
+                "not_back_layer_list": true,
+                "not_layer_list": false
+              },
+              "snapshot_name": {
+                "preview_image": "dev-preview-image-SB_PRO_SBP_1539.png",
+                "preview_image_add_text": "dev-preview-image-add-text_SB_PRO_SBP_1539.png",
+                "preview_image_layer_data": "dev-preview-image-layer-data_SB_PRO_SBP_1539.png",
+                "preview_image_layer_edit_name": "dev-preview-image-layer-edit-name_SB_PRO_SBP_1539.png",
+                "preview_image_layer_edit_data": "dev-preview-image-layer-edit-data_SB_PRO_SBP_1539.png",
+                "preview_image_reset_all": "dev-preview-image-reset-all_SB_PRO_SBP_1539.png"
+              }
+            },
+            {
+              "description": "[Create preview] Add mới layer image cho preview image",
+              "case_id": "SB_PRO_SBP_1544",
+              "product_all_info": {
+                "title": "Product preview image add layer image ",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "image_preview": "BD_7.png",
+              "add_layer": {
+                "layer_type": "Image",
+                "image_name": "BD_2.png"
+              },
+              "layer": {
+                "layer_type": "Image",
+                "layer_name_edit": "Layer image",
+                "image_name": "BD_2.png",
+                "layer_name": "BD_2",
+                "image_invalid": "image6.psd",
+                "location_layer_x": "86",
+                "location_layer_y": "86",
+                "not_back_layer_list": true,
+                "not_layer_list": false
+              },
+              "snapshot_name": {
+                "preview_image": "dev-preview-image-SB_PRO_SBP_1544.png",
+                "preview_image_add_text": "dev-preview-image-add-text_SB_PRO_SBP_1544.png",
+                "preview_image_layer_data": "dev-preview-image-layer-data_SB_PRO_SBP_1544.png",
+                "preview_image_layer_edit_name": "dev-preview-image-layer-edit-name_SB_PRO_SBP_1544.png",
+                "preview_image_layer_edit_data": "dev-preview-image-layer-edit-data_SB_PRO_SBP_1544.png",
+                "preview_image_reset_all": "dev-preview-image-reset-all_SB_PRO_SBP_1544.png"
+              }
+            }
+          ]
+        },
+        "ADD_MULTI_LAYER": {
+          "data": [
+            {
+              "description": "[Create preview] Add mới layer text cho preview image",
+              "case_id": "SB_PRO_SBP_1543",
+              "product_all_info": {
+                "title": "Product preview image add multi layer text ",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "image_preview": "BD_7.png",
+              "layers": [
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 1",
+                  "layer_value": "Text 1",
+                  "location_layer_x": "23",
+                  "location_layer_y": "36",
+                  "layer_size_w": "188",
+                  "layer_size_h": "28"
+                },
+                {
+                  "layer_type": "Text",
+                  "layer_value": "Text 2",
+                  "layer_name": "Text layer 2",
+                  "location_layer_x": "23",
+                  "location_layer_y": "110",
+                  "layer_size_w": "188",
+                  "layer_size_h": "28"
+                },
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 3",
+                  "layer_value": "Text 3",
+                  "location_layer_x": "23",
+                  "location_layer_y": "192",
+                  "layer_size_w": "188",
+                  "layer_size_h": "28"
+                }
+              ],
+              "snapshot_name": {
+                "preview_image": "dev-preview-image-SB_PRO_SBP_1543.png",
+                "preview_image_layer_list": "dev-preview-image-layer-list-SB_PRO_SBP_1543.png"
+              }
+            },
+            {
+              "description": "[Create preview] Add mới layer image cho preview image",
+              "case_id": "SB_PRO_SBP_1545",
+              "product_all_info": {
+                "title": "Product preview image add multi layer image ",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "image_preview": "BD_7.png",
+              "layers": [
+                {
+                  "layer_type": "Image",
+                  "layer_name": "BD_2",
+                  "image_name": "BD_2.png",
+                  "location_layer_x": "211",
+                  "location_layer_y": "39",
+                  "layer_size_w": "106",
+                  "layer_size_h": "141"
+                },
+                {
+                  "layer_type": "Image",
+                  "layer_name": "icon",
+                  "image_name": "icon.png",
+                  "location_layer_x": "198",
+                  "location_layer_y": "200",
+                  "layer_size_w": "132",
+                  "layer_size_h": "132"
+                },
+                {
+                  "layer_type": "Image",
+                  "layer_name": "BD_27",
+                  "image_name": "BD_27.png",
+                  "location_layer_x": "60",
+                  "location_layer_y": "229",
+                  "layer_size_w": "113",
+                  "layer_size_h": "151"
+                }
+              ],
+              "snapshot_name": {
+                "preview_image": "dev-preview-image-SB_PRO_SBP_1545.png",
+                "preview_image_layer_list": "dev-preview-image-layer-list-SB_PRO_SBP_1545.png"
+              }
+            },
+            {
+              "description": "[Create preview image] Add kết hợp layer text và layer image cho preview image",
+              "case_id": "SB_PRO_SBP_1546",
+              "product_all_info": {
+                "title": "Product preview image add layer text and layer image",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "image_preview": "BD_7.png",
+              "layers": [
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 1",
+                  "layer_value": "Text 1",
+                  "location_layer_x": "23",
+                  "location_layer_y": "36",
+                  "layer_size_w": "188",
+                  "layer_size_h": "28"
+                },
+                {
+                  "layer_type": "Text",
+                  "layer_value": "Text 2",
+                  "layer_name": "Text layer 2",
+                  "location_layer_x": "23",
+                  "location_layer_y": "110",
+                  "layer_size_w": "188",
+                  "layer_size_h": "28"
+                },
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 3",
+                  "layer_value": "Text 3",
+                  "location_layer_x": "23",
+                  "location_layer_y": "192",
+                  "layer_size_w": "188",
+                  "layer_size_h": "28"
+                },
+                {
+                  "layer_type": "Image",
+                  "layer_name": "BD_1",
+                  "image_name": "BD_1.png",
+                  "location_layer_x": "211",
+                  "location_layer_y": "39",
+                  "layer_size_w": "106",
+                  "layer_size_h": "141"
+                },
+                {
+                  "layer_type": "Image",
+                  "layer_name": "icon",
+                  "image_name": "icon.png",
+                  "location_layer_x": "198",
+                  "location_layer_y": "200",
+                  "layer_size_w": "332",
+                  "layer_size_h": "132"
+                },
+                {
+                  "layer_type": "Image",
+                  "layer_name": "BD_27",
+                  "image_name": "BD_27.png",
+                  "location_layer_x": "60",
+                  "location_layer_y": "229",
+                  "layer_size_w": "513",
+                  "layer_size_h": "151"
+                }
+              ],
+              "snapshot_name": {
+                "preview_image": "dev-preview-image-SB_PRO_SBP_1546.png",
+                "preview_image_layer_list": "dev-preview-image-layer-list-SB_PRO_SBP_1546.png"
+              }
+            }
+          ]
+        },
+        "SB_PRO_SBP_1547": {
+          "product_all_info": {
+            "title": "Product preview image check actions",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "image_preview": "BD_7.png",
+          "tooltip_eye_layer": "Hide option on the Preview image. Your buyers can customize it normally on the Storefront.",
+          "layer_delete": [
+            {
+              "layer_name": "Text layer 2"
+            },
+            {
+              "layer_name": "BD_9"
+            }
+          ],
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 1",
+              "layer_value": "Text 1",
+              "location_layer_x": "23",
+              "location_layer_y": "36",
+              "layer_size_w": "188",
+              "layer_size_h": "28"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 2",
+              "layer_name": "Text layer 2",
+              "location_layer_x": "23",
+              "location_layer_y": "110",
+              "layer_size_w": "188",
+              "layer_size_h": "28"
+            },
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 3",
+              "layer_value": "Text 3",
+              "location_layer_x": "23",
+              "location_layer_y": "192",
+              "layer_size_w": "188",
+              "layer_size_h": "28"
+            },
+            {
+              "layer_type": "Image",
+              "layer_name": "BD_9",
+              "image_name": "BD_9.png",
+              "location_layer_x": "211",
+              "location_layer_y": "39",
+              "layer_size_w": "106",
+              "layer_size_h": "141"
+            },
+            {
+              "layer_type": "Image",
+              "layer_name": "icon",
+              "image_name": "icon.png",
+              "location_layer_x": "198",
+              "location_layer_y": "200",
+              "layer_size_w": "920",
+              "layer_size_h": "533"
+            },
+            {
+              "layer_type": "Image",
+              "layer_name": "BD_27",
+              "image_name": "BD_27.png",
+              "location_layer_x": "60",
+              "location_layer_y": "229",
+              "layer_size_w": "177",
+              "layer_size_h": "496"
+            }
+          ],
+          "snapshot_name": {
+            "preview_image_hide_layer": "dev-preview-image-hide-layer-SB_PRO_SBP_1547.png",
+            "preview_image_show_layer": "dev-preview-image-show-layer-SB_PRO_SBP_1547.png",
+            "preview_image_drag_drop_layer": "dev-preview-image-drag-drop-layer-SB_PRO_SBP_1547.png",
+            "preview_image_delete_layer": "dev-preview-image-delete-layer-SB_PRO_SBP_1547.png"
+          }
+        }
+      }
+    }
+  },
+  "max_diff_pixel_ratio": 0.05,
+  "threshold": 0.1,
+  "max_diff_pixels": 2000,
+  "cases": {
+    "SB_PRO_SBP_1540": {
+      "product_all_info": {
+        "title": "Product preview image",
+        "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+        "image_name": "Logo1.jpg",
+        "vendor": "Uniqlo",
+        "price": "10",
+        "compare_at_price": "20"
+      },
+      "snapshot_name": {
+        "preview_image_default": "preview-image-default_SB_PRO_SBP_1540.png",
+        "preview_image": "preview-image-SB_PRO_SBP_1540.png",
+        "preview_image_delete_mockup": "preview-image-delete-mockup_SB_PRO_SBP_1540.png",
+        "preview_image_replace_mockup": "preview-image-replace-mockup_SB_PRO_SBP_1540.png"
+      },
+      "image_invalid": {
+        "image_upload": "image6.psd",
+        "message_error": "This file type isn't supported. Please try again with PNG, JPG, JPEG"
+      },
+      "image_more_20MB": {
+        "s3_path": "files/SB_PRO_VAD_17_imgMore20MB.jpg",
+        "file_path": "data/shopbase/imgMore20MB.jpg",
+        "message_error": "This file is too large. The allowed size is under 20 MB"
+      },
+      "image_preview": "BD_7.png",
+      "image_replace": "BD_10.png"
+    },
+    "ADD_NEW_LAYER": {
+      "data": [
+        {
+          "description": "[Create preview] Add mới layer text cho preview image",
+          "case_id": "SB_PRO_SBP_1539",
+          "product_all_info": {
+            "title": "Product preview image add layer text ",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "image_preview": "BD_7.png",
+          "add_layer": {
+            "layer_type": "Text",
+            "not_back_layer_list": true,
+            "not_layer_list": true
+          },
+          "layer": {
+            "layer_type": "Text",
+            "layer_name": "Text layer 1",
+            "layer_name_edit": "Layer text",
+            "layer_value": "Test text value 1",
+            "font_size": "210",
+            "location_layer_x": "86",
+            "location_layer_y": "86",
+            "not_back_layer_list": true,
+            "not_layer_list": false
+          },
+          "snapshot_name": {
+            "preview_image": "preview-image-SB_PRO_SBP_1539.png",
+            "preview_image_add_text": "preview-image-add-text_SB_PRO_SBP_1539.png",
+            "preview_image_layer_data": "preview-image-layer-data_SB_PRO_SBP_1539.png",
+            "preview_image_layer_edit_name": "preview-image-layer-edit-name_SB_PRO_SBP_1539.png",
+            "preview_image_layer_edit_data": "preview-image-layer-edit-data_SB_PRO_SBP_1539.png",
+            "preview_image_reset_all": "preview-image-reset-all_SB_PRO_SBP_1539.png"
+          }
+        },
+        {
+          "description": "[Create preview] Add mới layer image cho preview image",
+          "case_id": "SB_PRO_SBP_1544",
+          "product_all_info": {
+            "title": "Product preview image add layer image ",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "image_preview": "BD_7.png",
+          "add_layer": {
+            "layer_type": "Image",
+            "image_name": "BD_2.png"
+          },
+          "layer": {
+            "layer_type": "Image",
+            "layer_name_edit": "Layer image",
+            "image_name": "BD_2.png",
+            "layer_name": "BD_2",
+            "image_invalid": "image6.psd",
+            "location_layer_x": "86",
+            "location_layer_y": "86",
+            "not_back_layer_list": true,
+            "not_layer_list": false
+          },
+          "snapshot_name": {
+            "preview_image": "preview-image-SB_PRO_SBP_1544.png",
+            "preview_image_add_text": "preview-image-add-text_SB_PRO_SBP_1544.png",
+            "preview_image_layer_data": "preview-image-layer-data_SB_PRO_SBP_1544.png",
+            "preview_image_layer_edit_name": "preview-image-layer-edit-name_SB_PRO_SBP_1544.png",
+            "preview_image_layer_edit_data": "preview-image-layer-edit-data_SB_PRO_SBP_1544.png",
+            "preview_image_reset_all": "preview-image-reset-all_SB_PRO_SBP_1544.png"
+          }
+        }
+      ]
+    },
+    "ADD_MULTI_LAYER": {
+      "data": [
+        {
+          "description": "[Create preview] Add mới layer text cho preview image",
+          "case_id": "SB_PRO_SBP_1543",
+          "product_all_info": {
+            "title": "Product preview image add multi layer text ",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "image_preview": "BD_7.png",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 1",
+              "layer_value": "Text 1",
+              "location_layer_x": "23",
+              "location_layer_y": "36",
+              "layer_size_w": "188",
+              "layer_size_h": "28"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 2",
+              "layer_name": "Text layer 2",
+              "location_layer_x": "23",
+              "location_layer_y": "110",
+              "layer_size_w": "188",
+              "layer_size_h": "28"
+            },
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 3",
+              "layer_value": "Text 3",
+              "location_layer_x": "23",
+              "location_layer_y": "192",
+              "layer_size_w": "188",
+              "layer_size_h": "28"
+            }
+          ],
+          "snapshot_name": {
+            "preview_image": "preview-image-SB_PRO_SBP_1543.png",
+            "preview_image_layer_list": "preview-image-layer-list-SB_PRO_SBP_1543.png"
+          }
+        },
+        {
+          "description": "[Create preview] Add mới layer image cho preview image",
+          "case_id": "SB_PRO_SBP_1545",
+          "product_all_info": {
+            "title": "Product preview image add multi layer image ",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "image_preview": "BD_7.png",
+          "layers": [
+            {
+              "layer_type": "Image",
+              "layer_name": "BD_2",
+              "image_name": "BD_2.png",
+              "location_layer_x": "211",
+              "location_layer_y": "39",
+              "layer_size_w": "106",
+              "layer_size_h": "141"
+            },
+            {
+              "layer_type": "Image",
+              "layer_name": "icon",
+              "image_name": "icon.png",
+              "location_layer_x": "198",
+              "location_layer_y": "200",
+              "layer_size_w": "132",
+              "layer_size_h": "132"
+            },
+            {
+              "layer_type": "Image",
+              "layer_name": "BD_27",
+              "image_name": "BD_27.png",
+              "location_layer_x": "60",
+              "location_layer_y": "229",
+              "layer_size_w": "113",
+              "layer_size_h": "151"
+            }
+          ],
+          "snapshot_name": {
+            "preview_image": "preview-image-SB_PRO_SBP_1545.png",
+            "preview_image_layer_list": "preview-image-layer-list-SB_PRO_SBP_1545.png"
+          }
+        },
+        {
+          "description": "[Create preview image] Add kết hợp layer text và layer image cho preview image",
+          "case_id": "SB_PRO_SBP_1546",
+          "product_all_info": {
+            "title": "Product preview image add layer text and layer image",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "image_preview": "BD_7.png",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 1",
+              "layer_value": "Text 1",
+              "location_layer_x": "23",
+              "location_layer_y": "36",
+              "layer_size_w": "188",
+              "layer_size_h": "28"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 2",
+              "layer_name": "Text layer 2",
+              "location_layer_x": "23",
+              "location_layer_y": "110",
+              "layer_size_w": "188",
+              "layer_size_h": "28"
+            },
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 3",
+              "layer_value": "Text 3",
+              "location_layer_x": "23",
+              "location_layer_y": "192",
+              "layer_size_w": "188",
+              "layer_size_h": "28"
+            },
+            {
+              "layer_type": "Image",
+              "layer_name": "BD_1",
+              "image_name": "BD_1.png",
+              "location_layer_x": "211",
+              "location_layer_y": "39",
+              "layer_size_w": "106",
+              "layer_size_h": "141"
+            },
+            {
+              "layer_type": "Image",
+              "layer_name": "icon",
+              "image_name": "icon.png",
+              "location_layer_x": "198",
+              "location_layer_y": "200",
+              "layer_size_w": "132",
+              "layer_size_h": "132"
+            },
+            {
+              "layer_type": "Image",
+              "layer_name": "BD_27",
+              "image_name": "BD_27.png",
+              "location_layer_x": "60",
+              "location_layer_y": "229",
+              "layer_size_w": "113",
+              "layer_size_h": "151"
+            }
+          ],
+          "snapshot_name": {
+            "preview_image": "preview-image-SB_PRO_SBP_1546.png",
+            "preview_image_layer_list": "preview-image-layer-list-SB_PRO_SBP_1546.png"
+          }
+        }
+      ]
+    },
+    "SB_PRO_SBP_1547": {
+      "product_all_info": {
+        "title": "Product preview image check actions",
+        "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+        "image_name": "Logo1.jpg",
+        "vendor": "Uniqlo",
+        "price": "10",
+        "compare_at_price": "20"
+      },
+      "image_preview": "BD_7.png",
+      "tooltip_eye_layer": "Hide option on the Preview image. Your buyers can customize it normally on the Storefront.",
+      "layer_delete": [
+        {
+          "layer_name": "Text layer 2"
+        },
+        {
+          "layer_name": "BD_9"
+        }
+      ],
+      "layers": [
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 1",
+          "layer_value": "Text 1",
+          "location_layer_x": "23",
+          "location_layer_y": "36",
+          "layer_size_w": "188",
+          "layer_size_h": "28"
+        },
+        {
+          "layer_type": "Text",
+          "layer_value": "Text 2",
+          "layer_name": "Text layer 2",
+          "location_layer_x": "23",
+          "location_layer_y": "110",
+          "layer_size_w": "188",
+          "layer_size_h": "28"
+        },
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 3",
+          "layer_value": "Text 3",
+          "location_layer_x": "23",
+          "location_layer_y": "192",
+          "layer_size_w": "188",
+          "layer_size_h": "28"
+        },
+        {
+          "layer_type": "Image",
+          "layer_name": "BD_9",
+          "image_name": "BD_9.png",
+          "location_layer_x": "211",
+          "location_layer_y": "39",
+          "layer_size_w": "106",
+          "layer_size_h": "141"
+        },
+        {
+          "layer_type": "Image",
+          "layer_name": "icon",
+          "image_name": "icon.png",
+          "location_layer_x": "198",
+          "location_layer_y": "200",
+          "layer_size_w": "132",
+          "layer_size_h": "132"
+        },
+        {
+          "layer_type": "Image",
+          "layer_name": "BD_27",
+          "image_name": "BD_27.png",
+          "location_layer_x": "60",
+          "location_layer_y": "229",
+          "layer_size_w": "113",
+          "layer_size_h": "151"
+        }
+      ],
+      "snapshot_name": {
+        "preview_image_hide_layer": "preview-image-hide-layer-SB_PRO_SBP_1547.png",
+        "preview_image_show_layer": "preview-image-show-layer-SB_PRO_SBP_1547.png",
+        "preview_image_drag_drop_layer": "preview-image-drag-drop-layer-SB_PRO_SBP_1547.png",
+        "preview_image_delete_layer": "preview-image-delete-layer-SB_PRO_SBP_1547.png"
+      }
+    }
+  }
+}

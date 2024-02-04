@@ -1,0 +1,169 @@
+{
+  "env": {
+    "local": {
+      "api": "https://api.shopbase.com",
+      "domain": "auto-bio.onshopbase.com",
+      "shop_name": "auto-bio",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "user_id": 11260206,
+      "shop_id": 10426123
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "auto-bio.myshopbase.net",
+      "shop_name": "auto-bio",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "user_id": 90252,
+      "shop_id": 10326779
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "auto-bio-prodtest.onshopbase.com",
+      "shop_name": "auto-bio-prodtest",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "user_id": 11260206,
+      "shop_id": 10427722,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "auto-bio.onshopbase.com",
+      "shop_name": "auto-bio",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "user_id": 11260206,
+      "shop_id": 10426123
+    }
+  },
+  "default_avatar": "data/shopbase/moon.png",
+  "default_name": "Shopbase New bio",
+  "default_bio": "Hi! I'm Shopbase New bio. I'm here to help you...",
+  "facebook_default": "https://www.facebook.com",
+  "instagram_default": "https://www.instagram.com",
+  "youtube_default": "https://www.youtube.com",
+  "tiktok_default": "https://www.tiktok.com",
+  "create_product": {
+    "product": {
+      "title": "Bio source",
+      "published": true,
+      "product_type": "online_course"
+    }
+  },
+  "cases": {
+    "SB_NEWECOM_BIO_01": {
+      "screenshot": "SB_NEWECOM_BIO_avatar.png"
+    },
+    "SB_NEWECOM_BIO_02": {
+      "steps_update_avatar_name_bio": [
+        {
+          "name": "Avatar",
+          "title": "Upload avatar"
+        },
+        {
+          "name": "Name",
+          "title": "Xoá trống name",
+          "value": "",
+          "expect_value": ""
+        },
+        {
+          "name": "Name",
+          "title": "Update name có chữ số và ký tự đăc biệt",
+          "value": "Laura@2603",
+          "expect_value": "Laura@2603"
+        },
+        {
+          "name": "Bio",
+          "title": "Xoá trống bio",
+          "value": "",
+          "expect_value": ""
+        },
+        {
+          "name": "Bio",
+          "title": "Update bio có chữ và số",
+          "value": "Our courses have many episodes, many useful things to help you in your life. Contact us now by our 4 social links below @@",
+          "expect_value": "Our courses have many episodes, many useful things to help you in your life. Contact us now by our 4 social links below @@"
+        },
+        {
+          "name": "Bio",
+          "title": "Update bio vượt quá 180 ký tự",
+          "value": "Hi, I'm here to help you to learn everything you want. Our courses have many episodes, many useful things to help you in your life. Contact us now by our 4 social links below @@ it is over than 180 characters.",
+          "expect_value": "Hi, I'm here to help you to learn everything you want. Our courses have many episodes, many useful things to help you in your life. Contact us now by our 4 social links below @@ it"
+        }
+      ],
+      "screenshot": "SB_NEWECOM_BIO_avatar.png",
+      "screenshot_upload": "SB_NEWECOM_BIO_02_no_avatar.png",
+      "facebook_sb": "https://www.facebook.com/shopbase",
+      "instagram_sb": "https://www.instagram.com/shopbase",
+      "youtube_sb": "https://www.youtube.com/shopbase",
+      "tiktok_sb": "https://www.tiktok.com/shopbase",
+      "twitter_sb": "https://www.twitter.com/shopbase",
+      "social_link_count": 4
+    },
+    "SB_NEWECOM_BIO_04": {
+      "screenshot": "SB_NEWECOM_BIO_04_result.png",
+      "add_section": {
+        "parent_position": {
+          "section": 1
+        },
+        "template": "Single column"
+      },
+      "first_section": {
+        "section": 1
+      },
+      "block_position": {
+        "section": 1,
+        "block": 1
+      },
+      "add_block_heading": {
+        "parent_position": {
+          "section": 1,
+          "column": 1
+        },
+        "category": "Basics",
+        "template": "Heading"
+      },
+      "add_block_image": {
+        "from": {
+          "category": "Basics",
+          "template": "Image"
+        },
+        "to": {
+          "position": {
+            "section": 1,
+            "block": 1
+          },
+          "isBottom": false
+        }
+      },
+      "add_block_paragraph": {
+        "from": {
+          "category": "Basics",
+          "template": "Paragraph"
+        },
+        "to": {
+          "position": {
+            "section": 1,
+            "block": 1
+          },
+          "isBottom": false
+        }
+      },
+      "add_block_social": {
+        "from": {
+          "category": "Basics",
+          "template": "Social bar"
+        },
+        "to": {
+          "position": {
+            "section": 1,
+            "block": 1
+          },
+          "isBottom": false
+        }
+      }
+    }
+  }
+}

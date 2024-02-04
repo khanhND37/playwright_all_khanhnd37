@@ -1,0 +1,181 @@
+{
+  "api": "https://gapi.dev.shopbase.net",
+  "username": "trangle@beeketing.net",
+  "password": "123456",
+  "shop_name": "shop-creator-1",
+  "cases": {
+    "SB_DP_DB_PAGE_1": {
+      "data": [
+        {
+          "url": "https://shop-creator-1.myshopbase.net/admin/pages.json",
+          "method": "POST",
+          "request": {
+            "data": {
+              "page": {
+                "title": "trang test api"
+              }
+            }
+          },
+          "response": {
+            "status": 200,
+            "data": {
+              "page": {
+                "title": "trang test api"
+              }
+            }
+          }
+        },
+        {
+          "url": "https://shop-creator-1.myshopbase.net/admin/pages.json",
+          "method": "POST",
+          "request": {
+            "data": {
+              "page": {
+                "title": ""
+              }
+            }
+          },
+          "response": {
+            "status": 400,
+            "message": "Title can not be blank"
+          }
+        }
+      ]
+    },
+    "SB_DP_DB_PAGE_2": {
+      "data": [
+        {
+          "url": "https://shop-creator-1.myshopbase.net/admin/pages/62912032635.json",
+          "method": "PUT",
+          "request": {
+            "data": {
+              "page": {
+                "title": ""
+              }
+            }
+          },
+          "response": {
+            "status": 400,
+            "message": "Title can not be blank"
+          }
+        },
+        {
+          "url": "https://shop-creator-1.myshopbase.net/admin/pages/62912032635.json",
+          "method": "PUT",
+          "request": {
+            "data": {
+              "page": {
+                "title": "test",
+                "handle": "tạo"
+              }
+            }
+          },
+          "response": {
+            "status": 400,
+            "message": "Handle field invalid"
+          }
+        },
+        {
+          "url": "https://shop-creator-1.myshopbase.net/admin/pages/62912032635.json",
+          "method": "PUT",
+          "request": {
+            "data": {
+              "page": {
+                "title": "abc",
+                "handle": "abc",
+                "search_engine_meta_description": "Have high-converting stores for all industries created in a click. Receive monthly trending product lists & proven advertising strategies. Maximize profit with free marketing tools."
+              }
+            }
+          },
+          "response": {
+            "status": 400,
+            "message": "SEO description is too long"
+          }
+        },
+        {
+          "url": "https://shop-creator-1.myshopbase.net/admin/pages/62912032635.json",
+          "method": "PUT",
+          "request": {
+            "data": {
+              "page": {
+                "title": "abc",
+                "handle": "abc",
+                "search_engine_image": "https://sbase-staging.s3.amazonaws.com/sbase-file/internal/media/1660810529f9da39e77d.pdf"
+              }
+            }
+          },
+          "response": {
+            "status": 400,
+            "message": "File type is not supported"
+          }
+        },
+        {
+          "url": "https://shop-creator-1.myshopbase.net/admin/pages/62912032635.json",
+          "method": "PUT",
+          "request": {
+            "data": {
+              "page": {
+                "title": "Design your website",
+                "handle": "plusbase1",
+                "publish": true,
+                "search_engine_title": "ocg",
+                "search_engine_meta_description": "Business in a few clicks with ShopBase",
+                "search_engine_image": "https://cdn.sforum.vn/sforum/wp-content/uploads/2018/11/2-10.png",
+                "is_show_in_search": true
+              }
+            }
+          },
+          "response": {
+            "status": 200,
+            "data": {
+              "page": {
+                "title": "Design your website",
+                "handle": "plusbase1",
+                "search_engine_title": "ocg",
+                "search_engine_meta_description": "Business in a few clicks with ShopBase",
+                "search_engine_image": "https://cdn.sforum.vn/sforum/wp-content/uploads/2018/11/2-10.png",
+                "is_show_in_search": true
+              }
+            }
+          }
+        },
+        {
+          "url": "https://shop-creator-1.myshopbase.net/admin/pages/62912032635.json",
+          "method": "PUT",
+          "request": {
+            "data": {
+              "page": {
+                "title": "ShopBase Creator",
+                "handle": "design-page",
+                "publish": false,
+                "search_engine_title": "Open Commerce Group",
+                "search_engine_meta_description": "Receive monthly trending product lists & proven advertising strategies.",
+                "search_engine_image": "https://nld.mediacdn.vn/2020/5/29/doi-hoa-tim-5-1590731334546464136746.jpg",
+                "is_show_in_search": false
+              }
+            }
+          },
+          "response": {
+            "status": 200,
+            "data": {
+              "page": {
+                "title": "ShopBase Creator",
+                "handle": "design-page",
+                "search_engine_title": "Open Commerce Group",
+                "search_engine_meta_description": "Receive monthly trending product lists & proven advertising strategies.",
+                "search_engine_image": "https://nld.mediacdn.vn/2020/5/29/doi-hoa-tim-5-1590731334546464136746.jpg",
+                "is_show_in_search": false
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "env": {
+    "prodtest": {
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://prod-test-api.shopbase.com"
+    }
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "shop_name": "import-adc.onshopbase.com",
+      "username": "shopbase3@beeketing.net",
+      "password": "aAeg*PJR4.t6V:P",
+      "domain": "import-adc.onshopbase.com"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "shop_name": "au-import-product-adc-prodtest.onshopbase.com",
+      "username": "shopbase3@beeketing.net",
+      "password": "aAeg*PJR4.t6V:P",
+      "domain": "au-import-product-adc-prodtest.onshopbase.com",
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "shop_name": "import-adc.myshopbase.net",
+      "username": "shopbase3@beeketing.net",
+      "password": "=l-N&YG}g<'KLJk",
+      "domain": "import-adc.myshopbase.net"
+    }
+  },
+  "cases": {
+    "SB_APP_ADC_IP_65": {
+      "data": [
+        {
+          "case_id": "SB_APP_ADC_IP_65",
+          "description": "Verify import product với link aliexpress có 4 variants options trong đó có 1 variant options ship from không có value = china",
+          "product_links": ["https://www.aliexpress.us/item/3256802668382688.html"],
+          "error_message": "Product with more than 3 options cannot be imported at this time. Please try again with another AliExpress product.",
+          "import_status": false
+        },
+        {
+          "case_id": "SB_APP_ADC_IP_51",
+          "description": "Verify import product từ link aliexpress not found",
+          "product_links": ["https://www.aliexpress.com/item/3256804530212738.html"],
+          "error_message": "Cannot process your request at this time. Please try again in a few minutes.",
+          "import_status": false
+        },
+        {
+          "case_id": "SB_APP_ADC_IP_49",
+          "description": "Verify import product trường hợp product trên aliexpress not available ship to US",
+          "product_links": ["https://vi.aliexpress.com/item/1005004803123015.html"],
+          "error_message": "Only products available to ship to US can be imported. Please change shipping destination to US and try another AliExpress link.",
+          "import_status": false
+        },
+        {
+          "case_id": "SB_APP_ADC_IP_48",
+          "description": "Verify import product by invalid URL",
+          "product_links": ["https://detail.1688.com/offer/692736565230.html"],
+          "error_message": "Please Enter an AliExpress product URL, such as https://www.aliexpress.com/items/123456789.html",
+          "import_status": false
+        },
+        {
+          "case_id": "SB_APP_ADC_IP_67",
+          "description": "Verify import product sai định dạng URL",
+          "product_links": ["https://vi.aliexpress.com/item/1005004913224080"],
+          "error_message": "Please Enter an AliExpress product URL, such as https://www.aliexpress.com/items/123456789.html",
+          "import_status": false
+        },
+        {
+          "case_id": "SB_APP_ADC_IP_46",
+          "description": "Verify import product trường hợp product trên aliexpress sold out",
+          "product_links": ["https://www.aliexpress.us/item/3256805099783229.html"],
+          "title_product": [
+            "Cartoon Brooch Creative Doctor Stethoscope Brooch Brooch European And American Jewelry Lapel Pins"
+          ],
+          "total_variant": 13,
+          "import_status": true
+        },
+        {
+          "case_id": "SB_APP_ADC_IP_38",
+          "description": "Verify import product vào store với thông tin mặc định lấy từ aliexpress",
+          "product_links": ["https://www.aliexpress.us/item/3256803623890719.html"],
+          "title_product": [
+            "1PCS Transfer Heat Tape Double Sided Thermal Conductive Adhesive Tape for Chip PCB CPU LED Strip Light Heatsink 25meter/Roll"
+          ],
+          "total_variant": 10,
+          "import_status": true
+        }
+      ]
+    },
+    "SB_APP_ADC_IP_45": {
+      "product_links": [
+        "https://www.aliexpress.com/item/3256804880260289.html",
+        "https://www.aliexpress.com/item/2251832774161989.html"
+      ],
+      "products": [
+        {
+          "title_product": "Children 2.4G Remote Control Excavator RC Model Car Toys Dump Truck Bulldozer Engineering Vehicle Christmas Birthday Gifts",
+          "total_variant": 3
+        },
+        {
+          "title_product": "DATA FROG Skin Stickers For Xbox 360 Slim Console Warrior Joker Custom Man Vinyl Protective Cover For Microsoft Xbox 360 S 2023",
+          "total_variant": 23
+        }
+      ]
+    },
+    "SB_APP_ADC_IP_44": {
+      "product_links": ["https://www.aliexpress.us/item/1005005218126239.html"],
+      "products": [
+        {
+          "title_product": "Remove Dark Circles Eye Cream Anti-Wrinkle Fade Fine Lines Moisturizing Relieving Dry Skin Remove Eye Bags Puffiness Eye Care"
+        }
+      ],
+      "data_price": ["15.25"]
+    },
+    "SB_APP_ADC_IP_43": {
+      "product_links": ["https://www.aliexpress.us/item/3256803470386647.html"],
+      "products": [
+        {
+          "title_product": "Balls Beads Rings for Women Stainless Steel Rotate Freely Anti Stress Anxiety Ring 2024 Antistress Spiral Bead Rotate Jewlery"
+        }
+      ],
+      "data_price": ["5.25", "6.25", "7.25", "8.25"]
+    },
+    "SB_APP_ADC_IP_39": {
+      "total_image_ali": 24,
+      "product_links": ["https://vi.aliexpress.com/item/1005002334131546.html"],
+      "products": [
+        {
+          "title_product": "Children 2.4G Remote Control Excavator RC Model Car Toys Dump Truck Bulldozer Engineering Vehicle Christmas Birthday Gifts"
+        }
+      ],
+      "title_class": ["variant1", "price", "compare"],
+      "data_variant": ["0200", "90.25", "200.25"],
+      "new_data": "Test product"
+    },
+    "SB_APP_ADC_IP_64": {
+      "product_links": [
+        "https://www.aliexpress.us/item/3256804829990754.html",
+        "https://www.aliexpress.us/item/3256804909402353.html",
+        "https://www.aliexpress.us/item/3256802317573136.html"
+      ],
+      "products": [
+        {
+          "title_product": "HOUZHOU Sweet Kawaii Blouse Lolita Cute Ruffles Elegant Vintage Long Sleeve Shirts Women Loose Casual Peter Pan Collar Tops"
+        }
+      ]
+    },
+    "SB_APP_ADC_IP_63": {
+      "product_links": ["https://www.aliexpress.us/item/3256804668091093.html"],
+      "products": [
+        {
+          "title_product": "Elegant Women Faux Woolen Skirts For Office Ladies Pockets Casual Loose A-Line High Waist Midi Skirt 2023 Autumn Winter SK11"
+        }
+      ]
+    },
+    "SB_APP_ADC_IP_41": {
+      "product_links": ["https://www.aliexpress.us/item/1005004581659181.html"],
+      "title_product": [
+        "Men Knitted Sweater Y2K Vintage Harajuku Star Letter Jumper Sweaters Streetwear 2023 Autumn Hip Hop Fashion Retro Loose Pullover"
+      ],
+      "total_variant": 6,
+      "number_import": 2
+    },
+    "SB_APP_ADC_IP_69": {
+      "product_links": ["https://www.aliexpress.us/item/1005004579610088.html"],
+      "title_product": "42 Pcs Costume Party Dance Props Hippie Costume Accessory Set Colorful Peace Sign Hippie Necklaces Pendant",
+      "attribute_name": "Title",
+      "attribute_value": "Default Title"
+    }
+  }
+}

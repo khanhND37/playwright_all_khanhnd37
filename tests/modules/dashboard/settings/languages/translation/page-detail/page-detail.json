@@ -1,0 +1,248 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "accounts_domain": "accounts.dev.shopbase.net",
+      "domain": "au-translation-entity-page-dev.myshopbase.net",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "43AhIn|VWp;[?9&",
+      "shop_name": "au-translation-entity-page-dev",
+      "user_id": 89797,
+      "shop_id": 10333670,
+      "default_language": "English",
+      "publish_language": "German",
+      "unpublish_language": "French"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "accounts_domain": "accounts-test.shopbase.com",
+      "domain": "au-entity-page-prodtest.onshopbase.com",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "43AhIn|VWp;[?9&",
+      "shop_name": "au-entity-page-prodtest",
+      "user_id": 11244582,
+      "shop_id": 10483868,
+      "default_language": "English",
+      "publish_language": "German",
+      "unpublish_language": "French"
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "accounts_domain": "accounts.shopbase.com",
+      "domain": "au-entity-page-prod.onshopbase.com",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "shop_name": "au-entity-page-prod",
+      "user_id": 11244582,
+      "shop_id": 10483869,
+      "default_language": "English",
+      "publish_language": "German",
+      "unpublish_language": "French"
+    }
+  },
+  "pageJson": {
+    "body_html": "",
+    "title": "",
+    "handle": "",
+    "publish": true,
+    "search_engine_title": "",
+    "search_engine_meta_description": "",
+    "search_engine_image": "",
+    "template": "",
+    "is_show_in_search": true,
+    "tags": [],
+    "apply_to_another_store": false
+  },
+  "data_fill_dashboard": [
+    {
+      "inputDataType": "text",
+      "inputData": "",
+      "searchCondition": {
+        "fieldIndex": 0,
+        "fieldName": "Title"
+      }
+    },
+    {
+      "inputDataType": "text",
+      "inputData": "",
+      "searchCondition": {
+        "fieldIndex": 0,
+        "fieldName": "Content"
+      }
+    },
+    {
+      "inputDataType": "text",
+      "inputData": "",
+      "searchCondition": {
+        "fieldIndex": 0,
+        "fieldName": "Meta description"
+      }
+    },
+    {
+      "inputDataType": "text",
+      "inputData": "",
+      "searchCondition": {
+        "fieldIndex": 0,
+        "fieldName": "SEO Page title"
+      }
+    }
+  ],
+  "cases": {
+    "SB_SET_TL_82": {
+      "case_description": "[DB - UI/UX] Kiểm tra màn translate detail của store data - Pages - Page details",
+      "page_data": [
+        {
+          "title": "page 1",
+          "description": "Description (optional) page 1",
+          "meta_description": "Meta description page 1",
+          "meta_title": "Page title page 1",
+          "hide_field": [],
+          "show_field": ["Content", "SEO Page title", "Meta description", "Title"]
+        },
+        {
+          "title": "page 2",
+          "description": "",
+          "meta_description": "",
+          "meta_title": "",
+          "hide_field": ["Content", "SEO Page title", "Meta description"],
+          "show_field": ["Title"]
+        },
+        {
+          "title": "page 3",
+          "description": "",
+          "meta_description": "Meta description page 3",
+          "meta_title": "Page title page 3",
+          "hide_field": ["Content"],
+          "show_field": ["SEO Page title", "Meta description", "Title"]
+        },
+        {
+          "title": "page 4",
+          "description": "Description (optional) page 4",
+          "meta_description": "Meta description page 4",
+          "meta_title": "",
+          "hide_field": ["SEO Page title"],
+          "show_field": ["Content", "Meta description", "Title"]
+        },
+        {
+          "title": "page 5",
+          "description": "Description (optional) page 5",
+          "meta_description": "",
+          "meta_title": "Page title page 5",
+          "hide_field": ["Meta description"],
+          "show_field": ["Content", "SEO Page title", "Title"]
+        }
+      ],
+      "invalid_value": "fake_page",
+      "valid_value": "page",
+      "more_characters": "Lorem ipsum dolor sit amet consectetur adipiscing elit vehicula, venenatis natoque urna dui mi et."
+    },
+    "SB_SET_TL_100": {
+      "case_description": "[DB+SF - Function] Kiểm tra tính năng auto translate khi enable auto translate Pages - Page details",
+      "publish_language": "Vietnamese",
+      "language_global_switcher": { "language": "VI" },
+      "locale_info": "vi-vn",
+      "page_data": [
+        {
+          "title": "page A",
+          "description": "!@#$%^",
+          "meta_description": "thêm text ngôn ngữ khác vào đây !@@#$, 在这里添加另一种语言的文本",
+          "meta_title": "Page title page"
+        },
+        {
+          "title": "page B",
+          "description": "edit page",
+          "meta_description": "",
+          "meta_title": ""
+        },
+        {
+          "title": "page C",
+          "description": "delete page",
+          "meta_description": "",
+          "meta_title": ""
+        }
+      ],
+      "page_data_edit": {
+        "title": "page B edit",
+        "description": "!@#$%^",
+        "meta_description": "thêm text ngôn ngữ khác vào đây !@@#$, 在这里添加另一种语言的文本",
+        "meta_title": "Page title page",
+        "handle": "page-b"
+      },
+      "edit_dashboard_translation": {
+        "title": "edit dashboard title",
+        "description": "edit dashboard description",
+        "meta_description": "edit dashboard meta description",
+        "meta_title": "edit dashboard meta title"
+      },
+      "auto_translation_data": {
+        "title": "translated page B edit to Vietnamese",
+        "description": "translated !@#$%^ to Vietnamese",
+        "meta_description": "translated thêm text ngôn ngữ khác vào đây !@@#$, 在这里添加另一种语言的文本 to Vietnamese",
+        "meta_title": "translated Page title page to Vietnamese"
+      },
+      "blank_data": {
+        "title": "",
+        "description": "",
+        "meta_description": "",
+        "meta_title": ""
+      }
+    },
+    "SB_SET_TL_99": {
+      "case_description": "[DB+SF - Function] Kiểm tra tính năng Disable auto translate khi Disable auto translate Pages - Page details",
+      "publish_language": "German",
+      "language_global_switcher": { "language": "DE" },
+      "locale_info": "de-vn",
+      "page_data": [
+        {
+          "title": "page A",
+          "description": "!@#$%^",
+          "meta_description": "thêm text ngôn ngữ khác vào đây !@@#$, 在这里添加另一种语言的文本",
+          "meta_title": "Page title page"
+        },
+        {
+          "title": "page B",
+          "description": "edit page",
+          "meta_description": "",
+          "meta_title": ""
+        },
+        {
+          "title": "page C",
+          "description": "delete page",
+          "meta_description": "",
+          "meta_title": ""
+        }
+      ],
+      "page_data_manual": {
+        "title": "page A manual",
+        "description": "create page",
+        "meta_description": "meta_description manual",
+        "meta_title": "meta_title manual"
+      },
+      "page_data_edit": {
+        "title": "page B edit",
+        "description": "!@#$%^",
+        "meta_description": "thêm text ngôn ngữ khác vào đây !@@#$, 在这里添加另一种语言的文本",
+        "meta_title": "Page title page",
+        "handle": "page-b"
+      },
+      "edit_dashboard_translation": {
+        "title": "edit dashboard title",
+        "description": "edit dashboard description",
+        "meta_description": "edit dashboard meta description",
+        "meta_title": "edit dashboard meta title"
+      },
+      "auto_translation_data": {
+        "title": "translated page B edit to German",
+        "description": "translated !@#$%^ to German",
+        "meta_description": "translated thêm text ngôn ngữ khác vào đây !@@#$, 在这里添加另一种语言的文本 to German",
+        "meta_title": "translated Page title page to German"
+      },
+      "blank_data": {
+        "title": "",
+        "description": "",
+        "meta_description": "",
+        "meta_title": ""
+      }
+    }
+  }
+}

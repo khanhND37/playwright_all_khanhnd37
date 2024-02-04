@@ -1,0 +1,141 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "username": "qe-2@beeketing.net",
+      "password": "Qe2@OCGQE",
+      "domain": "au-multiple-discounts-special.onshopbase.com",
+      "shipping_address": {
+        "email": "testerOCG@mailtothis.com",
+        "first_name": "ShopBase",
+        "last_name": "Auto",
+        "address": "1600 W Loop S",
+        "city": "Los Angeles",
+        "country": "United States",
+        "state": "New York",
+        "country_code": "US",
+        "country_name": "United States",
+        "zipcode": "10001",
+        "phone_number": "0336555555"
+      },
+      "secret_key": "",
+      "gateway_code": ""
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "qe-2@beeketing.net",
+      "password": "Qe2@OCGQE",
+      "domain": "au-multiple-discounts-special-prodtest.onshopbase.com",
+      "shipping_address": {
+        "email": "testerOCG@mailtothis.com",
+        "first_name": "ShopBase",
+        "last_name": "Auto",
+        "address": "1600 W Loop S",
+        "city": "Los Angeles",
+        "country": "United States",
+        "state": "New York",
+        "country_code": "US",
+        "country_name": "United States",
+        "zipcode": "10001",
+        "phone_number": "0336555555"
+      },
+      "secret_key": "",
+      "gateway_code": "",
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "opay-qe-2@beeketing.net",
+      "password": "Opay@123",
+      "domain": "au-multiple-discounts-special.myshopbase.net",
+      "shipping_address": {
+        "email": "testerOCG@mailtothis.com",
+        "first_name": "ShopBase",
+        "last_name": "Auto",
+        "address": "1600 W Loop S",
+        "city": "Los Angeles",
+        "country": "United States",
+        "state": "New York",
+        "country_code": "US",
+        "country_name": "United States",
+        "zipcode": "10001",
+        "phone_number": "0336555555"
+      },
+      "secret_key": "",
+      "gateway_code": ""
+    }
+  },
+  "cases": {
+    "SB_DRIVEN_FIX_AMT": [
+      {
+        "case_id": "SB_DC_MD_SB_37",
+        "case_name": "Apply nhiều discount Fixamount có sử dụng apply for specific collection + không apply once per order",
+        "products_checkout": [
+          {
+            "name": "Bikini",
+            "quantity": 1,
+            "price": 40
+          },
+          {
+            "name": "Bikini 2",
+            "quantity": 1,
+            "price": 30
+          },
+          {
+            "name": "Post purchase",
+            "quantity": 1,
+            "price": 50
+          }
+        ],
+        "discount_code": ["SB_37_Discount_Fixamt", "SB_37_Discount_Fixamt_1"],
+        "expect_discount_amount": 24
+      },
+      {
+        "case_id": "SB_DC_MD_SB_36",
+        "case_name": "Apply nhiều discount Fixamount có sử dụng apply for specific product + không apply once per order",
+        "products_checkout": [
+          {
+            "name": "Bikini",
+            "quantity": 1,
+            "price": 40
+          },
+          {
+            "name": "Bikini 2",
+            "quantity": 1,
+            "price": 30
+          },
+          {
+            "name": "Post purchase",
+            "quantity": 1,
+            "price": 50
+          }
+        ],
+        "discount_code": ["SB_36_Discount_Fixamt", "SB_36_Discount_Fixamt_1"],
+        "expect_discount_amount": 24
+      },
+      {
+        "case_id": "SB_DC_MD_SB_35",
+        "case_name": "Apply cả discount Buy x get y và discount fix amount cùng target đến cùng một product",
+        "products_checkout": [
+          {
+            "name": "Bikini",
+            "quantity": 2,
+            "price": 40
+          },
+          {
+            "name": "Bikini 2",
+            "quantity": 2,
+            "price": 30
+          },
+          {
+            "name": "Post purchase",
+            "quantity": 2,
+            "price": 50
+          }
+        ],
+        "discount_code": ["SB_35_Discount_Fixamt", "SB_34_35_capture_buy_x_get_y"],
+        "expect_discount_amount": 100
+      }
+    ]
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "env": {
+    "prod": {
+      "username": "quanle1@beeketing.net",
+      "password": "Ocg@123456",
+      "user_id": 11215901,
+      "shop_id": 10441601,
+      "api": "https://api.shopbase.com",
+      "shop_name": "au-billing-change-plan-with-card-declined",
+      "domain": "au-billing-change-plan-with-card-declined.onshopbase.com",
+      "hive_domain": "hive.shopbase.com",
+      "hive_username": "shopbase",
+      "hive_password": "UxsLHz^Wjkf35*/w"
+    },
+    "prodtest": {
+      "username": "quanle1@beeketing.net",
+      "password": "Ocg@123456",
+      "user_id": 11215901,
+      "shop_id": 10441604,
+      "api": "https://prod-test-api.shopbase.com",
+      "shop_name": "au-billing-change-plan-with-card-declined-prodtest",
+      "domain": "au-billing-change-plan-with-card-declined-prodtest.onshopbase.com",
+      "hive_domain": "hive.shopbase.com",
+      "hive_username": "shopbase",
+      "hive_password": "UxsLHz^Wjkf35*/w"
+    },
+    "dev": {
+      "username": "quanle1@beeketing.net",
+      "password": "Abc@12345",
+      "user_id": 85412,
+      "shop_id": 10328457,
+      "api": "https://gapi.dev.shopbase.net",
+      "shop_name": "au-billing-change-plan-with-card-declined",
+      "domain": "au-billing-change-plan-with-card-declined.myshopbase.net",
+      "hive_username": "shopbase",
+      "hive_password": "123456",
+      "hive_domain": "hive.dev.shopbase.net"
+    }
+  },
+  "timeout": 300000,
+  "profile_info_declined": {
+    "first_name": "add_card_declined_OCG",
+    "last_name": "QE",
+    "birthday": 894067200,
+    "country": "Vietnam",
+    "address": "xxx",
+    "social_platform": "Facebook",
+    "personal_website": "xxx",
+    "phone_user": "0982821254",
+    "calling_code": "84"
+  },
+  "profile_info_enable": {
+    "first_name": "OCG",
+    "last_name": "QE",
+    "birthday": 894067200,
+    "country": "Vietnam",
+    "address": "xxx",
+    "social_platform": "Facebook",
+    "personal_website": "xxx",
+    "phone_user": "0982821254",
+    "calling_code": "84"
+  },
+  "cases": {
+    "SB_BAL_BILL_BFL_504": {
+      "discount": {
+        "code": "datatest10",
+        "value": 10,
+        "type": "percentage"
+      },
+      "plan": "Pro Base"
+    },
+    "SB_BAL_BILL_BFL_481": {
+      "charge_sub_status": true,
+      "toast_danger": "Processor Declined",
+      "alert_1": "We have tried to collect payment for your ",
+      "alert_2": " bill but it did fail. Please update your billing information with a valid payment method now to avoid any interruption to your store.",
+      "billing_status": "Pending",
+      "filter_invoice": "subscription_renew",
+      "filter_tag": "Status: Open",
+      "invoice_fail": {
+        "content": "Subscription fee collecting",
+        "status": "Open",
+        "type": "OUT",
+        "detail": "Paid for subscription bill ",
+        "transactions_type": "OUT",
+        "transactions_content": "The payment for the subscription bill ",
+        "transactions_status": "Failed"
+      },
+      "text_popup_retry": "Your retry is processing. We will send an email to notify you of the result after about 1 - 2 minutes. Thank you.",
+      "invoice_paid": {
+        "content": "Subscription fee collecting",
+        "type": "OUT",
+        "detail": "Paid for subscription bill ",
+        "transactions_type": "OUT",
+        "transactions_content": "Retry The payment for the subscription bill ",
+        "transactions_status": "Paid"
+      }
+    }
+  }
+}

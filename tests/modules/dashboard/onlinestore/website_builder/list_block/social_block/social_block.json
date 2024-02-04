@@ -1,0 +1,362 @@
+{
+  "env": {
+    "dev": {
+      "domain": "wb-social-block.myshopbase.net",
+      "shop_name": "wb-social-block",
+      "creator_url": "https://creator.sbdev.tk",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "user_id": 73800,
+      "shop_id": 10322904,
+      "product": "product-test",
+      "variant": "product-1000000000151469",
+      "page_id": 17718
+    },
+    "prodtest": {
+      "domain": "wb-social-block-prodtest.onshopbase.com",
+      "shop_name": "wb-social-block-prodtest",
+      "creator_url": "https://test.creator.eco",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "user_id": 73782,
+      "shop_id": 10379115,
+      "product": "product-test",
+      "variant": "product-1000000445567994",
+      "page_id": 9802,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "prod": {
+      "domain": "wb-social-block.onshopbase.com",
+      "shop_name": "wb-social-block",
+      "api": "https://api.shopbase.com",
+      "creator_url": "https://creator.eco",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "user_id": 73782,
+      "shop_id": 10379114,
+      "product": "product-test-social-bar",
+      "variant": "product-1000000471796498",
+      "page_id": 259374
+    }
+  },
+  "cases": {
+    "SB_WEB_BUILDER_SOCIAL_BLOCK_1": {
+      "description": "Check default setting when add new block",
+      "dnd_blocks": {
+        "from": {
+          "category": "Basics",
+          "template": "Social bar"
+        },
+        "to": {
+          "position": {
+            "section": 1,
+            "block": 1
+          }
+        }
+      },
+      "expect": {
+        "snapshot_preview_auto": "01.1_preview_auto_add_block.png",
+        "snapshot_storefront_auto": "01.1_storefront_auto_add_block.png",
+        "snapshot_preview_manual": "01.2_preview_manual_add_block.png",
+        "snapshot_storefront_manual": "01.2_storefront_manual_add_block.png"
+      }
+    },
+    "SB_WEB_BUILDER_SOCIAL_BLOCK_2": {
+      "description": "Check display social block when change data",
+      "block_edited": "Social bar edited",
+      "category": "Test template auto",
+      "expect": {
+        "snapshot_preview_change_data": "02_preview_change_data.png",
+        "snapshot_storefront_change_data": "02_storefront_change_data.png"
+      }
+    },
+    "SB_WEB_BUILDER_SOCIAL_BLOCK_3": {
+      "description": "Check hiển thị Social block khi Brand color = ON/OFF và setting Shape",
+      "data": [
+        {
+          "brand_color": "ON",
+          "shape": "Square",
+          "snapshot_preview": "03.1_preview_square.png",
+          "snapshot_storefront": "03.1_storefront_square.png"
+        },
+        {
+          "brand_color": "ON",
+          "shape": "Round",
+          "snapshot_preview": "03.2_preview_round.png",
+          "snapshot_storefront": "03.2_storefront_round.png"
+        },
+        {
+          "brand_color": "ON",
+          "shape": "Circle",
+          "snapshot_preview": "03.3_preview_circle.png",
+          "snapshot_storefront": "03.3_storefront_circle.png"
+        },
+        {
+          "brand_color": "OFF",
+          "shape": "Square",
+          "snapshot_preview": "04.1_preview_square.png",
+          "snapshot_storefront": "04.1_storefront_square.png"
+        },
+        {
+          "brand_color": "OFF",
+          "shape": "Round",
+          "snapshot_preview": "04.2_preview_round.png",
+          "snapshot_storefront": "04.2_storefront_round.png"
+        },
+        {
+          "brand_color": "OFF",
+          "shape": "Circle",
+          "snapshot_preview": "04.3_preview_circle.png",
+          "snapshot_storefront": "04.3_storefront_circle.png"
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_SOCIAL_BLOCK_5": {
+      "description": "Check hiển thị social block khi setting Icon align",
+      "block_test": "Setting icon align",
+      "category": "Test template auto",
+      "data": [
+        {
+          "icon_align": "Center",
+          "snapshot_preview": "05.1_preview_align_center.png",
+          "snapshot_storefront": "05.1_storefront_align_center.png"
+        },
+        {
+          "icon_align": "Right",
+          "snapshot_preview": "05.2_preview_align_right.png",
+          "snapshot_storefront": "05.2_storefront_align_right.png"
+        },
+        {
+          "icon_align": "Left",
+          "snapshot_preview": "05.1_preview_align_left.png",
+          "snapshot_storefront": "05.1_storefront_align_left.png"
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_SOCIAL_BLOCK_6": {
+      "description": "Check Add Social Link",
+      "socials": [
+        {
+          "label": "facebook",
+          "link": {
+            "url": "https://www.facebook.com/"
+          }
+        },
+        {
+          "label": "instagram",
+          "link": {
+            "url": "https://www.instagram.com/"
+          }
+        },
+        {
+          "label": "twitter",
+          "link": {
+            "url": "https://twitter.com/"
+          }
+        },
+        {
+          "label": "tiktok",
+          "link": {
+            "url": "https://www.tiktok.com/"
+          }
+        },
+        {
+          "label": "youtube",
+          "link": {
+            "url": "https://www.youtube.com/watch?v=XAfHoNAn8"
+          }
+        },
+        {
+          "label": "whatsapp",
+          "link": {
+            "url": "https://www.whatsapp.com"
+          }
+        },
+        {
+          "label": "wechat",
+          "link": {
+            "url": "https://www.wechat.com"
+          }
+        },
+        {
+          "label": "weibo",
+          "link": {
+            "url": "https://www.weibo.com"
+          }
+        },
+        {
+          "label": "qq",
+          "link": {
+            "url": "https://www.qq.com"
+          }
+        },
+        {
+          "label": "telegram",
+          "link": {
+            "url": "https://www.telegram.com"
+          }
+        },
+        {
+          "label": "snapchat",
+          "link": {
+            "url": "https://www.snapchat.com"
+          }
+        },
+        {
+          "label": "amazon",
+          "link": {
+            "url": "https://www.amazon.com"
+          }
+        },
+        {
+          "label": "discord",
+          "link": {
+            "url": "https://www.discord.com"
+          }
+        },
+        {
+          "label": "reddit",
+          "link": {
+            "url": "https://www.reddit.com"
+          }
+        },
+        {
+          "label": "quora",
+          "link": {
+            "url": "https://www.quora.com"
+          }
+        },
+        {
+          "label": "skype",
+          "link": {
+            "url": "https://www.skype.com"
+          }
+        },
+        {
+          "label": "microsoft",
+          "link": {
+            "url": "https://www.microsoft.com"
+          }
+        },
+        {
+          "label": "linkedin",
+          "link": {
+            "url": "https://www.linkedin.com"
+          }
+        },
+        {
+          "label": "pinterest",
+          "link": {
+            "url": "https://www.pinterest.com"
+          }
+        },
+        {
+          "label": "line",
+          "link": {
+            "url": "https://www.line.com"
+          }
+        },
+        {
+          "label": "vine",
+          "link": {
+            "url": "https://www.vine.com"
+          }
+        },
+        {
+          "label": "tumblr",
+          "link": {
+            "url": "https://www.tumblr.com"
+          }
+        },
+        {
+          "label": "soundcloud",
+          "link": {
+            "url": "https://www.soundcloud.com"
+          }
+        },
+        {
+          "label": "spotify",
+          "link": {
+            "url": "https://www.spotify.com"
+          }
+        },
+        {
+          "label": "blogger",
+          "link": {
+            "url": "https://www.blogger.com"
+          }
+        },
+        {
+          "label": "medium",
+          "link": {
+            "url": "https://www.medium.com"
+          }
+        },
+        {
+          "label": "messenger",
+          "link": {
+            "url": "https://www.messenger.com"
+          }
+        },
+        {
+          "label": "slack",
+          "link": {
+            "url": "https://www.slack.com"
+          }
+        },
+        {
+          "label": "zalo",
+          "link": {
+            "url": "https://www.zalo.com"
+          }
+        },
+        {
+          "label": "default",
+          "link": {
+            "url": "https://www.default.com"
+          }
+        }
+      ],
+      "settingShape": [
+        {
+          "shape": "Square",
+          "snapshot_preview": "06.1_preview_shape_square_full_icon.png",
+          "snapshot_storefront": "06.1_storefront_shape_square_full_icon.png"
+        },
+        {
+          "shape": "Round",
+          "brand_color": "OFF",
+          "snapshot_preview": "06.2_preview_shape_round_full_icon.png",
+          "snapshot_storefront": "06.2_storefront_shape_round_full_icon.png"
+        },
+        {
+          "shape": "Circle",
+          "snapshot_preview": "06.3_preview_shape_circle_full_icon.png",
+          "snapshot_storefront": "06.3_storefront_shape_circle_full_icon.png"
+        }
+      ],
+      "expect": {
+        "snapshot_preview": "06_preview_no_shape_full_icon.png",
+        "snapshot_storefront": "06_storefront_no_shape_full_icon.png"
+      }
+    },
+    "SB_WEB_BUILDER_SOCIAL_BLOCK_7": {
+      "description": "Check sửa, xóa, drap/drop icon",
+      "socials": {
+        "label": "google",
+        "link": {
+          "target": "",
+          "url": "https://www.google.com/"
+        }
+      },
+      "expect": {
+        "snapshot_preview_edit": "07_preview_edit_icon.png",
+        "snapshot_preview_delete": "07_preview_delete_icon.png",
+        "snapshot_storefront_edit": "07_storefront_edit_icon.png",
+        "snapshot_storefront_delete": "07_storefront_delete_icon.png"
+      }
+    }
+  }
+}

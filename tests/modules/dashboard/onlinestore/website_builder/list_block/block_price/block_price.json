@@ -1,0 +1,715 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-price.myshopbase.net",
+      "shop_name": "au-price",
+      "shop_id": 10326691,
+      "username": "dpro-qe-1@beeketing.net  ",
+      "password": "43AhIn|VWp;[?9&",
+      "user_id": 89797,
+      "theme_id": 3163317,
+      "add_section": {
+        "parent_position": {
+          "section": 1
+        },
+        "template": "Single column"
+      },
+      "section_name": {
+        "content": "Test Price"
+      },
+      "dnd_blank_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 1
+          },
+          "isBottom": false
+        }
+      },
+      "web_base_id": 1,
+      "template_name": "Blank page",
+      "cases": {
+        "SB_WEB_BUILDER_PRD_40": {
+          "shop_creator": {
+            "domain": "au-price-creator.myshopbase.net",
+            "shop_name": "au-price-creator",
+            "theme_id": 3164054
+          },
+          "add_block": {
+            "from": {
+              "category": "Basics",
+              "template": "Product price"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "column": 1
+              },
+              "isBottom": false
+            }
+          }
+        }
+      }
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-price.onshopbase.com",
+      "shop_name": "au-price",
+      "shop_id": 10427481,
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "theme_id": 1389558,
+      "add_section": {
+        "parent_position": {
+          "section": 1
+        },
+        "template": "Single column"
+      },
+      "section_name": {
+        "content": "Test Price"
+      },
+      "dnd_blank_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 1
+          },
+          "isBottom": false
+        }
+      },
+      "web_base_id": 1,
+      "template_name": "Blank page",
+      "cases": {
+        "SB_WEB_BUILDER_PRD_40": {
+          "shop_creator": {
+            "domain": "au-price-creator.onshopbase.com",
+            "shop_name": "au-price-creator",
+            "theme_id": 1391082
+          },
+          "add_block": {
+            "from": {
+              "category": "Basics",
+              "template": "Product price"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "column": 1
+              },
+              "isBottom": false
+            }
+          }
+        }
+      }
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-price-prodtest.onshopbase.com",
+      "shop_name": "au-price-prodtest",
+      "shop_id": 10427481,
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "theme_id": 1400556,
+      "add_section": {
+        "parent_position": {
+          "section": 1
+        },
+        "template": "Single column"
+      },
+      "section_name": {
+        "content": "Test Price"
+      },
+      "dnd_blank_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 1
+          },
+          "isBottom": false
+        }
+      },
+      "web_base_id": 1,
+      "template_name": "Blank page",
+      "cases": {
+        "SB_WEB_BUILDER_PRD_40": {
+          "shop_creator": {
+            "domain": "au-price-creator.onshopbase.com",
+            "shop_name": "au-price-creator",
+            "theme_id": 1391082
+          },
+          "add_block": {
+            "from": {
+              "category": "Basics",
+              "template": "Product price"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "column": 1
+              },
+              "isBottom": false
+            }
+          }
+        }
+      },
+      "accounts_domain": "accounts-test.shopbase.com"
+    }
+  },
+  "cases": {
+    "SB_WEB_BUILDER_PRD_15": {
+      "add_block": {
+        "from": {
+          "category": "Basics",
+          "template": "Product price"
+        },
+        "to": {
+          "position": {
+            "section": 1,
+            "column": 1
+          },
+          "isBottom": false
+        }
+      },
+      "expected": {
+        "snapshot_sidebar_design": "case-15-default-block-product-price-sidebar-design.png",
+        "snapshot_sidebar_content": "case-15-default-block-product-price-sidebar-content.png"
+      }
+    },
+    "SB_WEB_BUILDER_PRD_36": {
+      "add_block": {
+        "from": {
+          "category": "Basics",
+          "template": "Product price"
+        },
+        "to": {
+          "position": {
+            "section": 1,
+            "column": 1
+          },
+          "isBottom": false
+        }
+      }
+    },
+    "SB_WEB_BUILDER_PRD_17": {
+      "add_block": {
+        "from": {
+          "category": "Basics",
+          "template": "Product price"
+        },
+        "to": {
+          "position": {
+            "section": 1,
+            "column": 1
+          },
+          "isBottom": false
+        }
+      },
+      "expected": {
+        "hide_compare_price": "case-17-hide-compare-price.png",
+        "show_compare_price": "case-17-show-compare-price.png",
+        "hide_saving_badge": "case-17-hide-saving-badge.png",
+        "show_saving_badge": "case-17-show-saving-badge.png",
+        "show_option_saving_type": "case-17-show-option-saving-type.png",
+        "show_percentage_preview": "case-17-show-percentage-preview.png",
+        "show_percentage_webfront": "case-17-show-percentage-webfront.png",
+        "show_amount_preview": "case-17-show-amount-preview.png",
+        "show_amount_webfront": "case-17-show-amount-webfront.png",
+        "change_position_element": "case-17-change-position-element.png",
+        "dnd_price_to_price_compare": "case-17-dnd-price-to-price-compare.png",
+        "dnd_price_compare_to_saving_type": "case-17-dnd-price-compare-to-saving-type.png"
+      }
+    },
+    "SB_WEB_BUILDER_PRD_18": {
+      "add_block": {
+        "from": {
+          "category": "Basics",
+          "template": "Product price"
+        },
+        "to": {
+          "position": {
+            "section": 1,
+            "column": 1
+          },
+          "isBottom": false
+        }
+      },
+      "input": {
+        "setting_block": {
+          "style": {
+            "color": {
+              "preset": 6,
+              "hexText": "#FF0000"
+            },
+            "sizes": ["S", "M", "L"],
+            "shapes": [
+              {
+                "shape": {
+                  "label": "shape",
+                  "type": 1
+                }
+              },
+              {
+                "shape": {
+                  "label": "shape",
+                  "type": 2
+                }
+              },
+              {
+                "shape": {
+                  "label": "shape",
+                  "type": 3
+                }
+              }
+            ],
+            "common": [
+              {
+                "align": {
+                  "label": "align_self",
+                  "type": "Right"
+                },
+                "width": {
+                  "label": "width",
+                  "value": {
+                    "unit": "Px",
+                    "value": 200
+                  }
+                },
+                "background": {
+                  "label": "background",
+                  "value": {
+                    "color": {
+                      "preset": 3,
+                      "opacity": 50
+                    }
+                  }
+                },
+                "border": {
+                  "label": "border",
+                  "value": {
+                    "thickness": "s",
+                    "color": {
+                      "preset": 3,
+                      "opacity": 50
+                    }
+                  }
+                },
+                "opacity": {
+                  "label": "opacity",
+                  "config": {
+                    "fill": true,
+                    "number": 100
+                  }
+                },
+                "radius": {
+                  "label": "border_radius",
+                  "config": {
+                    "fill": true,
+                    "number": 0
+                  }
+                },
+                "shadow": {
+                  "label": "box_shadow",
+                  "config": {
+                    "option": "hard",
+                    "size": "M",
+                    "direction": "Top Right"
+                  }
+                },
+                "padding": {
+                  "label": "padding",
+                  "value": {
+                    "top": 5,
+                    "left": 10,
+                    "bottom": 5,
+                    "right": 10,
+                    "input": true
+                  }
+                },
+                "margin": {
+                  "label": "margin",
+                  "value": {
+                    "top": 15,
+                    "left": 20,
+                    "bottom": 15,
+                    "right": 20,
+                    "input": true
+                  }
+                }
+              },
+              {
+                "align": {
+                  "label": "align_self",
+                  "type": "Left"
+                },
+                "width": {
+                  "label": "width",
+                  "value": {
+                    "unit": "%",
+                    "value": 20
+                  }
+                },
+                "background": {
+                  "label": "background",
+                  "value": {
+                    "color": {
+                      "preset": 2
+                    }
+                  }
+                },
+                "border": {
+                  "label": "border",
+                  "value": {
+                    "thickness": "m",
+                    "color": {
+                      "preset": 3,
+                      "opacity": 50
+                    }
+                  }
+                },
+                "opacity": {
+                  "label": "opacity",
+                  "config": {
+                    "fill": true,
+                    "number": 80
+                  }
+                },
+                "radius": {
+                  "label": "border_radius",
+                  "config": {
+                    "fill": true,
+                    "number": 10
+                  }
+                },
+                "shadow": {
+                  "label": "box_shadow",
+                  "config": {
+                    "option": "soft",
+                    "size": "S",
+                    "direction": "Top Left"
+                  }
+                },
+                "padding": {
+                  "label": "padding",
+                  "value": {
+                    "top": 0,
+                    "left": 0,
+                    "bottom": 0,
+                    "right": 0,
+                    "input": true
+                  }
+                },
+                "margin": {
+                  "label": "margin",
+                  "value": {
+                    "top": 15,
+                    "left": 20,
+                    "bottom": 15,
+                    "right": 20,
+                    "input": true
+                  }
+                }
+              },
+              {
+                "align": {
+                  "label": "align_self",
+                  "type": "Center"
+                },
+                "width": {
+                  "label": "width",
+                  "value": {
+                    "unit": "%",
+                    "value": 20
+                  }
+                },
+                "background": {
+                  "label": "background",
+                  "value": {
+                    "color": {
+                      "preset": 2
+                    }
+                  }
+                },
+                "border": {
+                  "label": "border",
+                  "value": {
+                    "thickness": "l",
+                    "color": {
+                      "preset": 5
+                    }
+                  }
+                },
+                "opacity": {
+                  "label": "opacity",
+                  "config": {
+                    "fill": true,
+                    "number": 20
+                  }
+                },
+                "radius": {
+                  "label": "border_radius",
+                  "config": {
+                    "fill": true,
+                    "number": 15
+                  }
+                },
+                "shadow": {
+                  "label": "box_shadow",
+                  "config": {
+                    "option": "hard",
+                    "size": "L",
+                    "direction": "Bottom Left"
+                  }
+                },
+                "padding": {
+                  "label": "padding",
+                  "value": {
+                    "top": 0,
+                    "left": 0,
+                    "bottom": 0,
+                    "right": 0,
+                    "input": true
+                  }
+                },
+                "margin": {
+                  "label": "margin",
+                  "value": {
+                    "top": 15,
+                    "left": 20,
+                    "bottom": 15,
+                    "right": 20,
+                    "input": true
+                  }
+                }
+              },
+              {
+                "align": {
+                  "label": "align_self",
+                  "type": "Center"
+                },
+                "width": {
+                  "label": "width",
+                  "value": {
+                    "unit": "%",
+                    "value": 20
+                  }
+                },
+                "background": {
+                  "label": "background",
+                  "value": {
+                    "color": {
+                      "preset": 2
+                    }
+                  }
+                },
+                "border": {
+                  "label": "border",
+                  "value": {
+                    "thickness": "l",
+                    "color": {
+                      "preset": 5
+                    }
+                  }
+                },
+                "opacity": {
+                  "label": "opacity",
+                  "config": {
+                    "fill": true,
+                    "number": 20
+                  }
+                },
+                "radius": {
+                  "label": "border_radius",
+                  "config": {
+                    "fill": true,
+                    "number": 15
+                  }
+                },
+                "shadow": {
+                  "label": "box_shadow",
+                  "config": {
+                    "option": "hard",
+                    "size": "L",
+                    "direction": "Bottom Left"
+                  }
+                },
+                "padding": {
+                  "label": "padding",
+                  "value": {
+                    "top": 0,
+                    "left": 0,
+                    "bottom": 0,
+                    "right": 0,
+                    "input": true
+                  }
+                },
+                "margin": {
+                  "label": "margin",
+                  "value": {
+                    "top": 15,
+                    "left": 20,
+                    "bottom": 15,
+                    "right": 20,
+                    "input": true
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      "expected": {
+        "change_price_color": "case-18-change-price-color.png"
+      }
+    },
+    "SB_WEB_BUILDER_PRD_38": {
+      "add_block": {
+        "from": {
+          "category": "Basics",
+          "template": "Product price"
+        },
+        "to": {
+          "position": {
+            "section": 1,
+            "column": 1
+          },
+          "isBottom": false
+        }
+      },
+      "input": {
+        "setting_block": {
+          "increase_width": [
+            {
+              "width": {
+                "label": "width",
+                "value": {
+                  "unit": "Px",
+                  "value": 200
+                }
+              }
+            },
+            {
+              "width": {
+                "label": "width",
+                "value": {
+                  "unit": "Px",
+                  "value": 400
+                }
+              }
+            }
+          ],
+          "decrease_width": [
+            {
+              "width": {
+                "label": "width",
+                "value": {
+                  "unit": "Px",
+                  "value": 70
+                }
+              }
+            }
+          ],
+          "resize": {
+            "selector": {
+              "section": 1,
+              "block": 1
+            },
+            "outside": 1377,
+            "inside": 10
+          }
+        }
+      },
+      "expected": {}
+    },
+    "SB_WEB_BUILDER_PRD_39": {
+      "add_block": {
+        "from": {
+          "category": "Basics",
+          "template": "Product price"
+        },
+        "to": {
+          "position": {
+            "section": 1,
+            "column": 1
+          },
+          "isBottom": false
+        }
+      },
+      "input": {},
+      "expected": {
+        "set_none_data_source": "case-39-set-none-data-source.png",
+        "set_product_current_data_source": "case-39-set-product-current-data-source.png",
+        "set_collection_data_source": "case-39-set-collection-data-source.png",
+        "set_blog_data_source": "case-39-set-blog-data-source.png",
+        "set_blog_post_data_source": "case-39-set-blog-post-data-source.png"
+      }
+    },
+    "SB_WEB_BUILDER_PRD_37": {
+      "add_block": {
+        "from": {
+          "category": "Basics",
+          "template": "Product price"
+        },
+        "to": {
+          "position": {
+            "section": 1,
+            "column": 1
+          },
+          "isBottom": false
+        }
+      },
+      "input": {
+        "price_1": 20000,
+        "price_2": 30
+      }
+    },
+    "SB_WEB_BUILDER_PRD_19": {
+      "add_block_price": {
+        "from": {
+          "category": "Basics",
+          "template": "Product price"
+        },
+        "to": {
+          "position": {
+            "section": 1,
+            "column": 1
+          },
+          "isBottom": false
+        }
+      },
+      "add_block_global_switcher": {
+        "from": {
+          "category": "Basics",
+          "template": "Global switcher"
+        },
+        "to": {
+          "position": {
+            "section": 1,
+            "column": 1
+          },
+          "isBottom": false
+        }
+      },
+      "product_handle": "product-test-price",
+      "currency_default": {
+        "value": "USD",
+        "unit": "$"
+      },
+      "currency": {
+        "value": "CNY",
+        "unit": "¥"
+      }
+    }
+  }
+}

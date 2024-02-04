@@ -1,0 +1,122 @@
+{
+  "env": {
+    "prod": {
+      "domain_shopbase": "shopbase.com",
+      "domain_plusbase": "plusbase.com",
+      "domain_printbase": "printbase.com"
+    }
+  },
+  "cases": {
+    "SB_SBL_01": {
+      "data": {
+        "email": "shopbase@beeketing.net",
+        "text": "Start your free 14-day trial of ShopBase",
+        "selector_snapshot": [
+          {
+            "selector": "div.scb-section",
+            "snapshot": "ShopBase_Landing_Section.png"
+          },
+          {
+            "selector": "[id='Ecommerce']",
+            "snapshot": "ShopBase_Landing_Ecommerce.png"
+          },
+          {
+            "selector": "[id='Drop-Shipping']",
+            "snapshot": "ShopBase_Landing_DropShipping.png"
+          },
+          {
+            "selector": "[id='Print-On-Demand']",
+            "snapshot": "ShopBase_Landing_PrintOnDemand.png"
+          },
+          {
+            "selector": "[id='Creators']",
+            "snapshot": "ShopBase_Landing_Creators.png"
+          },
+          {
+            "selector": "div.scb-footer",
+            "snapshot": "ShopBase_Landing_Footer.png"
+          }
+        ]
+      },
+      "expect": {
+        "url_login": "accounts.shopbase.com/sign-in",
+        "url_signup_email": "accounts.shopbase.com/sign-up?email=shopbase",
+        "url_signup": "accounts.shopbase.com/sign-up"
+      }
+    },
+    "SB_SBL_05": {
+      "data": {
+        "email": "shopbase@beeketing.net",
+        "text": "Start your free 14-day trial of PlusBase",
+        "selector_snapshot": [
+          {
+            "selector": "section.discover",
+            "snapshot": "PlusBase_Landing.png"
+          },
+          {
+            "selector": "//h3[normalize-space()='Create an online store']//ancestor::section",
+            "snapshot": "PlusBase_Landing_Profit.png"
+          },
+          {
+            "selector": "//h2[normalize-space()='Get started']//ancestor::div[2]",
+            "snapshot": "PlusBase_Landing_StoreBuilder.png"
+          },
+          {
+            "selector": "div.boost",
+            "snapshot": "PlusBase_Landing_Boostsales.png"
+          },
+          {
+            "selector": "//h3[normalize-space()='Dropshipping']//ancestor::section",
+            "snapshot": "PlusBase_Landing_Catalog.png"
+          },
+          {
+            "selector": "//div[normalize-space()='Features']//parent::div[contains(@class,'footer')]//ancestor::div[contains(@class, 'section')]",
+            "snapshot": "PlusBase_Landing_Footer.png"
+          }
+        ]
+      },
+      "expect": {
+        "url_login": "accounts.shopbase.com/sign-in?plusbase=true",
+        "url_signup_email": "accounts.shopbase.com/sign-up?email=shopbase",
+        "url_signup": "accounts.shopbase.com/sign-up?plusbase=true"
+      }
+    },
+    "SB_SBL_08": {
+      "data": {
+        "email": "shopbase@beeketing.net",
+        "text": "Start your free 14-day trial of PrintBase",
+        "selector_snapshot": [
+          {
+            "selector": "div.content-head",
+            "snapshot": "PrintBase_Landing_Header.png"
+          },
+          {
+            "selector": "//h3[normalize-space()='Create an online store']//ancestor::div[4] ",
+            "snapshot": "PrintBase_Landing_Profit.png"
+          },
+          {
+            "selector": "//h2[normalize-space()='Boost sales with native marketing tools']//ancestor::div[4]",
+            "snapshot": "PrintBase_Landing_BoostSales.png"
+          },
+          {
+            "selector": "//a[normalize-space()='See all PrintBase features']//ancestor::div[4]",
+            "snapshot": "PrintBase_Landing_PrintOnDemand.png"
+          },
+          {
+            "selector": "//form[@id='email-form']//ancestor::div[contains(@class,'section')]",
+            "snapshot": "PrintBase_Landing_PODSolution.png"
+          },
+          {
+            "selector": "//a[normalize-space()='About us']//ancestor::div[4]",
+            "snapshot": "PrintBase_Landing_Footer.png"
+          }
+        ]
+      },
+      "expect": {
+        "url_login": "accounts.shopbase.com/sign-in?printbase=true",
+        "url_signup_email": "accounts.shopbase.com/sign-up?email=shopbase",
+        "url_signup": "accounts.shopbase.com/sign-up?printbase=true"
+      }
+    }
+  }
+}

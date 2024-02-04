@@ -1,0 +1,108 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-payment-shield-necom.onshopbase.com",
+      "shop_name": "au-payment-shield-necom",
+      "user_id": 11260365,
+      "shop_id": 10446213,
+      "username": "qe-2@beeketing.net",
+      "password": "Qe2@OCGQE",
+      "products_checkout": [
+        {
+          "name": "Cairbull Cycling Helmet",
+          "variant_id": 1000010768339429,
+          "quantity": 2
+        }
+      ],
+      "card_shield_domain": "payment-shield.sbprod.tk",
+      "stripe_payment_method_id": 2979225
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-payment-shield-necom-prodtest.onshopbase.com",
+      "shop_name": "au-payment-shield-necom-prodtest",
+      "user_id": 11260365,
+      "shop_id": 10444260,
+      "username": "qe-2@beeketing.net",
+      "password": "Qe2@OCGQE",
+      "accounts_domain": "accounts-test.shopbase.com",
+      "products_checkout": [
+        {
+          "name": "Cairbull Cycling Helmet",
+          "variant_id": 1000010751831680,
+          "quantity": 2
+        }
+      ],
+      "card_shield_domain": "space01.ngochd7.website",
+      "stripe_payment_method_id": 2135624
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-payment-shield-newecom.myshopbase.net",
+      "shop_name": "au-payment-shield-newecom",
+      "user_id": 90246,
+      "shop_id": 10328809,
+      "username": "opay-qe-2@beeketing.net",
+      "password": "Opay@123",
+      "products_checkout": [
+        {
+          "name": "Croptop",
+          "variant_id": 1000001770329082,
+          "quantity": 2
+        }
+      ],
+      "card_shield_domain": "charge-dispute.sbdev.tk",
+      "stripe_payment_method_id": 134483041
+    }
+  },
+  "timeout": 300000,
+  "shipping_method": "Standard Shipping",
+  "shipping_address": {
+    "address1": "814 Mission Street",
+    "address2": "",
+    "city": "Los Angeles",
+    "company": "",
+    "country_code": "DE",
+    "country_name": "Germany",
+    "cpf_or_cnpj_number": "",
+    "first_name": "Shopbase",
+    "last_name": "Auto",
+    "name": "Jena",
+    "phone": "0111111111",
+    "province": "",
+    "province_code": "",
+    "zip": "90001",
+    "remember_me": false
+  },
+  "cases": {
+    "TC_STRIPE_NEWECOM_EMBEDDED": {
+      "data": [
+        {
+          "case_id": "SB_SB_SF_HD_PS_52",
+          "description": "[SF theme New-ecom] Checkout với Stripe credit card có apply proxy domain có PPC",
+          "email": "tester@maildrop.cc",
+          "payment_method_info": {
+            "payment_type": "Stripe",
+            "payment_code": "stripe",
+            "country_code": "DE"
+          },
+          "product_ppc_name": "Bikini",
+          "currency": "EUR"
+        },
+        {
+          "case_id": "SB_SB_SF_HD_PS_56",
+          "description": "[SF theme New-ecom] Checkout với cổng Stripe EU SEPA có apply proxy domain",
+          "email": "tester@maildrop.cc",
+          "payment_method_info": {
+            "payment_type": "SEPA Direct Debit",
+            "payment_code": "SEPA Direct Debit",
+            "country_code": "DE"
+          },
+          "product_ppc_name": "",
+          "currency": "EUR"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1091 @@
+{
+  "api": "https://api.shopbase.com",
+  "domain": "au-source-plus.onshopbase.com",
+  "username": "shopbase@beeketing.net",
+  "password": "Q(f!3Kx+6n;?Us%F",
+  "user_id": 73782,
+  "shop_id": 10298225,
+  "shop_name": "au-source-plus",
+  "timeout": 600000,
+  "param_body": {
+    "type": "all"
+  },
+  "cases": {
+    "DATA_DRIVEN": {
+      "data": [
+        {
+          "description": "[Clone Plus_Plus] Clone product thành công khi chọn [keep both products] với product không có watermark và shop đích không enable watermark",
+          "case_name": "TC_PLB_PLB_CPP_3",
+          "step_1": "Tại list product chọn product cần clone > Mục Action chọn Import product to another > Trường Select the store to import to chọn store au-des-plus.onshopbase.com > Trường If the importing handle exists, process the import as follows chọn keep both products > Click on btn Import",
+          "step_2": "Tại shop thứ 2 Click on icon Process-Verify thông tin hiển thị",
+          "step_3": "Search product > Click vào title product vào màn product detail > Verify các thông tin của product được clone trên dashboard",
+          "step_4": "Verify các thông tin của product được clone ở SF",
+          "watermark": {
+            "enable": false,
+            "type": "image",
+            "store_name": "au_des_plus",
+            "store_logo_url": "https://img.btdmp.com/sbase-file/watermark/shopbase-logo.png",
+            "style": "style1"
+          },
+          "domain": "au-des-plus.onshopbase.com",
+          "shop_name": "au-des-plus",
+          "shop_id": 10298229,
+          "product_name": "Product no watermark",
+          "clone_info": {
+            "type": "product",
+            "second_shop": "au-des-plus.onshopbase.com",
+            "action": "Keep both products",
+            "keep_id": false
+          },
+          "message": "Importing 1 product to store au-des-plus.onshopbase.com",
+          "status": "Completed",
+          "process": "Imported 1/1 products.",
+          "product_validate_detail": {
+            "product_name": "Product no watermark",
+            "product_handle": "product-no-watermark",
+            "price": 50,
+            "number_image": 1,
+            "size": [
+              "S-Black",
+              "green",
+              "White",
+              "Set of 2 (1xS-Black + 1xgreen)",
+              "Set of 2 (1xWhite + 1xgreen)",
+              "Set of 2 (1xS-Black + 1xWhite)",
+              "Set of 3 (1xS-Black + 1xWhite + 1xgreen)"
+            ]
+          },
+          "product_validate_sf": {
+            "product_name": "Product no watermark",
+            "price": 50,
+            "number_image": 1,
+            "color": [
+              "S-Black",
+              "green",
+              "White",
+              "Set of 2 (1xS-Black + 1xgreen)",
+              "Set of 2 (1xWhite + 1xgreen)",
+              "Set of 2 (1xS-Black + 1xWhite)",
+              "Set of 3 (1xS-Black + 1xWhite + 1xgreen)"
+            ]
+          }
+        },
+        {
+          "description": "[Clone Plus_Plus] Clone product thành công khi chọn [keep both products] với product không có watermark và shop đích enable watermark",
+          "case_name": "TC_PLB_PLB_CPP_4",
+          "step_1": "Tại list product chọn Product no watermark > Mục Action chọn Import product to another > Trường Select the store to import to chọn store au-des-plus.onshopbase.com > Trường If the importing handle exists, process the import as follows chọn Keep both products > Click on btn Import",
+          "step_2": "Tại shop thứ 2 Click on icon Process-Verify thông tin hiển thị",
+          "step_3": "Search với title Product no watermark -> Prduct detail > Verify các thông tin của product được clone trên dashboard",
+          "step_4": "Verify các thông tin của product được clone ở SF",
+          "watermark": {
+            "enable": true,
+            "type": "image",
+            "store_name": "au_des_plus",
+            "store_logo_url": "https://img.btdmp.com/sbase-file/watermark/shopbase-logo.png",
+            "style": "style1"
+          },
+          "domain": "au-des-plus.onshopbase.com",
+          "shop_name": "au-des-plus",
+          "shop_id": 10298229,
+          "product_name": "Product no watermark",
+          "clone_info": {
+            "type": "product",
+            "second_shop": "au-des-plus.onshopbase.com",
+            "action": "Keep both products",
+            "keep_id": false
+          },
+          "message": "Importing 1 product to store au-des-plus.onshopbase.com",
+          "status": "Completed",
+          "process": "Imported 1/1 products.",
+          "product_validate_detail": {
+            "product_name": "Product no watermark",
+            "product_handle": "product-no-watermark",
+            "price": 50,
+            "number_image": 1,
+            "size": [
+              "S-Black",
+              "green",
+              "White",
+              "Set of 2 (1xS-Black + 1xgreen)",
+              "Set of 2 (1xWhite + 1xgreen)",
+              "Set of 2 (1xS-Black + 1xWhite)",
+              "Set of 3 (1xS-Black + 1xWhite + 1xgreen)"
+            ]
+          },
+          "product_validate_sf": {
+            "product_name": "Product no watermark",
+            "price": 50,
+            "number_image": 1,
+            "color": [
+              "S-Black",
+              "green",
+              "White",
+              "Set of 2 (1xS-Black + 1xgreen)",
+              "Set of 2 (1xWhite + 1xgreen)",
+              "Set of 2 (1xS-Black + 1xWhite)",
+              "Set of 3 (1xS-Black + 1xWhite + 1xgreen)"
+            ]
+          }
+        },
+        {
+          "description": "[Clone Plus_Plus] Clone product thành công khi chọn [keep both products] với product có watermark và shop đích không enable watermark",
+          "case_name": "TC_PLB_PLB_CPP_5",
+          "step_1": "Tại list product chọn Product has watermark > Mục Action chọn Import product to another > Trường Select the store to import to chọn store au-des-plus.onshopbase.com > Trường If the importing handle exists, process the import as follows chọn [keep both products] > Click on btn Import",
+          "step_2": "Tại shop thứ 2 Click on icon Process-Verify thông tin hiển thị",
+          "step_3": "Search với title Product has watermark -> Prduct detail > Verify các thông tin của product được clone trên dashboard",
+          "step_4": "Verify các thông tin của product được clone ở SF",
+          "watermark": {
+            "enable": false,
+            "type": "image",
+            "store_name": "au_des_plus",
+            "store_logo_url": "https://img.btdmp.com/sbase-file/watermark/shopbase-logo.png",
+            "style": "style1"
+          },
+          "domain": "au-des-plus.onshopbase.com",
+          "shop_name": "au-des-plus",
+          "shop_id": 10298229,
+          "product_name": "Product has watermark",
+          "clone_info": {
+            "type": "product",
+            "second_shop": "au-des-plus.onshopbase.com",
+            "action": "Keep both products",
+            "keep_id": false
+          },
+          "message": "Importing 1 product to store au-des-plus.onshopbase.com",
+          "status": "Completed",
+          "process": "Imported 1/1 products.",
+          "product_validate_detail": {
+            "product_name": "Product has watermark",
+            "product_handle": "product-has-watermark",
+            "price": 50,
+            "number_image": 1,
+            "size": [
+              "S-Black",
+              "green",
+              "White",
+              "Set of 2 (1xS-Black + 1xgreen)",
+              "Set of 2 (1xWhite + 1xgreen)",
+              "Set of 2 (1xS-Black + 1xWhite)",
+              "Set of 3 (1xS-Black + 1xWhite + 1xgreen)"
+            ]
+          },
+          "product_validate_sf": {
+            "product_name": "Product has watermark",
+            "price": 50,
+            "number_image": 1,
+            "color": [
+              "S-Black",
+              "green",
+              "White",
+              "Set of 2 (1xS-Black + 1xgreen)",
+              "Set of 2 (1xWhite + 1xgreen)",
+              "Set of 2 (1xS-Black + 1xWhite)",
+              "Set of 3 (1xS-Black + 1xWhite + 1xgreen)"
+            ]
+          }
+        },
+        {
+          "description": "[Clone Plus_Plus] Clone product thành công khi chọn [keep both products] với product có watermark và shop đích enable watermark",
+          "case_name": "TC_PLB_PLB_CPP_6",
+          "step_1": "Tại list product chọn Product has watermark > Mục Action chọn Import product to another > Trường Select the store to import to chọn store au-des-plus.onshopbase.com > Trường If the importing handle exists, process the import as follows chọn [keep both products] > Click on btn Import",
+          "step_2": "Tại shop thứ 2 Click on icon Process-Verify thông tin hiển thị",
+          "step_3": "Search với title Product has watermark -> Prduct detail > Verify các thông tin của product được clone trên dashboard",
+          "step_4": "Verify các thông tin của product được clone ở SF",
+          "watermark": {
+            "enable": true,
+            "type": "image",
+            "store_name": "au_des_plus",
+            "store_logo_url": "https://img.btdmp.com/sbase-file/watermark/shopbase-logo.png",
+            "style": "style1"
+          },
+          "domain": "au-des-plus.onshopbase.com",
+          "shop_name": "au-des-plus",
+          "shop_id": 10298229,
+          "product_name": "Product has watermark",
+          "clone_info": {
+            "type": "product",
+            "second_shop": "au-des-plus.onshopbase.com",
+            "action": "Keep both products",
+            "keep_id": false
+          },
+          "message": "Importing 1 product to store au-des-plus.onshopbase.com",
+          "status": "Completed",
+          "process": "Imported 1/1 products.",
+          "product_validate_detail": {
+            "product_name": "Product has watermark",
+            "product_handle": "product-has-watermark",
+            "price": 50,
+            "number_image": 1,
+            "size": [
+              "S-Black",
+              "green",
+              "White",
+              "Set of 2 (1xS-Black + 1xgreen)",
+              "Set of 2 (1xWhite + 1xgreen)",
+              "Set of 2 (1xS-Black + 1xWhite)",
+              "Set of 3 (1xS-Black + 1xWhite + 1xgreen)"
+            ]
+          },
+          "product_validate_sf": {
+            "product_name": "Product has watermark",
+            "price": 50,
+            "number_image": 1,
+            "color": [
+              "S-Black",
+              "green",
+              "White",
+              "Set of 2 (1xS-Black + 1xgreen)",
+              "Set of 2 (1xWhite + 1xgreen)",
+              "Set of 2 (1xS-Black + 1xWhite)",
+              "Set of 3 (1xS-Black + 1xWhite + 1xgreen)"
+            ]
+          }
+        },
+        {
+          "description": "[Clone Plus_Plus] Clone product thành công khi chọn [Skip the product ] với product không có watermark và shop đích không enable watermark",
+          "case_name": "TC_PLB_PLB_CPP_9",
+          "step_1": "Tại list product chọn Product no watermark > Mục Action chọn Import product to another > Trường Select the store to import to chọn store au-des-plus.onshopbase.com > Trường If the importing handle exists, process the import as follows chọn Skip the product > Click on btn Import",
+          "step_2": "Tại shop thứ 2 Click on icon Process-Verify thông tin hiển thị",
+          "step_3": "Search với title Product no watermark -> Prduct detail > Verify các thông tin của product được clone trên dashboard",
+          "step_4": "Verify các thông tin của product được clone ở SF",
+          "watermark": {
+            "enable": false,
+            "type": "image",
+            "store_name": "au_des_plus",
+            "store_logo_url": "https://img.btdmp.com/sbase-file/watermark/shopbase-logo.png",
+            "style": "style1"
+          },
+          "domain": "au-des-plus.onshopbase.com",
+          "shop_name": "au-des-plus",
+          "shop_id": 10298229,
+          "product_name": "Product no watermark",
+          "clone_info": {
+            "type": "product",
+            "second_shop": "au-des-plus.onshopbase.com",
+            "action": "Skip the product",
+            "keep_id": false
+          },
+          "message": "Importing 1 product to store au-des-plus.onshopbase.com",
+          "status": "Completed",
+          "process": "Imported 1/1 products.",
+          "product_validate_detail": {
+            "product_name": "Product no watermark",
+            "product_handle": "product-no-watermark",
+            "price": 50,
+            "number_image": 1,
+            "size": [
+              "S-Black",
+              "green",
+              "White",
+              "Set of 2 (1xS-Black + 1xgreen)",
+              "Set of 2 (1xWhite + 1xgreen)",
+              "Set of 2 (1xS-Black + 1xWhite)",
+              "Set of 3 (1xS-Black + 1xWhite + 1xgreen)"
+            ]
+          },
+          "product_validate_sf": {
+            "product_name": "Product no watermark",
+            "price": 50,
+            "number_image": 1,
+            "color": [
+              "S-Black",
+              "green",
+              "White",
+              "Set of 2 (1xS-Black + 1xgreen)",
+              "Set of 2 (1xWhite + 1xgreen)",
+              "Set of 2 (1xS-Black + 1xWhite)",
+              "Set of 3 (1xS-Black + 1xWhite + 1xgreen)"
+            ]
+          }
+        },
+        {
+          "description": "[Clone Plus_Plus] Clone product thành công khi chọn [Skip the product] với product không có watermark và shop đích enable watermark",
+          "case_name": "TC_PLB_PLB_CPP_10",
+          "step_1": "Tại list product chọn Product no watermark > Mục Action chọn Import product to another > Trường Select the store to import to chọn store au-des-plus.onshopbase.com > Trường If the importing handle exists, process the import as follows chọn Skip the product > Click on btn Import",
+          "step_2": "Tại shop thứ 2 Click on icon Process-Verify thông tin hiển thị",
+          "step_3": "Search product > Click vào title product vào màn product detail > Verify các thông tin của product được clone trên dashboard",
+          "step_4": "Verify các thông tin của product được clone ở SF",
+          "watermark": {
+            "enable": true,
+            "type": "image",
+            "store_name": "au_des_plus",
+            "store_logo_url": "https://img.btdmp.com/sbase-file/watermark/shopbase-logo.png",
+            "style": "style1"
+          },
+          "domain": "au-des-plus.onshopbase.com",
+          "shop_name": "au-des-plus",
+          "shop_id": 10298229,
+          "product_name": "Product no watermark",
+          "clone_info": {
+            "type": "product",
+            "second_shop": "au-des-plus.onshopbase.com",
+            "action": "Skip the product",
+            "keep_id": false
+          },
+          "message": "Importing 1 product to store au-des-plus.onshopbase.com",
+          "status": "Completed",
+          "process": "Imported 1/1 products.",
+          "product_validate_detail": {
+            "product_name": "Product no watermark",
+            "product_handle": "product-no-watermark",
+            "price": 50,
+            "number_image": 1,
+            "size": [
+              "S-Black",
+              "green",
+              "White",
+              "Set of 2 (1xS-Black + 1xgreen)",
+              "Set of 2 (1xWhite + 1xgreen)",
+              "Set of 2 (1xS-Black + 1xWhite)",
+              "Set of 3 (1xS-Black + 1xWhite + 1xgreen)"
+            ]
+          },
+          "product_validate_sf": {
+            "product_name": "Product no watermark",
+            "price": 50,
+            "number_image": 1,
+            "color": [
+              "S-Black",
+              "green",
+              "White",
+              "Set of 2 (1xS-Black + 1xgreen)",
+              "Set of 2 (1xWhite + 1xgreen)",
+              "Set of 2 (1xS-Black + 1xWhite)",
+              "Set of 3 (1xS-Black + 1xWhite + 1xgreen)"
+            ]
+          }
+        },
+        {
+          "description": "[Clone Plus_Plus] Clone product thành công khi chọn [Skip the product] với product có watermark và shop đích không enable watermark",
+          "case_name": "TC_PLB_PLB_CPP_11",
+          "step_1": "Tại list product chọn product cần clone > Mục Action chọn Import product to another > Trường Select the store to import to chọn store au-des-plus.onshopbase.com > Trường If the importing handle exists, process the import as follows chọn Skip the product > Click on btn Import",
+          "step_2": "Tại shop thứ 2 Click on icon Process-Verify thông tin hiển thị",
+          "step_3": "Search product > Click vào title product vào màn product detail > Verify các thông tin của product được clone trên dashboard",
+          "step_4": "Verify các thông tin của product được clone ở SF",
+          "watermark": {
+            "enable": false,
+            "type": "image",
+            "store_name": "au_des_plus",
+            "store_logo_url": "https://img.btdmp.com/sbase-file/watermark/shopbase-logo.png",
+            "style": "style1"
+          },
+          "domain": "au-des-plus.onshopbase.com",
+          "shop_name": "au-des-plus",
+          "shop_id": 10298229,
+          "product_name": "Product has watermark",
+          "clone_info": {
+            "type": "product",
+            "second_shop": "au-des-plus.onshopbase.com",
+            "action": "Skip the product",
+            "keep_id": false
+          },
+          "message": "Importing 1 product to store au-des-plus.onshopbase.com",
+          "status": "Completed",
+          "process": "Imported 1/1 products.",
+          "product_validate_detail": {
+            "product_name": "Product has watermark",
+            "product_handle": "product-has-watermark",
+            "price": 50,
+            "number_image": 1,
+            "size": [
+              "S-Black",
+              "green",
+              "White",
+              "Set of 2 (1xS-Black + 1xgreen)",
+              "Set of 2 (1xWhite + 1xgreen)",
+              "Set of 2 (1xS-Black + 1xWhite)",
+              "Set of 3 (1xS-Black + 1xWhite + 1xgreen)"
+            ]
+          },
+          "product_validate_sf": {
+            "product_name": "Product has watermark",
+            "price": 50,
+            "number_image": 1,
+            "color": [
+              "S-Black",
+              "green",
+              "White",
+              "Set of 2 (1xS-Black + 1xgreen)",
+              "Set of 2 (1xWhite + 1xgreen)",
+              "Set of 2 (1xS-Black + 1xWhite)",
+              "Set of 3 (1xS-Black + 1xWhite + 1xgreen)"
+            ]
+          }
+        },
+        {
+          "description": "[Clone Plus_Plus] Clone product thành công khi chọn [Skip the product] với product có watermark và shop đích enable watermark",
+          "case_name": "TC_PLB_PLB_CPP_12",
+          "step_1": "Tại list product chọn product cần clone > Mục Action chọn Import product to another > Trường Select the store to import to chọn store au-des-plus.onshopbase.com > Trường If the importing handle exists, process the import as follows chọn Skip the product > Click on btn Import",
+          "step_2": "Tại shop thứ 2 Click on icon Process-Verify thông tin hiển thị",
+          "step_3": "Search product > Click vào title product vào màn product detail > Verify các thông tin của product được clone trên dashboard",
+          "step_4": "Verify các thông tin của product được clone ở SF",
+          "watermark": {
+            "enable": true,
+            "type": "image",
+            "store_name": "au_des_plus",
+            "store_logo_url": "https://img.btdmp.com/sbase-file/watermark/shopbase-logo.png",
+            "style": "style1"
+          },
+          "domain": "au-des-plus.onshopbase.com",
+          "shop_name": "au-des-plus",
+          "shop_id": 10298229,
+          "product_name": "Product has watermark",
+          "clone_info": {
+            "type": "product",
+            "second_shop": "au-des-plus.onshopbase.com",
+            "action": "Skip the product",
+            "keep_id": false
+          },
+          "message": "Importing 1 product to store au-des-plus.onshopbase.com",
+          "status": "Completed",
+          "process": "Imported 1/1 products.",
+          "product_validate_detail": {
+            "product_name": "Product has watermark",
+            "product_handle": "product-has-watermark",
+            "price": 50,
+            "number_image": 1,
+            "size": [
+              "S-Black",
+              "green",
+              "White",
+              "Set of 2 (1xS-Black + 1xgreen)",
+              "Set of 2 (1xWhite + 1xgreen)",
+              "Set of 2 (1xS-Black + 1xWhite)",
+              "Set of 3 (1xS-Black + 1xWhite + 1xgreen)"
+            ]
+          },
+          "product_validate_sf": {
+            "product_name": "Product has watermark",
+            "price": 50,
+            "number_image": 1,
+            "color": [
+              "S-Black",
+              "green",
+              "White",
+              "Set of 2 (1xS-Black + 1xgreen)",
+              "Set of 2 (1xWhite + 1xgreen)",
+              "Set of 2 (1xS-Black + 1xWhite)",
+              "Set of 3 (1xS-Black + 1xWhite + 1xgreen)"
+            ]
+          }
+        },
+        {
+          "description": "[Clone Plus_Plus] Clone product thành công khi chọn [Override the existing products ] với product không có watermark và shop đích không enable watermark",
+          "case_name": "TC_PLB_PLB_CPP_15",
+          "step_1": "Tại list product chọn Product A > Mục Action chọn Import product to another > Trường Select the store to import to chọn store au-des-plus.onshopbase.com > Trường If the importing handle exists, process the import as follows chọn Override the existing products > Click on btn Import",
+          "step_2": "Tại shop thứ 2 Click on icon Process-Verify thông tin hiển thị",
+          "step_3": "Verify các thông tin của product được clone trên dashboard",
+          "step_4": "Verify các thông tin của product được clone ở SF",
+          "watermark": {
+            "enable": false,
+            "type": "image",
+            "store_name": "au_des_plus",
+            "store_logo_url": "https://img.btdmp.com/sbase-file/watermark/shopbase-logo.png",
+            "style": "style1"
+          },
+          "domain": "au-des-plus.onshopbase.com",
+          "shop_name": "au-des-plus",
+          "shop_id": 10298229,
+          "product_name": "Product no watermark",
+          "clone_info": {
+            "type": "product",
+            "second_shop": "au-des-plus.onshopbase.com",
+            "action": "Override the existing products",
+            "keep_id": false
+          },
+          "message": "Importing 1 product to store au-des-plus.onshopbase.com",
+          "status": "Completed",
+          "process": "Imported 1/1 products.",
+          "product_validate_detail": {
+            "product_name": "Product no watermark",
+            "product_handle": "product-no-watermark",
+            "price": 50,
+            "number_image": 1,
+            "size": [
+              "S-Black",
+              "green",
+              "White",
+              "Set of 2 (1xS-Black + 1xgreen)",
+              "Set of 2 (1xWhite + 1xgreen)",
+              "Set of 2 (1xS-Black + 1xWhite)",
+              "Set of 3 (1xS-Black + 1xWhite + 1xgreen)"
+            ]
+          },
+          "product_validate_sf": {
+            "product_name": "Product no watermark",
+            "price": 50,
+            "number_image": 1,
+            "color": [
+              "S-Black",
+              "green",
+              "White",
+              "Set of 2 (1xS-Black + 1xgreen)",
+              "Set of 2 (1xWhite + 1xgreen)",
+              "Set of 2 (1xS-Black + 1xWhite)",
+              "Set of 3 (1xS-Black + 1xWhite + 1xgreen)"
+            ]
+          }
+        },
+        {
+          "description": "[Clone Plus_Plus] Clone product thành công khi chọn [Override the existing products] với product có watermark và shop đích không enable watermark",
+          "case_name": "TC_PLB_PLB_CPP_17",
+          "step_1": "Tại list product chọn Product A > Mục Action chọn Import product to another > Trường Select the store to import to chọn store au-des-plus.onshopbase.com > Trường If the importing handle exists, process the import as follows chọn Override the existing products > Click on btn Import",
+          "step_2": "Tại shop thứ 2 Click on icon Process-Verify thông tin hiển thị",
+          "step_3": "Verify các thông tin của product được clone trên dashboard",
+          "step_4": "Verify các thông tin của product được clone ở SF",
+          "watermark": {
+            "enable": false,
+            "type": "image",
+            "store_name": "au_des_plus",
+            "store_logo_url": "https://img.btdmp.com/sbase-file/watermark/shopbase-logo.png",
+            "style": "style1"
+          },
+          "domain": "au-des-plus.onshopbase.com",
+          "shop_name": "au-des-plus",
+          "shop_id": 10298229,
+          "product_name": "Product has watermark",
+          "clone_info": {
+            "type": "product",
+            "second_shop": "au-des-plus.onshopbase.com",
+            "action": "Override the existing products",
+            "keep_id": false
+          },
+          "message": "Importing 1 product to store au-des-plus.onshopbase.com",
+          "status": "Completed",
+          "process": "Imported 1/1 products.",
+          "product_validate_detail": {
+            "product_name": "Product has watermark",
+            "product_handle": "product-has-watermark",
+            "price": 50,
+            "number_image": 1,
+            "size": [
+              "S-Black",
+              "green",
+              "White",
+              "Set of 2 (1xS-Black + 1xgreen)",
+              "Set of 2 (1xWhite + 1xgreen)",
+              "Set of 2 (1xS-Black + 1xWhite)",
+              "Set of 3 (1xS-Black + 1xWhite + 1xgreen)"
+            ]
+          },
+          "product_validate_sf": {
+            "product_name": "Product has watermark",
+            "price": 50,
+            "number_image": 1,
+            "color": [
+              "S-Black",
+              "green",
+              "White",
+              "Set of 2 (1xS-Black + 1xgreen)",
+              "Set of 2 (1xWhite + 1xgreen)",
+              "Set of 2 (1xS-Black + 1xWhite)",
+              "Set of 3 (1xS-Black + 1xWhite + 1xgreen)"
+            ]
+          }
+        },
+        {
+          "description": "[Clone Plus_Plus] Clone product thành công khi chọn [Override the existing products] với product có watermark và shop đích enable watermark",
+          "case_name": "TC_PLB_PLB_CPP_18",
+          "step_1": "Tại list product chọn Product A > Mục Action chọn Import product to another > Trường Select the store to import to chọn store au-des-plus.onshopbase.com > Trường If the importing handle exists, process the import as follows chọn Override the existing products > Click on btn Import",
+          "step_2": "Tại shop thứ 2 Click on icon Process-Verify thông tin hiển thị",
+          "step_3": "Verify các thông tin của product được clone trên dashboard",
+          "step_4": "Verify các thông tin của product được clone ở SF",
+          "watermark": {
+            "enable": true,
+            "type": "image",
+            "store_name": "au_des_plus",
+            "store_logo_url": "https://img.btdmp.com/sbase-file/watermark/shopbase-logo.png",
+            "style": "style1"
+          },
+          "domain": "au-des-plus.onshopbase.com",
+          "shop_name": "au-des-plus",
+          "shop_id": 10298229,
+          "product_name": "Product has watermark",
+          "clone_info": {
+            "type": "product",
+            "second_shop": "au-des-plus.onshopbase.com",
+            "action": "Override the existing products",
+            "keep_id": false
+          },
+          "message": "Importing 1 product to store au-des-plus.onshopbase.com",
+          "status": "Completed",
+          "process": "Imported 1/1 products.",
+          "product_validate_detail": {
+            "product_name": "Product has watermark",
+            "product_handle": "product-has-watermark",
+            "price": 50,
+            "number_image": 1,
+            "size": [
+              "S-Black",
+              "green",
+              "White",
+              "Set of 2 (1xS-Black + 1xgreen)",
+              "Set of 2 (1xWhite + 1xgreen)",
+              "Set of 2 (1xS-Black + 1xWhite)",
+              "Set of 3 (1xS-Black + 1xWhite + 1xgreen)"
+            ]
+          },
+          "product_validate_sf": {
+            "product_name": "Product has watermark",
+            "price": 50,
+            "number_image": 1,
+            "color": [
+              "S-Black",
+              "green",
+              "White",
+              "Set of 2 (1xS-Black + 1xgreen)",
+              "Set of 2 (1xWhite + 1xgreen)",
+              "Set of 2 (1xS-Black + 1xWhite)",
+              "Set of 3 (1xS-Black + 1xWhite + 1xgreen)"
+            ]
+          }
+        }
+      ]
+    },
+    "CLONE_MULTI_PRODUCT": {
+      "data": [
+        {
+          "description": "[Clone Plus_Plus] Clone nhiều product thành công khi chọn [keep both products]",
+          "case_name": "TC_PLB_PLB_CPP_8",
+          "step_1": "Tại list product chọn product cần clone > Mục Action chọn Import product to another > Trường Select the store to import to chọn store au-des-plus.onshopbase.com > Trường If the importing handle exists, process the import as follows chọn Keep both products > Click on btn Import",
+          "step_2": "Tại shop thứ 2 Click on icon Process-Verify thông tin hiển thị",
+          "step_3": "Verify số lượng product trong list",
+          "step_4": "Verify các thông tin của product được clone trên dashboard",
+          "step_5": "Verify các thông tin của product được clone ở SF",
+          "domain": "au-des-plus.onshopbase.com",
+          "shop_name": "au-des-plus",
+          "shop_id": 10298229,
+          "search_product_title": "Product test",
+          "clone_info": {
+            "type": "product",
+            "second_shop": "au-des-plus.onshopbase.com",
+            "action": "Keep both products",
+            "keep_id": false
+          },
+          "message": "Importing 5 products to store au-des-plus.onshopbase.com",
+          "status": "Completed",
+          "process": "Imported 5/5 products.",
+          "number_product": "5 products selected",
+          "product_validate_detail": [
+            {
+              "product_name": "Product test A",
+              "price": 50,
+              "number_image": 1,
+              "size": [
+                "S-Black",
+                "green",
+                "White",
+                "Set of 2 (1xS-Black + 1xgreen)",
+                "Set of 2 (1xWhite + 1xgreen)",
+                "Set of 2 (1xS-Black + 1xWhite)",
+                "Set of 3 (1xS-Black + 1xWhite + 1xgreen)"
+              ]
+            },
+            {
+              "product_name": "Product test B",
+              "price": 50,
+              "number_image": 1,
+              "size": [
+                "S-Black",
+                "green",
+                "White",
+                "Set of 2 (1xS-Black + 1xgreen)",
+                "Set of 2 (1xWhite + 1xgreen)",
+                "Set of 2 (1xS-Black + 1xWhite)",
+                "Set of 3 (1xS-Black + 1xWhite + 1xgreen)"
+              ]
+            },
+            {
+              "product_name": "Product test C",
+              "price": 50,
+              "number_image": 1,
+              "size": [
+                "S-Black",
+                "green",
+                "White",
+                "Set of 2 (1xS-Black + 1xgreen)",
+                "Set of 2 (1xWhite + 1xgreen)",
+                "Set of 2 (1xS-Black + 1xWhite)",
+                "Set of 3 (1xS-Black + 1xWhite + 1xgreen)"
+              ]
+            },
+            {
+              "product_name": "Product test D",
+              "price": 50,
+              "number_image": 1,
+              "size": [
+                "S-Black",
+                "green",
+                "White",
+                "Set of 2 (1xS-Black + 1xgreen)",
+                "Set of 2 (1xWhite + 1xgreen)",
+                "Set of 2 (1xS-Black + 1xWhite)",
+                "Set of 3 (1xS-Black + 1xWhite + 1xgreen)"
+              ]
+            },
+            {
+              "product_name": "Product test E",
+              "price": 50,
+              "number_image": 1,
+              "size": [
+                "S-Black",
+                "green",
+                "White",
+                "Set of 2 (1xS-Black + 1xgreen)",
+                "Set of 2 (1xWhite + 1xgreen)",
+                "Set of 2 (1xS-Black + 1xWhite)",
+                "Set of 3 (1xS-Black + 1xWhite + 1xgreen)"
+              ]
+            }
+          ],
+          "product_validate_sf": [
+            {
+              "product_name": "Product test A",
+              "product_handle": "product-test-a",
+              "price": 50,
+              "number_image": 1,
+              "color": [
+                "S-Black",
+                "green",
+                "White",
+                "Set of 2 (1xS-Black + 1xgreen)",
+                "Set of 2 (1xWhite + 1xgreen)",
+                "Set of 2 (1xS-Black + 1xWhite)",
+                "Set of 3 (1xS-Black + 1xWhite + 1xgreen)"
+              ]
+            },
+            {
+              "product_name": "Product test B",
+              "product_handle": "product-test-b",
+              "price": 50,
+              "number_image": 1,
+              "color": [
+                "S-Black",
+                "green",
+                "White",
+                "Set of 2 (1xS-Black + 1xgreen)",
+                "Set of 2 (1xWhite + 1xgreen)",
+                "Set of 2 (1xS-Black + 1xWhite)",
+                "Set of 3 (1xS-Black + 1xWhite + 1xgreen)"
+              ]
+            },
+            {
+              "product_name": "Product test C",
+              "product_handle": "product-test-c",
+              "price": 50,
+              "number_image": 1,
+              "color": [
+                "S-Black",
+                "green",
+                "White",
+                "Set of 2 (1xS-Black + 1xgreen)",
+                "Set of 2 (1xWhite + 1xgreen)",
+                "Set of 2 (1xS-Black + 1xWhite)",
+                "Set of 3 (1xS-Black + 1xWhite + 1xgreen)"
+              ]
+            },
+            {
+              "product_name": "Product test D",
+              "product_handle": "product-test-d",
+              "price": 50,
+              "number_image": 1,
+              "color": [
+                "S-Black",
+                "green",
+                "White",
+                "Set of 2 (1xS-Black + 1xgreen)",
+                "Set of 2 (1xWhite + 1xgreen)",
+                "Set of 2 (1xS-Black + 1xWhite)",
+                "Set of 3 (1xS-Black + 1xWhite + 1xgreen)"
+              ]
+            },
+            {
+              "product_name": "Product test E",
+              "product_handle": "product-test-e",
+              "price": 50,
+              "number_image": 1,
+              "color": [
+                "S-Black",
+                "green",
+                "White",
+                "Set of 2 (1xS-Black + 1xgreen)",
+                "Set of 2 (1xWhite + 1xgreen)",
+                "Set of 2 (1xS-Black + 1xWhite)",
+                "Set of 3 (1xS-Black + 1xWhite + 1xgreen)"
+              ]
+            }
+          ]
+        },
+        {
+          "description": " [Clone Plus_Plus] Clone nhiều product thành công khi chọn [Skip the product]",
+          "case_name": "TC_PLB_PLB_CPP_14",
+          "step_1": "Tại list product chọn product cần clone > Mục Action chọn Import product to another > Trường Select the store to import to chọn store au-des-plus.onshopbase.com > Trường If the importing handle exists, process the import as follows chọn [Skip the product] > Click on btn Import",
+          "step_2": "Tại shop thứ 2 Click on icon Process-Verify thông tin hiển thị",
+          "step_3": "Verify số lượng product trong list",
+          "step_4": "Verify các thông tin của product được clone trên dashboard",
+          "step_5": "Verify các thông tin của product được clone ở SF",
+          "domain": "au-des-plus.onshopbase.com",
+          "shop_name": "au-des-plus",
+          "shop_id": 10298229,
+          "search_product_title": "Product test",
+          "clone_info": {
+            "type": "product",
+            "second_shop": "au-des-plus.onshopbase.com",
+            "action": "Keep both products",
+            "keep_id": false
+          },
+          "message": "Importing 5 products to store au-des-plus.onshopbase.com",
+          "status": "Completed",
+          "process": "Imported 5/5 products.",
+          "number_product": "5 products selected",
+          "product_validate_detail": [
+            {
+              "product_name": "Product test A",
+              "price": 50,
+              "number_image": 1,
+              "size": [
+                "S-Black",
+                "green",
+                "White",
+                "Set of 2 (1xS-Black + 1xgreen)",
+                "Set of 2 (1xWhite + 1xgreen)",
+                "Set of 2 (1xS-Black + 1xWhite)",
+                "Set of 3 (1xS-Black + 1xWhite + 1xgreen)"
+              ]
+            },
+            {
+              "product_name": "Product test B",
+              "price": 50,
+              "number_image": 1,
+              "size": [
+                "S-Black",
+                "green",
+                "White",
+                "Set of 2 (1xS-Black + 1xgreen)",
+                "Set of 2 (1xWhite + 1xgreen)",
+                "Set of 2 (1xS-Black + 1xWhite)",
+                "Set of 3 (1xS-Black + 1xWhite + 1xgreen)"
+              ]
+            },
+            {
+              "product_name": "Product test C",
+              "price": 50,
+              "number_image": 1,
+              "size": [
+                "S-Black",
+                "green",
+                "White",
+                "Set of 2 (1xS-Black + 1xgreen)",
+                "Set of 2 (1xWhite + 1xgreen)",
+                "Set of 2 (1xS-Black + 1xWhite)",
+                "Set of 3 (1xS-Black + 1xWhite + 1xgreen)"
+              ]
+            },
+            {
+              "product_name": "Product test D",
+              "price": 50,
+              "number_image": 1,
+              "size": [
+                "S-Black",
+                "green",
+                "White",
+                "Set of 2 (1xS-Black + 1xgreen)",
+                "Set of 2 (1xWhite + 1xgreen)",
+                "Set of 2 (1xS-Black + 1xWhite)",
+                "Set of 3 (1xS-Black + 1xWhite + 1xgreen)"
+              ]
+            },
+            {
+              "product_name": "Product test E",
+              "price": 50,
+              "number_image": 1,
+              "size": [
+                "S-Black",
+                "green",
+                "White",
+                "Set of 2 (1xS-Black + 1xgreen)",
+                "Set of 2 (1xWhite + 1xgreen)",
+                "Set of 2 (1xS-Black + 1xWhite)",
+                "Set of 3 (1xS-Black + 1xWhite + 1xgreen)"
+              ]
+            }
+          ],
+          "product_validate_sf": [
+            {
+              "product_name": "Product test A",
+              "product_handle": "product-test-a",
+              "price": 50,
+              "number_image": 1,
+              "color": [
+                "S-Black",
+                "green",
+                "White",
+                "Set of 2 (1xS-Black + 1xgreen)",
+                "Set of 2 (1xWhite + 1xgreen)",
+                "Set of 2 (1xS-Black + 1xWhite)",
+                "Set of 3 (1xS-Black + 1xWhite + 1xgreen)"
+              ]
+            },
+            {
+              "product_name": "Product test B",
+              "product_handle": "product-test-b",
+              "price": 50,
+              "number_image": 1,
+              "color": [
+                "S-Black",
+                "green",
+                "White",
+                "Set of 2 (1xS-Black + 1xgreen)",
+                "Set of 2 (1xWhite + 1xgreen)",
+                "Set of 2 (1xS-Black + 1xWhite)",
+                "Set of 3 (1xS-Black + 1xWhite + 1xgreen)"
+              ]
+            },
+            {
+              "product_name": "Product test C",
+              "product_handle": "product-test-c",
+              "price": 50,
+              "number_image": 1,
+              "color": [
+                "S-Black",
+                "green",
+                "White",
+                "Set of 2 (1xS-Black + 1xgreen)",
+                "Set of 2 (1xWhite + 1xgreen)",
+                "Set of 2 (1xS-Black + 1xWhite)",
+                "Set of 3 (1xS-Black + 1xWhite + 1xgreen)"
+              ]
+            },
+            {
+              "product_name": "Product test D",
+              "product_handle": "product-test-d",
+              "price": 50,
+              "number_image": 1,
+              "color": [
+                "S-Black",
+                "green",
+                "White",
+                "Set of 2 (1xS-Black + 1xgreen)",
+                "Set of 2 (1xWhite + 1xgreen)",
+                "Set of 2 (1xS-Black + 1xWhite)",
+                "Set of 3 (1xS-Black + 1xWhite + 1xgreen)"
+              ]
+            },
+            {
+              "product_name": "Product test E",
+              "product_handle": "product-test-e",
+              "price": 50,
+              "number_image": 1,
+              "color": [
+                "S-Black",
+                "green",
+                "White",
+                "Set of 2 (1xS-Black + 1xgreen)",
+                "Set of 2 (1xWhite + 1xgreen)",
+                "Set of 2 (1xS-Black + 1xWhite)",
+                "Set of 3 (1xS-Black + 1xWhite + 1xgreen)"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "[Clone Plus_Plus] Clone product thành công khi chọn [Override the existing products] với product đã được clone",
+          "case_name": "TC_PLB_PLB_CPP_19",
+          "step_1": "Tại list product chọn product cần clone > Mục Action chọn Import product to another > Trường Select the store to import to chọn store au-des-plus.onshopbase.com > Trường If the importing handle exists, process the import as follows chọn Keep both products > Click on btn Import",
+          "step_2": "Tại shop thứ 2 Click on icon Process-Verify thông tin hiển thị",
+          "step_3": "Verify số lượng product trong list",
+          "step_4": "Product A được ghi đè với Product A update. Verify các thông tin của product được clone trên dashboard",
+          "step_5": "Verify các thông tin của product được clone ở SF",
+          "body_add_product": {
+            "product_template_ids": [1084193],
+            "is_plus_base": true,
+            "plus_base_products": [
+              {
+                "product_tmpl_id": 1084193,
+                "set_prices_for_all": false,
+                "enable_view_on_store": false,
+                "product_name": "Product A",
+                "variants": [
+                  {
+                    "id": 2922827,
+                    "selling_price": 150.99,
+                    "compare_at_price": 196.29,
+                    "option_values": null
+                  }
+                ]
+              }
+            ]
+          },
+          "domain": "au-des-plus.onshopbase.com",
+          "shop_name": "au-des-plus",
+          "shop_id": 10298229,
+          "search_product_title": "Product A update",
+          "clone_info": {
+            "type": "product",
+            "second_shop": "au-des-plus.onshopbase.com",
+            "action": "Override the existing products",
+            "keep_id": false
+          },
+          "message": "Importing 1 product to store au-des-plus.onshopbase.com",
+          "status": "Completed",
+          "process": "Imported 1/1 products.",
+          "number_product": "1 product selected",
+          "product_validate_detail": [
+            {
+              "product_name": "Product A update",
+              "price": 50,
+              "number_image": 1,
+              "size": [
+                "S-Black",
+                "green",
+                "White",
+                "Set of 2 (1xS-Black + 1xgreen)",
+                "Set of 2 (1xWhite + 1xgreen)",
+                "Set of 2 (1xS-Black + 1xWhite)",
+                "Set of 3 (1xS-Black + 1xWhite + 1xgreen)"
+              ]
+            }
+          ],
+          "product_validate_sf": [
+            {
+              "product_name": "Product A update",
+              "product_handle": "product-a",
+              "price": 50,
+              "number_image": 1,
+              "color": [
+                "S-Black",
+                "green",
+                "White",
+                "Set of 2 (1xS-Black + 1xgreen)",
+                "Set of 2 (1xWhite + 1xgreen)",
+                "Set of 2 (1xS-Black + 1xWhite)",
+                "Set of 3 (1xS-Black + 1xWhite + 1xgreen)"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "TC_PLB_PLB_CPP_21": {
+      "domain": "au-des-plus.onshopbase.com",
+      "shop_name": "au-des-plus",
+      "shop_id": 10298229,
+      "product_name": "Product A",
+      "clone_info": {
+        "type": "product",
+        "second_shop": "au-des-plus.onshopbase.com",
+        "action": "Skip the product",
+        "keep_id": false
+      },
+      "message": "Importing 1 product to store au-des-plus.onshopbase.com",
+      "status": "Completed",
+      "process": "Imported 0/1 products. Skipped 1 products."
+    }
+  },
+  "env": {
+    "prodtest": {
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://prod-test-api.shopbase.com"
+    }
+  }
+}

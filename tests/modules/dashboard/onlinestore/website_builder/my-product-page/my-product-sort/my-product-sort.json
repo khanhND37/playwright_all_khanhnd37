@@ -1,0 +1,67 @@
+{
+  "env": {
+    "local": {
+      "api": "https://api.shopbase.com",
+      "accounts_domain": "accounts.shopbase.com",
+      "domain": "au-prod-my-product.onshopbase.com",
+      "username": "plus-qe-1@beeketing.net",
+      "password": "zeH0^kP3$Kf8",
+      "shop_name": "au-prod-my-product",
+      "user_id": 11248582,
+      "shop_id": 10430755
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "accounts_domain": "accounts.dev.shopbase.net",
+      "domain": "au-creator-popup-position.myshopbase.net",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "43AhIn|VWp;[?9&",
+      "shop_name": "au-creator-popup-position.myshopbase.net",
+      "user_id": 89797,
+      "shop_id": 10326926
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "accounts_domain": "accounts-test.shopbase.com",
+      "domain": "au-prodtest-my-product.onshopbase.com",
+      "username": "plus-qe-1@beeketing.net",
+      "password": "zeH0^kP3$Kf8",
+      "shop_name": "au-prodtest-my-product",
+      "user_id": 11248582,
+      "shop_id": 10431680
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "accounts_domain": "accounts.shopbase.com",
+      "domain": "au-prod-my-product.onshopbase.com",
+      "username": "plus-qe-1@beeketing.net",
+      "password": "zeH0^kP3$Kf8",
+      "shop_name": "au-prod-my-product",
+      "user_id": 11248582,
+      "shop_id": 10430755
+    }
+  },
+  "cases": {
+    "SB_NEWECOM_MP_53": {
+      "first_sort": {
+        "expect_select_sort_value": "Recently enrolled",
+        "products": ["Wordpress tutorial", "Playwright course", "Healing coaching session"]
+      },
+      "second_sort": {
+        "sort_value": "Alphabet A-Z",
+        "expect_select_sort_value": "Alphabet A-Z",
+        "products": ["Healing coaching session", "Playwright course", "Wordpress tutorial"]
+      },
+      "third_sort": {
+        "sort_value": "Alphabet Z-A",
+        "expect_select_sort_value": "Alphabet Z-A",
+        "products": ["Wordpress tutorial", "Playwright course", "Healing coaching session"]
+      },
+      "fourth_sort": {
+        "sort_value": "Recently accessed",
+        "expect_select_sort_value": "Recently accessed",
+        "products": ["Wordpress tutorial", "Playwright course", "Healing coaching session"]
+      }
+    }
+  }
+}

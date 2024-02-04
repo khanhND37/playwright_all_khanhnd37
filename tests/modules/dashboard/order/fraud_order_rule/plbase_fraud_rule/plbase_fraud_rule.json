@@ -1,0 +1,158 @@
+{
+  "api": "https://api.shopbase.com",
+  "domain": "au-plbase-checkout-fraud.onshopbase.com",
+  "shop_name": "au-plbase-checkout-fraud",
+  "user_id": 245023,
+  "shop_id": 10323957,
+  "username": "shopbase12@beeketing.net",
+  "password": "autobalanceprod",
+  "shop_template_plbase": {
+    "domain": "template-store.onshopbase.com",
+    "shop_name": "template-store",
+    "user_id": 9131323,
+    "shop_id": 10258217,
+    "username": "qas@beeketing.net",
+    "password": "123456"
+  },
+  "hive_info": {
+    "domain": "hive.shopbase.com",
+    "username": "shopbase",
+    "password": "UxsLHz^Wjkf35*/w"
+  },
+  "shop_template_info": {
+    "domain": "template-fraud-plusbase-prod-test-mode.onshopbase.com",
+    "shop_name": "template-fraud-plusbase-prod-test-mode",
+    "username": "shopbase7@beeketing.net",
+    "password": "]qlG3Fwj&EqI-XA"
+  },
+  "tipping_info": {
+    "tipping_amount": "5",
+    "is_old_layout": false,
+    "option": "1"
+  },
+  "product_info": [
+    {
+      "name": "(Test product) Auto-cpay2",
+      "quantity": 12
+    }
+  ],
+  "discount_code": "AU_FIXAMT",
+  "customer_info": {
+    "email": "testerOCG@maildrop.cc",
+    "first_name": "John",
+    "last_name": "Vardy",
+    "address": "1600 W Loop S",
+    "country": "United States",
+    "state": "Texas",
+    "city": "Houston",
+    "zipcode": "77027",
+    "phone_number": "505-646-2276"
+  },
+  "email_scheduler": "thaidoan@beeketing.net",
+  "cases": {
+    "PL_FRAUD_RULE_CASE_CANCEL": {
+      "data": [
+        {
+          "case_id": "SB_PLB_FRA_ORD_PLB_FRA_FIL_RUL_10",
+          "case_description": "[Plbase] Kiểm tra order có tax include, tip, ship, discount, markup shipping bị cancel do thỏa mãn fraud rules",
+          "fraud_info": {
+            "name": "AU-The number of items in an order is greater than 10 and less than 50",
+            "type": "cancel"
+          },
+          "is_tax_include": true,
+          "payment_method": "Stripe"
+        },
+        {
+          "case_id": "SB_PLB_FRA_ORD_PLB_FRA_FIL_RUL_11",
+          "case_description": "[Plbase] Kiểm tra order có tax exclude, tip, ship, discount, markup shipping bị cancel do thỏa mãn fraud rules",
+          "fraud_info": {
+            "name": "AU-The number of items in an order is greater than 10 and less than 50",
+            "type": "cancel"
+          },
+          "is_tax_include": false,
+          "payment_method": "Stripe"
+        },
+        {
+          "case_id": "SB_PLB_FRA_ORD_PLB_FRA_FIL_RUL_12",
+          "case_description": "[Plbase] [Paypal] Kiểm tra order có tax include, tip, ship, discount, markup shipping bị cancel do thỏa mãn fraud rules",
+          "fraud_info": {
+            "name": "AU-The number of items in an order is greater than 10 and less than 50",
+            "type": "cancel"
+          },
+          "is_tax_include": false,
+          "payment_method": "Paypal"
+        }
+      ]
+    },
+    "SB_PLB_FRA_ORD_PLB_FRA_FIL_RUL_13": {
+      "fraud_info": {
+        "name": "AU-Email validation score is less than 95",
+        "type": "allow"
+      },
+      "is_tax_include": false,
+      "customer_info": {
+        "email": "testerOCG@gmail.com",
+        "first_name": "John",
+        "last_name": "Vardy",
+        "address": "1600 W Loop S",
+        "country": "United States",
+        "state": "Texas",
+        "city": "Houston",
+        "zipcode": "77027",
+        "phone_number": "505-646-2276"
+      }
+    }
+  },
+  "env": {
+    "prodtest": {
+      "domain": "au-plbase-checkout-fraud-prodtest.onshopbase.com",
+      "shop_name": "au-plbase-checkout-fraud-prodtest",
+      "shop_id": 10324085,
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://prod-test-api.shopbase.com",
+      "shop_template_plbase": {
+        "domain": "plusbase-templateprodtest.onshopbase.com",
+        "shop_name": "plusbase-templateprodtest",
+        "user_id": 9131323,
+        "shop_id": 10364655,
+        "username": "qas@beeketing.net",
+        "password": "123456"
+      },
+      "shop_template_info": {
+        "domain": "template-fraud-plusbase-prodtest.onshopbase.com",
+        "shop_name": "template-fraud-plusbase-prodtest",
+        "username": "shopbase7@beeketing.net",
+        "password": "]qlG3Fwj&EqI-XA"
+      }
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-plbase-checkout.myshopbase.net",
+      "shop_name": "au-plbase-checkout",
+      "user_id": 73800,
+      "shop_id": 10321842,
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_template_plbase": {
+        "domain": "plusbase-checkout.myshopbase.net",
+        "shop_name": "plusbase-checkout",
+        "user_id": 87262,
+        "shop_id": 10060862,
+        "username": "phuongpham@beeketing.net",
+        "password": "123456"
+      },
+      "shop_template_info": {
+        "domain": "template-plbase-fraud.myshopbase.net",
+        "shop_name": "template-plbase-fraud",
+        "username": "shopbase@beeketing.net",
+        "password": "S#|j>m2N[q"
+      },
+      "hive_info": {
+        "domain": "hive.dev.shopbase.net",
+        "username": "123456",
+        "password": "UxsLHz^Wjkf35*/w"
+      },
+      "product_name": "(Test product) Auto-cpay2"
+    }
+  }
+}

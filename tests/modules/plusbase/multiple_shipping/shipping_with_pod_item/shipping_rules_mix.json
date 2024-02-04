@@ -1,0 +1,972 @@
+{
+  "env": {
+    "prod": {
+      "domain": "au-plb-shipping-pod.onshopbase.com",
+      "api": "https://api.shopbase.com",
+      "shop_name": "au-plb-shipping-pod",
+      "username": "shopbase4@beeketing.net",
+      "password": "H7mQdQ]Zj]%[Nm?",
+      "user_id": 207114,
+      "shop_id": 10382399,
+      "product_ds_template_id": 1007161,
+      "odoo_host": "https://autotest-erp-plus.shopbase.dev",
+      "odoo_db": "shopbase_fulfillment",
+      "odoo_username": "qaocg",
+      "odoo_password": "LFmy=qGLvwW^E63b",
+      "cases": {
+        "SB_PLB_PODPL_POPLS_2": {
+          "set_shipping_types": ["PlusBase Eco Shipping"],
+          "products_checkout": [
+            {
+              "name": "(Test product) Auto-cpay1",
+              "variant_id": 1000010172471401,
+              "quantity": 1
+            },
+            {
+              "name": "auto_pod1_AOP-AOPBeachShorts-Alloverprint-5XL",
+              "variant_id": 1000010187697545,
+              "quantity": 1
+            }
+          ],
+          "shipping_rate_for_pod": [
+            {
+              "method_title": "Standard Shipping",
+              "amount": 6
+            }
+          ],
+          "shipping_line_for_ds": "Eco Shipping",
+          "shipping_method_checkout": "Standard Shipping",
+          "discount_code": "Free_shipping",
+          "is_add_ppc": false
+        },
+        "SB_PLB_PODPL_POPLS_3": {
+          "set_shipping_types": ["PlusBase Express Shipping"],
+          "products_checkout": [
+            {
+              "name": "(Test product) Auto-cpay1",
+              "variant_id": 1000010172471401,
+              "quantity": 1
+            },
+            {
+              "name": "auto_pod1_AOP-AOPBeachShorts-Alloverprint-5XL",
+              "variant_id": 1000010187697545,
+              "quantity": 1
+            }
+          ],
+          "shipping_rate_for_pod": [
+            {
+              "method_title": "Fast Shipping",
+              "amount": 7
+            }
+          ],
+          "shipping_line_for_ds": "Premium Shipping",
+          "shipping_method_checkout": "Premium Shipping",
+          "discount_code": "Free_shipping",
+          "is_add_ppc": false
+        },
+        "SB_PLB_PODPL_POPLS_10": {
+          "set_shipping_types": {
+            "product_ds_template_id": 1007161,
+            "shipping_types": ["PlusBase Standard Shipping", "PlusBase Express Shipping"]
+          },
+          "products_checkout": [
+            {
+              "name": "(Test product) Auto-cpay1",
+              "variant_id": 1000010172471401,
+              "quantity": 1
+            },
+            {
+              "name": "auto_pod1_AOP-AOPBeachShorts-Alloverprint-5XL",
+              "variant_id": 1000010187697545,
+              "quantity": 1
+            }
+          ],
+          "shipping_rate_for_pod": [
+            {
+              "method_title": "Fast Shipping",
+              "amount": 7
+            },
+            {
+              "method_title": "Standard Shipping",
+              "amount": 6
+            }
+          ],
+          "shipping_line_for_ds": [
+            {
+              "product_ds_template_id": 1007161,
+              "shipping_lines": ["Premium Shipping", "Standard Shipping"]
+            }
+          ],
+          "shipping_method_checkout": ["Premium Shipping", "Standard Shipping"],
+          "is_add_ppc": false
+        },
+        "SB_PLB_PODPL_POPLS_11": {
+          "set_shipping_types": {
+            "product_ds_template_id": 1007161,
+            "shipping_types": ["PlusBase Eco Shipping"]
+          },
+          "products_checkout": [
+            {
+              "name": "(Test product) Auto-cpay1",
+              "variant_id": 1000010172471401,
+              "quantity": 1
+            },
+            {
+              "name": "auto_pod1_AOP-AOPBeachShorts-Alloverprint-5XL",
+              "variant_id": 1000010187697545,
+              "quantity": 1
+            }
+          ],
+          "shipping_rate_for_pod": [
+            {
+              "method_title": "Standard Shipping",
+              "amount": 6
+            },
+            {
+              "method_title": "Fast Shipping",
+              "amount": 7
+            }
+          ],
+          "shipping_line_for_ds": [
+            {
+              "product_ds_template_id": 1007161,
+              "shipping_lines": ["Eco Shipping"]
+            }
+          ],
+          "shipping_method_checkout": ["Standard Shipping"],
+          "is_add_ppc": false
+        },
+        "SB_PLB_PODPL_POPLS_23": {
+          "set_shipping_types": [
+            {
+              "product_ds_template_id": 1007161,
+              "shipping_types": ["PlusBase Standard Shipping", "PlusBase Express Shipping"]
+            },
+            {
+              "product_ds_template_id": 1007162,
+              "shipping_types": ["PlusBase Eco Shipping"]
+            }
+          ],
+          "products_checkout": [
+            {
+              "name": "(Test product) Auto-cpay1",
+              "variant_id": 1000010172471401,
+              "quantity": 1
+            },
+            {
+              "name": "(Test product) Auto-cpay2",
+              "variant_id": 1000010172471367,
+              "quantity": 1
+            },
+            {
+              "name": "auto_pod1_AOP-AOPBeachShorts-Alloverprint-5XL",
+              "variant_id": 1000010187697545,
+              "quantity": 1
+            },
+            {
+              "name": "auto_pod2",
+              "variant_id": 1000010187800928,
+              "quantity": 1
+            }
+          ],
+          "shipping_rate_for_pod": [
+            {
+              "method_title": "Standard Shipping",
+              "amount": 9
+            },
+            {
+              "method_title": "Fast Shipping",
+              "amount": 12
+            }
+          ],
+          "shipping_line_for_ds": [
+            {
+              "product_ds_template_id": 1007161,
+              "shipping_lines": ["Standard Shipping"]
+            },
+            {
+              "product_ds_template_id": 1007162,
+              "shipping_lines": ["Eco Shipping"]
+            }
+          ],
+          "shipping_method_checkout": ["Standard Shipping"],
+          "is_add_ppc": false
+        },
+        "SB_PLB_PODPL_POPLS_26": {
+          "set_shipping_types": [
+            {
+              "product_ds_template_id": 1593147,
+              "shipping_types": ["PlusBase Express Shipping"]
+            },
+            {
+              "product_ds_template_id": 1593148,
+              "shipping_types": ["PlusBase Eco Shipping"]
+            }
+          ],
+          "products_checkout": [
+            {
+              "name": "(Test product) Parkas 2023 Winter Jacket Men Thicken Hooded Windproof",
+              "variant_id": 1000010529261089,
+              "quantity": 1
+            },
+            {
+              "name": "(Test product) Winter Jacket Men Thick Windbreaker Windproof Jackets Men",
+              "variant_id": 1000010529269992,
+              "quantity": 1
+            },
+            {
+              "name": "auto_pod3",
+              "variant_id": 1000010187967103,
+              "quantity": 1
+            },
+            {
+              "name": "auto_pod4",
+              "variant_id": 1000010187985776,
+              "quantity": 1
+            }
+          ],
+          "shipping_rate_for_pod": [
+            {
+              "method_title": "Standard Shipping",
+              "amount": 13
+            }
+          ],
+          "shipping_line_for_ds": [
+            {
+              "product_ds_template_id": 1593147,
+              "shipping_lines": ["Premium Shipping"]
+            },
+            {
+              "product_ds_template_id": 1593148,
+              "shipping_lines": ["Eco Shipping"]
+            }
+          ],
+          "shipping_method_checkout": ["Standard Shipping"],
+          "is_add_ppc": false
+        },
+        "SB_PLB_PODPL_POPLS_5": {
+          "set_shipping_types": [
+            {
+              "product_ds_template_id": 1007162,
+              "shipping_types": ["PlusBase Standard Shipping", "PlusBase Express Shipping"]
+            }
+          ],
+          "products_checkout": [
+            {
+              "name": "(Test product) Auto-cpay2",
+              "variant_id": 1000010172471367,
+              "quantity": 1
+            }
+          ],
+          "shipping_line_for_ds": [
+            {
+              "product_ds_template_id": 1007162,
+              "shipping_lines": ["Standard Shipping", "Premium Shipping"]
+            }
+          ],
+          "shipping_method_checkout": ["Standard Shipping", "Premium Shipping"],
+          "item_post_purchase": {
+            "name": "(Test product) Product auto plb upsell",
+            "shipping_fee": 6
+          },
+          "is_add_ppc": true
+        },
+        "SB_PLB_PODPL_POPLS_13": {
+          "set_shipping_types": [
+            {
+              "product_ds_template_id": 1007162,
+              "shipping_types": ["PlusBase Eco Shipping", "PlusBase Express Shipping"]
+            }
+          ],
+          "products_checkout": [
+            {
+              "name": "(Test product) Auto-cpay2",
+              "variant_id": 1000010172471367,
+              "quantity": 1
+            },
+            {
+              "name": "auto_pod2",
+              "variant_id": 1000010187800928,
+              "quantity": 1
+            }
+          ],
+          "shipping_rate_for_pod": [
+            {
+              "method_title": "Premium Shipping",
+              "amount": 8
+            }
+          ],
+          "shipping_line_for_ds": [
+            {
+              "product_ds_template_id": 1007162,
+              "shipping_lines": ["Premium Shipping"]
+            }
+          ],
+          "shipping_method_checkout": ["Premium Shipping"],
+          "item_post_purchase": {
+            "name": "(Test product) Product auto plb upsell",
+            "shipping_fee": 7
+          },
+          "is_add_ppc": true
+        }
+      }
+    },
+    "prodtest": {
+      "domain": "au-plb-shipping-pod-prodtest.onshopbase.com",
+      "shop_name": "au-plb-shipping-pod-prodtest",
+      "username": "shopbase4@beeketing.net",
+      "password": "H7mQdQ]Zj]%[Nm?",
+      "user_id": 207114,
+      "shop_id": 10383313,
+      "product_ds_template_id": 1007161,
+      "odoo_host": "https://autotest-erp-plus.shopbase.dev",
+      "odoo_db": "shopbase_fulfillment",
+      "odoo_username": "qaocg",
+      "odoo_password": "LFmy=qGLvwW^E63b",
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://prod-test-api.shopbase.com",
+      "cases": {
+        "SB_PLB_PODPL_POPLS_2": {
+          "set_shipping_types": ["PlusBase Eco Shipping"],
+          "products_checkout": [
+            {
+              "name": "(Test product) Auto-cpay1",
+              "variant_id": 1000011239602595,
+              "quantity": 1
+            },
+            {
+              "name": "auto_pod1_AOP-AOPBeachShorts-Alloverprint-5XL",
+              "variant_id": 1000011239602942,
+              "quantity": 1
+            }
+          ],
+          "shipping_rate_for_pod": [
+            {
+              "method_title": "Standard Shipping",
+              "amount": 6
+            }
+          ],
+          "shipping_line_for_ds": "Eco Shipping",
+          "shipping_method_checkout": "Standard Shipping",
+          "discount_code": "Free_shipping",
+          "is_add_ppc": false
+        },
+        "SB_PLB_PODPL_POPLS_3": {
+          "set_shipping_types": ["PlusBase Express Shipping"],
+          "products_checkout": [
+            {
+              "name": "(Test product) Auto-cpay1",
+              "variant_id": 1000011239602595,
+              "quantity": 1
+            },
+            {
+              "name": "auto_pod1_AOP-AOPBeachShorts-Alloverprint-5XL",
+              "variant_id": 1000011239602942,
+              "quantity": 1
+            }
+          ],
+          "shipping_rate_for_pod": [
+            {
+              "method_title": "Fast Shipping",
+              "amount": 7
+            }
+          ],
+          "shipping_line_for_ds": "Premium Shipping",
+          "shipping_method_checkout": "Premium Shipping",
+          "discount_code": "Free_shipping",
+          "is_add_ppc": false
+        },
+        "SB_PLB_PODPL_POPLS_10": {
+          "set_shipping_types": {
+            "product_ds_template_id": 1007161,
+            "shipping_types": ["PlusBase Standard Shipping", "PlusBase Express Shipping"]
+          },
+          "products_checkout": [
+            {
+              "name": "(Test product) Auto-cpay1",
+              "variant_id": 1000011239602595,
+              "quantity": 1
+            },
+            {
+              "name": "auto_pod1_AOP-AOPBeachShorts-Alloverprint-5XL",
+              "variant_id": 1000011239602942,
+              "quantity": 1
+            }
+          ],
+          "shipping_rate_for_pod": [
+            {
+              "method_title": "Fast Shipping",
+              "amount": 7
+            },
+            {
+              "method_title": "Standard Shipping",
+              "amount": 6
+            }
+          ],
+          "shipping_line_for_ds": [
+            {
+              "product_ds_template_id": 1007161,
+              "shipping_lines": ["Premium Shipping", "Standard Shipping"]
+            }
+          ],
+          "shipping_method_checkout": ["Premium Shipping", "Standard Shipping"],
+          "is_add_ppc": false
+        },
+        "SB_PLB_PODPL_POPLS_11": {
+          "set_shipping_types": {
+            "product_ds_template_id": 1007161,
+            "shipping_types": ["PlusBase Eco Shipping"]
+          },
+          "products_checkout": [
+            {
+              "name": "(Test product) Auto-cpay1",
+              "variant_id": 1000011239602595,
+              "quantity": 1
+            },
+            {
+              "name": "auto_pod1_AOP-AOPBeachShorts-Alloverprint-5XL",
+              "variant_id": 1000011239602942,
+              "quantity": 1
+            }
+          ],
+          "shipping_rate_for_pod": [
+            {
+              "method_title": "Standard Shipping",
+              "amount": 6
+            },
+            {
+              "method_title": "Fast Shipping",
+              "amount": 7
+            }
+          ],
+          "shipping_line_for_ds": [
+            {
+              "product_ds_template_id": 1007161,
+              "shipping_lines": ["Eco Shipping"]
+            }
+          ],
+          "shipping_method_checkout": ["Standard Shipping"],
+          "is_add_ppc": false
+        },
+        "SB_PLB_PODPL_POPLS_23": {
+          "set_shipping_types": [
+            {
+              "product_ds_template_id": 1007161,
+              "shipping_types": ["PlusBase Standard Shipping", "PlusBase Express Shipping"]
+            },
+            {
+              "product_ds_template_id": 1007162,
+              "shipping_types": ["PlusBase Eco Shipping"]
+            }
+          ],
+          "products_checkout": [
+            {
+              "name": "(Test product) Auto-cpay1",
+              "variant_id": 1000011239602595,
+              "quantity": 1
+            },
+            {
+              "name": "(Test product) Auto-cpay2",
+              "variant_id": 1000011239605897,
+              "quantity": 1
+            },
+            {
+              "name": "auto_pod1_AOP-AOPBeachShorts-Alloverprint-5XL",
+              "variant_id": 1000011239602942,
+              "quantity": 1
+            },
+            {
+              "name": "auto_pod2",
+              "variant_id": 1000010180847276,
+              "quantity": 1
+            }
+          ],
+          "shipping_rate_for_pod": [
+            {
+              "method_title": "Standard Shipping",
+              "amount": 9
+            },
+            {
+              "method_title": "Fast Shipping",
+              "amount": 12
+            }
+          ],
+          "shipping_line_for_ds": [
+            {
+              "product_ds_template_id": 1007161,
+              "shipping_lines": ["Standard Shipping"]
+            },
+            {
+              "product_ds_template_id": 1007162,
+              "shipping_lines": ["Eco Shipping"]
+            }
+          ],
+          "shipping_method_checkout": ["Standard Shipping"],
+          "is_add_ppc": false
+        },
+        "SB_PLB_PODPL_POPLS_26": {
+          "set_shipping_types": [
+            {
+              "product_ds_template_id": 1593147,
+              "shipping_types": ["PlusBase Express Shipping"]
+            },
+            {
+              "product_ds_template_id": 1593148,
+              "shipping_types": ["PlusBase Eco Shipping"]
+            }
+          ],
+          "products_checkout": [
+            {
+              "name": "(Test product) Parkas 2023 Winter Jacket Men Thicken Hooded Windproof",
+              "variant_id": 1000011239607810,
+              "quantity": 1
+            },
+            {
+              "name": "(Test product) Winter Jacket Men Thick Windbreaker Windproof Jackets Men",
+              "variant_id": 1000011239608168,
+              "quantity": 1
+            },
+            {
+              "name": "auto_pod3",
+              "variant_id": 1000011239606846,
+              "quantity": 1
+            },
+            {
+              "name": "auto_pod4",
+              "variant_id": 1000011239607033,
+              "quantity": 1
+            }
+          ],
+          "shipping_rate_for_pod": [
+            {
+              "method_title": "Standard Shipping",
+              "amount": 13
+            }
+          ],
+          "shipping_line_for_ds": [
+            {
+              "product_ds_template_id": 1593147,
+              "shipping_lines": ["Premium Shipping"]
+            },
+            {
+              "product_ds_template_id": 1593148,
+              "shipping_lines": ["Eco Shipping"]
+            }
+          ],
+          "shipping_method_checkout": ["Standard Shipping"],
+          "is_add_ppc": false
+        },
+        "SB_PLB_PODPL_POPLS_5": {
+          "set_shipping_types": [
+            {
+              "product_ds_template_id": 1007162,
+              "shipping_types": ["PlusBase Standard Shipping", "PlusBase Express Shipping"]
+            }
+          ],
+          "products_checkout": [
+            {
+              "name": "(Test product) Auto-cpay2",
+              "variant_id": 1000011239605897,
+              "quantity": 1
+            }
+          ],
+          "shipping_line_for_ds": [
+            {
+              "product_ds_template_id": 1007162,
+              "shipping_lines": ["Standard Shipping", "Premium Shipping"]
+            }
+          ],
+          "shipping_method_checkout": ["Standard Shipping", "Premium Shipping"],
+          "item_post_purchase": {
+            "name": "(Test product) Product auto plb upsell",
+            "shipping_fee": 6
+          },
+          "is_add_ppc": true
+        },
+        "SB_PLB_PODPL_POPLS_13": {
+          "set_shipping_types": [
+            {
+              "product_ds_template_id": 1007162,
+              "shipping_types": ["PlusBase Eco Shipping", "PlusBase Express Shipping"]
+            }
+          ],
+          "products_checkout": [
+            {
+              "name": "(Test product) Auto-cpay2",
+              "variant_id": 1000011239605897,
+              "quantity": 1
+            },
+            {
+              "name": "auto_pod2",
+              "variant_id": 1000010180847276,
+              "quantity": 1
+            }
+          ],
+          "shipping_rate_for_pod": [
+            {
+              "method_title": "Premium Shipping",
+              "amount": 8
+            }
+          ],
+          "shipping_line_for_ds": [
+            {
+              "product_ds_template_id": 1007162,
+              "shipping_lines": ["Premium Shipping"]
+            }
+          ],
+          "shipping_method_checkout": ["Premium Shipping"],
+          "item_post_purchase": {
+            "name": "(Test product) Product auto plb upsell",
+            "shipping_fee": 7
+          },
+          "is_add_ppc": true
+        }
+      }
+    },
+    "dev": {
+      "domain": "au-shipping-plb-pod.myshopbase.net",
+      "api": "https://gapi.dev.shopbase.net",
+      "shop_name": "au-shipping-plb-pod",
+      "username": "shopbase4@beeketing.net",
+      "password": "H7mQdQ]Zj]%[Nm?",
+      "user_id": 89321,
+      "shop_id": 10322984,
+      "product_ds_template_id": 1144346,
+      "odoo_host": "https://odoo.dev.shopbase.net/",
+      "odoo_db": "sbase_fulfillment_dev",
+      "odoo_username": "admin",
+      "odoo_password": "admin",
+      "cases": {
+        "SB_PLB_PODPL_POPLS_2": {
+          "set_shipping_types": ["PlusBase Eco Shipping"],
+          "products_checkout": [
+            {
+              "variant_id": 1000001779356954,
+              "quantity": 1
+            },
+            {
+              "variant_id": 1000001766818829,
+              "quantity": 1
+            }
+          ],
+          "shipping_rate_for_pod": [
+            {
+              "method_title": "Standard Shipping",
+              "amount": 6
+            }
+          ],
+          "shipping_line_for_ds": "Eco Shipping",
+          "shipping_method_checkout": "Standard Shipping",
+          "discount_code": "Free_shipping",
+          "is_add_ppc": false
+        },
+        "SB_PLB_PODPL_POPLS_3": {
+          "set_shipping_types": ["PlusBase Express Shipping"],
+          "products_checkout": [
+            {
+              "variant_id": 1000001779356954,
+              "quantity": 1
+            },
+            {
+              "variant_id": 1000001766818829,
+              "quantity": 1
+            }
+          ],
+          "shipping_rate_for_pod": [
+            {
+              "method_title": "Fast Shipping",
+              "amount": 7
+            }
+          ],
+          "shipping_line_for_ds": "Premium Shipping",
+          "shipping_method_checkout": "Premium Shipping",
+          "discount_code": "Free_shipping",
+          "is_add_ppc": false
+        },
+        "SB_PLB_PODPL_POPLS_10": {
+          "set_shipping_types": {
+            "product_ds_template_id": 1162754,
+            "shipping_types": ["PlusBase Standard Shipping", "PlusBase Express Shipping"]
+          },
+          "products_checkout": [
+            {
+              "name": "auto_pod1_AOP-AOPBeachShorts-Alloverprint-5XL",
+              "variant_id": 1000001779356954,
+              "quantity": 1
+            },
+            {
+              "name": "(Test product) product auto POD for PLB pls not edit",
+              "variant_id": 1000001779362637,
+              "quantity": 1
+            }
+          ],
+          "shipping_line_for_ds": [
+            {
+              "product_ds_template_id": 1162754,
+              "shipping_lines": ["Premium Shipping", "Standard Shipping"]
+            }
+          ],
+          "shipping_rate_for_pod": [
+            {
+              "method_title": "Fast Shipping",
+              "amount": 7
+            },
+            {
+              "method_title": "Standard Shipping",
+              "amount": 6
+            }
+          ],
+          "shipping_method_checkout": ["Premium Shipping", "Standard Shipping"],
+          "is_add_ppc": false
+        },
+        "SB_PLB_PODPL_POPLS_11": {
+          "product_ds_template_id": 1162754,
+          "set_shipping_types": {
+            "product_ds_template_id": 1162754,
+            "shipping_types": ["PlusBase Eco Shipping"]
+          },
+          "products_checkout": [
+            {
+              "name": "auto_pod1_AOP-AOPBeachShorts-Alloverprint-5XL",
+              "variant_id": 1000001779356954,
+              "quantity": 1
+            },
+            {
+              "name": "(Test product) product auto POD for PLB pls not edit",
+              "variant_id": 1000001779362637,
+              "quantity": 1
+            }
+          ],
+          "shipping_rate_for_pod": [
+            {
+              "method_title": "Standard Shipping",
+              "amount": 6
+            },
+            {
+              "method_title": "Fast Shipping",
+              "amount": 7
+            }
+          ],
+          "shipping_line_for_ds": [
+            {
+              "product_ds_template_id": 1162754,
+              "shipping_lines": ["Eco Shipping"]
+            }
+          ],
+          "shipping_method_checkout": ["Standard Shipping"],
+          "is_add_ppc": false
+        },
+        "SB_PLB_PODPL_POPLS_23": {
+          "set_shipping_types": [
+            {
+              "product_ds_template_id": 1162754,
+              "shipping_types": ["PlusBase Standard Shipping", "PlusBase Express Shipping"]
+            },
+            {
+              "product_ds_template_id": 1005239,
+              "shipping_types": ["PlusBase Eco Shipping"]
+            }
+          ],
+          "products_checkout": [
+            {
+              "name": "auto_pod2_AOP-AOPBeachShorts-Alloverprint-4XL",
+              "variant_id": 1000001766917402,
+              "quantity": 1
+            },
+            {
+              "name": "auto_pod1_AOP-AOPBeachShorts-Alloverprint-5XL",
+              "variant_id": 1000001779356954,
+              "quantity": 1
+            },
+            {
+              "name": "(Test product) product auto POD for PLB pls not edit",
+              "variant_id": 1000001779362637,
+              "quantity": 1
+            },
+            {
+              "name": "(Test product) Auto-cpay1",
+              "variant_id": 1000001766918013,
+              "quantity": 1
+            }
+          ],
+          "shipping_line_for_ds": [
+            {
+              "product_ds_template_id": 1162754,
+              "shipping_lines": ["Standard Shipping"]
+            },
+            {
+              "product_ds_template_id": 1005239,
+              "shipping_lines": ["Eco Shipping"]
+            }
+          ],
+          "shipping_method_checkout": ["Standard Shipping"],
+          "shipping_rate_for_pod": [
+            {
+              "method_title": "Standard Shipping",
+              "amount": 9
+            },
+            {
+              "method_title": "Fast Shipping",
+              "amount": 12
+            }
+          ],
+          "is_add_ppc": false
+        },
+        "SB_PLB_PODPL_POPLS_26": {
+          "set_shipping_types": [
+            {
+              "product_ds_template_id": 1162754,
+              "shipping_types": ["PlusBase Express Shipping"]
+            },
+            {
+              "product_ds_template_id": 1005239,
+              "shipping_types": ["PlusBase Eco Shipping"]
+            }
+          ],
+          "products_checkout": [
+            {
+              "name": "auto_pod4_AOP-AOPBomberJacket-Alloverprint-4XL",
+              "variant_id": 1000001766918395,
+              "quantity": 1
+            },
+            {
+              "name": "auto_pod3_AOP-AOPBomberJacket-Alloverprint-5XL",
+              "variant_id": 1000001766918394,
+              "quantity": 1
+            },
+            {
+              "name": "(Test product) product auto POD for PLB pls not edit",
+              "variant_id": 1000001779362637,
+              "quantity": 1
+            },
+            {
+              "name": "(Test product) Auto-cpay1",
+              "variant_id": 1000001766918013,
+              "quantity": 1
+            }
+          ],
+          "shipping_line_for_ds": [
+            {
+              "product_ds_template_id": 1162754,
+              "shipping_lines": ["Premium Shipping"]
+            },
+            {
+              "product_ds_template_id": 1005239,
+              "shipping_lines": ["Eco Shipping"]
+            }
+          ],
+          "shipping_rate_for_pod": [
+            {
+              "method_title": "Standard Shipping",
+              "amount": 9
+            }
+          ],
+          "shipping_method_checkout": ["Standard Shipping"],
+          "is_add_ppc": false
+        },
+        "SB_PLB_PODPL_POPLS_5": {
+          "set_shipping_types": [
+            {
+              "product_ds_template_id": 1162754,
+              "shipping_types": ["PlusBase Standard Shipping", "PlusBase Express Shipping"]
+            }
+          ],
+          "products_checkout": [
+            {
+              "name": "(Test product) product auto POD for PLB pls not edit",
+              "variant_id": 1000001779362637,
+              "quantity": 1
+            }
+          ],
+          "shipping_line_for_ds": [
+            {
+              "product_ds_template_id": 1162754,
+              "shipping_lines": ["Standard Shipping", "Premium Shipping"]
+            }
+          ],
+          "shipping_method_checkout": ["Standard Shipping", "Premium Shipping"],
+          "item_post_purchase": {
+            "name": "auto_pod1_AOP-AOPBeachShorts-Alloverprint-5XL",
+            "shipping_fee": 6
+          },
+          "is_add_ppc": true
+        },
+        "SB_PLB_PODPL_POPLS_13": {
+          "set_shipping_types": [
+            {
+              "product_ds_template_id": 1162754,
+              "shipping_types": ["PlusBase Eco Shipping", "PlusBase Express Shipping"]
+            }
+          ],
+          "products_checkout": [
+            {
+              "name": "(Test product) product auto POD for PLB pls not edit",
+              "variant_id": 1000001779362637,
+              "quantity": 1
+            },
+            {
+              "name": "auto_pod2",
+              "variant_id": 1000001766917402,
+              "quantity": 1
+            }
+          ],
+          "shipping_line_for_ds": [
+            {
+              "product_ds_template_id": 1162754,
+              "shipping_lines": ["Premium Shipping"]
+            }
+          ],
+          "shipping_rate_for_pod": [
+            {
+              "method_title": "Premium Shipping",
+              "amount": 8
+            }
+          ],
+          "shipping_method_checkout": ["Premium Shipping"],
+          "item_post_purchase": {
+            "name": "auto_pod1_AOP-AOPBeachShorts-Alloverprint-5XL",
+            "shipping_fee": 4
+          },
+          "is_add_ppc": true
+        }
+      }
+    }
+  },
+  "cases": {
+    "SB_PLB_PODPL_POPLS_2": {},
+    "SB_PLB_PODPL_POPLS_3": {},
+    "SB_PLB_PODPL_POPLS_10": {},
+    "SB_PLB_PODPL_POPLS_11": {},
+    "SB_PLB_PODPL_POPLS_23": {},
+    "SB_PLB_PODPL_POPLS_26": {},
+    "SB_PLB_PODPL_POPLS_5": {},
+    "SB_PLB_PODPL_POPLS_13": {}
+  },
+  "email_buyer": "buyer@maildrop.cc",
+  "shipping_address": {
+    "address1": "814 Mission Street",
+    "address2": "",
+    "city": "Los Angeles",
+    "company": "",
+    "country": "United States",
+    "country_code": "US",
+    "country_name": "United States",
+    "cpf_or_cnpj_number": "",
+    "first_name": "ShopBase",
+    "last_name": "Auto",
+    "name": "ShopBase",
+    "phone": "0123456789",
+    "province": "California",
+    "province_code": "CA",
+    "zip": "90001",
+    "remember_me": false
+  },
+  "card_info": {
+    "number": "4242424242424242",
+    "holder_name": "ShopBase",
+    "expire_date": "12 / 30",
+    "cvv": "116"
+  },
+  "app_name": "usell",
+  "timeout": 1000000
+}

@@ -1,0 +1,249 @@
+{
+  "env": {
+    "dev": {
+      "domain": "au-template-store.myshopbase.net",
+      "link_web": "https://templates-next.dev.shopbase.net/",
+      "shop_name": "au-template-store",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "43AhIn|VWp;[?9&",
+      "api": "https://gapi.dev.shopbase.net",
+      "store_type": "ecommerce",
+      "theme_id": "3205116",
+      "shop_template": {
+        "domain": "shop-template-ne.myshopbase.net",
+        "username": "chucdao@beeketing.net",
+        "password": "abc@12345",
+        "template_name": "Test template store",
+        "new_template_id": "3190686",
+        "selling_type": "Dropshipping",
+        "industry": "Local brand"
+      },
+      "data": [
+        {
+          "template_name": "Packwise",
+          "snapshot": "UI-template-card.png"
+        },
+        {
+          "template_name": "Decora",
+          "snapshot": "UI-template-card.png"
+        }
+      ]
+    },
+    "prodtest": {
+      "domain": "au-template-store-prodtest-update.onshopbase.com",
+      "link_web": "https://templates-test.shopbase.com/",
+      "shop_name": "au-template-store-prodtest-update",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "api": "https://prod-test-api.shopbase.com",
+      "accounts_domain": "accounts-test.shopbase.com",
+      "store_type": "ecommerce",
+      "theme_id": "1446761",
+      "shop_template": {
+        "domain": "shop-template-prodtest-ne.onshopbase.com",
+        "username": "chucdao@beeketing.net",
+        "password": "abc@12345",
+        "template_name": "Test template store",
+        "new_template_id": "1588703",
+        "selling_type": "Dropshipping",
+        "industry": "Clothes"
+      },
+      "data": [
+        {
+          "template_name": "Trendie",
+          "snapshot": "UI-template-card.png"
+        },
+        {
+          "template_name": "Decora",
+          "snapshot": "UI-template-card.png"
+        }
+      ]
+    },
+    "prod": {
+      "domain": "au-template-store-prod.onshopbase.com",
+      "link_web": "https://templates.shopbase.com/",
+      "shop_name": "au-template-store-prod",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "api": "https://api.shopbase.com",
+      "accounts_domain": "accounts.shopbase.com",
+      "store_type": "ecommerce",
+      "theme_id": "1449211",
+      "data": [
+        {
+          "template_name": "Trendie",
+          "snapshot": "UI-template-card.png"
+        },
+        {
+          "template_name": "Decora",
+          "snapshot": "UI-template-card.png"
+        }
+      ]
+    }
+  },
+  "cases": {
+    "SB_NEWECOM_TS_83": {
+      "description": "Check hiển thị thông tin Merchant có thể xem được của các web template trên Template store",
+      "file_thumbnail": "data/shopbase/artwork_case_06.jpg",
+      "label_image": "Thumbnail Library"
+    },
+    "SB_NEWECOM_TS_84": {
+      "description": "Check search function tab Web template trên Template store",
+      "data": {
+        "message": "Could not find any results for",
+        "search_1": {
+          "description": "Nhập chính xác name/tag của web template",
+          "data": ["Packwise", "Clothes"]
+        },
+        "search_2": {
+          "description": "Nhập text có kết quả phù hợp với template name/tag (không phân biệt hoa thường)",
+          "data": ["hOMe", "-"]
+        },
+        "search_3": {
+          "description": "Nhập text không có template name và tag match",
+          "data": ["#$%^&$#", "ascGhk12"]
+        },
+        "snapshot_name": {
+          "search_box": "search-box.png",
+          "empty_result": "empty-result.png"
+        }
+      }
+    },
+    "SB_NEWECOM_TS_85": {
+      "description": "Check filter theo Selling type tab Web template trên Template store",
+      "data": {
+        "type_1": "Dropshipping",
+        "type_2": "Others"
+      }
+    },
+    "SB_NEWECOM_TS_98": {
+      "description": "Check popup Template store trong page Product",
+      "data": {
+        "product_name": "Product test Template store",
+        "message": "Could not find any results for",
+        "type": "product",
+        "tag": "Decoration",
+        "search": "Product",
+        "tag_your_template": "Expert"
+      }
+    },
+    "SB_NEWECOM_TS_99": {
+      "description": "Check popup Template store trong Online store/Page",
+      "data": {
+        "product_name": "Product test Template store",
+        "message": "Could not find any results for",
+        "type": "page",
+        "tag": "Technology",
+        "search": "Page",
+        "selling_type": "Home page",
+        "snapshot_name": {
+          "search_box": "search-box.png",
+          "empty_result": "empty-result.png"
+        },
+        "data_your_templates": {
+          "search": ["test", "cO", "gf#5"],
+          "tag": "Clothing"
+        }
+      }
+    },
+    "SB_NEWECOM_TS_100": {
+      "description": "Check popup Template store trong Online store/Design",
+      "data": {
+        "message": "Could not find any results for",
+        "search_1": {
+          "description": "Nhập chính xác name/tag của web template",
+          "data": ["Packwise", "Clothes"]
+        },
+        "search_2": {
+          "description": "Nhập text có kết quả phù hợp với template name/tag (không phân biệt hoa thường)",
+          "data": ["hOMe", "-"]
+        },
+        "search_3": {
+          "description": "Nhập text không có template name và tag match",
+          "data": ["#$%^&$#", "ascGhk12"]
+        },
+        "selling_type": {
+          "type_1": "Dropshipping",
+          "type_2": "Others"
+        },
+        "tag": "Clothes",
+        "snapshot_name": {
+          "search_box": "search-box.png",
+          "empty_result": "empty-result.png"
+        },
+        "data_your_templates": {
+          "search": ["test", "cLO", "gf#5"],
+          "tag": "Clothes"
+        }
+      }
+    },
+    "SB_NEWECOM_TS_101": {
+      "description": "Check popup Template store Webbuiler ở tất cả các page",
+      "data": [
+        {
+          "type": "home",
+          "tag": "Pets",
+          "search": "Home",
+          "tag_your_template": "Clothes"
+        },
+        {
+          "type": "collections",
+          "tag": "Collections",
+          "search": "All collections",
+          "tag_your_template": "Expert"
+        },
+        {
+          "type": "collection",
+          "tag": "Pets",
+          "search": "Collection detail",
+          "tag_your_template": "Products"
+        },
+        {
+          "type": "product",
+          "tag": "Pets",
+          "search": "Product",
+          "tag_your_template": "Expert"
+        },
+        {
+          "type": "blogs",
+          "tag": "Home & garden",
+          "search": "Blog",
+          "tag_your_template": "Expert"
+        }
+      ]
+    },
+    "SB_NEWECOM_TS_102": {
+      "description": "Check Click vào tag trên template card tại tab Web template trên Template store",
+      "data": {
+        "tag": "Clothes"
+      }
+    },
+    "SB_NEWECOM_TS_103": {
+      "description": "Check list web templates trên Template store trên mobile",
+      "data": {
+        "message": "Could not find any results for",
+        "search_1": {
+          "description": "Nhập chính xác name/tag của web template",
+          "data": ["Packwise", "Clothes"]
+        },
+        "search_2": {
+          "description": "Nhập text có kết quả phù hợp với template name/tag (không phân biệt hoa thường)",
+          "data": ["hOMe", "-"]
+        },
+        "search_3": {
+          "description": "Nhập text không có template name và tag match",
+          "data": ["#$%^&$#", "ascGhk12"]
+        },
+        "selling_type": {
+          "type_1": "Dropshipping",
+          "type_2": "Others"
+        },
+        "tag": "Clothes",
+        "snapshot_name": {
+          "search_box": "search-box.png",
+          "empty_result": "empty-result.png"
+        }
+      }
+    }
+  }
+}

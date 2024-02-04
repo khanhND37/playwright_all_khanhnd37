@@ -1,0 +1,117 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "opay-qe-1@beeketing.net",
+      "password": "Z6el|q4&:hwCrVx",
+      "domain": "au-calculate-profit-smp.myshopbase.net",
+      "shop_name": "au-calculate-profit-smp",
+      "user_id": 90009,
+      "shop_id": 10330010,
+      "retry": 10,
+      "products_checkout": [
+        {
+          "name": "Test clone product",
+          "variant_id": 1000001771855620,
+          "quantity": 1
+        }
+      ],
+      "stripe_account": {
+        "connected_id": "acct_1INbRf2UJd2CtfrS",
+        "secret_key": "sk_test_51H1pLkFErwnyyJdNcuQiQ35dY2WvmL1rpwCXBIjDq6vBVjcBvMBkY9oO07TFOM7pVApvm2jHuZYSrmbbUUbzX2Ub00iWWFxaFC"
+      }
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "opay-qe-1@beeketing.net",
+      "password": "CZFX[b_G5T:+N*Y",
+      "domain": "au-calculate-profit-smp-prodtest.onshopbase.com",
+      "shop_name": "au-calculate-profit-smp-prodtest",
+      "user_id": 11247306,
+      "shop_id": 10458664,
+      "retry": 5,
+      "products_checkout": [
+        {
+          "name": "Dream Catcher Charm Bracelet",
+          "variant_id": 1000010854326796,
+          "quantity": 1
+        }
+      ],
+      "stripe_account": {
+        "connected_id": "acct_1HP3IIGtur9MMg3v",
+        "secret_key": "sk_test_51H1pMbHI2q8TlN76Kybx8YAFcfn9zLu6Ssc097RYoC16IqcVv8OrA0h9DCCPAkhct3ic7RF2n2J407ZvBeYB5P8t00w9v2ImaM"
+      },
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "username": "opay-qe-1@beeketing.net",
+      "password": "CZFX[b_G5T:+N*Y",
+      "domain": "au-calculate-profit-smp.onshopbase.com",
+      "shop_name": "au-calculate-profit-smp",
+      "user_id": 11247306,
+      "shop_id": 10458639,
+      "retry": 5,
+      "products_checkout": [
+        {
+          "name": "Dream Catcher Charm Bracelet",
+          "variant_id": 1000010854087197,
+          "quantity": 1
+        }
+      ],
+      "stripe_account": {
+        "connected_id": "acct_1IOFMlQkGVux03uY",
+        "secret_key": "sk_test_51H1pMbHI2q8TlN76Kybx8YAFcfn9zLu6Ssc097RYoC16IqcVv8OrA0h9DCCPAkhct3ic7RF2n2J407ZvBeYB5P8t00w9v2ImaM"
+      }
+    }
+  },
+  "cases": {
+    "SB_CALCULATE_PROFIT_SMP": [
+      {
+        "case_id": "SB_SET_PMS_SPAY3_77",
+        "case_name": "Verify profit, balance, transaction khi order check out with Global market auto rate có connected account Stripe entity là EUR",
+        "payment_method": "Spay reseller",
+        "shipping_address": {
+          "address1": "814 Mission Street",
+          "address2": "",
+          "city": "Los Angeles",
+          "company": "",
+          "country_code": "DE",
+          "country_name": "Germany",
+          "cpf_or_cnpj_number": "",
+          "first_name": "Shopbase",
+          "last_name": "Auto",
+          "name": "Jena",
+          "phone": "0111111111",
+          "province": "",
+          "province_code": "",
+          "zip": "90001",
+          "remember_me": false
+        }
+      },
+      {
+        "case_id": "SB_SET_PMS_SPAY3_79",
+        "case_name": "Verify profit, balance, transaction khi order checkout với store currency khác EUR add PPC có connected account Stripe entity là EUR",
+        "payment_method": "Spay reseller",
+        "shipping_address": {
+          "address1": "814 Mission Street",
+          "address2": "",
+          "city": "Los Angeles",
+          "company": "",
+          "country_code": "DE",
+          "country_name": "Germany",
+          "cpf_or_cnpj_number": "",
+          "first_name": "Shopbase",
+          "last_name": "Auto",
+          "name": "Jena",
+          "phone": "0111111111",
+          "province": "",
+          "province_code": "",
+          "zip": "90001",
+          "remember_me": false
+        },
+        "product_ppc_name": "Bikini"
+      }
+    ]
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "env": {
+    "prod": {
+      "domain": "au-disable-multiple-shipping-prod.onshopbase.com",
+      "api": "https://api.shopbase.com",
+      "shop_name": "au-disable-multiple-shipping-prod",
+      "username": "shopbase3@beeketing.net",
+      "password": "aAeg*PJR4.t6V:P",
+      "user_id": 206811,
+      "shop_id": 10381173,
+      "odoo_host": "https://autotest-erp-plus.shopbase.dev",
+      "odoo_db": "shopbase_fulfillment",
+      "odoo_username": "qaocg",
+      "odoo_password": "LFmy=qGLvwW^E63b",
+      "plb_template": {
+        "domain": "template-store.onshopbase.com",
+        "shop_name": "template-store.onshopbase.com",
+        "user_id": "9131323",
+        "shop_id": "10258217",
+        "username": "qas@beeketing.net",
+        "password": "123456",
+        "shop": "template-store"
+      },
+      "product_name": "Bucket Hat Women Summer Hats and Caps Patchwork Washed Denim Bucket Hat Hip Hop Solid Wide Brim Cotton Beach Fishing Cap Panama",
+      "owner_id": 10197070,
+      "sbcn_product_id": 1444849,
+      "sf_shipping_methods": [
+        {
+          "method_title": "Standard Shipping"
+        },
+        {
+          "method_title": "Premium Shipping"
+        },
+        {
+          "method_title": "Eco Shipping"
+        }
+      ]
+    },
+    "prodtest": {
+      "domain": "au-disable-multiple-shipping-prodtest.onshopbase.com",
+      "api": "https://prod-test-api.shopbase.com",
+      "shop_name": "au-multipleshipping-plb-prodtest",
+      "username": "shopbase3@beeketing.net",
+      "password": "aAeg*PJR4.t6V:P",
+      "user_id": 206811,
+      "shop_id": 10383143,
+      "odoo_host": "https://autotest-erp-plus.shopbase.dev",
+      "odoo_db": "shopbase_fulfillment",
+      "odoo_username": "qaocg",
+      "odoo_password": "LFmy=qGLvwW^E63b",
+      "plb_template": {
+        "domain": "plusbase-templateprodtest.onshopbase.com",
+        "shop_name": "plusbase-templateprodtest.onshopbase.com",
+        "user_id": "9131323",
+        "shop_id": "10364655",
+        "username": "qas@beeketing.net",
+        "password": "123456",
+        "shop": "plusbase-templateprodtest"
+      },
+      "product_name": "Bucket Hat Women Summer Hats and Caps Patchwork Washed Denim Bucket Hat Hip Hop Solid Wide Brim Cotton Beach Fishing Cap Panama",
+      "owner_id": 10197070,
+      "sbcn_product_id": 1444849,
+      "sf_shipping_methods": [
+        {
+          "method_title": "Standard Shipping"
+        },
+        {
+          "method_title": "Premium Shipping"
+        },
+        {
+          "method_title": "Eco Shipping"
+        }
+      ],
+      "product_id": {
+        "variant_id": 1000010179099402,
+        "quantity": 1
+      },
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "domain": "au-disable-multiple-shipping.myshopbase.net",
+      "api": "https://gapi.dev.shopbase.net",
+      "shop_name": "au-disable-multiple-shipping",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "odoo_host": "https://odoo.dev.shopbase.net/",
+      "odoo_db": "sbase_fulfillment_dev",
+      "odoo_username": "admin",
+      "odoo_password": "admin",
+      "user_id": 73800,
+      "shop_id": 10323057,
+      "plb_template": {
+        "domain": "plusbase-checkout.myshopbase.net",
+        "shop_name": "plusbase-checkout",
+        "user_id": 87262,
+        "shop_id": 10060862,
+        "username": "phuongpham@beeketing.net",
+        "password": "123456",
+        "shop": "plusbase-checkout"
+      },
+      "product_name": "NWT Women Wide Cut Pants Fitness Women Loose High Waist Legging 4-Way Stretch Leggings Lady Stretchy Pants",
+      "owner_id": 6232,
+      "sbcn_product_id": 1144393,
+      "sf_shipping_methods": [
+        {
+          "method_title": "Standard Shipping"
+        },
+        {
+          "method_title": "Premium Shipping"
+        },
+        {
+          "method_title": "Eco Shipping"
+        }
+      ],
+      "product_id": {
+        "variant_id": 1000001766890770,
+        "quantity": 1
+      }
+    }
+  },
+  "timeout": 1000000,
+  "country": "United States",
+  "default_shipping_methods": ["Standard Shipping", "Premium Shipping", "Eco Shipping"],
+  "card_info": {
+    "number": "4242424242424242",
+    "holder_name": "Shopbase Auto",
+    "expire_date": "12 / 24",
+    "cvv": "116"
+  },
+  "customer_info": {
+    "email": "shopbase@beeketing.net",
+    "first_name": "Shop",
+    "last_name": "Base",
+    "address": "1600 W Loop S",
+    "country": "United States",
+    "state": "California",
+    "city": "Los Angeles",
+    "zipcode": "90001",
+    "phone_number": "505-646-2276"
+  },
+  "carrier": "PlusBase Standard Shipping",
+  "carrier_premium": "PlusBase Express Shipping",
+  "carrier_low": "PlusBase Eco Shipping",
+  "carrier_code": "THZXR",
+  "carrier_code_premium": "BKZXR",
+  "carrier_code_low": "CSPS",
+  "shipping_types": ["PlusBase Eco Shipping", "PlusBase Express Shipping", "PlusBase Standard Shipping"],
+  "tracking_number": "TKN123456789",
+  "shipping_zones": {
+    "name": "United States",
+    "item_based_shipping_rate": [
+      {
+        "group_code": "standard",
+        "price_unit": "USD",
+        "rules": [
+          {
+            "column": "variant_price",
+            "condition": "10000",
+            "relation": "greater_than"
+          }
+        ],
+        "first_item_price": 6,
+        "additional_item_price": 4,
+        "name": "Standard Shipping",
+        "is_disabled": false
+      }
+    ],
+    "countries": [
+      {
+        "id": 231,
+        "name": "United States",
+        "code": "US",
+        "provinces": null
+      }
+    ],
+    "is_disabled": false
+  },
+  "cases": {
+    "SB_PLB_MSV": {
+      "data": [
+        {
+          "case_id": "SB_PLB_MSV_35",
+          "shipping_checkout": "Standard Shipping",
+          "disable_shippings": [],
+          "carrier": "PlusBase Standard Shipping",
+          "desc": "Verify shipping khi checkout order thỏa mãn setting shipping method enable trong shipping zone"
+        },
+        {
+          "case_id": "SB_PLB_MSV_36",
+          "shipping_checkout": "Premium Shipping",
+          "disable_shippings": ["Eco Shipping"],
+          "carrier": "PlusBase Express Shipping",
+          "desc": "Verify shipping khi checkout order thõa mãn shipping group được setting disable trong shipping zone"
+        },
+        {
+          "case_id": "SB_PLB_MSV_37",
+          "shipping_checkout": "Eco Shipping",
+          "disable_shippings": ["Standard Shipping", "Premium Shipping"],
+          "carrier": "PlusBase Eco Shipping",
+          "update_shipping_types": ["PlusBase Eco Shipping"],
+          "desc": "Verify khi checkout product có line ship mà tất cả các line ship đều bị disable trong shipping zone"
+        },
+        {
+          "case_id": "SB_PLB_MSV_38",
+          "shipping_checkout": "Eco Shipping",
+          "disable_shippings": ["Standard Shipping", "Premium Shipping"],
+          "carrier": "PlusBase Eco Shipping",
+          "desc": "Verify shipping luồng checkout, order, fulfill đối với order checkout đến country được set shipping zone nhưng product không thỏa mãn shipping zone đó",
+          "verify_tooltip": true
+        }
+      ]
+    }
+  }
+}

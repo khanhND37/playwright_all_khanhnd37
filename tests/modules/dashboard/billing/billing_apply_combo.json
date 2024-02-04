@@ -1,0 +1,214 @@
+{
+  "env": {
+    "prod": {
+      "domain": "au-billing-apply-combo-prodlive.onshopbase.com",
+      "user_id": 74303,
+      "shop_id": 10443560,
+      "api": "https://api.shopbase.com",
+      "shop_name": "au-billing-apply-combo-prodlive",
+      "username": "shopbase2@beeketing.net",
+      "password": "raMse).7L/b4;k#@",
+      "hive_username": "shopbase",
+      "hive_password": "UxsLHz^Wjkf35*/w",
+      "hive_domain": "hive.shopbase.com",
+      "time_out": 300000,
+      "basic_plan": "Basic Base",
+      "standard_plan": "Standard Base",
+      "pro_plan": "Pro Base",
+      "time_plan_monthly": "Monthly",
+      "invoice_detail": {
+        "content": "Subscription fee collecting",
+        "type": "OUT",
+        "detail": "Paid for subscription bill ",
+        "transactions_type": "OUT",
+        "transactions_content": "The payment for the subscription bill ",
+        "transactions_status": "Paid"
+      },
+      "cases": {
+        "SB_BAL_BILL_BFL_511": {
+          "products_checkout": [
+            {
+              "variant_id": 1000010744823904,
+              "quantity": 1
+            }
+          ],
+          "invoice_conditions": [
+            {
+              "field": "Shop Domain",
+              "checkbox_array": [
+                {
+                  "checkbox": "au-billing-apply-combo-prodlive.onshopbase.com"
+                }
+              ]
+            },
+            {
+              "field": "Invoice",
+              "select_ddl_value": "Transaction fee collecting"
+            },
+            {
+              "field": "Status",
+              "checkbox_array": [
+                {
+                  "checkbox": "Open"
+                }
+              ]
+            }
+          ],
+          "filter_tag_invoice": "Status: Open"
+        }
+      }
+    },
+    "prodtest": {
+      "domain": "au-billing-apply-combo-prodtest.onshopbase.com",
+      "user_id": 74303,
+      "shop_id": 10443559,
+      "api": "https://prod-test-api.shopbase.com",
+      "shop_name": "au-billing-apply-combo-prodtest",
+      "username": "shopbase2@beeketing.net",
+      "password": "raMse).7L/b4;k#@",
+      "hive_username": "shopbase",
+      "hive_password": "UxsLHz^Wjkf35*/w",
+      "hive_domain": "hive.shopbase.com",
+      "time_out": 300000,
+      "basic_plan": "Basic Base",
+      "standard_plan": "Standard Base",
+      "pro_plan": "Pro Base",
+      "time_plan_monthly": "Monthly",
+      "invoice_detail": {
+        "content": "Subscription fee collecting",
+        "type": "OUT",
+        "detail": "Paid for subscription bill ",
+        "transactions_type": "OUT",
+        "transactions_content": "The payment for the subscription bill ",
+        "transactions_status": "Paid"
+      },
+      "cases": {
+        "SB_BAL_BILL_BFL_511": {
+          "products_checkout": [
+            {
+              "variant_id": 1000010744822719,
+              "quantity": 1
+            }
+          ],
+          "invoice_conditions": [
+            {
+              "field": "Shop Domain",
+              "checkbox_array": [
+                {
+                  "checkbox": "au-billing-apply-combo-prodtest.onshopbase.com"
+                }
+              ]
+            },
+            {
+              "field": "Invoice",
+              "select_ddl_value": "Transaction fee collecting"
+            },
+            {
+              "field": "Status",
+              "checkbox_array": [
+                {
+                  "checkbox": "Open"
+                }
+              ]
+            }
+          ],
+          "filter_tag_invoice": "Status: Open"
+        }
+      }
+    },
+    "dev": {
+      "domain": "au-billing-apply-combo.myshopbase.net",
+      "user_id": 89201,
+      "shop_id": 10328502,
+      "api": "https://gapi.dev.shopbase.net",
+      "shop_name": "au-billing-apply-combo",
+      "username": "shopbase9@beeketing.net",
+      "password": "AutoBilling@123",
+      "hive_username": "shopbase",
+      "hive_password": "123456",
+      "hive_domain": "hive.dev.shopbase.net",
+      "time_out": 300000,
+      "basic_plan": "Basic Base",
+      "standard_plan": "Standard Base",
+      "pro_plan": "Pro Base",
+      "time_plan_monthly": "Monthly",
+      "invoice_detail": {
+        "content": "Subscription fee collecting",
+        "type": "OUT",
+        "detail": "Paid for subscription bill ",
+        "transactions_type": "OUT",
+        "transactions_content": "The payment for the subscription bill ",
+        "transactions_status": "Paid"
+      },
+      "cases": {
+        "SB_BAL_BILL_BFL_511": {
+          "products_checkout": [
+            {
+              "variant_id": 1000001770460519,
+              "quantity": 1
+            }
+          ],
+          "invoice_conditions": [
+            {
+              "field": "Shop Domain",
+              "checkbox_array": [
+                {
+                  "checkbox": "au-billing-apply-combo.myshopbase.net"
+                }
+              ]
+            },
+            {
+              "field": "Invoice",
+              "select_ddl_value": "Transaction fee collecting"
+            },
+            {
+              "field": "Status",
+              "checkbox_array": [
+                {
+                  "checkbox": "Open"
+                }
+              ]
+            }
+          ],
+          "filter_tag_invoice": "Status: Open"
+        }
+      }
+    }
+  },
+  "cases": {
+    "SB_BAL_BILL_BFL_521": {
+      "info_combo_apply": {
+        "combo_value": 2,
+        "coupon_type": "Free Trial",
+        "coupon_value": 22
+      }
+    },
+    "SB_BAL_BILL_BFL_513": {
+      "coupon": "datatest10",
+      "value_percent_coupon": 10,
+      "info_combo_apply": {
+        "combo_value": 3,
+        "coupon_type": "Custom package",
+        "coupon_value": 50.0,
+        "transaction_fee": 1
+      }
+    },
+    "SB_BAL_BILL_BFL_511": {
+      "info_combo_apply": {
+        "combo_value": 2,
+        "coupon_type": "Custom package",
+        "coupon_value": 50.0,
+        "transaction_fee": 7
+      },
+      "invoice_info": {
+        "content": "Transaction fee collecting",
+        "status": "Open",
+        "type": "OUT",
+        "detail": "Paid for transaction fee of the order ",
+        "transactions_type": "OUT",
+        "transactions_content": "The payment for the transaction fee of the order ",
+        "transactions_status": "Pending"
+      }
+    }
+  }
+}

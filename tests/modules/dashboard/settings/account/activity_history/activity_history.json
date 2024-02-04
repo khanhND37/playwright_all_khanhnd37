@@ -1,0 +1,159 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-spay-activity-log.myshopbase.net",
+      "shop_name": "au-spay-activity-log",
+      "username": "shopbase3@beeketing.net",
+      "password": "=l-N&YG}g<'KLJk",
+      "shop_domain": "au-spay-activity-log.myshopbase.net",
+      "server_domain": "myshopbase.net",
+      "shop_info_api": "https://au-spay-activity-log.myshopbase.net/admin/shop.json"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-spay-activity-log-prodtest.onshopbase.com",
+      "shop_name": "au-spay-activity-log-prodtest",
+      "username": "shopbase2@beeketing.net",
+      "password": "raMse).7L/b4;k#@",
+      "shop_domain": "au-spay-activity-log-prodtest.onshopbase.com",
+      "server_domain": "onshopbase.com",
+      "shop_info_api": "https://au-spay-activity-log-prodtest.onshopbase.com/admin/shop.json",
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-spay-activity-log-prod.onshopbase.com",
+      "shop_name": "au-spay-activity-log-prod",
+      "username": "shopbase2@beeketing.net",
+      "password": "raMse).7L/b4;k#@",
+      "shop_domain": "au-spay-activity-log-prod.onshopbase.com",
+      "server_domain": "onshopbase.com",
+      "shop_info_api": "https://au-spay-activity-log-prod.onshopbase.com/admin/shop.json"
+    }
+  },
+  "cases": {
+    "ACT_LOG": [
+      {
+        "case_id": "SB_SET_ACC_ACT_LOG_1",
+        "case_name": "Log Balance: Spay",
+        "case_step": "Edit Enable payout to ShopBase Balance",
+        "category": "Balance",
+        "activity": "Update balance setting",
+        "details": "Update balance settings",
+        "more_info": ["client_browser", "client_device", "client_os", "ip", "payout_to_shopbase_balance"]
+      },
+      {
+        "case_id": "SB_SET_ACC_ACT_LOG_2",
+        "case_name": "Log Balance: Auto top up",
+        "case_step": "Edit Auto top up",
+        "category": "Balance",
+        "activity": "Update balance setting",
+        "details": "Update balance settings",
+        "more_info": ["client_browser", "client_device", "client_os", "ip", "auto_topup"]
+      },
+      {
+        "case_id": "SB_SET_ACC_ACT_LOG_3",
+        "case_name": "Log Balance: Update card",
+        "case_step": "Update thông tin card",
+        "category": "Balance",
+        "activity": "Update card",
+        "details": "Update payment method",
+        "more_info": [
+          "client_browser",
+          "client_device",
+          "client_os",
+          "ip",
+          "payment_method\": \"card",
+          "type\": \"credit_card ending in"
+        ],
+        "card": {
+          "cardNumber": "4242424242424242",
+          "expires": "12/29",
+          "cvc": "789",
+          "firstName": "Quan",
+          "lastName": "Le",
+          "address": "130 Trung Phung",
+          "city": "Ha Noi",
+          "country": "Vietnam",
+          "zipCode": "100000"
+        },
+        "card_new": {
+          "cardNumber": "4242424242424242",
+          "expires": "12/24",
+          "cvc": "123",
+          "firstName": "Quan",
+          "lastName": "Le",
+          "address": "103 Trung Phung",
+          "city": "Ha Noi",
+          "country": "Vietnam",
+          "zipCode": "100000"
+        }
+      },
+      {
+        "case_id": "SB_SET_ACC_ACT_LOG_4",
+        "case_name": "Log Account: Add staff",
+        "case_step": "Add staff account",
+        "category": "Account",
+        "activity": "Add staff",
+        "details": "Add staff account",
+        "more_info": ["client_browser", "client_device", "client_os", "ip", "email"],
+        "staff_email": "quanle1@beeketing.net"
+      },
+      {
+        "case_id": "SB_SET_ACC_ACT_LOG_5",
+        "case_name": "Log Account: Confirm plan",
+        "case_step": "Chọn và confirm changes 1 plan",
+        "category": "Account",
+        "activity": "Change plan",
+        "details": "Change plan",
+        "more_info": ["client_browser", "client_device", "client_os", "ip", "old_period", "old_plan", "period", "plan"]
+      },
+      {
+        "case_id": "SB_SET_ACC_ACT_LOG_6",
+        "case_name": "Log Account: Activate plan",
+        "case_step": "Activate plan cho shop free trial",
+        "category": "Account",
+        "activity": "Confirm plan",
+        "details": "Confirm plan",
+        "more_info": ["client_browser", "client_device", "client_os", "ip", "period", "plan"],
+        "shop": {
+          "country": "Vietnam",
+          "phone_number": "0963739992",
+          "fb_link": "quanleshopbase130TP"
+        }
+      },
+      {
+        "case_id": "SB_SET_ACC_ACT_LOG_9",
+        "case_name": "Log Profile: Đổi first name, last name, email, SĐT",
+        "case_step": "Update profile",
+        "category": "Profile",
+        "activity": "Update profile",
+        "details": "Update settings",
+        "more_info": ["client_browser", "client_device", "client_os", "ip", "email", "phone_user"]
+      },
+      {
+        "case_id": "SB_SET_ACC_ACT_LOG_11",
+        "case_name": "Log Balance: Sửa account payout",
+        "case_step": "Edit account payout",
+        "category": "Balance",
+        "activity": "Update balance setting",
+        "details": "Update payout account",
+        "more_info": ["client_browser", "client_device", "client_os", "ip", "_email"],
+        "payout_email": "quanle1@beeketing.net"
+      }
+    ],
+    "SB_SET_ACC_ACT_LOG_7": {
+      "category": "Account",
+      "activity": {
+        "close": "Close store",
+        "reopen": "Reopen store"
+      },
+      "details": {
+        "close": "Close store",
+        "reopen": "Reopen store"
+      },
+      "more_info": ["client_browser", "client_device", "client_os", "ip"]
+    }
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "env": {
+    "dev": {
+      "domain": "wb-block-video.myshopbase.net",
+      "shop_name": "wb-block-video",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_id": 10323396,
+      "user_id": 73800,
+      "pre_condition": {
+        "product": {
+          "type": "online_course",
+          "title": "block-video",
+          "handle": "block-video",
+          "published": false
+        },
+        "apply_template": {
+          "template_id": 403,
+          "type": "product"
+        }
+      }
+    },
+    "prodtest": {
+      "domain": "wb-block-video-2-prodtest.onshopbase.com",
+      "shop_name": "wb-block-video-2-prodtest",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10430370,
+      "user_id": 11260206,
+      "pre_condition": {
+        "product": {
+          "type": "online_course",
+          "title": "block-video",
+          "handle": "block-video",
+          "published": false
+        },
+        "apply_template": {
+          "template_id": 10,
+          "type": "product"
+        }
+      },
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "prod": {
+      "domain": "wb-block-video-2.onshopbase.com",
+      "shop_name": "wb-block-video-2",
+      "api": "https://api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10430364,
+      "user_id": 11260206,
+      "pre_condition": {
+        "product": {
+          "type": "online_course",
+          "title": "block-video",
+          "handle": "block-video",
+          "published": false
+        },
+        "apply_template": {
+          "template_id": 10,
+          "type": "product"
+        }
+      }
+    }
+  },
+  "cases": {
+    "SB_WEB_BUILDER_SECTION_SETTING_01": {
+      "description": "Check setting background video of section",
+      "data": {
+        "section": {
+          "dnd_section": {
+            "from": {
+              "category": "Basics",
+              "template": "Single column"
+            },
+            "to": {
+              "position": {
+                "section": 1
+              },
+              "isBottom": false
+            }
+          }
+        },
+        "backgroundSetting": {
+          "background": {
+            "video": {
+              "url": "https://www.youtube.com/watch?v=tVl-xHonnlw"
+            }
+          }
+        }
+      },
+      "expected": {
+        "video_attribute": "src",
+        "video_url": "tVl-xHonnlw"
+      }
+    },
+    "SB_WEB_BUILDER_SECTION_SETTING_02": {
+      "description": "Check setting block background color and image",
+      "data": {
+        "section": {
+          "dnd_section": {
+            "from": {
+              "category": "Basics",
+              "template": "Single column"
+            },
+            "to": {
+              "position": {
+                "section": 1
+              },
+              "isBottom": false
+            }
+          },
+          "expand_section": {
+            "name": "Section",
+            "index": 1
+          },
+          "open_setting_row": {
+            "section_name": "Section",
+            "section_index": 1,
+            "row_name": "Row"
+          },
+          "set_layout": {
+            "column": 3,
+            "spacing": 10
+          },
+          "dnd_blocks": [
+            {
+              "parent_position": {
+                "section": 1,
+                "column": 2
+              },
+              "category": "Basics",
+              "template": "Toggle list"
+            },
+            {
+              "parent_position": {
+                "section": 1,
+                "column": 3
+              },
+              "category": "Basics",
+              "template": "Toggle list"
+            }
+          ]
+        }
+      },
+      "backgroundColor": {
+        "background": {
+          "color": {
+            "preset": 4
+          }
+        }
+      },
+      "backgroundImage": {
+        "image": {
+          "url": "data/shopbase/sun.png"
+        }
+      },
+      "expect": {
+        "preview_background_block": "preview-background-block.png",
+        "sf_background_block": "sf-background-block.png"
+      }
+    }
+  }
+}

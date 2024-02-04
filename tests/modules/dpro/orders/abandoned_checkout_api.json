@@ -1,0 +1,198 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "create-order-production.onshopbase.com",
+      "shop_name": "create-order-production",
+      "user_id": "73782",
+      "shop_id": 10375060,
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "creator-order.onshopbase.com",
+      "shop_name": "creator-order",
+      "user_id": "73782",
+      "shop_id": 10375058,
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "creator-order.myshopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "user_id": "73800",
+      "shop_id": 10321120,
+      "shop_name": "creator-order"
+    }
+  },
+  "cases": {
+    "SB_SC_SCO_52": {
+      "filter": []
+    },
+    "LIST_DATA_FILTER_ABANDONED_CHECKOUT": {
+      "data": [
+        {
+          "description": "[API] Kiểm tra get list abandoned checkout theo Email status",
+          "case_name": "SB_SC_SCO_54",
+          "checkout_list": [
+            {
+              "step": "Call api get list abandoned checkout theo Email status là sent",
+              "filter": [
+                {
+                  "field": "email_statuses",
+                  "type": "string",
+                  "value": "sent"
+                }
+              ]
+            },
+            {
+              "step": "Call api get list abandoned checkout theo Email status là scheduled",
+              "filter": [
+                {
+                  "field": "email_statuses",
+                  "type": "string",
+                  "value": "scheduled"
+                }
+              ]
+            },
+            {
+              "step": "Call api list abandoned checkout theo Email status là not_sent",
+              "filter": [
+                {
+                  "field": "email_statuses",
+                  "type": "string",
+                  "value": "not_sent"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "[API] Kiểm tra get list abandoned checkout theo recovery_statuses",
+          "case_name": "SB_SC_SCO_55",
+          "checkout_list": [
+            {
+              "step": "Call api get list theo recovery_statuses là recovered",
+              "filter": [
+                {
+                  "field": "recovery_statuses",
+                  "type": "string",
+                  "value": "recovered"
+                }
+              ]
+            },
+            {
+              "step": "Call api get list theo recovery_statuses là not_recovered",
+              "filter": [
+                {
+                  "field": "recovery_statuses",
+                  "type": "string",
+                  "value": "not_recovered"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "[API] Kiểm tra get list abandoned checkout theo checkout date",
+          "case_name": "SB_SC_SCO_56",
+          "checkout_list": [
+            {
+              "step": "Call api get list checkout trường Checkout date theo Today",
+              "filter": [
+                {
+                  "field": "created_at",
+                  "type": "today"
+                }
+              ]
+            },
+            {
+              "step": "Call api get list checkout trường Checkout date theo yesterday",
+              "filter": [
+                {
+                  "field": "created_at",
+                  "type": "yesterday"
+                }
+              ]
+            },
+            {
+              "step": "Call api get list checkout trường Checkout date theo last7days",
+              "filter": [
+                {
+                  "field": "created_at",
+                  "type": "last7days"
+                }
+              ]
+            },
+            {
+              "step": "Call api get list checkout trường Checkout date theo thisMonth",
+              "filter": [
+                {
+                  "field": "created_at",
+                  "type": "thisMonth"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "[API] Kiểm tra get list abandoned checkout theo search keyword",
+          "case_name": "SB_SC_SCO_57",
+          "checkout_list": [
+            {
+              "step": "Call api get list checkout theo search_keyword null",
+              "filter": [
+                {
+                  "field": "name",
+                  "type": "string",
+                  "value": ""
+                }
+              ]
+            },
+            {
+              "step": "Call api get list checkout theo search_keyword không đúng",
+              "filter": [
+                {
+                  "field": "name",
+                  "type": "string",
+                  "value": "abc"
+                }
+              ]
+            },
+            {
+              "step": "Call api get list checkout theo search_keyword like checkout name",
+              "filter": [
+                {
+                  "field": "name",
+                  "type": "string",
+                  "value": "117"
+                }
+              ]
+            },
+            {
+              "step": "Call api get list checkout theo search_keyword equal",
+              "filter": [
+                {
+                  "field": "name",
+                  "type": "string",
+                  "value": "1175008"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SB_SC_SCO_58": {
+      "filter": [],
+      "checkout_detail": {
+        "checkout_id": 39181059,
+        "total_price": 56
+      }
+    }
+  }
+}

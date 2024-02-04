@@ -1,0 +1,570 @@
+{
+  "api": "https://api.shopbase.com",
+  "domain": "lecture-section-api-prodtest.onshopbase.com",
+  "shop_name": "lecture-section-api-prodtest",
+  "user_id": 74303,
+  "shop_id": 10369409,
+  "username": "shopbase@beeketing.net",
+  "password": "Q(f!3Kx+6n;?Us%F",
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "lecture-section-api.onshopbase.com",
+      "shop_name": "lecture-section-api",
+      "user_id": 74303,
+      "shop_id": 10369410,
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "lecture-section-api-prodtest.onshopbase.com",
+      "shop_name": "lecture-section-api-prodtest",
+      "user_id": 74303,
+      "shop_id": 10369409,
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "lecture-section-api.myshopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "user_id": "73800",
+      "shop_id": 10321855,
+      "shop_name": "lecture-section-api"
+    }
+  },
+  "cases": {
+    "UPDATE_PRODUCT_WITH_VALID_PARAM": {
+      "data": [
+        {
+          "description": "Check gọi api với Online course có tất cả param hợp lệ",
+          "case_id": "SB_SC_SCP_223",
+          "product": {
+            "handle": "online-course",
+            "product_type": "online_course",
+            "title": "Online Course"
+          },
+          "product_update": {
+            "product_type": "online_course",
+            "title": "Update Product Online Course",
+            "body_html": "Update for online course",
+            "published": false
+          },
+          "section_info": {
+            "title": "Section online course 1",
+            "description": "This is new section for online course",
+            "status": "published",
+            "position": 1
+          },
+          "message_update": {
+            "message": "success",
+            "success": true
+          }
+        },
+        {
+          "description": "Check gọi api với Digital download có tất cả param hợp lệ",
+          "case_id": "SB_SC_SCP_224",
+          "product": {
+            "handle": "digital-download",
+            "product_type": "digital_download",
+            "title": "Digital Download"
+          },
+          "product_update": {
+            "product_type": "digital_download",
+            "title": "Update Product Digital Download",
+            "body_html": "Update for digital download",
+            "published": true
+          },
+          "section_info": {
+            "title": "Section digital download 1",
+            "description": "This is new section for digital download",
+            "status": "published",
+            "position": 1
+          },
+          "message_update": {
+            "message": "success",
+            "success": true
+          }
+        }
+      ]
+    },
+    "SB_SC_SCP_225": {
+      "product": {
+        "handle": "coaching-session",
+        "product_type": "coaching_session",
+        "title": "Coaching Session"
+      },
+      "product_update": {
+        "product_type": "coaching_session",
+        "title": "Update Product Coaching Session",
+        "body_html": "Update for Coaching Session",
+        "published": true
+      },
+      "section_info": {
+        "title": "Section Coaching Session 1",
+        "description": "This is new section for dCoaching Session",
+        "status": "published",
+        "position": 1
+      },
+      "message_update": {
+        "message": "success",
+        "success": true
+      }
+    },
+    "UPDATE_PRODUCT_STATUS": {
+      "data": [
+        {
+          "description": "Check gọi api update product với Online course trường status = publish",
+          "case_id": "SB_SC_SCP_229",
+          "product": {
+            "product_type": "online_course",
+            "title": "Online Course published"
+          },
+          "product_update": {
+            "product_type": "online_course",
+            "title": "Update Product Online Course published",
+            "body_html": "Update for online course published",
+            "published": false
+          }
+        },
+        {
+          "description": "Check gọi api update product với Online course trường status = unpublish",
+          "case_id": "SB_SC_SCP_230",
+          "product": {
+            "product_type": "online_course",
+            "title": "Online Course Unpublished"
+          },
+          "product_update": {
+            "product_type": "online_course",
+            "title": "Update Product Online Course Unpublished",
+            "body_html": "Update for online course Unpublished",
+            "published": false
+          }
+        },
+        {
+          "description": "Check gọi api update product với Digital download trường status = pushlish",
+          "case_id": "SB_SC_SCP_231",
+          "product": {
+            "product_type": "digital_download",
+            "title": "Digital download published"
+          },
+          "product_update": {
+            "product_type": "digital_download",
+            "title": "Update Product Digital download published",
+            "body_html": "Update for Digital download published",
+            "published": false
+          }
+        },
+        {
+          "description": "Check gọi api update product với Digital download trường status = unpublish",
+          "case_id": "SB_SC_SCP_232",
+          "product": {
+            "product_type": "digital_download",
+            "title": "Digital download unpublished"
+          },
+          "product_update": {
+            "product_type": "digital_download",
+            "title": "Update Product Digital download unpublished",
+            "body_html": "Update for Digital download unpublished",
+            "published": false
+          }
+        },
+        {
+          "description": "Check gọi api update product với Coaching session trường status = pushlish",
+          "case_id": "SB_SC_SCP_233",
+          "product": {
+            "product_type": "coaching_session",
+            "title": "Digital download published"
+          },
+          "product_update": {
+            "product_type": "coaching_session",
+            "title": "Update Product Coaching session published",
+            "body_html": "Update for Coaching session published",
+            "published": false
+          }
+        },
+        {
+          "description": "Check gọi api update product với Coaching session trường status = unpushlish",
+          "case_id": "SB_SC_SCP_234",
+          "product": {
+            "product_type": "coaching_session",
+            "title": "Coaching session unpublished"
+          },
+          "product_update": {
+            "product_type": "coaching_session",
+            "title": "Update Product Coaching session unpublished",
+            "body_html": "Update for Coaching session unpublished",
+            "published": false
+          }
+        }
+      ]
+    },
+    "UPDATE_PRODUCT_PRICING": {
+      "data": [
+        {
+          "description": "Check gọi api update product có Pricing Type = Free",
+          "case_id": "SB_SC_SCP_236",
+          "product": {
+            "product_type": "coaching_session",
+            "title": "Product pricing type Free"
+          },
+          "product_update": {
+            "product_type": "coaching_session",
+            "title": "Update Product pricing type Free",
+            "body_html": "Update for Product pricing type Free",
+            "published": false,
+            "variant_offers": [
+              {
+                "id": 0,
+                "variant_id": 0,
+                "price": 0,
+                "name": "Free",
+                "quantity_limit": {
+                  "limit": "100",
+                  "enabled": true
+                },
+                "access_limit": {
+                  "limit": 0,
+                  "enabled": false
+                },
+                "time_limit": {
+                  "time_limit_type": "Each member",
+                  "time": 0,
+                  "time_type": "",
+                  "enabled": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "description": "Check gọi api update product có Pricing Type = One time payment",
+          "case_id": "SB_SC_SCP_237",
+          "product": {
+            "product_type": "coaching_session",
+            "title": "Product pricing type One-time payment"
+          },
+          "product_update": {
+            "product_type": "digital_download",
+            "title": "Update Product pricing type One-time payment",
+            "body_html": "Update for Product pricing type One-time payment",
+            "published": false,
+            "variant_offers": [
+              {
+                "id": 0,
+                "variant_id": 0,
+                "price": 9.99,
+                "name": "One-time payment",
+                "quantity_limit": {
+                  "limit": "100",
+                  "enabled": true
+                },
+                "access_limit": {
+                  "limit": 0,
+                  "enabled": false
+                },
+                "time_limit": {
+                  "time_limit_type": "Each member",
+                  "time": 0,
+                  "time_type": "",
+                  "enabled": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "description": "Check gọi api update product có quantity_limit enable",
+          "case_id": "SB_SC_SCP_238",
+          "product": {
+            "product_type": "online_course",
+            "title": "Product quantity limit enable"
+          },
+          "product_update": {
+            "product_type": "digital_download",
+            "title": "Update Product quantity limit enable",
+            "body_html": "Update for Product quantity limit enable",
+            "published": false,
+            "variant_offers": [
+              {
+                "id": 0,
+                "variant_id": 0,
+                "price": 9.99,
+                "name": "One-time payment",
+                "quantity_limit": {
+                  "limit": "100",
+                  "enabled": true
+                },
+                "access_limit": {
+                  "limit": 0,
+                  "enabled": false
+                },
+                "time_limit": {
+                  "time_limit_type": "Each member",
+                  "time": 0,
+                  "time_type": "",
+                  "enabled": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "description": "Check gọi api update product có quantity_limit disable",
+          "case_id": "SB_SC_SCP_239",
+          "product": {
+            "product_type": "online_course",
+            "title": "Product quantity limit disable"
+          },
+          "product_update": {
+            "product_type": "digital_download",
+            "title": "Update Product quantity limit disable",
+            "body_html": "Update for Product quantity limit disable",
+            "published": false,
+            "variant_offers": [
+              {
+                "id": 0,
+                "variant_id": 0,
+                "price": 9.99,
+                "name": "One-time payment",
+                "quantity_limit": {
+                  "limit": "100",
+                  "enabled": false
+                },
+                "access_limit": {
+                  "limit": 0,
+                  "enabled": false
+                },
+                "time_limit": {
+                  "time_limit_type": "Each member",
+                  "time": 0,
+                  "time_type": "",
+                  "enabled": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "description": "Check gọi api update product có access_limit enable",
+          "case_id": "SB_SC_SCP_240",
+          "product": {
+            "product_type": "online_course",
+            "title": "Product access limit enable"
+          },
+          "product_update": {
+            "product_type": "digital_download",
+            "title": "Update Product quantity access enable",
+            "body_html": "Update for Product access limit enable",
+            "published": false,
+            "variant_offers": [
+              {
+                "id": 0,
+                "variant_id": 0,
+                "price": 9.99,
+                "name": "One-time payment",
+                "quantity_limit": {
+                  "limit": "100",
+                  "enabled": false
+                },
+                "access_limit": {
+                  "limit": 20,
+                  "enabled": true
+                },
+                "time_limit": {
+                  "time_limit_type": "Each member",
+                  "time": 0,
+                  "time_type": "",
+                  "enabled": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "description": "Check gọi api update product có access_limit disable",
+          "case_id": "SB_SC_SCP_241",
+          "product": {
+            "product_type": "online_course",
+            "title": "Product access limit disable"
+          },
+          "product_update": {
+            "product_type": "digital_download",
+            "title": "Update Product access limit disable",
+            "body_html": "Update for Product access limit disable",
+            "published": false,
+            "variant_offers": [
+              {
+                "id": 0,
+                "variant_id": 0,
+                "price": 9.99,
+                "name": "One-time payment",
+                "quantity_limit": {
+                  "limit": "100",
+                  "enabled": false
+                },
+                "access_limit": {
+                  "limit": 20,
+                  "enabled": false
+                },
+                "time_limit": {
+                  "time_limit_type": "Each member",
+                  "time": 0,
+                  "time_type": "",
+                  "enabled": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "description": "Check gọi api update product có time_limit enable",
+          "case_id": "SB_SC_SCP_242",
+          "product": {
+            "product_type": "online_course",
+            "title": "Product access limit enable"
+          },
+          "product_update": {
+            "product_type": "digital_download",
+            "title": "Update Product access limit enable",
+            "body_html": "Update for Product access limit enable",
+            "published": false,
+            "variant_offers": [
+              {
+                "id": 0,
+                "variant_id": 0,
+                "price": 9.99,
+                "name": "One-time payment",
+                "quantity_limit": {
+                  "limit": "100",
+                  "enabled": false
+                },
+                "access_limit": {
+                  "limit": 20,
+                  "enabled": false
+                },
+                "time_limit": {
+                  "time_limit_type": "Each member",
+                  "time": 0,
+                  "time_type": "",
+                  "enabled": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "description": "Check gọi api update product có time_limit disable",
+          "case_id": "SB_SC_SCP_243",
+          "product": {
+            "product_type": "online_course",
+            "title": "Product time limit disable"
+          },
+          "product_update": {
+            "product_type": "digital_download",
+            "title": "Update Product time limit disable",
+            "body_html": "Update for Product time limit disable",
+            "published": false,
+            "variant_offers": [
+              {
+                "id": 0,
+                "variant_id": 0,
+                "price": 9.99,
+                "name": "One-time payment",
+                "quantity_limit": {
+                  "limit": "100",
+                  "enabled": false
+                },
+                "access_limit": {
+                  "limit": 20,
+                  "enabled": false
+                },
+                "time_limit": {
+                  "time_limit_type": "Each member",
+                  "time": 0,
+                  "time_type": "",
+                  "enabled": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "description": "Check gọi api update product có time_limit_type = Each member get a specific amount of time",
+          "case_id": "SB_SC_SCP_244",
+          "product": {
+            "product_type": "online_course",
+            "title": "Product time limit type Each member"
+          },
+          "product_update": {
+            "product_type": "digital_download",
+            "title": "Update Product time limit type Each member",
+            "body_html": "Update for Product time type Each member",
+            "published": false,
+            "variant_offers": [
+              {
+                "id": 0,
+                "variant_id": 0,
+                "price": 9.99,
+                "name": "One-time payment",
+                "quantity_limit": {
+                  "limit": "100",
+                  "enabled": false
+                },
+                "access_limit": {
+                  "limit": 20,
+                  "enabled": false
+                },
+                "time_limit": {
+                  "time_limit_type": "Each member",
+                  "time": 0,
+                  "time_type": "",
+                  "enabled": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "description": "Check gọi api update product có time_limit_type = All members lose access on a specific date",
+          "case_id": "SB_SC_SCP_245",
+          "product": {
+            "product_type": "online_course",
+            "title": "Product time limit type Each member"
+          },
+          "product_update": {
+            "product_type": "digital_download",
+            "title": "Update Product time limit type Each member",
+            "body_html": "Update for Product time type Each member",
+            "published": false,
+            "variant_offers": [
+              {
+                "id": 0,
+                "variant_id": 0,
+                "price": 9.99,
+                "name": "One-time payment",
+                "quantity_limit": {
+                  "limit": "100",
+                  "enabled": false
+                },
+                "access_limit": {
+                  "limit": 20,
+                  "enabled": false
+                },
+                "time_limit": {
+                  "time_limit_type": "All",
+                  "time": 0,
+                  "time_type": "",
+                  "enabled": false
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

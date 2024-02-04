@@ -1,0 +1,237 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "add-custom-text-pb.myshopbase.net",
+      "shop_name": "add-custom-text-pb",
+      "user_id": 73800,
+      "shop_id": 10331302,
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "cases": {
+        "SB_NEWECOM_SP_36": {
+          "content": "add_custom_text_pb,add-custom-text-pb.myshopbase.net,CG, YH, HN 104434, Vietnam,0987352543,support@shops-support.com,Credit card (Visa, Mastercard, Discover or American Express) and Paypal,"
+        }
+      }
+    },
+    "prod": {
+      "domain": "au-add-custom-text-pb.onshopbase.com",
+      "username": "plus-qe-2@beeketing.net",
+      "password": "Q37t^Q7Sa4W8",
+      "user_id": 11248586,
+      "shop_id": 10462084,
+      "shop_name": "au-add-custom-text-pb",
+      "api": "https://api.shopbase.com",
+      "cases": {
+        "SB_NEWECOM_SP_36": {
+          "content": "au-add-custom-text-pb,au-add-custom-text-pb.onshopbase.com,CG, YH, HN 104434, Vietnam,389498053,support@shops-support.com,Credit card (Visa, Mastercard, Discover or American Express) and Paypal,"
+        }
+      }
+    },
+    "prodtest": {
+      "domain": "au-add-custom-text-pb-prodtest.onshopbase.com",
+      "api": "https://prod-test-api.shopbase.com",
+      "shop_name": "au-add-custom-text-pb-prodtest",
+      "username": "plus-qe-2@beeketing.net",
+      "password": "Q37t^Q7Sa4W8",
+      "user_id": 11248586,
+      "shop_id": 10463490,
+      "accounts_domain": "accounts-test.shopbase.com",
+      "cases": {
+        "SB_NEWECOM_SP_36": {
+          "content": "au-add-custom-text-pb-prodtest,au-add-custom-text-pb-prodtest.onshopbase.com,CG, YH, HN 104434, Vietnam,389498053,templates@shopbase.com,Credit card (Visa, Mastercard, Discover or American Express) and Paypal,"
+        }
+      }
+    }
+  },
+  "time_out": 500000,
+  "max_length": "1200",
+  "number_of_policies": 5,
+  "number_of_variable_templates": 6,
+  "cases": {
+    "SB_NEWECOM_SP_35": {
+      "data": [
+        {
+          "page": "Refund policy",
+          "title": "Add custom text to Refund policy",
+          "path": "/policies/refund-policy",
+          "content": "Test custom text show at the end of Refund policy page",
+          "id_option": "1",
+          "title_policy": "Refund Policy"
+        },
+        {
+          "page": "Privacy policy",
+          "title": "Add custom text to Privacy policy",
+          "path": "/policies/privacy-policy",
+          "content": "Test custom text show at the beginning of Privacy policy page",
+          "id_option": "0",
+          "title_policy": "Privacy Policy"
+        },
+        {
+          "page": "Terms of Service",
+          "title": "Add custom text to Terms of Service",
+          "path": "/policies/terms-of-service",
+          "content": "Test custom text show at the beginning of Terms of Service page",
+          "id_option": "0",
+          "title_policy": "Terms Of Service"
+        },
+        {
+          "page": "Shipping policy",
+          "title": "Add custom text to Shipping policy",
+          "path": "/policies/shipping-policy",
+          "content": "Test custom text show at the end of Shipping policy page",
+          "id_option": "1",
+          "title_policy": "Shipping Policy"
+        },
+        {
+          "page": "Return policy",
+          "title": "Add custom text to Return policy",
+          "path": "/policies/return-policy",
+          "content": "Test custom text show at the end of Return policy page",
+          "id_option": "1",
+          "title_policy": "Return Policy"
+        }
+      ]
+    },
+    "SB_NEWECOM_SP_36": {
+      "data": [
+        {
+          "page": "Refund policy",
+          "title": "Add custom text to Refund policy",
+          "path": "/policies/refund-policy",
+          "id_option": "1",
+          "title_policy": "Refund Policy",
+          "template_variables": [
+            {
+              "variable": "{{shop.name}}"
+            },
+            {
+              "variable": "{{shop.domain}}"
+            },
+            {
+              "variable": "{{shop.address}}"
+            },
+            {
+              "variable": "{{shop.phone}}"
+            },
+            {
+              "variable": "{{shop.customer_email}}"
+            },
+            {
+              "variable": "{{shop.activated_payment}}"
+            }
+          ]
+        },
+        {
+          "page": "Privacy policy",
+          "title": "Add custom text to Privacy policy",
+          "path": "/policies/privacy-policy",
+          "template_variables": [
+            {
+              "variable": "{{shop.name}}"
+            },
+            {
+              "variable": "{{shop.domain}}"
+            },
+            {
+              "variable": "{{shop.address}}"
+            },
+            {
+              "variable": "{{shop.phone}}"
+            },
+            {
+              "variable": "{{shop.customer_email}}"
+            },
+            {
+              "variable": "{{shop.activated_payment}}"
+            }
+          ],
+          "id_option": "0",
+          "title_policy": "Privacy Policy"
+        },
+        {
+          "page": "Terms of Service",
+          "title": "Add custom text to Terms of Service",
+          "path": "/policies/terms-of-service",
+          "id_option": "0",
+          "title_policy": "Terms Of Service",
+
+          "template_variables": [
+            {
+              "variable": "{{shop.name}}"
+            },
+            {
+              "variable": "{{shop.domain}}"
+            },
+            {
+              "variable": "{{shop.address}}"
+            },
+            {
+              "variable": "{{shop.phone}}"
+            },
+            {
+              "variable": "{{shop.customer_email}}"
+            },
+            {
+              "variable": "{{shop.activated_payment}}"
+            }
+          ]
+        },
+        {
+          "page": "Shipping policy",
+          "title": "Add custom text to Shipping policy",
+          "path": "/policies/shipping-policy",
+          "id_option": "1",
+          "title_policy": "Shipping Policy",
+          "template_variables": [
+            {
+              "variable": "{{shop.name}}"
+            },
+            {
+              "variable": "{{shop.domain}}"
+            },
+            {
+              "variable": "{{shop.address}}"
+            },
+            {
+              "variable": "{{shop.phone}}"
+            },
+            {
+              "variable": "{{shop.customer_email}}"
+            },
+            {
+              "variable": "{{shop.activated_payment}}"
+            }
+          ]
+        },
+        {
+          "page": "Return policy",
+          "title": "Add custom text to Return policy",
+          "path": "/policies/return-policy",
+          "id_option": "1",
+          "title_policy": "Return Policy",
+          "template_variables": [
+            {
+              "variable": "{{shop.name}}"
+            },
+            {
+              "variable": "{{shop.domain}}"
+            },
+            {
+              "variable": "{{shop.address}}"
+            },
+            {
+              "variable": "{{shop.phone}}"
+            },
+            {
+              "variable": "{{shop.customer_email}}"
+            },
+            {
+              "variable": "{{shop.activated_payment}}"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

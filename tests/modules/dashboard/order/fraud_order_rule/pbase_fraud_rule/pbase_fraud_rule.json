@@ -1,0 +1,158 @@
+{
+  "api": "https://api.shopbase.com",
+  "domain": "au-pbase-checkout-fraud-test.onshopbase.com",
+  "shop_name": "au-pbase-checkout-fraud-test",
+  "user_id": 245023,
+  "shop_id": 10323986,
+  "username": "shopbase12@beeketing.net",
+  "password": "autobalanceprod",
+  "hive_pbase_info": {
+    "domain": "hive-pbase.shopbase.com",
+    "username": "shopbase",
+    "password": "UxsLHz^Wjkf35*/w"
+  },
+  "hive_info": {
+    "domain": "hive.shopbase.com",
+    "username": "shopbase",
+    "password": "UxsLHz^Wjkf35*/w"
+  },
+  "shop_template_info": {
+    "domain": "template-fraud-pbase-prod-test-mode.onshopbase.com",
+    "shop_name": "template-fraud-pbase-prod-test-mode",
+    "username": "shopbase7@beeketing.net",
+    "password": "]qlG3Fwj&EqI-XA"
+  },
+  "tipping_info": {
+    "tipping_amount": "5",
+    "is_old_layout": false,
+    "option": "1"
+  },
+  "product_info": [
+    {
+      "name": "Lady shirt",
+      "quantity": 12
+    }
+  ],
+  "discount_code": "AU_FIXAMT",
+  "customer_info": {
+    "email": "testerOCG@maildrop.cc",
+    "first_name": "John",
+    "last_name": "Vardy",
+    "address": "1600 W Loop S",
+    "country": "United States",
+    "state": "Texas",
+    "city": "Houston",
+    "zipcode": "77027",
+    "phone_number": "505-646-2276"
+  },
+  "cases": {
+    "FRAUD_RULE_CASE_CANCEL": {
+      "data": [
+        {
+          "case_id": "SB_ORD_FRA_FIL_ORD_RULE_19",
+          "case_description": "[Pbase] Kiểm tra order có tax include, tip, ship, discount, markup shipping bị cancel do thỏa mãn fraud rules",
+          "fraud_info": {
+            "name": "AU-The number of items in an order is greater than 10 and less than 50",
+            "type": "cancel"
+          },
+          "is_tax_include": true,
+          "payment_method": "Stripe"
+        },
+        {
+          "case_id": "SB_ORD_FRA_FIL_ORD_RULE_20",
+          "case_description": "[Pbase] Kiểm tra order có tax exclude, tip, ship, discount, markup shipping bị cancel do thỏa mãn fraud rules",
+          "fraud_info": {
+            "name": "AU-The number of items in an order is greater than 10 and less than 50",
+            "type": "cancel"
+          },
+          "is_tax_include": false,
+          "payment_method": "Stripe"
+        },
+        {
+          "case_id": "SB_ORD_FRA_FIL_ORD_RULE_21",
+          "case_description": "[Pbase] [Paypal] Kiểm tra order có tax include, tip, ship, discount, markup shipping bị cancel do thỏa mãn fraud rules",
+          "fraud_info": {
+            "name": "AU-The number of items in an order is greater than 10 and less than 50",
+            "type": "cancel"
+          },
+          "is_tax_include": false,
+          "payment_method": "Paypal"
+        }
+      ]
+    },
+    "SB_ORD_FRA_FIL_ORD_RULE_22": {
+      "fraud_info": {
+        "name": "AU-Email validation score is less than 95",
+        "type": "allow"
+      },
+      "is_tax_include": false,
+      "customer_info": {
+        "email": "testerOCG@gmail.com",
+        "first_name": "John",
+        "last_name": "Vardy",
+        "address": "1600 W Loop S",
+        "country": "United States",
+        "state": "Texas",
+        "city": "Houston",
+        "zipcode": "77027",
+        "phone_number": "505-646-2276"
+      }
+    }
+  },
+  "env": {
+    "prodtest": {
+      "domain": "au-pbase-checkout-fraud-prodtest.onshopbase.com",
+      "shop_name": "au-pbase-checkout-fraud-prodtest",
+      "shop_id": 10324082,
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://prod-test-api.shopbase.com",
+      "shop_template_info": {
+        "domain": "template-fraud-pbase-prodtest.onshopbase.com",
+        "shop_name": "template-fraud-pbase-prodtest",
+        "username": "shopbase7@beeketing.net",
+        "password": "]qlG3Fwj&EqI-XA"
+      },
+      "hive_pbase_info": {
+        "domain": "hive-pbase-prod-test.shopbase.com",
+        "username": "shopbase",
+        "password": "UxsLHz^Wjkf35*/w"
+      },
+      "hive_info": {
+        "domain": "hive-test.shopbase.com",
+        "username": "shopbase",
+        "password": "UxsLHz^Wjkf35*/w"
+      }
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-pbase-checkout.myshopbase.net",
+      "shop_name": "au-pbase-checkout",
+      "user_id": 73800,
+      "shop_id": 10321838,
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "product_info": [
+        {
+          "name": "Black Polo",
+          "quantity": 12
+        }
+      ],
+      "shop_template_info": {
+        "domain": "template-pbase-fraud.myshopbase.net",
+        "shop_name": "template-pbase-fraud",
+        "username": "shopbase@beeketing.net",
+        "password": "S#|j>m2N[q"
+      },
+      "hive_pbase_info": {
+        "domain": "hive-pbase.dev.shopbase.net",
+        "username": "shopbase",
+        "password": "123456"
+      },
+      "hive_info": {
+        "domain": "hive.dev.shopbase.net",
+        "username": "shopbase",
+        "password": "123456"
+      }
+    }
+  }
+}

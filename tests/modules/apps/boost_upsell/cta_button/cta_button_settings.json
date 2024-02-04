@@ -1,0 +1,763 @@
+{
+  "env": {
+    "prodtest": {
+      "domain": "cta-btn-sbase.onshopbase.com",
+      "settings_path": "admin/apps/boost-upsell/settings",
+      "api": "https://prod-test-api.shopbase.com",
+      "shop_name": "cta-btn-sbase",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10458694,
+      "user_id": 73782,
+      "type": {
+        "others": ["Pre-purchase Offers", "In-cart Offers", "Bundles", "Accessories"],
+        "quantity": ["Quantity Discounts"]
+      },
+      "behaviors": ["continue_shopping", "cart", "checkout"],
+      "cta_settings": {
+        "url": "https://cta-btn-sbase.onshopbase.com/admin/setting/app.json?shop_id=10458694&settings=call_to_action&app_code=usell",
+        "method": "GET",
+        "request": {
+          "data": {}
+        },
+        "response": {
+          "status": 200,
+          "data": {}
+        }
+      },
+      "accessories_offer": {
+        "target_product": "Switch puller",
+        "accessories": ["Monster USB type-C cable"],
+        "type": "Accessories",
+        "handle": "product-x",
+        "data": {
+          "activated": true,
+          "enable_discount": false,
+          "offer_type": "accessory",
+          "offer_name": "Accessories Offer created via API",
+          "offer_message": "Suggested Accessories",
+          "offer_title": "Wait {{last_name}}! We've got a special offer for you that complements your purchase.",
+          "target_type": "product",
+          "target_ids": [1000000434599746],
+          "recommend_type": "product",
+          "recommend_ids": [1000000434599748],
+          "discount_data": "{}",
+          "offer_product_updated": true
+        }
+      },
+      "pre_purchase_offer": {
+        "type": "Pre-purchase Offers",
+        "target_product": "Mojo68 Monster",
+        "recommended_product": ["Mojo pad"],
+        "handle": "product-a",
+        "data": {
+          "activated": true,
+          "enable_discount": true,
+          "offer_type": "pre-purchase",
+          "offer_name": "Pre-purchase offer created via API",
+          "offer_success_message": "",
+          "offer_product_updated": false,
+          "offer_message": "Frequently bought with {{product name}}",
+          "target_type": "product",
+          "target_ids": [1000000434599747],
+          "recommend_type": "product",
+          "recommend_ids": [1000000434599749],
+          "discount_data": "{ \"percentage_discount\": 30, \"stock_item_limit\": 30}"
+        }
+      },
+      "quantity_offer": {
+        "target_product": "Mojo68 Monster",
+        "type": "Quantity Discounts",
+        "handle": "product-a",
+        "title_1": "1 item get $10.00",
+        "discount_1": 10,
+        "quantity_1": 1,
+        "title_2": "2 items get 15% OFF",
+        "discount_2": 0.15,
+        "quantity_2": 2,
+        "data": {
+          "activated": true,
+          "offer_type": "quantity",
+          "offer_name": "Quantity Discounts Offer created via API",
+          "offer_title": "Wait {{last_name}}! We've got a special offer for you that complements your purchase.",
+          "offer_message": "Buy More Save More!",
+          "offer_success_message": "",
+          "target_type": "product",
+          "enable_discount": true,
+          "recommend_type": "",
+          "target_ids": [1000000434599747],
+          "recommend_ids": [],
+          "discount_data": "{\"data\":[{\"key\":0,\"min_quantity\":1,\"value_discount\":10,\"type\":\"amount_all\" },{\"key\":1,\"min_quantity\":2,\"value_discount\":15,\"type\":\"percentage_each\"}]}",
+          "offer_product_updated": false
+        }
+      },
+      "in_cart_offer": {
+        "target_product": "Key puller",
+        "recommended_product": "Gateron White Pro v2",
+        "type": "In-cart Offers",
+        "handle": "product-c",
+        "data": {
+          "activated": true,
+          "offer_type": "in-cart",
+          "offer_name": "In-cart offer created via API",
+          "offer_title": "Wait {{last_name}}! We've got a special offer for you that complements your purchase.",
+          "offer_message": "Add matching product",
+          "offer_success_message": "",
+          "target_type": "product",
+          "enable_discount": true,
+          "recommend_type": "product",
+          "target_ids": [1000000434599750],
+          "recommend_ids": [1000000434599751],
+          "discount_data": "{\"percentage_discount\":10}",
+          "offer_product_updated": false,
+          "condition": {
+            "in_cart": {
+              "base_category": {
+                "from_product_with": "lowest-price",
+                "from_these_categories": [110, 109, 111, 112, 113, 114, 115, 116]
+              },
+              "product": {
+                "recommend_variant_with": "lowest-price"
+              }
+            }
+          }
+        }
+      },
+      "bundles_offer_1": {
+        "type": "Bundles",
+        "target_product": "Mojo68 Monster",
+        "custom_text": "Cherry Brown switch",
+        "product_1": "Mojo pad",
+        "product_2": "Key puller",
+        "handle": "product-a",
+        "data": {
+          "activated": true,
+          "offer_type": "bundle",
+          "offer_name": "Bundles offer created via API",
+          "offer_title": "Wait {{last_name}}! We've got a special offer for you that complements your purchase.",
+          "offer_message": "Frequently bought together",
+          "offer_success_message": "",
+          "target_type": "all",
+          "enable_discount": true,
+          "recommend_type": "product",
+          "target_ids": [1000000434599747, 1000000434599749, 1000000434599750],
+          "recommend_ids": [],
+          "discount_data": "{\"percentage_discount\":10}",
+          "offer_product_updated": false
+        }
+      },
+      "bundles_offer_2": {
+        "type": "Bundles",
+        "target_product": "Gateron White Pro v2",
+        "product_1": "Switch puller",
+        "product_2": "Monster USB type-C cable",
+        "handle": "product-d",
+        "data": {
+          "activated": true,
+          "offer_type": "bundle",
+          "offer_name": "Bundles offer created via API",
+          "offer_title": "Wait {{last_name}}! We've got a special offer for you that complements your purchase.",
+          "offer_message": "Frequently bought together",
+          "offer_success_message": "",
+          "target_type": "all",
+          "enable_discount": true,
+          "recommend_type": "product",
+          "target_ids": [1000000434599751, 1000000434599746, 1000000434599748],
+          "recommend_ids": [],
+          "discount_data": "{\"percentage_discount\":10}",
+          "offer_product_updated": false
+        }
+      },
+      "delete_offer": {
+        "ids": []
+      },
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "domain": "cta-btn-sbase-inside.myshopbase.net",
+      "settings_path": "admin/apps/boost-upsell/settings",
+      "api": "https://gapi.dev.shopbase.net",
+      "shop_name": "cta-btn-sbase-inside",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_id": 10321512,
+      "user_id": 73800,
+      "type": {
+        "others": ["Pre-purchase Offers", "In-cart Offers", "Bundles", "Accessories"],
+        "quantity": ["Quantity Discounts"]
+      },
+      "behaviors": ["continue_shopping", "cart", "checkout"],
+      "cta_settings": {
+        "url": "https://cta-btn-sbase-inside.myshopbase.net/admin/setting/app.json?shop_id=10321512&settings=call_to_action&app_code=usell",
+        "method": "GET",
+        "request": {},
+        "response": {
+          "status": 200,
+          "data": {}
+        }
+      },
+      "accessories_offer": {
+        "target_product": "Switch puller",
+        "accessories": ["Monster USB type-C cable"],
+        "type": "Accessories",
+        "handle": "product-x",
+        "data": {
+          "activated": true,
+          "enable_discount": false,
+          "offer_type": "accessory",
+          "offer_name": "Accessories Offer created via API",
+          "offer_message": "Suggested Accessories",
+          "offer_title": "Wait {{last_name}}! We've got a special offer for you that complements your purchase.",
+          "target_type": "product",
+          "target_ids": [1000000000452965],
+          "recommend_type": "product",
+          "recommend_ids": [1000000000452963],
+          "discount_data": "{}",
+          "target_handpicked": {
+            "collections": [],
+            "products": []
+          },
+          "offer_product_updated": true,
+          "shop_id": 10321512
+        }
+      },
+      "pre_purchase_offer": {
+        "type": "Pre-purchase Offers",
+        "target_product": "Mojo68 Monster",
+        "recommended_product": ["Mojo pad"],
+        "handle": "product-a",
+        "data": {
+          "activated": true,
+          "enable_discount": true,
+          "offer_type": "pre-purchase",
+          "offer_name": "Pre-purchase offer created via API",
+          "offer_success_message": "",
+          "offer_product_updated": false,
+          "offer_message": "Frequently bought with {{product name}}",
+          "target_type": "product",
+          "target_ids": [1000000000452962],
+          "recommend_type": "product",
+          "recommend_ids": [1000000000452966],
+          "discount_data": "{ \"percentage_discount\": 30, \"stock_item_limit\": 30}"
+        }
+      },
+      "quantity_offer": {
+        "target_product": "Mojo68 Monster",
+        "type": "Quantity Discounts",
+        "handle": "product-a",
+        "title_1": "1 item get $10.00",
+        "discount_1": 10,
+        "quantity_1": 1,
+        "title_2": "2 items get 15% OFF",
+        "discount_2": 0.15,
+        "quantity_2": 2,
+        "data": {
+          "activated": true,
+          "offer_type": "quantity",
+          "offer_name": "Quantity Discounts Offer created via API",
+          "offer_title": "Wait {{last_name}}! We've got a special offer for you that complements your purchase.",
+          "offer_message": "Buy More Save More!",
+          "offer_success_message": "",
+          "target_type": "product",
+          "enable_discount": true,
+          "recommend_type": "",
+          "target_ids": [1000000000452962],
+          "recommend_ids": [],
+          "discount_data": "{\"data\":[{\"key\":0,\"min_quantity\":1,\"value_discount\":10,\"type\":\"amount_all\" },{\"key\":1,\"min_quantity\":2,\"value_discount\":15,\"type\":\"percentage_each\"}]}",
+          "offer_product_updated": false
+        }
+      },
+      "in_cart_offer": {
+        "target_product": "Key puller",
+        "recommended_product": "Gateron White Pro v2",
+        "type": "In-cart Offers",
+        "handle": "product-c",
+        "data": {
+          "activated": true,
+          "offer_type": "in-cart",
+          "offer_name": "In-cart offer created via API",
+          "offer_title": "Wait {{last_name}}! We've got a special offer for you that complements your purchase.",
+          "offer_message": "Add matching product",
+          "offer_success_message": "",
+          "target_type": "product",
+          "enable_discount": true,
+          "recommend_type": "product",
+          "target_ids": [1000000000452961],
+          "recommend_ids": [1000000000452964],
+          "discount_data": "{\"percentage_discount\":10}",
+          "offer_product_updated": false,
+          "condition": {
+            "in_cart": {
+              "base_category": {
+                "from_product_with": "lowest-price",
+                "from_these_categories": [110, 109, 111, 112, 113, 114, 115, 116]
+              },
+              "product": {
+                "recommend_variant_with": "lowest-price"
+              }
+            }
+          }
+        }
+      },
+      "bundles_offer_1": {
+        "type": "Bundles",
+        "target_product": "Mojo68 Monster",
+        "custom_text": "Cherry Brown switch",
+        "product_1": "Mojo pad",
+        "product_2": "Key puller",
+        "handle": "product-a",
+        "data": {
+          "activated": true,
+          "offer_type": "bundle",
+          "offer_name": "Bundles offer created via API",
+          "offer_title": "Wait {{last_name}}! We've got a special offer for you that complements your purchase.",
+          "offer_message": "Frequently bought together",
+          "offer_success_message": "",
+          "target_type": "all",
+          "enable_discount": true,
+          "recommend_type": "product",
+          "target_ids": [1000000000452962, 1000000000452966, 1000000000452961],
+          "recommend_ids": [],
+          "discount_data": "{\"percentage_discount\":10}",
+          "offer_product_updated": false
+        }
+      },
+      "bundles_offer_2": {
+        "type": "Bundles",
+        "target_product": "Gateron White Pro v2",
+        "product_1": "Switch puller",
+        "product_2": "Monster USB type-C cable",
+        "handle": "product-d",
+        "data": {
+          "activated": true,
+          "offer_type": "bundle",
+          "offer_name": "Bundles offer created via API",
+          "offer_title": "Wait {{last_name}}! We've got a special offer for you that complements your purchase.",
+          "offer_message": "Frequently bought together",
+          "offer_success_message": "",
+          "target_type": "all",
+          "enable_discount": true,
+          "recommend_type": "product",
+          "target_ids": [1000000000452964, 1000000000452965, 1000000000452963],
+          "recommend_ids": [],
+          "discount_data": "{\"percentage_discount\":10}",
+          "offer_product_updated": false
+        }
+      },
+      "delete_offer": {
+        "ids": []
+      }
+    },
+    "prod": {
+      "domain": "cta-btn-sbase-prod.onshopbase.com",
+      "settings_path": "admin/apps/boost-upsell/settings",
+      "api": "https://api.shopbase.com",
+      "shop_name": "cta-btn-sbase-prod",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10458694,
+      "user_id": 73782,
+      "type": {
+        "others": ["Pre-purchase Offers", "In-cart Offers", "Bundles", "Accessories"],
+        "quantity": ["Quantity Discounts"]
+      },
+      "behaviors": ["continue_shopping", "cart", "checkout"],
+      "cta_settings": {
+        "url": "https://cta-btn-sbase-prod.onshopbase.com/admin/setting/app.json?shop_id=10458694&settings=call_to_action&app_code=usell",
+        "method": "GET",
+        "request": {
+          "data": {}
+        },
+        "response": {
+          "status": 200,
+          "data": {}
+        }
+      },
+      "accessories_offer": {
+        "target_product": "Switch puller",
+        "accessories": ["Monster USB type-C cable"],
+        "type": "Accessories",
+        "handle": "product-x",
+        "data": {
+          "activated": true,
+          "enable_discount": false,
+          "offer_type": "accessory",
+          "offer_name": "Accessories Offer created via API",
+          "offer_message": "Suggested Accessories",
+          "offer_title": "Wait {{last_name}}! We've got a special offer for you that complements your purchase.",
+          "target_type": "product",
+          "target_ids": [1000000483870625],
+          "recommend_type": "product",
+          "recommend_ids": [1000000483870630],
+          "discount_data": "{}",
+          "target_handpicked": {
+            "collections": [],
+            "products": []
+          },
+          "offer_product_updated": true,
+          "shop_id": 10458694
+        }
+      },
+      "pre_purchase_offer": {
+        "type": "Pre-purchase Offers",
+        "target_product": "Mojo68 Monster",
+        "recommended_product": ["Mojo pad"],
+        "handle": "product-a",
+        "data": {
+          "activated": true,
+          "enable_discount": true,
+          "offer_type": "pre-purchase",
+          "offer_name": "Pre-purchase offer created via API",
+          "offer_success_message": "",
+          "offer_product_updated": false,
+          "offer_message": "Frequently bought with {{product name}}",
+          "target_type": "product",
+          "target_ids": [1000000483870633],
+          "recommend_type": "product",
+          "recommend_ids": [1000000483870631],
+          "discount_data": "{ \"percentage_discount\": 30, \"stock_item_limit\": 30}"
+        }
+      },
+      "quantity_offer": {
+        "target_product": "Mojo68 Monster",
+        "type": "Quantity Discounts",
+        "handle": "product-a",
+        "title_1": "1 item get $10.00",
+        "discount_1": 10,
+        "quantity_1": 1,
+        "title_2": "2 items get 15% OFF",
+        "discount_2": 0.15,
+        "quantity_2": 2,
+        "data": {
+          "activated": true,
+          "offer_type": "quantity",
+          "offer_name": "Quantity Discounts Offer created via API",
+          "offer_title": "Wait {{last_name}}! We've got a special offer for you that complements your purchase.",
+          "offer_message": "Buy More Save More!",
+          "offer_success_message": "",
+          "target_type": "product",
+          "enable_discount": true,
+          "recommend_type": "",
+          "target_ids": [1000000483870633],
+          "recommend_ids": [],
+          "discount_data": "{\"data\":[{\"key\":0,\"min_quantity\":1,\"value_discount\":10,\"type\":\"amount_all\" },{\"key\":1,\"min_quantity\":2,\"value_discount\":15,\"type\":\"percentage_each\"}]}",
+          "offer_product_updated": false
+        }
+      },
+      "in_cart_offer": {
+        "target_product": "Key puller",
+        "recommended_product": "Gateron White Pro v2",
+        "type": "In-cart Offers",
+        "handle": "product-c",
+        "data": {
+          "activated": true,
+          "offer_type": "in-cart",
+          "offer_name": "In-cart offer created via API",
+          "offer_title": "Wait {{last_name}}! We've got a special offer for you that complements your purchase.",
+          "offer_message": "Add matching product",
+          "offer_success_message": "",
+          "target_type": "product",
+          "enable_discount": true,
+          "recommend_type": "product",
+          "target_ids": [1000000483870622],
+          "recommend_ids": [1000000483870629],
+          "discount_data": "{\"percentage_discount\":10}",
+          "offer_product_updated": false,
+          "condition": {
+            "in_cart": {
+              "base_category": {
+                "from_product_with": "lowest-price",
+                "from_these_categories": [110, 109, 111, 112, 113, 114, 115, 116]
+              },
+              "product": {
+                "recommend_variant_with": "lowest-price"
+              }
+            }
+          }
+        }
+      },
+      "bundles_offer_1": {
+        "type": "Bundles",
+        "target_product": "Mojo68 Monster",
+        "custom_text": "Cherry Brown switch",
+        "product_1": "Mojo pad",
+        "product_2": "Key puller",
+        "handle": "product-a",
+        "data": {
+          "activated": true,
+          "offer_type": "bundle",
+          "offer_name": "Bundles offer created via API",
+          "offer_title": "Wait {{last_name}}! We've got a special offer for you that complements your purchase.",
+          "offer_message": "Frequently bought together",
+          "offer_success_message": "",
+          "target_type": "all",
+          "enable_discount": true,
+          "recommend_type": "product",
+          "target_ids": [1000000483870633, 1000000483870631, 1000000483870622],
+          "recommend_ids": [],
+          "discount_data": "{\"percentage_discount\":10}",
+          "offer_product_updated": false
+        }
+      },
+      "bundles_offer_2": {
+        "type": "Bundles",
+        "target_product": "Gateron White Pro v2",
+        "product_1": "Switch puller",
+        "product_2": "Monster USB type-C cable",
+        "handle": "product-d",
+        "data": {
+          "activated": true,
+          "offer_type": "bundle",
+          "offer_name": "Bundles offer created via API",
+          "offer_title": "Wait {{last_name}}! We've got a special offer for you that complements your purchase.",
+          "offer_message": "Frequently bought together",
+          "offer_success_message": "",
+          "target_type": "all",
+          "enable_discount": true,
+          "recommend_type": "product",
+          "target_ids": [1000000483870629, 1000000483870625, 1000000483870630],
+          "recommend_ids": [],
+          "discount_data": "{\"percentage_discount\":10}",
+          "offer_product_updated": false
+        }
+      },
+      "delete_offer": {
+        "ids": []
+      }
+    }
+  },
+  "cases": {
+    "PRE_PURCHASE": {
+      "data": [
+        {
+          "case_id": "SB_BUS_CTA_3",
+          "option": "Continue shopping",
+          "setting": {
+            "data": {
+              "settings": {
+                "call_to_action": {
+                  "redirect_pre_purchase_page": "continue_shopping"
+                }
+              },
+              "app_code": "usell"
+            }
+          },
+          "expected": "products/product-a"
+        },
+        {
+          "case_id": "SB_BUS_CTA_4",
+          "option": "Go to Checkout page",
+          "setting": {
+            "data": {
+              "settings": {
+                "call_to_action": {
+                  "redirect_pre_purchase_page": "checkout"
+                }
+              },
+              "app_code": "usell"
+            }
+          },
+          "expected": "checkouts"
+        },
+        {
+          "case_id": "SB_BUS_CTA_5",
+          "option": "Go to Cart page",
+          "setting": {
+            "data": {
+              "settings": {
+                "call_to_action": {
+                  "redirect_pre_purchase_page": "cart"
+                }
+              },
+              "app_code": "usell"
+            }
+          },
+          "expected": "cart"
+        }
+      ]
+    },
+    "IN_CART": {
+      "data": [
+        {
+          "case_id": "SB_BUS_CTA_7",
+          "option": "Continue shopping",
+          "setting": {
+            "data": {
+              "settings": {
+                "call_to_action": {
+                  "redirect_in_cart_offers_page": "continue_shopping"
+                }
+              },
+              "app_code": "usell"
+            }
+          },
+          "expected": "products/product-c"
+        },
+        {
+          "case_id": "SB_BUS_CTA_8",
+          "option": "Go to Checkout page",
+          "setting": {
+            "data": {
+              "settings": {
+                "call_to_action": {
+                  "redirect_in_cart_offers_page": "checkout"
+                }
+              },
+              "app_code": "usell"
+            }
+          },
+          "expected": "checkouts"
+        },
+        {
+          "case_id": "SB_BUS_CTA_9",
+          "option": "Go to Cart page",
+          "setting": {
+            "data": {
+              "settings": {
+                "call_to_action": {
+                  "redirect_in_cart_offers_page": "cart"
+                }
+              },
+              "app_code": "usell"
+            }
+          },
+          "expected": "cart"
+        }
+      ]
+    },
+    "ACCESSORIES": {
+      "data": [
+        {
+          "case_id": "SB_BUS_CTA_11",
+          "option": "Continue shopping",
+          "setting": {
+            "data": {
+              "settings": {
+                "call_to_action": {
+                  "redirect_accessories_page": "continue_shopping"
+                }
+              },
+              "app_code": "usell"
+            }
+          },
+          "expected": "products/product-x"
+        },
+        {
+          "case_id": "SB_BUS_CTA_12",
+          "option": "Go to Checkout page",
+          "setting": {
+            "data": {
+              "settings": {
+                "call_to_action": {
+                  "redirect_accessories_page": "checkout"
+                }
+              },
+              "app_code": "usell"
+            }
+          },
+          "expected": "checkouts"
+        },
+        {
+          "case_id": "SB_BUS_CTA_13",
+          "option": "Go to Cart page",
+          "setting": {
+            "data": {
+              "settings": {
+                "call_to_action": {
+                  "redirect_accessories_page": "cart"
+                }
+              },
+              "app_code": "usell"
+            }
+          },
+          "expected": "cart"
+        }
+      ]
+    },
+    "BUNDLE": {
+      "data": [
+        {
+          "case_id": "SB_APP_BUS_STU_CTA_2",
+          "option": "Continue shopping",
+          "setting": {
+            "data": {
+              "settings": {
+                "call_to_action": {
+                  "redirect_cross_sell_page": "continue_shopping"
+                }
+              },
+              "app_code": "usell"
+            }
+          },
+          "expected": ["products/product-a", "products/product-d"]
+        },
+        {
+          "case_id": "SB_APP_BUS_STU_CTA_3",
+          "option": "Go to Cart page",
+          "setting": {
+            "data": {
+              "settings": {
+                "call_to_action": {
+                  "redirect_cross_sell_page": "cart"
+                }
+              },
+              "app_code": "usell"
+            }
+          },
+          "expected": ["cart"]
+        },
+        {
+          "case_id": "SB_APP_BUS_STU_CTA_4",
+          "option": "Go to Checkout page",
+          "setting": {
+            "data": {
+              "settings": {
+                "call_to_action": {
+                  "redirect_cross_sell_page": "checkout"
+                }
+              },
+              "app_code": "usell"
+            }
+          },
+          "expected": ["checkouts"]
+        }
+      ]
+    },
+    "QUANTITY": {
+      "data": [
+        {
+          "case_id": "SB_APP_BUS_STU_CTA_5",
+          "option": "Continue shopping",
+          "setting": {
+            "data": {
+              "settings": {
+                "call_to_action": {
+                  "enable_quantity_add_cart_button": true,
+                  "quantity_text_add_cart_button": "Add to cart",
+                  "redirect_quantity_discount_page": "continue_shopping"
+                }
+              },
+              "app_code": "usell"
+            }
+          }
+        },
+        {
+          "case_id": "SB_APP_BUS_STU_CTA_6",
+          "option": "Go to Cart page",
+          "setting": {
+            "data": {
+              "settings": {
+                "call_to_action": {
+                  "enable_quantity_add_cart_button": true,
+                  "quantity_text_add_cart_button": "Add to cart",
+                  "redirect_quantity_discount_page": "cart"
+                }
+              },
+              "app_code": "usell"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

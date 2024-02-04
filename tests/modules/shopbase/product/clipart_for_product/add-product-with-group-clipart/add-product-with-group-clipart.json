@@ -1,0 +1,736 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-add-product-with-group-clipart-prod.onshopbase.com",
+      "shop_name": "au-add-product-with-group-clipart-prod",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10406862,
+      "user_id": 73782,
+      "timeout": 900000
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-add-product-with-group-clipart-prodtest.onshopbase.com",
+      "shop_name": "au-add-product-with-group-clipart-prodtest",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10406871,
+      "user_id": 73782,
+      "timeout": 900000,
+      "accounts_domain": "accounts-test.shopbase.com",
+      "cases": {
+        "DATA_DRIVEN": {
+          "data": [
+            {
+              "description": "Check khi add new product với group clipart khi chọn Show with Thumbnail images tại màn Product detail",
+              "case_id": "SB_PRO_SBP_ICFP_4",
+              "clipart_folder_info": [
+                {
+                  "folder_name": "folder 1",
+                  "group_name": "Group thumbnail images",
+                  "images": ["BD_11.png>artwork.png", "BD_12.png>artwork_quilt.png"]
+                },
+                {
+                  "folder_name": "folder 2",
+                  "group_name": "Group thumbnail images",
+                  "images": ["BD_13.png>artwork1 - Front.png", "BD_14.png>artwork2-Back.png"]
+                }
+              ],
+              "product_info": {
+                "title": "Product group clipart khi chọn Show as a droplist with clipart names",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "custom_option_info": {
+                "custom_name": "Picture choice",
+                "default_name": "Custom Option 1",
+                "label": "Picture choice",
+                "type": "Picture choice",
+                "target_layer": "No",
+                "index": 1,
+                "type_clipart": "Group",
+                "values": "Group thumbnail images",
+                "type_display_clipart": "Show with Thumbnail images"
+              },
+              "custom_option_SF": [
+                {
+                  "type": "Picture choice group show thumbnail",
+                  "custom_name": "Picture choice",
+                  "value": "BD_11",
+                  "label": "Picture choice",
+                  "folder_clipart": "folder 1"
+                },
+                {
+                  "type": "Picture choice group show thumbnail",
+                  "custom_name": "Picture choice",
+                  "value": "BD_12",
+                  "label": "Picture choice",
+                  "folder_clipart": "folder 1"
+                },
+                {
+                  "type": "Picture choice group show thumbnail",
+                  "custom_name": "Picture choice",
+                  "value": "BD_13",
+                  "label": "Picture choice",
+                  "folder_clipart": "folder 2"
+                },
+                {
+                  "type": "Picture choice group show thumbnail",
+                  "custom_name": "Picture choice",
+                  "value": "BD_14",
+                  "label": "Picture choice",
+                  "folder_clipart": "folder 2"
+                }
+              ],
+              "custom_option_SF_delete_image": [
+                {
+                  "type": "Picture choice group show thumbnail",
+                  "custom_name": "Picture choice",
+                  "value": "BD_11",
+                  "label": "Picture choice",
+                  "folder_clipart": "folder 1"
+                },
+                {
+                  "type": "Picture choice group show thumbnail",
+                  "custom_name": "Picture choice",
+                  "value": "BD_12",
+                  "label": "Picture choice",
+                  "folder_clipart": "folder 1"
+                },
+                {
+                  "type": "Picture choice group show thumbnail",
+                  "custom_name": "Picture choice",
+                  "value": "BD_13",
+                  "label": "Picture choice",
+                  "folder_clipart": "folder 2"
+                },
+                {
+                  "type": "Picture choice group show thumbnail",
+                  "custom_name": "Picture choice",
+                  "value": "BD_14",
+                  "label": "Picture choice",
+                  "folder_clipart": "folder 2"
+                }
+              ],
+              "custom_option_SF_edit_name": [
+                {
+                  "type": "Picture choice group show thumbnail",
+                  "custom_name": "Picture choice",
+                  "value": "BD_11",
+                  "label": "Picture choice",
+                  "folder_clipart": "folder 1"
+                },
+                {
+                  "type": "Picture choice group show thumbnail",
+                  "custom_name": "Picture choice",
+                  "label": "Picture choice",
+                  "value": "BD_17",
+                  "folder_clipart": "folder 1"
+                },
+                {
+                  "type": "Picture choice group show thumbnail",
+                  "custom_name": "Picture choice",
+                  "label": "Picture choice",
+                  "value": "BD_13",
+                  "folder_clipart": "folder 2"
+                },
+                {
+                  "type": "Picture choice group show thumbnail",
+                  "custom_name": "Picture choice",
+                  "label": "Picture choice",
+                  "value": "BD_14",
+                  "folder_clipart": "folder 2"
+                }
+              ],
+              "custom_option_SF_delete_folder": [
+                {
+                  "type": "Picture choice group show thumbnail",
+                  "custom_name": "Picture choice",
+                  "label": "Picture choice",
+                  "value": "BD_13",
+                  "folder_clipart": "folder 2"
+                },
+                {
+                  "type": "Picture choice group show thumbnail",
+                  "custom_name": "Picture choice",
+                  "label": "Picture choice",
+                  "value": "BD_14",
+                  "folder_clipart": "folder 2"
+                }
+              ],
+              "image_thumbnail_delete": {
+                "image": "BD_11.png"
+              },
+              "clipart_name_edit": {
+                "name": "BD_12.png",
+                "new_name": "BD_17.png"
+              },
+              "picture": [
+                {
+                  "picture_choice_sf": "picture-choice-1-SF-SB-PRO-SBP-ICFP-4-prod-test.png",
+                  "clipart_editor": "clipart-editor-SB_PRO_SBP_ICFP_4_prod_test.png",
+                  "picture_choice_edit_image": "picture-choice-edit-image-1-SB_PRO_SBP_ICFP_4_prod_test.png",
+                  "picture_choice_delete_image": "picture-choice-delete-image-1-SB_PRO_SBP_ICFP_4_prod_test.png",
+                  "picture_choice_edit_name": "clipart-edit-name-1-SB_PRO_SBP_ICFP_4_prod_test.png",
+                  "clipart_editor_edit_name": "clipart-editor-edit-name-SB_PRO_SBP_ICFP_4_prod_test.png",
+                  "product_image_in_cart": "product-image-in-cart-SB_PRO_SBP_ICFP_4_prod_test.png",
+                  "picture_choice_delete_folder": "picture_choice_delete_folder_1_SB_PRO_SBP_ICFP_4_prod_test.png"
+                },
+                {
+                  "picture_choice_sf": "picture_choice_2_SF_SB_PRO_SBP_ICFP_4_prod_test.png",
+                  "picture_choice_edit_image": "picture_choice_edit_image_2_SB_PRO_SBP_ICFP_4_prod_test.png",
+                  "picture_choice_delete_image": "picture_choice_delete_image_2_SB_PRO_SBP_ICFP_4_prod_test.png",
+                  "picture_choice_edit_name": "clipart_edit_name_2_SB_PRO_SBP_ICFP_4_prod_test.png",
+                  "picture_choice_delete_folder": "picture_choice_delete_folder_2_SB_PRO_SBP_ICFP_4_prod_test.png"
+                },
+                {
+                  "picture_choice_sf": "picture_choice_3_SF_SB_PRO_SBP_ICFP_4_prod_test.png",
+                  "picture_choice_edit_image": "picture_choice_edit_image_3_SB_PRO_SBP_ICFP_4_prod_test.png",
+                  "picture_choice_delete_image": "picture_choice_delete_image_3_SB_PRO_SBP_ICFP_4_prod_test.png",
+                  "picture_choice_edit_name": "clipart_edit_name_3_SB_PRO_SBP_ICFP_4.png"
+                },
+                {
+                  "picture_choice_sf": "picture_choice_4_SF_SB_PRO_SBP_ICFP_4_prod_test.png",
+                  "picture_choice_edit_image": "picture_choice_edit_image_4_SB_PRO_SBP_ICFP_4_prod_test.png",
+                  "picture_choice_delete_image": "picture_choice_delete_image_4_SB_PRO_SBP_ICFP_4_prod_test.png",
+                  "picture_choice_edit_name": "clipart_edit_name_4_SB_PRO_SBP_ICFP_4_prod_test.png"
+                }
+              ]
+            },
+            {
+              "description": "Check khi add new product với group clipart khi chọn Show as a droplist with clipart names tại màn Product detail",
+              "case_id": "SB_PRO_SBP_ICFP_6",
+              "clipart_folder_info": [
+                {
+                  "folder_name": "folder 3",
+                  "group_name": "Group Droplist Images",
+                  "images": ["BD_11.png", "BD_12.png"]
+                },
+                {
+                  "folder_name": "folder 4",
+                  "group_name": "Group Droplist Images",
+                  "images": ["BD_13.png", "BD_14.png"]
+                }
+              ],
+              "product_info": {
+                "title": "Product group clipart khi chọn Show with Thumbnail images",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "custom_option_info": {
+                "custom_name": "Picture choice",
+                "default_name": "Custom Option 1",
+                "label": "Picture choice",
+                "type": "Picture choice",
+                "target_layer": "No",
+                "index": 1,
+                "type_clipart": "Group",
+                "values": "Group Droplist Images",
+                "type_display_clipart": "Show as a droplist"
+              },
+              "custom_option_SF": [
+                {
+                  "type": "Picture choice group show droplist",
+                  "custom_name": "Picture choice",
+                  "value": "BD_11",
+                  "label": "Picture choice",
+                  "folder_clipart": "folder 3"
+                },
+                {
+                  "type": "Picture choice group show droplist",
+                  "custom_name": "Picture choice",
+                  "value": "BD_12",
+                  "label": "Picture choice",
+                  "folder_clipart": "folder 3"
+                },
+                {
+                  "type": "Picture choice group show droplist",
+                  "custom_name": "Picture choice",
+                  "value": "BD_13",
+                  "label": "Picture choice",
+                  "folder_clipart": "folder 4"
+                },
+                {
+                  "type": "Picture choice group show droplist",
+                  "custom_name": "Picture choice",
+                  "value": "BD_14",
+                  "label": "Picture choice",
+                  "folder_clipart": "folder 4"
+                }
+              ],
+              "custom_option_SF_delete_image": [
+                {
+                  "type": "Picture choice group show droplist",
+                  "custom_name": "Picture choice",
+                  "value": "BD_12",
+                  "label": "Picture choice",
+                  "folder_clipart": "folder 3"
+                },
+                {
+                  "type": "Picture choice group show droplist",
+                  "custom_name": "Picture choice",
+                  "value": "BD_13",
+                  "label": "Picture choice",
+                  "folder_clipart": "folder 4"
+                },
+                {
+                  "type": "Picture choice group show droplist",
+                  "custom_name": "Picture choice",
+                  "value": "BD_14",
+                  "label": "Picture choice",
+                  "folder_clipart": "folder 4"
+                }
+              ],
+              "custom_option_SF_edit_name": [
+                {
+                  "type": "Picture choice group show droplist",
+                  "custom_name": "Picture choice",
+                  "label": "Picture choice",
+                  "value": "BD_17",
+                  "folder_clipart": "folder 3"
+                },
+                {
+                  "type": "Picture choice group show droplist",
+                  "custom_name": "Picture choice",
+                  "label": "Picture choice",
+                  "value": "BD_13",
+                  "folder_clipart": "folder 4"
+                },
+                {
+                  "type": "Picture choice group show droplist",
+                  "custom_name": "Picture choice",
+                  "label": "Picture choice",
+                  "value": "BD_14",
+                  "folder_clipart": "folder 4"
+                }
+              ],
+              "custom_option_SF_delete_folder": [
+                {
+                  "type": "Picture choice group show droplist",
+                  "custom_name": "Picture choice",
+                  "label": "Picture choice",
+                  "value": "BD_13",
+                  "folder_clipart": "folder 4"
+                },
+                {
+                  "type": "Picture choice group show droplist",
+                  "custom_name": "Picture choice",
+                  "label": "Picture choice",
+                  "value": "BD_14",
+                  "folder_clipart": "folder 4"
+                }
+              ],
+              "clipart_image_delete": {
+                "image": "BD_11.png"
+              },
+              "clipart_name_edit": {
+                "name": "BD_12.png",
+                "new_name": "BD_17.png"
+              },
+              "picture": [
+                {
+                  "picture_choice_sf": "picture_choice_1_SB_PRO_SBP_ICFP_6_prod_test.png",
+                  "clipart_editor": "clipart_editor_1_SB_PRO_SBP_ICFP_6_prod_test.png",
+                  "picture_choice_edit_image": "picture_choice_edit_image_1_SB_PRO_SBP_ICFP_6_prod_test.png",
+                  "picture_choice_delete_image": "picture_choice_delete_image_1_SB_PRO_SBP_ICFP_6_prod_test.png",
+                  "picture_choice_edit_name": "clipart_edit_name_1_SB_PRO_SBP_ICFP_6_prod_test.png",
+                  "clipart_editor_edit_name": "clipart_editor_edit_name_SB_PRO_SBP_ICFP_6_prod_test.png",
+                  "product_image_in_cart": "product_image_in_cart_SB_PRO_SBP_ICFP_6_prod_test.png",
+                  "picture_choice_delete_folder": "picture_choice_delete_folder_1_SB_PRO_SBP_ICFP_6_prod_test.png"
+                },
+                {
+                  "picture_choice_sf": "picture_choice_2_SF_SB_PRO_SBP_ICFP_6_prod_test.png",
+                  "picture_choice_edit_image": "picture_choice_edit_image_2_SB_PRO_SBP_ICFP_6_prod_test.png",
+                  "picture_choice_delete_image": "picture_choice_delete_image_2_SB_PRO_SBP_ICFP_6_prod_test.png",
+                  "picture_choice_edit_name": "clipart_edit_name_2_SB_PRO_SBP_ICFP_6_prod_test.png",
+                  "picture_choice_delete_folder": "picture_choice_delete_folder_2_SB_PRO_SBP_ICFP_6_prod_test.png"
+                },
+                {
+                  "picture_choice_sf": "picture_choice_3_SF_SB_PRO_SBP_ICFP_6_prod_test.png",
+                  "picture_choice_edit_image": "picture_choice_edit_image_3_SB_PRO_SBP_ICFP_6_prod_test.png",
+                  "picture_choice_delete_image": "picture_choice_delete_image_3_SB_PRO_SBP_ICFP_6_prod_test.png",
+                  "picture_choice_edit_name": "clipart_edit_name_3_SB_PRO_SBP_ICFP_6_prod_test.png"
+                },
+                {
+                  "picture_choice_sf": "picture_choice_4_SF_SB_PRO_SBP_ICFP_6_prod_test.png",
+                  "picture_choice_edit_image": "picture_choice_edit_image_4_SB_PRO_SBP_ICFP_6_prod_test.png"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-add-product-with-group-clipart-dev.myshopbase.net",
+      "shop_name": "au-add-product-with-group-clipart-dev",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_id": 10325499,
+      "user_id": 73800,
+      "timeout": 900000
+    }
+  },
+  "max_diff_pixel_ratio": 0.05,
+  "threshold": 0.1,
+  "max_diff_pixels": 2000,
+  "cases": {
+    "DATA_DRIVEN": {
+      "data": [
+        {
+          "description": "Check khi add new product với group clipart khi chọn Show with Thumbnail images tại màn Product detail",
+          "case_id": "SB_PRO_SBP_ICFP_4",
+          "clipart_folder_info": [
+            {
+              "folder_name": "folder 1",
+              "group_name": "Group thumbnail images",
+              "images": ["BD_11.png>artwork.png", "BD_12.png>artwork_quilt.png"]
+            },
+            {
+              "folder_name": "folder 2",
+              "group_name": "Group thumbnail images",
+              "images": ["BD_13.png>artwork1 - Front.png", "BD_14.png>artwork2-Back.png"]
+            }
+          ],
+          "product_info": {
+            "title": "Product group clipart khi chọn Show as a droplist with clipart names",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "add_type": "clothing",
+          "custom_option_info": {
+            "custom_name": "Picture choice",
+            "default_name": "Custom Option 1",
+            "label": "Picture choice",
+            "type": "Picture choice",
+            "target_layer": "No",
+            "index": 1,
+            "type_clipart": "Group",
+            "values": "Group thumbnail images",
+            "type_display_clipart": "Show with Thumbnail images"
+          },
+          "custom_option_SF": [
+            {
+              "type": "Picture choice group show thumbnail",
+              "custom_name": "Picture choice",
+              "value": "BD_11",
+              "label": "Picture choice",
+              "folder_clipart": "folder 1"
+            },
+            {
+              "type": "Picture choice group show thumbnail",
+              "custom_name": "Picture choice",
+              "value": "BD_12",
+              "label": "Picture choice",
+              "folder_clipart": "folder 1"
+            },
+            {
+              "type": "Picture choice group show thumbnail",
+              "custom_name": "Picture choice",
+              "value": "BD_13",
+              "label": "Picture choice",
+              "folder_clipart": "folder 2"
+            },
+            {
+              "type": "Picture choice group show thumbnail",
+              "custom_name": "Picture choice",
+              "value": "BD_14",
+              "label": "Picture choice",
+              "folder_clipart": "folder 2"
+            }
+          ],
+          "custom_option_SF_delete_image": [
+            {
+              "type": "Picture choice group show thumbnail",
+              "custom_name": "Picture choice",
+              "value": "BD_11",
+              "label": "Picture choice",
+              "folder_clipart": "folder 1"
+            },
+            {
+              "type": "Picture choice group show thumbnail",
+              "custom_name": "Picture choice",
+              "value": "BD_12",
+              "label": "Picture choice",
+              "folder_clipart": "folder 1"
+            },
+            {
+              "type": "Picture choice group show thumbnail",
+              "custom_name": "Picture choice",
+              "value": "BD_13",
+              "label": "Picture choice",
+              "folder_clipart": "folder 2"
+            },
+            {
+              "type": "Picture choice group show thumbnail",
+              "custom_name": "Picture choice",
+              "value": "BD_14",
+              "label": "Picture choice",
+              "folder_clipart": "folder 2"
+            }
+          ],
+          "custom_option_SF_edit_name": [
+            {
+              "type": "Picture choice group show thumbnail",
+              "custom_name": "Picture choice",
+              "value": "BD_11",
+              "label": "Picture choice",
+              "folder_clipart": "folder 1"
+            },
+            {
+              "type": "Picture choice group show thumbnail",
+              "custom_name": "Picture choice",
+              "label": "Picture choice",
+              "value": "BD_17",
+              "folder_clipart": "folder 1"
+            },
+            {
+              "type": "Picture choice group show thumbnail",
+              "custom_name": "Picture choice",
+              "label": "Picture choice",
+              "value": "BD_13",
+              "folder_clipart": "folder 2"
+            },
+            {
+              "type": "Picture choice group show thumbnail",
+              "custom_name": "Picture choice",
+              "label": "Picture choice",
+              "value": "BD_14",
+              "folder_clipart": "folder 2"
+            }
+          ],
+          "custom_option_SF_delete_folder": [
+            {
+              "type": "Picture choice group show thumbnail",
+              "custom_name": "Picture choice",
+              "label": "Picture choice",
+              "value": "BD_13",
+              "folder_clipart": "folder 2"
+            },
+            {
+              "type": "Picture choice group show thumbnail",
+              "custom_name": "Picture choice",
+              "label": "Picture choice",
+              "value": "BD_14",
+              "folder_clipart": "folder 2"
+            }
+          ],
+          "image_thumbnail_delete": {
+            "image": "BD_11.png"
+          },
+          "clipart_name_edit": {
+            "name": "BD_12.png",
+            "new_name": "BD_17.png"
+          },
+          "picture": [
+            {
+              "picture_choice_sf": "picture-choice-1-SF-SB-PRO-SBP-ICFP-4.png",
+              "clipart_editor": "clipart-editor-SB_PRO_SBP_ICFP_4.png",
+              "picture_choice_edit_image": "picture-choice-edit-image-1-SB_PRO_SBP_ICFP_4.png",
+              "picture_choice_delete_image": "picture-choice-delete-image-1-SB_PRO_SBP_ICFP_4.png",
+              "picture_choice_edit_name": "clipart-edit-name-1-SB_PRO_SBP_ICFP_4.png",
+              "clipart_editor_edit_name": "clipart-editor-edit-name-SB_PRO_SBP_ICFP_4.png",
+              "product_image_in_cart": "product-image-in-cart-SB_PRO_SBP_ICFP_4.png",
+              "picture_choice_delete_folder": "picture_choice_delete_folder_1_SB_PRO_SBP_ICFP_4.png"
+            },
+            {
+              "picture_choice_sf": "picture_choice_2_SF_SB_PRO_SBP_ICFP_4.png",
+              "picture_choice_edit_image": "picture_choice_edit_image_2_SB_PRO_SBP_ICFP_4.png",
+              "picture_choice_delete_image": "picture_choice_delete_image_2_SB_PRO_SBP_ICFP_4.png",
+              "picture_choice_edit_name": "clipart_edit_name_2_SB_PRO_SBP_ICFP_4.png",
+              "picture_choice_delete_folder": "picture_choice_delete_folder_2_SB_PRO_SBP_ICFP_4.png"
+            },
+            {
+              "picture_choice_sf": "picture_choice_3_SF_SB_PRO_SBP_ICFP_4.png",
+              "picture_choice_edit_image": "picture_choice_edit_image_3_SB_PRO_SBP_ICFP_4.png",
+              "picture_choice_delete_image": "picture_choice_delete_image_3_SB_PRO_SBP_ICFP_4.png",
+              "picture_choice_edit_name": "clipart_edit_name_3_SB_PRO_SBP_ICFP_4.png"
+            },
+            {
+              "picture_choice_sf": "picture_choice_4_SF_SB_PRO_SBP_ICFP_4.png",
+              "picture_choice_edit_image": "picture_choice_edit_image_4_SB_PRO_SBP_ICFP_4.png",
+              "picture_choice_delete_image": "picture_choice_delete_image_4_SB_PRO_SBP_ICFP_4.png",
+              "picture_choice_edit_name": "clipart_edit_name_4_SB_PRO_SBP_ICFP_4.png"
+            }
+          ]
+        },
+        {
+          "description": "Check khi add new product với group clipart khi chọn Show as a droplist with clipart names tại màn Product detail",
+          "case_id": "SB_PRO_SBP_ICFP_6",
+          "clipart_folder_info": [
+            {
+              "folder_name": "folder 3",
+              "group_name": "Group Droplist Images",
+              "images": ["BD_11.png", "BD_12.png"]
+            },
+            {
+              "folder_name": "folder 4",
+              "group_name": "Group Droplist Images",
+              "images": ["BD_13.png", "BD_14.png"]
+            }
+          ],
+          "product_info": {
+            "title": "Product group clipart khi chọn Show with Thumbnail images",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "add_type": "clothing",
+          "custom_option_info": {
+            "custom_name": "Picture choice",
+            "default_name": "Custom Option 1",
+            "label": "Picture choice",
+            "type": "Picture choice",
+            "target_layer": "No",
+            "index": 1,
+            "type_clipart": "Group",
+            "values": "Group Droplist Images",
+            "type_display_clipart": "Show as a droplist"
+          },
+          "custom_option_SF": [
+            {
+              "type": "Picture choice group show droplist",
+              "custom_name": "Picture choice",
+              "value": "BD_11",
+              "label": "Picture choice",
+              "folder_clipart": "folder 3"
+            },
+            {
+              "type": "Picture choice group show droplist",
+              "custom_name": "Picture choice",
+              "value": "BD_12",
+              "label": "Picture choice",
+              "folder_clipart": "folder 3"
+            },
+            {
+              "type": "Picture choice group show droplist",
+              "custom_name": "Picture choice",
+              "value": "BD_13",
+              "label": "Picture choice",
+              "folder_clipart": "folder 4"
+            },
+            {
+              "type": "Picture choice group show droplist",
+              "custom_name": "Picture choice",
+              "value": "BD_14",
+              "label": "Picture choice",
+              "folder_clipart": "folder 4"
+            }
+          ],
+          "custom_option_SF_delete_image": [
+            {
+              "type": "Picture choice group show droplist",
+              "custom_name": "Picture choice",
+              "value": "BD_12",
+              "label": "Picture choice",
+              "folder_clipart": "folder 3"
+            },
+            {
+              "type": "Picture choice group show droplist",
+              "custom_name": "Picture choice",
+              "value": "BD_13",
+              "label": "Picture choice",
+              "folder_clipart": "folder 4"
+            },
+            {
+              "type": "Picture choice group show droplist",
+              "custom_name": "Picture choice",
+              "value": "BD_14",
+              "label": "Picture choice",
+              "folder_clipart": "folder 4"
+            }
+          ],
+          "custom_option_SF_edit_name": [
+            {
+              "type": "Picture choice group show droplist",
+              "custom_name": "Picture choice",
+              "label": "Picture choice",
+              "value": "BD_17",
+              "folder_clipart": "folder 3"
+            },
+            {
+              "type": "Picture choice group show droplist",
+              "custom_name": "Picture choice",
+              "label": "Picture choice",
+              "value": "BD_13",
+              "folder_clipart": "folder 4"
+            },
+            {
+              "type": "Picture choice group show droplist",
+              "custom_name": "Picture choice",
+              "label": "Picture choice",
+              "value": "BD_14",
+              "folder_clipart": "folder 4"
+            }
+          ],
+          "custom_option_SF_delete_folder": [
+            {
+              "type": "Picture choice group show droplist",
+              "custom_name": "Picture choice",
+              "label": "Picture choice",
+              "value": "BD_13",
+              "folder_clipart": "folder 4"
+            },
+            {
+              "type": "Picture choice group show droplist",
+              "custom_name": "Picture choice",
+              "label": "Picture choice",
+              "value": "BD_14",
+              "folder_clipart": "folder 4"
+            }
+          ],
+          "clipart_image_delete": {
+            "image": "BD_11.png"
+          },
+          "clipart_name_edit": {
+            "name": "BD_12.png",
+            "new_name": "BD_17.png"
+          },
+          "picture": [
+            {
+              "picture_choice_sf": "picture_choice_1_SB_PRO_SBP_ICFP_6.png",
+              "clipart_editor": "clipart_editor_1_SB_PRO_SBP_ICFP_6.png",
+              "picture_choice_edit_image": "picture_choice_edit_image_1_SB_PRO_SBP_ICFP_6.png",
+              "picture_choice_delete_image": "picture_choice_delete_image_1_SB_PRO_SBP_ICFP_6.png",
+              "picture_choice_edit_name": "clipart_edit_name_1_SB_PRO_SBP_ICFP_6.png",
+              "clipart_editor_edit_name": "clipart_editor_edit_name_SB_PRO_SBP_ICFP_6.png",
+              "product_image_in_cart": "product_image_in_cart_SB_PRO_SBP_ICFP_6.png",
+              "picture_choice_delete_folder": "picture_choice_delete_folder_1_SB_PRO_SBP_ICFP_6.png"
+            },
+            {
+              "picture_choice_sf": "picture_choice_2_SF_SB_PRO_SBP_ICFP_6.png",
+              "picture_choice_edit_image": "picture_choice_edit_image_2_SB_PRO_SBP_ICFP_6.png",
+              "picture_choice_delete_image": "picture_choice_delete_image_2_SB_PRO_SBP_ICFP_6.png",
+              "picture_choice_edit_name": "clipart_edit_name_2_SB_PRO_SBP_ICFP_6.png",
+              "picture_choice_delete_folder": "picture_choice_delete_folder_2_SB_PRO_SBP_ICFP_6.png"
+            },
+            {
+              "picture_choice_sf": "picture_choice_3_SF_SB_PRO_SBP_ICFP_6.png",
+              "picture_choice_edit_image": "picture_choice_edit_image_3_SB_PRO_SBP_ICFP_6.png",
+              "picture_choice_delete_image": "picture_choice_delete_image_3_SB_PRO_SBP_ICFP_6.png",
+              "picture_choice_edit_name": "clipart_edit_name_3_SB_PRO_SBP_ICFP_6.png"
+            },
+            {
+              "picture_choice_sf": "picture_choice_4_SF_SB_PRO_SBP_ICFP_6.png",
+              "picture_choice_edit_image": "picture_choice_edit_image_4_SB_PRO_SBP_ICFP_6.png"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

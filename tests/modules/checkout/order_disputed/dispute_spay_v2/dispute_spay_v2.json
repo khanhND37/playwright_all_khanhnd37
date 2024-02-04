@@ -1,0 +1,109 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-charge-dispute-update-spay.onshopbase.com",
+      "shop_name": "au-charge-dispute-update-spay",
+      "user_id": 11260682,
+      "shop_id": 10426049,
+      "username": "opay-qe-2@beeketing.net",
+      "password": "Opay@123",
+      "products_checkout": [
+        {
+          "name": "Test product dispute",
+          "variant_id": 1000010619735730,
+          "quantity": 1
+        }
+      ],
+      "secret_key": "sk_test_51H1pMbHI2q8TlN76Kybx8YAFcfn9zLu6Ssc097RYoC16IqcVv8OrA0h9DCCPAkhct3ic7RF2n2J407ZvBeYB5P8t00w9v2ImaM",
+      "reloadtime": 5
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "shop-aut-can-be-deleted-checkout-spay-prod-test.onshopbase.com",
+      "shop_name": "shop-aut-can-be-deleted-checkout-spay-prod-test",
+      "username": "shopbase+9@beeketing.net",
+      "password": "June1$2020",
+      "user_id": 11237582,
+      "shop_id": 10393751,
+      "products_checkout": [
+        {
+          "name": "Bikini",
+          "variant_id": 1000010387258611,
+          "quantity": 1
+        }
+      ],
+      "accounts_domain": "accounts-test.shopbase.com",
+      "secret_key": "sk_test_51H1pMbHI2q8TlN76Kybx8YAFcfn9zLu6Ssc097RYoC16IqcVv8OrA0h9DCCPAkhct3ic7RF2n2J407ZvBeYB5P8t00w9v2ImaM",
+      "reloadtime": 5
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-charge-dispute-update-spay.myshopbase.net",
+      "shop_name": "au-charge-dispute-update-spay",
+      "user_id": 90246,
+      "shop_id": 10326725,
+      "username": "opay-qe-2@beeketing.net",
+      "password": "Opay@123",
+      "products_checkout": [
+        {
+          "name": "Test product dispute",
+          "variant_id": 1000001767811070,
+          "quantity": 1
+        }
+      ],
+      "secret_key": "sk_test_51H1pLkFErwnyyJdNcuQiQ35dY2WvmL1rpwCXBIjDq6vBVjcBvMBkY9oO07TFOM7pVApvm2jHuZYSrmbbUUbzX2Ub00iWWFxaFC",
+      "reloadtime": 10
+    }
+  },
+  "merge_balance": false,
+  "cases": {
+    "CREATE_DISPUTE": [
+      {
+        "case_id": "SB_ORD_DISP_SPAY_1",
+        "case_name": "Verify hiển thị chargebacks notification ở màn order details sau khi checkout card 4000000000000259",
+        "card_info": {
+          "number": "4000000000000259",
+          "holder_name": "Shopbase",
+          "expire_date": "12 / 30",
+          "cvv": "100"
+        },
+        "pre_fix_content_on_order": "The customer opened a chargeback totalling $"
+      },
+      {
+        "case_id": "SB_ORD_DISP_SPAY_2",
+        "case_name": "Verify hiển thị chargebacks notification ở màn order details sau khi checkout card 4000000000002685",
+        "card_info": {
+          "number": "4000000000002685",
+          "holder_name": "Shopbase",
+          "expire_date": "12 / 30",
+          "cvv": "100"
+        },
+        "pre_fix_content_on_order": "The customer opened a chargeback totalling $"
+      },
+      {
+        "case_id": "SB_ORD_DISP_SPAY_3",
+        "case_name": "Verify hiển thị inquiry notification ở màn order details sau khi checkout card 4000000000001976",
+        "card_info": {
+          "number": "4000000000001976",
+          "holder_name": "Shopbase",
+          "expire_date": "12 / 30",
+          "cvv": "100"
+        },
+        "pre_fix_content_on_order": "The customer opened a dispute inquiry totalling $"
+      }
+    ],
+    "SUBMIT_DISPUTE": [
+      {
+        "case_id": "SB_ORD_DISP_SPAY_4",
+        "case_name": "Verify order details khi merchant wins dispute by submiting evidence",
+        "evidence_submited": "winning_evidence"
+      },
+      {
+        "case_id": "SB_ORD_DISP_SPAY_5",
+        "case_name": "Verify order details khi merchant loses dispute by submiting evidence",
+        "evidence_submited": "losing_evidence"
+      }
+    ]
+  }
+}

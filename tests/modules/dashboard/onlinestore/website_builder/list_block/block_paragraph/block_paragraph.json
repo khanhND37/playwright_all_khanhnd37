@@ -1,0 +1,1063 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "auto-block-wb.myshopbase.net",
+      "shop_name": "auto-block-wb",
+      "shop_id": 10333928,
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "user_id": 90252,
+      "themes_setting": 3240605,
+      "add_product": {
+        "product": {
+          "product_type": "digital_download",
+          "title": "product test paragraph",
+          "published": true
+        },
+        "apply_template": {
+          "template_id": 403,
+          "type": "product"
+        }
+      },
+      "add_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 1
+          },
+          "isBottom": false
+        }
+      },
+      "section_name": {
+        "content": "Blank section"
+      },
+      "collapse_layer": {
+        "sectionName": "Section",
+        "sectionIndex": 1,
+        "isExpand": true
+      },
+      "open_layer": {
+        "sectionName": "Paragraph",
+        "sectionIndex": 1
+      }
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "auto-block-wb-prodtest.onshopbase.com",
+      "shop_name": "auto-block-wb-prodtest",
+      "shop_id": 10480844,
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "user_id": 11260206,
+      "themes_setting": 1645476,
+      "add_product": {
+        "product": {
+          "product_type": "digital_download",
+          "title": "product test paragraph",
+          "published": true
+        },
+        "apply_template": {
+          "template_id": 10,
+          "type": "product"
+        }
+      },
+      "add_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 1
+          },
+          "isBottom": false
+        }
+      },
+      "section_name": {
+        "content": "Blank section"
+      },
+      "accounts_domain": "accounts-test.shopbase.com",
+      "collapse_layer": {
+        "sectionName": "Section",
+        "sectionIndex": 1,
+        "isExpand": true
+      },
+      "open_layer": {
+        "sectionName": "Paragraph",
+        "sectionIndex": 1
+      }
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "auto-block-wb.onshopbase.com",
+      "shop_name": "auto-block-wb",
+      "shop_id": 10480842,
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "user_id": 11260206,
+      "themes_setting": 1645486,
+      "add_product": {
+        "product": {
+          "product_type": "digital_download",
+          "title": "product test paragraph",
+          "published": true
+        },
+        "apply_template": {
+          "template_id": 10,
+          "type": "product"
+        }
+      },
+      "add_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 1
+          },
+          "isBottom": false
+        }
+      },
+      "section_name": {
+        "content": "Blank section"
+      },
+      "accounts_domain": "accounts-test.shopbase.com",
+      "collapse_layer": {
+        "sectionName": "Section",
+        "sectionIndex": 1,
+        "isExpand": true
+      },
+      "open_layer": {
+        "sectionName": "Paragraph",
+        "sectionIndex": 1
+      }
+    }
+  },
+  "theme_data": {
+    "block": {
+      "from": {
+        "category": "Basics",
+        "template": "Paragraph"
+      },
+      "to": {
+        "position": {
+          "section": 1,
+          "column": 1
+        },
+        "isBottom": false
+      }
+    }
+  },
+  "cases": {
+    "SB_WEB_BUILDER_BP_01": {
+      "description": "Check setting mặc định khi add block Paragraph",
+      "expected": {
+        "text_content": "Edit your paragraph here",
+        "attribute": "style",
+        "default_font_style": "Paragraph 2",
+        "default_color": {
+          "attribute": "style",
+          "value": "rgb\\(0, 0, 0\\)"
+        },
+        "default_tag": "p",
+        "saved": "All changes are saved",
+        "snapshot_default_paragraph": "01_snapshot_default_paragraph.png"
+      }
+    },
+    "SB_WEB_BUILDER_BP_02": {
+      "description": "Check setting mặc định khi add block Paragraph",
+      "add_paragraph": {
+        "from": {
+          "category": "Basics",
+          "template": "Paragraph"
+        },
+        "to": {
+          "position": {
+            "section": 2,
+            "column": 1
+          },
+          "isBottom": false
+        }
+      },
+      "block_paragraph": {
+        "section": 2,
+        "block": 1
+      },
+      "sp_block": {
+        "section": 1,
+        "block": 1
+      },
+      "edit_text": {
+        "color": {
+          "preset": 3
+        },
+        "font_style": "Paragraph 1",
+        "bullet_list": true
+      },
+      "input_content": "Collection list",
+      "first_line": "Test copy paste color",
+      "second_line": "Test copy paste bullet",
+      "expected": {
+        "default_color": {
+          "attribute": "style",
+          "value": "rgb\\(0, 0, 0\\)"
+        },
+        "default_font_style": "Paragraph 2",
+        "default_tag": "p",
+        "style": {
+          "attribute": "class",
+          "value": "is-active"
+        },
+        "copy_color": {
+          "attribute": "style",
+          "value": "color-3"
+        },
+        "copy_tag": "p",
+        "saved": "All changes are saved",
+        "snapshot_input_text": "02_snapshot_input_txt.png"
+      }
+    },
+    "SB_WEB_BUILDER_BP_03": {
+      "description": "Check hiển thị định vị con trỏ vào text khi thực hiện click vào block paragraph",
+      "block_position": {
+        "section": 1,
+        "block": 1
+      },
+      "paragraph_text": "Your Creative writing career accelerated",
+      "expected": {
+        "attribute": "class",
+        "value": "selected"
+      }
+    },
+    "SB_WEB_BUILDER_BP_04": {
+      "paragraph_text": "Your Creative writing career accelerated",
+      "block_position": {
+        "section": 1,
+        "block": 1
+      },
+      "paragraph_design": {
+        "width": {
+          "label": "width",
+          "value": {
+            "unit": "%",
+            "value": 100
+          }
+        }
+      },
+      "first_letter_index": 0,
+      "letter_u_index": 2,
+      "behind_letter_r": 4,
+      "last_letter_index": 40,
+      "expected": {
+        "no_highlight": "",
+        "highlight_first_word": "Your",
+        "highlight_space": " ",
+        "highlight_all": "Your Creative writing career accelerated"
+      }
+    },
+    "SB_WEB_BUILDER_BP_05": {
+      "block_position": {
+        "section": 1,
+        "block": 1
+      },
+      "edit_fonts": [
+        {
+          "edit_font": {
+            "font_style": "Heading 2"
+          },
+          "expected_tag": "H2"
+        },
+        {
+          "edit_font": {
+            "font_style": "Heading 3"
+          },
+          "expected_tag": "H3"
+        },
+        {
+          "edit_font": {
+            "font_style": "Heading 4"
+          },
+          "expected_tag": "H4"
+        },
+        {
+          "edit_font": {
+            "font_style": "Heading 1"
+          },
+          "expected_tag": "H1"
+        },
+        {
+          "edit_font": {
+            "font_style": "Paragraph 1"
+          },
+          "expected_tag": "p"
+        },
+        {
+          "edit_font": {
+            "font_style": "Paragraph 2"
+          },
+          "expected_tag": "p"
+        },
+        {
+          "edit_font": {
+            "font_style": "Paragraph 3"
+          },
+          "expected_tag": "p"
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_BP_06": {
+      "edit_font_style": {
+        "font_style": "Paragraph 1"
+      },
+      "paragraph_text": "Your Creative writing career accelerated",
+      "block_position": {
+        "section": 1,
+        "block": 1
+      },
+      "expected": {
+        "attribute": "class",
+        "value": "is-active"
+      },
+      "bold_on": {
+        "bold": true
+      },
+      "italic_on": {
+        "italic": true
+      },
+      "underline_on": {
+        "underline": true
+      },
+      "strike_on": {
+        "strike": true
+      },
+      "all_decor": {
+        "bold": true,
+        "italic": true,
+        "underline": true,
+        "strike": true
+      },
+      "bold_text": "Creative",
+      "italic_text": "career",
+      "underline_text": "Your",
+      "strike_text": "writing",
+      "combine_text": "accelerated"
+    },
+    "SB_WEB_BUILDER_BP_07": {
+      "block_position": {
+        "section": 1,
+        "block": 1
+      },
+      "paragraph_text_1": "Your Creative writing career accelerated",
+      "paragraph_text_2": "You are my sunshine",
+      "select_text_line_1": "Your Creative",
+      "select_text_line_2": "my sunshine",
+      "edit_color": {
+        "color": {
+          "preset": 2
+        }
+      },
+      "color_presets": [
+        {
+          "preset": 1
+        },
+        {
+          "preset": 2
+        },
+        {
+          "preset": 3
+        },
+        {
+          "preset": 4
+        },
+        {
+          "preset": 5
+        }
+      ],
+      "expected": {
+        "text_color": "color-2"
+      }
+    },
+    "SB_WEB_BUILDER_BP_08": {
+      "block_position": {
+        "section": 1,
+        "block": 1
+      },
+      "edit_align_center": {
+        "align": "center"
+      },
+      "edit_align_right": {
+        "align": "right"
+      },
+      "paragraph_line_1": "Paragraph line 1",
+      "paragraph_line_2": "Test Paragraph",
+      "expected": {
+        "attribute": "class",
+        "value": "is-active",
+        "align_center": "text-align: center",
+        "align_right": "text-align: right"
+      }
+    },
+    "SB_WEB_BUILDER_BP_09": {
+      "block_position": {
+        "section": 1,
+        "block": 1
+      },
+      "section_position": {
+        "section": 1
+      },
+      "paragraph_text": "Your Creative writing career accelerated",
+      "insert_hyperlink": {
+        "hyperlink": {
+          "full_text": "Your Creative writing career accelerated",
+          "text": "Creative",
+          "url": "https://sb-svlive.onshopbase.com/"
+        }
+      },
+      "remove_hyperlink": {
+        "hyperlink": {
+          "full_text": "Your Creative writing career accelerated",
+          "text": "Creative",
+          "remove": true
+        }
+      },
+      "expected": {
+        "attribute": "class",
+        "value": "is-active",
+        "saved": "All changes are saved"
+      }
+    },
+    "SB_WEB_BUILDER_BP_10": {
+      "block_position": {
+        "section": 1,
+        "block": 1
+      },
+      "edit_more": "Edit more",
+      "no_bullet_text": "New line no bullet list",
+      "order_text_line_1": "Test Ordered list 1",
+      "order_text_line_2": "Test Ordered list 2",
+      "no_order_text": "New line no ordered list",
+      "expected": {
+        "attribute": "class",
+        "value": "is-active"
+      }
+    },
+    "SB_WEB_BUILDER_BP_11": {
+      "block_position": {
+        "section": 1,
+        "block": 1
+      },
+      "edit_tags": [
+        {
+          "tag": "<h1>",
+          "tag_element": "h1",
+          "expected_text": "H1"
+        },
+        {
+          "tag": "<h2>",
+          "tag_element": "h2",
+          "expected_text": "H2"
+        },
+        {
+          "tag": "<h3>",
+          "tag_element": "h3",
+          "expected_text": "H3"
+        },
+        {
+          "tag": "<h4>",
+          "tag_element": "h4",
+          "expected_text": "H4"
+        },
+        {
+          "tag": "<h5>",
+          "tag_element": "h5",
+          "expected_text": "H5"
+        },
+        {
+          "tag": "<h6>",
+          "tag_element": "h6",
+          "expected_text": "H6"
+        },
+        {
+          "tag": "<p>",
+          "tag_element": "p",
+          "expected_text": "p"
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_BP_12": {
+      "block_position": {
+        "section": 1,
+        "block": 1
+      },
+      "line_height": [
+        {
+          "font_style": "Heading 1",
+          "css_value": "--h1-line-height",
+          "expected": {
+            "line_height": 1.25,
+            "tag": "H1"
+          }
+        },
+        {
+          "font_style": "Paragraph 3",
+          "css_value": "--p3-line-height",
+          "expected": {
+            "line_height": 1.55,
+            "tag": "p"
+          }
+        },
+        {
+          "font_style": "Heading 3",
+          "css_value": "--h3-line-height",
+          "expected": {
+            "line_height": 1.35,
+            "tag": "H3"
+          }
+        },
+        {
+          "font_style": "Heading 4",
+          "css_value": "--h4-line-height",
+          "expected": {
+            "line_height": 1.55,
+            "tag": "H4"
+          }
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_BP_13": {
+      "block_position": {
+        "section": 1,
+        "block": 1
+      },
+      "para_line_1": "Your time is limited, so don't waste it living someone else's life.",
+      "para_line_2": "Don't be trapped by dogma - which is living with the results of other people's thinking.",
+      "edit_fonts": [
+        {
+          "font_style": "Paragraph 1",
+          "expected_spacing": "14.4px"
+        },
+        {
+          "font_style": "Paragraph 2",
+          "expected_spacing": "12.8px"
+        },
+        {
+          "font_style": "Paragraph 3",
+          "expected_spacing": "11.2px"
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_LB_BP_01": {
+      "default_text": "Edit your paragraph here",
+      "block_tag": "p",
+      "block_position": {
+        "section": 1,
+        "block": 1
+      },
+      "width_height": [
+        {
+          "edit_width_height": {
+            "width": {
+              "label": "width",
+              "value": {
+                "unit": "Px",
+                "value": "100"
+              }
+            },
+            "height": {
+              "label": "height",
+              "value": {
+                "unit": "Px",
+                "value": "499"
+              }
+            }
+          },
+          "expected": {
+            "attribute": "style",
+            "value": "width: 100px; height: 499px"
+          }
+        },
+        {
+          "edit_width_height": {
+            "width": {
+              "label": "width",
+              "value": {
+                "unit": "Px",
+                "value": "695"
+              }
+            },
+            "height": {
+              "label": "height",
+              "value": {
+                "unit": "%",
+                "value": "246"
+              }
+            }
+          },
+          "expected": {
+            "attribute": "style",
+            "value": "width: 695px; height: 100%"
+          }
+        },
+        {
+          "edit_width_height": {
+            "width": {
+              "label": "width",
+              "value": {
+                "unit": "Px",
+                "value": "999"
+              }
+            },
+            "height": {
+              "label": "height",
+              "value": {
+                "unit": "Auto"
+              }
+            }
+          },
+          "expected": {
+            "attribute": "style",
+            "value": "width: 999px; height: fit-content"
+          }
+        },
+        {
+          "edit_width_height": {
+            "width": {
+              "label": "width",
+              "value": {
+                "unit": "%",
+                "value": "225"
+              }
+            },
+            "height": {
+              "label": "height",
+              "value": {
+                "unit": "Px",
+                "value": "100"
+              }
+            }
+          },
+          "expected": {
+            "attribute": "style",
+            "value": "width: 100%; height: 100px"
+          }
+        },
+        {
+          "edit_width_height": {
+            "width": {
+              "label": "width",
+              "value": {
+                "unit": "%",
+                "value": "355"
+              }
+            },
+            "height": {
+              "label": "height",
+              "value": {
+                "unit": "%",
+                "value": "67"
+              }
+            }
+          },
+          "expected": {
+            "attribute": "style",
+            "value": "width: 100%; height: 67%"
+          }
+        },
+        {
+          "edit_width_height": {
+            "width": {
+              "label": "width",
+              "value": {
+                "unit": "%",
+                "value": "225"
+              }
+            },
+            "height": {
+              "label": "height",
+              "value": {
+                "unit": "Px",
+                "value": "100"
+              }
+            }
+          },
+          "expected": {
+            "attribute": "style",
+            "value": "width: 100%; height: 100px"
+          }
+        },
+        {
+          "edit_width_height": {
+            "width": {
+              "label": "width",
+              "value": {
+                "unit": "Auto"
+              }
+            },
+            "height": {
+              "label": "height",
+              "value": {
+                "unit": "Px",
+                "value": "375"
+              }
+            }
+          },
+          "expected": {
+            "attribute": "style",
+            "value": "width: fit-content; height: 375px"
+          }
+        },
+        {
+          "edit_width_height": {
+            "width": {
+              "label": "width",
+              "value": {
+                "unit": "Auto"
+              }
+            },
+            "height": {
+              "label": "height",
+              "value": {
+                "unit": "%",
+                "value": "500"
+              }
+            }
+          },
+          "expected": {
+            "attribute": "style",
+            "value": "width: fit-content; height: 100%"
+          }
+        },
+        {
+          "edit_width_height": {
+            "width": {
+              "label": "width",
+              "value": {
+                "unit": "Auto"
+              }
+            },
+            "height": {
+              "label": "height",
+              "value": {
+                "unit": "Auto"
+              }
+            }
+          },
+          "expected": {
+            "attribute": "style",
+            "value": "width: fit-content; height: fit-content"
+          }
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_LB_BP_02": {
+      "block_position": {
+        "section": 1,
+        "block": 1
+      },
+      "styles": [
+        {
+          "edit_style": {
+            "background": {
+              "label": "background",
+              "value": {
+                "image": "data/shopbase/front/web_builder/product-1.jpg"
+              }
+            },
+            "border": {
+              "label": "border",
+              "value": {
+                "thickness": "custom",
+                "size": {
+                  "fill": true,
+                  "number": 3
+                },
+                "color": {
+                  "preset": 1
+                }
+              }
+            },
+            "radius": {
+              "label": "border_radius",
+              "config": {
+                "fill": true,
+                "number": 100
+              }
+            },
+            "shadow": {
+              "label": "box_shadow",
+              "config": {
+                "option": "hard",
+                "size": "M",
+                "direction": "Top Right"
+              }
+            },
+            "padding": {
+              "label": "padding",
+              "value": {
+                "top": 5,
+                "left": 10,
+                "bottom": 5,
+                "right": 10,
+                "input": true
+              }
+            },
+            "margin": {
+              "label": "margin",
+              "value": {
+                "top": 15,
+                "left": 20,
+                "bottom": 15,
+                "right": 20,
+                "input": true
+              }
+            }
+          },
+          "expected": {
+            "background_value": "rgba\\(0, 0, 0, 0\\) none",
+            "border_value": "3px solid rgb(247, 249, 252)",
+            "opacity_value": "1",
+            "radius_value": "100px",
+            "shadow_value": "rgb(0, 0, 0) 8px -8px 0px 0px",
+            "padding_value": "5px 10px",
+            "margin_value": "15px 20px"
+          }
+        },
+        {
+          "edit_style": {
+            "background": {
+              "label": "background",
+              "value": {
+                "image": "data/shopbase/front/web_builder/product-1.jpg"
+              }
+            },
+            "border": {
+              "label": "border",
+              "value": {
+                "thickness": "custom",
+                "size": {
+                  "fill": true,
+                  "number": 5
+                },
+                "color": {
+                  "preset": 6
+                }
+              }
+            },
+            "opacity": {
+              "label": "opacity",
+              "config": {
+                "fill": true,
+                "number": 80
+              }
+            },
+            "radius": {
+              "label": "border_radius",
+              "config": {
+                "fill": true,
+                "number": 10
+              }
+            },
+            "shadow": {
+              "label": "box_shadow",
+              "config": {
+                "option": "soft",
+                "size": "L",
+                "direction": "Bottom"
+              }
+            },
+            "padding": {
+              "label": "padding",
+              "value": {
+                "top": 5,
+                "left": 0,
+                "bottom": 5,
+                "right": 0,
+                "input": true
+              }
+            },
+            "margin": {
+              "label": "margin",
+              "value": {
+                "top": 0,
+                "left": 20,
+                "bottom": 15,
+                "right": 20,
+                "input": true
+              }
+            }
+          },
+          "expected": {
+            "background_value": "rgba\\(0, 0, 0, 0\\) none",
+            "border_value": "5px solid rgb(0, 0, 0)",
+            "opacity_value": "0.8",
+            "radius_value": "10px",
+            "shadow_value": "rgba(0, 0, 0, 0.24) 0px 12px 32px -12px",
+            "padding_value": "5px 0px",
+            "margin_value": "0px 20px 15px"
+          }
+        },
+        {
+          "edit_style": {
+            "background": {
+              "label": "background",
+              "value": {
+                "color": {
+                  "preset": 2,
+                  "opacity": 75
+                }
+              }
+            },
+            "border": {
+              "label": "border",
+              "value": {
+                "thickness": "custom",
+                "size": {
+                  "fill": true,
+                  "number": 5
+                },
+                "color": {
+                  "preset": 7
+                }
+              }
+            },
+            "opacity": {
+              "label": "opacity",
+              "config": {
+                "fill": true,
+                "number": 20
+              }
+            },
+            "radius": {
+              "label": "border_radius",
+              "config": {
+                "fill": true,
+                "number": 0
+              }
+            },
+            "shadow": {
+              "label": "box_shadow",
+              "config": {
+                "option": "soft",
+                "size": "S",
+                "direction": "Bottom Left"
+              }
+            },
+            "padding": {
+              "label": "padding",
+              "value": {
+                "top": 0,
+                "left": 0,
+                "bottom": 15,
+                "right": 0,
+                "input": true
+              }
+            },
+            "margin": {
+              "label": "margin",
+              "value": {
+                "top": 0,
+                "left": 0,
+                "bottom": 15,
+                "right": 20,
+                "input": true
+              }
+            }
+          },
+          "expected": {
+            "background_value": "198, 216, 236, 0.75",
+            "border_value": "5px solid rgba(0, 0, 0, 0)",
+            "opacity_value": "0.2",
+            "radius_value": "0px",
+            "shadow_value": "rgba(0, 0, 0, 0.12) -4px 4px 12px -4px",
+            "padding_value": "0px 0px 15px",
+            "margin_value": "0px 20px 15px 0px"
+          }
+        },
+        {
+          "edit_style": {
+            "background": {
+              "label": "background",
+              "value": {
+                "color": {
+                  "preset": 7
+                }
+              }
+            },
+            "border": {
+              "label": "border",
+              "value": {
+                "thickness": "custom",
+                "size": {
+                  "fill": true,
+                  "number": 0
+                },
+                "color": {
+                  "preset": 2
+                }
+              }
+            },
+            "opacity": {
+              "label": "opacity",
+              "config": {
+                "fill": true,
+                "number": 0
+              }
+            },
+            "radius": {
+              "label": "border_radius",
+              "config": {
+                "fill": true,
+                "number": 0
+              }
+            },
+            "shadow": {
+              "label": "box_shadow",
+              "config": {
+                "option": "none"
+              }
+            },
+            "padding": {
+              "label": "padding",
+              "value": {
+                "top": 0,
+                "left": 0,
+                "bottom": 0,
+                "right": 0,
+                "input": true
+              }
+            },
+            "margin": {
+              "label": "margin",
+              "value": {
+                "top": 0,
+                "left": 0,
+                "bottom": 0,
+                "right": 0,
+                "input": true
+              }
+            }
+          },
+          "expected": {
+            "background_value": "0, 0, 0, 0",
+            "border_value": "0px solid rgb(198, 216, 236)",
+            "opacity_value": "0",
+            "radius_value": "0px",
+            "shadow_value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+            "padding_value": "0px",
+            "margin_value": "0px"
+          }
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_LB_BP_03": {
+      "remove_block": "Paragraph",
+      "default_text": "Edit your paragraph here",
+      "block_tag": "p"
+    }
+  }
+}

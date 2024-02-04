@@ -1,0 +1,143 @@
+{
+  "env": {
+    "dev": {
+      "domain": "auto-block-wb.myshopbase.net",
+      "shop_name": "auto-block-wb",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10333928,
+      "user_id": 90252,
+      "theme_id": 3238560
+    },
+    "prodtest": {
+      "domain": "auto-block-wb-prodtest.onshopbase.com",
+      "shop_name": "auto-block-wb-prodtest",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10480844,
+      "user_id": 11260206,
+      "theme_id": 1637834,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "prod": {
+      "domain": "auto-block-wb.onshopbase.com",
+      "shop_name": "auto-block-wb",
+      "api": "https://api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10480842,
+      "user_id": 11260206,
+      "theme_id": 1637835
+    }
+  },
+  "cases": {
+    "SB_WEB_BUILDER_LB_BULLET_BLOCK_1": {
+      "description": "Check data default block Bullet",
+      "expect": {
+        "snapshot_stylebar": "default-stylebar.png",
+        "snapshot_settingsbar": "default-settingbar.png",
+        "snapshot_storefront": "default-bullet-storefront.png"
+      }
+    },
+    "SB_WEB_BUILDER_LB_BULLET_BLOCK_2": {
+      "description": "Check setting data block Bullet",
+      "data": {
+        "blockSetting": {
+          "width": {
+            "unit": "%",
+            "value": 15
+          },
+          "height": {
+            "unit": "Px",
+            "value": 140
+          },
+          "icon": {
+            "item": 1,
+            "iconName": "check circle outline"
+          }
+        }
+      },
+      "expect": {
+        "snapshot_preview_settingdata": "preview-settingdata.png",
+        "snapshot_storefront_settingdata": "sf-settingdata.png"
+      }
+    },
+    "SB_WEB_BUILDER_LB_BULLET_BLOCK_3": {
+      "description": "Check setting icon color block Bullet",
+      "data": {
+        "blockSetting": {
+          "color": {
+            "preset": 6,
+            "hexText": "#EA7FE8"
+          }
+        }
+      },
+      "expect": {
+        "snapshot_preview_iconcolor": "preview-iconcolor.png",
+        "snapshot_storefront_iconcolor": "sf-iconcolor.png"
+      }
+    },
+    "SB_WEB_BUILDER_LB_BULLET_BLOCK_5": {
+      "description": "Check add item block Bullet ",
+      "expect": {
+        "snapshot_preview_additem": "preview-add-item.png",
+        "snapshot_storefront_additem": "sf-add-item.png"
+      }
+    },
+    "SB_WEB_BUILDER_LB_BULLET_BLOCK_6": {
+      "description": "Check delete item block Bullet ",
+      "expect": {
+        "snapshot_preview_deleteitem": "preview-delete-item.png",
+        "snapshot_storefront_deleteitem": "sf-delete-item.png"
+      }
+    },
+    "SB_WEB_BUILDER_LB_BULLET_BLOCK_7": {
+      "description": "Check drag and drop item in block Bullet",
+      "data": {
+        "blockSetting": {
+          "icon": {
+            "item": 1,
+            "iconName": "check circle outline"
+          },
+          "move": {
+            "from": 1,
+            "to": 3
+          }
+        }
+      },
+      "expect": {
+        "snapshot_preview_dragdropitem": "preview-dragdrop.png",
+        "snapshot_storefront_dragdropitem": "sf-dragdrop.png"
+      }
+    },
+    "SB_WEB_BUILDER_LB_BULLET_BLOCK_9": {
+      "description": "Check edit item in block Bullet",
+      "data": {
+        "blockSetting": {
+          "width": {
+            "unit": "Px",
+            "value": 300
+          },
+          "setting_items": {
+            "position": {
+              "section": 1,
+              "block": 1
+            },
+            "title": [
+              {
+                "index": 1,
+                "text": "Are my results guaranteed?"
+              }
+            ]
+          }
+        }
+      },
+      "expect": {
+        "snapshot_preview_edititem": "preview-edititem.png",
+        "snapshot_storefront_edititem": "sf-edititem.png"
+      }
+    }
+  }
+}

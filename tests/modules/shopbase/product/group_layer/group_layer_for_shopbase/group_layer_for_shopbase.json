@@ -1,0 +1,1299 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-create-personalize-product1.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "user_id": 73782,
+      "shop_id": 10436168,
+      "shop_name": "au-create-personalize-product1",
+      "timeout": 380000
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-create-personalize-product-prodtest.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "user_id": 73782,
+      "shop_id": 10321210,
+      "shop_name": "au-create-personalize-product-prodtest",
+      "timeout": 380000,
+      "accounts_domain": "accounts-test.shopbase.com",
+      "cases": {
+        "DATA_DRIVEN_CREATE_GROUP_LAYER": {
+          "data": [
+            {
+              "enable": true,
+              "description": "SB_SB_GR_LAY_03 - Verify tạo thành công group layer từ màn Preview image",
+              "case_id": "SB_SB_GR_LAY_03",
+              "product_info": {
+                "title": "Product test group",
+                "image_name": "Logo1.jpg"
+              },
+              "btn_name": "Create Preview image",
+              "btn_delete": "Delete Preview image",
+              "button_next": "Next, create Print file",
+              "image_preview": "artwork - Back.png",
+              "layers": [
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 1",
+                  "layer_value": "Test text value 1",
+                  "font_size": "210",
+                  "location_layer_x": "86",
+                  "location_layer_y": "86"
+                },
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 2",
+                  "layer_value": "Test text value 2",
+                  "font_size": "210",
+                  "location_layer_x": "200",
+                  "location_layer_y": "200"
+                },
+                {
+                  "layer_type": "Image",
+                  "layer_value": "Test image value",
+                  "image_name": "BD_1.png",
+                  "location_layer_x": "297",
+                  "location_layer_y": "239",
+                  "layer_size_h": "168",
+                  "layer_size_w": "126"
+                }
+              ],
+              "groups": [
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 1",
+                  "layer_name": "Text layer 1"
+                },
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 2",
+                  "layer_name": "Text layer 2,BD_1"
+                }
+              ],
+              "custom_options": [
+                {
+                  "type": "Text field",
+                  "target_layer": "Text layer 1",
+                  "label": "Text 1",
+                  "placeholder": "enter text",
+                  "max_length": "20",
+                  "default_value": "default",
+                  "allow_character": "Characters, Numbers, Special Characters",
+                  "position": "below"
+                },
+                {
+                  "type": "Image",
+                  "target_layer": "BD_1",
+                  "label": "Image 1",
+                  "position": "below"
+                },
+                {
+                  "type": "Text field",
+                  "target_layer": "Text layer 2",
+                  "label": "Text 2",
+                  "placeholder": "enter text",
+                  "max_length": "20",
+                  "default_value": "default",
+                  "allow_character": "Characters, Numbers, Special Characters"
+                }
+              ],
+              "picture": {
+                "show_group": "prodtest-show-group-layer-on-print-file-SB-SB-GR-LAY-03.png"
+              }
+            },
+            {
+              "enable": true,
+              "description": "SB_SB_GR_LAY_04 - Verify tạo  thành công group layer từ màn Print files",
+              "case_id": "SB_SB_GR_LAY_04",
+              "product_info": {
+                "title": "Product test print",
+                "image_name": "Logo1.jpg"
+              },
+              "image_preview": "artwork - Back.png",
+              "btn_name": "Create Print file",
+              "btn_delete": "Delete Print file image",
+              "button_next": "Next, create Preview",
+              "layers": [
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 1",
+                  "layer_value": "Test1",
+                  "font_size": "210",
+                  "location_layer_x": "86",
+                  "location_layer_y": "86"
+                },
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 2",
+                  "layer_value": "Test2",
+                  "font_size": "210",
+                  "location_layer_x": "200",
+                  "location_layer_y": "200"
+                },
+                {
+                  "layer_type": "Image",
+                  "layer_value": "Test image value",
+                  "image_name": "BD_1.png",
+                  "location_layer_x": "297",
+                  "location_layer_y": "239",
+                  "layer_size_h": "168",
+                  "layer_size_w": "126"
+                }
+              ],
+              "groups": [
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 1",
+                  "layer_name": "Text layer 1"
+                },
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 2",
+                  "layer_name": "Text layer 2,BD_1"
+                }
+              ],
+              "custom_options": [
+                {
+                  "type": "Text field",
+                  "target_layer": "Text layer 1",
+                  "label": "Text 1",
+                  "placeholder": "enter text",
+                  "max_length": "20",
+                  "default_value": "default",
+                  "allow_character": "Characters, Numbers, Special Characters",
+                  "position": "below"
+                },
+                {
+                  "type": "Image",
+                  "target_layer": "BD_1",
+                  "label": "Image 1",
+                  "position": "below"
+                },
+                {
+                  "type": "Text field",
+                  "target_layer": "Text layer 2",
+                  "label": "Text 2",
+                  "placeholder": "enter text",
+                  "max_length": "20",
+                  "default_value": "default",
+                  "allow_character": "Characters, Numbers, Special Characters"
+                }
+              ],
+              "picture": {
+                "show_group": "prodtest-show-group-layer-on-preview-image-SB-SB-GR-LAY-04.png"
+              }
+            },
+            {
+              "enable": true,
+              "description": "SB_SB_GR_LAY_06 - Verify action duplicate group layer",
+              "case_id": "SB_SB_GR_LAY_06",
+              "action": "true",
+              "product_info": {
+                "title": "Product duplicate group",
+                "image_name": "Logo1.jpg"
+              },
+              "image_preview": "BD_13.png",
+              "btn_name": "Create Preview image",
+              "btn_delete": "Delete Preview image",
+              "button_next": "Next, create Print file",
+              "layers": [
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 1",
+                  "layer_value": "Test1",
+                  "font_size": "210",
+                  "location_layer_x": "86",
+                  "location_layer_y": "86"
+                },
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 2",
+                  "layer_value": "Test2",
+                  "font_size": "210",
+                  "location_layer_x": "200",
+                  "location_layer_y": "200"
+                },
+                {
+                  "layer_type": "Image",
+                  "layer_value": "Test image value",
+                  "image_name": "BD_1.png",
+                  "location_layer_x": "297",
+                  "location_layer_y": "239",
+                  "layer_size_h": "168",
+                  "layer_size_w": "126"
+                }
+              ],
+              "action_name": "Duplicate",
+              "group_name": "Group 1",
+              "groups": [
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 1",
+                  "layer_name": "Text layer 2,BD_1"
+                },
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 2",
+                  "layer_name": "Text layer 1"
+                }
+              ],
+              "custom_options": [
+                {
+                  "type": "Text field",
+                  "target_layer": "Text layer 1",
+                  "label": "Text 1",
+                  "placeholder": "enter text",
+                  "max_length": "20",
+                  "default_value": "default",
+                  "allow_character": "Characters, Numbers, Special Characters",
+                  "position": "below"
+                },
+                {
+                  "type": "Image",
+                  "target_layer": "BD_1",
+                  "label": "Image 1",
+                  "position": "below"
+                },
+                {
+                  "type": "Text field",
+                  "target_layer": "Text layer 2",
+                  "label": "Text 2",
+                  "placeholder": "enter text",
+                  "max_length": "20",
+                  "default_value": "default",
+                  "allow_character": "Characters, Numbers, Special Characters"
+                }
+              ],
+              "picture": {
+                "show_group": "prodtest-show-group-layer-on-preview-image-SB-SB-GR-LAY-06.png",
+                "action_group": "prodtest-show-duplicate-group-layer-on-preview-image-SB-SB-GR-LAY-06.png"
+              }
+            },
+            {
+              "enable": true,
+              "description": "SB_SB_GR_LAY_07 - Verify action ungroup layer",
+              "case_id": "SB_SB_GR_LAY_07",
+              "action": "true",
+              "product_info": {
+                "title": "Product ungroup group",
+                "image_name": "Logo1.jpg"
+              },
+              "image_preview": "BD_13.png",
+              "btn_name": "Create Preview image",
+              "btn_delete": "Delete Preview image",
+              "button_next": "Next, create Print file",
+              "layers": [
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 1",
+                  "layer_value": "Test1",
+                  "font_size": "210",
+                  "location_layer_x": "86",
+                  "location_layer_y": "86"
+                },
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 2",
+                  "layer_value": "Test2",
+                  "font_size": "210",
+                  "location_layer_x": "200",
+                  "location_layer_y": "200"
+                },
+                {
+                  "layer_type": "Image",
+                  "layer_value": "Test image value",
+                  "image_name": "BD_1.png",
+                  "location_layer_x": "297",
+                  "location_layer_y": "239",
+                  "layer_size_h": "168",
+                  "layer_size_w": "126"
+                }
+              ],
+              "action_name": "Ungroup",
+              "group_name": "Group 1",
+              "groups": [
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 1",
+                  "layer_name": "Text layer 2,BD_1"
+                },
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 2",
+                  "layer_name": "Text layer 1"
+                }
+              ],
+              "custom_options": [
+                {
+                  "type": "Text field",
+                  "target_layer": "Text layer 1",
+                  "label": "Text 1",
+                  "placeholder": "enter text",
+                  "max_length": "20",
+                  "default_value": "default",
+                  "allow_character": "Characters, Numbers, Special Characters",
+                  "position": "below"
+                },
+                {
+                  "type": "Image",
+                  "target_layer": "BD_1",
+                  "label": "Image 1",
+                  "position": "below"
+                },
+                {
+                  "type": "Text field",
+                  "target_layer": "Text layer 2",
+                  "label": "Text 2",
+                  "placeholder": "enter text",
+                  "max_length": "20",
+                  "default_value": "default",
+                  "allow_character": "Characters, Numbers, Special Characters"
+                }
+              ],
+              "picture": {
+                "show_group": "prodtest-show-group-layer-on-preview-image-SB-SB-GR-LAY-07.png",
+                "action_group": "prodtest-show-ungroup-group-layer-on-preview-image-SB-SB-GR-LAY-07.png"
+              }
+            },
+            {
+              "enable": true,
+              "description": "SB_SB_GR_LAY_08 - Verify action delete layer",
+              "case_id": "SB_SB_GR_LAY_08",
+              "action": "true",
+              "product_info": {
+                "title": "Product delete group",
+                "image_name": "Logo1.jpg"
+              },
+              "image_preview": "BD_13.png",
+              "btn_name": "Create Preview image",
+              "btn_delete": "Delete Preview image",
+              "button_next": "Next, create Print file",
+              "layers": [
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 1",
+                  "layer_value": "Test1",
+                  "font_size": "210",
+                  "location_layer_x": "86",
+                  "location_layer_y": "86"
+                },
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 2",
+                  "layer_value": "Test2",
+                  "font_size": "210",
+                  "location_layer_x": "200",
+                  "location_layer_y": "200"
+                },
+                {
+                  "layer_type": "Image",
+                  "layer_value": "Test image value",
+                  "image_name": "BD_1.png",
+                  "location_layer_x": "297",
+                  "location_layer_y": "239",
+                  "layer_size_h": "168",
+                  "layer_size_w": "126"
+                }
+              ],
+              "action_name": "Delete",
+              "group_name": "Group 2",
+              "groups": [
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 1",
+                  "layer_name": "Text layer 2,BD_1"
+                },
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 2",
+                  "layer_name": "Text layer 1"
+                }
+              ],
+              "custom_options": [
+                {
+                  "type": "Text field",
+                  "target_layer": "Text layer 2",
+                  "label": "Text 1",
+                  "placeholder": "enter text",
+                  "max_length": "20",
+                  "default_value": "default",
+                  "allow_character": "Characters, Numbers, Special Characters",
+                  "position": "below"
+                },
+                {
+                  "type": "Image",
+                  "target_layer": "BD_1",
+                  "label": "Image 1"
+                }
+              ],
+              "picture": {
+                "show_group": "show-group-layer-on-preview-image-SB-SB-GR-LAY-08.png",
+                "action_group": "show-delete-group-layer-on-preview-image-SB-SB-GR-LAY-08.png"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-editor-sb1.myshopbase.net",
+      "shop_name": "au-editor-sb1",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_id": 10323074,
+      "user_id": 73800,
+      "timeout": 380000,
+      "cases": {
+        "DATA_DRIVEN_CREATE_GROUP_LAYER": {
+          "data": [
+            {
+              "enable": true,
+              "description": "SB_SB_GR_LAY_03 - Verify tạo thành công group layer từ màn Preview image",
+              "case_id": "SB_SB_GR_LAY_03",
+              "product_info": {
+                "title": "Product test group",
+                "image_name": "Logo1.jpg"
+              },
+              "btn_name": "Create Preview image",
+              "btn_delete": "Delete Preview image",
+              "button_next": "Next, create Print file",
+              "image_preview": "BD_13.png",
+              "layers": [
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 1",
+                  "layer_value": "Test1",
+                  "location_layer_x": "1200",
+                  "location_layer_y": "2081",
+                  "layer_size_h": "255",
+                  "layer_size_w": "919"
+                },
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 2",
+                  "layer_value": "Test2",
+                  "location_layer_x": "1294",
+                  "location_layer_y": "718",
+                  "layer_size_h": "238",
+                  "layer_size_w": "858"
+                },
+                {
+                  "layer_type": "Image",
+                  "layer_value": "Test image value",
+                  "image_name": "BD_1.png",
+                  "location_layer_x": "492",
+                  "location_layer_y": "246",
+                  "layer_size_h": "945",
+                  "layer_size_w": "708"
+                }
+              ],
+              "groups": [
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 1",
+                  "layer_name": "Text layer 1"
+                },
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 2",
+                  "layer_name": "Text layer 2,BD_1"
+                }
+              ],
+              "custom_options": [
+                {
+                  "type": "Text field",
+                  "target_layer": "Text layer 1",
+                  "label": "Text 1",
+                  "placeholder": "enter text",
+                  "max_length": "20",
+                  "default_value": "default",
+                  "allow_character": "Characters, Numbers, Special Characters",
+                  "position": "below"
+                },
+                {
+                  "type": "Image",
+                  "target_layer": "BD_1",
+                  "label": "Image 1",
+                  "position": "below"
+                },
+                {
+                  "type": "Text field",
+                  "target_layer": "Text layer 2",
+                  "label": "Text 2",
+                  "placeholder": "enter text",
+                  "max_length": "20",
+                  "default_value": "default",
+                  "allow_character": "Characters, Numbers, Special Characters"
+                }
+              ],
+              "picture": {
+                "show_group": "dev-show-group-layer-on-print-file-SB-SB-GR-LAY-03.png"
+              }
+            },
+            {
+              "enable": true,
+              "description": "SB_SB_GR_LAY_04 - Verify tạo  thành công group layer từ màn Print files",
+              "case_id": "SB_SB_GR_LAY_04",
+              "product_info": {
+                "title": "Product test print",
+                "image_name": "Logo1.jpg"
+              },
+              "image_preview": "BD_13.png",
+              "btn_name": "Create Print file",
+              "btn_delete": "Delete Print file image",
+              "button_next": "Next, create Preview",
+              "layers": [
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 1",
+                  "layer_value": "Test1",
+                  "location_layer_x": "1200",
+                  "location_layer_y": "2081",
+                  "layer_size_h": "255",
+                  "layer_size_w": "919"
+                },
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 2",
+                  "layer_value": "Test2",
+                  "location_layer_x": "1294",
+                  "location_layer_y": "718",
+                  "layer_size_h": "238",
+                  "layer_size_w": "858"
+                },
+                {
+                  "layer_type": "Image",
+                  "layer_value": "Test image value",
+                  "image_name": "BD_1.png",
+                  "location_layer_x": "492",
+                  "location_layer_y": "246",
+                  "layer_size_h": "945",
+                  "layer_size_w": "708"
+                }
+              ],
+              "groups": [
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 1",
+                  "layer_name": "Text layer 1"
+                },
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 2",
+                  "layer_name": "Text layer 2,BD_1"
+                }
+              ],
+              "custom_options": [
+                {
+                  "type": "Text field",
+                  "target_layer": "Text layer 1",
+                  "label": "Text 1",
+                  "placeholder": "enter text",
+                  "max_length": "20",
+                  "default_value": "default",
+                  "allow_character": "Characters, Numbers, Special Characters",
+                  "position": "below"
+                },
+                {
+                  "type": "Image",
+                  "target_layer": "BD_1",
+                  "label": "Image 1",
+                  "position": "below"
+                },
+                {
+                  "type": "Text field",
+                  "target_layer": "Text layer 2",
+                  "label": "Text 2",
+                  "placeholder": "enter text",
+                  "max_length": "20",
+                  "default_value": "default",
+                  "allow_character": "Characters, Numbers, Special Characters"
+                }
+              ],
+              "picture": {
+                "show_group": "dev-show-group-layer-on-preview-image-SB-SB-GR-LAY-04.png"
+              }
+            },
+            {
+              "enable": true,
+              "description": "SB_SB_GR_LAY_06 - Verify action duplicate group layer",
+              "case_id": "SB_SB_GR_LAY_06",
+              "action": "true",
+              "product_info": {
+                "title": "Product duplicate group",
+                "image_name": "Logo1.jpg"
+              },
+              "image_preview": "BD_13.png",
+              "btn_name": "Create Preview image",
+              "btn_delete": "Delete Preview image",
+              "button_next": "Next, create Print file",
+              "layers": [
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 1",
+                  "layer_value": "Test1",
+                  "location_layer_x": "1200",
+                  "location_layer_y": "2081",
+                  "layer_size_h": "255",
+                  "layer_size_w": "919"
+                },
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 2",
+                  "layer_value": "Test2",
+                  "location_layer_x": "1294",
+                  "location_layer_y": "718",
+                  "layer_size_h": "238",
+                  "layer_size_w": "858"
+                },
+                {
+                  "layer_type": "Image",
+                  "layer_value": "Test image value",
+                  "image_name": "BD_1.png",
+                  "location_layer_x": "492",
+                  "location_layer_y": "246",
+                  "layer_size_h": "945",
+                  "layer_size_w": "708"
+                }
+              ],
+              "action_name": "Duplicate",
+              "group_name": "Group 1",
+              "groups": [
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 1",
+                  "layer_name": "Text layer 2,BD_1"
+                },
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 2",
+                  "layer_name": "Text layer 1"
+                }
+              ],
+              "custom_options": [
+                {
+                  "type": "Text field",
+                  "target_layer": "Text layer 1",
+                  "label": "Text 1",
+                  "placeholder": "enter text",
+                  "max_length": "20",
+                  "default_value": "default",
+                  "allow_character": "Characters, Numbers, Special Characters",
+                  "position": "below"
+                },
+                {
+                  "type": "Image",
+                  "target_layer": "BD_1",
+                  "label": "Image 1",
+                  "position": "below"
+                },
+                {
+                  "type": "Text field",
+                  "target_layer": "Text layer 2",
+                  "label": "Text 2",
+                  "placeholder": "enter text",
+                  "max_length": "20",
+                  "default_value": "default",
+                  "allow_character": "Characters, Numbers, Special Characters"
+                }
+              ],
+              "picture": {
+                "show_group": "dev-show-group-layer-on-preview-image-SB-SB-GR-LAY-06.png",
+                "action_group": "dev-show-duplicate-group-layer-on-preview-image-SB-SB-GR-LAY-06.png"
+              }
+            },
+            {
+              "enable": true,
+              "description": "SB_SB_GR_LAY_07 - Verify action ungroup layer",
+              "case_id": "SB_SB_GR_LAY_07",
+              "action": "true",
+              "product_info": {
+                "title": "Product ungroup group",
+                "image_name": "Logo1.jpg"
+              },
+              "image_preview": "BD_13.png",
+              "btn_name": "Create Preview image",
+              "btn_delete": "Delete Preview image",
+              "button_next": "Next, create Print file",
+              "layers": [
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 1",
+                  "layer_value": "Test1",
+                  "location_layer_x": "1200",
+                  "location_layer_y": "2081",
+                  "layer_size_h": "255",
+                  "layer_size_w": "919"
+                },
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 2",
+                  "layer_value": "Test2",
+                  "location_layer_x": "1294",
+                  "location_layer_y": "718",
+                  "layer_size_h": "238",
+                  "layer_size_w": "858"
+                },
+                {
+                  "layer_type": "Image",
+                  "layer_value": "Test image value",
+                  "image_name": "BD_1.png",
+                  "location_layer_x": "492",
+                  "location_layer_y": "246",
+                  "layer_size_h": "945",
+                  "layer_size_w": "708"
+                }
+              ],
+              "action_name": "Ungroup",
+              "group_name": "Group 1",
+              "groups": [
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 1",
+                  "layer_name": "Text layer 2,BD_1"
+                },
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 2",
+                  "layer_name": "Text layer 1"
+                }
+              ],
+              "custom_options": [
+                {
+                  "type": "Text field",
+                  "target_layer": "Text layer 1",
+                  "label": "Text 1",
+                  "placeholder": "enter text",
+                  "max_length": "20",
+                  "default_value": "default",
+                  "allow_character": "Characters, Numbers, Special Characters",
+                  "position": "below"
+                },
+                {
+                  "type": "Image",
+                  "target_layer": "BD_1",
+                  "label": "Image 1",
+                  "position": "below"
+                },
+                {
+                  "type": "Text field",
+                  "target_layer": "Text layer 2",
+                  "label": "Text 2",
+                  "placeholder": "enter text",
+                  "max_length": "20",
+                  "default_value": "default",
+                  "allow_character": "Characters, Numbers, Special Characters"
+                }
+              ],
+              "picture": {
+                "show_group": "dev-show-group-layer-on-preview-image-SB-SB-GR-LAY-07.png",
+                "action_group": "dev-show-ungroup-group-layer-on-preview-image-SB-SB-GR-LAY-07.png"
+              }
+            },
+            {
+              "enable": true,
+              "description": "SB_SB_GR_LAY_08 - Verify action delete layer",
+              "case_id": "SB_SB_GR_LAY_08",
+              "action": "true",
+              "product_info": {
+                "title": "Product delete group",
+                "image_name": "Logo1.jpg"
+              },
+              "image_preview": "BD_13.png",
+              "btn_name": "Create Preview image",
+              "btn_delete": "Delete Preview image",
+              "button_next": "Next, create Print file",
+              "layers": [
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 1",
+                  "layer_value": "Test1",
+                  "location_layer_x": "1200",
+                  "location_layer_y": "2081",
+                  "layer_size_h": "255",
+                  "layer_size_w": "919"
+                },
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 2",
+                  "layer_value": "Test2",
+                  "location_layer_x": "1294",
+                  "location_layer_y": "718",
+                  "layer_size_h": "238",
+                  "layer_size_w": "858"
+                },
+                {
+                  "layer_type": "Image",
+                  "layer_value": "Test image value",
+                  "image_name": "BD_1.png",
+                  "location_layer_x": "492",
+                  "location_layer_y": "246",
+                  "layer_size_h": "945",
+                  "layer_size_w": "708"
+                }
+              ],
+              "action_name": "Delete",
+              "group_name": "Group 2",
+              "groups": [
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 1",
+                  "layer_name": "Text layer 2,BD_1"
+                },
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 2",
+                  "layer_name": "Text layer 1"
+                }
+              ],
+              "custom_options": [
+                {
+                  "type": "Text field",
+                  "target_layer": "Text layer 2",
+                  "label": "Text 1",
+                  "placeholder": "enter text",
+                  "max_length": "20",
+                  "default_value": "default",
+                  "allow_character": "Characters, Numbers, Special Characters",
+                  "position": "below"
+                },
+                {
+                  "type": "Image",
+                  "target_layer": "BD_1",
+                  "label": "Image 1"
+                }
+              ],
+              "picture": {
+                "show_group": "dev-show-group-layer-on-preview-image-SB-SB-GR-LAY-08.png",
+                "action_group": "dev-show-delete-group-layer-on-preview-image-SB-SB-GR-LAY-08.png"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "cases": {
+    "DATA_DRIVEN_CREATE_GROUP_LAYER": {
+      "data": [
+        {
+          "enable": true,
+          "description": "SB_SB_GR_LAY_03 - Verify tạo thành công group layer từ màn Preview image",
+          "case_id": "SB_SB_GR_LAY_03",
+          "product_info": {
+            "title": "Product test group",
+            "image_name": "Logo1.jpg"
+          },
+          "btn_name": "Create Preview image",
+          "btn_delete": "Delete Preview image",
+          "button_next": "Next, create Print file",
+          "image_preview": "artwork - Back.png",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 1",
+              "layer_value": "Test text value 1",
+              "font_size": "210",
+              "location_layer_x": "86",
+              "location_layer_y": "86"
+            },
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 2",
+              "layer_value": "Test text value 2",
+              "font_size": "210",
+              "location_layer_x": "200",
+              "location_layer_y": "200"
+            },
+            {
+              "layer_type": "Image",
+              "layer_value": "Test image value",
+              "image_name": "BD_1.png",
+              "location_layer_x": "297",
+              "location_layer_y": "239",
+              "layer_size_h": "168",
+              "layer_size_w": "126"
+            }
+          ],
+          "groups": [
+            {
+              "current_group": "New group 1",
+              "new_group": "Group 1",
+              "layer_name": "Text layer 1"
+            },
+            {
+              "current_group": "New group 1",
+              "new_group": "Group 2",
+              "layer_name": "Text layer 2,BD_1"
+            }
+          ],
+          "custom_options": [
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 1",
+              "label": "Text 1",
+              "placeholder": "enter text",
+              "max_length": "20",
+              "default_value": "default",
+              "allow_character": "Characters, Numbers, Special Characters",
+              "position": "below"
+            },
+            {
+              "type": "Image",
+              "target_layer": "BD_1",
+              "label": "Image 1",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 2",
+              "label": "Text 2",
+              "placeholder": "enter text",
+              "max_length": "20",
+              "default_value": "default",
+              "allow_character": "Characters, Numbers, Special Characters"
+            }
+          ],
+          "picture": {
+            "show_group": "show-group-layer-on-print-file-SB-SB-GR-LAY-03.png"
+          }
+        },
+        {
+          "enable": true,
+          "description": "SB_SB_GR_LAY_04 - Verify tạo  thành công group layer từ màn Print files",
+          "case_id": "SB_SB_GR_LAY_04",
+          "product_info": {
+            "title": "Product test print",
+            "image_name": "Logo1.jpg"
+          },
+          "image_preview": "artwork - Back.png",
+          "btn_name": "Create Print file",
+          "btn_delete": "Delete Print file image",
+          "button_next": "Next, create Preview",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 1",
+              "layer_value": "Test1",
+              "font_size": "210",
+              "location_layer_x": "86",
+              "location_layer_y": "86"
+            },
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 2",
+              "layer_value": "Test2",
+              "font_size": "210",
+              "location_layer_x": "200",
+              "location_layer_y": "200"
+            },
+            {
+              "layer_type": "Image",
+              "layer_value": "Test image value",
+              "image_name": "BD_1.png",
+              "location_layer_x": "297",
+              "location_layer_y": "239",
+              "layer_size_h": "168",
+              "layer_size_w": "126"
+            }
+          ],
+          "groups": [
+            {
+              "current_group": "New group 1",
+              "new_group": "Group 1",
+              "layer_name": "Text layer 1"
+            },
+            {
+              "current_group": "New group 1",
+              "new_group": "Group 2",
+              "layer_name": "Text layer 2,BD_1"
+            }
+          ],
+          "custom_options": [
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 1",
+              "label": "Text 1",
+              "placeholder": "enter text",
+              "max_length": "20",
+              "default_value": "default",
+              "allow_character": "Characters, Numbers, Special Characters",
+              "position": "below"
+            },
+            {
+              "type": "Image",
+              "target_layer": "BD_1",
+              "label": "Image 1",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 2",
+              "label": "Text 2",
+              "placeholder": "enter text",
+              "max_length": "20",
+              "default_value": "default",
+              "allow_character": "Characters, Numbers, Special Characters"
+            }
+          ],
+          "picture": {
+            "show_group": "show-group-layer-on-preview-image-SB-SB-GR-LAY-04.png"
+          }
+        },
+        {
+          "enable": true,
+          "description": "SB_SB_GR_LAY_06 - Verify action duplicate group layer",
+          "case_id": "SB_SB_GR_LAY_06",
+          "action": "true",
+          "product_info": {
+            "title": "Product duplicate group",
+            "image_name": "Logo1.jpg"
+          },
+          "image_preview": "BD_13.png",
+          "btn_name": "Create Preview image",
+          "btn_delete": "Delete Preview image",
+          "button_next": "Next, create Print file",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 1",
+              "layer_value": "Test1",
+              "font_size": "210",
+              "location_layer_x": "86",
+              "location_layer_y": "86"
+            },
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 2",
+              "layer_value": "Test2",
+              "font_size": "210",
+              "location_layer_x": "200",
+              "location_layer_y": "200"
+            },
+            {
+              "layer_type": "Image",
+              "layer_value": "Test image value",
+              "image_name": "BD_1.png",
+              "location_layer_x": "297",
+              "location_layer_y": "239",
+              "layer_size_h": "168",
+              "layer_size_w": "126"
+            }
+          ],
+          "action_name": "Duplicate",
+          "group_name": "Group 1",
+          "groups": [
+            {
+              "current_group": "New group 1",
+              "new_group": "Group 1",
+              "layer_name": "Text layer 2,BD_1"
+            },
+            {
+              "current_group": "New group 1",
+              "new_group": "Group 2",
+              "layer_name": "Text layer 1"
+            }
+          ],
+          "custom_options": [
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 1",
+              "label": "Text 1",
+              "placeholder": "enter text",
+              "max_length": "20",
+              "default_value": "default",
+              "allow_character": "Characters, Numbers, Special Characters",
+              "position": "below"
+            },
+            {
+              "type": "Image",
+              "target_layer": "BD_1",
+              "label": "Image 1",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 2",
+              "label": "Text 2",
+              "placeholder": "enter text",
+              "max_length": "20",
+              "default_value": "default",
+              "allow_character": "Characters, Numbers, Special Characters"
+            }
+          ],
+          "picture": {
+            "show_group": "show-group-layer-on-preview-image-SB-SB-GR-LAY-06.png",
+            "action_group": "show-duplicate-group-layer-on-preview-image-SB-SB-GR-LAY-06.png"
+          }
+        },
+        {
+          "enable": true,
+          "description": "SB_SB_GR_LAY_07 - Verify action ungroup layer",
+          "case_id": "SB_SB_GR_LAY_07",
+          "action": "true",
+          "product_info": {
+            "title": "Product ungroup group",
+            "image_name": "Logo1.jpg"
+          },
+          "image_preview": "BD_13.png",
+          "btn_name": "Create Preview image",
+          "btn_delete": "Delete Preview image",
+          "button_next": "Next, create Print file",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 1",
+              "layer_value": "Test1",
+              "font_size": "210",
+              "location_layer_x": "86",
+              "location_layer_y": "86"
+            },
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 2",
+              "layer_value": "Test2",
+              "font_size": "210",
+              "location_layer_x": "200",
+              "location_layer_y": "200"
+            },
+            {
+              "layer_type": "Image",
+              "layer_value": "Test image value",
+              "image_name": "BD_1.png",
+              "location_layer_x": "297",
+              "location_layer_y": "239",
+              "layer_size_h": "168",
+              "layer_size_w": "126"
+            }
+          ],
+          "action_name": "Ungroup",
+          "group_name": "Group 1",
+          "groups": [
+            {
+              "current_group": "New group 1",
+              "new_group": "Group 1",
+              "layer_name": "Text layer 2,BD_1"
+            },
+            {
+              "current_group": "New group 1",
+              "new_group": "Group 2",
+              "layer_name": "Text layer 1"
+            }
+          ],
+          "custom_options": [
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 1",
+              "label": "Text 1",
+              "placeholder": "enter text",
+              "max_length": "20",
+              "default_value": "default",
+              "allow_character": "Characters, Numbers, Special Characters",
+              "position": "below"
+            },
+            {
+              "type": "Image",
+              "target_layer": "BD_1",
+              "label": "Image 1",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 2",
+              "label": "Text 2",
+              "placeholder": "enter text",
+              "max_length": "20",
+              "default_value": "default",
+              "allow_character": "Characters, Numbers, Special Characters"
+            }
+          ],
+          "picture": {
+            "show_group": "show-group-layer-on-preview-image-SB-SB-GR-LAY-07.png",
+            "action_group": "show-ungroup-group-layer-on-preview-image-SB-SB-GR-LAY-07.png"
+          }
+        },
+        {
+          "enable": true,
+          "description": "SB_SB_GR_LAY_08 - Verify action delete layer",
+          "case_id": "SB_SB_GR_LAY_08",
+          "action": "true",
+          "product_info": {
+            "title": "Product delete group",
+            "image_name": "Logo1.jpg"
+          },
+          "image_preview": "BD_13.png",
+          "btn_name": "Create Preview image",
+          "btn_delete": "Delete Preview image",
+          "button_next": "Next, create Print file",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 1",
+              "layer_value": "Test1",
+              "font_size": "210",
+              "location_layer_x": "86",
+              "location_layer_y": "86"
+            },
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 2",
+              "layer_value": "Test2",
+              "font_size": "210",
+              "location_layer_x": "200",
+              "location_layer_y": "200"
+            },
+            {
+              "layer_type": "Image",
+              "layer_value": "Test image value",
+              "image_name": "BD_1.png",
+              "location_layer_x": "297",
+              "location_layer_y": "239",
+              "layer_size_h": "168",
+              "layer_size_w": "126"
+            }
+          ],
+          "action_name": "Delete",
+          "group_name": "Group 2",
+          "groups": [
+            {
+              "current_group": "New group 1",
+              "new_group": "Group 1",
+              "layer_name": "Text layer 2,BD_1"
+            },
+            {
+              "current_group": "New group 1",
+              "new_group": "Group 2",
+              "layer_name": "Text layer 1"
+            }
+          ],
+          "custom_options": [
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 2",
+              "label": "Text 1",
+              "placeholder": "enter text",
+              "max_length": "20",
+              "default_value": "default",
+              "allow_character": "Characters, Numbers, Special Characters",
+              "position": "below"
+            },
+            {
+              "type": "Image",
+              "target_layer": "BD_1",
+              "label": "Image 1"
+            }
+          ],
+          "picture": {
+            "show_group": "show-group-layer-on-preview-image-SB-SB-GR-LAY-08.png",
+            "action_group": "show-delete-group-layer-on-preview-image-SB-SB-GR-LAY-08.png"
+          }
+        }
+      ]
+    }
+  }
+}

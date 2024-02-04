@@ -1,0 +1,95 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "odoo_host": "https://odoo.dev.shopbase.net/",
+      "odoo_db": "sbase_fulfillment_dev",
+      "odoo_username": "admin",
+      "odoo_password": "admin",
+      "delivery_carrier_id": 40,
+      "default_attributes": [
+        {
+          "name": "Color",
+          "id": 2,
+          "number_of_values": 1,
+          "on_product_create": true
+        },
+        {
+          "name": "Size",
+          "id": 1000057,
+          "number_of_values": 2,
+          "on_product_create": true
+        }
+      ]
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "odoo_host": "https://autotest-erp-plus.shopbase.dev",
+      "odoo_db": "shopbase_fulfillment",
+      "odoo_username": "qaocg",
+      "odoo_password": "LFmy=qGLvwW^E63b",
+      "delivery_carrier_id": 30,
+      "default_attributes": [
+        {
+          "name": "Color",
+          "id": 2,
+          "number_of_values": 1,
+          "on_product_create": true
+        },
+        {
+          "name": "Size",
+          "id": 15,
+          "number_of_values": 2,
+          "on_product_create": true
+        }
+      ],
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "odoo_host": "https://autotest-erp-plus.shopbase.dev",
+      "odoo_db": "shopbase_fulfillment",
+      "odoo_username": "qaocg",
+      "odoo_password": "LFmy=qGLvwW^E63b",
+      "delivery_carrier_id": 30,
+      "default_attributes": [
+        {
+          "name": "Color",
+          "id": 2,
+          "number_of_values": 1,
+          "on_product_create": true
+        },
+        {
+          "name": "Size",
+          "id": 15,
+          "number_of_values": 2,
+          "on_product_create": true
+        }
+      ]
+    }
+  },
+  "cases": {
+    "SB_PLB_PRO_CTL_1": {
+      "product_name": "(Test Product)",
+      "data_product_variants": [
+        {
+          "x_plusbase_base_cost": 6.99,
+          "x_variant_weight": 0.31
+        },
+        {
+          "x_plusbase_base_cost": 8.99,
+          "x_variant_weight": 0.32
+        }
+      ],
+      "data_sale_order": {
+        "validity_date": "2030-12-31",
+        "x_estimated_delivery": 7,
+        "x_minimum_order_quantity": 1,
+        "x_minimum_order_value": 1,
+        "x_quote_based_on": false,
+        "payment_term_id": 1
+      },
+      "price_variants": [22, 31]
+    }
+  }
+}

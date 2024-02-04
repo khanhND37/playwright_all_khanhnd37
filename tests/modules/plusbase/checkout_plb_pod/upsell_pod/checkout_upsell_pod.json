@@ -1,0 +1,232 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-plb-checkout-upsell-pod.onshopbase.com",
+      "shop_name": "au-plb-checkout-upsell-pod",
+      "username": "shopbase4@beeketing.net",
+      "password": "H7mQdQ]Zj]%[Nm?",
+      "user_id": 207114,
+      "shop_id": 10379064,
+      "shop_template": {
+        "domain": "template-store.onshopbase.com",
+        "shop_name": "template-store",
+        "user_id": 9131323,
+        "shop_id": 10258217,
+        "username": "qas@beeketing.net",
+        "password": "123456"
+      },
+      "theme": "roller",
+      "country_currency": "United States",
+      "stripe_secret_key": "sk_test_Pfv1RbMLdJwdO7o8FOV4d03600K0JL3zbx",
+      "platform_secret_key": "sk_test_51H1pMbHI2q8TlN76Kybx8YAFcfn9zLu6Ssc097RYoC16IqcVv8OrA0h9DCCPAkhct3ic7RF2n2J407ZvBeYB5P8t00w9v2ImaM",
+      "layout": false
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-plb-checkout-upsell-pod-prodtest.onshopbase.com",
+      "shop_name": "au-plb-checkout-upsell-pod-prodtest",
+      "username": "shopbase4@beeketing.net",
+      "password": "H7mQdQ]Zj]%[Nm?",
+      "user_id": 207114,
+      "shop_id": 10379066,
+      "shop_template": {
+        "domain": "plusbase-templateprodtest.onshopbase.com",
+        "shop_name": "plusbase-templateprodtest",
+        "user_id": 9131323,
+        "shop_id": 10364655,
+        "username": "qas@beeketing.net",
+        "password": "123456"
+      },
+      "theme": "roller",
+      "country_currency": "United States",
+      "stripe_secret_key": "sk_test_51KC0oyGz6vfcbTm0vOb0wxbwwaMGewcvLjI1pamhtiiaIRFQaYKKCGnTh0DtMT4R8ozjKe6E70CRwV5uCShDI9b700mTgp6cD2",
+      "platform_secret_key": "sk_test_51H1pMbHI2q8TlN76Kybx8YAFcfn9zLu6Ssc097RYoC16IqcVv8OrA0h9DCCPAkhct3ic7RF2n2J407ZvBeYB5P8t00w9v2ImaM",
+      "accounts_domain": "accounts-test.shopbase.com",
+      "layout": false
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-plb-checkout-upsell-pod.myshopbase.net",
+      "shop_name": "au-plb-checkout-upsell-pod",
+      "user_id": 89321,
+      "shop_id": 10322833,
+      "username": "shopbase4@beeketing.net",
+      "password": "H7mQdQ]Zj]%[Nm?",
+      "shop_template": {
+        "domain": "plusbase-checkout.myshopbase.net",
+        "shop_name": "plusbase-checkout",
+        "user_id": 87262,
+        "shop_id": 10060862,
+        "username": "phuongpham@beeketing.net",
+        "password": "123456"
+      },
+      "theme": "roller",
+      "country_currency": "United States",
+      "stripe_secret_key": "sk_test_51HVAkLLKE0DGm0HXiZvY2HZ3xfOXxqKL4jk2PPGc6lzPm1nTXKcJi4AWUpHzgZLrmpt4FLKuikZEkD8EaUVViqXW00INiGwEvV",
+      "platform_secret_key": "sk_test_51H1pLkFErwnyyJdNcuQiQ35dY2WvmL1rpwCXBIjDq6vBVjcBvMBkY9oO07TFOM7pVApvm2jHuZYSrmbbUUbzX2Ub00iWWFxaFC",
+      "layout": true
+    }
+  },
+  "customer_info": {
+    "email": "tester@maildrop.cc",
+    "first_name": "Tester",
+    "last_name": "Auto",
+    "country": "United States",
+    "state": "Florida",
+    "city": "Fort Lauderdale",
+    "address": "1600 W Loop S",
+    "zipcode": "33301",
+    "phone_number": "505-646-2276"
+  },
+  "tipping_info": {
+    "percentages": [5, 10, 15],
+    "is_enable": true,
+    "is_old_layout": false,
+    "option": "Custom tip",
+    "tipping_amount": "10"
+  },
+  "timeout": 1000000,
+  "cases": {
+    "SB_PLB_PODPL_PODPU_1": {
+      "upsell_info": {
+        "type": "pre-purchase",
+        "discount": {
+          "type": "Percentage",
+          "value": 0.3
+        },
+        "target_product": [
+          {
+            "name": "(Test product) Pre-purchase POD",
+            "quantity": 1
+          }
+        ],
+        "recommend_product": [
+          {
+            "name": "(Test product) Auto Dropship9 Lint Shaver Manual Lint Roller Clothes Brush Tools Clothes Fuzz Fabric Portable Remover for Woolen Coat Sweater Fabric Shaver",
+            "quantity": 1
+          }
+        ]
+      }
+    },
+    "SB_PLB_PODPL_PODPU_2": {
+      "upsell_info": {
+        "type": "in-cart offer",
+        "discount": {
+          "type": "Percentage",
+          "value": 0.3
+        },
+        "target_product": [
+          {
+            "name": "(Test product) In-cart offer POD",
+            "quantity": 1
+          }
+        ],
+        "recommend_product": [
+          {
+            "name": "(Test product) Auto Dropship9 Lint Shaver Manual Lint Roller Clothes Brush Tools Clothes Fuzz Fabric Portable Remover for Woolen Coat Sweater Fabric Shaver",
+            "quantity": 1
+          }
+        ]
+      }
+    },
+    "SB_PLB_PODPL_PODPU_4": {
+      "upsell_info": {
+        "type": "quantity discount",
+        "discount": {
+          "type": "Fix amount",
+          "value": 20
+        },
+        "target_product": [
+          {
+            "name": "(Test product) Quantity discount POD",
+            "quantity": 1
+          },
+          {
+            "name": "(Test product) Auto Dropship9 Lint Shaver Manual Lint Roller Clothes Brush Tools Clothes Fuzz Fabric Portable Remover for Woolen Coat Sweater Fabric Shaver",
+            "quantity": 1
+          }
+        ]
+      }
+    },
+    "SB_PLB_PODPL_PODPU_8": {
+      "upsell_info": {
+        "type": "post-puschase offer",
+        "discount": {
+          "type": "Percentage",
+          "value": 0.3
+        },
+        "target_product": [
+          {
+            "name": "(Test product) Standard shipping + Fast shipping 1",
+            "quantity": 1
+          },
+          {
+            "name": "(Test product) Auto Dropship1 Screen Smart Watch Bluetooth",
+            "quantity": 1
+          }
+        ],
+        "recommend_product": [
+          {
+            "name": "(Test product) Standard shipping + Fast shipping 2",
+            "quantity": 1
+          }
+        ]
+      }
+    },
+    "SB_PLB_PODPL_PODPU_11": {
+      "upsell_info": {
+        "type": "post-puschase offer",
+        "discount": {
+          "type": "Percentage",
+          "value": 0.3
+        },
+        "target_product": [
+          {
+            "name": "(Test product) Standard shipping 1",
+            "quantity": 1
+          },
+          {
+            "name": "(Test product) Fast shipping 1",
+            "quantity": 1
+          },
+          {
+            "name": "(Test product) Auto Dropship6 Men Long Wallet Clutch",
+            "quantity": 1
+          }
+        ],
+        "recommend_product": [
+          {
+            "name": "(Test product) Auto Dropship3 Spaghetti",
+            "quantity": 1
+          }
+        ]
+      }
+    },
+    "SB_PLB_PODPL_PODPU_13": {
+      "upsell_info": {
+        "type": "post-puschase offer",
+        "discount": {
+          "type": "Percentage",
+          "value": 0.3
+        },
+        "target_product": [
+          {
+            "name": "(Test product) Standard shipping 2",
+            "quantity": 1
+          },
+          {
+            "name": "(Test product) Standard shipping 3",
+            "quantity": 1
+          }
+        ],
+        "recommend_product": [
+          {
+            "name": "(Test product) Auto Dropship1 Screen Smart Watch Bluetooth",
+            "quantity": 1
+          }
+        ]
+      }
+    }
+  }
+}

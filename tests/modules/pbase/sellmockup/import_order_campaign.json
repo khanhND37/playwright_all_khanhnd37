@@ -1,0 +1,268 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "pbase-sell-campaign.myshopbase.net",
+      "shop_name": "pbase-sell-campaign",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_id": 10326925,
+      "user_id": 73800,
+      "time_out_tc": 4000000,
+      "wait_time_mock_up_render": 60000,
+      "hive_pb_domain": "hive-pbase.dev.shopbase.net",
+      "hive_pb_username": "shopbase",
+      "hive_pb_password": "123456",
+      "customer": {
+        "email": "khanhnguyen1@beeketing.com",
+        "first_name": "khanh",
+        "last_name": "nguyen",
+        "address": "1600 W Loop S",
+        "country": "United States",
+        "country_code": "US",
+        "state": "California",
+        "city": "California",
+        "zipcode": "90001",
+        "phone_number": "2028610737"
+      },
+      "card": {
+        "card_number": "4242424242424242",
+        "card_holder_name": "khanh",
+        "expire_date": "12 / 34",
+        "cvv": "116"
+      }
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-prodtest-import2.onshopbase.com",
+      "shop_name": "au-prodtest-import2",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10430227,
+      "user_id": 73782,
+      "time_out_tc": 900000,
+      "wait_time_mock_up_render": 60000,
+      "hive_pb_domain": "hive-pbase-prod-test.shopbase.com",
+      "hive_pb_username": "shopbase",
+      "hive_pb_password": "UxsLHz^Wjkf35*/w",
+      "customer": {
+        "email": "khanhnguyen1@beeketing.com",
+        "first_name": "khanh",
+        "last_name": "nguyen",
+        "address": "1600 W Loop S",
+        "country": "United States",
+        "country_code": "US",
+        "state": "California",
+        "city": "California",
+        "zipcode": "90001",
+        "phone_number": "2028610737"
+      },
+      "card": {
+        "card_number": "4242424242424242",
+        "card_holder_name": "khanh",
+        "expire_date": "12 / 34",
+        "cvv": "116"
+      },
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "pbase-edit-custom-option.onshopbase.com",
+      "shop_name": "pbase-edit-custom-option",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10332480,
+      "user_id": 73782,
+      "time_out_tc": 900000,
+      "wait_time_mock_up_render": 60000,
+      "hive_pb_domain": "hive-pbase.shopbase.com",
+      "hive_pb_username": "shopbase",
+      "hive_pb_password": "UxsLHz^Wjkf35*/w",
+      "customer": {
+        "email": "khanhnguyen1@beeketing.com",
+        "first_name": "khanh",
+        "last_name": "nguyen",
+        "address": "1600 W Loop S",
+        "country": "United States",
+        "country_code": "US",
+        "state": "California",
+        "city": "California",
+        "zipcode": "90001",
+        "phone_number": "2028610737"
+      },
+      "card": {
+        "card_number": "4242424242424242",
+        "card_holder_name": "khanh",
+        "expire_date": "12 / 34",
+        "cvv": "116"
+      }
+    }
+  },
+  "email_scheduler": "thuyhoang@beeketing.net",
+  "cases": {
+    "SB_PRB_SCWM_30": {
+      "import_campaign": {
+        "file_path": "./data/printbase/file_campaign_has_1_base.csv",
+        "file_name": "file_campaign_has_1_base.csv",
+        "total_campaign": 1,
+        "status": "Completed",
+        "process": "Imported 1/1 products."
+      },
+      "verify_time": 2,
+      "order_info": {
+        "product_name": "Campaign has 1 base products"
+      },
+      "variant_line": {
+        "size": "S",
+        "color": "White"
+      },
+      "order_verify": {
+        "label": "Awaiting artwork",
+        "message": "Uploading artwork to order will take about 5 minutes. Please refresh the page later."
+      },
+      "layers": [
+        {
+          "layer_type": "Image",
+          "image_name": "BD_1.png"
+        }
+      ],
+      "order_detail": [
+        {
+          "num_artwork": 1,
+          "artwork_status": "artwork_rendered"
+        }
+      ],
+      "pricing_info": {
+        "title": "Campaign has 1 base products"
+      }
+    },
+    "SB_PRB_SCWM_31": {
+      "import_campaign": {
+        "file_path": "./data/printbase/file_campaign_has_2_base.csv",
+        "file_name": "file_campaign_has_2_base.csv",
+        "total_campaign": 1,
+        "status": "Completed",
+        "process": "Imported 1/1 products."
+      },
+      "verify_time": 2,
+      "order_info": {
+        "product_name_first": "Campaign has 2 base products",
+        "product_name_second": "Campaign has 2 base products"
+      },
+      "variant_line1": {
+        "size": "S",
+        "color": "White",
+        "style": "Unisex T-shirt"
+      },
+      "variant_line2": {
+        "size": "S",
+        "color": "White",
+        "style": "V-neck T-shirt"
+      },
+      "order_verify": {
+        "label": "Awaiting artwork",
+        "message": "Uploading artwork to order will take about 5 minutes. Please refresh the page later."
+      },
+      "layers": [
+        {
+          "layer_type": "Image",
+          "image_name": "BD_1.png"
+        }
+      ],
+      "order_detail": [
+        {
+          "num_artwork": 1,
+          "artwork_status": "artwork_rendered"
+        }
+      ],
+      "pricing_info": {
+        "title": "Campaign has 2 base products"
+      }
+    },
+    "SB_PRB_SCWM_32": {
+      "verify_time": 2,
+      "import_campaign": {
+        "file_path": "data/printbase/import_campaign/import-camp-csv-multi-base.csv",
+        "file_name": "import-camp-csv-multi-base.csv",
+        "total_campaign": 1,
+        "status": "Completed",
+        "process": "Imported 1/1 products."
+      },
+      "order_info": {
+        "product_name_first": "Import camp Campaign has 10 base products",
+        "product_name_second": "Import camp Campaign has 10 base products"
+      },
+      "variant_line1": {
+        "size": "S",
+        "color": "White",
+        "style": "Unisex T-shirt"
+      },
+      "variant_line2": {
+        "size": "S",
+        "color": "White",
+        "style": "V-neck T-shirt"
+      },
+      "order_verify": {
+        "label": "Awaiting artwork",
+        "message": "Uploading artwork to order will take about 5 minutes. Please refresh the page later."
+      },
+      "layers": [
+        {
+          "layer_type": "Image",
+          "image_name": "BD_1.png"
+        }
+      ],
+      "order_detail": [
+        {
+          "num_artwork": 1,
+          "artwork_status": "artwork_rendered"
+        },
+        {
+          "num_artwork": 1,
+          "artwork_status": "artwork_rendered"
+        }
+      ],
+      "pricing_info": {
+        "title": "Import camp Campaign has 10 base products"
+      }
+    },
+    "SB_PRB_SCWM_33": {
+      "verify_time": 2,
+      "import_campaign": {
+        "file_path": "data/printbase/import_campaign/import_camp_skip.csv",
+        "file_name": "import_camp_skip.csv",
+        "total_campaign": 1,
+        "status": "Completed",
+        "process": "Imported 1/1 products."
+      },
+      "order_info": {
+        "product_name_first": "Import camp V-neck T-shirt skip",
+        "product_name_second": "campaign_test"
+      },
+      "variant_line1": {
+        "size": "S",
+        "color": "White"
+      },
+      "variant_line2": {
+        "size": "S",
+        "color": "White"
+      },
+      "order_verify": {
+        "label": "Awaiting artwork",
+        "message": "Uploading artwork to order will take about 5 minutes. Please refresh the page later."
+      },
+      "layers": [
+        {
+          "layer_type": "Image",
+          "image_name": "BD_1.png"
+        }
+      ],
+      "order_detail": [
+        {
+          "num_artwork": 1,
+          "artwork_status": "artwork_rendered"
+        }
+      ]
+    }
+  }
+}

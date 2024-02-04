@@ -1,0 +1,452 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-payoneer.myshopbase.net",
+      "shop_name": "au-payoneer",
+      "user_id": 87423,
+      "shop_id": 10323380,
+      "username": "hoanguyen3@beeketing.net",
+      "password": "Hoa1510@",
+      "url_login": "https://login.sandbox.payoneer.com",
+      "hive_username": "shopbase",
+      "hive_password": "123456",
+      "hive_domain": "hive.dev.shopbase.net",
+      "account_payoneer": {
+        "email": "trangle@beeketing.net",
+        "password": "@Tester123"
+      },
+      "cases": {
+        "SB_BAL_PON_40": {},
+        "SB_BAL_PON_43": {
+          "confirm_text": "Do you confirm to unlink your Payoneer account?"
+        },
+        "DATA_DRIVEN": {
+          "data": [
+            {
+              "description": "Kiểm tra request payout với payout Payoneer account khi merchant đã connect thành công account Payoneer và đang ở trạng thái active và refuse request trong hive",
+              "case_name": "SB_BAL_PON_44",
+              "info_refund": {
+                "invoice_type": "Refund (Available to Payout)",
+                "value": "51",
+                "form_reason": "run automation",
+                "form_note": "for refund Available to Payout"
+              },
+              "request_info": {
+                "source_name": "General",
+                "payment_name": "Payoneer account",
+                "request_amount": 50
+              },
+              "payout_review_info": {
+                "amount": 50,
+                "status": "under_review",
+                "method": "payoneer_masspayout"
+              },
+              "payout_review_info_after": {
+                "amount": 50,
+                "status": "refused",
+                "method": "payoneer_masspayout"
+              },
+              "invoice_filter": {
+                "domain": "au-payoneer.myshopbase.net"
+              },
+              "invoice_review_info": {
+                "domain": "au-payoneer.myshopbase.net",
+                "shop_name": "au-payoneer",
+                "amount_display": "-50.00",
+                "content": "Pay out",
+                "status": "Success"
+              },
+              "payout_status_approve": false,
+              "reason_refuse": "run automation",
+              "request_status_after_in_hive": "refused",
+              "invoice_review_info_after": {
+                "domain": "au-payoneer.myshopbase.net",
+                "shop_name": "au-payoneer",
+                "amount_display": "-50.00",
+                "content": "Pay out",
+                "status": "Refunded"
+              }
+            },
+            {
+              "description": "Kiểm tra request payout với payout Payoneer account (khi merchant đã connect thành công account Payoneer và đang ở trạng thái active) và approve request trong hive",
+              "case_name": "SB_BAL_PON_45",
+              "info_refund": {
+                "invoice_type": "Refund (Available to Payout)",
+                "value": "51",
+                "form_reason": "run automation",
+                "form_note": "for refund Available to Payout"
+              },
+              "request_info": {
+                "source_name": "General",
+                "payment_name": "Payoneer account",
+                "request_amount": 50
+              },
+              "payout_review_info": {
+                "amount": 50,
+                "status": "under_review",
+                "method": "payoneer_masspayout"
+              },
+              "payout_review_info_after": {
+                "amount": 50,
+                "status": "under_review",
+                "method": "payoneer_masspayout"
+              },
+              "invoice_filter": {
+                "domain": "au-payoneer.myshopbase.net"
+              },
+              "invoice_review_info": {
+                "domain": "au-payoneer.myshopbase.net",
+                "shop_name": "au-payoneer",
+                "amount_display": "-50.00",
+                "content": "Pay out",
+                "status": "Success"
+              },
+              "payout_status_approve": true,
+              "reason_refuse": "run automation",
+              "request_status_after_in_hive": "awaiting_payment",
+              "invoice_review_info_after": {
+                "domain": "au-payoneer.myshopbase.net",
+                "shop_name": "au-payoneer",
+                "amount_display": "-50.00",
+                "content": "Pay out",
+                "status": "Success"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-payoneer-signup-prodtest.onshopbase.com",
+      "shop_name": "au-payoneer-signup-prodtest",
+      "user_id": 74306,
+      "shop_id": 10422890,
+      "username": "shopbase1@beeketing.net",
+      "password": "=7#d2L9b3SuuA*%Q",
+      "url_login": "https://login.payoneer.com",
+      "hive_domain": "hive.shopbase.com",
+      "hive_username": "shopbase",
+      "hive_password": "UxsLHz^Wjkf35*/w",
+      "account_payoneer": {
+        "email": "duyenvu@beeketing.net",
+        "password": "@Tester123"
+      },
+      "cases": {
+        "SB_BAL_PON_40": {},
+        "SB_BAL_PON_43": {
+          "confirm_text": "Do you confirm to unlink your Payoneer account?"
+        },
+        "DATA_DRIVEN": {
+          "data": [
+            {
+              "description": "Kiểm tra request payout với payout Payoneer account khi merchant đã connect thành công account Payoneer và đang ở trạng thái active và refuse request trong hive",
+              "case_name": "SB_BAL_PON_44",
+              "info_refund": {
+                "invoice_type": "Refund (Available to Payout)",
+                "value": "51",
+                "form_reason": "run automation",
+                "form_note": "for refund Available to Payout"
+              },
+              "request_info": {
+                "source_name": "General",
+                "payment_name": "Payoneer account",
+                "request_amount": 50
+              },
+              "payout_review_info": {
+                "amount": 50,
+                "status": "under_review",
+                "method": "payoneer_masspayout"
+              },
+              "payout_review_info_after": {
+                "amount": 50,
+                "status": "refused",
+                "method": "payoneer_masspayout"
+              },
+              "invoice_filter": {
+                "domain": "au-payoneer.myshopbase.net"
+              },
+              "invoice_review_info": {
+                "domain": "au-payoneer.myshopbase.net",
+                "shop_name": "au-payoneer",
+                "amount_display": "-50.00",
+                "content": "Pay out",
+                "status": "Success"
+              },
+              "payout_status_approve": false,
+              "reason_refuse": "run automation",
+              "request_status_after_in_hive": "refused",
+              "invoice_review_info_after": {
+                "domain": "au-payoneer.myshopbase.net",
+                "shop_name": "au-payoneer",
+                "amount_display": "-50.00",
+                "content": "Pay out",
+                "status": "Refunded"
+              }
+            },
+            {
+              "description": "Kiểm tra request payout với payout Payoneer account (khi merchant đã connect thành công account Payoneer và đang ở trạng thái active) và approve request trong hive",
+              "case_name": "SB_BAL_PON_45",
+              "info_refund": {
+                "invoice_type": "Refund (Available to Payout)",
+                "value": "51",
+                "form_reason": "run automation",
+                "form_note": "for refund Available to Payout"
+              },
+              "request_info": {
+                "source_name": "General",
+                "payment_name": "Payoneer account",
+                "request_amount": 50
+              },
+              "payout_review_info": {
+                "amount": 50,
+                "status": "under_review",
+                "method": "payoneer_masspayout"
+              },
+              "payout_review_info_after": {
+                "amount": 50,
+                "status": "under_review",
+                "method": "payoneer_masspayout"
+              },
+              "invoice_filter": {
+                "domain": "au-payoneer.myshopbase.net"
+              },
+              "invoice_review_info": {
+                "domain": "au-payoneer.myshopbase.net",
+                "shop_name": "au-payoneer",
+                "amount_display": "-50.00",
+                "content": "Pay out",
+                "status": "Success"
+              },
+              "payout_status_approve": true,
+              "reason_refuse": "run automation",
+              "request_status_after_in_hive": "awaiting_payment",
+              "invoice_review_info_after": {
+                "domain": "au-payoneer.myshopbase.net",
+                "shop_name": "au-payoneer",
+                "amount_display": "-50.00",
+                "content": "Pay out",
+                "status": "Success"
+              }
+            }
+          ]
+        }
+      },
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-payoneer-signup.onshopbase.com",
+      "shop_name": "au-payoneer-signup",
+      "user_id": 74306,
+      "shop_id": 10379894,
+      "username": "shopbase1@beeketing.net",
+      "password": "=7#d2L9b3SuuA*%Q",
+      "url_login": "https://login.payoneer.com",
+      "hive_domain": "hive.shopbase.com",
+      "hive_username": "shopbase",
+      "hive_password": "UxsLHz^Wjkf35*/w",
+      "account_payoneer": {
+        "email": "duyenvu@beeketing.net",
+        "password": "@Tester123"
+      },
+      "cases": {
+        "SB_BAL_PON_40": {},
+        "SB_BAL_PON_43": {
+          "confirm_text": "Do you confirm to unlink your Payoneer account?"
+        },
+        "DATA_DRIVEN": {
+          "data": [
+            {
+              "description": "Kiểm tra request payout với payout Payoneer account khi merchant đã connect thành công account Payoneer và đang ở trạng thái active và refuse request trong hive",
+              "case_name": "SB_BAL_PON_44",
+              "info_refund": {
+                "invoice_type": "Refund (Available to Payout)",
+                "value": "51",
+                "form_reason": "run automation",
+                "form_note": "for refund Available to Payout"
+              },
+              "request_info": {
+                "source_name": "General",
+                "payment_name": "Payoneer account",
+                "request_amount": 50
+              },
+              "payout_review_info": {
+                "amount": 50,
+                "status": "under_review",
+                "method": "payoneer_masspayout"
+              },
+              "payout_review_info_after": {
+                "amount": 50,
+                "status": "refused",
+                "method": "payoneer_masspayout"
+              },
+              "invoice_filter": {
+                "domain": "au-payoneer.myshopbase.net"
+              },
+              "invoice_review_info": {
+                "domain": "au-payoneer.myshopbase.net",
+                "shop_name": "au-payoneer",
+                "amount_display": "-50.00",
+                "content": "Pay out",
+                "status": "Success"
+              },
+              "payout_status_approve": false,
+              "reason_refuse": "run automation",
+              "request_status_after_in_hive": "refused",
+              "invoice_review_info_after": {
+                "domain": "au-payoneer.myshopbase.net",
+                "shop_name": "au-payoneer",
+                "amount_display": "-50.00",
+                "content": "Pay out",
+                "status": "Refunded"
+              }
+            },
+            {
+              "description": "Kiểm tra request payout với payout Payoneer account (khi merchant đã connect thành công account Payoneer và đang ở trạng thái active) và approve request trong hive",
+              "case_name": "SB_BAL_PON_45",
+              "info_refund": {
+                "invoice_type": "Refund (Available to Payout)",
+                "value": "51",
+                "form_reason": "run automation",
+                "form_note": "for refund Available to Payout"
+              },
+              "request_info": {
+                "source_name": "General",
+                "payment_name": "Payoneer account",
+                "request_amount": 50
+              },
+              "payout_review_info": {
+                "amount": 50,
+                "status": "under_review",
+                "method": "payoneer_masspayout"
+              },
+              "payout_review_info_after": {
+                "amount": 50,
+                "status": "under_review",
+                "method": "payoneer_masspayout"
+              },
+              "invoice_filter": {
+                "domain": "au-payoneer.myshopbase.net"
+              },
+              "invoice_review_info": {
+                "domain": "au-payoneer.myshopbase.net",
+                "shop_name": "au-payoneer",
+                "amount_display": "-50.00",
+                "content": "Pay out",
+                "status": "Success"
+              },
+              "payout_status_approve": true,
+              "reason_refuse": "run automation",
+              "request_status_after_in_hive": "awaiting_payment",
+              "invoice_review_info_after": {
+                "domain": "au-payoneer.myshopbase.net",
+                "shop_name": "au-payoneer",
+                "amount_display": "-50.00",
+                "content": "Pay out",
+                "status": "Success"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "cases": {
+    "DATA_DRIVEN": {
+      "data": [
+        {
+          "description": "Kiểm tra request payout với payout Payoneer account khi merchant đã connect thành công account Payoneer và đang ở trạng thái active và refuse request trong hive",
+          "case_name": "SB_BAL_PON_44",
+          "info_refund": {
+            "invoice_type": "Refund (Available to Payout)",
+            "value": "51",
+            "form_reason": "run automation",
+            "form_note": "for refund Available to Payout"
+          },
+          "request_info": {
+            "source_name": "General",
+            "payment_name": "Payoneer account",
+            "request_amount": 50
+          },
+          "payout_review_info": {
+            "amount": 50,
+            "status": "under_review",
+            "method": "payoneer_masspayout"
+          },
+          "payout_review_info_after": {
+            "amount": 50,
+            "status": "refused",
+            "method": "payoneer_masspayout"
+          },
+          "invoice_filter": {
+            "domain": "au-payoneer.myshopbase.net"
+          },
+          "invoice_review_info": {
+            "domain": "au-payoneer.myshopbase.net",
+            "shop_name": "au-payoneer",
+            "amount_display": "-50.00",
+            "content": "Pay out",
+            "status": "Success"
+          },
+          "payout_status_approve": false,
+          "reason_refuse": "run automation",
+          "request_status_after_in_hive": "refused",
+          "invoice_review_info_after": {
+            "domain": "au-payoneer.myshopbase.net",
+            "shop_name": "au-payoneer",
+            "amount_display": "-50.00",
+            "content": "Pay out",
+            "status": "Refunded"
+          }
+        },
+        {
+          "description": "Kiểm tra request payout với payout Payoneer account (khi merchant đã connect thành công account Payoneer và đang ở trạng thái active) và approve request trong hive",
+          "case_name": "SB_BAL_PON_45",
+          "info_refund": {
+            "invoice_type": "Refund (Available to Payout)",
+            "value": "51",
+            "form_reason": "run automation",
+            "form_note": "for refund Available to Payout"
+          },
+          "request_info": {
+            "source_name": "General",
+            "payment_name": "Payoneer account",
+            "request_amount": 50
+          },
+          "payout_review_info": {
+            "amount": 50,
+            "status": "under_review",
+            "method": "payoneer_masspayout"
+          },
+          "payout_review_info_after": {
+            "amount": 50,
+            "status": "under_review",
+            "method": "payoneer_masspayout"
+          },
+          "invoice_filter": {
+            "domain": "au-payoneer.myshopbase.net"
+          },
+          "invoice_review_info": {
+            "domain": "au-payoneer.myshopbase.net",
+            "shop_name": "au-payoneer",
+            "amount_display": "-50.00",
+            "content": "Pay out",
+            "status": "Success"
+          },
+          "payout_status_approve": true,
+          "reason_refuse": "run automation",
+          "request_status_after_in_hive": "awaiting_payment",
+          "invoice_review_info_after": {
+            "domain": "au-payoneer.myshopbase.net",
+            "shop_name": "au-payoneer",
+            "amount_display": "-50.00",
+            "content": "Pay out",
+            "status": "Success"
+          }
+        }
+      ]
+    }
+  }
+}

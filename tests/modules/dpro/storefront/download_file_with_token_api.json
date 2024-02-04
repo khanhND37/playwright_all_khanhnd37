@@ -1,0 +1,61 @@
+{
+  "api": "https://gapi.dev.shopbase.net",
+  "domain": "default-share-theme-1.myshopbase.net",
+  "username": "nganguyen3@beeketing.net",
+  "password": "123456",
+  "user_id": "89063",
+  "shop_id": "10320712",
+  "shop_name": "default-share-theme-1",
+  "cases": {
+    "DATA_DRIVEN": {
+      "data": {
+        "description": "Check gọi api download file",
+        "case_name": "TC_SB_DP_DPSF_PROD_6",
+        "account": {
+          "username": "trangle+50@beeketing.net",
+          "password": "123456"
+        },
+        "dataDownload": [
+          {
+            "step": "Check gọi api với phương thức: GET. với token không hợp lệ",
+            "productId": "1000000000014981",
+            "nameFile": "pdf.pdf",
+            "token": "abcd",
+            "result": [400, ["you did not sign in correctly or your account is temporarily disabled."]]
+          },
+          {
+            "step": "Check gọi api với phương thức: GET. với token hết hạn",
+            "productId": "1000000000014981",
+            "nameFile": "pdf.pdf",
+            "expiredToken": "fe3c6d238b1c1a10fa2b01c86d183360",
+            "result": [400, ["you did not sign in correctly or your account is temporarily disabled."]]
+          },
+          {
+            "step": "Check gọi api với phương thức: GET. với token hợp lệ",
+            "productId": "1000000000015079",
+            "nameFile": "filetest.xlsx",
+            "result": [200, ["Get presigned url ok"]]
+          },
+          {
+            "step": "Check gọi api với phương thức: GET. với token hợp lệ, download file image",
+            "productId": "1000000000015075",
+            "nameFile": "green.png",
+            "result": [200, ["Get presigned url ok"]]
+          },
+          {
+            "step": "Check gọi api với phương thức: GET. với token hợp lệ, download file pdf",
+            "productId": "1000000000014981",
+            "nameFile": "pdf.pdf",
+            "result": [200, ["Get presigned url ok"]]
+          }
+        ]
+      }
+    }
+  },
+  "env": {
+    "prodtest": {
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://prod-test-api.shopbase.com"
+    }
+  }
+}

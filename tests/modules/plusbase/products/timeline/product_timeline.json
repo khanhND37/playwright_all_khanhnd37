@@ -1,0 +1,173 @@
+{
+  "env": {
+    "prod": {
+      "odoo_host": "https://autotest-erp-plus.shopbase.dev",
+      "odoo_db": "shopbase_fulfillment",
+      "odoo_username": "qaocg",
+      "odoo_password": "LFmy=qGLvwW^E63b",
+      "domain": "au-multipleshipping-plb.onshopbase.com",
+      "api": "https://api.shopbase.com",
+      "shop_name": "au-multipleshipping-plb",
+      "username": "shopbase3@beeketing.net",
+      "password": "aAeg*PJR4.t6V:P",
+      "user_id": 206811,
+      "shop_id": 10363885,
+      "partner_id": 10126342,
+      "flash_sale_id": 97,
+      "aliexpress_url": "https://www.aliexpress.com/item/1005004219667149.html",
+      "default_attributes": [
+        {
+          "name": "Duration",
+          "id": 1000396,
+          "number_of_values": 1,
+          "on_product_create": true
+        },
+        {
+          "name": "Metal Color",
+          "id": 7,
+          "number_of_values": 1,
+          "on_product_create": true
+        },
+        {
+          "name": "Length",
+          "id": 11,
+          "number_of_values": 4,
+          "on_product_create": true
+        },
+        {
+          "name": "Color",
+          "id": 2,
+          "number_of_values": 1,
+          "on_product_create": false
+        }
+      ]
+    },
+    "prodtest": {
+      "odoo_host": "https://autotest-erp-plus.shopbase.dev",
+      "odoo_db": "shopbase_fulfillment",
+      "odoo_username": "qaocg",
+      "odoo_password": "LFmy=qGLvwW^E63b",
+      "domain": "au-multipleshipping-plb-prodtest.onshopbase.com",
+      "api": "https://prod-test-api.shopbase.com",
+      "shop_name": "au-multipleshipping-plb-prodtest",
+      "username": "shopbase3@beeketing.net",
+      "password": "aAeg*PJR4.t6V:P",
+      "user_id": 206811,
+      "shop_id": 10364805,
+      "partner_id": 10126342,
+      "flash_sale_id": 86,
+      "aliexpress_url": "https://www.aliexpress.com/item/1005003113883326.html",
+      "default_attributes": [
+        {
+          "name": "Duration",
+          "id": 1000396,
+          "number_of_values": 1,
+          "on_product_create": true
+        },
+        {
+          "name": "Metal Color",
+          "id": 7,
+          "number_of_values": 1,
+          "on_product_create": true
+        },
+        {
+          "name": "Length",
+          "id": 11,
+          "number_of_values": 4,
+          "on_product_create": true
+        },
+        {
+          "name": "Color",
+          "id": 2,
+          "number_of_values": 1,
+          "on_product_create": false
+        }
+      ],
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "odoo_host": "https://odoo.dev.shopbase.net",
+      "odoo_db": "sbase_fulfillment_dev",
+      "odoo_username": "qaocg",
+      "odoo_password": "mabinogi",
+      "domain": "au-multipleshipping-plb.myshopbase.net",
+      "api": "https://gapi.dev.shopbase.net",
+      "shop_name": "au-multipleshipping-plb",
+      "username": "shopbase3@beeketing.net",
+      "password": "=l-N&YG}g<'KLJk",
+      "user_id": 86961,
+      "shop_id": 10321505,
+      "partner_id": 5678,
+      "flash_sale_id": 35,
+      "aliexpress_url": "https://www.aliexpress.com/item/3256805544264568.html",
+      "default_attributes": [
+        {
+          "name": "Duration",
+          "id": 3,
+          "number_of_values": 1,
+          "on_product_create": true
+        },
+        {
+          "name": "Style",
+          "id": 50,
+          "number_of_values": 1,
+          "on_product_create": true
+        },
+        {
+          "name": "Length",
+          "id": 11,
+          "number_of_values": 4,
+          "on_product_create": true
+        },
+        {
+          "name": "Color",
+          "id": 2,
+          "number_of_values": 1,
+          "on_product_create": false
+        }
+      ]
+    }
+  },
+  "cases": {
+    "SB_PRO_TL_02": {
+      "timeline_expected_result": "Product has been created"
+    },
+    "SB_PRO_TL_3": {
+      "variant_action": "create",
+      "timeline_expected_result": "Product variants have been updated",
+      "new_attribute_name": "Color"
+    },
+    "SB_PRO_TL_5": {
+      "variant_action": "archive",
+      "timeline_expected_result": "Product variants have been updated"
+    },
+    "SB_PRO_TL_8": {
+      "variant_action": "delete",
+      "timeline_expected_result": "Product variants have been updated",
+      "remove_attribute_name": "Duration"
+    },
+    "SB_PRO_TL_11": {
+      "timeline_expected_result": "Product cost have been updated"
+    },
+    "SB_PRO_TL_14": {
+      "new_estimate_delivery": 2,
+      "timeline_expected_result": "Processing time has been updated"
+    },
+    "SB_PRO_TL_15": {
+      "timeline_expected_result": "Product imported to store"
+    },
+    "SB_PRO_TL_24": {
+      "timeline_expected_result": "Request had no result"
+    },
+    "SB_PRO_TL_25": {
+      "timeline_expected_result": "Product cost discounted from",
+      "sale_duration": 300
+    },
+    "SB_PRO_TL_26": {
+      "timeline_expected_result": "Product request has been created"
+    },
+    "SB_PRO_TL_27": {
+      "timeline_expected_result": "Product was made available"
+    }
+  }
+}

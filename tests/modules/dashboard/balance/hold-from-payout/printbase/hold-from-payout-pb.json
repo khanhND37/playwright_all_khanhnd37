@@ -1,0 +1,130 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "shop_name": "au-hold-balance-pb",
+      "username": "plus-qe-1@beeketing.net",
+      "password": "rC2zo652s!F@",
+      "user_id": 90043,
+      "shop_id": 10330633,
+      "domain": "au-hold-balance-pb.myshopbase.net",
+      "hive_info": {
+        "domain": "hive-pbase.dev.shopbase.net",
+        "username": "shopbase",
+        "password": "123456"
+      },
+      "order_id": 1307796429504,
+      "product_checkout": [
+        {
+          "variant_id": 1000001772790684,
+          "quantity": 1
+        }
+      ],
+      "hive_domain": "hive.dev.shopbase.net",
+      "hive_username": "shopbase",
+      "hive_password": "123456"
+    },
+    "prodtest": {
+      "api": "https://api.shopbase.com",
+      "domain": "auto-hold-from-payout-pb-prodtest.onshopbase.com",
+      "username": "plus-qe-1@beeketing.net",
+      "password": "zeH0^kP3$Kf8",
+      "user_id": 11248582,
+      "shop_id": 10478194,
+      "shop_name": "auto-hold-from-payout-pb-prodtest",
+      "hive_info": {
+        "domain": "hive-pbase.shopbase.com",
+        "username": "shopbase",
+        "password": "UxsLHz^Wjkf35*/w"
+      },
+      "products_checkout": [
+        {
+          "variant_id": 1000011176099798,
+          "quantity": 1
+        }
+      ],
+      "order_id": 456045489,
+      "cases": {}
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "auto-hold-from-payout-pb.onshopbase.com",
+      "username": "plus-qe-1@beeketing.net",
+      "password": "zeH0^kP3$Kf8",
+      "user_id": 11248582,
+      "shop_id": 10463534,
+      "shop_name": "auto-hold-from-payout-pb",
+      "hive_info": {
+        "domain": "hive-pbase.shopbase.com",
+        "username": "shopbase",
+        "password": "UxsLHz^Wjkf35*/w"
+      },
+      "products_checkout": [
+        {
+          "variant_id": 1000010944785992,
+          "quantity": 1
+        }
+      ],
+      "order_id": 455940630,
+      "cases": {}
+    }
+  },
+  "email_scheduler": "thangnguyen2@beeketing.net",
+  "cases": {
+    "SB_BAL_HPP_282": {
+      "options_hold_payout": [
+        "Absolute amount (USD)",
+        "A percentage of order’s GMV (%)",
+        "A percentage of order’s profit (%)",
+        "None",
+        "days after order’s tracking number is active",
+        "days after order is delivered without claim or dispute"
+      ],
+      "max_lenght": 250
+    },
+    "SB_BAL_HPP_300": {
+      "number_order": 2,
+      "data_hold_payout": {
+        "hold_amount": {
+          "option": "Absolute amount (USD)",
+          "amount": 5,
+          "code": "absolute"
+        },
+        "reason": "QE Plus test hold balance order PrintBase",
+        "available_date": {
+          "option": "Auto release on this date",
+          "date": "2025-09-13"
+        }
+      }
+    },
+    "SB_BAL_HPP_332": {
+      "data_hold_payout": {
+        "hold_amount": {
+          "option": "Absolute amount (USD)",
+          "amount": 50,
+          "code": "absolute"
+        },
+        "reason": "QE Plus test hold balance order PrintBase",
+        "available_date": {
+          "option": "None"
+        }
+      },
+      "profit_extend": 10,
+      "total_transaction": 3
+    },
+    "SB_BAL_HPP_341": {
+      "data_hold_payout": {
+        "hold_amount": {
+          "option": "A percentage of order’s GMV (%)",
+          "amount": 100,
+          "code": "percent_gvm"
+        },
+        "reason": "QE Plus test hold balance order PrintBase",
+        "available_date": {
+          "option": "None"
+        }
+      },
+      "total_transaction": 3
+    }
+  }
+}

@@ -1,0 +1,1142 @@
+{
+  "env": {
+    "dev": {
+      "domain": "au-review-app-ne.myshopbase.net",
+      "user_id": 90252,
+      "shop_id": 10333185,
+      "shop_name": "au-review-app-ne",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "api": "https://gapi.dev.shopbase.net",
+      "themes_setting": 3213379,
+      "product_id_2": 1100000001035631,
+      "position_product_review": {
+        "section": 3,
+        "row": 1,
+        "column": 1,
+        "block": 2
+      },
+      "cases": {
+        "SB_NEWECOM_ReV_2": {
+          "app": "Product Reviews",
+          "expect_alert_warning": {
+            "title": "Reviews App is inactive",
+            "text": "You can still view and make changes. However, Reviews App’s blocks, if used, are hidden in the storefront and will not show again until the App is re-activated. You can activate Reviews App anytime in Apps Dashboard."
+          },
+          "url_redirect": "/applist?key=review"
+        },
+        "SB_NEWECOM_ReV_12": {
+          "app": "Product Reviews",
+          "import_review": {
+            "type": "CSV file",
+            "fileName": "/data/shopbase/Product Review App - Review Import.csv"
+          },
+          "expect_review": {
+            "quantity_review_unassign": 3
+          },
+          "params_count_review": {
+            "review_type": "unassign,shop"
+          }
+        },
+        "SB_NEWECOM_ReV_25": {
+          "app": "Product Reviews",
+          "expect_filter_review": {
+            "filter": "Most recent",
+            "per_page": "20 per page"
+          },
+          "select_item_option_10_per_page": {
+            "per_page": "10 per page"
+          },
+          "select_item_option_50_per_page": {
+            "per_page": "50 per page"
+          },
+          "select_item_option_top_reviews": {
+            "filter": "Top reviews"
+          },
+          "params_count_review": {
+            "product_id": 1100000001035635
+          },
+          "product": "farmer99",
+          "expect": {
+            "rating_5_stars": 5,
+            "rating_4_stars": 4,
+            "rating_3_stars": 3,
+            "rating_2_stars": 2,
+            "rating_1_star": 1
+          }
+        },
+        "SB_NEWECOM_REV_40": {
+          "product": "farmer99",
+          "app": "Product Reviews",
+          "data_setting": [
+            {
+              "icon": "Star",
+              "rating_color": {
+                "preset": 6,
+                "hexText": "#A0141E"
+              },
+              "expect_snapshot": {
+                "website_buider": "SB_NEWECOM_REV_40_data_1_dev.png",
+                "store_front": "SB_NEWECOM_REV_40_data_1_dev_sf.png",
+                "mobile": "SB_NEWECOM_REV_40_data_1_dev_mobile.png"
+              }
+            },
+            {
+              "icon": "Star Rounded",
+              "rating_color": {
+                "preset": 6,
+                "hexText": "#6EA014"
+              },
+              "expect_snapshot": {
+                "website_buider": "SB_NEWECOM_REV_40_data_2_dev.png",
+                "store_front": "SB_NEWECOM_REV_40_data_2_dev_sf.png",
+                "mobile": "SB_NEWECOM_REV_40_data_2_dev_mobile.png"
+              }
+            },
+            {
+              "icon": "Heart",
+              "rating_color": {
+                "preset": 6,
+                "hexText": "#DC5812"
+              },
+              "expect_snapshot": {
+                "website_buider": "SB_NEWECOM_REV_40_data_3_dev.png",
+                "store_front": "SB_NEWECOM_REV_40_data_3_dev_sf.png",
+                "mobile": "SB_NEWECOM_REV_40_data_3_dev_mobile.png"
+              }
+            }
+          ]
+        },
+        "SB_NEWECOM_ReV_45": {
+          "expect_snapshot": {
+            "website_buider": "SB_NEWECOM_ReV_45_dev_wb.png",
+            "store_front": "SB_NEWECOM_ReV_45_dev_sf.png"
+          }
+        },
+        "SB_NEWECOM_ReV_46": {
+          "expect_snapshot": {
+            "website_buider": "SB_NEWECOM_ReV_46_dev_wb.png",
+            "store_front": "SB_NEWECOM_ReV_46_dev_sf.png"
+          }
+        },
+        "SB_NEWECOM_ReV_47": {
+          "expect_snapshot": {
+            "website_buider": "SB_NEWECOM_ReV_47_dev_wb.png",
+            "store_front": "SB_NEWECOM_ReV_47_dev_sf.png"
+          }
+        },
+        "SB_NEWECOM_ReV_54": {
+          "expect_snapshot": {
+            "website_buider": "SB_NEWECOM_ReV_54_dev_wb.png",
+            "store_front": "SB_NEWECOM_ReV_54_dev_sf.png"
+          }
+        },
+        "SB_NEWECOM_ReV_55": {
+          "expect_snapshot": {
+            "website_buider": "SB_NEWECOM_ReV_55_dev_wb.png",
+            "store_front": "SB_NEWECOM_ReV_55_dev_sf.png"
+          }
+        },
+        "SB_NEWECOM_ReV_56": {
+          "expect_snapshot": {
+            "website_buider": "SB_NEWECOM_ReV_56_dev_wb.png",
+            "store_front": "SB_NEWECOM_ReV_56_dev_sf.png"
+          }
+        },
+        "SB_NEWECOM_ReV_78": {
+          "expect_snapshot": "SB_NEWECOM_ReV_78_dev_sf.png"
+        }
+      }
+    },
+    "prodtest": {
+      "domain": "au-prodtest-review-app-ne.onshopbase.com",
+      "user_id": 11260206,
+      "shop_id": 10474913,
+      "shop_name": "au-prodtest-review-app-ne",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "api": "https://prod-test-api.shopbase.com",
+      "themes_setting": 1566962,
+      "product_id_2": 1000000490552271,
+      "position_product_review": {
+        "section": 3,
+        "row": 1,
+        "column": 1,
+        "block": 2
+      },
+      "cases": {
+        "SB_NEWECOM_ReV_2": {
+          "app": "Product Reviews",
+          "expect_alert_warning": {
+            "title": "Reviews App is inactive",
+            "text": "You can still view and make changes. However, Reviews App’s blocks, if used, are hidden in the storefront and will not show again until the App is re-activated. You can activate Reviews App anytime in Apps Dashboard."
+          },
+          "url_redirect": "/applist?key=review"
+        },
+        "SB_NEWECOM_ReV_12": {
+          "app": "Product Reviews",
+          "import_review": {
+            "type": "CSV file",
+            "fileName": "/data/shopbase/Product Review App - Review Import.csv"
+          },
+          "expect_review": {
+            "quantity_review_unassign": 3
+          },
+          "params_count_review": {
+            "review_type": "unassign,shop"
+          }
+        },
+        "SB_NEWECOM_ReV_25": {
+          "app": "Product Reviews",
+          "expect_filter_review": {
+            "filter": "Most recent",
+            "per_page": "20 per page"
+          },
+          "select_item_option_10_per_page": {
+            "per_page": "10 per page"
+          },
+          "select_item_option_50_per_page": {
+            "per_page": "50 per page"
+          },
+          "select_item_option_top_reviews": {
+            "filter": "Top reviews"
+          },
+          "params_count_review": {
+            "product_id": 1000000490552274
+          },
+          "product": "farmer99",
+          "expect": {
+            "rating_5_stars": 5,
+            "rating_4_stars": 4,
+            "rating_3_stars": 3,
+            "rating_2_stars": 2,
+            "rating_1_star": 1
+          }
+        },
+        "SB_NEWECOM_REV_40": {
+          "product": "farmer99",
+          "app": "Product Reviews",
+          "data_setting": [
+            {
+              "icon": "Star",
+              "rating_color": {
+                "preset": 6,
+                "hexText": "#A0141E"
+              },
+              "expect_snapshot": {
+                "website_buider": "SB_NEWECOM_REV_40_data_1_prodtest.png",
+                "store_front": "SB_NEWECOM_REV_40_data_1_prodtest_sf.png",
+                "mobile": "SB_NEWECOM_REV_40_data_1_prodtest_mobile.png"
+              }
+            },
+            {
+              "icon": "Star Rounded",
+              "rating_color": {
+                "preset": 6,
+                "hexText": "#6EA014"
+              },
+              "expect_snapshot": {
+                "website_buider": "SB_NEWECOM_REV_40_data_2_prodtest.png",
+                "store_front": "SB_NEWECOM_REV_40_data_2_prodtest_sf.png",
+                "mobile": "SB_NEWECOM_REV_40_data_2_prodtest_mobile.png"
+              }
+            },
+            {
+              "icon": "Heart",
+              "rating_color": {
+                "preset": 6,
+                "hexText": "#DC5812"
+              },
+              "expect_snapshot": {
+                "website_buider": "SB_NEWECOM_REV_40_data_3_prodtest.png",
+                "store_front": "SB_NEWECOM_REV_40_data_3_prodtest_sf.png",
+                "mobile": "SB_NEWECOM_REV_40_data_3_prodtest_mobile.png"
+              }
+            }
+          ]
+        },
+        "SB_NEWECOM_ReV_45": {
+          "expect_snapshot": {
+            "website_buider": "SB_NEWECOM_ReV_45_prodtest_wb.png",
+            "store_front": "SB_NEWECOM_ReV_45_prodtest_sf.png"
+          }
+        },
+        "SB_NEWECOM_ReV_46": {
+          "expect_snapshot": {
+            "website_buider": "SB_NEWECOM_ReV_46_prodtest_wb.png",
+            "store_front": "SB_NEWECOM_ReV_46_prodtest_sf.png"
+          }
+        },
+        "SB_NEWECOM_ReV_47": {
+          "expect_snapshot": {
+            "website_buider": "SB_NEWECOM_ReV_47_prodtest_wb.png",
+            "store_front": "SB_NEWECOM_ReV_47_prodtest_sf.png"
+          }
+        },
+        "SB_NEWECOM_ReV_54": {
+          "expect_snapshot": {
+            "website_buider": "SB_NEWECOM_ReV_54_prodtest_wb.png",
+            "store_front": "SB_NEWECOM_ReV_54_prodtest_sf.png"
+          }
+        },
+        "SB_NEWECOM_ReV_55": {
+          "expect_snapshot": {
+            "website_buider": "SB_NEWECOM_ReV_55_prodtest_wb.png",
+            "store_front": "SB_NEWECOM_ReV_55_prodtest_sf.png"
+          }
+        },
+        "SB_NEWECOM_ReV_56": {
+          "expect_snapshot": {
+            "website_buider": "SB_NEWECOM_ReV_56_prodtest_wb.png",
+            "store_front": "SB_NEWECOM_ReV_56_prodtest_sf.png"
+          }
+        },
+        "SB_NEWECOM_ReV_78": {
+          "expect_snapshot": "SB_NEWECOM_ReV_78_prodtest_sf.png"
+        }
+      }
+    },
+    "prod": {
+      "domain": "au-review-app-ne.onshopbase.com",
+      "user_id": 11260206,
+      "shop_id": 10474915,
+      "shop_name": "au-review-app-ne",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "api": "https://prod-test-api.shopbase.com",
+      "themes_setting": 1566965,
+      "product_id_2": 1000000490555963,
+      "position_product_review": {
+        "section": 3,
+        "row": 1,
+        "column": 1,
+        "block": 2
+      },
+      "cases": {
+        "SB_NEWECOM_ReV_2": {
+          "app": "Product Reviews",
+          "expect_alert_warning": {
+            "title": "Reviews App is inactive",
+            "text": "You can still view and make changes. However, Reviews App’s blocks, if used, are hidden in the storefront and will not show again until the App is re-activated. You can activate Reviews App anytime in Apps Dashboard."
+          },
+          "url_redirect": "/applist?key=review"
+        },
+        "SB_NEWECOM_ReV_12": {
+          "app": "Product Reviews",
+          "import_review": {
+            "type": "CSV file",
+            "fileName": "/data/shopbase/Product Review App - Review Import.csv"
+          },
+          "expect_review": {
+            "quantity_review_unassign": 3
+          },
+          "params_count_review": {
+            "review_type": "unassign,shop"
+          }
+        },
+        "SB_NEWECOM_ReV_25": {
+          "app": "Product Reviews",
+          "expect_filter_review": {
+            "filter": "Most recent",
+            "per_page": "20 per page"
+          },
+          "select_item_option_10_per_page": {
+            "per_page": "10 per page"
+          },
+          "select_item_option_50_per_page": {
+            "per_page": "50 per page"
+          },
+          "select_item_option_top_reviews": {
+            "filter": "Top reviews"
+          },
+          "params_count_review": {
+            "product_id": 1000000490555967
+          },
+          "product": "farmer99",
+          "expect": {
+            "rating_5_stars": 5,
+            "rating_4_stars": 4,
+            "rating_3_stars": 3,
+            "rating_2_stars": 2,
+            "rating_1_star": 1
+          }
+        },
+        "SB_NEWECOM_REV_40": {
+          "product": "farmer99",
+          "app": "Product Reviews",
+          "data_setting": [
+            {
+              "icon": "Star",
+              "rating_color": {
+                "preset": 6,
+                "hexText": "#A0141E"
+              },
+              "expect_snapshot": {
+                "website_buider": "SB_NEWECOM_REV_40_data_1_prod.png",
+                "store_front": "SB_NEWECOM_REV_40_data_1_prod_sf.png",
+                "mobile": "SB_NEWECOM_REV_40_data_1_prod_mobile.png"
+              }
+            },
+            {
+              "icon": "Star Rounded",
+              "rating_color": {
+                "preset": 6,
+                "hexText": "#6EA014"
+              },
+              "expect_snapshot": {
+                "website_buider": "SB_NEWECOM_REV_40_data_2_prod.png",
+                "store_front": "SB_NEWECOM_REV_40_data_2_prod_sf.png",
+                "mobile": "SB_NEWECOM_REV_40_data_2_prod_mobile.png"
+              }
+            },
+            {
+              "icon": "Heart",
+              "rating_color": {
+                "preset": 6,
+                "hexText": "#DC5812"
+              },
+              "expect_snapshot": {
+                "website_buider": "SB_NEWECOM_REV_40_data_3_prod.png",
+                "store_front": "SB_NEWECOM_REV_40_data_3_prod_sf.png",
+                "mobile": "SB_NEWECOM_REV_40_data_3_prod_mobile.png"
+              }
+            }
+          ]
+        },
+        "SB_NEWECOM_ReV_45": {
+          "expect_snapshot": {
+            "website_buider": "SB_NEWECOM_ReV_45_prod_wb.png",
+            "store_front": "SB_NEWECOM_ReV_45_prod_sf.png"
+          }
+        },
+        "SB_NEWECOM_ReV_46": {
+          "expect_snapshot": {
+            "website_buider": "SB_NEWECOM_ReV_46_prod_wb.png",
+            "store_front": "SB_NEWECOM_ReV_46_prod_sf.png"
+          }
+        },
+        "SB_NEWECOM_ReV_47": {
+          "expect_snapshot": {
+            "website_buider": "SB_NEWECOM_ReV_47_prod_wb.png",
+            "store_front": "SB_NEWECOM_ReV_47_prod_sf.png"
+          }
+        },
+        "SB_NEWECOM_ReV_54": {
+          "expect_snapshot": {
+            "website_buider": "SB_NEWECOM_ReV_54_prod_wb.png",
+            "store_front": "SB_NEWECOM_ReV_54_prod_sf.png"
+          }
+        },
+        "SB_NEWECOM_ReV_55": {
+          "expect_snapshot": {
+            "website_buider": "SB_NEWECOM_ReV_55_prod_wb.png",
+            "store_front": "SB_NEWECOM_ReV_55_prod_sf.png"
+          }
+        },
+        "SB_NEWECOM_ReV_56": {
+          "expect_snapshot": {
+            "website_buider": "SB_NEWECOM_ReV_56_prod_wb.png",
+            "store_front": "SB_NEWECOM_ReV_56_prod_sf.png"
+          }
+        },
+        "SB_NEWECOM_ReV_78": {
+          "expect_snapshot": "SB_NEWECOM_ReV_78_prod_sf.png"
+        }
+      }
+    }
+  },
+  "cases": {
+    "LAYOUT_ALL_REVIEW": {
+      "data": [
+        {
+          "case_id": "SB_NEWECOM_ReV_45",
+          "case_name": "[All Reviews block] kiểm tra edit thành công block All Reviews với Design > Layout = Masonry với tab Design cho block all review",
+          "product": "farmer99",
+          "app": "Product Reviews",
+          "index_layout": 1,
+          "expect_layout": {
+            "name": "Masonry",
+            "align": "flex-start",
+            "arrow": true,
+            "columns": 0,
+            "direction": "vertical",
+            "nav_position": "bottom",
+            "nav_type": "thumbnail",
+            "number_color": { "code": "color_5", "opacity": 100 },
+            "overlay_color": { "code": "", "opacity": 0 },
+            "pagination": true,
+            "quantity": 4,
+            "segment_selected": "medium",
+            "shape": "rectangle",
+            "size": 3,
+            "size_card": "small",
+            "spacing": 10,
+            "unit_color": { "code": "color_5", "opacity": 100 },
+            "unit_position": "right"
+          },
+          "data_layout": {
+            "layout": {
+              "name": "Masonry",
+              "align": "flex-start",
+              "arrow": true,
+              "columns": 0,
+              "direction": "vertical",
+              "nav_position": "bottom",
+              "nav_type": "thumbnail",
+              "number_color": {
+                "code": "color_5",
+                "opacity": 100
+              },
+              "overlay_color": {
+                "code": "",
+                "opacity": 0
+              },
+              "pagination": true,
+              "quantity": 4,
+              "segment_selected": "medium",
+              "shape": "rectangle",
+              "size": 3,
+              "size_card": "small",
+              "spacing": 10,
+              "unit_color": {
+                "code": "color_5",
+                "opacity": 100
+              },
+              "unit_position": "right"
+            }
+          },
+          "data_content": {
+            "all_review": {
+              "option": {
+                "data_type": "pages",
+                "handle": "all-reviews",
+                "id": 0,
+                "target": "",
+                "url": ""
+              },
+              "type": "page"
+            },
+            "author_avatar": true,
+            "card": null,
+            "data_source_detail": "none",
+            "date_posted": true,
+            "featured_reviews_only": false,
+            "old_block": "all_reviews",
+            "pictures": true,
+            "product_link": true,
+            "review_title": true,
+            "show": "all_review",
+            "show_overview": true,
+            "verified_badge": true
+          },
+          "filter_review_per_page": "5 per page"
+        },
+        {
+          "case_id": "SB_NEWECOM_ReV_46",
+          "case_name": "[All Reviews block] kiểm tra edit thành công block All Reviews với Design > Layout = Carousel với tab Design cho block all review",
+          "product": "farmer99",
+          "app": "Product Reviews",
+          "index_layout": 2,
+          "expect_layout": {
+            "name": "Slide",
+            "align": "flex-start",
+            "arrow": true,
+            "columns": 0,
+            "direction": "vertical",
+            "nav_position": "bottom",
+            "nav_type": "thumbnail",
+            "number_color": { "code": "color_5", "opacity": 100 },
+            "overlay_color": { "code": "", "opacity": 0 },
+            "pagination": true,
+            "quantity": 20,
+            "segment_selected": "medium",
+            "shape": "rectangle",
+            "size": 3,
+            "size_card": "small",
+            "spacing": 10,
+            "unit_color": { "code": "color_5", "opacity": 100 },
+            "unit_position": "right"
+          },
+          "data_layout": {
+            "layout": {
+              "name": "Slide",
+              "align": "flex-start",
+              "arrow": true,
+              "columns": 0,
+              "direction": "vertical",
+              "nav_position": "bottom",
+              "nav_type": "thumbnail",
+              "number_color": {
+                "code": "color_5",
+                "opacity": 100
+              },
+              "overlay_color": {
+                "code": "",
+                "opacity": 0
+              },
+              "pagination": true,
+              "quantity": 20,
+              "segment_selected": "medium",
+              "shape": "rectangle",
+              "size": 3,
+              "size_card": "small",
+              "spacing": 10,
+              "unit_color": {
+                "code": "color_5",
+                "opacity": 100
+              },
+              "unit_position": "right"
+            }
+          },
+          "data_content": {
+            "all_review": {
+              "option": {
+                "data_type": "pages",
+                "handle": "all-reviews",
+                "id": 0,
+                "target": "",
+                "url": ""
+              },
+              "type": "page"
+            },
+            "author_avatar": true,
+            "card": null,
+            "data_source_detail": "none",
+            "date_posted": true,
+            "featured_reviews_only": false,
+            "old_block": "all_reviews",
+            "pictures": true,
+            "product_link": true,
+            "review_title": true,
+            "show": "all_review",
+            "show_overview": true,
+            "verified_badge": true
+          }
+        },
+        {
+          "case_id": "SB_NEWECOM_ReV_47",
+          "case_name": "[All Reviews block] kiểm tra edit thành công block All Reviews với Design > Layout = List với tab Design cho block all review",
+          "product": "farmer99",
+          "app": "Product Reviews",
+          "index_layout": 3,
+          "expect_layout": {
+            "name": "List",
+            "align": "flex-start",
+            "arrow": true,
+            "columns": 0,
+            "direction": "vertical",
+            "nav_position": "bottom",
+            "nav_type": "thumbnail",
+            "number_color": { "code": "color_5", "opacity": 100 },
+            "overlay_color": { "code": "", "opacity": 0 },
+            "pagination": true,
+            "quantity": 20,
+            "segment_selected": "medium",
+            "shape": "rectangle",
+            "size": 3,
+            "size_card": "small",
+            "spacing": 10,
+            "unit_color": { "code": "color_5", "opacity": 100 },
+            "unit_position": "right"
+          },
+          "data_layout": {
+            "layout": {
+              "name": "List",
+              "align": "flex-start",
+              "arrow": true,
+              "columns": 0,
+              "direction": "vertical",
+              "nav_position": "bottom",
+              "nav_type": "thumbnail",
+              "number_color": {
+                "code": "color_5",
+                "opacity": 100
+              },
+              "overlay_color": {
+                "code": "",
+                "opacity": 0
+              },
+              "pagination": true,
+              "quantity": 20,
+              "segment_selected": "medium",
+              "shape": "rectangle",
+              "size": 3,
+              "size_card": "small",
+              "spacing": 10,
+              "unit_color": {
+                "code": "color_5",
+                "opacity": 100
+              },
+              "unit_position": "right"
+            }
+          },
+          "data_content": {
+            "all_review": {
+              "option": {
+                "data_type": "pages",
+                "handle": "all-reviews",
+                "id": 0,
+                "target": "",
+                "url": ""
+              },
+              "type": "page"
+            },
+            "author_avatar": true,
+            "card": null,
+            "data_source_detail": "none",
+            "date_posted": true,
+            "featured_reviews_only": false,
+            "old_block": "all_reviews",
+            "pictures": true,
+            "product_link": true,
+            "review_title": true,
+            "show": "all_review",
+            "show_overview": true,
+            "verified_badge": true
+          },
+          "filter_review_per_page": "5 per page"
+        }
+      ]
+    },
+    "SB_NEWECOM_ReV_48": {
+      "product": "farmer99",
+      "app": "Product Reviews",
+      "data_content": {
+        "all_review": {
+          "option": {
+            "data_type": "pages",
+            "handle": "all-reviews",
+            "id": 0,
+            "target": "",
+            "url": ""
+          },
+          "type": "page"
+        },
+        "author_avatar": true,
+        "card": null,
+        "data_source_detail": "none",
+        "date_posted": true,
+        "featured_reviews_only": false,
+        "old_block": "all_reviews",
+        "pictures": true,
+        "product_link": true,
+        "review_title": true,
+        "show": "all_review",
+        "show_overview": true,
+        "verified_badge": true
+      }
+    },
+    "LAYOUT_PRODUCT_REVIEW": {
+      "data": [
+        {
+          "case_id": "SB_NEWECOM_ReV_54",
+          "case_name": "[Product Reviews block] kiểm tra edit thành công block Product Reviews với Design > Layout = Masonry với tab Design cho block review",
+          "product": "farmer99",
+          "app": "Product Reviews",
+          "index_layout": 1,
+          "expect_layout": {
+            "name": "Masonry",
+            "align": "flex-start",
+            "arrow": true,
+            "columns": 0,
+            "direction": "vertical",
+            "nav_position": "bottom",
+            "nav_type": "thumbnail",
+            "number_color": { "code": "color_5", "opacity": 100 },
+            "overlay_color": { "code": "", "opacity": 0 },
+            "pagination": true,
+            "quantity": 4,
+            "segment_selected": "medium",
+            "shape": "rectangle",
+            "size": 3,
+            "size_card": "small",
+            "spacing": 10,
+            "unit_color": { "code": "color_5", "opacity": 100 },
+            "unit_position": "right"
+          },
+          "data_layout": {
+            "layout": {
+              "name": "Masonry",
+              "align": "flex-start",
+              "arrow": true,
+              "columns": 0,
+              "direction": "vertical",
+              "nav_position": "bottom",
+              "nav_type": "thumbnail",
+              "number_color": {
+                "code": "color_5",
+                "opacity": 100
+              },
+              "overlay_color": {
+                "code": "",
+                "opacity": 0
+              },
+              "pagination": true,
+              "quantity": 4,
+              "segment_selected": "medium",
+              "shape": "rectangle",
+              "size": 3,
+              "size_card": "small",
+              "spacing": 10,
+              "unit_color": {
+                "code": "color_5",
+                "opacity": 100
+              },
+              "unit_position": "right"
+            }
+          },
+          "filter_review_per_page": "5 per page"
+        },
+        {
+          "case_id": "SB_NEWECOM_ReV_55",
+          "case_name": "[Product Reviews block] kiểm tra edit thành công block Product Reviews với Design > Layout = Carousel với tab Design cho block review",
+          "product": "farmer99",
+          "app": "Product Reviews",
+          "index_layout": 2,
+          "expect_layout": {
+            "name": "Slide",
+            "align": "flex-start",
+            "arrow": true,
+            "columns": 0,
+            "direction": "vertical",
+            "nav_position": "bottom",
+            "nav_type": "thumbnail",
+            "number_color": { "code": "color_5", "opacity": 100 },
+            "overlay_color": { "code": "", "opacity": 0 },
+            "pagination": true,
+            "quantity": 20,
+            "segment_selected": "medium",
+            "shape": "rectangle",
+            "size": 3,
+            "size_card": "small",
+            "spacing": 10,
+            "unit_color": { "code": "color_5", "opacity": 100 },
+            "unit_position": "right"
+          },
+          "data_layout": {
+            "layout": {
+              "name": "Slide",
+              "align": "flex-start",
+              "arrow": true,
+              "columns": 0,
+              "direction": "vertical",
+              "nav_position": "bottom",
+              "nav_type": "thumbnail",
+              "number_color": {
+                "code": "color_5",
+                "opacity": 100
+              },
+              "overlay_color": {
+                "code": "",
+                "opacity": 0
+              },
+              "pagination": true,
+              "quantity": 20,
+              "segment_selected": "medium",
+              "shape": "rectangle",
+              "size": 3,
+              "size_card": "small",
+              "spacing": 10,
+              "unit_color": {
+                "code": "color_5",
+                "opacity": 100
+              },
+              "unit_position": "right"
+            }
+          }
+        },
+        {
+          "case_id": "SB_NEWECOM_ReV_56",
+          "case_name": "[Product Reviews block] kiểm tra edit thành công block Products Reviews với Design > Layout = List với tab Design cho block review",
+          "product": "farmer99",
+          "app": "Product Reviews",
+          "index_layout": 3,
+          "expect_layout": {
+            "name": "List",
+            "align": "flex-start",
+            "arrow": true,
+            "columns": 0,
+            "direction": "vertical",
+            "nav_position": "bottom",
+            "nav_type": "thumbnail",
+            "number_color": { "code": "color_5", "opacity": 100 },
+            "overlay_color": { "code": "", "opacity": 0 },
+            "pagination": true,
+            "quantity": 20,
+            "segment_selected": "medium",
+            "shape": "rectangle",
+            "size": 3,
+            "size_card": "small",
+            "spacing": 10,
+            "unit_color": { "code": "color_5", "opacity": 100 },
+            "unit_position": "right"
+          },
+          "data_layout": {
+            "layout": {
+              "name": "List",
+              "align": "flex-start",
+              "arrow": true,
+              "columns": 0,
+              "direction": "vertical",
+              "nav_position": "bottom",
+              "nav_type": "thumbnail",
+              "number_color": {
+                "code": "color_5",
+                "opacity": 100
+              },
+              "overlay_color": {
+                "code": "",
+                "opacity": 0
+              },
+              "pagination": true,
+              "quantity": 20,
+              "segment_selected": "medium",
+              "shape": "rectangle",
+              "size": 3,
+              "size_card": "small",
+              "spacing": 10,
+              "unit_color": {
+                "code": "color_5",
+                "opacity": 100
+              },
+              "unit_position": "right"
+            }
+          },
+          "filter_review_per_page": "5 per page"
+        }
+      ]
+    },
+    "ON_OFF_OVERVIEW": {
+      "data": [
+        {
+          "case_id": "SB_NEWECOM_ReV_57",
+          "case_name": " [Product Reviews block] kiểm tra edit thành công block Product Reviews với show Overview = OFF tại tab Content",
+          "product": "farmer99",
+          "app": "Product Reviews",
+          "data_content": {
+            "all_review": {
+              "option": {
+                "data_type": "",
+                "handle": "",
+                "id": 0,
+                "target": "_blank",
+                "url": ""
+              },
+              "type": "page"
+            },
+            "author_avatar": true,
+            "card": null,
+            "data_source_detail": "product",
+            "date_posted": true,
+            "featured_reviews_only": false,
+            "pictures": true,
+            "product_link": true,
+            "review_title": true,
+            "show": "product_review",
+            "show_overview": false,
+            "verified_badge": true
+          }
+        },
+        {
+          "case_id": "SB_NEWECOM_ReV_58",
+          "case_name": "[Product Reviews block] kiểm tra hiển thị Overview cho Product Reviews block khi setting Overview = ON tại tab Content",
+          "product": "farmer99",
+          "app": "Product Reviews",
+          "data_content": {
+            "all_review": {
+              "option": {
+                "data_type": "",
+                "handle": "",
+                "id": 0,
+                "target": "_blank",
+                "url": ""
+              },
+              "type": "page"
+            },
+            "author_avatar": true,
+            "card": null,
+            "data_source_detail": "product",
+            "date_posted": true,
+            "featured_reviews_only": false,
+            "pictures": true,
+            "product_link": true,
+            "review_title": true,
+            "show": "product_review",
+            "show_overview": true,
+            "verified_badge": true
+          }
+        }
+      ]
+    },
+    "SB_NEWECOM_ReV_64": {
+      "product": "farmer99"
+    },
+    "SB_NEWECOM_ReV_66": {
+      "product": "khanh-test",
+      "app": "Product Reviews",
+      "review": {
+        "star": 5,
+        "title": "QE Front test review",
+        "review": "QE Front vote 5 star for ShopBase",
+        "name": "QE Front review",
+        "email": "front-qe-1@beeketing.net"
+      }
+    },
+    "LAYOUT_PRODUCT_RATING": {
+      "data": [
+        {
+          "case_id": "SB_NEWECOM_ReV_69",
+          "case_name": "[block Product Rating] kiểm tra edit tab Design thành công tại section có chứa Data source, Layout= Inline",
+          "product": "farmer99",
+          "app": "Product Reviews",
+          "data_layout": {
+            "layout": "in_line"
+          }
+        },
+        {
+          "case_id": "SB_NEWECOM_ReV_70",
+          "case_name": "[block Product Rating] kiểm tra edit tab Design thành công tại section có chứa Data source, layout = List",
+          "product": "farmer99",
+          "app": "Product Reviews",
+          "data_layout": {
+            "layout": "list"
+          }
+        }
+      ]
+    },
+    "SB_NEWECOM_ReV_71": {
+      "product": "khanh-test",
+      "app": "Product Reviews",
+      "data_content": [
+        {
+          "data_source_detail": "product",
+          "hover_for_details": false,
+          "number_of_review": false
+        },
+        {
+          "data_source_detail": "product",
+          "hover_for_details": true,
+          "number_of_review": false
+        },
+        {
+          "data_source_detail": "product",
+          "hover_for_details": false,
+          "number_of_review": true
+        }
+      ]
+    },
+    "SB_NEWECOM_ReV_72": {
+      "product": "khanh-test",
+      "app": "Product Reviews",
+      "data_content": [
+        {
+          "variable": {
+            "use_page": false,
+            "source": {
+              "type": "",
+              "handle": ""
+            },
+            "extra_data": {
+              "variant_default": null
+            }
+          }
+        },
+        {
+          "variable": {
+            "use_page": false,
+            "source": {
+              "type": "product",
+              "handle": "farmer99"
+            },
+            "extra_data": {
+              "variant_default": {
+                "enable": false,
+                "variant_id": 0
+              }
+            }
+          }
+        }
+      ],
+      "expect_data_source_with_product_rating": {
+        "no_data_source": "0 review",
+        "has_data_source": "20 review"
+      }
+    },
+    "SB_NEWECOM_ReV_78": {
+      "product": "khanh-test",
+      "app": "Product Reviews",
+      "data_design": {
+        "align_item": "center",
+        "align_self": "center",
+        "background": {
+          "color": {
+            "code": "",
+            "opacity": 100
+          },
+          "image": "",
+          "position": "center center",
+          "repeat": "no-repeat",
+          "size": "cover"
+        },
+        "border": {
+          "color": {
+            "code": "color_4",
+            "opacity": 100
+          },
+          "side": "all",
+          "size": 0,
+          "style": "solid",
+          "thickness": "none"
+        },
+        "border_radius": 0,
+        "box_shadow": {
+          "blur": 0,
+          "color": {
+            "code": "#000000",
+            "opacity": 0
+          },
+          "spread": 0,
+          "x": 0,
+          "y": 0
+        },
+        "icon_size": {
+          "size": 16,
+          "thickness": "medium"
+        },
+        "layout": "in_line",
+        "margin": {
+          "bottom": 0,
+          "left": 0,
+          "right": 0,
+          "top": 0
+        },
+        "opacity": 100,
+        "override": false,
+        "padding": {
+          "bottom": 0,
+          "left": 0,
+          "right": 0,
+          "top": 0
+        },
+        "popover_radius": 8,
+        "position": "auto"
+      },
+      "data_content": {
+        "data_source_detail": "product",
+        "hover_for_details": true,
+        "number_of_review": true
+      },
+      "expect_setting": {
+        "align-self": "center",
+        "border": "0px solid rgba(var(--color-4), 1)",
+        "border-radius": "0",
+        "border-width": "0",
+        "box-shadow": "0px 0px 0px 0px rgba(0,0,0,0)",
+        "margin": "0",
+        "opacity": "1",
+        "padding": "0px",
+        "position": "auto"
+      }
+    }
+  }
+}

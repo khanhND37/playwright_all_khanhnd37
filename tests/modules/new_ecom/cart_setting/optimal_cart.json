@@ -1,0 +1,95 @@
+{
+  "env": {
+    "dev": {
+      "domain": "au-optimal-cart-drawer.myshopbase.net",
+      "user_id": 90252,
+      "shop_id": 10334037,
+      "shop_name": "au-optimal-cart-drawer",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "api": "https://gapi.dev.shopbase.net",
+      "themes_setting": 3222839,
+      "collapse_layer": {
+        "sectionName": "Header",
+        "sectionIndex": 1,
+        "isExpand": true
+      },
+      "open_layer": {
+        "sectionName": "Cart",
+        "sectionIndex": 1
+      }
+    },
+    "prodtest": {
+      "domain": "au-prodtest-optimal-cart-drawer.onshopbase.com",
+      "user_id": 11260206,
+      "shop_id": 10484213,
+      "shop_name": "au-prodtest-optimal-cart-drawer",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "api": "https://prod-test-api.shopbase.com",
+      "themes_setting": 1524600,
+      "collapse_layer": {
+        "sectionName": "Header",
+        "sectionIndex": 1,
+        "isExpand": true
+      },
+      "open_layer": {
+        "sectionName": "Cart",
+        "sectionIndex": 1
+      }
+    },
+    "prod": {
+      "domain": "au-optimal-cart-drawer.onshopbase.com",
+      "user_id": 11260206,
+      "shop_id": 10484211,
+      "shop_name": "au-optimal-cart-drawer",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "api": "https://prod-test-api.shopbase.com",
+      "themes_setting": 1523643,
+      "collapse_layer": {
+        "sectionName": "Header",
+        "sectionIndex": 1,
+        "isExpand": true
+      },
+      "open_layer": {
+        "sectionName": "Cart",
+        "sectionIndex": 1
+      }
+    }
+  },
+  "cases": {
+    "SB_SF_CART_07": {
+      "action": "open_mini_cart",
+      "handle": "product-a",
+      "expect_mess": "The product has been added to cart"
+    },
+    "SB_SF_CART_06": {
+      "action": "open_mini_cart",
+      "expect_mess": "The product has been added to cart",
+      "product_atc": ["Product A", "Product B", "Product C", "Product D"],
+      "expect_snapshot": {
+        "mini_cart_default": "SB_SF_CART_06_mini_cart_default.png",
+        "mini_cart_last_item": "SB_SF_CART_06_mini_cart_last_item.png"
+      }
+    },
+    "SB_SF_CART_05": {
+      "action": "open_mini_cart",
+      "expect_mess": "The product has been added to cart",
+      "product_atc": ["Product A", "Product B", "Product C", "Product D"],
+      "expect_snapshot": {
+        "mini_cart_default": "SB_SF_CART_05_mini_cart_default.png",
+        "mini_cart_last_item": "SB_SF_CART_05_mini_cart_last_item.png"
+      }
+    },
+    "SB_SF_CART_01": {
+      "action": "open_cart_drawer",
+      "expect_mess": "The product has been added to cart",
+      "product_atc": ["Product A", "Product B", "Product C", "Product D"],
+      "expect_snapshot": {
+        "cart_drawer_default": "SB_SF_CART_01_cart_drawer_default.png",
+        "mini_drawer_last_item": "SB_SF_CART_01_cart_drawer_last_item.png"
+      }
+    }
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "api": "https://gapi.dev.shopbase.net",
+  "domain": "au-plb-multi-discount.myshopbase.net",
+  "shop_name": "au-plb-multi-discount",
+  "user_id": 90009,
+  "shop_id": 10334179,
+  "username": "opay-qe-1@beeketing.net",
+  "password": "Z6el|q4&:hwCrVx",
+  "shipping_method": "Premium shipping",
+  "card_info": {
+    "number": "4242424242424242",
+    "holder_name": "Shopbase Auto",
+    "expire_date": "12 / 23",
+    "cvv": "116"
+  },
+  "email": "testerOCG@mailtothis.com",
+  "shipping_address": {
+    "address1": "814 Mission Street",
+    "address2": "",
+    "city": "Los Angeles",
+    "company": "",
+    "country": "United States",
+    "country_code": "US",
+    "country_name": "United States",
+    "cpf_or_cnpj_number": "",
+    "first_name": "Tester",
+    "last_name": "ShopBase",
+    "name": "Jena",
+    "phone": "7036618988",
+    "province": "New York",
+    "province_code": "NY",
+    "zip": "10001",
+    "remember_me": false
+  },
+
+  "acc_dashboard_payment": {
+    "stripe": {
+      "stripe_secret_key": "sk_test_Pfv1RbMLdJwdO7o8FOV4d03600K0JL3zbx"
+    }
+  },
+
+  "discount_resets": [
+    {
+      "title": "Automatic_discount_freeship",
+      "ends_at": "",
+      "update_fields": ["ends_at"]
+    },
+    {
+      "title": "Automatic_discount_20percent",
+      "ends_at": "",
+      "update_fields": ["ends_at"]
+    }
+  ],
+
+  "boost_upsell_reset": [
+    {
+      "offer": "Auto upsell offer pre-purchase",
+      "id": 2354453
+    }
+  ],
+
+  "tipping_info": {
+    "percentages": [5, 10, 15],
+    "is_enable": true,
+    "is_old_layout": false,
+    "option": "1"
+  },
+
+  "cases": {
+    "SB_DC_MD_PLB_01": {
+      "product": [
+        {
+          "name": "Bikini",
+          "variant_id": 1000009412695279,
+          "quantity": 2
+        },
+        {
+          "name": "(Test product) Auto-Cpay1",
+          "variant_id": 1000009412695279,
+          "quantity": 2
+        }
+      ],
+      "discount_codes": [
+        {
+          "code": "Automatic_discount_20percent",
+          "title": "Automatic_discount_20percent",
+          "ends_at": "",
+          "update_fields": ["ends_at"]
+        },
+        {
+          "code": "Manual_discount_10percent"
+        },
+        {
+          "code": "Manual_discount_fixamt_5$"
+        },
+        {
+          "code": "Manual_discount_fixamt_10$"
+        },
+        {
+          "code": "Manual_discount_buyxgety_50%"
+        },
+        {
+          "code": "Manual_discount_20percent"
+        },
+        {
+          "code": "OFFER-DISCOUNT"
+        }
+      ],
+      "boost_upsell": [
+        {
+          "offer": "Auto upsell offer pre-purchase",
+          "from": "pre-purchase",
+          "id": 2354453,
+          "product": [
+            {
+              "name": "Bikini 2",
+              "variant_id": 1000009412695279,
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "offer": "Auto upsell offer post-purchase",
+          "from": "post-purchase",
+          "id": 2354453,
+          "product": [
+            {
+              "name": "(Test product) Auto-Cpay2",
+              "variant_id": 1000009412695279,
+              "quantity": 1
+            }
+          ]
+        }
+      ],
+      "expected_result": {
+        "subTotal": 54,
+        "discount": 156,
+        "taxes": 5.4,
+        "shipping": "Need recalculate",
+        "tipping": 2.7,
+        "total": "Need recalculate"
+      },
+
+      "expected_result_with_ppc": {
+        "subTotal": 54,
+        "discount": 122,
+        "taxes": 10.8,
+        "shipping": 5.99,
+        "tipping": 5.4,
+        "total": 130.19
+      }
+    },
+    "SB_DC_MD_PLB_02": {
+      "product": [
+        {
+          "name": "(Test product) Auto-Cpay1",
+          "variant_id": 1000009412695279,
+          "quantity": 2
+        }
+      ],
+      "shipping_method": "Premium shipping",
+      "discount_codes_before": [
+        {
+          "code": "Automatic_discount_20percent",
+          "title": "Automatic_discount_20percent",
+          "ends_at": "",
+          "update_fields": ["ends_at"]
+        },
+        {
+          "code": "Manual_free_shipping_us"
+        }
+      ],
+      "expected_result_before": {
+        "subTotal": 64,
+        "discount": 16,
+        "taxes": 6.4,
+        "shipping": "Need recalculate",
+        "tipping": 3.2,
+        "total": "Need recalculate"
+      }
+    }
+  }
+}

@@ -1,0 +1,506 @@
+{
+  "env": {
+    "local": {
+      "domain": "au-custom-design.myshopbase.net",
+      "shop_name": "au-custom-design.myshopbase.net",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "user_id": 90252,
+      "shop_id": 10333831,
+      "theme_id": 3219587,
+      "template_id": 2272,
+      "renamed_template": {
+        "id": "12933732",
+        "title": "Strapless Design"
+      },
+      "deleted_template": {
+        "title": ["Deleted Template", "Quickly custom", "Happy day"]
+      },
+      "update_product": {
+        "id": 1100000001035318,
+        "template": ""
+      },
+      "custom_design_id": 12925398,
+      "custom_design_id_default": 12925274,
+      "edited_template": {
+        "title": "Design product 1",
+        "id": "12925398"
+      }
+    },
+    "dev": {
+      "domain": "au-custom-design.myshopbase.net",
+      "shop_name": "au-custom-design.myshopbase.net",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "user_id": 90252,
+      "shop_id": 10333831,
+      "theme_id": 3219587,
+      "template_id": 2272,
+      "renamed_template": {
+        "id": "12933732",
+        "title": "Strapless Design"
+      },
+      "deleted_template": {
+        "title": ["Deleted Template", "Quickly custom", "Happy day"]
+      },
+      "update_product": {
+        "id": 1100000001035318,
+        "template": ""
+      },
+      "custom_design_id": 12925398,
+      "custom_design_id_default": 12925274,
+      "edited_template": {
+        "title": "Design product 1",
+        "id": "12925398"
+      }
+    },
+    "prodtest": {
+      "domain": "au-custom-design-prodtest.onshopbase.com",
+      "shop_name": "au-custom-design-prodtest.onshopbase.com",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "user_id": 11260206,
+      "shop_id": 10482216,
+      "theme_id": 1618687,
+      "template_id": 3147,
+      "update_product": {
+        "id": 1000000494457004,
+        "template": ""
+      },
+      "custom_design_id": 6505423,
+      "renamed_template": {
+        "id": "6505422",
+        "title": "Strapless Design"
+      },
+      "deleted_template": {
+        "title": ["Deleted Template", "Quickly custom", "Happy day"]
+      }
+    },
+    "prod": {
+      "domain": "au-custom-design-prod.onshopbase.com",
+      "shop_name": "au-custom-design-prod.onshopbase.com",
+      "api": "https://api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "user_id": 11260206,
+      "shop_id": 10482222,
+      "theme_id": 1599238,
+      "template_id": 3147,
+      "custom_design_id": 7368582,
+      "update_product": {
+        "id": 1000000494459810,
+        "template": ""
+      },
+      "renamed_template": {
+        "id": "7368581",
+        "title": "Strapless Design"
+      },
+      "deleted_template": {
+        "title": ["Deleted Template", "Quickly custom", "Happy day"]
+      }
+    }
+  },
+  "cases": {
+    "SB_NEWECOM_NEP_106": {
+      "list_custom_design_title": [
+        "Default",
+        "Design product 1",
+        "Custom design template",
+        "Template Halloween",
+        "Trendie design",
+        "Printie template",
+        "Strapless Design"
+      ],
+      "exact_match_list_custom_design_title": ["Design product 1"],
+      "partly_match_list_custom_design_title": ["Custom design template", "Template Halloween", "Printie template"],
+      "sample_input": {
+        "unListed": "Bestie",
+        "exact_match": "Design product 1",
+        "partly_match": "template",
+        "partly_match_ignore_case": "TemPlate"
+      },
+      "search_url": "admin/themes/builder/pages.json",
+      "default_template": "Default",
+      "similar_step": [
+        {
+          "title": "Nhập data search = name của custom design đúng tuyệt đối",
+          "input": "exact_match",
+          "list_to_compare": "exact_match_list_custom_design_title"
+        },
+        {
+          "title": "Nhập data search = name của custom design đúng 1 phần",
+          "input": "partly_match",
+          "list_to_compare": "partly_match_list_custom_design_title"
+        },
+        {
+          "title": "Nhập data search = name của custom design đúng, chỉ khác chữ hoa chữ thường",
+          "input": "partly_match_ignore_case",
+          "list_to_compare": "partly_match_list_custom_design_title"
+        }
+      ]
+    },
+    "SB_NEWECOM_NEP_109": {
+      "list_custom_design_title": [
+        "Default",
+        "Design product 1",
+        "Custom design template",
+        "Template Halloween",
+        "Trendie design",
+        "Printie template",
+        "Strapless Design"
+      ],
+      "exact_match_list_custom_design_title": ["Design product 1"],
+      "partly_match_list_custom_design_title": ["Custom design template", "Template Halloween", "Printie template"],
+      "sample_input": {
+        "unListed": "Bestie",
+        "exact_match": "Design product 1",
+        "partly_match": "template",
+        "partly_match_ignore_case": "TemPlate"
+      },
+      "search_url": "admin/themes/builder/pages.json",
+      "create_new_design": "Create new design",
+      "not_found": "Could not find any results for",
+      "similar_step": [
+        {
+          "title": "Nhập data search = name của custom design đúng tuyệt đối",
+          "input": "exact_match",
+          "list_to_compare": "exact_match_list_custom_design_title"
+        },
+        {
+          "title": "Nhập data search = name của custom design đúng 1 phần",
+          "input": "partly_match",
+          "list_to_compare": "partly_match_list_custom_design_title"
+        },
+        {
+          "title": "Nhập data search = name của custom design đúng, chỉ khác chữ hoa chữ thường",
+          "input": "partly_match_ignore_case",
+          "list_to_compare": "partly_match_list_custom_design_title"
+        }
+      ]
+    },
+    "SB_NEWECOM_NEP_110": {
+      "list_custom_design_title": [
+        "Default",
+        "Design product 1",
+        "Custom design template",
+        "Template Halloween",
+        "Trendie design",
+        "Printie template",
+        "Strapless Design"
+      ],
+      "popup_heading": "Create custom design",
+      "create_new_design": "Create new design",
+      "sample_input": {
+        "empty": "",
+        "greater_then_max": "But I must explain to you.",
+        "duplicated": "Trendie design"
+      },
+      "validation_messages": {
+        "empty": "Please input design name",
+        "greater_then_max": "Design name should be less than or equal 25 characters",
+        "duplicated": "The name already exists. Please enter a different name"
+      }
+    },
+    "SB_NEWECOM_NEP_112": {
+      "list_custom_design_title": [
+        "Default",
+        "Design product 1",
+        "Custom design template",
+        "Template Halloween",
+        "Trendie design",
+        "Printie template",
+        "Strapless Design"
+      ],
+      "rename_heading": "Rename custom design",
+      "tootip": ["Rename", "Delete"],
+      "footer_buttons": ["Cancel", "Save"],
+      "sample_input": {
+        "empty": "",
+        "greater_then_max": "But I must explain to you.",
+        "duplicated": "Trendie design"
+      },
+      "validation_messages": {
+        "empty": "Please input design name",
+        "greater_then_max": "Design name should be less than or equal 25 characters",
+        "duplicated": "The name already exists. Please enter a different name"
+      }
+    },
+    "SB_NEWECOM_NEP_113": {
+      "list_custom_design_title": [
+        "Default",
+        "Design product 1",
+        "Custom design template",
+        "Template Halloween",
+        "Trendie design",
+        "Printie template",
+        "Strapless Design"
+      ],
+      "new_list_custom_design_title": [
+        "Default",
+        "Design product 1",
+        "Custom design template",
+        "Template Halloween",
+        "Trendie design",
+        "Printie template",
+        "Design product Timeless"
+      ],
+      "rename_heading": "Rename custom design",
+      "tootip": ["Rename", "Delete"],
+      "footer_buttons": ["Cancel", "Save"],
+      "sample_input": {
+        "rename_input": "Design product Timeless"
+      },
+      "default_template": "Default"
+    },
+    "SB_NEWECOM_NEP_114": {
+      "list_custom_design_title": [
+        "Default",
+        "Design product 1",
+        "Custom design template",
+        "Template Halloween",
+        "Trendie design",
+        "Printie template",
+        "Strapless Design",
+        "Deleted Template"
+      ],
+      "new_list_custom_design_title": [
+        "Default",
+        "Design product 1",
+        "Custom design template",
+        "Template Halloween",
+        "Trendie design",
+        "Printie template",
+        "Strapless Design"
+      ],
+      "popup_heading": "Delete custom design",
+      "popup_body": "All products that are using this custom design will be reverted to default design. Are you sure to delete this design?",
+      "tootip": ["Rename", "Delete"],
+      "footer_buttons": ["Cancel", "Delete"],
+      "default_template": "Default"
+    },
+    "SB_NEWECOM_NEP_115": {
+      "list_product_not_assigned_to_default_template": ["Product 5", "Product 4", "Product 3", "Product 2"],
+      "list_product_not_assigned_to_template_halloween": [
+        "Product 1",
+        "Product 2",
+        "Product 3",
+        "Product 4",
+        "Product 6"
+      ],
+      "list_custom_design_title": [
+        "Default",
+        "Design product 1",
+        "Custom design template",
+        "Template Halloween",
+        "Trendie design",
+        "Printie template",
+        "Strapless Design"
+      ],
+      "default_template": "Default",
+      "product_5": {
+        "title": "Product 5",
+        "template": "Template Halloween"
+      },
+      "template_halloween": "Template Halloween",
+      "snapshot_config": {
+        "web_builder_pic": "case_115_wb.png",
+        "web_front_pic": "case_115_wf.png"
+      },
+      "trendie_design": "Trendie design",
+      "product_name": "Product 6"
+    },
+    "SB_NEWECOM_NEP_105": {
+      "message": "Choose a product page design  for this product. If you prefer a custom design, go to Website Builder to create a new one. Go to website builder",
+      "design_title": ["Default", "Design product 1"],
+      "design_title_WB": "Product detail: Design product 1",
+      "product_name": "Product 6"
+    },
+    "SB_NEWECOM_NEP_111": {
+      "product_name": "Product 6",
+      "setup_section": {
+        "background": {
+          "color": {
+            "code": "#34CF8E",
+            "opacity": 100
+          },
+          "image": "",
+          "img": {
+            "overlay": {
+              "code": "",
+              "opacity": 100
+            },
+            "parallax": false,
+            "position": "center center",
+            "repeat": "no-repeat",
+            "size": "cover",
+            "src": ""
+          },
+          "mode": "color",
+          "position": "center center",
+          "repeat": "no-repeat",
+          "size": "cover",
+          "video": {
+            "fallback_image": "",
+            "id": "",
+            "overlay": {
+              "code": "",
+              "opacity": 100
+            },
+            "parallax": false,
+            "platform": "",
+            "src": "",
+            "thumbnail": ""
+          }
+        },
+        "border": {
+          "color": {
+            "code": "color_4",
+            "opacity": 100
+          },
+          "side": "all",
+          "size": 0,
+          "style": "solid",
+          "thickness": "none"
+        },
+        "height": {
+          "unit": "auto",
+          "value": 0
+        },
+        "layouts": {
+          "full_width": false
+        },
+        "overflow_y": "visible",
+        "padding": {
+          "bottom": 22,
+          "left": 0,
+          "right": 0,
+          "top": 22
+        }
+      },
+      "default_section": {
+        "background": {
+          "color": {
+            "code": "color_5",
+            "opacity": 100
+          },
+          "image": "",
+          "img": {
+            "overlay": {
+              "code": "",
+              "opacity": 100
+            },
+            "parallax": false,
+            "position": "center center",
+            "repeat": "no-repeat",
+            "size": "cover",
+            "src": ""
+          },
+          "mode": "color",
+          "position": "center center",
+          "repeat": "no-repeat",
+          "size": "cover",
+          "video": {
+            "fallback_image": "",
+            "id": "",
+            "overlay": {
+              "code": "",
+              "opacity": 100
+            },
+            "parallax": false,
+            "platform": "",
+            "src": "",
+            "thumbnail": ""
+          }
+        },
+        "border": {
+          "color": {
+            "code": "color_4",
+            "opacity": 100
+          },
+          "side": "all",
+          "size": 0,
+          "style": "solid",
+          "thickness": "none"
+        },
+        "height": {
+          "unit": "auto",
+          "value": 0
+        },
+        "layouts": {
+          "full_width": false
+        },
+        "overflow_y": "visible",
+        "padding": {
+          "bottom": 22,
+          "left": 0,
+          "right": 0,
+          "top": 22
+        }
+      },
+      "section_info": {
+        "block": 1,
+        "section": 3,
+        "column": 1
+      },
+      "section_name": "Section",
+      "trendie_design": "Trendie design"
+    },
+    "SB_NEWECOM_NEP_116": {
+      "design_product_1": "Design product 1",
+      "template_heading": "Product detail: Design product 1",
+      "section": {
+        "icon_block": {
+          "from": {
+            "category": "Basics",
+            "template": "Icon"
+          },
+          "to": {
+            "position": {
+              "section": 2,
+              "block": 1
+            },
+            "layout": "horizontal",
+            "isBottom": true
+          }
+        },
+        "heading_block": {
+          "from": {
+            "category": "Basics",
+            "template": "Heading"
+          },
+          "to": {
+            "position": {
+              "section": 3,
+              "block": 1
+            },
+            "layout": "horizontal",
+            "isBottom": true
+          }
+        }
+      },
+      "snapshot_config": {
+        "template_wf": "template_wf.png",
+        "product1_sf": "product1_sf.png",
+        "product2_sf": "product2_sf.png"
+      },
+      "product_1": "product-1",
+      "product_2": "product-2"
+    },
+    "SB_NEWECOM_NEP_117": {
+      "list_sf": ["custom-design1.myshopbase.net", "au-custom-design.myshopbase.net", "custom-design2.myshopbase.net"],
+      "snapshot_config": {
+        "custom_design_1_product1": "custom_design_1_product1.png",
+        "custom_design_1_product4": "custom_design_1_product4.png",
+        "custom_design_1_homepage": "custom_design_1_homepage.png",
+        "au_custom_design_product1": "au_custom_design_product1.png",
+        "au_custom_design_product4": "au_custom_design_product4.png",
+        "au_custom_design_homepage": "au_custom_design_homepage.png"
+      },
+      "product_1": "Product 1",
+      "product_4": "Product 4"
+    }
+  }
+}

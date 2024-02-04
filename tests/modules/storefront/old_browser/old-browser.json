@@ -1,0 +1,136 @@
+{
+  "env": {
+    "prod": {
+      "domain": "au-old-browser.onshopbase.com",
+      "shop_name": "au-old-browser.onshopbase.com",
+      "api": "https://api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10480819,
+      "user_id": 11260206
+    },
+    "prodtest": {
+      "domain": "au-old-browser-prodtest.onshopbase.com",
+      "shop_name": "au-old-browser-prodtest.onshopbase.com",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 1592736,
+      "user_id": 11260206
+    },
+    "dev": {
+      "domain": "au-old-browser.myshopbase.net",
+      "shop_name": "au-old-browser.myshopbase.net",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10333833,
+      "user_id": 90252
+    },
+    "gitflow": {
+      "domain": "au-old-browser.ios-css.gitflow.myshopbase.net",
+      "shop_name": "au-old-browser.myshopbase.net",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10333833,
+      "user_id": 90252
+    }
+  },
+  "cases": {
+    "HOMEPAGE_CASE_01_04": {
+      "data": [
+        {
+          "description": "Check preview SF Homepage với device sử dụng IOS >=14",
+          "case_id": "SB_OLS_THE_TCD_SFOB_01"
+        },
+        {
+          "description": "Check preview SF Homepage với device sử dụng Android > 9",
+          "case_id": "SB_OLS_THE_TCD_SFOB_04"
+        }
+      ]
+    },
+    "SB_OLS_THE_TCD_SFOB_01": {
+      "device": {
+        "viewport": {
+          "width": 414,
+          "height": 715
+        },
+        "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Mobile/15E148 Safari/604.1"
+      },
+      "data": {
+        "expect": {
+          "screenshot_header": "screenshot_ios_header.png",
+          "screenshot_menu_items": "screenshot_ios_menu_items.png",
+          "screenshot_featured_collection": "screenshot_ios_featured_collection.png",
+          "screenshot_collection_list": "screenshot_ios_collection_list.png",
+          "screenshot_form": "screenshot_ios_form.png",
+          "screenshot_all_review": "screenshot_ios_all_review.png",
+          "screenshot_social": "screenshot_ios_social.png"
+        }
+      }
+    },
+    "COLPROPAGE_CASE_02_05": {
+      "data": [
+        {
+          "description": "Check preview SF page Collection detail và Product detail với device sử dụng IOS >=14",
+          "case_id": "SB_OLS_THE_TCD_SFOB_02"
+        },
+        {
+          "description": "Check preview SF page Collection detail và Product detail với device sử dụng Android > 9",
+          "case_id": "SB_OLS_THE_TCD_SFOB_05"
+        }
+      ]
+    },
+    "SB_OLS_THE_TCD_SFOB_02": {
+      "device": {
+        "viewport": {
+          "width": 414,
+          "height": 715
+        },
+        "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Mobile/15E148 Safari/604.1"
+      },
+      "data": {
+        "expect": {
+          "screenshot_product_list": "screenshot_ios_product_list.png",
+          "screenshot_product_detail": "screenshot_ios_product_detail.png"
+        }
+      }
+    },
+    "SB_OLS_THE_TCD_SFOB_04": {
+      "device": {
+        "viewport": {
+          "width": 360,
+          "height": 718
+        },
+        "userAgent": "Mozilla/5.0 (Linux; Android 9; AFTWMST22 Build/PS7233; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.152 Mobile Safari/537.36"
+      },
+      "data": {
+        "expect": {
+          "screenshot_header": "screenshot_adr_header.png",
+          "screenshot_menu_items": "screenshot_adr_menu_items.png",
+          "screenshot_featured_collection": "screenshot_adr_featured_collection.png",
+          "screenshot_collection_list": "screenshot_adr_collection_list.png",
+          "screenshot_form": "screenshot_adr_form.png",
+          "screenshot_all_review": "screenshot_adr_all_review.png",
+          "screenshot_social": "screenshot_adr_social.png"
+        }
+      }
+    },
+    "SB_OLS_THE_TCD_SFOB_05": {
+      "device": {
+        "viewport": {
+          "width": 360,
+          "height": 718
+        },
+        "userAgent": "Mozilla/5.0 (Linux; Android 9; AFTWMST22 Build/PS7233; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.152 Mobile Safari/537.36"
+      },
+      "data": {
+        "expect": {
+          "screenshot_product_list": "screenshot_adr_product_list.png",
+          "screenshot_product_detail": "screenshot_adr_product_detail.png"
+        }
+      }
+    }
+  }
+}

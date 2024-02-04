@@ -1,0 +1,45 @@
+{
+  "env": {
+    "dev": {
+      "domain": "footer-shop.myshopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q"
+    },
+    "prodtest": {
+      "domain": "creator-order-prodtest.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://prod-test-api.shopbase.com"
+    },
+    "prod": {
+      "domain": "creator-order-prod.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F"
+    }
+  },
+  "cases": {
+    "SB_DP_SF_SP_3": {
+      "data_login_fail": [
+        {
+          "description": "Email sai/ không tồn tại",
+          "email": "hongle+111@beeketing.net",
+          "password": "Q(f!3Kx+6n;?Us%F",
+          "message": "Your email or password is incorrect."
+        },
+        {
+          "description": "Password sai",
+          "email": "shopbase@beeketing.net",
+          "password": "1234567",
+          "message": "Your email or password is incorrect."
+        }
+      ]
+    },
+    "SB_DP_SF_SP_9": {
+      "path": "my-profile/change-password"
+    },
+    "SB_DP_SF_SP_5": {
+      "menu_item": "Log out"
+    }
+  }
+}

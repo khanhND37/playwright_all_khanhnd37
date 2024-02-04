@@ -1,0 +1,4414 @@
+{
+  "env": {
+    "dev": {
+      "domain": "au-insidev2-featured-product.myshopbase.net",
+      "shop_name": "au-insidev2-featured-product.myshopbase.net",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10331891,
+      "user_id": 90252,
+      "cases": {
+        "CHANGE_SETTINGS": {
+          "data": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {
+              "expect": {
+                "change_step2_variant": "featuredproduct62_change_step2_selectedvariant_dev.png"
+              }
+            },
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {
+              "input": {
+                "home": {
+                  "blocks": [
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                      "settings": {
+                        "trust_badge": "https://dev-img.shopbase.net/sbase-file/10062741/2023/08/03/16911047755ab8eefaae.jpeg"
+                      }
+                    },
+                    {}
+                  ]
+                }
+              }
+            },
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        }
+      }
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "domain": "au-inside-featured-product-prodtest.onshopbase.com",
+      "shop_name": "au-inside-featured-product-prodtest.onshopbase.com",
+      "user_id": 73782,
+      "shop_id": 10357513,
+      "cases": {
+        "CHANGE_SETTINGS": {
+          "data": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {
+              "expect": {
+                "change_step2_variant": "featuredproduct62_change_step2_selectedvariant_prodtest.png"
+              }
+            },
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        }
+      }
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "domain": "au-inside-featured-product.onshopbase.com",
+      "shop_name": "au-inside-featured-product.onshopbase.com",
+      "user_id": 73782,
+      "shop_id": 10357511
+    }
+  },
+  "cases": {
+    "CHANGE_SETTINGS": {
+      "data": [
+        {
+          "description": "Check display Feature Product on SF with data default",
+          "case_id": "SB_OLS_THE_INS_SF_FEATURED_PRODUCT_44",
+          "expect": {
+            "wait_selector": ".product__image-gr",
+            "name_snapshot": "featuredproduct1_default.png"
+          },
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {},
+                  "type": "title",
+                  "visible": true
+                },
+                {
+                  "app": "review",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "badge",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "price_customize": false,
+                    "saving_format": "price",
+                    "show_compare_at_price": true,
+                    "show_price_savings": true
+                  },
+                  "type": "price",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "default_setting_id": null,
+                    "enable_color_swatches": true,
+                    "enable_group_swatches": true,
+                    "enable_select_variant_by_image": false,
+                    "hide_selector_enable": true,
+                    "link_product_options": false,
+                    "options_style": "buttons",
+                    "variants_customize": false
+                  },
+                  "type": "variants",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "buy_buttons_customize": false,
+                    "buy_with_paypal": false,
+                    "enable_same_line_quantity_box": false,
+                    "show_dynamic_checkout_button": false,
+                    "show_quantity_box": true,
+                    "show_quantity_box_and_add_cart_button": false
+                  },
+                  "type": "buy-buttons",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "quantity",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "bundle",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "trust_badge": "",
+                    "trust_badge_alt_text": "",
+                    "trust_badge_customize": false
+                  },
+                  "type": "trust-badge",
+                  "visible": true
+                },
+                {
+                  "settings": {},
+                  "type": "product-link",
+                  "visible": true
+                }
+              ],
+              "data": "product",
+              "id": "M0Q",
+              "settings": {
+                "customize": false,
+                "default_setting_id": null,
+                "enable_carousel_custom_option": true,
+                "enable_image_zoom": true,
+                "image_position": "left",
+                "photo_list": "all",
+                "product": {
+                  "handle": "product-2",
+                  "id": 1000000000020366,
+                  "title": "product 3"
+                },
+                "template_product": "description_right"
+              },
+              "type": "featured-product",
+              "visible": true
+            }
+          }
+        },
+        {
+          "description": "Check display Feature Product on SF with data default when check customize all block",
+          "case_id": "SB_OLS_THE_INS_SF_FEATURED_PRODUCT_45",
+          "expect": {
+            "wait_selector": ".product__image-gr",
+            "name_snapshot": "featuredproduct2_default_customize.png"
+          },
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {},
+                  "type": "title",
+                  "visible": true
+                },
+                {
+                  "app": "review",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "badge",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "price_customize": true,
+                    "saving_format": "price",
+                    "show_compare_at_price": true,
+                    "show_price_savings": true
+                  },
+                  "type": "price",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "default_setting_id": null,
+                    "enable_color_swatches": true,
+                    "enable_group_swatches": true,
+                    "enable_select_variant_by_image": false,
+                    "hide_selector_enable": true,
+                    "link_product_options": false,
+                    "options_style": "buttons",
+                    "variants_customize": true
+                  },
+                  "type": "variants",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "buy_buttons_customize": true,
+                    "buy_with_paypal": false,
+                    "enable_same_line_quantity_box": false,
+                    "show_dynamic_checkout_button": false,
+                    "show_quantity_box": true,
+                    "show_quantity_box_and_add_cart_button": false
+                  },
+                  "type": "buy-buttons",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "quantity",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "bundle",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "trust_badge": "",
+                    "trust_badge_alt_text": "",
+                    "trust_badge_customize": true
+                  },
+                  "type": "trust-badge",
+                  "visible": true
+                },
+                {
+                  "settings": {},
+                  "type": "product-link",
+                  "visible": true
+                }
+              ],
+              "data": "product",
+              "id": "9EW",
+              "settings": {
+                "customize": true,
+                "default_setting_id": null,
+                "enable_carousel_custom_option": true,
+                "enable_image_zoom": true,
+                "image_position": "left",
+                "photo_list": "all",
+                "product": {
+                  "handle": "product-2",
+                  "id": 1000000000020366,
+                  "title": "product 3"
+                },
+                "template_product": "description_right"
+              },
+              "type": "featured-product",
+              "visible": true
+            }
+          }
+        },
+        {
+          "description": "Section setting_Check display Feature Product on SF with photo list = all photo with product have no image",
+          "case_id": "SB_OLS_THE_INS_SF_FEATURED_PRODUCT_46",
+          "expect": {
+            "name_snapshot": "featuredproduct3_setting_allphoto.png"
+          },
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {},
+                  "type": "title",
+                  "visible": true
+                },
+                {
+                  "app": "review",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "badge",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "price_customize": true,
+                    "saving_format": "price",
+                    "show_compare_at_price": true,
+                    "show_price_savings": true
+                  },
+                  "type": "price",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "default_setting_id": null,
+                    "enable_color_swatches": true,
+                    "enable_group_swatches": true,
+                    "enable_select_variant_by_image": false,
+                    "hide_selector_enable": true,
+                    "link_product_options": false,
+                    "options_style": "buttons",
+                    "variants_customize": true
+                  },
+                  "type": "variants",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "buy_buttons_customize": true,
+                    "buy_with_paypal": false,
+                    "enable_same_line_quantity_box": false,
+                    "show_dynamic_checkout_button": false,
+                    "show_quantity_box": true,
+                    "show_quantity_box_and_add_cart_button": false
+                  },
+                  "type": "buy-buttons",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "quantity",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "bundle",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "trust_badge": "",
+                    "trust_badge_alt_text": "",
+                    "trust_badge_customize": true
+                  },
+                  "type": "trust-badge",
+                  "visible": true
+                },
+                {
+                  "settings": {},
+                  "type": "product-link",
+                  "visible": true
+                }
+              ],
+              "data": "product",
+              "id": "9EW",
+              "settings": {
+                "customize": true,
+                "default_setting_id": null,
+                "enable_carousel_custom_option": true,
+                "enable_image_zoom": true,
+                "image_position": "left",
+                "photo_list": "all",
+                "product": {
+                  "handle": "product-1-8",
+                  "id": 1000000000018959,
+                  "title": "product 1"
+                },
+                "template_product": "description_right"
+              },
+              "type": "featured-product",
+              "visible": true
+            }
+          }
+        },
+        {
+          "description": "Section setting_Check display Feature Product on SF with photo list = all photo with product have image",
+          "case_id": "SB_OLS_THE_INS_SF_FEATURED_PRODUCT_47",
+          "expect": {
+            "wait_selector": ".product__image-gr",
+            "name_snapshot": "featuredproduct4_setting_allphoto.png"
+          },
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {},
+                  "type": "title",
+                  "visible": true
+                },
+                {
+                  "app": "review",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "badge",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "price_customize": true,
+                    "saving_format": "price",
+                    "show_compare_at_price": true,
+                    "show_price_savings": true
+                  },
+                  "type": "price",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "default_setting_id": null,
+                    "enable_color_swatches": true,
+                    "enable_group_swatches": true,
+                    "enable_select_variant_by_image": false,
+                    "hide_selector_enable": true,
+                    "link_product_options": false,
+                    "options_style": "buttons",
+                    "variants_customize": true
+                  },
+                  "type": "variants",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "buy_buttons_customize": true,
+                    "buy_with_paypal": false,
+                    "enable_same_line_quantity_box": false,
+                    "show_dynamic_checkout_button": false,
+                    "show_quantity_box": true,
+                    "show_quantity_box_and_add_cart_button": false
+                  },
+                  "type": "buy-buttons",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "quantity",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "bundle",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "trust_badge": "",
+                    "trust_badge_alt_text": "",
+                    "trust_badge_customize": true
+                  },
+                  "type": "trust-badge",
+                  "visible": true
+                },
+                {
+                  "settings": {},
+                  "type": "product-link",
+                  "visible": true
+                }
+              ],
+              "data": "product",
+              "id": "9EW",
+              "settings": {
+                "customize": true,
+                "default_setting_id": null,
+                "enable_carousel_custom_option": true,
+                "enable_image_zoom": true,
+                "image_position": "left",
+                "photo_list": "all",
+                "product": {
+                  "handle": "product-4",
+                  "id": 1000000000018955,
+                  "title": "product 4"
+                },
+                "template_product": "description_right"
+              },
+              "type": "featured-product",
+              "visible": true
+            }
+          }
+        },
+        {
+          "description": "Section setting_Check display Feature Product on SF with photo list = Only from the variant group with product 3 have variant image",
+          "case_id": "SB_OLS_THE_INS_SF_FEATURED_PRODUCT_48",
+          "expect": {
+            "name_snapshot": "featuredproduct5_setting_variantgroup.png",
+            "change_variant": "featuredproduct51_change_variantgroup.png"
+          },
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {},
+                  "type": "title",
+                  "visible": true
+                },
+                {
+                  "app": "review",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "badge",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "price_customize": true,
+                    "saving_format": "price",
+                    "show_compare_at_price": true,
+                    "show_price_savings": true
+                  },
+                  "type": "price",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "default_setting_id": null,
+                    "enable_color_swatches": true,
+                    "enable_group_swatches": true,
+                    "enable_select_variant_by_image": false,
+                    "hide_selector_enable": true,
+                    "link_product_options": false,
+                    "options_style": "buttons",
+                    "variants_customize": true
+                  },
+                  "type": "variants",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "buy_buttons_customize": true,
+                    "buy_with_paypal": false,
+                    "enable_same_line_quantity_box": false,
+                    "show_dynamic_checkout_button": false,
+                    "show_quantity_box": true,
+                    "show_quantity_box_and_add_cart_button": false
+                  },
+                  "type": "buy-buttons",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "quantity",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "bundle",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "trust_badge": "",
+                    "trust_badge_alt_text": "",
+                    "trust_badge_customize": true
+                  },
+                  "type": "trust-badge",
+                  "visible": true
+                },
+                {
+                  "settings": {},
+                  "type": "product-link",
+                  "visible": true
+                }
+              ],
+              "data": "product",
+              "id": "9EW",
+              "settings": {
+                "customize": true,
+                "default_setting_id": null,
+                "enable_carousel_custom_option": true,
+                "enable_image_zoom": true,
+                "image_position": "left",
+                "photo_list": "group",
+                "product": {
+                  "handle": "product-2",
+                  "id": 1000000000020366,
+                  "title": "product 3"
+                },
+                "template_product": "description_right"
+              },
+              "type": "featured-product",
+              "visible": true
+            }
+          }
+        },
+        {
+          "description": "Section setting_Check display Feature Product on SF with photo list = Only from the selected variant with product 3",
+          "case_id": "SB_OLS_THE_INS_SF_FEATURED_PRODUCT_49",
+          "expect": {
+            "name_snapshot": "featuredproduct6_setting_selectedvariant.png",
+            "change_variant": "featuredproduct61_change_step1_selectedvariant.png",
+            "change_step2_variant": "featuredproduct62_change_step2_selectedvariant.png"
+          },
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {},
+                  "type": "title",
+                  "visible": true
+                },
+                {
+                  "app": "review",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "badge",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "price_customize": true,
+                    "saving_format": "price",
+                    "show_compare_at_price": true,
+                    "show_price_savings": true
+                  },
+                  "type": "price",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "default_setting_id": null,
+                    "enable_color_swatches": true,
+                    "enable_group_swatches": true,
+                    "enable_select_variant_by_image": false,
+                    "hide_selector_enable": true,
+                    "link_product_options": false,
+                    "options_style": "buttons",
+                    "variants_customize": true
+                  },
+                  "type": "variants",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "buy_buttons_customize": true,
+                    "buy_with_paypal": false,
+                    "enable_same_line_quantity_box": false,
+                    "show_dynamic_checkout_button": false,
+                    "show_quantity_box": true,
+                    "show_quantity_box_and_add_cart_button": false
+                  },
+                  "type": "buy-buttons",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "quantity",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "bundle",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "trust_badge": "",
+                    "trust_badge_alt_text": "",
+                    "trust_badge_customize": true
+                  },
+                  "type": "trust-badge",
+                  "visible": true
+                },
+                {
+                  "settings": {},
+                  "type": "product-link",
+                  "visible": true
+                }
+              ],
+              "data": "product",
+              "id": "9EW",
+              "settings": {
+                "customize": true,
+                "default_setting_id": null,
+                "enable_carousel_custom_option": true,
+                "enable_image_zoom": true,
+                "image_position": "left",
+                "photo_list": "selected",
+                "product": {
+                  "handle": "product-2",
+                  "id": 1000000000020366,
+                  "title": "product 3"
+                },
+                "template_product": "description_right"
+              },
+              "type": "featured-product",
+              "visible": true
+            }
+          }
+        },
+        {
+          "description": "setting_Check Special layout on mobile with custom options = true",
+          "case_id": "SB_OLS_THE_INS_SF_FEATURED_PRODUCT_50",
+          "expect": {
+            "mobile": true,
+            "description_selector": ".product__description .is-uppercase",
+            "wait_selector": ".paypal-product",
+            "name_snapshot": "featuredproduct7_setting_special_layout.png"
+          },
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "collapsed": true,
+                    "content": "<ul><li><strong>100% Secure payment</strong> with SSL Encryption.</li><li>If you're not <strong>100% satisfied</strong>, let us know and we'll make it right.</li></ul>",
+                    "heading": "Policies"
+                  },
+                  "type": "collapse-tab",
+                  "visible": true
+                },
+                {
+                  "settings": {},
+                  "type": "title",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "price_customize": true,
+                    "saving_format": "percent",
+                    "show_compare_at_price": false,
+                    "show_price_savings": false
+                  },
+                  "type": "price",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "default_setting_id": null,
+                    "enable_color_swatches": true,
+                    "enable_group_swatches": true,
+                    "enable_select_variant_by_image": true,
+                    "hide_selector_enable": false,
+                    "link_product_options": false,
+                    "options_style": "select_dropdown_list",
+                    "variants_customize": true
+                  },
+                  "type": "variants",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "buy_buttons_customize": true,
+                    "buy_with_paypal": true,
+                    "enable_same_line_quantity_box": true,
+                    "show_dynamic_checkout_button": true,
+                    "show_quantity_box": true,
+                    "show_quantity_box_and_add_cart_button": false
+                  },
+                  "type": "buy-buttons",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "collapsed": false,
+                    "heading": "Product description"
+                  },
+                  "type": "description",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "collapsed": false,
+                    "pages": "page-4"
+                  },
+                  "type": "page",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "content": "Text block",
+                    "style": "body_text"
+                  },
+                  "type": "text",
+                  "visible": true
+                },
+                {
+                  "settings": {},
+                  "type": "product-link",
+                  "visible": true
+                }
+              ],
+              "data": "product",
+              "id": "Lam",
+              "settings": {
+                "customize": true,
+                "default_setting_id": null,
+                "enable_carousel_custom_option": true,
+                "enable_image_zoom": false,
+                "image_position": "left",
+                "photo_list": "all",
+                "product": {
+                  "handle": "product-4",
+                  "id": 1100000000823222,
+                  "title": "product 4"
+                },
+                "template_product": "description_right"
+              },
+              "type": "featured-product",
+              "visible": true
+            }
+          }
+        },
+        {
+          "description": "setting_Check Special layout on mobile with custom options = false",
+          "case_id": "SB_OLS_THE_INS_SF_FEATURED_PRODUCT_51",
+          "expect": {
+            "mobile": true,
+            "description_selector": ".product__description .is-uppercase",
+            "wait_selector": ".paypal-product",
+            "name_snapshot": "featuredproduct8_setting_not_special_layout.png"
+          },
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "collapsed": true,
+                    "content": "<ul><li><strong>100% Secure payment</strong> with SSL Encryption.</li><li>If you're not <strong>100% satisfied</strong>, let us know and we'll make it right.</li></ul>",
+                    "heading": "Policies"
+                  },
+                  "type": "collapse-tab",
+                  "visible": true
+                },
+                {
+                  "settings": {},
+                  "type": "title",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "price_customize": true,
+                    "saving_format": "percent",
+                    "show_compare_at_price": false,
+                    "show_price_savings": false
+                  },
+                  "type": "price",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "default_setting_id": null,
+                    "enable_color_swatches": true,
+                    "enable_group_swatches": true,
+                    "enable_select_variant_by_image": true,
+                    "hide_selector_enable": false,
+                    "link_product_options": false,
+                    "options_style": "select_dropdown_list",
+                    "variants_customize": true
+                  },
+                  "type": "variants",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "buy_buttons_customize": true,
+                    "buy_with_paypal": true,
+                    "enable_same_line_quantity_box": true,
+                    "show_dynamic_checkout_button": true,
+                    "show_quantity_box": true,
+                    "show_quantity_box_and_add_cart_button": false
+                  },
+                  "type": "buy-buttons",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "collapsed": false,
+                    "heading": "Product description"
+                  },
+                  "type": "description",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "collapsed": false,
+                    "pages": "page-4"
+                  },
+                  "type": "page",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "content": "Text block",
+                    "style": "body_text"
+                  },
+                  "type": "text",
+                  "visible": true
+                },
+                {
+                  "settings": {},
+                  "type": "product-link",
+                  "visible": true
+                }
+              ],
+              "data": "product",
+              "id": "Lam",
+              "settings": {
+                "customize": true,
+                "default_setting_id": null,
+                "enable_carousel_custom_option": false,
+                "enable_image_zoom": false,
+                "image_position": "left",
+                "photo_list": "all",
+                "product": {
+                  "handle": "product-4",
+                  "id": 1100000000823222,
+                  "title": "product 4"
+                },
+                "template_product": "description_right"
+              },
+              "type": "featured-product",
+              "visible": true
+            }
+          }
+        },
+        {
+          "description": "Section setting_Check display Feature Product on SF with Product photo position = Right",
+          "case_id": "SB_OLS_THE_INS_SF_FEATURED_PRODUCT_52",
+          "expect": {
+            "name_snapshot": "featuredproduct9_setting_position.png"
+          },
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {},
+                  "type": "title",
+                  "visible": true
+                },
+                {
+                  "app": "review",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "badge",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "price_customize": true,
+                    "saving_format": "price",
+                    "show_compare_at_price": true,
+                    "show_price_savings": true
+                  },
+                  "type": "price",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "default_setting_id": null,
+                    "enable_color_swatches": true,
+                    "enable_group_swatches": true,
+                    "enable_select_variant_by_image": false,
+                    "hide_selector_enable": true,
+                    "link_product_options": false,
+                    "options_style": "buttons",
+                    "variants_customize": true
+                  },
+                  "type": "variants",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "buy_buttons_customize": true,
+                    "buy_with_paypal": false,
+                    "enable_same_line_quantity_box": false,
+                    "show_dynamic_checkout_button": false,
+                    "show_quantity_box": true,
+                    "show_quantity_box_and_add_cart_button": false
+                  },
+                  "type": "buy-buttons",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "quantity",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "bundle",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "trust_badge": "",
+                    "trust_badge_alt_text": "",
+                    "trust_badge_customize": true
+                  },
+                  "type": "trust-badge",
+                  "visible": true
+                },
+                {
+                  "settings": {},
+                  "type": "product-link",
+                  "visible": true
+                }
+              ],
+              "data": "product",
+              "id": "9EW",
+              "settings": {
+                "customize": true,
+                "default_setting_id": null,
+                "enable_carousel_custom_option": true,
+                "enable_image_zoom": true,
+                "image_position": "right",
+                "photo_list": "selected",
+                "product": {
+                  "handle": "product-2",
+                  "id": 1000000000020366,
+                  "title": "product 3"
+                },
+                "template_product": "description_right"
+              },
+              "type": "featured-product",
+              "visible": true
+            }
+          }
+        },
+        {
+          "description": "Price_Check sale type = Amount",
+          "case_id": "SB_OLS_THE_INS_SF_FEATURED_PRODUCT_53",
+          "expect": {
+            "name_snapshot": "featuredproduct10_price_saletype_amount.png"
+          },
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {},
+                  "type": "title",
+                  "visible": true
+                },
+                {
+                  "app": "review",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "badge",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "price_customize": true,
+                    "saving_format": "price",
+                    "show_compare_at_price": true,
+                    "show_price_savings": true
+                  },
+                  "type": "price",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "default_setting_id": null,
+                    "enable_color_swatches": true,
+                    "enable_group_swatches": true,
+                    "enable_select_variant_by_image": true,
+                    "hide_selector_enable": true,
+                    "link_product_options": true,
+                    "options_style": "buttons",
+                    "variants_customize": true
+                  },
+                  "type": "variants",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "buy_buttons_customize": true,
+                    "buy_with_paypal": false,
+                    "enable_same_line_quantity_box": false,
+                    "show_dynamic_checkout_button": false,
+                    "show_quantity_box": true,
+                    "show_quantity_box_and_add_cart_button": false
+                  },
+                  "type": "buy-buttons",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "quantity",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "bundle",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "trust_badge": "",
+                    "trust_badge_alt_text": "",
+                    "trust_badge_customize": true
+                  },
+                  "type": "trust-badge",
+                  "visible": true
+                },
+                {
+                  "settings": {},
+                  "type": "product-link",
+                  "visible": true
+                }
+              ],
+              "data": "product",
+              "id": "9EW",
+              "settings": {
+                "customize": true,
+                "default_setting_id": null,
+                "enable_carousel_custom_option": true,
+                "enable_image_zoom": true,
+                "image_position": "left",
+                "photo_list": "all",
+                "product": {
+                  "handle": "product-1-8",
+                  "id": 1000000000018959,
+                  "title": "product 1"
+                },
+                "template_product": "description_right"
+              },
+              "type": "featured-product",
+              "visible": true
+            }
+          }
+        },
+        {
+          "description": "Price_Check sale type = Percentage",
+          "case_id": "SB_OLS_THE_INS_SF_FEATURED_PRODUCT_54",
+          "expect": {
+            "name_snapshot": "featuredproduct11_price_saletype_percentage.png"
+          },
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {},
+                  "type": "title",
+                  "visible": true
+                },
+                {
+                  "app": "review",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "badge",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "price_customize": true,
+                    "saving_format": "percent",
+                    "show_compare_at_price": true,
+                    "show_price_savings": true
+                  },
+                  "type": "price",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "default_setting_id": null,
+                    "enable_color_swatches": true,
+                    "enable_group_swatches": true,
+                    "enable_select_variant_by_image": true,
+                    "hide_selector_enable": true,
+                    "link_product_options": true,
+                    "options_style": "buttons",
+                    "variants_customize": true
+                  },
+                  "type": "variants",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "buy_buttons_customize": true,
+                    "buy_with_paypal": false,
+                    "enable_same_line_quantity_box": false,
+                    "show_dynamic_checkout_button": false,
+                    "show_quantity_box": true,
+                    "show_quantity_box_and_add_cart_button": false
+                  },
+                  "type": "buy-buttons",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "quantity",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "bundle",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "trust_badge": "",
+                    "trust_badge_alt_text": "",
+                    "trust_badge_customize": true
+                  },
+                  "type": "trust-badge",
+                  "visible": true
+                },
+                {
+                  "settings": {},
+                  "type": "product-link",
+                  "visible": true
+                }
+              ],
+              "data": "product",
+              "id": "9EW",
+              "settings": {
+                "customize": true,
+                "default_setting_id": null,
+                "enable_carousel_custom_option": true,
+                "enable_image_zoom": true,
+                "image_position": "left",
+                "photo_list": "all",
+                "product": {
+                  "handle": "product-2-3",
+                  "id": 1000000000018957,
+                  "title": "product 2"
+                },
+                "template_product": "description_right"
+              },
+              "type": "featured-product",
+              "visible": true
+            }
+          }
+        },
+        {
+          "description": "Price_Check price saving = false & compare-price = false",
+          "case_id": "SB_OLS_THE_INS_SF_FEATURED_PRODUCT_55",
+          "expect": {
+            "name_snapshot": "featuredproduct12_price_no_price_saving_no_compare_price.png"
+          },
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {},
+                  "type": "title",
+                  "visible": true
+                },
+                {
+                  "app": "review",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "badge",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "price_customize": true,
+                    "saving_format": "percent",
+                    "show_compare_at_price": false,
+                    "show_price_savings": false
+                  },
+                  "type": "price",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "default_setting_id": null,
+                    "enable_color_swatches": true,
+                    "enable_group_swatches": true,
+                    "enable_select_variant_by_image": true,
+                    "hide_selector_enable": true,
+                    "link_product_options": true,
+                    "options_style": "buttons",
+                    "variants_customize": true
+                  },
+                  "type": "variants",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "buy_buttons_customize": true,
+                    "buy_with_paypal": false,
+                    "enable_same_line_quantity_box": false,
+                    "show_dynamic_checkout_button": false,
+                    "show_quantity_box": true,
+                    "show_quantity_box_and_add_cart_button": false
+                  },
+                  "type": "buy-buttons",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "quantity",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "bundle",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "trust_badge": "",
+                    "trust_badge_alt_text": "",
+                    "trust_badge_customize": true
+                  },
+                  "type": "trust-badge",
+                  "visible": true
+                },
+                {
+                  "settings": {},
+                  "type": "product-link",
+                  "visible": true
+                }
+              ],
+              "data": "product",
+              "id": "9EW",
+              "settings": {
+                "customize": true,
+                "default_setting_id": null,
+                "enable_carousel_custom_option": true,
+                "enable_image_zoom": true,
+                "image_position": "left",
+                "photo_list": "all",
+                "product": {
+                  "handle": "product-2-3",
+                  "id": 1000000000018957,
+                  "title": "product 2"
+                },
+                "template_product": "description_right"
+              },
+              "type": "featured-product",
+              "visible": true
+            }
+          }
+        },
+        {
+          "description": "Setting_Check validate custom option when add to cart",
+          "case_id": "SB_OLS_THE_INS_SF_FEATURED_PRODUCT_56",
+          "expect": {
+            "custom_option": "custom option 1: abc",
+            "validate_customoption": ".product-custom-option [msg-invalid=\"true\"]"
+          },
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "collapsed": false,
+                    "content": "<ul><li><strong>100% Secure payment</strong> with SSL Encryption.</li><li>If you're not <strong>100% satisfied</strong>, let us know and we'll make it right.</li></ul>",
+                    "heading": "Return & Warranty"
+                  },
+                  "type": "collapse-tab",
+                  "visible": true
+                },
+                {
+                  "settings": {},
+                  "type": "title",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "price_customize": true,
+                    "saving_format": "percent",
+                    "show_compare_at_price": false,
+                    "show_price_savings": false
+                  },
+                  "type": "price",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "default_setting_id": null,
+                    "enable_color_swatches": true,
+                    "enable_group_swatches": true,
+                    "enable_select_variant_by_image": true,
+                    "hide_selector_enable": false,
+                    "link_product_options": false,
+                    "options_style": "select_dropdown_list",
+                    "variants_customize": true
+                  },
+                  "type": "variants",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "buy_buttons_customize": true,
+                    "buy_with_paypal": true,
+                    "enable_same_line_quantity_box": true,
+                    "show_dynamic_checkout_button": true,
+                    "show_quantity_box": true,
+                    "show_quantity_box_and_add_cart_button": false
+                  },
+                  "type": "buy-buttons",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "collapsed": false,
+                    "heading": "Product description"
+                  },
+                  "type": "description",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "collapsed": false,
+                    "page": "page-4"
+                  },
+                  "type": "page",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "content": "Text block",
+                    "style": "body_text"
+                  },
+                  "type": "text",
+                  "visible": true
+                }
+              ],
+              "data": "product",
+              "id": "9EW",
+              "settings": {
+                "customize": true,
+                "default_setting_id": null,
+                "enable_carousel_custom_option": true,
+                "enable_image_zoom": true,
+                "image_position": "left",
+                "photo_list": "all",
+                "product": {
+                  "handle": "product-4",
+                  "id": 1000000000018955,
+                  "title": "product 4"
+                },
+                "template_product": "description_right"
+              },
+              "type": "featured-product",
+              "visible": true
+            }
+          }
+        },
+        {
+          "description": "BuyButton_Check quantity box & Add to cart button in the same line and show paypal button",
+          "case_id": "SB_OLS_THE_INS_SF_FEATURED_PRODUCT_57",
+          "expect": {
+            "name_snapshot": "featuredproduct14_buybutton_show_paypal.png"
+          },
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {},
+                  "type": "title",
+                  "visible": true
+                },
+                {
+                  "app": "review",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "badge",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "price_customize": true,
+                    "saving_format": "percent",
+                    "show_compare_at_price": false,
+                    "show_price_savings": false
+                  },
+                  "type": "price",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "default_setting_id": null,
+                    "enable_color_swatches": true,
+                    "enable_group_swatches": true,
+                    "enable_select_variant_by_image": true,
+                    "hide_selector_enable": false,
+                    "link_product_options": false,
+                    "options_style": "select_dropdown_list",
+                    "variants_customize": true
+                  },
+                  "type": "variants",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "buy_buttons_customize": true,
+                    "buy_with_paypal": true,
+                    "enable_same_line_quantity_box": true,
+                    "show_dynamic_checkout_button": true,
+                    "show_quantity_box": true,
+                    "show_quantity_box_and_add_cart_button": false
+                  },
+                  "type": "buy-buttons",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "quantity",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "bundle",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "trust_badge": "",
+                    "trust_badge_alt_text": "",
+                    "trust_badge_customize": true
+                  },
+                  "type": "trust-badge",
+                  "visible": true
+                },
+                {
+                  "settings": {},
+                  "type": "product-link",
+                  "visible": true
+                }
+              ],
+              "data": "product",
+              "id": "9EW",
+              "settings": {
+                "customize": true,
+                "default_setting_id": null,
+                "enable_carousel_custom_option": true,
+                "enable_image_zoom": true,
+                "image_position": "left",
+                "photo_list": "all",
+                "product": {
+                  "handle": "product-1-8",
+                  "id": 1000000000018959,
+                  "title": "product 1"
+                },
+                "template_product": "description_right"
+              },
+              "type": "featured-product",
+              "visible": true
+            }
+          }
+        },
+        {
+          "description": "BuyButton_Check show add to cart button only",
+          "case_id": "SB_OLS_THE_INS_SF_FEATURED_PRODUCT_59",
+          "expect": {
+            "name_snapshot": "featuredproduct16_buybutton_show_addtocart.png",
+            "cart_slide": "S"
+          },
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {},
+                  "type": "title",
+                  "visible": true
+                },
+                {
+                  "app": "review",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "badge",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "price_customize": true,
+                    "saving_format": "percent",
+                    "show_compare_at_price": false,
+                    "show_price_savings": false
+                  },
+                  "type": "price",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "default_setting_id": null,
+                    "enable_color_swatches": true,
+                    "enable_group_swatches": true,
+                    "enable_select_variant_by_image": true,
+                    "hide_selector_enable": false,
+                    "link_product_options": false,
+                    "options_style": "select_dropdown_list",
+                    "variants_customize": true
+                  },
+                  "type": "variants",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "buy_buttons_customize": true,
+                    "buy_with_paypal": false,
+                    "enable_same_line_quantity_box": false,
+                    "show_dynamic_checkout_button": false,
+                    "show_quantity_box": true,
+                    "show_quantity_box_and_add_cart_button": true
+                  },
+                  "type": "buy-buttons",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "quantity",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "bundle",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "trust_badge": "",
+                    "trust_badge_alt_text": "",
+                    "trust_badge_customize": true
+                  },
+                  "type": "trust-badge",
+                  "visible": true
+                },
+                {
+                  "settings": {},
+                  "type": "product-link",
+                  "visible": true
+                }
+              ],
+              "data": "product",
+              "id": "9EW",
+              "settings": {
+                "customize": true,
+                "default_setting_id": null,
+                "enable_carousel_custom_option": true,
+                "enable_image_zoom": true,
+                "image_position": "left",
+                "photo_list": "all",
+                "product": {
+                  "handle": "product-1-8",
+                  "id": 1000000000018959,
+                  "title": "product 1"
+                },
+                "template_product": "description_right"
+              },
+              "type": "featured-product",
+              "visible": true
+            }
+          }
+        },
+        {
+          "description": "Check hide Buy now button and Add to cart & Quantity box not in the same line",
+          "case_id": "SB_OLS_THE_INS_SF_FEATURED_PRODUCT_60",
+          "expect": {
+            "name_snapshot": "featuredproduct17_quantity_box_and_add_cart_button_not_sameline.png"
+          },
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {},
+                  "type": "title",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "price_customize": false,
+                    "saving_format": "price",
+                    "show_compare_at_price": true,
+                    "show_price_savings": true
+                  },
+                  "type": "price",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "default_setting_id": null,
+                    "enable_color_swatches": true,
+                    "enable_group_swatches": true,
+                    "enable_select_variant_by_image": false,
+                    "hide_selector_enable": true,
+                    "link_product_options": false,
+                    "options_style": "buttons",
+                    "variants_customize": false
+                  },
+                  "type": "variants",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "buy_buttons_customize": true,
+                    "buy_with_paypal": false,
+                    "enable_same_line_quantity_box": false,
+                    "show_dynamic_checkout_button": false,
+                    "show_quantity_box": true,
+                    "show_quantity_box_and_add_cart_button": true
+                  },
+                  "type": "buy-buttons",
+                  "visible": true
+                },
+                {
+                  "settings": {},
+                  "type": "product-link",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "content": "Text block",
+                    "style": "body_text"
+                  },
+                  "type": "text",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "collapsed": false,
+                    "content": "<ul><li><strong>100% Secure payment</strong> with SSL Encryption.</li><li>If you're not <strong>100% satisfied</strong>, let us know and we'll make it right.</li></ul>",
+                    "heading": "Return & Warranty"
+                  },
+                  "type": "collapse-tab",
+                  "visible": true
+                }
+              ],
+              "data": "product",
+              "id": "CYt",
+              "settings": {
+                "customize": false,
+                "default_setting_id": null,
+                "enable_carousel_custom_option": true,
+                "enable_image_zoom": true,
+                "image_position": "left",
+                "photo_list": "all",
+                "product": {
+                  "handle": "product-1-8",
+                  "id": 1000000000018959,
+                  "title": "product 1"
+                },
+                "template_product": "description_right"
+              },
+              "type": "featured-product",
+              "visible": true
+            }
+          }
+        },
+        {
+          "description": "Check hide Buy now button and Add to cart & Quantity box in the same line",
+          "case_id": "SB_OLS_THE_INS_SF_FEATURED_PRODUCT_61",
+          "expect": {
+            "name_snapshot": "featuredproduct18_quantity_box_and_add_cart_button_sameline.png"
+          },
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {},
+                  "type": "title",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "price_customize": false,
+                    "saving_format": "price",
+                    "show_compare_at_price": true,
+                    "show_price_savings": true
+                  },
+                  "type": "price",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "default_setting_id": null,
+                    "enable_color_swatches": true,
+                    "enable_group_swatches": true,
+                    "enable_select_variant_by_image": false,
+                    "hide_selector_enable": true,
+                    "link_product_options": false,
+                    "options_style": "buttons",
+                    "variants_customize": false
+                  },
+                  "type": "variants",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "buy_buttons_customize": true,
+                    "buy_with_paypal": false,
+                    "enable_same_line_quantity_box": true,
+                    "show_dynamic_checkout_button": false,
+                    "show_quantity_box": true,
+                    "show_quantity_box_and_add_cart_button": false
+                  },
+                  "type": "buy-buttons",
+                  "visible": true
+                },
+                {
+                  "settings": {},
+                  "type": "product-link",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "content": "Text block",
+                    "style": "body_text"
+                  },
+                  "type": "text",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "collapsed": false,
+                    "content": "<ul><li><strong>100% Secure payment</strong> with SSL Encryption.</li><li>If you're not <strong>100% satisfied</strong>, let us know and we'll make it right.</li></ul>",
+                    "heading": "Return & Warranty"
+                  },
+                  "type": "collapse-tab",
+                  "visible": true
+                }
+              ],
+              "data": "product",
+              "id": "CYt",
+              "settings": {
+                "customize": false,
+                "default_setting_id": null,
+                "enable_carousel_custom_option": true,
+                "enable_image_zoom": true,
+                "image_position": "left",
+                "photo_list": "all",
+                "product": {
+                  "handle": "product-1-8",
+                  "id": 1000000000018959,
+                  "title": "product 1"
+                },
+                "template_product": "description_right"
+              },
+              "type": "featured-product",
+              "visible": true
+            }
+          }
+        },
+        {
+          "description": "Check display Dynamic checkout button is not PayPal",
+          "case_id": "SB_OLS_THE_INS_SF_FEATURED_PRODUCT_62",
+          "expect": {
+            "name_snapshot": "featuredproduct19_dynamic_checkout_isnot_paypal.png"
+          },
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {},
+                  "type": "title",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "price_customize": false,
+                    "saving_format": "price",
+                    "show_compare_at_price": true,
+                    "show_price_savings": true
+                  },
+                  "type": "price",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "default_setting_id": null,
+                    "enable_color_swatches": true,
+                    "enable_group_swatches": true,
+                    "enable_select_variant_by_image": false,
+                    "hide_selector_enable": true,
+                    "link_product_options": false,
+                    "options_style": "buttons",
+                    "variants_customize": false
+                  },
+                  "type": "variants",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "buy_buttons_customize": true,
+                    "buy_with_paypal": false,
+                    "enable_same_line_quantity_box": true,
+                    "show_dynamic_checkout_button": true,
+                    "show_quantity_box": true,
+                    "show_quantity_box_and_add_cart_button": false
+                  },
+                  "type": "buy-buttons",
+                  "visible": true
+                },
+                {
+                  "settings": {},
+                  "type": "product-link",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "content": "Text block",
+                    "style": "body_text"
+                  },
+                  "type": "text",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "collapsed": false,
+                    "content": "<ul><li><strong>100% Secure payment</strong> with SSL Encryption.</li><li>If you're not <strong>100% satisfied</strong>, let us know and we'll make it right.</li></ul>",
+                    "heading": "Return & Warranty"
+                  },
+                  "type": "collapse-tab",
+                  "visible": true
+                }
+              ],
+              "data": "product",
+              "id": "CYt",
+              "settings": {
+                "customize": false,
+                "default_setting_id": null,
+                "enable_carousel_custom_option": true,
+                "enable_image_zoom": true,
+                "image_position": "left",
+                "photo_list": "all",
+                "product": {
+                  "handle": "product-1-8",
+                  "id": 1000000000018959,
+                  "title": "product 1"
+                },
+                "template_product": "description_right"
+              },
+              "type": "featured-product",
+              "visible": true
+            }
+          }
+        },
+        {
+          "description": "Variant_Check display Feature Product on SF when not hide selector value",
+          "case_id": "SB_OLS_THE_INS_SF_FEATURED_PRODUCT_64",
+          "expect": {
+            "name_snapshot": "featuredproduct21_variant_not_hideselector.png",
+            "change_variant": "featuredproduct211_change_variant_not_hideselector.png",
+            "change_step2_variant": "featuredproduct212_change_step2_variant_not_hideselector.png"
+          },
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {},
+                  "type": "title",
+                  "visible": true
+                },
+                {
+                  "app": "review",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "badge",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "price_customize": true,
+                    "saving_format": "price",
+                    "show_compare_at_price": true,
+                    "show_price_savings": true
+                  },
+                  "type": "price",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "default_setting_id": null,
+                    "enable_color_swatches": true,
+                    "enable_group_swatches": true,
+                    "enable_select_variant_by_image": false,
+                    "hide_selector_enable": false,
+                    "link_product_options": false,
+                    "options_style": "buttons",
+                    "variants_customize": true
+                  },
+                  "type": "variants",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "buy_buttons_customize": true,
+                    "buy_with_paypal": false,
+                    "enable_same_line_quantity_box": false,
+                    "show_dynamic_checkout_button": false,
+                    "show_quantity_box": true,
+                    "show_quantity_box_and_add_cart_button": false
+                  },
+                  "type": "buy-buttons",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "quantity",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "bundle",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "trust_badge": "",
+                    "trust_badge_alt_text": "",
+                    "trust_badge_customize": true
+                  },
+                  "type": "trust-badge",
+                  "visible": true
+                },
+                {
+                  "settings": {},
+                  "type": "product-link",
+                  "visible": true
+                }
+              ],
+              "data": "product",
+              "id": "9EW",
+              "settings": {
+                "customize": true,
+                "default_setting_id": null,
+                "enable_carousel_custom_option": true,
+                "enable_image_zoom": true,
+                "image_position": "left",
+                "photo_list": "selected",
+                "product": {
+                  "handle": "product-4",
+                  "id": 1000000000018955,
+                  "title": "product 4"
+                },
+                "template_product": "description_right"
+              },
+              "type": "featured-product",
+              "visible": true
+            }
+          }
+        },
+        {
+          "description": "Variant_Check display Feature Product on SF when hide selector value",
+          "case_id": "SB_OLS_THE_INS_SF_FEATURED_PRODUCT_65",
+          "expect": {
+            "name_snapshot": "featuredproduct22_variant_hideselector.png",
+            "cart_slide": "S / Red"
+          },
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {},
+                  "type": "title",
+                  "visible": true
+                },
+                {
+                  "app": "review",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "badge",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "price_customize": true,
+                    "saving_format": "price",
+                    "show_compare_at_price": true,
+                    "show_price_savings": true
+                  },
+                  "type": "price",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "default_setting_id": null,
+                    "enable_color_swatches": true,
+                    "enable_group_swatches": true,
+                    "enable_select_variant_by_image": false,
+                    "hide_selector_enable": true,
+                    "link_product_options": false,
+                    "options_style": "buttons",
+                    "variants_customize": true
+                  },
+                  "type": "variants",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "buy_buttons_customize": true,
+                    "buy_with_paypal": false,
+                    "enable_same_line_quantity_box": false,
+                    "show_dynamic_checkout_button": false,
+                    "show_quantity_box": true,
+                    "show_quantity_box_and_add_cart_button": false
+                  },
+                  "type": "buy-buttons",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "quantity",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "bundle",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "trust_badge": "",
+                    "trust_badge_alt_text": "",
+                    "trust_badge_customize": true
+                  },
+                  "type": "trust-badge",
+                  "visible": true
+                },
+                {
+                  "settings": {},
+                  "type": "product-link",
+                  "visible": true
+                }
+              ],
+              "data": "product",
+              "id": "9EW",
+              "settings": {
+                "customize": true,
+                "default_setting_id": null,
+                "enable_carousel_custom_option": true,
+                "enable_image_zoom": true,
+                "image_position": "left",
+                "photo_list": "selected",
+                "product": {
+                  "handle": "product-2-3",
+                  "id": 1000000000018957,
+                  "title": "product 2"
+                },
+                "template_product": "description_right"
+              },
+              "type": "featured-product",
+              "visible": true
+            }
+          }
+        },
+        {
+          "description": "Variant_Check display Feature Product on SF when show available combination",
+          "case_id": "SB_OLS_THE_INS_SF_FEATURED_PRODUCT_66",
+          "expect": {
+            "wait_selector": ".product__image-gr",
+            "name_snapshot": "featuredproduct23_variant_available.png"
+          },
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {},
+                  "type": "title",
+                  "visible": true
+                },
+                {
+                  "app": "review",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "badge",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "price_customize": true,
+                    "saving_format": "price",
+                    "show_compare_at_price": true,
+                    "show_price_savings": true
+                  },
+                  "type": "price",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "default_setting_id": null,
+                    "enable_color_swatches": true,
+                    "enable_group_swatches": true,
+                    "enable_select_variant_by_image": false,
+                    "hide_selector_enable": false,
+                    "link_product_options": true,
+                    "options_style": "buttons",
+                    "variants_customize": true
+                  },
+                  "type": "variants",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "buy_buttons_customize": true,
+                    "buy_with_paypal": false,
+                    "enable_same_line_quantity_box": false,
+                    "show_dynamic_checkout_button": false,
+                    "show_quantity_box": true,
+                    "show_quantity_box_and_add_cart_button": false
+                  },
+                  "type": "buy-buttons",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "quantity",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "bundle",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "trust_badge": "",
+                    "trust_badge_alt_text": "",
+                    "trust_badge_customize": true
+                  },
+                  "type": "trust-badge",
+                  "visible": true
+                },
+                {
+                  "settings": {},
+                  "type": "product-link",
+                  "visible": true
+                }
+              ],
+              "data": "product",
+              "id": "9EW",
+              "settings": {
+                "customize": true,
+                "default_setting_id": null,
+                "enable_carousel_custom_option": true,
+                "enable_image_zoom": true,
+                "image_position": "left",
+                "photo_list": "selected",
+                "product": {
+                  "handle": "product-4",
+                  "id": 1000000000018955,
+                  "title": "product 4"
+                },
+                "template_product": "description_right"
+              },
+              "type": "featured-product",
+              "visible": true
+            }
+          }
+        },
+        {
+          "description": "Variant_Check choose variant by clicking image",
+          "case_id": "SB_OLS_THE_INS_SF_FEATURED_PRODUCT_67",
+          "expect": {
+            "click_variant_image": true
+          },
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {},
+                  "type": "title",
+                  "visible": true
+                },
+                {
+                  "app": "review",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "badge",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "price_customize": true,
+                    "saving_format": "price",
+                    "show_compare_at_price": true,
+                    "show_price_savings": true
+                  },
+                  "type": "price",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "default_setting_id": null,
+                    "enable_color_swatches": true,
+                    "enable_group_swatches": true,
+                    "enable_select_variant_by_image": true,
+                    "hide_selector_enable": true,
+                    "link_product_options": true,
+                    "options_style": "buttons",
+                    "variants_customize": true
+                  },
+                  "type": "variants",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "buy_buttons_customize": true,
+                    "buy_with_paypal": false,
+                    "enable_same_line_quantity_box": false,
+                    "show_dynamic_checkout_button": false,
+                    "show_quantity_box": true,
+                    "show_quantity_box_and_add_cart_button": false
+                  },
+                  "type": "buy-buttons",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "quantity",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "bundle",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "trust_badge": "",
+                    "trust_badge_alt_text": "",
+                    "trust_badge_customize": true
+                  },
+                  "type": "trust-badge",
+                  "visible": true
+                },
+                {
+                  "settings": {},
+                  "type": "product-link",
+                  "visible": true
+                }
+              ],
+              "data": "product",
+              "id": "9EW",
+              "settings": {
+                "customize": true,
+                "default_setting_id": null,
+                "enable_carousel_custom_option": true,
+                "enable_image_zoom": true,
+                "image_position": "left",
+                "photo_list": "all",
+                "product": {
+                  "handle": "product-2",
+                  "id": 1000000000020366,
+                  "title": "product 3"
+                },
+                "template_product": "description_right"
+              },
+              "type": "featured-product",
+              "visible": true
+            }
+          }
+        },
+        {
+          "description": "Varriant_Check swatches variant & color",
+          "case_id": "SB_OLS_THE_INS_SF_FEATURED_PRODUCT_68",
+          "expect": {
+            "name_snapshot": "featuredproduct25_variant_swatches.png"
+          },
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {},
+                  "type": "title",
+                  "visible": true
+                },
+                {
+                  "app": "review",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "badge",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "price_customize": true,
+                    "saving_format": "percent",
+                    "show_compare_at_price": false,
+                    "show_price_savings": false
+                  },
+                  "type": "price",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "default_setting_id": null,
+                    "enable_color_swatches": true,
+                    "enable_group_swatches": true,
+                    "enable_select_variant_by_image": true,
+                    "hide_selector_enable": false,
+                    "link_product_options": false,
+                    "options_style": "buttons",
+                    "variants_customize": true
+                  },
+                  "type": "variants",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "buy_buttons_customize": true,
+                    "buy_with_paypal": false,
+                    "enable_same_line_quantity_box": false,
+                    "show_dynamic_checkout_button": false,
+                    "show_quantity_box": true,
+                    "show_quantity_box_and_add_cart_button": false
+                  },
+                  "type": "buy-buttons",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "quantity",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "bundle",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "trust_badge": "",
+                    "trust_badge_alt_text": "",
+                    "trust_badge_customize": true
+                  },
+                  "type": "trust-badge",
+                  "visible": true
+                },
+                {
+                  "settings": {},
+                  "type": "product-link",
+                  "visible": true
+                }
+              ],
+              "data": "product",
+              "id": "9EW",
+              "settings": {
+                "customize": true,
+                "default_setting_id": null,
+                "enable_carousel_custom_option": true,
+                "enable_image_zoom": true,
+                "image_position": "left",
+                "photo_list": "all",
+                "product": {
+                  "handle": "product-4",
+                  "id": 1000000000018955,
+                  "title": "product 4"
+                },
+                "template_product": "description_right"
+              },
+              "type": "featured-product",
+              "visible": true
+            }
+          }
+        },
+        {
+          "description": "Varriant_UnCheck swatches variant & color",
+          "case_id": "SB_OLS_THE_INS_SF_FEATURED_PRODUCT_69",
+          "expect": {
+            "name_snapshot": "featuredproduct26_variant_uncheck_swatches.png"
+          },
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {},
+                  "type": "title",
+                  "visible": true
+                },
+                {
+                  "app": "review",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "badge",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "price_customize": true,
+                    "saving_format": "percent",
+                    "show_compare_at_price": false,
+                    "show_price_savings": false
+                  },
+                  "type": "price",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "default_setting_id": null,
+                    "enable_color_swatches": false,
+                    "enable_group_swatches": false,
+                    "enable_select_variant_by_image": true,
+                    "hide_selector_enable": false,
+                    "link_product_options": false,
+                    "options_style": "buttons",
+                    "variants_customize": true
+                  },
+                  "type": "variants",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "buy_buttons_customize": true,
+                    "buy_with_paypal": false,
+                    "enable_same_line_quantity_box": false,
+                    "show_dynamic_checkout_button": false,
+                    "show_quantity_box": true,
+                    "show_quantity_box_and_add_cart_button": false
+                  },
+                  "type": "buy-buttons",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "quantity",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "bundle",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "trust_badge": "",
+                    "trust_badge_alt_text": "",
+                    "trust_badge_customize": true
+                  },
+                  "type": "trust-badge",
+                  "visible": true
+                },
+                {
+                  "settings": {},
+                  "type": "product-link",
+                  "visible": true
+                }
+              ],
+              "data": "product",
+              "id": "9EW",
+              "settings": {
+                "customize": true,
+                "default_setting_id": null,
+                "enable_carousel_custom_option": true,
+                "enable_image_zoom": true,
+                "image_position": "left",
+                "photo_list": "all",
+                "product": {
+                  "handle": "product-4",
+                  "id": 1000000000018955,
+                  "title": "product 4"
+                },
+                "template_product": "description_right"
+              },
+              "type": "featured-product",
+              "visible": true
+            }
+          }
+        },
+        {
+          "description": "Varriant_Check swatches variant & color when style = dropdown",
+          "case_id": "SB_OLS_THE_INS_SF_FEATURED_PRODUCT_70",
+          "expect": {
+            "name_snapshot": "featuredproduct27_variant_swatches_dropdown_style.png"
+          },
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {},
+                  "type": "title",
+                  "visible": true
+                },
+                {
+                  "app": "review",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "badge",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "price_customize": true,
+                    "saving_format": "percent",
+                    "show_compare_at_price": false,
+                    "show_price_savings": false
+                  },
+                  "type": "price",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "default_setting_id": null,
+                    "enable_color_swatches": true,
+                    "enable_group_swatches": true,
+                    "enable_select_variant_by_image": true,
+                    "hide_selector_enable": false,
+                    "link_product_options": false,
+                    "options_style": "select_dropdown_list",
+                    "variants_customize": true
+                  },
+                  "type": "variants",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "buy_buttons_customize": true,
+                    "buy_with_paypal": false,
+                    "enable_same_line_quantity_box": false,
+                    "show_dynamic_checkout_button": false,
+                    "show_quantity_box": true,
+                    "show_quantity_box_and_add_cart_button": false
+                  },
+                  "type": "buy-buttons",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "quantity",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "bundle",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "trust_badge": "",
+                    "trust_badge_alt_text": "",
+                    "trust_badge_customize": true
+                  },
+                  "type": "trust-badge",
+                  "visible": true
+                },
+                {
+                  "settings": {},
+                  "type": "product-link",
+                  "visible": true
+                }
+              ],
+              "data": "product",
+              "id": "9EW",
+              "settings": {
+                "customize": true,
+                "default_setting_id": null,
+                "enable_carousel_custom_option": true,
+                "enable_image_zoom": true,
+                "image_position": "left",
+                "photo_list": "all",
+                "product": {
+                  "handle": "product-4",
+                  "id": 1000000000018955,
+                  "title": "product 4"
+                },
+                "template_product": "description_right"
+              },
+              "type": "featured-product",
+              "visible": true
+            }
+          }
+        },
+        {
+          "description": "TrustBadge_Check not upload trust badge image",
+          "case_id": "SB_OLS_THE_INS_SF_FEATURED_PRODUCT_71",
+          "expect": {
+            "name_snapshot": "featuredproduct28_trustBadge_not_upload_image.png",
+            "alt_text": "test alt text"
+          },
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {},
+                  "type": "title",
+                  "visible": true
+                },
+                {
+                  "app": "review",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "badge",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "price_customize": true,
+                    "saving_format": "percent",
+                    "show_compare_at_price": false,
+                    "show_price_savings": false
+                  },
+                  "type": "price",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "default_setting_id": null,
+                    "enable_color_swatches": true,
+                    "enable_group_swatches": true,
+                    "enable_select_variant_by_image": true,
+                    "hide_selector_enable": false,
+                    "link_product_options": false,
+                    "options_style": "select_dropdown_list",
+                    "variants_customize": true
+                  },
+                  "type": "variants",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "buy_buttons_customize": true,
+                    "buy_with_paypal": true,
+                    "enable_same_line_quantity_box": true,
+                    "show_dynamic_checkout_button": true,
+                    "show_quantity_box": true,
+                    "show_quantity_box_and_add_cart_button": false
+                  },
+                  "type": "buy-buttons",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "quantity",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "bundle",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "trust_badge": "",
+                    "trust_badge_alt_text": "test alt text",
+                    "trust_badge_customize": true
+                  },
+                  "type": "trust-badge",
+                  "visible": true
+                },
+                {
+                  "settings": {},
+                  "type": "product-link",
+                  "visible": true
+                }
+              ],
+              "data": "product",
+              "id": "9EW",
+              "settings": {
+                "customize": true,
+                "default_setting_id": null,
+                "enable_carousel_custom_option": true,
+                "enable_image_zoom": true,
+                "image_position": "left",
+                "photo_list": "all",
+                "product": {
+                  "handle": "product-1-8",
+                  "id": 1000000000018959,
+                  "title": "product 1"
+                },
+                "template_product": "description_right"
+              },
+              "type": "featured-product",
+              "visible": true
+            }
+          }
+        },
+        {
+          "description": "TrustBadge_Check upload trust badge image",
+          "case_id": "SB_OLS_THE_INS_SF_FEATURED_PRODUCT_72",
+          "expect": {
+            "wait_selector": ".product__trust-badge [data-loaded=\"true\"]",
+            "name_snapshot": "featuredproduct29_trustBadge_upload_image.png",
+            "alt_text": "test alt text"
+          },
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {},
+                  "type": "title",
+                  "visible": true
+                },
+                {
+                  "app": "review",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "badge",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "price_customize": true,
+                    "saving_format": "percent",
+                    "show_compare_at_price": false,
+                    "show_price_savings": false
+                  },
+                  "type": "price",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "default_setting_id": null,
+                    "enable_color_swatches": true,
+                    "enable_group_swatches": true,
+                    "enable_select_variant_by_image": true,
+                    "hide_selector_enable": false,
+                    "link_product_options": false,
+                    "options_style": "select_dropdown_list",
+                    "variants_customize": true
+                  },
+                  "type": "variants",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "buy_buttons_customize": true,
+                    "buy_with_paypal": true,
+                    "enable_same_line_quantity_box": true,
+                    "show_dynamic_checkout_button": true,
+                    "show_quantity_box": true,
+                    "show_quantity_box_and_add_cart_button": false
+                  },
+                  "type": "buy-buttons",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "quantity",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "bundle",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "trust_badge": "https://img.shopbase.com/files/10357511/2022/08/16/1660642747062e55a370.jpeg",
+                    "trust_badge_alt_text": "test alt text",
+                    "trust_badge_customize": true
+                  },
+                  "type": "trust-badge",
+                  "visible": true
+                },
+                {
+                  "settings": {},
+                  "type": "product-link",
+                  "visible": true
+                }
+              ],
+              "data": "product",
+              "id": "9EW",
+              "settings": {
+                "customize": true,
+                "default_setting_id": null,
+                "enable_carousel_custom_option": true,
+                "enable_image_zoom": true,
+                "image_position": "left",
+                "photo_list": "all",
+                "product": {
+                  "handle": "product-2-3",
+                  "id": 1000000000018957,
+                  "title": "product 2"
+                },
+                "template_product": "description_right"
+              },
+              "type": "featured-product",
+              "visible": true
+            }
+          }
+        },
+        {
+          "description": "Page_Check collapse page block = true & Description position = right",
+          "case_id": "SB_OLS_THE_INS_SF_FEATURED_PRODUCT_73",
+          "being_collapse_block": ".product_collapse",
+          "page_content": "page Linh test",
+          "expect": {
+            "expand_block": ".product__description-html p"
+          },
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {},
+                  "type": "title",
+                  "visible": true
+                },
+                {
+                  "app": "review",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "badge",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "price_customize": true,
+                    "saving_format": "percent",
+                    "show_compare_at_price": false,
+                    "show_price_savings": false
+                  },
+                  "type": "price",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "default_setting_id": null,
+                    "enable_color_swatches": true,
+                    "enable_group_swatches": true,
+                    "enable_select_variant_by_image": true,
+                    "hide_selector_enable": false,
+                    "link_product_options": false,
+                    "options_style": "select_dropdown_list",
+                    "variants_customize": true
+                  },
+                  "type": "variants",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "buy_buttons_customize": true,
+                    "buy_with_paypal": true,
+                    "enable_same_line_quantity_box": true,
+                    "show_dynamic_checkout_button": true,
+                    "show_quantity_box": true,
+                    "show_quantity_box_and_add_cart_button": false
+                  },
+                  "type": "buy-buttons",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "quantity",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "bundle",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "trust_badge": "",
+                    "trust_badge_alt_text": "abcdf",
+                    "trust_badge_customize": true
+                  },
+                  "type": "trust-badge",
+                  "visible": true
+                },
+                {
+                  "settings": {},
+                  "type": "product-link",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "collapsed": false,
+                    "page": "page-3"
+                  },
+                  "type": "page",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "collapsed": false,
+                    "page": "page-2"
+                  },
+                  "type": "page",
+                  "visible": true
+                }
+              ],
+              "data": "product",
+              "id": "9EW",
+              "settings": {
+                "customize": true,
+                "default_setting_id": null,
+                "enable_carousel_custom_option": true,
+                "enable_image_zoom": true,
+                "image_position": "left",
+                "photo_list": "all",
+                "product": {
+                  "handle": "product-1-8",
+                  "id": 1000000000018959,
+                  "title": "product 1"
+                },
+                "template_product": "description_right"
+              },
+              "type": "featured-product",
+              "visible": true
+            }
+          }
+        },
+        {
+          "description": "Page_Check collapse page block = false & Description position = right",
+          "case_id": "SB_OLS_THE_INS_SF_FEATURED_PRODUCT_74",
+          "page_content": "page Linh test",
+          "expect": {
+            "expand_block": ".product__description-html p"
+          },
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {},
+                  "type": "title",
+                  "visible": true
+                },
+                {
+                  "app": "review",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "badge",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "price_customize": true,
+                    "saving_format": "percent",
+                    "show_compare_at_price": false,
+                    "show_price_savings": false
+                  },
+                  "type": "price",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "default_setting_id": null,
+                    "enable_color_swatches": true,
+                    "enable_group_swatches": true,
+                    "enable_select_variant_by_image": true,
+                    "hide_selector_enable": false,
+                    "link_product_options": false,
+                    "options_style": "select_dropdown_list",
+                    "variants_customize": true
+                  },
+                  "type": "variants",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "buy_buttons_customize": true,
+                    "buy_with_paypal": true,
+                    "enable_same_line_quantity_box": true,
+                    "show_dynamic_checkout_button": true,
+                    "show_quantity_box": true,
+                    "show_quantity_box_and_add_cart_button": false
+                  },
+                  "type": "buy-buttons",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "quantity",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "bundle",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "trust_badge": "",
+                    "trust_badge_alt_text": "abcdf",
+                    "trust_badge_customize": true
+                  },
+                  "type": "trust-badge",
+                  "visible": true
+                },
+                {
+                  "settings": {},
+                  "type": "product-link",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "collapsed": false,
+                    "page": "page-3"
+                  },
+                  "type": "page",
+                  "visible": true
+                }
+              ],
+              "data": "product",
+              "id": "9EW",
+              "settings": {
+                "customize": true,
+                "default_setting_id": null,
+                "enable_carousel_custom_option": true,
+                "enable_image_zoom": true,
+                "image_position": "left",
+                "photo_list": "all",
+                "product": {
+                  "handle": "product-1-8",
+                  "id": 1000000000018959,
+                  "title": "product 1"
+                },
+                "template_product": "description_right"
+              },
+              "type": "featured-product",
+              "visible": true
+            }
+          }
+        },
+        {
+          "description": "Page_Check page block when setting Description position = below",
+          "case_id": "SB_OLS_THE_INS_SF_FEATURED_PRODUCT_75",
+          "page_content": "page Linh test",
+          "expect": {
+            "wait_selector": ".items-stretch",
+            "name_snapshot": "featuredproduct32_setting_collapse_tab_below.png",
+            "next_page_tab": "collapse tab"
+          },
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {},
+                  "type": "title",
+                  "visible": true
+                },
+                {
+                  "app": "review",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "badge",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "price_customize": true,
+                    "saving_format": "percent",
+                    "show_compare_at_price": false,
+                    "show_price_savings": false
+                  },
+                  "type": "price",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "default_setting_id": null,
+                    "enable_color_swatches": true,
+                    "enable_group_swatches": true,
+                    "enable_select_variant_by_image": true,
+                    "hide_selector_enable": false,
+                    "link_product_options": false,
+                    "options_style": "select_dropdown_list",
+                    "variants_customize": true
+                  },
+                  "type": "variants",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "buy_buttons_customize": true,
+                    "buy_with_paypal": true,
+                    "enable_same_line_quantity_box": true,
+                    "show_dynamic_checkout_button": true,
+                    "show_quantity_box": true,
+                    "show_quantity_box_and_add_cart_button": false
+                  },
+                  "type": "buy-buttons",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "quantity",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "bundle",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "trust_badge": "",
+                    "trust_badge_alt_text": "abcdf",
+                    "trust_badge_customize": true
+                  },
+                  "type": "trust-badge",
+                  "visible": true
+                },
+                {
+                  "settings": {},
+                  "type": "product-link",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "collapsed": false,
+                    "page": "page-3"
+                  },
+                  "type": "page",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "collapsed": false,
+                    "page": "page-4"
+                  },
+                  "type": "page",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "collapsed": false,
+                    "heading": "Product description"
+                  },
+                  "type": "description",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "collapsed": false,
+                    "content": "collapse tab",
+                    "heading": "Return & Warranty"
+                  },
+                  "type": "collapse-tab",
+                  "visible": true
+                }
+              ],
+              "data": "product",
+              "id": "9EW",
+              "settings": {
+                "customize": true,
+                "default_setting_id": null,
+                "enable_carousel_custom_option": true,
+                "enable_image_zoom": true,
+                "image_position": "left",
+                "photo_list": "all",
+                "product": {
+                  "handle": "product-1-8",
+                  "id": 1000000000018959,
+                  "title": "product 1"
+                },
+                "template_product": "description_bottom"
+              },
+              "type": "featured-product",
+              "visible": true
+            }
+          }
+        },
+        {
+          "description": "Page_Check page block when duplicate page block",
+          "case_id": "SB_OLS_THE_INS_SF_FEATURED_PRODUCT_77",
+          "expect": {
+            "name_snapshot": "featuredproduct34_page_duplicate_block.png"
+          },
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {},
+                  "type": "title",
+                  "visible": true
+                },
+                {
+                  "app": "review",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "badge",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "price_customize": true,
+                    "saving_format": "percent",
+                    "show_compare_at_price": false,
+                    "show_price_savings": false
+                  },
+                  "type": "price",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "default_setting_id": null,
+                    "enable_color_swatches": true,
+                    "enable_group_swatches": true,
+                    "enable_select_variant_by_image": true,
+                    "hide_selector_enable": false,
+                    "link_product_options": false,
+                    "options_style": "select_dropdown_list",
+                    "variants_customize": true
+                  },
+                  "type": "variants",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "buy_buttons_customize": true,
+                    "buy_with_paypal": true,
+                    "enable_same_line_quantity_box": true,
+                    "show_dynamic_checkout_button": true,
+                    "show_quantity_box": true,
+                    "show_quantity_box_and_add_cart_button": false
+                  },
+                  "type": "buy-buttons",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "quantity",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "bundle",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "trust_badge": "",
+                    "trust_badge_alt_text": "abcdf",
+                    "trust_badge_customize": true
+                  },
+                  "type": "trust-badge",
+                  "visible": true
+                },
+                {
+                  "settings": {},
+                  "type": "product-link",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "collapsed": false,
+                    "page": "page-3"
+                  },
+                  "type": "page",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "collapsed": false,
+                    "page": "page-3"
+                  },
+                  "type": "page",
+                  "visible": true
+                }
+              ],
+              "data": "product",
+              "id": "9EW",
+              "settings": {
+                "customize": true,
+                "default_setting_id": null,
+                "enable_carousel_custom_option": true,
+                "enable_image_zoom": true,
+                "image_position": "left",
+                "photo_list": "all",
+                "product": {
+                  "handle": "product-1-8",
+                  "id": 1000000000018959,
+                  "title": "product 1"
+                },
+                "template_product": "description_right"
+              },
+              "type": "featured-product",
+              "visible": true
+            }
+          }
+        },
+        {
+          "description": "linkdetail_Check link detail block",
+          "case_id": "SB_OLS_THE_INS_SF_FEATURED_PRODUCT_78",
+          "expect": {
+            "selector": ".link-underline",
+            "redirect_link": "/products/product-1-8",
+            "wait_element": ".breadcrumb_link"
+          },
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "collapsed": false,
+                    "content": "<ul><li><strong>100% Secure payment</strong> with SSL Encryption.</li><li>If you're not <strong>100% satisfied</strong>, let us know and we'll make it right.</li></ul>",
+                    "heading": "Return & Warranty"
+                  },
+                  "type": "collapse-tab",
+                  "visible": true
+                },
+                {
+                  "settings": {},
+                  "type": "title",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "price_customize": true,
+                    "saving_format": "percent",
+                    "show_compare_at_price": false,
+                    "show_price_savings": false
+                  },
+                  "type": "price",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "default_setting_id": null,
+                    "enable_color_swatches": true,
+                    "enable_group_swatches": true,
+                    "enable_select_variant_by_image": true,
+                    "hide_selector_enable": false,
+                    "link_product_options": false,
+                    "options_style": "select_dropdown_list",
+                    "variants_customize": true
+                  },
+                  "type": "variants",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "buy_buttons_customize": true,
+                    "buy_with_paypal": true,
+                    "enable_same_line_quantity_box": true,
+                    "show_dynamic_checkout_button": true,
+                    "show_quantity_box": true,
+                    "show_quantity_box_and_add_cart_button": false
+                  },
+                  "type": "buy-buttons",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "collapsed": false,
+                    "heading": "Product description"
+                  },
+                  "type": "description",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "collapsed": false,
+                    "page": "page-4"
+                  },
+                  "type": "page",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "content": "Text block",
+                    "style": "body_text"
+                  },
+                  "type": "text",
+                  "visible": true
+                },
+                {
+                  "settings": {},
+                  "type": "product-link",
+                  "visible": true
+                }
+              ],
+              "data": "product",
+              "id": "9EW",
+              "settings": {
+                "customize": true,
+                "default_setting_id": null,
+                "enable_carousel_custom_option": true,
+                "enable_image_zoom": true,
+                "image_position": "left",
+                "photo_list": "all",
+                "product": {
+                  "handle": "product-1-8",
+                  "id": 1000000000018959,
+                  "title": "product 1"
+                },
+                "template_product": "description_right"
+              },
+              "type": "featured-product",
+              "visible": true
+            }
+          }
+        },
+        {
+          "description": "Check display collapse tab block on SF",
+          "case_id": "SB_OLS_THE_INS_SF_FEATURED_PRODUCT_79",
+          "expect": {
+            "name_snapshot": "featuredproduct36_collapse_tab_block.png"
+          },
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {},
+                  "type": "title",
+                  "visible": true
+                },
+                {
+                  "app": "review",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "badge",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "price_customize": false,
+                    "saving_format": "price",
+                    "show_compare_at_price": true,
+                    "show_price_savings": true
+                  },
+                  "type": "price",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "default_setting_id": null,
+                    "enable_color_swatches": true,
+                    "enable_group_swatches": true,
+                    "enable_select_variant_by_image": false,
+                    "hide_selector_enable": true,
+                    "link_product_options": false,
+                    "options_style": "buttons",
+                    "variants_customize": false
+                  },
+                  "type": "variants",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "buy_buttons_customize": false,
+                    "buy_with_paypal": false,
+                    "enable_same_line_quantity_box": false,
+                    "show_dynamic_checkout_button": false,
+                    "show_quantity_box": true,
+                    "show_quantity_box_and_add_cart_button": false
+                  },
+                  "type": "buy-buttons",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "quantity",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "bundle",
+                  "visible": true
+                },
+                {
+                  "settings": {},
+                  "type": "product-link",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "collapsed": false,
+                    "content": "",
+                    "heading": "Return & Warranty"
+                  },
+                  "type": "collapse-tab",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "collapsed": false,
+                    "content": "<ul><li><strong>100% Secure payment</strong> with SSL Encryption.</li><li>If you're not <strong>100% satisfied</strong>, let us know and we'll make it right.</li></ul>",
+                    "heading": ""
+                  },
+                  "type": "collapse-tab",
+                  "visible": true
+                }
+              ],
+              "data": "product",
+              "id": "GF8",
+              "settings": {
+                "customize": true,
+                "default_setting_id": null,
+                "enable_carousel_custom_option": true,
+                "enable_image_zoom": true,
+                "image_position": "left",
+                "photo_list": "all",
+                "product": {
+                  "handle": "product-1-8",
+                  "id": 1000000000018959,
+                  "title": "product 1"
+                },
+                "template_product": "description_right"
+              },
+              "type": "featured-product",
+              "visible": true
+            }
+          }
+        },
+        {
+          "description": "Check display description block on SF when setting expand with product have description",
+          "case_id": "SB_OLS_THE_INS_SF_FEATURED_PRODUCT_80",
+          "expect": {
+            "wait_selector": ".product__trust-badge [data-loaded=\"true\"]",
+            "name_snapshot": "featuredproduct37_expand_description_block.png"
+          },
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {},
+                  "type": "title",
+                  "visible": true
+                },
+                {
+                  "app": "review",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "badge",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "price_customize": false,
+                    "saving_format": "price",
+                    "show_compare_at_price": true,
+                    "show_price_savings": true
+                  },
+                  "type": "price",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "default_setting_id": null,
+                    "enable_color_swatches": true,
+                    "enable_group_swatches": true,
+                    "enable_select_variant_by_image": false,
+                    "hide_selector_enable": true,
+                    "link_product_options": false,
+                    "options_style": "buttons",
+                    "variants_customize": false
+                  },
+                  "type": "variants",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "buy_buttons_customize": false,
+                    "buy_with_paypal": false,
+                    "enable_same_line_quantity_box": false,
+                    "show_dynamic_checkout_button": false,
+                    "show_quantity_box": true,
+                    "show_quantity_box_and_add_cart_button": false
+                  },
+                  "type": "buy-buttons",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "quantity",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "bundle",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "trust_badge": "",
+                    "trust_badge_alt_text": "",
+                    "trust_badge_customize": false
+                  },
+                  "type": "trust-badge",
+                  "visible": true
+                },
+                {
+                  "settings": {},
+                  "type": "product-link",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "collapsed": false,
+                    "heading": "Product description"
+                  },
+                  "type": "description",
+                  "visible": true
+                }
+              ],
+              "data": "product",
+              "id": "ZCC",
+              "settings": {
+                "customize": false,
+                "default_setting_id": null,
+                "enable_carousel_custom_option": true,
+                "enable_image_zoom": true,
+                "image_position": "left",
+                "photo_list": "all",
+                "product": {
+                  "handle": "product-2-3",
+                  "id": 1000000000018957,
+                  "title": "product 2"
+                },
+                "template_product": "description_right"
+              },
+              "type": "featured-product",
+              "visible": true
+            }
+          }
+        },
+        {
+          "description": "Check display description block on SF when setting expand with product have no description",
+          "case_id": "SB_OLS_THE_INS_SF_FEATURED_PRODUCT_81",
+          "expect": {
+            "name_snapshot": "featuredproduct38_have_no_description_block.png"
+          },
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {},
+                  "type": "title",
+                  "visible": true
+                },
+                {
+                  "app": "review",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "badge",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "price_customize": false,
+                    "saving_format": "price",
+                    "show_compare_at_price": true,
+                    "show_price_savings": true
+                  },
+                  "type": "price",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "default_setting_id": null,
+                    "enable_color_swatches": true,
+                    "enable_group_swatches": true,
+                    "enable_select_variant_by_image": false,
+                    "hide_selector_enable": true,
+                    "link_product_options": false,
+                    "options_style": "buttons",
+                    "variants_customize": false
+                  },
+                  "type": "variants",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "buy_buttons_customize": false,
+                    "buy_with_paypal": false,
+                    "enable_same_line_quantity_box": false,
+                    "show_dynamic_checkout_button": false,
+                    "show_quantity_box": true,
+                    "show_quantity_box_and_add_cart_button": false
+                  },
+                  "type": "buy-buttons",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "quantity",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "bundle",
+                  "visible": true
+                },
+                {
+                  "settings": {},
+                  "type": "product-link",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "collapsed": false,
+                    "heading": "Product description"
+                  },
+                  "type": "description",
+                  "visible": true
+                }
+              ],
+              "data": "product",
+              "id": "ZCC",
+              "settings": {
+                "customize": false,
+                "default_setting_id": null,
+                "enable_carousel_custom_option": true,
+                "enable_image_zoom": true,
+                "image_position": "left",
+                "photo_list": "all",
+                "product": {
+                  "handle": "product-1-8",
+                  "id": 1000000000018959,
+                  "title": "product 1"
+                },
+                "template_product": "description_right"
+              },
+              "type": "featured-product",
+              "visible": true
+            }
+          }
+        },
+        {
+          "description": "Check display Text block on SF",
+          "case_id": "SB_OLS_THE_INS_SF_FEATURED_PRODUCT_82",
+          "expect": {
+            "name_snapshot": "featuredproduct39_text_block.png"
+          },
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {},
+                  "type": "title",
+                  "visible": true
+                },
+                {
+                  "app": "review",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "badge",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "price_customize": false,
+                    "saving_format": "price",
+                    "show_compare_at_price": true,
+                    "show_price_savings": true
+                  },
+                  "type": "price",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "default_setting_id": null,
+                    "enable_color_swatches": true,
+                    "enable_group_swatches": true,
+                    "enable_select_variant_by_image": false,
+                    "hide_selector_enable": true,
+                    "link_product_options": false,
+                    "options_style": "buttons",
+                    "variants_customize": false
+                  },
+                  "type": "variants",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "buy_buttons_customize": false,
+                    "buy_with_paypal": false,
+                    "enable_same_line_quantity_box": false,
+                    "show_dynamic_checkout_button": false,
+                    "show_quantity_box": true,
+                    "show_quantity_box_and_add_cart_button": false
+                  },
+                  "type": "buy-buttons",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "quantity",
+                  "visible": true
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "bundle",
+                  "visible": true
+                },
+                {
+                  "settings": {},
+                  "type": "product-link",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "collapsed": false,
+                    "heading": "Product description"
+                  },
+                  "type": "description",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "content": "Text block 1",
+                    "style": "subtitle"
+                  },
+                  "type": "text",
+                  "visible": true
+                }
+              ],
+              "data": "product",
+              "id": "ZCC",
+              "settings": {
+                "customize": false,
+                "default_setting_id": null,
+                "enable_carousel_custom_option": true,
+                "enable_image_zoom": true,
+                "image_position": "left",
+                "photo_list": "all",
+                "product": {
+                  "handle": "product-1-8",
+                  "id": 1000000000018959,
+                  "title": "product 1"
+                },
+                "template_product": "description_right"
+              },
+              "type": "featured-product",
+              "visible": true
+            }
+          }
+        },
+        {
+          "description": "Check display on SF when hide block",
+          "case_id": "SB_OLS_THE_INS_SF_FEATURED_PRODUCT_83",
+          "expect": {
+            "name_snapshot": "featuredproduct40_hide_block.png"
+          },
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {},
+                  "type": "title",
+                  "visible": true
+                },
+                {
+                  "app": "review",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "badge"
+                },
+                {
+                  "settings": {
+                    "price_customize": false,
+                    "saving_format": "price",
+                    "show_compare_at_price": true,
+                    "show_price_savings": true
+                  },
+                  "type": "price",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "default_setting_id": null,
+                    "enable_color_swatches": true,
+                    "enable_group_swatches": true,
+                    "enable_select_variant_by_image": false,
+                    "hide_selector_enable": true,
+                    "link_product_options": false,
+                    "options_style": "buttons",
+                    "variants_customize": false
+                  },
+                  "type": "variants",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "buy_buttons_customize": false,
+                    "buy_with_paypal": false,
+                    "enable_same_line_quantity_box": false,
+                    "show_dynamic_checkout_button": false,
+                    "show_quantity_box": true,
+                    "show_quantity_box_and_add_cart_button": false
+                  },
+                  "type": "buy-buttons",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "trust_badge": "",
+                    "trust_badge_alt_text": "",
+                    "trust_badge_customize": false
+                  },
+                  "type": "trust-badge"
+                },
+                {
+                  "settings": {
+                    "collapsed": false,
+                    "heading": "Product description"
+                  },
+                  "type": "description"
+                },
+                {
+                  "settings": {
+                    "collapsed": false,
+                    "content": "<ul><li><strong>100% Secure payment</strong> with SSL Encryption.</li><li>If you're not <strong>100% satisfied</strong>, let us know and we'll make it right.</li></ul>",
+                    "heading": "Return & Warranty"
+                  },
+                  "type": "collapse-tab"
+                },
+                {
+                  "settings": {
+                    "collapsed": false,
+                    "page": ""
+                  },
+                  "type": "page"
+                },
+                {
+                  "settings": {
+                    "content": "Text block",
+                    "style": "body_text"
+                  },
+                  "type": "text"
+                },
+                {
+                  "settings": {},
+                  "type": "product-link"
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "bundle"
+                },
+                {
+                  "app": "upsell",
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "quantity"
+                }
+              ],
+              "data": "product",
+              "id": "bjq",
+              "settings": {
+                "customize": false,
+                "default_setting_id": null,
+                "enable_carousel_custom_option": true,
+                "enable_image_zoom": true,
+                "image_position": "left",
+                "photo_list": "all",
+                "product": {
+                  "handle": "product-1-8",
+                  "id": 1000000000018959,
+                  "title": "product 1"
+                },
+                "template_product": "description_right"
+              },
+              "type": "featured-product",
+              "visible": true
+            }
+          }
+        },
+        {
+          "description": "Check display on SF when drap/drop block",
+          "case_id": "SB_OLS_THE_INS_SF_FEATURED_PRODUCT_84",
+          "expect": {
+            "name_snapshot": "featuredproduct41_drap_drop_block.png"
+          },
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "collapsed": true,
+                    "content": "<ul><li><strong>100% Secure payment</strong> with SSL Encryption.</li><li>If you're not <strong>100% satisfied</strong>, let us know and we'll make it right.</li></ul>",
+                    "heading": "Policies"
+                  },
+                  "type": "collapse-tab",
+                  "visible": true
+                },
+                {
+                  "settings": {},
+                  "type": "title",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "price_customize": false,
+                    "saving_format": "price",
+                    "show_compare_at_price": true,
+                    "show_price_savings": true
+                  },
+                  "type": "price",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "default_setting_id": null,
+                    "enable_color_swatches": true,
+                    "enable_group_swatches": true,
+                    "enable_select_variant_by_image": false,
+                    "hide_selector_enable": true,
+                    "link_product_options": false,
+                    "options_style": "buttons",
+                    "variants_customize": false
+                  },
+                  "type": "variants",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "buy_buttons_customize": false,
+                    "buy_with_paypal": false,
+                    "enable_same_line_quantity_box": false,
+                    "show_dynamic_checkout_button": false,
+                    "show_quantity_box": true,
+                    "show_quantity_box_and_add_cart_button": false
+                  },
+                  "type": "buy-buttons",
+                  "visible": true
+                },
+                {
+                  "settings": {},
+                  "type": "product-link",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "content": "Text block",
+                    "style": "body_text"
+                  },
+                  "type": "text",
+                  "visible": true
+                }
+              ],
+              "data": "product",
+              "id": "Cty",
+              "settings": {
+                "customize": false,
+                "default_setting_id": null,
+                "enable_carousel_custom_option": true,
+                "enable_image_zoom": true,
+                "image_position": "left",
+                "photo_list": "all",
+                "product": {
+                  "handle": "product-1-8",
+                  "id": 1100000000823249,
+                  "title": "product 1"
+                },
+                "template_product": "description_right"
+              },
+              "type": "featured-product",
+              "visible": true
+            }
+          }
+        }
+      ]
+    }
+  }
+}

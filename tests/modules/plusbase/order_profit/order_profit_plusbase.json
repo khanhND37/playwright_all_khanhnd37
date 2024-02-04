@@ -1,0 +1,332 @@
+{
+  "env": {
+    "prod": {
+      "domain": "plusbase-auto.onshopbase.com",
+      "api": "https://api.shopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_name": "plusbase-auto",
+      "shop_id": 10269907,
+      "user_id": 73782,
+      "timeout": 300000,
+      "theme": "inside",
+      "country_currency": "United States",
+      "plb_template": {
+        "domain": "template-store.onshopbase.com",
+        "shop_name": "template-store",
+        "user_id": "9131323",
+        "shop_id": "10258217",
+        "username": "qas@beeketing.net",
+        "password": "123456"
+      }
+    },
+    "prodtest": {
+      "domain": "plusbase-auto-prodtest.onshopbase.com",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_name": "plusbase-auto-prodtest",
+      "shop_id": 10370177,
+      "user_id": 73782,
+      "timeout": 300000,
+      "theme": "inside",
+      "country_currency": "United States",
+      "plb_template": {
+        "domain": "plusbase-templateprodtest.onshopbase.com",
+        "shop_name": "plusbase-templateprodtest",
+        "user_id": "9131323",
+        "shop_id": "10364655",
+        "username": "qas@beeketing.net",
+        "password": "123456"
+      },
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "plusbase-auto.myshopbase.net",
+      "shop_name": "plusbase-auto",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_id": 10321495,
+      "user_id": 73800,
+      "timeout": 1000000,
+      "theme": "inside",
+      "country_currency": "United States",
+      "plb_template": {
+        "domain": "plusbase-checkout.myshopbase.net",
+        "shop_name": "plusbase-checkout",
+        "user_id": "87262",
+        "shop_id": "10060862",
+        "username": "phuongpham@beeketing.net",
+        "password": "123456"
+      }
+    }
+  },
+  "paymentFeePercent": "0.03",
+  "processingFeePercent": "0.04",
+  "customer_info": {
+    "email": "tester@maildrop.cc",
+    "first_name": "Plus",
+    "last_name": "Base",
+    "address": "181, Wellington St W",
+    "country": "Canada",
+    "state": "Ontario",
+    "city": "Aurora",
+    "zipcode": "L4G",
+    "phone_number": "505-646-2276"
+  },
+  "card_infor": {
+    "number": "4242424242424242",
+    "holder_name": "test123",
+    "expire_date": "12 / 25",
+    "cvv": "116"
+  },
+  "cases": {
+    "SB_PLB_PRO": {
+      "data": [
+        {
+          "case_id": "SB_PLB_PRO_1",
+          "description": "Verify profit với order lúc tạo mới có phí ship, tax include",
+          "product": "(Test product)Plus Size Cut Out - Adjusted= 0",
+          "quantity": "1",
+          "isDiscount": false,
+          "isTax": true,
+          "tax_include": true,
+          "isTip": false
+        },
+        {
+          "case_id": "SB_PLB_PRO_2",
+          "description": "Verify profit order tạo mới có phí ship và có discount code = Percentage, tax include",
+          "product": "(Test product)Plus Size Cut Out - Adjusted= 0",
+          "quantity": "3",
+          "isTax": true,
+          "tax_include": true,
+          "isTip": false,
+          "isDiscount": true,
+          "discount_code": "Discount 30"
+        },
+        {
+          "case_id": "SB_PLB_PRO_3",
+          "description": "Verify profit order tạo mới có phí ship và có discount code = Fixed amount, tax include",
+          "product": "(Test product)Plus Size Cut Out - Adjusted= 0",
+          "quantity": "3",
+          "isTax": true,
+          "tax_include": true,
+          "isTip": false,
+          "isDiscount": true,
+          "discount_code": "Fixed amount"
+        },
+        {
+          "case_id": "SB_PLB_PRO_4",
+          "description": "Verify profit order tạo mới có phí ship và có discount code là freeship, tax include",
+          "product": "(Test product)Plus Size Cut Out - Adjusted= 0",
+          "quantity": "2",
+          "isTax": true,
+          "tax_include": true,
+          "isTip": false,
+          "isDiscount": true,
+          "discount_code": "Freeship"
+        },
+        {
+          "case_id": "SB_PLB_PRO_5",
+          "description": "Verify profit order tạo mới có phí ship và có discount code = Buyer X Get Y, tax include",
+          "product": "(Test product)PP discount",
+          "quantity": "3",
+          "isTax": true,
+          "tax_include": true,
+          "isTip": false,
+          "isDiscount": true,
+          "discount_code": "Buy x get Y"
+        },
+        {
+          "case_id": "SB_PLB_PRO_14",
+          "description": "Verify profit với order có lineitem post purchase, shipping freeship, tax include",
+          "product": "(Test product) Auto-plus1",
+          "quantity": "2",
+          "isTax": true,
+          "tax_include": true,
+          "isDiscount": false,
+          "isPostPurchase": true,
+          "postPurchaseItem": "(Test product)PP discount"
+        },
+        {
+          "case_id": "SB_PLB_PRO_16",
+          "description": "Verify profit với order có lineitem post purchase, discount code = Fixed amount, shipping freeship, tax include",
+          "product": "(Test product) Auto-cpay2",
+          "quantity": "3",
+          "isTax": true,
+          "tax_include": true,
+          "isDiscount": true,
+          "discount_code": "Fixed amount",
+          "isPostPurchase": true,
+          "postPurchaseItem": "(Test product)PP discount"
+        },
+        {
+          "case_id": "SB_PLB_PRO_15",
+          "description": "Verify profit với order có lineitem post purchase, discount code = Percentage, tax include",
+          "product": "(Test product) Auto-cpay2",
+          "quantity": "3",
+          "isTax": true,
+          "tax_include": true,
+          "isDiscount": true,
+          "discount_code": "Discount 30",
+          "isPostPurchase": true,
+          "postPurchaseItem": "(Test product)PP discount"
+        },
+        {
+          "case_id": "SB_PLB_PRO_17",
+          "description": "Verify profit với order có lineitem post purchase, discount code = Buy X Get Y, tax include",
+          "product": "(Test product) Auto-cpay2",
+          "quantity": "6",
+          "isTax": true,
+          "tax_include": true,
+          "isDiscount": true,
+          "discount_code": "buyxgety",
+          "isPostPurchase": true,
+          "postPurchaseItem": "(Test product)PP discount"
+        },
+        {
+          "case_id": "SB_PLB_PRO_19",
+          "description": "Verify profit với order có markup shipping, có post purchase discount, discount code = Percentage, tax include",
+          "product": "(Test product) Auto-cpay1",
+          "quantity": "2",
+          "isTax": true,
+          "tax_include": true,
+          "isDiscount": true,
+          "discount_code": "Discount 30",
+          "isPostPurchase": true,
+          "postPurchaseItem": "(Test product)PP discount"
+        },
+        {
+          "case_id": "SB_PLB_PRO_20 ",
+          "description": "Verify profit với order có markup shipping, có post purchase discount, discount code = Fixed amount, tax include",
+          "product": "(Test product) Auto-cpay1",
+          "quantity": "1",
+          "isTax": true,
+          "tax_include": true,
+          "isDiscount": true,
+          "discount_code": "Fixed amount",
+          "isPostPurchase": true,
+          "postPurchaseItem": "(Test product)PP discount"
+        },
+        {
+          "case_id": "SB_PLB_PRO_22",
+          "description": "Verify profit với order có markup shipping, có post purchase discount, discount freeship, tax include",
+          "product": "(Test product) Auto-cpay1",
+          "quantity": "3",
+          "isTax": true,
+          "tax_include": true,
+          "isDiscount": true,
+          "discount_code": "Freeship",
+          "isPostPurchase": true,
+          "postPurchaseItem": "(Test product)PP discount",
+          "isDiscountPPC": true
+        },
+        {
+          "case_id": "SB_PLB_PRO_10",
+          "description": "Verify profit order tạo mới có phí ship và có discount code = Fixed amount, tax exclude",
+          "product": "(Test product)Plus Size Cut Out - Adjusted= 0",
+          "quantity": "3",
+          "isTax": true,
+          "tax_include": false,
+          "isTip": false,
+          "isDiscount": true,
+          "discount_code": "Fixed amount"
+        },
+        {
+          "case_id": "SB_PLB_PRO_11",
+          "description": "Verify profit order tạo mới có phí ship và có discount code là freeship, tax exclude",
+          "product": "(Test product)Plus Size Cut Out - Adjusted= 0",
+          "quantity": "2",
+          "isTax": true,
+          "tax_include": false,
+          "isTip": false,
+          "isDiscount": true,
+          "discount_code": "Freeship"
+        },
+        {
+          "case_id": "SB_PLB_PRO_12",
+          "description": "Verify profit order tạo mới có phí ship và có discount code = Buyer X Get Y, tax exclude",
+          "product": "(Test product)PP discount",
+          "quantity": "3",
+          "isTax": true,
+          "tax_include": false,
+          "isTip": false,
+          "isDiscount": true,
+          "discount_code": "Buy x get Y"
+        },
+        {
+          "case_id": "SB_PLB_PRO_13",
+          "description": "Verify profit với order có lineitem post purchase, shipping freeship, tax exclude",
+          "product": "(Test product) Auto-plus1",
+          "quantity": "2",
+          "isTax": true,
+          "tax_include": false,
+          "isDiscount": false,
+          "isPostPurchase": true,
+          "postPurchaseItem": "(Test product)PP discount"
+        },
+        {
+          "case_id": "SB_PLB_PRO_18",
+          "description": "Verify profit với order có lineitem post purchase, discount code = Fixed amount, shipping freeship, tax exclude",
+          "product": "(Test product) Auto-cpay2",
+          "quantity": "2",
+          "isTax": true,
+          "tax_include": false,
+          "isDiscount": true,
+          "discount_code": "Fixed amount",
+          "isPostPurchase": true,
+          "postPurchaseItem": "(Test product)PP discount"
+        },
+        {
+          "case_id": "SB_PLB_PRO_21",
+          "description": "Verify profit với order có lineitem post purchase, discount code = Percentage, tax exclude",
+          "product": "(Test product) Auto-cpay2",
+          "quantity": "3",
+          "isTax": true,
+          "tax_include": false,
+          "isDiscount": true,
+          "discount_code": "Discount 30",
+          "isPostPurchase": true,
+          "postPurchaseItem": "(Test product)PP discount"
+        },
+        {
+          "case_id": "SB_PLB_PRO_23",
+          "description": "Verify profit với order có lineitem post purchase, discount code = Buy X Get Y, tax exclude",
+          "product": "(Test product) Auto-cpay2",
+          "quantity": "6",
+          "isTax": true,
+          "tax_include": false,
+          "isDiscount": true,
+          "discount_code": "buyxgety",
+          "isPostPurchase": true,
+          "postPurchaseItem": "(Test product)PP discount"
+        },
+        {
+          "case_id": "SB_PLB_PRO_24",
+          "description": "Verify profit với order có markup shipping, có post purchase discount, discount code = Percentage, tax exclude",
+          "product": "(Test product) Auto-cpay1",
+          "quantity": "2",
+          "isTax": true,
+          "tax_include": false,
+          "isDiscount": true,
+          "discount_code": "Discount 30",
+          "isPostPurchase": true,
+          "postPurchaseItem": "(Test product)PP discount"
+        },
+        {
+          "case_id": "SB_PLB_PRO_25",
+          "description": "Verify profit với order có markup shipping, có post purchase discount, discount code = Fixed amount, tax exclude",
+          "product": "(Test product) Auto-cpay1",
+          "quantity": "1",
+          "isTax": true,
+          "tax_include": false,
+          "isDiscount": true,
+          "discount_code": "Fixed amount",
+          "isPostPurchase": true,
+          "postPurchaseItem": "(Test product)PP discount"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "api": "https://api.shopbase.com",
+  "domain": "au-product-variant.onshopbase.com",
+  "username": "shopbase@beeketing.net",
+  "password": "Q(f!3Kx+6n;?Us%F",
+  "user_id": 73782,
+  "shop_id": 10357142,
+  "shop_name": "au-product-variant",
+  "timeout": "1000000",
+  "cases": {
+    "TC_SB_PRO_test_239": {
+      "product_variant_info": {
+        "title": "Add new variant",
+        "value_size": "L",
+        "value_color": "Black",
+        "price": "20",
+        "compare_at_price": "30",
+        "sku": "SKU-test",
+        "bar_code": "test"
+      },
+      "product_validate_detail": {
+        "message": "Variant has been updated successfully!",
+        "number_all_variant": "Variants (3 / 500)",
+        "size": ["L", "S", "M"],
+        "color": ["Black", "White"]
+      },
+      "product_validate_sf": {
+        "title": "Add new variant",
+        "type_size": "Size:",
+        "type_color": "Color:",
+        "size": "L,S,M",
+        "color": "Black,White",
+        "price_sf": "20",
+        "compare_at_price_sf": "30"
+      }
+    },
+    "TC_SB_PRO_test_240": {
+      "product_info": {
+        "title": "Product delete",
+        "group": "M",
+        "action": "Delete variants",
+        "message": "Deleted variant"
+      },
+      "result_delete": {
+        "title": "Product delete",
+        "number_all_variant1": "Variants (11 / 500)",
+        "number_all_variant2": "Variants (10 / 500)",
+        "number_all_variant3": "Variants (7 / 500)",
+        "size": ["S", "L"],
+        "color": ["White", "Blue"],
+        "Style": ["Uni", "Vnec"]
+      },
+      "product_info_sf": {
+        "title": "Product delete",
+        "type_size": "Size:",
+        "type_color": "Color:",
+        "type_style": "Style:",
+        "size": "S,L",
+        "color": "White,Blue",
+        "style": "Uni,Vnec"
+      }
+    },
+    "TC_SB_PRO_test_241": {
+      "product_variant_info": {
+        "title": "Product edit variant",
+        "value_size": "XL",
+        "value_color": "Black",
+        "price": "20",
+        "compare_at_price": "30",
+        "sku": "SKU-test",
+        "bar_code": "test"
+      },
+      "result_edit": {
+        "message": "Variant has been updated successfully!",
+        "size": ["XL", "S", "M", "L"],
+        "color": ["Black", "White", "Blue"]
+      },
+      "product_validate_sf": {
+        "title": "Product edit variant",
+        "type_size": "Size:",
+        "type_color": "Color:",
+        "size": "XL,L,S,M",
+        "color": "Black,White,Blue"
+      }
+    },
+    "TC_SB_PRO_test_243": {
+      "product_info": {
+        "title": "Product change price",
+        "group1": "S",
+        "action": "Change price",
+        "new_price1": "25",
+        "new_price2": "30",
+        "variant_selected": "1 selected"
+      },
+      "result_change1": {
+        "title": "Product change price",
+        "new_price1": 25
+      },
+      "result_change2": {
+        "price_variant1": 30,
+        "price_variant2": 30,
+        "price_variant3": 30
+      }
+    },
+    "TC_SB_PRO_test_244": {
+      "product_variant_info": {
+        "title": "Duplicate 2option",
+        "group": "S",
+        "action": "...in another Size",
+        "size": "S",
+        "variant_selected": "1 selected"
+      },
+      "result_duplicate": {
+        "title": "Duplicate 2option",
+        "message": "Failed duplicating 1 variant",
+        "number_all_variant": "Variants (4 / 500)"
+      }
+    },
+    "TC_SB_PRO_test_245": {
+      "product_variant_info": {
+        "title": "Duplicate 2option",
+        "group": "S",
+        "action": "...in another Size",
+        "new_size1": "L",
+        "new_size2": "XL",
+        "variant_selected": "1 selected"
+      },
+      "result_duplicate1": {
+        "title": "Duplicate 2option",
+        "message": "Duplicating variants in Size L completed",
+        "number_all_variant": "Variants (5 / 500)",
+        "size": ["S", "M", "L"],
+        "color": ["White", "Black"]
+      },
+      "result_duplicate2": {
+        "title": "Duplicate 2option",
+        "message": "Duplicating variants in Size XL completed",
+        "number_all_variant": "Variants (7 / 500)",
+        "size": ["S", "M", "L", "XL"],
+        "color": ["White", "Black"]
+      },
+      "product_info_sf": {
+        "title": "Duplicate 2option",
+        "type_size": "Size:",
+        "type_color": "Color:",
+        "size": "S,M,L,XL",
+        "color": "White,Blue"
+      }
+    },
+    "TC_SB_PRO_test_248": {
+      "product_variant_info": {
+        "title": "Product edit option",
+        "edit_option_name": "Test",
+        "add_option_name": "Style",
+        "add_option_value": "Style1",
+        "variant": "M"
+      },
+      "result_edit1": {
+        "number_all_variant": "Variants (4 / 500)",
+        "title": "Product edit option"
+      },
+      "result_edit2": {
+        "message_error": "Title can't be blank",
+        "number_all_variant": "Variants (4 / 500)",
+        "size": ["S", "L"],
+        "color": ["White", "Blue"],
+        "style": ["Style1"]
+      },
+      "product_info_sf": {
+        "title": "Product change price",
+        "type_size": "Size:",
+        "type_color": "Color:",
+        "type_style": "Style:",
+        "size": "S,L",
+        "color": "White,Blue",
+        "style": "Style1"
+      }
+    }
+  },
+  "env": {
+    "prodtest": {
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://prod-test-api.shopbase.com"
+    }
+  }
+}

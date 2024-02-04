@@ -1,0 +1,182 @@
+{
+  "env": {
+    "local": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-member-prod.onshopbase.com",
+      "shop_name": "au-member-prod",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "user_id": 73782,
+      "shop_id": 10381973
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-members.myshopbase.net",
+      "shop_name": "au-members",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "user_id": 73800,
+      "shop_id": 10323172
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-members-podtest.onshopbase.com",
+      "shop_name": "au-members-podtest",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "user_id": 73782,
+      "shop_id": 10381972,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-member-prod.onshopbase.com",
+      "shop_name": "au-member-prod",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "user_id": 73782,
+      "shop_id": 10381973
+    }
+  },
+  "data_create_member": [
+    {
+      "email": "member@mailinator.com",
+      "first_name": "test",
+      "last_name": "ocg",
+      "note": "Create member by api",
+      "phone": "0312512423",
+      "calling_code": "84",
+      "tags": "Test",
+      "country_id": 237
+    }
+  ],
+  "paging_param": {
+    "page": "1",
+    "limit": "50"
+  },
+  "keyword": "createMember",
+  "time_out": 3000,
+  "product_list": [
+    {
+      "product": {
+        "type": "online_course",
+        "title": "Internet Security",
+        "handle": "internet-security",
+        "published": true
+      }
+    }
+  ],
+  "publish_product": "Publish",
+  "cases": {
+    "SB_SC_SCM_9": {
+      "image": {
+        "image_avatar": "fallback.0dbe175c.svg",
+        "image_last_activity": "icon-activity.54b950ef.svg",
+        "image_orders": "icon-orders.5137fb11.svg",
+        "image_product_access_empty": "icon-empty-table.b2967e59.svg",
+        "image_recent_order_empty": "no-order.ab7597d0.svg",
+        "image_sales": "icon-sales.83de8708.svg",
+        "description_product_access_empty": "Products this member has access to will show up here.",
+        "description_order_empty": "Member hasn’t placed any orders."
+      }
+    },
+    "SB_SC_SCM_10": {},
+    "SB_SC_SCM_11": {
+      "product": "Internet Security",
+      "email": "member@mailinator.com",
+      "subject_email": "verification code"
+    },
+    "SB_SC_SCM_14": {
+      "list_label_add_member": ["First name", "Last name", "Email", "Country", "Phone number", "Notes", "Tags"],
+      "list_data_edit_member_successful": [
+        {
+          "description": "Bỏ trống First name",
+          "data": {
+            "last_name": "test_01",
+            "note": "string",
+            "phone": "0358121433",
+            "tags": "VIP",
+            "country": "Anguilla"
+          }
+        },
+        {
+          "description": "Bỏ trống last name",
+          "data": {
+            "first_name": "ocg_01",
+            "note": "string",
+            "phone": "0358121434",
+            "tags": "SPECIAL",
+            "country": "Vietnam"
+          }
+        },
+        {
+          "description": "Bỏ trống phone",
+          "data": {
+            "first_name": "ocg_02",
+            "last_name": "test_02",
+            "note": "string",
+            "tags": "Test",
+            "country": "Anguilla"
+          }
+        },
+        {
+          "description": "Bỏ trống notes",
+          "data": {
+            "first_name": "ocg_03",
+            "last_name": "test_03",
+            "phone": "0358121436",
+            "tags": "Test",
+            "country": "Vietnam"
+          }
+        },
+        {
+          "description": "Bỏ trống tags",
+          "data": {
+            "first_name": "ocg_04",
+            "last_name": "test_04",
+            "note": "string",
+            "phone": "0358121437",
+            "country": "Anguilla"
+          }
+        },
+        {
+          "description": "Nhập > 1 tags",
+          "data": {
+            "first_name": "ocg_05",
+            "last_name": "test_05",
+            "note": "string",
+            "phone": "0358121438",
+            "country": "Vietnam",
+            "tags": "VIP, SPECIAL"
+          }
+        }
+      ],
+      "list_data_edit_member_false": {
+        "label": "Phone number",
+        "data": {
+          "first_name": "ocg",
+          "last_name": "test",
+          "note": "string",
+          "phone": "test",
+          "tags": "Test",
+          "country": "Vietnam"
+        },
+        "message": "Please fill in valid phone format."
+      },
+      "info_member_SF": {
+        "first_name": "ocg_05",
+        "last_name": "test_05",
+        "phone": "358121438"
+      },
+      "email": "member@mailinator.com",
+      "subject_email": "verification code"
+    },
+    "SB_SC_SCM_12": {
+      "product": "Internet Security",
+      "email": "member@mailinator.com",
+      "subject_email_create_member": "Congratulations",
+      "subject_email": "verification code",
+      "btn_grant_access": "Grant access"
+    }
+  }
+}

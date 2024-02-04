@@ -1,0 +1,67 @@
+{
+  "env": {
+    "prod": {
+      "domain_landing_page": "https://www.plusbase.com/product-catalog",
+      "api": "https://api.shopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "domain": "hiiiiplusbase.onshopbase.com",
+      "shop_name": "hiiiiplusbase",
+      "user_id": 73782,
+      "shop_id": 10279395,
+      "odoo_host": "https://autotest-erp-plus.shopbase.dev",
+      "odoo_db": "shopbase_fulfillment",
+      "odoo_username": "qaocg",
+      "odoo_password": "LFmy=qGLvwW^E63b"
+    },
+    "prodtest": {
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://prod-test-api.shopbase.com"
+    }
+  },
+  "cases": {
+    "SB_PLB_PLB_PLCL_22": {
+      "filter_conditions": {
+        "only_root_category": false,
+        "include_child": false,
+        "is_custom_badge": false
+      },
+      "category_name": "Toys & Hobbies",
+      "total_product_one_page": 20
+    },
+    "SB_PLB_PLB_PLCL_18": {
+      "category_id": 24,
+      "threshold": 0.1,
+      "product": {
+        "product_name": "Rotating Magic Bean Cube",
+        "variants": ["Blue", "Green", "Orange", "Pink"]
+      },
+      "processing_rate": 4
+    },
+    "SB_PLB_PLB_PLCL_23": {
+      "filter_conditions": {
+        "page": 1,
+        "limit": 20,
+        "category_ids": 53
+      }
+    },
+    "SB_PLB_PLB_PLCL_28": {
+      "filter_conditions": [
+        {
+          "page": 1,
+          "limit": 20,
+          "sort_mode": "desc",
+          "sort_field": "x_plusbase_base_cost",
+          "category_ids": 1
+        },
+        {
+          "page": 1,
+          "limit": 20,
+          "sort_mode": "asc",
+          "sort_field": "x_plusbase_base_cost",
+          "category_ids": 1
+        }
+      ]
+    }
+  }
+}

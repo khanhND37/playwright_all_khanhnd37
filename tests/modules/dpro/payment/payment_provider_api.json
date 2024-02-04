@@ -1,0 +1,217 @@
+{
+  "api": "https://api.shopbase.com",
+  "domain": "lecture-section-api.onshopbase.com",
+  "shop_name": "lecture-section-api",
+  "user_id": "74303",
+  "shop_id": 10369410,
+  "username": "shopbase@beeketing.net",
+  "password": "Q(f!3Kx+6n;?Us%F",
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "lecture-section-api.onshopbase.com",
+      "shop_name": "lecture-section-api",
+      "user_id": "74303",
+      "shop_id": 10369410,
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "lecture-section-api-prodtest.onshopbase.com",
+      "shop_name": "lecture-section-api-prodtest",
+      "user_id": "74303",
+      "shop_id": 10369409,
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "lecture-section-api.myshopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "user_id": "73800",
+      "shop_id": 10321855,
+      "shop_name": "lecture-section-api"
+    }
+  },
+  "cases": {
+    "DATA_CREATE_PAYMENT_PASS": {
+      "data": [
+        {
+          "description": "[API] Check tạo thành công payment method Stripe với trạng thái Inactive",
+          "case_id": "SB_SC_SCS_15",
+          "payment": {
+            "active": true,
+            "title": "Stripe-1",
+            "code": "stripe",
+            "provider_options": {
+              "name": "Stripe-2",
+              "public_key": "pk_test_51H0MC6CcU7rfeHrk7sE9cyETJZgKI3RR2jWs9MqL2iJ67o8M2aj0SrH56PlYgkdmbhs1HmD2ODpbwzp72Af4NIbe002OIRtxHL",
+              "secret_key": "sk_test_51H0MC6CcU7rfeHrkYB0CZVbfsSfP99Q5hhnGj7hjxbXMn6d7v6hpRlE06JoRbLd2KMWqqitg7twTBCZAKpBorMd700NXQUNss7",
+              "api_key": true
+            }
+          }
+        },
+        {
+          "description": "[API] Check tạo thành công payment method Paypal với trạng thái Inactive",
+          "case_id": "SB_SC_SCS_16",
+          "payment": {
+            "active": true,
+            "title": "PayPal-1",
+            "code": "paypal-express",
+            "provider_options": {
+              "name": "Stripe-2",
+              "client_id": "AfL2WyCQuIis451KPSSrSIgAAfFyiqFDgz5FPYAk4N8som1mrPVlgtK4CFZamgA8UP9GQzFfOGW6ELoP",
+              "client_secret": "EOU0iGeg1J7DEzcD9tVYBzjLD7ia_tWSQ9g9Ia-E-nK5DGenuZwXGJAtEGOY7m6pwgDD95uV0bGJGaCW",
+              "disable_update_tracking": true,
+              "enable_smart_button": true,
+              "sandbox": true
+            }
+          }
+        },
+        {
+          "description": "[API] Check tạo thành công payment method Stripe với trạng thái deactive",
+          "case_id": "SB_SC_SCS_17",
+          "payment": {
+            "active": false,
+            "title": "Stripe-deactive",
+            "code": "stripe",
+            "provider_options": {
+              "name": "Stripe-22",
+              "public_key": "pk_test_51H0MC6CcU7rfeHrk7sE9cyETJZgKI3RR2jWs9MqL2iJ67o8M2aj0SrH56PlYgkdmbhs1HmD2ODpbwzp72Af4NIbe002OIRtxHL",
+              "secret_key": "sk_test_51H0MC6CcU7rfeHrkYB0CZVbfsSfP99Q5hhnGj7hjxbXMn6d7v6hpRlE06JoRbLd2KMWqqitg7twTBCZAKpBorMd700NXQUNss7",
+              "api_key": true
+            }
+          }
+        },
+        {
+          "description": "[API] Check tạo thành công payment method Paypal với trạng thái deactive",
+          "case_id": "SB_SC_SCS_18",
+          "payment": {
+            "active": false,
+            "title": "PayPal-deactive",
+            "code": "paypal-express",
+            "provider_options": {
+              "name": "Stripe-deactive",
+              "client_id": "AfL2WyCQuIis451KPSSrSIgAAfFyiqFDgz5FPYAk4N8som1mrPVlgtK4CFZamgA8UP9GQzFfOGW6ELoP",
+              "client_secret": "EOU0iGeg1J7DEzcD9tVYBzjLD7ia_tWSQ9g9Ia-E-nK5DGenuZwXGJAtEGOY7m6pwgDD95uV0bGJGaCW",
+              "disable_update_tracking": true,
+              "enable_smart_button": true,
+              "sandbox": true
+            }
+          }
+        }
+      ]
+    },
+    "DATA_CREATE_PAYMENT_FAIL": {
+      "data": [
+        {
+          "description": "[API] Check tạo payment method Stripe với credentials không hợp lệ",
+          "case_id": "SB_SC_SCS_19",
+          "payment": {
+            "active": true,
+            "title": "Stripe-invalid",
+            "code": "stripe",
+            "provider_options": {
+              "name": "Stripe-22",
+              "public_key": "invalidkey",
+              "secret_key": "invalidkey",
+              "api_key": true
+            }
+          },
+          "error": "The API credentials are invalid. Please check them again."
+        },
+        {
+          "description": "[API] Check tạo payment method Paypal với credentials không hợp lệ",
+          "case_id": "SB_SC_SCS_20",
+          "payment": {
+            "active": true,
+            "title": "PayPal-deactive",
+            "code": "paypal-express",
+            "provider_options": {
+              "name": "Stripe-invalid",
+              "client_id": "invalid_key",
+              "client_secret": "E-invalid_key",
+              "disable_update_tracking": true,
+              "enable_smart_button": true,
+              "sandbox": true
+            }
+          },
+          "error": "The API credentials are invalid. Please check them again"
+        },
+        {
+          "description": "[API] Check tạo payment method Stripe với code không hợp lệ",
+          "case_id": "SB_SC_SCS_21",
+          "payment": {
+            "active": true,
+            "title": "Stripe-invalid code",
+            "code": "stripe-express",
+            "provider_options": {
+              "name": "Stripe-22",
+              "public_key": "pk_test_51H0MC6CcU7rfeHrk7sE9cyETJZgKI3RR2jWs9MqL2iJ67o8M2aj0SrH56PlYgkdmbhs1HmD2ODpbwzp72Af4NIbe002OIRtxHL",
+              "secret_key": "sk_test_51H0MC6CcU7rfeHrkYB0CZVbfsSfP99Q5hhnGj7hjxbXMn6d7v6hpRlE06JoRbLd2KMWqqitg7twTBCZAKpBorMd700NXQUNss7",
+              "api_key": true
+            }
+          },
+          "error": "Invalid provider code"
+        },
+        {
+          "description": "[API] Check tạo payment method Paypal với code không hợp lệ",
+          "case_id": "SB_SC_SCS_22",
+          "payment": {
+            "active": false,
+            "title": "PayPal-invalid code",
+            "code": "paypal",
+            "provider_options": {
+              "name": "Stripe-deactive",
+              "client_id": "AfL2WyCQuIis451KPSSrSIgAAfFyiqFDgz5FPYAk4N8som1mrPVlgtK4CFZamgA8UP9GQzFfOGW6ELoP",
+              "client_secret": "EOU0iGeg1J7DEzcD9tVYBzjLD7ia_tWSQ9g9Ia-E-nK5DGenuZwXGJAtEGOY7m6pwgDD95uV0bGJGaCW",
+              "disable_update_tracking": true,
+              "enable_smart_button": true,
+              "sandbox": true
+            }
+          },
+          "error": "Invalid provider code"
+        }
+      ]
+    },
+    "DATA_REMOTE_ACCOUNT_PAYMENT": {
+      "data": [
+        {
+          "description": "[API] Check remove account Stripe thành công với API",
+          "case_id": "SB_SC_SCS_23",
+          "payment": {
+            "active": true,
+            "title": "Stripe-1",
+            "code": "stripe",
+            "provider_options": {
+              "name": "Stripe-2",
+              "public_key": "pk_test_51H0MC6CcU7rfeHrk7sE9cyETJZgKI3RR2jWs9MqL2iJ67o8M2aj0SrH56PlYgkdmbhs1HmD2ODpbwzp72Af4NIbe002OIRtxHL",
+              "secret_key": "sk_test_51H0MC6CcU7rfeHrkYB0CZVbfsSfP99Q5hhnGj7hjxbXMn6d7v6hpRlE06JoRbLd2KMWqqitg7twTBCZAKpBorMd700NXQUNss7",
+              "api_key": true
+            }
+          }
+        },
+        {
+          "description": "[API] Check remove account Stripe thành công với API",
+          "case_id": "SB_SC_SCS_24",
+          "payment": {
+            "active": true,
+            "title": "PayPal-1",
+            "code": "paypal-express",
+            "provider_options": {
+              "name": "Stripe-2",
+              "client_id": "AfL2WyCQuIis451KPSSrSIgAAfFyiqFDgz5FPYAk4N8som1mrPVlgtK4CFZamgA8UP9GQzFfOGW6ELoP",
+              "client_secret": "EOU0iGeg1J7DEzcD9tVYBzjLD7ia_tWSQ9g9Ia-E-nK5DGenuZwXGJAtEGOY7m6pwgDD95uV0bGJGaCW",
+              "disable_update_tracking": true,
+              "enable_smart_button": true,
+              "sandbox": true
+            }
+          }
+        }
+      ]
+    }
+  }
+}

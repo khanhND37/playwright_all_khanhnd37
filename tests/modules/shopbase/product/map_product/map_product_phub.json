@@ -1,0 +1,779 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-editor-sb.onshopbase.com",
+      "shop_name": "au-editor-sb",
+      "user_id": 73782,
+      "shop_id": 10380916,
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "server_domain": "onshopbase.com"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-editor-sb-prodtest.onshopbase.com",
+      "shop_name": "au-editor-sb-prodtest",
+      "user_id": 73782,
+      "shop_id": 10380917,
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "server_domain": "onshopbase.com",
+      "accounts_domain": "accounts-test.shopbase.com",
+      "cases": {
+        "SB_PRH_MP_119": {
+          "product_info": {
+            "title": "Product test UI",
+            "price": "10",
+            "compare_at_price": "20",
+            "app_name": "PrintHub"
+          },
+          "picture": "default-upload-SB-PRH-MP-119.png",
+          "DATA_DRIVEN_MAPPING": {
+            "data": [
+              {
+                "step": "Click field [Select a product] > Chọn base 2D",
+                "title": "Product test UI",
+                "base_product": "Classic Unisex Tank $8.99",
+                "picture_name": "prodtest-UI-upload-art-2D-SB-PRH-MP-119.png"
+              },
+              {
+                "step": "Click field [Select a product] > Chọn base 3D 1 side",
+                "title": "Product test UI",
+                "base_product": "AOP Long Pants $12.49",
+                "picture_name": "prodtest-UI-upload-art-3D-one-side-SB-PRH-MP-119.png"
+              },
+              {
+                "step": "Click field [Select a product] > Chọn base 3D 2 side",
+                "title": "Product test UI",
+                "base_product": "AOP Hoodie $15.99",
+                "picture_name": "prodtest-UI-upload-art-3D-two-side-SB-PRH-MP-119.png"
+              }
+            ]
+          }
+        },
+        "SB_PRH_MP_120": {
+          "product_info": {
+            "title": "Product option",
+            "price": "10",
+            "compare_at_price": "20",
+            "app_name": "PrintHub",
+            "base_product": "Classic Unisex Tank $8.99"
+          },
+          "picture": "prodtest-default-upload-SB-PRH-MP-120.png",
+          "DATA_DRIVEN_UPLOAD_ARTWORK": {
+            "data": [
+              {
+                "step": "Click button Upload artwork> select image có đuôi .png lớn hơn 80 Mb",
+                "side": "front",
+                "message": "Your artwork is too large.",
+                "s3_path": "files/testdata_SB_PRH_MP_120_artwork_80mb.png",
+                "local_path": "data/shopbase/testdata_SB_PRH_MP_120_artwork_80mb.png"
+              },
+              {
+                "step": "Click button Upload artwork> select image có định dạng khác đuôi .png",
+                "side": "front",
+                "artwork": "data/shopbase/oversize.jpeg",
+                "message": "We only support .JPG, .PNG file."
+              },
+              {
+                "step": "Click button Upload artwork> select image nhỏ hơn 150 dpi",
+                "side": "front",
+                "artwork": "data/shopbase/moon.png",
+                "message": "Min dimensions: 2100px x 2400px."
+              }
+            ]
+          }
+        },
+        "SB_PRH_MP_121": {
+          "product_info": {
+            "title": "Product change artwork",
+            "price": "10",
+            "compare_at_price": "20",
+            "app_name": "PrintHub",
+            "base_product": "Classic Unisex Tank $8.99",
+            "side": "front",
+            "artwork": "data/shopbase/BD_11.png",
+            "artwork_change": "data/shopbase/BD_10.png"
+          },
+          "button": "Delete artwork",
+          "picture": {
+            "upload_artwork": "prodtest-upload-artwork-SB-PRH-MP-121.png",
+            "change_artwork": "prodtest-change-artwork-SB-PRH-MP-121.png",
+            "delete_artwork": "prodtest-delete-artwork-SB-PRH-MP-121.png"
+          }
+        },
+        "DATA_DRIVEN_MAP_PRODUCT": {
+          "data": [
+            {
+              "enable": true,
+              "description": "SB_PRH_MP_122 - Verify mapping thành công for product no option",
+              "case_id": "SB_PRH_MP_122",
+              "product_info": {
+                "title": "Product no option",
+                "price": "10",
+                "compare_at_price": "20",
+                "app_name": "PrintHub",
+                "base_product": "Classic Ladies T-shirt $6.99",
+                "side": "front",
+                "artwork": "data/shopbase/BD_11.png",
+                "action": "Remove",
+                "artwork_change": "data/shopbase/BD_10.png"
+              },
+              "variant_mapping": [
+                {
+                  "variant_product": "Default color",
+                  "variant_base": "Black",
+                  "index": 1
+                },
+                {
+                  "variant_product": "Default size",
+                  "variant_base": "L",
+                  "index": 1
+                }
+              ],
+              "picture": {
+                "upload_artwork": "prodtest-upload-artwork-SB-PRH-MP-122.png",
+                "result_mapped": "prodtest-result-mapped-SB-PRH-MP-122.png"
+              }
+            },
+            {
+              "enable": true,
+              "description": "SB_PRH_MP_123 - Verify mapping thành công for product chỉ có 1 option",
+              "case_id": "SB_PRH_MP_123",
+              "product_info": {
+                "title": "Product has 1 option",
+                "price": "10",
+                "compare_at_price": "20",
+                "value_size": "S,M,L",
+                "app_name": "PrintHub",
+                "base_product": "Classic Ladies T-shirt $6.99",
+                "side": "front",
+                "artwork": "data/shopbase/BD_11.png",
+                "action": "Remove",
+                "artwork_change": "data/shopbase/BD_10.png"
+              },
+              "variant_mapping": [
+                {
+                  "variant_product": "Default color",
+                  "variant_base": "Black",
+                  "index": 1
+                },
+                {
+                  "variant_product": "S",
+                  "variant_base": "L",
+                  "index": 3
+                }
+              ],
+              "picture": {
+                "upload_artwork": "prodtest-upload-artwork-SB-PRH-MP-123.png",
+                "result_mapped": "prodtest-result-mapped-SB-PRH-MP-123.png"
+              }
+            },
+            {
+              "enable": true,
+              "description": "SB_PRH_MP_124 - Verify mapping thành công for product chỉ có 2 option",
+              "case_id": "SB_PRH_MP_124",
+              "product_info": {
+                "title": "Product has 2 option",
+                "price": "10",
+                "compare_at_price": "20",
+                "value_size": "S,M,L",
+                "value_color": "Red,White,Black",
+                "app_name": "PrintHub",
+                "base_product": "Classic Ladies T-shirt $6.99",
+                "side": "front",
+                "artwork": "data/shopbase/BD_11.png",
+                "action": "Remove",
+                "artwork_change": "data/shopbase/BD_10.png",
+                "variant_product": "Red,White,S,M",
+                "variant_base": "White,Black,M,L"
+              },
+              "variant_mapping": [
+                {
+                  "variant_product": "Red",
+                  "variant_base": "Navy",
+                  "index": 3
+                },
+                {
+                  "variant_product": "White",
+                  "variant_base": "Sports Grey",
+                  "index": 3
+                },
+                {
+                  "variant_product": "S",
+                  "variant_base": "XL",
+                  "index": 3
+                },
+                {
+                  "variant_product": "M",
+                  "variant_base": "2XL",
+                  "index": 3
+                }
+              ],
+              "picture": {
+                "upload_artwork": "prodtest-upload-artwork-SB-PRH-MP-124.png",
+                "result_mapped": "prodtest-result-mapped-SB-PRH-MP-124.png"
+              }
+            },
+            {
+              "enable": true,
+              "description": "SB_PRH_MP_126 - Verify mapping thành công for product có 3 option",
+              "case_id": "SB_PRH_MP_126",
+              "product_info": {
+                "title": "Product has 3 option",
+                "price": "10",
+                "compare_at_price": "20",
+                "value_size": "S,M,L",
+                "value_color": "Blue,Black,White,Red",
+                "value_style": "Unisex,Vneck",
+                "app_name": "PrintHub",
+                "base_product": "Classic Ladies T-shirt $6.99",
+                "side": "front",
+                "artwork": "data/shopbase/BD_11.png",
+                "action": "Remove",
+                "artwork_change": "data/shopbase/BD_10.png",
+                "variant_product": "Blue,White,Red,S,M,L",
+                "variant_base": "White,Black,White,M,L,S"
+              },
+              "variant_mapping": [
+                {
+                  "variant_product": "Blue",
+                  "variant_base": "Navy",
+                  "index": 4
+                },
+                {
+                  "variant_product": "Black",
+                  "variant_base": "Sports Grey",
+                  "index": 4
+                },
+                {
+                  "variant_product": "S",
+                  "variant_base": "XL",
+                  "index": 3
+                },
+                {
+                  "variant_product": "M",
+                  "variant_base": "2XL",
+                  "index": 3
+                }
+              ],
+              "picture": {
+                "upload_artwork": "prodtest-upload-artwork-SB-PRH-MP-126.png",
+                "result_mapped": "prodtest-result-mapped-SB-PRH-MP-126.png"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-editor-sb1.myshopbase.net",
+      "shop_name": "au-editor-sb1",
+      "user_id": 73800,
+      "shop_id": 10323074,
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "server_domain": "myshopbase.net",
+      "cases": {
+        "SB_PRH_MP_119": {
+          "product_info": {
+            "title": "Product test UI",
+            "price": "10",
+            "compare_at_price": "20",
+            "app_name": "PrintHub"
+          },
+          "picture": "dev-default-upload-SB-PRH-MP-119.png",
+          "DATA_DRIVEN_MAPPING": {
+            "data": [
+              {
+                "step": "Click field [Select a product] > Chọn base 2D",
+                "title": "Product test UI",
+                "base_product": "Classic Unisex Tank $8.99",
+                "picture_name": "dev-UI-upload-art-2D-SB-PRH-MP-119.png"
+              },
+              {
+                "step": "Click field [Select a product] > Chọn base 3D 1 side",
+                "title": "Product test UI",
+                "base_product": "AOP Long Pants $12.49",
+                "picture_name": "dev-UI-upload-art-3D-one-side-SB-PRH-MP-119.png"
+              },
+              {
+                "step": "Click field [Select a product] > Chọn base 3D 2 side",
+                "title": "Product test UI",
+                "base_product": "AOP Hoodie $15.99",
+                "picture_name": "dev-UI-upload-art-3D-two-side-SB-PRH-MP-119.png"
+              }
+            ]
+          }
+        },
+        "SB_PRH_MP_120": {
+          "product_info": {
+            "title": "Product option",
+            "price": "10",
+            "compare_at_price": "20",
+            "app_name": "PrintHub",
+            "base_product": "Classic Unisex Tank $8.99"
+          },
+          "picture": "dev-default-upload-SB-PRH-MP-120.png",
+          "DATA_DRIVEN_UPLOAD_ARTWORK": {
+            "data": [
+              {
+                "step": "Click button Upload artwork> select image có đuôi .png lớn hơn 80 Mb",
+                "side": "front",
+                "message": "Your artwork is too large.",
+                "s3_path": "files/testdata_SB_PRH_MP_120_artwork_80mb.png",
+                "local_path": "data/shopbase/testdata_SB_PRH_MP_120_artwork_80mb.png"
+              },
+              {
+                "step": "Click button Upload artwork> select image có định dạng khác đuôi .png",
+                "side": "front",
+                "artwork": "data/shopbase/oversize.jpeg",
+                "message": "We only support .JPG, .PNG file."
+              },
+              {
+                "step": "Click button Upload artwork> select image nhỏ hơn 150 dpi",
+                "side": "front",
+                "artwork": "data/shopbase/moon.png",
+                "message": "Min dimensions: 2100px x 2400px."
+              }
+            ]
+          }
+        },
+        "SB_PRH_MP_121": {
+          "product_info": {
+            "title": "Product change artwork",
+            "price": "10",
+            "compare_at_price": "20",
+            "app_name": "PrintHub",
+            "base_product": "Classic Unisex Tank $8.99",
+            "side": "front",
+            "artwork": "data/shopbase/BD_11.png",
+            "artwork_change": "data/shopbase/BD_10.png"
+          },
+          "button": "Delete artwork",
+          "picture": {
+            "upload_artwork": "dev-upload-artwork-SB-PRH-MP-121.png",
+            "change_artwork": "dev-change-artwork-SB-PRH-MP-121.png",
+            "delete_artwork": "dev-delete-artwork-SB-PRH-MP-121.png"
+          }
+        },
+        "DATA_DRIVEN_MAP_PRODUCT": {
+          "data": [
+            {
+              "enable": true,
+              "description": "SB_PRH_MP_122 - Verify mapping thành công for product no option",
+              "case_id": "SB_PRH_MP_122",
+              "product_info": {
+                "title": "Product no option",
+                "price": "10",
+                "compare_at_price": "20",
+                "app_name": "PrintHub",
+                "base_product": "Classic Ladies T-shirt $6.99",
+                "side": "front",
+                "artwork": "data/shopbase/BD_11.png",
+                "action": "Remove",
+                "artwork_change": "data/shopbase/BD_10.png"
+              },
+              "variant_mapping": [
+                {
+                  "variant_product": "Default color",
+                  "variant_base": "Black",
+                  "index": 1
+                },
+                {
+                  "variant_product": "Default size",
+                  "variant_base": "L",
+                  "index": 1
+                }
+              ],
+              "picture": {
+                "upload_artwork": "dev-upload-artwork-SB-PRH-MP-122.png",
+                "result_mapped": "dev-result-mapped-SB-PRH-MP-122.png"
+              }
+            },
+            {
+              "enable": true,
+              "description": "SB_PRH_MP_123 - Verify mapping thành công for product chỉ có 1 option",
+              "case_id": "SB_PRH_MP_123",
+              "product_info": {
+                "title": "Product has 1 option",
+                "price": "10",
+                "compare_at_price": "20",
+                "value_size": "S,M,L",
+                "app_name": "PrintHub",
+                "base_product": "Classic Ladies T-shirt $6.99",
+                "side": "front",
+                "artwork": "data/shopbase/BD_11.png",
+                "action": "Remove",
+                "artwork_change": "data/shopbase/BD_10.png"
+              },
+              "variant_mapping": [
+                {
+                  "variant_product": "Default color",
+                  "variant_base": "Black",
+                  "index": 1
+                },
+                {
+                  "variant_product": "S",
+                  "variant_base": "L",
+                  "index": 3
+                }
+              ],
+              "picture": {
+                "upload_artwork": "dev-upload-artwork-SB-PRH-MP-123.png",
+                "result_mapped": "dev-result-mapped-SB-PRH-MP-123.png"
+              }
+            },
+            {
+              "enable": true,
+              "description": "SB_PRH_MP_124 - Verify mapping thành công for product chỉ có 2 option",
+              "case_id": "SB_PRH_MP_124",
+              "product_info": {
+                "title": "Product has 2 option",
+                "price": "10",
+                "compare_at_price": "20",
+                "value_size": "S,M,L",
+                "value_color": "Red,White,Black",
+                "app_name": "PrintHub",
+                "base_product": "Classic Ladies T-shirt $6.99",
+                "side": "front",
+                "artwork": "data/shopbase/BD_11.png",
+                "action": "Remove",
+                "artwork_change": "data/shopbase/BD_10.png",
+                "variant_product": "Red,White,S,M",
+                "variant_base": "White,Black,M,L"
+              },
+              "variant_mapping": [
+                {
+                  "variant_product": "Red",
+                  "variant_base": "Navy",
+                  "index": 3
+                },
+                {
+                  "variant_product": "White",
+                  "variant_base": "Sports Grey",
+                  "index": 3
+                },
+                {
+                  "variant_product": "S",
+                  "variant_base": "XL",
+                  "index": 3
+                },
+                {
+                  "variant_product": "M",
+                  "variant_base": "2XL",
+                  "index": 3
+                }
+              ],
+              "picture": {
+                "upload_artwork": "dev-upload-artwork-SB-PRH-MP-124.png",
+                "result_mapped": "dev-result-mapped-SB-PRH-MP-124.png"
+              }
+            },
+            {
+              "enable": true,
+              "description": "SB_PRH_MP_126 - Verify mapping thành công for product có 3 option",
+              "case_id": "SB_PRH_MP_126",
+              "product_info": {
+                "title": "Product has 3 option",
+                "price": "10",
+                "compare_at_price": "20",
+                "value_size": "S,M,L",
+                "value_color": "Blue,Black,White,Red",
+                "value_style": "Unisex,Vneck",
+                "app_name": "PrintHub",
+                "base_product": "Classic Ladies T-shirt $6.99",
+                "side": "front",
+                "artwork": "data/shopbase/BD_11.png",
+                "action": "Remove",
+                "artwork_change": "data/shopbase/BD_10.png",
+                "variant_product": "Blue,White,Red,S,M,L",
+                "variant_base": "White,Black,White,M,L,S"
+              },
+              "variant_mapping": [
+                {
+                  "variant_product": "Blue",
+                  "variant_base": "Navy",
+                  "index": 4
+                },
+                {
+                  "variant_product": "Black",
+                  "variant_base": "Sports Grey",
+                  "index": 4
+                },
+                {
+                  "variant_product": "S",
+                  "variant_base": "XL",
+                  "index": 3
+                },
+                {
+                  "variant_product": "M",
+                  "variant_base": "2XL",
+                  "index": 3
+                }
+              ],
+              "picture": {
+                "upload_artwork": "dev-upload-artwork-SB-PRH-MP-126.png",
+                "result_mapped": "dev-result-mapped-SB-PRH-MP-126.png"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "timeout": "360000",
+  "snapshot_options": {
+    "maxDiffPixelRatio": 0.05,
+    "threshold": 0.1,
+    "maxDiffPixels": 2000
+  },
+  "cases": {
+    "SB_PRH_MP_119": {
+      "product_info": {
+        "title": "Product test UI",
+        "price": "10",
+        "compare_at_price": "20",
+        "app_name": "PrintHub"
+      },
+      "picture": "default-upload-SB-PRH-MP-119.png",
+      "DATA_DRIVEN_MAPPING": {
+        "data": [
+          {
+            "step": "Click field [Select a product] > Chọn base 2D",
+            "title": "Product test UI",
+            "base_product": "Classic Unisex Tank $8.99",
+            "picture_name": "UI-upload-art-2D-SB-PRH-MP-119.png"
+          },
+          {
+            "step": "Click field [Select a product] > Chọn base 3D 1 side",
+            "title": "Product test UI",
+            "base_product": "AOP Long Pants $12.49",
+            "picture_name": "UI-upload-art-3D-one-side-SB-PRH-MP-119.png"
+          },
+          {
+            "step": "Click field [Select a product] > Chọn base 3D 2 side",
+            "title": "Product test UI",
+            "base_product": "AOP Hoodie $15.99",
+            "picture_name": "UI-upload-art-3D-two-side-SB-PRH-MP-119.png"
+          }
+        ]
+      }
+    },
+    "SB_PRH_MP_120": {
+      "product_info": {
+        "title": "Product option",
+        "price": "10",
+        "compare_at_price": "20",
+        "app_name": "PrintHub",
+        "base_product": "Classic Unisex Tank $8.99"
+      },
+      "picture": "default-upload-SB-PRH-MP-120.png",
+      "DATA_DRIVEN_UPLOAD_ARTWORK": {
+        "data": [
+          {
+            "step": "Click button Upload artwork> select image có đuôi .png lớn hơn 80 Mb",
+            "side": "front",
+            "message": "Your artwork is too large.",
+            "s3_path": "files/testdata_SB_PRH_MP_120_artwork_80mb.png",
+            "local_path": "data/shopbase/testdata_SB_PRH_MP_120_artwork_80mb.png"
+          },
+          {
+            "step": "Click button Upload artwork> select image có định dạng khác đuôi .png",
+            "side": "front",
+            "artwork": "data/shopbase/oversize.jpeg",
+            "message": "We only support .JPG, .PNG file."
+          },
+          {
+            "step": "Click button Upload artwork> select image nhỏ hơn 150 dpi",
+            "side": "front",
+            "artwork": "data/shopbase/moon.png",
+            "message": "Min dimensions: 2100px x 2400px."
+          }
+        ]
+      }
+    },
+    "SB_PRH_MP_121": {
+      "product_info": {
+        "title": "Product change artwork",
+        "price": "10",
+        "compare_at_price": "20",
+        "app_name": "PrintHub",
+        "base_product": "Classic Unisex Tank $8.99",
+        "side": "front",
+        "artwork": "data/shopbase/BD_11.png",
+        "artwork_change": "data/shopbase/BD_10.png"
+      },
+      "button": "Delete artwork",
+      "picture": {
+        "upload_artwork": "upload-artwork-SB-PRH-MP-121.png",
+        "change_artwork": "change-artwork-SB-PRH-MP-121.png",
+        "delete_artwork": "delete-artwork-SB-PRH-MP-121.png"
+      }
+    },
+    "DATA_DRIVEN_MAP_PRODUCT": {
+      "data": [
+        {
+          "enable": true,
+          "description": "SB_PRH_MP_122 - Verify mapping thành công for product no option",
+          "case_id": "SB_PRH_MP_122",
+          "product_info": {
+            "title": "Product no option",
+            "price": "10",
+            "compare_at_price": "20",
+            "app_name": "PrintHub",
+            "base_product": "Classic Ladies T-shirt $6.99",
+            "side": "front",
+            "artwork": "data/shopbase/BD_11.png",
+            "action": "Remove",
+            "artwork_change": "data/shopbase/BD_10.png"
+          },
+          "variant_mapping": [
+            {
+              "variant_product": "Default color",
+              "variant_base": "Black",
+              "index": 1
+            },
+            {
+              "variant_product": "Default size",
+              "variant_base": "L",
+              "index": 1
+            }
+          ],
+          "picture": {
+            "upload_artwork": "upload-artwork-SB-PRH-MP-122.png",
+            "result_mapped": "result-mapped-SB-PRH-MP-122.png"
+          }
+        },
+        {
+          "enable": true,
+          "description": "SB_PRH_MP_123 - Verify mapping thành công for product chỉ có 1 option",
+          "case_id": "SB_PRH_MP_123",
+          "product_info": {
+            "title": "Product has 1 option",
+            "price": "10",
+            "compare_at_price": "20",
+            "value_size": "S,M,L",
+            "app_name": "PrintHub",
+            "base_product": "Classic Ladies T-shirt $6.99",
+            "side": "front",
+            "artwork": "data/shopbase/BD_11.png",
+            "action": "Remove",
+            "artwork_change": "data/shopbase/BD_10.png"
+          },
+          "variant_mapping": [
+            {
+              "variant_product": "Default color",
+              "variant_base": "Black",
+              "index": 1
+            },
+            {
+              "variant_product": "S",
+              "variant_base": "L",
+              "index": 3
+            }
+          ],
+          "picture": {
+            "upload_artwork": "upload-artwork-SB-PRH-MP-123.png",
+            "result_mapped": "result-mapped-SB-PRH-MP-123.png"
+          }
+        },
+        {
+          "enable": true,
+          "description": "SB_PRH_MP_124 - Verify mapping thành công for product chỉ có 2 option",
+          "case_id": "SB_PRH_MP_124",
+          "product_info": {
+            "title": "Product has 2 option",
+            "price": "10",
+            "compare_at_price": "20",
+            "value_size": "S,M,L",
+            "value_color": "Red,White,Black",
+            "app_name": "PrintHub",
+            "base_product": "Classic Ladies T-shirt $6.99",
+            "side": "front",
+            "artwork": "data/shopbase/BD_11.png",
+            "action": "Remove",
+            "artwork_change": "data/shopbase/BD_10.png",
+            "variant_product": "Red,White,S,M",
+            "variant_base": "White,Black,M,L"
+          },
+          "variant_mapping": [
+            {
+              "variant_product": "Red",
+              "variant_base": "Navy",
+              "index": 3
+            },
+            {
+              "variant_product": "White",
+              "variant_base": "Sports Grey",
+              "index": 3
+            },
+            {
+              "variant_product": "S",
+              "variant_base": "XL",
+              "index": 3
+            },
+            {
+              "variant_product": "M",
+              "variant_base": "2XL",
+              "index": 3
+            }
+          ],
+          "picture": {
+            "upload_artwork": "upload-artwork-SB-PRH-MP-124.png",
+            "result_mapped": "result-mapped-SB-PRH-MP-124.png"
+          }
+        },
+        {
+          "enable": true,
+          "description": "SB_PRH_MP_126 - Verify mapping thành công for product có 3 option",
+          "case_id": "SB_PRH_MP_126",
+          "product_info": {
+            "title": "Product has 3 option",
+            "price": "10",
+            "compare_at_price": "20",
+            "value_size": "S,M,L",
+            "value_color": "Blue,Black,White,Red",
+            "value_style": "Unisex,Vneck",
+            "app_name": "PrintHub",
+            "base_product": "Classic Ladies T-shirt $6.99",
+            "side": "front",
+            "artwork": "data/shopbase/BD_11.png",
+            "action": "Remove",
+            "artwork_change": "data/shopbase/BD_10.png",
+            "variant_product": "Blue,White,Red,S,M,L",
+            "variant_base": "White,Black,White,M,L,S"
+          },
+          "variant_mapping": [
+            {
+              "variant_product": "Blue",
+              "variant_base": "Navy",
+              "index": 4
+            },
+            {
+              "variant_product": "Black",
+              "variant_base": "Sports Grey",
+              "index": 4
+            },
+            {
+              "variant_product": "S",
+              "variant_base": "XL",
+              "index": 3
+            },
+            {
+              "variant_product": "M",
+              "variant_base": "2XL",
+              "index": 3
+            }
+          ],
+          "picture": {
+            "upload_artwork": "upload-artwork-SB-PRH-MP-126.png",
+            "result_mapped": "result-mapped-SB-PRH-MP-126.png"
+          }
+        }
+      ]
+    }
+  }
+}

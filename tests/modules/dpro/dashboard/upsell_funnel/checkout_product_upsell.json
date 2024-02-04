@@ -1,0 +1,230 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "upsell-funnel.myshopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "user_id": "73800",
+      "shop_id": "10321676",
+      "shop_name": "upsell-funnel"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "prod-test-upsell-funnel.onshopbase.com",
+      "shop_name": "prod-test-upsell-funnel",
+      "user_id": "73782",
+      "shop_id": 10377554,
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "upsell-funnel-prod.onshopbase.com",
+      "shop_name": "upsell-funnel-prod",
+      "user_id": "73782",
+      "shop_id": 10377500,
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F"
+    }
+  },
+  "product_list": [
+    {
+      "product": {
+        "type": "online_course",
+        "title": "Certified Solutions Architect",
+        "handle": "certified-solutions-architect",
+        "published": true
+      }
+    },
+    {
+      "product": {
+        "type": "online_course",
+        "title": "Security Awareness Campaigns",
+        "handle": "security-awareness-campaigns",
+        "published": true
+      }
+    },
+    {
+      "product": {
+        "type": "online_course",
+        "title": "Complete Cyber Security",
+        "handle": "complete-cyber-security",
+        "published": true
+      }
+    },
+    {
+      "product": {
+        "type": "online_course",
+        "title": "The Complete Python",
+        "handle": "the-complete-python",
+        "published": true
+      }
+    },
+    {
+      "product": {
+        "type": "online_course",
+        "title": "The Complete Guide",
+        "handle": "the-complete-guide",
+        "published": true
+      }
+    }
+  ],
+  "paging_param": {
+    "page": "1",
+    "limit": "50"
+  },
+  "checkout_info": {
+    "card": {
+      "number": "4111111111111111",
+      "expire_date": "02/29",
+      "cvv": "100"
+    },
+    "email": "shopbase1@beeketing.net"
+  },
+  "time_out": 3000,
+  "cases": {
+    "SB_SC_SCP_124": {
+      "update_product": {
+        "pricing_type": "One-time payment",
+        "pricing_title": "One-time payment",
+        "pricing_amount": "10"
+      },
+      "product_name": "Security Awareness Campaigns",
+      "button_text": ["Add your first upsell", "Add new upsell"],
+      "button_save": "Save",
+      "product_upsell_name": ["Certified Solutions Architect", "Complete Cyber Security"],
+      "button_name": "Design offer",
+      "theme_name": "One Time Offer",
+      "list_data_checkout_product": [
+        {
+          "description": "Thực hiện checkout product gốc và reject product upsell đầu tiên -> Verify thông tin hiển thị tại màn thank you page",
+          "original_product": {
+            "product_handle": "security-awareness-campaigns",
+            "product_name": "Security Awareness Campaigns"
+          },
+          "upsell_downsell_products": [
+            {
+              "product_name": "",
+              "is_accept": false
+            }
+          ]
+        },
+        {
+          "description": "Thực hiện checkout product gốc và accept product upsell đầu tiên -> Reject product upsell tiếp theo -> Verify thông tin hiển thị tại màn thank you page",
+          "original_product": {
+            "product_handle": "security-awareness-campaigns",
+            "product_name": "Security Awareness Campaigns"
+          },
+          "upsell_downsell_products": [
+            {
+              "product_name": "Certified Solutions Architect",
+              "is_accept": true
+            },
+            {
+              "product_name": "",
+              "is_accept": false
+            }
+          ]
+        },
+        {
+          "description": "Thực hiện checkout product gốc và accept tất cả các product upsell -> Verify thông tin hiển thị tại màn thank you page",
+          "original_product": {
+            "product_handle": "security-awareness-campaigns",
+            "product_name": "Security Awareness Campaigns"
+          },
+          "upsell_downsell_products": [
+            {
+              "product_name": "Certified Solutions Architect",
+              "is_accept": true
+            },
+            {
+              "product_name": "Complete Cyber Security",
+              "is_accept": true
+            }
+          ]
+        }
+      ]
+    },
+    "SB_SC_SCP_125": {
+      "update_product": {
+        "pricing_type": "One-time payment",
+        "pricing_title": "One-time payment",
+        "pricing_amount": "10"
+      },
+      "product_name": "The Complete Python",
+      "button_text": ["Add your first upsell", "Add new upsell"],
+      "button_save": "Save",
+      "products_upsell_name": ["Certified Solutions Architect"],
+      "products_downsell_name": ["Security Awareness Campaigns"],
+      "button_name": "Design offer",
+      "theme_name": "One Time Offer",
+      "checkout_products_upsell_downsell": [
+        {
+          "description": "Thực hiện checkout product gốc và accept product upsell -> Verify thông tin order",
+          "original_product": {
+            "product_handle": "the-complete-python",
+            "product_name": "The Complete Python"
+          },
+          "upsell_downsell_products": [
+            {
+              "product_name": "Certified Solutions Architect",
+              "is_accept": true
+            }
+          ]
+        },
+        {
+          "description": "Thực hiện checkout product gốc và accept product downsell,reject các product upsell -> Verify thông tin order",
+          "original_product": {
+            "product_handle": "the-complete-python",
+            "product_name": "The Complete Python"
+          },
+          "upsell_downsell_products": [
+            {
+              "product_name": "",
+              "is_accept": false
+            },
+            {
+              "product_name": "Security Awareness Campaigns",
+              "is_accept": true
+            }
+          ]
+        },
+        {
+          "description": "Thực hiện checkout product gốc và accept tất cả các product upsell -> Verify thông tin hiển thị tại màn thank you page",
+          "original_product": {
+            "product_handle": "the-complete-python",
+            "product_name": "The Complete Python"
+          },
+          "upsell_downsell_products": [
+            {
+              "product_name": "",
+              "is_accept": false
+            },
+            {
+              "product_name": "",
+              "is_accept": false
+            }
+          ]
+        }
+      ]
+    },
+    "SB_SC_SCP_126": {
+      "update_product": {
+        "pricing_type": "One-time payment",
+        "pricing_title": "One-time payment",
+        "pricing_amount": "0"
+      },
+      "button_text": "Add your first upsell",
+      "button_save": "Save",
+      "products_upsell_name": "Certified Solutions Architect",
+      "products_downsell_name": "Security Awareness Campaigns",
+      "button_name": "Design offer",
+      "theme_name": "One Time Offer",
+      "product_name": "The Complete Python",
+      "product_handle": "the-complete-python",
+      "email": "shopbase1@beeketing.net"
+    }
+  }
+}

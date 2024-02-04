@@ -1,0 +1,243 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "auto-hold-from-payout-plb.myshopbase.net",
+      "username": "plus-qe-1@beeketing.net",
+      "password": "rC2zo652s!F@",
+      "user_id": 90043,
+      "shop_id": 10330690,
+      "shop_name": "auto-hold-from-payout-plb",
+      "plb_template": {
+        "domain": "plusbase-checkout.myshopbase.net",
+        "shop_name": "plusbase-checkout.myshopbase.net",
+        "user_id": 87262,
+        "shop_id": 10060862,
+        "username": "phuongpham@beeketing.net",
+        "password": "123456",
+        "shop": "plusbase-checkout"
+      },
+
+      "hive_domain": "hive.dev.shopbase.net",
+      "hive_username": "shopbase",
+      "hive_password": "123456",
+      "products_checkout": [
+        {
+          "variant_id": 1000001772852765,
+          "quantity": 1
+        }
+      ],
+      "cases": {}
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "auto-hold-from-payout-plb-prodtest.onshopbase.com",
+      "username": "plus-qe-2@beeketing.net",
+      "password": "Q37t^Q7Sa4W8",
+      "user_id": 11248586,
+      "shop_id": 10468732,
+      "shop_name": "auto-hold-from-payout-plb-prodtest",
+      "plb_template": {
+        "domain": "plusbase-templateprodtest.onshopbase.com",
+        "shop_name": "plusbase-templateprodtest.onshopbase.com",
+        "user_id": 9131323,
+        "shop_id": 10364655,
+        "username": "qas@beeketing.net",
+        "password": "123456",
+        "shop": "plusbase-templateprodtest"
+      },
+
+      "hive_username": "shopbase",
+      "hive_password": "UxsLHz^Wjkf35*/w",
+      "hive_domain": "hive.shopbase.com",
+      "products_checkout": [
+        {
+          "variant_id": 1000011175779986,
+          "quantity": 1
+        }
+      ],
+      "cases": {}
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "auto-hold-from-payout-plb.onshopbase.com",
+      "username": "plus-qe-2@beeketing.net",
+      "password": "Q37t^Q7Sa4W8",
+      "user_id": 11248586,
+      "shop_id": 10468734,
+      "shop_name": "auto-hold-from-payout-plb",
+      "plb_template": {
+        "domain": "template-store.onshopbase.com",
+        "shop_name": "template-store.onshopbase.com",
+        "user_id": 9131323,
+        "shop_id": 10258217,
+        "username": "qas@beeketing.net",
+        "password": "123456",
+        "shop": "template-store"
+      },
+      "hive_username": "shopbase",
+      "hive_password": "UxsLHz^Wjkf35*/w",
+      "hive_domain": "hive.shopbase.com",
+      "products_checkout": [
+        {
+          "variant_id": 1000011044508895,
+          "quantity": 1
+        }
+      ],
+      "cases": {}
+    }
+  },
+  "cases": {
+    "SB_BAL_HPP_313": {
+      "variant_name": "LIGHT BROWN-01",
+      "data_hold_from_payout": {
+        "order_ids": [],
+        "hold_amount": {
+          "type": "abs",
+          "value": 5
+        },
+        "reason": "QE test",
+        "release_setting": {
+          "release_type": "none",
+          "relative_time": null,
+          "abs_time": "2023-09-13"
+        }
+      },
+      "total_order": 1
+    },
+    "SB_BAL_HPP_311": {
+      "quantity_refund": "1",
+      "total_order": 1
+    },
+    "SB_BAL_HPP_284": {
+      "data_hold_from_payout": {
+        "order_ids": [],
+        "hold_amount": {
+          "type": "abs",
+          "value": 2
+        },
+        "reason": "QE Plus test hold bal",
+        "release_setting": {
+          "release_type": "specific_date",
+          "relative_time": null,
+          "abs_time": ""
+        }
+      },
+      "extend_date": 10,
+      "total_order": 1
+    },
+    "SB_BAL_HPP_326": {
+      "data_hold_from_payout": {
+        "order_ids": [],
+        "hold_amount": {
+          "type": "abs",
+          "value": 2
+        },
+        "reason": "QE Plus test hold balance",
+        "release_setting": {
+          "release_type": "none",
+          "relative_time": null,
+          "abs_time": ""
+        }
+      },
+      "extend_date": 10,
+      "extend_profit": 10,
+      "total_order": 1
+    },
+    "SB_BAL_HPP_331": {
+      "data_hold_from_payout": {
+        "order_ids": [],
+        "hold_amount": {
+          "type": "percent_gmv",
+          "value": 100
+        },
+        "reason": "QE Plus test hold balance",
+        "release_setting": {
+          "release_type": "none",
+          "relative_time": null,
+          "abs_time": ""
+        }
+      },
+      "total_order": 2
+    },
+    "SB_BAL_HPP_314": {
+      "data_hold_from_payout": {
+        "order_ids": [],
+        "hold_amount": {
+          "type": "abs",
+          "value": 5
+        },
+        "reason": "QE test",
+        "release_setting": {
+          "release_type": "none",
+          "relative_time": null,
+          "abs_time": ""
+        }
+      },
+      "total_order": 1,
+      "quantities_cancel": "1"
+    },
+    "SB_BAL_HPP_315": {
+      "data_hold_from_payout": {
+        "order_ids": [],
+        "hold_amount": {
+          "type": "abs",
+          "value": 5
+        },
+        "reason": "QE test",
+        "release_setting": {
+          "release_type": "none",
+          "relative_time": null,
+          "abs_time": ""
+        }
+      },
+      "total_order": 1,
+      "quantities_cancel": "1"
+    },
+    "SB_BAL_HPP_309": {
+      "total_order": 1
+    },
+    "SB_BAL_HPP_342": {
+      "show_hold_from_payout": [
+        "Total Hold Amount",
+        "Hold In Order",
+        "Other Holds",
+        "Detail of other holds",
+        "Hold from payout"
+      ],
+      "data_hold_payout": {
+        "hold_amount": {
+          "option": "Absolute amount (USD)",
+          "amount": 5,
+          "code": "absolute"
+        },
+        "reason": "QE Plus test hold balance",
+        "available_date": {
+          "option": "None"
+        }
+      },
+      "thread_hold": 200
+    },
+    "SB_BAL_HPP_343": {
+      "show_hold_from_payout": [
+        "Total Hold Amount",
+        "Hold In Order",
+        "Other Holds",
+        "Detail of other holds",
+        "Hold from payout"
+      ],
+      "data_hold_payout": {
+        "hold_amount": {
+          "option": "Absolute amount (USD)",
+          "amount": 5,
+          "code": "absolute"
+        },
+        "reason": "QE Plus test hold balance",
+        "available_date": {
+          "option": "None"
+        }
+      },
+      "thread_hold": 200
+    }
+  }
+}

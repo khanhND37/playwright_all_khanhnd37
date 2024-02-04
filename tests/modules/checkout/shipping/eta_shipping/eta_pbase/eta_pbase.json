@@ -1,0 +1,120 @@
+{
+  "api": "https://api.shopbase.com",
+  "domain": "au-pbase-checkout-shipping-free.onshopbase.com",
+  "shop_name": "au-pbase-checkout-shipping-free",
+  "user_id": 74303,
+  "shop_id": 10226592,
+  "username": "shopbase2@beeketing.net",
+  "password": "raMse).7L/b4;k#@",
+
+  "customer_info": {
+    "email": "tester@maildrop.cc",
+    "first_name": "John",
+    "last_name": "Vardy",
+    "address": "1600 W Loop S",
+    "country": "United States",
+    "state": "Texas",
+    "city": "Houston",
+    "zipcode": "77027",
+    "phone_number": "505-646-2276"
+  },
+  "product": [
+    {
+      "name": "Lady shirt",
+      "quantity": 1,
+      "min_processing_time": 2,
+      "max_processing_time": 5
+    }
+  ],
+
+  "cases": {
+    "ETA_PBASE_DRIVEN": [
+      {
+        "case_id": "SB_ETA_Pbase_149",
+        "case_name": "Tại printbase verify ETA delivery date trên checkout page với order có nhiều item và shipping rate khác rate name, tất cả các item đều có ETA shipping time",
+        "shipping_zones": [
+          {
+            "name": "aa_yy_AP-LadiesT-shirt-White-S",
+            "item_based_shipping_rate": [
+              {
+                "name": "Standard shipping",
+                "min_shipping_time": 5,
+                "max_shipping_time": 8
+              },
+              {
+                "name": "Fast shipping",
+                "min_shipping_time": 2,
+                "max_shipping_time": 3
+              }
+            ]
+          }
+        ],
+        "customer_info": {
+          "email": "tester@maildrop.cc",
+          "first_name": "John",
+          "last_name": "Vardy",
+          "address": "1600 W Loop S",
+          "country": "United States",
+          "state": "Texas",
+          "city": "Houston",
+          "zipcode": "77027",
+          "phone_number": "505-646-2276"
+        }
+      },
+      {
+        "case_id": "SB_ETA_Pbase_146",
+        "case_name": "Tại printbase verify ETA delivery date trên checkout page với order chỉ có 1 item và item có một shipping rate",
+        "shipping_zones": [
+          {
+            "name": "aa_yy_AP-LadiesT-shirt-White-S",
+            "item_based_shipping_rate": [
+              {
+                "name": "Standard shipping",
+                "min_shipping_time": 4,
+                "max_shipping_time": 8
+              }
+            ]
+          }
+        ],
+        "customer_info": {
+          "email": "tester@maildrop.cc",
+          "first_name": "John",
+          "last_name": "Vardy",
+          "address": "1600 W Loop S",
+          "country": "Vietnam",
+          "state": "Hà Nội",
+          "city": "Hanoi",
+          "zipcode": "77027",
+          "phone_number": "505-646-2276"
+        }
+      }
+    ]
+  },
+  "env": {
+    "prodtest": {
+      "domain": "au-pbase-checkout-shipping-free-prodtest.onshopbase.com",
+      "shop_name": "au-pbase-checkout-shipping-free-prodtest",
+      "shop_id": 10232719,
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://prod-test-api.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-eta-printbase.myshopbase.net",
+      "shop_name": "au-eta-printbase",
+      "user_id": 90009,
+      "shop_id": 10334400,
+      "username": "opay-qe-1@beeketing.net",
+      "password": "Z6el|q4&:hwCrVx",
+
+      "product": [
+        {
+          "name": "Lady shirt",
+          "quantity": 1,
+          "min_processing_time": 2,
+          "max_processing_time": 7
+        }
+      ]
+    }
+  }
+}

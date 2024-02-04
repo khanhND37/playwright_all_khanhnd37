@@ -1,0 +1,91 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "shop-template-creator.myshopbase.net",
+      "username": "thupham@beeketing.net",
+      "password": "Phamthu7720@1",
+      "shop_name": "shop-template-creator"
+    },
+    "prodtest": {
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://prod-test-api.shopbase.com"
+    }
+  },
+  "cases": {
+    "SB_DP_DPSF_CDP_10": {
+      "domain": "shop-template-creator.myshopbase.net",
+      "username": "thupham@beeketing.net",
+      "password": "Phamthu7720@1",
+      "shop_name": "shop-template-creator"
+    },
+    "SB_DP_DPSF_CDP_11": {
+      "domain": "shop-template-creator.myshopbase.net",
+      "username": "thupham@beeketing.net",
+      "password": "Phamthu7720@1",
+      "shop_name": "shop-template-creator",
+      "data": [
+        {
+          "case": " Variant_id = null",
+          "cart_info": {
+            "cartItem": {
+              "qty": 0,
+              "properties": [],
+              "variant_id": null
+            },
+            "source": "digital"
+          },
+          "response": {
+            "status": 400,
+            "message": "missing_or_invalid_variant_id"
+          }
+        },
+        {
+          "case": "Qty =0",
+          "cart_info": {
+            "cartItem": {
+              "qty": 0,
+              "properties": [],
+              "variant_id": 1000001766014224
+            },
+            "source": "digital"
+          },
+          "response": {
+            "status": 400,
+            "message": "missing_or_invalid_quantity"
+          }
+        },
+        {
+          "case": "Variant_id, Qty hợp lệ",
+          "cart_info": {
+            "cartItem": {
+              "qty": 1,
+              "properties": [],
+              "variant_id": 1000001766014224
+            },
+            "source": "digital"
+          }
+        }
+      ]
+    },
+    "SB_DP_DPSF_CDP_13": {
+      "domain": "shop-template-creator.myshopbase.net",
+      "username": "thupham@beeketing.net",
+      "password": "Phamthu7720@1",
+      "shop_name": "shop-template-creator",
+      "data": {
+        "cart_info": {
+          "cartItem": {
+            "qty": 1,
+            "properties": [],
+            "variant_id": 1000001766014224
+          },
+          "source": "digital"
+        },
+        "response": {
+          "status": 200
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "env": {
+    "dev": {
+      "domain": "duplicate-multiple-sf.myshopbase.net",
+      "shop_name": "duplicate-multiple-sf",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10330203,
+      "user_id": 90252
+    },
+    "prodtest": {
+      "domain": "duplicate-multiple-sf-prodtest.onshopbase.com",
+      "shop_name": "duplicate-multiple-sf-prodtest",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10454359,
+      "user_id": 11260206
+    },
+    "prod": {
+      "domain": "duplicate-multiple-sf.onshopbase.com",
+      "shop_name": "duplicate-multiple-sf",
+      "api": "https://api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10454362,
+      "user_id": 11260206
+    }
+  },
+  "cases": {
+    "SB_NEWECOM_MSF_MSFL_64": {
+      "data": {
+        "store_name": "duplicate-multiple-sf",
+        "name_invalid": "She"
+      },
+      "expect": {
+        "heading_popup": "Duplicate storefront",
+        "store_id": "10330203",
+        "snapshot_design": "64-design.png",
+        "snapshot_general": "64-general.png",
+        "snapshot_preferences": "64-preferences.png",
+        "snapshot_navigation": "64-preferences.png",
+        "snapshot_pages": "64-pages.png",
+        "snapshot_blogs": "64-blogs.png",
+        "snapshot_domains": "64-domains.png",
+        "snapshot_checkout": "64-checkout.png"
+      }
+    },
+    "SB_NEWECOM_MSF_MSFL_65": {
+      "data": {
+        "store_name": "duplicate-multisf"
+      },
+      "expect": {
+        "heading_popup": "Duplicate storefront",
+        "store_id": "10330329",
+        "snapshot_design": "65-design.png",
+        "snapshot_general": "65-general.png",
+        "snapshot_preferences": "65-preferences.png",
+        "snapshot_navigation": "65-preferences.png",
+        "snapshot_pages": "65-pages.png",
+        "snapshot_blogs": "65-blogs.png",
+        "snapshot_domains": "65-domains.png",
+        "snapshot_checkout": "65-checkout.png"
+      }
+    }
+  }
+}

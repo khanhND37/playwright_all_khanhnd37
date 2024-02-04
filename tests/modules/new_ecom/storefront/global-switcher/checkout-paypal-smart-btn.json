@@ -1,0 +1,195 @@
+{
+  "env": {
+    "local": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-checkout-currency-paypal-smart-button-prod.onshopbase.com",
+      "shop_name": "au-checkout-currency-paypal-smart-button-prod",
+      "shop_id": 10478777,
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "products_checkout": [
+        {
+          "name": "Product A",
+          "variant_id": 1000011183128966,
+          "quantity": 1
+        }
+      ],
+      "payment_method": "PayPal",
+      "paypal_account": {
+        "username": "buyer@shopbase.com",
+        "password": "2XfWH9Ae"
+      },
+      "retry": 10
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-checkout-currency-paypal-smart-button.myshopbase.net",
+      "shop_name": "au-checkout-currency-paypal-smart-button",
+      "shop_id": 10333698,
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "43AhIn|VWp;[?9&",
+      "user_id": 89797,
+      "products_checkout": [
+        {
+          "name": "Product A",
+          "variant_id": 1000001778685900,
+          "quantity": 1
+        }
+      ],
+      "payment_method": "PayPal",
+      "paypal_account": {
+        "username": "buyer@shopbase.com",
+        "password": "2XfWH9Ae"
+      },
+      "retry": 10
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-checkout-currency-paypal-smart-button-prod.onshopbase.com",
+      "shop_name": "au-checkout-currency-paypal-smart-button-prod",
+      "shop_id": 10478777,
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "products_checkout": [
+        {
+          "name": "Product A",
+          "variant_id": 1000011183128966,
+          "quantity": 1
+        }
+      ],
+      "payment_method": "PayPal",
+      "paypal_account": {
+        "username": "buyer@shopbase.com",
+        "password": "2XfWH9Ae"
+      },
+      "retry": 10
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-checkout-currency-paypal-smart-button-prodtest.onshopbase.com",
+      "shop_name": "au-checkout-currency-paypal-smart-button-prodtest",
+      "shop_id": 10478757,
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "products_checkout": [
+        {
+          "name": "Product A",
+          "variant_id": 1000011183128950,
+          "quantity": 1
+        }
+      ],
+      "payment_method": "PayPal",
+      "paypal_account": {
+        "username": "buyer@shopbase.com",
+        "password": "2XfWH9Ae"
+      },
+      "retry": 10
+    }
+  },
+  "cases": {
+    "SB_SET_GM_MC_272": {
+      "countries": [
+        {
+          "country_name": "United Kingdom",
+          "country_code": "gb",
+          "currency": "GBP",
+          "currency_symbol": "£",
+          "currency_format": "British pound (GBP)",
+          "language_code_country_code": "en-GB",
+          "minimum_fraction_digits": 2,
+          "maximum_fraction_digits": 2
+        },
+        {
+          "country_name": "United States",
+          "country_code": "us",
+          "currency": "USD",
+          "currency_symbol": "$",
+          "currency_format": "$ US Dollar (USD)",
+          "language_code_country_code": "en-US",
+          "minimum_fraction_digits": 2,
+          "maximum_fraction_digits": 2
+        },
+
+        {
+          "country_name": "Canada",
+          "country_code": "ca",
+          "currency": "CAD",
+          "currency_symbol": "$",
+          "currency_format": "$ Canadian dollar (CAD)",
+          "language_code_country_code": "en-CA",
+          "minimum_fraction_digits": 2,
+          "maximum_fraction_digits": 2
+        }
+      ],
+      "product_info": {
+        "name": "Product A",
+        "price": 5,
+        "compare_price": 10,
+        "variant": "s"
+      }
+    },
+    "SB_SET_GM_MC_273": {
+      "countries": [
+        {
+          "country_name": "Germany",
+          "country_code": "de",
+          "currency": "EUR",
+          "currency_symbol": "€",
+          "currency_format": "€ Euro (EUR)",
+          "minimum_fraction_digits": 2,
+          "maximum_fraction_digits": 2,
+          "language_code_country_code": "de-DE"
+        },
+        {
+          "country_name": "Brazil",
+          "country_code": "br",
+          "currency": "BRL",
+          "currency_symbol": "R$",
+          "currency_format": "R$ Brazilian real (BRL)",
+          "language_code_country_code": "pt-BR",
+          "minimum_fraction_digits": 2,
+          "maximum_fraction_digits": 2
+        }
+      ],
+      "product_info": {
+        "name": "Product A",
+        "price": 5,
+        "compare_price": 10,
+        "variant": "s"
+      }
+    },
+    "SB_SET_GM_MC_274": {
+      "countries": [
+        {
+          "country_name": "India",
+          "country_code": "in",
+          "currency": "INR",
+          "currency_symbol": "₹",
+          "currency_format": "₹ Indian rupee (INR)",
+          "language_code_country_code": "hi-IN",
+          "minimum_fraction_digits": 0,
+          "maximum_fraction_digits": 0
+        },
+        {
+          "country_name": "Sweden",
+          "country_code": "se",
+          "currency": "SEK",
+          "currency_symbol": "KR",
+          "currency_format": "kr Swedish krona (SEK)",
+          "language_code_country_code": "sv-SE",
+          "minimum_fraction_digits": 0,
+          "maximum_fraction_digits": 0
+        }
+      ],
+      "product_info": {
+        "name": "Product A",
+        "price": 5,
+        "compare_price": 10,
+        "variant": "s"
+      }
+    }
+  }
+}

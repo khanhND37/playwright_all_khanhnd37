@@ -1,0 +1,86 @@
+{
+  "env": {
+    "prod": {
+      "domain": "au-plb-order-pod-2-prod.onshopbase.com",
+      "api": "https://api.shopbase.com",
+      "shop_name": "au-plb-order-pod-2-prod",
+      "username": "shopbase3@beeketing.net",
+      "password": "aAeg*PJR4.t6V:P",
+      "user_id": 206811,
+      "shop_id": 10379924
+    },
+    "prodtest": {
+      "domain": "au-plb-order-pod-2.onshopbase.com",
+      "api": "https://prod-test-api.shopbase.com",
+      "shop_name": "au-plb-order-pod-2",
+      "username": "shopbase3@beeketing.net",
+      "password": "aAeg*PJR4.t6V:P",
+      "user_id": 206811,
+      "shop_id": 10379423,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "domain": "au-plb-order-pod-2.myshopbase.net",
+      "api": "https://gapi.dev.shopbase.net",
+      "shop_name": "au-plb-order-pod-2",
+      "username": "shopbase4@beeketing.net",
+      "password": "H7mQdQ]Zj]%[Nm?",
+      "user_id": 89321,
+      "shop_id": 10322602
+    }
+  },
+  "card_info": {
+    "number": "4242424242424242",
+    "expire_date": "12 / 26",
+    "cvv": "424",
+    "holder_name": "42424242"
+  },
+  "customer_info": {
+    "email": "tester@maildrop.cc",
+    "first_name": "Yuki",
+    "last_name": "Onna",
+    "address": "true600 W Loop S",
+    "country": "United States",
+    "city": "Los Angeles",
+    "state": "California",
+    "zipcode": "90001",
+    "country_code": "US",
+    "phone_number": "0365555555"
+  },
+  "cases": {
+    "DATA_DRIVEN": {
+      "data": [
+        {
+          "products": [
+            {
+              "name": "(Test Product) Zero profit Shirt",
+              "quantity": "1",
+              "options": ["XL"],
+              "productQtyClass": "product__quantity"
+            }
+          ],
+          "case_id": "SB_PLB_PODPL_PODPO_33",
+          "description": "Verify auto cancel khi order profit < 0, order chỉ có line POD"
+        },
+        {
+          "products": [
+            {
+              "name": "(Test Product) Zero profit Shirt",
+              "quantity": "1",
+              "options": ["XL"],
+              "productQtyClass": "product__quantity"
+            },
+            {
+              "name": "(Test Product) HOLOLIVE VTuber Hakos Baelz Bae Whatabae Merch",
+              "quantity": "1",
+              "options": ["XL"],
+              "productQtyClass": "product__quantity"
+            }
+          ],
+          "case_id": "SB_PLB_PODPL_PODPO_35",
+          "description": "Verify auto cancel khi order profit < 0, order có cả POD và Dropship. Line Dropship có profit > 0"
+        }
+      ]
+    }
+  }
+}

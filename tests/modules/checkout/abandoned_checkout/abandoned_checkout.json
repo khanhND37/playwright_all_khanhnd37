@@ -1,0 +1,181 @@
+{
+  "shipping_address": {
+    "address1": "814 Mission Street",
+    "address2": "",
+    "city": "Los Angeles",
+    "company": "",
+    "country": "United States",
+    "country_code": "US",
+    "country_name": "United States",
+    "cpf_or_cnpj_number": "",
+    "first_name": "Tester",
+    "last_name": "Shopbase",
+    "name": "Jena",
+    "phone": "505-646-2276",
+    "province": "California",
+    "province_code": "CA",
+    "zip": "90001",
+    "remember_me": false
+  },
+  "email_scheduler": "ngocnguyen6@beeketing.net",
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "user_id": 73800,
+      "domain": "au-abandon-checkout.myshopbase.net",
+      "shop_name": "au-abandon-checkout",
+      "email": "tester@maildrop.cc",
+      "mailAC": "AbandonedCheckoutOnDev@maildrop.cc",
+      "storefront1_info": {
+        "shop_id": 10321744,
+        "domain": "au-conversion-analytic.myshopbase.net",
+        "product": [
+          {
+            "variant_id": 1000001769317210,
+            "quantity": 1
+          }
+        ]
+      },
+      "storefront2_info": {
+        "shop_id": 10321473,
+        "domain": "au-shop-cardpay-gateway.myshopbase.net",
+        "product": [
+          {
+            "variant_id": 1000001765914518,
+            "quantity": 1
+          }
+        ]
+      },
+      "storefront3_info": {
+        "shop_id": 10331842,
+        "domain": "au-abandon-checkout.myshopbase.net",
+        "product": [
+          {
+            "variant_id": 1000001781723863,
+            "quantity": 1
+          }
+        ]
+      }
+    },
+    "prodtest": {
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "user_id": 73782,
+      "domain": "au-abandon-checkout-prodtest.onshopbase.com",
+      "shop_name": "au-abandon-checkout-prodtest",
+      "email": "tester@maildrop.cc",
+      "mailAC": "AbandonedCheckoutOnProdtest@maildrop.cc",
+      "storefront1_info": {
+        "shop_id": 10321744,
+        "domain": "au-conversion-analytic-prodtest.onshopbase.com",
+        "product": [
+          {
+            "variant_id": 1000011235240575,
+            "quantity": 1
+          }
+        ]
+      },
+      "storefront2_info": {
+        "shop_id": 10321473,
+        "domain": "au-shop-cardpay-gateway-prodtest.onshopbase.com",
+        "product": [
+          {
+            "variant_id": 1000005631169487,
+            "quantity": 1
+          }
+        ]
+      },
+      "storefront3_info": {
+        "shop_id": 10470109,
+        "domain": "au-abandon-checkout-prodtest.onshopbase.com",
+        "product": [
+          {
+            "variant_id": 1000011064938695,
+            "quantity": 1
+          }
+        ]
+      }
+    },
+    "prod": {
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://api.shopbase.com",
+      "username": "shopbase2@beeketing.net",
+      "password": "raMse).7L/b4;k#@",
+      "user_id": 74303,
+      "domain": "au-abandon-checkout.onshopbase.com",
+      "shop_name": "au-abandon-checkout",
+      "email": "tester@maildrop.cc",
+      "mailAC": "AbandonedCheckoutOnProdlive@maildrop.cc",
+      "storefront1_info": {
+        "shop_id": 10321744,
+        "domain": "au-conversion-analytic.onshopbase.com",
+        "product": [
+          {
+            "variant_id": 1000011235248189,
+            "quantity": 1
+          }
+        ]
+      },
+      "storefront2_info": {
+        "shop_id": 10321473,
+        "domain": "au-shop-cardpay-gateway.onshopbase.com",
+        "product": [
+          {
+            "variant_id": 1000009459290969,
+            "quantity": 1
+          }
+        ]
+      },
+      "storefront3_info": {
+        "shop_id": 10331842,
+        "domain": "au-abandon-checkout.onshopbase.com",
+        "product": [
+          {
+            "variant_id": 1000011064806534,
+            "quantity": 1
+          }
+        ]
+      }
+    }
+  },
+  "cases": {
+    "SB_ORD_ABC_17": {
+      "card_info": {
+        "number": "4000000000000119",
+        "holder_name": "Shopbase",
+        "expire_date": "12 / 25",
+        "cvv": "100"
+      },
+      "fail_reason": "An error occurred while processing your card. Try again in a little bit."
+    },
+    "SB_ORD_ABC_30": {
+      "card_info": {
+        "unlimint_card": "4000000000000002",
+        "holder_name": "Shopbase",
+        "expire_month": "12",
+        "expire_year": "2024",
+        "cvv": "100"
+      },
+      "fail_reason": "Oops! This card is declined by 3-D Secure. Please try again with another card to complete payment for your order."
+    },
+    "SB_ORD_ABC_3": {
+      "card_info_error": {
+        "number": "4000000000000002",
+        "holder_name": "Shopbase",
+        "expire_date": "12 / 25",
+        "cvv": "100"
+      },
+      "fail_reason": "The card has been declined for an unknown reason. Please contact your card issuer.",
+      "card_info": {
+        "number": "4242424242424242",
+        "holder_name": "Shopbase",
+        "expire_date": "12 / 25",
+        "cvv": "100"
+      }
+    }
+  }
+}

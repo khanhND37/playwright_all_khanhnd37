@@ -1,0 +1,739 @@
+{
+  "env": {
+    "local": {
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "opay-qe-1@beeketing.net",
+      "password": "CZFX[b_G5T:+N*Y",
+      "domain": "au-express-checkout-prodtest.onshopbase.com",
+      "shop_name": "au-express-checkout-prodtest",
+      "shop_id": 10464124,
+      "user_id": 11247306,
+
+      "cases": {
+        "SB_CHE_NEW_EF_04": {
+          "products_checkout": [
+            {
+              "name": "Bikini",
+              "variant_id": 1000010917568438,
+              "quantity": 1
+            }
+          ]
+        }
+      }
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "domain": "au-express-checkout.myshopbase.net",
+      "shop_name": "au-express-checkout",
+      "shop_id": 10332826,
+      "user_id": 73800,
+
+      "cases": {
+        "SB_CHE_NEW_EF_04": {
+          "products_checkout": [
+            {
+              "name": "Bikini",
+              "variant_id": 1000001774845543,
+              "quantity": 4
+            }
+          ]
+        },
+        "SB_CHE_NEW_EF_07": {
+          "products_checkout": [
+            {
+              "name": "Post purchase",
+              "variant_id": 1000001774845541,
+              "quantity": 4
+            }
+          ],
+          "product_ppc": "Bikini"
+        },
+        "SB_CHE_NEW_EF_14": {
+          "products_checkout": [
+            {
+              "name": "Post purchase",
+              "variant_id": 1000001774845541,
+              "quantity": 1,
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax Region",
+                "tax_rate": 15
+              }
+            }
+          ],
+          "product_ppc": "Bikini"
+        },
+        "SB_CHE_NEW_EF_16": {
+          "products_checkout": [
+            {
+              "name": "Post purchase",
+              "variant_id": 1000001774845541,
+              "quantity": 1,
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax Region",
+                "tax_rate": 15
+              }
+            }
+          ],
+          "discount": {
+            "title": "AU_OPAY_DISCOUNT",
+            "value": -10,
+            "target_type": "line_item",
+            "value_type": "percentage",
+            "type": "automatic",
+            "ends_at": "",
+            "update_fields": ["value", "value_type", "ends_at", "target_type"]
+          }
+        },
+        "SB_CHE_NEW_EF_19": {
+          "products_checkout": [
+            {
+              "name": "Bikini",
+              "variant_id": 1000001774845543,
+              "quantity": 1,
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax Region",
+                "tax_rate": 15
+              }
+            }
+          ],
+          "discount": {
+            "title": "AU_OPAY_DISCOUNT",
+            "value": -100,
+            "value_type": "percentage",
+            "target_type": "shipping_line",
+            "type": "automatic",
+            "ends_at": "",
+            "update_fields": ["value", "value_type", "ends_at", "target_type"]
+          }
+        },
+        "SB_CHE_NEW_EF_24": {
+          "products_checkout": [
+            {
+              "name": "Post purchase",
+              "variant_id": 1000001774845541,
+              "quantity": 4
+            },
+            {
+              "name": "Bikini",
+              "variant_id": 1000001774845543,
+              "quantity": 1,
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax Region",
+                "tax_rate": 15
+              }
+            }
+          ],
+          "discount": {
+            "is_create": true,
+            "title": "OPAY_DISCOUNT_BXGY",
+            "customer_buy_variants": [1000001774845541],
+            "customer_get_variants": [1000001774845543],
+            "quantity_ratio": {
+              "prerequisite_quantity": 4,
+              "entitled_quantity": 1
+            },
+            "value": -100,
+            "value_type": "percentage",
+            "type": "manual"
+          }
+        },
+        "SB_CHE_NEW_EF_25": {
+          "products_checkout": [
+            {
+              "name": "Bikini",
+              "variant_id": 1000001774845543,
+              "quantity": 1,
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax Region",
+                "tax_rate": 15
+              }
+            }
+          ],
+          "discount": {
+            "is_create": true,
+            "title": "OPAY_DISCOUNT_FIXAMT",
+            "value": -10,
+            "value_type": "fixed_amount",
+            "type": "manual",
+            "target_type": "line_item"
+          }
+        },
+        "SB_CHE_NEW_EF_28": {
+          "products_checkout": [
+            {
+              "name": "Bikini",
+              "variant_id": 1000001774845543,
+              "quantity": 1,
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax Region",
+                "tax_rate": 15
+              }
+            }
+          ],
+          "discount": {
+            "title": "AU_OPAY_DISCOUNT",
+            "value": -10,
+            "target_type": "line_item",
+            "value_type": "percentage",
+            "type": "automatic",
+            "ends_at": "",
+            "update_fields": ["value", "value_type", "ends_at", "target_type"]
+          },
+          "manual_discount": {
+            "lower_price": {
+              "title": "OPAY_DISCOUNT_FIXAMT_1$",
+              "message": "Only one discount can be applied for your order. We have chosen the most valuable one for you."
+            },
+            "not_exist": {
+              "title": "OPAY_ABCXYZ",
+              "message": "Unable to find a valid discount matching the code entered."
+            },
+            "invalid": {
+              "title": "OPAY_DISCOUNT_FREESHIP_VN",
+              "message": "OPAY_DISCOUNT_FREESHIP_VN discount code isn’t valid for the items in your cart."
+            },
+            "valid": {
+              "title": "OPAY_DISCOUNT_FIXAMT",
+              "value": -10
+            }
+          }
+        },
+        "SB_CHE_NEW_EF_39": {
+          "products_checkout": [
+            {
+              "name": "Post purchase",
+              "variant_id": 1000001774845541,
+              "quantity": 4
+            }
+          ],
+          "product_ppc": [
+            {
+              "name": "Bikini",
+              "variant_id": 1000001774845543,
+              "quantity": 1,
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax Region",
+                "tax_rate": 15
+              }
+            }
+          ],
+          "new_shipping_address": {
+            "country": "Belgium",
+            "currency": "EUR"
+          }
+        },
+        "SB_CHE_NEW_EF_Pr_769": {
+          "products_checkout": [
+            {
+              "name": "Post purchase",
+              "variant_id": 1000001774845541,
+              "quantity": 4
+            }
+          ],
+          "product_ppc": "Bikini"
+        },
+        "SB_CHE_NEW_EF_Ca_229": {
+          "products_checkout": [
+            {
+              "name": "Bikini",
+              "variant_id": 1000001774845543,
+              "quantity": 4
+            }
+          ]
+        }
+      }
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "opay-qe-1@beeketing.net",
+      "password": "CZFX[b_G5T:+N*Y",
+      "domain": "au-express-checkout-prodtest.onshopbase.com",
+      "shop_name": "au-express-checkout-prodtest",
+      "shop_id": 10464124,
+      "user_id": 11247306
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "username": "opay-qe-1@beeketing.net",
+      "password": "CZFX[b_G5T:+N*Y",
+      "domain": "au-express-checkout.onshopbase.com",
+      "shop_name": "au-express-checkout",
+      "shop_id": 10468487,
+      "user_id": 11247306,
+
+      "cases": {
+        "SB_CHE_NEW_EF_04": {
+          "products_checkout": [
+            {
+              "name": "Bikini",
+              "variant_id": 1000010984680859,
+              "quantity": 4
+            }
+          ]
+        },
+        "SB_CHE_NEW_EF_07": {
+          "products_checkout": [
+            {
+              "name": "Post purchase",
+              "variant_id": 1000010984680863,
+              "quantity": 4
+            }
+          ],
+          "product_ppc": "Bikini"
+        },
+        "SB_CHE_NEW_EF_14": {
+          "products_checkout": [
+            {
+              "name": "Post purchase",
+              "variant_id": 1000010984680863,
+              "quantity": 1,
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax Region",
+                "tax_rate": 15
+              }
+            }
+          ],
+          "product_ppc": "Bikini"
+        },
+        "SB_CHE_NEW_EF_16": {
+          "products_checkout": [
+            {
+              "name": "Post purchase",
+              "variant_id": 1000010984680863,
+              "quantity": 1,
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax Region",
+                "tax_rate": 15
+              }
+            }
+          ],
+          "discount": {
+            "title": "AU_OPAY_DISCOUNT",
+            "value": -10,
+            "target_type": "line_item",
+            "value_type": "percentage",
+            "type": "automatic",
+            "ends_at": "",
+            "update_fields": ["value", "value_type", "ends_at", "target_type"]
+          }
+        },
+        "SB_CHE_NEW_EF_19": {
+          "products_checkout": [
+            {
+              "name": "Bikini",
+              "variant_id": 1000010984680859,
+              "quantity": 1,
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax Region",
+                "tax_rate": 15
+              }
+            }
+          ],
+          "discount": {
+            "title": "AU_OPAY_DISCOUNT",
+            "value": -100,
+            "value_type": "percentage",
+            "target_type": "shipping_line",
+            "type": "automatic",
+            "ends_at": "",
+            "update_fields": ["value", "value_type", "ends_at", "target_type"]
+          }
+        },
+        "SB_CHE_NEW_EF_24": {
+          "products_checkout": [
+            {
+              "name": "Post purchase",
+              "variant_id": 1000010984680863,
+              "quantity": 4
+            },
+            {
+              "name": "Bikini",
+              "variant_id": 1000010984680859,
+              "quantity": 1,
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax Region",
+                "tax_rate": 15
+              }
+            }
+          ],
+          "discount": {
+            "is_create": true,
+            "title": "OPAY_DISCOUNT_BXGY",
+            "customer_buy_variants": [1000010984680863],
+            "customer_get_variants": [1000010984680859],
+            "quantity_ratio": {
+              "prerequisite_quantity": 4,
+              "entitled_quantity": 1
+            },
+            "value": -100,
+            "value_type": "percentage",
+            "type": "manual"
+          }
+        },
+        "SB_CHE_NEW_EF_25": {
+          "products_checkout": [
+            {
+              "name": "Bikini",
+              "variant_id": 1000010984680859,
+              "quantity": 1,
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax Region",
+                "tax_rate": 15
+              }
+            }
+          ],
+          "discount": {
+            "is_create": true,
+            "title": "OPAY_DISCOUNT_FIXAMT",
+            "value": -10,
+            "value_type": "fixed_amount",
+            "type": "manual",
+            "target_type": "line_item"
+          }
+        },
+        "SB_CHE_NEW_EF_28": {
+          "products_checkout": [
+            {
+              "name": "Bikini",
+              "variant_id": 1000010984680859,
+              "quantity": 1,
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax Region",
+                "tax_rate": 15
+              }
+            }
+          ],
+          "discount": {
+            "title": "AU_OPAY_DISCOUNT",
+            "value": -10,
+            "target_type": "line_item",
+            "value_type": "percentage",
+            "type": "automatic",
+            "ends_at": "",
+            "update_fields": ["value", "value_type", "ends_at", "target_type"]
+          },
+          "manual_discount": {
+            "lower_price": {
+              "title": "OPAY_DISCOUNT_FIXAMT_1$",
+              "message": "Only one discount can be applied for your order. We have chosen the most valuable one for you."
+            },
+            "not_exist": {
+              "title": "OPAY_ABCXYZ",
+              "message": "Unable to find a valid discount matching the code entered."
+            },
+            "invalid": {
+              "title": "OPAY_DISCOUNT_FREESHIP_VN",
+              "message": "OPAY_DISCOUNT_FREESHIP_VN discount code isn’t valid for the items in your cart."
+            },
+            "valid": {
+              "title": "OPAY_DISCOUNT_FIXAMT",
+              "value": -10
+            }
+          }
+        },
+        "SB_CHE_NEW_EF_39": {
+          "products_checkout": [
+            {
+              "name": "Post purchase",
+              "variant_id": 1000010984680863,
+              "quantity": 4
+            }
+          ],
+          "product_ppc": [
+            {
+              "name": "Bikini",
+              "variant_id": 1000010984680859,
+              "quantity": 1,
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax Region",
+                "tax_rate": 15
+              }
+            }
+          ],
+          "new_shipping_address": {
+            "country": "Belgium",
+            "currency": "EUR"
+          }
+        },
+        "SB_CHE_NEW_EF_Pr_769": {
+          "products_checkout": [
+            {
+              "name": "Post purchase",
+              "variant_id": 1000010984680863,
+              "quantity": 4
+            }
+          ],
+          "product_ppc": "Bikini"
+        },
+        "SB_CHE_NEW_EF_Ca_229": {
+          "products_checkout": [
+            {
+              "name": "Bikini",
+              "variant_id": 1000010984680859,
+              "quantity": 4
+            }
+          ]
+        }
+      }
+    }
+  },
+
+  "shipping_address": {
+    "email": "buyer@shopbase.com",
+    "first_name": "John",
+    "last_name": "Vardy"
+  },
+
+  "paypal_account": {
+    "id": "AfL2WyCQuIis451KPSSrSIgAAfFyiqFDgz5FPYAk4N8som1mrPVlgtK4CFZamgA8UP9GQzFfOGW6ELoP",
+    "secret_key": "EOU0iGeg1J7DEzcD9tVYBzjLD7ia_tWSQ9g9Ia-E-nK5DGenuZwXGJAtEGOY7m6pwgDD95uV0bGJGaCW"
+  },
+
+  "schedule_time": 15,
+  "email_scheduler": "thaidoan@beeketing.net",
+
+  "discount_reset": {
+    "title": "AU_OPAY_DISCOUNT",
+    "ends_at": "",
+    "update_fields": ["ends_at"]
+  },
+
+  "cases": {
+    "SB_CHE_NEW_EF_04": {
+      "products_checkout": [
+        {
+          "name": "Bikini",
+          "variant_id": 1000010917568438,
+          "quantity": 4
+        }
+      ]
+    },
+    "SB_CHE_NEW_EF_07": {
+      "products_checkout": [
+        {
+          "name": "Post purchase",
+          "variant_id": 1000010917568440,
+          "quantity": 4
+        }
+      ],
+      "product_ppc": "Bikini"
+    },
+    "SB_CHE_NEW_EF_14": {
+      "products_checkout": [
+        {
+          "name": "Post purchase",
+          "variant_id": 1000010917568440,
+          "quantity": 1,
+          "tax_info": {
+            "tax_type": "exclude",
+            "tax_name": "Tax Region",
+            "tax_rate": 15
+          }
+        }
+      ],
+      "product_ppc": "Bikini"
+    },
+    "SB_CHE_NEW_EF_16": {
+      "products_checkout": [
+        {
+          "name": "Post purchase",
+          "variant_id": 1000010917568440,
+          "quantity": 1,
+          "tax_info": {
+            "tax_type": "exclude",
+            "tax_name": "Tax Region",
+            "tax_rate": 15
+          }
+        }
+      ],
+      "discount": {
+        "title": "AU_OPAY_DISCOUNT",
+        "value": -10,
+        "target_type": "line_item",
+        "value_type": "percentage",
+        "type": "automatic",
+        "ends_at": "",
+        "update_fields": ["value", "value_type", "ends_at", "target_type"]
+      }
+    },
+    "SB_CHE_NEW_EF_19": {
+      "products_checkout": [
+        {
+          "name": "Bikini",
+          "variant_id": 1000010917568438,
+          "quantity": 1,
+          "tax_info": {
+            "tax_type": "exclude",
+            "tax_name": "Tax Region",
+            "tax_rate": 15
+          }
+        }
+      ],
+      "discount": {
+        "title": "AU_OPAY_DISCOUNT",
+        "value": -100,
+        "value_type": "percentage",
+        "target_type": "shipping_line",
+        "type": "automatic",
+        "ends_at": "",
+        "update_fields": ["value", "value_type", "ends_at", "target_type"]
+      }
+    },
+    "SB_CHE_NEW_EF_24": {
+      "products_checkout": [
+        {
+          "name": "Post purchase",
+          "variant_id": 1000010917568440,
+          "quantity": 4
+        },
+        {
+          "name": "Bikini",
+          "variant_id": 1000010917568438,
+          "quantity": 1,
+          "tax_info": {
+            "tax_type": "exclude",
+            "tax_name": "Tax Region",
+            "tax_rate": 15
+          }
+        }
+      ],
+      "discount": {
+        "is_create": true,
+        "title": "OPAY_DISCOUNT_BXGY",
+        "customer_buy_variants": [1000010917568440],
+        "customer_get_variants": [1000010917568438],
+        "quantity_ratio": {
+          "prerequisite_quantity": 4,
+          "entitled_quantity": 1
+        },
+        "value": -100,
+        "value_type": "percentage",
+        "type": "manual"
+      }
+    },
+    "SB_CHE_NEW_EF_25": {
+      "products_checkout": [
+        {
+          "name": "Bikini",
+          "variant_id": 1000010917568438,
+          "quantity": 1,
+          "tax_info": {
+            "tax_type": "exclude",
+            "tax_name": "Tax Region",
+            "tax_rate": 15
+          }
+        }
+      ],
+      "discount": {
+        "is_create": true,
+        "title": "OPAY_DISCOUNT_FIXAMT",
+        "value": -10,
+        "value_type": "fixed_amount",
+        "type": "manual",
+        "target_type": "line_item"
+      }
+    },
+    "SB_CHE_NEW_EF_28": {
+      "products_checkout": [
+        {
+          "name": "Bikini",
+          "variant_id": 1000010917568438,
+          "quantity": 1,
+          "tax_info": {
+            "tax_type": "exclude",
+            "tax_name": "Tax Region",
+            "tax_rate": 15
+          }
+        }
+      ],
+      "discount": {
+        "title": "AU_OPAY_DISCOUNT",
+        "value": -10,
+        "target_type": "line_item",
+        "value_type": "percentage",
+        "type": "automatic",
+        "ends_at": "",
+        "update_fields": ["value", "value_type", "ends_at", "target_type"]
+      },
+      "manual_discount": {
+        "lower_price": {
+          "title": "OPAY_DISCOUNT_FIXAMT_1$",
+          "message": "Only one discount can be applied for your order. We have chosen the most valuable one for you."
+        },
+        "not_exist": {
+          "title": "OPAY_ABCXYZ",
+          "message": "Unable to find a valid discount matching the code entered."
+        },
+        "invalid": {
+          "title": "OPAY_DISCOUNT_FREESHIP_VN",
+          "message": "OPAY_DISCOUNT_FREESHIP_VN discount code isn’t valid for the items in your cart.",
+          "value": -10
+        },
+        "valid": {
+          "title": "OPAY_DISCOUNT_FIXAMT",
+          "value": -10
+        }
+      }
+    },
+    "SB_CHE_NEW_EF_39": {
+      "products_checkout": [
+        {
+          "name": "Post purchase",
+          "variant_id": 1000010917568440,
+          "quantity": 4
+        }
+      ],
+      "product_ppc": [
+        {
+          "name": "Bikini",
+          "variant_id": 1000010917568438,
+          "quantity": 1,
+          "tax_info": {
+            "tax_type": "exclude",
+            "tax_name": "Tax Region",
+            "tax_rate": 15
+          }
+        }
+      ],
+      "new_shipping_address": {
+        "country": "Belgium",
+        "currency": "EUR"
+      }
+    },
+    "SB_CHE_NEW_EF_Pr_769": {
+      "products_checkout": [
+        {
+          "name": "Post purchase",
+          "variant_id": 1000010917568440,
+          "quantity": 4
+        }
+      ],
+      "product_ppc": "Bikini"
+    },
+    "SB_CHE_NEW_EF_Ca_229": {
+      "products_checkout": [
+        {
+          "name": "Bikini",
+          "variant_id": 1000010917568438,
+          "quantity": 4
+        }
+      ]
+    }
+  }
+}

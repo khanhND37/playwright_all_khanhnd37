@@ -1,0 +1,253 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "accounts_domain": "accounts.dev.shopbase.net",
+      "domain": "au-trans-apps.myshopbase.net",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "43AhIn|VWp;[?9&",
+      "shop_name": "au-trans-apps",
+      "user_id": 89797,
+      "shop_id": 10333697,
+      "default_language": "English",
+      "publish_language": "German",
+      "unpublish_language": "French",
+      "target_ids": [1100000001035400],
+      "target_handle": "product-2",
+      "recommend_ids": [1100000001035399],
+      "target_bundle": [1100000001035400, 1100000001035399]
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "accounts_domain": "accounts-test.shopbase.com",
+      "domain": "au-entity-app-prodtest.onshopbase.com",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "shop_name": "au-entity-app-prodtest",
+      "user_id": 11244582,
+      "shop_id": 10483870,
+      "default_language": "English",
+      "publish_language": "German",
+      "unpublish_language": "French",
+      "target_ids": [1000000495437015],
+      "target_handle": "product-2",
+      "recommend_ids": [1000000495436994],
+      "target_bundle": [1000000495437015, 1000000495436994]
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "accounts_domain": "accounts.shopbase.com",
+      "domain": "au-entity-app-prod.onshopbase.com",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "shop_name": "au-entity-app-prod",
+      "user_id": 11244582,
+      "shop_id": 10483871,
+      "default_language": "English",
+      "publish_language": "German",
+      "unpublish_language": "French",
+      "target_ids": [1000000495437069],
+      "target_handle": "product-2",
+      "recommend_ids": [1000000495437053],
+      "target_bundle": [1000000495437069, 1000000495437053]
+    }
+  },
+  "delete_offer": {
+    "ids": []
+  },
+  "accessories_offer": {
+    "target_product": "Switch puller",
+    "accessories": ["Monster USB type-C cable"],
+    "type": "Accessories",
+    "handle": "product-x",
+    "data": {
+      "activated": true,
+      "enable_discount": false,
+      "offer_type": "accessory",
+      "offer_name": "test name app - Accessories Offer",
+      "offer_message": "test mess app - Suggested Accessories",
+      "offer_title": "test offer title - We've got a special offer for you that complements your purchase.",
+      "target_type": "product",
+      "target_ids": [],
+      "recommend_type": "product",
+      "recommend_ids": [],
+      "discount_data": "{}",
+      "offer_product_updated": true
+    }
+  },
+  "bundle_offer": {
+    "type": "Bundles",
+    "target_product": "Mojo68 Monster",
+    "custom_text": "Cherry Brown switch",
+    "product_1": "Mojo pad",
+    "product_2": "Key puller",
+    "handle": "product-a",
+    "data": {
+      "activated": true,
+      "enable_discount": true,
+      "offer_type": "bundle",
+      "offer_name": "test name app - Bundles offer",
+      "offer_message": "test mess app - Frequently bought together",
+      "offer_title": "test offer title - We've got a special offer for you.",
+      "target_type": "all",
+      "recommend_type": "product",
+      "target_ids": [],
+      "recommend_ids": [],
+      "discount_data": "{\"percentage_discount\":10,\"stock_item_limit\":30}",
+      "offer_product_updated": true
+    }
+  },
+  "pre_purchase_offer": {
+    "type": "Pre-purchase Offers",
+    "target_product": "Mojo68 Monster",
+    "recommended_product": ["Mojo pad"],
+    "handle": "product-a",
+    "data": {
+      "activated": true,
+      "enable_discount": true,
+      "offer_type": "pre-purchase",
+      "offer_name": "test name app - Pre-purchase offer",
+      "offer_success_message": "",
+      "offer_product_updated": false,
+      "offer_message": "test mess app - Frequently bought with {{product name}}",
+      "target_type": "product",
+      "target_ids": [],
+      "recommend_type": "product",
+      "recommend_ids": [],
+      "discount_data": "{ \"percentage_discount\": 30, \"stock_item_limit\": 30}"
+    }
+  },
+  "quantity_offer": {
+    "target_product": "Mojo68 Monster",
+    "type": "Quantity Discounts",
+    "handle": "product-a",
+    "title_1": "1 item get $10.00",
+    "discount_1": 10,
+    "quantity_1": 1,
+    "title_2": "2 items get 15% OFF",
+    "discount_2": 0.15,
+    "quantity_2": 2,
+    "data": {
+      "activated": true,
+      "offer_type": "quantity",
+      "offer_name": "test name app - Quantity Discounts Offer",
+      "offer_title": "test offer title - We've got a special offer for you that complements your purchase.",
+      "offer_message": "test mess app - Buy More Save More!",
+      "offer_success_message": "",
+      "target_type": "product",
+      "enable_discount": true,
+      "recommend_type": "",
+      "target_ids": [],
+      "recommend_ids": [],
+      "discount_data": "{\"data\":[{\"key\":0,\"min_quantity\":1,\"value_discount\":10,\"type\":\"amount_all\" },{\"key\":1,\"min_quantity\":2,\"value_discount\":15,\"type\":\"percentage_each\"}]}",
+      "offer_product_updated": false
+    }
+  },
+  "in_cart_offer": {
+    "target_product": "Key puller",
+    "recommended_product": "Gateron White Pro v2",
+    "type": "In-cart Offers",
+    "handle": "product-c",
+    "data": {
+      "activated": true,
+      "offer_type": "in-cart",
+      "offer_name": "test name app - In-cart offer",
+      "offer_title": "test offer title - We've got a special offer for you that complements your purchase.",
+      "offer_message": "test mess app - Add matching product",
+      "offer_success_message": "",
+      "target_type": "product",
+      "enable_discount": true,
+      "recommend_type": "product",
+      "target_ids": [],
+      "recommend_ids": [],
+      "discount_data": "{\"percentage_discount\":10}",
+      "offer_product_updated": false,
+      "condition": {
+        "in_cart": {
+          "base_category": {
+            "from_product_with": "lowest-price",
+            "from_these_categories": [110, 109, 111, 112, 113, 114, 115, 116]
+          },
+          "product": {
+            "recommend_variant_with": "lowest-price"
+          }
+        }
+      }
+    }
+  },
+  "post_purchase_offer": {
+    "target_product": "Key puller",
+    "recommended_product": "Gateron White Pro v2",
+    "type": "In-cart Offers",
+    "handle": "product-c",
+    "data": {
+      "activated": true,
+      "offer_type": "post-purchase",
+      "offer_name": "test name app - Post-purchase offer",
+      "offer_title": "test offer title - We've got a special offer for you that complements your purchase.",
+      "offer_message": "test mess app - Add matching product",
+      "offer_success_message": "",
+      "target_type": "product",
+      "enable_discount": true,
+      "recommend_type": "product",
+      "target_ids": [],
+      "recommend_ids": [],
+      "discount_data": "{\"percentage_discount\":10}",
+      "offer_product_updated": false,
+      "condition": {
+        "in_cart": {
+          "base_category": {
+            "from_product_with": "lowest-price",
+            "from_these_categories": [110, 109, 111, 112, 113, 114, 115, 116]
+          },
+          "product": {
+            "recommend_variant_with": "lowest-price"
+          }
+        }
+      }
+    }
+  },
+  "cases": {
+    "SB_SET_TL_63": {
+      "case_description": "[DB - UI/UX] Kiểm tra màn translate detail của store data - Apps - Boots upsell",
+      "publish_language": "German",
+      "invalid_value": "fake_apps",
+      "valid_value": "test entity app - ",
+      "more_characters": "Lorem ipsum dolor sit amet consectetur adipiscing elit vehicula, venenatis natoque urna dui mi et."
+    },
+    "SB_SET_TL_90": {
+      "case_description": "[DB+SF - Function] Kiểm tra tính năng auto translate khi Disable Auto translate của Apps - Boots upsell",
+      "publish_language": "German",
+      "language_global_switcher": { "language": "DE" },
+      "locale_info": "de-vn",
+      "field_name": "Offer's message",
+      "edit_message": {
+        "accessories": "Edit app mess - Suggested Accessories",
+        "in_cart": "Edit app mess - Suggested in cart",
+        "bundle": "Edit app mess - Suggested bundle",
+        "pre_purchase": "Edit app mess - Suggested pre purchase",
+        "quantity": "Edit app mess - Suggested quantity",
+        "post_purchase": "Edit app mess - Suggested post purchase"
+      },
+      "edit_offer_name": "Edit app name - Accessories Offer",
+      "edit_manual": "edit"
+    },
+    "SB_SET_TL_89": {
+      "case_description": "[DB+SF - Function] Kiểm tra tính năng auto translate khi Enable Auto translate của Apps - Boots upsell",
+      "publish_language": "Vietnamese",
+      "language_global_switcher": { "language": "VI" },
+      "locale_info": "vi-vn",
+      "field_name": "Offer's message",
+      "edit_message": {
+        "accessories": "Edit app mess - Suggested Accessories",
+        "in_cart": "Edit app mess - Suggested in cart",
+        "bundle": "Edit app mess - Suggested bundle",
+        "pre_purchase": "Edit app mess - Suggested pre purchase",
+        "quantity": "Edit app mess - Suggested quantity",
+        "post_purchase": "Edit app mess - Suggested post purchase"
+      },
+      "edit_offer_name": "Edit app name - Accessories Offer",
+      "edit_manual": "edit SB_SET_TL_89"
+    }
+  }
+}

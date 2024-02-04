@@ -1,0 +1,103 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-cancel-refund-plbpod.onshopbase.com",
+      "shop_name": "au-cancel-refund-plbpod.onshopbase.com",
+      "username": "shopbase4@beeketing.net",
+      "password": "H7mQdQ]Zj]%[Nm?",
+      "shop_id": 10380748,
+      "user_id": 207114,
+      "plb_template": {
+        "domain": "template-store.onshopbase.com",
+        "shop_name": "template-store.onshopbase.com",
+        "user_id": "9131323",
+        "shop_id": "10258217",
+        "username": "qas@beeketing.net",
+        "password": "123456",
+        "shop": "template-store"
+      },
+      "variant_id": 1000010152537393
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-cancel-refund-plbpod-prodtest.onshopbase.com",
+      "shop_name": "au-cancel-refund-plbpod-prodtest.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10379794,
+      "user_id": 73782,
+      "plb_template": {
+        "domain": "plusbase-templateprodtest.onshopbase.com",
+        "shop_name": "plusbase-templateprodtest.onshopbase.com",
+        "user_id": "9131323",
+        "shop_id": "10364655",
+        "username": "qas@beeketing.net",
+        "password": "123456",
+        "shop": "plusbase-templateprodtest"
+      },
+      "variant_id": 1000010133275190,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-cancel-refund-plbpod.myshopbase.net",
+      "shop_name": "au-cancel-refund-plbpod",
+      "username": "shopbase3@beeketing.net",
+      "password": "=l-N&YG}g<'KLJk",
+      "shop_id": 10322783,
+      "user_id": 86961,
+      "plb_template": {
+        "domain": "plusbase-checkout.myshopbase.net",
+        "shop_name": "plusbase-checkout.myshopbase.net",
+        "user_id": 87262,
+        "shop_id": 10060862,
+        "username": "phuongpham@beeketing.net",
+        "password": "123456",
+        "shop": "plusbase-checkout"
+      },
+      "variant_id": 1000001779338520
+    }
+  },
+  "card_info": {
+    "number": "4242424242424242",
+    "holder_name": "Shopbase",
+    "expire_date": "12 / 26",
+    "cvv": "119"
+  },
+  "cases": {
+    "SB_PLB_PODPL_PODPO_25": {
+      "payment_status": "Authorized",
+      "fulfillment_status": "Unfulfilled",
+      "approved_payment_status": "Paid"
+    },
+    "SB_PLB_PODPL_PODPO_29": {
+      "refunds": [
+        {
+          "is_full_refund": true,
+          "ignore_refund_buyer": true,
+          "lines": [
+            {
+              "product_name": "(Automation) cancel refund plbpod",
+              "variant_title": "Sleeveless Dress / All over print / S",
+              "quantity": 0
+            }
+          ],
+          "input": {
+            "refund_seller_base_cost": 15,
+            "refund_seller_shipping": 0,
+            "refund_seller_processing": 0.41,
+            "refund_seller_payment": 0.94,
+            "refund_seller_tax": 2.82,
+            "refund_seller_design": 0,
+            "refund_buyer_selling": 29.06,
+            "refund_buyer_tip": 0,
+            "refund_buyer_shipping": 2.2,
+            "refund_buyer_payment": 1.2,
+            "refund_buyer_tax": 0
+          }
+        }
+      ]
+    }
+  }
+}

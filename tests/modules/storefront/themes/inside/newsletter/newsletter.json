@@ -1,0 +1,914 @@
+{
+  "env": {
+    "prod": {
+      "domain": "au-inside-newsletterv2.onshopbase.com",
+      "shop_name": "au-inside-newsletterv2.onshopbase.com",
+      "api": "https://api.shopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10281831,
+      "user_id": 73782
+    },
+    "prodtest": {
+      "domain": "au-inside-newsletterv2-prodtest.onshopbase.com",
+      "shop_name": "au-inside-newsletterv2-prodtest.onshopbase.com",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10281842,
+      "user_id": 73782,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "domain": "au-inside-newsletter.myshopbase.net",
+      "shop_name": "au-inside-newsletter",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_id": 10321568,
+      "user_id": 73800,
+      "cases": {
+        "DATA_DRIVEN": {
+          "data": [
+            {
+              "description": "Verify Newsletter on SF with data default when create new theme",
+              "id": "SB_OLS_THE_INS_SF_NEWSLETTER_1",
+              "expect": {
+                "count_section": 0
+              }
+            },
+            {
+              "description": "Verify section with data default khi tạo section mới",
+              "id": "SB_OLS_THE_INS_SF_NEWSLETTER_2",
+              "input": {
+                "home": {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "heading": "Subcribe"
+                      },
+                      "type": "heading",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "subheading": "Sign up to get the latest on sales, new releases and more …"
+                      },
+                      "type": "subheading",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "default_setting_id": null
+                      },
+                      "type": "button",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "alignment": "left",
+                    "alt_text": "",
+                    "background_image": null,
+                    "default_setting_id": null,
+                    "full_width": false
+                  },
+                  "type": "newsletter",
+                  "visible": true
+                }
+              },
+              "expect": {
+                "count_section": 1,
+                "snapshot": "TC-INS-SF-NEWSLETTER-001.png"
+              }
+            },
+            {
+              "description": "Verify Newsletter on SF with full width section",
+              "id": "SB_OLS_THE_INS_SF_NEWSLETTER_3",
+              "input": {
+                "home": {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "heading": "Newsletter heading"
+                      },
+                      "type": "heading",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "subheading": "<p>Text content</p>"
+                      },
+                      "type": "subheading",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "default_setting_id": null
+                      },
+                      "type": "button",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "alignment": "center",
+                    "alt_text": "Alt text",
+                    "background_image": "https://dev-img.btdmp.com/sbase-file/10321519/2022/09/22/1663832296871a8ec5ad.png",
+                    "default_setting_id": null,
+                    "full_width": true
+                  },
+                  "type": "newsletter",
+                  "visible": true
+                }
+              },
+              "expect": {
+                "snapshot": "TC-INS-SF-NEWSLETTER-2.png"
+              }
+            },
+            {
+              "description": "Verify Newsletter on SF without full width section",
+              "id": "SB_OLS_THE_INS_SF_NEWSLETTER_4",
+              "input": {
+                "home": {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "heading": ""
+                      },
+                      "type": "heading",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "subheading": ""
+                      },
+                      "type": "subheading",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "default_setting_id": null
+                      },
+                      "type": "button",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "alignment": "right",
+                    "alt_text": "Alt text 1",
+                    "background_image": "https://dev-img.btdmp.com/sbase-file/10321576/2022/09/22/16638492850dfb5a8a02.jpeg",
+                    "default_setting_id": null,
+                    "full_width": false
+                  },
+                  "type": "newsletter",
+                  "visible": true
+                }
+              },
+              "expect": {
+                "snapshot": "TC-INS-SF-NEWSLETTER-3.png"
+              }
+            },
+            {
+              "description": "Verify drag and drop blocks",
+              "id": "SB_OLS_THE_INS_SF_NEWSLETTER_8",
+              "input": {
+                "home": {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "default_setting_id": null
+                      },
+                      "type": "button",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "subheading": "<p>Content</p>"
+                      },
+                      "type": "subheading",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "heading": "heading"
+                      },
+                      "type": "heading",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "alignment": "right",
+                    "alt_text": "Alt text 1",
+                    "background_image": "https://dev-img.btdmp.com/sbase-file/10321576/2022/09/22/16638492850dfb5a8a02.jpeg",
+                    "default_setting_id": null,
+                    "full_width": false
+                  },
+                  "type": "newsletter",
+                  "visible": true
+                }
+              },
+              "expect": {
+                "snapshot": "TC-INS-SF-NEWSLETTER-4.png"
+              }
+            },
+            {
+              "description": "Verify hide blocks",
+              "id": "SB_OLS_THE_INS_SF_NEWSLETTER_6",
+              "input": {
+                "home": {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "default_setting_id": null
+                      },
+                      "type": "button"
+                    },
+                    {
+                      "settings": {
+                        "subheading": "<p>Content</p>"
+                      },
+                      "type": "subheading"
+                    },
+                    {
+                      "settings": {
+                        "heading": "heading"
+                      },
+                      "type": "heading"
+                    }
+                  ],
+                  "settings": {
+                    "alignment": "right",
+                    "alt_text": "Alt text 1",
+                    "background_image": "https://dev-img.btdmp.com/sbase-file/10321576/2022/09/22/16638492850dfb5a8a02.jpeg",
+                    "default_setting_id": null,
+                    "full_width": false
+                  },
+                  "type": "newsletter",
+                  "visible": true
+                }
+              },
+              "expect": {
+                "snapshot": "TC-INS-SF-NEWSLETTER-5.png"
+              }
+            },
+            {
+              "description": "Verify hide section",
+              "id": "SB_OLS_THE_INS_SF_NEWSLETTER_5",
+              "input": {
+                "home": {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "default_setting_id": null
+                      },
+                      "type": "button",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "subheading": "<p>Content</p>"
+                      },
+                      "type": "subheading",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "heading": "heading"
+                      },
+                      "type": "heading",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "alignment": "right",
+                    "alt_text": "Alt text 1",
+                    "background_image": "https://dev-img.btdmp.com/sbase-file/10321576/2022/09/22/16638492850dfb5a8a02.jpeg",
+                    "default_setting_id": null,
+                    "full_width": false
+                  },
+                  "type": "newsletter"
+                }
+              },
+              "expect": {
+                "count_section": 0
+              }
+            }
+          ]
+        },
+        "SB_OLS_THE_INS_SF_NEWSLETTER_7": {
+          "description": "Verify multiple section",
+          "id": "SB_OLS_THE_INS_SF_NEWSLETTER_7",
+          "data": {
+            "input": [
+              {
+                "home": {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "heading": "Newsletter heading"
+                      },
+                      "type": "heading",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "subheading": "<p>Text content</p>"
+                      },
+                      "type": "subheading",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "default_setting_id": null
+                      },
+                      "type": "button",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "alignment": "center",
+                    "alt_text": "Alt text",
+                    "background_image": "https://dev-img.btdmp.com/sbase-file/10321519/2022/09/22/1663832296871a8ec5ad.png",
+                    "default_setting_id": null,
+                    "full_width": true
+                  },
+                  "type": "newsletter",
+                  "visible": true
+                }
+              },
+              {
+                "home": {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "heading": "Newsletter heading"
+                      },
+                      "type": "heading",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "subheading": "<p>Text content</p>"
+                      },
+                      "type": "subheading",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "default_setting_id": null
+                      },
+                      "type": "button",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "alignment": "center",
+                    "alt_text": "Alt text",
+                    "background_image": "https://dev-img.btdmp.com/sbase-file/10321519/2022/09/22/1663832296871a8ec5ad.png",
+                    "default_setting_id": null,
+                    "full_width": true
+                  },
+                  "type": "newsletter",
+                  "visible": true
+                }
+              }
+            ],
+            "expect": {
+              "snapshot": "SB-OLS-THE-INS-SF-NEWSLETTER-7.png, SB-OLS-THE-INS-SF-NEWSLETTER-7.png"
+            }
+          }
+        },
+        "SB_OLS_THE_INS_SF_NEWSLETTER_9": {
+          "description": "Verify sign up email",
+          "id": "SB_OLS_THE_INS_SF_NEWSLETTER_9",
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "heading": "Subcribe"
+                  },
+                  "type": "heading",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "subheading": "Sign up to get the latest on sales, new releases and more …"
+                  },
+                  "type": "subheading",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "button",
+                  "visible": true
+                }
+              ],
+              "settings": {
+                "alignment": "left",
+                "alt_text": "",
+                "background_image": null,
+                "default_setting_id": null,
+                "full_width": false
+              },
+              "type": "newsletter",
+              "visible": true
+            }
+          },
+          "data": [
+            {
+              "description": "Email is blank",
+              "input": {
+                "email": ""
+              },
+              "expect": {
+                "snapshot": "TC-INS-SF-NEWSLETTER-blank.png"
+              }
+            },
+            {
+              "description": "Email format is wrong",
+              "input": {
+                "email": "havu"
+              },
+              "expect": {
+                "snapshot": "TC-INS-SF-NEWSLETTER-002-wrong-format.png"
+              }
+            },
+            {
+              "description": "Email is already signup",
+              "input": {
+                "email": "havu+1@beeketing.net"
+              },
+              "expect": {
+                "snapshot": "TC-INS-SF-NEWSLETTER-002-success.png",
+                "count_account": 1,
+                "success": ""
+              }
+            },
+            {
+              "description": "Email is already checkout",
+              "input": {
+                "email": "havu@beeketing.net"
+              },
+              "expect": {
+                "snapshot": "TC-INS-SF-NEWSLETTER-002-success.png",
+                "count_account": 1,
+                "success": ""
+              }
+            },
+            {
+              "description": "Sign up success",
+              "expect": {
+                "snapshot": "TC-INS-SF-NEWSLETTER-002-success.png",
+                "count_account": 1,
+                "success": ""
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "cases": {
+    "DATA_DRIVEN": {
+      "data": [
+        {
+          "description": "Verify Newsletter on SF with data default when create new theme",
+          "id": "SB_OLS_THE_INS_SF_NEWSLETTER_1",
+          "expect": {
+            "count_section": 0
+          }
+        },
+        {
+          "description": "Verify section with data default khi tạo section mới",
+          "id": "SB_OLS_THE_INS_SF_NEWSLETTER_2",
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "heading": "Subcribe"
+                  },
+                  "type": "heading",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "subheading": "Sign up to get the latest on sales, new releases and more …"
+                  },
+                  "type": "subheading",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "button",
+                  "visible": true
+                }
+              ],
+              "settings": {
+                "alignment": "left",
+                "alt_text": "",
+                "background_image": null,
+                "default_setting_id": null,
+                "full_width": false
+              },
+              "type": "newsletter",
+              "visible": true
+            }
+          },
+          "expect": {
+            "count_section": 1,
+            "snapshot": "TC-INS-SF-NEWSLETTER-001.png"
+          }
+        },
+        {
+          "description": "Verify Newsletter on SF with full width section",
+          "id": "SB_OLS_THE_INS_SF_NEWSLETTER_3",
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "heading": "Newsletter heading"
+                  },
+                  "type": "heading",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "subheading": "<p>Text content</p>"
+                  },
+                  "type": "subheading",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "button",
+                  "visible": true
+                }
+              ],
+              "settings": {
+                "alignment": "center",
+                "alt_text": "Alt text",
+                "background_image": "https://img.shopbase.com/files/10225015/2022/05/31/1653997216696451b953.png",
+                "default_setting_id": null,
+                "full_width": true
+              },
+              "type": "newsletter",
+              "visible": true
+            }
+          },
+          "expect": {
+            "snapshot": "TC-INS-SF-NEWSLETTER-2.png"
+          }
+        },
+        {
+          "description": "Verify Newsletter on SF without full width section",
+          "id": "SB_OLS_THE_INS_SF_NEWSLETTER_4",
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "heading": ""
+                  },
+                  "type": "heading",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "subheading": ""
+                  },
+                  "type": "subheading",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "button",
+                  "visible": true
+                }
+              ],
+              "settings": {
+                "alignment": "right",
+                "alt_text": "Alt text 1",
+                "background_image": "https://img.shopbase.com/files/10225015/2022/05/31/165399734817a4b7ef47.jpeg",
+                "default_setting_id": null,
+                "full_width": false
+              },
+              "type": "newsletter",
+              "visible": true
+            }
+          },
+          "expect": {
+            "snapshot": "TC-INS-SF-NEWSLETTER-3.png"
+          }
+        },
+        {
+          "description": "Verify drag and drop blocks",
+          "id": "SB_OLS_THE_INS_SF_NEWSLETTER_8",
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "button",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "subheading": "<p>Content</p>"
+                  },
+                  "type": "subheading",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "heading": "heading"
+                  },
+                  "type": "heading",
+                  "visible": true
+                }
+              ],
+              "settings": {
+                "alignment": "right",
+                "alt_text": "Alt text 1",
+                "background_image": "https://img.shopbase.com/files/10225015/2022/05/31/165399734817a4b7ef47.jpeg",
+                "default_setting_id": null,
+                "full_width": false
+              },
+              "type": "newsletter",
+              "visible": true
+            }
+          },
+          "expect": {
+            "snapshot": "TC-INS-SF-NEWSLETTER-4.png"
+          }
+        },
+        {
+          "description": "Verify hide blocks",
+          "id": "SB_OLS_THE_INS_SF_NEWSLETTER_6",
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "button"
+                },
+                {
+                  "settings": {
+                    "subheading": "<p>Content</p>"
+                  },
+                  "type": "subheading"
+                },
+                {
+                  "settings": {
+                    "heading": "heading"
+                  },
+                  "type": "heading"
+                }
+              ],
+              "settings": {
+                "alignment": "right",
+                "alt_text": "Alt text 1",
+                "background_image": "https://img.shopbase.com/files/10225015/2022/05/31/165399734817a4b7ef47.jpeg",
+                "default_setting_id": null,
+                "full_width": false
+              },
+              "type": "newsletter",
+              "visible": true
+            }
+          },
+          "expect": {
+            "snapshot": "TC-INS-SF-NEWSLETTER-5.png"
+          }
+        },
+        {
+          "description": "Verify hide section",
+          "id": "SB_OLS_THE_INS_SF_NEWSLETTER_5",
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "button",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "subheading": "<p>Content</p>"
+                  },
+                  "type": "subheading",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "heading": "heading"
+                  },
+                  "type": "heading",
+                  "visible": true
+                }
+              ],
+              "settings": {
+                "alignment": "right",
+                "alt_text": "Alt text 1",
+                "background_image": "https://img.shopbase.com/files/10225015/2022/05/31/165399734817a4b7ef47.jpeg",
+                "default_setting_id": null,
+                "full_width": false
+              },
+              "type": "newsletter"
+            }
+          },
+          "expect": {
+            "count_section": 0
+          }
+        }
+      ]
+    },
+    "SB_OLS_THE_INS_SF_NEWSLETTER_7": {
+      "description": "Verify multiple section",
+      "id": "SB_OLS_THE_INS_SF_NEWSLETTER_7",
+      "data": {
+        "input": [
+          {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "heading": "Newsletter heading"
+                  },
+                  "type": "heading",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "subheading": "<p>Text content</p>"
+                  },
+                  "type": "subheading",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "button",
+                  "visible": true
+                }
+              ],
+              "settings": {
+                "alignment": "center",
+                "alt_text": "Alt text",
+                "background_image": "https://img.shopbase.com/files/10225015/2022/05/31/1653997216696451b953.png",
+                "default_setting_id": null,
+                "full_width": true
+              },
+              "type": "newsletter",
+              "visible": true
+            }
+          },
+          {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "heading": "Newsletter heading"
+                  },
+                  "type": "heading",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "subheading": "<p>Text content</p>"
+                  },
+                  "type": "subheading",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "default_setting_id": null
+                  },
+                  "type": "button",
+                  "visible": true
+                }
+              ],
+              "settings": {
+                "alignment": "center",
+                "alt_text": "Alt text",
+                "background_image": "https://img.shopbase.com/files/10225015/2022/05/31/1653997216696451b953.png",
+                "default_setting_id": null,
+                "full_width": true
+              },
+              "type": "newsletter",
+              "visible": true
+            }
+          }
+        ],
+        "expect": {
+          "snapshot": "SB-OLS-THE-INS-SF-NEWSLETTER-7.png, SB-OLS-THE-INS-SF-NEWSLETTER-7.png"
+        }
+      }
+    },
+    "SB_OLS_THE_INS_SF_NEWSLETTER_9": {
+      "description": "Verify sign up email",
+      "id": "SB_OLS_THE_INS_SF_NEWSLETTER_9",
+      "input": {
+        "home": {
+          "blocks": [
+            {
+              "settings": {
+                "heading": "Subcribe"
+              },
+              "type": "heading",
+              "visible": true
+            },
+            {
+              "settings": {
+                "subheading": "Sign up to get the latest on sales, new releases and more …"
+              },
+              "type": "subheading",
+              "visible": true
+            },
+            {
+              "settings": {
+                "default_setting_id": null
+              },
+              "type": "button",
+              "visible": true
+            }
+          ],
+          "settings": {
+            "alignment": "left",
+            "alt_text": "",
+            "background_image": null,
+            "default_setting_id": null,
+            "full_width": false
+          },
+          "type": "newsletter",
+          "visible": true
+        }
+      },
+      "data": [
+        {
+          "description": "Email is blank",
+          "input": {
+            "email": ""
+          },
+          "expect": {
+            "snapshot": "TC-INS-SF-NEWSLETTER-blank.png"
+          }
+        },
+        {
+          "description": "Email format is wrong",
+          "input": {
+            "email": "havu"
+          },
+          "expect": {
+            "snapshot": "TC-INS-SF-NEWSLETTER-002-wrong-format.png"
+          }
+        },
+        {
+          "description": "Email is already signup",
+          "input": {
+            "email": "havu+1@beeketing.net"
+          },
+          "expect": {
+            "snapshot": "TC-INS-SF-NEWSLETTER-002-success.png",
+            "count_account": 1,
+            "success": ""
+          }
+        },
+        {
+          "description": "Email is already checkout",
+          "input": {
+            "email": "havu@beeketing.net"
+          },
+          "expect": {
+            "snapshot": "TC-INS-SF-NEWSLETTER-002-success.png",
+            "count_account": 1,
+            "success": ""
+          }
+        },
+        {
+          "description": "Sign up success",
+          "expect": {
+            "snapshot": "TC-INS-SF-NEWSLETTER-002-success.png",
+            "count_account": 1,
+            "success": ""
+          }
+        }
+      ]
+    }
+  }
+}

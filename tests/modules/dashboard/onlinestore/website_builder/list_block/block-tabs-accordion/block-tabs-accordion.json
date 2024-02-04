@@ -1,0 +1,2644 @@
+{
+  "env": {
+    "dev": {
+      "domain": "auto-block-wb.myshopbase.net",
+      "shop_name": "auto-block-wb",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10333928,
+      "user_id": 90252,
+      "theme_test": "[Tabs/Accordion] Template run auto",
+      "test_lib": "[Tabs/Accordion] Test Library (Ko xoá)",
+      "product_test": "[Tabs/Accordion] Test product"
+    },
+    "prodtest": {
+      "domain": "auto-block-wb-prodtest.onshopbase.com",
+      "shop_name": "auto-block-wb-prodtest",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10480844,
+      "user_id": 11260206,
+      "theme_test": "[Tabs/Accordion] Template run auto",
+      "test_lib": "[Tabs/Accordion] Test Library (Ko xoá)",
+      "product_test": "[Tabs/Accordion] Test product",
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "prod": {
+      "domain": "auto-block-wb.onshopbase.com",
+      "shop_name": "auto-block-wb",
+      "api": "https://api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10480842,
+      "user_id": 11260206,
+      "theme_test": "[Tabs/Accordion] Template run auto",
+      "test_lib": "Test Library (Ko xoá)",
+      "product_test": "[Tabs/Accordion] Test product"
+    }
+  },
+  "cases": {
+    "DND_TABS_ACCORDION": {
+      "data": [
+        {
+          "case_id": "SB_WEB_BUILDER_LB_TABA_01",
+          "block_type": "Tabs",
+          "dnd_block": {
+            "from": {
+              "category": "Basics",
+              "template": "Tabs"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "column": 1
+              }
+            }
+          },
+          "add_container": {
+            "parent_position": {
+              "section": 2,
+              "column": 1
+            },
+            "basics_cate": "Basics",
+            "template": "Container"
+          },
+          "dnd_in_container": {
+            "from": {
+              "category": "Basics",
+              "template": "Tabs"
+            },
+            "to": {
+              "position": {
+                "section": 2,
+                "block": 1
+              },
+              "container": true
+            }
+          },
+          "dnd_block_to_lvl1": {
+            "from": {
+              "category": "Basics",
+              "template": "Button"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "block": 1
+              },
+              "tabs": {
+                "level": 1,
+                "row": 1,
+                "column": 1
+              }
+            }
+          },
+          "dnd_more_to_lvl1": {
+            "from": {
+              "category": "Basics",
+              "template": "Icon"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "block": 1
+              },
+              "tabs": {
+                "level": 1,
+                "row": 1,
+                "column": 1,
+                "block": 1
+              },
+              "isBottom": false
+            }
+          },
+          "lvl1_column": {
+            "section": 1,
+            "block": 1,
+            "tabs": {
+              "level": 1,
+              "row": 1,
+              "column": 1
+            }
+          },
+          "lvl2_column": {
+            "section": 1,
+            "block": 1,
+            "tabs": {
+              "level": 2,
+              "row": 1,
+              "column": 1
+            }
+          },
+          "edit_row_height": {
+            "height": {
+              "label": "height",
+              "value": {
+                "unit": "Px",
+                "value": 400
+              }
+            },
+            "overflow": "show"
+          },
+          "dnd_container_in_lvl1": {
+            "from": {
+              "category": "Basics",
+              "template": "Container"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "block": 1
+              },
+              "tabs": {
+                "level": 1,
+                "row": 1,
+                "column": 1
+              }
+            }
+          },
+          "dnd_tabs_in_lvl1": {
+            "from": {
+              "category": "Basics",
+              "template": "Tabs"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "block": 1
+              },
+              "tabs": {
+                "level": 1,
+                "row": 1,
+                "column": 1
+              }
+            }
+          },
+          "dnd_accordion_in_lvl1": {
+            "from": {
+              "category": "Basics",
+              "template": "Accordion"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "block": 1
+              },
+              "tabs": {
+                "level": 1,
+                "row": 1,
+                "column": 1
+              }
+            }
+          },
+          "add_block_lvl1": {
+            "level": 1,
+            "row": 1,
+            "column": 1
+          },
+          "dnd_block_lvl2": {
+            "from": {
+              "category": "Basics",
+              "template": "Button"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "block": 1
+              },
+              "tabs": {
+                "level": 2,
+                "row": 1,
+                "column": 1
+              }
+            }
+          },
+          "dnd_more_lvl2": {
+            "from": {
+              "category": "Basics",
+              "template": "Icon"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "block": 1
+              },
+              "tabs": {
+                "level": 2,
+                "row": 1,
+                "column": 1
+              },
+              "isBottom": false
+            }
+          },
+          "dnd_container_to_lvl2": {
+            "from": {
+              "category": "Basics",
+              "template": "Container"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "block": 1
+              },
+              "tabs": {
+                "level": 2,
+                "row": 1,
+                "column": 1
+              }
+            }
+          },
+          "dnd_tabs_to_lvl2": {
+            "from": {
+              "category": "Basics",
+              "template": "Tabs"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "block": 1
+              },
+              "tabs": {
+                "level": 2,
+                "row": 1,
+                "column": 1
+              }
+            }
+          },
+          "dnd_accordion_to_lvl2": {
+            "from": {
+              "category": "Basics",
+              "template": "Accordion"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "block": 1
+              },
+              "tabs": {
+                "level": 2,
+                "row": 1,
+                "column": 1
+              }
+            }
+          },
+          "insert_tabs_to_lvl2": "Tabs",
+          "insert_heading_to_lvl2": "Heading",
+          "expected": {
+            "position_auto": "Auto",
+            "mode": "Tab",
+            "add_tabs_in_container_msg": "You can't add a tab, accordion or repeated content inside a container",
+            "first_block_component": "button",
+            "second_block_component": "icon",
+            "container_component": "container",
+            "tabs_component": "tabs",
+            "accordion_component": "accordion",
+            "add_tabs_accordion_in_lvl2_msg": "You can't add a tab or accordion inside another more than 2 levels, try other block type",
+            "heading_component": "heading"
+          }
+        },
+        {
+          "case_id": "SB_WEB_BUILDER_LB_TABA_02",
+          "block_type": "Accordion",
+          "dnd_block": {
+            "from": {
+              "category": "Basics",
+              "template": "Accordion"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "column": 1
+              }
+            }
+          },
+          "add_container": {
+            "parent_position": {
+              "section": 2,
+              "column": 1
+            },
+            "basics_cate": "Basics",
+            "template": "Container"
+          },
+          "dnd_in_container": {
+            "from": {
+              "category": "Basics",
+              "template": "Accordion"
+            },
+            "to": {
+              "position": {
+                "section": 2,
+                "block": 1
+              },
+              "container": true
+            }
+          },
+          "dnd_block_to_lvl1": {
+            "from": {
+              "category": "Basics",
+              "template": "Rating"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "block": 1
+              },
+              "tabs": {
+                "level": 1,
+                "row": 1,
+                "column": 1
+              }
+            }
+          },
+          "dnd_more_to_lvl1": {
+            "from": {
+              "category": "Basics",
+              "template": "Social bar"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "block": 1
+              },
+              "tabs": {
+                "level": 1,
+                "row": 1,
+                "column": 1,
+                "block": 1
+              },
+              "isBottom": false
+            }
+          },
+          "lvl1_column": {
+            "section": 1,
+            "block": 1,
+            "tabs": {
+              "level": 1,
+              "row": 1,
+              "column": 1
+            }
+          },
+          "lvl2_column": {
+            "section": 1,
+            "block": 1,
+            "tabs": {
+              "level": 2,
+              "row": 1,
+              "column": 1
+            }
+          },
+          "edit_row_height": {
+            "height": {
+              "label": "height",
+              "value": {
+                "unit": "Px",
+                "value": 400
+              }
+            },
+            "overflow": "show"
+          },
+          "dnd_container_in_lvl1": {
+            "from": {
+              "category": "Basics",
+              "template": "Container"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "block": 1
+              },
+              "tabs": {
+                "level": 1,
+                "row": 1,
+                "column": 1
+              }
+            }
+          },
+          "dnd_tabs_in_lvl1": {
+            "from": {
+              "category": "Basics",
+              "template": "Tabs"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "block": 1
+              },
+              "tabs": {
+                "level": 1,
+                "row": 1,
+                "column": 1
+              }
+            }
+          },
+          "dnd_accordion_in_lvl1": {
+            "from": {
+              "category": "Basics",
+              "template": "Accordion"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "block": 1
+              },
+              "tabs": {
+                "level": 1,
+                "row": 1,
+                "column": 1
+              }
+            }
+          },
+          "add_block_lvl1": {
+            "level": 1,
+            "row": 1,
+            "column": 1
+          },
+          "dnd_block_lvl2": {
+            "from": {
+              "category": "Basics",
+              "template": "Rating"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "block": 1
+              },
+              "tabs": {
+                "level": 2,
+                "row": 1,
+                "column": 1
+              }
+            }
+          },
+          "dnd_more_lvl2": {
+            "from": {
+              "category": "Basics",
+              "template": "Social bar"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "block": 1
+              },
+              "tabs": {
+                "level": 2,
+                "row": 1,
+                "column": 1
+              },
+              "isBottom": false
+            }
+          },
+          "dnd_container_to_lvl2": {
+            "from": {
+              "category": "Basics",
+              "template": "Container"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "block": 1
+              },
+              "tabs": {
+                "level": 2,
+                "row": 1,
+                "column": 1
+              }
+            }
+          },
+          "dnd_tabs_to_lvl2": {
+            "from": {
+              "category": "Basics",
+              "template": "Tabs"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "block": 1
+              },
+              "tabs": {
+                "level": 2,
+                "row": 1,
+                "column": 1
+              }
+            }
+          },
+          "dnd_accordion_to_lvl2": {
+            "from": {
+              "category": "Basics",
+              "template": "Accordion"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "block": 1
+              },
+              "tabs": {
+                "level": 2,
+                "row": 1,
+                "column": 1
+              }
+            }
+          },
+          "insert_tabs_to_lvl2": "Tabs",
+          "insert_heading_to_lvl2": "Heading",
+          "expected": {
+            "position_auto": "Auto",
+            "mode": "Accordion",
+            "add_tabs_in_container_msg": "You can't add a tab, accordion or repeated content inside a container",
+            "first_block_component": "rating",
+            "second_block_component": "social",
+            "container_component": "container",
+            "tabs_component": "tabs",
+            "accordion_component": "accordion",
+            "add_tabs_accordion_in_lvl2_msg": "You can't add a tab or accordion inside another more than 2 levels, try other block type",
+            "heading_component": "heading"
+          }
+        }
+      ]
+    },
+    "ACTION_TABS_ACCORDION": {
+      "section_1": "Section with source",
+      "data": [
+        {
+          "case_id": "SB_WEB_BUILDER_LB_TABA_03",
+          "block_type": "Tabs",
+          "add_block_auto": {
+            "parent_position": {
+              "section": 1,
+              "column": 1
+            },
+            "basics_cate": "Basics",
+            "template": "Tabs"
+          },
+          "add_block_manual": [
+            {
+              "from": {
+                "category": "Basics",
+                "template": "Tabs"
+              },
+              "to": {
+                "position": {
+                  "section": 2,
+                  "column": 1
+                }
+              }
+            },
+            {
+              "from": {
+                "category": "Basics",
+                "template": "Bullet"
+              },
+              "to": {
+                "position": {
+                  "section": 2,
+                  "column": 1
+                }
+              }
+            }
+          ],
+          "position_manual": {
+            "position": {
+              "label": "position",
+              "type": "Manual"
+            }
+          },
+          "quickbar_buttons": [
+            "Edit tabs",
+            "Bring forward",
+            "Bring backward",
+            "Duplicate",
+            "Hide",
+            "Save as template",
+            "Delete"
+          ],
+          "edit_button": "Edit tabs",
+          "save_block": {
+            "template_name": "03 Test tabs action",
+            "library": {
+              "new": true,
+              "title": "03 - Library 03"
+            },
+            "category": {
+              "new": true,
+              "title": "03 - Cate Test"
+            }
+          },
+          "expected": {
+            "tab_active": "active",
+            "disabled_button": "disabled",
+            "block_z_index": "5",
+            "selected": "selected",
+            "duplicate_block_snapshot": "03-Duplicated-Tabs.png",
+            "save_success_msg": "Save template successfully to Category 03 - Cate Test."
+          }
+        },
+        {
+          "case_id": "SB_WEB_BUILDER_LB_TABA_06",
+          "block_type": "Accordion",
+          "add_block_auto": {
+            "parent_position": {
+              "section": 1,
+              "column": 1
+            },
+            "basics_cate": "Basics",
+            "template": "Accordion"
+          },
+          "add_block_manual": [
+            {
+              "from": {
+                "category": "Basics",
+                "template": "Accordion"
+              },
+              "to": {
+                "position": {
+                  "section": 2,
+                  "column": 1
+                }
+              }
+            },
+            {
+              "from": {
+                "category": "Basics",
+                "template": "Bullet"
+              },
+              "to": {
+                "position": {
+                  "section": 2,
+                  "column": 1
+                }
+              }
+            }
+          ],
+          "position_manual": {
+            "position": {
+              "label": "position",
+              "type": "Manual"
+            }
+          },
+          "quickbar_buttons": [
+            "Edit accordion",
+            "Bring forward",
+            "Bring backward",
+            "Duplicate",
+            "Hide",
+            "Save as template",
+            "Delete"
+          ],
+          "edit_button": "Edit accordion",
+          "save_block": {
+            "template_name": "06 Test accordion action",
+            "library": {
+              "new": true,
+              "title": "06 - Library 03"
+            },
+            "category": {
+              "new": true,
+              "title": "06 - Cate Test"
+            }
+          },
+          "expected": {
+            "tab_active": "active",
+            "disabled_button": "disabled",
+            "block_z_index": "5",
+            "selected": "selected",
+            "duplicate_block_snapshot": "06-Duplicated-Accordion.png",
+            "save_success_msg": "Save template successfully to Category 06 - Cate Test."
+          }
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_LB_TABA_04": {
+      "dnd_blocks": [
+        {
+          "from": {
+            "category": "Basics",
+            "template": "Tabs"
+          },
+          "to": {
+            "position": {
+              "section": 1,
+              "column": 1
+            }
+          }
+        },
+        {
+          "from": {
+            "category": "Basics",
+            "template": "Tabs"
+          },
+          "to": {
+            "position": {
+              "section": 1,
+              "block": 1
+            },
+            "isBottom": true
+          }
+        },
+        {
+          "from": {
+            "category": "Basics",
+            "template": "Tabs"
+          },
+          "to": {
+            "position": {
+              "section": 1,
+              "block": 2
+            },
+            "isBottom": true
+          }
+        }
+      ],
+      "tabs1_align": {
+        "heading_align": "Left"
+      },
+      "tabs1_title": [
+        {
+          "tab_number": 1,
+          "title": "CHECK"
+        },
+        {
+          "tab_number": 2,
+          "title": "CONSIDERING"
+        },
+        {
+          "tab_number": 3,
+          "title": "TESTING CONTENT"
+        }
+      ],
+      "tabs2_align": {
+        "heading_align": "Center"
+      },
+      "tabs2_title": "CHECK",
+      "tabs3_align": {
+        "heading_align": "Space distribute"
+      },
+      "tabs3_title": [
+        {
+          "tab_number": 1,
+          "title": "CHECK"
+        },
+        {
+          "tab_number": 2,
+          "title": "CONSIDERING"
+        }
+      ],
+      "first_block_resize_1": {
+        "at_position": "left",
+        "to_specific_point": {
+          "x": 50
+        }
+      },
+      "first_block_resize_2": {
+        "at_position": "left",
+        "to_specific_point": {
+          "x": 347
+        }
+      },
+      "first_block_resize_3": {
+        "at_position": "right",
+        "to_specific_point": {
+          "x": -30
+        }
+      },
+      "second_block_resize": {
+        "at_position": "left",
+        "to_specific_point": {
+          "x": 600
+        }
+      },
+      "third_block_resize": {
+        "at_position": "left",
+        "to_specific_point": {
+          "x": 800
+        }
+      },
+      "expected": {
+        "first_block_heading_resize_1": "04-Width-first-block-greater-than-all-headings.png",
+        "first_block_heading_resize_2": "04-Width-first-block-equal-all-headings.png",
+        "first_block_heading_resize_3": "04-Width-first-block-smaller-than-all-headings.png",
+        "second_block_resize": "04-Second-block-after-resized.png",
+        "third_block_resize": "04-Third-block-after-resized.png"
+      }
+    },
+    "SB_WEB_BUILDER_LB_TABA_05": {
+      "dnd_block": {
+        "from": {
+          "category": "Basics",
+          "template": "Tabs"
+        },
+        "to": {
+          "position": {
+            "section": 1,
+            "column": 1
+          }
+        }
+      },
+      "tabs_title": [
+        {
+          "tab_number": 1,
+          "title": "CHECK"
+        },
+        {
+          "tab_number": 2,
+          "title": "CONSIDERING"
+        },
+        {
+          "tab_number": 3,
+          "title": "TESTING CONTENT"
+        }
+      ],
+      "first_height_resize": {
+        "at_position": "top",
+        "to_specific_point": {
+          "y": 50
+        }
+      },
+      "edit_height": {
+        "label": "height",
+        "value": {
+          "unit": "Px",
+          "value": 550
+        }
+      },
+      "second_height_resize": {
+        "at_position": "bottom",
+        "to_specific_point": {
+          "y": -200
+        }
+      },
+      "third_height_resize": {
+        "at_position": "top",
+        "to_specific_point": {
+          "y": 200
+        }
+      },
+      "fourth_height_resize": {
+        "at_position": "top",
+        "to_specific_point": {
+          "y": -60
+        }
+      },
+      "expected": {
+        "height_unit_changed": "Px"
+      }
+    },
+    "SB_WEB_BUILDER_LB_TABA_07": {
+      "dnd_block": {
+        "from": {
+          "category": "Basics",
+          "template": "Accordion"
+        },
+        "to": {
+          "position": {
+            "section": 1,
+            "column": 1
+          }
+        }
+      },
+      "resize_equal_item_name": {
+        "at_position": "left",
+        "to_specific_point": {
+          "x": 302
+        }
+      },
+      "resize_smaller_than_item_name": {
+        "at_position": "right",
+        "to_specific_point": {
+          "x": -200
+        }
+      },
+      "resize_smaller_than_256px": {
+        "at_position": "left",
+        "to_specific_point": {
+          "x": 20
+        }
+      },
+      "expected": {
+        "resize_accordion_1": "07-Accordion-with-full-item-name.png",
+        "resize_accordion_2": "07-Accordion-2-lines-item-name.png",
+        "resize_accordion_3": "07-Accordion-truncate-item-name.png"
+      }
+    },
+    "SB_WEB_BUILDER_LB_TABA_08": {
+      "add_tabs": {
+        "parent_position": {
+          "section": 1,
+          "column": 1
+        },
+        "basics_cate": "Basics",
+        "template": "Tabs"
+      },
+      "click_layout": [
+        {
+          "layout_name": "Text only",
+          "index": 0,
+          "expected": {
+            "selected": "selected",
+            "default_active_color": "rgb(20, 20, 20)",
+            "default_active_text": "rgb(20, 20, 20)",
+            "default_on": "true"
+          }
+        },
+        {
+          "layout_name": "Block",
+          "index": 1,
+          "expected": {
+            "selected": "selected",
+            "default_active_color": "rgb(20, 20, 20)",
+            "default_active_text": "rgb(250, 250, 250)",
+            "default_shape": "Filled Rectangle"
+          }
+        },
+        {
+          "layout_name": "Folder",
+          "index": 2,
+          "expected": {
+            "selected": "selected",
+            "default_active_color": "rgb(20, 20, 20)",
+            "default_active_text": "rgb(250, 250, 250)",
+            "default_shape": "Filled Rectangle"
+          }
+        }
+      ],
+      "edit_layout_tabs": [
+        {
+          "tab_layout": {
+            "text_active_color": {
+              "code": "#B01212",
+              "opacity": 100
+            },
+            "text_active_text_color": {
+              "code": "#B01212",
+              "opacity": 100
+            },
+            "type": "text",
+            "underline": true
+          },
+          "expected": {
+            "layout": "tabs--text",
+            "active_color": "rgba(176, 18, 18, 1)",
+            "active_text": "rgba(176, 18, 18, 1)"
+          }
+        },
+        {
+          "tab_layout": {
+            "text_active_color": {
+              "code": "#3DBFE2",
+              "opacity": 100
+            },
+            "text_active_text_color": {
+              "code": "#3DBFE2",
+              "opacity": 100
+            },
+            "type": "text",
+            "underline": false
+          },
+          "expected": {
+            "layout": "tabs--text",
+            "active_color": "rgba(61, 191, 226, 1)",
+            "active_text": "rgba(61, 191, 226, 1)"
+          }
+        },
+        {
+          "tab_layout": {
+            "block_active_color": {
+              "code": "color_1",
+              "opacity": 100
+            },
+            "block_shape": "rounded",
+            "type": "block"
+          },
+          "expected": {
+            "layout": "tabs--block tabs--rounded",
+            "active_color": "rgb(250, 250, 250, 1)",
+            "active_text": "rgb(20, 20, 20, 1)"
+          }
+        },
+        {
+          "tab_layout": {
+            "block_active_color": {
+              "code": "color_2",
+              "opacity": 100
+            },
+            "block_shape": "pill",
+            "type": "block"
+          },
+          "expected": {
+            "layout": "tabs--block tabs--pill",
+            "active_color": "rgb(217, 217, 217, 1)",
+            "active_text": "rgb(20, 20, 20, 1)"
+          }
+        },
+        {
+          "tab_layout": {
+            "folder_active_color": {
+              "code": "color_3",
+              "opacity": 100
+            },
+            "folder_shape": "filled_rounded",
+            "type": "folder"
+          },
+          "expected": {
+            "layout": "tabs--folder tabs--rounded tabs--filled",
+            "active_color": "rgb(140, 140, 140, 1)",
+            "active_text": "rgb(20, 20, 20, 1)"
+          }
+        }
+      ],
+      "align_data": [
+        {
+          "tab_justify": "start",
+          "expected": {
+            "align_position": "08-Heading-Align-Left.png"
+          }
+        },
+        {
+          "tab_justify": "center",
+          "expected": {
+            "align_position": "08-Heading-Align-Center.png"
+          }
+        },
+        {
+          "tab_justify": "end",
+          "expected": {
+            "align_position": "08-Heading-Align-Right.png"
+          }
+        },
+        {
+          "tab_justify": "space-between",
+          "expected": {
+            "align_position": "08-Heading-Align-Distribute.png"
+          }
+        }
+      ],
+      "edit_design": {
+        "width": {
+          "label": "width",
+          "value": {
+            "unit": "Auto"
+          }
+        },
+        "background": {
+          "img": {
+            "src": "https://mcdn.coolmate.me/image/November2022/meme-gau-truc-1.png"
+          },
+          "mode": "image"
+        },
+        "border": {
+          "color": {
+            "code": "color_4",
+            "opacity": 100
+          },
+          "side": "all",
+          "size": 1,
+          "style": "solid",
+          "thickness": "small"
+        },
+        "opacity": 50,
+        "border_radius": 8,
+        "box_shadow": {
+          "blur": 12,
+          "color": {
+            "code": "#000000",
+            "opacity": 12
+          },
+          "direction": "bottom_right",
+          "size": "small",
+          "spread": -4,
+          "type": "soft",
+          "x": 4,
+          "y": 4
+        },
+        "padding": {
+          "bottom": 10,
+          "left": 20,
+          "right": 20,
+          "top": 10
+        }
+      },
+      "tab_name": [
+        {
+          "name": "Tab 1",
+          "item": "Item 1"
+        },
+        {
+          "name": "Tab 2",
+          "item": "Item 2"
+        },
+        {
+          "name": "Tab 3",
+          "item": "Item 3"
+        }
+      ],
+      "expected": {
+        "preview_width_min": 1120,
+        "preview_width_max": 1120,
+        "preview_position": "relative",
+        "preview_align": "center",
+        "preview_border": "1px solid rgb(64, 64, 64)",
+        "preview_opacity": "0.5",
+        "preview_radius": "8px",
+        "preview_shadow": "rgba(0, 0, 0, 0.12) 4px 4px 12px -4px",
+        "preview_margin": "0px",
+        "preview_padding": "10px 20px"
+      }
+    },
+    "SB_WEB_BUILDER_LB_TABA_09": {
+      "add_accordion": {
+        "parent_position": {
+          "section": 1,
+          "column": 1
+        },
+        "basics_cate": "Basics",
+        "template": "Accordion"
+      },
+      "edit_expand_icon": [
+        {
+          "expand_icon": "chevron-down",
+          "expected": {
+            "preview_icon_text": ["expand_less", "expand_more", "expand_more"]
+          }
+        },
+        {
+          "expand_icon": "chevron-right",
+          "expected": {
+            "preview_icon_text": ["expand_less", "chevron_right", "chevron_right"]
+          }
+        },
+        {
+          "expand_icon": "unfold_more",
+          "expected": {
+            "preview_icon_text": ["unfold_less", "unfold_more", "unfold_more"]
+          }
+        },
+        {
+          "expand_icon": "plus-line",
+          "expected": {
+            "preview_icon_text": ["remove", "add", "add"]
+          }
+        },
+        {
+          "expand_icon": "menu-right",
+          "expected": {
+            "preview_icon_text": ["arrow_drop_up", "arrow_right", "arrow_right"]
+          }
+        },
+        {
+          "expand_icon": "menu-down",
+          "expected": {
+            "preview_icon_text": ["arrow_drop_up", "arrow_drop_down", "arrow_drop_down"]
+          }
+        }
+      ],
+      "edit_design": [
+        {
+          "icon_position": "Left",
+          "accordion_spacing": "M",
+          "accordion_divider": true,
+          "width": {
+            "label": "width",
+            "value": {
+              "unit": "Auto"
+            }
+          },
+          "background": {
+            "label": "background",
+            "value": {
+              "image": {
+                "url": "data/shopbase/BD_1.png",
+                "timeout": 0
+              }
+            }
+          },
+          "border": {
+            "label": "border",
+            "value": {
+              "thickness": "s"
+            }
+          },
+          "opacity": {
+            "label": "opacity",
+            "config": {
+              "fill": true,
+              "number": 50
+            }
+          },
+          "radius": {
+            "label": "border_radius",
+            "config": {
+              "fill": true,
+              "number": 8
+            }
+          },
+          "shadow": {
+            "label": "box_shadow",
+            "config": {
+              "option": "soft"
+            }
+          },
+          "padding": {
+            "label": "padding",
+            "value": {
+              "top": 10,
+              "bottom": 10,
+              "left": 20,
+              "right": 20,
+              "input": true
+            }
+          },
+          "expected": {
+            "position": "left",
+            "spacing": "24px 0px",
+            "divider": "1px",
+            "heading": ["Accordion item 1", "Accordion item 2", "Accordion item 3"],
+            "preview_width_min": 183,
+            "preview_width_max": 185,
+            "preview_height": "298.109px",
+            "preview_position": "relative",
+            "preview_align": "center",
+            "preview_border": "1px solid rgb(64, 64, 64)",
+            "preview_opacity": "0.5",
+            "preview_radius": "8px",
+            "preview_shadow": "rgba(0, 0, 0, 0.12) 4px 4px 12px -4px",
+            "preview_margin": "0px",
+            "preview_padding": "10px 20px"
+          }
+        },
+        {
+          "icon_position": "Right",
+          "accordion_spacing": "S",
+          "accordion_divider": false,
+          "width": {
+            "label": "width",
+            "value": {
+              "unit": "Px",
+              "value": 100
+            }
+          },
+          "height": {
+            "label": "height",
+            "value": {
+              "unit": "Px",
+              "value": 100
+            }
+          },
+          "background": {
+            "label": "background",
+            "value": {
+              "image": {
+                "url": "data/shopbase/front/slideshow.jpg",
+                "timeout": 0
+              }
+            }
+          },
+          "border": {
+            "label": "border",
+            "value": {
+              "thickness": "custom",
+              "size": 12
+            }
+          },
+          "opacity": {
+            "label": "opacity",
+            "config": {
+              "fill": true,
+              "number": 0
+            }
+          },
+          "radius": {
+            "label": "border_radius",
+            "config": {
+              "fill": true,
+              "number": 0
+            }
+          },
+          "shadow": {
+            "label": "box_shadow",
+            "config": {
+              "option": "hard"
+            }
+          },
+          "padding": {
+            "label": "padding",
+            "value": {
+              "top": 0,
+              "bottom": 0,
+              "left": 0,
+              "right": 0,
+              "input": true
+            }
+          },
+          "margin": {
+            "label": "margin",
+            "value": {
+              "top": 10,
+              "bottom": 10,
+              "left": 10,
+              "right": 10,
+              "input": true
+            }
+          },
+          "expected": {
+            "position": "right",
+            "spacing": "12px 0px",
+            "divider": "0px",
+            "heading": ["Accordion item 1", "Accordion item 2", "Accordion item 3"],
+            "preview_width_min": 100,
+            "preview_width_max": 100,
+            "preview_height": "100px",
+            "preview_position": "relative",
+            "preview_align": "center",
+            "preview_border": "1px solid rgb(64, 64, 64)",
+            "preview_opacity": "0",
+            "preview_radius": "0px",
+            "preview_shadow": "rgb(0, 0, 0) 4px 4px 0px 0px",
+            "preview_margin": "10px",
+            "preview_padding": "0px"
+          }
+        },
+        {
+          "icon_position": "Right",
+          "accordion_spacing": "L",
+          "accordion_divider": false,
+          "width": {
+            "label": "width",
+            "value": {
+              "unit": "%",
+              "value": 100
+            }
+          },
+          "height": {
+            "label": "height",
+            "value": {
+              "unit": "Px",
+              "value": 100
+            }
+          },
+          "background": {
+            "label": "background",
+            "value": {
+              "color": {
+                "preset": 2
+              }
+            }
+          },
+          "border": {
+            "label": "border",
+            "value": {
+              "thickness": "m"
+            }
+          },
+          "opacity": {
+            "label": "opacity",
+            "config": {
+              "fill": true,
+              "number": 100
+            }
+          },
+          "radius": {
+            "label": "border_radius",
+            "config": {
+              "fill": true,
+              "number": 8
+            }
+          },
+          "shadow": {
+            "label": "box_shadow",
+            "config": {
+              "option": "soft",
+              "size": "L"
+            }
+          },
+          "expected": {
+            "position": "right",
+            "spacing": "48px 0px",
+            "divider": "0px",
+            "heading": ["Accordion item 1", "Accordion item 2", "Accordion item 3"],
+            "preview_width_min": 1120,
+            "preview_width_max": 1120,
+            "preview_height": "100px",
+            "preview_position": "relative",
+            "preview_align": "center",
+            "preview_border": "4px solid rgb(64, 64, 64)",
+            "preview_opacity": "1",
+            "preview_radius": "8px",
+            "preview_shadow": "rgba(0, 0, 0, 0.24) 12px 12px 32px -12px",
+            "preview_margin": "10px",
+            "preview_padding": "0px"
+          }
+        }
+      ],
+      "none_icon": {
+        "expand_icon": "none"
+      },
+      "accordion_tabs": [
+        {
+          "heading": "Accordion item 2",
+          "index": 1
+        },
+        {
+          "heading": "Accordion item 3",
+          "index": 2
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_LB_TABA_10": {
+      "add_tabs": {
+        "parent_position": {
+          "section": 1,
+          "column": 1
+        },
+        "basics_cate": "Basics",
+        "template": "Tabs"
+      },
+      "dnd_item2_to_item_10": {
+        "from": {
+          "item": 2
+        },
+        "to": {
+          "item": 10
+        }
+      },
+      "deleted_tab": "Tab 2",
+      "turn_on": true,
+      "turn_off": false,
+      "icon_home": "home",
+      "max_items": 10,
+      "expected": {
+        "new_tab_title": "Tab",
+        "tab1_title": "Tab 1",
+        "tab2_title": "Tab 2",
+        "disabled": "disabled"
+      }
+    },
+    "SB_WEB_BUILDER_LB_TABA_11": {
+      "add_accordion": {
+        "parent_position": {
+          "section": 1,
+          "column": 1
+        },
+        "basics_cate": "Basics",
+        "template": "Accordion"
+      },
+      "dnd_item2_to_item_10": {
+        "from": {
+          "item": 2
+        },
+        "to": {
+          "item": 10
+        }
+      },
+      "deleted_heading": "Accordion item 2",
+      "turn_on": true,
+      "turn_off": false,
+      "icon_home": "home",
+      "max_items": 10,
+      "expected": {
+        "new_heading_title": "Accordion item",
+        "heading1_title": "Accordion item 1",
+        "heading2_title": "Accordion item 2",
+        "disabled": "disabled",
+        "first_icon_expanded": "remove",
+        "first_icon_collapsed": "add"
+      }
+    },
+    "SB_WEB_BUILDER_LB_TABA_12": {
+      "add_tabs": {
+        "parent_position": {
+          "section": 1,
+          "column": 1
+        },
+        "basics_cate": "Basics",
+        "template": "Tabs"
+      },
+      "add_block_lvl1": {
+        "level": 1,
+        "row": 1,
+        "column": 1
+      },
+      "delete_heading": {
+        "title": ""
+      },
+      "edit_font": {
+        "title": "Font Paragraph 1",
+        "edit_quickbar": {
+          "font_style": "Paragraph 1",
+          "tabs": true
+        }
+      },
+      "enable_bold": {
+        "title": "Bold title",
+        "edit_quickbar": {
+          "bold": true,
+          "tabs": true
+        }
+      },
+      "enable_italic": {
+        "title": "Italic title",
+        "edit_quickbar": {
+          "italic": true,
+          "tabs": true
+        }
+      },
+      "insert_variable": {
+        "edit_quickbar": {
+          "variable": {
+            "shop": "Shop name"
+          },
+          "tabs": true
+        }
+      },
+      "expected": {
+        "blank_heading_placeholder": "Label...",
+        "p1_value": "p1",
+        "p1_font": "18px / 27.9px Inter, cursive",
+        "shop_name_value": "shop.name"
+      }
+    },
+    "SB_WEB_BUILDER_LB_TABA_13": {
+      "add_accordion": {
+        "parent_position": {
+          "section": 1,
+          "column": 1
+        },
+        "basics_cate": "Basics",
+        "template": "Accordion"
+      },
+      "add_block_lvl1": {
+        "level": 1,
+        "row": 1,
+        "column": 1
+      },
+      "delete_heading": {
+        "title": ""
+      },
+      "edit_font": {
+        "title": "Font Paragraph 2",
+        "edit_quickbar": {
+          "font_style": "Paragraph 2",
+          "tabs": true
+        }
+      },
+      "enable_bold": {
+        "title": "Bold title",
+        "edit_quickbar": {
+          "bold": true,
+          "tabs": true
+        }
+      },
+      "enable_italic": {
+        "title": "Italic title",
+        "edit_quickbar": {
+          "italic": true,
+          "tabs": true
+        }
+      },
+      "insert_variable": {
+        "edit_quickbar": {
+          "variable": {
+            "shop": "Shop domain"
+          },
+          "tabs": true
+        }
+      },
+      "expected": {
+        "blank_heading_placeholder": "Add item label...",
+        "p1_value": "p2",
+        "p1_font": "16px / 24.8px Inter, cursive",
+        "shop_name_value": "shop.domain"
+      }
+    },
+    "SETTINGS_ITEM_SECTION": {
+      "data": [
+        {
+          "case_id": "SB_WEB_BUILDER_LB_TABA_14",
+          "block": "Tabs",
+          "add_block": {
+            "parent_position": {
+              "section": 1,
+              "column": 1
+            },
+            "basics_cate": "Basics",
+            "template": "Tabs"
+          }
+        },
+        {
+          "case_id": "SB_WEB_BUILDER_LB_TABA_16",
+          "block": "Accordion",
+          "add_block": {
+            "parent_position": {
+              "section": 1,
+              "column": 1
+            },
+            "basics_cate": "Basics",
+            "template": "Accordion"
+          }
+        }
+      ],
+      "add_block_lvl1": {
+        "level": 1,
+        "row": 1,
+        "column": 1
+      },
+      "source_none": {
+        "variable": {
+          "use_page": false,
+          "source": {
+            "type": "",
+            "handle": ""
+          }
+        }
+      },
+      "add_block_position": {
+        "level": 1,
+        "row": 1,
+        "column": 1
+      },
+      "insert_product_description": {
+        "variable": {
+          "product": "Page description"
+        }
+      },
+      "source_product": {
+        "variable": {
+          "source": {
+            "type": "",
+            "handle": ""
+          },
+          "use_page": true
+        }
+      },
+      "design_data": [
+        {
+          "background": {
+            "img": {
+              "overlay": {
+                "code": "",
+                "opacity": 40
+              },
+              "position": "center center",
+              "repeat": "no-repeat",
+              "size": "cover",
+              "src": "https://catscanman.net/wp-content/uploads/2023/02/gau-truc-buon-ngu.jpg",
+              "use_variable": false
+            },
+            "mode": "image"
+          },
+          "border": {
+            "color": {
+              "code": "color_4",
+              "opacity": 100
+            },
+            "side": "all",
+            "size": 4,
+            "style": "solid",
+            "thickness": "medium"
+          },
+          "height": {
+            "value": 100,
+            "unit": "auto"
+          },
+          "margin": {
+            "bottom": 10,
+            "left": 10,
+            "right": 10,
+            "top": 10
+          },
+          "padding": {
+            "bottom": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0
+          },
+          "expected": {
+            "item_border": "4px solid rgb(64, 64, 64)",
+            "item_background": "rgba\\(0, 0, 0, 0\\) url\\(\"image\"\\)",
+            "item_padding": "0px",
+            "item_margin": "10px"
+          }
+        },
+        {
+          "background": {
+            "mode": "color",
+            "color": {
+              "code": "color_5",
+              "opacity": 100
+            }
+          },
+          "border": {
+            "color": {
+              "code": "color_4",
+              "opacity": 100
+            },
+            "side": "all",
+            "size": 5,
+            "style": "solid",
+            "thickness": "custom"
+          },
+          "margin": {
+            "bottom": 5,
+            "left": 5,
+            "right": 5,
+            "top": 5
+          },
+          "padding": {
+            "bottom": 15,
+            "left": 20,
+            "right": 25,
+            "top": 10
+          },
+          "expected": {
+            "item_border": "5px solid rgb(64, 64, 64)",
+            "item_background": "rgb\\(20, 20, 20\\) none",
+            "item_padding": "10px 25px 15px 20px",
+            "item_margin": "5px"
+          }
+        }
+      ],
+      "lv1_column": {
+        "section": 1,
+        "block": 1,
+        "tabs": {
+          "level": 1,
+          "row": 1,
+          "column": 1
+        }
+      },
+      "spacing": {
+        "layouts": {
+          "gutter": 22
+        }
+      },
+      "expected": {
+        "selected": "selected",
+        "item1_title": "Item 1",
+        "tab_content": "Content",
+        "default_border": "none",
+        "default_background": "rgba\\(0, 0, 0, 0\\) none",
+        "default_padding": "16,0,16,0",
+        "default_margin": "0,0,0,0",
+        "description_value": "product.meta_description",
+        "product_description": "This is product description (Data source testing)",
+        "column_spacing": "22px"
+      }
+    },
+    "SETTINGS_ITEM_CONTAINER": {
+      "data": [
+        {
+          "case_id": "SB_WEB_BUILDER_LB_TABA_15",
+          "block": "Tabs",
+          "add_block": {
+            "parent_position": {
+              "section": 1,
+              "column": 1
+            },
+            "basics_cate": "Basics",
+            "template": "Tabs"
+          }
+        },
+        {
+          "case_id": "SB_WEB_BUILDER_LB_TABA_17",
+          "block": "Accordion",
+          "add_block": {
+            "parent_position": {
+              "section": 1,
+              "column": 1
+            },
+            "basics_cate": "Basics",
+            "template": "Accordion"
+          }
+        }
+      ],
+      "add_block_lvl1": {
+        "level": 1,
+        "row": 1,
+        "column": 1
+      },
+      "source_none": {
+        "data_source": {
+          "type": "section",
+          "config": {
+            "category": "None"
+          }
+        }
+      },
+      "add_block_position": {
+        "level": 1,
+        "row": 1,
+        "column": 1
+      },
+      "insert_product_description": {
+        "variable": {
+          "product": "Page description"
+        }
+      },
+      "source_product": {
+        "data_source": {
+          "type": "section",
+          "config": {
+            "category": "Current page product"
+          }
+        }
+      },
+      "expected": {
+        "selected": "selected",
+        "container_title": "Container",
+        "tab_content": "Content",
+        "description_value": "product.meta_description",
+        "product_description": "This is product description (Data source testing)"
+      }
+    },
+    "SB_WEB_BUILDER_LB_TABA_18": {
+      "add_tabs": {
+        "parent_position": {
+          "section": 1,
+          "column": 1
+        },
+        "basics_cate": "Basics",
+        "template": "Tabs"
+      },
+      "display_as_accordion": {
+        "display_as": "Accordion"
+      },
+      "display_as_tabs": {
+        "display_as": "Tab"
+      },
+      "edit_accordion": {
+        "align_self": "flex-end",
+        "width": {
+          "value": 750,
+          "unit": "px"
+        },
+        "height": {
+          "value": 333,
+          "unit": "px"
+        },
+        "background": {
+          "color": {
+            "code": "color_3",
+            "opacity": 100
+          },
+          "mode": "color"
+        },
+        "border": {
+          "color": {
+            "code": "color_4",
+            "opacity": 100
+          },
+          "side": "all",
+          "size": 4,
+          "style": "solid",
+          "thickness": "medium"
+        },
+        "opacity": 85,
+        "border_radius": 5,
+        "padding": {
+          "bottom": 10,
+          "left": 10,
+          "right": 10,
+          "top": 10
+        },
+        "margin": {
+          "bottom": 5,
+          "left": 5,
+          "right": 5,
+          "top": 5
+        }
+      },
+      "edit_tabs": {
+        "align_self": "flex-start",
+        "width": {
+          "value": 350,
+          "unit": "px"
+        },
+        "height": {
+          "value": 280,
+          "unit": "px"
+        },
+        "background": {
+          "color": {
+            "code": "color_2",
+            "opacity": 100
+          },
+          "mode": "color"
+        },
+        "border": {
+          "color": {
+            "code": "color_4",
+            "opacity": 100
+          },
+          "side": "all",
+          "size": 1,
+          "style": "solid",
+          "thickness": "small"
+        },
+        "opacity": 65,
+        "border_radius": 8,
+        "padding": {
+          "bottom": 5,
+          "left": 5,
+          "right": 5,
+          "top": 5
+        },
+        "margin": {
+          "bottom": 15,
+          "left": 15,
+          "right": 15,
+          "top": 15
+        }
+      },
+      "expected": {
+        "default_expand_icon": "Add",
+        "active": "active",
+        "default_tab_layout": "Text only",
+        "default_position": "Auto",
+        "default_height_value": "0",
+        "default_height_unit": "Auto",
+        "default_width_value": "100",
+        "default_width_unit": "%",
+        "default_background": "rgba\\(0, 0, 0, 0\\) none",
+        "default_border": "none",
+        "default_opacity": "100",
+        "default_radius": "0",
+        "default_shadow": "none",
+        "default_padding": "0,0,0,0",
+        "default_margin": "0,0,0,0",
+        "default_display": "Tab",
+        "accordion_breadcrumb": "Accordion",
+        "tabs_breadcrumb": "Tabs",
+        "default_accordion_SF_snapshot": "18-Default-Accordion-SF.png",
+        "modified_accordion_preview_snapshot": "18-Modified-Accordion-Preview.png",
+        "modified_accordion_SF_snapshot": "18-Modified-Accordion-SF.png",
+        "accordion_switch_tabs_SF_snapshot": "18-Switch-Tabs-SF.png",
+        "modified_tabs_preview_snapshot": "18-Modified-Tabs-Preview.png",
+        "modified_tabs_SF_snapshot": "18-Modified-Tabs-SF.png",
+        "tabs_switch_accordion_preview_snapshot": "18-Switch-Accordion-Preview.png",
+        "tabs_switch_accordion_SF_snapshot": "18-Switch-Accordion-SF.png"
+      }
+    },
+    "SWITCH_MOBILE": {
+      "data": [
+        {
+          "case_id": "SB_WEB_BUILDER_LB_TABA_19",
+          "block": "Accordion",
+          "add_block": {
+            "parent_position": {
+              "section": 1,
+              "column": 1
+            },
+            "category": "Block accordion",
+            "template": "Accordion with style"
+          },
+          "edit_design": {
+            "align_self": "flex-end",
+            "background": {
+              "color": {
+                "code": "#B01212",
+                "opacity": 100
+              },
+              "mode": "color"
+            },
+            "border": {
+              "color": {
+                "code": "color_4",
+                "opacity": 100
+              },
+              "side": "all",
+              "size": 0,
+              "style": "solid",
+              "thickness": "none"
+            },
+            "border_radius": 2,
+            "box_shadow": {
+              "blur": 24,
+              "color": {
+                "code": "#000000",
+                "opacity": 16
+              },
+              "direction": "bottom_left",
+              "size": "medium",
+              "spread": -8,
+              "type": "soft",
+              "x": -8,
+              "y": 8
+            },
+            "expand_icon": "arrow_drop_down",
+            "height": {
+              "value": 200,
+              "unit": "px"
+            },
+            "icon_position": "left",
+            "margin": {
+              "bottom": 0,
+              "left": 0,
+              "right": 0,
+              "top": 0
+            },
+            "mode": "accordion",
+            "opacity": 100,
+            "padding": {
+              "bottom": 0,
+              "left": 0,
+              "right": 0,
+              "top": 0
+            },
+            "show_divider": true,
+            "top": 0,
+            "width": {
+              "value": 333,
+              "unit": "px"
+            }
+          },
+          "expected": {
+            "block_default_desktop_snapshot": "19-Accordion-Default-Desktop.png",
+            "block_responsive_in_mobile_preview_snapshot": "19-Accordion-Mobile-Responsive.png",
+            "modified_block_in_mobile_snapshot": "19-Modified-Accordion-Mobile.png"
+          }
+        },
+        {
+          "case_id": "SB_WEB_BUILDER_LB_TABA_20",
+          "block": "Tabs",
+          "add_block": {
+            "parent_position": {
+              "section": 1,
+              "column": 1
+            },
+            "category": "Block tabs",
+            "template": "Tabs with style"
+          },
+          "edit_design": {
+            "align_self": "center",
+            "background": {
+              "color": {
+                "code": "#000080",
+                "opacity": 100
+              },
+              "mode": "color"
+            },
+            "border": {
+              "color": {
+                "code": "color_4",
+                "opacity": 100
+              },
+              "side": "all",
+              "size": 0,
+              "style": "solid",
+              "thickness": "none"
+            },
+            "border_radius": 2,
+            "box_shadow": {
+              "blur": 24,
+              "color": {
+                "code": "#000000",
+                "opacity": 16
+              },
+              "direction": "bottom_left",
+              "size": "medium",
+              "spread": -8,
+              "type": "soft",
+              "x": -8,
+              "y": 8
+            },
+            "height": {
+              "value": 250,
+              "unit": "px"
+            },
+            "margin": {
+              "bottom": 0,
+              "left": 0,
+              "right": 0,
+              "top": 0
+            },
+            "mode": "accordion",
+            "opacity": 100,
+            "padding": {
+              "bottom": 0,
+              "left": 0,
+              "right": 0,
+              "top": 0
+            },
+            "show_divider": true,
+            "width": {
+              "value": 303,
+              "unit": "px"
+            }
+          },
+          "expected": {
+            "block_default_desktop_snapshot": "20-Tabs-Default-Desktop.png",
+            "block_responsive_in_mobile_preview_snapshot": "20-Tabs-Mobile-Responsive.png",
+            "modified_block_in_mobile_snapshot": "20-Modified-Tabs-Mobile.png"
+          }
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_LB_TABA_21": {
+      "section_1": "Section with source",
+      "add_tabs": {
+        "parent_position": {
+          "section": 1,
+          "column": 1
+        },
+        "test_cate": "Block tabs",
+        "test_template": "Tabs with rows"
+      },
+      "dnd_accordion": {
+        "from": {
+          "category": "Block accordion",
+          "template": "Accordion with rows"
+        },
+        "to": {
+          "position": {
+            "section": 1,
+            "column": 1,
+            "block": 1
+          },
+          "isBottom": false
+        }
+      },
+      "edit_data": [
+        {
+          "first_row_item1": {
+            "sectionName": "Item 1",
+            "subLayerName": "Row"
+          },
+          "second_row_item1": {
+            "sectionName": "Item 1",
+            "subLayerName": "Row",
+            "subLayerIndex": 2
+          },
+          "third_row_item1": {
+            "sectionName": "Item 1",
+            "subLayerName": "Row",
+            "subLayerIndex": 3
+          },
+          "expand_item1": {
+            "sectionName": "Item 1",
+            "isExpand": true
+          },
+          "edit_design_row2": {
+            "background": {
+              "color": {
+                "code": "color_4",
+                "opacity": 100
+              },
+              "mode": "color"
+            },
+            "border": {
+              "color": {
+                "code": "color_3",
+                "opacity": 100
+              },
+              "side": "all",
+              "size": 7,
+              "style": "solid",
+              "thickness": "custom"
+            },
+            "padding": {
+              "top": 10,
+              "left": 10,
+              "bottom": 10,
+              "right": 10
+            },
+            "margin": {
+              "top": 5,
+              "left": 5,
+              "bottom": 5,
+              "right": 5
+            }
+          },
+          "dnd_row_in_block": {
+            "from": {
+              "sectionName": "Item 1",
+              "subLayerName": "Row",
+              "subLayerIndex": 3
+            },
+            "to": {
+              "sectionName": "Item 1",
+              "subLayerName": "Row",
+              "subLayerIndex": 2
+            }
+          }
+        },
+        {
+          "first_row_item1": {
+            "sectionName": "Item 1",
+            "sectionIndex": 2,
+            "subLayerName": "Row"
+          },
+          "second_row_item1": {
+            "sectionName": "Item 1",
+            "sectionIndex": 2,
+            "subLayerName": "Row",
+            "subLayerIndex": 2
+          },
+          "third_row_item1": {
+            "sectionName": "Item 1",
+            "sectionIndex": 2,
+            "subLayerName": "Row",
+            "subLayerIndex": 3
+          },
+          "expand_item1": {
+            "sectionName": "Item 1",
+            "sectionIndex": 2,
+            "isExpand": true
+          },
+          "edit_design_row2": {
+            "background": {
+              "color": {
+                "code": "color_4",
+                "opacity": 100
+              },
+              "mode": "color"
+            },
+            "border": {
+              "color": {
+                "code": "color_3",
+                "opacity": 100
+              },
+              "side": "all",
+              "size": 7,
+              "style": "solid",
+              "thickness": "custom"
+            },
+            "padding": {
+              "top": 10,
+              "left": 10,
+              "bottom": 10,
+              "right": 10
+            },
+            "margin": {
+              "top": 5,
+              "left": 5,
+              "bottom": 5,
+              "right": 5
+            }
+          },
+          "dnd_row_in_block": {
+            "from": {
+              "sectionName": "Item 1",
+              "sectionIndex": 2,
+              "subLayerName": "Row",
+              "subLayerIndex": 3
+            },
+            "to": {
+              "sectionName": "Item 1",
+              "sectionIndex": 2,
+              "subLayerName": "Row",
+              "subLayerIndex": 2
+            }
+          }
+        }
+      ],
+      "expected": {
+        "tabs_default_desktop_snapshot": "21-Tabs-Default-Desktop.png",
+        "accordion_default_desktop_snapshot": "21-Accordion-Default-Desktop.png",
+        "row_in_tabs_responsive_mobile_snapshot": "21-Row-In-Tabs-Mobile.png",
+        "row_in_accordion_responsive_mobile_snapshot": "21-Row-In-Accordion-Mobile.png",
+        "modified_row_in_tabs_mobile_snapshot": "21-Modified-Row-In-Tabs-Mobile.png",
+        "modified_row_in_accordion_mobile_snapshot": "21-Modified-Row-In-Accordion-Mobile.png"
+      }
+    },
+    "SB_WEB_BUILDER_LB_TABA_22": {
+      "section_1": "Section with source",
+      "add_tabs": {
+        "parent_position": {
+          "section": 1,
+          "column": 1
+        },
+        "test_cate": "Block tabs",
+        "test_template": "Tabs with columns"
+      },
+      "dnd_accordion": {
+        "from": {
+          "category": "Block accordion",
+          "template": "Accordion with columns"
+        },
+        "to": {
+          "position": {
+            "section": 1,
+            "column": 1,
+            "block": 1
+          },
+          "isBottom": false
+        }
+      },
+      "edit_data": [
+        {
+          "column1_row1_item1": {
+            "sectionName": "Item 1",
+            "subLayerName": "Column",
+            "subLayerIndex": 1
+          },
+          "expand_item1": {
+            "sectionName": "Item 1",
+            "isExpand": true
+          },
+          "edit_design_column1_row1": {
+            "border": {
+              "label": "border",
+              "value": {
+                "thickness": "custom",
+                "size": "5",
+                "color": {
+                  "preset": 1
+                }
+              }
+            },
+            "background": {
+              "label": "background",
+              "value": {
+                "color": {
+                  "preset": 2
+                }
+              }
+            },
+            "padding": {
+              "label": "padding",
+              "value": {
+                "input": true,
+                "top": 0,
+                "left": 0,
+                "bottom": 0,
+                "right": 0
+              }
+            }
+          },
+          "edit_design_column1_row2": {
+            "background": {
+              "color": {
+                "code": "color_2",
+                "opacity": 100
+              },
+              "mode": "color"
+            },
+            "border": {
+              "color": {
+                "code": "color_1",
+                "opacity": 100
+              },
+              "side": "all",
+              "size": 5,
+              "style": "solid",
+              "thickness": "custom"
+            },
+            "padding": {
+              "bottom": 0,
+              "left": 0,
+              "right": 0,
+              "top": 0
+            }
+          }
+        },
+        {
+          "column1_row1_item1": {
+            "sectionName": "Item 1",
+            "sectionIndex": 2,
+            "subLayerName": "Column",
+            "subLayerIndex": 1
+          },
+          "expand_item1": {
+            "sectionName": "Item 1",
+            "sectionIndex": 2,
+            "isExpand": true
+          },
+          "edit_design_column1_row1": {
+            "border": {
+              "label": "border",
+              "value": {
+                "thickness": "custom",
+                "size": "7",
+                "color": {
+                  "preset": 3
+                }
+              }
+            },
+            "background": {
+              "label": "background",
+              "value": {
+                "color": {
+                  "preset": 4
+                }
+              }
+            },
+            "padding": {
+              "label": "padding",
+              "value": {
+                "input": true,
+                "top": 10,
+                "left": 10,
+                "bottom": 10,
+                "right": 10
+              }
+            }
+          },
+          "edit_design_column1_row2": {
+            "background": {
+              "color": {
+                "code": "color_4",
+                "opacity": 100
+              },
+              "mode": "color"
+            },
+            "border": {
+              "color": {
+                "code": "color_3",
+                "opacity": 100
+              },
+              "side": "all",
+              "size": 7,
+              "style": "solid",
+              "thickness": "custom"
+            },
+            "padding": {
+              "bottom": 10,
+              "left": 10,
+              "right": 10,
+              "top": 10
+            }
+          }
+        }
+      ],
+      "expected": {
+        "tabs_default_desktop_snapshot": "22-Tabs-Default-Desktop.png",
+        "accordion_default_desktop_snapshot": "22-Accordion-Default-Desktop.png",
+        "column_in_tabs_responsive_mobile_snapshot": "22-Column-In-Tabs-Mobile.png",
+        "column_in_accordion_responsive_mobile_snapshot": "22-Column-In-Accordion-Mobile.png",
+        "modified_column_in_tabs_mobile_snapshot": "22-Modified-Column-In-Tabs-Mobile.png",
+        "modified_column_in_accordion_mobile_snapshot": "22-Modified-Column-In-Accordion-Mobile.png"
+      }
+    },
+    "SB_WEB_BUILDER_LB_TABA_23": {
+      "section_1": "Section with source",
+      "add_tabs": {
+        "parent_position": {
+          "section": 1,
+          "column": 1
+        },
+        "test_cate": "Block tabs",
+        "test_template": "Tabs with blocks"
+      },
+      "dnd_accordion": {
+        "from": {
+          "category": "Block accordion",
+          "template": "Accordion with blocks"
+        },
+        "to": {
+          "position": {
+            "section": 1,
+            "column": 1,
+            "block": 1
+          },
+          "isBottom": false
+        }
+      },
+      "edit_data": [
+        {
+          "expand_item1": {
+            "sectionName": "Item 1",
+            "isExpand": true
+          },
+          "edit_design_block1_column1": {
+            "background": {
+              "color": {
+                "code": "color_2",
+                "opacity": 100
+              },
+              "mode": "color"
+            },
+            "border": {
+              "color": {
+                "code": "color_1",
+                "opacity": 100
+              },
+              "side": "all",
+              "size": 5,
+              "style": "solid",
+              "thickness": "custom"
+            },
+            "padding": {
+              "bottom": 0,
+              "left": 0,
+              "right": 0,
+              "top": 0
+            },
+            "margin": {
+              "bottom": 0,
+              "left": 0,
+              "right": 0,
+              "top": 0
+            }
+          },
+          "edit_design_block1_column2": {
+            "background": {
+              "color": {
+                "code": "color_3",
+                "opacity": 100
+              },
+              "mode": "color"
+            },
+            "border": {
+              "color": {
+                "code": "#000080",
+                "opacity": 100
+              },
+              "side": "all",
+              "size": 2,
+              "style": "solid",
+              "thickness": "custom"
+            },
+            "padding": {
+              "bottom": 15,
+              "left": 15,
+              "right": 15,
+              "top": 15
+            },
+            "margin": {
+              "bottom": 0,
+              "left": 0,
+              "right": 0,
+              "top": 0
+            }
+          }
+        },
+        {
+          "expand_item1": {
+            "sectionName": "Item 1",
+            "sectionIndex": 2,
+            "isExpand": true
+          },
+          "edit_design_block1_column1": {
+            "background": {
+              "color": {
+                "code": "color_4",
+                "opacity": 100
+              },
+              "mode": "color"
+            },
+            "border": {
+              "color": {
+                "code": "color_3",
+                "opacity": 100
+              },
+              "side": "all",
+              "size": 7,
+              "style": "solid",
+              "thickness": "custom"
+            },
+            "padding": {
+              "bottom": 10,
+              "left": 10,
+              "right": 10,
+              "top": 10
+            },
+            "margin": {
+              "bottom": 5,
+              "left": 5,
+              "right": 5,
+              "top": 5
+            }
+          },
+          "edit_design_block1_column2": {
+            "background": {
+              "color": {
+                "code": "color_4",
+                "opacity": 100
+              },
+              "mode": "color"
+            },
+            "border": {
+              "color": {
+                "code": "color_3",
+                "opacity": 100
+              },
+              "side": "all",
+              "size": 7,
+              "style": "solid",
+              "thickness": "custom"
+            },
+            "padding": {
+              "bottom": 10,
+              "left": 10,
+              "right": 10,
+              "top": 10
+            },
+            "margin": {
+              "bottom": 5,
+              "left": 5,
+              "right": 5,
+              "top": 5
+            }
+          }
+        }
+      ],
+      "expected": {
+        "tabs_default_desktop_snapshot": "23-Tabs-Default-Desktop.png",
+        "accordion_default_desktop_snapshot": "23-Accordion-Default-Desktop.png",
+        "block_in_tabs_responsive_mobile_snapshot": "23-Block-In-Tabs-Mobile.png",
+        "block_in_accordion_responsive_mobile_snapshot": "23-Block-In-Accordion-Mobile.png",
+        "modified_block_in_tabs_mobile_snapshot": "23-Modified-Block-In-Tabs-Mobile.png",
+        "modified_block_in_accordion_mobile_snapshot": "23-Modified-Block-In-Accordion-Mobile.png"
+      }
+    }
+  }
+}

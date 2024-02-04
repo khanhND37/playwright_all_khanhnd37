@@ -1,0 +1,926 @@
+{
+  "api": "https://api.shopbase.com",
+  "domain": "auto-taxes-plusbase-exclude.onshopbase.com",
+  "shop_name": "auto-taxes-plusbase-exclude",
+  "user_id": 74303,
+  "shop_id": 10281914,
+  "username": "shopbase2@beeketing.net",
+  "password": "raMse).7L/b4;k#@",
+  "shipping_method": "Premium shipping",
+  "odoo_host": "https://autotest-erp-plus.shopbase.dev",
+  "odoo_db": "shopbase_fulfillment",
+  "odoo_username": "qaocg",
+  "odoo_password": "LFmy=qGLvwW^E63b",
+  "card_info": {
+    "number": "4242424242424242",
+    "holder_name": "Shopbase Auto",
+    "expire_date": "12 / 30",
+    "cvv": "116"
+  },
+  "product_tpl_ids": [1007162, 1007161],
+  "cases": {
+    "TAX_CHECKOUT_PLBASE_01": {
+      "data": [
+        {
+          "case_id": "SB_PLB_TP_TC_118",
+          "case_name": "[Exclude] order PlusBase item đến address không được set Tax rules thì order PlusBase không tính tax",
+          "product": [
+            {
+              "name": "(Test product) Auto-cpay1",
+              "variant_id": 1000011246460010,
+              "quantity": 1
+            }
+          ],
+          "email": "tester@maildrop.cc",
+          "shipping_address": {
+            "address1": "814 Mission Street",
+            "address2": "",
+            "city": "Los Angeles",
+            "company": "",
+            "country": "United Kingdom",
+            "country_code": "GB",
+            "country_name": "United Kingdom",
+            "cpf_or_cnpj_number": "",
+            "first_name": "Tester",
+            "last_name": "ShopBase",
+            "name": "Jena",
+            "phone": "7036618988",
+            "province": "",
+            "province_code": "",
+            "zip": "90001",
+            "remember_me": false
+          }
+        },
+        {
+          "case_id": "SB_PLB_TP_TC_119",
+          "case_name": "[Exclude] Có tax rule nhưng order PlusBase chưa đạt threshold thì order PlusBase không tính tax",
+          "product": [
+            {
+              "name": "(Test product) Auto-cpay1",
+              "variant_id": 1000011246460010,
+              "quantity": 2
+            }
+          ],
+          "email": "tester@maildrop.cc",
+          "shipping_address": {
+            "address1": "814 Mission Street",
+            "address2": "",
+            "city": "Los Angeles",
+            "company": "",
+            "country": "United States",
+            "country_code": "US",
+            "country_name": "United States",
+            "cpf_or_cnpj_number": "",
+            "first_name": "Tester",
+            "last_name": "ShopBase",
+            "name": "Jena",
+            "phone": "7036618988",
+            "province": "New York",
+            "province_code": "NY",
+            "zip": "10001",
+            "remember_me": false
+          }
+        },
+        {
+          "case_id": "SB_PLB_TP_TC_120",
+          "case_name": "[Exclude] Có tax rule, order PlusBase đạt threshold thì order PlusBase sẽ được tính tax",
+          "product": [
+            {
+              "name": "(Test product) Auto-cpay2",
+              "variant_id": 1000011246469367,
+              "quantity": 3,
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax Override",
+                "tax_rate": 30
+              }
+            }
+          ],
+          "email": "tester@maildrop.cc",
+          "shipping_address": {
+            "address1": "814 Mission Street",
+            "address2": "",
+            "city": "Los Angeles",
+            "company": "",
+            "country": "United States",
+            "country_code": "US",
+            "country_name": "United States",
+            "cpf_or_cnpj_number": "",
+            "first_name": "Tester",
+            "last_name": "ShopBase",
+            "name": "Jena",
+            "phone": "7036618988",
+            "province": "California",
+            "province_code": "CA",
+            "zip": "90001",
+            "remember_me": false
+          }
+        },
+        {
+          "case_id": "SB_PLB_TP_TC_122",
+          "case_name": "[Exclude] order PlusBase có 2 item, có tax rules khác nhau",
+          "product": [
+            {
+              "name": "(Test product) Auto-cpay2",
+              "variant_id": 1000011246469367,
+              "quantity": 3,
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax Override",
+                "tax_rate": 30
+              }
+            },
+            {
+              "name": "(Test product) Auto-cpay3",
+              "variant_id": 1000009924685692,
+              "quantity": 1,
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax Region",
+                "tax_rate": 15
+              }
+            }
+          ],
+          "email": "tester@maildrop.cc",
+          "shipping_address": {
+            "address1": "814 Mission Street",
+            "address2": "",
+            "city": "Los Angeles",
+            "company": "",
+            "country": "United States",
+            "country_code": "US",
+            "country_name": "United States",
+            "cpf_or_cnpj_number": "",
+            "first_name": "Tester",
+            "last_name": "ShopBase",
+            "name": "Jena",
+            "phone": "7036618988",
+            "province": "California",
+            "province_code": "CA",
+            "zip": "90001",
+            "remember_me": false
+          }
+        }
+      ]
+    },
+    "TAX_CHECKOUT_PLBASE_02": {
+      "data": [
+        {
+          "case_id": "SB_PLB_TP_TC_108",
+          "case_name": "[Include] order PlusBase item đến address không được set Tax rules thì order PlusBase không tính tax",
+          "product": [
+            {
+              "name": "(Test product) Auto-cpay1",
+              "variant_id": 1000011246460010,
+              "quantity": 1
+            }
+          ],
+          "email": "tester@maildrop.cc",
+          "shipping_address": {
+            "address1": "814 Mission Street",
+            "address2": "",
+            "city": "Los Angeles",
+            "company": "",
+            "country": "United Kingdom",
+            "country_code": "GB",
+            "country_name": "United Kingdom",
+            "cpf_or_cnpj_number": "",
+            "first_name": "Tester",
+            "last_name": "ShopBase",
+            "name": "Jena",
+            "phone": "7036618988",
+            "province": "",
+            "province_code": "",
+            "zip": "90001",
+            "remember_me": false
+          }
+        },
+        {
+          "case_id": "SB_PLB_TP_TC_109",
+          "case_name": "[Include] Có tax rule nhưng order PlusBase chưa đạt threshold thì order PlusBase không tính tax",
+          "product": [
+            {
+              "name": "(Test product) Auto-cpay1",
+              "variant_id": 1000011246460010,
+              "quantity": 2
+            }
+          ],
+          "email": "tester@maildrop.cc",
+          "shipping_address": {
+            "address1": "814 Mission Street",
+            "address2": "",
+            "city": "Los Angeles",
+            "company": "",
+            "country": "United States",
+            "country_code": "US",
+            "country_name": "United States",
+            "cpf_or_cnpj_number": "",
+            "first_name": "Tester",
+            "last_name": "ShopBase",
+            "name": "Jena",
+            "phone": "7036618988",
+            "province": "New York",
+            "province_code": "NY",
+            "zip": "10001",
+            "remember_me": false
+          }
+        },
+        {
+          "case_id": "SB_PLB_TP_TC_110",
+          "case_name": "[Include] Có tax rule, order PlusBase đạt threshold thì order PlusBase sẽ được tính tax",
+          "product": [
+            {
+              "name": "(Test product) Auto-cpay2",
+              "variant_id": 1000011246469367,
+              "quantity": 3,
+              "tax_info": {
+                "tax_type": "include",
+                "tax_name": "Tax Override",
+                "tax_rate": 30
+              }
+            }
+          ],
+          "email": "tester@maildrop.cc",
+          "shipping_address": {
+            "address1": "814 Mission Street",
+            "address2": "",
+            "city": "Los Angeles",
+            "company": "",
+            "country": "United States",
+            "country_code": "US",
+            "country_name": "United States",
+            "cpf_or_cnpj_number": "",
+            "first_name": "Tester",
+            "last_name": "ShopBase",
+            "name": "Jena",
+            "phone": "7036618988",
+            "province": "California",
+            "province_code": "CA",
+            "zip": "90001",
+            "remember_me": false
+          }
+        },
+        {
+          "case_id": "SB_PLB_TP_TC_112",
+          "case_name": "[Include] order PlusBase có 2 item, có tax rules khác nhau",
+          "product": [
+            {
+              "name": "(Test product) Auto-cpay2",
+              "variant_id": 1000011246469367,
+              "quantity": 3,
+              "tax_info": {
+                "tax_type": "include",
+                "tax_name": "Tax Override",
+                "tax_rate": 30
+              }
+            },
+            {
+              "name": "(Test product) Auto-cpay3",
+              "variant_id": 1000009924685692,
+              "quantity": 1,
+              "tax_info": {
+                "tax_type": "include",
+                "tax_name": "Tax Region",
+                "tax_rate": 15
+              }
+            }
+          ],
+          "email": "tester@maildrop.cc",
+          "shipping_address": {
+            "address1": "814 Mission Street",
+            "address2": "",
+            "city": "Los Angeles",
+            "company": "",
+            "country": "United States",
+            "country_code": "US",
+            "country_name": "United States",
+            "cpf_or_cnpj_number": "",
+            "first_name": "Tester",
+            "last_name": "ShopBase",
+            "name": "Jena",
+            "phone": "7036618988",
+            "province": "California",
+            "province_code": "CA",
+            "zip": "90001",
+            "remember_me": false
+          }
+        }
+      ]
+    },
+    "SB_PLB_TP_TC_126": {
+      "product": [
+        {
+          "name": "(Test product) Auto-cpay2",
+          "variant_id": 1000011246469367,
+          "quantity": 3,
+          "tax_info": {
+            "tax_type": "exclude",
+            "tax_name": "Tax Override",
+            "tax_rate": 30
+          }
+        }
+      ],
+      "product_ppc": {
+        "name": "(Test product) Auto-cpay3",
+        "variant_id": 1000009924685692,
+        "quantity": 1,
+        "tax_info": {
+          "tax_type": "exclude",
+          "tax_name": "Tax Region",
+          "tax_rate": 15
+        },
+        "post_purchase_price": 50
+      },
+      "usell_id": 9398358,
+      "email": "tester@maildrop.cc",
+      "shipping_address": {
+        "address1": "814 Mission Street",
+        "address2": "",
+        "city": "Los Angeles",
+        "company": "",
+        "country": "United States",
+        "country_code": "US",
+        "country_name": "United States",
+        "cpf_or_cnpj_number": "",
+        "first_name": "Tester",
+        "last_name": "Auto",
+        "name": "Jena",
+        "phone": "7036618988",
+        "province": "California",
+        "province_code": "CA",
+        "zip": "90001",
+        "remember_me": false
+      }
+    },
+    "SB_PLB_TP_TC_131": {
+      "product": [
+        {
+          "name": "(Test product) Auto-cpay2",
+          "variant_id": 1000011246754726,
+          "quantity": 2,
+          "tax_info": {
+            "tax_type": "exclude",
+            "tax_name": "Tax Override",
+            "tax_rate": 30
+          }
+        }
+      ],
+      "product_ppc": {
+        "name": "(Test product) Auto-cpay3",
+        "variant_id": 1000009924685692,
+        "quantity": 1,
+        "tax_info": {
+          "tax_type": "exclude",
+          "tax_name": "Tax Region",
+          "tax_rate": 15
+        },
+        "post_purchase_price": 50
+      },
+      "usell_id": 9398358,
+      "email": "tester@maildrop.cc",
+      "shipping_address": {
+        "address1": "814 Mission Street",
+        "address2": "",
+        "city": "Los Angeles",
+        "company": "",
+        "country": "United States",
+        "country_code": "US",
+        "country_name": "United States",
+        "cpf_or_cnpj_number": "",
+        "first_name": "Tester",
+        "last_name": "Auto",
+        "name": "Jena",
+        "phone": "7036618988",
+        "province": "California",
+        "province_code": "CA",
+        "zip": "90001",
+        "remember_me": false
+      }
+    },
+    "SB_PLB_TP_TC_127": {
+      "product": [
+        {
+          "name": "(Test product) Auto-cpay2",
+          "variant_id": 1000011246469367,
+          "quantity": 3,
+          "tax_info": {
+            "tax_type": "exclude",
+            "tax_name": "Tax Override",
+            "tax_rate": 30
+          }
+        }
+      ],
+      "product_ppc": {
+        "variant_id": 1000009924685692,
+        "quantity": 1,
+        "tax_info": {
+          "tax_type": "exclude",
+          "tax_name": "Tax Region",
+          "tax_rate": 15
+        },
+        "post_purchase_price": 50
+      },
+      "product_ppc_name": "(Test product) Auto-cpay3",
+      "payment_method": "PayPal",
+      "email": "tester@maildrop.cc",
+      "shipping_address": {
+        "address1": "814 Mission Street",
+        "address2": "",
+        "city": "Los Angeles",
+        "company": "",
+        "country": "United States",
+        "country_code": "US",
+        "country_name": "United States",
+        "cpf_or_cnpj_number": "",
+        "first_name": "Tester",
+        "last_name": "Auto",
+        "name": "Jena",
+        "phone": "7036618988",
+        "province": "California",
+        "province_code": "CA",
+        "zip": "90001",
+        "remember_me": false
+      },
+      "paypal_account": {
+        "username": "buyer@shopbase.com",
+        "password": "2XfWH9Ae"
+      }
+    },
+    "SB_PLB_TP_TC_116": {
+      "product": [
+        {
+          "name": "(Test product) Auto-cpay2",
+          "variant_id": 1000011246469367,
+          "quantity": 3,
+          "tax_info": {
+            "tax_type": "include",
+            "tax_name": "Tax Override",
+            "tax_rate": 30
+          }
+        }
+      ],
+      "product_ppc": {
+        "name": "(Test product) Auto-cpay3",
+        "variant_id": 1000009924685692,
+        "quantity": 1,
+        "tax_info": {
+          "tax_type": "include",
+          "tax_name": "Tax Region",
+          "tax_rate": 15
+        },
+        "post_purchase_price": 50
+      },
+      "usell_id": 9398358,
+      "email": "tester@maildrop.cc",
+      "shipping_address": {
+        "address1": "814 Mission Street",
+        "address2": "",
+        "city": "Los Angeles",
+        "company": "",
+        "country": "United States",
+        "country_code": "US",
+        "country_name": "United States",
+        "cpf_or_cnpj_number": "",
+        "first_name": "Tester",
+        "last_name": "Auto",
+        "name": "Jena",
+        "phone": "7036618988",
+        "province": "California",
+        "province_code": "CA",
+        "zip": "90001",
+        "remember_me": false
+      }
+    },
+    "SB_PLB_TP_TC_132": {
+      "product": [
+        {
+          "name": "(Test product) Auto-cpay2",
+          "variant_id": 1000011246469367,
+          "quantity": 3,
+          "tax_info": {
+            "tax_type": "include",
+            "tax_name": "Tax Override",
+            "tax_rate": 30
+          }
+        }
+      ],
+      "product_ppc": {
+        "name": "(Test product) Auto-cpay3",
+        "variant_id": 1000009924685692,
+        "quantity": 1,
+        "tax_info": {
+          "tax_type": "include",
+          "tax_name": "Tax Region",
+          "tax_rate": 15
+        },
+        "post_purchase_price": 50
+      },
+      "product_ppc_name": "(Test product) Auto-cpay3",
+      "payment_method": "PayPal",
+      "email": "tester@maildrop.cc",
+      "shipping_address": {
+        "address1": "814 Mission Street",
+        "address2": "",
+        "city": "Los Angeles",
+        "company": "",
+        "country": "United States",
+        "country_code": "US",
+        "country_name": "United States",
+        "cpf_or_cnpj_number": "",
+        "first_name": "Tester",
+        "last_name": "Auto",
+        "name": "Jena",
+        "phone": "7036618988",
+        "province": "California",
+        "province_code": "CA",
+        "zip": "90001",
+        "remember_me": false
+      },
+      "paypal_account": {
+        "username": "buyer@shopbase.com",
+        "password": "2XfWH9Ae"
+      }
+    },
+    "SB_PLB_TP_TC_117": {
+      "product": [
+        {
+          "name": "(Test product) Auto-cpay2",
+          "variant_id": 1000011246469367,
+          "quantity": 3,
+          "tax_info": {
+            "tax_type": "include",
+            "tax_name": "Tax Override",
+            "tax_rate": 30
+          }
+        }
+      ],
+      "product_ppc": {
+        "name": "(Test product) Auto-cpay3",
+        "variant_id": 1000009924685692,
+        "quantity": 1,
+        "tax_info": {
+          "tax_type": "include",
+          "tax_name": "Tax Region",
+          "tax_rate": 15
+        },
+        "post_purchase_price": 50
+      },
+      "product_ppc_name": "(Test product) Auto-cpay3",
+      "payment_method": "PayPal",
+      "email": "tester@maildrop.cc",
+      "shipping_address": {
+        "address1": "814 Mission Street",
+        "address2": "",
+        "city": "Los Angeles",
+        "company": "",
+        "country": "United States",
+        "country_code": "US",
+        "country_name": "United States",
+        "cpf_or_cnpj_number": "",
+        "first_name": "Tester",
+        "last_name": "Auto",
+        "name": "Jena",
+        "phone": "7036618988",
+        "province": "California",
+        "province_code": "CA",
+        "zip": "90001",
+        "remember_me": false
+      },
+      "paypal_account": {
+        "username": "buyer@shopbase.com",
+        "password": "2XfWH9Ae"
+      }
+    }
+  },
+  "env": {
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "auto-taxes-plusbase-exclude-prodtest.onshopbase.com",
+      "shop_name": "auto-taxes-plusbase-exclude-prodtest",
+      "user_id": 74303,
+      "shop_id": 10282258,
+      "username": "shopbase2@beeketing.net",
+      "password": "raMse).7L/b4;k#@",
+      "odoo_host": "https://autotest-erp-plus.shopbase.dev",
+      "odoo_db": "shopbase_fulfillment",
+      "odoo_username": "qaocg",
+      "odoo_password": "LFmy=qGLvwW^E63b",
+      "product_tpl_ids": [1007162, 1007161],
+      "cases": {
+        "TAX_CHECKOUT_PLBASE_01": {
+          "data": [
+            {
+              "case_id": "SB_PLB_TP_TC_118",
+              "product": [
+                {
+                  "variant_id": 1000010523917453
+                }
+              ]
+            },
+            {
+              "case_id": "SB_PLB_TP_TC_119",
+              "product": [
+                {
+                  "variant_id": 1000010523917453
+                }
+              ]
+            },
+            {
+              "case_id": "SB_PLB_TP_TC_120",
+              "product": [
+                {
+                  "variant_id": 1000007552277239
+                }
+              ]
+            },
+            {
+              "case_id": "SB_PLB_TP_TC_122",
+              "product": [
+                {
+                  "variant_id": 1000007552277239
+                },
+                {
+                  "variant_id": 1000010091947148
+                }
+              ]
+            }
+          ]
+        },
+        "TAX_CHECKOUT_PLBASE_02": {
+          "data": [
+            {
+              "case_id": "SB_PLB_TP_TC_108",
+              "product": [
+                {
+                  "variant_id": 1000010523917453
+                }
+              ]
+            },
+            {
+              "case_id": "SB_PLB_TP_TC_109",
+              "product": [
+                {
+                  "variant_id": 1000010523917453
+                }
+              ]
+            },
+            {
+              "case_id": "SB_PLB_TP_TC_110",
+              "product": [
+                {
+                  "variant_id": 1000007552277239
+                }
+              ]
+            },
+            {
+              "case_id": "SB_PLB_TP_TC_112",
+              "product": [
+                {
+                  "variant_id": 1000007552277239
+                },
+                {
+                  "variant_id": 1000010091947148
+                }
+              ]
+            }
+          ]
+        },
+        "SB_PLB_TP_TC_126": {
+          "product": [
+            {
+              "variant_id": 1000007552277239
+            }
+          ],
+          "product_ppc": {
+            "variant_id": 1000010091947148
+          },
+          "usell_id": 9399380
+        },
+        "SB_PLB_TP_TC_131": {
+          "product": [
+            {
+              "name": "(Test product) Auto-cpay2",
+              "variant_id": 1000010036588429,
+              "quantity": 3,
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax Override",
+                "tax_rate": 30
+              }
+            }
+          ],
+          "product_ppc": {
+            "variant_id": 1000010091947148
+          },
+          "usell_id": 9399380
+        },
+        "SB_PLB_TP_TC_127": {
+          "product": [
+            {
+              "variant_id": 1000007552277239
+            }
+          ],
+          "product_ppc": {
+            "variant_id": 1000010091947148
+          }
+        },
+        "SB_PLB_TP_TC_116": {
+          "product": [
+            {
+              "variant_id": 1000007552277239
+            }
+          ],
+          "product_ppc": {
+            "variant_id": 1000010091947148
+          },
+          "usell_id": 9399380
+        },
+        "SB_PLB_TP_TC_132": {
+          "product": [
+            {
+              "variant_id": 1000007552277239
+            }
+          ],
+          "product_ppc": {
+            "variant_id": 1000010091947148
+          }
+        },
+        "SB_PLB_TP_TC_117": {
+          "product": [
+            {
+              "variant_id": 1000007552277239
+            }
+          ],
+          "product_ppc": {
+            "variant_id": 1000010091947148
+          }
+        }
+      },
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-plbase-checkout.myshopbase.net",
+      "shop_name": "au-plbase-checkout.myshopbase.net",
+      "user_id": 73800,
+      "shop_id": 10321842,
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "odoo_host": "https://odoo.dev.shopbase.net/",
+      "odoo_db": "sbase_fulfillment_dev",
+      "odoo_username": "admin",
+      "odoo_password": "admin",
+      "product_tpl_ids": [1102191, 1156731],
+      "cases": {
+        "TAX_CHECKOUT_PLBASE_01": {
+          "data": [
+            {
+              "case_id": "SB_PLB_TP_TC_118",
+              "product": [
+                {
+                  "variant_id": 1000001766749535
+                }
+              ]
+            },
+            {
+              "case_id": "SB_PLB_TP_TC_119",
+              "product": [
+                {
+                  "variant_id": 1000001766749535
+                }
+              ]
+            },
+            {
+              "case_id": "SB_PLB_TP_TC_120",
+              "product": [
+                {
+                  "variant_id": 1000001769993081
+                }
+              ]
+            },
+            {
+              "case_id": "SB_PLB_TP_TC_122",
+              "product": [
+                {
+                  "variant_id": 1000001769993081
+                },
+                {
+                  "variant_id": 1000001766749537
+                }
+              ]
+            }
+          ]
+        },
+        "TAX_CHECKOUT_PLBASE_02": {
+          "data": [
+            {
+              "case_id": "SB_PLB_TP_TC_108",
+              "product": [
+                {
+                  "variant_id": 1000001766749535
+                }
+              ]
+            },
+            {
+              "case_id": "SB_PLB_TP_TC_109",
+              "product": [
+                {
+                  "variant_id": 1000001766749535
+                }
+              ]
+            },
+            {
+              "case_id": "SB_PLB_TP_TC_110",
+              "product": [
+                {
+                  "variant_id": 1000001769993081
+                }
+              ]
+            },
+            {
+              "case_id": "SB_PLB_TP_TC_112",
+              "product": [
+                {
+                  "variant_id": 1000001769993081
+                },
+                {
+                  "variant_id": 1000001766749537
+                }
+              ]
+            }
+          ]
+        },
+        "SB_PLB_TP_TC_126": {
+          "product": [
+            {
+              "variant_id": 1000001769993081
+            }
+          ],
+          "product_ppc": {
+            "variant_id": 1000001766749537
+          },
+          "usell_id": 73251074550
+        },
+        "SB_PLB_TP_TC_131": {
+          "product": [
+            {
+              "name": "(Test product) Auto-cpay2",
+              "variant_id": 1000001769993851,
+              "quantity": 3,
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax Override",
+                "tax_rate": 30
+              }
+            }
+          ],
+          "product_ppc": {
+            "variant_id": 1000001766749537
+          },
+          "usell_id": 73251074550
+        },
+        "SB_PLB_TP_TC_127": {
+          "product": [
+            {
+              "variant_id": 1000001769993081
+            }
+          ],
+          "product_ppc": {
+            "variant_id": 1000001766749537
+          }
+        },
+        "SB_PLB_TP_TC_116": {
+          "product": [
+            {
+              "variant_id": 1000001769993081
+            }
+          ],
+          "product_ppc": {
+            "variant_id": 1000001766749537
+          },
+          "usell_id": 73251074550
+        },
+        "SB_PLB_TP_TC_132": {
+          "product": [
+            {
+              "variant_id": 1000001769993081
+            }
+          ],
+          "product_ppc": {
+            "variant_id": 1000001766749537
+          }
+        },
+        "SB_PLB_TP_TC_117": {
+          "product": [
+            {
+              "variant_id": 1000001769993081
+            }
+          ],
+          "product_ppc": {
+            "variant_id": 1000001766749537
+          }
+        }
+      }
+    }
+  }
+}

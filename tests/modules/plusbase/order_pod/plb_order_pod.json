@@ -1,0 +1,94 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain_store": "au-plb-order-pod.myshopbase.net",
+      "admin.name": "shopbase4@beeketing.net",
+      "admin.pwd": "H7mQdQ]Zj]%[Nm?",
+      "hive_info": {
+        "domain": "hive-pbase.dev.shopbase.net",
+        "username": "shopbase",
+        "password": "123456"
+      },
+      "time_out": 400000
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain_store": "au-plb-order-pod-prodtest.onshopbase.com",
+      "admin.name": "shopbase4@beeketing.net",
+      "admin.pwd": "H7mQdQ]Zj]%[Nm?",
+      "hive_info": {
+        "domain": "hive-pbase.shopbase.com",
+        "username": "shopbase",
+        "password": "UxsLHz^Wjkf35*/w"
+      },
+      "accounts_domain": "accounts-test.shopbase.com",
+      "time_out": 400000
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain_store": "au-plb-order-pod.onshopbase.com",
+      "admin.name": "shopbase4@beeketing.net",
+      "admin.pwd": "H7mQdQ]Zj]%[Nm?",
+      "hive_info": {
+        "domain": "hive-pbase-prod-test.shopbase.com",
+        "username": "shopbase",
+        "password": "UxsLHz^Wjkf35*/w"
+      },
+      "time_out": 1000000
+    }
+  },
+  "shipping_address": {
+    "email": "shopbase@beeketing.net",
+    "first_name": "Plus",
+    "last_name": "Base",
+    "address": "Ha Noi",
+    "country": "United States",
+    "state": "New York",
+    "city": "New York",
+    "zipcode": "10001",
+    "phone_number": "505-646-2276"
+  },
+  "card_info": {
+    "number": "4242424242424242",
+    "holder_name": "Shopbase",
+    "expire_date": "12 / 26",
+    "cvv": "119"
+  },
+  "cases": {
+    "SB_PLB_PODPL_PODPO_1": {
+      "data": [
+        {
+          "case_id": "SB_PLB_PODPL_PODPO_1",
+          "description": "Verify line POD sync về hive pbase sau khi có order PlusBase, order chỉ có line POD",
+          "products": [
+            {
+              "name": "(Test product) Automation Sleeveless Dress",
+              "quantity": "2",
+              "options": ["XL"],
+              "productQtyClass": "product__quantity"
+            }
+          ]
+        },
+        {
+          "case_id": "SB_PLB_PODPL_PODPO_2",
+          "description": "Verify line POD sync về hive pbase sau khi có order PlusBase, order có 2 line POD và Dropship",
+          "products": [
+            {
+              "name": "(Test product) Automation Sleeveless Dress",
+              "quantity": "1",
+              "options": ["XL"],
+              "productQtyClass": "product__quantity"
+            },
+            {
+              "name": "(Test product) Automation Sweet cool Japan",
+              "quantity": "1",
+              "options": ["M"],
+              "productQtyClass": "product__quantity"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

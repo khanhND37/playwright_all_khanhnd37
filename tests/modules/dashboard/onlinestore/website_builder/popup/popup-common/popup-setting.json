@@ -1,0 +1,2849 @@
+{
+  "env": {
+    "local": {
+      "api": "https://prod-test-api.shopbase.com",
+      "accounts_domain": "accounts-test.shopbase.com",
+      "domain": "au-prodtest-ne-popup-button.onshopbase.com",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "shop_name": "au-prodtest-ne-popup-button",
+      "user_id": 11244582,
+      "shop_id": 10437998,
+      "SB_WEB_BUILDER_WBP_14": {
+        "setting_background_image": [
+          {
+            "description": "Upload ảnh background, không chọn color: 1. Upload ảnh = ảnh hợp lệ (jpg, png, jpeg, gif, dung lượng < 10MB) + chọn position + không chọn color > kiểm tra backgound ở màn hình preview 2. Click buttn Save > mở sf shop, đi đến trang đã config popup > kiểm tra background popup ở storefront",
+            "style": {
+              "image": {
+                "new": {
+                  "upload": "data/dpro/background-block-question.jpg"
+                },
+                "size": "Cover",
+                "position": 5,
+                "overlay": {
+                  "preset": 3
+                },
+                "repeat": false
+              }
+            },
+            "verify_properties": [
+              {
+                "property": "background-image",
+                "value": "/files/10437998"
+              }
+            ]
+          },
+          {
+            "description": "1. Upload ảnh = ảnh không hợp lệ (khác jpg, png, jpeg, gif, dung lượng >= 10MB) + chọn position + không chọn color > kiểm tra backgound ở màn hình preview 2. Click buttn Save > mở sf shop, đi đến trang đã config popup > kiểm tra background popup ở storefront",
+            "style": {
+              "image": {
+                "new": {
+                  "upload": "data/dpro/Test data.pdf"
+                },
+                "size": "Cover",
+                "position": 5,
+                "overlay": {
+                  "preset": 3
+                },
+                "repeat": false
+              }
+            },
+            "verify_properties": [
+              {
+                "property": "background-image",
+                "value": "none"
+              }
+            ]
+          },
+          {
+            "description": "1. Upload ảnh = ảnh không hợp lệ (khác jpg, png, jpeg, gif, dung lượng >= 10MB) + chọn position + không chọn color > kiểm tra backgound ở màn hình preview 2. Click buttn Save > mở sf shop, đi đến trang đã config popup > kiểm tra background popup ở storefront",
+            "style": {
+              "image": {
+                "new": {
+                  "upload": "data/shopbase/23mb.png"
+                },
+                "size": "Cover",
+                "position": 5,
+                "overlay": {
+                  "preset": 3
+                },
+                "repeat": false
+              }
+            },
+            "verify_properties": [
+              {
+                "property": "background-image",
+                "value": "none"
+              }
+            ]
+          },
+          {
+            "description": "1. Chọn ảnh từ your library + chọn position + có chọn overlay color  > kiểm tra backgound ở màn hình preview 2. Click buttn Save > mở sf shop, đi đến trang đã config popup > kiểm tra background popup ở storefront",
+            "style": {
+              "image": {
+                "new": {
+                  "gallery": 1
+                },
+                "size": "Cover",
+                "position": 5,
+                "overlay": {
+                  "preset": 3
+                },
+                "repeat": false
+              }
+            },
+            "verify_properties": [
+              {
+                "property": "background-image",
+                "value": "/files/10437998"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "accounts_domain": "accounts.dev.shopbase.net",
+      "domain": "au-ne-popup-button.myshopbase.net",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "43AhIn|VWp;[?9&",
+      "shop_name": "au-ne-popup-button",
+      "user_id": 89797,
+      "shop_id": 10327970,
+      "SB_WEB_BUILDER_WBP_14": {
+        "setting_background_image": [
+          {
+            "description": "Upload ảnh background, không chọn color: 1. Upload ảnh = ảnh hợp lệ (jpg, png, jpeg, gif, dung lượng < 10MB) + chọn position + không chọn color > kiểm tra backgound ở màn hình preview 2. Click buttn Save > mở sf shop, đi đến trang đã config popup > kiểm tra background popup ở storefront",
+            "style": {
+              "image": {
+                "new": {
+                  "upload": "data/dpro/background-block-question.jpg"
+                },
+                "size": "Cover",
+                "position": 5,
+                "overlay": {
+                  "preset": 3
+                },
+                "repeat": false
+              }
+            },
+            "verify_properties": [
+              {
+                "property": "background-image",
+                "value": "/sbase-file/10327970"
+              }
+            ]
+          },
+          {
+            "description": "1. Upload ảnh = ảnh không hợp lệ (khác jpg, png, jpeg, gif, dung lượng >= 10MB) + chọn position + không chọn color > kiểm tra backgound ở màn hình preview 2. Click buttn Save > mở sf shop, đi đến trang đã config popup > kiểm tra background popup ở storefront",
+            "style": {
+              "image": {
+                "new": {
+                  "upload": "data/dpro/Test data.pdf"
+                },
+                "size": "Cover",
+                "position": 5,
+                "overlay": {
+                  "preset": 3
+                },
+                "repeat": false
+              }
+            },
+            "verify_properties": [
+              {
+                "property": "background-image",
+                "value": "none"
+              }
+            ]
+          },
+          {
+            "description": "1. Upload ảnh = ảnh không hợp lệ (khác jpg, png, jpeg, gif, dung lượng >= 10MB) + chọn position + không chọn color > kiểm tra backgound ở màn hình preview 2. Click buttn Save > mở sf shop, đi đến trang đã config popup > kiểm tra background popup ở storefront",
+            "style": {
+              "image": {
+                "new": {
+                  "upload": "data/shopbase/23mb.png"
+                },
+                "size": "Cover",
+                "position": 5,
+                "overlay": {
+                  "preset": 3
+                },
+                "repeat": false
+              }
+            },
+            "verify_properties": [
+              {
+                "property": "background-image",
+                "value": "none"
+              }
+            ]
+          },
+          {
+            "description": "1. Chọn ảnh từ your library + chọn position + có chọn overlay color  > kiểm tra backgound ở màn hình preview 2. Click buttn Save > mở sf shop, đi đến trang đã config popup > kiểm tra background popup ở storefront",
+            "style": {
+              "image": {
+                "new": {
+                  "gallery": 1
+                },
+                "size": "Cover",
+                "position": 5,
+                "overlay": {
+                  "preset": 3
+                },
+                "repeat": false
+              }
+            },
+            "verify_properties": [
+              {
+                "property": "background-image",
+                "value": "/sbase-file/10327970"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "accounts_domain": "accounts-test.shopbase.com",
+      "domain": "au-prodtest-ne-popup-button.onshopbase.com",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "shop_name": "au-prodtest-ne-popup-button",
+      "user_id": 11244582,
+      "shop_id": 10437998,
+      "SB_WEB_BUILDER_WBP_14": {
+        "setting_background_image": [
+          {
+            "description": "Upload ảnh background, không chọn color: 1. Upload ảnh = ảnh hợp lệ (jpg, png, jpeg, gif, dung lượng < 10MB) + chọn position + không chọn color > kiểm tra backgound ở màn hình preview 2. Click buttn Save > mở sf shop, đi đến trang đã config popup > kiểm tra background popup ở storefront",
+            "style": {
+              "image": {
+                "new": {
+                  "upload": "data/dpro/background-block-question.jpg"
+                },
+                "size": "Cover",
+                "position": 5,
+                "overlay": {
+                  "preset": 3
+                },
+                "repeat": false
+              }
+            },
+            "verify_properties": [
+              {
+                "property": "background-image",
+                "value": "/files/10437998"
+              }
+            ]
+          },
+          {
+            "description": "1. Upload ảnh = ảnh không hợp lệ (khác jpg, png, jpeg, gif, dung lượng >= 10MB) + chọn position + không chọn color > kiểm tra backgound ở màn hình preview 2. Click buttn Save > mở sf shop, đi đến trang đã config popup > kiểm tra background popup ở storefront",
+            "style": {
+              "image": {
+                "new": {
+                  "upload": "data/dpro/Test data.pdf"
+                },
+                "size": "Cover",
+                "position": 5,
+                "overlay": {
+                  "preset": 3
+                },
+                "repeat": false
+              }
+            },
+            "verify_properties": [
+              {
+                "property": "background-image",
+                "value": "none"
+              }
+            ]
+          },
+          {
+            "description": "1. Upload ảnh = ảnh không hợp lệ (khác jpg, png, jpeg, gif, dung lượng >= 10MB) + chọn position + không chọn color > kiểm tra backgound ở màn hình preview 2. Click buttn Save > mở sf shop, đi đến trang đã config popup > kiểm tra background popup ở storefront",
+            "style": {
+              "image": {
+                "new": {
+                  "upload": "data/shopbase/23mb.png"
+                },
+                "size": "Cover",
+                "position": 5,
+                "overlay": {
+                  "preset": 3
+                },
+                "repeat": false
+              }
+            },
+            "verify_properties": [
+              {
+                "property": "background-image",
+                "value": "none"
+              }
+            ]
+          },
+          {
+            "description": "1. Chọn ảnh từ your library + chọn position + có chọn overlay color  > kiểm tra backgound ở màn hình preview 2. Click buttn Save > mở sf shop, đi đến trang đã config popup > kiểm tra background popup ở storefront",
+            "style": {
+              "image": {
+                "new": {
+                  "gallery": 1
+                },
+                "size": "Cover",
+                "position": 5,
+                "overlay": {
+                  "preset": 3
+                },
+                "repeat": false
+              }
+            },
+            "verify_properties": [
+              {
+                "property": "background-image",
+                "value": "/files/10437998"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "accounts_domain": "accounts.shopbase.com",
+      "domain": "au-ne-popup-1.onshopbase.com",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "shop_name": "au-ne-popup-1.onshopbase.com",
+      "user_id": 11244582,
+      "shop_id": 10441030,
+      "SB_WEB_BUILDER_WBP_14": {
+        "setting_background_image": [
+          {
+            "description": "Upload ảnh background, không chọn color: 1. Upload ảnh = ảnh hợp lệ (jpg, png, jpeg, gif, dung lượng < 10MB) + chọn position + không chọn color > kiểm tra backgound ở màn hình preview 2. Click buttn Save > mở sf shop, đi đến trang đã config popup > kiểm tra background popup ở storefront",
+            "style": {
+              "image": {
+                "new": {
+                  "upload": "data/dpro/background-block-question.jpg"
+                },
+                "size": "Cover",
+                "position": 5,
+                "overlay": {
+                  "preset": 3
+                },
+                "repeat": false
+              }
+            },
+            "verify_properties": [
+              {
+                "property": "background-image",
+                "value": "/files/10441030"
+              }
+            ]
+          },
+          {
+            "description": "1. Upload ảnh = ảnh không hợp lệ (khác jpg, png, jpeg, gif, dung lượng >= 10MB) + chọn position + không chọn color > kiểm tra backgound ở màn hình preview 2. Click buttn Save > mở sf shop, đi đến trang đã config popup > kiểm tra background popup ở storefront",
+            "style": {
+              "image": {
+                "new": {
+                  "upload": "data/dpro/Test data.pdf"
+                },
+                "size": "Cover",
+                "position": 5,
+                "overlay": {
+                  "preset": 3
+                },
+                "repeat": false
+              }
+            },
+            "verify_properties": [
+              {
+                "property": "background-image",
+                "value": "none"
+              }
+            ]
+          },
+          {
+            "description": "1. Upload ảnh = ảnh không hợp lệ (khác jpg, png, jpeg, gif, dung lượng >= 10MB) + chọn position + không chọn color > kiểm tra backgound ở màn hình preview 2. Click buttn Save > mở sf shop, đi đến trang đã config popup > kiểm tra background popup ở storefront",
+            "style": {
+              "image": {
+                "new": {
+                  "upload": "data/shopbase/23mb.png"
+                },
+                "size": "Cover",
+                "position": 5,
+                "overlay": {
+                  "preset": 3
+                },
+                "repeat": false
+              }
+            },
+            "verify_properties": [
+              {
+                "property": "background-image",
+                "value": "none"
+              }
+            ]
+          },
+          {
+            "description": "1. Chọn ảnh từ your library + chọn position + có chọn overlay color  > kiểm tra backgound ở màn hình preview 2. Click buttn Save > mở sf shop, đi đến trang đã config popup > kiểm tra background popup ở storefront",
+            "style": {
+              "image": {
+                "new": {
+                  "gallery": 1
+                },
+                "size": "Cover",
+                "position": 5,
+                "overlay": {
+                  "preset": 3
+                },
+                "repeat": false
+              }
+            },
+            "verify_properties": [
+              {
+                "property": "background-image",
+                "value": "/files/10441030"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "cases": {
+    "SB_WEB_BUILDER_WBP_10": {
+      "popup_timeout": 5000,
+      "steps": [
+        {
+          "name": "Tại tab Design, kiểm tra hiển thị các option mục Position",
+          "data": {
+            "style": {},
+            "classes": ["center", "middle"]
+          }
+        },
+        {
+          "name": "1. Click vị trí Top-left ở mục Position; 2. Save lại, preview trên màn mobile ngoài storefront; 3. Setting Push page down = on",
+          "data": {
+            "style": {
+              "position": {
+                "position": 1,
+                "push_page_down": true
+              }
+            },
+            "classes": ["left", "top"],
+            "verify_fixed_top": true
+          }
+        },
+        {
+          "name": "1. Click vị trí Top-center ở mục Position; 2. Save lại, preview trên màn mobile ngoài storefront; 3. Setting Push page down = on",
+          "data": {
+            "style": {
+              "position": {
+                "position": 2,
+                "push_page_down": true
+              }
+            },
+            "classes": ["center", "top"],
+            "verify_fixed_top": true
+          }
+        },
+        {
+          "name": "1. Click vị trí Top-right ở mục Position; 2. Save lại, preview trên màn mobile ngoài storefront; 3. Setting Push page down = on",
+          "data": {
+            "style": {
+              "position": {
+                "position": 3,
+                "push_page_down": true
+              }
+            },
+            "classes": ["right", "top"],
+            "verify_fixed_top": true
+          }
+        },
+        {
+          "name": "1. Click vị trí middle left ở mục Position; 2. Save lại, preview trên màn mobile ngoài storefront",
+          "data": {
+            "style": {
+              "position": {
+                "position": 4
+              }
+            },
+            "classes": ["middle", "left"]
+          }
+        },
+        {
+          "name": "1. Click vị trí middle center ở mục Position; 2. Save lại, preview trên màn mobile ngoài storefront;",
+          "data": {
+            "style": {
+              "position": {
+                "position": 5
+              }
+            },
+            "classes": ["middle", "center"]
+          }
+        },
+        {
+          "name": "1. Click vị trí middle right ở mục Position; 2. Save lại, preview trên màn mobile ngoài storefront;",
+          "data": {
+            "style": {
+              "position": {
+                "position": 6
+              }
+            },
+            "classes": ["middle", "right"]
+          }
+        },
+        {
+          "name": "1. Click vị trí bottom left ở mục Position; 2. Save lại, preview trên màn mobile ngoài storefront",
+          "data": {
+            "style": {
+              "position": {
+                "position": 7
+              }
+            },
+            "classes": ["bottom", "left"]
+          }
+        },
+        {
+          "name": "1. Click vị trí bottom center ở mục Position; 2. Save lại, preview trên màn mobile ngoài storefront;",
+          "data": {
+            "style": {
+              "position": {
+                "position": 8
+              }
+            },
+            "classes": ["bottom", "center"]
+          }
+        },
+        {
+          "name": "1. Click vị trí bottom right ở mục Position; 2. Save lại, preview trên màn mobile ngoài storefront;",
+          "data": {
+            "style": {
+              "position": {
+                "position": 9
+              }
+            },
+            "classes": ["bottom", "right"]
+          }
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_WBP_11": {
+      "popup_timeout": 5000,
+      "steps": [
+        {
+          "name": "1. Click vào popup, 2. Preview ngoài SF, click vào overlay",
+          "data": {
+            "style": {},
+            "opacity_value": "0.24"
+          }
+        },
+        {
+          "name": "1. Nhập opacity = 0, 2. Preview ngoài SF, click vào overlay",
+          "data": {
+            "style": {
+              "overlay": 0
+            },
+            "opacity_value": "0"
+          }
+        },
+        {
+          "name": "1. Nhập giá trị opacity = 50, 2. Preview ngoài SF, click vào overlay",
+          "data": {
+            "style": {
+              "overlay": 50
+            },
+            "opacity_value": "0.5"
+          }
+        },
+        {
+          "name": "1. Nhập giá trị opacity = 100, 2. Preview ngoài SF, click vào overlay",
+          "data": {
+            "style": {
+              "overlay": 100
+            },
+            "opacity_value": "1"
+          }
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_WBP_12": {
+      "popup_timeout": 5000,
+      "step1_data": [
+        {
+          "style": {},
+          "expected_width_wb": "width: 500px",
+          "expected_height_wb": "height: fit-content",
+          "expected_width_sf": "500px",
+          "expected_height_sf": 90
+        }
+      ],
+      "step2_data": [
+        {
+          "style": {
+            "width": {
+              "label": "width",
+              "value": {
+                "unit": "Px",
+                "value": 200
+              }
+            }
+          },
+          "expected_width_wb": "width: 200px",
+          "expected_width_sf": "200px"
+        },
+        {
+          "style": {
+            "width": {
+              "label": "width",
+              "value": {
+                "unit": "Auto",
+                "value": 0
+              }
+            }
+          },
+          "expected_width_wb": "fit-content",
+          "expected_width_sf": "152px"
+        },
+        {
+          "style": {
+            "width": {
+              "label": "width",
+              "value": {
+                "unit": "%",
+                "value": 50
+              }
+            }
+          },
+          "expected_width_wb": "50%",
+          "expected_width_sf": "viewport/2"
+        },
+        {
+          "style": {
+            "width": {
+              "label": "width",
+              "value": {
+                "unit": "%",
+                "value": 100
+              }
+            }
+          },
+          "expected_width_wb": "100%",
+          "expected_width_sf": "viewport"
+        }
+      ],
+      "step3_data": [
+        {
+          "style": {
+            "height": {
+              "label": "height",
+              "value": {
+                "unit": "Px",
+                "value": 200
+              }
+            }
+          },
+          "expected_height_wb": "200px",
+          "expected_height_sf": "200.0px"
+        },
+        {
+          "style": {
+            "height": {
+              "label": "height",
+              "value": {
+                "unit": "Auto",
+                "value": 0
+              }
+            }
+          },
+          "expected_height_wb": "fit-content",
+          "expected_height_sf": "90px"
+        },
+        {
+          "style": {
+            "height": {
+              "label": "height",
+              "value": {
+                "unit": "%",
+                "value": 50
+              }
+            }
+          },
+          "expected_height_wb": "50%",
+          "expected_height_sf": "viewport/2"
+        },
+        {
+          "style": {
+            "height": {
+              "label": "height",
+              "value": {
+                "unit": "%",
+                "value": 100
+              }
+            }
+          },
+          "expected_height_wb": "100%",
+          "expected_height_sf": "viewport"
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_WBP_14": {
+      "popup_timeout": 7000,
+      "step1_data": [
+        {
+          "style": {},
+          "verify_properties": [
+            {
+              "property": "background-color",
+              "value": "rgb(255, 255, 255)"
+            }
+          ]
+        }
+      ],
+      "setting_background_color": [
+        {
+          "description": "Chọn màu background trong bộ 5 màu: 1. Chọn color là 1 trong 5 bộ màu của tab Design + không upload ảnh. >kiểm tra màu background ở màn hình preview 2. Click buttn Save > mở sf shop, đi đến trang đã config popup > kiểm tra background popup ở storefront",
+          "style": {
+            "background": {
+              "label": "background",
+              "value": {
+                "color": {
+                  "preset": 3
+                }
+              }
+            }
+          },
+          "verify_properties": [
+            {
+              "property": "background-color",
+              "value": "rgb(140, 140, 140)"
+            }
+          ]
+        },
+        {
+          "description": "Chọn màu background bằng custom color: 1. Chọn color = custom color + có opacity color < 100 + không upload ảnh > kiểm tra màu backgound ở màn hình preview. 2. Click buttn Save > mở sf shop, đi đến trang đã config popup > kiểm tra background popup ở storefront",
+          "style": {
+            "background": {
+              "label": "background",
+              "value": {
+                "color": {
+                  "preset": 6,
+                  "hexText": "#7A2A2A",
+                  "opacityText": "50"
+                }
+              }
+            }
+          },
+          "verify_properties": [
+            {
+              "property": "background-color",
+              "value": "rgba(122, 42, 42, 0.5)"
+            }
+          ]
+        },
+        {
+          "description": "Chọn màu background = none: 1. Chọn color = none + không upload ảnh > kiểm tra màu backgound ở màn hình preview 2. Click buttn Save > mở sf shop, đi đến trang đã config popup > kiểm tra background popup ở storefront",
+          "style": {
+            "background": {
+              "label": "background",
+              "value": {
+                "color": {
+                  "preset": 7
+                }
+              }
+            }
+          },
+          "verify_properties": [
+            {
+              "property": "background-color",
+              "value": "rgba(0, 0, 0, 0)"
+            }
+          ]
+        }
+      ],
+      "setting_background_video": [
+        {
+          "description": "Check hiển thị popup khi set background = link video hợp lệ",
+          "success": true,
+          "style": {
+            "background": {
+              "label": "background",
+              "value": {
+                "video": {
+                  "url": "https://www.youtube.com/watch?v=xhjQVKQYMQE",
+                  "overlay": {
+                    "preset": 7
+                  },
+                  "parallax": false
+                }
+              }
+            }
+          },
+          "verify_properties": [
+            {
+              "property": "background-color",
+              "value": "rgba(0, 0, 0, 0)"
+            }
+          ]
+        },
+        {
+          "description": "Check hiển thị popup khi không set link hoặc set background = link video không hợp lệ",
+          "success": false,
+          "style": {
+            "background": {
+              "label": "background",
+              "value": {
+                "video": {
+                  "url": "https://docs.ocg.to/books/",
+                  "overlay": {
+                    "preset": 7
+                  },
+                  "parallax": false
+                }
+              }
+            }
+          },
+          "verify_properties": [
+            {
+              "property": "background-color",
+              "value": "rgba(0, 0, 0, 0)"
+            }
+          ]
+        },
+        {
+          "description": "Check trường overlay: Set video URL hợp lệ Set overlay = màu 3, 50%",
+          "success": true,
+          "style": {
+            "background": {
+              "label": "background",
+              "value": {
+                "video": {
+                  "url": "https://www.youtube.com/watch?v=xhjQVKQYMQE",
+                  "overlay": {
+                    "preset": 3,
+                    "opacity": 50
+                  },
+                  "parallax": false
+                }
+              }
+            }
+          },
+          "verify_properties": [
+            {
+              "property": "background-color",
+              "value": "rgba(140, 140, 140, 0.5)"
+            }
+          ]
+        },
+        {
+          "description": "Check trường Parallax:Set video URL hợp lệ, Set Parallax = on",
+          "success": true,
+          "style": {
+            "background": {
+              "label": "background",
+              "value": {
+                "video": {
+                  "url": "https://www.youtube.com/watch?v=xhjQVKQYMQE",
+                  "overlay": {
+                    "preset": 7
+                  },
+                  "parallax": true
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_WBP_15": {
+      "popup_timeout": 5000,
+      "step1_data": [
+        {
+          "style": {},
+          "verify_properties": [
+            {
+              "property": "border-top-width",
+              "value": "0px"
+            },
+            {
+              "property": "border-bottom-width",
+              "value": "0px"
+            },
+            {
+              "property": "border-right-width",
+              "value": "0px"
+            },
+            {
+              "property": "border-left-width",
+              "value": "0px"
+            }
+          ]
+        }
+      ],
+      "step2_data": [
+        {
+          "style": {
+            "border": {
+              "label": "border",
+              "value": {
+                "thickness": "s",
+                "style": "Solid",
+                "side": "All",
+                "color": {
+                  "preset": 1
+                }
+              }
+            }
+          },
+          "verify_properties": [
+            {
+              "property": "border-top-width",
+              "value": "1px"
+            },
+            {
+              "property": "border-bottom-width",
+              "value": "1px"
+            },
+            {
+              "property": "border-right-width",
+              "value": "1px"
+            },
+            {
+              "property": "border-left-width",
+              "value": "1px"
+            },
+            {
+              "property": "border-top-color",
+              "value": "rgb(250, 250, 250)"
+            },
+            {
+              "property": "border-bottom-color",
+              "value": "rgb(250, 250, 250)"
+            },
+            {
+              "property": "border-right-color",
+              "value": "rgb(250, 250, 250)"
+            },
+            {
+              "property": "border-left-color",
+              "value": "rgb(250, 250, 250)"
+            },
+            {
+              "property": "border-top-style",
+              "value": "solid"
+            },
+            {
+              "property": "border-bottom-style",
+              "value": "solid"
+            },
+            {
+              "property": "border-right-style",
+              "value": "solid"
+            },
+            {
+              "property": "border-left-style",
+              "value": "solid"
+            }
+          ]
+        },
+        {
+          "style": {
+            "border": {
+              "label": "border",
+              "value": {
+                "thickness": "m",
+                "style": "Dash",
+                "side": "Top & Bottom",
+                "color": {
+                  "preset": 6,
+                  "hexText": "#400D73"
+                }
+              }
+            }
+          },
+          "verify_properties": [
+            {
+              "property": "border-top-width",
+              "value": "4px"
+            },
+            {
+              "property": "border-bottom-width",
+              "value": "4px"
+            },
+            {
+              "property": "border-right-width",
+              "value": "0px"
+            },
+            {
+              "property": "border-left-width",
+              "value": "0px"
+            },
+            {
+              "property": "border-top-color",
+              "value": "rgb(64, 13, 115)"
+            },
+            {
+              "property": "border-bottom-color",
+              "value": "rgb(64, 13, 115)"
+            },
+            {
+              "property": "border-top-style",
+              "value": "dashed"
+            },
+            {
+              "property": "border-bottom-style",
+              "value": "dashed"
+            }
+          ]
+        },
+        {
+          "style": {
+            "border": {
+              "label": "border",
+              "value": {
+                "thickness": "l",
+                "style": "Solid",
+                "side": "Left & Right",
+                "color": {
+                  "preset": 5
+                }
+              }
+            }
+          },
+          "verify_properties": [
+            {
+              "property": "border-top-width",
+              "value": "0px"
+            },
+            {
+              "property": "border-bottom-width",
+              "value": "0px"
+            },
+            {
+              "property": "border-right-width",
+              "value": "10px"
+            },
+            {
+              "property": "border-left-width",
+              "value": "10px"
+            },
+            {
+              "property": "border-right-color",
+              "value": "rgb(20, 20, 20)"
+            },
+            {
+              "property": "border-left-color",
+              "value": "rgb(20, 20, 20)"
+            },
+            {
+              "property": "border-right-style",
+              "value": "solid"
+            },
+            {
+              "property": "border-left-style",
+              "value": "solid"
+            }
+          ]
+        },
+        {
+          "style": {
+            "border": {
+              "label": "border",
+              "value": {
+                "thickness": "custom",
+                "size": {
+                  "fill": true,
+                  "number": 12
+                },
+                "style": "Dash",
+                "side": "All",
+                "color": {
+                  "preset": 4
+                }
+              }
+            }
+          },
+          "verify_properties": [
+            {
+              "property": "border-top-width",
+              "value": "12px"
+            },
+            {
+              "property": "border-bottom-width",
+              "value": "12px"
+            },
+            {
+              "property": "border-right-width",
+              "value": "12px"
+            },
+            {
+              "property": "border-left-width",
+              "value": "12px"
+            },
+            {
+              "property": "border-top-color",
+              "value": "rgb(64, 64, 64)"
+            },
+            {
+              "property": "border-bottom-color",
+              "value": "rgb(64, 64, 64)"
+            },
+            {
+              "property": "border-right-color",
+              "value": "rgb(64, 64, 64)"
+            },
+            {
+              "property": "border-left-color",
+              "value": "rgb(64, 64, 64)"
+            },
+            {
+              "property": "border-top-style",
+              "value": "dashed"
+            },
+            {
+              "property": "border-bottom-style",
+              "value": "dashed"
+            },
+            {
+              "property": "border-right-style",
+              "value": "dashed"
+            },
+            {
+              "property": "border-left-style",
+              "value": "dashed"
+            }
+          ]
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_WBP_16": {
+      "popup_timeout": 5000,
+      "step1_data": [
+        {
+          "style": {
+            "radius": {
+              "label": "radius",
+              "config": {
+                "fill": true,
+                "number": 50
+              }
+            },
+            "shadow": {
+              "label": "box_shadow",
+              "config": {
+                "option": "none"
+              }
+            },
+            "padding": {
+              "label": "padding",
+              "value": {
+                "top": 5,
+                "left": 10,
+                "bottom": 5,
+                "right": 10,
+                "input": true
+              }
+            },
+            "margin": {
+              "label": "margin",
+              "value": {
+                "top": 15,
+                "left": 20,
+                "bottom": 15,
+                "right": 20,
+                "input": true
+              }
+            }
+          },
+          "verify_properties": [
+            {
+              "property": "border-top-left-radius",
+              "value": "50px"
+            },
+            {
+              "property": "border-top-right-radius",
+              "value": "50px"
+            },
+            {
+              "property": "border-bottom-left-radius",
+              "value": "50px"
+            },
+            {
+              "property": "border-bottom-right-radius",
+              "value": "50px"
+            },
+            {
+              "property": "box-shadow",
+              "value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+            },
+            {
+              "property": "padding-top",
+              "value": "5px"
+            },
+            {
+              "property": "padding-bottom",
+              "value": "5px"
+            },
+            {
+              "property": "padding-left",
+              "value": "10px"
+            },
+            {
+              "property": "padding-right",
+              "value": "10px"
+            },
+            {
+              "property": "margin-top",
+              "value": "15px"
+            },
+            {
+              "property": "margin-bottom",
+              "value": "15px"
+            },
+            {
+              "property": "margin-left",
+              "value": "20px"
+            },
+            {
+              "property": "margin-right",
+              "value": "20px"
+            }
+          ]
+        },
+        {
+          "style": {
+            "radius": {
+              "label": "radius",
+              "config": {
+                "fill": true,
+                "number": 20
+              }
+            },
+            "shadow": {
+              "label": "box_shadow",
+              "config": {
+                "option": "soft",
+                "size": "M",
+                "direction": "Top Right"
+              }
+            },
+            "padding": {
+              "label": "padding",
+              "value": {
+                "top": 5,
+                "left": 0,
+                "bottom": 5,
+                "right": 0,
+                "input": true
+              }
+            },
+            "margin": {
+              "label": "margin",
+              "value": {
+                "top": 0,
+                "left": 20,
+                "bottom": 15,
+                "right": 20,
+                "input": true
+              }
+            }
+          },
+          "verify_properties": [
+            {
+              "property": "border-top-left-radius",
+              "value": "20px"
+            },
+            {
+              "property": "border-top-right-radius",
+              "value": "20px"
+            },
+            {
+              "property": "border-bottom-left-radius",
+              "value": "20px"
+            },
+            {
+              "property": "border-bottom-right-radius",
+              "value": "20px"
+            },
+            {
+              "property": "box-shadow",
+              "value": "rgba(0, 0, 0, 0.16) 8px -8px 24px -8px"
+            },
+            {
+              "property": "padding-top",
+              "value": "5px"
+            },
+            {
+              "property": "padding-bottom",
+              "value": "5px"
+            },
+            {
+              "property": "padding-left",
+              "value": "0px"
+            },
+            {
+              "property": "padding-right",
+              "value": "0px"
+            },
+            {
+              "property": "margin-top",
+              "value": "0px"
+            },
+            {
+              "property": "margin-bottom",
+              "value": "15px"
+            },
+            {
+              "property": "margin-left",
+              "value": "20px"
+            },
+            {
+              "property": "margin-right",
+              "value": "20px"
+            }
+          ]
+        },
+        {
+          "style": {
+            "radius": {
+              "label": "radius",
+              "config": {
+                "fill": true,
+                "number": 0
+              }
+            },
+            "shadow": {
+              "label": "box_shadow",
+              "config": {
+                "option": "hard",
+                "size": "L",
+                "direction": "Bottom"
+              }
+            },
+            "padding": {
+              "label": "padding",
+              "value": {
+                "top": 0,
+                "left": 0,
+                "bottom": 0,
+                "right": 0,
+                "input": true
+              }
+            },
+            "margin": {
+              "label": "margin",
+              "value": {
+                "top": 0,
+                "left": 0,
+                "bottom": 0,
+                "right": 0,
+                "input": true
+              }
+            }
+          },
+          "verify_properties": [
+            {
+              "property": "border-top-left-radius",
+              "value": "0px"
+            },
+            {
+              "property": "border-top-right-radius",
+              "value": "0px"
+            },
+            {
+              "property": "border-bottom-left-radius",
+              "value": "0px"
+            },
+            {
+              "property": "border-bottom-right-radius",
+              "value": "0px"
+            },
+            {
+              "property": "box-shadow",
+              "value": "rgb(0, 0, 0) 0px 12px 0px 0px"
+            },
+            {
+              "property": "padding-top",
+              "value": "0px"
+            },
+            {
+              "property": "padding-bottom",
+              "value": "0px"
+            },
+            {
+              "property": "padding-left",
+              "value": "0px"
+            },
+            {
+              "property": "padding-right",
+              "value": "0px"
+            },
+            {
+              "property": "margin-top",
+              "value": "0px"
+            },
+            {
+              "property": "margin-bottom",
+              "value": "0px"
+            },
+            {
+              "property": "margin-left",
+              "value": "0px"
+            },
+            {
+              "property": "margin-right",
+              "value": "0px"
+            }
+          ]
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_WBP_17": {},
+    "SB_WEB_BUILDER_WBP_20": {},
+    "SB_WEB_BUILDER_WBP_33": {
+      "popup_timeout": 5000,
+      "steps": [
+        {
+          "name": "Tại tab Design, kiểm tra hiển thị các option mục Position",
+          "data": {
+            "style": {},
+            "classes": ["center", "middle"],
+            "screenshot_name": {
+              "wb_sidebar": "SB_WEB_BUILDER_WBP_33-popup-position-default-sidebar.png",
+              "sf": "SB_WEB_BUILDER_WBP_33-popup-position-default-sf.png"
+            }
+          }
+        },
+        {
+          "name": "1. Click vị trí Top-left ở mục Position; 2. Save lại, preview trên màn mobile ngoài storefront; 3. Setting Push page down = on",
+          "data": {
+            "style": {
+              "position": {
+                "position": 1,
+                "push_page_down": true
+              }
+            },
+            "classes": ["left", "top"],
+            "verify_fixed_top": true,
+            "screenshot_name": {
+              "wb_sidebar": "SB_WEB_BUILDER_WBP_33-popup-position-topleft-sidebar.png",
+              "wb_sidebar_push_page_down": "SB_WEB_BUILDER_WBP_33-popup-position-topleft-sidebar-push.png",
+              "sf": "SB_WEB_BUILDER_WBP_33-popup-position-topleft-sf.png"
+            }
+          }
+        },
+        {
+          "name": "1. Click vị trí Top-center ở mục Position; 2. Save lại, preview trên màn mobile ngoài storefront; 3. Setting Push page down = on",
+          "data": {
+            "style": {
+              "position": {
+                "position": 2,
+                "push_page_down": true
+              }
+            },
+            "classes": ["center", "top"],
+            "verify_fixed_top": true,
+            "screenshot_name": {
+              "wb_sidebar": "SB_WEB_BUILDER_WBP_33-popup-position-topcenter-sidebar.png",
+              "wb_sidebar_push_page_down": "SB_WEB_BUILDER_WBP_33-popup-position-topcenter-sidebar-push.png",
+              "sf": "SB_WEB_BUILDER_WBP_33-popup-position-topcenter-sf.png"
+            }
+          }
+        },
+        {
+          "name": "1. Click vị trí Top-right ở mục Position; 2. Save lại, preview trên màn mobile ngoài storefront; 3. Setting Push page down = on",
+          "data": {
+            "style": {
+              "position": {
+                "position": 3,
+                "push_page_down": true
+              }
+            },
+            "classes": ["right", "top"],
+            "verify_fixed_top": true,
+            "screenshot_name": {
+              "wb_sidebar": "SB_WEB_BUILDER_WBP_33-popup-position-topright-sidebar.png",
+              "wb_sidebar_push_page_down": "SB_WEB_BUILDER_WBP_33-popup-position-topright-sidebar-push.png",
+              "sf": "SB_WEB_BUILDER_WBP_33-popup-position-topright-sf.png"
+            }
+          }
+        },
+        {
+          "name": "1. Click vị trí middle left ở mục Position; 2. Save lại, preview trên màn mobile ngoài storefront",
+          "data": {
+            "style": {
+              "position": {
+                "position": 4
+              }
+            },
+            "classes": ["middle", "left"],
+            "screenshot_name": {
+              "wb_sidebar": "SB_WEB_BUILDER_WBP_33-popup-position-midleft-sidebar.png",
+              "sf": "SB_WEB_BUILDER_WBP_33-popup-position-midleft-sf.png"
+            }
+          }
+        },
+        {
+          "name": "1. Click vị trí middle center ở mục Position; 2. Save lại, preview trên màn mobile ngoài storefront;",
+          "data": {
+            "style": {
+              "position": {
+                "position": 5
+              }
+            },
+            "classes": ["middle", "center"],
+            "screenshot_name": {
+              "wb_sidebar": "SB_WEB_BUILDER_WBP_33-popup-position-midcenter-sidebar.png",
+              "sf": "SB_WEB_BUILDER_WBP_33-popup-position-midcenter-sf.png"
+            }
+          }
+        },
+        {
+          "name": "1. Click vị trí middle right ở mục Position; 2. Save lại, preview trên màn mobile ngoài storefront;",
+          "data": {
+            "style": {
+              "position": {
+                "position": 6
+              }
+            },
+            "classes": ["middle", "right"],
+            "screenshot_name": {
+              "wb_sidebar": "SB_WEB_BUILDER_WBP_33-popup-position-midright-sidebar.png",
+              "sf": "SB_WEB_BUILDER_WBP_33-popup-position-midright-sf.png"
+            }
+          }
+        },
+        {
+          "name": "1. Click vị trí bottom left ở mục Position; 2. Save lại, preview trên màn mobile ngoài storefront",
+          "data": {
+            "style": {
+              "position": {
+                "position": 7
+              }
+            },
+            "classes": ["bottom", "left"],
+            "screenshot_name": {
+              "wb_sidebar": "SB_WEB_BUILDER_WBP_33-popup-position-botleft-sidebar.png",
+              "sf": "SB_WEB_BUILDER_WBP_33-popup-position-botleft-sf.png"
+            }
+          }
+        },
+        {
+          "name": "1. Click vị trí bottom center ở mục Position; 2. Save lại, preview trên màn mobile ngoài storefront;",
+          "data": {
+            "style": {
+              "position": {
+                "position": 8
+              }
+            },
+            "classes": ["bottom", "center"],
+            "screenshot_name": {
+              "wb_sidebar": "SB_WEB_BUILDER_WBP_33-popup-position-botcenter-sidebar.png",
+              "sf": "SB_WEB_BUILDER_WBP_33-popup-position-botcenter-sf.png"
+            }
+          }
+        },
+        {
+          "name": "1. Click vị trí bottom right ở mục Position; 2. Save lại, preview trên màn mobile ngoài storefront;",
+          "data": {
+            "style": {
+              "position": {
+                "position": 9
+              }
+            },
+            "classes": ["bottom", "right"],
+            "screenshot_name": {
+              "wb_sidebar": "SB_WEB_BUILDER_WBP_33-popup-position-botright-sidebar.png",
+              "sf": "SB_WEB_BUILDER_WBP_33-popup-position-botright-sf.png"
+            }
+          }
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_WBP_34": {
+      "popup_timeout": 5000,
+      "steps": [
+        {
+          "name": "1. Click vào popup, 2. Preview ngoài SF, click vào overlay",
+          "data": {
+            "style": {},
+            "opacity_value": "0.24",
+            "screenshot_name": {
+              "wb_sidebar": "SB_WEB_BUILDER_WBP_34-popup-overlay-default-sidebar.png",
+              "sf": "SB_WEB_BUILDER_WBP_34-popup-overlay-default-sf.png"
+            }
+          }
+        },
+        {
+          "name": "1. Nhập opacity = 0, 2. Preview ngoài SF, click vào overlay",
+          "data": {
+            "style": {
+              "overlay": 0
+            },
+            "opacity_value": "0",
+            "screenshot_name": {
+              "wb_sidebar": "SB_WEB_BUILDER_WBP_34-popup-overlay-0-sidebar.png"
+            }
+          }
+        },
+        {
+          "name": "1. Nhập giá trị opacity = 50, 2. Preview ngoài SF, click vào overlay",
+          "data": {
+            "style": {
+              "overlay": 50
+            },
+            "opacity_value": "0.5",
+            "screenshot_name": {
+              "wb_sidebar": "SB_WEB_BUILDER_WBP_34-popup-overlay-50-sidebar.png"
+            }
+          }
+        },
+        {
+          "name": "1. Nhập giá trị opacity = 100, 2. Preview ngoài SF, click vào overlay",
+          "data": {
+            "style": {
+              "overlay": 100
+            },
+            "opacity_value": "1",
+            "screenshot_name": {
+              "wb_sidebar": "SB_WEB_BUILDER_WBP_34-popup-overlay-100-sidebar.png"
+            }
+          }
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_WBP_35": {
+      "popup_timeout": 5000,
+      "step1_data": [
+        {
+          "style": {},
+          "expected_width_wb": "width: 500px",
+          "expected_height_wb": "height: fit-content",
+          "expected_width_sf": "428px",
+          "expected_height_sf": 90
+        }
+      ],
+      "step2_data": [
+        {
+          "style": {
+            "width": {
+              "label": "width",
+              "value": {
+                "unit": "Px",
+                "value": 200
+              }
+            }
+          },
+          "expected_width_wb": "width: 200px",
+          "expected_width_sf": "200px"
+        },
+        {
+          "style": {
+            "width": {
+              "label": "width",
+              "value": {
+                "unit": "Auto",
+                "value": 0
+              }
+            }
+          },
+          "expected_width_wb": "fit-content",
+          "expected_width_sf": "184px"
+        },
+        {
+          "style": {
+            "width": {
+              "label": "width",
+              "value": {
+                "unit": "%",
+                "value": 50
+              }
+            }
+          },
+          "expected_width_wb": "50%",
+          "expected_width_sf": "viewport/2"
+        },
+        {
+          "style": {
+            "width": {
+              "label": "width",
+              "value": {
+                "unit": "%",
+                "value": 100
+              }
+            }
+          },
+          "expected_width_wb": "100%",
+          "expected_width_sf": "viewport"
+        }
+      ],
+      "step3_data": [
+        {
+          "style": {
+            "height": {
+              "label": "height",
+              "value": {
+                "unit": "Px",
+                "value": 200
+              }
+            }
+          },
+          "expected_height_wb": "200px",
+          "expected_height_sf": "200.0px"
+        },
+        {
+          "style": {
+            "height": {
+              "label": "height",
+              "value": {
+                "unit": "Auto",
+                "value": 0
+              }
+            }
+          },
+          "expected_height_wb": "fit-content",
+          "expected_height_sf": "90px"
+        },
+        {
+          "style": {
+            "height": {
+              "label": "height",
+              "value": {
+                "unit": "%",
+                "value": 50
+              }
+            }
+          },
+          "expected_height_wb": "50%",
+          "expected_height_sf": "viewport/2"
+        },
+        {
+          "style": {
+            "height": {
+              "label": "height",
+              "value": {
+                "unit": "%",
+                "value": 100
+              }
+            }
+          },
+          "expected_height_wb": "100%",
+          "expected_height_sf": "viewport"
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_WBP_37": {
+      "popup_timeout": 5000,
+      "step1_data": [
+        {
+          "style": {},
+          "verify_properties": [
+            {
+              "property": "background-color",
+              "value": "rgba(0, 0, 0, 0)"
+            }
+          ]
+        }
+      ],
+      "step2_data": [
+        {
+          "style": {
+            "background": {
+              "label": "background",
+              "value": {
+                "color": {
+                  "preset": 3
+                }
+              }
+            }
+          },
+          "verify_properties": [
+            {
+              "property": "background-color",
+              "value": "rgb(140, 140, 140)"
+            }
+          ]
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_WBP_38": {
+      "popup_timeout": 5000,
+      "step1_data": [
+        {
+          "style": {},
+          "verify_properties": [
+            {
+              "property": "border-top-width",
+              "value": "0px"
+            },
+            {
+              "property": "border-bottom-width",
+              "value": "0px"
+            },
+            {
+              "property": "border-right-width",
+              "value": "0px"
+            },
+            {
+              "property": "border-left-width",
+              "value": "0px"
+            }
+          ]
+        }
+      ],
+      "step2_data": [
+        {
+          "style": {
+            "border": {
+              "label": "border",
+              "value": {
+                "thickness": "s",
+                "style": "Solid",
+                "side": "All",
+                "color": {
+                  "preset": 1
+                }
+              }
+            }
+          },
+          "verify_properties": [
+            {
+              "property": "border-top-width",
+              "value": "1px"
+            },
+            {
+              "property": "border-bottom-width",
+              "value": "1px"
+            },
+            {
+              "property": "border-right-width",
+              "value": "1px"
+            },
+            {
+              "property": "border-left-width",
+              "value": "1px"
+            },
+            {
+              "property": "border-top-color",
+              "value": "rgb(250, 250, 250)"
+            },
+            {
+              "property": "border-bottom-color",
+              "value": "rgb(250, 250, 250)"
+            },
+            {
+              "property": "border-right-color",
+              "value": "rgb(250, 250, 250)"
+            },
+            {
+              "property": "border-left-color",
+              "value": "rgb(250, 250, 250)"
+            },
+            {
+              "property": "border-top-style",
+              "value": "solid"
+            },
+            {
+              "property": "border-bottom-style",
+              "value": "solid"
+            },
+            {
+              "property": "border-right-style",
+              "value": "solid"
+            },
+            {
+              "property": "border-left-style",
+              "value": "solid"
+            }
+          ]
+        },
+        {
+          "style": {
+            "border": {
+              "label": "border",
+              "value": {
+                "thickness": "m",
+                "style": "Dash",
+                "side": "Top & Bottom",
+                "color": {
+                  "preset": 6,
+                  "hexText": "#400D73"
+                }
+              }
+            }
+          },
+          "verify_properties": [
+            {
+              "property": "border-top-width",
+              "value": "4px"
+            },
+            {
+              "property": "border-bottom-width",
+              "value": "4px"
+            },
+            {
+              "property": "border-right-width",
+              "value": "0px"
+            },
+            {
+              "property": "border-left-width",
+              "value": "0px"
+            },
+            {
+              "property": "border-top-color",
+              "value": "rgb(64, 13, 115)"
+            },
+            {
+              "property": "border-bottom-color",
+              "value": "rgb(64, 13, 115)"
+            },
+            {
+              "property": "border-top-style",
+              "value": "dashed"
+            },
+            {
+              "property": "border-bottom-style",
+              "value": "dashed"
+            }
+          ]
+        },
+        {
+          "style": {
+            "border": {
+              "label": "border",
+              "value": {
+                "thickness": "l",
+                "style": "Solid",
+                "side": "Left & Right",
+                "color": {
+                  "preset": 5
+                }
+              }
+            }
+          },
+          "verify_properties": [
+            {
+              "property": "border-top-width",
+              "value": "0px"
+            },
+            {
+              "property": "border-bottom-width",
+              "value": "0px"
+            },
+            {
+              "property": "border-right-width",
+              "value": "10px"
+            },
+            {
+              "property": "border-left-width",
+              "value": "10px"
+            },
+            {
+              "property": "border-right-color",
+              "value": "rgb(20, 20, 20)"
+            },
+            {
+              "property": "border-left-color",
+              "value": "rgb(20, 20, 20)"
+            },
+            {
+              "property": "border-right-style",
+              "value": "solid"
+            },
+            {
+              "property": "border-left-style",
+              "value": "solid"
+            }
+          ]
+        },
+        {
+          "style": {
+            "border": {
+              "label": "border",
+              "value": {
+                "thickness": "custom",
+                "size": {
+                  "fill": true,
+                  "number": 12
+                },
+                "style": "Dash",
+                "side": "All",
+                "color": {
+                  "preset": 4
+                }
+              }
+            }
+          },
+          "verify_properties": [
+            {
+              "property": "border-top-width",
+              "value": "12px"
+            },
+            {
+              "property": "border-bottom-width",
+              "value": "12px"
+            },
+            {
+              "property": "border-right-width",
+              "value": "12px"
+            },
+            {
+              "property": "border-left-width",
+              "value": "12px"
+            },
+            {
+              "property": "border-top-color",
+              "value": "rgb(64, 64, 64)"
+            },
+            {
+              "property": "border-bottom-color",
+              "value": "rgb(64, 64, 64)"
+            },
+            {
+              "property": "border-right-color",
+              "value": "rgb(64, 64, 64)"
+            },
+            {
+              "property": "border-left-color",
+              "value": "rgb(64, 64, 64)"
+            },
+            {
+              "property": "border-top-style",
+              "value": "dashed"
+            },
+            {
+              "property": "border-bottom-style",
+              "value": "dashed"
+            },
+            {
+              "property": "border-right-style",
+              "value": "dashed"
+            },
+            {
+              "property": "border-left-style",
+              "value": "dashed"
+            }
+          ]
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_WBP_39": {
+      "popup_timeout": 5000,
+      "step1_data": [
+        {
+          "style": {
+            "radius": {
+              "label": "radius",
+              "config": {
+                "fill": true,
+                "number": 50
+              }
+            },
+            "shadow": {
+              "label": "box_shadow",
+              "config": {
+                "option": "none"
+              }
+            },
+            "padding": {
+              "label": "padding",
+              "value": {
+                "top": 5,
+                "left": 10,
+                "bottom": 5,
+                "right": 10,
+                "input": true
+              }
+            },
+            "margin": {
+              "label": "margin",
+              "value": {
+                "top": 15,
+                "left": 20,
+                "bottom": 15,
+                "right": 20,
+                "input": true
+              }
+            }
+          },
+          "verify_properties": [
+            {
+              "property": "border-top-left-radius",
+              "value": "50px"
+            },
+            {
+              "property": "border-top-right-radius",
+              "value": "50px"
+            },
+            {
+              "property": "border-bottom-left-radius",
+              "value": "50px"
+            },
+            {
+              "property": "border-bottom-right-radius",
+              "value": "50px"
+            },
+            {
+              "property": "box-shadow",
+              "value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+            },
+            {
+              "property": "padding-top",
+              "value": "5px"
+            },
+            {
+              "property": "padding-bottom",
+              "value": "5px"
+            },
+            {
+              "property": "padding-left",
+              "value": "10px"
+            },
+            {
+              "property": "padding-right",
+              "value": "10px"
+            },
+            {
+              "property": "margin-top",
+              "value": "15px"
+            },
+            {
+              "property": "margin-bottom",
+              "value": "15px"
+            },
+            {
+              "property": "margin-left",
+              "value": "20px"
+            },
+            {
+              "property": "margin-right",
+              "value": "20px"
+            }
+          ]
+        },
+        {
+          "style": {
+            "radius": {
+              "label": "radius",
+              "config": {
+                "fill": true,
+                "number": 20
+              }
+            },
+            "shadow": {
+              "label": "box_shadow",
+              "config": {
+                "option": "soft",
+                "size": "M",
+                "direction": "Top Right"
+              }
+            },
+            "padding": {
+              "label": "padding",
+              "value": {
+                "top": 5,
+                "left": 0,
+                "bottom": 5,
+                "right": 0,
+                "input": true
+              }
+            },
+            "margin": {
+              "label": "margin",
+              "value": {
+                "top": 0,
+                "left": 20,
+                "bottom": 15,
+                "right": 20,
+                "input": true
+              }
+            }
+          },
+          "verify_properties": [
+            {
+              "property": "border-top-left-radius",
+              "value": "20px"
+            },
+            {
+              "property": "border-top-right-radius",
+              "value": "20px"
+            },
+            {
+              "property": "border-bottom-left-radius",
+              "value": "20px"
+            },
+            {
+              "property": "border-bottom-right-radius",
+              "value": "20px"
+            },
+            {
+              "property": "box-shadow",
+              "value": "rgba(0, 0, 0, 0.16) 8px -8px 24px -8px"
+            },
+            {
+              "property": "padding-top",
+              "value": "5px"
+            },
+            {
+              "property": "padding-bottom",
+              "value": "5px"
+            },
+            {
+              "property": "padding-left",
+              "value": "0px"
+            },
+            {
+              "property": "padding-right",
+              "value": "0px"
+            },
+            {
+              "property": "margin-top",
+              "value": "0px"
+            },
+            {
+              "property": "margin-bottom",
+              "value": "15px"
+            },
+            {
+              "property": "margin-left",
+              "value": "20px"
+            },
+            {
+              "property": "margin-right",
+              "value": "20px"
+            }
+          ]
+        },
+        {
+          "style": {
+            "radius": {
+              "label": "radius",
+              "config": {
+                "fill": true,
+                "number": 0
+              }
+            },
+            "shadow": {
+              "label": "box_shadow",
+              "config": {
+                "option": "hard",
+                "size": "L",
+                "direction": "Bottom"
+              }
+            },
+            "padding": {
+              "label": "padding",
+              "value": {
+                "top": 0,
+                "left": 0,
+                "bottom": 0,
+                "right": 0,
+                "input": true
+              }
+            },
+            "margin": {
+              "label": "margin",
+              "value": {
+                "top": 0,
+                "left": 0,
+                "bottom": 0,
+                "right": 0,
+                "input": true
+              }
+            }
+          },
+          "verify_properties": [
+            {
+              "property": "border-top-left-radius",
+              "value": "0px"
+            },
+            {
+              "property": "border-top-right-radius",
+              "value": "0px"
+            },
+            {
+              "property": "border-bottom-left-radius",
+              "value": "0px"
+            },
+            {
+              "property": "border-bottom-right-radius",
+              "value": "0px"
+            },
+            {
+              "property": "box-shadow",
+              "value": "rgb(0, 0, 0) 0px 12px 0px 0px"
+            },
+            {
+              "property": "padding-top",
+              "value": "0px"
+            },
+            {
+              "property": "padding-bottom",
+              "value": "0px"
+            },
+            {
+              "property": "padding-left",
+              "value": "0px"
+            },
+            {
+              "property": "padding-right",
+              "value": "0px"
+            },
+            {
+              "property": "margin-top",
+              "value": "0px"
+            },
+            {
+              "property": "margin-bottom",
+              "value": "0px"
+            },
+            {
+              "property": "margin-left",
+              "value": "0px"
+            },
+            {
+              "property": "margin-right",
+              "value": "0px"
+            }
+          ]
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_WBP_18": {
+      "step1_data": {
+        "trigger_options": ["Delay", "Page scroll", "Exit intent", "Mouse click"]
+      },
+      "step2_data": {
+        "content_setting": {
+          "trigger": {
+            "type": "Delay"
+          }
+        },
+        "attributes": [
+          {
+            "name": "value",
+            "value": "5"
+          },
+          {
+            "name": "max",
+            "value": "60"
+          },
+          {
+            "name": "min",
+            "value": "0"
+          },
+          {
+            "name": "unit",
+            "value": "s"
+          }
+        ]
+      },
+      "step3_data": {
+        "content_setting": {
+          "trigger": {
+            "type": "Delay",
+            "value": 10
+          }
+        }
+      },
+      "step4_data": {
+        "content_setting": {
+          "trigger": {
+            "type": "Page scroll"
+          }
+        },
+        "attributes": [
+          {
+            "name": "value",
+            "value": "10"
+          },
+          {
+            "name": "min",
+            "value": "0"
+          },
+          {
+            "name": "unit",
+            "value": "%"
+          }
+        ]
+      },
+      "step5_data": {
+        "content_setting": {
+          "trigger": {
+            "type": "Page scroll",
+            "value": 20
+          }
+        }
+      }
+    },
+    "SB_WEB_BUILDER_WBP_19": {
+      "step1_data": {
+        "trigger_options": ["All Customers", "New Visitors", "Returning visitors"]
+      },
+      "step4_data": {
+        "content_setting": {
+          "customer_trigger": {
+            "type": "Returning visitors"
+          }
+        },
+        "after_leave_options": ["Immediate", "1 day", "1 week", "Custom"],
+        "content_setting2": {
+          "customer_trigger": {
+            "type": "Returning visitors",
+            "after_leave": "Custom"
+          }
+        },
+        "attributes": [
+          {
+            "name": "value",
+            "value": "10"
+          },
+          {
+            "name": "max",
+            "value": "30"
+          },
+          {
+            "name": "unit",
+            "value": "D"
+          }
+        ],
+        "content_setting3": {
+          "customer_trigger": {
+            "type": "Returning visitors",
+            "after_leave": "Custom",
+            "returning_time": 20
+          }
+        }
+      }
+    },
+    "SB_WEB_BUILDER_WBP_30": {
+      "popup_timeout_max": 15000,
+      "exit_page_time": {
+        "key": "exit_page_time",
+        "value": "1681146000000"
+      },
+      "delay": [
+        {
+          "content": {
+            "name": "Popup delay 0s - all",
+            "trigger": {
+              "type": "Delay",
+              "value": 0
+            },
+            "customer_trigger": {
+              "type": "All Customers"
+            }
+          },
+          "style": {
+            "overlay": 20
+          },
+          "paragraph": "This is Popup delay 0s - all"
+        },
+        {
+          "content": {
+            "name": "Popup delay 5s - new",
+            "trigger": {
+              "type": "Delay",
+              "value": 5
+            },
+            "customer_trigger": {
+              "type": "New Visitors"
+            }
+          },
+          "style": {
+            "overlay": 20
+          },
+          "paragraph": "This is Popup delay 5s - new"
+        },
+        {
+          "content": {
+            "name": "Popup delay 10s - return - Immediate",
+            "trigger": {
+              "type": "Delay",
+              "value": 10
+            },
+            "customer_trigger": {
+              "type": "Returning visitors",
+              "after_leave": "Immediate"
+            }
+          },
+          "style": {
+            "overlay": 20
+          },
+          "paragraph": "Popup delay 10s - return - Immediate"
+        },
+        {
+          "content": {
+            "name": "Popup delay 0s - return - 1 day",
+            "trigger": {
+              "type": "Delay",
+              "value": 0
+            },
+            "customer_trigger": {
+              "type": "Returning visitors",
+              "after_leave": "1 day"
+            }
+          },
+          "style": {
+            "overlay": 20
+          },
+          "paragraph": "This is Popup delay 0s - return - 1 day"
+        },
+        {
+          "content": {
+            "name": "Popup delay 5s - return - 1 week",
+            "trigger": {
+              "type": "Delay",
+              "value": 5
+            },
+            "customer_trigger": {
+              "type": "Returning visitors",
+              "after_leave": "1 week"
+            }
+          },
+          "style": {
+            "overlay": 20
+          },
+          "paragraph": "This is popup Popup delay 5s - return - 1 week"
+        },
+        {
+          "content": {
+            "name": "Popup delay 10s - return - custom",
+            "trigger": {
+              "type": "Delay",
+              "value": 10
+            },
+            "customer_trigger": {
+              "type": "Returning visitors",
+              "after_leave": "Custom",
+              "returning_time": 5
+            }
+          },
+          "style": {
+            "overlay": 20
+          },
+          "paragraph": "This is Popup delay 10s - return - custom"
+        }
+      ],
+      "page_scroll": [
+        {
+          "scroll_point": "0% page",
+          "trigger_setting": [
+            {
+              "content": {
+                "name": "Popup scroll 0% - all",
+                "trigger": {
+                  "type": "Page scroll",
+                  "value": 0
+                },
+                "customer_trigger": {
+                  "type": "All Customers"
+                }
+              },
+              "style": {
+                "overlay": 20
+              },
+              "paragraph": "This is Popup scroll 0% - all"
+            },
+            {
+              "content": {
+                "name": "Popup scroll 0% - new",
+                "trigger": {
+                  "type": "Page scroll",
+                  "value": 0
+                },
+                "customer_trigger": {
+                  "type": "New Visitors"
+                }
+              },
+              "style": {
+                "overlay": 20
+              },
+              "paragraph": "This is Popup scroll 0% - new"
+            },
+            {
+              "content": {
+                "name": "Popup scroll 0% - return - Immediate",
+                "trigger": {
+                  "type": "Page scroll",
+                  "value": 0
+                },
+                "customer_trigger": {
+                  "type": "Returning visitors",
+                  "after_leave": "Immediate"
+                }
+              },
+              "style": {
+                "overlay": 20
+              },
+              "paragraph": "This is Popup scroll 0% - return - Immediate"
+            },
+            {
+              "content": {
+                "name": "Popup scroll 0% - return - 1 day",
+                "trigger": {
+                  "type": "Page scroll",
+                  "value": 0
+                },
+                "customer_trigger": {
+                  "type": "Returning visitors",
+                  "after_leave": "1 day"
+                }
+              },
+              "style": {
+                "overlay": 20
+              },
+              "paragraph": "This is Popup scroll 0% - return - 1 day"
+            },
+            {
+              "content": {
+                "name": "Popup scroll 0% - return - 1 week",
+                "trigger": {
+                  "type": "Page scroll",
+                  "value": 0
+                },
+                "customer_trigger": {
+                  "type": "Returning visitors",
+                  "after_leave": "1 week"
+                }
+              },
+              "style": {
+                "overlay": 20
+              },
+              "paragraph": "This is Popup scroll 0% - return - 1 week"
+            },
+            {
+              "content": {
+                "name": "Popup scroll 0% - return - custom",
+                "trigger": {
+                  "type": "Page scroll",
+                  "value": 0
+                },
+                "customer_trigger": {
+                  "type": "Returning visitors",
+                  "after_leave": "Custom",
+                  "returning_time": 5
+                }
+              },
+              "style": {
+                "overlay": 20
+              },
+              "paragraph": "This is Popup scroll 0% - return - custom"
+            }
+          ]
+        },
+        {
+          "scroll_point": "10% page",
+          "trigger_setting": [
+            {
+              "content": {
+                "name": "Popup scroll 10% - all",
+                "trigger": {
+                  "type": "Page scroll",
+                  "value": 10
+                },
+                "customer_trigger": {
+                  "type": "All Customers"
+                }
+              },
+              "style": {
+                "overlay": 20
+              },
+              "paragraph": "This is Popup scroll 10% - all"
+            },
+            {
+              "content": {
+                "name": "Popup scroll 10% - new",
+                "trigger": {
+                  "type": "Page scroll",
+                  "value": 10
+                },
+                "customer_trigger": {
+                  "type": "New Visitors"
+                }
+              },
+              "style": {
+                "overlay": 20
+              },
+              "paragraph": "This is Popup scroll 10% - new"
+            },
+            {
+              "content": {
+                "name": "Popup scroll 10% - return - Immediate",
+                "trigger": {
+                  "type": "Page scroll",
+                  "value": 10
+                },
+                "customer_trigger": {
+                  "type": "Returning visitors",
+                  "after_leave": "Immediate"
+                }
+              },
+              "style": {
+                "overlay": 20
+              },
+              "paragraph": "This is Popup scroll 10% - return - Immediate"
+            },
+            {
+              "content": {
+                "name": "Popup scroll 10% - return - 1 day",
+                "trigger": {
+                  "type": "Page scroll",
+                  "value": 10
+                },
+                "customer_trigger": {
+                  "type": "Returning visitors",
+                  "after_leave": "1 day"
+                }
+              },
+              "style": {
+                "overlay": 20
+              },
+              "paragraph": "This is Popup scroll 10% - return - 1 day"
+            },
+            {
+              "content": {
+                "name": "Popup scroll 10% - return - 1 week",
+                "trigger": {
+                  "type": "Page scroll",
+                  "value": 10
+                },
+                "customer_trigger": {
+                  "type": "Returning visitors",
+                  "after_leave": "1 week"
+                }
+              },
+              "style": {
+                "overlay": 20
+              },
+              "paragraph": "This is Popup scroll 10% - return - 1 week"
+            },
+            {
+              "content": {
+                "name": "Popup scroll 10% - return - custom",
+                "trigger": {
+                  "type": "Page scroll",
+                  "value": 10
+                },
+                "customer_trigger": {
+                  "type": "Returning visitors",
+                  "after_leave": "Custom",
+                  "returning_time": 5
+                }
+              },
+              "style": {
+                "overlay": 20
+              },
+              "paragraph": "This is Popup scroll 10% - return - custom"
+            }
+          ]
+        },
+        {
+          "scroll_point": "100% page",
+          "trigger_setting": [
+            {
+              "content": {
+                "name": "Popup scroll 100% - all",
+                "trigger": {
+                  "type": "Page scroll",
+                  "value": 100
+                },
+                "customer_trigger": {
+                  "type": "All Customers"
+                }
+              },
+              "style": {
+                "overlay": 20
+              },
+              "paragraph": "This is Popup scroll 100% - all"
+            },
+            {
+              "content": {
+                "name": "Popup scroll 100% - new",
+                "trigger": {
+                  "type": "Page scroll",
+                  "value": 100
+                },
+                "customer_trigger": {
+                  "type": "New Visitors"
+                }
+              },
+              "style": {
+                "overlay": 20
+              },
+              "paragraph": "This is Popup scroll 100% - new"
+            },
+            {
+              "content": {
+                "name": "Popup scroll 100% - return - Immediate",
+                "trigger": {
+                  "type": "Page scroll",
+                  "value": 100
+                },
+                "customer_trigger": {
+                  "type": "Returning visitors",
+                  "after_leave": "Immediate"
+                }
+              },
+              "style": {
+                "overlay": 20
+              },
+              "paragraph": "This is Popup scroll 100% - return - Immediate"
+            },
+            {
+              "content": {
+                "name": "Popup scroll 100% - return - 1 day",
+                "trigger": {
+                  "type": "Page scroll",
+                  "value": 100
+                },
+                "customer_trigger": {
+                  "type": "Returning visitors",
+                  "after_leave": "1 day"
+                }
+              },
+              "style": {
+                "overlay": 20
+              },
+              "paragraph": "This is Popup scroll 100% - return - 1 day"
+            },
+            {
+              "content": {
+                "name": "Popup scroll 100% - return - 1 week",
+                "trigger": {
+                  "type": "Page scroll",
+                  "value": 100
+                },
+                "customer_trigger": {
+                  "type": "Returning visitors",
+                  "after_leave": "1 week"
+                }
+              },
+              "style": {
+                "overlay": 20
+              },
+              "paragraph": "This is Popup scroll 100% - return - 1 week"
+            },
+            {
+              "content": {
+                "name": "Popup scroll 100% - return - custom",
+                "trigger": {
+                  "type": "Page scroll",
+                  "value": 100
+                },
+                "customer_trigger": {
+                  "type": "Returning visitors",
+                  "after_leave": "Custom",
+                  "returning_time": 5
+                }
+              },
+              "style": {
+                "overlay": 20
+              },
+              "paragraph": "This is Popup scroll 100% - return - custom"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

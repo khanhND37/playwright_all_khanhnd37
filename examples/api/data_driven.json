@@ -1,0 +1,60 @@
+{
+  "api": "https://api.shopbase.com",
+  "username": "havu@beeketing.net",
+  "password": "qafront@123",
+  "shop_name": "sbase-new",
+  "cases": {
+    "TC_API_ADMIN_DATA_DRIVEN": {
+      "data": [
+        {
+          "key": "update_page",
+          "url": "https://sbase-new.onshopbase.com/admin/pages/85293409886.json",
+          "method": "PUT",
+          "request": {
+            "data": {
+              "page": {
+                "body_html": "<p>HaVu</p>",
+                "title": "About Us",
+                "handle": "about-us2",
+                "publish": true,
+                "search_engine_title": "",
+                "search_engine_meta_description": "",
+                "template": "",
+                "created_at": "",
+                "id": 85293409886,
+                "is_from_shop_template": false,
+                "shop_id": 10215136,
+                "updated_at": "2022-01-20T10:52:37+00:00",
+                "is_create_redirect": false
+              }
+            }
+          },
+          "response": {
+            "status": 200,
+            "data": {
+              "page": {
+                "id": 85293409886,
+                "title": "About Us",
+                "body_html": "<p>HaVu</p>"
+              }
+            }
+          }
+        },
+        {
+          "key": "get_page",
+          "url": "https://sbase-new.onshopbase.com/admin/pages/85293409886.json",
+          "request": {
+          },
+          "response": {
+            "status": 200,
+            "data": {
+              "page": {
+                "id": 85293409886
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

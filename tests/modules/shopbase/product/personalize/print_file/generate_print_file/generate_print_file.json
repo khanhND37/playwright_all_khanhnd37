@@ -1,0 +1,3372 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-generate-print-file-sb.onshopbase.com",
+      "shop_name": "au-generate-print-file-sb",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10390138,
+      "user_id": 73782,
+      "timeout": 1500000
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-generate-print-file-sb-prodtest.onshopbase.com",
+      "shop_name": "au-generate-print-file-sb-prodtest",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10390396,
+      "user_id": 73782,
+      "timeout": 1500000,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-generate-print-file-sb.myshopbase.net",
+      "shop_name": "au-generate-print-file-sb",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_id": 10323828,
+      "user_id": 73800,
+      "timeout": 1500000,
+      "cases": {
+        "SB_PRO_SBP_1681": {
+          "product_all_info": {
+            "title": "Product có preview nhưng chưa tạo có print file",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "image_preview": "BD_27.png",
+          "image_print_file": "BD_23.png",
+          "image_invalid": {
+            "image_upload": "image6.psd",
+            "message_error": "This file type isn't supported. Please try again with PNG, JPG, JPEG"
+          },
+          "image_replace": "BD_10.png",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 1",
+              "layer_value": "Test text value 1",
+              "location_layer_x": "55",
+              "location_layer_y": "55"
+            },
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 2",
+              "layer_value": "Test text value 2",
+              "location_layer_x": "86",
+              "location_layer_y": "86"
+            },
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 3",
+              "layer_value": "Test text value 3",
+              "location_layer_x": "70",
+              "location_layer_y": "86"
+            },
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 4",
+              "layer_value": "Test text value 4",
+              "location_layer_x": "86",
+              "location_layer_y": "65"
+            },
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 5",
+              "layer_value": "Test text value 5",
+              "location_layer_x": "57",
+              "location_layer_y": "48"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Radio",
+              "target_layer": "Text layer 3",
+              "custom_name": "Radio",
+              "label": "Radio",
+              "value": "a,b,c",
+              "default_check": "a",
+              "position": "below"
+            },
+            {
+              "type": "Droplist",
+              "target_layer": "Text layer 4",
+              "custom_name": "Droplist",
+              "label": "Droplist",
+              "value": "a,b,c",
+              "default_check": "a",
+              "position": "below"
+            },
+            {
+              "type": "Checkbox",
+              "target_layer": "Text layer 5",
+              "custom_name": "Checkbox",
+              "label": "Checkbox",
+              "value": "a,b,c,d,e",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 1",
+              "placeholder": "Please input text field",
+              "custom_name": "Text field",
+              "label": "Text field ",
+              "default_value": "Text field",
+              "allow_character": "Characters, Numbers, Special Characters",
+              "position": "below"
+            },
+            {
+              "type": "Text area",
+              "target_layer": "Text layer 2",
+              "placeholder": "Please input text field",
+              "custom_name": "Text area",
+              "label": "Text area ",
+              "default_value": "Text area",
+              "allow_character": "Characters, Numbers, Special Characters"
+            }
+          ],
+          "custom_option_data_SF": {
+            "type": "Picture choice",
+            "list_custom": [
+              "Text field>Text field>Test",
+              "Text area>Text area>Test",
+              "Radio>Radio>a",
+              "Droplist>Droplist>b"
+            ]
+          },
+          "snapshot_name": {
+            "print_file_block_generate_file": "dev_print_file_block_generate_file_SB_PRO_SBP_1681.png",
+            "add_print_file_page": "dev_add_print_file_page_SB_PRO_SBP_1681.png",
+            "print_file_image": "dev_print_file_image_SB_PRO_SBP_1681.png",
+            "print_file_delete_mockup": "dev_print_file_delete_mockup_SB_PRO_SBP_1681.png",
+            "print_file_replace_mockup": "dev_print_file_replace_mockup_SB_PRO_SBP_1681.png"
+          }
+        },
+        "DATA DRIVEN": {
+          "data": [
+            {
+              "description": "[Add print file với Product chỉ có CO only] Check CO type Text field",
+              "case_id": "SB_PRO_SBP_1690",
+              "product_all_info": {
+                "title": "Product CO type Text field",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "image_preview": "BD_27.png",
+              "image_print_file": "BD_23.png",
+              "layers": [
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 1",
+                  "layer_value": "Test text value 1",
+                  "location_layer_x": "55",
+                  "location_layer_y": "55",
+                  "layer_size_h": "1617",
+                  "layer_size_w": "1089"
+                }
+              ],
+              "custom_option_info": [
+                {
+                  "type": "Text field",
+                  "target_layer": "Text layer 1",
+                  "placeholder": "Please input text field",
+                  "custom_name": "Text field",
+                  "label": "Text field ",
+                  "default_value": "Text field",
+                  "allow_character": "Characters, Numbers, Special Characters"
+                }
+              ],
+              "custom_option_data_SF": {
+                "list_custom": ["Text field>Text field>Test"]
+              },
+              "snapshot_name": {
+                "custom_option_detail": "dev_custom_option_detail_SB_PRO_SBP_1690.png",
+                "print_file_block_generate_file": "dev_print_file_block_generate_file_SB_PRO_SBP_1690.png"
+              }
+            },
+            {
+              "description": "[Add print file với Product chỉ có CO only] Check CO với type Image",
+              "case_id": "SB_PRO_SBP_1691",
+              "product_all_info": {
+                "title": "Product CO type Image",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "image_preview": "BD_27.png",
+              "image_print_file": "BD_23.png",
+              "layers": [
+                {
+                  "layer_type": "Image",
+                  "image_name": "BD_2.png",
+                  "layer_name": "BD_2",
+                  "location_layer_x": "30",
+                  "location_layer_y": "30",
+                  "layer_size_h": "1617",
+                  "layer_size_w": "1089"
+                }
+              ],
+              "custom_option_info": [
+                {
+                  "type": "Image",
+                  "target_layer": "BD_2",
+                  "placeholder": "Please input text field",
+                  "custom_name": "Image",
+                  "label": "Image"
+                }
+              ],
+              "custom_option_data_SF": {
+                "type": "Image",
+                "list_custom": ["Image>Image>BD_5.png"],
+                "value": ".png",
+                "status_gen_file": "Print file has been generated"
+              },
+              "snapshot_name": {
+                "custom_option_detail": "dev_custom_option_detail_SB_PRO_SBP_1691.png",
+                "print_file_block_generate_file": "dev_print_file_block_generate_file_SB_PRO_SBP_1691.png"
+              }
+            },
+            {
+              "description": "[Add print file với Product chỉ có CO only] Check COvới type Picture choice",
+              "case_id": "SB_PRO_SBP_1692",
+              "product_all_info": {
+                "title": "Product CO type Picture choice",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "image_preview": "BD_27.png",
+              "image_print_file": "BD_23.png",
+              "layers": [
+                {
+                  "layer_type": "Image",
+                  "layer_name_edit": "Layer image",
+                  "image_name": "BD_2.png",
+                  "layer_name": "BD_2",
+                  "image_invalid": "image6.psd",
+                  "location_layer_x": "86",
+                  "location_layer_y": "86",
+                  "layer_size_h": "1617",
+                  "layer_size_w": "1089"
+                }
+              ],
+              "custom_option_info": [
+                {
+                  "type": "Picture choice",
+                  "target_layer": "BD_2",
+                  "default_name": "Custom Option 1",
+                  "custom_name": "Picture choice",
+                  "label": "Picture choice",
+                  "type_clipart": "Folder",
+                  "value_clipart": "Folder 01"
+                }
+              ],
+              "custom_option_data_SF": {
+                "type": "Picture choice",
+                "list_custom": ["Picture choice>Picture choice>BD_2"]
+              },
+              "snapshot_name": {
+                "custom_option_detail": "dev_custom_option_detail_SB_PRO_SBP_1692.png",
+                "print_file_block_generate_file": "dev_print_file_block_generate_file_SB_PRO_SBP_1692.png"
+              }
+            },
+            {
+              "description": "[Add print file với Product chỉ có CO only] Check Action với type Radio",
+              "case_id": "SB_PRO_SBP_1693",
+              "product_all_info": {
+                "title": "Product CO type Radio",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "image_preview": "BD_27.png",
+              "image_print_file": "BD_23.png",
+              "layers": [
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 1",
+                  "layer_value": "Test text value 1",
+                  "location_layer_x": "55",
+                  "location_layer_y": "55",
+                  "layer_size_h": "1617",
+                  "layer_size_w": "1089"
+                }
+              ],
+              "custom_option_info": [
+                {
+                  "type": "Radio",
+                  "target_layer": "Text layer 1",
+                  "default_name": "Custom Option 1",
+                  "custom_name": "Radio",
+                  "label": "Radio",
+                  "value": "a,b,c",
+                  "default_check": "a"
+                }
+              ],
+              "custom_option_data_SF": {
+                "type": "Radio",
+                "list_custom": ["Radio>Radio>a"]
+              },
+              "snapshot_name": {
+                "custom_option_detail": "dev_custom_option_detail_SB_PRO_SBP_1693.png",
+                "print_file_block_generate_file": "dev_print_file_block_generate_file_SB_PRO_SBP_1693.png"
+              }
+            },
+            {
+              "description": "[Add print file với Product chỉ có CO only] Check Action với type Droplist",
+              "case_id": "SB_PRO_SBP_1694",
+              "product_all_info": {
+                "title": "Product CO type Droplist",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "image_preview": "BD_27.png",
+              "image_print_file": "BD_23.png",
+              "layers": [
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 1",
+                  "layer_value": "Test text value 1",
+                  "location_layer_x": "55",
+                  "location_layer_y": "55",
+                  "layer_size_h": "1617",
+                  "layer_size_w": "1089"
+                }
+              ],
+              "custom_option_info": [
+                {
+                  "type": "Droplist",
+                  "target_layer": "Text layer 1",
+                  "default_name": "Custom Option 1",
+                  "custom_name": "Droplist",
+                  "label": "Droplist",
+                  "value": "a,b,c",
+                  "default_check": "a"
+                }
+              ],
+              "custom_option_data_SF": {
+                "type": "Droplist",
+                "list_custom": ["Droplist>Droplist>a"]
+              },
+              "snapshot_name": {
+                "custom_option_detail": "dev_custom_option_detail_SB_PRO_SBP_1694.png",
+                "print_file_block_generate_file": "dev_print_file_block_generate_file_SB_PRO_SBP_1694.png"
+              }
+            },
+            {
+              "description": "[Add print file với Product chỉ có CO only] Check Action với type Checkbox",
+              "case_id": "SB_PRO_SBP_1695",
+              "product_all_info": {
+                "title": "Product CO type Checkbox",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "image_preview": "BD_27.png",
+              "image_print_file": "BD_23.png",
+              "layers": [
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 1",
+                  "layer_value": "Test text value 1",
+                  "location_layer_x": "55",
+                  "location_layer_y": "55",
+                  "layer_size_h": "1617",
+                  "layer_size_w": "1089"
+                }
+              ],
+              "custom_option_info": [
+                {
+                  "type": "Checkbox",
+                  "target_layer": "Text layer 1",
+                  "default_name": "Custom Option 1",
+                  "custom_name": "Checkbox",
+                  "label": "Checkbox",
+                  "value": "a,b,c,d,e"
+                }
+              ],
+              "custom_option_data_SF": {
+                "type": "Checkbox",
+                "list_custom": ["Checkbox>Checkbox>c"]
+              },
+              "snapshot_name": {
+                "custom_option_detail": "dev_custom_option_detail_SB_PRO_SBP_1695.png",
+                "print_file_block_generate_file": "dev_print_file_block_generate_file_SB_PRO_SBP_1695.png"
+              }
+            }
+          ]
+        },
+        "SB_PRO_SBP_1735": {
+          "product_all_info": {
+            "title": "Product set generate print file là OFF Manually generate",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "image_preview": "BD_27.png",
+          "image_print_file": "BD_23.png",
+          "is_disable_generate_print_file": true,
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 1",
+              "layer_value": "Test text value 1",
+              "location_layer_x": "55",
+              "location_layer_y": "55"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 1",
+              "placeholder": "Please input text field",
+              "custom_name": "Text field",
+              "label": "Text field ",
+              "default_value": "Text field",
+              "allow_character": "Characters, Numbers, Special Characters"
+            }
+          ],
+          "custom_option_data_SF": {
+            "list_custom": ["Text field>Text field>Test"]
+          },
+          "snapshot_name": {
+            "print_file_block_generate_file": "print_file_block_generate_file_SB_PRO_SBP_1735.png",
+            "print_file_block_generated_file": "print_file_block_generated_file_SB_PRO_SBP_1735.png"
+          }
+        },
+        "SB_PRO_SBP_1736": {
+          "product_all_info": {
+            "title": "Product set generate print file là OFF Manually generate tại màn Order list",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "image_preview": "BD_27.png",
+          "image_print_file": "BD_23.png",
+          "is_disable_generate_print_file": true,
+          "message_generate_print_file": "Request bulk generate print file orders successfully",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 1",
+              "layer_value": "Test text value 1",
+              "location_layer_x": "55",
+              "location_layer_y": "55"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 1",
+              "placeholder": "Please input text field",
+              "custom_name": "Text field",
+              "label": "Text field ",
+              "default_value": "Text field",
+              "allow_character": "Characters, Numbers, Special Characters"
+            }
+          ],
+          "custom_option_data_SF": {
+            "list_custom": ["Text field>Text field>Test"]
+          },
+          "snapshot_name": {
+            "print_file_block_generated_file": "print_file_block_generated_file_SB_PRO_SBP_1736.png"
+          }
+        },
+        "DATA_DRIVEN_2": {
+          "data": [
+            {
+              "description": "Check Generate print file khi Order chỉ có line item thường và chọn [generate all cho order có có unfulfilled item] tại màn Product detail",
+              "case_id": "SB_PRO_SBP_1751",
+              "image_print_file": "BD_23.png",
+              "select_option": "Yes, generate file for all unfulfilled items",
+              "section_name": "Yes, generate file for all unfulfilled items",
+              "products": [
+                {
+                  "product_all_info": {
+                    "title": "Product item thường",
+                    "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                    "image_name": "Logo1.jpg",
+                    "vendor": "Uniqlo",
+                    "price": "10",
+                    "compare_at_price": "20",
+                    "sku": "1ZLQJGJP8nU"
+                  },
+                  "image_preview": "BD_27.png",
+                  "button_open_editor": "",
+                  "layers": [
+                    {
+                      "layer_type": "Text",
+                      "layer_name": "Text layer 1",
+                      "layer_value": "Test text value 1",
+                      "location_layer_x": "55",
+                      "location_layer_y": "55",
+                      "font": "Zarathos"
+                    }
+                  ],
+                  "custom_option_info": [
+                    {
+                      "type": "Text area",
+                      "target_layer": "Text layer 1",
+                      "placeholder": "Please input text field",
+                      "custom_name": "Text area",
+                      "label": "Text area ",
+                      "default_value": "Text area",
+                      "allow_character": "Characters, Numbers, Special Characters"
+                    }
+                  ]
+                }
+              ],
+              "product_checkout": [
+                {
+                  "product_name": "Product item thường",
+                  "custom_option_data_SF": {
+                    "list_custom": [""]
+                  }
+                },
+                {
+                  "product_name": "Product item thường",
+                  "custom_option_data_SF": {
+                    "list_custom": [""]
+                  }
+                }
+              ],
+              "create_print_file_info": {
+                "layers": [
+                  {
+                    "layer_type": "Text",
+                    "layer_name": "Text layer 1",
+                    "layer_value": "Test text value 1",
+                    "location_layer_x": "55",
+                    "location_layer_y": "55",
+                    "font": "Zarathos",
+                    "no_check_button": true
+                  }
+                ],
+                "custom_option_info": [
+                  {
+                    "type": "Text area",
+                    "target_layer": "Text layer 1",
+                    "placeholder": "Please input text field",
+                    "custom_name": "Text area",
+                    "label": "Text area ",
+                    "default_value": "Text area",
+                    "allow_character": "Characters, Numbers, Special Characters"
+                  }
+                ]
+              },
+              "snapshot_name": {
+                "print_file_block_generate_file": "dev_print_file_block_generate_file_SB_PRO_SBP_1751.png",
+                "print_file_block_generated_file": "dev_print_file_block_generated_file_SB_PRO_SBP_1751.png",
+                "print_file_preview": "dev_print_file_preview_SB_PRO_SBP_1751.png",
+                "print_file_block_generate_file_all_order": "dev_print_file_block_generate_file_all_order_SB_PRO_SBP_1751.png"
+              }
+            },
+            {
+              "description": "Check Generate print file khi khi Order chỉ có line item Custom Option và chọn [generate all cho order có có unfulfilled item] tại màn Product detail",
+              "case_id": "SB_PRO_SBP_1749",
+              "image_print_file": "BD_23.png",
+              "select_option": "Yes, generate file for all unfulfilled items",
+              "section_name": "Yes, generate file for all unfulfilled items",
+              "status_generate_print_file": "Add print file",
+              "products": [
+                {
+                  "product_all_info": {
+                    "title": "Product custom option",
+                    "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                    "image_name": "Logo1.jpg",
+                    "vendor": "Uniqlo",
+                    "price": "10",
+                    "compare_at_price": "20",
+                    "sku": "1ZLQJGJP8nU"
+                  },
+                  "image_preview": "BD_27.png",
+                  "button_open_editor": "Create custom option only",
+                  "custom_option_info": [
+                    {
+                      "type": "Text field",
+                      "default_name": "Custom Option 1",
+                      "custom_name": "Text field",
+                      "label": "Text field",
+                      "index": 1,
+                      "position": 1,
+                      "placeholder": "Please input text field",
+                      "default_value": "text",
+                      "allow_following": "Characters, Numbers, Special Characters, Emoji"
+                    }
+                  ]
+                }
+              ],
+              "product_checkout": [
+                {
+                  "product_name": "Product custom option",
+                  "custom_option_data_SF": {
+                    "list_custom": ["Text field>Text field>Text field"]
+                  }
+                },
+                {
+                  "product_name": "Product custom option",
+                  "custom_option_data_SF": {
+                    "list_custom": ["Text field>Text field>Text field"]
+                  }
+                }
+              ],
+              "create_print_file_info": {
+                "layers": [
+                  {
+                    "layer_type": "Text",
+                    "layer_name": "Text layer 1",
+                    "layer_value": "Test text value 1",
+                    "location_layer_x": "55",
+                    "location_layer_y": "55",
+                    "font": "Zarathos",
+                    "no_check_button": true
+                  }
+                ],
+                "custom_option_info": [
+                  {
+                    "type": "Text area",
+                    "target_layer": "Text layer 1",
+                    "placeholder": "Please input text field",
+                    "custom_name": "Text area",
+                    "label": "Text area ",
+                    "default_value": "Text area",
+                    "allow_character": "Characters, Numbers, Special Characters"
+                  }
+                ]
+              },
+              "snapshot_name": {
+                "print_file_block_generate_file": "dev_print_file_block_generate_file_SB_PRO_SBP_1749.png",
+                "print_file_block_generated_file": "dev_bprint_file_block_generated_file_SB_PRO_SBP_1749.png",
+                "print_file_preview": "dev_print_file_preview_SB_PRO_SBP_1749.png",
+                "print_file_block_generate_file_all_order": "dev_print_file_block_generate_file_all_order_SB_PRO_SBP_1749.png"
+              }
+            },
+            {
+              "description": "Check Generate print file khi khi Order chỉ có line item Custom Option và chọn [generate all cho order có có unfulfilled item] tại màn Order detail",
+              "case_id": "SB_PRO_SBP_1747",
+              "image_print_file": "BD_23.png",
+              "select_option": "Yes, generate file for all unfulfilled items",
+              "section_name": "Yes, generate file for all unfulfilled items",
+              "status_generate_print_file": "Add print file",
+              "products": [
+                {
+                  "product_all_info": {
+                    "title": "Product custom option",
+                    "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                    "image_name": "Logo1.jpg",
+                    "vendor": "Uniqlo",
+                    "price": "10",
+                    "compare_at_price": "20",
+                    "sku": "1ZLQJGJP8nU"
+                  },
+                  "image_preview": "BD_27.png",
+                  "button_open_editor": "Create custom option only",
+                  "custom_option_info": [
+                    {
+                      "type": "Text field",
+                      "default_name": "Custom Option 1",
+                      "custom_name": "Text field",
+                      "label": "Text field",
+                      "index": 1,
+                      "position": 1,
+                      "placeholder": "Please input text field",
+                      "default_value": "text",
+                      "allow_following": "Characters, Numbers, Special Characters, Emoji"
+                    }
+                  ]
+                }
+              ],
+              "product_checkout": [
+                {
+                  "product_name": "Product custom option",
+                  "custom_option_data_SF": {
+                    "list_custom": ["Text field>Text field>Text field"]
+                  }
+                },
+                {
+                  "product_name": "Product custom option",
+                  "custom_option_data_SF": {
+                    "list_custom": ["Text field>Text field>Text field"]
+                  }
+                }
+              ],
+              "create_print_file_info": {
+                "layers": [
+                  {
+                    "layer_type": "Text",
+                    "layer_name": "Text layer 1",
+                    "layer_value": "Test text value 1",
+                    "location_layer_x": "55",
+                    "location_layer_y": "55",
+                    "layer_size_h": "384",
+                    "font": "Zarathos",
+                    "layer_size_w": "2518",
+                    "no_check_button": true
+                  }
+                ],
+                "custom_option_info": [
+                  {
+                    "type": "Text area",
+                    "target_layer": "Text layer 1",
+                    "placeholder": "Please input text field",
+                    "custom_name": "Text area",
+                    "label": "Text area ",
+                    "default_value": "Text area",
+                    "allow_character": "Characters, Numbers, Special Characters"
+                  }
+                ]
+              },
+              "snapshot_name": {
+                "print_file_block_generate_file": "dev_print_file_block_generate_file_SB_PRO_SBP_1747.png",
+                "print_file_block_generated_file": "dev_print_file_block_generated_file_SB_PRO_SBP_1747.png",
+                "print_file_preview": "dev_print_file_preview_SB_PRO_SBP_1747.png",
+                "print_file_block_generate_file_all_order": "dev_print_file_block_generate_file_all_order_SB_PRO_SBP_1747.png"
+              }
+            },
+            {
+              "description": "Check Generate print file khi Order có line item thường và line item generate và chọn [generate all cho order có có unfulfilled item] tại màn Product detail",
+              "case_id": "SB_PRO_SBP_1745",
+              "image_print_file": "BD_23.png",
+              "select_option": "Yes, generate file for all unfulfilled items",
+              "section_name": "Yes, generate file for all unfulfilled items",
+              "status_generate_print_file": "Print file has been generated",
+              "products": [
+                {
+                  "product_all_info": {
+                    "title": "Product item thường",
+                    "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                    "image_name": "Logo1.jpg",
+                    "vendor": "Uniqlo",
+                    "price": "10",
+                    "compare_at_price": "20",
+                    "sku": "1ZLQJGJP8nU"
+                  },
+                  "image_preview": "BD_27.png",
+                  "button_open_editor": "",
+                  "layers": [
+                    {
+                      "layer_type": "Text",
+                      "layer_name": "Text layer 1",
+                      "layer_value": "Test text value 1",
+                      "location_layer_x": "55",
+                      "location_layer_y": "55",
+                      "font": "Zarathos"
+                    }
+                  ],
+                  "custom_option_info": [
+                    {
+                      "type": "Text area",
+                      "target_layer": "Text layer 1",
+                      "placeholder": "Please input text field",
+                      "custom_name": "Text area",
+                      "label": "Text area ",
+                      "default_value": "Text area",
+                      "allow_character": "Characters, Numbers, Special Characters"
+                    }
+                  ]
+                },
+                {
+                  "product_all_info": {
+                    "title": "Product có printfile",
+                    "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                    "image_name": "Logo1.jpg",
+                    "vendor": "Uniqlo",
+                    "price": "10",
+                    "compare_at_price": "20",
+                    "sku": "1ZLQJGJP8nU"
+                  },
+                  "image_preview": "BD_27.png",
+                  "image_print_file": "BD_23.png",
+                  "button_open_editor": "Create Print file",
+                  "layers": [
+                    {
+                      "layer_type": "Text",
+                      "layer_name": "Text layer 1",
+                      "layer_value": "Test text value 1",
+                      "location_layer_x": "55",
+                      "location_layer_y": "55",
+                      "font": "Zarathos"
+                    }
+                  ],
+                  "custom_option_info": [
+                    {
+                      "type": "Text area",
+                      "target_layer": "Text layer 1",
+                      "placeholder": "Please input text field",
+                      "custom_name": "Text area",
+                      "label": "Text area ",
+                      "default_value": "Text area",
+                      "allow_character": "Characters, Numbers, Special Characters"
+                    }
+                  ]
+                }
+              ],
+              "product_checkout": [
+                {
+                  "product_name": "Product item thường",
+                  "custom_option_data_SF": {
+                    "list_custom": [""]
+                  }
+                },
+                {
+                  "product_name": "Product có printfile",
+                  "custom_option_data_SF": {
+                    "list_custom": ["Text area>Text area>Text area"]
+                  }
+                }
+              ],
+              "create_print_file_info": {
+                "layers": [
+                  {
+                    "layer_type": "Text",
+                    "layer_name": "Text layer 1",
+                    "layer_value": "Test text value 1",
+                    "location_layer_x": "55",
+                    "location_layer_y": "55",
+                    "font": "Zarathos",
+                    "no_check_button": true
+                  }
+                ],
+                "custom_option_info": [
+                  {
+                    "type": "Text area",
+                    "target_layer": "Text layer 1",
+                    "placeholder": "Please input text field",
+                    "custom_name": "Text area",
+                    "label": "Text area ",
+                    "default_value": "Text area",
+                    "allow_character": "Characters, Numbers, Special Characters"
+                  }
+                ]
+              },
+              "snapshot_name": {
+                "print_file_block_generate_file": "dev_print_file_block_generate_file_SB_PRO_SBP_1745.png",
+                "print_file_block_generated_file": "dev_print_file_block_generated_file_SB_PRO_SBP_1745.png",
+                "print_file_preview": "dev_print_file_preview_SB_PRO_SBP_1745.png"
+              }
+            },
+            {
+              "description": "Check Generate print file khi Order có line item thường và line item generate và chọn [chỉ generate cho order mới tạo] tại màn Product detail",
+              "case_id": "SB_PRO_SBP_1744",
+              "image_print_file": "BD_23.png",
+              "select_option": "No, only generate for the ordered items from now",
+              "section_name": "No, only generate for this ordered",
+              "status_generate_print_file": "Print file has been generated",
+              "products": [
+                {
+                  "product_all_info": {
+                    "title": "Product item thường",
+                    "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                    "image_name": "Logo1.jpg",
+                    "vendor": "Uniqlo",
+                    "price": "10",
+                    "compare_at_price": "20",
+                    "sku": "1ZLQJGJP8nU"
+                  },
+                  "image_preview": "BD_27.png",
+                  "button_open_editor": "",
+                  "layers": [
+                    {
+                      "layer_type": "Text",
+                      "layer_name": "Text layer 1",
+                      "layer_value": "Test text value 1",
+                      "location_layer_x": "55",
+                      "location_layer_y": "55",
+                      "font": "Zarathos"
+                    }
+                  ],
+                  "custom_option_info": [
+                    {
+                      "type": "Text area",
+                      "target_layer": "Text layer 1",
+                      "placeholder": "Please input text field",
+                      "custom_name": "Text area",
+                      "label": "Text area ",
+                      "default_value": "Text area",
+                      "allow_character": "Characters, Numbers, Special Characters"
+                    }
+                  ]
+                },
+                {
+                  "product_all_info": {
+                    "title": "Product có printfile",
+                    "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                    "image_name": "Logo1.jpg",
+                    "vendor": "Uniqlo",
+                    "price": "10",
+                    "compare_at_price": "20",
+                    "sku": "1ZLQJGJP8nU"
+                  },
+                  "image_preview": "BD_27.png",
+                  "image_print_file": "BD_23.png",
+                  "button_open_editor": "Create Print file",
+                  "layers": [
+                    {
+                      "layer_type": "Text",
+                      "layer_name": "Text layer 1",
+                      "layer_value": "Test text value 1",
+                      "location_layer_x": "55",
+                      "location_layer_y": "55",
+                      "font": "Zarathos"
+                    }
+                  ],
+                  "custom_option_info": [
+                    {
+                      "type": "Text area",
+                      "target_layer": "Text layer 1",
+                      "placeholder": "Please input text field",
+                      "custom_name": "Text area",
+                      "label": "Text area ",
+                      "default_value": "Text area",
+                      "allow_character": "Characters, Numbers, Special Characters"
+                    }
+                  ]
+                }
+              ],
+              "product_checkout": [
+                {
+                  "product_name": "Product item thường",
+                  "custom_option_data_SF": {
+                    "list_custom": [""]
+                  }
+                },
+                {
+                  "product_name": "Product có printfile",
+                  "custom_option_data_SF": {
+                    "list_custom": ["Text area>Text area>Text area"]
+                  }
+                }
+              ],
+              "create_print_file_info": {
+                "layers": [
+                  {
+                    "layer_type": "Text",
+                    "layer_name": "Text layer 1",
+                    "layer_value": "Test text value 1",
+                    "location_layer_x": "55",
+                    "location_layer_y": "55",
+                    "font": "Zarathos",
+                    "no_check_button": true
+                  }
+                ],
+                "custom_option_info": [
+                  {
+                    "type": "Text area",
+                    "target_layer": "Text layer 1",
+                    "placeholder": "Please input text field",
+                    "custom_name": "Text area",
+                    "label": "Text area ",
+                    "default_value": "Text area",
+                    "allow_character": "Characters, Numbers, Special Characters"
+                  }
+                ]
+              },
+              "snapshot_name": {
+                "print_file_block_generate_file": "dev_print_file_block_generate_file_SB_PRO_SBP_1744.png",
+                "print_file_block_generated_file": "dev_print_file_block_generated_file_SB_PRO_SBP_1744.png",
+                "print_file_preview": "dev_print_file_preview_SB_PRO_SBP_1744.png"
+              }
+            },
+            {
+              "description": "Check Generate print file Order có line item Custom Option và line item generate và chọn [generate all cho order có có unfulfilled item] tại màn Order detail",
+              "case_id": "SB_PRO_SBP_1741",
+              "image_print_file": "BD_23.png",
+              "select_option": "Yes, generate file for all unfulfilled items",
+              "section_name": "Yes, generate file for all unfulfilled items",
+              "status_generate_print_file": "Print file has been generated",
+              "products": [
+                {
+                  "product_all_info": {
+                    "title": "Product có custom option",
+                    "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                    "image_name": "Logo1.jpg",
+                    "vendor": "Uniqlo",
+                    "price": "10",
+                    "compare_at_price": "20",
+                    "sku": "1ZLQJGJP8nU"
+                  },
+                  "image_preview": "BD_27.png",
+                  "button_open_editor": "Create custom option only",
+                  "custom_option_info": [
+                    {
+                      "type": "Text field",
+                      "default_name": "Custom Option 1",
+                      "custom_name": "Text field",
+                      "label": "Text field",
+                      "index": 1,
+                      "position": 1,
+                      "placeholder": "Please input text field",
+                      "default_value": "text",
+                      "allow_following": "Characters, Numbers, Special Characters, Emoji"
+                    }
+                  ]
+                },
+                {
+                  "product_all_info": {
+                    "title": "Product có printfile",
+                    "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                    "image_name": "Logo1.jpg",
+                    "vendor": "Uniqlo",
+                    "price": "10",
+                    "compare_at_price": "20",
+                    "sku": "1ZLQJGJP8nU"
+                  },
+                  "image_preview": "BD_27.png",
+                  "image_print_file": "BD_23.png",
+                  "button_open_editor": "Create Print file",
+                  "layers": [
+                    {
+                      "layer_type": "Text",
+                      "layer_name": "Text layer 1",
+                      "layer_value": "Test text value 1",
+                      "location_layer_x": "55",
+                      "location_layer_y": "55",
+                      "layer_size_h": "384",
+                      "layer_size_w": "2518",
+                      "font": "Zarathos"
+                    }
+                  ],
+                  "custom_option_info": [
+                    {
+                      "type": "Text area",
+                      "target_layer": "Text layer 1",
+                      "placeholder": "Please input text field",
+                      "custom_name": "Text area",
+                      "label": "Text area ",
+                      "default_value": "Text area",
+                      "allow_character": "Characters, Numbers, Special Characters"
+                    }
+                  ]
+                }
+              ],
+              "product_checkout": [
+                {
+                  "product_name": "Product có custom option",
+                  "custom_option_data_SF": {
+                    "list_custom": ["Text field>Text field>Text field"]
+                  }
+                },
+                {
+                  "product_name": "Product có printfile",
+                  "custom_option_data_SF": {
+                    "list_custom": ["Text area>Text area>Text area"]
+                  }
+                }
+              ],
+              "create_print_file_info": {
+                "layers": [
+                  {
+                    "layer_type": "Text",
+                    "layer_name": "Text layer 1",
+                    "layer_value": "Test text value 1",
+                    "location_layer_x": "55",
+                    "location_layer_y": "55",
+                    "no_check_button": true,
+                    "font": "Zarathos"
+                  }
+                ],
+                "custom_option_info": [
+                  {
+                    "type": "Text area",
+                    "target_layer": "Text layer 1",
+                    "placeholder": "Please input text field",
+                    "custom_name": "Text area",
+                    "label": "Text area ",
+                    "default_value": "Text area",
+                    "allow_character": "Characters, Numbers, Special Characters"
+                  }
+                ]
+              },
+              "snapshot_name": {
+                "print_file_block_generate_file": "dev_print_file_block_generate_file_SB_PRO_SBP_1741.png",
+                "print_file_block_generated_file": "dev_print_file_block_generated_file_SB_PRO_SBP_1741.png",
+                "print_file_preview": "dev_print_file_preview_SB_PRO_SBP_1741.png",
+                "print_file_block_generate_file_all_order": "dev_print_file_block_generate_file_all_order_SB_PRO_SBP_1741.png"
+              }
+            },
+            {
+              "description": "Check Generate print file Order có line item Custom Option và line item generate và chọn [generate all cho order có có unfulfilled item] tại màn Product detail",
+              "case_id": "SB_PRO_SBP_1743",
+              "image_print_file": "BD_23.png",
+              "select_option": "Yes, generate file for all unfulfilled items",
+              "section_name": "Yes, generate file for all unfulfilled items",
+              "status_generate_print_file": "Print file has been generated",
+              "products": [
+                {
+                  "product_all_info": {
+                    "title": "Product có custom option",
+                    "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                    "image_name": "Logo1.jpg",
+                    "vendor": "Uniqlo",
+                    "price": "10",
+                    "compare_at_price": "20",
+                    "sku": "1ZLQJGJP8nU"
+                  },
+                  "image_preview": "BD_27.png",
+                  "button_open_editor": "Create custom option only",
+                  "custom_option_info": [
+                    {
+                      "type": "Text field",
+                      "default_name": "Custom Option 1",
+                      "custom_name": "Text field",
+                      "label": "Text field",
+                      "index": 1,
+                      "position": 1,
+                      "placeholder": "Please input text field",
+                      "default_value": "text",
+                      "allow_following": "Characters, Numbers, Special Characters, Emoji"
+                    }
+                  ]
+                },
+                {
+                  "product_all_info": {
+                    "title": "Product có printfile",
+                    "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                    "image_name": "Logo1.jpg",
+                    "vendor": "Uniqlo",
+                    "price": "10",
+                    "compare_at_price": "20",
+                    "sku": "1ZLQJGJP8nU"
+                  },
+                  "image_preview": "BD_27.png",
+                  "image_print_file": "BD_23.png",
+                  "button_open_editor": "Create Print file",
+                  "layers": [
+                    {
+                      "layer_type": "Text",
+                      "layer_name": "Text layer 1",
+                      "layer_value": "Test text value 1",
+                      "location_layer_x": "55",
+                      "location_layer_y": "55",
+                      "font": "Zarathos"
+                    }
+                  ],
+                  "custom_option_info": [
+                    {
+                      "type": "Text area",
+                      "target_layer": "Text layer 1",
+                      "placeholder": "Please input text field",
+                      "custom_name": "Text area",
+                      "label": "Text area ",
+                      "default_value": "Text area",
+                      "allow_character": "Characters, Numbers, Special Characters"
+                    }
+                  ]
+                }
+              ],
+              "product_checkout": [
+                {
+                  "product_name": "Product có custom option",
+                  "custom_option_data_SF": {
+                    "list_custom": ["Text field>Text field>Text field"]
+                  }
+                },
+                {
+                  "product_name": "Product có printfile",
+                  "custom_option_data_SF": {
+                    "list_custom": ["Text area>Text area>Text area"]
+                  }
+                }
+              ],
+              "create_print_file_info": {
+                "layers": [
+                  {
+                    "layer_type": "Text",
+                    "layer_name": "Text layer 1",
+                    "layer_value": "Test text value 1",
+                    "location_layer_x": "55",
+                    "location_layer_y": "55",
+                    "no_check_button": true,
+                    "font": "Zarathos"
+                  }
+                ],
+                "custom_option_info": [
+                  {
+                    "type": "Text area",
+                    "target_layer": "Text layer 1",
+                    "placeholder": "Please input text field",
+                    "custom_name": "Text area",
+                    "label": "Text area ",
+                    "default_value": "Text area",
+                    "allow_character": "Characters, Numbers, Special Characters"
+                  }
+                ]
+              },
+              "snapshot_name": {
+                "print_file_block_generate_file": "dev_print_file_block_generate_file_SB_PRO_SBP_1743.png",
+                "print_file_block_generated_file": "dev_print_file_block_generated_file_SB_PRO_SBP_1743.png",
+                "print_file_preview": "dev_print_file_preview_SB_PRO_SBP_1743.png",
+                "print_file_block_generate_file_all_order": "dev_print_file_block_generate_file_all_order_SB_PRO_SBP_1743.png"
+              }
+            }
+          ]
+        },
+        "DATA_DRIVEN_GENERATE_PRINT_FILE": {
+          "data": [
+            {
+              "description": "Check Generate print file khi khi Order chỉ có line item Custom Option và chọn [chỉ generate cho order mới tạo] tại màn Order detail",
+              "case_id": "SB_PRO_SBP_1746",
+              "image_print_file": "BD_23.png",
+              "select_option": "No, only generate for this ordered",
+              "section_name": "No, only generate for this ordered",
+              "status_generate_print_file": "Add print file",
+              "index_status": 1,
+              "products": [
+                {
+                  "product_all_info": {
+                    "title": "Product custom option SB_PRO_SBP_1746",
+                    "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                    "image_name": "Logo1.jpg",
+                    "vendor": "Uniqlo",
+                    "price": "10",
+                    "compare_at_price": "20",
+                    "sku": "1ZLQJGJP8nU"
+                  },
+                  "image_preview": "BD_27.png",
+                  "button_open_editor": "Create custom option only",
+                  "custom_option_info": [
+                    {
+                      "type": "Text field",
+                      "default_name": "Custom Option 1",
+                      "custom_name": "Text field",
+                      "label": "Text field",
+                      "index": 1,
+                      "position": 1,
+                      "placeholder": "Please input text field",
+                      "default_value": "text",
+                      "allow_following": "Characters, Numbers, Special Characters, Emoji"
+                    }
+                  ]
+                }
+              ],
+              "product_checkout": [
+                {
+                  "product_name": "Product custom option SB_PRO_SBP_1746",
+                  "custom_option_data_SF": {
+                    "list_custom": ["Text field>Text field>Text field"]
+                  }
+                }
+              ],
+              "create_print_file_info": {
+                "layers": [
+                  {
+                    "layer_type": "Text",
+                    "layer_name": "Text layer 1",
+                    "layer_value": "Test text value 1",
+                    "location_layer_x": "55",
+                    "location_layer_y": "55",
+                    "layer_size_h": "384",
+                    "layer_size_w": "2518",
+                    "font": "Zarathos",
+                    "no_check_button": true
+                  }
+                ],
+                "custom_option_info": [
+                  {
+                    "type": "Text area",
+                    "target_layer": "Text layer 1",
+                    "placeholder": "Please input text field",
+                    "custom_name": "Text area",
+                    "label": "Text area ",
+                    "default_value": "Text area",
+                    "allow_character": "Characters, Numbers, Special Characters"
+                  }
+                ]
+              },
+              "snapshot_name": {
+                "print_file_block_generate_file": "dev_print_file_block_generate_file_SB_PRO_SBP_1746.png",
+                "print_file_block_generated_file": "dev_print_file_block_generated_file_SB_PRO_SBP_1746.png",
+                "print_file_preview": "dev_print_file_preview_SB_PRO_SBP_1746.png"
+              }
+            },
+            {
+              "description": "Check Generate print file khi Order có line item Custom Option và line item generate và chọn [chỉ generate cho order mới tạo] tại màn Order detail",
+              "case_id": "SB_PRO_SBP_1740",
+              "image_print_file": "BD_23.png",
+              "select_option": "No, only generate for this ordered",
+              "section_name": "No, only generate for this ordered",
+              "status_generate_print_file": "Print file has been generated",
+              "index_status": 2,
+              "products": [
+                {
+                  "product_all_info": {
+                    "title": "Product có custom option SB_PRO_SBP_1740",
+                    "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                    "image_name": "Logo1.jpg",
+                    "vendor": "Uniqlo",
+                    "price": "10",
+                    "compare_at_price": "20",
+                    "sku": "1ZLQJGJP8nU"
+                  },
+                  "image_preview": "BD_27.png",
+                  "button_open_editor": "Create custom option only",
+                  "custom_option_info": [
+                    {
+                      "type": "Text field",
+                      "default_name": "Custom Option 1",
+                      "custom_name": "Text field",
+                      "label": "Text field",
+                      "index": 1,
+                      "position": 1,
+                      "placeholder": "Please input text field",
+                      "default_value": "text",
+                      "allow_following": "Characters, Numbers, Special Characters, Emoji"
+                    }
+                  ]
+                },
+                {
+                  "product_all_info": {
+                    "title": "Product có printfile SB_PRO_SBP_1740",
+                    "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                    "image_name": "Logo1.jpg",
+                    "vendor": "Uniqlo",
+                    "price": "10",
+                    "compare_at_price": "20",
+                    "sku": "1ZLQJGJP8nU"
+                  },
+                  "image_preview": "BD_27.png",
+                  "image_print_file": "BD_23.png",
+                  "button_open_editor": "Create Print file",
+                  "layers": [
+                    {
+                      "layer_type": "Text",
+                      "layer_name": "Text layer 1",
+                      "layer_value": "Test text value 1",
+                      "location_layer_x": "55",
+                      "location_layer_y": "55",
+                      "font": "Zarathos"
+                    }
+                  ],
+                  "custom_option_info": [
+                    {
+                      "type": "Text area",
+                      "target_layer": "Text layer 1",
+                      "placeholder": "Please input text field",
+                      "custom_name": "Text area",
+                      "label": "Text area ",
+                      "default_value": "Text area",
+                      "allow_character": "Characters, Numbers, Special Characters"
+                    }
+                  ]
+                }
+              ],
+              "product_checkout": [
+                {
+                  "product_name": "Product có custom option SB_PRO_SBP_1740",
+                  "custom_option_data_SF": {
+                    "list_custom": ["Text field>Text field>Text field"]
+                  }
+                },
+                {
+                  "product_name": "Product có printfile SB_PRO_SBP_1740",
+                  "custom_option_data_SF": {
+                    "list_custom": ["Text area>Text area>Text area"]
+                  }
+                }
+              ],
+              "create_print_file_info": {
+                "layers": [
+                  {
+                    "layer_type": "Text",
+                    "layer_name": "Text layer 1",
+                    "layer_value": "Test text value 1",
+                    "location_layer_x": "55",
+                    "location_layer_y": "55",
+                    "font": "Zarathos",
+                    "no_check_button": true
+                  }
+                ],
+                "custom_option_info": [
+                  {
+                    "type": "Text area",
+                    "target_layer": "Text layer 1",
+                    "placeholder": "Please input text field",
+                    "custom_name": "Text area",
+                    "label": "Text area ",
+                    "default_value": "Text area",
+                    "allow_character": "Characters, Numbers, Special Characters"
+                  }
+                ]
+              },
+              "snapshot_name": {
+                "print_file_block_generate_file": "dev_print_file_block_generate_file_SB_PRO_SBP_1740.png",
+                "print_file_block_generated_file": "dev_print_file_block_generated_file_SB_PRO_SBP_1740.png",
+                "print_file_preview": "dev_print_file_preview_SB_PRO_SBP_1740.png"
+              }
+            }
+          ]
+        },
+        "DATA_DRIVEN_GENERATE_PRINT_FILE_PRODUCT_DETAIL": {
+          "data": [
+            {
+              "description": "Check Generate print file khi Order chỉ có line item thường và chọn [chỉ generate cho order mới tạo] tại màn Product detail",
+              "case_id": "SB_PRO_SBP_1750",
+              "image_print_file": "BD_23.png",
+              "select_option": "No, only generate for the ordered items from now",
+              "section_name": "No, only generate for this ordered",
+              "products": [
+                {
+                  "product_all_info": {
+                    "title": "Product item thường SB_PRO_SBP_1750",
+                    "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                    "image_name": "Logo1.jpg",
+                    "vendor": "Uniqlo",
+                    "price": "10",
+                    "compare_at_price": "20",
+                    "sku": "1ZLQJGJP8nU"
+                  },
+                  "image_preview": "BD_27.png",
+                  "button_open_editor": "",
+                  "layers": [
+                    {
+                      "layer_type": "Text",
+                      "layer_name": "Text layer 1",
+                      "layer_value": "Test text value 1",
+                      "location_layer_x": "55",
+                      "location_layer_y": "55",
+                      "font": "Zarathos"
+                    }
+                  ],
+                  "custom_option_info": [
+                    {
+                      "type": "Text area",
+                      "target_layer": "Text layer 1",
+                      "placeholder": "Please input text field",
+                      "custom_name": "Text area",
+                      "label": "Text area ",
+                      "default_value": "Text area",
+                      "allow_character": "Characters, Numbers, Special Characters"
+                    }
+                  ]
+                }
+              ],
+              "product_checkout": [
+                {
+                  "product_name": "Product item thường SB_PRO_SBP_1750",
+                  "custom_option_data_SF": {
+                    "list_custom": [""]
+                  }
+                }
+              ],
+              "create_print_file_info": {
+                "layers": [
+                  {
+                    "layer_type": "Text",
+                    "layer_name": "Text layer 1",
+                    "layer_value": "Test text value 1",
+                    "location_layer_x": "55",
+                    "location_layer_y": "55",
+                    "font": "Zarathos",
+                    "no_check_button": true
+                  }
+                ],
+                "custom_option_info": [
+                  {
+                    "type": "Text area",
+                    "target_layer": "Text layer 1",
+                    "placeholder": "Please input text field",
+                    "custom_name": "Text area",
+                    "label": "Text area ",
+                    "default_value": "Text area",
+                    "allow_character": "Characters, Numbers, Special Characters"
+                  }
+                ]
+              },
+              "snapshot_name": {
+                "print_file_block_generate_file": "dev_print_file_block_generate_file_SB_PRO_SBP_1750.png",
+                "print_file_block_generated_file": "dev_print_file_block_generated_file_SB_PRO_SBP_1750.png",
+                "print_file_preview": "dev_print_file_preview_SB_PRO_SBP_1750.png",
+                "print_file_block_generate_file_all_order": "dev_print_file_block_generate_file_all_order_SB_PRO_SBP_1750.png"
+              }
+            },
+            {
+              "description": "Check Generate print file khi Order có line item Custom Option và line item generate và chọn [chỉ generate cho order mới tạo] tại màn Product detail",
+              "case_id": "SB_PRO_SBP_1742",
+              "index_status": 2,
+              "image_print_file": "BD_23.png",
+              "select_option": "No, only generate for the ordered items from now",
+              "section_name": "No, only generate for this ordered",
+              "status_generate_print_file": "Print file has been generated",
+              "products": [
+                {
+                  "product_all_info": {
+                    "title": "Product có custom option SB_PRO_SBP_1742",
+                    "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                    "image_name": "Logo1.jpg",
+                    "vendor": "Uniqlo",
+                    "price": "10",
+                    "compare_at_price": "20",
+                    "sku": "1ZLQJGJP8nU"
+                  },
+                  "image_preview": "BD_27.png",
+                  "button_open_editor": "Create custom option only",
+                  "custom_option_info": [
+                    {
+                      "type": "Text field",
+                      "default_name": "Custom Option 1",
+                      "custom_name": "Text field",
+                      "label": "Text field",
+                      "index": 1,
+                      "position": 1,
+                      "placeholder": "Please input text field",
+                      "default_value": "text",
+                      "allow_following": "Characters, Numbers, Special Characters, Emoji"
+                    }
+                  ]
+                },
+                {
+                  "product_all_info": {
+                    "title": "Product có printfile SB_PRO_SBP_1742",
+                    "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                    "image_name": "Logo1.jpg",
+                    "vendor": "Uniqlo",
+                    "price": "10",
+                    "compare_at_price": "20",
+                    "sku": "1ZLQJGJP8nU"
+                  },
+                  "image_preview": "BD_27.png",
+                  "image_print_file": "BD_23.png",
+                  "button_open_editor": "Create Print file",
+                  "layers": [
+                    {
+                      "layer_type": "Text",
+                      "layer_name": "Text layer 1",
+                      "layer_value": "Test text value 1",
+                      "location_layer_x": "55",
+                      "location_layer_y": "55",
+                      "layer_size_h": "384",
+                      "layer_size_w": "2518",
+                      "font": "Zarathos"
+                    }
+                  ],
+                  "custom_option_info": [
+                    {
+                      "type": "Text area",
+                      "target_layer": "Text layer 1",
+                      "placeholder": "Please input text field",
+                      "custom_name": "Text area",
+                      "label": "Text area ",
+                      "default_value": "Text area",
+                      "allow_character": "Characters, Numbers, Special Characters"
+                    }
+                  ]
+                }
+              ],
+              "product_checkout": [
+                {
+                  "product_name": "Product có custom option SB_PRO_SBP_1742",
+                  "custom_option_data_SF": {
+                    "list_custom": ["Text field>Text field>Text field"]
+                  }
+                },
+                {
+                  "product_name": "Product có printfile SB_PRO_SBP_1742",
+                  "custom_option_data_SF": {
+                    "list_custom": ["Text area>Text area>Text area"]
+                  }
+                }
+              ],
+              "create_print_file_info": {
+                "layers": [
+                  {
+                    "layer_type": "Text",
+                    "layer_name": "Text layer 1",
+                    "layer_value": "Test text value 1",
+                    "location_layer_x": "55",
+                    "location_layer_y": "55",
+                    "no_check_button": true,
+                    "font": "Zarathos"
+                  }
+                ],
+                "custom_option_info": [
+                  {
+                    "type": "Text area",
+                    "target_layer": "Text layer 1",
+                    "placeholder": "Please input text field",
+                    "custom_name": "Text area",
+                    "label": "Text area ",
+                    "default_value": "Text area",
+                    "allow_character": "Characters, Numbers, Special Characters"
+                  }
+                ]
+              },
+              "snapshot_name": {
+                "print_file_block_generate_file": "dev_print_file_block_generate_file_SB_PRO_SBP_1742.png",
+                "print_file_block_generated_file": "dev_print_file_block_generated_file_SB_PRO_SBP_1742.png",
+                "print_file_preview": "dev_print_file_preview_SB_PRO_SBP_1742.png"
+              }
+            },
+            {
+              "description": "Check Generate print file khi khi Order chỉ có line item Custom Option và chọn [chỉ generate cho order mới tạo] tại màn Product detail",
+              "case_id": "SB_PRO_SBP_1748",
+              "index_status": 1,
+              "image_print_file": "BD_23.png",
+              "select_option": "No, only generate for the ordered items from now",
+              "section_name": "No, only generate for this ordered",
+              "status_generate_print_file": "Add print file",
+              "products": [
+                {
+                  "product_all_info": {
+                    "title": "Product custom option SB_PRO_SBP_1748",
+                    "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                    "image_name": "Logo1.jpg",
+                    "vendor": "Uniqlo",
+                    "price": "10",
+                    "compare_at_price": "20",
+                    "sku": "1ZLQJGJP8nU"
+                  },
+                  "image_preview": "BD_27.png",
+                  "button_open_editor": "Create custom option only",
+                  "custom_option_info": [
+                    {
+                      "type": "Text field",
+                      "default_name": "Custom Option 1",
+                      "custom_name": "Text field",
+                      "label": "Text field",
+                      "index": 1,
+                      "position": 1,
+                      "placeholder": "Please input text field",
+                      "default_value": "text",
+                      "allow_following": "Characters, Numbers, Special Characters, Emoji"
+                    }
+                  ]
+                }
+              ],
+              "product_checkout": [
+                {
+                  "product_name": "Product custom option SB_PRO_SBP_1748",
+                  "custom_option_data_SF": {
+                    "list_custom": ["Text field>Text field>Text field"]
+                  }
+                }
+              ],
+              "create_print_file_info": {
+                "layers": [
+                  {
+                    "layer_type": "Text",
+                    "layer_name": "Text layer 1",
+                    "layer_value": "Test text value 1",
+                    "location_layer_x": "55",
+                    "location_layer_y": "55",
+                    "layer_size_h": "384",
+                    "layer_size_w": "2518",
+                    "font": "Zarathos",
+                    "no_check_button": true
+                  }
+                ],
+                "custom_option_info": [
+                  {
+                    "type": "Text area",
+                    "target_layer": "Text layer 1",
+                    "placeholder": "Please input text field",
+                    "custom_name": "Text area",
+                    "label": "Text area ",
+                    "default_value": "Text area",
+                    "allow_character": "Characters, Numbers, Special Characters"
+                  }
+                ]
+              },
+              "snapshot_name": {
+                "print_file_block_generate_file": "dev_print_file_block_generate_file_SB_PRO_SBP_1748.png",
+                "print_file_block_generated_file": "dev_print_file_block_generated_file_SB_PRO_SBP_1748.png",
+                "print_file_preview": "dev_print_file_preview_SB_PRO_SBP_1748.png"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "customer_info": {
+    "email": "tester@maildrop.cc",
+    "first_name": "My",
+    "last_name": "Duong",
+    "address": "1600 W Loop S",
+    "country": "United States",
+    "state": "Texas",
+    "city": "Houston",
+    "zipcode": "77027",
+    "phone_number": "0357974111"
+  },
+  "card_info": {
+    "number": "4242424242424242",
+    "holder_name": "My",
+    "expire_date": "12 / 30",
+    "cvv": "116"
+  },
+  "max_diff_pixel_ratio": 0.05,
+  "threshold": 0.1,
+  "max_diff_pixels": 2000,
+  "email_scheduler": "myduong@beeketing.net",
+  "cases": {
+    "SB_PRO_SBP_1681": {
+      "product_all_info": {
+        "title": "Product có preview nhưng chưa tạo có print file",
+        "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+        "image_name": "Logo1.jpg",
+        "vendor": "Uniqlo",
+        "price": "10",
+        "compare_at_price": "20"
+      },
+      "image_preview": "BD_27.png",
+      "image_print_file": "BD_23.png",
+      "image_invalid": {
+        "image_upload": "image6.psd",
+        "message_error": "This file type isn't supported. Please try again with PNG, JPG, JPEG"
+      },
+      "image_replace": "BD_10.png",
+      "layers": [
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 1",
+          "layer_value": "Test text value 1",
+          "location_layer_x": "55",
+          "location_layer_y": "55"
+        },
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 2",
+          "layer_value": "Test text value 2",
+          "location_layer_x": "86",
+          "location_layer_y": "86"
+        },
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 3",
+          "layer_value": "Test text value 3",
+          "location_layer_x": "70",
+          "location_layer_y": "86"
+        },
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 4",
+          "layer_value": "Test text value 4",
+          "location_layer_x": "86",
+          "location_layer_y": "65"
+        },
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 5",
+          "layer_value": "Test text value 5",
+          "location_layer_x": "57",
+          "location_layer_y": "48"
+        }
+      ],
+      "custom_option_info": [
+        {
+          "type": "Radio",
+          "target_layer": "Text layer 3",
+          "custom_name": "Radio",
+          "label": "Radio",
+          "value": "a,b,c",
+          "default_check": "a",
+          "position": "below"
+        },
+        {
+          "type": "Droplist",
+          "target_layer": "Text layer 4",
+          "custom_name": "Droplist",
+          "label": "Droplist",
+          "value": "a,b,c",
+          "default_check": "a",
+          "position": "below"
+        },
+        {
+          "type": "Checkbox",
+          "target_layer": "Text layer 5",
+          "custom_name": "Checkbox",
+          "label": "Checkbox",
+          "value": "a,b,c,d,e",
+          "position": "below"
+        },
+        {
+          "type": "Text field",
+          "target_layer": "Text layer 1",
+          "placeholder": "Please input text field",
+          "custom_name": "Text field",
+          "label": "Text field ",
+          "default_value": "Text field",
+          "allow_character": "Characters, Numbers, Special Characters",
+          "position": "below"
+        },
+        {
+          "type": "Text area",
+          "target_layer": "Text layer 2",
+          "placeholder": "Please input text field",
+          "custom_name": "Text area",
+          "label": "Text area ",
+          "default_value": "Text area",
+          "allow_character": "Characters, Numbers, Special Characters"
+        }
+      ],
+      "custom_option_data_SF": {
+        "type": "Picture choice",
+        "list_custom": [
+          "Text field>Text field>Test",
+          "Text area>Text area>Test",
+          "Radio>Radio>a",
+          "Droplist>Droplist>b"
+        ]
+      },
+      "snapshot_name": {
+        "print_file_block_generate_file": "print_file_block_generate_file_SB_PRO_SBP_1681.png",
+        "add_print_file_page": "add_print_file_page_SB_PRO_SBP_1681.png",
+        "print_file_image": "print_file_image_SB_PRO_SBP_1681.png",
+        "print_file_delete_mockup": "print_file_delete_mockup_SB_PRO_SBP_1681.png",
+        "print_file_replace_mockup": "print_file_replace_mockup_SB_PRO_SBP_1681.png"
+      }
+    },
+    "DATA DRIVEN": {
+      "data": [
+        {
+          "description": "[Add print file với Product chỉ có CO only] Check CO type Text field",
+          "case_id": "SB_PRO_SBP_1690",
+          "product_all_info": {
+            "title": "Product CO type Text field",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "image_preview": "BD_27.png",
+          "image_print_file": "BD_23.png",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 1",
+              "layer_value": "Test text value 1",
+              "location_layer_x": "55",
+              "location_layer_y": "55",
+              "layer_size_h": "1617",
+              "layer_size_w": "1089"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 1",
+              "placeholder": "Please input text field",
+              "custom_name": "Text field",
+              "label": "Text field ",
+              "default_value": "Text field",
+              "allow_character": "Characters, Numbers, Special Characters"
+            }
+          ],
+          "custom_option_data_SF": {
+            "list_custom": ["Text field>Text field>Test"]
+          },
+          "snapshot_name": {
+            "custom_option_detail": "custom_option_detail_SB_PRO_SBP_1690.png",
+            "print_file_block_generate_file": "print_file_block_generate_file_SB_PRO_SBP_1690.png"
+          }
+        },
+        {
+          "description": "[Add print file với Product chỉ có CO only] Check CO với type Image",
+          "case_id": "SB_PRO_SBP_1691",
+          "product_all_info": {
+            "title": "Product CO type Image",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "image_preview": "BD_27.png",
+          "image_print_file": "BD_23.png",
+          "layers": [
+            {
+              "layer_type": "Image",
+              "image_name": "BD_2.png",
+              "layer_name": "BD_2",
+              "location_layer_x": "30",
+              "location_layer_y": "30",
+              "layer_size_h": "1617",
+              "layer_size_w": "1089"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Image",
+              "target_layer": "BD_2",
+              "placeholder": "Please input text field",
+              "custom_name": "Image",
+              "label": "Image"
+            }
+          ],
+          "custom_option_data_SF": {
+            "type": "Image",
+            "list_custom": ["Image>Image>BD_5.png"],
+            "value": ".png",
+            "status_gen_file": "Print file has been generated"
+          },
+          "snapshot_name": {
+            "custom_option_detail": "custom_option_detail_SB_PRO_SBP_1691.png",
+            "print_file_block_generate_file": "print_file_block_generate_file_SB_PRO_SBP_1691.png"
+          }
+        },
+        {
+          "description": "[Add print file với Product chỉ có CO only] Check COvới type Picture choice",
+          "case_id": "SB_PRO_SBP_1692",
+          "product_all_info": {
+            "title": "Product CO type Picture choice",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "image_preview": "BD_27.png",
+          "image_print_file": "BD_23.png",
+          "layers": [
+            {
+              "layer_type": "Image",
+              "layer_name_edit": "Layer image",
+              "image_name": "BD_2.png",
+              "layer_name": "BD_2",
+              "image_invalid": "image6.psd",
+              "location_layer_x": "86",
+              "location_layer_y": "86",
+              "layer_size_h": "1617",
+              "layer_size_w": "1089"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Picture choice",
+              "target_layer": "BD_2",
+              "default_name": "Custom Option 1",
+              "custom_name": "Picture choice",
+              "label": "Picture choice",
+              "type_clipart": "Folder",
+              "value_clipart": "Folder 01"
+            }
+          ],
+          "custom_option_data_SF": {
+            "type": "Picture choice",
+            "list_custom": ["Picture choice>Picture choice>BD_2"]
+          },
+          "snapshot_name": {
+            "custom_option_detail": "custom_option_detail_SB_PRO_SBP_1692.png",
+            "print_file_block_generate_file": "print_file_block_generate_file_SB_PRO_SBP_1692.png"
+          }
+        },
+        {
+          "description": "[Add print file với Product chỉ có CO only] Check Action với type Radio",
+          "case_id": "SB_PRO_SBP_1693",
+          "product_all_info": {
+            "title": "Product CO type Radio",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "image_preview": "BD_27.png",
+          "image_print_file": "BD_23.png",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 1",
+              "layer_value": "Test text value 1",
+              "location_layer_x": "55",
+              "location_layer_y": "55",
+              "layer_size_h": "1617",
+              "layer_size_w": "1089"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Radio",
+              "target_layer": "Text layer 1",
+              "default_name": "Custom Option 1",
+              "custom_name": "Radio",
+              "label": "Radio",
+              "value": "a,b,c",
+              "default_check": "a"
+            }
+          ],
+          "custom_option_data_SF": {
+            "type": "Radio",
+            "list_custom": ["Radio>Radio>a"]
+          },
+          "snapshot_name": {
+            "custom_option_detail": "custom_option_detail_SB_PRO_SBP_1693.png",
+            "print_file_block_generate_file": "print_file_block_generate_file_SB_PRO_SBP_1693.png"
+          }
+        },
+        {
+          "description": "[Add print file với Product chỉ có CO only] Check Action với type Droplist",
+          "case_id": "SB_PRO_SBP_1694",
+          "product_all_info": {
+            "title": "Product CO type Droplist",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "image_preview": "BD_27.png",
+          "image_print_file": "BD_23.png",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 1",
+              "layer_value": "Test text value 1",
+              "location_layer_x": "55",
+              "location_layer_y": "55",
+              "layer_size_h": "1617",
+              "layer_size_w": "1089"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Droplist",
+              "target_layer": "Text layer 1",
+              "default_name": "Custom Option 1",
+              "custom_name": "Droplist",
+              "label": "Droplist",
+              "value": "a,b,c",
+              "default_check": "a"
+            }
+          ],
+          "custom_option_data_SF": {
+            "type": "Droplist",
+            "list_custom": ["Droplist>Droplist>a"]
+          },
+          "snapshot_name": {
+            "custom_option_detail": "custom_option_detail_SB_PRO_SBP_1694.png",
+            "print_file_block_generate_file": "print_file_block_generate_file_SB_PRO_SBP_1694.png"
+          }
+        },
+        {
+          "description": "[Add print file với Product chỉ có CO only] Check Action với type Checkbox",
+          "case_id": "SB_PRO_SBP_1695",
+          "product_all_info": {
+            "title": "Product CO type Checkbox",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "image_preview": "BD_27.png",
+          "image_print_file": "BD_23.png",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 1",
+              "layer_value": "Test text value 1",
+              "location_layer_x": "55",
+              "location_layer_y": "55",
+              "layer_size_h": "1617",
+              "layer_size_w": "1089"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Checkbox",
+              "target_layer": "Text layer 1",
+              "default_name": "Custom Option 1",
+              "custom_name": "Checkbox",
+              "label": "Checkbox",
+              "value": "a,b,c,d,e"
+            }
+          ],
+          "custom_option_data_SF": {
+            "type": "Checkbox",
+            "list_custom": ["Checkbox>Checkbox>c"]
+          },
+          "snapshot_name": {
+            "custom_option_detail": "custom_option_detail_SB_PRO_SBP_1695.png",
+            "print_file_block_generate_file": "print_file_block_generate_file_SB_PRO_SBP_1695.png"
+          }
+        }
+      ]
+    },
+    "SB_PRO_SBP_1735": {
+      "product_all_info": {
+        "title": "Product set generate print file là OFF Manually generate",
+        "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+        "image_name": "Logo1.jpg",
+        "vendor": "Uniqlo",
+        "price": "10",
+        "compare_at_price": "20"
+      },
+      "image_preview": "BD_27.png",
+      "image_print_file": "BD_23.png",
+      "is_disable_generate_print_file": true,
+      "layers": [
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 1",
+          "layer_value": "Test text value 1",
+          "location_layer_x": "55",
+          "location_layer_y": "55"
+        }
+      ],
+      "custom_option_info": [
+        {
+          "type": "Text field",
+          "target_layer": "Text layer 1",
+          "placeholder": "Please input text field",
+          "custom_name": "Text field",
+          "label": "Text field ",
+          "default_value": "Text field",
+          "allow_character": "Characters, Numbers, Special Characters"
+        }
+      ],
+      "custom_option_data_SF": {
+        "list_custom": ["Text field>Text field>Test"]
+      },
+      "snapshot_name": {
+        "print_file_block_generate_file": "print_file_block_generate_file_SB_PRO_SBP_1735.png",
+        "print_file_block_generated_file": "print_file_block_generated_file_SB_PRO_SBP_1735.png"
+      }
+    },
+    "SB_PRO_SBP_1736": {
+      "product_all_info": {
+        "title": "Product set generate print file là OFF Manually generate tại màn Order list",
+        "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+        "image_name": "Logo1.jpg",
+        "vendor": "Uniqlo",
+        "price": "10",
+        "compare_at_price": "20"
+      },
+      "image_preview": "BD_27.png",
+      "image_print_file": "BD_23.png",
+      "is_disable_generate_print_file": true,
+      "message_generate_print_file": "Request bulk generate print file orders successfully",
+      "layers": [
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 1",
+          "layer_value": "Test text value 1",
+          "location_layer_x": "55",
+          "location_layer_y": "55"
+        }
+      ],
+      "custom_option_info": [
+        {
+          "type": "Text field",
+          "target_layer": "Text layer 1",
+          "placeholder": "Please input text field",
+          "custom_name": "Text field",
+          "label": "Text field ",
+          "default_value": "Text field",
+          "allow_character": "Characters, Numbers, Special Characters"
+        }
+      ],
+      "custom_option_data_SF": {
+        "list_custom": ["Text field>Text field>Test"]
+      },
+      "snapshot_name": {
+        "print_file_block_generated_file": "print_file_block_generated_file_SB_PRO_SBP_1736.png"
+      }
+    },
+    "DATA_DRIVEN_2": {
+      "data": [
+        {
+          "description": "Check Generate print file khi Order chỉ có line item thường và chọn [generate all cho order có có unfulfilled item] tại màn Product detail",
+          "case_id": "SB_PRO_SBP_1751",
+          "image_print_file": "BD_23.png",
+          "select_option": "Yes, generate file for all unfulfilled items",
+          "section_name": "Yes, generate file for all unfulfilled items",
+          "products": [
+            {
+              "product_all_info": {
+                "title": "Product item thường",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20",
+                "sku": "1ZLQJGJP8nU"
+              },
+              "image_preview": "BD_27.png",
+              "button_open_editor": "",
+              "layers": [
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 1",
+                  "layer_value": "Test text value 1",
+                  "location_layer_x": "55",
+                  "location_layer_y": "55"
+                }
+              ],
+              "custom_option_info": [
+                {
+                  "type": "Text area",
+                  "target_layer": "Text layer 1",
+                  "placeholder": "Please input text field",
+                  "custom_name": "Text area",
+                  "label": "Text area ",
+                  "default_value": "Text area",
+                  "allow_character": "Characters, Numbers, Special Characters"
+                }
+              ]
+            }
+          ],
+          "product_checkout": [
+            {
+              "product_name": "Product item thường",
+              "custom_option_data_SF": {
+                "list_custom": [""]
+              }
+            },
+            {
+              "product_name": "Product item thường",
+              "custom_option_data_SF": {
+                "list_custom": [""]
+              }
+            }
+          ],
+          "create_print_file_info": {
+            "layers": [
+              {
+                "layer_type": "Text",
+                "layer_name": "Text layer 1",
+                "layer_value": "Test text value 1",
+                "location_layer_x": "55",
+                "location_layer_y": "55",
+                "no_check_button": true
+              }
+            ],
+            "custom_option_info": [
+              {
+                "type": "Text area",
+                "target_layer": "Text layer 1",
+                "placeholder": "Please input text field",
+                "custom_name": "Text area",
+                "label": "Text area ",
+                "default_value": "Text area",
+                "allow_character": "Characters, Numbers, Special Characters"
+              }
+            ]
+          },
+          "snapshot_name": {
+            "print_file_block_generate_file": "print_file_block_generate_file_SB_PRO_SBP_1751.png",
+            "print_file_block_generated_file": "print_file_block_generated_file_SB_PRO_SBP_1751.png",
+            "print_file_preview": "print_file_preview_SB_PRO_SBP_1751.png",
+            "print_file_block_generate_file_all_order": "print_file_block_generate_file_all_order_SB_PRO_SBP_1751.png"
+          }
+        },
+        {
+          "description": "Check Generate print file khi khi Order chỉ có line item Custom Option và chọn [generate all cho order có có unfulfilled item] tại màn Product detail",
+          "case_id": "SB_PRO_SBP_1749",
+          "image_print_file": "BD_23.png",
+          "select_option": "Yes, generate file for all unfulfilled items",
+          "section_name": "Yes, generate file for all unfulfilled items",
+          "status_generate_print_file": "Add print file",
+          "products": [
+            {
+              "product_all_info": {
+                "title": "Product custom option",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20",
+                "sku": "1ZLQJGJP8nU"
+              },
+              "image_preview": "BD_27.png",
+              "button_open_editor": "Create custom option only",
+              "custom_option_info": [
+                {
+                  "type": "Text field",
+                  "default_name": "Custom Option 1",
+                  "custom_name": "Text field",
+                  "label": "Text field",
+                  "index": 1,
+                  "position": 1,
+                  "placeholder": "Please input text field",
+                  "default_value": "text",
+                  "allow_following": "Characters, Numbers, Special Characters, Emoji"
+                }
+              ]
+            }
+          ],
+          "product_checkout": [
+            {
+              "product_name": "Product custom option",
+              "custom_option_data_SF": {
+                "list_custom": ["Text field>Text field>Text field"]
+              }
+            },
+            {
+              "product_name": "Product custom option",
+              "custom_option_data_SF": {
+                "list_custom": ["Text field>Text field>Text field"]
+              }
+            }
+          ],
+          "create_print_file_info": {
+            "layers": [
+              {
+                "layer_type": "Text",
+                "layer_name": "Text layer 1",
+                "layer_value": "Test text value 1",
+                "location_layer_x": "55",
+                "location_layer_y": "55",
+                "no_check_button": true
+              }
+            ],
+            "custom_option_info": [
+              {
+                "type": "Text area",
+                "target_layer": "Text layer 1",
+                "placeholder": "Please input text field",
+                "custom_name": "Text area",
+                "label": "Text area ",
+                "default_value": "Text area",
+                "allow_character": "Characters, Numbers, Special Characters"
+              }
+            ]
+          },
+          "snapshot_name": {
+            "print_file_block_generate_file": "print_file_block_generate_file_SB_PRO_SBP_1749.png",
+            "print_file_block_generated_file": "print_file_block_generated_file_SB_PRO_SBP_1749.png",
+            "print_file_preview": "print_file_preview_SB_PRO_SBP_1749.png",
+            "print_file_block_generate_file_all_order": "print_file_block_generate_file_all_order_SB_PRO_SBP_1749.png"
+          }
+        },
+        {
+          "description": "Check Generate print file khi khi Order chỉ có line item Custom Option và chọn [generate all cho order có có unfulfilled item] tại màn Order detail",
+          "case_id": "SB_PRO_SBP_1747",
+          "image_print_file": "BD_23.png",
+          "select_option": "Yes, generate file for all unfulfilled items",
+          "section_name": "Yes, generate file for all unfulfilled items",
+          "status_generate_print_file": "Add print file",
+          "products": [
+            {
+              "product_all_info": {
+                "title": "Product custom option",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20",
+                "sku": "1ZLQJGJP8nU"
+              },
+              "image_preview": "BD_27.png",
+              "button_open_editor": "Create custom option only",
+              "custom_option_info": [
+                {
+                  "type": "Text field",
+                  "default_name": "Custom Option 1",
+                  "custom_name": "Text field",
+                  "label": "Text field",
+                  "index": 1,
+                  "position": 1,
+                  "placeholder": "Please input text field",
+                  "default_value": "text",
+                  "allow_following": "Characters, Numbers, Special Characters, Emoji"
+                }
+              ]
+            }
+          ],
+          "product_checkout": [
+            {
+              "product_name": "Product custom option",
+              "custom_option_data_SF": {
+                "list_custom": ["Text field>Text field>Text field"]
+              }
+            },
+            {
+              "product_name": "Product custom option",
+              "custom_option_data_SF": {
+                "list_custom": ["Text field>Text field>Text field"]
+              }
+            }
+          ],
+          "create_print_file_info": {
+            "layers": [
+              {
+                "layer_type": "Text",
+                "layer_name": "Text layer 1",
+                "layer_value": "Test text value 1",
+                "location_layer_x": "55",
+                "location_layer_y": "55",
+                "layer_size_h": "384",
+                "layer_size_w": "2518",
+                "no_check_button": true
+              }
+            ],
+            "custom_option_info": [
+              {
+                "type": "Text area",
+                "target_layer": "Text layer 1",
+                "placeholder": "Please input text field",
+                "custom_name": "Text area",
+                "label": "Text area ",
+                "default_value": "Text area",
+                "allow_character": "Characters, Numbers, Special Characters"
+              }
+            ]
+          },
+          "snapshot_name": {
+            "print_file_block_generate_file": "print_file_block_generate_file_SB_PRO_SBP_1747.png",
+            "print_file_block_generated_file": "print_file_block_generated_file_SB_PRO_SBP_1747.png",
+            "print_file_preview": "print_file_preview_SB_PRO_SBP_1747.png",
+            "print_file_block_generate_file_all_order": "print_file_block_generate_file_all_order_SB_PRO_SBP_1747.png"
+          }
+        },
+        {
+          "description": "Check Generate print file khi Order có line item thường và line item generate và chọn [generate all cho order có có unfulfilled item] tại màn Product detail",
+          "case_id": "SB_PRO_SBP_1745",
+          "image_print_file": "BD_23.png",
+          "select_option": "Yes, generate file for all unfulfilled items",
+          "section_name": "Yes, generate file for all unfulfilled items",
+          "status_generate_print_file": "Print file has been generated",
+          "products": [
+            {
+              "product_all_info": {
+                "title": "Product item thường",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20",
+                "sku": "1ZLQJGJP8nU"
+              },
+              "image_preview": "BD_27.png",
+              "button_open_editor": "",
+              "layers": [
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 1",
+                  "layer_value": "Test text value 1",
+                  "location_layer_x": "55",
+                  "location_layer_y": "55"
+                }
+              ],
+              "custom_option_info": [
+                {
+                  "type": "Text area",
+                  "target_layer": "Text layer 1",
+                  "placeholder": "Please input text field",
+                  "custom_name": "Text area",
+                  "label": "Text area ",
+                  "default_value": "Text area",
+                  "allow_character": "Characters, Numbers, Special Characters"
+                }
+              ]
+            },
+            {
+              "product_all_info": {
+                "title": "Product có printfile",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20",
+                "sku": "1ZLQJGJP8nU"
+              },
+              "image_preview": "BD_27.png",
+              "image_print_file": "BD_23.png",
+              "button_open_editor": "Create Print file",
+              "layers": [
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 1",
+                  "layer_value": "Test text value 1",
+                  "location_layer_x": "55",
+                  "location_layer_y": "55"
+                }
+              ],
+              "custom_option_info": [
+                {
+                  "type": "Text area",
+                  "target_layer": "Text layer 1",
+                  "placeholder": "Please input text field",
+                  "custom_name": "Text area",
+                  "label": "Text area ",
+                  "default_value": "Text area",
+                  "allow_character": "Characters, Numbers, Special Characters"
+                }
+              ]
+            }
+          ],
+          "product_checkout": [
+            {
+              "product_name": "Product item thường",
+              "custom_option_data_SF": {
+                "list_custom": [""]
+              }
+            },
+            {
+              "product_name": "Product có printfile",
+              "custom_option_data_SF": {
+                "list_custom": ["Text area>Text area>Text area"]
+              }
+            }
+          ],
+          "create_print_file_info": {
+            "layers": [
+              {
+                "layer_type": "Text",
+                "layer_name": "Text layer 1",
+                "layer_value": "Test text value 1",
+                "location_layer_x": "55",
+                "location_layer_y": "55",
+                "no_check_button": true
+              }
+            ],
+            "custom_option_info": [
+              {
+                "type": "Text area",
+                "target_layer": "Text layer 1",
+                "placeholder": "Please input text field",
+                "custom_name": "Text area",
+                "label": "Text area ",
+                "default_value": "Text area",
+                "allow_character": "Characters, Numbers, Special Characters"
+              }
+            ]
+          },
+          "snapshot_name": {
+            "print_file_block_generate_file": "print_file_block_generate_file_SB_PRO_SBP_1745.png",
+            "print_file_block_generated_file": "print_file_block_generated_file_SB_PRO_SBP_1745.png",
+            "print_file_preview": "print_file_preview_SB_PRO_SBP_1745.png"
+          }
+        },
+        {
+          "description": "Check Generate print file khi Order có line item thường và line item generate và chọn [chỉ generate cho order mới tạo] tại màn Product detail",
+          "case_id": "SB_PRO_SBP_1744",
+          "image_print_file": "BD_23.png",
+          "select_option": "No, only generate for the ordered items from now",
+          "section_name": "No, only generate for this ordered",
+          "status_generate_print_file": "Print file has been generated",
+          "products": [
+            {
+              "product_all_info": {
+                "title": "Product item thường",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20",
+                "sku": "1ZLQJGJP8nU"
+              },
+              "image_preview": "BD_27.png",
+              "button_open_editor": "",
+              "layers": [
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 1",
+                  "layer_value": "Test text value 1",
+                  "location_layer_x": "55",
+                  "location_layer_y": "55"
+                }
+              ],
+              "custom_option_info": [
+                {
+                  "type": "Text area",
+                  "target_layer": "Text layer 1",
+                  "placeholder": "Please input text field",
+                  "custom_name": "Text area",
+                  "label": "Text area ",
+                  "default_value": "Text area",
+                  "allow_character": "Characters, Numbers, Special Characters"
+                }
+              ]
+            },
+            {
+              "product_all_info": {
+                "title": "Product có printfile",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20",
+                "sku": "1ZLQJGJP8nU"
+              },
+              "image_preview": "BD_27.png",
+              "image_print_file": "BD_23.png",
+              "button_open_editor": "Create Print file",
+              "layers": [
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 1",
+                  "layer_value": "Test text value 1",
+                  "location_layer_x": "55",
+                  "location_layer_y": "55"
+                }
+              ],
+              "custom_option_info": [
+                {
+                  "type": "Text area",
+                  "target_layer": "Text layer 1",
+                  "placeholder": "Please input text field",
+                  "custom_name": "Text area",
+                  "label": "Text area ",
+                  "default_value": "Text area",
+                  "allow_character": "Characters, Numbers, Special Characters"
+                }
+              ]
+            }
+          ],
+          "product_checkout": [
+            {
+              "product_name": "Product item thường",
+              "custom_option_data_SF": {
+                "list_custom": [""]
+              }
+            },
+            {
+              "product_name": "Product có printfile",
+              "custom_option_data_SF": {
+                "list_custom": ["Text area>Text area>Text area"]
+              }
+            }
+          ],
+          "create_print_file_info": {
+            "layers": [
+              {
+                "layer_type": "Text",
+                "layer_name": "Text layer 1",
+                "layer_value": "Test text value 1",
+                "location_layer_x": "55",
+                "location_layer_y": "55",
+                "no_check_button": true
+              }
+            ],
+            "custom_option_info": [
+              {
+                "type": "Text area",
+                "target_layer": "Text layer 1",
+                "placeholder": "Please input text field",
+                "custom_name": "Text area",
+                "label": "Text area ",
+                "default_value": "Text area",
+                "allow_character": "Characters, Numbers, Special Characters"
+              }
+            ]
+          },
+          "snapshot_name": {
+            "print_file_block_generate_file": "print_file_block_generate_file_SB_PRO_SBP_1744.png",
+            "print_file_block_generated_file": "print_file_block_generated_file_SB_PRO_SBP_1744.png",
+            "print_file_preview": "print_file_preview_SB_PRO_SBP_1744.png"
+          }
+        },
+        {
+          "description": "Check Generate print file Order có line item Custom Option và line item generate và chọn [generate all cho order có có unfulfilled item] tại màn Order detail",
+          "case_id": "SB_PRO_SBP_1741",
+          "image_print_file": "BD_23.png",
+          "select_option": "Yes, generate file for all unfulfilled items",
+          "section_name": "Yes, generate file for all unfulfilled items",
+          "status_generate_print_file": "Print file has been generated",
+          "products": [
+            {
+              "product_all_info": {
+                "title": "Product có custom option",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20",
+                "sku": "1ZLQJGJP8nU"
+              },
+              "image_preview": "BD_27.png",
+              "button_open_editor": "Create custom option only",
+              "custom_option_info": [
+                {
+                  "type": "Text field",
+                  "default_name": "Custom Option 1",
+                  "custom_name": "Text field",
+                  "label": "Text field",
+                  "index": 1,
+                  "position": 1,
+                  "placeholder": "Please input text field",
+                  "default_value": "text",
+                  "allow_following": "Characters, Numbers, Special Characters, Emoji"
+                }
+              ]
+            },
+            {
+              "product_all_info": {
+                "title": "Product có printfile",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20",
+                "sku": "1ZLQJGJP8nU"
+              },
+              "image_preview": "BD_27.png",
+              "image_print_file": "BD_23.png",
+              "button_open_editor": "Create Print file",
+              "layers": [
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 1",
+                  "layer_value": "Test text value 1",
+                  "location_layer_x": "55",
+                  "location_layer_y": "55",
+                  "layer_size_h": "384",
+                  "layer_size_w": "2518"
+                }
+              ],
+              "custom_option_info": [
+                {
+                  "type": "Text area",
+                  "target_layer": "Text layer 1",
+                  "placeholder": "Please input text field",
+                  "custom_name": "Text area",
+                  "label": "Text area ",
+                  "default_value": "Text area",
+                  "allow_character": "Characters, Numbers, Special Characters"
+                }
+              ]
+            }
+          ],
+          "product_checkout": [
+            {
+              "product_name": "Product có custom option",
+              "custom_option_data_SF": {
+                "list_custom": ["Text field>Text field>Text field"]
+              }
+            },
+            {
+              "product_name": "Product có printfile",
+              "custom_option_data_SF": {
+                "list_custom": ["Text area>Text area>Text area"]
+              }
+            }
+          ],
+          "create_print_file_info": {
+            "layers": [
+              {
+                "layer_type": "Text",
+                "layer_name": "Text layer 1",
+                "layer_value": "Test text value 1",
+                "location_layer_x": "55",
+                "location_layer_y": "55",
+                "no_check_button": true
+              }
+            ],
+            "custom_option_info": [
+              {
+                "type": "Text area",
+                "target_layer": "Text layer 1",
+                "placeholder": "Please input text field",
+                "custom_name": "Text area",
+                "label": "Text area ",
+                "default_value": "Text area",
+                "allow_character": "Characters, Numbers, Special Characters"
+              }
+            ]
+          },
+          "snapshot_name": {
+            "print_file_block_generate_file": "print_file_block_generate_file_SB_PRO_SBP_1741.png",
+            "print_file_block_generated_file": "print_file_block_generated_file_SB_PRO_SBP_1741.png",
+            "print_file_preview": "print_file_preview_SB_PRO_SBP_1741.png",
+            "print_file_block_generate_file_all_order": "print_file_block_generate_file_all_order_SB_PRO_SBP_1741.png"
+          }
+        },
+        {
+          "description": "Check Generate print file Order có line item Custom Option và line item generate và chọn [generate all cho order có có unfulfilled item] tại màn Product detail",
+          "case_id": "SB_PRO_SBP_1743",
+          "image_print_file": "BD_23.png",
+          "select_option": "Yes, generate file for all unfulfilled items",
+          "section_name": "Yes, generate file for all unfulfilled items",
+          "status_generate_print_file": "Print file has been generated",
+          "products": [
+            {
+              "product_all_info": {
+                "title": "Product có custom option",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20",
+                "sku": "1ZLQJGJP8nU"
+              },
+              "image_preview": "BD_27.png",
+              "button_open_editor": "Create custom option only",
+              "custom_option_info": [
+                {
+                  "type": "Text field",
+                  "default_name": "Custom Option 1",
+                  "custom_name": "Text field",
+                  "label": "Text field",
+                  "index": 1,
+                  "position": 1,
+                  "placeholder": "Please input text field",
+                  "default_value": "text",
+                  "allow_following": "Characters, Numbers, Special Characters, Emoji"
+                }
+              ]
+            },
+            {
+              "product_all_info": {
+                "title": "Product có printfile",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20",
+                "sku": "1ZLQJGJP8nU"
+              },
+              "image_preview": "BD_27.png",
+              "image_print_file": "BD_23.png",
+              "button_open_editor": "Create Print file",
+              "layers": [
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 1",
+                  "layer_value": "Test text value 1",
+                  "location_layer_x": "55",
+                  "location_layer_y": "55"
+                }
+              ],
+              "custom_option_info": [
+                {
+                  "type": "Text area",
+                  "target_layer": "Text layer 1",
+                  "placeholder": "Please input text field",
+                  "custom_name": "Text area",
+                  "label": "Text area ",
+                  "default_value": "Text area",
+                  "allow_character": "Characters, Numbers, Special Characters"
+                }
+              ]
+            }
+          ],
+          "product_checkout": [
+            {
+              "product_name": "Product có custom option",
+              "custom_option_data_SF": {
+                "list_custom": ["Text field>Text field>Text field"]
+              }
+            },
+            {
+              "product_name": "Product có printfile",
+              "custom_option_data_SF": {
+                "list_custom": ["Text area>Text area>Text area"]
+              }
+            }
+          ],
+          "create_print_file_info": {
+            "layers": [
+              {
+                "layer_type": "Text",
+                "layer_name": "Text layer 1",
+                "layer_value": "Test text value 1",
+                "location_layer_x": "55",
+                "location_layer_y": "55",
+                "no_check_button": true
+              }
+            ],
+            "custom_option_info": [
+              {
+                "type": "Text area",
+                "target_layer": "Text layer 1",
+                "placeholder": "Please input text field",
+                "custom_name": "Text area",
+                "label": "Text area ",
+                "default_value": "Text area",
+                "allow_character": "Characters, Numbers, Special Characters"
+              }
+            ]
+          },
+          "snapshot_name": {
+            "print_file_block_generate_file": "print_file_block_generate_file_SB_PRO_SBP_1743.png",
+            "print_file_block_generated_file": "print_file_block_generated_file_SB_PRO_SBP_1743.png",
+            "print_file_preview": "print_file_preview_SB_PRO_SBP_1743.png",
+            "print_file_block_generate_file_all_order": "print_file_block_generate_file_all_order_SB_PRO_SBP_1743.png"
+          }
+        }
+      ]
+    },
+    "DATA_DRIVEN_GENERATE_PRINT_FILE": {
+      "data": [
+        {
+          "description": "Check Generate print file khi khi Order chỉ có line item Custom Option và chọn [chỉ generate cho order mới tạo] tại màn Order detail",
+          "case_id": "SB_PRO_SBP_1746",
+          "image_print_file": "BD_23.png",
+          "select_option": "No, only generate for this ordered",
+          "section_name": "No, only generate for this ordered",
+          "status_generate_print_file": "Add print file",
+          "index_status": 1,
+          "products": [
+            {
+              "product_all_info": {
+                "title": "Product custom option SB_PRO_SBP_1746",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20",
+                "sku": "1ZLQJGJP8nU"
+              },
+              "image_preview": "BD_27.png",
+              "button_open_editor": "Create custom option only",
+              "custom_option_info": [
+                {
+                  "type": "Text field",
+                  "default_name": "Custom Option 1",
+                  "custom_name": "Text field",
+                  "label": "Text field",
+                  "index": 1,
+                  "position": 1,
+                  "placeholder": "Please input text field",
+                  "default_value": "text",
+                  "allow_following": "Characters, Numbers, Special Characters, Emoji"
+                }
+              ]
+            }
+          ],
+          "product_checkout": [
+            {
+              "product_name": "Product custom option SB_PRO_SBP_1746",
+              "custom_option_data_SF": {
+                "list_custom": ["Text field>Text field>Text field"]
+              }
+            }
+          ],
+          "create_print_file_info": {
+            "layers": [
+              {
+                "layer_type": "Text",
+                "layer_name": "Text layer 1",
+                "layer_value": "Test text value 1",
+                "location_layer_x": "55",
+                "location_layer_y": "55",
+                "layer_size_h": "384",
+                "layer_size_w": "2518",
+                "no_check_button": true
+              }
+            ],
+            "custom_option_info": [
+              {
+                "type": "Text area",
+                "target_layer": "Text layer 1",
+                "placeholder": "Please input text field",
+                "custom_name": "Text area",
+                "label": "Text area ",
+                "default_value": "Text area",
+                "allow_character": "Characters, Numbers, Special Characters"
+              }
+            ]
+          },
+          "snapshot_name": {
+            "print_file_block_generate_file": "print_file_block_generate_file_SB_PRO_SBP_1746.png",
+            "print_file_block_generated_file": "print_file_block_generated_file_SB_PRO_SBP_1746.png",
+            "print_file_preview": "print_file_preview_SB_PRO_SBP_1746.png"
+          }
+        },
+        {
+          "description": "Check Generate print file khi Order có line item Custom Option và line item generate và chọn [chỉ generate cho order mới tạo] tại màn Order detail",
+          "case_id": "SB_PRO_SBP_1740",
+          "image_print_file": "BD_23.png",
+          "select_option": "No, only generate for this ordered",
+          "section_name": "No, only generate for this ordered",
+          "status_generate_print_file": "Print file has been generated",
+          "index_status": 2,
+          "products": [
+            {
+              "product_all_info": {
+                "title": "Product có custom option SB_PRO_SBP_1740",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20",
+                "sku": "1ZLQJGJP8nU"
+              },
+              "image_preview": "BD_27.png",
+              "button_open_editor": "Create custom option only",
+              "custom_option_info": [
+                {
+                  "type": "Text field",
+                  "default_name": "Custom Option 1",
+                  "custom_name": "Text field",
+                  "label": "Text field",
+                  "index": 1,
+                  "position": 1,
+                  "placeholder": "Please input text field",
+                  "default_value": "text",
+                  "allow_following": "Characters, Numbers, Special Characters, Emoji"
+                }
+              ]
+            },
+            {
+              "product_all_info": {
+                "title": "Product có printfile SB_PRO_SBP_1740",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20",
+                "sku": "1ZLQJGJP8nU"
+              },
+              "image_preview": "BD_27.png",
+              "image_print_file": "BD_23.png",
+              "button_open_editor": "Create Print file",
+              "layers": [
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 1",
+                  "layer_value": "Test text value 1",
+                  "location_layer_x": "55",
+                  "location_layer_y": "55"
+                }
+              ],
+              "custom_option_info": [
+                {
+                  "type": "Text area",
+                  "target_layer": "Text layer 1",
+                  "placeholder": "Please input text field",
+                  "custom_name": "Text area",
+                  "label": "Text area ",
+                  "default_value": "Text area",
+                  "allow_character": "Characters, Numbers, Special Characters"
+                }
+              ]
+            }
+          ],
+          "product_checkout": [
+            {
+              "product_name": "Product có custom option SB_PRO_SBP_1740",
+              "custom_option_data_SF": {
+                "list_custom": ["Text field>Text field>Text field"]
+              }
+            },
+            {
+              "product_name": "Product có printfile SB_PRO_SBP_1740",
+              "custom_option_data_SF": {
+                "list_custom": ["Text area>Text area>Text area"]
+              }
+            }
+          ],
+          "create_print_file_info": {
+            "layers": [
+              {
+                "layer_type": "Text",
+                "layer_name": "Text layer 1",
+                "layer_value": "Test text value 1",
+                "location_layer_x": "55",
+                "location_layer_y": "55",
+                "no_check_button": true
+              }
+            ],
+            "custom_option_info": [
+              {
+                "type": "Text area",
+                "target_layer": "Text layer 1",
+                "placeholder": "Please input text field",
+                "custom_name": "Text area",
+                "label": "Text area ",
+                "default_value": "Text area",
+                "allow_character": "Characters, Numbers, Special Characters"
+              }
+            ]
+          },
+          "snapshot_name": {
+            "print_file_block_generate_file": "print_file_block_generate_file_SB_PRO_SBP_1740.png",
+            "print_file_block_generated_file": "print_file_block_generated_file_SB_PRO_SBP_1740.png",
+            "print_file_preview": "print_file_preview_SB_PRO_SBP_1740.png"
+          }
+        }
+      ]
+    },
+    "DATA_DRIVEN_GENERATE_PRINT_FILE_PRODUCT_DETAIL": {
+      "data": [
+        {
+          "description": "Check Generate print file khi Order chỉ có line item thường và chọn [chỉ generate cho order mới tạo] tại màn Product detail",
+          "case_id": "SB_PRO_SBP_1750",
+          "image_print_file": "BD_23.png",
+          "select_option": "No, only generate for the ordered items from now",
+          "section_name": "No, only generate for this ordered",
+          "products": [
+            {
+              "product_all_info": {
+                "title": "Product item thường SB_PRO_SBP_1750",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20",
+                "sku": "1ZLQJGJP8nU"
+              },
+              "image_preview": "BD_27.png",
+              "button_open_editor": "",
+              "layers": [
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 1",
+                  "layer_value": "Test text value 1",
+                  "location_layer_x": "55",
+                  "location_layer_y": "55"
+                }
+              ],
+              "custom_option_info": [
+                {
+                  "type": "Text area",
+                  "target_layer": "Text layer 1",
+                  "placeholder": "Please input text field",
+                  "custom_name": "Text area",
+                  "label": "Text area ",
+                  "default_value": "Text area",
+                  "allow_character": "Characters, Numbers, Special Characters"
+                }
+              ]
+            }
+          ],
+          "product_checkout": [
+            {
+              "product_name": "Product item thường SB_PRO_SBP_1750",
+              "custom_option_data_SF": {
+                "list_custom": [""]
+              }
+            }
+          ],
+          "create_print_file_info": {
+            "layers": [
+              {
+                "layer_type": "Text",
+                "layer_name": "Text layer 1",
+                "layer_value": "Test text value 1",
+                "location_layer_x": "55",
+                "location_layer_y": "55",
+                "no_check_button": true
+              }
+            ],
+            "custom_option_info": [
+              {
+                "type": "Text area",
+                "target_layer": "Text layer 1",
+                "placeholder": "Please input text field",
+                "custom_name": "Text area",
+                "label": "Text area ",
+                "default_value": "Text area",
+                "allow_character": "Characters, Numbers, Special Characters"
+              }
+            ]
+          },
+          "snapshot_name": {
+            "print_file_block_generate_file": "print_file_block_generate_file_SB_PRO_SBP_1750.png",
+            "print_file_block_generated_file": "print_file_block_generated_file_SB_PRO_SBP_1750.png",
+            "print_file_preview": "print_file_preview_SB_PRO_SBP_1750.png",
+            "print_file_block_generate_file_all_order": "print_file_block_generate_file_all_order_SB_PRO_SBP_1750.png"
+          }
+        },
+        {
+          "description": "Check Generate print file khi Order có line item Custom Option và line item generate và chọn [chỉ generate cho order mới tạo] tại màn Product detail",
+          "case_id": "SB_PRO_SBP_1742",
+          "index_status": 2,
+          "image_print_file": "BD_23.png",
+          "select_option": "No, only generate for the ordered items from now",
+          "section_name": "No, only generate for this ordered",
+          "status_generate_print_file": "Print file has been generated",
+          "products": [
+            {
+              "product_all_info": {
+                "title": "Product có custom option SB_PRO_SBP_1742",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20",
+                "sku": "1ZLQJGJP8nU"
+              },
+              "image_preview": "BD_27.png",
+              "button_open_editor": "Create custom option only",
+              "custom_option_info": [
+                {
+                  "type": "Text field",
+                  "default_name": "Custom Option 1",
+                  "custom_name": "Text field",
+                  "label": "Text field",
+                  "index": 1,
+                  "position": 1,
+                  "placeholder": "Please input text field",
+                  "default_value": "text",
+                  "allow_following": "Characters, Numbers, Special Characters, Emoji"
+                }
+              ]
+            },
+            {
+              "product_all_info": {
+                "title": "Product có printfile SB_PRO_SBP_1742",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20",
+                "sku": "1ZLQJGJP8nU"
+              },
+              "image_preview": "BD_27.png",
+              "image_print_file": "BD_23.png",
+              "button_open_editor": "Create Print file",
+              "layers": [
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 1",
+                  "layer_value": "Test text value 1",
+                  "location_layer_x": "55",
+                  "location_layer_y": "55",
+                  "layer_size_h": "384",
+                  "layer_size_w": "2518"
+                }
+              ],
+              "custom_option_info": [
+                {
+                  "type": "Text area",
+                  "target_layer": "Text layer 1",
+                  "placeholder": "Please input text field",
+                  "custom_name": "Text area",
+                  "label": "Text area ",
+                  "default_value": "Text area",
+                  "allow_character": "Characters, Numbers, Special Characters"
+                }
+              ]
+            }
+          ],
+          "product_checkout": [
+            {
+              "product_name": "Product có custom option SB_PRO_SBP_1742",
+              "custom_option_data_SF": {
+                "list_custom": ["Text field>Text field>Text field"]
+              }
+            },
+            {
+              "product_name": "Product có printfile SB_PRO_SBP_1742",
+              "custom_option_data_SF": {
+                "list_custom": ["Text area>Text area>Text area"]
+              }
+            }
+          ],
+          "create_print_file_info": {
+            "layers": [
+              {
+                "layer_type": "Text",
+                "layer_name": "Text layer 1",
+                "layer_value": "Test text value 1",
+                "location_layer_x": "55",
+                "location_layer_y": "55",
+                "no_check_button": true
+              }
+            ],
+            "custom_option_info": [
+              {
+                "type": "Text area",
+                "target_layer": "Text layer 1",
+                "placeholder": "Please input text field",
+                "custom_name": "Text area",
+                "label": "Text area ",
+                "default_value": "Text area",
+                "allow_character": "Characters, Numbers, Special Characters"
+              }
+            ]
+          },
+          "snapshot_name": {
+            "print_file_block_generate_file": "print_file_block_generate_file_SB_PRO_SBP_1742.png",
+            "print_file_block_generated_file": "print_file_block_generated_file_SB_PRO_SBP_1742.png",
+            "print_file_preview": "print_file_preview_SB_PRO_SBP_1742.png"
+          }
+        },
+        {
+          "description": "Check Generate print file khi khi Order chỉ có line item Custom Option và chọn [chỉ generate cho order mới tạo] tại màn Product detail",
+          "case_id": "SB_PRO_SBP_1748",
+          "index_status": 1,
+          "image_print_file": "BD_23.png",
+          "select_option": "No, only generate for the ordered items from now",
+          "section_name": "No, only generate for this ordered",
+          "status_generate_print_file": "Add print file",
+          "products": [
+            {
+              "product_all_info": {
+                "title": "Product custom option SB_PRO_SBP_1748",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20",
+                "sku": "1ZLQJGJP8nU"
+              },
+              "image_preview": "BD_27.png",
+              "button_open_editor": "Create custom option only",
+              "custom_option_info": [
+                {
+                  "type": "Text field",
+                  "default_name": "Custom Option 1",
+                  "custom_name": "Text field",
+                  "label": "Text field",
+                  "index": 1,
+                  "position": 1,
+                  "placeholder": "Please input text field",
+                  "default_value": "text",
+                  "allow_following": "Characters, Numbers, Special Characters, Emoji"
+                }
+              ]
+            }
+          ],
+          "product_checkout": [
+            {
+              "product_name": "Product custom option SB_PRO_SBP_1748",
+              "custom_option_data_SF": {
+                "list_custom": ["Text field>Text field>Text field"]
+              }
+            }
+          ],
+          "create_print_file_info": {
+            "layers": [
+              {
+                "layer_type": "Text",
+                "layer_name": "Text layer 1",
+                "layer_value": "Test text value 1",
+                "location_layer_x": "55",
+                "location_layer_y": "55",
+                "layer_size_h": "384",
+                "layer_size_w": "2518",
+                "no_check_button": true
+              }
+            ],
+            "custom_option_info": [
+              {
+                "type": "Text area",
+                "target_layer": "Text layer 1",
+                "placeholder": "Please input text field",
+                "custom_name": "Text area",
+                "label": "Text area ",
+                "default_value": "Text area",
+                "allow_character": "Characters, Numbers, Special Characters"
+              }
+            ]
+          },
+          "snapshot_name": {
+            "print_file_block_generate_file": "print_file_block_generate_file_SB_PRO_SBP_1748.png",
+            "print_file_block_generated_file": "print_file_block_generated_file_SB_PRO_SBP_1748.png",
+            "print_file_preview": "print_file_preview_SB_PRO_SBP_1748.png"
+          }
+        }
+      ]
+    }
+  }
+}

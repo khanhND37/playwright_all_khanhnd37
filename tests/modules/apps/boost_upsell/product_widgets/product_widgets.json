@@ -1,0 +1,291 @@
+{
+  "env": {
+    "local": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-products-widget.myshopbase.net",
+      "shop_name": "au-products-widget",
+      "username": "dpro-qe-1@beeketing.net  ",
+      "password": "43AhIn|VWp;[?9&",
+      "user_id": 89797,
+      "shop_id": 10327555
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-products-widget-prod-test.onshopbase.com",
+      "shop_name": "au-products-widget-prod-test",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "shop_id": 10432852,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-products-widget.myshopbase.net",
+      "shop_name": "au-products-widget",
+      "username": "dpro-qe-1@beeketing.net  ",
+      "password": "43AhIn|VWp;[?9&",
+      "user_id": 89797,
+      "shop_id": 10327555
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-products-widget.onshopbase.com",
+      "shop_name": "au-products-widget",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "shop_id": 10432484
+    }
+  },
+  "cases": {
+    "SB_BUS_PW_8": {
+      "widget_title": "Products from the same collections",
+      "isOn": true,
+      "widget_handle": "more-collection",
+      "collection_handle": "top-picks",
+      "product_handle": "livingston-demilune-console-umber",
+      "settings": [
+        {
+          "header": {
+            "option": "30px",
+            "title": "Products from the same collections"
+          },
+          "product_name_size": "15px",
+          "product_price_size": "15px",
+          "call_action": "15px",
+          "add_cart_button": false,
+          "number_product_to_show": "6",
+          "max_product_slide": "2",
+          "place_widget": [
+            {
+              "id": "checkProduct",
+              "isOn": true,
+              "specificPages": {
+                "isOn": true,
+                "page": "Products"
+              }
+            }
+          ]
+        },
+        {
+          "header": {
+            "option": "25px",
+            "title": "Products from the same collections 2"
+          },
+          "product_name_size": "14px",
+          "product_price_size": "14px",
+          "call_action": "14px",
+          "add_cart_button": true,
+          "number_product_to_show": "7",
+          "max_product_slide": "4",
+          "place_widget": [
+            {
+              "id": "checkProduct",
+              "isOn": true,
+              "specificPages": {
+                "isOn": true,
+                "page": "Collections"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "SB_BUS_PW_7": {
+      "widget_title": "Recently viewed & featured products",
+      "isOn": true,
+      "widget_handle": "recent-view",
+      "collection_handle": "top-picks",
+      "settings": [
+        {
+          "header": {
+            "option": "30px",
+            "title": "Recently viewed & featured products"
+          },
+          "product_name_size": "15px",
+          "product_price_size": "15px",
+          "call_action": "15px",
+          "add_cart_button": false,
+          "number_product_to_show": "6",
+          "max_product_slide": "2",
+          "place_widget": [
+            {
+              "id": "checkCategory",
+              "isOn": true
+            }
+          ]
+        },
+        {
+          "header": {
+            "option": "25px",
+            "title": "Featured products"
+          },
+          "product_name_size": "14px",
+          "product_price_size": "14px",
+          "call_action": "14px",
+          "add_cart_button": true,
+          "number_product_to_show": "7",
+          "max_product_slide": "4",
+          "place_widget": [
+            {
+              "id": "checkCategory",
+              "isOn": true
+            }
+          ]
+        }
+      ]
+    },
+    "SB_BUS_PW_6": {
+      "widget_title": "Cart recommendations",
+      "isOn": true,
+      "widget_handle": "cart-recommend",
+      "settings": [
+        {
+          "header": {
+            "option": "30px",
+            "title": "You may also like"
+          },
+          "product_name_size": "15px",
+          "product_price_size": "15px",
+          "call_action": "15px",
+          "add_cart_button": false,
+          "number_product_to_show": "6",
+          "max_product_slide": "2",
+          "place_widget": [
+            {
+              "id": "checkCart",
+              "isOn": true
+            }
+          ]
+        },
+        {
+          "header": {
+            "option": "25px",
+            "title": "You may also like 2"
+          },
+          "product_name_size": "14px",
+          "product_price_size": "14px",
+          "call_action": "14px",
+          "add_cart_button": true,
+          "number_product_to_show": "7",
+          "max_product_slide": "4",
+          "place_widget": [
+            {
+              "id": "checkCart",
+              "isOn": true
+            }
+          ]
+        }
+      ]
+    },
+    "SB_BUS_PW_5": {
+      "widget_title": "Who bought this also bought",
+      "isOn": true,
+      "widget_handle": "also-bought",
+      "product_handle": "livingston-demilune-console-umber",
+      "settings": [
+        {
+          "header": {
+            "option": "30px",
+            "title": "Who bought this also bought"
+          },
+          "product_name_size": "15px",
+          "product_price_size": "15px",
+          "call_action": "15px",
+          "add_cart_button": false,
+          "number_product_to_show": "6",
+          "max_product_slide": "2",
+          "place_widget": [
+            {
+              "specificPages": {
+                "isOn": true,
+                "page": "Products"
+              }
+            }
+          ]
+        },
+        {
+          "header": {
+            "option": "25px",
+            "title": "Who bought this also bought 2"
+          },
+          "product_name_size": "14px",
+          "product_price_size": "14px",
+          "call_action": "14px",
+          "add_cart_button": true,
+          "number_product_to_show": "7",
+          "max_product_slide": "4",
+          "place_widget": [
+            {
+              "specificPages": {
+                "isOn": true,
+                "page": "Collections"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "SB_BUS_PW_4": {
+      "widget_title": "Best sellers",
+      "widget_handle": "best-seller",
+      "isOn": true,
+      "product_handle": "livingston-demilune-console-umber",
+      "settings": [
+        {
+          "header": {
+            "option": "30px",
+            "title": "Best sellers"
+          },
+          "product_name_size": "15px",
+          "product_price_size": "15px",
+          "call_action": "15px",
+          "add_cart_button": false,
+          "number_product_to_show": "6",
+          "max_product_slide": "2",
+          "place_widget": [
+            {
+              "id": "checkHome",
+              "isOn": true
+            },
+            {
+              "id": "checkProduct",
+              "isOn": true,
+              "specificPages": {
+                "isOn": true,
+                "page": "Products"
+              }
+            }
+          ]
+        },
+        {
+          "header": {
+            "option": "25px",
+            "title": "Best sellers - Product"
+          },
+          "product_name_size": "14px",
+          "product_price_size": "14px",
+          "call_action": "14px",
+          "add_cart_button": true,
+          "number_product_to_show": "8",
+          "max_product_slide": "4",
+          "place_widget": [
+            {
+              "id": "checkHome",
+              "isOn": true
+            },
+            {
+              "id": "checkProduct",
+              "isOn": true,
+              "specificPages": {
+                "isOn": true,
+                "page": "Collections"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

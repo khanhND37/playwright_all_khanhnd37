@@ -1,0 +1,163 @@
+{
+  "env": {
+    "local": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-member-prod.onshopbase.com",
+      "shop_name": "au-member-prod",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "user_id": 73782,
+      "shop_id": 10381973
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-members.myshopbase.net",
+      "shop_name": "au-members",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "user_id": 73800,
+      "shop_id": 10323172
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-members-podtest.onshopbase.com",
+      "shop_name": "au-members-podtest",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "user_id": 73782,
+      "shop_id": 10381972,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-member-prod.onshopbase.com",
+      "shop_name": "au-member-prod",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "user_id": 73782,
+      "shop_id": 10381973
+    }
+  },
+  "cases": {
+    "SB_SC_SCM_7": {
+      "button_cancel": "Cancel",
+      "btn_import": "Import",
+      "btn_import_member": "Import members",
+      "member_info": {
+        "img": "icon-user.ee92ec03.svg",
+        "last_signed_in": "-"
+      },
+      "data_import_member_success": {
+        "file_path": "./assets/shopbase_creator/member/import_success.csv",
+        "is_overwrite": false,
+        "button_import": "Import members"
+      },
+      "param_after": {
+        "keyword": "autotest@gmail.com"
+      },
+      "paging_param": {
+        "page": "1",
+        "limit": "50"
+      },
+      "list_data_import_member_false": [
+        {
+          "description": "Import file định dạng khác CSV",
+          "file_path": "./assets/shopbase_creator/member/import_fail_invalid_extension.pdf",
+          "is_overwrite": false,
+          "button_import": "Import members"
+        },
+        {
+          "description": "Import file bị thiếu field",
+          "file_path": "./assets/shopbase_creator/member/import_fail_deficient_column.csv",
+          "is_overwrite": false,
+          "button_import": "Import members"
+        },
+        {
+          "description": "Import file bị thừa field",
+          "file_path": "./assets/shopbase_creator/member/import_fail_redundant_column.csv",
+          "is_overwrite": false,
+          "button_import": "Import members"
+        }
+      ]
+    },
+    "SB_SC_SCM_8": {
+      "data_create_member": [
+        {
+          "first_name": "test",
+          "last_name": "ocg",
+          "note": "Create member by api",
+          "phone": "",
+          "calling_code": "84",
+          "tags": "",
+          "country_id": 237
+        },
+        {
+          "first_name": "test1",
+          "last_name": "ocg",
+          "note": "Create member by api",
+          "phone": "",
+          "calling_code": "84",
+          "tags": "",
+          "country_id": 237
+        },
+        {
+          "first_name": "test2",
+          "last_name": "ocg",
+          "note": "Create member by api",
+          "phone": "",
+          "calling_code": "84",
+          "tags": "",
+          "country_id": 237
+        },
+        {
+          "first_name": "LinDo",
+          "last_name": "ocg",
+          "note": "Create member by api",
+          "phone": "",
+          "calling_code": "84",
+          "tags": "",
+          "country_id": 237
+        },
+        {
+          "first_name": "LinDa",
+          "last_name": "ocg",
+          "note": "Create member by api",
+          "phone": "",
+          "calling_code": "84",
+          "tags": "",
+          "country_id": 237
+        }
+      ],
+      "btn_export": "Export",
+      "button_cancel": "Cancel",
+      "button_export_member": "Export members",
+      "data_export_member": [
+        {
+          "description": "Export all member",
+          "export_member": "all",
+          "export_as": "csv",
+          "message": "Exported 5 members successfully."
+        },
+        {
+          "description": "Export all member",
+          "export_member": "current_page",
+          "export_as": "csv",
+          "message": "Exported 5 members successfully."
+        },
+        {
+          "description": "Export all member",
+          "export_member": "all",
+          "export_as": "plain_csv",
+          "message": "Exported 5 members successfully."
+        },
+        {
+          "description": "Export all member",
+          "export_member": "current_page",
+          "export_as": "plain_csv",
+          "message": "Exported 5 members successfully."
+        }
+      ],
+      "keyword": "Diana"
+    }
+  }
+}

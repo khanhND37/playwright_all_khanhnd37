@@ -1,0 +1,184 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "shop_name": "au-prod-export-product",
+      "domain": "au-prod-export-product.onshopbase.com",
+      "user_id": 11222541,
+      "shop_id": 10435866,
+      "username": "export_product@mailtothis.com",
+      "password": "Khanh@123",
+      "info_shop_second": {
+        "domain": "au-prod-export-product-shop-clone.onshopbase.com",
+        "shop_name": "au-prod-export-product-shop-clone",
+        "shop_id": 10437015
+      }
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "shop_name": "au-prodtest-export-product",
+      "domain": "au-prodtest-export-product.onshopbase.com",
+      "user_id": 11222541,
+      "shop_id": 10436544,
+      "username": "export_product@mailtothis.com",
+      "password": "Khanh@123",
+      "info_shop_second": {
+        "domain": "au-prodtest-export-product-shop-clone.onshopbase.com",
+        "shop_name": "au-prodtest-export-product-shop-clone",
+        "shop_id": 10437016
+      }
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "shop_name": "au-dev-export-product",
+      "domain": "au-dev-export-product.myshopbase.net",
+      "user_id": 90467,
+      "shop_id": 10327878,
+      "username": "export_product@mailtothis.com",
+      "password": "Khanh@123",
+      "info_shop_second": {
+        "domain": "au-dev-export-product-shop-import.myshopbase.net",
+        "shop_name": "au-dev-export-product-shop-import",
+        "shop_id": 10327909
+      }
+    },
+    "local": {
+      "api": "https://gapi.dev.shopbase.net",
+      "shop_name": "au-dev-export-product",
+      "domain": "au-dev-export-product.myshopbase.net",
+      "user_id": 90467,
+      "shop_id": 10327878,
+      "username": "export_product@mailtothis.com",
+      "password": "Khanh@123",
+      "info_shop_second": {
+        "domain": "au-dev-export-product-shop-import.myshopbase.net",
+        "shop_name": "au-dev-export-product-shop-import",
+        "shop_id": 10327909
+      }
+    }
+  },
+  "cases": {
+    "SB_PRO_EXP_164": {
+      "collection": "export_product",
+      "export_info": {
+        "product_export": "Selected products",
+        "file_format": "CSV for Excel, Numbers, or other spreadsheet programs"
+      },
+      "forder_name": "shopbase",
+      "product_title": ["Error Sweatshirt", "Danger Hoodie"],
+      "quantity_product": 2
+    },
+    "SB_PRO_EXP_163": {
+      "export_info": {
+        "product_export": "Current page",
+        "file_format": "CSV for Excel, Numbers, or other spreadsheet programs"
+      },
+      "forder_name": "shopbase",
+      "info_param_1": { "limit_product": 50, "page_product": 1 },
+      "info_param_2": { "limit_product": 50, "page_product": 2 },
+      "export_message": "Your products are being exported. You'll receive the CSV file via email after all products are exported successfully"
+    },
+    "SB_PRO_EXP_162": {
+      "export_info": {
+        "product_export": "All products",
+        "file_format": "CSV for Excel, Numbers, or other spreadsheet programs"
+      },
+      "forder_name": "shopbase",
+      "info_param": { "limit_product": 60, "page_product": 1 },
+      "export_message": "Your products are being exported. You'll receive the CSV file via email after all products are exported successfully"
+    },
+    "SB_PRO_EXP_161": {
+      "title_content": "Hoodie",
+      "export_info": {
+        "product_export": "Selected products",
+        "file_format": "CSV for Excel, Numbers, or other spreadsheet programs"
+      },
+      "forder_name": "shopbase",
+      "product_title": [
+        "If Only You Knew Hoodie",
+        "Error Hoodie",
+        "Expensive Taste Hoodie",
+        "Hood Vibes Hoodie",
+        "Danger Hoodie"
+      ],
+      "quantity_product": 5
+    },
+    "SB_PRO_EXP_160": {
+      "export_product": [
+        {
+          "step_export": "export 10 products",
+          "collection": "10_products",
+          "export_info": {
+            "product_export": "Selected products",
+            "file_format": "CSV for Excel, Numbers, or other spreadsheet programs"
+          },
+          "forder_name": "shopbase",
+          "quantity_product": 10
+        },
+        {
+          "step_export": "export 20 products",
+          "collection": "20_products",
+          "export_info": {
+            "product_export": "Selected products",
+            "file_format": "CSV for Excel, Numbers, or other spreadsheet programs"
+          },
+          "forder_name": "shopbase",
+          "quantity_product": 20
+        },
+        {
+          "step_export": "export 21 products",
+          "collection": "21_products",
+          "export_info": {
+            "product_export": "Selected products",
+            "file_format": "CSV for Excel, Numbers, or other spreadsheet programs"
+          },
+          "forder_name": "shopbase",
+          "quantity_product": 21,
+          "export_message": "Your products are being exported. You'll receive the CSV file via email after all products are exported successfully"
+        }
+      ]
+    },
+    "SB_PRO_EXP_75": {
+      "product_title": "Danger Hoodie",
+      "export_info": {
+        "ads_optimization": true,
+        "product_export": "Selected products",
+        "file_format": "CSV for Excel, Numbers, or other spreadsheet programs"
+      },
+      "forder_name": "shopbase",
+      "quantity_product": 1,
+      "verify_fields_file_csv": [
+        {
+          "colomn": "Tags",
+          "tags": "track-id"
+        },
+        {
+          "colomn": "Available On Listing Pages",
+          "available_on_listing_pages": "TRUE"
+        },
+        {
+          "colomn": "Available On Sitemap Files",
+          "available_on_sitemap_files": "TRUE"
+        },
+        {
+          "colomn": "Variant Tag"
+        }
+      ]
+    },
+    "SB_PRO_EXP_10": {
+      "product_title": "Product don't track",
+      "export_info": {
+        "ads_optimization": true,
+        "product_export": "Selected products",
+        "file_format": "CSV for Excel, Numbers, or other spreadsheet programs"
+      },
+      "forder_name": "shopbase",
+      "quantity_product": 1,
+      "verify_field_variant_inventory": "continue",
+      "product_detail": {
+        "title": "Product don't track",
+        "size": ["S", "M"]
+      }
+    }
+  }
+}

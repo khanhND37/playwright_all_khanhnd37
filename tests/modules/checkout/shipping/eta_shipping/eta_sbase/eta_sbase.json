@@ -1,0 +1,153 @@
+{
+  "api": "https://gapi.dev.shopbase.net",
+  "domain": "au-eta-shopbase.myshopbase.net",
+  "shop_name": "au-eta-shopbase",
+  "user_id": 90009,
+  "shop_id": 10334377,
+  "username": "opay-qe-1@beeketing.net",
+  "password": "Z6el|q4&:hwCrVx",
+
+  "customer_info": {
+    "email": "buyer@shopbase.com",
+    "first_name": "John",
+    "last_name": "Vardy",
+    "address": "1600 W Loop S",
+    "country": "United States",
+    "state": "Texas",
+    "city": "Houston",
+    "zipcode": "77027",
+    "phone_number": "505-646-2276"
+  },
+
+  "product": [
+    {
+      "name": "Bikini",
+      "quantity": 1
+    }
+  ],
+
+  "shipping_zones_reset": [
+    {
+      "name": "AUTO_ETA_ZONE (NO EDIT)",
+      "price_based_shipping_rate": [
+        {
+          "name": "Auto standard shipping",
+          "min_shipping_time": 0,
+          "max_shipping_time": 0,
+          "update_fields": ["min_shipping_time", "max_shipping_time"]
+        },
+        {
+          "name": "Auto fast shipping",
+          "min_shipping_time": 0,
+          "max_shipping_time": 0,
+          "update_fields": ["min_shipping_time", "max_shipping_time"]
+        }
+      ],
+      "update_fields": ["price_based_shipping_rate"]
+    }
+  ],
+
+  "cases": {
+    "ETA_SBASE_DRIVEN": [
+      {
+        "case_id": "SB_ETA_184",
+        "case_name": "Verify ETA delivery date khi có 2 setting eta hợp lệ",
+        "shipping_zones": [
+          {
+            "name": "AUTO_ETA_ZONE (NO EDIT)",
+            "price_based_shipping_rate": [
+              {
+                "name": "Auto standard shipping",
+                "min_shipping_time": 3,
+                "max_shipping_time": 5,
+                "update_fields": ["min_shipping_time", "max_shipping_time"]
+              },
+              {
+                "name": "Auto fast shipping",
+                "min_shipping_time": 4,
+                "max_shipping_time": 7,
+                "update_fields": ["min_shipping_time", "max_shipping_time"]
+              }
+            ],
+            "update_fields": ["price_based_shipping_rate"]
+          }
+        ]
+      },
+      {
+        "case_id": "SB_ETA_183",
+        "case_name": "Verify ETA delivery date khi setting eta From và To hợp lệ",
+        "shipping_zones": [
+          {
+            "name": "AUTO_ETA_ZONE (NO EDIT)",
+            "price_based_shipping_rate": [
+              {
+                "name": "Auto standard shipping",
+                "min_shipping_time": 3,
+                "max_shipping_time": 5,
+                "update_fields": ["min_shipping_time", "max_shipping_time"]
+              }
+            ],
+            "update_fields": ["price_based_shipping_rate"]
+          }
+        ]
+      },
+      {
+        "case_id": "SB_ETA_182",
+        "case_name": "Verify ETA delivery date khi setting eta time From = 0 và To khác 0",
+        "shipping_zones": [
+          {
+            "name": "AUTO_ETA_ZONE (NO EDIT)",
+            "price_based_shipping_rate": [
+              {
+                "name": "Auto standard shipping",
+                "min_shipping_time": 0,
+                "max_shipping_time": 2,
+                "update_fields": ["min_shipping_time", "max_shipping_time"]
+              }
+            ],
+            "update_fields": ["price_based_shipping_rate"]
+          }
+        ]
+      },
+      {
+        "case_id": "SB_ETA_181",
+        "case_name": "Verify Product-page ETA delivery date khi setting eta From khác 0 và To = 0",
+        "shipping_zones": [
+          {
+            "name": "AUTO_ETA_ZONE (NO EDIT)",
+            "price_based_shipping_rate": [
+              {
+                "name": "Auto standard shipping",
+                "min_shipping_time": 3,
+                "max_shipping_time": 0,
+                "update_fields": ["min_shipping_time", "max_shipping_time"]
+              }
+            ],
+            "update_fields": ["price_based_shipping_rate"]
+          }
+        ]
+      }
+    ]
+  },
+  "env": {
+    "prodtest": {
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-eta-shopbase-prodtest.onshopbase.com",
+      "shop_name": "au-eta-shopbase-prodtest",
+      "user_id": 11247306,
+      "shop_id": 10483970,
+      "username": "opay-qe-1@beeketing.net",
+      "password": "CZFX[b_G5T:+N*Y"
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-eta-shopbase.onshopbase.com",
+      "shop_name": "au-eta-shopbase",
+      "user_id": 11247306,
+      "shop_id": 10483971,
+      "username": "opay-qe-1@beeketing.net",
+      "password": "CZFX[b_G5T:+N*Y"
+    }
+  }
+}

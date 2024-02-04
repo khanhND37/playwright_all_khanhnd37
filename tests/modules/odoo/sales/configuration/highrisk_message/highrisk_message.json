@@ -1,0 +1,19 @@
+{
+  "domain": "odoo.dev.shopbase.net",
+  "account": "admin",
+  "password": "admin",
+  "cases": {
+    "TC_SB_CHE_SC_HR_PL_1": {
+      "internal_ref": "SKU",
+      "message": "This product is manufactured by {{ .store.name }}. if there is any problem with shipping and product quality, please contact us via {{ .store.customer_email }}",
+      "url_highrisk_page": "http://odoo.dev.shopbase.net/web#action=458&model=product.high_risk_messages&view_type=list&cids=&menu_id=245",
+      "message_param": "Product image is for illustrative purposes only."
+    }
+  },
+  "env": {
+    "prodtest": {
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://prod-test-api.shopbase.com"
+    }
+  }
+}

@@ -1,0 +1,1826 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "accounts_domain": "accounts.dev.shopbase.net",
+      "domain": "au-layout-tool-dev.myshopbase.net",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_name": "au-layout-tool-dev",
+      "user_id": 90252,
+      "shop_id": 10328320,
+      "theme_id": 3172000
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "accounts_domain": "accounts-test.shopbase.com",
+      "domain": "au-layout-tool-prodtest.onshopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_name": "au-layout-tool-prodtest",
+      "user_id": 11260206,
+      "shop_id": 10441865,
+      "theme_id": 1440935
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "accounts_domain": "accounts.shopbase.com",
+      "domain": "au-layout-tool-prod.onshopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_name": "au-layout-tool-prod",
+      "user_id": 11260206,
+      "shop_id": 10443059,
+      "theme_id": 1447964
+    }
+  },
+  "cases": {
+    "SB_WEB_BUILDER_EL_14": {
+      "data": [
+        {
+          "dnd_section": {
+            "from": {
+              "category": "Basics",
+              "template": "Single column"
+            },
+            "to": {
+              "position": {
+                "section": 0
+              }
+            }
+          },
+          "expected": {
+            "count_row": 1,
+            "count_column": 1,
+            "width_column": [12],
+            "padding_section": "64px 0px",
+            "padding_row": "16px 0px",
+            "gutter": "32px"
+          }
+        },
+        {
+          "dnd_section": {
+            "from": {
+              "category": "Basics",
+              "template": "1:1"
+            },
+            "to": {
+              "position": {
+                "section": 1
+              }
+            }
+          },
+          "expected": {
+            "count_row": 1,
+            "count_column": 2,
+            "width_column": [6, 6],
+            "padding_section": "64px 0px",
+            "padding_row": "16px 0px",
+            "gutter": "32px"
+          }
+        },
+        {
+          "dnd_section": {
+            "from": {
+              "category": "Basics",
+              "template": "1:1:1"
+            },
+            "to": {
+              "position": {
+                "section": 1
+              }
+            }
+          },
+          "expected": {
+            "count_row": 1,
+            "count_column": 3,
+            "width_column": [4, 4, 4],
+            "padding_section": "64px 0px",
+            "padding_row": "16px 0px",
+            "gutter": "32px"
+          }
+        },
+        {
+          "dnd_section": {
+            "from": {
+              "category": "Basics",
+              "template": "1:2"
+            },
+            "to": {
+              "position": {
+                "section": 1
+              }
+            }
+          },
+          "expected": {
+            "count_row": 1,
+            "count_column": 2,
+            "width_column": [4, 8],
+            "padding_section": "64px 0px",
+            "padding_row": "16px 0px",
+            "gutter": "32px"
+          }
+        },
+        {
+          "dnd_section": {
+            "from": {
+              "category": "Basics",
+              "template": "2:1"
+            },
+            "to": {
+              "position": {
+                "section": 1
+              }
+            }
+          },
+          "expected": {
+            "count_row": 1,
+            "count_column": 2,
+            "width_column": [8, 4],
+            "padding_section": "64px 0px",
+            "padding_row": "16px 0px",
+            "gutter": "32px"
+          }
+        },
+        {
+          "dnd_section": {
+            "from": {
+              "category": "Basics",
+              "template": "1:2:1"
+            },
+            "to": {
+              "position": {
+                "section": 1
+              }
+            }
+          },
+          "expected": {
+            "count_row": 1,
+            "count_column": 3,
+            "width_column": [3, 6, 3],
+            "padding_section": "64px 0px",
+            "padding_row": "16px 0px",
+            "gutter": "32px"
+          }
+        },
+        {
+          "dnd_section": {
+            "from": {
+              "category": "Basics",
+              "template": "1:1:2"
+            },
+            "to": {
+              "position": {
+                "section": 1
+              }
+            }
+          },
+          "expected": {
+            "count_row": 1,
+            "count_column": 3,
+            "width_column": [3, 3, 6],
+            "padding_section": "64px 0px",
+            "padding_row": "16px 0px",
+            "gutter": "32px"
+          }
+        },
+        {
+          "dnd_section": {
+            "from": {
+              "category": "Basics",
+              "template": "2:1:1"
+            },
+            "to": {
+              "position": {
+                "section": 1
+              }
+            }
+          },
+          "expected": {
+            "count_row": 1,
+            "count_column": 3,
+            "width_column": [6, 3, 3],
+            "padding_section": "64px 0px",
+            "padding_row": "16px 0px",
+            "gutter": "32px"
+          }
+        },
+        {
+          "dnd_section": {
+            "from": {
+              "category": "Basics",
+              "template": "1:1:1:1"
+            },
+            "to": {
+              "position": {
+                "section": 1
+              }
+            }
+          },
+          "expected": {
+            "count_row": 1,
+            "count_column": 4,
+            "width_column": [3, 3, 3, 3],
+            "padding_section": "64px 0px",
+            "padding_row": "16px 0px",
+            "gutter": "32px"
+          }
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_EL_15": {
+      "data": [
+        {
+          "dnd_section": {
+            "from": {
+              "category": "Basics",
+              "template": "Single column"
+            },
+            "to": {
+              "position": {
+                "section": 0
+              }
+            }
+          },
+          "expected": {
+            "count_row": 1,
+            "count_column": 1,
+            "padding_section": "32px 0px",
+            "padding_row": "10px 0px",
+            "gutter": "16px"
+          }
+        },
+        {
+          "dnd_section": {
+            "from": {
+              "category": "Basics",
+              "template": "1:1"
+            },
+            "to": {
+              "position": {
+                "section": 1
+              }
+            }
+          },
+          "expected": {
+            "count_row": 1,
+            "count_column": 2,
+            "padding_section": "32px 0px",
+            "padding_row": "10px 0px",
+            "gutter": "16px"
+          }
+        },
+        {
+          "dnd_section": {
+            "from": {
+              "category": "Basics",
+              "template": "1:1:1"
+            },
+            "to": {
+              "position": {
+                "section": 1
+              }
+            }
+          },
+          "expected": {
+            "count_row": 1,
+            "count_column": 3,
+            "padding_section": "32px 0px",
+            "padding_row": "10px 0px",
+            "gutter": "16px"
+          }
+        },
+        {
+          "dnd_section": {
+            "from": {
+              "category": "Basics",
+              "template": "1:2"
+            },
+            "to": {
+              "position": {
+                "section": 1
+              }
+            }
+          },
+          "expected": {
+            "count_row": 1,
+            "count_column": 2,
+            "padding_section": "32px 0px",
+            "padding_row": "10px 0px",
+            "gutter": "16px"
+          }
+        },
+        {
+          "dnd_section": {
+            "from": {
+              "category": "Basics",
+              "template": "2:1"
+            },
+            "to": {
+              "position": {
+                "section": 1
+              }
+            }
+          },
+          "expected": {
+            "count_row": 1,
+            "count_column": 2,
+            "padding_section": "32px 0px",
+            "padding_row": "10px 0px",
+            "gutter": "16px"
+          }
+        },
+        {
+          "dnd_section": {
+            "from": {
+              "category": "Basics",
+              "template": "1:2:1"
+            },
+            "to": {
+              "position": {
+                "section": 1
+              }
+            }
+          },
+          "expected": {
+            "count_row": 1,
+            "count_column": 3,
+            "padding_section": "32px 0px",
+            "padding_row": "10px 0px",
+            "gutter": "16px"
+          }
+        },
+        {
+          "dnd_section": {
+            "from": {
+              "category": "Basics",
+              "template": "1:1:2"
+            },
+            "to": {
+              "position": {
+                "section": 1
+              }
+            }
+          },
+          "expected": {
+            "count_row": 1,
+            "count_column": 3,
+            "padding_section": "32px 0px",
+            "padding_row": "10px 0px",
+            "gutter": "16px"
+          }
+        },
+        {
+          "dnd_section": {
+            "from": {
+              "category": "Basics",
+              "template": "2:1:1"
+            },
+            "to": {
+              "position": {
+                "section": 1
+              }
+            }
+          },
+          "expected": {
+            "count_row": 1,
+            "count_column": 3,
+            "padding_section": "32px 0px",
+            "padding_row": "10px 0px",
+            "gutter": "16px"
+          }
+        },
+        {
+          "dnd_section": {
+            "from": {
+              "category": "Basics",
+              "template": "1:1:1:1"
+            },
+            "to": {
+              "position": {
+                "section": 1
+              }
+            }
+          },
+          "expected": {
+            "count_row": 1,
+            "count_column": 4,
+            "padding_section": "32px 0px",
+            "padding_row": "10px 0px",
+            "gutter": "16px"
+          }
+        }
+      ],
+      "expected_width_desktop": [[12], [3, 3, 3, 3], [6, 3, 3], [3, 3, 6], [3, 6, 3], [8, 4], [4, 8], [4, 4, 4], [6, 6]]
+    },
+    "SB_WEB_BUILDER_EL_17": {
+      "dnd_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        }
+      },
+      "designs": [
+        {
+          "height": {
+            "label": "height",
+            "value": {
+              "value": 0,
+              "unit": "Auto"
+            }
+          }
+        },
+        {
+          "height": {
+            "label": "height",
+            "value": {
+              "value": 550,
+              "unit": "Px"
+            }
+          }
+        },
+        {
+          "height": {
+            "label": "height",
+            "value": {
+              "value": 50,
+              "unit": "%"
+            }
+          }
+        }
+      ],
+      "resizes": [500, 600, 700],
+      "expected": {
+        "space_add_with_resize": "8px"
+      }
+    },
+    "SB_WEB_BUILDER_EL_18": {
+      "dnd_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        }
+      },
+      "change_design": {
+        "background": {
+          "color": {
+            "code": "color_3",
+            "opacity": 100
+          },
+          "mode": "color"
+        }
+      },
+      "data": [
+        {
+          "section_index": 0,
+          "key_snapshot": "first",
+          "action": "Move down"
+        },
+        {
+          "section_index": 2,
+          "key_snapshot": "third",
+          "action": "Move up"
+        }
+      ],
+      "expected": {
+        "saved": "All changes are saved"
+      }
+    },
+    "SB_WEB_BUILDER_EL_19": {
+      "dnd_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 0
+          }
+        }
+      },
+      "change_design": {
+        "background": {
+          "color": {
+            "code": "color_3",
+            "opacity": 100
+          },
+          "mode": "color"
+        }
+      },
+      "expected": {
+        "saved": "All changes are saved"
+      }
+    },
+    "SB_WEB_BUILDER_EL_20": {
+      "dnd_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 0
+          }
+        }
+      },
+      "change_design": {
+        "background": {
+          "color": {
+            "code": "color_3",
+            "opacity": 100
+          },
+          "mode": "color"
+        }
+      },
+      "expected": {
+        "saved": "All changes are saved",
+        "color": "--color-3",
+        "total_section": 2
+      }
+    },
+    "SB_WEB_BUILDER_EL_22": {
+      "dnd_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 0
+          }
+        }
+      },
+      "change_design": {
+        "background": {
+          "color": {
+            "code": "color_3",
+            "opacity": 100
+          },
+          "mode": "color"
+        }
+      },
+      "expected": {
+        "saved": "All changes are saved"
+      }
+    },
+    "SB_WEB_BUILDER_EL_23": {
+      "dnd_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        }
+      },
+      "default_designs": [
+        {
+          "padding": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        },
+        {
+          "padding": {
+            "top": 60,
+            "right": 60,
+            "bottom": 60,
+            "left": 60
+          }
+        }
+      ],
+      "change_designs": [
+        {
+          "padding": {
+            "top": 0,
+            "bottom": 0,
+            "right": 20,
+            "left": 20
+          }
+        },
+        {
+          "padding": {
+            "top": 60,
+            "bottom": 60,
+            "right": 20,
+            "left": 20
+          }
+        }
+      ],
+      "section_name": ["A", "B"],
+      "resize_spacing": ["top", "bottom"],
+      "change_spacing": ["left", "right"],
+      "expected": {
+        "hover": [
+          {
+            "position": "top",
+            "opacity": 1,
+            "tooltip": ["0px", "60px"]
+          },
+          {
+            "position": "right",
+            "opacity": 1,
+            "tooltip": ["0px", "60px"]
+          },
+          {
+            "position": "bottom",
+            "opacity": 1,
+            "tooltip": ["0px", "60px"]
+          },
+          {
+            "position": "left",
+            "opacity": 1,
+            "tooltip": ["0px", "60px"]
+          }
+        ],
+        "spacing_top_bottom_design": ["80,0,80,0", "80,60,80,60"],
+        "spacing_top_bottom": 80,
+        "spacing_left_right": "20px"
+      }
+    },
+    "SB_WEB_BUILDER_EL_24": {
+      "dnd_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        }
+      },
+      "default_designs": [
+        {
+          "margin": {
+            "top": 6,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        },
+        {
+          "margin": {
+            "top": 60,
+            "right": 60,
+            "bottom": 60,
+            "left": 60
+          }
+        }
+      ],
+      "change_designs": [
+        {
+          "margin": {
+            "top": 6,
+            "bottom": 0,
+            "right": 20,
+            "left": 20
+          }
+        },
+        {
+          "margin": {
+            "top": 60,
+            "bottom": 60,
+            "right": 20,
+            "left": 20
+          }
+        }
+      ],
+      "section_name": ["A", "B"],
+      "resize_spacing": ["top", "bottom"],
+      "change_spacing": ["left", "right"],
+      "expected": {
+        "hover": [
+          {
+            "position": "top",
+            "opacity": 1,
+            "tooltip": ["6px", "60px"]
+          },
+          {
+            "position": "right",
+            "opacity": { "section_index_0": 0, "section_index_1": 1 },
+            "tooltip": ["0px", "60px"]
+          },
+          {
+            "position": "bottom",
+            "opacity": 1,
+            "tooltip": ["0px", "60px"]
+          },
+          {
+            "position": "left",
+            "opacity": { "section_index_0": 0, "section_index_1": 1 },
+            "tooltip": ["0px", "60px"]
+          }
+        ],
+        "spacing_top_bottom_design": ["80,0,80,0", "80,60,80,60"],
+        "spacing_top_bottom": 80,
+        "spacing_left_right": "20px"
+      }
+    },
+    "SB_WEB_BUILDER_EL_25": {
+      "dnd_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 0
+          }
+        }
+      },
+      "change_padding": {
+        "padding": {
+          "top": 130,
+          "right": 0,
+          "bottom": 130,
+          "left": 0
+        }
+      },
+      "add_rows": [
+        {
+          "id": "one-column",
+          "columns": [12]
+        },
+        {
+          "id": "two-column",
+          "columns": [6, 6]
+        },
+        {
+          "id": "three-column",
+          "columns": [4, 4, 4]
+        },
+        {
+          "id": "one-two",
+          "columns": [4, 8]
+        },
+        {
+          "id": "two-one",
+          "columns": [8, 4]
+        },
+        {
+          "id": "one-two-one",
+          "columns": [3, 6, 3]
+        },
+        {
+          "id": "one-one-two",
+          "columns": [3, 3, 6]
+        },
+        {
+          "id": "two-one-one",
+          "columns": [6, 3, 3]
+        },
+        {
+          "id": "four-column",
+          "columns": [3, 3, 3, 3]
+        }
+      ],
+      "expected": {
+        "space_add_with_resize": "8px",
+        "popover_add_row": [
+          {
+            "button": "beforeAddIndicatorRow",
+            "snapshot": "popover-add-row-25.png"
+          },
+          {
+            "button": "afterAddIndicatorRow",
+            "snapshot": "popover-add-row-25.png"
+          }
+        ],
+        "padding_row": "16px 0px",
+        "gutter": "32px"
+      }
+    },
+    "SB_WEB_BUILDER_EL_26": {
+      "dnd_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 0
+          }
+        }
+      },
+      "change_padding": {
+        "padding": {
+          "top": 150,
+          "right": 0,
+          "bottom": 150,
+          "left": 0
+        }
+      },
+      "add_rows": [
+        {
+          "id": "one-column",
+          "columns": [12]
+        },
+        {
+          "id": "two-column-vertical",
+          "columns": [12, 12]
+        },
+        {
+          "id": "three-column-vertical",
+          "columns": [12, 12, 12]
+        },
+        {
+          "id": "four-column-vertical",
+          "columns": [12, 12, 12]
+        }
+      ],
+      "expected": {
+        "space_add_with_resize": "8px",
+        "popover_add_row": [
+          {
+            "button": "beforeAddIndicatorRow",
+            "snapshot": "popover-add-row-26.png"
+          },
+          {
+            "button": "afterAddIndicatorRow",
+            "snapshot": "popover-add-row-26.png"
+          }
+        ],
+        "padding_row": "10px 16px",
+        "gutter": "16px"
+      }
+    },
+    "SB_WEB_BUILDER_EL_27": {
+      "dnd_section": {
+        "from": {
+          "category": "Basics",
+          "template": "1:1:1"
+        },
+        "to": {
+          "position": {
+            "section": 0
+          }
+        }
+      },
+      "change_padding": {
+        "padding": {
+          "top": 100,
+          "right": 0,
+          "bottom": 100,
+          "left": 0
+        }
+      },
+      "change_spacing": {
+        "layouts": {
+          "gutter": 32
+        }
+      },
+      "expected": {
+        "snapshot_hover_gutter": "hover_gutter_27.png",
+        "snapshot_resizing_gutter": "hover_resizing_27.png",
+        "gutter": 20
+      }
+    },
+    "SB_WEB_BUILDER_EL_28": {
+      "dnd_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 0
+          }
+        }
+      },
+      "designs": [
+        {
+          "height": {
+            "label": "height",
+            "value": {
+              "value": 450,
+              "unit": "Px"
+            }
+          }
+        },
+        {
+          "height": {
+            "label": "height",
+            "value": {
+              "value": 50,
+              "unit": "%"
+            }
+          }
+        },
+        {
+          "height": {
+            "label": "height",
+            "value": {
+              "value": 0,
+              "unit": "Fill"
+            }
+          }
+        }
+      ],
+      "expected": {
+        "height": [400, 500, 400, 400]
+      }
+    },
+    "SB_WEB_BUILDER_EL_29": {
+      "dnd_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 0
+          }
+        }
+      },
+      "change_padding": {
+        "padding": {
+          "top": 130,
+          "right": 0,
+          "bottom": 130,
+          "left": 0
+        }
+      },
+      "add_rows": [
+        {
+          "id": "one-column",
+          "columns": [12]
+        },
+        {
+          "id": "two-column",
+          "columns": [6, 6]
+        },
+        {
+          "id": "three-column",
+          "columns": [4, 4, 4]
+        },
+        {
+          "id": "one-two",
+          "columns": [4, 8]
+        },
+        {
+          "id": "two-one",
+          "columns": [8, 4]
+        },
+        {
+          "id": "one-two-one",
+          "columns": [3, 6, 3]
+        },
+        {
+          "id": "one-one-two",
+          "columns": [3, 3, 6]
+        },
+        {
+          "id": "two-one-one",
+          "columns": [6, 3, 3]
+        },
+        {
+          "id": "four-column",
+          "columns": [3, 3, 3, 3]
+        }
+      ],
+      "expected": {
+        "snapshot_popover_layout": "popover_layout_29.png",
+        "padding_row": "16px 0px",
+        "gutter": "32px"
+      }
+    },
+    "SB_WEB_BUILDER_EL_30": {
+      "dnd_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 0
+          }
+        }
+      },
+      "change_padding": {
+        "padding": {
+          "top": 150,
+          "right": 0,
+          "bottom": 150,
+          "left": 0
+        }
+      },
+      "add_rows": [
+        {
+          "id": "one-column",
+          "columns": [12]
+        },
+        {
+          "id": "two-column-vertical",
+          "columns": [12, 12]
+        },
+        {
+          "id": "three-column-vertical",
+          "columns": [12, 12, 12]
+        },
+        {
+          "id": "four-column-vertical",
+          "columns": [12, 12, 12]
+        }
+      ],
+      "expected": {
+        "snapshot_popover_layout": "popover_layout_30.png",
+        "padding_row": "10px 16px",
+        "gutter": "16px"
+      }
+    },
+    "SB_WEB_BUILDER_EL_31": {
+      "dnd_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 0
+          }
+        }
+      },
+      "add_rows": [
+        {
+          "default_design": {
+            "background": {
+              "color": {
+                "code": "color_3",
+                "opacity": 100
+              },
+              "mode": "color"
+            }
+          }
+        },
+        {
+          "layout": "four-column",
+          "default_design": {
+            "background": {
+              "color": {
+                "code": "color_4",
+                "opacity": 100
+              },
+              "mode": "color"
+            }
+          }
+        }
+      ],
+      "expected": {
+        "snapshot_quick_bar_row_first": "quick_bar_row_first_31.png",
+        "snapshot_quick_bar_row_second": "quick_bar_row_second_31.png",
+        "background": {
+          "row1": "--color-3",
+          "row2": "--color-4"
+        },
+        "saved": "All changes are saved"
+      }
+    },
+    "SB_WEB_BUILDER_EL_32": {
+      "dnd_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 0
+          }
+        }
+      },
+      "change_design": {
+        "background": {
+          "color": {
+            "code": "color_3",
+            "opacity": 100
+          },
+          "mode": "color"
+        }
+      },
+      "expected": {
+        "saved": "All changes are saved"
+      }
+    },
+    "SB_WEB_BUILDER_EL_33": {
+      "dnd_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 0
+          }
+        }
+      },
+      "add_rows": [
+        {
+          "default_design": {
+            "background": {
+              "color": {
+                "code": "color_3",
+                "opacity": 100
+              },
+              "mode": "color"
+            }
+          }
+        },
+        {
+          "layout": "four-column",
+          "default_design": {
+            "background": {
+              "color": {
+                "code": "color_4",
+                "opacity": 100
+              },
+              "mode": "color"
+            }
+          }
+        }
+      ],
+      "expected": {
+        "total_row": 1,
+        "color_row_2": "--color-4",
+        "saved": "All changes are saved"
+      }
+    },
+    "SB_WEB_BUILDER_EL_34": {
+      "dnd_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 0
+          }
+        }
+      },
+      "add_rows": [
+        {
+          "default_design": {
+            "padding": {
+              "top": 10,
+              "left": 0,
+              "bottom": 0,
+              "right": 0
+            }
+          }
+        },
+        {
+          "layout": "four-column",
+          "default_design": {
+            "padding": {
+              "top": 60,
+              "left": 60,
+              "bottom": 60,
+              "right": 60
+            }
+          }
+        }
+      ],
+      "hover": [
+        {
+          "position": "top",
+          "tooltip": ["10px", "60px"]
+        },
+        {
+          "position": "right",
+          "tooltip": ["0px", "60px"]
+        },
+        {
+          "position": "bottom",
+          "tooltip": ["0px", "60px"]
+        },
+        {
+          "position": "left",
+          "tooltip": ["0px", "60px"]
+        }
+      ],
+      "section_name": ["A", "B"],
+      "resize_spacing": ["top", "bottom"],
+      "change_spacing": ["left", "right"],
+      "change_designs": [
+        {
+          "padding": {
+            "top": 10,
+            "bottom": 0,
+            "right": 20,
+            "left": 20
+          }
+        },
+        {
+          "padding": {
+            "top": 60,
+            "bottom": 60,
+            "right": 20,
+            "left": 20
+          }
+        }
+      ],
+      "expected": {
+        "opacity": "1",
+        "spacing_top_bottom_design": ["80,0,80,0", "80,60,80,60"],
+        "spacing_top_bottom": 80,
+        "spacing_left_right": "20px"
+      }
+    },
+    "SB_WEB_BUILDER_EL_35": {
+      "dnd_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 0
+          }
+        }
+      },
+      "add_rows": [
+        {
+          "default_design": {
+            "margin": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        },
+        {
+          "layout": "four-column",
+          "default_design": {
+            "margin": {
+              "top": 60,
+              "right": 60,
+              "bottom": 60,
+              "left": 60
+            }
+          }
+        }
+      ],
+      "hover": [
+        {
+          "position": "top",
+          "tooltip": ["0px", "60px"]
+        },
+        {
+          "position": "right",
+          "tooltip": ["0px", "60px"]
+        },
+        {
+          "position": "bottom",
+          "tooltip": ["0px", "60px"]
+        },
+        {
+          "position": "left",
+          "tooltip": ["0px", "60px"]
+        }
+      ],
+      "section_name": ["A", "B"],
+      "resize_spacing": ["top", "bottom"],
+      "change_spacing": ["left", "right"],
+      "change_designs": [
+        {
+          "margin": {
+            "top": 0,
+            "bottom": 0,
+            "right": 20,
+            "left": 20
+          }
+        },
+        {
+          "margin": {
+            "top": 60,
+            "bottom": 60,
+            "right": 20,
+            "left": 20
+          }
+        }
+      ],
+      "expected": {
+        "opacity": "1",
+        "spacing_top_bottom_design": ["80,0,80,0", "80,60,80,60"],
+        "spacing_top_bottom": 80,
+        "spacing_left_right": "20px"
+      }
+    },
+    "SECTION_MARGIN_PADDING": {
+      "data": [
+        {
+          "description": "Section_Check edit padding của section",
+          "case_id": "SB_WEB_BUILDER_EL_23",
+          "type": "padding"
+        },
+        {
+          "description": "Section_Check edit margin của section",
+          "case_id": "SB_WEB_BUILDER_EL_24",
+          "type": "margin"
+        }
+      ]
+    },
+    "ADD_ROW_DEVICE": {
+      "data": [
+        {
+          "description": "Row_Check add row mới khi click button add row ở màn desktop",
+          "case_id": "SB_WEB_BUILDER_EL_25",
+          "device": "desktop"
+        },
+        {
+          "description": "Row_Check add row mới khi click button add row ở màn mobile",
+          "case_id": "SB_WEB_BUILDER_EL_26",
+          "device": "mobile"
+        }
+      ]
+    },
+    "ADD_QUICKBAR_ROW_DEVICE": {
+      "data": [
+        {
+          "description": "Row_Quick bar_Check click button Add row trên quickbar ở màn desktop",
+          "case_id": "SB_WEB_BUILDER_EL_29",
+          "device": "desktop"
+        },
+        {
+          "description": "Row_Quickbar_Check add row mới khi click button add row ở màn mobile",
+          "case_id": "SB_WEB_BUILDER_EL_30",
+          "device": "mobile"
+        }
+      ]
+    },
+    "ROW_MARGIN_PADDING": {
+      "data": [
+        {
+          "description": "Row_Check edit padding của row",
+          "case_id": "SB_WEB_BUILDER_EL_34",
+          "type": "padding"
+        },
+        {
+          "description": "Row_Check edit margin của row",
+          "case_id": "SB_WEB_BUILDER_EL_35",
+          "type": "margin"
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_EL_36": {
+      "dnd_section_2_1": {
+        "from": {
+          "category": "Basics",
+          "template": "2:1"
+        },
+        "to": {
+          "position": {
+            "section": 0
+          }
+        }
+      },
+      "add_column": [
+        {
+          "position": "right",
+          "expected": {
+            "column_count": 3
+          }
+        },
+        {
+          "position": "left",
+          "expected": {
+            "column_count": 4
+          }
+        }
+      ],
+      "expected": {
+        "selected": "selected",
+        "disabled": "disable",
+        "column_in_preview_after_edited_snapshot": "36-38-Column-In-Preview-After-Edited.png"
+      }
+    },
+    "SB_WEB_BUILDER_EL_38": {
+      "dnd_section_2_1": {
+        "from": {
+          "category": "Basics",
+          "template": "2:1"
+        },
+        "to": {
+          "position": {
+            "section": 0
+          }
+        }
+      },
+      "expected": {
+        "selected": "selected",
+        "disabled": "disable",
+        "first_add_column_count": 3,
+        "second_add_column_count": 4,
+        "column_in_preview_after_edited_snapshot": "36-38-Column-In-Preview-After-Edited.png"
+      }
+    },
+    "SB_WEB_BUILDER_EL_39": {
+      "dnd_section_1_1": {
+        "from": {
+          "category": "Basics",
+          "template": "1:1"
+        },
+        "to": {
+          "position": {
+            "section": 0
+          }
+        }
+      },
+      "expected": {
+        "selected": "selected",
+        "disabled": "disable",
+        "first_add_column_count": 3,
+        "second_add_column_count": 4,
+        "column_in_preview_mobile_snapshot": "39-Column-In-Preview-Mobile.png"
+      }
+    },
+    "SB_WEB_BUILDER_EL_40": {
+      "dnd_section_1_2_1": {
+        "from": {
+          "category": "Basics",
+          "template": "1:2:1"
+        },
+        "to": {
+          "position": {
+            "section": 0
+          }
+        }
+      },
+      "edit_border": [
+        {
+          "border": {
+            "color": {
+              "code": "#2ECED4",
+              "opacity": 100
+            },
+            "side": "all",
+            "size": 1,
+            "style": "solid",
+            "thickness": "small"
+          }
+        },
+        {
+          "border": {
+            "color": {
+              "code": "#EE1717",
+              "opacity": 100
+            },
+            "side": "all",
+            "size": 4,
+            "style": "solid",
+            "thickness": "medium"
+          }
+        },
+        {
+          "border": {
+            "color": {
+              "code": "#17EE24",
+              "opacity": 100
+            },
+            "side": "all",
+            "size": 10,
+            "style": "solid",
+            "thickness": "medium"
+          }
+        }
+      ],
+      "expected": {
+        "selected": "selected",
+        "disabled": "disable",
+        "column_in_preview_snapshot": "40-Column-In-Preview.png"
+      }
+    },
+    "SB_WEB_BUILDER_EL_41": {
+      "dnd_section_1_1": {
+        "from": {
+          "category": "Basics",
+          "template": "1:1"
+        },
+        "to": {
+          "position": {
+            "section": 0
+          }
+        }
+      },
+      "edit_border": [
+        {
+          "border": {
+            "label": "border",
+            "value": {
+              "thickness": "s",
+              "color": {
+                "preset": 6,
+                "hexText": "#2ECED4"
+              }
+            }
+          }
+        },
+        {
+          "border": {
+            "label": "border",
+            "value": {
+              "thickness": "m",
+              "color": {
+                "preset": 6,
+                "hexText": "#EE1717"
+              }
+            }
+          }
+        }
+      ],
+      "expected": {
+        "selected": "selected",
+        "disabled": "disable",
+        "column_in_preview_mobile_snapshot": "41-Column-In-Preview-Mobile.png"
+      }
+    },
+    "SB_WEB_BUILDER_EL_42": {
+      "dnd_section_1_2": {
+        "from": {
+          "category": "Basics",
+          "template": "1:2"
+        },
+        "to": {
+          "position": {
+            "section": 0
+          }
+        }
+      },
+      "edit_border": [
+        {
+          "border": {
+            "label": "border",
+            "value": {
+              "thickness": "s",
+              "color": {
+                "preset": 6,
+                "hexText": "#2ECED4"
+              }
+            }
+          }
+        },
+        {
+          "border": {
+            "label": "border",
+            "value": {
+              "thickness": "m",
+              "color": {
+                "preset": 6,
+                "hexText": "#EE1717"
+              }
+            }
+          }
+        }
+      ],
+      "expected": {
+        "selected": "selected",
+        "disabled": "disable",
+        "column_count_first_duplicate": 3,
+        "first_duplicate_column_webfront_snapshot": "42-First-Duplicated-Column-Webfront.png",
+        "column_count_second_duplicate": 4,
+        "second_duplicate_column_webfront_snapshot": "42-Second-Duplicated-Column-Webfront.png",
+        "column_in_preview_snapshot": "42-Column-In-Preview.png"
+      }
+    },
+    "SB_WEB_BUILDER_EL_43": {
+      "dnd_section_1_2": {
+        "from": {
+          "category": "Basics",
+          "template": "1:2"
+        },
+        "to": {
+          "position": {
+            "section": 0
+          }
+        }
+      },
+      "edit_border": [
+        {
+          "border": {
+            "label": "border",
+            "value": {
+              "thickness": "s",
+              "color": {
+                "preset": 6,
+                "hexText": "#2ECED4"
+              }
+            }
+          }
+        },
+        {
+          "border": {
+            "label": "border",
+            "value": {
+              "thickness": "m",
+              "color": {
+                "preset": 6,
+                "hexText": "#EE1717"
+              }
+            }
+          }
+        }
+      ],
+      "expected": {
+        "selected": "selected",
+        "disabled": "disable",
+        "column_count_first_duplicate": 3,
+        "first_duplicate_column_webfront_snapshot": "43-First-Duplicated-Column-Webfront.png",
+        "column_count_second_duplicate": 4,
+        "second_duplicate_column_webfront_snapshot": "43-Second-Duplicated-Column-Webfront.png",
+        "column_in_preview_mobile_snapshot": "43-Column-In-Preview-Mobile.png"
+      }
+    },
+    "SB_WEB_BUILDER_EL_44": {
+      "dnd_section_1_2_1": {
+        "from": {
+          "category": "Basics",
+          "template": "1:2:1"
+        },
+        "to": {
+          "position": {
+            "section": 0
+          }
+        }
+      },
+      "expected": {
+        "columns_after_first_deleted": 2,
+        "columns_after_second_deleted": 1
+      }
+    },
+    "SB_WEB_BUILDER_EL_45": {
+      "dnd_section_1_1": {
+        "from": {
+          "category": "Basics",
+          "template": "1:1"
+        },
+        "to": {
+          "position": {
+            "section": 0
+          }
+        }
+      },
+      "full_width_on": {
+        "width": {
+          "label": "full_width",
+          "is_on": true
+        }
+      },
+      "increase_1_grid": 7,
+      "max_grid": 10,
+      "min_grid": 2,
+      "min_spacing": 0,
+      "expected": {
+        "selected": "selected",
+        "disabled": "disable",
+        "column_count_after_added": 3,
+        "first_resize": {
+          "first_column_grid": 7,
+          "second_column_grid": 5
+        },
+        "second_resize": {
+          "first_column_grid": 10,
+          "second_column_grid": 2
+        },
+        "third_resize": {
+          "first_column_grid": 4,
+          "second_column_grid": 2,
+          "third_column_grid": 6
+        }
+      }
+    },
+    "SB_WEB_BUILDER_EL_46": {
+      "dnd_section_1_1_1": {
+        "from": {
+          "category": "Basics",
+          "template": "1:1:1"
+        },
+        "to": {
+          "position": {
+            "section": 0
+          }
+        }
+      },
+      "edit_border": [
+        {
+          "border": {
+            "color": {
+              "code": "#2ECED4",
+              "opacity": 100
+            },
+            "side": "all",
+            "size": 8,
+            "style": "solid",
+            "thickness": "custom"
+          }
+        },
+        {
+          "border": {
+            "color": {
+              "code": "#EE1717",
+              "opacity": 100
+            },
+            "side": "all",
+            "size": 4,
+            "style": "solid",
+            "thickness": "medium"
+          }
+        },
+        {
+          "border": {
+            "color": {
+              "code": "#17EE24",
+              "opacity": 100
+            },
+            "side": "all",
+            "size": 10,
+            "style": "solid",
+            "thickness": "large"
+          }
+        }
+      ],
+      "min_spacing": 0,
+      "default_padding": 16,
+      "first_column_resize_grid_1": 7,
+      "first_column_resize_grid_2": 2,
+      "second_column_resize_grid_1": 6,
+      "second_column_resize_grid_2": 5,
+      "expected": {
+        "selected": "selected",
+        "disabled": "disable",
+        "first_resize_snapshot": "46-Mobile-First-Resize.png",
+        "second_resize_snapshot": "46-Mobile-Second-Resize.png",
+        "third_resize_snapshot": "46-Mobile-Third-Resize.png",
+        "fourth_resize_snapshot": "46-Mobile-Fourth-Resize.png"
+      }
+    },
+    "SB_WEB_BUILDER_EL_47": {
+      "dnd_section_2_1": {
+        "from": {
+          "category": "Basics",
+          "template": "2:1"
+        },
+        "to": {
+          "position": {
+            "section": 0
+          }
+        }
+      },
+      "edit_border_padding": [
+        {
+          "border": {
+            "color": {
+              "code": "#2ECED4",
+              "opacity": 100
+            },
+            "side": "all",
+            "size": 8,
+            "style": "solid",
+            "thickness": "custom"
+          },
+          "padding": {
+            "top": 0,
+            "left": 0,
+            "bottom": 0,
+            "right": 0
+          }
+        },
+        {
+          "border": {
+            "color": {
+              "code": "#EE1717",
+              "opacity": 100
+            },
+            "side": "all",
+            "size": 4,
+            "style": "solid",
+            "thickness": "medium"
+          },
+          "padding": {
+            "top": 60,
+            "left": 60,
+            "bottom": 60,
+            "right": 60
+          }
+        }
+      ],
+      "padding_column_positions": ["top", "bottom", "left", "right"],
+      "edit_padding_top": 80,
+      "edit_padding_bottom": 80,
+      "edit_padding_left": 20,
+      "edit_padding_right": 20,
+      "padding_left_default_column_2": 60,
+      "border_column_1": 8,
+      "border_column_2": 4,
+      "padding_css": {
+        "left": "width",
+        "right": "width",
+        "top": "height",
+        "bottom": "height"
+      },
+      "expected": {
+        "first_column": {
+          "padding_top_bottom_sidebar_after_edited": "80,0,80,0",
+          "padding_left_right_sidebar_after_edited": "80,20,80,20"
+        },
+        "second_column": {
+          "padding_top_bottom_sidebar_after_edited": "80,60,80,60",
+          "padding_left_right_sidebar_after_edited": "80,20,80,20"
+        }
+      }
+    }
+  }
+}

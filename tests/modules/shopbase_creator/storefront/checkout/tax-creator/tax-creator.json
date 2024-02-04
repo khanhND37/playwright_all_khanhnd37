@@ -1,0 +1,718 @@
+{
+  "env": {
+    "local": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-creator-tax.myshopbase.net",
+      "shop_name": "au-creator-tax",
+      "user_id": 73800,
+      "shop_id": 10326777,
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_template": {
+        "api": "https://gapi.dev.shopbase.net",
+        "domain": "shoptemplatecreatorrrrr.myshopbase.net",
+        "shop_name": "shoptemplatecreatorrrrr",
+        "user_id": 89251,
+        "shop_id": 10324501,
+        "username": "hungdinh@beeketing.net",
+        "password": "123qweASD!"
+      },
+      "hive_sbase_info": {
+        "domain": "hive.dev.shopbase.net",
+        "username": "shopbase",
+        "password": "123456"
+      },
+      "paypal_account": {
+        "id": "AfL2WyCQuIis451KPSSrSIgAAfFyiqFDgz5FPYAk4N8som1mrPVlgtK4CFZamgA8UP9GQzFfOGW6ELoP",
+        "secret_key": "EOU0iGeg1J7DEzcD9tVYBzjLD7ia_tWSQ9g9Ia-E-nK5DGenuZwXGJAtEGOY7m6pwgDD95uV0bGJGaCW"
+      },
+      "secret_key_spay": "sk_test_51H1pLkFErwnyyJdNcuQiQ35dY2WvmL1rpwCXBIjDq6vBVjcBvMBkY9oO07TFOM7pVApvm2jHuZYSrmbbUUbzX2Ub00iWWFxaFC",
+      "connected_account": "acct_1IPPCP2aXLQkRU8y",
+      "tax_rates": [
+        {
+          "country": "US",
+          "minItemValue": 20,
+          "maxItemValue": 100,
+          "taxName": "Tax US",
+          "taxRate": 10,
+          "categories": "country"
+        },
+        {
+          "country": "US",
+          "province": "CA",
+          "minItemValue": 20,
+          "maxItemValue": 100,
+          "taxName": "Tax cali",
+          "taxRate": 15,
+          "categories": "region"
+        }
+      ],
+      "customer_info": {
+        "email": "testerOCG@maildrop.cc",
+        "first_name": "Shopbase",
+        "last_name": "Auto"
+      },
+      "transaction_fee": 0.05
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-creator-tax.myshopbase.net",
+      "shop_name": "au-creator-tax",
+      "user_id": 73800,
+      "shop_id": 10326777,
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_template": {
+        "api": "https://gapi.dev.shopbase.net",
+        "domain": "shoptemplatecreatorrrrr.myshopbase.net",
+        "shop_name": "shoptemplatecreatorrrrr",
+        "user_id": 89251,
+        "shop_id": 10324501,
+        "username": "hungdinh@beeketing.net",
+        "password": "123qweASD!"
+      },
+      "hive_sbase_info": {
+        "domain": "hive.dev.shopbase.net",
+        "username": "shopbase",
+        "password": "123456"
+      },
+      "paypal_account": {
+        "id": "AfL2WyCQuIis451KPSSrSIgAAfFyiqFDgz5FPYAk4N8som1mrPVlgtK4CFZamgA8UP9GQzFfOGW6ELoP",
+        "secret_key": "EOU0iGeg1J7DEzcD9tVYBzjLD7ia_tWSQ9g9Ia-E-nK5DGenuZwXGJAtEGOY7m6pwgDD95uV0bGJGaCW"
+      },
+      "secret_key_spay": "sk_test_51H1pLkFErwnyyJdNcuQiQ35dY2WvmL1rpwCXBIjDq6vBVjcBvMBkY9oO07TFOM7pVApvm2jHuZYSrmbbUUbzX2Ub00iWWFxaFC",
+      "connected_account": "acct_1IPPCP2aXLQkRU8y",
+      "tax_rates": [
+        {
+          "country": "US",
+          "minItemValue": 20,
+          "maxItemValue": 100,
+          "taxName": "Tax US",
+          "taxRate": 10,
+          "categories": "country"
+        },
+        {
+          "country": "US",
+          "province": "CA",
+          "minItemValue": 20,
+          "maxItemValue": 100,
+          "taxName": "Tax cali",
+          "taxRate": 15,
+          "categories": "region"
+        }
+      ],
+      "customer_info": {
+        "email": "testerOCG@maildrop.cc",
+        "first_name": "Shopbase",
+        "last_name": "Auto"
+      },
+      "transaction_fee": 0.05
+    },
+    "prodtest": {
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://prod-test-api.shopbase.com"
+    }
+  },
+  "cases": {
+    "SB_TM_SC_TAX_50": {
+      "product_info": [
+        {
+          "name": "OPAY_TEST_2"
+        }
+      ],
+      "product_info_with_tax": [
+        {
+          "name": "OPAY_TEST_2",
+          "tax_info": {
+            "tax_type": "include",
+            "tax_name": "Tax country",
+            "tax_rate": 10
+          }
+        }
+      ],
+      "country_code": ["VN", "US"],
+      "is_tax_include": true
+    },
+    "SB_TM_SC_TAX_51": {
+      "product_info": [
+        {
+          "name": "OPAY_TEST_1"
+        },
+        {
+          "name": "OPAY_TEST_2"
+        },
+        {
+          "name": "OPAY_TEST_3"
+        }
+      ],
+      "product_info_with_tax": [
+        {
+          "name": "OPAY_TEST_1"
+        },
+        {
+          "name": "OPAY_TEST_3"
+        },
+        {
+          "name": "OPAY_TEST_2",
+          "tax_info": {
+            "tax_type": "include",
+            "tax_name": "Tax country",
+            "tax_rate": 10
+          }
+        }
+      ],
+      "country_code": ["VN", "US"],
+      "is_tax_include": true
+    },
+    "CASE_GROUP_1": {
+      "data": [
+        {
+          "case_id": "SB_TM_SC_TAX_52",
+          "case_name": "[Creator] Kiểm tra tax hiển thị tại checkout form, thank you page và order details khi set threshold của tax rate chỉ có min amount",
+          "country_code": ["VN", "US"],
+          "is_tax_include": false,
+          "tax_rates": [
+            {
+              "country": "US",
+              "minItemValue": 20,
+              "maxItemValue": null,
+              "taxName": "Tax US",
+              "taxRate": 10,
+              "categories": "country"
+            },
+            {
+              "country": "US",
+              "province": "CA",
+              "minItemValue": 20,
+              "maxItemValue": null,
+              "taxName": "Tax cali",
+              "taxRate": 15,
+              "categories": "region"
+            }
+          ],
+          "product_info": [
+            {
+              "name": "OPAY_TEST_1"
+            },
+            {
+              "name": "OPAY_TEST_2"
+            }
+          ],
+          "product_info_with_tax": [
+            {
+              "name": "OPAY_TEST_2",
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax country",
+                "tax_rate": 10
+              }
+            }
+          ]
+        },
+        {
+          "case_id": "SB_TM_SC_TAX_53",
+          "case_name": "[Creator] Kiểm tra tax hiển thị tại checkout form, thank you page và order details khi set threshold của tax rate chỉ có max amount",
+          "country_code": ["VN", "US"],
+          "is_tax_include": false,
+          "tax_rates": [
+            {
+              "country": "US",
+              "minItemValue": 0,
+              "maxItemValue": 39,
+              "taxName": "Tax US",
+              "taxRate": 10,
+              "categories": "country"
+            },
+            {
+              "country": "US",
+              "province": "CA",
+              "minItemValue": 0,
+              "maxItemValue": 39,
+              "taxName": "Tax cali",
+              "taxRate": 15,
+              "categories": "region"
+            }
+          ],
+          "product_info": [
+            {
+              "name": "OPAY_TEST_2"
+            },
+            {
+              "name": "OPAY_TEST_1"
+            }
+          ],
+          "product_info_with_tax": [
+            {
+              "name": "OPAY_TEST_1",
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax country",
+                "tax_rate": 10
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "CASE_GROUP_2": {
+      "data": [
+        {
+          "case_id": "SB_TM_SC_TAX_54",
+          "case_name": "[Creator] Kiểm tra tax chỉ được tính theo rule country khi checkout thỏa mãn tax country, tax region",
+          "country_code": "US",
+          "is_tax_include": false,
+          "tax_rates": [
+            {
+              "country": "US",
+              "minItemValue": 20,
+              "maxItemValue": 100,
+              "taxName": "Tax US",
+              "taxRate": 10,
+              "categories": "country"
+            },
+            {
+              "country": "US",
+              "province": "CA",
+              "minItemValue": 20,
+              "maxItemValue": 100,
+              "taxName": "Tax cali",
+              "taxRate": 15,
+              "categories": "region"
+            }
+          ],
+          "product_info": [
+            {
+              "name": "OPAY_TEST_2",
+              "variant_title": "Option 2",
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax country",
+                "tax_rate": 10
+              }
+            }
+          ]
+        },
+        {
+          "case_id": "SB_TM_SC_TAX_55",
+          "case_name": "[Creator] Kiểm tra không hiển thị tax tại checkout form khi checkout không thỏa mãn tax country, chỉ thỏa mãn tax region",
+          "country_code": "US",
+          "is_tax_include": false,
+          "tax_rates": [
+            {
+              "country": "US",
+              "minItemValue": 0,
+              "maxItemValue": 30,
+              "taxName": "Tax US",
+              "taxRate": 10,
+              "categories": "country"
+            },
+            {
+              "country": "US",
+              "province": "CA",
+              "minItemValue": 30,
+              "maxItemValue": 100,
+              "taxName": "Tax cali",
+              "taxRate": 15,
+              "categories": "region"
+            }
+          ],
+          "product_info": [
+            {
+              "name": "OPAY_TEST_2"
+            }
+          ]
+        },
+        {
+          "case_id": "SB_TM_SC_TAX_57",
+          "case_name": "[Creator] Kiểm tra tax chỉ được tính theo rule country khi checkout thỏa mãn tax country, không thỏa mãn tax region",
+          "country_code": "US",
+          "is_tax_include": false,
+          "tax_rates": [
+            {
+              "country": "US",
+              "minItemValue": 20,
+              "maxItemValue": 100,
+              "taxName": "Tax US",
+              "taxRate": 10,
+              "categories": "country"
+            },
+            {
+              "country": "US",
+              "province": "CA",
+              "minItemValue": 100,
+              "maxItemValue": 200,
+              "taxName": "Tax cali",
+              "taxRate": 15,
+              "categories": "region"
+            }
+          ],
+          "product_info": [
+            {
+              "name": "OPAY_TEST_2",
+              "variant_title": "Option 2",
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax country",
+                "tax_rate": 10
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "CASE_GROUP_3": {
+      "data": [
+        {
+          "case_id": "SB_TM_SC_TAX_60",
+          "case_name": "[Creator] Checkout 1 order không có PPC qua SMP với tax include",
+          "country_code": "US",
+          "is_tax_include": true,
+          "product_info": [
+            {
+              "name": "OPAY_TEST_2",
+              "tax_info": {
+                "tax_type": "include",
+                "tax_name": "Tax country",
+                "tax_rate": 10
+              }
+            }
+          ]
+        },
+        {
+          "case_id": "SB_TM_SC_TAX_64",
+          "case_name": "[Creator] Checkout 1 order không có PPC qua SMP với tax exclude",
+          "country_code": "US",
+          "is_tax_include": false,
+          "product_info": [
+            {
+              "name": "OPAY_TEST_2",
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax country",
+                "tax_rate": 10
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "CASE_GROUP_4": {
+      "data": [
+        {
+          "case_id": "SB_TM_SC_TAX_68",
+          "case_name": "[Creator] Checkout 1 order không có PPC qua Paypal với tax include",
+          "country_code": "US",
+          "is_tax_include": true,
+          "product_info": [
+            {
+              "name": "OPAY_TEST_2",
+              "tax_info": {
+                "tax_type": "include",
+                "tax_name": "Tax country",
+                "tax_rate": 10
+              }
+            }
+          ]
+        },
+        {
+          "case_id": "SB_TM_SC_TAX_69",
+          "case_name": "[Creator] Checkout 1 order không có PPC qua Paypal với tax exclude",
+          "country_code": "US",
+          "is_tax_include": false,
+          "product_info": [
+            {
+              "name": "OPAY_TEST_2",
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax country",
+                "tax_rate": 10
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "CASE_GROUP_5": {
+      "data": [
+        {
+          "case_id": "SB_TM_SC_TAX_61",
+          "case_name": "[Creator] Checkout 1 order có PPC qua SMP khi item trong order và item trong PPC đều thỏa mãn threshold với tax include",
+          "country_code": "US",
+          "is_tax_include": true,
+          "product_info": [
+            {
+              "name": "OPAY_TEST_4",
+              "variant_title": "Option 4",
+              "tax_info": {
+                "tax_type": "include",
+                "tax_name": "Tax country",
+                "tax_rate": 10
+              }
+            },
+            {
+              "name": "OPAY_TEST_2",
+              "variant_title": "Option 2",
+              "tax_info": {
+                "tax_type": "include",
+                "tax_name": "Tax country",
+                "tax_rate": 10
+              }
+            }
+          ]
+        },
+        {
+          "case_id": "SB_TM_SC_TAX_62",
+          "case_name": "[Creator] Checkout 1 order có PPC qua SMP khi item trong order thỏa mãn threshold, item PPC không thỏa mãn threshold với tax include",
+          "country_code": "US",
+          "is_tax_include": true,
+          "product_info": [
+            {
+              "name": "OPAY_TEST_5",
+              "variant_title": "Option 5",
+              "tax_info": {
+                "tax_type": "include",
+                "tax_name": "Tax country",
+                "tax_rate": 10
+              }
+            },
+            {
+              "name": "OPAY_TEST_3",
+              "variant_title": "Option 3"
+            }
+          ]
+        },
+        {
+          "case_id": "SB_TM_SC_TAX_63",
+          "case_name": "[Creator] Checkout 1 order có PPC qua SMP khi item trong order không thỏa mãn threshold, item PPC thỏa mãn threshold với tax include",
+          "country_code": "US",
+          "is_tax_include": true,
+          "product_info": [
+            {
+              "name": "OPAY_TEST_6",
+              "variant_title": "Option 6"
+            },
+            {
+              "name": "OPAY_TEST_4",
+              "variant_title": "Option 4",
+              "tax_info": {
+                "tax_type": "include",
+                "tax_name": "Tax country",
+                "tax_rate": 10
+              }
+            }
+          ]
+        },
+        {
+          "case_id": "SB_TM_SC_TAX_65",
+          "case_name": "[Creator] Checkout 1 order có PPC qua SMP khi item trong order và item trong PPC đều thỏa mãn threshold với tax exclude",
+          "country_code": "US",
+          "is_tax_include": false,
+          "product_info": [
+            {
+              "name": "OPAY_TEST_4",
+              "variant_title": "Option 4",
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax country",
+                "tax_rate": 10
+              }
+            },
+            {
+              "name": "OPAY_TEST_2",
+              "variant_title": "Option 2",
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax country",
+                "tax_rate": 10
+              }
+            }
+          ]
+        },
+        {
+          "case_id": "SB_TM_SC_TAX_66",
+          "case_name": "[Creator] Checkout 1 order có PPC qua SMP khi item trong order thỏa mãn threshold, item PPC không thỏa mãn threshold với tax exclude",
+          "country_code": "US",
+          "is_tax_include": false,
+          "product_info": [
+            {
+              "name": "OPAY_TEST_5",
+              "variant_title": "Option 5",
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax country",
+                "tax_rate": 10
+              }
+            },
+            {
+              "name": "OPAY_TEST_3",
+              "variant_title": "Option 3"
+            }
+          ]
+        },
+        {
+          "case_id": "SB_TM_SC_TAX_67",
+          "case_name": "[Creator] Checkout 1 order có PPC qua SMP khi item trong order không thỏa mãn threshold, item PPC thỏa mãn threshold với tax exclude",
+          "country_code": "US",
+          "is_tax_include": false,
+          "product_info": [
+            {
+              "name": "OPAY_TEST_6",
+              "variant_title": "Option 6"
+            },
+            {
+              "name": "OPAY_TEST_4",
+              "variant_title": "Option 4",
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax country",
+                "tax_rate": 10
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "CASE_GROUP_6": {
+      "data": [
+        {
+          "case_id": "SB_TM_SC_TAX_70",
+          "case_name": "[Creator] Refund 1 order có tax include thành công qua Paypal",
+          "country_code": "US",
+          "is_tax_include": true,
+          "product_info": [
+            {
+              "name": "OPAY_TEST_2"
+            }
+          ],
+          "action": "Refund"
+        },
+        {
+          "case_id": "SB_TM_SC_TAX_71",
+          "case_name": "[Creator] Cancel 1 order có tax include thành công qua Paypal",
+          "country_code": "US",
+          "is_tax_include": true,
+          "product_info": [
+            {
+              "name": "OPAY_TEST_2"
+            }
+          ],
+          "action": "Cancel order"
+        },
+        {
+          "case_id": "SB_TM_SC_TAX_72",
+          "case_name": "[Creator] Refund 1 order có tax exclude thành công qua Paypal",
+          "country_code": "US",
+          "is_tax_include": false,
+          "product_info": [
+            {
+              "name": "OPAY_TEST_2"
+            }
+          ],
+          "action": "Refund"
+        },
+        {
+          "case_id": "SB_TM_SC_TAX_73",
+          "case_name": "[Creator] Cancel 1 order có tax exclude thành công qua Paypal",
+          "country_code": "US",
+          "is_tax_include": false,
+          "product_info": [
+            {
+              "name": "OPAY_TEST_2"
+            }
+          ],
+          "action": "Cancel order"
+        }
+      ]
+    },
+    "CASE_GROUP_7": {
+      "data": [
+        {
+          "case_id": "SB_TM_SC_TAX_74",
+          "case_name": "[Creator] Refund 1 order có tax include thành công qua SMP",
+          "country_code": "US",
+          "is_tax_include": true,
+          "product_info": [
+            {
+              "name": "OPAY_TEST_2"
+            }
+          ],
+          "action": "Refund"
+        },
+        {
+          "case_id": "SB_TM_SC_TAX_75",
+          "case_name": "[Creator] Cancel 1 order có tax include thành công qua SMP",
+          "country_code": "US",
+          "is_tax_include": true,
+          "product_info": [
+            {
+              "name": "OPAY_TEST_2"
+            }
+          ],
+          "action": "Cancel order"
+        },
+        {
+          "case_id": "SB_TM_SC_TAX_76",
+          "case_name": "[Creator] Refund 1 order có tax exclude thành công qua SMP",
+          "country_code": "US",
+          "is_tax_include": false,
+          "product_info": [
+            {
+              "name": "OPAY_TEST_2"
+            }
+          ],
+          "action": "Refund"
+        },
+        {
+          "case_id": "SB_TM_SC_TAX_77",
+          "case_name": "[Creator] Cancel 1 order có tax exclude thành công qua SMP",
+          "country_code": "US",
+          "is_tax_include": false,
+          "product_info": [
+            {
+              "name": "OPAY_TEST_2"
+            }
+          ],
+          "action": "Cancel order"
+        }
+      ]
+    },
+    "CASE_GROUP_8": {
+      "data": [
+        {
+          "case_id": "SB_TM_SC_TAX_78",
+          "case_name": "[Creator] Refund rồi cancel 1 order nhiều item có tax include thành công qua SMP",
+          "country_code": "US",
+          "is_tax_include": true,
+          "product_info": [
+            {
+              "name": "OPAY_TEST_7",
+              "variant_title": "Option 7",
+              "tax_info": {
+                "tax_type": "include",
+                "tax_name": "Tax country",
+                "tax_rate": 10
+              }
+            }
+          ]
+        },
+        {
+          "case_id": "SB_TM_SC_TAX_79",
+          "case_name": "[Creator] Refund rồi cancel 1 order nhiều item có tax exclude thành công qua SMP",
+          "country_code": "US",
+          "is_tax_include": true,
+          "product_info": [
+            {
+              "name": "OPAY_TEST_7",
+              "variant_title": "Option 7",
+              "tax_info": {
+                "tax_type": "include",
+                "tax_name": "Tax country",
+                "tax_rate": 10
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "env": {
+    "local": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-abandoned-checkout-prodtest.onshopbase.com",
+      "shop_name": "au-abandoned-checkout-prodtest",
+      "shop_id": 10431612,
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "theme_id": 1401501
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-abandoned-checkout-prod.onshopbase.com",
+      "shop_name": "au-abandoned-checkout-prod",
+      "shop_id": 10431610,
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "theme_id": 1401495
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-abandoned-checkout-prodtest.onshopbase.com",
+      "shop_name": "au-abandoned-checkout-prodtest",
+      "shop_id": 10431612,
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "theme_id": 1401501,
+      "accounts_domain": "accounts-test.shopbase.com"
+    }
+  },
+  "cases": {
+    "FILTER_EMAIL_STATUS": {
+      "data": {
+        "description": "[Filter] Verify filter theo Email Status",
+        "case_code": "SB_SC_SCO_33",
+        "filter": "Email status",
+        "filter_data": [
+          {
+            "step": "Filter theo trường Email Status = Sent > Click Done",
+            "value": "Sent",
+            "number": 7
+          },
+          {
+            "step": "Filter theo trường Email Status = Not sent > Click Done",
+            "value": "Not sent",
+            "number": 4
+          },
+          {
+            "step": "Filter theo trường Email Status = Scheduled > Click Done",
+            "value": "Scheduled",
+            "number": 0
+          }
+        ]
+      }
+    },
+    "SB_SC_SCO_34": {
+      "filter_email_recovery": {
+        "filter": "Recovery status",
+        "value": "Recovered",
+        "number": 2
+      },
+      "filter_email_status_not_recovery": {
+        "filter": "Recovery status",
+        "value": "Not recover",
+        "number": 9
+      }
+    },
+    "FILTER_CHECKOUT_DATE": {
+      "data": {
+        "description": "[Filter] Verify filter theo Abandoned Checkout date",
+        "case_code": "SB_SC_SCO_35",
+        "filter": "Email status",
+        "filter_data": [
+          {
+            "step": "Filter theo trường Checkout date chọn Today",
+            "value": "Today",
+            "input_date": "",
+            "number": 4
+          },
+          {
+            "step": "Filter theo trường Checkout date chọn Yesterday",
+            "value": "Yesterday",
+            "input_date": "",
+            "number": 4
+          },
+          {
+            "step": "Filter theo trường Checkout date chọn Last 7 days",
+            "value": "Last 7 days",
+            "input_date": "",
+            "number": 11
+          },
+          {
+            "step": "Filter theo trường Checkout date chọn Last 28 days",
+            "value": "Last 28 days",
+            "input_date": "",
+            "number": 11
+          },
+          {
+            "step": "Filter theo trường Checkout date chọn Last 90 days",
+            "value": "Last 90 days",
+            "input_date": "",
+            "number": 11
+          },
+          {
+            "step": "Filter theo trường Checkout date input custom date là today",
+            "value": "Custom",
+            "input_date": "today",
+            "number": 4
+          },
+          {
+            "step": "Filter theo trường Checkout date input custom date là last7days",
+            "value": "Custom",
+            "input_date": "last7days",
+            "number": 11
+          },
+          {
+            "step": "Filter theo trường Checkout date input custom date là thisMonth",
+            "value": "Custom",
+            "input_date": "thisMonth",
+            "number": 11
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,309 @@
+{
+  "env": {
+    "local": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-translation-static-content.myshopbase.net",
+      "shop_name": "au-translation-static-content",
+      "shop_id": 10332636,
+      "username": "dpro-qe-1@beeketing.net  ",
+      "password": "43AhIn|VWp;[?9&",
+      "user_id": 89797,
+      "theme_id": 3205093,
+      "reload_time": 6
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-translation-static-content.myshopbase.net",
+      "shop_name": "au-translation-static-content",
+      "shop_id": 10332636,
+      "username": "dpro-qe-1@beeketing.net  ",
+      "password": "43AhIn|VWp;[?9&",
+      "user_id": 89797,
+      "theme_id": 3205093,
+      "reload_time": 6
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-translation-static-content-prod.onshopbase.com",
+      "shop_name": "au-translation-static-content-prod",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "shop_id": 10486085,
+      "theme_id": 1617057,
+      "reload_time": 3
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "accounts_domain": "accounts-test.shopbase.com",
+      "domain": "au-translation-static-content-prodtest-01.onshopbase.com",
+      "shop_name": "au-translation-static-content-prodtest-01",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "shop_id": 10486080,
+      "theme_id": 1617049,
+      "reload_time": 3
+    }
+  },
+  "cases": {
+    "SB_SET_TL_37": {
+      "description": "[DB+SF - Function] Check change ngôn ngữ thành data trống  Online store - static content",
+      "data": {
+        "subfolder": "fr-us",
+        "language_code": "fr",
+        "entity_translate": {
+          "pageStatic": "Products"
+        },
+        "key_search": "Add to cart",
+        "key_name": "add_to_cart",
+        "phrase_default": "Ajouter au panier",
+        "original_content": "Add to cart",
+        "edit_phrase": "",
+        "product_handle": "products/product-test"
+      },
+      "expect": "Add to cart"
+    },
+    "SB_SET_TL_34": {
+      "description": "[DB+SF - Function] Check change ngôn ngữ thành công Online store - static content với Product Review App + language = Vietnamese",
+      "data": {
+        "subfolder": "vi-us",
+        "language_code": "vi",
+        "key_search": "Be the first to write a review",
+        "key_name": "title",
+        "product_handle": "products/product-test",
+        "title": "Be the first to write a review",
+        "phrase_default": "Hãy là người đầu tiên viết đánh giá",
+        "original_content": "Be the first to write a review",
+        "edit_phrase": "edit phrase, Viết đánh giá đi bạn ơi!"
+      },
+      "expect": "edit phrase, Viết đánh giá đi bạn ơi!"
+    },
+    "SB_SET_TL_33": {
+      "description": "[DB+SF - Function] Check change ngôn ngữ thành công Online store - static content với Boost Upsell App + language = Polish",
+      "data": {
+        "subfolder": "pl-us",
+        "language_code": "pl",
+        "key_search": "Add more items",
+        "key_name": "cta",
+        "product_handle": "products/product-test",
+        "title": "Add more items",
+        "phrase_default": "Dodaj więcej elementów",
+        "edit_phrase": "edit phrase, Add products"
+      },
+      "expect": "edit phrase, Add products"
+    },
+    "SB_SET_TL_30": {
+      "description": "[DB+SF - Function] Check change ngôn ngữ thành công Online store - static content với Page = Products + theme Ciadora + language = Polish / French",
+      "key_search": "Add to cart",
+      "key_name": "add_to_cart",
+      "original_content": "Add to cart",
+      "entity_translate": {
+        "pageStatic": "Products"
+      },
+      "product_handle": "products/product-test",
+      "data_languages": [
+        {
+          "language": "Polish",
+          "language_code": "pl",
+          "subfolder": "pl-us",
+          "language_sf": "Polski (PL)",
+          "phrase": "Dodaj do koszyka",
+          "data_phrase1": {
+            "edit_phrase": "ATC Polish ciadora 1",
+            "expect": "ATC Polish ciadora 1"
+          },
+          "data_phrase2": {
+            "edit_phrase": "ATC Polish test V3 2",
+            "expect": "ATC Polish test V3 2"
+          }
+        },
+        {
+          "language": "French",
+          "language_code": "fr",
+          "subfolder": "fr-us",
+          "language_sf": "Français (FR)",
+          "phrase": "Ajouter au panier",
+          "data_phrase1": {
+            "edit_phrase": "ATC French ciadora 1",
+            "expect": "ATC French ciadora 1"
+          },
+          "data_phrase2": {
+            "edit_phrase": "ATC French test V3 2",
+            "expect": "ATC French test V3 2"
+          }
+        }
+      ]
+    },
+    "SB_SET_TL_38": {
+      "description": "[DB+SF - Function] Check button Reset to default  Online store - static content",
+      "key_search": "Add to cart",
+      "key_name": "add_to_cart",
+      "original_content": "Add to cart",
+      "entity_translate": {
+        "pageStatic": "Products"
+      },
+      "data": {
+        "language": "French",
+        "language_code": "fr",
+        "subfolder": "fr-us",
+        "phrase_default": "Ajouter au panier",
+        "edit_zulu_phrase": "Add to cart zulu"
+      },
+      "expect": {
+        "popup_text": "All key phrases will be reset back to ShopBase's default translations."
+      }
+    },
+    "SB_SET_TL_29": {
+      "description": "[DB - UI/UX] Kiểm tra màn translate detail của Online store - static content",
+      "entity_translate": {
+        "theme": "Criadora Theme",
+        "pageStatic": "All pages"
+      },
+      "step2_expects": [
+        "Roller Theme",
+        "Inside Theme",
+        "Criadora Theme",
+        "Boost Upsell App",
+        "Product Reviews App",
+        "Boost Convert App",
+        "Check Out"
+      ],
+      "data_themes": [
+        {
+          "entity_translate": {
+            "theme": "Roller Theme"
+          },
+          "expect": [
+            "All pages",
+            "Eta shipping time",
+            "General",
+            "Cart",
+            "Collections",
+            "Products",
+            "Contact",
+            "User",
+            "Section",
+            "Password",
+            "Blog"
+          ]
+        },
+        {
+          "entity_translate": {
+            "theme": "Inside Theme"
+          },
+          "expect": [
+            "All pages",
+            "Eta shipping time",
+            "General",
+            "Cart",
+            "Collections",
+            "Products",
+            "Contact",
+            "User",
+            "Section",
+            "Blog"
+          ]
+        },
+        {
+          "entity_translate": {
+            "theme": "Criadora Theme"
+          },
+          "expect": [
+            "All pages",
+            "Eta shipping time",
+            "Checkout general",
+            "Dynamic checkout",
+            "General",
+            "Web builder",
+            "Products",
+            "Cookie bar",
+            "Coaching session",
+            "Course player",
+            "No product",
+            "Order tracking",
+            "My products",
+            "User",
+            "Label",
+            "Product type",
+            "Digital download error message",
+            "Validation",
+            "Sort options",
+            "Types",
+            "Checkout form",
+            "Variant offer",
+            "Footer",
+            "Collection",
+            "Contact",
+            "Notification",
+            "Media",
+            "Eta shipping",
+            "Sign in up",
+            "Product question"
+          ]
+        }
+      ],
+      "data_apps": [
+        {
+          "entity_translate": {
+            "theme": "Boost Upsell App"
+          }
+        },
+        {
+          "entity_translate": {
+            "theme": "Product Reviews App"
+          }
+        },
+        {
+          "entity_translate": {
+            "theme": "Boost Convert App"
+          }
+        },
+        {
+          "entity_translate": {
+            "theme": "Check Out"
+          }
+        }
+      ],
+      "data": {
+        "subfolder": "de-us",
+        "language_code": "de"
+      }
+    },
+    "SB_SET_TL_32": {
+      "description": "[DB+SF - Function] Check change ngôn ngữ thành công Online store - static content với Page = All page + theme Inside + language = Spanish",
+      "entity_translate": {
+        "theme": "Inside Theme",
+        "pageStatic": "Collections"
+      },
+      "data": {
+        "template_name": "Inside",
+        "language_code": "es",
+        "subfolder": "es-us",
+        "change_lang": "Spanish",
+        "key_search": "fEa",
+        "key_name": "manual",
+        "edit_phrase": "edit phrase, key manual",
+        "phrase_default": "Destacados",
+        "original_content": "Featured",
+        "collection_handle": "collections/collection-test"
+      },
+      "expect": "edit phrase, key manual"
+    },
+    "SB_SET_TL_36": {
+      "description": "[DB+SF - Function] Check hiển thị Online store - static content với page Checkout + language = Vietnamese",
+      "data": {
+        "subfolder": "vi-us",
+        "language_code": "vi",
+        "key_search": "Add a tip to support us",
+        "key_name": "add_a_tip",
+        "product_handle": "products/product-test",
+        "title": "Add a tip to support us",
+        "phrase_default": "Thêm một khoản tiền tip để ủng hộ chúng tôi",
+        "original_content": "Add a tip to support us",
+        "edit_phrase": "edit phrase, add_a_tip"
+      },
+      "expect": "edit phrase, add_a_tip"
+    }
+  }
+}

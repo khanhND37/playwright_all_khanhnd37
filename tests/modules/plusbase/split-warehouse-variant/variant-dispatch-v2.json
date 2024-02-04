@@ -1,0 +1,461 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-variant-dispatch-v2.myshopbase.net",
+      "shop_name": "au-variant-dispatch-v2",
+      "user_id": 90044,
+      "shop_id": 10333750,
+      "username": "plus-qe-2@beeketing.net",
+      "password": "VDDSzj45Z0#l",
+      "odoo_host": "https://odoo.dev.shopbase.net/",
+      "odoo_db": "sbase_fulfillment_dev",
+      "odoo_username": "admin",
+      "odoo_password": "admin",
+      "plb_template": {
+        "domain": "plusbase-checkout.myshopbase.net",
+        "shop_name": "plusbase-checkout.myshopbase.net",
+        "user_id": 87262,
+        "shop_id": 10060862,
+        "username": "phuongpham@beeketing.net",
+        "password": "123456",
+        "shop": "plusbase-checkout"
+      },
+      "cases": {
+        "DATA_DRIVEN": {
+          "data": [
+            {
+              "case_id": "SB_PLB_SW_19",
+              "case_desc": "Verify order với variant trước đó đi chaosi nhưng sau được config lại kho đi AliExpress.",
+              "ali_url": "https://www.aliexpress.com/item/3256805426007932.html",
+              "product_template_id": 1159421,
+              "variant_dispatch_warehouse_id": 1000012,
+              "aliexpress_warehouse_id": 1000010,
+              "chaoshi_warehouse_id": 1000011,
+              "start_aliexpress_variant_ids": [1377542, 1377543, 1377544],
+              "aliexpress_variant_ids": [1377542, 1377543, 1377544, 1377545],
+              "aliexpress_wh_id": 18384,
+              "chaoshi_wh_id": 18385,
+              "start_chaoshi_variant_ids": [1377546, 1377547, 1377548, 1377545],
+              "chaoshi_variant_ids": [1377546, 1377547, 1377548],
+              "variant_name": "blue",
+              "sbcn_variant_ids": [
+                {
+                  "sbcn_variant_id": 1377545,
+                  "quantity": 1
+                }
+              ],
+              "aliexpress_carrier_id": 26,
+              "chaoshi_carrier_id": 40,
+              "target_shop_id": 10333750,
+              "sbase_product_id": 1100000001046099,
+              "first_checkout_shipping_methods": ["Standard Shipping", "Premium Shipping"],
+              "second_checkout_shipping_methods": ["Standard Shipping"],
+              "pick_shipping_method": "Standard Shipping"
+            },
+            {
+              "case_id": "SB_PLB_SW_20",
+              "case_desc": "Verify order với variant trước đó đi AliExpress nhưng sau được config lại kho đi Chaosi.",
+              "ali_url": "https://www.aliexpress.com/item/3256805945396581.html",
+              "product_template_id": 1159428,
+              "variant_dispatch_warehouse_id": 1000012,
+              "aliexpress_warehouse_id": 1000010,
+              "chaoshi_warehouse_id": 1000011,
+              "start_aliexpress_variant_ids": [1377621, 1377622, 1377623, 1377624],
+              "aliexpress_variant_ids": [1377621, 1377622, 1377623],
+              "aliexpress_wh_id": 18386,
+              "chaoshi_wh_id": 18387,
+              "start_chaoshi_variant_ids": [1377625, 1377626, 1377627, 1377628],
+              "chaoshi_variant_ids": [1377624, 1377625, 1377626, 1377627, 1377628],
+              "variant_name": "E",
+              "sbcn_variant_ids": [
+                {
+                  "sbcn_variant_id": 1377624,
+                  "quantity": 1
+                }
+              ],
+              "aliexpress_carrier_id": 26,
+              "chaoshi_carrier_id": 40,
+              "target_shop_id": 10333750,
+              "sbase_product_id": 1100000001047951,
+              "first_checkout_shipping_methods": ["Standard Shipping"],
+              "second_checkout_shipping_methods": ["Standard Shipping", "Premium Shipping"],
+              "pick_shipping_method": "Standard Shipping",
+              "first_processing_fee_percent": 0.11,
+              "second_processing_fee_percent": 0.11,
+              "payment_fee_percent": 0.03
+            }
+          ],
+          "data_2": [
+            {
+              "case_id": "SB_PLB_SW_23",
+              "case_desc": "Verify order có nhiều variant cùng product template, có variant combo, các variant được config warehouse khác nhau, khác shipping group, có markup shipping.",
+              "ali_url": "https://www.aliexpress.com/item/3256805945396581.html",
+              "product_template_id": 1159435,
+              "variant_names": ["Set of 2 (1xLuohe + 1xXiyu)"],
+              "sbcn_variant_ids": [
+                {
+                  "sbcn_variant_id": 1377680,
+                  "quantity": 1
+                },
+                {
+                  "sbcn_variant_id": 1377675,
+                  "quantity": 1
+                }
+              ],
+              "aliexpress_carrier_id": 26,
+              "chaoshi_carrier_id": 40,
+              "target_shop_id": 10333750,
+              "sbase_product_id": 1100000001050392,
+              "first_checkout_shipping_methods": ["Standard Shipping", "Premium Shipping"],
+              "pick_shipping_method": "Standard Shipping",
+              "first_processing_fee_percent": 0.11,
+              "second_processing_fee_percent": 0.11,
+              "payment_fee_percent": 0.03,
+              "product": "Product Auto MP, cấm sờ, split wh case 23",
+              "tracking_number": "Test_TKN_Split_WH_23"
+            },
+            {
+              "case_id": "SB_PLB_SW_24",
+              "case_desc": "Verify order có nhiều variant cùng product template, có variant combo, các variant được config warehouse khác nhau, khác shipping group, có markup shipping cho một vài item trong order.",
+              "ali_url": "https://www.aliexpress.com/item/3256805923151134.html",
+              "product_template_id": 1159444,
+              "variant_names": ["black", "Set of 2 (1xblack + 1xgreen)"],
+              "sbcn_variant_ids": [
+                {
+                  "sbcn_variant_id": 1378000,
+                  "quantity": 1
+                },
+                {
+                  "sbcn_variant_id": 1378001,
+                  "quantity": 2
+                }
+              ],
+              "aliexpress_carrier_id": 26,
+              "chaoshi_carrier_id": 40,
+              "target_shop_id": 10333750,
+              "sbase_product_id": 1100000001051293,
+              "first_checkout_shipping_methods": ["Standard Shipping", "Premium Shipping"],
+              "pick_shipping_method": "Standard Shipping",
+              "first_processing_fee_percent": 0.11,
+              "second_processing_fee_percent": 0.11,
+              "payment_fee_percent": 0.03,
+              "product": "Product Auto MP, cấm sờ, split wh case 24",
+              "tracking_number": "Test_TKN_Split_WH_24",
+              "base_cost": 29.13
+            }
+          ]
+        }
+      }
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-variant-dispatch-v2-prodtest.onshopbase.com",
+      "shop_name": "au-variant-dispatch-v2-prodtest",
+      "user_id": 11248586,
+      "shop_id": 10497859,
+      "username": "plus-qe-2@beeketing.net",
+      "password": "VDDSzj45Z0#l",
+      "odoo_host": "https://autotest-erp-plus.shopbase.dev",
+      "odoo_db": "shopbase_fulfillment",
+      "odoo_username": "qaocg",
+      "odoo_password": "LFmy=qGLvwW^E63b",
+      "plb_template": {
+        "domain": "plusbase-templateprodtest.onshopbase.com",
+        "shop_name": "plusbase-templateprodtest.onshopbase.com",
+        "user_id": 9131323,
+        "shop_id": 10364655,
+        "username": "qas@beeketing.net",
+        "password": "123456",
+        "shop": "plusbase-templateprodtest"
+      },
+      "cases": {
+        "DATA_DRIVEN": {
+          "data": [
+            {
+              "case_id": "SB_PLB_SW_19",
+              "case_desc": "Verify order với variant trước đó đi chaosi nhưng sau được config lại kho đi AliExpress.",
+              "ali_url": "https://www.aliexpress.com/item/3256805426007932.html",
+              "product_template_id": 2147669,
+              "variant_dispatch_warehouse_id": 1000009,
+              "aliexpress_warehouse_id": 1000001,
+              "chaoshi_warehouse_id": 1000002,
+              "start_aliexpress_variant_ids": [33204642, 33204643, 33204644],
+              "aliexpress_variant_ids": [33204642, 33204643, 33204644, 33204645],
+              "aliexpress_wh_id": 51,
+              "chaoshi_wh_id": 52,
+              "start_chaoshi_variant_ids": [33204646, 33204647, 33204648, 33204645],
+              "chaoshi_variant_ids": [33204646, 33204647, 33204648],
+              "variant_name": "blue",
+              "sbcn_variant_ids": [
+                {
+                  "sbcn_variant_id": 33204645,
+                  "quantity": 1
+                }
+              ],
+              "aliexpress_carrier_id": 25,
+              "chaoshi_carrier_id": 30,
+              "target_shop_id": 10497859,
+              "sbase_product_id": 1000000500211686,
+              "first_checkout_shipping_methods": ["Standard Shipping", "Premium Shipping"],
+              "second_checkout_shipping_methods": ["Standard Shipping"],
+              "pick_shipping_method": "Standard Shipping"
+            },
+            {
+              "case_id": "SB_PLB_SW_20",
+              "case_desc": "Verify order với variant trước đó đi AliExpress nhưng sau được config lại kho đi Chaosi.",
+              "ali_url": "https://www.aliexpress.com/item/3256805945396581.html",
+              "product_template_id": 2225695,
+              "variant_dispatch_warehouse_id": 1000009,
+              "aliexpress_warehouse_id": 1000001,
+              "chaoshi_warehouse_id": 1000002,
+              "start_aliexpress_variant_ids": [35249292, 35249293, 35249294, 35249295],
+              "aliexpress_variant_ids": [35249292, 35249293, 35249294],
+              "aliexpress_wh_id": 53,
+              "chaoshi_wh_id": 54,
+              "start_chaoshi_variant_ids": [35249296, 35249297, 35249298, 35249299],
+              "chaoshi_variant_ids": [35249295, 35249296, 35249297, 35249298, 35249299],
+              "variant_name": "E",
+              "sbcn_variant_ids": [
+                {
+                  "sbcn_variant_id": 35249295,
+                  "quantity": 1
+                }
+              ],
+              "aliexpress_carrier_id": 25,
+              "chaoshi_carrier_id": 30,
+              "target_shop_id": 10497859,
+              "sbase_product_id": 1000000500211708,
+              "first_checkout_shipping_methods": ["Standard Shipping"],
+              "second_checkout_shipping_methods": ["Standard Shipping", "Premium Shipping"],
+              "pick_shipping_method": "Standard Shipping",
+              "first_processing_fee_percent": 0.04,
+              "second_processing_fee_percent": 0.04,
+              "payment_fee_percent": 0.03
+            }
+          ],
+          "data_2": [
+            {
+              "case_id": "SB_PLB_SW_23",
+              "case_desc": "Verify order có nhiều variant cùng product template, có variant combo, các variant được config warehouse khác nhau, khác shipping group, có markup shipping.",
+              "ali_url": "https://www.aliexpress.com/item/3256805520805705.html",
+              "product_template_id": 2225728,
+              "variant_names": ["BUY 1 GET 1 FREE (1xLuohe + 1xXiyu)"],
+              "sbcn_variant_ids": [
+                {
+                  "sbcn_variant_id": 35249920,
+                  "quantity": 1
+                },
+                {
+                  "sbcn_variant_id": 35249915,
+                  "quantity": 1
+                }
+              ],
+              "aliexpress_carrier_id": 25,
+              "chaoshi_carrier_id": 30,
+              "target_shop_id": 10497859,
+              "sbase_product_id": 1000000500211817,
+              "first_checkout_shipping_methods": ["Standard Shipping", "Premium Shipping"],
+              "pick_shipping_method": "Standard Shipping",
+              "first_processing_fee_percent": 0.04,
+              "second_processing_fee_percent": 0.04,
+              "payment_fee_percent": 0.03,
+              "product": "[Automation QE] Hand Painted Lotus Teacup Ceramics Master cup Vintage Chinese Kung Fu Tea Bowl",
+              "tracking_number": "Test_TKN_Split_WH_23"
+            },
+            {
+              "case_id": "SB_PLB_SW_24",
+              "case_desc": "Verify order có nhiều variant cùng product template, có variant combo, các variant được config warehouse khác nhau, khác shipping group, có markup shipping cho một vài item trong order.",
+              "ali_url": "https://www.aliexpress.com/item/3256805923151134.html",
+              "product_template_id": 2168510,
+              "variant_names": ["black", "BUY 1 GET 1 FREE (1xblack + 1xgreen)"],
+              "sbcn_variant_ids": [
+                {
+                  "sbcn_variant_id": 33787184,
+                  "quantity": 1
+                },
+                {
+                  "sbcn_variant_id": 33787185,
+                  "quantity": 2
+                }
+              ],
+              "aliexpress_carrier_id": 25,
+              "chaoshi_carrier_id": 30,
+              "target_shop_id": 10497859,
+              "sbase_product_id": 1000000500211844,
+              "first_checkout_shipping_methods": ["Standard Shipping", "Premium Shipping"],
+              "pick_shipping_method": "Standard Shipping",
+              "first_processing_fee_percent": 0.04,
+              "second_processing_fee_percent": 0.04,
+              "payment_fee_percent": 0.03,
+              "product": "[Automation QE] Suction Dust Catcher Cordless Handheld Wet Dry Vacuum Cleaner Air Duster For Car",
+              "tracking_number": "Test_TKN_Split_WH_24",
+              "base_cost": 55.54
+            }
+          ]
+        }
+      }
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-variant-dispatch-v2.onshopbase.com",
+      "shop_name": "au-variant-dispatch-v2",
+      "user_id": 11248586,
+      "shop_id": 10497858,
+      "username": "plus-qe-2@beeketing.net",
+      "password": "VDDSzj45Z0#l",
+      "odoo_host": "https://autotest-erp-plus.shopbase.dev",
+      "odoo_db": "shopbase_fulfillment",
+      "odoo_username": "qaocg",
+      "odoo_password": "LFmy=qGLvwW^E63b",
+      "plb_template": {
+        "domain": "template-store.onshopbase.com",
+        "shop_name": "template-store.onshopbase.com",
+        "user_id": 9131323,
+        "shop_id": 10258217,
+        "username": "qas@beeketing.net",
+        "password": "123456",
+        "shop": "template-store"
+      },
+      "cases": {
+        "DATA_DRIVEN": {
+          "data": [
+            {
+              "case_id": "SB_PLB_SW_19",
+              "case_desc": "Verify order với variant trước đó đi chaosi nhưng sau được config lại kho đi AliExpress.",
+              "ali_url": "https://www.aliexpress.com/item/3256805426007932.html",
+              "product_template_id": 2147669,
+              "variant_dispatch_warehouse_id": 1000009,
+              "aliexpress_warehouse_id": 1000001,
+              "chaoshi_warehouse_id": 1000002,
+              "start_aliexpress_variant_ids": [33204642, 33204643, 33204644],
+              "aliexpress_variant_ids": [33204642, 33204643, 33204644, 33204645],
+              "aliexpress_wh_id": 51,
+              "chaoshi_wh_id": 52,
+              "start_chaoshi_variant_ids": [33204646, 33204647, 33204648, 33204645],
+              "chaoshi_variant_ids": [33204646, 33204647, 33204648],
+              "variant_name": "blue",
+              "sbcn_variant_ids": [
+                {
+                  "sbcn_variant_id": 33204645,
+                  "quantity": 1
+                }
+              ],
+              "aliexpress_carrier_id": 25,
+              "chaoshi_carrier_id": 30,
+              "target_shop_id": 10497858,
+              "sbase_product_id": 1000000500207209,
+              "first_checkout_shipping_methods": ["Standard Shipping", "Premium Shipping"],
+              "second_checkout_shipping_methods": ["Standard Shipping"],
+              "pick_shipping_method": "Standard Shipping"
+            },
+            {
+              "case_id": "SB_PLB_SW_20",
+              "case_desc": "Verify order với variant trước đó đi AliExpress nhưng sau được config lại kho đi Chaosi.",
+              "ali_url": "https://www.aliexpress.com/item/3256805945396581.html",
+              "product_template_id": 2225695,
+              "variant_dispatch_warehouse_id": 1000009,
+              "aliexpress_warehouse_id": 1000001,
+              "chaoshi_warehouse_id": 1000002,
+              "start_aliexpress_variant_ids": [35249292, 35249293, 35249294, 35249295],
+              "aliexpress_variant_ids": [35249292, 35249293, 35249294],
+              "aliexpress_wh_id": 53,
+              "chaoshi_wh_id": 54,
+              "start_chaoshi_variant_ids": [35249296, 35249297, 35249298, 35249299],
+              "chaoshi_variant_ids": [35249295, 35249296, 35249297, 35249298, 35249299],
+              "variant_name": "E",
+              "sbcn_variant_ids": [
+                {
+                  "sbcn_variant_id": 35249295,
+                  "quantity": 1
+                }
+              ],
+              "aliexpress_carrier_id": 25,
+              "chaoshi_carrier_id": 30,
+              "target_shop_id": 10497858,
+              "sbase_product_id": 1000000500208686,
+              "first_checkout_shipping_methods": ["Standard Shipping"],
+              "second_checkout_shipping_methods": ["Standard Shipping", "Premium Shipping"],
+              "pick_shipping_method": "Standard Shipping",
+              "first_processing_fee_percent": 0.04,
+              "second_processing_fee_percent": 0.04,
+              "payment_fee_percent": 0.03
+            }
+          ],
+          "data_2": [
+            {
+              "case_id": "SB_PLB_SW_23",
+              "case_desc": "Verify order có nhiều variant cùng product template, có variant combo, các variant được config warehouse khác nhau, khác shipping group, có markup shipping.",
+              "ali_url": "https://www.aliexpress.com/item/3256805520805705.html",
+              "product_template_id": 2225728,
+              "variant_names": ["BUY 1 GET 1 FREE (1xLuohe + 1xXiyu)"],
+              "sbcn_variant_ids": [
+                {
+                  "sbcn_variant_id": 35249920,
+                  "quantity": 1
+                },
+                {
+                  "sbcn_variant_id": 35249915,
+                  "quantity": 1
+                }
+              ],
+              "aliexpress_carrier_id": 25,
+              "chaoshi_carrier_id": 30,
+              "target_shop_id": 10497858,
+              "sbase_product_id": 1000000500208841,
+              "first_checkout_shipping_methods": ["Standard Shipping", "Premium Shipping"],
+              "pick_shipping_method": "Standard Shipping",
+              "first_processing_fee_percent": 0.04,
+              "second_processing_fee_percent": 0.04,
+              "payment_fee_percent": 0.03,
+              "product": "[Automation QE] Hand Painted Lotus Teacup Ceramics Master cup Vintage Chinese Kung Fu Tea Bowl",
+              "tracking_number": "Test_TKN_Split_WH_23"
+            },
+            {
+              "case_id": "SB_PLB_SW_24",
+              "case_desc": "Verify order có nhiều variant cùng product template, có variant combo, các variant được config warehouse khác nhau, khác shipping group, có markup shipping cho một vài item trong order.",
+              "ali_url": "https://www.aliexpress.com/item/3256805923151134.html",
+              "product_template_id": 2168510,
+              "variant_names": ["black", "BUY 1 GET 1 FREE (1xblack + 1xgreen)"],
+              "sbcn_variant_ids": [
+                {
+                  "sbcn_variant_id": 33787184,
+                  "quantity": 1
+                },
+                {
+                  "sbcn_variant_id": 33787185,
+                  "quantity": 2
+                }
+              ],
+              "aliexpress_carrier_id": 25,
+              "chaoshi_carrier_id": 30,
+              "target_shop_id": 10497858,
+              "sbase_product_id": 1000000500211566,
+              "first_checkout_shipping_methods": ["Standard Shipping", "Premium Shipping"],
+              "pick_shipping_method": "Standard Shipping",
+              "first_processing_fee_percent": 0.04,
+              "second_processing_fee_percent": 0.04,
+              "payment_fee_percent": 0.03,
+              "product": "[Automation QE] Suction Dust Catcher Cordless Handheld Wet Dry Vacuum Cleaner Air Duster For Car",
+              "tracking_number": "Test_TKN_Split_WH_24",
+              "base_cost": 55.54
+            }
+          ]
+        }
+      }
+    }
+  },
+  "products_checkout": [
+    {
+      "quantity": 1
+    }
+  ],
+  "card_info": {
+    "number": "4111 1111 1111 1111",
+    "expire_date": "12/30",
+    "cvv": "111",
+    "holder_name": "Phan The Minh"
+  },
+  "default_country_code": "US",
+  "cases": {}
+}

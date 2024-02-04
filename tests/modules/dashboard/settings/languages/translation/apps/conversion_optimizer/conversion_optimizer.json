@@ -1,0 +1,104 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "accounts_domain": "accounts.dev.shopbase.net",
+      "domain": "au-trans-apps.myshopbase.net",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "43AhIn|VWp;[?9&",
+      "shop_name": "au-trans-apps",
+      "user_id": 89797,
+      "shop_id": 10333697,
+      "default_language": "English",
+      "publish_language": "German",
+      "unpublish_language": "French",
+      "target_handle": "product-2",
+      "product_id": 1100000001035400,
+      "products_checkout": [
+        {
+          "name": "product 2",
+          "variant_id": 1000001779292089,
+          "quantity": 1
+        }
+      ]
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "accounts_domain": "accounts-test.shopbase.com",
+      "domain": "au-entity-app-prodtest.onshopbase.com",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "shop_name": "au-entity-app-prodtest",
+      "user_id": 11244582,
+      "shop_id": 10483870,
+      "default_language": "English",
+      "publish_language": "German",
+      "unpublish_language": "French",
+      "target_handle": "product-2",
+      "product_id": 1000000495437015
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "accounts_domain": "accounts.shopbase.com",
+      "domain": "au-entity-app-prod.onshopbase.com",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "shop_name": "au-entity-app-prod",
+      "user_id": 11244582,
+      "shop_id": 10483871,
+      "default_language": "English",
+      "publish_language": "German",
+      "unpublish_language": "French",
+      "target_handle": "product-2",
+      "product_id": 1000000495437069
+    }
+  },
+  "cases": {
+    "SB_SET_TL_91": {
+      "case_description": "[DB+SF - Function] Kiểm tra tính năng auto translate khi Enable auto translate Apps - Conversion optimizer - Sales notifications",
+      "publish_language": "Vietnamese",
+      "language_global_switcher": { "language": "VI" },
+      "locale_info": "vi-vn",
+      "data_pre_condition": {
+        "source": {
+          "title": "Pre-condition {{full_name}} in {{location}} thêm text ngôn ngữ khác vào đây !@@#$, 在这里添加另一种语言的文本",
+          "product_name": "Pre-condition {{product_title}}",
+          "time": "Pre-condition {{time_ago}}"
+        },
+        "destination": {
+          "title": "translated Pre-condition {{full_name}} in {{location}} thêm text ngôn ngữ khác vào đây !@@#$, 在这里添加另一种语言的文本 to Vietnamese",
+          "product_name": "translated Pre-condition {{product_title}} to Vietnamese",
+          "time": "translated Pre-condition {{time_ago}} to Vietnamese"
+        }
+      },
+      "data_step_2": {
+        "source": {
+          "title": "Step 2 {{full_name}} in {{location}} purchased a new",
+          "product_name": "Step 2 {{product_title}} new",
+          "time": "Step 2 {{time_ago}} new"
+        },
+        "destination": {
+          "title": "translated Step 2 {{full_name}} in {{location}} purchased a new to Vietnamese",
+          "product_name": "translated Step 2 {{product_title}} new to Vietnamese",
+          "time": "translated Step 2 {{time_ago}} new to Vietnamese"
+        }
+      },
+      "edit_step_3": "edit"
+    },
+    "SB_SET_TL_92": {
+      "case_description": "[DB+SF - Function] Kiểm tra tính năng auto translate khi Enable auto translate Apps - Conversion optimizer - Checkout notifications",
+      "publish_language": "Vietnamese",
+      "language_global_switcher": { "language": "VI" },
+      "locale_info": "vi-vn",
+      "data_pre_condition": {
+        "message": "Pre-condition {{full_name}} in {{location}} thêm text ngôn ngữ khác vào đây !@@#$, 在这里添加另一种语言的文本",
+        "destination": "translated Pre-condition {{full_name}} in {{location}} thêm text ngôn ngữ khác vào đây !@@#$, 在这里添加另一种语言的文本 to Vietnamese"
+      },
+      "data_step_2": {
+        "message": "Step 2 {{full_name}} in {{location}} purchased a new",
+        "destination": "translated Step 2 {{full_name}} in {{location}} purchased a new to Vietnamese"
+      },
+      "edit_step_3": "edit"
+    }
+  }
+}

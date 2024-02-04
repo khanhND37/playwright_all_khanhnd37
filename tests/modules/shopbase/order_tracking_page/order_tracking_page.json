@@ -1,0 +1,161 @@
+{
+  "cases": {
+    "TC_PLB_OTP_4": {
+      "api": "https://gapi.stag.shopbase.net",
+      "shop_name": "hienhoangb1.stag.myshopbase.net",
+      "username": "hienhoang@beeketing.net",
+      "password": "hien123",
+      "domain": "hienhoangb1.stag.myshopbase.net",
+      "shipmentStatus": [
+        {
+          "Description": "order có status = Delivered và color = màu xanh",
+          "order_name": "#HH5595",
+          "order_id": 6088741
+        },
+        {
+          "Description": "order có status = Ready for pickup và color = màu xanh",
+          "order_name": "#HH5562",
+          "order_id": 6068576
+        },
+        {
+          "Description": "order có status = In transit và color = màu xanh",
+          "order_name": "#HH5572",
+          "order_id": 6085119
+        },
+        {
+          "Description": "order có status = Processing và color = màu vàng",
+          "order_name": "#HH5563",
+          "order_id": 6068584
+        }
+      ]
+    },
+    "TC_PLB_OTP_2": {
+      "Description": "tc có shipment= Delivered, không hiện view tracking log trên Thank you page ",
+      "api": "https://gapi.stag.shopbase.net",
+      "shop_name": "hienhoangb1.stag.myshopbase.net",
+      "username": "hienhoang@beeketing.net",
+      "password": "hien123",
+      "domain": "hienhoangb1.stag.myshopbase.net",
+      "order_name_sb": "#HH5576",
+      "order_id": 6085362,
+      "tracking_steps_Sb": [
+        {
+          "created_at": "2022-06-08T11:31:00Z",
+          "location": "SURPRISE,AZ 85379,SURPRISE,AZ",
+          "message": "delivered, in/at mailbox"
+        },
+        {
+          "created_at": "2022-06-08T07:51:00Z",
+          "location": "SURPRISE,AZ 85379,SURPRISE,AZ",
+          "message": "out for delivery"
+        },
+        {
+          "created_at": "2022-06-08T07:40:00Z",
+          "location": "SURPRISE,AZ 85374,SURPRISE,AZ",
+          "message": "arrived at post office"
+        },
+        {
+          "created_at": "2022-06-07T18:14:00Z",
+          "location": "SURPRISE,AZ 85374,SURPRISE,AZ",
+          "message": "arrived at usps facility"
+        },
+        {
+          "created_at": "2022-06-07T13:05:00Z",
+          "location": "PHOENIX AZ DISTRIBUTION CENTER ANNEX,PHOENIX AZ DISTRIBUTION CENTER ANNEX",
+          "message": "departed usps regional facility"
+        },
+        {
+          "created_at": "2022-06-07T07:57:00Z",
+          "location": "PHOENIX AZ DISTRIBUTION CENTER ANNEX,PHOENIX AZ DISTRIBUTION CENTER ANNEX",
+          "message": "processed at usps regional destination facility"
+        },
+        {
+          "created_at": "2022-06-07T00:10:00Z",
+          "location": "LAS VEGAS NV DISTRIBUTION CENTER,LAS VEGAS NV DISTRIBUTION CENTER",
+          "message": "departed usps regional facility"
+        },
+        {
+          "created_at": "2022-06-06T14:42:25Z",
+          "location": "",
+          "message": "Shipment information received"
+        },
+        {
+          "created_at": "2022-06-06T14:42:17Z",
+          "location": "",
+          "message": "Shipment information received"
+        },
+        {
+          "created_at": "2022-06-06T14:15:00Z",
+          "location": "LAS VEGAS NV DISTRIBUTION CENTER,LAS VEGAS NV DISTRIBUTION CENTER",
+          "message": "arrived at usps regional facility"
+        },
+        {
+          "created_at": "2022-06-06T14:13:00Z",
+          "location": "NORTH LAS VEGAS,NV 89032,NORTH LAS VEGAS,NV",
+          "message": "departed shipping partner facility, usps awaiting item"
+        },
+        {
+          "created_at": "2022-06-06T12:01:00Z",
+          "location": "NORTH LAS VEGAS,NV 89032,NORTH LAS VEGAS,NV",
+          "message": "arrived shipping partner facility, usps awaiting item"
+        },
+        {
+          "created_at": "2022-06-05T19:17:39Z",
+          "location": "",
+          "message": "delivery to local courier"
+        },
+        {
+          "created_at": "2022-06-05T16:26:05Z",
+          "location": "US",
+          "message": "Arrived at Sort Facility."
+        },
+        {
+          "created_at": "2022-06-05T13:13:00Z",
+          "location": "",
+          "message": "Arrived at AIRPORT of Destination"
+        },
+        {
+          "created_at": "2022-06-05T11:56:00Z",
+          "location": "",
+          "message": "Departed from AIRPORT of Origin"
+        },
+        {
+          "created_at": "2022-06-05T08:00:00Z",
+          "location": "",
+          "message": "Custom clearance completed"
+        },
+        {
+          "created_at": "2022-06-01T18:00:13Z",
+          "location": "International Warehouse",
+          "message": "Arrive at international airport to abroad"
+        },
+        {
+          "created_at": "2022-06-01T14:00:12Z",
+          "location": "International Warehouse",
+          "message": "Departed Facility In processing center"
+        },
+        {
+          "created_at": "2022-05-31T16:08:29Z",
+          "location": "International Warehouse",
+          "message": "Departed Facility in"
+        },
+        {
+          "created_at": "2022-05-30T20:38:21Z",
+          "location": "International Warehouse",
+          "message": "Arrived at Sort Facility"
+        },
+        {
+          "created_at": "2022-05-30T08:57:59Z",
+          "location": "International Warehouse",
+          "message": "Shipment information received Last  tracking number:9261290278833799618400 - Last  tracking carrier:OSM USPS"
+        }
+      ]
+    }
+  },
+  "env": {
+    "prodtest": {
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://prod-test-api.shopbase.com"
+    }
+  }
+}

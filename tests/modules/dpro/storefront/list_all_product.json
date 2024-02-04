@@ -1,0 +1,554 @@
+{
+  "api": "https://api.shopbase.com",
+  "domain": "dp-product-list-stf.onshopbase.com",
+  "username": "shopbase@beeketing.net",
+  "password": "Q(f!3Kx+6n;?Us%F",
+  "shop_name": "dp-product-list-stf",
+  "shop_id": 10385751,
+  "user_id": 73782,
+  "apply_template": {
+    "template_id": 18,
+    "type": "product"
+  },
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "list-product-storefront.myshopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "user_id": 73800,
+      "shop_id": 10323454,
+      "shop_name": "list-product-storefront",
+      "product_info": {
+        "apply_template": {
+          "template_id": 559,
+          "type": "product"
+        }
+      }
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "dp-checkout-creator.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_name": "dp-checkout-creator.onshopbase.com",
+      "shop_id": 10373841,
+      "user_id": 73782,
+      "apply_template": {
+        "template_id": 18,
+        "type": "product"
+      },
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "dp-product-list-stf.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_name": "dp-product-list-stf",
+      "shop_id": 10385751,
+      "user_id": 73782,
+      "apply_template": {
+        "template_id": 18,
+        "type": "product"
+      }
+    }
+  },
+  "timeout": 3000,
+  "cases": {
+    "SB_SC_SCSF_SCSP_2": {
+      "product_sample_title": "Example Product Title",
+      "list_products": [
+        {
+          "product": {
+            "title": "Learn Python: Python for Beginners",
+            "product_type": "online_course",
+            "published": true
+          }
+        },
+        {
+          "product": {
+            "title": "Essential Skills for Designers - Masking",
+            "product_type": "online_course",
+            "published": true
+          }
+        },
+        {
+          "product": {
+            "title": "Learn Photoshop, Web Design",
+            "product_type": "digital_download",
+            "published": true
+          }
+        }
+      ],
+      "content": "Test khong co product"
+    },
+    "SB_SC_SCSF_SCSP_3": {
+      "product_info": {
+        "product": {
+          "title": "course Playwright 1",
+          "product_type": "online_course",
+          "published": true,
+          "product_pricing_type": "One-time payment",
+          "pricing_title": "Price test",
+          "amount": "30.00"
+        }
+      },
+      "update_products": {
+        "product_title": "Edit course Playwright 1",
+        "pricing_type": "One-time payment",
+        "pricing_title": "One-time payment",
+        "pricing_amount": "10.00"
+      }
+    },
+    "SB_SC_SCSF_SCSP_7": {
+      "products": [
+        {
+          "product": {
+            "title": "Learn Python: Python for Beginners",
+            "product_type": "online_course",
+            "published": true
+          },
+          "update_products": {
+            "pricing_type": "One-time payment",
+            "pricing_title": "One-time payment",
+            "pricing_amount": "10.00"
+          }
+        },
+        {
+          "product": {
+            "title": "Essential Skills for Designers - Masking",
+            "product_type": "online_course",
+            "published": true
+          },
+          "update_products": {
+            "pricing_type": "One-time payment",
+            "pricing_title": "One-time payment",
+            "pricing_amount": "20.00"
+          }
+        },
+        {
+          "product": {
+            "title": "Learn Photoshop, Web Design",
+            "product_type": "digital_download",
+            "published": true
+          },
+          "update_products": {
+            "pricing_type": "One-time payment",
+            "pricing_title": "One-time payment",
+            "pricing_amount": "30.00"
+          }
+        },
+        {
+          "product": {
+            "title": "One Million from Photoshop",
+            "product_type": "coaching_session",
+            "published": true
+          },
+          "update_products": {
+            "pricing_type": "One-time payment",
+            "pricing_title": "One-time payment",
+            "pricing_amount": "40.00"
+          }
+        }
+      ],
+      "option_sort": ["Newest", "Oldest", "Alphabet A-Z", "Alphabet Z-A", "Price, low to high", "Price, high to low"],
+      "sort_by": [
+        {
+          "sort_mode": "desc",
+          "type_sort": "created:asc",
+          "selected_sort": "Oldest",
+          "checkout": true,
+          "product_sorted": [
+            {
+              "product_name": "Learn Python: Python for Beginners"
+            },
+            {
+              "product_name": "Essential Skills for Designers - Masking"
+            },
+            {
+              "product_name": "Learn Photoshop, Web Design"
+            },
+            {
+              "product_name": "One Million from Photoshop"
+            }
+          ]
+        },
+        {
+          "sort_mode": "asc",
+          "sort_by": "name:asc",
+          "selected_sort": "Alphabet A-Z",
+          "a_z": true,
+          "product_sorted": [
+            {
+              "product_name": "Essential Skills for Designers - Masking"
+            },
+            {
+              "product_name": "Learn Photoshop, Web Design"
+            },
+            {
+              "product_name": "Learn Python: Python for Beginners"
+            },
+            {
+              "product_name": "One Million from Photoshop"
+            }
+          ]
+        },
+        {
+          "sort_mode": "asc",
+          "sort_by": "name:desc",
+          "selected_sort": "Alphabet Z-A",
+          "a_z": true,
+          "product_sorted": [
+            {
+              "product_name": "One Million from Photoshop"
+            },
+            {
+              "product_name": "Learn Python: Python for Beginners"
+            },
+            {
+              "product_name": "Learn Photoshop, Web Design"
+            },
+            {
+              "product_name": "Essential Skills for Designers - Masking"
+            }
+          ]
+        },
+        {
+          "sort_mode": "desc",
+          "sort_by": "title:desc",
+          "selected_sort": "Newest",
+          "a_z": false,
+          "product_sorted": [
+            {
+              "product_name": "One Million from Photoshop"
+            },
+            {
+              "product_name": "Learn Photoshop, Web Design"
+            },
+            {
+              "product_name": "Essential Skills for Designers - Masking"
+            },
+            {
+              "product_name": "Learn Python: Python for Beginners"
+            }
+          ]
+        },
+        {
+          "selected_sort": "Price, high to low",
+          "type_sort": "price:desc",
+          "product_sorted": [
+            {
+              "product_name": "One Million from Photoshop"
+            },
+            {
+              "product_name": "Learn Photoshop, Web Design"
+            },
+            {
+              "product_name": "Essential Skills for Designers - Masking"
+            },
+            {
+              "product_name": "Learn Python: Python for Beginners"
+            }
+          ]
+        },
+        {
+          "selected_sort": "Price, low to high",
+          "type_sort": "price:asc",
+          "product_sorted": [
+            {
+              "product_name": "Learn Python: Python for Beginners"
+            },
+            {
+              "product_name": "Essential Skills for Designers - Masking"
+            },
+            {
+              "product_name": "Learn Photoshop, Web Design"
+            },
+            {
+              "product_name": "One Million from Photoshop"
+            }
+          ]
+        }
+      ]
+    },
+    "SB_SC_SCSF_SCSP_5": {
+      "products": {
+        "product_free": {
+          "product": {
+            "title": "course Playwright 1",
+            "product_type": "online_course",
+            "label": "Online course",
+            "published": true,
+            "product_pricing_type": "Free"
+          }
+        },
+        "one_time_payment_free": {
+          "product": {
+            "title": "Python From Scratch & Selenium WebDriver, Manual + JIRA + API + DB + Selenium QA Automation 2022",
+            "product_type": "online_course",
+            "label": "Online course",
+            "published": true,
+            "product_pricing_type": "Free"
+          },
+          "update_product": {
+            "pricing_type": "One-time payment",
+            "pricing_title": "One-time payment",
+            "pricing_amount": "0.00"
+          }
+        },
+        "one_time_payment": {
+          "product": {
+            "title": "Learn to Program Python at Any Age@*!%^&(((",
+            "product_type": "online_course",
+            "label": "Online course",
+            "published": true,
+            "product_pricing_type": "Free"
+          },
+          "update_product": {
+            "pricing_type": "One-time payment",
+            "pricing_title": "One-time payment",
+            "pricing_amount": "30.00"
+          }
+        }
+      },
+      "content": "title product > 3 dong"
+    },
+    "SB_SC_SCSF_SCSP_6": {
+      "product_info": {
+        "product": {
+          "title": "Learn Photoshop, Web Design",
+          "product_type": "digital_download",
+          "published": true
+        },
+        "update_product": {
+          "pricing_type": "One-time payment",
+          "pricing_title": "One-time payment",
+          "pricing_amount": "30.00",
+          "thumbnail_type": "link",
+          "thumbnail_file_path": "https://img.btdmp.com/10049/10049974/products/0x360@1648835723f84aaf318e.jpeg"
+        }
+      },
+      "email": "shopbase@beeketing.net",
+      "timeout": 5000,
+      "product_card": [
+        {
+          "step": "Click vào Thumnail product",
+          "locator": "thumbnail"
+        },
+        {
+          "step": "Click vào Title product",
+          "locator": "title"
+        },
+        {
+          "step": "Click vào Label product",
+          "locator": "label"
+        },
+        {
+          "step": "Click vào Price product",
+          "locator": "price"
+        }
+      ]
+    },
+    "SB_SC_SCSF_SCSP_4": {
+      "product_info": {
+        "product": {
+          "title": "Learn Photoshop, Web Design",
+          "product_type": "digital_download",
+          "published": true
+        },
+        "thumbnail_link": [
+          {
+            "thumbnail_type": "link",
+            "thumbnail_file_path": "http://bizweb.dktcdn.net/100/025/538/files/nhung-loi-chuc-tet-cho-ban-be-dong-nghiep-hay-nhat.png",
+            "thumbnail_name": "Thumbnail PNG"
+          },
+          {
+            "thumbnail_type": "link",
+            "thumbnail_file_path": "https://img.btdmp.com/10049/10049974/products/0x360@1648835723f84aaf318e.jpeg",
+            "thumbnail_name": "Thumbnail JPEG"
+          },
+          {
+            "thumbnail_type": "link",
+            "thumbnail_file_path": "https://thuthuat123.com/uploads/2018/01/27/tong-hop-anh-bia-facebook-dep-11_101148.jpg",
+            "thumbnail_name": "Thumbnail long image"
+          },
+          {
+            "thumbnail_type": "link",
+            "thumbnail_file_path": "https://tocotocotea.com/wp-content/uploads/2022/06/O-Long-xoai-kem-coffee.jpg",
+            "thumbnail_name": "Thumbnail small image"
+          }
+        ]
+      },
+      "thumbnail_default": "thumnail default",
+      "size_default": {
+        "width": 341,
+        "height": 192
+      }
+    },
+    "SB_DP_LPS_16": {
+      "products": [
+        {
+          "product_body": {
+            "product": {
+              "title": "Learn Python: Python for Beginners",
+              "product_type": "online_course",
+              "published": true
+            }
+          },
+          "update_products": {
+            "pricing_type": "One-time payment",
+            "pricing_title": "One-time payment",
+            "pricing_amount": "10.00",
+            "thumbnail_type": "link",
+            "thumbnail_file_path": "http://bizweb.dktcdn.net/100/025/538/files/nhung-loi-chuc-tet-cho-ban-be-dong-nghiep-hay-nhat.png",
+            "thumbnail_name": "Thumbnail PNG"
+          }
+        },
+        {
+          "product_body": {
+            "product": {
+              "title": "Essential Skills for Designers - Masking",
+              "product_type": "online_course",
+              "published": true
+            }
+          },
+          "update_products": {
+            "thumbnail_type": "link",
+            "thumbnail_file_path": "https://img.btdmp.com/10049/10049974/products/0x360@1648835723f84aaf318e.jpeg",
+            "thumbnail_name": "Thumbnail JPEG"
+          }
+        },
+        {
+          "product_body": {
+            "product": {
+              "title": "Learn Photoshop, Web Design",
+              "product_type": "digital_download",
+              "published": true
+            },
+            "dp_data": {
+              "sections": [
+                {
+                  "id": 0,
+                  "title": "",
+                  "status": "published",
+                  "position": 0,
+                  "lectures": [
+                    {
+                      "id": 0,
+                      "title": "",
+                      "status": "published",
+                      "position": 0,
+                      "medias": []
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "update_products": {
+            "pricing_type": "One-time payment",
+            "pricing_title": "One-time payment",
+            "pricing_amount": "30.00",
+            "thumbnail_type": "link",
+            "thumbnail_file_path": "https://thuthuat123.com/uploads/2018/01/27/tong-hop-anh-bia-facebook-dep-11_101148.jpg",
+            "thumbnail_name": "Thumbnail long image"
+          }
+        },
+        {
+          "product_body": {
+            "product": {
+              "title": "One Million from Photoshop",
+              "product_type": "coaching_session",
+              "published": true
+            },
+            "dp_data": {
+              "sections": [
+                {
+                  "id": 0,
+                  "title": "",
+                  "status": "published",
+                  "position": 0,
+                  "lectures": [
+                    {
+                      "id": 0,
+                      "title": "",
+                      "status": "published",
+                      "position": 0,
+                      "medias": []
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "update_products": {
+            "thumbnail_type": "link",
+            "thumbnail_file_path": "https://tocotocotea.com/wp-content/uploads/2022/06/O-Long-xoai-kem-coffee.jpg",
+            "thumbnail_name": "Thumbnail small image"
+          }
+        }
+      ],
+      "size_default": {
+        "width": 404,
+        "height": 227
+      },
+      "sort_product": [
+        {
+          "sort_option": "Oldest",
+          "product_list": [
+            "Learn Python: Python for Beginners",
+            "Essential Skills for Designers - Masking",
+            "Learn Photoshop, Web Design",
+            "One Million from Photoshop"
+          ]
+        },
+        {
+          "sort_option": "Alphabet A-Z",
+          "product_list": [
+            "Essential Skills for Designers - Masking",
+            "Learn Photoshop, Web Design",
+            "Learn Python: Python for Beginners",
+            "One Million from Photoshop"
+          ]
+        },
+        {
+          "sort_option": "Alphabet Z-A",
+          "product_list": [
+            "One Million from Photoshop",
+            "Learn Python: Python for Beginners",
+            "Learn Photoshop, Web Design",
+            "Essential Skills for Designers - Masking"
+          ]
+        },
+        {
+          "sort_option": "Price, low to high",
+          "product_list": [
+            "One Million from Photoshop",
+            "Essential Skills for Designers - Masking",
+            "Learn Python: Python for Beginners",
+            "Learn Photoshop, Web Design"
+          ]
+        },
+        {
+          "sort_option": "Price, high to low",
+          "product_list": [
+            "Learn Photoshop, Web Design",
+            "Learn Python: Python for Beginners",
+            "One Million from Photoshop",
+            "Essential Skills for Designers - Masking"
+          ]
+        },
+        {
+          "sort_option": "Newest",
+          "product_list": [
+            "One Million from Photoshop",
+            "Learn Photoshop, Web Design",
+            "Essential Skills for Designers - Masking",
+            "Learn Python: Python for Beginners"
+          ]
+        }
+      ]
+    }
+  }
+}

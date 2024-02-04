@@ -1,0 +1,838 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "username": "shopbase4@beeketing.net",
+      "password": "H7mQdQ]Zj]%[Nm?",
+      "domain": "au-plb-shipping-pod.onshopbase.com",
+      "shop_name": "au-plb-shipping-pod",
+      "email": "tester@maildrop.cc",
+      "user_id": 207114,
+      "shop_id": 10382399,
+      "cases": {
+        "SB_PLB_PODPL_POPLS_27": {
+          "products_checkout": [
+            {
+              "name": "Rule21",
+              "quantity": 1
+            }
+          ],
+          "shipping_address": {
+            "email": "tester@maildrop.cc",
+            "first_name": "ShopBase",
+            "last_name": "Auto",
+            "address": "1600 W Loop S",
+            "country": "United States",
+            "state": "California",
+            "city": "Los Angeles",
+            "zipcode": "90003",
+            "phone_number": "0124567985"
+          },
+          "expected_shipping_methods": [
+            {
+              "amount": 7,
+              "method_title": "Standard Shipping"
+            },
+            {
+              "amount": 7,
+              "method_title": "Fast shipping"
+            }
+          ],
+          "additional_product": [
+            {
+              "name": "Rule22",
+              "quantity": 1
+            }
+          ],
+          "expected_shipping_methods_after_add_product": [
+            {
+              "amount": 9,
+              "method_title": "Standard Shipping"
+            },
+            {
+              "amount": 9,
+              "method_title": "Fast Shipping"
+            }
+          ]
+        },
+        "SB_PLB_PODPL_POPLS_28": {
+          "products_checkout": [
+            {
+              "name": "Rule22",
+              "quantity": 1
+            }
+          ],
+          "shipping_address": {
+            "email": "tester@maildrop.cc",
+            "first_name": "ShopBase",
+            "last_name": "Auto",
+            "address": "1600 W Loop S",
+            "country": "Russia",
+            "state": "Altai Republic",
+            "city": "Altai Republic",
+            "zipcode": "90003",
+            "phone_number": "0124567985"
+          },
+          "additional_product": [
+            {
+              "name": "Test regions",
+              "quantity": 1
+            }
+          ]
+        },
+        "SB_PLB_PODPL_POPLS_29": {
+          "products_checkout": [
+            {
+              "name": "Test regions",
+              "variant_id": 1000010172480341,
+              "quantity": 2
+            }
+          ],
+          "expected_shipping_methods": [
+            {
+              "amount": 7,
+              "method_title": "Cali Standard"
+            },
+            {
+              "amount": 12,
+              "method_title": "Cali Express"
+            }
+          ],
+          "shipping_method_for_each_region": [
+            {
+              "shipping_address": {
+                "state": "Hawaii",
+                "city": "Ocean View",
+                "zipcode": "96737"
+              },
+              "expected_shipping_methods": [
+                {
+                  "amount": 9,
+                  "method_title": "US shipping"
+                }
+              ]
+            },
+            {
+              "shipping_address": {
+                "country": "Russia",
+                "state": "Altai Republic",
+                "city": "Altai Republic"
+              },
+              "expected_shipping_methods": [
+                {
+                  "amount": 12,
+                  "method_title": "Russia"
+                }
+              ]
+            },
+            {
+              "shipping_address": {
+                "country": "Australia",
+                "state": "Western Australia",
+                "city": "Perth"
+              },
+              "expected_shipping_methods": [
+                {
+                  "amount": 10,
+                  "method_title": "AU"
+                }
+              ]
+            },
+            {
+              "shipping_address": {
+                "city": "Murdoch"
+              }
+            }
+          ]
+        },
+        "SB_PLB_PODPL_POPLS_30": {
+          "products_checkout": [
+            {
+              "name": "Product Auto",
+              "variant_id": 1000011086646591,
+              "quantity": 2
+            },
+            {
+              "name": "Rule3",
+              "variant_id": 1000010187821021,
+              "quantity": 2
+            }
+          ],
+          "expected_shipping_methods": [
+            {
+              "amount": 16,
+              "method_title": "Economic Shipping"
+            }
+          ]
+        },
+        "SB_PLB_PODPL_POPLS_31": {
+          "products_checkout": [
+            {
+              "name": "Rule21",
+              "variant_id": 1000011084733276,
+              "quantity": 2
+            },
+            {
+              "name": "Rule22",
+              "variant_id": 1000010188066935,
+              "quantity": 2
+            }
+          ],
+          "expected_shipping_methods": [
+            {
+              "amount": 13,
+              "method_title": "Standard Shipping"
+            },
+            {
+              "amount": 16,
+              "method_title": "Fast Shipping"
+            }
+          ]
+        },
+        "SB_PLB_PODPL_POPLS_32": {
+          "products_checkout": [
+            {
+              "name": "Rule21",
+              "variant_id": 1000011084733276,
+              "quantity": 2
+            },
+            {
+              "name": "Rule6",
+              "variant_id": 1000010187820985,
+              "quantity": 2
+            }
+          ],
+          "expected_shipping_methods": [
+            {
+              "amount": 19,
+              "method_title": "Standard Shipping"
+            },
+            {
+              "amount": 23,
+              "method_title": "Fast Shipping"
+            }
+          ]
+        },
+        "SB_PLB_PODPL_POPLS_33": {
+          "products_checkout": [
+            {
+              "name": "RulePPC1",
+              "variant_id": 1000010579675017,
+              "quantity": 2
+            }
+          ],
+          "product_ppc": {
+            "variant_id": 1000011084733276,
+            "quantity": 1,
+            "post_purchase_price": 20.99
+          },
+          "usell_id": 9746292,
+          "shipping_method_before_ppc": {
+            "amount": 8,
+            "method_title": "Standard Shipping"
+          },
+          "shipping_method_after_ppc": {
+            "amount": 15,
+            "method_title": "Standard Shipping"
+          }
+        },
+        "SB_PLB_PODPL_POPLS_34": {
+          "case_name": "PPC có rate khác tên với Shipping method đã chọn của order.Shipping method đã chọn của order là rate giá cao.Cùng group",
+          "products_checkout": [
+            {
+              "name": "Rule22",
+              "variant_id": 1000010188066935,
+              "quantity": 1
+            },
+            {
+              "name": "Rule5",
+              "variant_id": 1000010187808040,
+              "quantity": 1
+            }
+          ],
+          "product_ppc": {
+            "variant_id": 1000011084733276,
+            "quantity": 1,
+            "post_purchase_price": 20.99
+          },
+          "usell_id": 9746292,
+          "shipping_method_before_ppc": {
+            "amount": 13,
+            "method_title": "Fast Shipping"
+          },
+          "shipping_method_after_ppc": {
+            "amount": 15,
+            "method_title": "Fast Shipping"
+          }
+        }
+      }
+    },
+    "prodtest": {
+      "domain": "au-plb-shipping-pod-prodtest.onshopbase.com",
+      "shop_name": "au-plb-shipping-pod-prodtest",
+      "username": "shopbase4@beeketing.net",
+      "password": "H7mQdQ]Zj]%[Nm?",
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://prod-test-api.shopbase.com",
+      "user_id": 207114,
+      "shop_id": 10383313,
+      "cases": {
+        "SB_PLB_PODPL_POPLS_27": {
+          "products_checkout": [
+            {
+              "name": "Rule21",
+              "quantity": 1
+            }
+          ],
+          "shipping_address": {
+            "email": "tester@maildrop.cc",
+            "first_name": "ShopBase",
+            "last_name": "Auto",
+            "address": "1600 W Loop S",
+            "country": "United States",
+            "state": "California",
+            "city": "Los Angeles",
+            "zipcode": "90003",
+            "phone_number": "0124567985"
+          },
+          "expected_shipping_methods": [
+            {
+              "amount": 7,
+              "method_title": "Standard Shipping"
+            },
+            {
+              "amount": 7,
+              "method_title": "Fast shipping"
+            }
+          ],
+          "additional_product": [
+            {
+              "name": "Rule22",
+              "quantity": 1
+            }
+          ],
+          "expected_shipping_methods_after_add_product": [
+            {
+              "amount": 9,
+              "method_title": "Standard Shipping"
+            },
+            {
+              "amount": 9,
+              "method_title": "Fast Shipping"
+            }
+          ]
+        },
+        "SB_PLB_PODPL_POPLS_28": {
+          "products_checkout": [
+            {
+              "name": "Rule22",
+              "quantity": 1
+            }
+          ],
+          "shipping_address": {
+            "email": "tester@maildrop.cc",
+            "first_name": "ShopBase",
+            "last_name": "Auto",
+            "address": "1600 W Loop S",
+            "country": "Russia",
+            "state": "Altai Republic",
+            "city": "Altai Republic",
+            "zipcode": "90003",
+            "phone_number": "0124567985"
+          },
+          "additional_product": [
+            {
+              "name": "Test regions",
+              "quantity": 1
+            }
+          ]
+        },
+        "SB_PLB_PODPL_POPLS_29": {
+          "products_checkout": [
+            {
+              "name": "Test regions",
+              "variant_id": 1000010180846231,
+              "quantity": 2
+            }
+          ],
+          "expected_shipping_methods": [
+            {
+              "amount": 7,
+              "method_title": "Cali Standard"
+            },
+            {
+              "amount": 12,
+              "method_title": "Cali Express"
+            }
+          ],
+          "shipping_method_for_each_region": [
+            {
+              "shipping_address": {
+                "state": "Hawaii",
+                "city": "Ocean View",
+                "zipcode": "96737"
+              },
+              "expected_shipping_methods": [
+                {
+                  "amount": 9,
+                  "method_title": "US shipping"
+                }
+              ]
+            },
+            {
+              "shipping_address": {
+                "country": "Russia",
+                "state": "Altai Republic",
+                "city": "Altai Republic"
+              },
+              "expected_shipping_methods": [
+                {
+                  "amount": 12,
+                  "method_title": "Russia"
+                }
+              ]
+            },
+            {
+              "shipping_address": {
+                "country": "Australia",
+                "state": "Western Australia",
+                "city": "Perth"
+              },
+              "expected_shipping_methods": [
+                {
+                  "amount": 10,
+                  "method_title": "AU"
+                }
+              ]
+            },
+            {
+              "shipping_address": {
+                "city": "Murdoch"
+              }
+            }
+          ]
+        },
+        "SB_PLB_PODPL_POPLS_30": {
+          "products_checkout": [
+            {
+              "name": "Rule21",
+              "variant_id": 1000010180845179,
+              "quantity": 1
+            },
+            {
+              "name": "Rule3",
+              "variant_id": 1000010180845007,
+              "quantity": 1
+            }
+          ],
+          "expected_shipping_methods": [
+            {
+              "amount": 9,
+              "method_title": "Economic Shipping"
+            }
+          ]
+        },
+        "SB_PLB_PODPL_POPLS_31": {
+          "products_checkout": [
+            {
+              "name": "Rule21",
+              "variant_id": 1000010180845179,
+              "quantity": 1
+            },
+            {
+              "name": "Rule22",
+              "variant_id": 1000010180852358,
+              "quantity": 1
+            }
+          ],
+          "expected_shipping_methods": [
+            {
+              "amount": 9,
+              "method_title": "Economic Shipping"
+            },
+            {
+              "amount": 11,
+              "method_title": "Expedite Shipping"
+            }
+          ]
+        },
+        "SB_PLB_PODPL_POPLS_32": {
+          "products_checkout": [
+            {
+              "name": "Rule21",
+              "variant_id": 1000010180845179,
+              "quantity": 1
+            },
+            {
+              "name": "Rule6",
+              "variant_id": 1000010180844972,
+              "quantity": 1
+            }
+          ],
+          "expected_shipping_methods": [
+            {
+              "amount": 14,
+              "method_title": "Standard Shipping"
+            },
+            {
+              "amount": 15,
+              "method_title": "Fast Shipping"
+            }
+          ]
+        },
+        "SB_PLB_PODPL_POPLS_33": {
+          "products_checkout": [
+            {
+              "name": "RulePPC1",
+              "variant_id": 1000010643822267,
+              "quantity": 2
+            }
+          ],
+          "product_ppc": {
+            "variant_id": 1000010180845179,
+            "quantity": 1,
+            "post_purchase_price": 23.99
+          },
+          "usell_id": 9745867,
+          "shipping_method_before_ppc": {
+            "amount": 8,
+            "method_title": "Standard Shipping"
+          },
+          "shipping_method_after_ppc": {
+            "amount": 15,
+            "method_title": "Standard Shipping"
+          }
+        },
+        "SB_PLB_PODPL_POPLS_34": {
+          "products_checkout": [
+            {
+              "name": "Rule22",
+              "variant_id": 1000010180852358,
+              "quantity": 1
+            },
+            {
+              "name": "Rule5",
+              "variant_id": 1000010180844682,
+              "quantity": 1
+            }
+          ],
+          "product_ppc": {
+            "variant_id": 1000010180845179,
+            "quantity": 1,
+            "post_purchase_price": 23.99
+          },
+          "usell_id": 9745867,
+          "shipping_method_before_ppc": {
+            "amount": 13,
+            "method_title": "Fast Shipping"
+          },
+          "shipping_method_after_ppc": {
+            "amount": 17,
+            "method_title": "Fast Shipping"
+          }
+        }
+      }
+    },
+    "dev": {
+      "domain": "au-shipping-plb-pod.myshopbase.net",
+      "api": "https://gapi.dev.shopbase.net",
+      "shop_name": "au-shipping-plb-pod",
+      "username": "shopbase4@beeketing.net",
+      "password": "H7mQdQ]Zj]%[Nm?",
+      "user_id": 89321,
+      "shop_id": 10322984,
+      "email": "tester@maildrop.cc",
+      "cases": {
+        "SB_PLB_PODPL_POPLS_27": {
+          "products_checkout": [
+            {
+              "name": "Rule21",
+              "quantity": 1
+            }
+          ],
+          "shipping_address": {
+            "email": "tester@maildrop.cc",
+            "first_name": "ShopBase",
+            "last_name": "Auto",
+            "address": "1600 W Loop S",
+            "country": "United States",
+            "state": "California",
+            "city": "Los Angeles",
+            "zipcode": "90003",
+            "phone_number": "0124567985"
+          },
+          "expected_shipping_methods": [
+            {
+              "amount": 7,
+              "method_title": "Economic Shipping"
+            },
+            {
+              "amount": 7,
+              "method_title": "Expedite Shipping"
+            }
+          ],
+          "additional_product": [
+            {
+              "name": "Rule22",
+              "quantity": 1
+            }
+          ],
+          "expected_shipping_methods_after_add_product": [
+            {
+              "amount": 9,
+              "method_title": "Economic Shipping"
+            },
+            {
+              "amount": 11,
+              "method_title": "Expedite Shipping"
+            }
+          ]
+        },
+        "SB_PLB_PODPL_POPLS_28": {
+          "products_checkout": [
+            {
+              "name": "Rule22",
+              "quantity": 1
+            }
+          ],
+          "shipping_address": {
+            "email": "tester@maildrop.cc",
+            "first_name": "ShopBase",
+            "last_name": "Auto",
+            "address": "1600 W Loop S",
+            "country": "Russia",
+            "state": "Altai Republic",
+            "city": "Altai Republic",
+            "zipcode": "90003",
+            "phone_number": "0124567985"
+          },
+          "additional_product": [
+            {
+              "name": "Test regions",
+              "quantity": 1
+            }
+          ]
+        },
+        "SB_PLB_PODPL_POPLS_29": {
+          "products_checkout": [
+            {
+              "name": "Test regions",
+              "variant_id": 1000001766918424,
+              "quantity": 1
+            }
+          ],
+          "expected_shipping_methods": [
+            {
+              "amount": 5,
+              "method_title": "Cali Standard"
+            },
+            {
+              "amount": 10,
+              "method_title": "Cali Express"
+            }
+          ],
+          "shipping_method_for_each_region": [
+            {
+              "shipping_address": {
+                "state": "Hawaii",
+                "city": "Ocean View",
+                "zipcode": "96737"
+              },
+              "expected_shipping_methods": [
+                {
+                  "amount": 7,
+                  "method_title": "US shipping"
+                }
+              ]
+            },
+            {
+              "shipping_address": {
+                "country": "Russia",
+                "state": "Altai Republic",
+                "city": "Altai Republic"
+              },
+              "expected_shipping_methods": [
+                {
+                  "amount": 10,
+                  "method_title": "Russia"
+                }
+              ]
+            },
+            {
+              "shipping_address": {
+                "country": "Australia",
+                "state": "Western Australia",
+                "city": "Perth"
+              },
+              "expected_shipping_methods": [
+                {
+                  "amount": 10,
+                  "method_title": "AU"
+                }
+              ]
+            },
+            {
+              "shipping_address": {
+                "city": "Murdoch"
+              }
+            }
+          ]
+        },
+        "SB_PLB_PODPL_POPLS_30": {
+          "products_checkout": [
+            {
+              "name": "Rule21",
+              "variant_id": 1000001766918420,
+              "quantity": 1
+            },
+            {
+              "name": "Rule3",
+              "variant_id": 1000001766918425,
+              "quantity": 1
+            }
+          ],
+          "expected_shipping_methods": [
+            {
+              "amount": 9,
+              "method_title": "Economic Shipping"
+            }
+          ]
+        },
+        "SB_PLB_PODPL_POPLS_31": {
+          "products_checkout": [
+            {
+              "name": "Rule21",
+              "variant_id": 1000001766918420,
+              "quantity": 1
+            },
+            {
+              "name": "Rule22",
+              "variant_id": 1000001766918421,
+              "quantity": 1
+            }
+          ],
+          "expected_shipping_methods": [
+            {
+              "amount": 9,
+              "method_title": "Economic Shipping"
+            },
+            {
+              "amount": 11,
+              "method_title": "Expedite Shipping"
+            }
+          ]
+        },
+        "SB_PLB_PODPL_POPLS_32": {
+          "case_name": "[POD only] Order có 2 items Khác group, Rate name khác nhau",
+          "products_checkout": [
+            {
+              "name": "Rule21",
+              "variant_id": 1000001766918420,
+              "quantity": 1
+            },
+            {
+              "name": "Rule6",
+              "variant_id": 1000001766918426,
+              "quantity": 1
+            }
+          ],
+          "expected_shipping_methods": [
+            {
+              "amount": 14,
+              "method_title": "Standard Shipping"
+            },
+            {
+              "amount": 15,
+              "method_title": "Fast Shipping"
+            }
+          ]
+        },
+        "SB_PLB_PODPL_POPLS_33": {
+          "products_checkout": [
+            {
+              "name": "RulePPC1",
+              "variant_id": 1000001766918430,
+              "quantity": 1
+            }
+          ],
+          "product_ppc": {
+            "variant_id": 1000001766918420,
+            "quantity": 1,
+            "post_purchase_price": 28.49
+          },
+          "shipping_method_before_ppc": {
+            "amount": 6,
+            "method_title": "Expedite Shipping"
+          },
+          "shipping_method_after_ppc": {
+            "amount": 13,
+            "method_title": "Expedite Shipping"
+          },
+          "usell_id": 100000278
+        },
+        "SB_PLB_PODPL_POPLS_34": {
+          "case_name": "PPC có rate khác tên với Shipping method đã chọn của order.Shipping method đã chọn của order là rate giá cao.Cùng group",
+          "products_checkout": [
+            {
+              "name": "Rule22",
+              "variant_id": 1000001766918421,
+              "quantity": 1
+            },
+            {
+              "name": "Rule5",
+              "variant_id": 1000001766918429,
+              "quantity": 1
+            }
+          ],
+          "product_ppc": {
+            "variant_id": 1000001766918420,
+            "post_purchase_price": 28.49,
+            "quantity": 1
+          },
+          "shipping_method_before_ppc": {
+            "amount": 9,
+            "method_title": "Expedite Shipping"
+          },
+          "shipping_method_after_ppc": {
+            "amount": 13,
+            "method_title": "Expedite Shipping"
+          },
+          "usell_id": 100000278
+        }
+      }
+    }
+  },
+  "cases": {
+    "SB_PLB_PODPL_POPLS_27": {},
+    "SB_PLB_PODPL_POPLS_28": {},
+    "SB_PLB_PODPL_POPLS_29": {},
+    "SB_PLB_PODPL_POPLS_30": {},
+    "SB_PLB_PODPL_POPLS_31": {},
+    "SB_PLB_PODPL_POPLS_32": {},
+    "SB_PLB_PODPL_POPLS_33": {},
+    "SB_PLB_PODPL_POPLS_34": {}
+  },
+  "shipping_address_api": {
+    "address1": "10800 W Pico Blvd Suite 312",
+    "address2": "",
+    "city": "Los Angeles",
+    "company": "OCG",
+    "country": "United States",
+    "country_code": "US",
+    "country_name": "United States",
+    "first_name": "ShopBase",
+    "last_name": "Auto",
+    "phone": "0124567985",
+    "province": "California",
+    "province_code": "CA",
+    "sbcn_valid_address": 0,
+    "zip": "90003"
+  },
+  "card_info": {
+    "number": "4111111111111111",
+    "holder_name": "Shopbase",
+    "expire_date": "12 / 24",
+    "cvv": "100"
+  },
+  "timeout": 600000
+}

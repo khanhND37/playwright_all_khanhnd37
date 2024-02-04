@@ -1,0 +1,130 @@
+{
+  "env": {
+    "dev": {
+      "domain": "create-new-sf.myshopbase.net",
+      "shop_name": "create-new-sf",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10330106,
+      "user_id": 90252,
+      "hive_username": "shopbase",
+      "hive_password": "123456",
+      "hive_domain": "hive.dev.shopbase.net",
+      "cases": {
+        "SB_NEWECOM_MSF_MSFL_51": {
+          "data": {
+            "template_name": "Funkfoot"
+          },
+          "expect": {
+            "snapshot_applied_template": "51-applied-template-dev.png"
+          }
+        },
+        "SB_NEWECOM_MSF_MSFL_52": {
+          "data": {
+            "template_name": "Funkfoot"
+          },
+          "expect": {
+            "snapshot_applied_template": "52-applied-template-dev.png"
+          }
+        },
+        "SB_NEWECOM_MSF_MSFL_53": {
+          "data": {
+            "template_name": "samurai"
+          }
+        }
+      }
+    },
+    "prodtest": {
+      "domain": "create-new-sf-prodtest.onshopbase.com",
+      "shop_name": "create-new-sf-prodtest",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10457205,
+      "user_id": 11260206,
+      "hive_username": "shopbase",
+      "hive_password": "123456",
+      "hive_domain": "hive.shopbase.com"
+    },
+    "prod": {
+      "domain": "create-new-sf.onshopbase.com",
+      "shop_name": "create-new-sf",
+      "api": "https://api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10457203,
+      "user_id": 11260206,
+      "hive_username": "shopbase",
+      "hive_password": "123456",
+      "hive_domain": "hive.shopbase.com"
+    }
+  },
+  "cases": {
+    "SB_NEWECOM_MSF_MSFL_51": {
+      "description": "Check add new 1 SF thành công khi apply template v3 + không change color + font ở Shop SB",
+      "data": {
+        "template_name": "FunkFoot"
+      },
+      "expect": {
+        "status_creating": "Creating...",
+        "status_active": "Active",
+        "snapshot_popup_action": "51-popup-more-actions.png",
+        "snapshot_applied_template": "51-applied-template.png"
+      }
+    },
+    "SB_NEWECOM_MSF_MSFL_52": {
+      "description": "Check add new 1 SF thành công khi apply template v3 + change color + font ở Shop SB",
+      "data": {
+        "template_name": "FunkFoot",
+        "change": {
+          "color": "Sweet Cotton Sugar",
+          "font": "PT Serif"
+        }
+      },
+      "expect": {
+        "status_creating": "Creating...",
+        "status_active": "Active",
+        "snapshot_popup_action": "52-popup-more-actions.png",
+        "snapshot_applied_template": "52-applied-template.png"
+      }
+    },
+    "SB_NEWECOM_MSF_MSFL_53": {
+      "description": "Check add new 1 SF thành công khi add theme cũ",
+      "data": {
+        "template_name": "Merry"
+      },
+      "expect": {
+        "heading_popup": "Legacy templates",
+        "status_creating": "Creating..."
+      }
+    },
+    "SB_NEWECOM_MSF_MSFL_58": {
+      "description": "Check add new 1 SF không thành công",
+      "data": {
+        "button_create": "Create new storefront",
+        "name_less_4_character": "Pet",
+        "storefront_name": [
+          {
+            "step": "Nhập >= 64 kí tự",
+            "name": "Don be trapped by dogma which is living with the results of otte",
+            "message": "Wrong domain name format"
+          },
+          {
+            "step": "Nhập tên đã tồn tại",
+            "name": "create-new-sf1693456500",
+            "message": "The name already exists. Please enter a different name"
+          },
+          {
+            "step": "Nhập tên đã tồn tại, name khác chữ hoa chữ thường",
+            "name": "CreAte-nEw-sf1693456500",
+            "message": "The name already exists. Please enter a different name"
+          }
+        ]
+      },
+      "expect": {
+        "status": "Active"
+      }
+    }
+  }
+}

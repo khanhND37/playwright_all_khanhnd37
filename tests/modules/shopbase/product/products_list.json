@@ -1,0 +1,871 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-ui-products-list.onshopbase.com",
+      "shop_name": "au-ui-products-list",
+      "user_id": 73782,
+      "shop_id": 10134871,
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "server_domain": "onshopbase.com",
+      "timeout": "300000",
+      "snapshot_options": {
+        "maxDiffPixelRatio": 0.05,
+        "threshold": 0.1,
+        "maxDiffPixels": 2000
+      }
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-ui-products-list1-prodtest.onshopbase.com",
+      "shop_name": "au-ui-products-list1-prodtest",
+      "user_id": 73782,
+      "shop_id": 10404598,
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "server_domain": "onshopbase.com",
+      "timeout": "300000",
+      "snapshot_options": {
+        "maxDiffPixelRatio": 0.05,
+        "threshold": 0.1,
+        "maxDiffPixels": 2000
+      },
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-ui-products-list.myshopbase.net",
+      "shop_name": "au-ui-products-list",
+      "user_id": 73800,
+      "shop_id": 10322731,
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "server_domain": "myshopbase.net",
+      "timeout": "300000",
+      "snapshot_options": {
+        "maxDiffPixelRatio": 0.05,
+        "threshold": 0.1,
+        "maxDiffPixels": 2000
+      }
+    }
+  },
+  "cases": {
+    "DATA_DRIVEN_FILTER_WITH_CONDITION": {
+      "data": [
+        {
+          "enable": true,
+          "description": "SB_PRO_PL_220 - Filter with field Available on Online Store ",
+          "case_id": "SB_PRO_PL_220",
+          "product_delete": "Product test edit product",
+          "DATA_DRIVEN_STEP_FILTER": {
+            "data": [
+              {
+                "step": "Click Filter > Filter theo trường Available on Online Store = Yes > Click button Done",
+                "filter_condition": [
+                  {
+                    "field": "Available on Online Store",
+                    "radio": "Yes"
+                  }
+                ],
+                "product_result": "16"
+              },
+              {
+                "step": "Click Filter > Filter theo trường Available on Online Store = No > Click button Done",
+                "filter_condition": [
+                  {
+                    "field": "Available on Online Store",
+                    "radio": "No"
+                  }
+                ],
+                "product_result": "4"
+              }
+            ]
+          }
+        },
+        {
+          "enable": true,
+          "description": "SB_PRO_PL_221 - Filter with field Available on Search Engine, Sitemap files",
+          "case_id": "SB_PRO_PL_221",
+          "DATA_DRIVEN_STEP_FILTER": {
+            "data": [
+              {
+                "step": "Click Filter > Filter theo trường Available on Search Engine, Sitemap files = Yes > Click button Done",
+                "filter_condition": [
+                  {
+                    "field": "Available on Search Engine, Sitemap files",
+                    "radio": "Yes"
+                  }
+                ],
+                "product_result": "18"
+              },
+              {
+                "step": "Click Filter > Filter theo trường Available on Search Engine, Sitemap files = No > Click button Done",
+                "filter_condition": [
+                  {
+                    "field": "Available on Search Engine, Sitemap files",
+                    "radio": "No"
+                  }
+                ],
+                "product_result": "2"
+              }
+            ]
+          }
+        },
+        {
+          "enable": true,
+          "description": "SB_PRO_PL_222 - Filter with field Collection",
+          "case_id": "SB_PRO_PL_222",
+          "DATA_DRIVEN_STEP_FILTER": {
+            "data": [
+              {
+                "step": "Click More Filter > Filter theo trường Collection với 1 collection > Click button Done",
+                "filter_condition": [
+                  {
+                    "field": "Collection",
+                    "input_ddl_value": "Tshirt"
+                  }
+                ],
+                "product_result": "5"
+              },
+              {
+                "step": "Click More Filter > Filter theo trường Collection với 1 collection > Click button Done",
+                "filter_condition": [
+                  {
+                    "field": "Collection",
+                    "input_ddl_value": "Tshirt,Hoodie"
+                  }
+                ],
+                "product_result": "10"
+              }
+            ]
+          }
+        },
+        {
+          "enable": true,
+          "description": "SB_PRO_PL_223 - Filter with field Cost per item",
+          "case_id": "SB_PRO_PL_223",
+          "DATA_DRIVEN_STEP_FILTER": {
+            "data": [
+              {
+                "step": "Click More Filter > Filter theo trường Cost per item với Equals to > Click button Done",
+                "filter_condition": [
+                  {
+                    "field": "Cost per item",
+                    "radio": "Equals to",
+                    "value_textbox": "10"
+                  }
+                ],
+                "product_result": "2"
+              },
+              {
+                "step": "Click More Filter > Filter theo trường Variant compare at price với More than > Click button Done",
+                "filter_condition": [
+                  {
+                    "field": "Cost per item",
+                    "radio": "More than",
+                    "value_textbox": "10"
+                  }
+                ],
+                "product_result": "3"
+              },
+              {
+                "step": "Click More Filter > Filter theo trường Cost per item với Less than > Click button Done",
+                "filter_condition": [
+                  {
+                    "field": "Cost per item",
+                    "radio": "Less than",
+                    "value_textbox": "10"
+                  }
+                ],
+                "product_result": "20"
+              }
+            ]
+          }
+        },
+        {
+          "enable": true,
+          "description": "SB_PRO_PL_224 - Filter with field Custom option",
+          "case_id": "SB_PRO_PL_224",
+          "DATA_DRIVEN_STEP_FILTER": {
+            "data": [
+              {
+                "step": "Click Filter > Filter theo trường Custom option = Yes > Click button Done",
+                "filter_condition": [
+                  {
+                    "field": "Custom option",
+                    "radio": "Yes"
+                  }
+                ],
+                "product_result": "1"
+              },
+              {
+                "step": "Click Filter > Filter theo trường Custom option = No > Click button Done",
+                "filter_condition": [
+                  {
+                    "field": "Custom option",
+                    "radio": "No"
+                  }
+                ],
+                "product_result": "19"
+              }
+            ]
+          }
+        },
+        {
+          "enable": true,
+          "description": "SB_PRO_PL_225 - Filter with field Image",
+          "case_id": "SB_PRO_PL_225",
+          "DATA_DRIVEN_STEP_FILTER": {
+            "data": [
+              {
+                "step": "Click Filter > Filter theo trường Image = Yes > Click button Done",
+                "filter_condition": [
+                  {
+                    "field": "Image",
+                    "radio": "Has image"
+                  }
+                ],
+                "product_result": "19"
+              },
+              {
+                "step": "Click Filter > Filter theo trường Image = No > Click button Done",
+                "filter_condition": [
+                  {
+                    "field": "Image",
+                    "radio": "Doesn't have image"
+                  }
+                ],
+                "product_result": "1"
+              }
+            ]
+          }
+        },
+        {
+          "enable": true,
+          "description": "SB_PRO_PL_226 - Filter with field Product type",
+          "case_id": "SB_PRO_PL_226",
+          "DATA_DRIVEN_STEP_FILTER": {
+            "data": [
+              {
+                "step": "Click More Filter > Filter theo trường Product type với 1 Product type > Click button Done",
+                "filter_condition": [
+                  {
+                    "field": "Product type",
+                    "input_ddl_value": "sweatshirt"
+                  }
+                ],
+                "product_result": "5"
+              },
+              {
+                "step": "Click More Filter > Filter theo trường Product type với more Product type > Click button Done",
+                "filter_condition": [
+                  {
+                    "field": "Product type",
+                    "input_ddl_value": "sweatshirt,longsleeve"
+                  }
+                ],
+                "product_result": "8"
+              }
+            ]
+          }
+        },
+        {
+          "enable": true,
+          "description": "SB_PRO_PL_227 - Filter with field Product tags",
+          "case_id": "SB_PRO_PL_227",
+          "DATA_DRIVEN_STEP_FILTER": {
+            "data": [
+              {
+                "step": "Click More Filter > Filter theo trường Product tags với 1 Product tag > Click button Done",
+                "filter_condition": [
+                  {
+                    "field": "Product tags",
+                    "input_ddl_value": "longsleeve"
+                  }
+                ],
+                "product_result": "5"
+              },
+              {
+                "step": "Click More Filter > Filter theo trường Product tags với more Product tags > Click button Done",
+                "filter_condition": [
+                  {
+                    "field": "Product tags",
+                    "input_ddl_value": "longsleeve,t-shirt"
+                  }
+                ],
+                "product_result": "10"
+              }
+            ]
+          }
+        },
+        {
+          "enable": true,
+          "description": "SB_PRO_PL_228 - Filter with field Title",
+          "case_id": "SB_PRO_PL_228",
+          "DATA_DRIVEN_STEP_FILTER": {
+            "data": [
+              {
+                "step": "Click More Filter > Filter theo trường Title chọn Contains > Input value > Click button Done",
+                "filter_condition": [
+                  {
+                    "field": "Title",
+                    "radio": "Contains",
+                    "value_textbox": "Hoodie"
+                  }
+                ],
+                "product_result": "5"
+              },
+              {
+                "step": "Delete filter > Click More Filter > Filter theo trường Title chọn Doesn't contains > Input value > Click button Done",
+                "filter_condition": [
+                  {
+                    "field": "Title",
+                    "radio": "Doesn't contain",
+                    "value_textbox": "Sweatshirt"
+                  }
+                ],
+                "product_result": "15"
+              }
+            ]
+          }
+        },
+        {
+          "enable": true,
+          "description": "SB_PRO_PL_229 - Filter with field Variant barcode",
+          "case_id": "SB_PRO_PL_229",
+          "DATA_DRIVEN_STEP_FILTER": {
+            "data": [
+              {
+                "step": "Click More Filter > Filter theo trường Variant barcode chọn Contains > Input value > Click button Done",
+                "filter_condition": [
+                  {
+                    "field": "Variant barcode",
+                    "radio": "Contains",
+                    "value_textbox": "ISBN"
+                  }
+                ],
+                "product_result": "2"
+              },
+              {
+                "step": "Delete filter > Click More Filter > Filter theo trường Variant barcode chọn Doesn't contains > Input value > Click button Done",
+                "filter_condition": [
+                  {
+                    "field": "Variant barcode",
+                    "radio": "Doesn't contain",
+                    "value_textbox": "ISBN"
+                  }
+                ],
+                "product_result": "18"
+              }
+            ]
+          }
+        },
+        {
+          "enable": true,
+          "description": "SB_PRO_PL_230 - Filter with field Variant compare at price",
+          "case_id": "SB_PRO_PL_230",
+          "DATA_DRIVEN_STEP_FILTER": {
+            "data": [
+              {
+                "step": "Click More Filter > Filter theo trường Variant compare at price với Equals to > Input value  > Click button Done",
+                "filter_condition": [
+                  {
+                    "field": "Variant compare at price",
+                    "radio": "Equals to",
+                    "value_textbox": "70"
+                  }
+                ],
+                "product_result": "3"
+              },
+              {
+                "step": "Click More Filter > Filter theo trường Variant compare at price với More than > Input value  > Click button Done",
+                "filter_condition": [
+                  {
+                    "field": "Variant compare at price",
+                    "radio": "More than",
+                    "value_textbox": "70"
+                  }
+                ],
+                "product_result": "5"
+              },
+              {
+                "step": "Click More Filter > Filter theo trường Variant price với Less than > Input value  > Click button Done",
+                "filter_condition": [
+                  {
+                    "field": "Variant compare at price",
+                    "radio": "Less than",
+                    "value_textbox": "70"
+                  }
+                ],
+                "product_result": "20"
+              }
+            ]
+          }
+        },
+        {
+          "enable": true,
+          "description": "SB_PRO_PL_231 - Filter with field Variant image",
+          "case_id": "SB_PRO_PL_231",
+          "DATA_DRIVEN_STEP_FILTER": {
+            "data": [
+              {
+                "step": "Click Filter > Filter theo trường Variant image = Yes > Click button Done",
+                "filter_condition": [
+                  {
+                    "field": "Variant image",
+                    "radio": "Has image"
+                  }
+                ],
+                "product_result": "19"
+              },
+              {
+                "step": "Click Filter > Filter theo trường Variant image = No > Click button Done",
+                "filter_condition": [
+                  {
+                    "field": "Variant image",
+                    "radio": "Doesn't have image"
+                  }
+                ],
+                "product_result": "4"
+              }
+            ]
+          }
+        },
+        {
+          "enable": true,
+          "description": "SB_PRO_PL_232 - Filter with field Variant inventory tracker",
+          "case_id": "SB_PRO_PL_232",
+          "DATA_DRIVEN_STEP_FILTER": {
+            "data": [
+              {
+                "step": "Click Filter > Filter theo trường Variant inventory tracker = Yes > Click button Done",
+                "filter_condition": [
+                  {
+                    "field": "Variant inventory tracker",
+                    "radio": "Yes"
+                  }
+                ],
+                "product_result": "2"
+              },
+              {
+                "step": "Click Filter > Filter theo trường Variant inventory tracker = No > Click button Done",
+                "filter_condition": [
+                  {
+                    "field": "Variant inventory tracker",
+                    "radio": "No"
+                  }
+                ],
+                "product_result": "18"
+              }
+            ]
+          }
+        },
+        {
+          "enable": true,
+          "description": "SB_PRO_PL_233 - Filter with field Variant name",
+          "case_id": "SB_PRO_PL_233",
+          "DATA_DRIVEN_STEP_FILTER": {
+            "data": [
+              {
+                "step": "Click More Filter > Filter theo trường Variant name chọn Contains > Input value > Click button Done",
+                "filter_condition": [
+                  {
+                    "field": "Variant name",
+                    "radio": "Contains",
+                    "value_textbox": "Green"
+                  }
+                ],
+                "product_result": "1"
+              },
+              {
+                "step": "Delete filter > Click More Filter > Filter theo trường Variant name chọn Doesn't contains > Input value > Click button Done",
+                "filter_condition": [
+                  {
+                    "field": "Variant name",
+                    "radio": "Doesn't contain",
+                    "value_textbox": "Green"
+                  }
+                ],
+                "product_result": "19"
+              }
+            ]
+          }
+        },
+        {
+          "enable": true,
+          "description": "SB_PRO_PL_234 - Filter with field Variant inventory quantity",
+          "case_id": "SB_PRO_PL_234",
+          "DATA_DRIVEN_STEP_FILTER": {
+            "data": [
+              {
+                "step": "Click More Filter > Filter theo trường Variant inventory quantity với Equals to > Input value > Click button Done",
+                "filter_condition": [
+                  {
+                    "field": "Variant inventory quantity",
+                    "radio": "Equals to",
+                    "value_textbox": "10"
+                  }
+                ],
+                "product_result": "2"
+              },
+              {
+                "step": "Click More Filter > Filter theo trường Variant inventory quantity với More than > Input value > Click button Done",
+                "filter_condition": [
+                  {
+                    "field": "Variant inventory quantity",
+                    "radio": "More than",
+                    "value_textbox": "10"
+                  }
+                ],
+                "product_result": "2"
+              },
+              {
+                "step": "Click More Filter > Filter theo trường Variant inventory quantity với Less than > Input value > Click button Done",
+                "filter_condition": [
+                  {
+                    "field": "Variant inventory quantity",
+                    "radio": "Less than",
+                    "value_textbox": "10"
+                  }
+                ],
+                "product_result": "6"
+              }
+            ]
+          }
+        },
+        {
+          "enable": true,
+          "description": "SB_PRO_PL_235 - Filter with field Variant price",
+          "case_id": "SB_PRO_PL_235",
+          "DATA_DRIVEN_STEP_FILTER": {
+            "data": [
+              {
+                "step": "Click More Filter > Filter theo trường Variant price với Equals to > Input value > Click button Done",
+                "filter_condition": [
+                  {
+                    "field": "Variant price",
+                    "radio": "Equals to",
+                    "value_textbox": "36"
+                  }
+                ],
+                "product_result": "6"
+              },
+              {
+                "step": "Click More Filter > Filter theo trường Variant price với với More than > Input value > Click button Done",
+                "filter_condition": [
+                  {
+                    "field": "Variant price",
+                    "radio": "More than",
+                    "value_textbox": "36"
+                  }
+                ],
+                "product_result": "5"
+              },
+              {
+                "step": "Click More Filter > Filter theo trường Variant price với với Less than > Input value > Click button Done",
+                "filter_condition": [
+                  {
+                    "field": "Variant price",
+                    "radio": "Less than",
+                    "value_textbox": "36"
+                  }
+                ],
+                "product_result": "10"
+              }
+            ]
+          }
+        },
+        {
+          "enable": true,
+          "description": "SB_PRO_PL_236 - Filter with field Variant SKU",
+          "case_id": "SB_PRO_PL_236",
+          "DATA_DRIVEN_STEP_FILTER": {
+            "data": [
+              {
+                "step": "Click More Filter > Filter theo trường Variant SKU chọn Contains > Input value > Click button Done",
+                "filter_condition": [
+                  {
+                    "field": "Variant SKU",
+                    "radio": "Contains",
+                    "value_textbox": "loan"
+                  }
+                ],
+                "product_result": "2"
+              },
+              {
+                "step": "Delete filter > Click More Filter > Filter theo trường Variant SKU chọn Doesn't contains > Input value > Click button Done",
+                "filter_condition": [
+                  {
+                    "field": "Variant SKU",
+                    "radio": "Doesn't contain",
+                    "value_textbox": "loan"
+                  }
+                ],
+                "product_result": "18"
+              }
+            ]
+          }
+        },
+        {
+          "enable": true,
+          "description": "SB_PRO_PL_237 - Filter with field Vendors",
+          "case_id": "SB_PRO_PL_237",
+          "DATA_DRIVEN_STEP_FILTER": {
+            "data": [
+              {
+                "step": "Click More Filter > Filter theo trường Vendors với 1 vendor > Click button Done",
+                "filter_condition": [
+                  {
+                    "field": "Vendors",
+                    "input_ddl_value": "loan"
+                  }
+                ],
+                "product_result": "19"
+              },
+              {
+                "step": "Click More Filter > Filter theo trường Vendors với more vendor > Click button Done",
+                "filter_condition": [
+                  {
+                    "field": "Vendors",
+                    "input_ddl_value": "loan,test"
+                  }
+                ],
+                "product_result": "20"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "SB_PRO_PL_209": {
+      "place_holder": "Search products",
+      "DATA_DRIVEN_STEP_SEARCH": {
+        "data": [
+          {
+            "step": "Search name product: like",
+            "product_name": "Hoodie",
+            "number": "5"
+          },
+          {
+            "step": "Search name product: equal",
+            "product_name": "Danger Hoodie",
+            "number": "1"
+          },
+          {
+            "step": "Search name product: not exist",
+            "product_name": "not exist",
+            "text_content": "Could not find any products matching"
+          }
+        ]
+      }
+    },
+    "DATA_DRIVEN_ACTION_PRODUCT": {
+      "data": [
+        {
+          "enable": true,
+          "description": "Make products unavailable",
+          "case_id": "SB_PRO_PL_211",
+          "product_name": "Danger Sweatshirt",
+          "action_infor": {
+            "action_name": "Make products unavailable",
+            "confirm_action": "Make products unavailable"
+          },
+          "tab_name": "Unavailable products",
+          "status": "Unavailable",
+          "message_SF": " 404 Page Not Found"
+        },
+        {
+          "enable": true,
+          "description": "Make products available",
+          "case_id": "SB_PRO_PL_212",
+          "status": "Unavailable",
+          "product_name": "Danger Sweatshirt",
+          "action_infor": {
+            "action_name": "Make products available",
+            "confirm_action": "Make products available"
+          },
+          "tab_name": "Available products"
+        }
+      ]
+    },
+    "DATA_DRIVEN_ACTION_WITH_VALUE": {
+      "data": [
+        {
+          "enable": true,
+          "description": "Verify action Add tags",
+          "case_id": "SB_PRO_PL_215",
+          "product_delete": "add tag",
+          "product_info": [
+            {
+              "title": "Product1 add tag",
+              "price": "10"
+            },
+            {
+              "title": "Product2 add tag",
+              "price": "10"
+            }
+          ],
+          "DATA_DRIVEN_ACTION": {
+            "data": [
+              {
+                "description": "Action add one tag for product",
+                "product_name": "Product1 add tag",
+                "action_infor": {
+                  "action_name": "Add tags",
+                  "product_value": "tag1"
+                },
+                "picture": "SB-PRO-PL-215-Add-one-tag-product.png"
+              },
+              {
+                "description": "Action add more tag for more products",
+                "product_name": "Product1 add tag, Product2 add tag",
+                "action_infor": {
+                  "action_name": "Add tags",
+                  "product_value": "tag2,tag3"
+                },
+                "picture": "SB-PRO-PL-215-Add-more-tag-product"
+              }
+            ]
+          }
+        },
+        {
+          "enable": true,
+          "description": "Verify action Remove tags",
+          "case_id": "SB_PRO_PL_216",
+          "product_delete": "remove tag",
+          "product_info": [
+            {
+              "title": "Product1 remove tag",
+              "price": "10",
+              "tag": "tag1,tag2"
+            },
+            {
+              "title": "Product2 remove tag",
+              "price": "10",
+              "tag": "tag1,tag2,tag3"
+            }
+          ],
+          "DATA_DRIVEN_ACTION": {
+            "data": [
+              {
+                "description": "Action remove one tag for product",
+                "product_name": "Product2 remove tag",
+                "action_infor": {
+                  "action_name": "Remove tags",
+                  "product_value": "tag3"
+                },
+                "picture": "SB-PRO-PL-216-Remove-one-tag-product.png"
+              },
+              {
+                "description": "Action remove more tag for more products",
+                "product_name": "Product1 remove tag,Product2 remove tag",
+                "action_infor": {
+                  "action_name": "Remove tags",
+                  "product_value": "tag1,tag2"
+                },
+                "picture": "SB-PRO-PL-216-Remove-more-tag-product"
+              }
+            ]
+          }
+        },
+        {
+          "enable": true,
+          "description": "Verify action Add to collection",
+          "case_id": "SB_PRO_PL_217",
+          "product_delete": "add collection",
+          "product_info": [
+            {
+              "title": "Product1 add collection",
+              "price": "10",
+              "tag": "collection1,collection"
+            },
+            {
+              "title": "Product2 add collection",
+              "price": "10",
+              "tag": "collection1,collection2,collection3"
+            }
+          ],
+          "DATA_DRIVEN_ACTION": {
+            "data": [
+              {
+                "description": "Action add one collection for product",
+                "product_name": "Product1 add collection",
+                "action_infor": {
+                  "action_name": "Add to collection",
+                  "product_value": "collection3"
+                },
+                "picture": "SB-PRO-PL-217-Add-one-collection-product.png"
+              },
+              {
+                "description": "Action add more collection for more products",
+                "product_name": "Product1 add collection,Product2 add collection",
+                "action_infor": {
+                  "action_name": "Add to collection",
+                  "product_value": "collection1,collection2"
+                },
+                "picture": "SB-PRO-PL-217-Add-more-collection-product"
+              }
+            ]
+          }
+        },
+        {
+          "enable": true,
+          "description": "Verify action Remove from collection",
+          "case_id": "SB_PRO_PL_218",
+          "product_delete": "remove collection",
+          "product_info": [
+            {
+              "title": "Product1 remove collection",
+              "price": "10",
+              "tag": "collection1,collection2"
+            },
+            {
+              "title": "Product2 remove collection",
+              "price": "10",
+              "tag": "collection1,collection2,collection3"
+            }
+          ],
+          "DATA_DRIVEN_ACTION": {
+            "data": [
+              {
+                "description": "Action remove one collection for product",
+                "product_name": "Product2 remove collection",
+                "action_infor": {
+                  "action_name": "Remove from collection",
+                  "product_value": "collection3"
+                },
+                "picture": "SB-PRO-PL-218-Remove-one-collection-product.png"
+              },
+              {
+                "description": "Action remove one collection for product",
+                "product_name": "Product1 remove collection,Product2 remove collection",
+                "action_infor": {
+                  "action_name": "Remove from collection",
+                  "product_value": "collection1,collection2"
+                },
+                "picture": "SB-PRO-PL-218-Remove-more-collection-product"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "SB_PRO_PL_213": {
+      "product_info": {
+        "title": "Product test edit product",
+        "price": "20",
+        "compare_at_price": "30"
+      },
+      "action_infor": {
+        "action_name": "Edit products",
+        "price_new": "50.00",
+        "price_old": "$20.00"
+      },
+      "picture": {
+        "edit_success": "image-screen-bulk-editor-SB-PRO-PL-213.png",
+        "price_new": "image-price-new-on-screen-product-detail-SB-PRO-PL-213.png"
+      }
+    }
+  }
+}

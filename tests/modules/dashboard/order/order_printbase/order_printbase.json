@@ -1,0 +1,1089 @@
+{
+  "timeout": 800000,
+  "param_threshold": 0.1,
+  "max_diff_pixel_ratio": 0.05,
+  "max_diff_pixels": 2000,
+  "shipping_address": {
+    "address1": "10800 W Pico Blvd Suite 312",
+    "address2": "OCG",
+    "city": "Los Angeles",
+    "company": "OCG",
+    "country_code": "US",
+    "first_name": "Tester",
+    "last_name": "hong hanh",
+    "phone": "0124567985",
+    "province": "California",
+    "province_code": "CA",
+    "zip": "90401"
+  },
+  "card_info": {
+    "number": "4242 4242 4242 4242",
+    "holder_name": "Shopbase",
+    "expire_date": "12 / 30",
+    "cvv": "100"
+  },
+  "option_filter": {
+    "domain": "Domain",
+    "order_name": "Order Name"
+  },
+  "cases": {
+    "SB_OPB_1": {},
+    "SB_OPB_2": {},
+    "CHECKOUT_PRODUCT_IS_POST_PURCHASE": {},
+    "CHECKOUT_PRODUCT_IS_DISCOUNT": {},
+    "SB_OPB_11": {},
+    "SB_OPB_12": {},
+    "SB_OPB_15": {},
+    "ORDER_FULFILL": {},
+    "SB_OPB_18": {}
+  },
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-approved-order-pbase.onshopbase.com",
+      "text_order": "A shipment from order #pb_order is on the way",
+      "shop_name": "au-approved-order-pbase",
+      "user_id": 74303,
+      "shop_id": 10383480,
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "hive_pb_domain": "hive-pbase.shopbase.com",
+      "hive_pb_username": "shopbase",
+      "hive_pb_password": "UxsLHz^Wjkf35*/w",
+      "cases": {
+        "SB_OPB_1": {
+          "products_checkout": [
+            {
+              "product_name": "product checkout",
+              "quantity": 4,
+              "variant": "Baseball Jersey / All over print / S",
+              "variant_id": 1000010197225567
+            }
+          ]
+        },
+        "SB_OPB_2": {
+          "products_checkout": [
+            {
+              "product_name": "product checkout",
+              "quantity": 4,
+              "variant": "Baseball Jersey / All over print / S",
+              "variant_id": 1000010197225567
+            }
+          ]
+        },
+        "SB_OPB_11": {
+          "products_checkout": [
+            {
+              "product_name": "product checkout",
+              "quantity": 4,
+              "variant": "Baseball Jersey / All over print / S",
+              "variant_id": 1000010197225567
+            }
+          ],
+          "order_detail": [
+            {
+              "fulfillment_status": "processing",
+              "purchase_status": "paid"
+            }
+          ]
+        },
+        "SB_OPB_12": {
+          "products_checkout": [
+            {
+              "product_name": "product checkout",
+              "quantity": 4,
+              "variant": "Baseball Jersey / All over print / S",
+              "variant_id": 1000010197225567
+            }
+          ]
+        },
+        "SB_OPB_15": {
+          "products_checkout": [
+            {
+              "product_name": "product checkout",
+              "quantity": 4,
+              "variant": "Baseball Jersey / All over print / S",
+              "variant_id": 1000010197225567
+            }
+          ],
+          "order_detail": [
+            {
+              "fulfillment_status": "processing",
+              "name_product": "product checkout - Baseball Jersey / All over print / S",
+              "purchase_status": "paid",
+              "sku": "PB-AOP-BaseballJersey-Alloverprint-S-948960"
+            }
+          ]
+        },
+        "SB_OPB_18": {
+          "products_checkout": [
+            {
+              "product_name": "product checkout",
+              "quantity": 4,
+              "variant": "Baseball Jersey / All over print / S",
+              "variant_id": 1000010197225567
+            }
+          ],
+          "order_fulfill": {
+            "quantity": 2,
+            "tracking_number": 100,
+            "tracking_url": "https://translate.google.com/",
+            "is_send_mail": true
+          }
+        },
+        "ORDER_FULFILL": {
+          "data": [
+            {
+              "case_id": "SB_OPB_17",
+              "title": "Verify status của order trên Hive và trên shop sau khi Fulfill All order",
+              "status_fulfill_dashboard": "Fulfilled",
+              "fulfillment_status_hive": "fulfilled",
+              "products_checkout": [
+                {
+                  "product_name": "product checkout",
+                  "quantity": 4,
+                  "variant": "Baseball Jersey / All over print / S",
+                  "variant_id": 1000010197225567
+                }
+              ],
+              "order_fulfill": {
+                "quantity": 4,
+                "tracking_number": 100,
+                "tracking_url": "https://translate.google.com/"
+              }
+            },
+            {
+              "case_id": "SB_OPB_16",
+              "title": "Verify status của order trên Hive và trên shop sau khi Fulfill một phần order",
+              "fulfillment_status_hive": "partial",
+              "status_fulfill_dashboard": "Partially Fulfilled",
+              "products_checkout": [
+                {
+                  "product_name": "product checkout",
+                  "quantity": 4,
+                  "variant": "Baseball Jersey / All over print / S",
+                  "variant_id": 1000010197225567
+                }
+              ],
+              "order_fulfill": {
+                "quantity": 2,
+                "tracking_number": 100,
+                "tracking_url": "https://translate.google.com/"
+              }
+            },
+            {
+              "case_id": "SB_OPB_19",
+              "title": "Verify display tracking number và click vào tracking number",
+              "fulfillment_status_hive": "partial",
+              "status_fulfill_dashboard": "Partially Fulfilled",
+              "products_checkout": [
+                {
+                  "product_name": "product checkout",
+                  "quantity": 4,
+                  "variant": "Baseball Jersey / All over print / S",
+                  "variant_id": 1000010197225567
+                }
+              ],
+              "order_fulfill": {
+                "quantity": 2,
+                "tracking_number": 100,
+                "tracking_url": "https://translate.google.com/"
+              }
+            }
+          ]
+        },
+        "CHECKOUT_PRODUCT_IS_POST_PURCHASE": {
+          "data": [
+            {
+              "case_id": "SB_OPB_3",
+              "title": "Verify Order mới sync tại màn hình manage order và trạng thái của order detail",
+              "products_checkout": {
+                "productsCheckout": [
+                  {
+                    "product_name": "product checkout",
+                    "quantity": 4,
+                    "variant": "Baseball Jersey / All over print / S",
+                    "variant_id": 1000010197225567
+                  }
+                ]
+              },
+              "order_detail": [
+                {
+                  "num_mockup": 7,
+                  "num_artwork": 1
+                }
+              ],
+              "picture": {
+                "name_info_shipping": "SB_OPB_3_info_shipping"
+              }
+            },
+            {
+              "case_id": "SB_OPB_10",
+              "title": "Verify order detail khi order có add thêm product post purchase",
+              "products_checkout": {
+                "productsCheckout": [
+                  {
+                    "product_name": "product checkout",
+                    "quantity": 4,
+                    "price": 25.99,
+                    "variant": "Baseball Jersey / All over print / S",
+                    "variant_id": 1000010197225567
+                  }
+                ],
+                "postPurchase": {
+                  "productPpc": {
+                    "product_name": "Beach Shorts",
+                    "quantity": 4,
+                    "variant": "Beach Shorts / All over print / S",
+                    "variant_id": 1000010197390477
+                  },
+                  "uSellId": 9746996
+                }
+              },
+              "order_detail": [
+                {
+                  "num_mockup": 7,
+                  "num_artwork": 1
+                },
+                {
+                  "num_mockup": 7,
+                  "num_artwork": 1
+                }
+              ],
+              "picture": {
+                "name_info_shipping": "SB_OPB_11_info_shipping"
+              }
+            }
+          ]
+        },
+        "CHECKOUT_PRODUCT_IS_DISCOUNT": {
+          "data": [
+            {
+              "case_id": "SB_OPB_23",
+              "title": "Verify hiển thị Available đúng theo công thức",
+              "products_checkout": {
+                "productsCheckout": [
+                  {
+                    "product_name": "product checkout",
+                    "quantity": 4,
+                    "variant": "Baseball Jersey / All over print / S",
+                    "variant_id": 1000010197225567
+                  }
+                ]
+              },
+              "picture": {
+                "image_order_summary": "SB_OPB_23_order_summary"
+              }
+            },
+            {
+              "case_id": "SB_OPB_34",
+              "title": "Kiểm tra thông tin order lúc tạo mới được free ship",
+              "products_checkout": {
+                "productsCheckout": [
+                  {
+                    "product_name": "product checkout",
+                    "quantity": 16,
+                    "variant": "Baseball Jersey / All over print / S",
+                    "variant_id": 1000010197225567
+                  }
+                ]
+              },
+              "picture": {
+                "image_order_summary": "SB_OPB_34_order_summary"
+              }
+            },
+            {
+              "case_id": "SB_OPB_35",
+              "title": "Kiểm tra thông tin order lúc tạo mới có discount không phải free ship và mất ship",
+              "products_checkout": {
+                "productsCheckout": [
+                  {
+                    "product_name": "product checkout",
+                    "quantity": 4,
+                    "variant": "Baseball Jersey / All over print / S",
+                    "variant_id": 1000010197225567
+                  }
+                ],
+                "discount": "TEST"
+              },
+              "picture": {
+                "image_order_summary": "SB_OPB_35_order_summary"
+              }
+            },
+            {
+              "case_id": "SB_OPB_36",
+              "title": "Kiểm tra thông tin order lúc tạo mới được discount là free ship",
+              "products_checkout": {
+                "productsCheckout": [
+                  {
+                    "product_name": "product checkout",
+                    "quantity": 4,
+                    "variant": "Baseball Jersey / All over print / S",
+                    "variant_id": 1000010197225567
+                  }
+                ],
+                "discount": "DCFREESGIP"
+              },
+              "picture": {
+                "image_order_summary": "SB_OPB_36_order_summary"
+              }
+            },
+            {
+              "case_id": "SB_OPB_37",
+              "title": "Kiểm tra thông tin order lúc tạo mới được discount khác free ship, shipping là free ship và có post purchase có discount",
+              "products_checkout": {
+                "productsCheckout": [
+                  {
+                    "product_name": "product checkout",
+                    "quantity": 15,
+                    "variant": "Baseball Jersey / All over print / S",
+                    "variant_id": 1000010197225567
+                  }
+                ],
+                "postPurchase": {
+                  "productPpc": {
+                    "product_name": "Beach Shorts",
+                    "quantity": 1,
+                    "variant": "Beach Shorts / All over print / S",
+                    "variant_id": 1000010197390477,
+                    "post_purchase_price": 14.693999999999999
+                  },
+                  "uSellId": 9746996
+                }
+              },
+              "picture": {
+                "image_order_summary": "SB_OPB_37_order_summary"
+              }
+            },
+            {
+              "case_id": "SB_OPB_39",
+              "title": "Kiểm tra thông tin order lúc tạo mới được discount là free ship, có ship và có post purchase có discount",
+              "products_checkout": {
+                "productsCheckout": [
+                  {
+                    "product_name": "product checkout",
+                    "quantity": 15,
+                    "variant": "Baseball Jersey / All over print / S",
+                    "variant_id": 1000010197225567
+                  }
+                ],
+                "postPurchase": {
+                  "productPpc": {
+                    "product_name": "Beach Shorts",
+                    "quantity": 1,
+                    "variant": "Beach Shorts / All over print / S",
+                    "variant_id": 1000010197390477,
+                    "post_purchase_price": 14.693999999999999
+                  },
+                  "uSellId": 9746996
+                },
+                "discount": "DCFREESGIP"
+              },
+              "picture": {
+                "image_order_summary": "SB_OPB_39_order_summary"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-prodtest-approved-order-pb.onshopbase.com",
+      "text_order": "A shipment from order #pb_order is on the way",
+      "shop_name": "au-prodtest-approved-order-pb",
+      "shop_id": 10430519,
+      "user_id": 73782,
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "hive_pb_domain": "hive-pbase-prod-test.shopbase.com",
+      "hive_pb_username": "shopbase",
+      "hive_pb_password": "UxsLHz^Wjkf35*/w",
+      "cases": {
+        "SB_OPB_1": {
+          "products_checkout": [
+            {
+              "product_name": "product checkout",
+              "quantity": 4,
+              "variant": "Baseball Jersey / All over print / S",
+              "variant_id": 1000010635890971
+            }
+          ]
+        },
+        "SB_OPB_2": {
+          "products_checkout": [
+            {
+              "product_name": "product checkout",
+              "quantity": 4,
+              "variant": "Baseball Jersey / All over print / S",
+              "variant_id": 1000010635890971
+            }
+          ]
+        },
+        "SB_OPB_15": {
+          "products_checkout": [
+            {
+              "product_name": "product checkout",
+              "quantity": 4,
+              "variant": "Baseball Jersey / All over print / S",
+              "variant_id": 1000010635890971
+            }
+          ],
+          "order_detail": [
+            {
+              "fulfillment_status": "processing",
+              "name_product": "product checkout - Baseball Jersey / All over print / S",
+              "purchase_status": "paid",
+              "sku": "PB-AOP-BaseballJersey-Alloverprint-S-948960"
+            }
+          ]
+        },
+        "SB_OPB_18": {
+          "products_checkout": [
+            {
+              "product_name": "product checkout",
+              "quantity": 4,
+              "variant": "Baseball Jersey / All over print / S",
+              "variant_id": 1000010635890971
+            }
+          ],
+          "order_fulfill": {
+            "quantity": 2,
+            "tracking_number": 100,
+            "tracking_url": "https://translate.google.com/",
+            "is_send_mail": true
+          }
+        },
+        "SB_OPB_11": {
+          "products_checkout": [
+            {
+              "product_name": "product checkout",
+              "quantity": 4,
+              "variant": "Baseball Jersey / All over print / S",
+              "variant_id": 1000010635890971
+            }
+          ],
+          "order_detail": [
+            {
+              "fulfillment_status": "processing",
+              "purchase_status": "paid"
+            }
+          ]
+        },
+        "SB_OPB_12": {
+          "products_checkout": [
+            {
+              "product_name": "product checkout",
+              "quantity": 4,
+              "variant": "Baseball Jersey / All over print / S",
+              "variant_id": 1000010635890971
+            }
+          ]
+        },
+        "CHECKOUT_PRODUCT_IS_POST_PURCHASE": {
+          "data": [
+            {
+              "case_id": "SB_OPB_3",
+              "title": "Verify Order mới sync tại màn hình manage order và trạng thái của order detail",
+              "products_checkout": {
+                "productsCheckout": [
+                  {
+                    "product_name": "product checkout",
+                    "quantity": 4,
+                    "variant": "Baseball Jersey / All over print / S",
+                    "variant_id": 1000010635890971
+                  }
+                ]
+              },
+              "order_detail": [
+                {
+                  "num_mockup": 7,
+                  "num_artwork": 1
+                }
+              ],
+              "picture": {
+                "name_info_shipping": "SB_OPB_3_info_shipping"
+              }
+            },
+            {
+              "case_id": "SB_OPB_10",
+              "title": "Verify order detail khi order có add thêm product post purchase",
+              "products_checkout": {
+                "productsCheckout": [
+                  {
+                    "product_name": "product checkout",
+                    "quantity": 4,
+                    "variant": "Baseball Jersey / All over print / S",
+                    "variant_id": 1000010635890971
+                  }
+                ],
+                "postPurchase": {
+                  "productPpc": {
+                    "product_name": "Beach Shorts",
+                    "quantity": 4,
+                    "price": 44.99,
+                    "variant": "Beach Shorts / All over print / S",
+                    "variant_id": 1000010635799892
+                  },
+                  "uSellId": 9803241
+                }
+              },
+              "order_detail": [
+                {
+                  "num_mockup": 7,
+                  "num_artwork": 1
+                },
+                {
+                  "num_mockup": 7,
+                  "num_artwork": 1
+                }
+              ],
+              "picture": {
+                "name_info_shipping": "SB_OPB_11_info_shipping"
+              }
+            }
+          ]
+        },
+        "ORDER_FULFILL": {
+          "data": [
+            {
+              "case_id": "SB_OPB_17",
+              "title": "Verify status của order trên Hive và trên shop sau khi Fulfill All order",
+              "fulfillment_status_hive": "fulfilled",
+              "status_fulfill_dashboard": "Fulfilled",
+              "products_checkout": [
+                {
+                  "product_name": "product checkout",
+                  "quantity": 4,
+                  "variant": "Baseball Jersey / All over print / S",
+                  "variant_id": 1000010635890971
+                }
+              ],
+              "order_fulfill": {
+                "quantity": 4,
+                "tracking_number": 100,
+                "tracking_url": "https://translate.google.com/"
+              }
+            },
+            {
+              "case_id": "SB_OPB_16",
+              "title": "Verify status của order trên Hive và trên shop sau khi Fulfill một phần order",
+              "fulfillment_status_hive": "partial",
+              "status_fulfill_dashboard": "Partially Fulfilled",
+              "products_checkout": [
+                {
+                  "product_name": "product checkout",
+                  "quantity": 4,
+                  "variant": "Baseball Jersey / All over print / S",
+                  "variant_id": 1000010635890971
+                }
+              ],
+              "order_fulfill": {
+                "quantity": 2,
+                "tracking_number": 100,
+                "tracking_url": "https://translate.google.com/"
+              }
+            },
+            {
+              "case_id": "SB_OPB_19",
+              "title": "Verify display tracking number và click vào tracking number",
+              "fulfillment_status_hive": "partial",
+              "status_fulfill_dashboard": "Partially Fulfilled",
+              "products_checkout": [
+                {
+                  "product_name": "product checkout",
+                  "quantity": 4,
+                  "variant": "Baseball Jersey / All over print / S",
+                  "variant_id": 1000010635890971
+                }
+              ],
+              "order_fulfill": {
+                "quantity": 2,
+                "tracking_number": 100,
+                "tracking_url": "https://translate.google.com/"
+              }
+            }
+          ]
+        },
+        "CHECKOUT_PRODUCT_IS_DISCOUNT": {
+          "data": [
+            {
+              "case_id": "SB_OPB_23",
+              "title": "Verify hiển thị Available đúng theo công thức",
+              "products_checkout": {
+                "productsCheckout": [
+                  {
+                    "product_name": "product checkout",
+                    "quantity": 4,
+                    "variant": "Baseball Jersey / All over print / S",
+                    "variant_id": 1000010635890971
+                  }
+                ]
+              },
+              "picture": {
+                "image_order_summary": "SB_OPB_23_order_summary"
+              }
+            },
+            {
+              "case_id": "SB_OPB_34",
+              "title": "Kiểm tra thông tin order lúc tạo mới được free ship",
+              "products_checkout": {
+                "productsCheckout": [
+                  {
+                    "product_name": "product checkout",
+                    "quantity": 16,
+                    "variant": "Baseball Jersey / All over print / S",
+                    "variant_id": 1000010635890971
+                  }
+                ]
+              },
+              "picture": {
+                "image_order_summary": "SB_OPB_34_order_summary"
+              }
+            },
+            {
+              "case_id": "SB_OPB_35",
+              "title": "Kiểm tra thông tin order lúc tạo mới có discount không phải free ship và mất ship",
+              "products_checkout": {
+                "productsCheckout": [
+                  {
+                    "product_name": "product checkout",
+                    "quantity": 4,
+                    "variant": "Baseball Jersey / All over print / S",
+                    "variant_id": 1000010635890971
+                  }
+                ],
+                "discount": "TEST"
+              },
+              "picture": {
+                "image_order_summary": "SB_OPB_35_order_summary"
+              }
+            },
+            {
+              "case_id": "SB_OPB_36",
+              "title": "Kiểm tra thông tin order lúc tạo mới được discount là free ship",
+              "products_checkout": {
+                "productsCheckout": [
+                  {
+                    "product_name": "product checkout",
+                    "quantity": 4,
+                    "variant": "Baseball Jersey / All over print / S",
+                    "variant_id": 1000010635890971
+                  }
+                ],
+                "discount": "DCFREESGIP"
+              },
+              "picture": {
+                "image_order_summary": "SB_OPB_36_order_summary"
+              }
+            },
+            {
+              "case_id": "SB_OPB_37",
+              "title": "Kiểm tra thông tin order lúc tạo mới được discount khác free ship, shipping là free ship và có post purchase có discount",
+              "products_checkout": {
+                "productsCheckout": [
+                  {
+                    "product_name": "product checkout",
+                    "quantity": 15,
+                    "variant": "Baseball Jersey / All over print / S",
+                    "variant_id": 1000010635890971
+                  }
+                ],
+                "postPurchase": {
+                  "productPpc": {
+                    "product_name": "Beach Shorts",
+                    "quantity": 1,
+                    "variant": "Beach Shorts / All over print / S",
+                    "variant_id": 1000010635799892,
+                    "post_purchase_price": 14.693999999999999
+                  },
+                  "uSellId": 9803241
+                }
+              },
+              "picture": {
+                "image_order_summary": "SB_OPB_37_order_summary"
+              }
+            },
+            {
+              "case_id": "SB_OPB_39",
+              "title": "Kiểm tra thông tin order lúc tạo mới được discount là free ship, có ship và có post purchase có discount",
+              "products_checkout": {
+                "productsCheckout": [
+                  {
+                    "product_name": "product checkout",
+                    "quantity": 15,
+                    "variant": "Baseball Jersey / All over print / S",
+                    "variant_id": 1000010635890971
+                  }
+                ],
+                "postPurchase": {
+                  "productPpc": {
+                    "product_name": "Beach Shorts",
+                    "quantity": 1,
+                    "variant": "Beach Shorts / All over print / S",
+                    "variant_id": 1000010635799892,
+                    "post_purchase_price": 14.693999999999999
+                  },
+                  "uSellId": 9803241
+                },
+                "discount": "DCFREESGIP"
+              },
+              "picture": {
+                "image_order_summary": "SB_OPB_39_order_summary"
+              }
+            }
+          ]
+        }
+      },
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "order-printbase.myshopbase.net",
+      "shop_name": "order-printbase",
+      "text_order": "A shipment from order #pb_order is on the way hahah",
+      "shop_id": 10323435,
+      "use_id": 73800,
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "hive_pb_domain": "hive-pbase.dev.shopbase.net",
+      "hive_pb_username": "hanhdo@beeketing.net",
+      "hive_pb_password": "123456",
+      "cases": {
+        "SB_OPB_1": {
+          "products_checkout": [
+            {
+              "product_name": "product checkout",
+              "quantity": 4,
+              "variant": "Baseball Jersey / All over print / S",
+              "variant_id": 1000001766934210
+            }
+          ]
+        },
+        "SB_OPB_2": {
+          "products_checkout": [
+            {
+              "product_name": "product checkout",
+              "quantity": 4,
+              "variant": "Baseball Jersey / All over print / S",
+              "variant_id": 1000001766934210
+            }
+          ]
+        },
+        "SB_OPB_11": {
+          "products_checkout": [
+            {
+              "product_name": "product checkout",
+              "quantity": 4,
+              "variant": "Baseball Jersey / All over print / S",
+              "variant_id": 1000001766934210
+            }
+          ],
+          "order_detail": [
+            {
+              "fulfillment_status": "processing",
+              "purchase_status": "paid"
+            }
+          ]
+        },
+        "SB_OPB_12": {
+          "products_checkout": [
+            {
+              "product_name": "product checkout",
+              "quantity": 4,
+              "variant": "Baseball Jersey / All over print / S",
+              "variant_id": 1000001766934210
+            }
+          ]
+        },
+        "SB_OPB_15": {
+          "products_checkout": [
+            {
+              "product_name": "product checkout",
+              "quantity": 4,
+              "variant": "Baseball Jersey / All over print / S",
+              "variant_id": 1000001766934210
+            }
+          ],
+          "order_detail": [
+            {
+              "fulfillment_status": "processing",
+              "name_product": "product checkout - Baseball Jersey / All over print / S",
+              "purchase_status": "paid",
+              "sku": "PB-AOP-BaseballJersey-Alloverprint-S-948960"
+            }
+          ]
+        },
+        "SB_OPB_18": {
+          "products_checkout": [
+            {
+              "product_name": "product checkout",
+              "quantity": 4,
+              "variant": "Baseball Jersey / All over print / S",
+              "variant_id": 1000001766934210
+            }
+          ],
+          "order_fulfill": {
+            "quantity": 2,
+            "tracking_number": 100,
+            "tracking_url": "https://translate.google.com/",
+            "is_send_mail": true
+          }
+        },
+        "CHECKOUT_PRODUCT_IS_DISCOUNT": {
+          "data": [
+            {
+              "case_id": "SB_OPB_23",
+              "title": "Verify hiển thị Available đúng theo công thức",
+              "products_checkout": {
+                "productsCheckout": [
+                  {
+                    "product_name": "product checkout",
+                    "quantity": 4,
+                    "variant": "Baseball Jersey / All over print / S",
+                    "variant_id": 1000001766934210
+                  }
+                ]
+              },
+              "picture": {
+                "image_order_summary": "SB_OPB_23_order_summary"
+              }
+            },
+            {
+              "case_id": "SB_OPB_34",
+              "title": "Kiểm tra thông tin order lúc tạo mới được free ship",
+              "products_checkout": {
+                "productsCheckout": [
+                  {
+                    "product_name": "product checkout",
+                    "quantity": 4,
+                    "variant": "Baseball Jersey / All over print / S",
+                    "variant_id": 1000001766934210
+                  }
+                ]
+              },
+              "picture": {
+                "image_order_summary": "SB_OPB_34_order_summary"
+              }
+            },
+            {
+              "case_id": "SB_OPB_35",
+              "title": "Kiểm tra thông tin order lúc tạo mới có discount không phải free ship và mất ship",
+              "products_checkout": {
+                "productsCheckout": [
+                  {
+                    "product_name": "product checkout",
+                    "quantity": 4,
+                    "variant": "Baseball Jersey / All over print / S",
+                    "variant_id": 1000001766934210
+                  }
+                ],
+                "discount": "TEST"
+              },
+              "picture": {
+                "image_order_summary": "SB_OPB_35_order_summary"
+              }
+            },
+            {
+              "case_id": "SB_OPB_36",
+              "title": "Kiểm tra thông tin order lúc tạo mới được discount là free ship",
+              "products_checkout": {
+                "productsCheckout": [
+                  {
+                    "product_name": "product checkout",
+                    "quantity": 4,
+                    "variant": "Baseball Jersey / All over print / S",
+                    "variant_id": 1000001766934210
+                  }
+                ],
+                "discount": "DCFREESGIP"
+              },
+              "picture": {
+                "image_order_summary": "SB_OPB_36_order_summary"
+              }
+            },
+            {
+              "case_id": "SB_OPB_37",
+              "title": "Kiểm tra thông tin order lúc tạo mới được discount khác free ship, shipping là free ship và có post purchase có discount",
+              "products_checkout": {
+                "productsCheckout": [
+                  {
+                    "product_name": "product checkout",
+                    "quantity": 4,
+                    "variant": "Baseball Jersey / All over print / S",
+                    "variant_id": 1000001766934210
+                  }
+                ],
+                "postPurchase": {
+                  "productPpc": {
+                    "product_name": "product post purchase",
+                    "quantity": 1,
+                    "variant": "Tank Top / All over print / S",
+                    "variant_id": 1000001766934619,
+                    "post_purchase_price": 16.793999999999997
+                  },
+                  "uSellId": 73251076875
+                }
+              },
+              "picture": {
+                "image_order_summary": "SB_OPB_37_order_summary"
+              }
+            },
+            {
+              "case_id": "SB_OPB_39",
+              "title": "Kiểm tra thông tin order lúc tạo mới được discount là free ship, có ship và có post purchase có discount",
+              "products_checkout": {
+                "productsCheckout": [
+                  {
+                    "product_name": "product checkout",
+                    "quantity": 4,
+                    "variant": "Baseball Jersey / All over print / S",
+                    "variant_id": 1000001766934210
+                  }
+                ],
+                "postPurchase": {
+                  "productPpc": {
+                    "product_name": "product post purchase",
+                    "quantity": 1,
+                    "variant": "Tank Top / All over print / S",
+                    "variant_id": 1000001766934619,
+                    "post_purchase_price": 16.793999999999997
+                  },
+                  "uSellId": 73251076875
+                },
+                "discount": "DCFREESGIP"
+              },
+              "picture": {
+                "image_order_summary": "SB_OPB_39_order_summary"
+              }
+            }
+          ]
+        },
+        "CHECKOUT_PRODUCT_IS_POST_PURCHASE": {
+          "data": [
+            {
+              "case_id": "SB_OPB_3",
+              "title": "Verify Order mới sync tại màn hình manage order và trạng thái của order detail",
+              "products_checkout": {
+                "productsCheckout": [
+                  {
+                    "product_name": "product checkout",
+                    "quantity": 4,
+                    "variant": "Baseball Jersey / All over print / S",
+                    "variant_id": 1000001766934210
+                  }
+                ]
+              },
+              "order_detail": [
+                {
+                  "num_mockup": 7,
+                  "num_artwork": 1
+                }
+              ],
+              "picture": {
+                "name_info_shipping": "SB_OPB_3_info_shipping"
+              }
+            },
+            {
+              "case_id": "SB_OPB_10",
+              "title": "Verify order detail khi order có add thêm product post purchase",
+              "products_checkout": {
+                "productsCheckout": [
+                  {
+                    "product_name": "product checkout",
+                    "quantity": 4,
+                    "variant": "Baseball Jersey / All over print / S",
+                    "variant_id": 1000001766934210
+                  }
+                ],
+                "postPurchase": {
+                  "productPpc": {
+                    "product_name": "product post purchase",
+                    "quantity": 4,
+                    "variant": "Tank Top / All over print / S",
+                    "variant_id": 1000001766934619
+                  },
+                  "uSellId": 73251076875
+                }
+              },
+              "order_detail": [
+                {
+                  "num_mockup": 7,
+                  "num_artwork": 1
+                },
+                {
+                  "num_mockup": 7,
+                  "num_artwork": 1
+                }
+              ],
+              "picture": {
+                "name_info_shipping": "SB_OPB_11_info_shipping"
+              }
+            }
+          ]
+        },
+        "ORDER_FULFILL": {
+          "data": [
+            {
+              "case_id": "SB_OPB_17",
+              "title": "Verify status của order trên Hive và trên shop sau khi Fulfill All order",
+              "fulfillment_status_hive": "fulfilled",
+              "status_fulfill_dashboard": "Fulfilled",
+              "products_checkout": [
+                {
+                  "product_name": "product checkout",
+                  "quantity": 4,
+                  "variant": "Baseball Jersey / All over print / S",
+                  "variant_id": 1000001766934210
+                }
+              ],
+              "order_fulfill": {
+                "quantity": 4,
+                "tracking_number": 100,
+                "tracking_url": "https://translate.google.com/"
+              }
+            },
+            {
+              "case_id": "SB_OPB_16",
+              "title": "Verify status của order trên Hive và trên shop sau khi Fulfill một phần order",
+              "fulfillment_status_hive": "partial",
+              "status_fulfill_dashboard": "Partially Fulfilled",
+              "products_checkout": [
+                {
+                  "product_name": "product checkout",
+                  "quantity": 4,
+                  "variant": "Baseball Jersey / All over print / S",
+                  "variant_id": 1000001766934210
+                }
+              ],
+              "order_fulfill": {
+                "quantity": 2,
+                "tracking_number": 100,
+                "tracking_url": "https://translate.google.com/"
+              }
+            },
+            {
+              "case_id": "SB_OPB_19",
+              "title": "Verify display tracking number và click vào tracking number",
+              "fulfillment_status_hive": "partial",
+              "status_fulfill_dashboard": "Partially Fulfilled",
+              "products_checkout": [
+                {
+                  "product_name": "product checkout",
+                  "quantity": 4,
+                  "variant": "Baseball Jersey / All over print / S",
+                  "variant_id": 1000001766934210
+                }
+              ],
+              "order_fulfill": {
+                "quantity": 2,
+                "tracking_number": 100,
+                "tracking_url": "https://translate.google.com/"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

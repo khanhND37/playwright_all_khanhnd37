@@ -1,0 +1,903 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-import-order-phub.onshopbase.com",
+      "shop_name": "au-import-order-phub",
+      "user_id": 73782,
+      "shop_id": 10388317,
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "cases": {
+        "DATA_DRIVEN_VERIFY_IMPORT_ORDER": {
+          "data": [
+            {
+              "description": "Kiểm tra khi import file csv thiếu các cột required",
+              "case_id": "SB_PRH_IOPH_95",
+              "order_infos": [
+                {
+                  "image_popup": "import-order-fail-SB-PRH-IOPH-95.png",
+                  "file_import": "data/printhub/Import-order-prh-miss.csv"
+                }
+              ]
+            },
+            {
+              "description": "Kiểm tra khi import csv file sai format của các cột",
+              "case_id": "SB_PRH_IOPH_96",
+              "order_infos": [
+                {
+                  "image_popup": "import-order-fail-SB-PRH-IOPH-96.png",
+                  "file_import": "data/printhub/Import-order-prh-wrong-forrmat.csv"
+                }
+              ]
+            },
+            {
+              "description": "Kiểm tra khi import csv file có số lượng item vượt quá số lượng trong kho",
+              "case_id": "SB_PRH_IOPH_97",
+              "order_infos": [
+                {
+                  "image_popup": "import-order-fail-SB-PRH-IOPH-97.png",
+                  "file_import": "data/printhub/Import-order-prh-over-quantity.csv"
+                }
+              ]
+            },
+            {
+              "description": "Verify order import phub mà thiếu Artwork Front Url",
+              "case_id": "SB_PRH_5",
+              "order_infos": [
+                {
+                  "image_popup": "import-order-fail-SB-PRH-IOPH-5.png",
+                  "file_import": "data/printhub/order_miss_artwork.csv"
+                }
+              ]
+            },
+            {
+              "description": "Check file import lỗi hiển thị trong tab Preview và hiển thị thông báo lỗi",
+              "case_id": "SB_PRH_3",
+              "order_infos": [
+                {
+                  "image_popup": "info-order-SB-PRH-3.png",
+                  "file_import": "data/printhub/Import-order-prh-success.csv"
+                }
+              ]
+            },
+            {
+              "description": "Kiểm tra khi import order cùng name nhưng khác shipping info",
+              "case_id": "SB_PRH_IOPH_98",
+              "order_infos": [
+                {
+                  "image_popup": "info-order-SB-PRH-98.png",
+                  "file_import": "data/printhub/Import-order-prh-1-order-2-shipping-address.csv",
+                  "tab_names": [
+                    {
+                      "tab_name": "Failed",
+                      "order_name": "#00002",
+                      "image_dashboard": "import-order-fail-SB-PRH-IOPH-98.png"
+                    }
+                  ]
+                }
+              ],
+              "is_success": true
+            },
+            {
+              "description": "Kiểm tra import csv bị trùng order name",
+              "case_id": "SB_PRH_IOPH_99",
+              "order_infos": [
+                {
+                  "image_popup": "info-order-SB-PRH-99.png",
+                  "file_import": "data/printhub/Import-order-match-name.csv",
+                  "tab_names": [
+                    {
+                      "tab_name": "In Review",
+                      "order_name": "#00008",
+                      "image_dashboard": "import-order-fail-SB-PRH-IOPH-99.png"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "description": "Kiểm tra import order thành công",
+              "case_id": "SB_PRH_IOPH_100",
+              "order_infos": [
+                {
+                  "image_popup": "info-order-SB-PRH-100.png",
+                  "file_import": "data/printhub/Import-order-prh-success.csv",
+                  "tab_names": [
+                    {
+                      "tab_name": "Awaiting Payment",
+                      "order_name": "#000018",
+                      "image_dashboard": "import-order-fail-SB-PRH-IOPH-100.png"
+                    }
+                  ]
+                }
+              ],
+              "is_success": true
+            },
+            {
+              "description": "Verify import order có 1 line item không thuộc khu vực được ship",
+              "case_id": "SB_PRH_IOPH_92",
+              "order_infos": [
+                {
+                  "image_popup": "info-order-SB-PRH-92-1.png",
+                  "file_import": "data/printhub/Import-order-prh-2-lineitem-1-supplier.csv",
+                  "tab_names": [
+                    {
+                      "tab_name": "Awaiting Payment",
+                      "order_name": "#0000343",
+                      "image_dashboard": "import-order-fail-SB-PRH-IOPH-92-1-1.png"
+                    },
+                    {
+                      "tab_name": "Pending Buyer Information",
+                      "order_name": "#0000342",
+                      "image_dashboard": "import-order-fail-SB-PRH-IOPH-92-1-2.png"
+                    }
+                  ]
+                },
+                {
+                  "image_popup": "info-order-SB-PRH-92-2.png",
+                  "file_import": "data/printhub/Import-order-prh-2-lineitem-2-supplier.csv",
+                  "tab_names": [
+                    {
+                      "tab_name": "Pending Buyer Information",
+                      "order_name": "#00001",
+                      "image_dashboard": "import-order-fail-SB-PRH-IOPH-92-2-1.png"
+                    },
+                    {
+                      "tab_name": "Pending Buyer Information",
+                      "order_name": "#000029",
+                      "image_dashboard": "import-order-fail-SB-PRH-IOPH-92-2-2.png"
+                    }
+                  ]
+                },
+                {
+                  "image_popup": "info-order-SB-PRH-92-3.png",
+                  "file_import": "data/printhub/Import-order-prh-1-lineitem.csv",
+                  "tab_names": [
+                    {
+                      "tab_name": "Pending Buyer Information",
+                      "order_name": "#000021",
+                      "image_dashboard": "import-order-fail-SB-PRH-IOPH-92-3-1.png"
+                    }
+                  ]
+                }
+              ],
+              "is_success": true
+            },
+            {
+              "description": "Kiểm tra merchant import csv file để override order cũ",
+              "case_id": "SB_PRH_IOPH_101",
+              "order_infos": [
+                {
+                  "image_popup": "info-order-SB-PRH-101-1.png",
+                  "file_import": "data/printhub/Import-order-prh-1-lineitem.csv",
+                  "tab_names": [
+                    {
+                      "tab_name": "Pending Buyer Information",
+                      "order_name": "#000021",
+                      "image_dashboard": "import-order-fail-SB-PRH-IOPH-101-1-1.png"
+                    }
+                  ]
+                },
+                {
+                  "image_popup": "info-order-SB-PRH-101-2.png",
+                  "file_import": "data/printhub/file_orrder_fulfilled_true.csv",
+                  "tab_names": [
+                    {
+                      "tab_name": "Awaiting Payment",
+                      "order_name": "#000021",
+                      "image_dashboard": "import-order-fail-SB-PRH-IOPH-101-2-1.png"
+                    },
+                    {
+                      "tab_name": "Shipped",
+                      "order_name": "#000012",
+                      "image_dashboard": "import-order-fail-SB-PRH-IOPH-101-2-2.png"
+                    }
+                  ]
+                }
+              ],
+              "is_success": true
+            },
+            {
+              "description": "Verify khi tạo order với address có được support",
+              "case_id": "SB_PRH_IOPH_94",
+              "order_infos": [
+                {
+                  "image_popup": "info-order-SB-PRH-94-1.png",
+                  "file_import": "data/printhub/Import-order-prh-success.csv",
+                  "tab_names": [
+                    {
+                      "tab_name": "Awaiting Payment",
+                      "order_name": "#000018",
+                      "image_dashboard": "import-order-fail-SB-PRH-IOPH-94-1-0.png"
+                    }
+                  ]
+                }
+              ],
+              "is_success": true
+            }
+          ]
+        },
+        "SB_PRH_IOPH_110": {
+          "start_date": "2023-11-01",
+          "end_date": "2023-11-30"
+        },
+        "EDIT_ORDER": {
+          "data": [
+            {
+              "description": "Kiểm tra hiển thị thông tin order trên tab Pending design",
+              "case_id": "SB_PRH_IOPH_117",
+              "order_info": {
+                "image": "import-order-SB_PRH_IOPH_117",
+                "file_import": "data/printhub/import_order_pending_design.csv",
+                "order_name": "#0000_peding_deisgn",
+                "tab_name": "Pending Design"
+              },
+              "data_edit": {
+                "info_edit": [
+                  {
+                    "front_artwork": "https://drive.google.com/file/d/1f3HQLZzZjgsuaVCcy849XeP6AUszU9N-/view?usp=sharing",
+                    "front_artwork_type": "url",
+                    "front_mockup_type": "image",
+                    "front_mockup": "data/shopbase/art_test.png"
+                  }
+                ],
+                "tab_name": "Awaiting Payment",
+                "order_name": "#0000_peding_deisgn",
+                "image_after_edit": "edit-order-SB_PRH_IOPH_117"
+              }
+            },
+            {
+              "description": "Kiểm tra hiển thị thông tin order trên tab Pending Buyer information",
+              "case_id": "SB_PRH_IOPH_116",
+              "order_info": {
+                "image": "import-order-SB_PRH_IOPH_116",
+                "file_import": "data/printhub/import_order_pending_customer.csv",
+                "order_name": "#0000_peding_buyer",
+                "tab_name": "Pending Buyer Information"
+              },
+              "data_edit": {
+                "info_edit": [{}],
+                "tab_name": "Awaiting Payment",
+                "order_name": "#0000_peding_buyer",
+                "image_after_edit": "edit-order-SB_PRH_IOPH_116",
+                "info_customer": {
+                  "country": "Vietnam",
+                  "province": "Dong da",
+                  "city": "Ha noi"
+                }
+              }
+            },
+            {
+              "description": "Kiểm tra hiển thị thông tin order trên tab Fail",
+              "case_id": "SB_PRH_IOPH_118",
+              "order_info": {
+                "image": "import-order-SB_PRH_IOPH_118",
+                "file_import": "data/printhub/import_order_false.csv",
+                "order_name": "#0000_failed",
+                "tab_name": "Failed"
+              },
+              "data_edit": {
+                "info_edit": [
+                  {
+                    "size": "One size"
+                  }
+                ],
+                "tab_name": "Awaiting Payment",
+                "order_name": "#0000_failed",
+                "image_after_edit": "edit-order-SB_PRH_IOPH_118"
+              }
+            }
+          ]
+        }
+      },
+      "element_display": {
+        "button": "Import",
+        "index": 2
+      }
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-import-order-phub-test.onshopbase.com",
+      "shop_name": "au-import-order-phub-test",
+      "user_id": 73782,
+      "shop_id": 10388320,
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "cases": {
+        "DATA_DRIVEN_VERIFY_IMPORT_ORDER": {
+          "data": [
+            {
+              "description": "Kiểm tra khi import file csv thiếu các cột required",
+              "case_id": "SB_PRH_IOPH_95",
+              "order_infos": [
+                {
+                  "image_popup": "import-order-fail-SB-PRH-IOPH-95.png",
+                  "file_import": "data/printhub/Import-order-prh-miss.csv"
+                }
+              ]
+            },
+            {
+              "description": "Kiểm tra khi import csv file sai format của các cột",
+              "case_id": "SB_PRH_IOPH_96",
+              "order_infos": [
+                {
+                  "image_popup": "import-order-fail-SB-PRH-IOPH-96-prodtest.png",
+                  "file_import": "data/printhub/Import-order-prh-wrong-forrmat.csv"
+                }
+              ]
+            },
+            {
+              "description": "Kiểm tra khi import csv file có số lượng item vượt quá số lượng trong kho",
+              "case_id": "SB_PRH_IOPH_97",
+              "order_infos": [
+                {
+                  "image_popup": "import-order-fail-SB-PRH-IOPH-97.png",
+                  "file_import": "data/printhub/Import-order-prh-over-quantity.csv"
+                }
+              ]
+            },
+            {
+              "description": "Verify order import phub mà thiếu Artwork Front Url",
+              "case_id": "SB_PRH_5",
+              "order_infos": [
+                {
+                  "image_popup": "import-order-fail-SB-PRH-IOPH-5.png",
+                  "file_import": "data/printhub/order_miss_artwork.csv"
+                }
+              ]
+            },
+            {
+              "description": "Check file import lỗi hiển thị trong tab Preview và hiển thị thông báo lỗi",
+              "case_id": "SB_PRH_3",
+              "order_infos": [
+                {
+                  "image_popup": "info-order-SB-PRH-3.png",
+                  "file_import": "data/printhub/Import-order-prh-success.csv"
+                }
+              ]
+            },
+            {
+              "description": "Kiểm tra khi import order cùng name nhưng khác shipping info",
+              "case_id": "SB_PRH_IOPH_98",
+              "order_infos": [
+                {
+                  "image_popup": "info-order-SB-PRH-98.png",
+                  "file_import": "data/printhub/Import-order-prh-1-order-2-shipping-address.csv",
+                  "tab_names": [
+                    {
+                      "tab_name": "Failed",
+                      "order_name": "#00002",
+                      "image_dashboard": "import-order-fail-SB-PRH-IOPH-98.png"
+                    }
+                  ]
+                }
+              ],
+              "is_success": true
+            },
+            {
+              "description": "Kiểm tra import csv bị trùng order name",
+              "case_id": "SB_PRH_IOPH_99",
+              "order_infos": [
+                {
+                  "image_popup": "info-order-SB-PRH-99.png",
+                  "file_import": "data/printhub/Import-order-match-name.csv",
+                  "tab_names": [
+                    {
+                      "tab_name": "In Review",
+                      "order_name": "#00008",
+                      "image_dashboard": "import-order-fail-SB-PRH-IOPH-99.png"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "description": "Kiểm tra import order thành công",
+              "case_id": "SB_PRH_IOPH_100",
+              "order_infos": [
+                {
+                  "image_popup": "info-order-SB-PRH-100.png",
+                  "file_import": "data/printhub/Import-order-prh-success.csv",
+                  "tab_names": [
+                    {
+                      "tab_name": "Awaiting Payment",
+                      "order_name": "#000018",
+                      "image_dashboard": "import-order-fail-SB-PRH-IOPH-100.png"
+                    }
+                  ]
+                }
+              ],
+              "is_success": true
+            },
+            {
+              "description": "Verify import order có 1 line item không thuộc khu vực được ship",
+              "case_id": "SB_PRH_IOPH_92",
+              "order_infos": [
+                {
+                  "image_popup": "info-order-SB-PRH-92-1.png",
+                  "file_import": "data/printhub/Import-order-prh-2-lineitem-1-supplier.csv",
+                  "tab_names": [
+                    {
+                      "tab_name": "Awaiting Payment",
+                      "order_name": "#0000343",
+                      "image_dashboard": "import-order-fail-SB-PRH-IOPH-92-1-1.png"
+                    },
+                    {
+                      "tab_name": "Pending Buyer Information",
+                      "order_name": "#0000342",
+                      "image_dashboard": "import-order-fail-SB-PRH-IOPH-92-1-2.png"
+                    }
+                  ]
+                },
+                {
+                  "image_popup": "info-order-SB-PRH-92-2.png",
+                  "file_import": "data/printhub/Import-order-prh-2-lineitem-2-supplier.csv",
+                  "tab_names": [
+                    {
+                      "tab_name": "Pending Buyer Information",
+                      "order_name": "#00001",
+                      "image_dashboard": "import-order-fail-SB-PRH-IOPH-92-2-1.png"
+                    },
+                    {
+                      "tab_name": "Pending Buyer Information",
+                      "order_name": "#000029",
+                      "image_dashboard": "import-order-fail-SB-PRH-IOPH-92-2-2.png"
+                    }
+                  ]
+                },
+                {
+                  "image_popup": "info-order-SB-PRH-92-3.png",
+                  "file_import": "data/printhub/Import-order-prh-1-lineitem.csv",
+                  "tab_names": [
+                    {
+                      "tab_name": "Pending Buyer Information",
+                      "order_name": "#000021",
+                      "image_dashboard": "import-order-fail-SB-PRH-IOPH-92-3-1.png"
+                    }
+                  ]
+                }
+              ],
+              "is_success": true
+            },
+            {
+              "description": "Kiểm tra merchant import csv file để override order cũ",
+              "case_id": "SB_PRH_IOPH_101",
+              "order_infos": [
+                {
+                  "image_popup": "info-order-SB-PRH-101-1.png",
+                  "file_import": "data/printhub/Import-order-prh-1-lineitem.csv",
+                  "tab_names": [
+                    {
+                      "tab_name": "Pending Buyer Information",
+                      "order_name": "#000021",
+                      "image_dashboard": "import-order-fail-SB-PRH-IOPH-101-1-1.png"
+                    }
+                  ]
+                },
+                {
+                  "image_popup": "info-order-SB-PRH-101-2.png",
+                  "file_import": "data/printhub/file_orrder_fulfilled_true.csv",
+                  "tab_names": [
+                    {
+                      "tab_name": "Awaiting Payment",
+                      "order_name": "#000021",
+                      "image_dashboard": "import-order-fail-SB-PRH-IOPH-101-2-1.png"
+                    },
+                    {
+                      "tab_name": "Shipped",
+                      "order_name": "#000012",
+                      "image_dashboard": "import-order-fail-SB-PRH-IOPH-101-2-2.png"
+                    }
+                  ]
+                }
+              ],
+              "is_success": true
+            },
+            {
+              "description": "Verify khi tạo order với address có được support",
+              "case_id": "SB_PRH_IOPH_94",
+              "order_infos": [
+                {
+                  "image_popup": "info-order-SB-PRH-94-1.png",
+                  "file_import": "data/printhub/Import-order-prh-success.csv",
+                  "tab_names": [
+                    {
+                      "tab_name": "Awaiting Payment",
+                      "order_name": "#000018",
+                      "image_dashboard": "import-order-fail-SB-PRH-IOPH-94-1-0.png"
+                    }
+                  ]
+                }
+              ],
+              "is_success": true
+            }
+          ]
+        },
+        "SB_PRH_IOPH_110": {
+          "start_date": "2023-11-01",
+          "end_date": "2023-11-30"
+        },
+        "EDIT_ORDER": {
+          "data": [
+            {
+              "description": "Kiểm tra hiển thị thông tin order trên tab Pending design",
+              "case_id": "SB_PRH_IOPH_117",
+              "order_info": {
+                "image": "import-order-SB_PRH_IOPH_117",
+                "file_import": "data/printhub/import_order_pending_design.csv",
+                "order_name": "#0000_peding_deisgn",
+                "tab_name": "Pending Design"
+              },
+              "data_edit": {
+                "info_edit": [
+                  {
+                    "front_artwork": "https://drive.google.com/file/d/1f3HQLZzZjgsuaVCcy849XeP6AUszU9N-/view?usp=sharing",
+                    "front_artwork_type": "url",
+                    "front_mockup_type": "image",
+                    "front_mockup": "data/shopbase/art_test.png"
+                  }
+                ],
+                "tab_name": "Awaiting Payment",
+                "order_name": "#0000_peding_deisgn",
+                "image_after_edit": "edit-order-SB_PRH_IOPH_117"
+              }
+            },
+            {
+              "description": "Kiểm tra hiển thị thông tin order trên tab Pending Buyer information",
+              "case_id": "SB_PRH_IOPH_116",
+              "order_info": {
+                "image": "import-order-SB_PRH_IOPH_116",
+                "file_import": "data/printhub/import_order_pending_customer.csv",
+                "order_name": "#0000_peding_buyer",
+                "tab_name": "Pending Buyer Information"
+              },
+              "data_edit": {
+                "info_edit": [{}],
+                "tab_name": "Awaiting Payment",
+                "order_name": "#0000_peding_buyer",
+                "image_after_edit": "edit-order-SB_PRH_IOPH_116",
+                "info_customer": {
+                  "country": "Vietnam",
+                  "province": "Dong da",
+                  "city": "Ha noi"
+                }
+              }
+            },
+            {
+              "description": "Kiểm tra hiển thị thông tin order trên tab Fail",
+              "case_id": "SB_PRH_IOPH_118",
+              "order_info": {
+                "image": "import-order-SB_PRH_IOPH_118",
+                "file_import": "data/printhub/import_order_false.csv",
+                "order_name": "#0000_failed",
+                "tab_name": "Failed"
+              },
+              "data_edit": {
+                "info_edit": [
+                  {
+                    "size": "One size"
+                  }
+                ],
+                "tab_name": "Awaiting Payment",
+                "order_name": "#0000_failed",
+                "image_after_edit": "edit-order-SB_PRH_IOPH_118"
+              }
+            }
+          ]
+        }
+      },
+      "element_display": {
+        "button": "Import",
+        "index": 2
+      },
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-order-phub.myshopbase.net",
+      "shop_name": "au-order-phub",
+      "user_id": 73800,
+      "shop_id": 10323613,
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "cases": {
+        "DATA_DRIVEN_VERIFY_IMPORT_ORDER": {
+          "data": [
+            {
+              "description": "Kiểm tra khi import file csv thiếu các cột required",
+              "case_id": "SB_PRH_IOPH_95",
+              "order_infos": [
+                {
+                  "image_popup": "import-order-fail-SB-PRH-IOPH-95-dev.png",
+                  "file_import": "data/printhub/dev/Import-order-prh-miss.csv"
+                }
+              ]
+            },
+            {
+              "description": "Kiểm tra khi import csv file sai format của các cột",
+              "case_id": "SB_PRH_IOPH_96",
+              "order_infos": [
+                {
+                  "image_popup": "import-order-fail-SB-PRH-IOPH-96-dev.png",
+                  "file_import": "data/printhub/dev/Import-order-prh-wrong-forrmat.csv"
+                }
+              ]
+            },
+            {
+              "description": "Kiểm tra khi import csv file có số lượng item vượt quá số lượng trong kho",
+              "case_id": "SB_PRH_IOPH_97",
+              "order_infos": [
+                {
+                  "image_popup": "import-order-fail-SB-PRH-IOPH-97-dev.png",
+                  "file_import": "data/printhub/dev/Import-order-prh-over-quantity.csv"
+                }
+              ]
+            },
+            {
+              "description": "Verify order import phub mà thiếu Artwork Front Url",
+              "case_id": "SB_PRH_5",
+              "order_infos": [
+                {
+                  "image_popup": "import-order-fail-SB-PRH-IOPH-5-dev.png",
+                  "file_import": "data/printhub/order_miss_artwork.csv"
+                }
+              ]
+            },
+            {
+              "description": "Check file import lỗi hiển thị trong tab Preview và hiển thị thông báo lỗi",
+              "case_id": "SB_PRH_3",
+              "order_infos": [
+                {
+                  "image_popup": "info-order-SB-PRH-3-dev.png",
+                  "tab_names": [
+                    {
+                      "tab_name": "Awaiting Payment",
+                      "order_name": "#00009",
+                      "image_dashboard": "import-order-fail-SB-PRH-3-dev.png"
+                    }
+                  ],
+                  "file_import": "data/printhub/Import-order-prh-success.csv"
+                }
+              ]
+            },
+            {
+              "description": "Kiểm tra khi import order cùng name nhưng khác shipping info",
+              "case_id": "SB_PRH_IOPH_98",
+              "order_infos": [
+                {
+                  "image_popup": "info-order-SB-PRH-98-dev.png",
+                  "file_import": "data/printhub/dev/Import-order-prh-1-order-2-shipping-address.csv",
+                  "tab_names": [
+                    {
+                      "tab_name": "Failed",
+                      "order_name": "#00003",
+                      "image_dashboard": "import-order-fail-SB-PRH-IOPH-98-dev.png"
+                    }
+                  ]
+                }
+              ],
+              "is_success": true
+            },
+            {
+              "description": "Kiểm tra import csv bị trùng order name",
+              "case_id": "SB_PRH_IOPH_99",
+              "order_infos": [
+                {
+                  "file_import": "data/printhub/dev/Import-order-match-name.csv",
+                  "image_popup": "info-order-SB-PRH-99-dev.png",
+                  "tab_names": [
+                    {
+                      "tab_name": "Failed",
+                      "order_name": "#00008",
+                      "image_dashboard": "import-order-fail-SB-PRH-IOPH-99-dev.png"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "description": "Kiểm tra import order thành công",
+              "case_id": "SB_PRH_IOPH_100",
+              "order_infos": [
+                {
+                  "image_popup": "info-order-SB-PRH-100-dev.png",
+                  "file_import": "data/printhub/dev/Import-order-prh-success.csv",
+                  "tab_names": [
+                    {
+                      "tab_name": "Awaiting Payment",
+                      "order_name": "#0000512",
+                      "image_dashboard": "import-order-fail-SB-PRH-IOPH-100-dev.png"
+                    }
+                  ]
+                }
+              ],
+              "is_success": true
+            },
+            {
+              "description": "Verify import order có 1 line item không thuộc khu vực được ship",
+              "case_id": "SB_PRH_IOPH_92",
+              "order_infos": [
+                {
+                  "image_popup": "info-order-SB-PRH-92-1-dev.png",
+                  "file_import": "data/printhub/dev/Import-order-prh-2-lineitem-1-supplier.csv",
+                  "tab_names": [
+                    {
+                      "tab_name": "Awaiting Payment",
+                      "order_name": "#000014",
+                      "image_dashboard": "import-order-fail-SB-PRH-IOPH-92-1-1-dev.png"
+                    },
+                    {
+                      "tab_name": "Pending Buyer Information",
+                      "order_name": "#000013",
+                      "image_dashboard": "import-order-fail-SB-PRH-IOPH-92-1-2-dev.png"
+                    }
+                  ]
+                },
+                {
+                  "image_popup": "info-order-SB-PRH-92-2-dev.png",
+                  "file_import": "data/printhub/dev/Import-order-prh-2-lineitem-2-supplier.csv",
+                  "tab_names": [
+                    {
+                      "tab_name": "Pending Buyer Information",
+                      "order_name": "#00001",
+                      "image_dashboard": "import-order-fail-SB-PRH-IOPH-92-2-1-dev.png"
+                    },
+                    {
+                      "tab_name": "Pending Buyer Information",
+                      "order_name": "#000029",
+                      "image_dashboard": "import-order-fail-SB-PRH-IOPH-92-2-2-dev.png"
+                    }
+                  ]
+                },
+                {
+                  "image_popup": "info-order-SB-PRH-92-3-dev.png",
+                  "file_import": "data/printhub/dev/Import-order-prh-1-lineitem.csv",
+                  "tab_names": [
+                    {
+                      "tab_name": "Pending Buyer Information",
+                      "order_name": "#0000326",
+                      "image_dashboard": "import-order-fail-SB-PRH-IOPH-92-3-1-dev.png"
+                    }
+                  ]
+                }
+              ],
+              "is_success": true
+            },
+            {
+              "description": "Kiểm tra merchant import csv file để override order cũ",
+              "case_id": "SB_PRH_IOPH_101",
+              "order_infos": [
+                {
+                  "image_popup": "info-order-SB-PRH-101-1.png",
+                  "file_import": "data/printhub/dev/Import-order-prh-1-lineitem.csv",
+                  "tab_names": [
+                    {
+                      "tab_name": "Pending Buyer Information",
+                      "order_name": "#0000326",
+                      "image_dashboard": "import-order-fail-SB-PRH-IOPH-101-1-1-dev.png"
+                    }
+                  ]
+                },
+                {
+                  "image_popup": "info-order-SB-PRH-101-2-dev.png",
+                  "file_import": "data/printhub/dev/file_orrder_fulfilled_true.csv",
+                  "tab_names": [
+                    {
+                      "tab_name": "Awaiting Payment",
+                      "order_name": "#0000326",
+                      "image_dashboard": "import-order-fail-SB-PRH-IOPH-101-2-1-dev.png"
+                    }
+                  ]
+                }
+              ],
+              "is_success": true
+            },
+            {
+              "description": "Verify khi tạo order với address có được support",
+              "case_id": "SB_PRH_IOPH_94",
+              "order_infos": [
+                {
+                  "image_popup": "info-order-SB-PRH--dev-94-1.png",
+                  "file_import": "data/printhub/dev/Import-order-prh-success.csv",
+                  "tab_names": [
+                    {
+                      "tab_name": "Awaiting Payment",
+                      "order_name": "#0000512",
+                      "image_dashboard": "import-order-fail-dev-SB-PRH-IOPH-94-1-0.png"
+                    }
+                  ]
+                }
+              ],
+              "is_success": true
+            }
+          ]
+        },
+        "SB_PRH_IOPH_110": {
+          "start_date": "2023-11-01",
+          "end_date": "2023-11-30"
+        },
+        "EDIT_ORDER": {
+          "data": [
+            {
+              "description": "Kiểm tra hiển thị thông tin order trên tab Pending design",
+              "case_id": "SB_PRH_IOPH_117",
+              "order_info": {
+                "image": "import-order-SB_PRH_IOPH_117",
+                "file_import": "data/printhub/dev/import_order_pending_design.csv",
+                "order_name": "#0000_peding_deisgn_test",
+                "tab_name": "Pending Design"
+              },
+              "data_edit": {
+                "info_edit": [
+                  {
+                    "front_artwork": "https://drive.google.com/file/d/1f3HQLZzZjgsuaVCcy849XeP6AUszU9N-/view?usp=sharing",
+                    "front_artwork_type": "url",
+                    "front_mockup_type": "image",
+                    "front_mockup": "data/shopbase/art_test.png"
+                  }
+                ],
+                "tab_name": "Awaiting Payment",
+                "order_name": "#0000_peding_deisgn_test",
+                "image_after_edit": "edit-order-SB_PRH_IOPH_117"
+              }
+            },
+            {
+              "description": "Kiểm tra hiển thị thông tin order trên tab Pending Buyer information",
+              "case_id": "SB_PRH_IOPH_116",
+              "order_info": {
+                "image": "import-order-SB_PRH_IOPH_116",
+                "file_import": "data/printhub/import_order_pending_customer.csv",
+                "order_name": "#0000_peding_buyer",
+                "tab_name": "Pending Buyer Information"
+              },
+              "data_edit": {
+                "info_edit": [{}],
+                "tab_name": "Awaiting Payment",
+                "order_name": "#0000_peding_buyer",
+                "image_after_edit": "edit-order-SB_PRH_IOPH_116",
+                "info_customer": {
+                  "country": "United States",
+                  "state": "Alaska",
+                  "city": "Wasilla"
+                }
+              }
+            },
+            {
+              "description": "Kiểm tra hiển thị thông tin order trên tab Fail",
+              "case_id": "SB_PRH_IOPH_118",
+              "order_info": {
+                "image": "import-order-SB_PRH_IOPH_118",
+                "file_import": "data/printhub/dev/import_order_false.csv",
+                "order_name": "#0000_order_false",
+                "tab_name": "Failed"
+              },
+              "data_edit": {
+                "info_edit": [
+                  {
+                    "size": "One size"
+                  }
+                ],
+                "tab_name": "Awaiting Payment",
+                "order_name": "#0000_order_false",
+                "image_after_edit": "edit-order-SB_PRH_IOPH_118"
+              }
+            }
+          ]
+        }
+      },
+      "element_display": {
+        "button": "Import",
+        "index": 2
+      }
+    }
+  },
+  "timeout": "800000",
+  "max_diff_pixel_ratio": 0.05,
+  "threshold": 0.1,
+  "max_diff_pixels": 2000,
+  "cases": {
+    "DATA_DRIVEN_VERIFY_IMPORT_ORDER": {},
+    "EDIT_ORDER": {}
+  }
+}

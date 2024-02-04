@@ -1,0 +1,149 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-payment-shield-v2.onshopbase.com",
+      "shop_name": "au-payment-shield-v2",
+      "user_id": 11260365,
+      "shop_id": 10446195,
+      "username": "qe-2@beeketing.net",
+      "password": "Qe2@OCGQE",
+      "products_checkout": [
+        {
+          "name": "Cairbull Cycling Helmet",
+          "variant_id": 1000010768172809,
+          "quantity": 2
+        }
+      ],
+      "card_shield_domain": "payment-shield.sbprod.tk"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-payment-shield-v2-prodtest.onshopbase.com",
+      "shop_name": "au-payment-shield-v2-prodtest",
+      "user_id": 11260365,
+      "shop_id": 10444256,
+      "username": "qe-2@beeketing.net",
+      "password": "Qe2@OCGQE",
+      "accounts_domain": "accounts-test.shopbase.com",
+      "products_checkout": [
+        {
+          "name": "Cairbull Cycling Helmet",
+          "variant_id": 1000010751795242,
+          "quantity": 2
+        }
+      ],
+      "card_shield_domain": "space01.ngochd7.website"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-payment-shield-v2.myshopbase.net",
+      "shop_name": "au-payment-shield-v2",
+      "user_id": 90246,
+      "shop_id": 10328809,
+      "username": "opay-qe-2@beeketing.net",
+      "password": "Opay@123",
+      "products_checkout": [
+        {
+          "name": "Croptop",
+          "variant_id": 1000001770070976,
+          "quantity": 2
+        }
+      ],
+      "card_shield_domain": "charge-dispute.sbdev.tk"
+    }
+  },
+  "timeout": 300000,
+  "shipping_method": "Standard Shipping",
+  "shipping_address": {
+    "address1": "814 Mission Street",
+    "address2": "",
+    "city": "Los Angeles",
+    "company": "",
+    "country_code": "US",
+    "country_name": "United States",
+    "cpf_or_cnpj_number": "",
+    "first_name": "Shopbase",
+    "last_name": "Auto",
+    "name": "Jena",
+    "phone": "0111111111",
+    "province": "California",
+    "province_code": "CA",
+    "zip": "90001",
+    "remember_me": false
+  },
+  "cases": {
+    "TC_PAYPAL_V2": {
+      "data": [
+        {
+          "case_id": "SB_SB_SF_HD_PS_41",
+          "description": "[SF theme v2] Checkout với cổng Paypal Standard có apply proxy domain có PPC",
+          "email": "tester@maildrop.cc",
+          "payment_method_info": {
+            "payment_type": "PayPal",
+            "payment_code": "paypal"
+          },
+          "product_ppc": {
+            "name": "Bikini",
+            "quantity": 1
+          }
+        },
+        {
+          "case_id": "SB_SB_SF_HD_PS_42",
+          "description": "[SF theme v2] Checkout với cổng Paypal - Smart button (Checkout with Paypal.com) có apply proxy domain",
+          "email": "tester@maildrop.cc",
+          "payment_method_info": {
+            "payment_type": "Paypal smart button",
+            "payment_code": "paypal"
+          }
+        },
+        {
+          "case_id": "SB_SB_SF_HD_PS_43",
+          "description": "[SF theme v2] Checkout với cổng Paypal - Smart button (Redirect to Paypal.com) có apply proxy domain",
+          "email": "tester@maildrop.cc",
+          "payment_method_info": {
+            "payment_type": "Paypal smart button redirect",
+            "payment_code": "paypal"
+          }
+        },
+        {
+          "case_id": "SB_SB_SF_HD_PS_44",
+          "description": "[SF theme v2] Checkout với cổng Paypal - BNPL có apply proxy domain có PPC",
+          "email": "tester@maildrop.cc",
+          "payment_method_info": {
+            "payment_type": "Paypal BNPL",
+            "payment_code": "paypal"
+          },
+          "product_ppc": {
+            "name": "Bikini",
+            "quantity": 1
+          }
+        }
+      ]
+    },
+    "SB_SB_SF_HD_PS_50": {
+      "email": "tester@maildrop.cc",
+      "payment_method_info": {
+        "payment_type": "PayPal",
+        "payment_code": "paypal"
+      },
+      "shipping_address": {
+        "address1": "814 Mission Street",
+        "address2": "",
+        "city": "Ha Noi",
+        "company": "",
+        "country_code": "VN",
+        "country_name": "Việt Nam",
+        "cpf_or_cnpj_number": "",
+        "first_name": "Shopbase",
+        "last_name": "Auto",
+        "name": "Jena",
+        "phone": "0111111111",
+        "province": "",
+        "province_code": "",
+        "zip": "12311",
+        "remember_me": false
+      }
+    }
+  }
+}

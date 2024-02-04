@@ -1,0 +1,70 @@
+{
+  "env": {
+    "local": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-translation-static-content2.myshopbase.net",
+      "shop_name": "au-translation-static-content2",
+      "username": "dpro-qe-1@beeketing.net  ",
+      "password": "43AhIn|VWp;[?9&",
+      "user_id": 89797,
+      "theme_id": 3229538,
+      "shop_id": 10334466,
+      "reload_time": 6
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-translation-static-content2.myshopbase.net",
+      "shop_name": "au-translation-static-content2",
+      "username": "dpro-qe-1@beeketing.net  ",
+      "password": "43AhIn|VWp;[?9&",
+      "user_id": 89797,
+      "theme_id": 3229538,
+      "shop_id": 10334466,
+      "reload_time": 6
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-translation-static-content-prod2.onshopbase.com",
+      "shop_name": "au-translation-static-content-prod2",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "shop_id": 10486091,
+      "theme_id": 1617066,
+      "reload_time": 3
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "accounts_domain": "accounts-test.shopbase.com",
+      "domain": "au-translation-static-content-prodtest2.onshopbase.com",
+      "shop_name": "au-translation-static-content-prodtest2",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "shop_id": 10486088,
+      "theme_id": 1617108,
+      "reload_time": 3
+    }
+  },
+  "cases": {
+    "SB_SET_TL_31": {
+      "description": "[DB+SF - Function] Check change ngôn ngữ thành công Online store - static content với Page = Cart + theme Roller + language = French",
+      "entity_translate": {
+        "theme": "Roller Theme",
+        "pageStatic": "Cart"
+      },
+      "data": {
+        "template_name": "Roller",
+        "language_code": "fr",
+        "change_lang": "Francaise",
+        "key_search": "There are no items in your cart",
+        "key_name": "empty",
+        "original_content": "There are no items in your cart.",
+        "edit_phrase": "edit phrase, key_name empty",
+        "phrase_default": "Il n'y a aucun article dans votre panier.",
+        "cart_handle": "cart"
+      },
+      "expect": "edit phrase, key_name empty"
+    }
+  }
+}

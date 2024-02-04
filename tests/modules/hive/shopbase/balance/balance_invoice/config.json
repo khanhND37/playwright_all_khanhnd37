@@ -1,0 +1,36 @@
+{
+  "domain": "hive.stag.shopbase.net",
+  "user_id": "103593",
+  "username": "vietanhnguyen@beeketing.net",
+  "password": "gh7X6GfW5Y",
+  "cases": {
+    "filter_balance_invoice_list": {
+      "data": [
+        {
+          "test_case_id": "SB_BAL_RTS_8",
+          "type": "Content (require User Id)",
+          "description": "Paid for transaction fee",
+          "tag_name": "filter[content][value]"
+        },
+        {
+          "test_case_id": "SB_BAL_RTS_9",
+          "type": "Date (require User Id)",
+          "description": "Today",
+          "tag_name": "filter[date][value]"
+        },
+        {
+          "test_case_id": "SB_BAL_RTS_10",
+          "type": "Shop domain (require User Id)",
+          "description": "vietanh-klaviyo.stag.myshopbase.net",
+          "tag_name": "filter[shop__domain][value]"
+        }
+      ]
+    }
+  },
+  "env": {
+    "prodtest": {
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://prod-test-api.shopbase.com"
+    }
+  }
+}

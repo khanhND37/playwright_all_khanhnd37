@@ -1,0 +1,154 @@
+{
+  "domain": "https://www.plusbase.com",
+  "api": "https://api.shopbase.com",
+  "cases": {
+    "TC_PL_CATALOG_LANDING": {
+      "data": [
+        {
+          "description": "Check popup product detail on landing catalog with full data",
+          "id": "TC_PLB_PLB_PLCL_2",
+          "action": {
+            "name_product": "American Independence Day Flag Windsock",
+            "carousel": {
+              "name_snapshot": "popup-product-full-data-image-product.png",
+              "icon_next": {
+                "name_snapshot": "popup-product-full-data-next-carousel.png"
+              },
+              "icon_prev": {
+                "name_snapshot": "popup-product-full-data-prev-carousel.png"
+              }
+            },
+            "description": {
+              "name_snapshot": "popup-product-full-data-img-description.png"
+            },
+            "variants": [
+              {
+                "select_variant": [
+                  {
+                    "name_label": "Color",
+                    "value": "03"
+                  }
+                ],
+                "name_snapshot": {
+                  "info": "popup-product-full-data-variant-1-catalog-info.png",
+                  "price": "popup-product-full-data-variant-1-catalog-price.png",
+                  "shipping": "popup-product-full-data-variant-1-catalog-shipping.png"
+                }
+              },
+              {
+                "select_variant": [
+                  {
+                    "name_label": "Color",
+                    "value": "05"
+                  }
+                ],
+                "name_snapshot": {
+                  "info": "popup-product-full-data-variant-2-catalog-info.png",
+                  "price": "popup-product-full-data-variant-2-catalog-price.png",
+                  "shipping": "popup-product-full-data-variant-2-catalog-shipping.png"
+                }
+              }
+            ],
+            "ships": [
+              {
+                "name_label": "Ship to",
+                "value": "Australia",
+                "name_snapshot": "popup-product-full-data-ship.png"
+              },
+              {
+                "name_label": "Ship to",
+                "value": "Brazil",
+                "name_snapshot": "popup-product-full-data-change-ship.png"
+              }
+            ],
+            "buttons": {
+              "name_label": "Start selling this product",
+              "redirect": "accounts.shopbase.com/sign-up?plusbase=true"
+            }
+          }
+        },
+        {
+          "description": "Check popup product detail with not enough information",
+          "id": "TC_PLB_PLB_PLCL_3",
+          "action": {
+            "name_product": "Leather Foam Memory House Slippers",
+            "carousel": null,
+            "description": null,
+            "variants": [
+              {
+                "select_variant": [
+                  {
+                    "name_label": "Color",
+                    "value": "Red"
+                  },
+                  {
+                    "name_label": "Size",
+                    "value": "39"
+                  }
+                ],
+                "name_snapshot": {
+                  "info": "popup-product-some-data-many-variant-1-catalog-info.png",
+                  "price": "popup-product-some-data-many-variant-1-catalog-price.png",
+                  "shipping": "popup-product-some-data-many-variant-1-catalog-shipping.png",
+                  "img": "popup-product-some-data-many-variant-1-catalog-img.png"
+                }
+              },
+              {
+                "select_variant": [
+                  {
+                    "name_label": "Color",
+                    "value": "Brown"
+                  },
+                  {
+                    "name_label": "Size",
+                    "value": "40-41"
+                  }
+                ],
+                "name_snapshot": {
+                  "info": "popup-product-some-data-many-variant-2-catalog-info.png",
+                  "price": "popup-product-some-data-many-variant-2-catalog-price.png",
+                  "shipping": "popup-product-some-data-many-variant-2-catalog-shipping.png",
+                  "img": "popup-product-some-data-many-variant-2-catalog-img.png"
+                }
+              }
+            ],
+            "ships": null,
+            "buttons": null
+          }
+        },
+        {
+          "description": "Check popup product detail on landing catalog with not variant",
+          "id": "TC_PLB_PLB_PLCL_5",
+          "action": {
+            "name_product": "Shower Foot Scrubber Massager Feet Cleaning Brush",
+            "carousel": {
+              "name_snapshot": "popup-product-some-data-image-product.png"
+            },
+            "description": null,
+            "variants": [
+              {
+                "select_variant": null,
+                "name_snapshot": {
+                  "info": "popup-product-some-data-no-variant-catalog-info.png",
+                  "price": "popup-product-some-data-no-variant-catalog-price.png",
+                  "shipping": "popup-product-some-data-no-variant-catalog-shipping.png"
+                }
+              }
+            ],
+            "ships": null
+          }
+        }
+      ]
+    }
+  },
+  "env": {
+    "prod": {
+      "domain": "https://www.plusbase.com",
+      "api": "https://api.shopbase.com"
+    },
+    "prodtest": {
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://prod-test-api.shopbase.com"
+    }
+  }
+}

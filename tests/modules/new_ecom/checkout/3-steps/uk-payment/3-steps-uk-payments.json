@@ -1,0 +1,114 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "username": "opay-qe-1@beeketing.net",
+      "password": "CZFX[b_G5T:+N*Y",
+      "domain": "au-checkout-ne-3-steps-uk.onshopbase.com",
+      "shop_name": "au-checkout-ne-3-steps-uk",
+      "products_checkout": [
+        {
+          "name": "BLACKPINK 1st full album [THE ALBUM]",
+          "variant_id": 1000010892993617,
+          "quantity": 2
+        },
+        {
+          "name": "[Still live] BIGBANG T-shirts",
+          "variant_id": 1000010892993648,
+          "quantity": 2
+        }
+      ]
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "opay-qe-1@beeketing.net",
+      "password": "CZFX[b_G5T:+N*Y",
+      "domain": "au-checkout-ne-3-steps-uk-prodtest.onshopbase.com",
+      "shop_name": "au-checkout-ne-3-steps-uk-prodtest",
+      "products_checkout": [
+        {
+          "name": "BLACKPINK 1st full album [THE ALBUM]",
+          "variant_id": 1000010893003946,
+          "quantity": 2
+        },
+        {
+          "name": "[Still live] BIGBANG T-shirts",
+          "variant_id": 1000010893003940,
+          "quantity": 2
+        }
+      ],
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "opay-qe-1@beeketing.net",
+      "password": "Z6el|q4&:hwCrVx",
+      "domain": "au-checkout-ne-3-steps-uk.myshopbase.net",
+      "shop_name": "au-checkout-ne-3-steps-uk",
+      "products_checkout": [
+        {
+          "name": "BLACKPINK 1st full album [THE ALBUM]",
+          "variant_id": 1000001773822530,
+          "quantity": 2
+        },
+        {
+          "name": "[Still live] BIGBANG T-shirts",
+          "variant_id": 1000001773822524,
+          "quantity": 2
+        }
+      ]
+    }
+  },
+  "cases": {
+    "SB_CHE_CHEN_NE_3STEPS_UK_PAYMENTS": [
+      {
+        "case_id": "SB_NEWECOM_CO_118",
+        "case_name": "NE - Kiểm tra order detail khi checkout thành công với cổng Afterpay, checkout 3 steps",
+        "payment_method": "Afterpay",
+        "email": "afterpay@maildrop.cc",
+        "shipping_address": {
+          "address1": "814 Mission Street",
+          "address2": "",
+          "city": "Los Angeles",
+          "company": "",
+          "country_code": "GB",
+          "country_name": "United Kingdom",
+          "cpf_or_cnpj_number": "",
+          "first_name": "Shopbase",
+          "last_name": "Auto",
+          "name": "Jena",
+          "phone": "0111111111",
+          "province": "",
+          "province_code": "",
+          "zip": "90001",
+          "remember_me": false
+        },
+        "currency": "GBP"
+      },
+      {
+        "case_id": "SB_NEWECOM_CO_112",
+        "case_name": "NE - Kiểm tra order detail khi checkout thành công với cổng Klarna, checkout 3 steps",
+        "payment_method": "Klarna",
+        "email": "klarna@maildrop.cc",
+        "shipping_address": {
+          "address1": "New Burlington St",
+          "address2": "Apt 214",
+          "city": "London",
+          "company": "OCG",
+          "country_code": "GB",
+          "country_name": "United Kingdom",
+          "cpf_or_cnpj_number": "",
+          "first_name": "Shopbase",
+          "last_name": "Auto",
+          "name": "",
+          "phone": "0111111111",
+          "province": "",
+          "province_code": "",
+          "zip": "W13 3BG",
+          "remember_me": false
+        },
+        "currency": "GBP"
+      }
+    ]
+  }
+}

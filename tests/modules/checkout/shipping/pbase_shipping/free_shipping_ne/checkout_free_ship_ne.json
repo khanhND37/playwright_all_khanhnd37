@@ -1,0 +1,182 @@
+{
+  "api": "https://api.shopbase.com",
+  "domain": "au-pbase-freeship-necom.onshopbase.com",
+  "shop_name": "au-pbase-freeship-necom",
+  "user_id": 11260365,
+  "shop_id": 10466103,
+  "username": "qe-2@beeketing.net",
+  "password": "Qe2@OCGQE",
+  "shipping_zone_default": {
+    "zone_name": "DOMESTIC",
+    "rate": 70,
+    "max_discount_amt": null
+  },
+  "shipping_zone": {
+    "zone_name": "DOMESTIC",
+    "rate": 70,
+    "max_discount_amt": 10
+  },
+  "second_shipping_zone": {
+    "zone_name": "DOMESTIC",
+    "rate": 70,
+    "max_discount_amt": 15
+  },
+  "persent_rates_for_order_fee": {
+    "payment_fee": 0.03,
+    "processing_fee": 0.04
+  },
+  "customer_info": {
+    "email": "tester@maildrop.cc",
+    "first_name": "John",
+    "last_name": "Vardy",
+    "address": "1600 W Loop S",
+    "country": "United States",
+    "state": "Texas",
+    "city": "Houston",
+    "zipcode": "77027",
+    "phone_number": "505-646-2276"
+  },
+  "cases": {
+    "SB_PLB_SP_SPP_FS_20": {
+      "products_checkout": [
+        {
+          "name": "Pants",
+          "variant_id": 1000010944258883,
+          "quantity": 1
+        }
+      ],
+      "shipping_method": [
+        {
+          "method_name": "Standard shipping",
+          "shipping_fee": 10
+        },
+        {
+          "method_name": "Fast shipping",
+          "shipping_fee": 9
+        }
+      ]
+    },
+    "SB_PLB_SP_SPP_FS_19": {
+      "products_checkout": [
+        {
+          "name": "Short",
+          "variant_id": 1000010942461597,
+          "quantity": 5
+        }
+      ],
+      "discount_code": "discount",
+      "expected_shipping_methods": [
+        {
+          "method_title": "Standard shipping",
+          "originShipFee": 22,
+          "finalShippingValue": "Free"
+        }
+      ]
+    }
+  },
+  "env": {
+    "prodtest": {
+      "domain": "au-pbase-freeship-ne-prodtest.onshopbase.com",
+      "shop_name": "au-pbase-freeship-ne-prodtest",
+      "shop_id": 10473225,
+      "cases": {
+        "SB_PLB_SP_SPP_FS_20": {
+          "products_checkout": [
+            {
+              "name": "Pants",
+              "variant_id": 1000011133135613,
+              "quantity": 1
+            }
+          ],
+          "shipping_method": [
+            {
+              "method_name": "Standard shipping",
+              "shipping_fee": 10
+            },
+            {
+              "method_name": "Fast shipping",
+              "shipping_fee": 9
+            }
+          ]
+        },
+        "SB_PLB_SP_SPP_FS_19": {
+          "products_checkout": [
+            {
+              "name": "2Pants",
+              "variant_id": 1000011137064233,
+              "quantity": 5
+            }
+          ],
+          "discount_code": "discount",
+          "expected_shipping_methods": [
+            {
+              "method_title": "Standard shipping",
+              "originShipFee": 22,
+              "finalShippingValue": "Free"
+            }
+          ]
+        }
+      },
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://prod-test-api.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-pbase-freeship-ne.myshopbase.net",
+      "shop_name": "au-pbase-freeship-ne",
+      "user_id": 73800,
+      "shop_id": 10331990,
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "customer_info": {
+        "email": "tester@maildrop.cc",
+        "first_name": "John",
+        "last_name": "Vardy",
+        "address": "1600 W Loop S",
+        "country": "United States",
+        "state": "Texas",
+        "city": "Houston",
+        "zipcode": "77027",
+        "phone_number": "505-646-2276"
+      },
+      "cases": {
+        "SB_PLB_SP_SPP_FS_20": {
+          "products_checkout": [
+            {
+              "name": "2Short",
+              "variant_id": 1000001777787955,
+              "quantity": 1
+            }
+          ],
+          "shipping_method": [
+            {
+              "method_name": "Standard shipping",
+              "shipping_fee": 10
+            },
+            {
+              "method_name": "Fast shipping",
+              "shipping_fee": 9
+            }
+          ]
+        },
+        "SB_PLB_SP_SPP_FS_19": {
+          "products_checkout": [
+            {
+              "name": "Short",
+              "variant_id": 1000001777636504,
+              "quantity": 5
+            }
+          ],
+          "discount_code": "discount",
+          "expected_shipping_methods": [
+            {
+              "method_title": "Standard shipping",
+              "originShipFee": 10,
+              "finalShippingValue": "Free"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

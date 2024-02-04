@@ -1,0 +1,629 @@
+{
+  "env": {
+    "dev": {
+      "hive_domain": "hive.dev.shopbase.net",
+      "hive_username": "shopbase",
+      "hive_password": "123456",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "api": "https://gapi.dev.shopbase.net",
+      "is_merge_case_data": true,
+      "cases": {
+        "DATA_DRIVEN": {
+          "data": [
+            {
+              "case_id": "SB_HP_CT_CT_Auto_1",
+              "description": "[PlusBase] Verify Content of contest PlusBase metric GMV",
+              "domain": "au-contest-plb.myshopbase.net",
+              "contest_logic": {
+                "contest_name": "Contest PlusBase GMV",
+                "test_shop_id": " ",
+                "shop_type": "PlusBase",
+                "region": "Vietnam",
+                "metrics": {
+                  "metric_type": "GMV"
+                },
+                "prizes": [
+                  {
+                    "threshold": 10,
+                    "prize": "$5"
+                  },
+                  {
+                    "threshold": 30,
+                    "prize": "$15"
+                  },
+                  {
+                    "threshold": 500,
+                    "prize": "$200"
+                  },
+                  {
+                    "threshold": 5000,
+                    "prize": "$3000"
+                  }
+                ]
+              },
+              "contest_ui": {
+                "pre_contest": {
+                  "message_header": {
+                    "message": "Message Header Pre-Contest",
+                    "size": 21,
+                    "color": "#E8A39A"
+                  },
+                  "message_subtext": {
+                    "message": "Message Sub-text Pre-Contest",
+                    "size": 14,
+                    "color": "#E8A39A"
+                  },
+                  "learn_more_btn": {
+                    "size": 20,
+                    "primary_color": "#363e43",
+                    "secondary_color": "#E8A39A",
+                    "link": "https://www.shopbase.com"
+                  }
+                },
+                "in_contest": {
+                  "message_header": {
+                    "message": "Message Header In-Contest",
+                    "size": 20,
+                    "color": "#E8A39A"
+                  },
+                  "learn_more_link": "https://www.w3schools.com/"
+                },
+                "after_contest": {
+                  "no_prize": {
+                    "message_header": {
+                      "message": "Message Header No Prize",
+                      "size": 21,
+                      "color": "#E8A39A"
+                    },
+                    "message_subtext": {
+                      "message": "Message Sub-tex No Prize",
+                      "size": 21,
+                      "color": "#E8A39A"
+                    }
+                  },
+                  "had_prize": {
+                    "message_header": {
+                      "message": "Message Header Prize Had",
+                      "size": 21,
+                      "color": "#E8A39A"
+                    },
+                    "message_subtext": {
+                      "message": "Message Sub-tex Prize Had",
+                      "size": 21,
+                      "color": "#E8A39A"
+                    },
+                    "link": {
+                      "message": "https://www.shopbase.com",
+                      "size": 16,
+                      "color": "#E8A39A"
+                    },
+                    "box_color": "#0093ED"
+                  }
+                }
+              }
+            },
+            {
+              "case_id": "SB_HP_CT_CT_Auto_3",
+              "description": "[PlusBase] Verify Content of contest Total sale items",
+              "domain": "au-contest-plb.myshopbase.net",
+              "contest_logic": {
+                "contest_name": "Contest PlusBase Total sale items",
+                "test_shop_id": " ",
+                "shop_type": "PlusBase",
+                "region": "Vietnam",
+                "metrics": {
+                  "metric_type": "Total Sale Items",
+                  "data": [
+                    {
+                      "condition": ">=",
+                      "value": 10
+                    }
+                  ]
+                },
+                "prizes": [
+                  {
+                    "threshold": 100,
+                    "prize": "Voucher 10%"
+                  },
+                  {
+                    "threshold": 200,
+                    "prize": "$5"
+                  },
+                  {
+                    "threshold": 500,
+                    "prize": "$15"
+                  },
+                  {
+                    "threshold": 5000,
+                    "prize": "$200"
+                  }
+                ]
+              },
+              "contest_ui": {
+                "pre_contest": {
+                  "message_header": {
+                    "message": "Message Header Pre-Contest",
+                    "size": 21,
+                    "color": "#E8A39A"
+                  },
+                  "message_subtext": {
+                    "message": "Message Sub-text Pre-Contest",
+                    "size": 14,
+                    "color": "#E8A39A"
+                  },
+                  "learn_more_btn": {
+                    "size": 20,
+                    "primary_color": "#363e43",
+                    "secondary_color": "#E8A39A",
+                    "link": "https://www.shopbase.com"
+                  }
+                },
+                "in_contest": {
+                  "message_header": {
+                    "message": "Message Header In-Contest",
+                    "size": 20,
+                    "color": "#E8A39A"
+                  },
+                  "learn_more_link": "https://www.w3schools.com/"
+                },
+                "after_contest": {
+                  "no_prize": {
+                    "message_header": {
+                      "message": "Message Header No Prize",
+                      "size": 21,
+                      "color": "#E8A39A"
+                    },
+                    "message_subtext": {
+                      "message": "Message Sub-tex No Prize",
+                      "size": 21,
+                      "color": "#E8A39A"
+                    }
+                  },
+                  "had_prize": {
+                    "message_header": {
+                      "message": "Message Header Prize Had",
+                      "size": 21,
+                      "color": "#E8A39A"
+                    },
+                    "message_subtext": {
+                      "message": "Message Sub-tex Prize Had",
+                      "size": 21,
+                      "color": "#E8A39A"
+                    },
+                    "link": {
+                      "message": "https://www.shopbase.com",
+                      "size": 16,
+                      "color": "#E8A39A"
+                    },
+                    "box_color": "#0093ED"
+                  }
+                }
+              }
+            },
+            {
+              "case_id": "SB_HP_CT_CT_Auto_5",
+              "description": "[PlusBase] Verify Content of contest PlusBase metric Points",
+              "domain": "au-contest-plb.myshopbase.net",
+              "contest_logic": {
+                "contest_name": "Contest PlusBase metric Point",
+                "test_shop_id": " ",
+                "shop_type": "PlusBase",
+                "region": "Vietnam",
+                "metrics": {
+                  "metric_type": "Points",
+                  "data": [
+                    {
+                      "condition": "Silver Base - 15",
+                      "value": 0.5
+                    },
+                    {
+                      "condition": "Gold Base - 1",
+                      "value": 1
+                    }
+                  ]
+                },
+                "prizes": [
+                  {
+                    "threshold": 1,
+                    "prize": "Voucher 10%"
+                  },
+                  {
+                    "threshold": 2,
+                    "prize": "$1"
+                  },
+                  {
+                    "threshold": 50,
+                    "prize": "$25"
+                  },
+                  {
+                    "threshold": 500,
+                    "prize": "$250"
+                  }
+                ]
+              },
+              "contest_ui": {
+                "pre_contest": {
+                  "message_header": {
+                    "message": "Message Header Pre-Contest",
+                    "size": 21,
+                    "color": "#E8A39A"
+                  },
+                  "message_subtext": {
+                    "message": "Message Sub-text Pre-Contest",
+                    "size": 14,
+                    "color": "#E8A39A"
+                  },
+                  "learn_more_btn": {
+                    "size": 20,
+                    "primary_color": "#363e43",
+                    "secondary_color": "#E8A39A",
+                    "link": "https://www.shopbase.com"
+                  }
+                },
+                "in_contest": {
+                  "message_header": {
+                    "message": "Message Header In-Contest",
+                    "size": 20,
+                    "color": "#E8A39A"
+                  },
+                  "learn_more_link": "https://www.w3schools.com/"
+                },
+                "after_contest": {
+                  "no_prize": {
+                    "message_header": {
+                      "message": "Message Header No Prize",
+                      "size": 21,
+                      "color": "#E8A39A"
+                    },
+                    "message_subtext": {
+                      "message": "Message Sub-tex No Prize",
+                      "size": 21,
+                      "color": "#E8A39A"
+                    }
+                  },
+                  "had_prize": {
+                    "message_header": {
+                      "message": "Message Header Prize Had",
+                      "size": 21,
+                      "color": "#E8A39A"
+                    },
+                    "message_subtext": {
+                      "message": "Message Sub-tex Prize Had",
+                      "size": 21,
+                      "color": "#E8A39A"
+                    },
+                    "link": {
+                      "message": "https://www.shopbase.com",
+                      "size": 16,
+                      "color": "#E8A39A"
+                    },
+                    "box_color": "#0093ED"
+                  }
+                }
+              }
+            },
+            {
+              "case_id": "SB_HP_CT_CT_Auto_7",
+              "description": "[PrintBase] Verify Content of contest PrintBase metric Points",
+              "domain": "au-contest-pb.myshopbase.net",
+              "contest_logic": {
+                "contest_name": "Contest Total sale items PrintBase",
+                "test_shop_id": " ",
+                "shop_type": "PrintBase/PrintHub",
+                "region": "Vietnam",
+                "metrics": {
+                  "metric_type": "Total Sale Items",
+                  "data": [
+                    {
+                      "condition": "Silver Base - sb"
+                    },
+                    {
+                      "condition": "Gold Base - gb"
+                    }
+                  ]
+                },
+                "prizes": [
+                  {
+                    "threshold": 50,
+                    "prize": "Coupon 50%"
+                  },
+                  {
+                    "threshold": 300,
+                    "prize": "$100"
+                  },
+                  {
+                    "threshold": 500,
+                    "prize": "$250"
+                  },
+                  {
+                    "threshold": 1000,
+                    "prize": "$500"
+                  }
+                ]
+              },
+              "contest_ui": {
+                "pre_contest": {
+                  "message_header": {
+                    "message": "Message Header Pre-Contest",
+                    "size": 20,
+                    "color": "#E8A39A"
+                  },
+                  "message_subtext": {
+                    "message": "Message Sub-text Pre-Contest",
+                    "size": 14,
+                    "color": "#E8A39A"
+                  },
+                  "learn_more_btn": {
+                    "size": 20,
+                    "primary_color": "#363e43",
+                    "secondary_color": "#E8A39A",
+                    "link": "https://www.shopbase.com"
+                  }
+                },
+                "in_contest": {
+                  "message_header": {
+                    "message": "Message Header In-Contest",
+                    "size": 20,
+                    "color": "#E8A39A"
+                  },
+                  "learn_more_link": "https://www.w3schools.com/tags/att_input_maxlength.asp"
+                },
+                "after_contest": {
+                  "no_prize": {
+                    "message_header": {
+                      "message": "Message Header No Prize",
+                      "size": 21,
+                      "color": "#E8A39A"
+                    },
+                    "message_subtext": {
+                      "message": "Message Sub-tex No Prize",
+                      "size": 21,
+                      "color": "#E8A39A"
+                    }
+                  },
+                  "had_prize": {
+                    "message_header": {
+                      "message": "Message Header Prize Had",
+                      "size": 21,
+                      "color": "#E8A39A"
+                    },
+                    "message_subtext": {
+                      "message": "Message Sub-tex Prize Had",
+                      "size": 21,
+                      "color": "#E8A39A"
+                    },
+                    "link": {
+                      "message": "https://www.shopbase.com",
+                      "size": 16,
+                      "color": "#E8A39A"
+                    },
+                    "box_color": "#0093ED"
+                  }
+                }
+              }
+            },
+            {
+              "case_id": "SB_HP_CT_CT_Auto_9",
+              "description": "[PrintBase] Verify Content of contest PrintBase metric Points",
+              "domain": "au-contest-pb.myshopbase.net",
+              "contest_logic": {
+                "contest_name": "Contest PrintBase",
+                "test_shop_id": " ",
+                "shop_type": "PrintBase/PrintHub",
+                "region": "Vietnam",
+                "metrics": {
+                  "metric_type": "Points",
+                  "data": [
+                    {
+                      "condition": "Silver Base - sb",
+                      "value": 0.5
+                    },
+                    {
+                      "condition": "Gold Base - gb",
+                      "value": 1
+                    }
+                  ]
+                },
+                "prizes": [
+                  {
+                    "threshold": 50,
+                    "prize": "Coupon 50%"
+                  },
+                  {
+                    "threshold": 300,
+                    "prize": "$100"
+                  },
+                  {
+                    "threshold": 500,
+                    "prize": "$250"
+                  },
+                  {
+                    "threshold": 1000,
+                    "prize": "$500"
+                  }
+                ]
+              },
+              "contest_ui": {
+                "pre_contest": {
+                  "message_header": {
+                    "message": "Message Header Pre-Contest",
+                    "size": 20,
+                    "color": "#E8A39A"
+                  },
+                  "message_subtext": {
+                    "message": "Message Sub-text Pre-Contest",
+                    "size": 14,
+                    "color": "#E8A39A"
+                  },
+                  "learn_more_btn": {
+                    "size": 20,
+                    "primary_color": "#363e43",
+                    "secondary_color": "#E8A39A",
+                    "link": "https://www.shopbase.com"
+                  }
+                },
+                "in_contest": {
+                  "message_header": {
+                    "message": "Message Header In-Contest",
+                    "size": 20,
+                    "color": "#E8A39A"
+                  },
+                  "learn_more_link": "https://www.w3schools.com/tags/att_input_maxlength.asp"
+                },
+                "after_contest": {
+                  "no_prize": {
+                    "message_header": {
+                      "message": "Message Header No Prize",
+                      "size": 21,
+                      "color": "#E8A39A"
+                    },
+                    "message_subtext": {
+                      "message": "Message Sub-tex No Prize",
+                      "size": 21,
+                      "color": "#E8A39A"
+                    }
+                  },
+                  "had_prize": {
+                    "message_header": {
+                      "message": "Message Header Prize Had",
+                      "size": 21,
+                      "color": "#E8A39A"
+                    },
+                    "message_subtext": {
+                      "message": "Message Sub-tex Prize Had",
+                      "size": 21,
+                      "color": "#E8A39A"
+                    },
+                    "link": {
+                      "message": "https://www.shopbase.com",
+                      "size": 16,
+                      "color": "#E8A39A"
+                    },
+                    "box_color": "#0093ED"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "prodtest": {
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://prod-test-api.shopbase.com"
+    }
+  },
+  "cases": {
+    "SB_HP_CT_CTHive_45": {
+      "contests": [
+        {
+          "step": "Enable contest GMV, shop type ShopBase, region Vietnam successfully:",
+          "contest_name": "Contest GMV Shopbase Vietnam",
+          "is_enable": true
+        },
+        {
+          "step": "Enable contest GMV shop type ShopBase, region China, International successfully:",
+          "contest_name": "Contest GMV China, USG",
+          "is_enable": true
+        },
+        {
+          "step": "Enable contest có shop type PrintBase, region Vietnam successfully:",
+          "contest_name": "Contest PrintBase Vietnam",
+          "is_enable": true
+        },
+        {
+          "step": "Enable contest có shop type PrintBase, region Vietnam successfully:",
+          "contest_name": "Contest PrintBase USG",
+          "is_enable": true
+        },
+        {
+          "step": "Enable contest shop type PlusBase, region Vietnam, China successfully:",
+          "contest_name": "PLB Contest",
+          "is_enable": true
+        },
+        {
+          "step": "Enable contest shop type PlusBase, region Vietnam, China successfully:",
+          "contest_name": "Contest PlusBase USG",
+          "is_enable": true
+        }
+      ]
+    },
+    "SB_HP_CT_CTHive_46": {
+      "contests": [
+        {
+          "step": "Enable contest GMV successfully: ",
+          "contest_name": "Contest GMV Shopbase Vietnam",
+          "is_enable": true,
+          "is_success": true
+        },
+        {
+          "step": "Enable contest GMV unsuccessfully:",
+          "contest_name": "Contest GMV SB2",
+          "is_enable": true,
+          "is_success": false
+        },
+        {
+          "step": "Enable contest Point successfully:",
+          "contest_name": "Contest PrintBase Vietnam",
+          "is_enable": true,
+          "is_success": true
+        },
+        {
+          "step": "Enable contest Total sale items, shop type PrintBase unsuccessfully:",
+          "contest_name": "Contest PrintBase VN2",
+          "is_enable": true,
+          "is_success": false
+        },
+        {
+          "step": "Enable contest Total sale items, shop type PrintBase/PrintHub unsuccessfully:",
+          "contest_name": "ShopRace Holiday 2021",
+          "is_enable": true,
+          "is_success": false
+        },
+        {
+          "step": "Pre: Disable contest have region Vietnam: type Shopbase",
+          "contest_name": "Contest GMV Shopbase Vietnam",
+          "is_enable": false,
+          "is_success": true
+        },
+        {
+          "step": "Pre: Disable contest have region Vietnam: type PrintBase",
+          "contest_name": "Contest PrintBase Vietnam",
+          "is_enable": false,
+          "is_success": true
+        },
+        {
+          "step": "Enable contest có shop type PrintBase/PrintHub, region Vietnam successfully :",
+          "contest_name": "ShopRace Holiday 2021",
+          "is_enable": true,
+          "is_success": true
+        },
+        {
+          "step": "Enable contest shop type ShopBase, region Vietnam unsuccessfully:",
+          "contest_name": "Contest GMV Shopbase Vietnam",
+          "is_enable": true,
+          "is_success": false
+        },
+        {
+          "step": "Enable contest shop type PrintBase, region Vietnam unsuccessfully:",
+          "contest_name": "Contest PrintBase Vietnam",
+          "is_enable": true,
+          "is_success": false
+        },
+        {
+          "step": "Enable contest shop type PlusBase, region Vietnam successfully:",
+          "contest_name": "Contest PLB Point",
+          "is_enable": true,
+          "is_success": true
+        },
+        {
+          "step": "Enable contest shop type PlusBase, region Vietnam unsuccessfully:",
+          "contest_name": "Contest GMV PlusBase",
+          "is_enable": true,
+          "is_success": false
+        }
+      ]
+    }
+  }
+}

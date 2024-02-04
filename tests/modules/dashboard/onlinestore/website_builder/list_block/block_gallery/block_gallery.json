@@ -1,0 +1,457 @@
+{
+  "param_threshold": 0.1,
+  "max_diff_pixel_ratio": 0.05,
+  "max_diff_pixels": 2000,
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-web-block-gallery-prod.onshopbase.com",
+      "shop_name": "au-web-block-gallery-prod",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "shop_id": 10429198,
+      "theme_id": 1483028,
+      "theme_data": 1526983,
+      "add_section": {
+        "parent_position": {
+          "section": 1
+        },
+        "template": "Single column"
+      },
+      "section_name": {
+        "content": "Test gallery image"
+      },
+      "dnd_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 0
+          }
+        }
+      },
+      "add_block": {
+        "parent_position": {
+          "section": 1,
+          "column": 1
+        },
+        "template": "Product gallery"
+      },
+      "layout": {
+        "grid": "Grid",
+        "carousel": "Carousel",
+        "mix": "Mix"
+      },
+      "navtype": {
+        "none": "None",
+        "dots": "Dots",
+        "thumbnail": "Thumbnail"
+      }
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-web-block-gallery.onshopbase.com",
+      "shop_name": "au-web-block-gallery",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "shop_id": 10428069,
+      "theme_id": 1482982,
+      "theme_data": 1527829,
+      "add_section": {
+        "parent_position": {
+          "section": 1
+        },
+        "template": "Single column"
+      },
+      "section_name": {
+        "content": "Test gallery image"
+      },
+      "dnd_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 0
+          }
+        }
+      },
+      "add_block": {
+        "parent_position": {
+          "section": 1,
+          "column": 1
+        },
+        "template": "Product gallery"
+      },
+      "layout": {
+        "grid": "Grid",
+        "carousel": "Carousel",
+        "mix": "Mix"
+      },
+      "navtype": {
+        "none": "None",
+        "dots": "Dots",
+        "thumbnail": "Thumbnail"
+      },
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-web-block-gallery.myshopbase.net",
+      "shop_name": "au-web-block-gallery",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "43AhIn|VWp;[?9&",
+      "user_id": 89797,
+      "shop_id": 10326795,
+      "theme_id": 3165017,
+      "theme_data": 3199075,
+      "add_section": {
+        "parent_position": {
+          "section": 1
+        },
+        "template": "Single column"
+      },
+      "section_name": {
+        "content": "Test gallery image"
+      },
+      "dnd_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 0
+          }
+        }
+      },
+      "add_block": {
+        "parent_position": {
+          "section": 1,
+          "column": 1
+        },
+        "template": "Product gallery"
+      },
+      "layout": {
+        "grid": "Grid",
+        "carousel": "Carousel",
+        "mix": "Mix"
+      },
+      "navtype": {
+        "none": "None",
+        "dots": "Dots",
+        "thumbnail": "Thumbnail"
+      }
+    }
+  },
+  "block_template": {
+    "from": {
+      "category": "Basics",
+      "template": "Product gallery"
+    },
+    "to": {
+      "position": {
+        "section": 1,
+        "column": 1
+      },
+      "isBottom": false
+    }
+  },
+  "cases": {
+    "SB_WEB_BUILDER_PRD_48": {
+      "case_id": "SB_WEB_BUILDER_PRD_48",
+      "product_test_layout": "product test layout",
+      "product_handle": "product-test-layout",
+      "product_one_image_name": "Product test 1 image",
+      "expect": {
+        "space_0": 0,
+        "space_80": 80,
+        "space_10": 10,
+        "styles": [
+          {
+            "position": {
+              "label": "position",
+              "type": "Auto"
+            },
+            "align": {
+              "label": "align_self",
+              "type": "Right"
+            },
+            "width": {
+              "label": "width",
+              "value": {
+                "unit": "Px",
+                "value": 560
+              }
+            },
+            "background": {
+              "label": "background",
+              "value": {
+                "image": {
+                  "url": "data/fixed-size-img/yellow.png"
+                }
+              }
+            },
+            "border": {
+              "label": "border",
+              "value": {
+                "thickness": "custom",
+                "size": {
+                  "fill": true,
+                  "number": 2
+                }
+              }
+            },
+            "opacity": {
+              "label": "opacity",
+              "config": {
+                "fill": true,
+                "number": 50
+              }
+            },
+            "radius": {
+              "label": "border_radius",
+              "config": {
+                "fill": true,
+                "number": 10
+              }
+            },
+            "shadow": {
+              "label": "box_shadow",
+              "config": {
+                "option": "hard",
+                "size": "M",
+                "direction": "Top Right"
+              }
+            },
+            "padding": {
+              "label": "padding",
+              "value": {
+                "top": 30,
+                "left": 30,
+                "bottom": 30,
+                "right": 30,
+                "input": true
+              }
+            },
+            "margin": {
+              "label": "margin",
+              "value": {
+                "top": 30,
+                "left": 30,
+                "bottom": 30,
+                "right": 30,
+                "input": true
+              }
+            }
+          },
+          {
+            "position": {
+              "label": "position",
+              "type": "Auto"
+            },
+            "align": {
+              "label": "align_self",
+              "type": "Center"
+            },
+            "width": {
+              "label": "width",
+              "value": {
+                "unit": "Px",
+                "value": 650
+              }
+            },
+            "background": {
+              "label": "background",
+              "value": {
+                "image": {
+                  "url": "data/fixed-size-img/yellow.png"
+                }
+              }
+            },
+            "border": {
+              "label": "border",
+              "value": {
+                "thickness": "custom",
+                "size": {
+                  "fill": true,
+                  "number": 20
+                }
+              }
+            },
+            "opacity": {
+              "label": "opacity",
+              "config": {
+                "fill": true,
+                "number": 150
+              }
+            },
+            "radius": {
+              "label": "border_radius",
+              "config": {
+                "fill": true,
+                "number": 5
+              }
+            },
+            "shadow": {
+              "label": "box_shadow",
+              "config": {
+                "option": "hard",
+                "size": "M",
+                "direction": "Top Right"
+              }
+            },
+            "padding": {
+              "label": "padding",
+              "value": {
+                "top": 25,
+                "left": 25,
+                "bottom": 25,
+                "right": 25,
+                "input": true
+              }
+            },
+            "margin": {
+              "label": "margin",
+              "value": {
+                "top": 30,
+                "left": 30,
+                "bottom": 30,
+                "right": 30,
+                "input": true
+              }
+            }
+          },
+          {
+            "position": {
+              "label": "position",
+              "type": "Manual"
+            },
+            "align": {
+              "label": "align_self",
+              "type": "Left"
+            },
+            "width": {
+              "label": "width",
+              "value": {
+                "unit": "Px",
+                "value": 100
+              }
+            },
+            "background": {
+              "label": "background",
+              "value": {
+                "image": {
+                  "url": "data/fixed-size-img/yellow.png"
+                }
+              }
+            },
+            "border": {
+              "label": "border",
+              "value": {
+                "thickness": "custom",
+                "size": {
+                  "fill": true,
+                  "number": 10
+                }
+              }
+            },
+            "opacity": {
+              "label": "opacity",
+              "config": {
+                "fill": true,
+                "number": 100
+              }
+            },
+            "radius": {
+              "label": "border_radius",
+              "config": {
+                "fill": true,
+                "number": 15
+              }
+            },
+            "shadow": {
+              "label": "box_shadow",
+              "config": {
+                "option": "hard",
+                "size": "M",
+                "direction": "Top Right"
+              }
+            },
+            "padding": {
+              "label": "padding",
+              "value": {
+                "top": 30,
+                "left": 30,
+                "bottom": 30,
+                "right": 30,
+                "input": true
+              }
+            },
+            "margin": {
+              "label": "margin",
+              "value": {
+                "top": 25,
+                "left": 25,
+                "bottom": 25,
+                "right": 25,
+                "input": true
+              }
+            }
+          }
+        ]
+      }
+    },
+    "SB_WEB_BUILDER_PRD_49": {
+      "case_id": "SB_WEB_BUILDER_PRD_49",
+      "product_test_layout": "product test layout",
+      "product_handle": "product-test-layout",
+      "product_one_image_name": "Product test 1 image",
+      "expect": {
+        "resize1": {
+          "width": {
+            "label": "width",
+            "value": {
+              "unit": "Px",
+              "value": 250
+            }
+          }
+        },
+        "resize2": {
+          "width": {
+            "label": "width",
+            "value": {
+              "unit": "Px",
+              "value": 500
+            }
+          }
+        }
+      }
+    },
+    "SB_WEB_BUILDER_PRD_50": {
+      "case_id": "SB_WEB_BUILDER_PRD_50",
+      "product_one_image_name": "Product test 1 image",
+      "product_6_image_name": "Product test 6 image",
+      "product_5_image_name": "Product test 5 image",
+      "product_4_image_name": "Product test 4 image",
+      "product_has_video": "Product test has video",
+      "product_has_variant_image": "Product test has variant image",
+      "product_has_variant_image_seo": "product-test-has-variant-image",
+      "product_has_video_seo": "product-test-has-video"
+    },
+    "SB_WEB_BUILDER_PRD_58": {
+      "case_id": "SB_WEB_BUILDER_PRD_58",
+      "standard_product": "Standard Product",
+      "product_one_image_name": "Product test 1 image",
+      "product_6_image_name": "Product test 6 image",
+      "product_5_image_name": "Product test 5 image",
+      "product_4_image_name": "Product test 4 image",
+      "product_has_video": "Product test has video"
+    }
+  }
+}

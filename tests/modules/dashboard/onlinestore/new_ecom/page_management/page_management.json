@@ -1,0 +1,196 @@
+{
+  "env": {
+    "local": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-page-management.myshopbase.net",
+      "shop_name": "au-page-management",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_id": 10322956,
+      "user_id": 73800,
+      "template_id": 2287
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-page-management.myshopbase.net",
+      "shop_name": "au-page-management",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_id": 10322956,
+      "user_id": 73800,
+      "template_id": 2287
+    },
+    "prodtest": {
+      "domain": "au-page-management-prodtest.onshopbase.com",
+      "shop_name": "au-page-management-prodtest.onshopbase.com",
+      "username": "plus-qe-2@beeketing.net",
+      "password": "Q37t^Q7Sa4W8",
+      "api": "https://prod-test-api.shopbase.com",
+      "shop_id": 10428027,
+      "user_id": 11248586,
+      "template_id": 2181,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "prod": {
+      "domain": "au-page-management-prod.onshopbase.com",
+      "shop_name": "au-page-management-prod.onshopbase.com",
+      "username": "plus-qe-2@beeketing.net",
+      "password": "Q37t^Q7Sa4W8",
+      "api": "https://api.shopbase.com",
+      "shop_id": 10428003,
+      "user_id": 11248586,
+      "template_id": 2181
+    }
+  },
+  "cases": {
+    "SB_NEWECOM_PM_1": {
+      "case_title": "Check data default của Page management khi tạo shop",
+      "pre_conditions": {
+        "add_shop_name": "au-page-management-default-data"
+      },
+      "expects": {
+        "default_pages": ["About Us", "Privacy Policy - Term of Service", "Contact Us", "Order tracking"]
+      }
+    },
+    "SB_NEWECOM_PM_2": {
+      "pre_conditions": {
+        "page_title": "Page A"
+      },
+      "data": {
+        "add_page_title": "Page test",
+        "add_page_title_less_equal_than_255": "Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque in fermentum, condimentum montes tortor litora quis habitant accumsan pulvinar vestibulum, ligula ridiculus neque ad primis nibh ut faucibus magna. Morbi quam eros praesent pellentesque l",
+        "add_page_title_larger_than_255": "Lorem ipsum dolor sit amet consectetur adipiscing elit dignissim viverra, integer habitant morbi velit platea libero vel semper faucibus justo, per sociosqu pellentesque conubia netus erat penatibus massa. Ad pulvinar nullam aliquam cras ultrices cum quis."
+      },
+      "expects": {
+        "text_validate": "Title can't be blank",
+        "text_length_validate": "Title is too long (maximum is 255 characters)",
+        "toast_success": "Your page was created"
+      }
+    },
+    "SB_NEWECOM_PM_3": {
+      "pre_conditions": {
+        "page_apply_template_title": "Page 1",
+        "page_not_apply_template_title": "Page 2"
+      },
+      "expects": {
+        "text_apply_template_success": "Apply template successfully"
+      }
+    },
+    "SB_NEWECOM_PM_4": {
+      "data": {
+        "add_page": {
+          "title": "Page 1",
+          "tags": ["tagA"],
+          "search_engine_meta_description": "description of page"
+        }
+      },
+      "expects": {}
+    },
+    "SB_NEWECOM_PM_5": {
+      "pre_conditions": {
+        "add_page_titles": ["Page 1", "Page 2", "Page 3"]
+      },
+      "expects": {
+        "toast_message_deleted_1_page": "Deleted 1 page",
+        "toast_message_deleted_2_page": "Deleted 2 pages",
+        "popup_title": "Delete Page 2 page",
+        "popup_message": "Deleted page cannot be recovered. Do you still want to continue ?",
+        "popup_title_multiple": "Delete page",
+        "popup_message_multiple": "Deleted page cannot be recovered. Do you still want to continue ?"
+      }
+    },
+    "SB_NEWECOM_PM_6": {
+      "data": {},
+      "pre_conditions": {
+        "add_page_titles": ["Page 1", "Page 2", "Page 3"]
+      }
+    },
+    "SB_NEWECOM_PM_7": {
+      "pre_conditions": {
+        "add_page_titles": ["Page 1", "Page 2", "Page 3"]
+      },
+      "data": {
+        "edit_title": "New#456",
+        "tags": ["tagA", "tagB", "tagC"],
+        "url": "page-edit-url",
+        "seo_title": "Page new information",
+        "seo_description": "Description here",
+        "seo_image": "https://img.shopbase.com/files/10374855/2022/11/23/16692205053d862d63e8.png"
+      },
+      "expects": {
+        "toast_success": "Your page was updated",
+        "empty_page_title": "Title can't be blank"
+      }
+    },
+    "SB_NEWECOM_PM_8": {
+      "pre_conditions": {
+        "page_title": "Page 1"
+      },
+      "data": {
+        "page_title_edit": "Page new",
+        "page_title_edit_2": "Page new 2"
+      },
+      "expects": {}
+    },
+    "SB_NEWECOM_PM_9": {
+      "pre_conditions": {
+        "number_per_page": 30,
+        "number_of_pages": 35
+      },
+      "expects": {
+        "button_more_actions": " More actions ",
+        "link_select_all_pages": "Select on all pages",
+        "link_clear_all": "Clear all",
+        "success_publish_toast": "",
+        "buttons": ["Show selected pages", "Hide selected pages", "Delete pages"]
+      }
+    },
+    "SB_NEWECOM_PM_11": {
+      "add_page": [
+        {
+          "title": "About us"
+        },
+        {
+          "title": "Page review"
+        },
+        {
+          "title": "Page Connect"
+        },
+        {
+          "title": "Page A",
+          "tags": ["contact"]
+        },
+        {
+          "title": "Page B",
+          "tags": ["about"]
+        },
+        {
+          "title": "Page C",
+          "tags": ["yoga"]
+        }
+      ],
+      "search_text": [
+        {
+          "name": "Nhập keyword match page name tại Search box trong Page management",
+          "search": "review",
+          "result": "Page review"
+        },
+        {
+          "name": "Nhập keyword có kí tự match page name tại Search box trong Page management",
+          "search": "ect",
+          "result": "Page Connect"
+        },
+        {
+          "name": "Nhập keyword match page tag tại Search box trong Page management",
+          "search": "yoga",
+          "result": "Page C"
+        },
+        {
+          "name": "Nhập keyword ko match",
+          "search": "xyzt",
+          "no_result": "No Pages found"
+        }
+      ]
+    }
+  }
+}

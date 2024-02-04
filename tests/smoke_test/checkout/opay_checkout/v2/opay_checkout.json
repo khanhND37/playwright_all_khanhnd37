@@ -1,0 +1,353 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "product_info": [
+        {
+          "name": "Post Purchase",
+          "quantity": 1
+        }
+      ],
+      "product_ppc_name": "Bikini",
+      "customer_info": {
+        "email": "testerOCG@maildrop.cc",
+        "first_name": "John",
+        "last_name": "Vardy",
+        "address": "1600 W Loop S",
+        "country": "United States",
+        "state": "Texas",
+        "city": "Houston",
+        "zipcode": "77027",
+        "phone_number": "505-646-2276"
+      }
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "product_info": [
+        {
+          "name": "Post Purchase",
+          "quantity": 1
+        }
+      ],
+      "product_ppc_name": "Bikini",
+      "customer_info": {
+        "email": "testerOCG@maildrop.cc",
+        "first_name": "John",
+        "last_name": "Vardy",
+        "address": "1600 W Loop S",
+        "country": "United States",
+        "state": "New York",
+        "city": "New York",
+        "zipcode": "10002",
+        "phone_number": "505-646-2276"
+      },
+      "accounts_domain": "accounts-test.shopbase.com",
+      "cases": {
+        "DATA_DRIVEN": [
+          {
+            "case_id": "SB_CHE_OPAY_SMOKE_07",
+            "case_description": "[Theme v2] Kiểm tra checkout order có item Post purchase thành công với cổng Stripe",
+            "shop_info": {
+              "domain": "au-smoke-checkout-stripe-paypal-prodtest.onshopbase.com",
+              "shop_name": "au-smoke-checkout-stripe-paypal-prodtest",
+              "user_id": 207114,
+              "shop_id": 10232760,
+              "username": "shopbase4@beeketing.net",
+              "password": "H7mQdQ]Zj]%[Nm?"
+            },
+            "payment_method": "Stripe",
+            "shop_type": "shopbase"
+          },
+          {
+            "case_id": "SB_CHE_OPAY_SMOKE_08",
+            "case_description": "[Theme v2] Kiểm tra checkout order có item Post purchase thành công với cổng paypal standard",
+            "shop_info": {
+              "domain": "au-smoke-checkout-stripe-paypal-prodtest.onshopbase.com",
+              "shop_name": "au-smoke-checkout-stripe-paypal-prodtest",
+              "user_id": 207114,
+              "shop_id": 10232760,
+              "username": "shopbase4@beeketing.net",
+              "password": "H7mQdQ]Zj]%[Nm?"
+            },
+            "payment_method": "PayPal",
+            "shop_type": "shopbase"
+          },
+          {
+            "case_id": "SB_CHE_OPAY_SMOKE_09",
+            "case_description": "[Theme v2] Checkout thành công với proxy domain qua Stripe có add item PPC",
+            "shop_info": {
+              "domain": "au-sb-smoke-checkout-proxy-prodtest.onshopbase.com",
+              "shop_name": "au-sb-smoke-checkout-proxy-prodtest",
+              "user_id": 207114,
+              "shop_id": 10461886,
+              "username": "shopbase4@beeketing.net",
+              "password": "H7mQdQ]Zj]%[Nm?"
+            },
+            "payment_method": "Stripe",
+            "shop_type": "shopbase"
+          },
+          {
+            "case_id": "SB_CHE_OPAY_SMOKE_06",
+            "case_description": "[Theme v2] Checkout thành công với proxy domain qua Paypal standard có add item PPC",
+            "shop_info": {
+              "domain": "au-sb-smoke-checkout-proxy-prodtest.onshopbase.com",
+              "shop_name": "au-sb-smoke-checkout-proxy-prodtest",
+              "user_id": 207114,
+              "shop_id": 10461886,
+              "username": "shopbase4@beeketing.net",
+              "password": "H7mQdQ]Zj]%[Nm?"
+            },
+            "payment_method": "PayPal",
+            "shop_type": "shopbase"
+          },
+          {
+            "case_id": "SB_CHE_OPAY_SMOKE_02",
+            "case_description": "Check checkout via Printbase Stripe successfully with adding item from post-purchase to order",
+            "shop_info": {
+              "domain": "au-smoke-printbase-checkout-prodtest.onshopbase.com",
+              "shop_name": "au-smoke-printbase-checkout-prodtest",
+              "user_id": 207114,
+              "shop_id": 10461889,
+              "username": "shopbase4@beeketing.net",
+              "password": "H7mQdQ]Zj]%[Nm?"
+            },
+            "payment_method": "Stripe",
+            "shop_type": "printbase"
+          },
+          {
+            "case_id": "SB_CHE_OPAY_SMOKE_04",
+            "case_description": "Check checkout via Plusbase Stripe successfully with adding item from post-purchase to order",
+            "shop_info": {
+              "domain": "au-smoke-plusbase-checkout-prodtest.onshopbase.com",
+              "shop_name": "au-smoke-plusbase-checkout-prodtest",
+              "user_id": 207114,
+              "shop_id": 10461895,
+              "username": "shopbase4@beeketing.net",
+              "password": "H7mQdQ]Zj]%[Nm?"
+            },
+            "payment_method": "Stripe",
+            "shop_type": "plusbase"
+          }
+        ]
+      }
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "product_info": [
+        {
+          "name": "Post Purchase",
+          "quantity": 1
+        }
+      ],
+      "product_ppc_name": "Bikini",
+      "customer_info": {
+        "email": "testerOCG@maildrop.cc",
+        "first_name": "John",
+        "last_name": "Vardy",
+        "address": "1600 W Loop S",
+        "country": "United States",
+        "state": "Texas",
+        "city": "Houston",
+        "zipcode": "77027",
+        "phone_number": "505-646-2276"
+      },
+      "cases": {
+        "DATA_DRIVEN": [
+          {
+            "case_id": "SB_CHE_OPAY_SMOKE_07",
+            "case_description": "[Theme v2] Kiểm tra checkout order có item Post purchase thành công với cổng Stripe",
+            "shop_info": {
+              "domain": "au-smoke-checkout-stripe-paypal.myshopbase.net",
+              "shop_name": "au-smoke-checkout-stripe-paypal",
+              "user_id": 90248,
+              "shop_id": 10331270,
+              "username": "qe-2@beeketing.net",
+              "password": "Qe2@OCGQE"
+            },
+            "payment_method": "Stripe",
+            "shop_type": "shopbase"
+          },
+          {
+            "case_id": "SB_CHE_OPAY_SMOKE_08",
+            "case_description": "[Theme v2] Kiểm tra checkout order có item Post purchase thành công với cổng paypal standard",
+            "shop_info": {
+              "domain": "au-smoke-checkout-stripe-paypal.myshopbase.net",
+              "shop_name": "au-smoke-checkout-stripe-paypal",
+              "user_id": 90248,
+              "shop_id": 10331270,
+              "username": "qe-2@beeketing.net",
+              "password": "Qe2@OCGQE"
+            },
+            "payment_method": "PayPal",
+            "shop_type": "shopbase"
+          },
+          {
+            "case_id": "SB_CHE_OPAY_SMOKE_09",
+            "case_description": "[Theme v2] Checkout thành công với proxy domain qua Stripe có add item PPC",
+            "shop_info": {
+              "domain": "au-sb-smoke-checkout-proxy.myshopbase.net",
+              "shop_name": "au-sb-smoke-checkout-proxy",
+              "user_id": 90248,
+              "shop_id": 10331286,
+              "username": "qe-2@beeketing.net",
+              "password": "Qe2@OCGQE"
+            },
+            "payment_method": "Stripe",
+            "shop_type": "shopbase"
+          },
+          {
+            "case_id": "SB_CHE_OPAY_SMOKE_06",
+            "case_description": "[Theme v2] Checkout thành công với proxy domain qua Paypal standard có add item PPC",
+            "shop_info": {
+              "domain": "au-sb-smoke-checkout-proxy.myshopbase.net",
+              "shop_name": "au-sb-smoke-checkout-proxy",
+              "user_id": 90248,
+              "shop_id": 10331286,
+              "username": "qe-2@beeketing.net",
+              "password": "Qe2@OCGQE"
+            },
+            "payment_method": "PayPal",
+            "shop_type": "shopbase"
+          },
+          {
+            "case_id": "SB_CHE_OPAY_SMOKE_02",
+            "case_description": "Check checkout via Printbase Stripe successfully with adding item from post-purchase to order",
+            "shop_info": {
+              "domain": "au-smoke-printbase-checkout.myshopbase.net",
+              "shop_name": "au-smoke-printbase-checkout",
+              "user_id": 90248,
+              "shop_id": 10331286,
+              "username": "qe-2@beeketing.net",
+              "password": "Qe2@OCGQE"
+            },
+            "payment_method": "Stripe",
+            "shop_type": "printbase"
+          },
+          {
+            "case_id": "SB_CHE_OPAY_SMOKE_04",
+            "case_description": "Check checkout via Plusbase Stripe successfully with adding item from post-purchase to order",
+            "shop_info": {
+              "domain": "au-smoke-plusbase-checkout.myshopbase.net",
+              "shop_name": "au-smoke-plusbase-checkout",
+              "user_id": 90248,
+              "shop_id": 10331286,
+              "username": "qe-2@beeketing.net",
+              "password": "Qe2@OCGQE"
+            },
+            "payment_method": "Stripe",
+            "shop_type": "plusbase"
+          }
+        ]
+      }
+    },
+    "local": {
+      "api": "https://api.shopbase.com",
+      "product_info": [
+        {
+          "name": "Post Purchase",
+          "quantity": 1
+        }
+      ],
+      "product_ppc_name": "Bikini",
+      "customer_info": {
+        "email": "testerOCG@maildrop.cc",
+        "first_name": "John",
+        "last_name": "Vardy",
+        "address": "1600 W Loop S",
+        "country": "United States",
+        "state": "Texas",
+        "city": "Houston",
+        "zipcode": "77027",
+        "phone_number": "505-646-2276"
+      }
+    }
+  },
+  "cases": {
+    "DATA_DRIVEN": [
+      {
+        "case_id": "SB_CHE_OPAY_SMOKE_07",
+        "case_description": "[Theme v2] Kiểm tra checkout order có item Post purchase thành công với cổng Stripe",
+        "shop_info": {
+          "domain": "au-smoke-checkout-stripe-paypal.onshopbase.com",
+          "shop_name": "au-smoke-checkout-stripe-paypal",
+          "user_id": 207114,
+          "shop_id": 10188913,
+          "username": "shopbase4@beeketing.net",
+          "password": "H7mQdQ]Zj]%[Nm?"
+        },
+        "payment_method": "Stripe",
+        "shop_type": "shopbase"
+      },
+      {
+        "case_id": "SB_CHE_OPAY_SMOKE_08",
+        "case_description": "[Theme v2] Kiểm tra checkout order có item Post purchase thành công với cổng paypal standard",
+        "shop_info": {
+          "domain": "au-smoke-checkout-stripe-paypal.onshopbase.com",
+          "shop_name": "au-smoke-checkout-stripe-paypal",
+          "user_id": 207114,
+          "shop_id": 10188913,
+          "username": "shopbase4@beeketing.net",
+          "password": "H7mQdQ]Zj]%[Nm?"
+        },
+        "payment_method": "PayPal",
+        "shop_type": "shopbase"
+      },
+      {
+        "case_id": "SB_CHE_OPAY_SMOKE_09",
+        "case_description": "[Theme v2] Checkout thành công với proxy domain qua Stripe có add item PPC",
+        "shop_info": {
+          "domain": "au-sb-smoke-checkout-proxy.onshopbase.com",
+          "shop_name": "au-sb-smoke-checkout-proxy",
+          "user_id": 207114,
+          "shop_id": 10440401,
+          "username": "shopbase4@beeketing.net",
+          "password": "H7mQdQ]Zj]%[Nm?"
+        },
+        "payment_method": "Stripe",
+        "shop_type": "shopbase"
+      },
+      {
+        "case_id": "SB_CHE_OPAY_SMOKE_06",
+        "case_description": "[Theme v2] Checkout thành công với proxy domain qua Paypal standard có add item PPC",
+        "shop_info": {
+          "domain": "au-sb-smoke-checkout-proxy.onshopbase.com",
+          "shop_name": "au-sb-smoke-checkout-proxy",
+          "user_id": 207114,
+          "shop_id": 10440401,
+          "username": "shopbase4@beeketing.net",
+          "password": "H7mQdQ]Zj]%[Nm?"
+        },
+        "payment_method": "PayPal",
+        "shop_type": "shopbase"
+      },
+      {
+        "case_id": "SB_CHE_OPAY_SMOKE_02",
+        "case_description": "Check checkout via Printbase Stripe successfully with adding item from post-purchase to order",
+        "shop_info": {
+          "domain": "au-smoke-printbase-checkout.onshopbase.com",
+          "shop_name": "au-smoke-printbase-checkout",
+          "user_id": 207114,
+          "shop_id": 10357615,
+          "username": "shopbase4@beeketing.net",
+          "password": "H7mQdQ]Zj]%[Nm?"
+        },
+        "payment_method": "Stripe",
+        "shop_type": "printbase"
+      },
+      {
+        "case_id": "SB_CHE_OPAY_SMOKE_04",
+        "case_description": "Check checkout via Plusbase Stripe successfully with adding item from post-purchase to order",
+        "shop_info": {
+          "domain": "au-smoke-plusbase-checkout.onshopbase.com",
+          "shop_name": "au-smoke-plusbase-checkout",
+          "user_id": 207114,
+          "shop_id": 10357706,
+          "username": "shopbase4@beeketing.net",
+          "password": "H7mQdQ]Zj]%[Nm?"
+        },
+        "payment_method": "Stripe",
+        "shop_type": "plusbase"
+      }
+    ]
+  }
+}

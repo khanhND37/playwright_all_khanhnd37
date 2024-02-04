@@ -1,0 +1,759 @@
+{
+  "max_block_count": 8,
+  "min_block_count": 0,
+  "env": {
+    "local": {
+      "api": "https://api.shopbase.com",
+      "domain": "onboarding-upsell.onshopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_name": "onboarding-upsell",
+      "user_id": 11260206,
+      "shop_id": 10481645
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "onboarding-upsell.myshopbase.net",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_name": "onboarding-upsell",
+      "user_id": 90252,
+      "shop_id": 10333973,
+      "cases": {
+        "SB_WEB_BUILDER_LBA_OBU_02": {
+          "data": {
+            "checkout_without_offer": {
+              "products_checkout": [
+                {
+                  "name": "Product A",
+                  "variant_id": 1000001779207679,
+                  "quantity": 1
+                },
+                {
+                  "name": "Product B",
+                  "variant_id": 1000001779207697,
+                  "quantity": 1
+                },
+                {
+                  "name": "Product C",
+                  "variant_id": 1000001779207692,
+                  "quantity": 1
+                }
+              ]
+            },
+            "postpurchase": {
+              "target_product": [
+                {
+                  "name": "Product A",
+                  "variant_id": 1000001779207679,
+                  "quantity": 1
+                }
+              ],
+              "recommend_product": [
+                {
+                  "name": "Product B",
+                  "variant_id": 1000001779207697,
+                  "post_purchase_price": 4.75,
+                  "quantity": 1
+                }
+              ],
+              "upsell_id": 100006660
+            }
+          }
+        },
+        "SB_WEB_BUILDER_LBA_OBU_08": {
+          "data": {
+            "offer_id": 100006161
+          }
+        },
+        "SB_WEB_BUILDER_LBA_OBU_09": {
+          "data": {
+            "offer_id": 100006161
+          }
+        },
+        "SB_WEB_BUILDER_LBA_OBU_10": {
+          "data": {
+            "offer_id": 100004427
+          }
+        },
+        "SB_WEB_BUILDER_LBA_OBU_11": {
+          "data": {
+            "offer_id": 100004427
+          }
+        },
+        "SB_WEB_BUILDER_LBA_OBU_13": {
+          "data": {
+            "offer_id": 100004429
+          }
+        },
+        "SB_WEB_BUILDER_LBA_OBU_14": {
+          "data": {
+            "offer_id_prepurchase": 100006659,
+            "offer_id_postpurchase": 100006660
+          }
+        },
+        "SB_WEB_BUILDER_LBA_OBU_15": {
+          "data": {
+            "offer_id_prepurchase": 100006659,
+            "offer_id_postpurchase": 100006660
+          }
+        },
+        "SB_WEB_BUILDER_LBA_OBU_16": {
+          "data": {
+            "offer_id_prepurchase": 100006659,
+            "offer_id_postpurchase": 100006660
+          }
+        },
+        "SB_WEB_BUILDER_LBA_OBU_17": {
+          "data": {
+            "offer_id_prepurchase": 100006659,
+            "offer_id_postpurchase": 100006660
+          }
+        }
+      }
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "onboarding-upsell-prodtest.onshopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_name": "onboarding-upsell-prodtest",
+      "user_id": 11260206,
+      "shop_id": 1596446,
+      "accounts_domain": "accounts-test.shopbase.com",
+      "cases": {
+        "SB_WEB_BUILDER_LBA_OBU_02": {
+          "data": {
+            "checkout_without_offer": {
+              "products_checkout": [
+                {
+                  "name": "Product A",
+                  "variant_id": 1000011222842812,
+                  "quantity": 1
+                },
+                {
+                  "name": "Product B",
+                  "variant_id": 1000011222841514,
+                  "quantity": 1
+                },
+                {
+                  "name": "Product C",
+                  "variant_id": 1000011222837471,
+                  "quantity": 1
+                }
+              ]
+            },
+            "postpurchase": {
+              "target_product": [
+                {
+                  "name": "Product A",
+                  "variant_id": 1000011222842812,
+                  "quantity": 1
+                }
+              ],
+              "recommend_product": [
+                {
+                  "name": "Product B",
+                  "variant_id": 1000011222841514,
+                  "post_purchase_price": 4.75,
+                  "quantity": 1
+                }
+              ],
+              "upsell_id": 9939616
+            }
+          }
+        },
+        "SB_WEB_BUILDER_LBA_OBU_08": {
+          "data": {
+            "offer_id": 9941684
+          }
+        },
+        "SB_WEB_BUILDER_LBA_OBU_09": {
+          "data": {
+            "offer_id": 9941684
+          }
+        },
+        "SB_WEB_BUILDER_LBA_OBU_10": {
+          "data": {
+            "offer_id": 9939619
+          }
+        },
+        "SB_WEB_BUILDER_LBA_OBU_11": {
+          "data": {
+            "offer_id": 9939619
+          }
+        },
+        "SB_WEB_BUILDER_LBA_OBU_13": {
+          "data": {
+            "offer_id": 9939621
+          }
+        },
+        "SB_WEB_BUILDER_LBA_OBU_14": {
+          "data": {
+            "offer_id_prepurchase": 9939614,
+            "offer_id_postpurchase": 9939616
+          }
+        },
+        "SB_WEB_BUILDER_LBA_OBU_15": {
+          "data": {
+            "offer_id_prepurchase": 9939614,
+            "offer_id_postpurchase": 9939616
+          }
+        },
+        "SB_WEB_BUILDER_LBA_OBU_16": {
+          "data": {
+            "offer_id_prepurchase": 9939614,
+            "offer_id_postpurchase": 9939616
+          }
+        },
+        "SB_WEB_BUILDER_LBA_OBU_17": {
+          "data": {
+            "offer_id_prepurchase": 9939614,
+            "offer_id_postpurchase": 9939616
+          }
+        }
+      }
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "onboarding-upsell.onshopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_name": "onboarding-upsell",
+      "user_id": 11260206,
+      "shop_id": 10481645
+    }
+  },
+  "email_scheduler": "huyennguyen3@beeketing.net",
+  "cases": {
+    "SB_WEB_BUILDER_LBA_OBU_02": {
+      "data": {
+        "product_A": "cozy-calming-cat-blanket",
+        "product_C": "glowing-jumping-interaction-ball-for-pet-dog-cat",
+        "product_H": "dog-bed-padded-cushion-large",
+        "checkout_without_offer": {
+          "products_checkout": [
+            {
+              "name": "Product A",
+              "variant_id": 1000011222744990,
+              "quantity": 1
+            },
+            {
+              "name": "Product B",
+              "variant_id": 1000011222744814,
+              "quantity": 1
+            },
+            {
+              "name": "Product C",
+              "variant_id": 1000011222744796,
+              "quantity": 1
+            }
+          ]
+        },
+        "postpurchase": {
+          "target_product": [
+            {
+              "name": "Product A",
+              "variant_id": 1000011222744990,
+              "quantity": 1
+            }
+          ],
+          "recommend_product": [
+            {
+              "name": "Product B",
+              "variant_id": 1000011222744814,
+              "post_purchase_price": 4.75,
+              "quantity": 1
+            }
+          ],
+          "upsell_id": 9939625
+        },
+        "customer_info": {
+          "email": "huyennguyen@qa.team",
+          "first_name": "Huyen",
+          "last_name": "Nguyen",
+          "address": "130 Trung Phung",
+          "city": "Ha Noi",
+          "country": "Vietnam",
+          "zip": "100000",
+          "phone": "0364240695"
+        },
+        "card_info": {
+          "number": "4242424242424242",
+          "holder_name": "Shopbase",
+          "expire_date": "12 / 34",
+          "cvv": "116"
+        },
+        "tipping_info": {
+          "option": "No tip"
+        }
+      },
+      "expect": {
+        "prepurchase": {
+          "sales": 4.75,
+          "items": 1
+        },
+        "postpurchase": {
+          "sales": 4.75,
+          "items": 1
+        },
+        "quantity": {
+          "sales": 4.75,
+          "items": 1
+        },
+        "accessories": {
+          "sales": 5,
+          "items": 1
+        },
+        "bundle": {
+          "sales": 31.5,
+          "items": 3
+        },
+        "upsell_widget": {
+          "sales": 5,
+          "items": 1
+        },
+        "orders": 6
+      }
+    },
+    "SB_WEB_BUILDER_LBA_OBU_03": {
+      "data": [
+        {
+          "time": "Yesterday"
+        },
+        {
+          "time": "Today"
+        },
+        {
+          "time": "Last 7 days"
+        },
+        {
+          "time": "Last 30 days"
+        },
+        {
+          "time": "Last 90 days"
+        },
+        {
+          "time": "Month to date"
+        },
+        {
+          "time": "Last month"
+        },
+        {
+          "time": "Week to date"
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_LBA_OBU_05": {
+      "data": {
+        "key_not_match": "product not exist",
+        "key_match": "Product",
+        "collection_match": "Dog"
+      },
+      "expect": {
+        "error_message": "Could not find any products matching product not exist",
+        "message_not_found": "Could not find any collections matching Product",
+        "name_collection": "Dog"
+      }
+    },
+    "SB_WEB_BUILDER_LBA_OBU_07": {
+      "data": {
+        "product": "Product A",
+        "text_quantity": "Urge your customer to buy more items with Quantity Discount",
+        "text_add": "+ Add more",
+        "error_message_quantity": "You can't have multiple different discounts for the same number of \"Min quantity",
+        "text_create_successful": "You've successfully created an offer"
+      },
+      "expect": {
+        "zero_count_block": 0,
+        "one_count_block": 1,
+        "two_count_block": 2,
+        "three_count_block": 3,
+        "ten_count_block": 10
+      }
+    },
+    "SB_WEB_BUILDER_LBA_OBU_08": {
+      "data": {
+        "product": "Product A",
+        "text_quantity": "Urge your customer to buy more items with Quantity Discount",
+        "text_add": "+ Add more",
+        "error_message_quantity": "You can't have multiple different discounts for the same number of \"Min quantity",
+        "text_create_successful": "You've successfully created an offer",
+        "offer_id": 9941665
+      },
+      "expect": {
+        "zero_count_block": 0,
+        "one_count_block": 1,
+        "two_count_block": 2,
+        "three_count_block": 3,
+        "ten_value_fill": "10"
+      }
+    },
+    "SB_WEB_BUILDER_LBA_OBU_09": {
+      "data": {
+        "text_quantity": "Urge your customer to buy more items with Quantity Discount",
+        "text_create_successful": "You've successfully created an offer",
+        "btn_customize": "Continue customizing this offer",
+        "key_collection": "Dog",
+        "collection_name": "Hot Deals",
+        "offer_id": 9941665
+      },
+      "expect": {
+        "one_count_block": 1,
+        "three_count_block": 3,
+        "ten_value_fill": "10",
+        "discount": "30",
+        "offer_name_product": "Quantity discount for Product A",
+        "offer_name_collection": "Quantity discount for Dog Clothing",
+        "redirect_product": "/products/glowing-jumping-interaction-ball-for-pet-dog-cat",
+        "redirect_collection": "/collections/hot-deals"
+      }
+    },
+    "SB_WEB_BUILDER_LBA_OBU_10": {
+      "data": {
+        "product": "Product A",
+        "text_create_successful": "You've successfully created an offer",
+        "key_search": "goods is not exist",
+        "offer_id": 9940577
+      },
+      "expect": {
+        "one_count_block": 1,
+        "two_count_block": 2,
+        "error_message": "Please select at least one product",
+        "warning_message": "For best practices, you should only choose maximum 2 products to create a combo.",
+        "text_not_found": "Could not find any product matching goods is not exist",
+        "text_not_found_product": "Could not find any product matching Product A"
+      }
+    },
+    "SB_WEB_BUILDER_LBA_OBU_11": {
+      "data": {
+        "product": "Product A",
+        "btn_customize": "Continue customizing this offer",
+        "offer_id": 9940577,
+        "all_same_loop": 6
+      },
+      "expect": {
+        "redirect_url": "/products/cozy-calming-cat-blanket"
+      }
+    },
+    "SB_WEB_BUILDER_LBA_OBU_12": {
+      "data": {
+        "product": "Product A",
+        "collection": "Hot Deals",
+        "key_search": "goods is not exist"
+      },
+      "expect": {
+        "text_not_found": "Could not find any product matching goods is not exist",
+        "text_not_found_product": "Could not find any product matching Product A",
+        "text_accessories": " Recommend related Accessories products along with the chosen product",
+        "text_create_successful": "You've successfully created an offer",
+        "warning_min_selected": "For best practices, you should only choose maximum 3 products to create an Accessories offer.",
+        "one_count_block": 1,
+        "two_count_block": 2
+      }
+    },
+    "SB_WEB_BUILDER_LBA_OBU_13": {
+      "data": {
+        "same_action_flow_loop": 3,
+        "all_loop": 4,
+        "product": "Product A",
+        "collection": "Hot Deals",
+        "offer_id": 9939630,
+        "btn_customize": "Continue customizing this offer",
+        "text_view_store": "View on your store"
+      },
+      "expect": {
+        "recommend_product": "Product A, Product B, Product C, Product D",
+        "text_accessories": " Recommend related Accessories products along with the chosen product",
+        "two_count_block": 2,
+        "redirect_url": "/collections/hot-deals"
+      }
+    },
+    "SB_WEB_BUILDER_LBA_OBU_14": {
+      "data": {
+        "product": "Product A",
+        "collection": "Hot Deals",
+        "offer_id_prepurchase": 9939624,
+        "offer_id_postpurchase": 9939625,
+        "text_create_successful": "You've successfully created an offer",
+        "text_postpurchase": "Upsell top selling items when this product is placed in an order by your customer"
+      },
+      "expect": {
+        "collection_name": "Hot Deals",
+        "one_count_block": 1,
+        "expected_four_block": 4,
+        "warning_empty_message": "Please select at least one collection"
+      }
+    },
+    "SB_WEB_BUILDER_LBA_OBU_15": {
+      "data": {
+        "collection": "Hot Deals",
+        "collection_click": 4,
+        "btn_customize": "Continue customizing this offer",
+        "text_postpurchase": "Upsell top selling items when this product is placed in an order by your customer",
+        "text_view_store": "View on your store",
+        "offer_id_prepurchase": 9939624,
+        "offer_id_postpurchase": 9939625
+      },
+      "expect": {
+        "block_postpurchase": "purchase-product-container.png",
+        "redirect_url": "/collections/hot-deals",
+        "recommend_product": "Hot DealsCat Clothing"
+      }
+    },
+    "SB_WEB_BUILDER_LBA_OBU_16": {
+      "data": {
+        "product": "Product A",
+        "collection": "Hot Deals",
+        "text_create_successful": "You've successfully created an offer",
+        "text_block_prepurchase": "Upsell top selling items when this product is added to cart",
+        "offer_id_prepurchase": 9939624,
+        "offer_id_postpurchase": 9939625,
+        "multiple_product_count": 5
+      },
+      "expect": {
+        "warning_empty_message": "Please select at least one collection",
+        "one_count_block": 1,
+        "expected_four_block": 4,
+        "collection_name": "Hot Deals"
+      }
+    },
+    "SB_WEB_BUILDER_LBA_OBU_17": {
+      "data": {
+        "collection": "Hot Deals",
+        "btn_customize": "Continue customizing this offer",
+        "target_product_text": "Hot DealsCat Clothing",
+        "text_view_store": "View on your store",
+        "text_block_prepurchase": "Upsell top selling items when this product is added to cart",
+        "collection_click": 4,
+        "offer_id_prepurchase": 9939624,
+        "offer_id_postpurchase": 9939625
+      },
+      "expect": {
+        "warning_empty_message": "Please select at least one collection",
+        "one_count_block": 1,
+        "collection_click": 4,
+        "redirect_url": "/collections/hot-deals",
+        "block_prepurchase": "purchase-product-container-01.png",
+        "recommend_product": "Hot DealsCat ClothingCat CarePet Shop"
+      }
+    },
+    "SB_WEB_BUILDER_LBA_OBU_04": {
+      "one_count_block": 1,
+      "product_title_edit": "jacket_edited",
+      "collection_title_delete": "Collection auto added 9 edited",
+      "from_random_date": "7 8 9 10 11 12 13",
+      "from_to_date": "7 8 9 10 11 12 13",
+      "products": [
+        {
+          "title": "jacket",
+          "image": {
+            "position": 1,
+            "src": "https://img.thesitebase.net/10425/10425362/products/168447898351d35c010a.jpg"
+          }
+        },
+        {
+          "title": "jacket_01",
+          "image": {
+            "position": 1,
+            "src": "https://img.thesitebase.net/10425/10425362/products/168447898351d35c010a.jpg"
+          }
+        },
+        {
+          "title": "jacket_02",
+          "image": {
+            "position": 1,
+            "src": "https://img.thesitebase.net/10425/10425362/products/168447898351d35c010a.jpg",
+            "thumbnail": "https://img.thesitebase.net/10425/10425362/products/168447898351d35c010a.jpg"
+          }
+        },
+        {
+          "title": "jacket_03",
+          "image": {
+            "position": 1,
+            "src": "https://img.thesitebase.net/10425/10425362/products/168447898351d35c010a.jpg",
+            "thumbnail": "https://img.thesitebase.net/10425/10425362/products/168447898351d35c010a.jpg"
+          }
+        },
+        {
+          "title": "jacket_04",
+          "image": {
+            "position": 1,
+            "src": "https://img.thesitebase.net/10425/10425362/products/168447898351d35c010a.jpg",
+            "thumbnail": "https://img.thesitebase.net/10425/10425362/products/168447898351d35c010a.jpg"
+          }
+        },
+        {
+          "title": "jacket_05",
+          "image": {
+            "position": 1,
+            "src": "https://img.thesitebase.net/10425/10425362/products/168447898351d35c010a.jpg",
+            "thumbnail": "https://img.thesitebase.net/10425/10425362/products/168447898351d35c010a.jpg"
+          }
+        },
+        {
+          "title": "jacket_06",
+          "image": {
+            "position": 1,
+            "src": "https://img.thesitebase.net/10425/10425362/products/168447898351d35c010a.jpg",
+            "thumbnail": "https://img.thesitebase.net/10425/10425362/products/168447898351d35c010a.jpg"
+          }
+        },
+        {
+          "title": "jacket_07",
+          "image": {
+            "position": 1,
+            "src": "https://img.thesitebase.net/10425/10425362/products/168447898351d35c010a.jpg",
+            "thumbnail": "https://img.thesitebase.net/10425/10425362/products/168447898351d35c010a.jpg"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "collection_title": "Collection auto A",
+          "collection_type": "Automated",
+          "condition_type": "all conditions",
+          "sort_order": "manual",
+          "conditions": [
+            "Product tag>is equal to>shopbase",
+            "Product title>Contains>Product",
+            "Product price>is equal to>70"
+          ],
+          "images": [
+            {
+              "src": "https://dev-img.btdmp.com/10326/10326747/collections/1685088551438.jpg",
+              "position": 1,
+              "thumbnail": "https://img.btdmp.com/10425/10425077/products/1685092143333.jpg"
+            }
+          ]
+        },
+        {
+          "collection_title": "Collection auto B",
+          "collection_type": "Automated",
+          "condition_type": "all conditions",
+          "sort_order": "manual",
+          "conditions": [
+            "Product tag>is equal to>shopbase",
+            "Product title>Contains>Product",
+            "Product price>is equal to>70"
+          ],
+          "images": [
+            {
+              "src": "https://dev-img.btdmp.com/10326/10326747/collections/1685088551438.jpg",
+              "position": 1,
+              "thumbnail": "https://img.btdmp.com/10425/10425077/products/1685092143333.jpg"
+            }
+          ]
+        },
+        {
+          "collection_title": "Collection auto C",
+          "collection_type": "Automated",
+          "condition_type": "all conditions",
+          "sort_order": "manual",
+          "conditions": [
+            "Product tag>is equal to>shopbase",
+            "Product title>Contains>Product",
+            "Product price>is equal to>70"
+          ],
+          "images": [
+            {
+              "src": "https://dev-img.btdmp.com/10326/10326747/collections/1685088551438.jpg",
+              "position": 1,
+              "thumbnail": "https://img.btdmp.com/10425/10425077/products/1685092143333.jpg"
+            }
+          ]
+        },
+        {
+          "collection_title": "Collection auto D",
+          "collection_type": "Automated",
+          "condition_type": "all conditions",
+          "sort_order": "manual",
+          "conditions": [
+            "Product tag>is equal to>shopbase",
+            "Product title>Contains>Product",
+            "Product price>is equal to>70"
+          ],
+          "images": [
+            {
+              "src": "https://dev-img.btdmp.com/10326/10326747/collections/1685088551438.jpg",
+              "position": 1,
+              "thumbnail": "https://img.btdmp.com/10425/10425077/products/1685092143333.jpg"
+            }
+          ]
+        },
+        {
+          "collection_title": "Collection auto F",
+          "collection_type": "Automated",
+          "condition_type": "all conditions",
+          "sort_order": "manual",
+          "conditions": [
+            "Product tag>is equal to>shopbase",
+            "Product title>Contains>Product",
+            "Product price>is equal to>70"
+          ],
+          "images": [
+            {
+              "src": "https://dev-img.btdmp.com/10326/10326747/collections/1685088551438.jpg",
+              "position": 1,
+              "thumbnail": "https://img.btdmp.com/10425/10425077/products/1685092143333.jpg"
+            }
+          ]
+        },
+        {
+          "collection_title": "Collection auto G",
+          "collection_type": "Automated",
+          "condition_type": "all conditions",
+          "sort_order": "manual",
+          "conditions": [
+            "Product tag>is equal to>shopbase",
+            "Product title>Contains>Product",
+            "Product price>is equal to>70"
+          ],
+          "images": [
+            {
+              "src": "https://dev-img.btdmp.com/10326/10326747/collections/1685088551438.jpg",
+              "position": 1,
+              "thumbnail": "https://img.btdmp.com/10425/10425077/products/1685092143333.jpg"
+            }
+          ]
+        },
+        {
+          "collection_title": "Collection auto H",
+          "collection_type": "Automated",
+          "condition_type": "all conditions",
+          "sort_order": "manual",
+          "conditions": [
+            "Product tag>is equal to>shopbase",
+            "Product title>Contains>Product",
+            "Product price>is equal to>70"
+          ],
+          "images": [
+            {
+              "src": "https://dev-img.btdmp.com/10326/10326747/collections/1685088551438.jpg",
+              "position": 1,
+              "thumbnail": "https://img.btdmp.com/10425/10425077/products/1685092143333.jpg"
+            }
+          ]
+        },
+        {
+          "collection_title": "Collection auto I",
+          "collection_type": "Automated",
+          "condition_type": "all conditions",
+          "sort_order": "manual",
+          "conditions": [
+            "Product tag>is equal to>shopbase",
+            "Product title>Contains>Product",
+            "Product price>is equal to>70"
+          ],
+          "images": [
+            {
+              "src": "https://dev-img.btdmp.com/10326/10326747/collections/1685088551438.jpg",
+              "position": 1,
+              "thumbnail": "https://img.btdmp.com/10425/10425077/products/1685092143333.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

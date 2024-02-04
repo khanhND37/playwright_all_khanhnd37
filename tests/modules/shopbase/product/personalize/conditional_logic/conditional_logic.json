@@ -1,0 +1,1491 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-conditional-logic-sb.onshopbase.com",
+      "shop_name": "au-conditional-logic-sb",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10379910,
+      "user_id": 73782,
+      "timeout": "680000"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-conditional-logic-sb-prodtest.onshopbase.com",
+      "shop_name": "au-conditional-logic-sb-prodtest",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10379913,
+      "user_id": 73782,
+      "timeout": "680000",
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-conditional-logic-sb.myshopbase.net",
+      "shop_name": "au-conditional-logic-sb",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_id": 10322981,
+      "user_id": 73800,
+      "timeout": "680000"
+    }
+  },
+  "max_diff_pixel_ratio": 0.05,
+  "threshold": 0.1,
+  "max_diff_pixels": 2000,
+  "path_clipart_group": "/admin/apps/print-hub/clipart?tab=group",
+  "path_clipart_folder": "/admin/apps/print-hub/clipart?tab=folder",
+  "cases": {
+    "DATA_DRIVEN": {
+      "data": [
+        {
+          "description": "Tạo conditional logic thành công với is equal to và custom option Radio",
+          "case_id": "SB_PRO_SBP_1524",
+          "custom_option_name": "Radio buttons",
+          "product_all_info": {
+            "title": "Product is equal to conditional logic Radio",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "custom_option_info": [
+            {
+              "type": "Radio buttons",
+              "default_name": "Custom Option 1",
+              "custom_name": "Radio buttons",
+              "label": "Radio buttons",
+              "values": "a,b,c",
+              "default_check": "b",
+              "index": 1,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Droplist",
+              "default_name": "Custom Option 2",
+              "custom_name": "Droplist",
+              "label": "Droplist",
+              "values": "a,b,c",
+              "default_check": "b",
+              "index": 2,
+              "position": 2,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Checkbox",
+              "default_name": "Custom Option 3",
+              "custom_name": "Checkbox",
+              "label": "Checkbox",
+              "values": "a,b,c,d,e",
+              "index": 3,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Picture choice",
+              "default_name": "Custom Option 4",
+              "custom_name": "Picture choice",
+              "label": "Picture choice",
+              "type_clipart": "Folder",
+              "values": "group 1",
+              "index": 4,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Text field",
+              "default_name": "Custom Option 5",
+              "custom_name": "Text field",
+              "label": "Please input text field",
+              "index": 5,
+              "position": 1,
+              "placeholder": "Please input text field",
+              "default_value": "text",
+              "allow_following": "Characters, Numbers, Special Characters, Emoji",
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Text area",
+              "default_name": "Custom Option 6",
+              "custom_name": "Text area",
+              "label": "Please input text area",
+              "index": 6,
+              "position": 2,
+              "placeholder": "Please input text area",
+              "default_value": "text",
+              "allow_following": "Characters, Numbers, Special Characters, Emoji",
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Image",
+              "default_name": "Custom Option 7",
+              "custom_name": "Image",
+              "label": "Please input image",
+              "index": 7,
+              "add_another_option": "no"
+            }
+          ],
+          "conditional_logic_info": {
+            "custom_name": "Radio buttons",
+            "condition": ["is equal to>b"],
+            "then_show_value": ["Droplist"]
+          },
+          "conditional_logic_edit": {
+            "custom_name": "Radio buttons",
+            "condition": ["is equal to>a", "is equal to>b"],
+            "then_show_value": ["Droplist", "Checkbox"]
+          },
+          "conditional_logic_show": {
+            "list_custom": ["Radio buttons>Radio buttons>a", "Radio buttons>Radio buttons>b"],
+            "then_show_value": ["select-box,checkbox-group", "checkbox-group"],
+            "is_show_value": [true, true]
+          },
+          "snapshot_name": {
+            "popup_add_condi_logic": "popup-add-conditional-logic-SB_PRO_SBP_1524.png",
+            "add_condi_logic": "add-conditional-logic-SB_PRO_SBP_1524.png",
+            "edit_condi_logic": "edit-conditional-logic-SB_PRO_SBP_1524.png",
+            "add_block_condi_logic": "add-block-conditional-logic-SB_PRO_SBP_1524.png",
+            "remove_block_condi_logic": "remove-block-conditional-logic-SB_PRO_SBP_1524.png"
+          }
+        },
+        {
+          "description": "Tạo conditional logic thành công với is equal to và custom option Droplist",
+          "case_id": "SB_PRO_SBP_1525",
+          "custom_option_name": "Droplist",
+          "product_all_info": {
+            "title": "Product is equal to conditional logic Droplist",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "custom_option_info": [
+            {
+              "type": "Radio buttons",
+              "default_name": "Custom Option 1",
+              "custom_name": "Radio buttons",
+              "label": "Radio buttons",
+              "values": "a,b,c",
+              "default_check": "b",
+              "index": 1,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Droplist",
+              "default_name": "Custom Option 2",
+              "custom_name": "Droplist",
+              "label": "Droplist",
+              "values": "a,b,c",
+              "default_check": "b",
+              "index": 2,
+              "position": 2,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Checkbox",
+              "default_name": "Custom Option 3",
+              "custom_name": "Checkbox",
+              "label": "Checkbox",
+              "values": "a,b,c,d,e",
+              "index": 3,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Picture choice",
+              "default_name": "Custom Option 4",
+              "custom_name": "Picture choice",
+              "label": "Picture choice",
+              "type_clipart": "Folder",
+              "values": "group 1",
+              "index": 4,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Text field",
+              "default_name": "Custom Option 5",
+              "custom_name": "Text field",
+              "label": "Text field",
+              "index": 5,
+              "position": 1,
+              "placeholder": "Please input text field",
+              "default_value": "text",
+              "allow_following": "Characters, Numbers, Special Characters, Emoji",
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Text area",
+              "default_name": "Custom Option 6",
+              "custom_name": "Text area",
+              "label": "Text area",
+              "index": 6,
+              "position": 2,
+              "placeholder": "Please input text area",
+              "default_value": "text",
+              "allow_following": "Characters, Numbers, Special Characters, Emoji",
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Image",
+              "default_name": "Custom Option 7",
+              "custom_name": "Image",
+              "label": "Image",
+              "index": 7,
+              "add_another_option": "no"
+            }
+          ],
+          "conditional_logic_info": {
+            "custom_name": "Droplist",
+            "condition": ["is equal to>b"],
+            "then_show_value": ["Checkbox"]
+          },
+          "conditional_logic_edit": {
+            "custom_name": "Droplist",
+            "condition": ["is equal to>a", "is equal to>b"],
+            "then_show_value": ["Checkbox", "Text field"]
+          },
+          "conditional_logic_show": {
+            "list_custom": ["Droplist>Droplist>a", "Droplist>Droplist>b"],
+            "then_show_value": ["checkbox-group,relative input-base", "checkbox-group"],
+            "is_show_value": [true, true]
+          },
+          "snapshot_name": {
+            "popup_add_condi_logic": "popup-add-conditional-logic-SB_PRO_SBP_1525.png",
+            "add_condi_logic": "add-conditional-logic-SB_PRO_SBP_1525.png",
+            "edit_condi_logic": "edit-conditional-logic-SB_PRO_SBP_1525.png",
+            "add_block_condi_logic": "add-block-conditional-logic-SB_PRO_SBP_1525.png",
+            "remove_block_condi_logic": "remove-block-conditional-logic-SB_PRO_SBP_1525.png"
+          }
+        },
+        {
+          "description": "Tạo conditional logic thành công với is equal to và custom option Picture choice",
+          "case_id": "SB_PRO_SBP_1526",
+          "custom_option_name": "Picture choice",
+          "product_all_info": {
+            "title": "Product is equal to conditional logic Picture choice",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "custom_option_info": [
+            {
+              "type": "Radio buttons",
+              "default_name": "Custom Option 1",
+              "custom_name": "Radio buttons",
+              "label": "Radio buttons",
+              "values": "a,b,c",
+              "default_check": "b",
+              "index": 1,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Droplist",
+              "default_name": "Custom Option 2",
+              "custom_name": "Droplist",
+              "label": "Droplist",
+              "values": "a,b,c",
+              "default_check": "b",
+              "index": 2,
+              "position": 2,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Checkbox",
+              "default_name": "Custom Option 3",
+              "custom_name": "Checkbox",
+              "label": "Checkbox",
+              "values": "a,b,c,d,e",
+              "index": 3,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Picture choice",
+              "default_name": "Custom Option 4",
+              "custom_name": "Picture choice",
+              "label": "Picture choice",
+              "type_clipart": "Folder",
+              "values": "group 1",
+              "index": 4,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Text field",
+              "default_name": "Custom Option 5",
+              "custom_name": "Text field",
+              "label": "Text field",
+              "index": 5,
+              "position": 1,
+              "placeholder": "Please input text field",
+              "default_value": "text",
+              "allow_following": "Characters, Numbers, Special Characters, Emoji",
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Text area",
+              "default_name": "Custom Option 6",
+              "custom_name": "Text area",
+              "label": "Text area",
+              "index": 6,
+              "position": 2,
+              "placeholder": "Please input text area",
+              "default_value": "text",
+              "allow_following": "Characters, Numbers, Special Characters, Emoji",
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Image",
+              "default_name": "Custom Option 7",
+              "custom_name": "Image",
+              "label": "Image",
+              "index": 7,
+              "add_another_option": "no"
+            }
+          ],
+          "conditional_logic_info": {
+            "custom_name": "Picture choice",
+            "condition": ["is equal to>image1"],
+            "then_show_value": ["Text field"]
+          },
+          "conditional_logic_edit": {
+            "custom_name": "Picture choice",
+            "condition": ["is equal to>image1", "is equal to>image2"],
+            "then_show_value": ["Image", "Text field"]
+          },
+          "conditional_logic_show": {
+            "list_custom": ["Picture choice>Picture choice>image1", "Picture choice>Picture choice>image2"],
+            "then_show_value": ["base-upload,relative input-base", "base-upload"],
+            "is_show_value": [true, true]
+          },
+          "snapshot_name": {
+            "popup_add_condi_logic": "popup-add-conditional-logic-SB_PRO_SBP_1526.png",
+            "add_condi_logic": "add-conditional-logic-SB_PRO_SBP_1526.png",
+            "edit_condi_logic": "edit-conditional-logic-SB_PRO_SBP_1526.png",
+            "add_block_condi_logic": "add-block-conditional-logic-SB_PRO_SBP_1526.png",
+            "remove_block_condi_logic": "remove-block-conditional-logic-SB_PRO_SBP_1526.png"
+          }
+        },
+        {
+          "description": "Tạo conditional logic thành công với is not equal to và custom option Radio buttons",
+          "case_id": "SB_PRO_SBP_1527",
+          "custom_option_name": "Radio buttons",
+          "product_all_info": {
+            "title": "Product is not equal to conditional logic Radio buttons",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "custom_option_info": [
+            {
+              "type": "Radio buttons",
+              "default_name": "Custom Option 1",
+              "custom_name": "Radio buttons",
+              "label": "Radio buttons",
+              "values": "a,b,c",
+              "default_check": "b",
+              "index": 1,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Droplist",
+              "default_name": "Custom Option 2",
+              "custom_name": "Droplist",
+              "label": "Droplist",
+              "values": "a,b,c",
+              "default_check": "b",
+              "index": 2,
+              "position": 2,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Checkbox",
+              "default_name": "Custom Option 3",
+              "custom_name": "Checkbox",
+              "label": "Checkbox",
+              "values": "a,b,c,d,e",
+              "index": 3,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Picture choice",
+              "default_name": "Custom Option 4",
+              "custom_name": "Picture choice",
+              "label": "Picture choice",
+              "type_clipart": "Folder",
+              "values": "group 1",
+              "index": 4,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Text field",
+              "default_name": "Custom Option 5",
+              "custom_name": "Text field",
+              "label": "Text field",
+              "index": 5,
+              "position": 1,
+              "placeholder": "Please input text field",
+              "default_value": "text",
+              "allow_following": "Characters, Numbers, Special Characters, Emoji",
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Text area",
+              "default_name": "Custom Option 6",
+              "custom_name": "Text area",
+              "label": "Text area",
+              "index": 6,
+              "position": 2,
+              "placeholder": "Please input text area",
+              "default_value": "text",
+              "allow_following": "Characters, Numbers, Special Characters, Emoji",
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Image",
+              "default_name": "Custom Option 7",
+              "custom_name": "Image",
+              "label": "Image",
+              "index": 7,
+              "add_another_option": "no"
+            }
+          ],
+          "conditional_logic_info": {
+            "custom_name": "Radio buttons",
+            "condition": ["is not equal to>a"],
+            "then_show_value": ["Droplist"]
+          },
+          "conditional_logic_edit": {
+            "custom_name": "Radio buttons",
+            "condition": ["is not equal to>a"],
+            "then_show_value": ["Droplist", "Checkbox"]
+          },
+          "conditional_logic_show": {
+            "list_custom": ["Radio buttons>Radio buttons>a"],
+            "then_show_value": ["select-box,checkbox-group"],
+            "is_show_value": [false]
+          },
+          "snapshot_name": {
+            "popup_add_condi_logic": "popup-add-conditional-logic-SB_PRO_SBP_1527.png",
+            "add_condi_logic": "add-conditional-logic-SB_PRO_SBP_1527.png",
+            "edit_condi_logic": "edit-conditional-logic-SB_PRO_SBP_1527.png",
+            "add_block_condi_logic": "add-block-conditional-logic-SB_PRO_SBP_1527.png",
+            "remove_block_condi_logic": "remove-block-conditional-logic-SB_PRO_SBP_1527.png"
+          }
+        },
+        {
+          "description": "Tạo conditional logic thành công với is not equal to và custom option Droplist",
+          "case_id": "SB_PRO_SBP_1528",
+          "custom_option_name": "Droplist",
+          "product_all_info": {
+            "title": "Product is not equal to conditional logic Droplist",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "custom_option_info": [
+            {
+              "type": "Radio buttons",
+              "default_name": "Custom Option 1",
+              "custom_name": "Radio buttons",
+              "label": "Radio buttons",
+              "values": "a,b,c",
+              "default_check": "b",
+              "index": 1,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Droplist",
+              "default_name": "Custom Option 2",
+              "custom_name": "Droplist",
+              "label": "Droplist",
+              "values": "a,b,c",
+              "default_check": "b",
+              "index": 2,
+              "position": 2,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Checkbox",
+              "default_name": "Custom Option 3",
+              "custom_name": "Checkbox",
+              "label": "Checkbox",
+              "values": "a,b,c,d,e",
+              "index": 3,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Picture choice",
+              "default_name": "Custom Option 4",
+              "custom_name": "Picture choice",
+              "label": "Picture choice",
+              "type_clipart": "Folder",
+              "values": "group 1",
+              "index": 4,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Text field",
+              "default_name": "Custom Option 5",
+              "custom_name": "Text field",
+              "label": "Text field",
+              "index": 5,
+              "position": 1,
+              "placeholder": "Please input text field",
+              "default_value": "text",
+              "allow_following": "Characters, Numbers, Special Characters, Emoji",
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Text area",
+              "default_name": "Custom Option 6",
+              "custom_name": "Text area",
+              "label": "Text area",
+              "index": 6,
+              "position": 2,
+              "placeholder": "Please input text area",
+              "default_value": "text",
+              "allow_following": "Characters, Numbers, Special Characters, Emoji",
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Image",
+              "default_name": "Custom Option 7",
+              "custom_name": "Image",
+              "label": "Image",
+              "index": 7,
+              "add_another_option": "no"
+            }
+          ],
+          "conditional_logic_info": {
+            "custom_name": "Droplist",
+            "condition": ["is not equal to>a"],
+            "then_show_value": ["Checkbox"]
+          },
+          "conditional_logic_edit": {
+            "custom_name": "Droplist",
+            "condition": ["is not equal to>a"],
+            "then_show_value": ["Checkbox", "Text field"]
+          },
+          "conditional_logic_show": {
+            "list_custom": ["Droplist>Droplist>a"],
+            "then_show_value": ["checkbox-group,relative input-base"],
+            "is_show_value": [false]
+          },
+          "snapshot_name": {
+            "popup_add_condi_logic": "popup-add-conditional-logic-SB_PRO_SBP_1528.png",
+            "add_condi_logic": "add-conditional-logic-SB_PRO_SBP_1528.png",
+            "edit_condi_logic": "edit-conditional-logic-SB_PRO_SBP_1528.png",
+            "add_block_condi_logic": "add-block-conditional-logic-SB_PRO_SBP_1528.png",
+            "remove_block_condi_logic": "remove-block-conditional-logic-SB_PRO_SBP_1528.png"
+          }
+        },
+        {
+          "description": "Tạo conditional logic thành công với is not equal to và custom option Picture choice",
+          "case_id": "SB_PRO_SBP_1529",
+          "custom_option_name": "Picture choice",
+          "product_all_info": {
+            "title": "Product is not equal to conditional logic Picture choice",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "custom_option_info": [
+            {
+              "type": "Radio buttons",
+              "default_name": "Custom Option 1",
+              "custom_name": "Radio buttons",
+              "label": "Radio buttons",
+              "values": "a,b,c",
+              "default_check": "b",
+              "index": 1,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Droplist",
+              "default_name": "Custom Option 2",
+              "custom_name": "Droplist",
+              "label": "Droplist",
+              "values": "a,b,c",
+              "default_check": "b",
+              "index": 2,
+              "position": 2,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Checkbox",
+              "default_name": "Custom Option 3",
+              "custom_name": "Checkbox",
+              "label": "Checkbox",
+              "values": "a,b,c,d,e",
+              "index": 3,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Picture choice",
+              "default_name": "Custom Option 4",
+              "custom_name": "Picture choice",
+              "label": "Picture choice",
+              "type_clipart": "Folder",
+              "values": "group 1",
+              "index": 4,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Text field",
+              "default_name": "Custom Option 5",
+              "custom_name": "Text field",
+              "label": "Text field",
+              "index": 5,
+              "position": 1,
+              "placeholder": "Please input text field",
+              "default_value": "text",
+              "allow_following": "Characters, Numbers, Special Characters, Emoji",
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Text area",
+              "default_name": "Custom Option 6",
+              "custom_name": "Text area",
+              "label": "Text area",
+              "index": 6,
+              "position": 2,
+              "placeholder": "Please input text area",
+              "default_value": "text",
+              "allow_following": "Characters, Numbers, Special Characters, Emoji",
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Image",
+              "default_name": "Custom Option 7",
+              "custom_name": "Image",
+              "label": "Image",
+              "index": 7,
+              "add_another_option": "no"
+            }
+          ],
+          "conditional_logic_info": {
+            "custom_name": "Picture choice",
+            "condition": ["is not equal to>image1"],
+            "then_show_value": ["Text field"]
+          },
+          "conditional_logic_edit": {
+            "custom_name": "Picture choice",
+            "condition": ["is not equal to>image1"],
+            "then_show_value": ["Image", "Text field"]
+          },
+          "conditional_logic_show": {
+            "list_custom": ["Picture choice>Picture choice>image1"],
+            "then_show_value": ["base-upload,relative input-base"],
+            "is_show_value": [false]
+          },
+          "snapshot_name": {
+            "popup_add_condi_logic": "popup-add-conditional-logic-SB_PRO_SBP_1529.png",
+            "add_condi_logic": "add-conditional-logic-SB_PRO_SBP_1529.png",
+            "edit_condi_logic": "edit-conditional-logic-SB_PRO_SBP_1529.png",
+            "add_block_condi_logic": "add-block-conditional-logic-SB_PRO_SBP_1529.png",
+            "remove_block_condi_logic": "remove-block-conditional-logic-SB_PRO_SBP_1529.png"
+          }
+        },
+        {
+          "description": "Tạo conditional logic thành công với is equal to + is not equal to và custom option Radio buttons",
+          "case_id": "SB_PRO_SBP_1530",
+          "custom_option_name": "Radio buttons",
+          "product_all_info": {
+            "title": "Product conditional logic Radio buttons",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "custom_option_info": [
+            {
+              "type": "Radio buttons",
+              "default_name": "Custom Option 1",
+              "custom_name": "Radio buttons",
+              "label": "Radio buttons",
+              "values": "a,b,c",
+              "default_check": "b",
+              "index": 1,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Droplist",
+              "default_name": "Custom Option 2",
+              "custom_name": "Droplist",
+              "label": "Droplist",
+              "values": "a,b,c",
+              "default_check": "b",
+              "index": 2,
+              "position": 2,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Checkbox",
+              "default_name": "Custom Option 3",
+              "custom_name": "Checkbox",
+              "label": "Checkbox",
+              "values": "a,b,c,d,e",
+              "index": 3,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Picture choice",
+              "default_name": "Custom Option 4",
+              "custom_name": "Picture choice",
+              "label": "Picture choice",
+              "type_clipart": "Folder",
+              "values": "group 1",
+              "index": 4,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Text field",
+              "default_name": "Custom Option 5",
+              "custom_name": "Text field",
+              "label": "Text field",
+              "index": 5,
+              "position": 1,
+              "placeholder": "Please input text field",
+              "default_value": "text",
+              "allow_following": "Characters, Numbers, Special Characters, Emoji",
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Text area",
+              "default_name": "Custom Option 6",
+              "custom_name": "Text area",
+              "label": "Text area",
+              "index": 6,
+              "position": 2,
+              "placeholder": "Please input text area",
+              "default_value": "text",
+              "allow_following": "Characters, Numbers, Special Characters, Emoji",
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Image",
+              "default_name": "Custom Option 7",
+              "custom_name": "Image",
+              "label": "Image",
+              "index": 7,
+              "add_another_option": "no"
+            }
+          ],
+          "conditional_logic_info": {
+            "custom_name": "Radio buttons",
+            "condition": ["is equal to>a", "is not equal to>b"],
+            "then_show_value": ["Droplist", "Checkbox"],
+            "add_condition": "yes"
+          },
+          "conditional_logic_show": {
+            "list_custom": ["Radio buttons>Radio buttons>a", "Radio buttons>Radio buttons>b"],
+            "then_show_value": ["select-box", "checkbox-group"],
+            "is_show_value": [true, false]
+          },
+          "snapshot_name": {
+            "popup_add_condi_logic": "popup-add-conditional-logic-SB_PRO_SBP_1530.png",
+            "add_condi_logic": "add-conditional-logic-SB_PRO_SBP_1530.png",
+            "edit_condi_logic": "edit-conditional-logic-SB_PRO_SBP_1530.png",
+            "add_block_condi_logic": "add-block-conditional-logic-SB_PRO_SBP_1530.png",
+            "remove_block_condi_logic": "remove-block-conditional-logic-SB_PRO_SBP_1530.png"
+          }
+        },
+        {
+          "description": "Tạo conditional logic thành công với is not equal to + is equal to và custom option Droplist",
+          "case_id": "SB_PRO_SBP_1531",
+          "custom_option_name": "Droplist",
+          "product_all_info": {
+            "title": "Product conditional logic Droplist",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "custom_option_info": [
+            {
+              "type": "Radio buttons",
+              "default_name": "Custom Option 1",
+              "custom_name": "Radio buttons",
+              "label": "Radio buttons",
+              "values": "a,b,c",
+              "default_check": "b",
+              "index": 1,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Droplist",
+              "default_name": "Custom Option 2",
+              "custom_name": "Droplist",
+              "label": "Droplist",
+              "values": "a,b,c",
+              "default_check": "b",
+              "index": 2,
+              "position": 2,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Checkbox",
+              "default_name": "Custom Option 3",
+              "custom_name": "Checkbox",
+              "label": "Checkbox",
+              "values": "a,b,c,d,e",
+              "index": 3,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Picture choice",
+              "default_name": "Custom Option 4",
+              "custom_name": "Picture choice",
+              "label": "Picture choice",
+              "type_clipart": "Folder",
+              "values": "group 1",
+              "index": 4,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Text field",
+              "default_name": "Custom Option 5",
+              "custom_name": "Text field",
+              "label": "Text field",
+              "index": 5,
+              "position": 1,
+              "placeholder": "Please input text field",
+              "default_value": "text",
+              "allow_following": "Characters, Numbers, Special Characters, Emoji",
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Text area",
+              "default_name": "Custom Option 6",
+              "custom_name": "Text area",
+              "label": "Text area",
+              "index": 6,
+              "position": 2,
+              "placeholder": "Please input text area",
+              "default_value": "text",
+              "allow_following": "Characters, Numbers, Special Characters, Emoji",
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Image",
+              "default_name": "Custom Option 7",
+              "custom_name": "Image",
+              "label": "Image",
+              "index": 7,
+              "add_another_option": "no"
+            }
+          ],
+          "conditional_logic_info": {
+            "custom_name": "Droplist",
+            "condition": ["is equal to>a", "is not equal to>b"],
+            "then_show_value": ["Checkbox", "Text field"],
+            "add_condition": "yes"
+          },
+          "conditional_logic_show": {
+            "list_custom": ["Droplist>Droplist>a", "Droplist>Droplist>b"],
+            "then_show_value": ["checkbox-group", "relative input-base"],
+            "is_show_value": [true, false]
+          },
+          "snapshot_name": {
+            "popup_add_condi_logic": "popup-add-conditional-logic-SB_PRO_SBP_1531.png",
+            "add_condi_logic": "add-conditional-logic-SB_PRO_SBP_1531.png",
+            "edit_condi_logic": "edit-conditional-logic-SB_PRO_SBP_1531.png",
+            "add_block_condi_logic": "add-block-conditional-logic-SB_PRO_SBP_1531.png",
+            "remove_block_condi_logic": "remove-block-conditional-logic-SB_PRO_SBP_1531.png"
+          }
+        },
+        {
+          "description": "Tạo conditional logic thành công với is not equal to + is equal to và custom option Picture choice",
+          "case_id": "SB_PRO_SBP_1532",
+          "custom_option_name": "Picture choice",
+          "product_all_info": {
+            "title": "Product is not equal to conditional logic Picture choice",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "custom_option_info": [
+            {
+              "type": "Radio buttons",
+              "default_name": "Custom Option 1",
+              "custom_name": "Radio buttons",
+              "label": "Radio buttons",
+              "values": "a,b,c",
+              "default_check": "b",
+              "index": 1,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Droplist",
+              "default_name": "Custom Option 2",
+              "custom_name": "Droplist",
+              "label": "Droplist",
+              "values": "a,b,c",
+              "default_check": "b",
+              "index": 2,
+              "position": 2,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Checkbox",
+              "default_name": "Custom Option 3",
+              "custom_name": "Checkbox",
+              "label": "Checkbox",
+              "values": "a,b,c,d,e",
+              "index": 3,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Picture choice",
+              "default_name": "Custom Option 4",
+              "custom_name": "Picture choice",
+              "label": "Picture choice",
+              "type_clipart": "Folder",
+              "values": "group 1",
+              "index": 4,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Text field",
+              "default_name": "Custom Option 5",
+              "custom_name": "Text field",
+              "label": "Text field",
+              "index": 5,
+              "position": 1,
+              "placeholder": "Please input text field",
+              "default_value": "text",
+              "allow_following": "Characters, Numbers, Special Characters, Emoji",
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Text area",
+              "default_name": "Custom Option 6",
+              "custom_name": "Text area",
+              "label": "Text area",
+              "index": 6,
+              "position": 2,
+              "placeholder": "Please input text area",
+              "default_value": "text",
+              "allow_following": "Characters, Numbers, Special Characters, Emoji",
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Image",
+              "default_name": "Custom Option 7",
+              "custom_name": "Image",
+              "label": "Image",
+              "index": 7,
+              "add_another_option": "no"
+            }
+          ],
+          "conditional_logic_info": {
+            "custom_name": "Picture choice",
+            "condition": ["is not equal to>image1", "is equal to>image2"],
+            "then_show_value": ["Image", "Text field"],
+            "add_condition": "yes"
+          },
+          "conditional_logic_show": {
+            "list_custom": ["Picture choice>Picture choice>image1", "Picture choice>Picture choice>image2"],
+            "then_show_value": ["base-upload", "relative input-base"],
+            "is_show_value": [false, true]
+          },
+          "snapshot_name": {
+            "popup_add_condi_logic": "popup-add-conditional-logic-SB_PRO_SBP_1532.png",
+            "add_condi_logic": "add-conditional-logic-SB_PRO_SBP_1532.png",
+            "edit_condi_logic": "edit-conditional-logic-SB_PRO_SBP_1532.png",
+            "add_block_condi_logic": "add-block-conditional-logic-SB_PRO_SBP_1532.png",
+            "remove_block_condi_logic": "remove-block-conditional-logic-SB_PRO_SBP_1532.png"
+          }
+        },
+        {
+          "description": "Tạo conditional logic thành công với is not equal to và custom option Picture choice với clipart group",
+          "case_id": "SB_PRO_SBP_1533",
+          "custom_option_name": "Picture choice",
+          "product_all_info": {
+            "title": "Product is not equal to conditional logic Picture choice với clipart group",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "custom_option_info": [
+            {
+              "type": "Radio buttons",
+              "default_name": "Custom Option 1",
+              "custom_name": "Radio buttons",
+              "label": "Radio buttons",
+              "values": "a,b,c",
+              "default_check": "b",
+              "index": 1,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Droplist",
+              "default_name": "Custom Option 2",
+              "custom_name": "Droplist",
+              "label": "Droplist",
+              "values": "a,b,c",
+              "default_check": "b",
+              "index": 2,
+              "position": 2,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Checkbox",
+              "default_name": "Custom Option 3",
+              "custom_name": "Checkbox",
+              "label": "Checkbox",
+              "values": "a,b,c,d,e",
+              "index": 3,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Picture choice",
+              "default_name": "Custom Option 4",
+              "custom_name": "Picture choice",
+              "label": "Picture choice",
+              "type_clipart": "Group",
+              "values": "Group 1",
+              "index": 4,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Text field",
+              "default_name": "Custom Option 5",
+              "custom_name": "Text field",
+              "label": "Text field",
+              "index": 5,
+              "position": 1,
+              "placeholder": "Please input text field",
+              "default_value": "text",
+              "allow_following": "Characters, Numbers, Special Characters, Emoji",
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Text area",
+              "default_name": "Custom Option 6",
+              "custom_name": "Text area",
+              "label": "Text area",
+              "index": 6,
+              "position": 2,
+              "placeholder": "Please input text area",
+              "default_value": "text",
+              "allow_following": "Characters, Numbers, Special Characters, Emoji",
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Image",
+              "default_name": "Custom Option 7",
+              "custom_name": "Image",
+              "label": "Image",
+              "index": 7,
+              "add_another_option": "no"
+            }
+          ],
+          "conditional_logic_info": {
+            "custom_name": "Picture choice",
+            "condition": ["is not equal to>Folder 01"],
+            "then_show_value": ["Text field"]
+          },
+          "conditional_logic_edit": {
+            "custom_name": "Picture choice",
+            "condition": ["is not equal to>Folder 02"],
+            "then_show_value": ["Image", "Text field"]
+          },
+          "conditional_logic_show": {
+            "list_custom": ["Picture choice>Picture choice>Folder 02>Group"],
+            "then_show_value": ["base-upload,relative input-base"],
+            "is_show_value": [false]
+          },
+          "snapshot_name": {
+            "popup_add_condi_logic": "popup-add-conditional-logic-SB_PRO_SBP_1533.png",
+            "add_condi_logic": "add-conditional-logic-SB_PRO_SBP_1533.png",
+            "edit_condi_logic": "edit-conditional-logic-SB_PRO_SBP_1533.png",
+            "add_block_condi_logic": "add-block-conditional-logic-SB_PRO_SBP_1533.png",
+            "remove_block_condi_logic": "remove-block-conditional-logic-SB_PRO_SBP_1533.png"
+          }
+        },
+        {
+          "description": "Tạo conditional logic thành công với is equal to và custom option Picture choice với clipart group",
+          "case_id": "SB_PRO_SBP_1534",
+          "custom_option_name": "Picture choice",
+          "product_all_info": {
+            "title": "Product is equal to conditional logic Picture choice với clipart group",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "custom_option_info": [
+            {
+              "type": "Radio buttons",
+              "default_name": "Custom Option 1",
+              "custom_name": "Radio buttons",
+              "label": "Radio buttons",
+              "values": "a,b,c",
+              "default_check": "b",
+              "index": 1,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Droplist",
+              "default_name": "Custom Option 2",
+              "custom_name": "Droplist",
+              "label": "Droplist",
+              "values": "a,b,c",
+              "default_check": "b",
+              "index": 2,
+              "position": 2,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Checkbox",
+              "default_name": "Custom Option 3",
+              "custom_name": "Checkbox",
+              "label": "Checkbox",
+              "values": "a,b,c,d,e",
+              "index": 3,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Picture choice",
+              "default_name": "Custom Option 4",
+              "custom_name": "Picture choice",
+              "label": "Picture choice",
+              "type_clipart": "Group",
+              "values": "Group 1",
+              "index": 4,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Text field",
+              "default_name": "Custom Option 5",
+              "custom_name": "Text field",
+              "label": "Text field",
+              "index": 5,
+              "position": 1,
+              "placeholder": "Please input text field",
+              "default_value": "text",
+              "allow_following": "Characters, Numbers, Special Characters, Emoji",
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Text area",
+              "default_name": "Custom Option 6",
+              "custom_name": "Text area",
+              "label": "Text area",
+              "index": 6,
+              "position": 2,
+              "placeholder": "Please input text area",
+              "default_value": "text",
+              "allow_following": "Characters, Numbers, Special Characters, Emoji",
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Image",
+              "default_name": "Custom Option 7",
+              "custom_name": "Image",
+              "label": "Image",
+              "index": 7,
+              "add_another_option": "no"
+            }
+          ],
+          "conditional_logic_info": {
+            "custom_name": "Picture choice",
+            "condition": ["is equal to>Folder 01"],
+            "then_show_value": ["Text field"]
+          },
+          "conditional_logic_edit": {
+            "custom_name": "Picture choice",
+            "condition": ["is equal to>Folder 02"],
+            "then_show_value": ["Image", "Text field"]
+          },
+          "conditional_logic_show": {
+            "list_custom": ["Picture choice>Picture choice>Folder 02>Group"],
+            "then_show_value": ["base-upload,relative input-base"],
+            "is_show_value": [true]
+          },
+          "snapshot_name": {
+            "popup_add_condi_logic": "popup-add-conditional-logic-SB_PRO_SBP_1534.png",
+            "add_condi_logic": "add-conditional-logic-SB_PRO_SBP_1534.png",
+            "edit_condi_logic": "edit-conditional-logic-SB_PRO_SBP_1534.png",
+            "add_block_condi_logic": "add-block-conditional-logic-SB_PRO_SBP_1534.png",
+            "remove_block_condi_logic": "remove-block-conditional-logic-SB_PRO_SBP_1534.png"
+          }
+        },
+        {
+          "description": "Tạo conditional logic thành công với is not equal to + is equal to và custom option Picture choice và clipart group",
+          "case_id": "SB_PRO_SBP_1535",
+          "custom_option_name": "Picture choice",
+          "product_all_info": {
+            "title": "Product conditional logic Picture choice với clipart group",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "custom_option_info": [
+            {
+              "type": "Radio buttons",
+              "default_name": "Custom Option 1",
+              "custom_name": "Radio buttons",
+              "label": "Radio buttons",
+              "values": "a,b,c",
+              "default_check": "b",
+              "index": 1,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Droplist",
+              "default_name": "Custom Option 2",
+              "custom_name": "Droplist",
+              "label": "Droplist",
+              "values": "a,b,c",
+              "default_check": "b",
+              "index": 2,
+              "position": 2,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Checkbox",
+              "default_name": "Custom Option 3",
+              "custom_name": "Checkbox",
+              "label": "Checkbox",
+              "values": "a,b,c,d,e",
+              "index": 3,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Picture choice",
+              "default_name": "Custom Option 4",
+              "custom_name": "Picture choice",
+              "label": "Picture choice",
+              "type_clipart": "Group",
+              "values": "Group 1",
+              "index": 4,
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Text field",
+              "default_name": "Custom Option 5",
+              "custom_name": "Text field",
+              "label": "Text field",
+              "index": 5,
+              "position": 1,
+              "placeholder": "Please input text field",
+              "default_value": "text",
+              "allow_following": "Characters, Numbers, Special Characters, Emoji",
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Text area",
+              "default_name": "Custom Option 6",
+              "custom_name": "Text area",
+              "label": "Text area",
+              "index": 6,
+              "position": 2,
+              "placeholder": "Please input text area",
+              "default_value": "text",
+              "allow_following": "Characters, Numbers, Special Characters, Emoji",
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Image",
+              "default_name": "Custom Option 7",
+              "custom_name": "Image",
+              "label": "Image",
+              "index": 7,
+              "add_another_option": "no"
+            }
+          ],
+          "conditional_logic_info": {
+            "custom_name": "Picture choice",
+            "condition": ["is equal to>Folder 01", "is not equal to>Folder 02"],
+            "then_show_value": ["Text field", "Image"],
+            "add_another_option": "yes"
+          },
+          "conditional_logic_show": {
+            "list_custom": [
+              "Picture choice>Picture choice>Folder 01>Group",
+              "Picture choice>Picture choice>Folder 02>Group"
+            ],
+            "then_show_value": ["relative input-base", "base-upload"],
+            "is_show_value": [true, false]
+          },
+          "snapshot_name": {
+            "popup_add_condi_logic": "popup-add-conditional-logic-SB_PRO_SBP_1535.png",
+            "add_condi_logic": "add-conditional-logic-SB_PRO_SBP_1535.png",
+            "edit_condi_logic": "edit-conditional-logic-SB_PRO_SBP_1535.png",
+            "add_block_condi_logic": "add-block-conditional-logic-SB_PRO_SBP_1535.png",
+            "remove_block_condi_logic": "remove-block-conditional-logic-SB_PRO_SBP_1535.png"
+          }
+        }
+      ]
+    },
+    "SB_PRO_SBP_1536": {
+      "image_clipart": "image2",
+      "image_clipart_add": "image3.jpeg",
+      "product_all_info": {
+        "title": "Product conditional logic edit clipart folder",
+        "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+        "image_name": "Logo1.jpg",
+        "vendor": "Uniqlo",
+        "price": "10",
+        "compare_at_price": "20"
+      },
+      "custom_option_info": {
+        "type": "Picture choice",
+        "default_name": "Custom Option 1",
+        "custom_name": "Picture choice",
+        "label": "Picture choice",
+        "type_clipart": "Folder",
+        "values": "group 2",
+        "index": 1,
+        "add_another_option": "no"
+      }
+    },
+    "SB_PRO_SBP_1537": {
+      "folder_clipart": "folder group 1",
+      "product_all_info": {
+        "title": "Product conditional logic edit clipart group",
+        "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+        "image_name": "Logo1.jpg",
+        "vendor": "Uniqlo",
+        "price": "10",
+        "compare_at_price": "20"
+      },
+      "custom_option_info": {
+        "type": "Picture choice",
+        "default_name": "Custom Option 1",
+        "custom_name": "Picture choice",
+        "label": "Picture choice",
+        "type_clipart": "Group",
+        "values": "group1536",
+        "index": 1,
+        "add_another_option": "no"
+      },
+      "clipart_folder_info": {
+        "folder_name": "folder group 3",
+        "images": ["image3.jpeg"]
+      },
+      "clipart_folder_info_edit": {
+        "folder_name": "folder group 1"
+      }
+    },
+    "SB_PRO_SBP_1538": {
+      "product_all_info": {
+        "title": "Product conditional logic validate value",
+        "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+        "image_name": "Logo1.jpg",
+        "vendor": "Uniqlo",
+        "price": "10",
+        "compare_at_price": "20"
+      },
+      "custom_option_info": [
+        {
+          "type": "Radio buttons",
+          "default_name": "Custom Option 1",
+          "custom_name": "Radio buttons",
+          "label": "Radio buttons",
+          "values": "a,b,c",
+          "default_check": "b",
+          "index": 1,
+          "add_another_option": "yes"
+        },
+        {
+          "type": "Droplist",
+          "default_name": "Custom Option 2",
+          "custom_name": "Droplist",
+          "label": "Droplist",
+          "values": "a,b,c",
+          "default_check": "b",
+          "index": 2,
+          "position": 2,
+          "add_another_option": "yes"
+        },
+        {
+          "type": "Checkbox",
+          "default_name": "Custom Option 3",
+          "custom_name": "Checkbox",
+          "label": "Checkbox",
+          "values": "a,b,c,d,e",
+          "index": 3,
+          "add_another_option": "yes"
+        },
+        {
+          "type": "Picture choice",
+          "default_name": "Custom Option 4",
+          "custom_name": "Picture choice",
+          "label": "Picture choice",
+          "type_clipart": "Folder",
+          "values": "group 1",
+          "index": 4,
+          "add_another_option": "yes"
+        },
+        {
+          "type": "Text field",
+          "default_name": "Custom Option 5",
+          "custom_name": "Text field",
+          "label": "Text field",
+          "index": 5,
+          "position": 1,
+          "placeholder": "Please input text field",
+          "default_value": "text",
+          "allow_following": "Characters, Numbers, Special Characters, Emoji",
+          "add_another_option": "yes"
+        },
+        {
+          "type": "Text area",
+          "default_name": "Custom Option 6",
+          "custom_name": "Text area",
+          "label": "Text area",
+          "index": 6,
+          "position": 2,
+          "placeholder": "Please input text area",
+          "default_value": "text",
+          "allow_following": "Characters, Numbers, Special Characters, Emoji",
+          "add_another_option": "yes"
+        },
+        {
+          "type": "Image",
+          "default_name": "Custom Option 7",
+          "custom_name": "Image",
+          "label": "Image",
+          "index": 7,
+          "add_another_option": "no"
+        }
+      ],
+      "conditional_logic_info": [
+        {
+          "field": "Value",
+          "custom_name": "Droplist",
+          "condition": ["is equal to>"],
+          "then_show_value": ["Checkbox"],
+          "messageError": "Please finish this field"
+        },
+        {
+          "field": "Then show",
+          "custom_name": "Droplist",
+          "condition": ["is equal to>a"],
+          "then_show_value": [""],
+          "messageError": "Please finish this field"
+        }
+      ]
+    }
+  }
+}

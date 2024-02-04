@@ -1,0 +1,623 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "bulk-update-clipart-prod.onshopbase.com",
+      "shop_name": "bulk-update-clipart-prod",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10424541,
+      "user_id": 73782,
+      "timeout": 1000000
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "bulk-update-clipart-prod-test.onshopbase.com",
+      "shop_name": "bulk-update-clipart-prod-test",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10424829,
+      "user_id": 73782,
+      "timeout": 1000000,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-bulk-update-clipart-dev.myshopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_name": "au-bulk-update-clipart-dev",
+      "user_id": 73800,
+      "shop_id": 10326659,
+      "timeout": 1000000,
+      "cases": {
+        "DATA_DRIVEN": {
+          "data": [
+            {
+              "precondition": "Tạo 'Folder 26' ở Printhub có :Image 1 , Image 2 > Tạo Product : 'Product add Custom Option - PC khi add new clipart folder'",
+              "create_bulk": "1. Đi đến màn Bulk update: /admin/bulk-updates > 2. Click button Create an Update > 3. Chọn Filter: All conditions > 4. chọn Action: 'Add custom options' > 5. Input Custom option info > 6. Chọn 'Show all cliparts in a clipart Folder' > 7. Click ' Add a clipart folde'  > 8. Nhập thông tin clipart folder info > Save",
+              "description": "Check Update Add Custom Option - PC khi add new clipart folder",
+              "case_id": "SB_PRO_SBP_ICFP_26",
+              "clipart_folder_info": [
+                {
+                  "folder_name": "folder 26",
+                  "group_name": "Group 26",
+                  "images": ["BD_1.png", "BD_2.png"]
+                }
+              ],
+              "product_info": {
+                "title": "Product add Custom Option - PC khi add new clipart folder",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "moon.png",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "bulk_update_info": {
+                "condition_type": "All conditions",
+                "conditions": ["Product title >is equal to >Product add Custom Option - PC khi add new clipart folder"],
+                "actions": ["Add custom options > Before"],
+                "custom_option": [
+                  {
+                    "custom_name": "Picture choice",
+                    "default_name": "Custom Option 1",
+                    "label": "Picture choice",
+                    "type": "Picture choice",
+                    "target_layer": "No",
+                    "index": 1,
+                    "type_clipart": "Folder",
+                    "values": "folder 26",
+                    "type_display_clipart": "Show with Thumbnail images"
+                  }
+                ]
+              },
+              "bulk_clipart_folder": {
+                "folder_name": "bulk folder 26",
+                "images": ["BD_3.png>artwork - Back.png", "BD_4.png>artwork1 - Front.png"]
+              },
+              "validate_bulk_update_info": {
+                "filter_validate": "Product title is equal to \"Product add Custom Option - PC khi add new clipart folder\"",
+                "update_for_validate": "All variants",
+                "action_validate": "Add custom options \"Picture choice\" Before existing custom options",
+                "number_of_update_validate": "1"
+              },
+              "custom_option_SF": [
+                {
+                  "type": "Picture choice",
+                  "custom_name": "Picture choice",
+                  "value": "BD_3"
+                },
+                {
+                  "type": "Picture choice",
+                  "custom_name": "Picture choice",
+                  "value": "BD_4"
+                }
+              ],
+              "picture": {
+                "custom_option_detail": "custom-option-detail-SB-PRO-SBP-ICFP-26-dev.png",
+                "picture_choice_sf": "picture-choice-sf-SB-PRO-SBP-ICFP-26-dev.png",
+                "block_bulk_actions": "block_bulk_actions-SB-PRO-SBP-ICFP-26-dev.png",
+                "clipart_editor": "clipart_editorSB-PRO-SBP-ICFP-26-dev.png"
+              }
+            },
+            {
+              "precondition": " Tạo 'folder 22' có : Image 1 , Image 2 > group name: 'group 22' > Tạo Product : Product edit exist clipart folder",
+              "create_bulk": "1. Đi đến màn Bulk update: /admin/bulk-updates > 2. Click button Create an Update > 3. Chọn Filter: All conditions > 4. chọn Action: 'Add custom options' > 5. Input Custom option info > 6. Chọn ' Show all cliparts in a clipart Folder' > 7. Click 'Add a clipart folder'> 8. Nhập thông tin clipart folder info > Save",
+              "description": "Update Add Custom Option - PC edit exist clipart folder",
+              "case_id": "SB_PRO_SBP_ICFP_22",
+              "clipart_folder_info": [
+                {
+                  "folder_name": "folder 22",
+                  "group_name": "Group 22",
+                  "images": ["Cat 1.png>BD_1.png", "Cat 2.png>BD_2.png"]
+                }
+              ],
+              "product_info": {
+                "title": "Product edit exist clipart folder",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "bulk_update_info": {
+                "condition_type": "All conditions",
+                "conditions": ["Product title >is equal to >Product edit exist clipart folder"],
+                "actions": ["Add custom options > After"],
+                "custom_option": [
+                  {
+                    "custom_name": "Picture choice",
+                    "default_name": "Custom Option 1",
+                    "label": "Picture choice",
+                    "type": "Picture choice",
+                    "target_layer": "No",
+                    "index": 1,
+                    "type_clipart": "Folder",
+                    "values": "folder 22",
+                    "type_display_clipart": "Show with Thumbnail images"
+                  }
+                ]
+              },
+              "bulk_clipart_folder": {
+                "folder_name": "bulk folder 22",
+                "group_name": "Group 22",
+                "images": ["BD_3.png"]
+              },
+              "clipart_delete_image": {
+                "image": "Cat 1.png"
+              },
+              "validate_bulk_update_info": {
+                "filter_validate": "Product title is equal to \"Product edit exist clipart folder\"",
+                "update_for_validate": "All variants",
+                "action_validate": "Add custom options \"Picture choice\" After existing custom options",
+                "number_of_update_validate": "1"
+              },
+              "custom_option_SF": [
+                {
+                  "type": "Picture choice",
+                  "custom_name": "Picture choice",
+                  "value": "BD_3",
+                  "label": "Picture choice"
+                },
+                {
+                  "type": "Picture choice",
+                  "custom_name": "Picture choice",
+                  "value": "Cat 2",
+                  "label": "Picture choice"
+                }
+              ],
+              "picture": {
+                "picture_choice_sf": "picture-choice-sf-SB-PRO-SBP-ICFP-22-dev.png",
+                "custom_option_detail": "custom_option_detail_SB-PRO-SBP-ICFP-22-dev.png",
+                "block_bulk_actions": "block_bulk_actions-SB-PRO-SBP-ICFP-22-dev.png",
+                "clipart_editor": "clipart_editorSB-PRO-SBP-ICFP-22-dev.png"
+              }
+            },
+            {
+              "precondition": "Tạo 'Group 23' có : Folder 1 , Folder 2, Folder 1 có Image 1, Image 2, Folder 2 có Image 3, Image 4 > Tạo Product : Product Update Add Custom Option PC với clipart group",
+              "create_bulk": "1. Đi đến màn Bulk update: /admin/bulk-updates > 2. Click button Create an Update > 3. Chọn Filter: All conditions >4. chọn Action: 'Add custom options' > 5. Input Custom option info",
+              "description": "Update Add Custom Option - PC edit exist clipart folder",
+              "case_id": "SB_PRO_SBP_ICFP_23",
+              "clipart_folder_info": [
+                {
+                  "folder_name": "folder 23.1",
+                  "group_name": "Group 23",
+                  "images": ["Cat 1.png", "Cat 2.png"]
+                },
+                {
+                  "folder_name": "folder 23.2",
+                  "group_name": "Group 23",
+                  "images": ["Dog 1.png", "Dog 2.png"]
+                }
+              ],
+              "product_info": {
+                "title": "Product Update Add Custom Option PC với clipart group",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "bulk_update_info": {
+                "condition_type": "All conditions",
+                "conditions": ["Product title >is equal to >Product Update Add Custom Option PC với clipart group"],
+                "actions": ["Add custom options > Before"],
+                "custom_option": [
+                  {
+                    "custom_name": "Picture choice",
+                    "default_name": "Custom Option 1",
+                    "label": "Picture choice",
+                    "type": "Picture choice",
+                    "target_layer": "No",
+                    "index": 1,
+                    "type_clipart": "Group",
+                    "values": "Group 23",
+                    "type_display_clipart": "Show with Thumbnail images"
+                  }
+                ]
+              },
+              "validate_bulk_update_info": {
+                "filter_validate": "Product title is equal to \"Product Update Add Custom Option PC với clipart group\"",
+                "update_for_validate": "All variants",
+                "action_validate": "Add custom options \"Picture choice\" Before existing custom options",
+                "number_of_update_validate": "1"
+              },
+              "custom_option_SF": [
+                {
+                  "type": "Picture choice group show thumbnail",
+                  "custom_name": "Picture choice",
+                  "value": "Cat 1",
+                  "label": "Picture choice",
+                  "folder_clipart": "folder 23.1"
+                },
+                {
+                  "type": "Picture choice group show thumbnail",
+                  "custom_name": "Picture choice",
+                  "value": "Cat 2",
+                  "label": "Picture choice",
+                  "folder_clipart": "folder 23.1"
+                },
+                {
+                  "type": "Picture choice group show thumbnail",
+                  "custom_name": "Picture choice",
+                  "value": "Dog 1",
+                  "label": "Picture choice",
+                  "folder_clipart": "folder 23.2"
+                },
+                {
+                  "type": "Picture choice group show thumbnail",
+                  "custom_name": "Picture choice",
+                  "value": "Dog 2",
+                  "label": "Picture choice",
+                  "folder_clipart": "folder 23.2"
+                }
+              ],
+              "picture": {
+                "picture_choice_sf": "picture-choice-sf-SB-PRO-SBP-ICFP-23-dev.png",
+                "custom_option_detail": "custom_option_detail-SB-PRO-SBP-ICFP-23-dev.png",
+                "block_bulk_actions": "block_bulk_actions-SB-PRO-SBP-ICFP-23-dev.png"
+              }
+            },
+            {
+              "precondition": " Tạo 'folder 24' có : Image 1 , Image 2, group name: 'group 22' > Tạo Product : Product Update Multiple Action trong đó có CO - PC",
+              "create_bulk": "1. Đi đến màn Bulk update: /admin/bulk-updates > 2. Click button Create an Update > 3. Chọn Filter: All conditions >  4. chọn Action: 'Add custom options' > 5. Input Custom option info > 6. click button Add action > 7. Chọn Action = Change price to-> 35 USD",
+              "description": "Update Add Custom Option - PC edit exist clipart folder",
+              "case_id": "SB_PRO_SBP_ICFP_24",
+              "clipart_folder_info": [
+                {
+                  "folder_name": "folder 24",
+                  "group_name": "Group 24",
+                  "images": ["Cat 1.png>BD_3.png", "Cat 2.png>BD_4.png"]
+                }
+              ],
+              "product_info": {
+                "title": "Product Update Multiple Action trong đó có CO - PC",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "bulk_update_info": {
+                "condition_type": "All conditions",
+                "conditions": ["Product title >is equal to >Product Update Multiple Action trong đó có CO - PC"],
+                "actions": ["Add custom options > Before", "Change price to>15"],
+                "custom_option": [
+                  {
+                    "custom_name": "Picture choice",
+                    "default_name": "Custom Option 1",
+                    "label": "Picture choice",
+                    "type": "Picture choice",
+                    "target_layer": "No",
+                    "index": 1,
+                    "type_clipart": "Folder",
+                    "values": "folder 24",
+                    "type_display_clipart": "Show with Thumbnail images"
+                  }
+                ]
+              },
+              "validate_bulk_update_info": {
+                "filter_validate": "Product title is equal to \"Product Update Multiple Action trong đó có CO - PC\"",
+                "update_for_validate": "All variants",
+                "action_validate": "Add custom options \"Picture choice\" Before existing custom options, Change price to 15 USD",
+                "number_of_update_validate": "1"
+              },
+              "custom_option_SF": [
+                {
+                  "type": "Picture choice",
+                  "custom_name": "Picture choice",
+                  "value": "Cat 1",
+                  "label": "Picture choice"
+                },
+                {
+                  "type": "Picture choice",
+                  "custom_name": "Picture choice",
+                  "value": "Cat 2",
+                  "label": "Picture choice"
+                }
+              ],
+              "picture": {
+                "picture_choice_sf": "picture-choice-SB-PRO-SBP-ICFP-24-dev.png",
+                "custom_option_detail": "custom_option_detail-SB-PRO-SBP-ICFP-24-dev.png",
+                "block_bulk_actions": "block_bulk_actions-SB-PRO-SBP-ICFP-24-dev.png"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "cases": {
+    "DATA_DRIVEN": {
+      "data": [
+        {
+          "precondition": "Tạo 'Folder 26' ở Printhub có :Image 1 , Image 2 > Tạo Product : 'Product add Custom Option - PC khi add new clipart folder'",
+          "create_bulk": "1. Đi đến màn Bulk update: /admin/bulk-updates > 2. Click button Create an Update > 3. Chọn Filter: All conditions > 4. chọn Action: 'Add custom options' > 5. Input Custom option info > 6. Chọn 'Show all cliparts in a clipart Folder' > 7. Click ' Add a clipart folde'  > 8. Nhập thông tin clipart folder info > Save",
+          "description": "Check Update Add Custom Option - PC khi add new clipart folder",
+          "case_id": "SB_PRO_SBP_ICFP_26",
+          "clipart_folder_info": [
+            {
+              "folder_name": "folder 26",
+              "group_name": "Group 26",
+              "images": ["BD_1.png", "BD_2.png"]
+            }
+          ],
+          "product_info": {
+            "title": "Product add Custom Option - PC khi add new clipart folder",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "moon.png",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "bulk_update_info": {
+            "condition_type": "All conditions",
+            "conditions": ["Product title >is equal to >Product add Custom Option - PC khi add new clipart folder"],
+            "actions": ["Add custom options > Before"],
+            "custom_option": [
+              {
+                "custom_name": "Picture choice",
+                "default_name": "Custom Option 1",
+                "label": "Picture choice",
+                "type": "Picture choice",
+                "target_layer": "No",
+                "index": 1,
+                "type_clipart": "Folder",
+                "values": "folder 26",
+                "type_display_clipart": "Show with Thumbnail images"
+              }
+            ]
+          },
+          "bulk_clipart_folder": {
+            "folder_name": "bulk folder 26",
+            "images": ["BD_3.png>artwork - Back.png", "BD_4.png>artwork1 - Front.png"]
+          },
+          "validate_bulk_update_info": {
+            "filter_validate": "Product title is equal to \"Product add Custom Option - PC khi add new clipart folder\"",
+            "update_for_validate": "All variants",
+            "action_validate": "Add custom options \"Picture choice\" Before existing custom options",
+            "number_of_update_validate": "1"
+          },
+          "custom_option_SF": [
+            {
+              "type": "Picture choice",
+              "custom_name": "Picture choice",
+              "value": "BD_3"
+            },
+            {
+              "type": "Picture choice",
+              "custom_name": "Picture choice",
+              "value": "BD_4"
+            }
+          ],
+          "picture": {
+            "custom_option_detail": "custom-option-detail-SB-PRO-SBP-ICFP-26.png",
+            "picture_choice_sf": "picture-choice-sf-SB-PRO-SBP-ICFP-26.png",
+            "block_bulk_actions": "block_bulk_actions-SB-PRO-SBP-ICFP-26.png",
+            "clipart_editor": "clipart_editorSB-PRO-SBP-ICFP-26.png"
+          }
+        },
+        {
+          "precondition": " Tạo 'folder 22' có : Image 1 , Image 2 > group name: 'group 22' > Tạo Product : Product edit exist clipart folder",
+          "create_bulk": "1. Đi đến màn Bulk update: /admin/bulk-updates > 2. Click button Create an Update > 3. Chọn Filter: All conditions > 4. chọn Action: 'Add custom options' > 5. Input Custom option info > 6. Chọn ' Show all cliparts in a clipart Folder' > 7. Click 'Add a clipart folder'> 8. Nhập thông tin clipart folder info > Save",
+          "description": "Update Add Custom Option - PC edit exist clipart folder",
+          "case_id": "SB_PRO_SBP_ICFP_22",
+          "clipart_folder_info": [
+            {
+              "folder_name": "folder 22",
+              "group_name": "Group 22",
+              "images": ["Cat 1.png>BD_1.png", "Cat 2.png>BD_2.png"]
+            }
+          ],
+          "product_info": {
+            "title": "Product edit exist clipart folder",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "bulk_update_info": {
+            "condition_type": "All conditions",
+            "conditions": ["Product title >is equal to >Product edit exist clipart folder"],
+            "actions": ["Add custom options > After"],
+            "custom_option": [
+              {
+                "custom_name": "Picture choice",
+                "default_name": "Custom Option 1",
+                "label": "Picture choice",
+                "type": "Picture choice",
+                "target_layer": "No",
+                "index": 1,
+                "type_clipart": "Folder",
+                "values": "folder 22",
+                "type_display_clipart": "Show with Thumbnail images"
+              }
+            ]
+          },
+          "bulk_clipart_folder": {
+            "folder_name": "bulk folder 22",
+            "group_name": "Group 22",
+            "images": ["BD_3.png"]
+          },
+          "clipart_delete_image": {
+            "image": "Cat 1.png"
+          },
+          "validate_bulk_update_info": {
+            "filter_validate": "Product title is equal to \"Product edit exist clipart folder\"",
+            "update_for_validate": "All variants",
+            "action_validate": "Add custom options \"Picture choice\" After existing custom options",
+            "number_of_update_validate": "1"
+          },
+          "custom_option_SF": [
+            {
+              "type": "Picture choice",
+              "custom_name": "Picture choice",
+              "value": "BD_3",
+              "label": "Picture choice"
+            },
+            {
+              "type": "Picture choice",
+              "custom_name": "Picture choice",
+              "value": "Cat 2",
+              "label": "Picture choice"
+            }
+          ],
+          "picture": {
+            "picture_choice_sf": "picture-choice-sf-SB-PRO-SBP-ICFP-22.png",
+            "custom_option_detail": "custom_option_detail_SB-PRO-SBP-ICFP-22.png",
+            "block_bulk_actions": "block_bulk_actions-SB-PRO-SBP-ICFP-22.png",
+            "clipart_editor": "clipart_editorSB-PRO-SBP-ICFP-22.png"
+          }
+        },
+        {
+          "precondition": "Tạo 'Group 23' có : Folder 1 , Folder 2, Folder 1 có Image 1, Image 2, Folder 2 có Image 3, Image 4 > Tạo Product : Product Update Add Custom Option PC với clipart group",
+          "create_bulk": "1. Đi đến màn Bulk update: /admin/bulk-updates > 2. Click button Create an Update > 3. Chọn Filter: All conditions >4. chọn Action: 'Add custom options' > 5. Input Custom option info",
+          "description": "Update Add Custom Option - PC edit exist clipart folder",
+          "case_id": "SB_PRO_SBP_ICFP_23",
+          "clipart_folder_info": [
+            {
+              "folder_name": "folder 23.1",
+              "group_name": "Group 23",
+              "images": ["Cat 1.png", "Cat 2.png"]
+            },
+            {
+              "folder_name": "folder 23.2",
+              "group_name": "Group 23",
+              "images": ["Dog 1.png", "Dog 2.png"]
+            }
+          ],
+          "product_info": {
+            "title": "Product Update Add Custom Option PC với clipart group",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "bulk_update_info": {
+            "condition_type": "All conditions",
+            "conditions": ["Product title >is equal to >Product Update Add Custom Option PC với clipart group"],
+            "actions": ["Add custom options > Before"],
+            "custom_option": [
+              {
+                "custom_name": "Picture choice",
+                "default_name": "Custom Option 1",
+                "label": "Picture choice",
+                "type": "Picture choice",
+                "target_layer": "No",
+                "index": 1,
+                "type_clipart": "Group",
+                "values": "Group 23",
+                "type_display_clipart": "Show with Thumbnail images"
+              }
+            ]
+          },
+          "validate_bulk_update_info": {
+            "filter_validate": "Product title is equal to \"Product Update Add Custom Option PC với clipart group\"",
+            "update_for_validate": "All variants",
+            "action_validate": "Add custom options \"Picture choice\" Before existing custom options",
+            "number_of_update_validate": "1"
+          },
+          "custom_option_SF": [
+            {
+              "type": "Picture choice group show thumbnail",
+              "custom_name": "Picture choice",
+              "value": "Cat 1",
+              "label": "Picture choice",
+              "folder_clipart": "folder 23.1"
+            },
+            {
+              "type": "Picture choice group show thumbnail",
+              "custom_name": "Picture choice",
+              "value": "Cat 2",
+              "label": "Picture choice",
+              "folder_clipart": "folder 23.1"
+            },
+            {
+              "type": "Picture choice group show thumbnail",
+              "custom_name": "Picture choice",
+              "value": "Dog 1",
+              "label": "Picture choice",
+              "folder_clipart": "folder 23.2"
+            },
+            {
+              "type": "Picture choice group show thumbnail",
+              "custom_name": "Picture choice",
+              "value": "Dog 2",
+              "label": "Picture choice",
+              "folder_clipart": "folder 23.2"
+            }
+          ],
+          "picture": {
+            "picture_choice_sf": "picture-choice-sf-SB-PRO-SBP-ICFP-23.png",
+            "custom_option_detail": "custom_option_detail-SB-PRO-SBP-ICFP-23.png",
+            "block_bulk_actions": "block_bulk_actions-SB-PRO-SBP-ICFP-23.png"
+          }
+        },
+        {
+          "precondition": " Tạo 'folder 24' có : Image 1 , Image 2, group name: 'group 22' > Tạo Product : Product Update Multiple Action trong đó có CO - PC",
+          "create_bulk": "1. Đi đến màn Bulk update: /admin/bulk-updates > 2. Click button Create an Update > 3. Chọn Filter: All conditions >  4. chọn Action: 'Add custom options' > 5. Input Custom option info > 6. click button Add action > 7. Chọn Action = Change price to-> 35 USD",
+          "description": "Update Add Custom Option - PC edit exist clipart folder",
+          "case_id": "SB_PRO_SBP_ICFP_24",
+          "clipart_folder_info": [
+            {
+              "folder_name": "folder 24",
+              "group_name": "Group 24",
+              "images": ["Cat 1.png>BD_3.png", "Cat 2.png>BD_4.png"]
+            }
+          ],
+          "product_info": {
+            "title": "Product Update Multiple Action trong đó có CO - PC",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "bulk_update_info": {
+            "condition_type": "All conditions",
+            "conditions": ["Product title >is equal to >Product Update Multiple Action trong đó có CO - PC"],
+            "actions": ["Add custom options > Before", "Change price to>15"],
+            "custom_option": [
+              {
+                "custom_name": "Picture choice",
+                "default_name": "Custom Option 1",
+                "label": "Picture choice",
+                "type": "Picture choice",
+                "target_layer": "No",
+                "index": 1,
+                "type_clipart": "Folder",
+                "values": "folder 24",
+                "type_display_clipart": "Show with Thumbnail images"
+              }
+            ]
+          },
+          "validate_bulk_update_info": {
+            "filter_validate": "Product title is equal to \"Product Update Multiple Action trong đó có CO - PC\"",
+            "update_for_validate": "All variants",
+            "action_validate": "Add custom options \"Picture choice\" Before existing custom options, Change price to 15 USD",
+            "number_of_update_validate": "1"
+          },
+          "custom_option_SF": [
+            {
+              "type": "Picture choice",
+              "custom_name": "Picture choice",
+              "value": "Cat 1",
+              "label": "Picture choice"
+            },
+            {
+              "type": "Picture choice",
+              "custom_name": "Picture choice",
+              "value": "Cat 2",
+              "label": "Picture choice"
+            }
+          ],
+          "picture": {
+            "picture_choice_sf": "picture-choice-SB-PRO-SBP-ICFP-24.png",
+            "custom_option_detail": "custom_option_detail-SB-PRO-SBP-ICFP-24.png",
+            "block_bulk_actions": "block_bulk_actions-SB-PRO-SBP-ICFP-24.png"
+          }
+        }
+      ]
+    }
+  }
+}

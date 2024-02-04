@@ -1,0 +1,1311 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-bulk-duplicate-camp-pbase.onshopbase.com",
+      "shop_name": "au-bulk-duplicate-camp-pbase",
+      "username": "acon-qe-1@beeketing.net",
+      "password": "%zF72w9k7g%_Jwj",
+      "user_id": 11260208,
+      "shop_id": 10479767
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-bulk-duplicate-camp-pbase-prodtest.onshopbase.com",
+      "shop_name": "au-bulk-duplicate-camp-pbase-prodtest",
+      "user_id": 11260208,
+      "shop_id": 10479763,
+      "username": "acon-qe-1@beeketing.net",
+      "password": "%zF72w9k7g%_Jwj",
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-bulk-duplicate-camp-pbase.myshopbase.net",
+      "shop_name": "au-bulk-duplicate-camp-pbase",
+      "user_id": 90243,
+      "shop_id": 10333844,
+      "username": "acon-qe-1@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "cases": {
+        "SB_PRB_BDC_30": {
+          "image": "dev-ui-bulk-duplicate-screen-SB-PRB-BDC-30.png",
+          "campaign_info": {
+            "pricing_info": {
+              "title": "Campaign 2D multyl 1side"
+            },
+            "product_infos": [
+              {
+                "category": "Apparel",
+                "base_product": "Unisex T-shirt"
+              },
+              {
+                "category": "Apparel",
+                "base_product": "Unisex Tank"
+              },
+              {
+                "category": "Apparel",
+                "base_product": "V-neck T-shirt"
+              }
+            ],
+            "layers": [
+              {
+                "layer_type": "Text",
+                "front_or_back": "Front"
+              }
+            ]
+          },
+          "DATA_UPLOAD_ART_INVALID": {
+            "data": [
+              {
+                "side": "Front",
+                "step_upload_art": "Click button [UploadFiles] > Select Image không đúng định dạng file",
+                "upload_infor": {
+                  "is_column": true,
+                  "campaign_name": "Campaign 2D multyl 1side 1",
+                  "artwork": "./data/shopbase/product-sample-import.csv"
+                },
+                "picture": {
+                  "show_message_error": "dev-message-with-invalid-art-file-SB-PRB-BDC-30.png",
+                  "show_delete_art": "dev-delete-invalid-art-file-SB-PRB-BDC-30.png"
+                }
+              },
+              {
+                "side": "Front",
+                "step_upload_art": "Click button [UploadFiles] > Select Image không đúng kích thước vùng in",
+                "upload_infor": {
+                  "is_column": true,
+                  "campaign_name": "Campaign 2D multyl 1side 1",
+                  "artwork": "./data/shopbase/Dog 1.png"
+                },
+                "picture": {
+                  "show_message_error": "dev-message-with-invalid-art-vung-in-SB-PRB-BDC-30.png",
+                  "show_delete_art": "dev-delete-invalid-art-vung-in-SB-PRB-BDC-30.png"
+                }
+              }
+            ]
+          }
+        },
+        "SB_PRB_BDC_34": {
+          "case_id": "SB_PRB_BDC_34",
+          "campaign_origin": "Campaign 2D multyl 1side",
+          "campaign_info": {
+            "pricing_info": {
+              "title": "Campaign 2D multyl 1side"
+            },
+            "product_infos": [
+              {
+                "category": "Apparel",
+                "base_product": "Unisex T-shirt"
+              },
+              {
+                "category": "Apparel",
+                "base_product": "Unisex Tank"
+              },
+              {
+                "category": "Apparel",
+                "base_product": "V-neck T-shirt"
+              }
+            ],
+            "layers": [
+              {
+                "layer_type": "Text",
+                "front_or_back": "Front"
+              }
+            ]
+          },
+          "number_campaign": "3",
+          "delete_campaign": "BD_4",
+          "index": 4,
+          "edit_campaign": "BD_2",
+          "value_edit": "edit campaign name",
+          "list_campaign": "BD_1,BD_3",
+          "upload_infor": {
+            "is_column": true,
+            "artwork": [
+              "./data/shopbase/BD_1.png",
+              "./data/shopbase/BD_2.png",
+              "./data/shopbase/BD_3.png",
+              "./data/shopbase/BD_4.png"
+            ]
+          },
+          "campaign_detail": {
+            "campaign_name": "edit campaign name",
+            "tags": "cotton,unisex t-shirt,tank-top,v-neck,t-shirt",
+            "style": ["Unisex T-shirt", "Unisex Tank", "V-neck T-shirt"],
+            "color": ["White", "Black", "Dark Chocolate", "Ash", "Sports Grey", "Red", "Asphalt"],
+            "size": ["S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL", "XS"],
+            "number_image": 40
+          },
+          "picture": {
+            "add_campaign": "dev-image-after-add-campaign-SB-PRB-BDC-34.png",
+            "delete_1_campaign": "dev-image-after-delete-campaign-SB-PRB-BDC-34.png",
+            "delete_more_campaign": "dev-image-after-delete-more-campaign-SB-PRB-BDC-34.png",
+            "edit_title": "dev-image-after-edit-title-campaign-SB-PRB-BDC-34.png"
+          }
+        },
+        "DATA_DRIVEN_BULK_DUPLICATE_CAMPAIGN": {
+          "data": [
+            {
+              "enable": true,
+              "description": "SB_PRB_BDC_36 - Verify bulk duplicate thành công cho campaign 2D multiple Base 1 side Front",
+              "case_id": "SB_PRB_BDC_36",
+              "campaign_info": {
+                "pricing_info": {
+                  "title": "Campaign 2D multyl 1side"
+                },
+                "product_infos": [
+                  {
+                    "category": "Apparel",
+                    "base_product": "Unisex T-shirt"
+                  },
+                  {
+                    "category": "Apparel",
+                    "base_product": "Unisex Tank"
+                  },
+                  {
+                    "category": "Apparel",
+                    "base_product": "V-neck T-shirt"
+                  }
+                ],
+                "layers": [
+                  {
+                    "layer_type": "Text",
+                    "front_or_back": "Front"
+                  }
+                ]
+              },
+              "old_campaign": "artwork1 - Front",
+              "upload_infor": {
+                "is_column": true,
+                "artwork": "./data/shopbase/artwork1 - Front.png",
+                "campaign_name": "Campaign 2D multyl 1side 1"
+              },
+              "campaign_detail": {
+                "campaign_name": "artwork1 - Front",
+                "tags": "cotton,unisex t-shirt,tank-top,v-neck,t-shirt",
+                "style": ["Unisex T-shirt", "Unisex Tank", "V-neck T-shirt"],
+                "color": ["White", "Black", "Dark Chocolate", "Ash", "Sports Grey", "Red", "Asphalt"],
+                "size": ["S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL", "XS"],
+                "number_image": 40
+              },
+              "picture": {
+                "ui_bulk_duplicate": "dev-SB-PRB-BDC-36-show-ui-bulk-duplicate.png",
+                "upload_art_success": "dev-SB-PRB-BDC-36-upload-art-success.png"
+              }
+            },
+            {
+              "enable": true,
+              "description": "SB_PRB_BDC_37 - Verify bulk duplicate thành công cho campaign 2D multiple Base 1 side Back",
+              "case_id": "SB_PRB_BDC_37",
+              "campaign_info": {
+                "pricing_info": {
+                  "title": "Campaign 2D multyl base 1side Back"
+                },
+                "product_infos": [
+                  {
+                    "category": "Apparel",
+                    "base_product": "Unisex Hoodie"
+                  },
+                  {
+                    "category": "Apparel",
+                    "base_product": "Unisex Tank"
+                  },
+                  {
+                    "category": "Apparel",
+                    "base_product": "Crewneck Sweatshirt"
+                  }
+                ],
+                "layers": [
+                  {
+                    "layer_type": "Text",
+                    "front_or_back": "Back"
+                  }
+                ]
+              },
+              "old_campaign": "artwork - Back",
+              "upload_infor": {
+                "is_column": true,
+                "artwork": "./data/shopbase/artwork - Back.png",
+                "campaign_name": "Campaign 2D multyl base 1side Back 1"
+              },
+              "campaign_detail": {
+                "campaign_name": "artwork - Back",
+                "tags": "hoodie,tank-top,crewneck,sweatshirt",
+                "style": ["Unisex Hoodie", "Unisex Tank", "Crewneck Sweatshirt"],
+                "color": ["White", "Black", "Sports Grey", "Ash", "Red", "Charcoal"],
+                "size": ["S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+                "number_image": 16
+              },
+              "picture": {
+                "ui_bulk_duplicate": "dev-SB-PRB-BDC-37-show-ui-bulk-duplicate.png",
+                "upload_art_success": "dev-SB-PRB-BDC-37-upload-art-success.png"
+              }
+            },
+            {
+              "enable": true,
+              "description": "SB_PRB_BDC_33 - Verify Bulk duplicate thành công campaign 2D multiple base only Back side khi import csv",
+              "case_id": "SB_PRB_BDC_33",
+              "type": "csv",
+              "campaign_info": {
+                "pricing_info": {
+                  "title": "Campaign 2D multyl base 1side Back"
+                },
+                "product_infos": [
+                  {
+                    "category": "Apparel",
+                    "base_product": "Unisex Hoodie"
+                  },
+                  {
+                    "category": "Apparel",
+                    "base_product": "Long Sleeve Tee"
+                  },
+                  {
+                    "category": "Apparel",
+                    "base_product": "V-neck T-shirt"
+                  }
+                ],
+                "layers": [
+                  {
+                    "layer_type": "Text",
+                    "front_or_back": "Back"
+                  }
+                ]
+              },
+              "old_campaign": "Campaign 2D back bulk by csv 1",
+              "path_file": "assets/import_art_bulk_csv/csv_campaign_2D_only_back_dev.csv",
+              "delete_campaign": "Campaign 2D multyl base 1side Back 1",
+              "index": 4,
+              "upload_infor": {
+                "campaign_name": "Campaign 2D multyl base 1side Back 1"
+              },
+              "campaign_detail": {
+                "campaign_name": "Campaign 2D back bulk by csv 1",
+                "tags": "cotton,unisex t-shirt,tank-top,v-neck,t-shirt",
+                "style": ["Unisex T-shirt", "Unisex Tank", "V-neck T-shirt"],
+                "color": ["White", "Black", "Dark Chocolate", "Ash", "Sports Grey", "Red", "Asphalt"],
+                "size": ["S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL", "XS"],
+                "number_image": 16
+              },
+              "picture": {
+                "ui_bulk_duplicate": "dev-SB-PRB-BDC-33-show-ui-bulk-duplicate.png",
+                "upload_art_success": "dev-SB-PRB-BDC-33-upload-art-success.png"
+              }
+            },
+            {
+              "enable": true,
+              "description": "SB_PRB_BDC_35 - Verify bulk duplicate thành công cho campaign 2D multiple base 2 mặt khi import csv",
+              "case_id": "SB_PRB_BDC_35",
+              "type": "csv",
+              "campaign_info": {
+                "pricing_info": {
+                  "title": "Camp origin 2D multyple base 2 side"
+                },
+                "product_infos": [
+                  {
+                    "category": "Apparel",
+                    "base_product": "Unisex T-shirt"
+                  },
+                  {
+                    "category": "Apparel",
+                    "base_product": "Unisex Tank"
+                  },
+                  {
+                    "category": "Apparel",
+                    "base_product": "Crewneck Sweatshirt"
+                  }
+                ],
+                "layers": [
+                  {
+                    "layer_type": "Text",
+                    "front_or_back": "Front"
+                  },
+                  {
+                    "layer_type": "Text",
+                    "front_or_back": "Back"
+                  }
+                ]
+              },
+              "old_campaign": "Campaign bulk by csv 1",
+              "path_file": "assets/import_art_bulk_csv/csv_campaign_2D_multiple_base_2_side.csv",
+              "delete_campaign": "Camp origin 2D multyple base 2 side 1",
+              "index": 4,
+              "upload_infor": {
+                "campaign_name": "Camp origin 2D multyple base 2 side 1"
+              },
+              "campaign_detail": {
+                "campaign_name": "Campaign bulk by csv 1",
+                "tags": "cotton,unisex t-shirt,tank-top,crewneck,sweatshirt",
+                "style": ["Unisex T-shirt", "Unisex Tank", "Crewneck Sweatshirt"],
+                "color": ["White", "Black", "Sports Grey", "Ash", "Red", "Dark Chocolate"],
+                "size": ["S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+                "number_image": 56
+              },
+              "picture": {
+                "ui_bulk_duplicate": "dev-SB-PRB-BDC-35-show-ui-bulk-duplicate.png",
+                "upload_art_success": "dev-SB-PRB-BDC-35-upload-art-success.png"
+              }
+            },
+            {
+              "enable": true,
+              "description": "SB_PRB_BDC_38 - Verify bulk duplicate thành công  cho campaign 3D multiple base 1 mặt và  base 2 mặt khi import csv",
+              "case_id": "SB_PRB_BDC_38",
+              "type": "csv",
+              "campaign_info": {
+                "pricing_info": {
+                  "title": "Campaign 3D multiple base 2 side and base 1side"
+                },
+                "product_infos": [
+                  {
+                    "category": "All Over Print",
+                    "base_product": "AOP Beach Shorts"
+                  },
+                  {
+                    "category": "All Over Print",
+                    "base_product": "AOP Hoodie"
+                  }
+                ],
+                "layers": [
+                  {
+                    "layer_type": "Text",
+                    "front_or_back": "Front"
+                  },
+                  {
+                    "layer_type": "Text",
+                    "front_or_back": "Back"
+                  }
+                ]
+              },
+              "campaign_origin": "Campaign 3D multiple base 2 side and base 1side",
+              "old_campaign": "Campaign 3D mix base bulk by csv 1",
+              "path_file": "assets/import_art_bulk_csv/csv_campaign_3D_multiple_base_2_side_1side.csv",
+              "delete_campaign": "Campaign 3D multiple base 2 side and base 1side 1",
+              "index": 5,
+              "upload_infor": {
+                "campaign_name": "Campaign 3D multiple base 2 side and base 1side 1"
+              },
+              "campaign_detail": {
+                "campaign_name": "Campaign 3D mix base bulk by csv 1",
+                "tags": "all-over-print,beach-shorts,hoodie",
+                "style": ["Beach Shorts", "All Over Print Hoodie"],
+                "color": ["All over print"],
+                "size": ["S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+                "number_image": 12
+              },
+              "picture": {
+                "ui_bulk_duplicate": "dev-SB-PRB-BDC-38-show-ui-bulk-duplicate.png",
+                "upload_art_success": "dev-SB-PRB-BDC-38-upload-art-success.png"
+              }
+            },
+            {
+              "enable": true,
+              "description": "SB_PRB_BDC_42 - Verify bulk duplicate thành công  cho campaign có cả base 2D và base 3D khi import csv",
+              "case_id": "SB_PRB_BDC_42",
+              "type": "csv",
+              "campaign_info": {
+                "pricing_info": {
+                  "title": "Campaign 3D mix 2D"
+                },
+                "product_infos": [
+                  {
+                    "category": "Apparel",
+                    "base_product": "Unisex T-shirt"
+                  },
+                  {
+                    "category": "All Over Print",
+                    "base_product": "AOP Beach Shorts"
+                  },
+                  {
+                    "category": "All Over Print",
+                    "base_product": "AOP Hoodie"
+                  }
+                ],
+                "layers": [
+                  {
+                    "layer_type": "Text",
+                    "front_or_back": "Front"
+                  },
+                  {
+                    "layer_type": "Text",
+                    "front_or_back": "Back"
+                  }
+                ]
+              },
+              "campaign_origin": "Campaign 3D mix 2D",
+              "old_campaign": "Campaign 3D mix 2D bulk by csv 1",
+              "path_file": "assets/import_art_bulk_csv/csv_campaign_mix 2D_3D.csv",
+              "delete_campaign": "Campaign 3D mix 2D 1",
+              "index": 6,
+              "upload_infor": {
+                "campaign_name": "Campaign 3D mix 2D 1"
+              },
+              "campaign_detail": {
+                "campaign_name": "Campaign 3D mix 2D bulk by csv 1",
+                "tags": "all-over-print,beach-shorts,hoodie,cotton,unisex t-shirt",
+                "style": ["Beach Shorts", "All Over Print Hoodie", "Unisex T-shirt"],
+                "color": ["All over print", "White", "Black", "Dark Chocolate", "Ash"],
+                "size": ["S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+                "number_image": 36
+              },
+              "picture": {
+                "ui_bulk_duplicate": "dev-SB-PRB-BDC-42-show-ui-bulk-duplicate.png",
+                "upload_art_success": "dev-SB-PRB-BDC-42-upload-art-success.png"
+              }
+            },
+            {
+              "enable": true,
+              "description": "SB_PRB_BDC_41 - Verify bulk duplicate thành công cho campaign 2D có nhiều Base 2 side",
+              "case_id": "SB_PRB_BDC_41",
+              "campaign_info": {
+                "pricing_info": {
+                  "title": "Camp origin 2D multyple base 2 side"
+                },
+                "product_infos": [
+                  {
+                    "category": "Apparel",
+                    "base_product": "Unisex T-shirt"
+                  },
+                  {
+                    "category": "Apparel",
+                    "base_product": "Unisex Tank"
+                  },
+                  {
+                    "category": "Apparel",
+                    "base_product": "V-neck T-shirt"
+                  }
+                ],
+                "layers": [
+                  {
+                    "layer_type": "Text",
+                    "front_or_back": "Front"
+                  },
+                  {
+                    "layer_type": "Text",
+                    "front_or_back": "Back"
+                  }
+                ]
+              },
+              "old_campaign": "artwork",
+              "upload_infor": {
+                "is_column": true,
+                "side": "front",
+                "side_back": "back",
+                "campaign_name": "Camp origin 2D multyple base 2 side 1",
+                "artwork": "./data/shopbase/artwork.png",
+                "artwork_back": "./data/shopbase/artwork - Back.png",
+                "index_side": 3
+              },
+              "campaign_detail": {
+                "campaign_name": "artwork",
+                "tags": "cotton,unisex t-shirt,tank-top,v-neck,t-shirt",
+                "style": ["Unisex Hoodie", "Unisex Tank", "Crewneck Sweatshirt"],
+                "color": ["White", "Black", "Dark Chocolate", "Ash", "Sports Grey", "Red", "Asphalt"],
+                "size": ["S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL", "XS"],
+                "number_image": 56
+              },
+              "picture": {
+                "ui_bulk_duplicate": "dev-SB-PRB-BDC-41-show-ui-bulk-duplicate.png",
+                "upload_art_success": "dev-SB-PRB-BDC-41-upload-art-success.png"
+              }
+            },
+            {
+              "enable": true,
+              "description": "SB_PRB_BDC_40 - Verify bulk duplicate thành công cho camp 3D multiple base 1 side",
+              "case_id": "SB_PRB_BDC_40",
+              "campaign_info": {
+                "pricing_info": {
+                  "title": "Camp origin 3D multyple base 1side"
+                },
+                "product_infos": [
+                  {
+                    "category": "All Over Print",
+                    "base_product": "AOP Beach Shorts"
+                  },
+                  {
+                    "category": "Home & Living",
+                    "base_product": "Quilt"
+                  }
+                ],
+                "layers": [
+                  {
+                    "layer_type": "Text",
+                    "front_or_back": "Front"
+                  },
+                  {
+                    "layer_type": "Text",
+                    "front_or_back": "Back"
+                  }
+                ]
+              },
+              "old_campaign": "Artwork Catalog",
+              "upload_infor": {
+                "is_column": false,
+                "campaign_name": "Camp origin 3D multyple base 1side 1",
+                "artwork": ["./data/shopbase/Artwork Catalog.jpg", "./data/shopbase/ArtworkWL.png"],
+                "index_side": 2
+              },
+              "campaign_detail": {
+                "campaign_name": "Artwork Catalog",
+                "tags": "all-over-print,beach-shorts,quilt",
+                "style": ["Beach Shorts", "Quilt"],
+                "color": ["All over print"],
+                "size": [
+                  "S",
+                  "M",
+                  "L",
+                  "XL",
+                  "2XL",
+                  "3XL",
+                  "4XL",
+                  "5XL",
+                  "Single",
+                  "Twin",
+                  "Queen",
+                  "King",
+                  "Super King"
+                ],
+                "number_image": 11
+              },
+              "picture": {
+                "ui_bulk_duplicate": "dev-SB-PRB-BDC-40-show-ui-bulk-duplicate.png",
+                "upload_art_success": "dev-SB-PRB-BDC-40-upload-art-success.png"
+              }
+            },
+            {
+              "enable": true,
+              "description": "SB_PRB_BDC_43 - Verify action upload artwork cho camp AOP 2 side 1 base",
+              "case_id": "SB_PRB_BDC_43",
+              "campaign_info": {
+                "pricing_info": {
+                  "title": "Campaign AOP 2 side 1 base"
+                },
+                "product_infos": [
+                  {
+                    "category": "All Over Print",
+                    "base_product": "AOP Hoodie"
+                  }
+                ],
+                "layers": [
+                  {
+                    "layer_type": "Text",
+                    "front_or_back": "Front"
+                  },
+                  {
+                    "layer_type": "Text",
+                    "front_or_back": "Back"
+                  }
+                ]
+              },
+              "old_campaign": "art aop hoodie",
+              "upload_infor": {
+                "is_column": true,
+                "side": "front",
+                "side_back": "back",
+                "artwork": "./data/shopbase/art aop hoodie.jpg",
+                "artwork_back": "./data/shopbase/ArtworkWL.png",
+                "campaign_name": "Campaign AOP 2 side 1 base 1",
+                "index_side": 3
+              },
+              "campaign_detail": {
+                "campaign_name": "art aop hoodie",
+                "tags": "all-over-print,hoodie",
+                "style": ["All Over Print Hoodie"],
+                "color": ["All over print"],
+                "size": ["S", "M", "L", "XL", "2XL", "3XL", "4XL"],
+                "number_image": 5
+              },
+              "picture": {
+                "ui_bulk_duplicate": "dev-SB-PRB-BDC-43-show-ui-bulk-duplicate.png",
+                "upload_art_success": "dev-SB-PRB-BDC-43-upload-art-success.png"
+              }
+            },
+            {
+              "enable": true,
+              "description": "SB_PRB_BDC_44 - Verify bulk duplicate thành công cho camp AOP 2 side multiple base",
+              "case_id": "SB_PRB_BDC_44",
+              "campaign_info": {
+                "pricing_info": {
+                  "title": "Campaign AOP 2 side multiple base"
+                },
+                "product_infos": [
+                  {
+                    "category": "All Over Print",
+                    "base_product": "AOP Hoodie"
+                  }
+                ],
+                "layers": [
+                  {
+                    "layer_type": "Text",
+                    "front_or_back": "Front"
+                  },
+                  {
+                    "layer_type": "Text",
+                    "front_or_back": "Back"
+                  }
+                ]
+              },
+              "old_campaign": "art aop hoodie",
+              "upload_infor": {
+                "is_column": false,
+                "side": "front",
+                "side_back": "back",
+                "artwork": ["./data/shopbase/art aop hoodie.jpg", "./data/shopbase/ArtworkWL.png"],
+                "artwork_back": ["./data/shopbase/ArtworkWL.png", "./data/shopbase/Template AOP Zip Hoodie Front.png"],
+                "campaign_name": "Campaign AOP 2 side multiple base 1",
+                "index_side": 2
+              },
+              "campaign_detail": {
+                "campaign_name": "art aop hoodie",
+                "tags": "all-over-print,hoodie,all-over-tee",
+                "style": ["All Over Print Hoodie", "All Over Print T-Shirt"],
+                "color": ["All over print"],
+                "size": ["S", "M", "L", "XL", "2XL", "3XL", "4XL"],
+                "number_image": 12
+              },
+              "picture": {
+                "ui_bulk_duplicate": "dev-SB-PRB-BDC-44-show-ui-bulk-duplicate.png",
+                "upload_art_success": "dev-SB-PRB-BDC-44-upload-art-success.png"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "timeout": "2500000",
+  "snapshot_options": {
+    "maxDiffPixelRatio": 0.05,
+    "threshold": 0.1,
+    "maxDiffPixels": 2000
+  },
+  "cases": {
+    "SB_PRB_BDC_30": {
+      "image": "ui-bulk-duplicate-screen-SB-PRB-BDC-30.png",
+      "campaign_info": {
+        "pricing_info": {
+          "title": "Campaign 2D multyl 1side"
+        },
+        "product_infos": [
+          {
+            "category": "Apparel",
+            "base_product": "Unisex T-shirt"
+          },
+          {
+            "category": "Apparel",
+            "base_product": "Unisex Tank"
+          },
+          {
+            "category": "Apparel",
+            "base_product": "V-neck T-shirt"
+          }
+        ],
+        "layers": [
+          {
+            "layer_type": "Text",
+            "front_or_back": "Front"
+          }
+        ]
+      },
+      "DATA_UPLOAD_ART_INVALID": {
+        "data": [
+          {
+            "side": "Front",
+            "step_upload_art": "Click button [UploadFiles] > Select Image không đúng định dạng file",
+            "upload_infor": {
+              "is_column": true,
+              "campaign_name": "Campaign 2D multyl 1side 1",
+              "artwork": "./data/shopbase/product-sample-import.csv"
+            },
+            "picture": {
+              "show_message_error": "message-with-invalid-art-file-SB-PRB-BDC-30.png",
+              "show_delete_art": "delete-invalid-art-file-SB-PRB-BDC-30.png"
+            }
+          },
+          {
+            "side": "Front",
+            "step_upload_art": "Click button [UploadFiles] > Select Image không đúng kích thước vùng in",
+            "upload_infor": {
+              "is_column": true,
+              "campaign_name": "Campaign 2D multyl 1side 1",
+              "artwork": "./data/shopbase/Dog 1.png"
+            },
+            "picture": {
+              "show_message_error": "message-with-invalid-art-vung-in-SB-PRB-BDC-30.png",
+              "show_delete_art": "delete-invalid-art-vung-in-SB-PRB-BDC-30.png"
+            }
+          }
+        ]
+      }
+    },
+    "SB_PRB_BDC_34": {
+      "case_id": "SB_PRB_BDC_34",
+      "campaign_origin": "Campaign 2D multyl 1side",
+      "campaign_info": {
+        "pricing_info": {
+          "title": "Campaign 2D multyl 1side"
+        },
+        "product_infos": [
+          {
+            "category": "Apparel",
+            "base_product": "Unisex T-shirt"
+          },
+          {
+            "category": "Apparel",
+            "base_product": "Unisex Tank"
+          },
+          {
+            "category": "Apparel",
+            "base_product": "Crewneck Sweatshirt"
+          }
+        ],
+        "layers": [
+          {
+            "layer_type": "Text",
+            "front_or_back": "Front"
+          }
+        ]
+      },
+      "number_campaign": "3",
+      "delete_campaign": "BD_4",
+      "index": 4,
+      "edit_campaign": "BD_2",
+      "value_edit": "edit campaign name",
+      "list_campaign": "BD_1,BD_3",
+      "upload_infor": {
+        "is_column": true,
+        "artwork": [
+          "./data/shopbase/BD_1.png",
+          "./data/shopbase/BD_2.png",
+          "./data/shopbase/BD_3.png",
+          "./data/shopbase/BD_4.png"
+        ]
+      },
+      "campaign_detail": {
+        "campaign_name": "edit campaign name",
+        "tags": "cotton,unisex t-shirt,tank-top,crewneck,sweatshirt",
+        "style": ["Unisex T-shirt", "Unisex Tank", "Crewneck Sweatshirt"],
+        "color": ["White", "Black", "Sports Grey", "Ash", "Red", "Dark Chocolate"],
+        "size": ["S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+        "number_image": 40
+      },
+      "picture": {
+        "add_campaign": "image-after-add-campaign-SB-PRB-BDC-34.png",
+        "delete_1_campaign": "image-after-delete-campaign-SB-PRB-BDC-34.png",
+        "delete_more_campaign": "image-after-delete-more-campaign-SB-PRB-BDC-34.png",
+        "edit_title": "image-after-edit-title-campaign-SB-PRB-BDC-34.png"
+      }
+    },
+    "DATA_DRIVEN_BULK_DUPLICATE_CAMPAIGN": {
+      "data": [
+        {
+          "enable": true,
+          "description": "SB_PRB_BDC_36 - Verify bulk duplicate thành công cho campaign 2D multiple Base 1 side Front",
+          "case_id": "SB_PRB_BDC_36",
+          "campaign_info": {
+            "pricing_info": {
+              "title": "Campaign 2D multyl 1side"
+            },
+            "product_infos": [
+              {
+                "category": "Apparel",
+                "base_product": "Unisex T-shirt"
+              },
+              {
+                "category": "Apparel",
+                "base_product": "Unisex Tank"
+              },
+              {
+                "category": "Apparel",
+                "base_product": "Crewneck Sweatshirt"
+              }
+            ],
+            "layers": [
+              {
+                "layer_type": "Text",
+                "front_or_back": "Front"
+              }
+            ]
+          },
+          "old_campaign": "artwork1 - Front",
+          "upload_infor": {
+            "is_column": true,
+            "artwork": "./data/shopbase/artwork1 - Front.png",
+            "campaign_name": "Campaign 2D multyl 1side 1"
+          },
+          "campaign_detail": {
+            "campaign_name": "artwork1 - Front",
+            "tags": "cotton,unisex t-shirt,tank-top,crewneck,sweatshirt",
+            "style": ["Unisex T-shirt", "Unisex Tank", "Crewneck Sweatshirt"],
+            "color": ["White", "Black", "Sports Grey", "Ash", "Red", "Dark Chocolate"],
+            "size": ["S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+            "number_image": 40
+          },
+          "picture": {
+            "ui_bulk_duplicate": "SB-PRB-BDC-36-show-ui-bulk-duplicate.png",
+            "upload_art_success": "SB-PRB-BDC-36-upload-art-success.png"
+          }
+        },
+        {
+          "enable": true,
+          "description": "SB_PRB_BDC_37 - Verify bulk duplicate thành công cho campaign 2D multiple Base 1 side Back",
+          "case_id": "SB_PRB_BDC_37",
+          "campaign_info": {
+            "pricing_info": {
+              "title": "Campaign 2D multyl base 1side Back"
+            },
+            "product_infos": [
+              {
+                "category": "Apparel",
+                "base_product": "Unisex Hoodie"
+              },
+              {
+                "category": "Apparel",
+                "base_product": "Long Sleeve Tee"
+              },
+              {
+                "category": "Apparel",
+                "base_product": "Crewneck Sweatshirt"
+              }
+            ],
+            "layers": [
+              {
+                "layer_type": "Text",
+                "front_or_back": "Back"
+              }
+            ]
+          },
+          "old_campaign": "artwork - Back",
+          "upload_infor": {
+            "is_column": true,
+            "artwork": "./data/shopbase/artwork - Back.png",
+            "campaign_name": "Campaign 2D multyl base 1side Back 1"
+          },
+          "campaign_detail": {
+            "campaign_name": "artwork - Back",
+            "tags": "hoodie,long-sleeve,t-shirt,crewneck,sweatshirt",
+            "style": ["Unisex Hoodie", "Long Sleeve Tee", "Crewneck Sweatshirt"],
+            "color": ["White", "Black", "Sports Grey", "Ash", "Charcoal"],
+            "size": ["S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+            "number_image": 16
+          },
+          "picture": {
+            "ui_bulk_duplicate": "SB-PRB-BDC-37-show-ui-bulk-duplicate.png",
+            "upload_art_success": "SB-PRB-BDC-37-upload-art-success.png"
+          }
+        },
+        {
+          "enable": true,
+          "description": "SB_PRB_BDC_33 - Verify Bulk duplicate thành công campaign 2D multiple base only Back side khi import csv",
+          "case_id": "SB_PRB_BDC_33",
+          "type": "csv",
+          "campaign_info": {
+            "pricing_info": {
+              "title": "Campaign 2D multyl base 1side Back"
+            },
+            "product_infos": [
+              {
+                "category": "Apparel",
+                "base_product": "Unisex Hoodie"
+              },
+              {
+                "category": "Apparel",
+                "base_product": "Long Sleeve Tee"
+              },
+              {
+                "category": "Apparel",
+                "base_product": "Crewneck Sweatshirt"
+              }
+            ],
+            "layers": [
+              {
+                "layer_type": "Text",
+                "front_or_back": "Back"
+              }
+            ]
+          },
+          "old_campaign": "Campaign 2D back bulk by csv 1",
+          "path_file": "assets/import_art_bulk_csv/csv_campaign_2D_only_back.csv",
+          "delete_campaign": "Campaign 2D multyl base 1side Back 1",
+          "index": 4,
+          "upload_infor": {
+            "campaign_name": "Campaign 2D multyl base 1side Back 1"
+          },
+          "campaign_detail": {
+            "campaign_name": "Campaign 2D back bulk by csv 1",
+            "tags": "hoodie,long-sleeve,t-shirt,crewneck,sweatshirt",
+            "style": ["Unisex Hoodie", "Long Sleeve Tee", "Crewneck Sweatshirt"],
+            "color": ["White", "Black", "Sports Grey", "Ash", "Charcoal"],
+            "size": ["S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+            "number_image": 16
+          },
+          "picture": {
+            "ui_bulk_duplicate": "SB-PRB-BDC-33-show-ui-bulk-duplicate.png",
+            "upload_art_success": "SB-PRB-BDC-33-upload-art-success.png"
+          }
+        },
+        {
+          "enable": true,
+          "description": "SB_PRB_BDC_35 - Verify bulk duplicate thành công cho campaign 2D multiple base 2 mặt khi import csv",
+          "case_id": "SB_PRB_BDC_35",
+          "type": "csv",
+          "campaign_info": {
+            "pricing_info": {
+              "title": "Camp origin 2D multyple base 2 side"
+            },
+            "product_infos": [
+              {
+                "category": "Apparel",
+                "base_product": "Unisex T-shirt"
+              },
+              {
+                "category": "Apparel",
+                "base_product": "Unisex Tank"
+              },
+              {
+                "category": "Apparel",
+                "base_product": "Crewneck Sweatshirt"
+              }
+            ],
+            "layers": [
+              {
+                "layer_type": "Text",
+                "front_or_back": "Front"
+              },
+              {
+                "layer_type": "Text",
+                "front_or_back": "Back"
+              }
+            ]
+          },
+          "old_campaign": "Campaign bulk by csv 1",
+          "path_file": "assets/import_art_bulk_csv/csv_campaign_2D_multiple_base_2_side.csv",
+          "delete_campaign": "Camp origin 2D multyple base 2 side 1",
+          "index": 4,
+          "upload_infor": {
+            "campaign_name": "Camp origin 2D multyple base 2 side 1"
+          },
+          "campaign_detail": {
+            "campaign_name": "Campaign bulk by csv 1",
+            "tags": "cotton,unisex t-shirt,tank-top,crewneck,sweatshirt",
+            "style": ["Unisex T-shirt", "Unisex Tank", "Crewneck Sweatshirt"],
+            "color": ["White", "Black", "Sports Grey", "Ash", "Red", "Dark Chocolate"],
+            "size": ["S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+            "number_image": 56
+          },
+          "picture": {
+            "ui_bulk_duplicate": "SB-PRB-BDC-35-show-ui-bulk-duplicate.png",
+            "upload_art_success": "SB-PRB-BDC-35-upload-art-success.png"
+          }
+        },
+        {
+          "enable": true,
+          "description": "SB_PRB_BDC_38 - Verify bulk duplicate thành công  cho campaign 3D multiple base 1 mặt và  base 2 mặt khi import csv",
+          "case_id": "SB_PRB_BDC_38",
+          "type": "csv",
+          "campaign_info": {
+            "pricing_info": {
+              "title": "Campaign 3D multiple base 2 side and base 1side"
+            },
+            "product_infos": [
+              {
+                "category": "All Over Print",
+                "base_product": "AOP Beach Shorts"
+              },
+              {
+                "category": "All Over Print",
+                "base_product": "AOP Hoodie"
+              }
+            ],
+            "layers": [
+              {
+                "layer_type": "Text",
+                "front_or_back": "Front"
+              },
+              {
+                "layer_type": "Text",
+                "front_or_back": "Back"
+              }
+            ]
+          },
+          "campaign_origin": "Campaign 3D multiple base 2 side and base 1side",
+          "old_campaign": "Campaign 3D mix base bulk by csv 1",
+          "path_file": "assets/import_art_bulk_csv/csv_campaign_3D_multiple_base_2_side_1side.csv",
+          "delete_campaign": "Campaign 3D multiple base 2 side and base 1side 1",
+          "index": 5,
+          "upload_infor": {
+            "campaign_name": "Campaign 3D multiple base 2 side and base 1side 1"
+          },
+          "campaign_detail": {
+            "campaign_name": "Campaign 3D mix base bulk by csv 1",
+            "tags": "all-over-print,beach-shorts,hoodie",
+            "style": ["Beach Shorts", "All Over Print Hoodie"],
+            "color": ["All over print"],
+            "size": ["S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+            "number_image": 12
+          },
+          "picture": {
+            "ui_bulk_duplicate": "SB-PRB-BDC-38-show-ui-bulk-duplicate.png",
+            "upload_art_success": "SB-PRB-BDC-38-upload-art-success.png"
+          }
+        },
+        {
+          "enable": true,
+          "description": "SB_PRB_BDC_42 - Verify bulk duplicate thành công  cho campaign có cả base 2D và base 3D khi import csv",
+          "case_id": "SB_PRB_BDC_42",
+          "type": "csv",
+          "campaign_info": {
+            "pricing_info": {
+              "title": "Campaign 3D mix 2D"
+            },
+            "product_infos": [
+              {
+                "category": "Apparel",
+                "base_product": "Unisex T-shirt"
+              },
+              {
+                "category": "All Over Print",
+                "base_product": "AOP Beach Shorts"
+              },
+              {
+                "category": "All Over Print",
+                "base_product": "AOP Hoodie"
+              }
+            ],
+            "layers": [
+              {
+                "layer_type": "Text",
+                "front_or_back": "Front"
+              },
+              {
+                "layer_type": "Text",
+                "front_or_back": "Back"
+              }
+            ]
+          },
+          "campaign_origin": "Campaign 3D mix 2D",
+          "old_campaign": "Campaign 3D mix 2D bulk by csv 1",
+          "path_file": "assets/import_art_bulk_csv/csv_campaign_mix 2D_3D.csv",
+          "delete_campaign": "Campaign 3D mix 2D 1",
+          "index": 6,
+          "upload_infor": {
+            "campaign_name": "Campaign 3D mix 2D 1"
+          },
+          "campaign_detail": {
+            "campaign_name": "Campaign 3D mix 2D bulk by csv 1",
+            "tags": "all-over-print,beach-shorts,hoodie,cotton,unisex t-shirt",
+            "style": ["Beach Shorts", "All Over Print Hoodie", "Unisex T-shirt"],
+            "color": ["All over print", "White", "Black", "Dark Chocolate", "Ash"],
+            "size": ["S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+            "number_image": 36
+          },
+          "picture": {
+            "ui_bulk_duplicate": "SB-PRB-BDC-42-show-ui-bulk-duplicate.png",
+            "upload_art_success": "SB-PRB-BDC-42-upload-art-success.png"
+          }
+        },
+        {
+          "enable": true,
+          "description": "SB_PRB_BDC_41 - Verify bulk duplicate thành công cho campaign 2D có nhiều Base 2 side",
+          "case_id": "SB_PRB_BDC_41",
+          "campaign_info": {
+            "pricing_info": {
+              "title": "Camp origin 2D multyple base 2 side"
+            },
+            "product_infos": [
+              {
+                "category": "Apparel",
+                "base_product": "Unisex T-shirt"
+              },
+              {
+                "category": "Apparel",
+                "base_product": "Unisex Tank"
+              },
+              {
+                "category": "Apparel",
+                "base_product": "Crewneck Sweatshirt"
+              }
+            ],
+            "layers": [
+              {
+                "layer_type": "Text",
+                "front_or_back": "Front"
+              },
+              {
+                "layer_type": "Text",
+                "front_or_back": "Back"
+              }
+            ]
+          },
+          "old_campaign": "artwork",
+          "upload_infor": {
+            "is_column": true,
+            "side": "front",
+            "side_back": "back",
+            "campaign_name": "Camp origin 2D multyple base 2 side 1",
+            "artwork": "./data/shopbase/artwork.png",
+            "artwork_back": "./data/shopbase/artwork - Back.png",
+            "index_side": 3
+          },
+          "campaign_detail": {
+            "campaign_name": "artwork",
+            "tags": "cotton,unisex t-shirt,tank-top,crewneck,sweatshirt",
+            "style": ["Unisex T-shirt", "Unisex Tank", "Crewneck Sweatshirt"],
+            "color": ["White", "Black", "Sports Grey", "Ash", "Red", "Dark Chocolate"],
+            "size": ["S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+            "number_image": 56
+          },
+          "picture": {
+            "ui_bulk_duplicate": "SB-PRB-BDC-41-show-ui-bulk-duplicate.png",
+            "upload_art_success": "SB-PRB-BDC-41-upload-art-success.png"
+          }
+        },
+        {
+          "enable": true,
+          "description": "SB_PRB_BDC_40 - Verify bulk duplicate thành công cho camp 3D multiple base 1 side",
+          "case_id": "SB_PRB_BDC_40",
+          "campaign_info": {
+            "pricing_info": {
+              "title": "Camp origin 3D multyple base 1side"
+            },
+            "product_infos": [
+              {
+                "category": "All Over Print",
+                "base_product": "AOP Beach Shorts"
+              },
+              {
+                "category": "Home & Living",
+                "base_product": "Quilt"
+              }
+            ],
+            "layers": [
+              {
+                "layer_type": "Text",
+                "front_or_back": "Front"
+              },
+              {
+                "layer_type": "Text",
+                "front_or_back": "Back"
+              }
+            ]
+          },
+          "old_campaign": "Artwork Catalog",
+          "upload_infor": {
+            "is_column": false,
+            "campaign_name": "Camp origin 3D multyple base 1side 1",
+            "artwork": ["./data/shopbase/Artwork Catalog.jpg", "./data/shopbase/ArtworkWL.png"],
+            "index_side": 2
+          },
+          "campaign_detail": {
+            "campaign_name": "Artwork Catalog",
+            "tags": "all-over-print,beach-shorts,quilt",
+            "style": ["Beach Shorts", "Quilt"],
+            "color": ["All over print"],
+            "size": ["S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL", "Single", "Twin", "Queen", "King", "Super King"],
+            "number_image": 11
+          },
+          "picture": {
+            "ui_bulk_duplicate": "SB-PRB-BDC-40-show-ui-bulk-duplicate.png",
+            "upload_art_success": "SB-PRB-BDC-40-upload-art-success.png"
+          }
+        },
+        {
+          "enable": true,
+          "description": "SB_PRB_BDC_43 - Verify action upload artwork cho camp AOP 2 side 1 base",
+          "case_id": "SB_PRB_BDC_43",
+          "campaign_info": {
+            "pricing_info": {
+              "title": "Campaign AOP 2 side 1 base"
+            },
+            "product_infos": [
+              {
+                "category": "All Over Print",
+                "base_product": "AOP Hoodie"
+              }
+            ],
+            "layers": [
+              {
+                "layer_type": "Text",
+                "front_or_back": "Front"
+              },
+              {
+                "layer_type": "Text",
+                "front_or_back": "Back"
+              }
+            ]
+          },
+          "old_campaign": "art aop hoodie",
+          "upload_infor": {
+            "is_column": true,
+            "side": "front",
+            "side_back": "back",
+            "artwork": "./data/shopbase/art aop hoodie.jpg",
+            "artwork_back": "./data/shopbase/ArtworkWL.png",
+            "campaign_name": "Campaign AOP 2 side 1 base 1",
+            "index_side": 3
+          },
+          "campaign_detail": {
+            "campaign_name": "art aop hoodie",
+            "tags": "all-over-print,hoodie",
+            "style": ["All Over Print Hoodie"],
+            "color": ["All over print"],
+            "size": ["S", "M", "L", "XL", "2XL", "3XL", "4XL"],
+            "number_image": 5
+          },
+          "picture": {
+            "ui_bulk_duplicate": "SB-PRB-BDC-43-show-ui-bulk-duplicate.png",
+            "upload_art_success": "SB-PRB-BDC-43-upload-art-success.png"
+          }
+        },
+        {
+          "enable": true,
+          "description": "SB_PRB_BDC_44 - Verify bulk duplicate thành công cho camp AOP 2 side multiple base",
+          "case_id": "SB_PRB_BDC_44",
+          "campaign_info": {
+            "pricing_info": {
+              "title": "Campaign AOP 2 side multiple base"
+            },
+            "product_infos": [
+              {
+                "category": "All Over Print",
+                "base_product": "AOP Hoodie"
+              }
+            ],
+            "layers": [
+              {
+                "layer_type": "Text",
+                "front_or_back": "Front"
+              },
+              {
+                "layer_type": "Text",
+                "front_or_back": "Back"
+              }
+            ]
+          },
+          "old_campaign": "art aop hoodie",
+          "upload_infor": {
+            "is_column": false,
+            "side": "front",
+            "side_back": "back",
+            "artwork": ["./data/shopbase/art aop hoodie.jpg", "./data/shopbase/ArtworkWL.png"],
+            "artwork_back": ["./data/shopbase/ArtworkWL.png", "./data/shopbase/Template AOP Zip Hoodie Front.png"],
+            "campaign_name": "Campaign AOP 2 side multiple base 1",
+            "title_after_upload": "art aop hoodie",
+            "index_side": 2
+          },
+          "campaign_detail": {
+            "campaign_name": "art aop hoodie",
+            "tags": "all-over-print,hoodie,all-over-tee",
+            "style": ["All Over Print Hoodie", "All Over Print T-Shirt"],
+            "color": ["All over print"],
+            "size": ["S", "M", "L", "XL", "2XL", "3XL", "4XL"],
+            "number_image": 10
+          },
+          "picture": {
+            "ui_bulk_duplicate": "SB-PRB-BDC-44-show-ui-bulk-duplicate.png",
+            "upload_art_success": "SB-PRB-BDC-44-upload-art-success.png"
+          }
+        }
+      ]
+    }
+  }
+}

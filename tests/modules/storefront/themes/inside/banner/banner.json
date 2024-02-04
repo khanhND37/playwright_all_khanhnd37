@@ -1,0 +1,1268 @@
+{
+  "env": {
+    "prod": {
+      "domain": "au-inside-bannerv2.onshopbase.com",
+      "shop_name": "au-inside-bannerv2.onshopbase.com",
+      "api": "https://api.shopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10295892,
+      "user_id": 73782
+    },
+    "prodtest": {
+      "domain": "au-inside-bannerv2-svtest-sfnext.onshopbase.com",
+      "shop_name": "au-inside-bannerv2-svtest-sfnext.onshopbase.com",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10287909,
+      "user_id": 73782,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "domain": "au-inside-banner.myshopbase.net",
+      "shop_name": "au-inside-banner",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_id": 10321568,
+      "user_id": 73800,
+      "cases": {
+        "DATA_DRIVEN": {
+          "data": [
+            {
+              "description": "Verify Banner on SF with data default when create new theme",
+              "case_id": "SB_OLS_THE_INS_SF_BANNER_1",
+              "expect": {
+                "count_section": 1,
+                "banner_image_link": "",
+                "primary_button_link": "",
+                "secondary_button_link": "",
+                "snapshot": "TC-INS-SF-BANNER-1.png"
+              }
+            },
+            {
+              "description": "Verify show Banner image on SF with uploaded image; navigate after click image link; heading and text are blank",
+              "case_id": "SB_OLS_THE_INS_SF_BANNER_2",
+              "input": {
+                "home": {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "heading": ""
+                      },
+                      "type": "heading",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "text": ""
+                      },
+                      "type": "text",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "primary_button_label": "View more",
+                        "primary_button_link": {
+                          "name": "",
+                          "position": 0,
+                          "subject": {
+                            "handle": ""
+                          },
+                          "type": "",
+                          "type_options": {
+                            "subject": "",
+                            "subject_id": null,
+                            "title": ""
+                          }
+                        },
+                        "secondary_button_label": "Shop now",
+                        "secondary_button_link": {
+                          "name": "",
+                          "position": 0,
+                          "subject": {
+                            "handle": ""
+                          },
+                          "type": "",
+                          "type_options": {
+                            "subject": "",
+                            "subject_id": null,
+                            "title": ""
+                          }
+                        }
+                      },
+                      "type": "button",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "alt_text": "Al text",
+                    "banner_image_link": {
+                      "name": "",
+                      "position": 0,
+                      "subject": {
+                        "handle": ""
+                      },
+                      "type": "collections",
+                      "type_options": {
+                        "subject": "all",
+                        "subject_id": null,
+                        "title": "all"
+                      }
+                    },
+                    "full_width": false,
+                    "image": "https://dev-img.btdmp.com/sbase-file/10321519/2022/09/22/1663832296871a8ec5ad.png",
+                    "opacity": 30,
+                    "text_alignment": "right",
+                    "text_position": "left"
+                  },
+                  "type": "banner",
+                  "visible": true
+                }
+              },
+              "expect": {
+                "alt_text": "Al text",
+                "banner_image_link": "collections",
+                "image": "https://dev-img.btdmp.com/sbase-file/10321519/2022/09/22/1663832296871a8ec5ad.png",
+                "primary_button_link": "",
+                "secondary_button_link": "",
+                "snapshot": "TC-INS-SF-BANNER-2.png"
+              }
+            },
+            {
+              "description": "Verify show Banner image on SF without image and navigate after click image link",
+              "case_id": "SB_OLS_THE_INS_SF_BANNER_3",
+              "input": {
+                "home": {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "heading": ""
+                      },
+                      "type": "heading",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "text": ""
+                      },
+                      "type": "text",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "primary_button_label": "View more",
+                        "primary_button_link": {
+                          "name": "",
+                          "position": 0,
+                          "subject": {
+                            "handle": ""
+                          },
+                          "type": "",
+                          "type_options": {
+                            "subject": "",
+                            "subject_id": null,
+                            "title": ""
+                          }
+                        },
+                        "secondary_button_label": "Shop now",
+                        "secondary_button_link": {
+                          "name": "",
+                          "position": 0,
+                          "subject": {
+                            "handle": ""
+                          },
+                          "type": "",
+                          "type_options": {
+                            "subject": "",
+                            "subject_id": null,
+                            "title": ""
+                          }
+                        }
+                      },
+                      "type": "button",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "alt_text": "Al text 1",
+                    "banner_image_link": {
+                      "name": "",
+                      "position": 0,
+                      "subject": {
+                        "handle": ""
+                      },
+                      "type": "collections",
+                      "type_options": {
+                        "subject": "all",
+                        "subject_id": null,
+                        "title": "all"
+                      }
+                    },
+                    "full_width": true,
+                    "image": "",
+                    "opacity": 65,
+                    "text_alignment": "left",
+                    "text_position": "center"
+                  },
+                  "type": "banner",
+                  "visible": true
+                }
+              },
+              "expect": {
+                "alt_text": "Al text 1",
+                "banner_image_link": "collections",
+                "snapshot": "TC-INS-SF-BANNER-3.png"
+              }
+            },
+            {
+              "description": "Verify show heading, text and 2 CTA button",
+              "case_id": "SB_OLS_THE_INS_SF_BANNER_4",
+              "input": {
+                "home": {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "primary_button_label": "View more",
+                        "primary_button_link": {
+                          "name": "",
+                          "position": 0,
+                          "subject": {
+                            "handle": ""
+                          },
+                          "type": "products",
+                          "type_options": {
+                            "subject": "all",
+                            "subject_id": null,
+                            "title": "all"
+                          }
+                        },
+                        "secondary_button_label": "Shop now",
+                        "secondary_button_link": {
+                          "name": "",
+                          "position": 0,
+                          "subject": {
+                            "handle": "contact-us"
+                          },
+                          "type": "pages",
+                          "type_options": {
+                            "subject": "",
+                            "subject_id": 85293470227,
+                            "title": "Contact Us"
+                          }
+                        }
+                      },
+                      "type": "button",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "text": "text content"
+                      },
+                      "type": "text",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "heading": "heading Banner"
+                      },
+                      "type": "heading",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "alt_text": "Al text 1",
+                    "banner_image_link": {
+                      "name": "",
+                      "position": 0,
+                      "subject": {
+                        "handle": ""
+                      },
+                      "type": "collections",
+                      "type_options": {
+                        "subject": "all",
+                        "subject_id": null,
+                        "title": "all"
+                      }
+                    },
+                    "full_width": true,
+                    "image": "",
+                    "opacity": 65,
+                    "text_alignment": "left",
+                    "text_position": "center"
+                  },
+                  "type": "banner",
+                  "visible": true
+                }
+              },
+              "expect": {
+                "primary_button_link": "/collections/all",
+                "secondary_button_link": "/pages/contact-us",
+                "snapshot": "TC-INS-SF-BANNER-4.png"
+              }
+            },
+            {
+              "description": "Verify hide block Heading, Text of Banner section",
+              "case_id": "SB_OLS_THE_INS_SF_BANNER_5",
+              "input": {
+                "home": {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "heading": "heading Banner"
+                      },
+                      "type": "heading"
+                    },
+                    {
+                      "settings": {
+                        "text": "text content"
+                      },
+                      "type": "text"
+                    },
+                    {
+                      "settings": {
+                        "primary_button_label": "View more",
+                        "primary_button_link": {
+                          "name": "",
+                          "position": 0,
+                          "subject": {
+                            "handle": ""
+                          },
+                          "type": "products",
+                          "type_options": {
+                            "subject": "all",
+                            "subject_id": null,
+                            "title": "all"
+                          }
+                        },
+                        "secondary_button_label": "Shop now",
+                        "secondary_button_link": {
+                          "name": "",
+                          "position": 0,
+                          "subject": {
+                            "handle": "contact-us"
+                          },
+                          "type": "pages",
+                          "type_options": {
+                            "subject": "",
+                            "subject_id": 85293470227,
+                            "title": "Contact Us"
+                          }
+                        }
+                      },
+                      "type": "button",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "alt_text": "Al text 1",
+                    "banner_image_link": {
+                      "name": "",
+                      "position": 0,
+                      "subject": {
+                        "handle": ""
+                      },
+                      "type": "collections",
+                      "type_options": {
+                        "subject": "all",
+                        "subject_id": null,
+                        "title": "all"
+                      }
+                    },
+                    "full_width": true,
+                    "image": "",
+                    "opacity": 65,
+                    "text_alignment": "left",
+                    "text_position": "center"
+                  },
+                  "type": "banner",
+                  "visible": true
+                }
+              },
+              "expect": {
+                "snapshot": "TC-INS-SF-BANNER-5.png"
+              }
+            },
+            {
+              "description": "Verify hide 2 CTA buttons of Banner section",
+              "case_id": "SB_OLS_THE_INS_SF_BANNER_6",
+              "input": {
+                "home": {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "heading": "heading Banner"
+                      },
+                      "type": "heading",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "text": "text content"
+                      },
+                      "type": "text",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "primary_button_label": "View more",
+                        "primary_button_link": {
+                          "name": "",
+                          "position": 0,
+                          "subject": {
+                            "handle": ""
+                          },
+                          "type": "products",
+                          "type_options": {
+                            "subject": "all",
+                            "subject_id": null,
+                            "title": "all"
+                          }
+                        },
+                        "secondary_button_label": "Shop now",
+                        "secondary_button_link": {
+                          "name": "",
+                          "position": 0,
+                          "subject": {
+                            "handle": "contact-us"
+                          },
+                          "type": "pages",
+                          "type_options": {
+                            "subject": "",
+                            "subject_id": 85293470227,
+                            "title": "Contact Us"
+                          }
+                        }
+                      },
+                      "type": "button"
+                    }
+                  ],
+                  "settings": {
+                    "alt_text": "Al text 1",
+                    "banner_image_link": {
+                      "name": "",
+                      "position": 0,
+                      "subject": {
+                        "handle": ""
+                      },
+                      "type": "collections",
+                      "type_options": {
+                        "subject": "all",
+                        "subject_id": null,
+                        "title": "all"
+                      }
+                    },
+                    "full_width": true,
+                    "image": "",
+                    "opacity": 65,
+                    "text_alignment": "left",
+                    "text_position": "center"
+                  },
+                  "type": "banner",
+                  "visible": true
+                }
+              },
+              "expect": {
+                "snapshot": "TC-INS-SF-BANNER-6.png"
+              }
+            },
+            {
+              "description": "Verify hide section",
+              "case_id": "SB_OLS_THE_INS_SF_BANNER_7",
+              "input": {
+                "home": {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "heading": ""
+                      },
+                      "type": "heading",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "text": ""
+                      },
+                      "type": "text",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "primary_button_label": "View more",
+                        "primary_button_link": {
+                          "name": "",
+                          "position": 0,
+                          "subject": {
+                            "handle": ""
+                          },
+                          "type": "",
+                          "type_options": {
+                            "subject": "",
+                            "subject_id": null,
+                            "title": ""
+                          }
+                        },
+                        "secondary_button_label": "Shop now",
+                        "secondary_button_link": {
+                          "name": "",
+                          "position": 0,
+                          "subject": {
+                            "handle": ""
+                          },
+                          "type": "",
+                          "type_options": {
+                            "subject": "",
+                            "subject_id": null,
+                            "title": ""
+                          }
+                        }
+                      },
+                      "type": "button",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "alt_text": "Al text",
+                    "banner_image_link": {
+                      "name": "",
+                      "position": 0,
+                      "subject": {
+                        "handle": ""
+                      },
+                      "type": "collections",
+                      "type_options": {
+                        "subject": "all",
+                        "subject_id": null,
+                        "title": "all"
+                      }
+                    },
+                    "full_width": false,
+                    "image": "https://dev-img.btdmp.com/sbase-file/10321519/2022/09/22/1663832296871a8ec5ad.png",
+                    "opacity": 30,
+                    "text_alignment": "right",
+                    "text_position": "left"
+                  },
+                  "type": "banner"
+                }
+              },
+              "expect": {
+                "count_section": 0
+              }
+            }
+          ]
+        },
+        "SB_OLS_THE_INS_SF_BANNER_8": {
+          "description": "Verify multiple section Banner on SF",
+          "data": {
+            "input": [
+              {
+                "home": {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "heading": "Banner Heading"
+                      },
+                      "type": "heading",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "text": "Content"
+                      },
+                      "type": "text",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "primary_button_label": "View more",
+                        "primary_button_link": null,
+                        "secondary_button_label": "Shop now",
+                        "secondary_button_link": null
+                      },
+                      "type": "button",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "alt_text": "",
+                    "banner_image_link": null,
+                    "full_width": false,
+                    "image": null,
+                    "opacity": 50,
+                    "text_alignment": "left",
+                    "text_position": "left"
+                  },
+                  "type": "banner",
+                  "visible": true
+                }
+              },
+              {
+                "home": {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "heading": "Banner Heading"
+                      },
+                      "type": "heading",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "text": "Content"
+                      },
+                      "type": "text",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "primary_button_label": "View more",
+                        "primary_button_link": null,
+                        "secondary_button_label": "Shop now",
+                        "secondary_button_link": null
+                      },
+                      "type": "button",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "alt_text": "",
+                    "banner_image_link": null,
+                    "full_width": false,
+                    "image": null,
+                    "opacity": 50,
+                    "text_alignment": "left",
+                    "text_position": "left"
+                  },
+                  "type": "banner",
+                  "visible": true
+                }
+              }
+            ],
+            "expect": {
+              "snapshot": "TC-INS-SF-BANNER-7.png, TC-INS-SF-BANNER-7.png"
+            }
+          }
+        }
+      }
+    }
+  },
+  "cases": {
+    "DATA_DRIVEN": {
+      "data": [
+        {
+          "description": "Verify Banner on SF with data default when create new theme",
+          "case_id": "SB_OLS_THE_INS_SF_BANNER_1",
+          "expect": {
+            "count_section": 1,
+            "banner_image_link": "",
+            "primary_button_link": "",
+            "secondary_button_link": "",
+            "snapshot": "TC-INS-SF-BANNER-1.png"
+          }
+        },
+        {
+          "description": "Verify show Banner image on SF with uploaded image; navigate after click image link; heading and text are blank",
+          "case_id": "SB_OLS_THE_INS_SF_BANNER_2",
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "heading": ""
+                  },
+                  "type": "heading",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "text": ""
+                  },
+                  "type": "text",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "primary_button_label": "View more",
+                    "primary_button_link": {
+                      "name": "",
+                      "position": 0,
+                      "subject": {
+                        "handle": ""
+                      },
+                      "type": "",
+                      "type_options": {
+                        "subject": "",
+                        "subject_id": null,
+                        "title": ""
+                      }
+                    },
+                    "secondary_button_label": "Shop now",
+                    "secondary_button_link": {
+                      "name": "",
+                      "position": 0,
+                      "subject": {
+                        "handle": ""
+                      },
+                      "type": "",
+                      "type_options": {
+                        "subject": "",
+                        "subject_id": null,
+                        "title": ""
+                      }
+                    }
+                  },
+                  "type": "button",
+                  "visible": true
+                }
+              ],
+              "settings": {
+                "alt_text": "Al text",
+                "banner_image_link": {
+                  "name": "",
+                  "position": 0,
+                  "subject": {
+                    "handle": ""
+                  },
+                  "type": "collections",
+                  "type_options": {
+                    "subject": "all",
+                    "subject_id": null,
+                    "title": "all"
+                  }
+                },
+                "full_width": false,
+                "image": "https://img.btdmp.com/files/10225015/2022/05/27/0x1296@16536362049c308fcd8d.png",
+                "opacity": 30,
+                "text_alignment": "right",
+                "text_position": "left"
+              },
+              "type": "banner",
+              "visible": true
+            }
+          },
+          "expect": {
+            "alt_text": "Al text",
+            "banner_image_link": "collections",
+            "image": "https://img.btdmp.com/files/10225015/2022/05/27/0x1296@16536362049c308fcd8d.png",
+            "primary_button_link": "",
+            "secondary_button_link": "",
+            "snapshot": "TC-INS-SF-BANNER-2.png"
+          }
+        },
+        {
+          "description": "Verify show Banner image on SF without image and navigate after click image link",
+          "case_id": "SB_OLS_THE_INS_SF_BANNER_3",
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "heading": ""
+                  },
+                  "type": "heading",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "text": ""
+                  },
+                  "type": "text",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "primary_button_label": "View more",
+                    "primary_button_link": {
+                      "name": "",
+                      "position": 0,
+                      "subject": {
+                        "handle": ""
+                      },
+                      "type": "",
+                      "type_options": {
+                        "subject": "",
+                        "subject_id": null,
+                        "title": ""
+                      }
+                    },
+                    "secondary_button_label": "Shop now",
+                    "secondary_button_link": {
+                      "name": "",
+                      "position": 0,
+                      "subject": {
+                        "handle": ""
+                      },
+                      "type": "",
+                      "type_options": {
+                        "subject": "",
+                        "subject_id": null,
+                        "title": ""
+                      }
+                    }
+                  },
+                  "type": "button",
+                  "visible": true
+                }
+              ],
+              "settings": {
+                "alt_text": "Al text 1",
+                "banner_image_link": {
+                  "name": "",
+                  "position": 0,
+                  "subject": {
+                    "handle": ""
+                  },
+                  "type": "collections",
+                  "type_options": {
+                    "subject": "all",
+                    "subject_id": null,
+                    "title": "all"
+                  }
+                },
+                "full_width": true,
+                "image": "",
+                "opacity": 65,
+                "text_alignment": "left",
+                "text_position": "center"
+              },
+              "type": "banner",
+              "visible": true
+            }
+          },
+          "expect": {
+            "alt_text": "Al text 1",
+            "banner_image_link": "collections",
+            "snapshot": "TC-INS-SF-BANNER-3.png"
+          }
+        },
+        {
+          "description": "Verify show heading, text and 2 CTA button",
+          "case_id": "SB_OLS_THE_INS_SF_BANNER_4",
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "primary_button_label": "View more",
+                    "primary_button_link": {
+                      "name": "",
+                      "position": 0,
+                      "subject": {
+                        "handle": ""
+                      },
+                      "type": "products",
+                      "type_options": {
+                        "subject": "all",
+                        "subject_id": null,
+                        "title": "all"
+                      }
+                    },
+                    "secondary_button_label": "Shop now",
+                    "secondary_button_link": {
+                      "name": "",
+                      "position": 0,
+                      "subject": {
+                        "handle": "contact-us"
+                      },
+                      "type": "pages",
+                      "type_options": {
+                        "subject": "",
+                        "subject_id": 85293470227,
+                        "title": "Contact Us"
+                      }
+                    }
+                  },
+                  "type": "button",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "text": "text content"
+                  },
+                  "type": "text",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "heading": "heading Banner"
+                  },
+                  "type": "heading",
+                  "visible": true
+                }
+              ],
+              "settings": {
+                "alt_text": "Al text 1",
+                "banner_image_link": {
+                  "name": "",
+                  "position": 0,
+                  "subject": {
+                    "handle": ""
+                  },
+                  "type": "collections",
+                  "type_options": {
+                    "subject": "all",
+                    "subject_id": null,
+                    "title": "all"
+                  }
+                },
+                "full_width": true,
+                "image": "",
+                "opacity": 65,
+                "text_alignment": "left",
+                "text_position": "center"
+              },
+              "type": "banner",
+              "visible": true
+            }
+          },
+          "expect": {
+            "primary_button_link": "/collections/all",
+            "secondary_button_link": "/pages/contact-us",
+            "snapshot": "TC-INS-SF-BANNER-4.png"
+          }
+        },
+        {
+          "description": "Verify hide block Heading, Text of Banner section",
+          "case_id": "SB_OLS_THE_INS_SF_BANNER_5",
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "heading": "heading Banner"
+                  },
+                  "type": "heading"
+                },
+                {
+                  "settings": {
+                    "text": "text content"
+                  },
+                  "type": "text"
+                },
+                {
+                  "settings": {
+                    "primary_button_label": "View more",
+                    "primary_button_link": {
+                      "name": "",
+                      "position": 0,
+                      "subject": {
+                        "handle": ""
+                      },
+                      "type": "products",
+                      "type_options": {
+                        "subject": "all",
+                        "subject_id": null,
+                        "title": "all"
+                      }
+                    },
+                    "secondary_button_label": "Shop now",
+                    "secondary_button_link": {
+                      "name": "",
+                      "position": 0,
+                      "subject": {
+                        "handle": "contact-us"
+                      },
+                      "type": "pages",
+                      "type_options": {
+                        "subject": "",
+                        "subject_id": 85293470227,
+                        "title": "Contact Us"
+                      }
+                    }
+                  },
+                  "type": "button",
+                  "visible": true
+                }
+              ],
+              "settings": {
+                "alt_text": "Al text 1",
+                "banner_image_link": {
+                  "name": "",
+                  "position": 0,
+                  "subject": {
+                    "handle": ""
+                  },
+                  "type": "collections",
+                  "type_options": {
+                    "subject": "all",
+                    "subject_id": null,
+                    "title": "all"
+                  }
+                },
+                "full_width": true,
+                "image": "",
+                "opacity": 65,
+                "text_alignment": "left",
+                "text_position": "center"
+              },
+              "type": "banner",
+              "visible": true
+            }
+          },
+          "expect": {
+            "snapshot": "TC-INS-SF-BANNER-5.png"
+          }
+        },
+        {
+          "description": "Verify hide 2 CTA buttons of Banner section",
+          "case_id": "SB_OLS_THE_INS_SF_BANNER_6",
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "heading": "heading Banner"
+                  },
+                  "type": "heading",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "text": "text content"
+                  },
+                  "type": "text",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "primary_button_label": "View more",
+                    "primary_button_link": {
+                      "name": "",
+                      "position": 0,
+                      "subject": {
+                        "handle": ""
+                      },
+                      "type": "products",
+                      "type_options": {
+                        "subject": "all",
+                        "subject_id": null,
+                        "title": "all"
+                      }
+                    },
+                    "secondary_button_label": "Shop now",
+                    "secondary_button_link": {
+                      "name": "",
+                      "position": 0,
+                      "subject": {
+                        "handle": "contact-us"
+                      },
+                      "type": "pages",
+                      "type_options": {
+                        "subject": "",
+                        "subject_id": 85293470227,
+                        "title": "Contact Us"
+                      }
+                    }
+                  },
+                  "type": "button"
+                }
+              ],
+              "settings": {
+                "alt_text": "Al text 1",
+                "banner_image_link": {
+                  "name": "",
+                  "position": 0,
+                  "subject": {
+                    "handle": ""
+                  },
+                  "type": "collections",
+                  "type_options": {
+                    "subject": "all",
+                    "subject_id": null,
+                    "title": "all"
+                  }
+                },
+                "full_width": true,
+                "image": "",
+                "opacity": 65,
+                "text_alignment": "left",
+                "text_position": "center"
+              },
+              "type": "banner",
+              "visible": true
+            }
+          },
+          "expect": {
+            "snapshot": "TC-INS-SF-BANNER-6.png"
+          }
+        },
+        {
+          "description": "Verify hide section",
+          "case_id": "SB_OLS_THE_INS_SF_BANNER_7",
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "heading": ""
+                  },
+                  "type": "heading",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "text": ""
+                  },
+                  "type": "text",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "primary_button_label": "View more",
+                    "primary_button_link": {
+                      "name": "",
+                      "position": 0,
+                      "subject": {
+                        "handle": ""
+                      },
+                      "type": "",
+                      "type_options": {
+                        "subject": "",
+                        "subject_id": null,
+                        "title": ""
+                      }
+                    },
+                    "secondary_button_label": "Shop now",
+                    "secondary_button_link": {
+                      "name": "",
+                      "position": 0,
+                      "subject": {
+                        "handle": ""
+                      },
+                      "type": "",
+                      "type_options": {
+                        "subject": "",
+                        "subject_id": null,
+                        "title": ""
+                      }
+                    }
+                  },
+                  "type": "button",
+                  "visible": true
+                }
+              ],
+              "settings": {
+                "alt_text": "Al text",
+                "banner_image_link": {
+                  "name": "",
+                  "position": 0,
+                  "subject": {
+                    "handle": ""
+                  },
+                  "type": "collections",
+                  "type_options": {
+                    "subject": "all",
+                    "subject_id": null,
+                    "title": "all"
+                  }
+                },
+                "full_width": false,
+                "image": "https://img.btdmp.com/files/10225015/2022/05/27/0x1296@16536362049c308fcd8d.png",
+                "opacity": 30,
+                "text_alignment": "right",
+                "text_position": "left"
+              },
+              "type": "banner"
+            }
+          },
+          "expect": {
+            "count_section": 0
+          }
+        }
+      ]
+    },
+    "SB_OLS_THE_INS_SF_BANNER_8": {
+      "description": "Verify multiple section Banner on SF",
+      "data": {
+        "input": [
+          {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "heading": "Banner Heading"
+                  },
+                  "type": "heading",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "text": "Content"
+                  },
+                  "type": "text",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "primary_button_label": "View more",
+                    "primary_button_link": null,
+                    "secondary_button_label": "Shop now",
+                    "secondary_button_link": null
+                  },
+                  "type": "button",
+                  "visible": true
+                }
+              ],
+              "settings": {
+                "alt_text": "",
+                "banner_image_link": null,
+                "full_width": false,
+                "image": null,
+                "opacity": 50,
+                "text_alignment": "left",
+                "text_position": "left"
+              },
+              "type": "banner",
+              "visible": true
+            }
+          },
+          {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "heading": "Banner Heading"
+                  },
+                  "type": "heading",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "text": "Content"
+                  },
+                  "type": "text",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "primary_button_label": "View more",
+                    "primary_button_link": null,
+                    "secondary_button_label": "Shop now",
+                    "secondary_button_link": null
+                  },
+                  "type": "button",
+                  "visible": true
+                }
+              ],
+              "settings": {
+                "alt_text": "",
+                "banner_image_link": null,
+                "full_width": false,
+                "image": null,
+                "opacity": 50,
+                "text_alignment": "left",
+                "text_position": "left"
+              },
+              "type": "banner",
+              "visible": true
+            }
+          }
+        ],
+        "expect": {
+          "snapshot": "TC-INS-SF-BANNER-7.png, TC-INS-SF-BANNER-7.png"
+        }
+      }
+    }
+  }
+}

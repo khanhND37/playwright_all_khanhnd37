@@ -1,0 +1,62 @@
+{
+  "api": "https://api.shopbase.com",
+  "domain": "au-checkout-payment.onshopbase.com",
+  "shop_name": "au-checkout-payment",
+  "device": "iPhone 13",
+  "product": [
+    {
+      "name": "Yonex",
+      "quantity": 1
+    }
+  ],
+  "customer_info": {
+    "email": "tester@maildrop.cc",
+    "first_name": "Tester",
+    "last_name": "Auto",
+    "address": "1600 W Loop S",
+    "country": "United States",
+    "state": "Texas",
+    "city": "Houston",
+    "zipcode": "77027",
+    "phone_number": "505-646-2276"
+  },
+  "cases": {
+    "TC_SB_CHE_CHEN_19": {
+      "card_info": {
+        "number": "4111111111111111",
+        "holder_name": "Shopbase",
+        "expire_date": "12 / 24",
+        "cvv": "100"
+      }
+    },
+    "TC_SB_CHE_CHEN_20": {
+      "paypal_account": {
+        "username": "buyer@shopbase.com",
+        "password": "2XfWH9Ae"
+      }
+    }
+  },
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-stripe-gateway-onepage.myshopbase.net",
+      "shop_name": "au-stripe-gateway-onepage",
+      "product": [
+        {
+          "name": "Bikini"
+        }
+      ]
+    },
+    "prodtest": {
+      "domain": "au-stripe-gateway-onepage-prodtest.onshopbase.com",
+      "shop_name": "au-stripe-gateway-onepage-prodtest",
+      "product": [
+        {
+          "name": "Bikini"
+        }
+      ],
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://prod-test-api.shopbase.com"
+    }
+  }
+}

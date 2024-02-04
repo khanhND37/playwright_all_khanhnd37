@@ -1,0 +1,476 @@
+{
+  "domain": "staff-permission-9.myshopbase.net",
+  "user_id": 73800,
+  "shop_id": 10322323,
+  "shop_name": "staff-permission-9",
+  "username": "shopbase@beeketing.net",
+  "password": "S#|j>m2N[q",
+  "api": "https://gapi.dev.shopbase.net",
+  "subject_mail": "Create staff account",
+  "staff": {
+    "username": "trangle+1@beeketing.net",
+    "password": "123456",
+    "user_id": 73800,
+    "shop_id": 10322323,
+    "shop_name": "staff-permission-9",
+    "staff_name": "qaocg",
+    "name": "Trang Le"
+  },
+  "product_list": [
+    {
+      "product": {
+        "title": "test 12345",
+        "handle": "test 12345",
+        "published": true,
+        "product_type": "online_course"
+      }
+    },
+    {
+      "product": {
+        "title": "test 1234",
+        "handle": "test 1234",
+        "published": true,
+        "product_type": "online_course"
+      }
+    }
+  ],
+  "data_create_member": [
+    {
+      "first_name": "test",
+      "last_name": "ocg",
+      "note": "Create member by api",
+      "phone": "",
+      "calling_code": "84",
+      "tags": "",
+      "country_id": 237
+    }
+  ],
+  "paging_param": {
+    "page": "1",
+    "limit": "50"
+  },
+  "cases": {
+    "CHECK_PERMISSION_DATA_DRIVEN": {
+      "cases": {
+        "modules": [
+          {
+            "module_name": "Products",
+            "url": "admin/creator/products"
+          },
+          {
+            "module_name": "Orders",
+            "url": "admin/creator/orders"
+          },
+          {
+            "module_name": "Members",
+            "url": "admin/members"
+          },
+          {
+            "module_name": "Analytics",
+            "url": "admin/analytics/"
+          },
+          {
+            "module_name": "Coupons",
+            "url": "admin/coupons"
+          },
+          {
+            "module_name": "Balance",
+            "url": "admin/balance"
+          },
+          {
+            "module_name": "Themes",
+            "url": "admin/themes"
+          },
+          {
+            "module_name": "Pages",
+            "url": "admin/pages"
+          },
+          {
+            "module_name": "Preferences",
+            "url": "admin/preferences"
+          },
+          {
+            "module_name": "Domains",
+            "url": "admin/domain"
+          }
+        ],
+        "data": [
+          {
+            "case_id": "SB_SET_ACC_PMS_PMSC_4",
+            "permission_type": "grant",
+            "checked": true
+          },
+          {
+            "case_id": "SB_SET_ACC_PMS_PMSC_13",
+            "permission_type": "revoke",
+            "checked": false
+          }
+        ]
+      }
+    },
+    "SB_SET_ACC_PMS_PMSC_3": {
+      "add_staff_screen_screenshot": "add_staff_screen_screenshot.png"
+    },
+    "SB_SET_ACC_PMS_PMSC_8": {
+      "data_permission": [
+        {
+          "parent_module": {
+            "module_name": "Analytics",
+            "value": true
+          },
+          "sub_module": {
+            "module_name": "Sales reports",
+            "value": true
+          }
+        },
+        {
+          "parent_module": {
+            "module_name": "Analytics",
+            "value": true
+          },
+          "sub_module": {
+            "module_name": "Sales reports",
+            "value": false
+          }
+        }
+      ]
+    },
+    "DATA_GRANT_PERMISSION_CASE_9_10": {
+      "data": [
+        {
+          "case_id": "SB_SET_ACC_PMS_PMSC_9",
+          "case_description": "Verify khi thực hiện grant permissions cho mudule Member và  Product",
+          "is_member": true,
+          "block_name": "Product access",
+          "data_permission": [
+            {
+              "module_1": {
+                "module_name": "Products",
+                "url": "products",
+                "value": true
+              },
+              "module_2": {
+                "module_name": "Members",
+                "url": "members",
+                "value": true
+              }
+            },
+            {
+              "module_1": {
+                "module_name": "Products",
+                "url": "products",
+                "value": false
+              },
+              "module_2": {
+                "module_name": "Members",
+                "url": "members",
+                "value": true
+              }
+            }
+          ]
+        },
+        {
+          "case_id": "SB_SET_ACC_PMS_PMSC_10",
+          "case_description": "Verify khi thực hiện grant permissions cho mudule Member và Orders ",
+          "block_name": "Recent orders",
+          "data_permission": [
+            {
+              "module_1": {
+                "module_name": "Orders",
+                "url": "orders",
+                "value": true
+              },
+              "module_2": {
+                "module_name": "Members",
+                "url": "members",
+                "value": true
+              }
+            },
+            {
+              "module_1": {
+                "module_name": "Orders",
+                "url": "orders",
+                "value": false
+              },
+              "module_2": {
+                "module_name": "Members",
+                "url": "members",
+                "value": true
+              }
+            }
+          ],
+          "is_member": true
+        }
+      ]
+    },
+    "SB_SET_ACC_PMS_PMSC_11": {
+      "data_permission": [
+        {
+          "module_product": {
+            "module_name": "Products",
+            "url": "products",
+            "value": true
+          },
+          "module_members": {
+            "module_name": "Members",
+            "url": "members",
+            "value": true
+          },
+          "sub_module": {
+            "module_name": "Grant access",
+            "url": "members",
+            "value": true
+          }
+        },
+        {
+          "module_product": {
+            "module_name": "Products",
+            "url": "products",
+            "value": true
+          },
+          "module_members": {
+            "module_name": "Members",
+            "url": "members",
+            "value": true
+          },
+          "sub_module": {
+            "module_name": "Grant access",
+            "url": "members",
+            "value": false
+          }
+        }
+      ],
+      "is_member": true
+    },
+    "SB_SET_ACC_PMS_PMSC_12": {
+      "timeout": 200000,
+      "data_permission": [
+        {
+          "module_product": {
+            "module_name": "Products",
+            "url": "products",
+            "value": true
+          },
+          "module_members": {
+            "module_name": "Members",
+            "url": "members",
+            "value": true
+          },
+          "sub_module": {
+            "module_name": "Delete access",
+            "url": "members",
+            "value": true
+          }
+        },
+        {
+          "module_product": {
+            "module_name": "Products",
+            "url": "products",
+            "value": true
+          },
+          "module_members": {
+            "module_name": "Members",
+            "url": "members",
+            "value": true
+          },
+          "sub_module": {
+            "module_name": "Delete access",
+            "url": "members",
+            "value": false
+          }
+        }
+      ],
+      "is_member": true
+    },
+    "SB_SET_ACC_PMS_PMSC_6": {
+      "data_permission": [
+        {
+          "parent_module": {
+            "module_name": "Settings",
+            "value": true
+          },
+          "sub_module": {
+            "module_name": "Payment providers",
+            "url": "admin/creator/settings/payments",
+            "value": false
+          }
+        },
+        {
+          "parent_module": {
+            "module_name": "Settings",
+            "value": true
+          },
+          "sub_module": {
+            "module_name": "Payment providers",
+            "url": "admin/creator/settings/payments",
+            "value": true
+          }
+        }
+      ]
+    },
+    "env": {
+      "dev": {
+        "domain": "staff-permission-9.myshopbase.net",
+        "user_id": 73800,
+        "shop_id": 10322323,
+        "shop_name": "staff-permission-9",
+        "username": "shopbase@beeketing.net",
+        "password": "S#|j>m2N[q",
+        "api": "https://gapi.dev.shopbase.net",
+        "subject_mail": "Create staff account",
+        "staff": {
+          "username": "trangle+1@beeketing.net",
+          "password": "123456",
+          "user_id": 73800,
+          "shop_id": 10322323,
+          "shop_name": "staff-permission-9",
+          "staff_name": "qaocg",
+          "name": "Trang Le"
+        },
+        "product_list": [
+          {
+            "product": {
+              "title": "test 12345",
+              "handle": "test 12345",
+              "published": true,
+              "product_type": "online_course"
+            }
+          },
+          {
+            "product": {
+              "title": "test 1234",
+              "handle": "test 1234",
+              "published": true,
+              "product_type": "online_course"
+            }
+          }
+        ],
+        "data_create_member": [
+          {
+            "first_name": "test",
+            "last_name": "ocg",
+            "note": "Create member by api",
+            "phone": "",
+            "calling_code": "84",
+            "tags": "",
+            "country_id": 237
+          }
+        ],
+        "paging_param": {
+          "page": "1",
+          "limit": "50"
+        }
+      },
+      "prod": {
+        "domain": "staff-permission-prod.onshopbase.com",
+        "user_id": 73782,
+        "shop_id": 10373753,
+        "shop_name": "staff-permission-prod",
+        "username": "shopbase@beeketing.net",
+        "password": "Q(f!3Kx+6n;?Us%F",
+        "api": "https://api.shopbase.com",
+        "subject_mail": "Create staff account",
+        "staff": {
+          "username": "trangle+1@beeketing.net",
+          "password": "123456",
+          "user_id": 73782,
+          "shop_id": 10373753,
+          "shop_name": "staff-permission-9",
+          "staff_name": "qaocg",
+          "name": "qaocg"
+        },
+        "product_list": [
+          {
+            "product": {
+              "title": "test 12345",
+              "handle": "test 12345",
+              "published": true,
+              "product_type": "online_course"
+            }
+          },
+          {
+            "product": {
+              "title": "test 1234",
+              "handle": "test 1234",
+              "published": true,
+              "product_type": "online_course"
+            }
+          }
+        ],
+        "data_create_member": [
+          {
+            "first_name": "test",
+            "last_name": "ocg",
+            "note": "Create member by api",
+            "phone": "",
+            "calling_code": "84",
+            "tags": "",
+            "country_id": 237
+          }
+        ],
+        "paging_param": {
+          "page": "1",
+          "limit": "50"
+        }
+      },
+      "prodtest": {
+        "domain": "test-premission-prod-test.onshopbase.com",
+        "user_id": 73782,
+        "shop_id": 10373758,
+        "shop_name": "test-premission-prod-test",
+        "username": "shopbase@beeketing.net",
+        "password": "Q(f!3Kx+6n;?Us%F",
+        "api": "https://api.shopbase.com",
+        "subject_mail": "Create staff account",
+        "staff": {
+          "username": "trangle+1@beeketing.net",
+          "password": "123456",
+          "user_id": 73782,
+          "shop_id": 10373758,
+          "shop_name": "test-premission-prod-test",
+          "staff_name": "qaocg",
+          "name": "qaocg"
+        },
+        "product_list": [
+          {
+            "product": {
+              "title": "test 12345",
+              "handle": "test 12345",
+              "published": true,
+              "product_type": "online_course"
+            }
+          },
+          {
+            "product": {
+              "title": "test 1234",
+              "handle": "test 1234",
+              "published": true,
+              "product_type": "online_course"
+            }
+          }
+        ],
+        "data_create_member": [
+          {
+            "first_name": "test",
+            "last_name": "ocg",
+            "note": "Create member by api",
+            "phone": "",
+            "calling_code": "84",
+            "tags": "",
+            "country_id": 237
+          }
+        ],
+        "paging_param": {
+          "page": "1",
+          "limit": "50"
+        }
+      }
+    }
+  },
+  "env": {
+    "prodtest": {
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://prod-test-api.shopbase.com"
+    }
+  }
+}

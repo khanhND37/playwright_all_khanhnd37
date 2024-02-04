@@ -1,0 +1,297 @@
+{
+  "env": {
+    "prod": {
+      "domain": "website-template-manage.onshopbase.com",
+      "shop_name": "website-template-manage",
+      "store_type": "ecommerce",
+      "shop_id": 10429584,
+      "user_id": 11260206,
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "api": "https://api.shopbase.com",
+      "linked": {
+        "domain": "linked-wb-template-manage.onshopbase.com"
+      },
+      "other": {
+        "domain": "other-wb-template.onshopbase.com",
+        "username": "front-qe-2@beeketing.net",
+        "password": "Front@123"
+      },
+      "link_img": "https://img.thesitebase.net/files/"
+    },
+    "prodtest": {
+      "domain": "website-template-manage-prodtest.onshopbase.com",
+      "shop_name": "website-template-manage-prodtest",
+      "store_type": "ecommerce",
+      "shop_id": 10430351,
+      "user_id": 11260206,
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "api": "https://prod-test-api.shopbase.com",
+      "linked": {
+        "domain": "linked-wb-template-manage.onshopbase.com"
+      },
+      "other": {
+        "domain": "other-wb-template.onshopbase.com",
+        "username": "front-qe-2@beeketing.net",
+        "password": "Front@123"
+      },
+      "link_img": "https://img.thesitebase.net/files/",
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "domain": "website-template-manage.myshopbase.net",
+      "shop_name": "website-template-manage",
+      "store_type": "ecommerce",
+      "shop_id": 10323300,
+      "user_id": 73800,
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "api": "https://gapi.dev.shopbase.net",
+      "linked": {
+        "domain": "linked-wb-template-manage-dev.myshopbase.net"
+      },
+      "other": {
+        "domain": "other-wb-template-manage.myshopbase.net",
+        "username": "shopbase3@beeketing.net",
+        "password": "=l-N&YG}g<'KLJk"
+      },
+      "link_img": "https://dev-img.shopbase.net/"
+    }
+  },
+  "cases": {
+    "SB_WEB_BUILDER_WTM_06": {
+      "description": "Check filter theo library trong popup chọn website template",
+      "data": []
+    },
+    "SB_WEB_BUILDER_WTM_08": {
+      "description": "Check hover vào website template trong popup chọn website template",
+      "data": {
+        "hover": "Website Packwise",
+        "preview": "08_preview_website_template.png"
+      }
+    },
+    "SB_WEB_BUILDER_WTM_09": {
+      "description": "Check data default của màn preview website template",
+      "data": {
+        "hover": "Packwise",
+        "color": [
+          {
+            "name": "Seastorm Gloom",
+            "color": "rgb(113, 60, 221)"
+          },
+          {
+            "name": "Cluster of Velvet",
+            "color": "rgb(64, 48, 232)"
+          },
+          {
+            "name": "Secret Romance",
+            "color": "rgb(221, 60, 60)"
+          },
+          {
+            "name": "Sweet Cotton Sugar",
+            "color": "rgb(221, 60, 113)"
+          },
+          {
+            "name": "Tropical Bliss",
+            "color": "rgb(221, 140, 60)"
+          },
+          {
+            "name": "Evening Stroll",
+            "color": "rgb(229, 202, 25)"
+          },
+          {
+            "name": "Lucky Lime",
+            "color": "rgb(128, 216, 38)"
+          },
+          {
+            "name": "Under the Ferns",
+            "color": "rgb(39, 216, 157)"
+          },
+          {
+            "name": "Way up North",
+            "color": "rgb(60, 167, 221)"
+          }
+        ],
+        "font": [
+          {
+            "name": "Titillium Web",
+            "style": "Space Grotesk"
+          },
+          {
+            "name": "PT Serif",
+            "style": "Karla"
+          },
+          {
+            "name": "Domine",
+            "style": "Karla"
+          },
+          {
+            "name": "Prata",
+            "style": "Urbanist"
+          },
+          {
+            "name": "Libre Baskerville",
+            "style": "DM Sans"
+          },
+          {
+            "name": "Rubik",
+            "style": "Karla"
+          },
+          {
+            "name": "Montserrat",
+            "style": "PT Sans"
+          },
+          {
+            "name": "Roboto",
+            "style": "Nunito Sans"
+          },
+          {
+            "name": "Cormorant Garamond",
+            "style": "Manuale"
+          }
+        ]
+      }
+    },
+    "SB_WEB_BUILDER_WTM_10": {
+      "description": "Check click vào button back trong màn preview template",
+      "data": {
+        "hover": "Website Packwise",
+        "change_color": "Cluster of Velvet",
+        "change_font": "PT Serif",
+        "expect": {
+          "snapshot": "08_preview_website_template.png"
+        }
+      }
+    },
+    "SB_WEB_BUILDER_WTM_11": {
+      "description": "Check switch device trong màn preview template",
+      "data": {
+        "hover": "Website Packwise",
+        "mobile": "11_mobile_template.png",
+        "desktop": {
+          "change_color": "Cluster of Velvet",
+          "change_font": "PT Serif",
+          "mobile_change": "11_mobile_change_color_font.png"
+        }
+      }
+    },
+    "SB_WEB_BUILDER_WTM_12": {
+      "description": "Check apply template khi không thay đổi color + font ở màn preview",
+      "data": {
+        "name": "Website Packwise",
+        "message": "Apply template successfully",
+        "snapshot": "12_apply_website_template_not_change_color_font.png"
+      }
+    },
+    "SB_WEB_BUILDER_WTM_14": {
+      "description": "Check apply template khi có thay đổi color + font ở màn preview",
+      "data": {
+        "hover": "Website Packwise",
+        "change": {
+          "color": "Sweet Cotton Sugar",
+          "font": "PT Serif"
+        },
+        "snapshot": "14_apply_theme_template_change_font_color-website-style.png"
+      }
+    },
+    "SB_WEB_BUILDER_WTM_15": {
+      "description": "Check apply template ngay ở màn chọn website template",
+      "data": {
+        "hover": "Website Packwise",
+        "snapshot": "12_apply_website_template_not_change_color_font.png"
+      }
+    },
+    "SB_WEB_BUILDER_WTM_16": {
+      "description": "Check add shop theme ở màn manage",
+      "data": [
+        {
+          "add_theme": {
+            "number": 19
+          },
+          "maximum": true,
+          "message": "You have reached the maximum of 20 templates. Remove unused templates to add more."
+        },
+        {
+          "remove": {
+            "number": 1
+          },
+          "maximum": false,
+          "message": "You have reached the maximum of 20 templates. Remove unused templates to add more."
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_WTM_17": {
+      "description": "Check action theme ở màn manage",
+      "data": [
+        {
+          "v2": true,
+          "publish": true,
+          "actions": {
+            "list": ["Edit language", "Rename", "Duplicate", "Mark as Public"],
+            "edit_language": "/admin/locale-editor",
+            "rename": {
+              "popup": true
+            },
+            "duplicate": {
+              "message": "Duplicate theme created",
+              "theme": "Copy of"
+            },
+            "mark_public": {
+              "snapshot": "17_popup_mark_as_public.png"
+            }
+          }
+        },
+        {
+          "v2": true,
+          "publish": false,
+          "actions": {
+            "list": ["Preview", "Publish", "Edit language", "Rename", "Duplicate", "Mark as Public", "Remove"],
+            "preview": "/?theme_preview_id=",
+            "remove": {
+              "popup": true
+            }
+          }
+        },
+        {
+          "v3": true,
+          "publish": true,
+          "actions": {
+            "list": ["Edit language", "Rename", "Duplicate", "Mark as Public", "Save as template"],
+            "rename": {
+              "popup": true,
+              "name_new": "Test auto rename v3"
+            },
+            "duplicate": {
+              "message": "Duplicate theme  created",
+              "theme": "Copy of"
+            }
+          }
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_WTM_18": {
+      "description": "Check copy theme ở màn manage",
+      "data": [
+        {
+          "description": "Nhập ID shop theme khác shop (cùng user) + khác shop type (sb, plb, prb) + (theme cũ + mới)",
+          "shop": "same acc"
+        },
+        {
+          "description": "Nhập ID shop theme cùng shop (theme cũ + mới)",
+          "shop": "shop"
+        },
+        {
+          "description": "Nhập ID shop theme khác shop (cùng user) + khác shop type (sb, plb, prb) + (theme cũ + mới)",
+          "shop": "other acc",
+          "message": "You don't have permission on this theme"
+        },
+        {
+          "description": "Nhập ID không tồn tại",
+          "id": 123,
+          "message": "Shop theme not exist"
+        }
+      ]
+    }
+  }
+}

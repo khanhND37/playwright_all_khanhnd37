@@ -1,0 +1,601 @@
+{
+  "env": {
+    "local": {
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "dpro-qe-1@beeketing.net  ",
+      "password": "43AhIn|VWp;[?9&",
+      "user_id": 89797,
+      "account_merchar_razorpay": {
+        "email": "duongle@beeketing.net",
+        "password": "wI6K2NysiLvyWCZ"
+      },
+      "account_connect_db_shopbase": {
+        "account_name": "Razorpay-1",
+        "key_id": "rzp_test_hqvKJS7CLd3RFN",
+        "key_secret": "o5SmzN91C3S0AACLycw6RNPk"
+      },
+      "discount": {
+        "discount_code": "auto discount 10",
+        "discount_type": "percentage",
+        "discount_value": 0.1
+      },
+      "shops": [
+        {
+          "theme_version": "v2",
+          "version": 2,
+          "domain": "au-checkout-razorpay-one-page.myshopbase.net",
+          "shop_name": "au-checkout-razorpay-one-page",
+          "shop_id": 10334342,
+          "transaction_fee": 0.01,
+          "shop_currency": "USD",
+          "products_checkout": [
+            {
+              "name": "product A",
+              "variant_id": 1000001780838511,
+              "quantity": 1,
+              "price": 10
+            }
+          ],
+          "filter_condition": [
+            {
+              "field": "Shop Domain",
+              "checkbox_array": [
+                {
+                  "checkbox": "au-checkout-razorpay-one-page.myshopbase.net"
+                }
+              ]
+            },
+            {
+              "field": "Invoice",
+              "select_ddl_value": "Transaction fee collecting"
+            }
+          ]
+        },
+        {
+          "theme_version": "v3",
+          "version": 3,
+          "domain": "au-co-razorpay-v3.myshopbase.net",
+          "shop_name": "au-co-razorpay-v3",
+          "shop_id": 10335056,
+          "transaction_fee": 0.01,
+          "shop_currency": "USD",
+          "products_checkout": [
+            {
+              "name": "product A",
+              "variant_id": 1000001781632146,
+              "quantity": 1,
+              "price": 10
+            }
+          ],
+          "filter_condition": [
+            {
+              "field": "Shop Domain",
+              "checkbox_array": [
+                {
+                  "checkbox": "au-co-razorpay-v3.myshopbase.net"
+                }
+              ]
+            },
+            {
+              "field": "Invoice",
+              "select_ddl_value": "Transaction fee collecting"
+            }
+          ]
+        }
+      ],
+      "invoice_info": {
+        "content": "Transaction fee collecting",
+        "status": "Pending",
+        "invoice_collapsed": "The payment for the transaction fee of the order",
+        "source_collapsed": "Source: General"
+      },
+      "filter_tag": "Content: Transaction fee collecting",
+      "customer_info": {
+        "email": "tester@maildrop.cc",
+        "first_name": "Shop",
+        "last_name": "Base",
+        "address": "New York",
+        "country": "United States",
+        "state": "New York",
+        "city": "New York",
+        "zipcode": "10001",
+        "address1": "814 Mission Street",
+        "phone_number": "505-646-2276"
+      },
+      "email_buyer": "tester@maildrop.cc",
+      "shipping_address_to_India": {
+        "address1": "10800 W Pico Blvd Suite 312",
+        "address2": "OCG",
+        "city": "Mysuru",
+        "company": "OCG",
+        "country_code": "IN",
+        "first_name": "Shop",
+        "last_name": "Base",
+        "phone": "7428297585",
+        "province": "Karnataka",
+        "province_code": "KA",
+        "zip": "570001"
+      },
+      "payment_method": "Razorpay",
+      "buyer_info": {
+        "phone": "505-646-2276",
+        "country": "United States",
+        "email": "shopbase@beeketing.net"
+      },
+      "card_info": {
+        "method": "Card",
+        "number": "4111 1111 1111 1111",
+        "holder_name": "shopbase",
+        "expire_date": "12/34",
+        "cvv": "123",
+        "otp": "1111"
+      }
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "dpro-qe-1@beeketing.net  ",
+      "password": "43AhIn|VWp;[?9&",
+      "user_id": 89797,
+      "account_merchar_razorpay": {
+        "email": "duongle@beeketing.net",
+        "password": "wI6K2NysiLvyWCZ"
+      },
+      "account_connect_db_shopbase": {
+        "account_name": "Razorpay-1",
+        "key_id": "rzp_test_hqvKJS7CLd3RFN",
+        "key_secret": "o5SmzN91C3S0AACLycw6RNPk"
+      },
+      "discount": {
+        "discount_code": "auto discount 10",
+        "discount_type": "percentage",
+        "discount_value": 0.1
+      },
+      "shops": [
+        {
+          "theme_version": "v2",
+          "version": 2,
+          "domain": "au-checkout-razorpay-one-page.myshopbase.net",
+          "shop_name": "au-checkout-razorpay-one-page",
+          "shop_id": 10334342,
+          "transaction_fee": 0.01,
+          "shop_currency": "USD",
+          "products_checkout": [
+            {
+              "name": "product A",
+              "variant_id": 1000001780838511,
+              "quantity": 1,
+              "price": 10
+            }
+          ],
+          "filter_condition": [
+            {
+              "field": "Shop Domain",
+              "checkbox_array": [
+                {
+                  "checkbox": "au-checkout-razorpay-one-page.myshopbase.net"
+                }
+              ]
+            },
+            {
+              "field": "Invoice",
+              "select_ddl_value": "Transaction fee collecting"
+            }
+          ]
+        },
+        {
+          "theme_version": "v3",
+          "version": 3,
+          "domain": "au-co-razorpay-v3.myshopbase.net",
+          "shop_name": "au-co-razorpay-v3",
+          "shop_id": 10335056,
+          "transaction_fee": 0.01,
+          "shop_currency": "USD",
+          "products_checkout": [
+            {
+              "name": "product A",
+              "variant_id": 1000001781632146,
+              "quantity": 1,
+              "price": 10
+            }
+          ],
+          "filter_condition": [
+            {
+              "field": "Shop Domain",
+              "checkbox_array": [
+                {
+                  "checkbox": "au-co-razorpay-v3.myshopbase.net"
+                }
+              ]
+            },
+            {
+              "field": "Invoice",
+              "select_ddl_value": "Transaction fee collecting"
+            }
+          ]
+        }
+      ],
+      "invoice_info": {
+        "content": "Transaction fee collecting",
+        "status": "Pending",
+        "invoice_collapsed": "The payment for the transaction fee of the order",
+        "source_collapsed": "Source: General"
+      },
+      "filter_tag": "Content: Transaction fee collecting",
+      "customer_info": {
+        "email": "tester@maildrop.cc",
+        "first_name": "Shop",
+        "last_name": "Base",
+        "address": "New York",
+        "country": "United States",
+        "state": "New York",
+        "city": "New York",
+        "zipcode": "10001",
+        "address1": "814 Mission Street",
+        "phone_number": "505-646-2276"
+      },
+      "email_buyer": "tester@maildrop.cc",
+      "shipping_address_to_India": {
+        "address1": "10800 W Pico Blvd Suite 312",
+        "address2": "OCG",
+        "city": "Mysuru",
+        "company": "OCG",
+        "country_code": "IN",
+        "first_name": "Shop",
+        "last_name": "Base",
+        "phone": "7428297585",
+        "province": "Karnataka",
+        "province_code": "KA",
+        "zip": "570001"
+      },
+      "payment_method": "Razorpay",
+      "buyer_info": {
+        "phone": "505-646-2276",
+        "country": "United States",
+        "email": "shopbase@beeketing.net"
+      },
+      "card_info": {
+        "method": "Card",
+        "number": "4111 1111 1111 1111",
+        "holder_name": "shopbase",
+        "expire_date": "12/34",
+        "cvv": "123",
+        "otp": "1111"
+      }
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "account_merchar_razorpay": {
+        "email": "duonglna@gmail.com",
+        "password": "Ocg@12345"
+      },
+      "account_connect_db_shopbase": {
+        "account_name": "Razorpay-1",
+        "key_id": "rzp_test_2hNiuAdQLdvvWc",
+        "key_secret": "9ulYjGc45TliZRFjco5fBMow"
+      },
+      "discount": {
+        "discount_code": "auto discount 10",
+        "discount_type": "percentage",
+        "discount_value": 0.1
+      },
+      "shops": [
+        {
+          "theme_version": "v3",
+          "version": 3,
+          "domain": "au-checkout-razorpay-v3-prodtest.onshopbase.com",
+          "shop_name": "au-checkout-razorpay-v3-prodtest",
+          "shop_id": 10492631,
+          "transaction_fee": 0.01,
+          "shop_currency": "USD",
+          "products_checkout": [
+            {
+              "name": "product A",
+              "variant_id": 1000011345349359,
+              "quantity": 1,
+              "price": 10
+            }
+          ],
+          "filter_condition": [
+            {
+              "field": "Shop Domain",
+              "checkbox_array": [
+                {
+                  "checkbox": "au-checkout-razorpay-v3-prodtest.onshopbase.com"
+                }
+              ]
+            },
+            {
+              "field": "Invoice",
+              "select_ddl_value": "Transaction fee collecting"
+            }
+          ]
+        },
+        {
+          "theme_version": "v2",
+          "version": 2,
+          "domain": "au-checkout-razorpay-one-page-prodtest.onshopbase.com",
+          "shop_name": "au-checkout-razorpay-one-page-prodtest",
+          "shop_id": 10492623,
+          "transaction_fee": 0.01,
+          "shop_currency": "USD",
+          "products_checkout": [
+            {
+              "name": "product A",
+              "variant_id": 1000011345349166,
+              "quantity": 1,
+              "price": 10
+            }
+          ],
+          "filter_condition": [
+            {
+              "field": "Shop Domain",
+              "checkbox_array": [
+                {
+                  "checkbox": "au-checkout-razorpay-one-page-prodtest.onshopbase.com"
+                }
+              ]
+            },
+            {
+              "field": "Invoice",
+              "select_ddl_value": "Transaction fee collecting"
+            }
+          ]
+        }
+      ],
+      "invoice_info": {
+        "content": "Transaction fee collecting",
+        "status": "Pending",
+        "invoice_collapsed": "The payment for the transaction fee of the order",
+        "source_collapsed": "Source: General"
+      },
+      "filter_tag": "Content: Transaction fee collecting",
+      "customer_info": {
+        "email": "tester@maildrop.cc",
+        "first_name": "Shop",
+        "last_name": "Base",
+        "address": "New York",
+        "country": "United States",
+        "state": "New York",
+        "city": "New York",
+        "zipcode": "10001",
+        "address1": "814 Mission Street",
+        "phone_number": "505-646-2276"
+      },
+      "email_buyer": "tester@maildrop.cc",
+      "shipping_address_to_India": {
+        "address1": "10800 W Pico Blvd Suite 312",
+        "address2": "OCG",
+        "city": "Mysuru",
+        "company": "OCG",
+        "country_code": "IN",
+        "first_name": "Shop",
+        "last_name": "Base",
+        "phone": "7428297585",
+        "province": "Karnataka",
+        "province_code": "KA",
+        "zip": "570001"
+      },
+      "payment_method": "Razorpay",
+      "buyer_info": {
+        "phone": "505-646-2276",
+        "country": "United States",
+        "email": "shopbase@beeketing.net"
+      },
+      "card_info": {
+        "method": "Card",
+        "number": "4111 1111 1111 1111",
+        "holder_name": "shopbase",
+        "expire_date": "12/34",
+        "cvv": "123",
+        "otp": "1111"
+      }
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "account_merchar_razorpay": {
+        "email": "trangle@beeketing.net",
+        "password": "@Ocg1234"
+      },
+      "account_connect_db_shopbase": {
+        "account_name": "Razorpay-1",
+        "key_id": "rzp_test_gasSzSbzduC64W",
+        "key_secret": "oN13w3xrGmPKhzKBAGJX9gyH"
+      },
+      "discount": {
+        "discount_code": "auto discount 10",
+        "discount_type": "percentage",
+        "discount_value": 0.1
+      },
+      "shops": [
+        {
+          "theme_version": "v3",
+          "version": 3,
+          "domain": "au-razorpay-v3-prod.onshopbase.com",
+          "shop_name": "au-razorpay-v3-prod",
+          "shop_id": 10494251,
+          "transaction_fee": 0.01,
+          "shop_currency": "USD",
+          "products_checkout": [
+            {
+              "name": "product A",
+              "variant_id": 1000011368570011,
+              "quantity": 1,
+              "price": 10
+            }
+          ],
+          "filter_condition": [
+            {
+              "field": "Shop Domain",
+              "checkbox_array": [
+                {
+                  "checkbox": "au-razorpay-v3-prod.onshopbase.com"
+                }
+              ]
+            },
+            {
+              "field": "Invoice",
+              "select_ddl_value": "Transaction fee collecting"
+            }
+          ]
+        },
+        {
+          "theme_version": "v2",
+          "version": 2,
+          "domain": "au-checkout-razorpay-v2-prod.onshopbase.com",
+          "shop_name": "au-checkout-razorpay-v2-prod",
+          "shop_id": 10494710,
+          "transaction_fee": 0.01,
+          "shop_currency": "USD",
+          "products_checkout": [
+            {
+              "name": "product A",
+              "variant_id": 1000011368657978,
+              "quantity": 1,
+              "price": 10
+            }
+          ],
+          "filter_condition": [
+            {
+              "field": "Shop Domain",
+              "checkbox_array": [
+                {
+                  "checkbox": "au-checkout-razorpay-v2-prod.onshopbase.com"
+                }
+              ]
+            },
+            {
+              "field": "Invoice",
+              "select_ddl_value": "Transaction fee collecting"
+            }
+          ]
+        }
+      ],
+      "invoice_info": {
+        "content": "Transaction fee collecting",
+        "status": "Pending",
+        "invoice_collapsed": "The payment for the transaction fee of the order",
+        "source_collapsed": "Source: General"
+      },
+      "filter_tag": "Content: Transaction fee collecting",
+      "customer_info": {
+        "email": "tester@maildrop.cc",
+        "first_name": "Shop",
+        "last_name": "Base",
+        "address": "New York",
+        "country": "United States",
+        "state": "New York",
+        "city": "New York",
+        "zipcode": "10001",
+        "address1": "814 Mission Street",
+        "phone_number": "505-646-2276"
+      },
+      "email_buyer": "tester@maildrop.cc",
+      "shipping_address_to_India": {
+        "address1": "10800 W Pico Blvd Suite 312",
+        "address2": "OCG",
+        "city": "Mysuru",
+        "company": "OCG",
+        "country_code": "IN",
+        "first_name": "Shop",
+        "last_name": "Base",
+        "phone": "7428297585",
+        "province": "Karnataka",
+        "province_code": "KA",
+        "zip": "570001"
+      },
+      "payment_method": "Razorpay",
+      "buyer_info": {
+        "phone": "505-646-2276",
+        "country": "United States",
+        "email": "shopbase@beeketing.net"
+      },
+      "card_info": {
+        "method": "Card",
+        "number": "4111 1111 1111 1111",
+        "holder_name": "shopbase",
+        "expire_date": "12/34",
+        "cvv": "123",
+        "otp": "1111"
+      }
+    }
+  },
+  "cases": {
+    "SB_CHE_CORP_02": {
+      "currency_symbol": "$",
+      "currency": "USD",
+      "products": [
+        {
+          "name": "product A"
+        },
+        {
+          "name": "Product custom option",
+          "custom_option": {
+            "type": "Text field",
+            "value": "OpenCommerce",
+            "custom_name": "Text"
+          }
+        }
+      ],
+      "invoice_filter": {
+        "invoice": "Transaction fee collecting",
+        "status": "Success"
+      }
+    },
+    "SB_CHE_CORP_03": {
+      "currency_symbol": "$",
+      "currency": "USD",
+      "product_ppc": {
+        "product_ppc_name": "Product upsell",
+        "price": 5,
+        "expected_amount_product_ppc": 5.5
+      }
+    },
+    "DATA_CHECKOUT": [
+      {
+        "case_id": "SB_CHE_CORP_04",
+        "case_description": "[Theme V2] Kiểm tra checkout order có discount, có post purchase upsell qua cổng Razorpay đối với buyer ở India và checkout bằng location currency",
+        "country": {
+          "country_name": "India",
+          "country_code": "in",
+          "currency": "INR",
+          "currency_symbol": "₹",
+          "currency_format": "₹ Indian rupee (INR)",
+          "show_country_currency": "India (INR)"
+        },
+        "theme_version": "v2",
+        "shipping_fee": 4.99,
+        "tax_rate": 0.1,
+        "tip_rate": 0.1,
+        "product_ppc": {
+          "product_ppc_name": "Product upsell",
+          "price": 5
+        }
+      },
+      {
+        "case_id": "SB_CHE_CORP_24",
+        "case_description": "[Theme V3] Kiểm tra checkout order có discount, có post purchase upsell qua cổng Razorpay đối với buyer ở India và checkout bằng location currency",
+        "country": {
+          "country_name": "India",
+          "country_code": "in",
+          "currency": "INR",
+          "currency_symbol": "₹",
+          "currency_format": "₹ Indian rupee (INR)"
+        },
+        "theme_version": "v3",
+        "shipping_fee": 4.99,
+        "tax_rate": 0.1,
+        "tip_rate": 0.1,
+        "product_ppc": {
+          "product_ppc_name": "Product upsell",
+          "price": 5
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,523 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-bulk-update-pbase.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "user_id": 73782,
+      "shop_id": 10402117,
+      "shop_name": "au-bulk-update-pbase"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-bulk-update-pbase-prodtest.onshopbase.com",
+      "shop_name": "au-bulk-update-pbase-prodtest",
+      "user_id": 73782,
+      "shop_id": 10402118,
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-bulk-update-pbase.myshopbase.net",
+      "shop_name": "au-bulk-update-pbase",
+      "user_id": 73800,
+      "shop_id": 10325036,
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q"
+    }
+  },
+  "timeout": "920000",
+  "cases": {
+    "DATA_DRIVEN": {
+      "data": [
+        {
+          "case_id": "SB_PRB_BUD_5",
+          "description": "[PBase] Check khi delete CO thường là text field",
+          "picture": {
+            "picture_sf": "SB-PRB-BUD-5-bulk-update-sf.png",
+            "picture_dashboard": "SB-PRB-BUD-5-bulk-update-dashboard.png"
+          },
+          "data_campaign": {
+            "product_infos": [
+              {
+                "category": "Apparel",
+                "base_product": "V-neck T-shirt"
+              }
+            ],
+            "layers": [
+              {
+                "layer_type": "Text",
+                "location_layer_x": "463",
+                "location_layer_y": "1100",
+                "layer_size_h": "200",
+                "layer_size_w": "1175",
+                "front_or_back": "Front"
+              },
+              {
+                "layer_type": "Text",
+                "location_layer_x": "477",
+                "location_layer_y": "1573",
+                "layer_size_h": "178",
+                "layer_size_w": "1160",
+                "front_or_back": "Front"
+              }
+            ],
+            "custom_options": [
+              {
+                "type": "Text field",
+                "target_layer": "Text layer 1",
+                "label": "CO1",
+                "position": "below"
+              },
+              {
+                "type": "Text field",
+                "target_layer": "Text layer 2",
+                "label": "CO2"
+              }
+            ],
+            "pricing_info": {
+              "title": "Campaign CO Text field"
+            }
+          },
+          "validate_bulk_update_info": {
+            "filter_validate": "Product title is equal to \"Campaign CO Text field\"",
+            "update_for_validate": "All variants",
+            "action_validate": "Delete custom options which their option label is equal to \"CO1\"",
+            "number_of_update_validate": "1"
+          },
+          "bulk_update_info": {
+            "condition_type": "All conditions",
+            "conditions": ["Product title >is equal to >Campaign CO Text field"],
+            "actions": ["Delete custom options > is equal to > CO1"]
+          }
+        },
+        {
+          "case_id": "SB_PRB_BUD_6",
+          "description": "[PBase] Check khi delete CO thường là text area",
+          "picture": {
+            "picture_sf": "SB-PRB-BUD-6-bulk-update-sf.png",
+            "picture_dashboard": "SB-PRB-BUD-6-bulk-update-dashboard.png"
+          },
+          "data_campaign": {
+            "product_infos": [
+              {
+                "category": "Apparel",
+                "base_product": "Unisex T-shirt"
+              }
+            ],
+            "layers": [
+              {
+                "layer_type": "Text",
+                "location_layer_x": "463",
+                "location_layer_y": "1100",
+                "layer_size_h": "200",
+                "layer_size_w": "1175",
+                "front_or_back": "Front"
+              },
+              {
+                "layer_type": "Text",
+                "location_layer_x": "477",
+                "location_layer_y": "1573",
+                "layer_size_h": "178",
+                "layer_size_w": "1160",
+                "front_or_back": "Front"
+              }
+            ],
+            "custom_options": [
+              {
+                "type": "Text area",
+                "target_layer": "Text layer 1",
+                "label": "CO1",
+                "position": "below"
+              },
+              {
+                "type": "Text area",
+                "target_layer": "Text layer 2",
+                "label": "CO2"
+              }
+            ],
+            "pricing_info": {
+              "title": "Campaign CO Text area"
+            }
+          },
+          "validate_bulk_update_info": {
+            "filter_validate": "Product title is equal to \"Campaign CO Text area\"",
+            "update_for_validate": "All variants",
+            "action_validate": "Delete custom options which their option label is equal to \"CO1\"",
+            "number_of_update_validate": "1"
+          },
+          "bulk_update_info": {
+            "condition_type": "All conditions",
+            "conditions": ["Product title >is equal to >Campaign CO Text area"],
+            "actions": ["Delete custom options > is equal to > CO1"]
+          }
+        },
+        {
+          "case_id": "SB_PRB_BUD_7",
+          "description": "[PBase] Check khi delete CO thường là image",
+          "picture": {
+            "picture_sf": "SB-PRB-BUD-7-bulk-update-sf.png",
+            "picture_dashboard": "SB-PRB-BUD-7-bulk-update-dashboard.png"
+          },
+          "data_campaign": {
+            "product_infos": [
+              {
+                "category": "Apparel",
+                "base_product": "Crewneck Sweatshirt"
+              }
+            ],
+            "layers": [
+              {
+                "layer_type": "Image",
+                "image_name": "BD_6.png",
+                "front_or_back": "Front"
+              },
+              {
+                "layer_type": "Image",
+                "image_name": "BD_7.png",
+                "front_or_back": "Back"
+              }
+            ],
+            "custom_options": [
+              {
+                "type": "Image",
+                "target_layer": "BD_6",
+                "label": "CO1",
+                "position": "below"
+              },
+              {
+                "type": "Image",
+                "target_layer": "BD_7",
+                "label": "CO2"
+              }
+            ],
+            "pricing_info": {
+              "title": "Campaign CO image"
+            }
+          },
+          "validate_bulk_update_info": {
+            "filter_validate": "Product title is equal to \"Campaign CO image\"",
+            "update_for_validate": "All variants",
+            "action_validate": "Delete custom options which their option label is equal to \"CO1\"",
+            "number_of_update_validate": "1"
+          },
+          "bulk_update_info": {
+            "condition_type": "All conditions",
+            "conditions": ["Product title >is equal to >Campaign CO image"],
+            "actions": ["Delete custom options > is equal to > CO1"]
+          }
+        },
+        {
+          "case_id": "SB_PRB_BUD_8",
+          "description": "[PBase] Check khi delete CO thường là radio",
+          "picture": {
+            "picture_sf": "SB-PRB-BUD_8-bulk-update-sf.png",
+            "picture_dashboard": "SB-PRB-BUD-8-bulk-update-dashboard.png"
+          },
+          "data_campaign": {
+            "product_infos": [
+              {
+                "category": "Apparel",
+                "base_product": "Ladies T-shirt"
+              }
+            ],
+            "layers": [
+              {
+                "layer_type": "Text",
+                "location_layer_x": "463",
+                "location_layer_y": "1100",
+                "layer_size_h": "200",
+                "layer_size_w": "1175",
+                "front_or_back": "Front"
+              },
+              {
+                "layer_type": "Text",
+                "location_layer_x": "477",
+                "location_layer_y": "1573",
+                "layer_size_h": "178",
+                "layer_size_w": "1160",
+                "front_or_back": "Front"
+              }
+            ],
+            "custom_options": [
+              {
+                "type": "Radio",
+                "target_layer": "Text layer 1",
+                "value": "Thuy Hoang>Hoang Thuy",
+                "label": "CO1",
+                "position": "below"
+              },
+              {
+                "type": "Radio",
+                "target_layer": "Text layer 2",
+                "value": "OpenCommerce>OCG",
+                "label": "CO2"
+              }
+            ],
+            "pricing_info": {
+              "title": "Campaign CO radio"
+            }
+          },
+          "validate_bulk_update_info": {
+            "filter_validate": "Product title is equal to \"Campaign CO radio\"",
+            "update_for_validate": "All variants",
+            "action_validate": "Delete custom options which their option label is equal to \"CO1\"",
+            "number_of_update_validate": "1"
+          },
+          "bulk_update_info": {
+            "condition_type": "All conditions",
+            "conditions": ["Product title >is equal to >Campaign CO radio"],
+            "actions": ["Delete custom options > is equal to > CO1"]
+          }
+        },
+        {
+          "case_id": "SB_PRB_BUD_9",
+          "description": "[PBase] Check khi delete CO thường là droplist",
+          "picture": {
+            "picture_sf": "SB-PRB-BUD-9-bulk-update-sf.png",
+            "picture_dashboard": "SB-PRB-BUD-9-bulk-update-dashboard.png"
+          },
+          "data_campaign": {
+            "product_infos": [
+              {
+                "category": "Apparel",
+                "base_product": "Ladies T-shirt"
+              }
+            ],
+            "layers": [
+              {
+                "layer_type": "Text",
+                "location_layer_x": "463",
+                "location_layer_y": "1100",
+                "layer_size_h": "200",
+                "layer_size_w": "1175",
+                "front_or_back": "Front"
+              },
+              {
+                "layer_type": "Text",
+                "location_layer_x": "477",
+                "location_layer_y": "1573",
+                "layer_size_h": "178",
+                "layer_size_w": "1160",
+                "front_or_back": "Front"
+              }
+            ],
+            "custom_options": [
+              {
+                "type": "Droplist",
+                "target_layer": "Text layer 1",
+                "value": "Thuy Hoang>Hoang Thuy",
+                "label": "CO1",
+                "position": "below"
+              },
+              {
+                "type": "Droplist",
+                "target_layer": "Text layer 2",
+                "value": "OpenCommerce>OCG",
+                "label": "CO2"
+              }
+            ],
+            "pricing_info": {
+              "title": "Campaign CO droplist"
+            }
+          },
+          "validate_bulk_update_info": {
+            "filter_validate": "Product title is equal to \"Campaign CO droplist\"",
+            "update_for_validate": "All variants",
+            "action_validate": "Delete custom options which their option label is equal to \"CO1\"",
+            "number_of_update_validate": "1"
+          },
+          "bulk_update_info": {
+            "condition_type": "All conditions",
+            "conditions": ["Product title >is equal to >Campaign CO droplist"],
+            "actions": ["Delete custom options > is equal to > CO1"]
+          }
+        },
+        {
+          "case_id": "SB_PRB_BUD_10",
+          "description": "[PBase] Check khi delete CO thường là checkbox",
+          "picture": {
+            "picture_sf": "SB-PRB-BUD-10-bulk-update-sf.png",
+            "picture_dashboard": "SB-PRB-BUD-10-bulk-update-dashboard.png"
+          },
+          "data_campaign": {
+            "product_infos": [
+              {
+                "category": "Apparel",
+                "base_product": "Ladies T-shirt"
+              }
+            ],
+            "layers": [
+              {
+                "layer_type": "Text",
+                "location_layer_x": "463",
+                "location_layer_y": "1100",
+                "layer_size_h": "200",
+                "layer_size_w": "1175",
+                "front_or_back": "Front"
+              },
+              {
+                "layer_type": "Text",
+                "location_layer_x": "477",
+                "location_layer_y": "1573",
+                "layer_size_h": "178",
+                "layer_size_w": "1160",
+                "front_or_back": "Front"
+              }
+            ],
+            "custom_options": [
+              {
+                "type": "Checkbox",
+                "target_layer": "Text layer 1",
+                "label": "CO1",
+                "value": "checked",
+                "position": "below"
+              },
+              {
+                "type": "Checkbox",
+                "target_layer": "Text layer 2",
+                "value": "unchecked",
+                "label": "CO2"
+              }
+            ],
+            "pricing_info": {
+              "title": "Campaign CO checkbox"
+            }
+          },
+          "validate_bulk_update_info": {
+            "filter_validate": "Product title is equal to \"Campaign CO checkbox\"",
+            "update_for_validate": "All variants",
+            "action_validate": "Delete custom options which their option label is equal to \"CO1\"",
+            "number_of_update_validate": "1"
+          },
+          "bulk_update_info": {
+            "condition_type": "All conditions",
+            "conditions": ["Product title >is equal to >Campaign CO checkbox"],
+            "actions": ["Delete custom options > is equal to > CO1"]
+          }
+        },
+        {
+          "case_id": "SB_PRB_BUD_11",
+          "description": "[PBase] Check khi delete CO thường là Picture choice clipart folder",
+          "picture": {
+            "picture_sf": "SB-PRB-BUD-11-bulk-update-sf.png",
+            "picture_dashboard": "SB-PRB-BUD-11-bulk-update-dashboard.png"
+          },
+          "data_campaign": {
+            "product_infos": [
+              {
+                "category": "Apparel",
+                "base_product": "Unisex T-shirt"
+              }
+            ],
+            "layers": [
+              {
+                "layer_type": "Image",
+                "image_name": "BD_6.png",
+                "front_or_back": "Front"
+              },
+              {
+                "layer_type": "Image",
+                "image_name": "BD_7.png",
+                "front_or_back": "Back"
+              }
+            ],
+            "custom_options": [
+              {
+                "type": "Picture choice",
+                "target_layer": "BD_6",
+                "type_clipart": "Folder",
+                "value_clipart": "Folder01",
+                "label": "CO1",
+                "position": "below"
+              },
+              {
+                "type": "Picture choice",
+                "target_layer": "BD_7",
+                "type_clipart": "Folder",
+                "value_clipart": "Folder02",
+                "label": "CO2"
+              }
+            ],
+            "pricing_info": {
+              "title": "Campaign CO PC clipart folder"
+            }
+          },
+          "validate_bulk_update_info": {
+            "filter_validate": "Product title is equal to \"Campaign CO PC clipart folder\"",
+            "update_for_validate": "All variants",
+            "action_validate": "Delete custom options which their option label is equal to \"CO1\"",
+            "number_of_update_validate": "1"
+          },
+          "bulk_update_info": {
+            "condition_type": "All conditions",
+            "conditions": ["Product title >is equal to >Campaign CO PC clipart folder"],
+            "actions": ["Delete custom options > is equal to > CO1"]
+          }
+        },
+        {
+          "case_id": "SB_PRB_BUD_12",
+          "description": "[PBase] Check khi Delete CO khi sử dụng Picture choice group clipart",
+          "picture": {
+            "picture_sf": "SB-PRB-BUD-12-bulk-update-sf.png",
+            "picture_dashboard": "SB-PRB-BUD-12-bulk-update-dashboard.png"
+          },
+          "data_campaign": {
+            "product_infos": [
+              {
+                "category": "Apparel",
+                "base_product": "Unisex Tank"
+              }
+            ],
+            "layers": [
+              {
+                "layer_type": "Image",
+                "image_name": "BD_6.png",
+                "front_or_back": "Front"
+              },
+              {
+                "layer_type": "Image",
+                "image_name": "BD_7.png",
+                "front_or_back": "Back"
+              }
+            ],
+            "custom_options": [
+              {
+                "type": "Picture choice",
+                "target_layer": "BD_6",
+                "type_clipart": "Group",
+                "value_clipart": "Group01",
+                "label": "CO1",
+                "position": "below"
+              },
+              {
+                "type": "Picture choice",
+                "target_layer": "BD_7",
+                "type_clipart": "Group",
+                "value_clipart": "Group02",
+                "label": "CO2"
+              }
+            ],
+            "pricing_info": {
+              "title": "Campaign CO PC clipart group"
+            }
+          },
+          "validate_bulk_update_info": {
+            "filter_validate": "Product title is equal to \"Campaign CO PC clipart group\"",
+            "update_for_validate": "All variants",
+            "action_validate": "Delete custom options which their option label is equal to \"CO1\"",
+            "number_of_update_validate": "1"
+          },
+          "bulk_update_info": {
+            "condition_type": "All conditions",
+            "conditions": ["Product title >is equal to >Campaign CO PC clipart group"],
+            "actions": ["Delete custom options > is equal to > CO1"]
+          }
+        }
+      ]
+    }
+  }
+}

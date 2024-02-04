@@ -1,0 +1,101 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "username": "qe-2@beeketing.net",
+      "password": "Qe2@OCGQE",
+      "domain": "au-checkout-flow-global-ne.onshopbase.com",
+      "shop_name": "au-checkout-flow-global-ne",
+      "products_checkout": [
+        {
+          "name": "Product Auto",
+          "variant_id": 1000011212178907,
+          "quantity": 1,
+          "price": 50,
+          "handle": "product-auto",
+          "variant_title": "S"
+        }
+      ],
+      "country": {
+        "country_name": "Germany",
+        "country_code": "de",
+        "currency": "EUR"
+      },
+      "theme": {
+        "trendie": 1595276,
+        "swiftWatch": 1595267
+      }
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "qe-2@beeketing.net",
+      "password": "Qe2@OCGQE",
+      "domain": "au-checkout-flow-global-ne-prodtest.onshopbase.com",
+      "shop_name": "au-checkout-flow-global-ne-prodtest",
+      "products_checkout": [
+        {
+          "name": "Product Auto",
+          "variant_id": 1000011213017143,
+          "quantity": 1,
+          "price": 50,
+          "handle": "product-auto",
+          "variant_title": "S"
+        }
+      ],
+      "country": {
+        "country_name": "Germany",
+        "country_code": "de",
+        "currency": "EUR"
+      },
+      "accounts_domain": "accounts-test.shopbase.com",
+      "theme": {
+        "trendie": 1595519,
+        "swiftWatch": 1595518
+      }
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "opay-qe-2@beeketing.net",
+      "password": "Opay@123",
+      "domain": "au-checkout-flow-global-ne.myshopbase.net",
+      "shop_name": "au-checkout-flow-global-ne",
+      "products_checkout": [
+        {
+          "name": "Product Auto",
+          "variant_id": 1000001779245381,
+          "quantity": 1,
+          "price": 50,
+          "handle": "product-auto",
+          "variant_title": "S"
+        }
+      ],
+      "country": {
+        "country_name": "Germany",
+        "country_code": "de",
+        "currency": "EUR"
+      },
+      "theme": {
+        "trendie": 3222405,
+        "swiftWatch": 3222439
+      }
+    }
+  },
+  "cases": {
+    "SB_SET_GM_CO": [
+      {
+        "case_id": "SB_SET_GM_CSG_11",
+        "case_name": "Check show currency đối với buyer có IP theo country được set up currency market với Theme NE - setting mini cart, CO 3 steps",
+        "setting_checkout_form": {
+          "checkout_layout": "multi-step"
+        }
+      },
+      {
+        "case_id": "SB_SET_GM_CSG_15",
+        "case_name": "Check show currency đối với buyer có IP theo country được set up currency market với Theme NE - setting mini cart, CO 3 steps",
+        "setting_checkout_form": {
+          "checkout_layout": "one-page"
+        }
+      }
+    ]
+  }
+}

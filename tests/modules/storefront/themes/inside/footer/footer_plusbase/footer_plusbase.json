@@ -1,0 +1,393 @@
+{
+  "env": {
+    "prod": {
+      "domain": "au-inside-plb-footer-content.onshopbase.com",
+      "shop_name": "au-inside-plb-footer-content.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "api": "https://api.shopbase.com",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10335832,
+      "user_id": 73782
+    },
+    "prodtest": {
+      "domain": "au-inside-plb-footer-content-prodtest.onshopbase.com",
+      "shop_name": "au-inside-plb-footer-content-prodtest.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "api": "https://prod-test-api.shopbase.com",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10356443,
+      "user_id": 73782,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "domain": "au-inside-plb-footer-content1.myshopbase.net",
+      "shop_name": "au-inside-plb-footer-content1.myshopbase.net",
+      "username": "shopbase@beeketing.net",
+      "api": "https://gapi.dev.shopbase.net",
+      "password": "S#|j>m2N[q",
+      "shop_id": 10321991,
+      "user_id": 73800,
+      "cases": {
+        "FOOTER_CONTENT": [
+          {
+            "id": "SB_OLS_THE_INS_SF_FOOTER_SECTION_48",
+            "expect": {
+              "screenshot_setting_data": "web-plusbase-footer-content-default-dev.png"
+            }
+          },
+          {
+            "id": "SB_OLS_THE_INS_SF_FOOTER_SECTION_49",
+            "expect": {
+              "screenshot_setting_data": "web-plusbase-footer-content-newsletter-dev.png"
+            }
+          },
+          {
+            "id": "SB_OLS_THE_INS_SF_FOOTER_SECTION_50",
+            "expect": {
+              "screenshot_setting_data": "web-plusbase-footer-content-menu-dev.png"
+            }
+          },
+          {
+            "id": "SB_OLS_THE_INS_SF_FOOTER_SECTION_51",
+            "expect": {
+              "screenshot_setting_data": "web-plusbase-footer-content-page-dev.png"
+            }
+          },
+          {
+            "id": "SB_OLS_THE_INS_SF_FOOTER_SECTION_52",
+            "expect": {
+              "screenshot_setting_data": "web-plusbase-footer-content-text-dev.png"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "cases": {
+    "FOOTER_CONTENT": [
+      {
+        "description": "Check show footer content plusbase default",
+        "id": "SB_OLS_THE_INS_SF_FOOTER_SECTION_48",
+        "data": {
+          "footer-content": {
+            "blocks": [
+              {
+                "settings": {
+                  "address": "548 Market St #14148, San Francisco, CA 94104 USA",
+                  "blog_link": "",
+                  "collapse": true,
+                  "email": "support@shops-support.net",
+                  "facebook_link": "",
+                  "heading": "Store Information",
+                  "hide_heading": false,
+                  "instagram_link": "",
+                  "logo": "",
+                  "logo_size": "small",
+                  "mobile_logo": "",
+                  "mobile_logo_size": "small",
+                  "phone": "+1 (844) 909-4899",
+                  "pinterest_link": "",
+                  "show_social_media_icons": true,
+                  "text": "",
+                  "twitter_link": "",
+                  "youtube_link": ""
+                },
+                "type": "store-information-settings",
+                "visible": true
+              },
+              {
+                "settings": {
+                  "main_menu": "footer"
+                },
+                "type": "menu-shop",
+                "visible": true
+              },
+              {
+                "settings": {
+                  "main_menu": "policies"
+                },
+                "type": "menu-policy",
+                "visible": true
+              }
+            ],
+            "settings": {
+              "auto_collapse_content_on_mobile": false,
+              "full_width": true
+            },
+            "type": "footer-content",
+            "visible": true
+          }
+        },
+        "expect": {
+          "screenshot_setting_data": "web-plusbase-footer-content-default.png"
+        }
+      },
+      {
+        "description": "Check footer content plusbase when add block Newsletter",
+        "id": "SB_OLS_THE_INS_SF_FOOTER_SECTION_49",
+        "data": {
+          "footer-content": {
+            "blocks": [
+              {
+                "settings": {
+                  "address": "548 Market St #14148, San Francisco, CA 94104 USA",
+                  "blog_link": "",
+                  "collapse": true,
+                  "email": "support@shops-support.net",
+                  "facebook_link": "",
+                  "heading": "Store Information",
+                  "hide_heading": false,
+                  "instagram_link": "",
+                  "logo": "",
+                  "logo_size": "small",
+                  "mobile_logo": "",
+                  "mobile_logo_size": "small",
+                  "phone": "+1 (844) 909-4899",
+                  "pinterest_link": "",
+                  "show_social_media_icons": true,
+                  "text": "",
+                  "twitter_link": "",
+                  "youtube_link": ""
+                },
+                "type": "store-information-settings",
+                "visible": true
+              },
+              {
+                "settings": {
+                  "main_menu": "footer"
+                },
+                "type": "menu-shop",
+                "visible": true
+              },
+              {
+                "settings": {
+                  "main_menu": "policies"
+                },
+                "type": "menu-policy",
+                "visible": true
+              },
+              {
+                "settings": {
+                  "heading": "SUBSCRIBE",
+                  "text": "Sign up to get the latest on sales, new releases and more ..."
+                },
+                "type": "newsletter",
+                "visible": true
+              }
+            ],
+            "settings": {
+              "auto_collapse_content_on_mobile": false,
+              "full_width": true
+            },
+            "type": "footer-content",
+            "visible": true
+          }
+        },
+        "expect": {
+          "link_text_url": null,
+          "sign_up": null,
+          "screenshot_setting_data": "web-plusbase-footer-content-newsletter.png"
+        }
+      },
+      {
+        "description": "Check footer content plusbase when add block Menu",
+        "id": "SB_OLS_THE_INS_SF_FOOTER_SECTION_50",
+        "data": {
+          "footer-content": {
+            "blocks": [
+              {
+                "settings": {
+                  "address": "548 Market St #14148, San Francisco, CA 94104 USA",
+                  "blog_link": "",
+                  "collapse": true,
+                  "email": "support@shops-support.net",
+                  "facebook_link": "",
+                  "heading": "Store Information",
+                  "hide_heading": false,
+                  "instagram_link": "",
+                  "logo": "",
+                  "logo_size": "small",
+                  "mobile_logo": "",
+                  "mobile_logo_size": "small",
+                  "phone": "+1 (844) 909-4899",
+                  "pinterest_link": "",
+                  "show_social_media_icons": true,
+                  "text": "",
+                  "twitter_link": "",
+                  "youtube_link": ""
+                },
+                "type": "store-information-settings",
+                "visible": true
+              },
+              {
+                "settings": {
+                  "main_menu": "footer"
+                },
+                "type": "menu-shop",
+                "visible": true
+              },
+              {
+                "settings": {
+                  "main_menu": "policies"
+                },
+                "type": "menu-policy",
+                "visible": true
+              },
+              {
+                "settings": {
+                  "main_menu": "main-menu"
+                },
+                "type": "menu",
+                "visible": true
+              }
+            ],
+            "settings": {
+              "auto_collapse_content_on_mobile": false,
+              "full_width": true
+            },
+            "type": "footer-content",
+            "visible": true
+          }
+        },
+        "expect": {
+          "link_text_url": null,
+          "sign_up": null,
+          "screenshot_setting_data": "web-plusbase-footer-content-menu.png"
+        }
+      },
+      {
+        "description": "Check footer content plusbase when add block Page",
+        "id": "SB_OLS_THE_INS_SF_FOOTER_SECTION_51",
+        "data": {
+          "footer-content": {
+            "blocks": [
+              {
+                "settings": {
+                  "address": "548 Market St #14148, San Francisco, CA 94104 USA",
+                  "blog_link": "",
+                  "collapse": true,
+                  "email": "support@shops-support.net",
+                  "facebook_link": "",
+                  "heading": "Store Information",
+                  "hide_heading": false,
+                  "instagram_link": "",
+                  "logo": "",
+                  "logo_size": "small",
+                  "mobile_logo": "",
+                  "mobile_logo_size": "small",
+                  "phone": "+1 (844) 909-4899",
+                  "pinterest_link": "",
+                  "show_social_media_icons": true,
+                  "text": "",
+                  "twitter_link": "",
+                  "youtube_link": ""
+                },
+                "type": "store-information-settings",
+                "visible": true
+              },
+              {
+                "settings": {
+                  "main_menu": "footer"
+                },
+                "type": "menu-shop",
+                "visible": true
+              },
+              {
+                "settings": {
+                  "main_menu": "policies"
+                },
+                "type": "menu-policy",
+                "visible": true
+              },
+              {
+                "settings": {
+                  "page": "contact-us"
+                },
+                "type": "page",
+                "visible": true
+              }
+            ],
+            "settings": {
+              "auto_collapse_content_on_mobile": false,
+              "full_width": true
+            },
+            "type": "footer-content",
+            "visible": true
+          }
+        },
+        "expect": {
+          "link_text_url": null,
+          "sign_up": null,
+          "screenshot_setting_data": "web-plusbase-footer-content-page.png"
+        }
+      },
+      {
+        "description": "Check footer content plusbase when add block Text",
+        "id": "SB_OLS_THE_INS_SF_FOOTER_SECTION_52",
+        "data": {
+          "footer-content": {
+            "blocks": [
+              {
+                "settings": {
+                  "address": "548 Market St #14148, San Francisco, CA 94104 USA",
+                  "blog_link": "",
+                  "collapse": true,
+                  "email": "support@shops-support.net",
+                  "facebook_link": "",
+                  "heading": "Store Information",
+                  "hide_heading": false,
+                  "instagram_link": "",
+                  "logo": "",
+                  "logo_size": "small",
+                  "mobile_logo": "",
+                  "mobile_logo_size": "small",
+                  "phone": "+1 (844) 909-4899",
+                  "pinterest_link": "",
+                  "show_social_media_icons": true,
+                  "text": "",
+                  "twitter_link": "",
+                  "youtube_link": ""
+                },
+                "type": "store-information-settings",
+                "visible": true
+              },
+              {
+                "settings": {
+                  "main_menu": "footer"
+                },
+                "type": "menu-shop",
+                "visible": true
+              },
+              {
+                "settings": {
+                  "main_menu": "policies"
+                },
+                "type": "menu-policy",
+                "visible": true
+              },
+              {
+                "settings": {
+                  "heading": "YOUR HEADING",
+                  "text": "When will i get my order? We proudly offer worldwide shipping! Please note order processing time is typically 2-3 business days. Once your order has shipped, the estimated delivery time is between 10 to 15 business days. Please consider any holidays that might impact delivery times. Please note: Your order may split into multiple shipments. If this occurs, you will be notified and receive a tracking number for each separate shipment."
+                },
+                "type": "text",
+                "visible": true
+              }
+            ],
+            "settings": {
+              "auto_collapse_content_on_mobile": false,
+              "full_width": true
+            },
+            "type": "footer-content",
+            "visible": true
+          }
+        },
+        "expect": {
+          "link_text_url": null,
+          "sign_up": null,
+          "screenshot_setting_data": "web-plusbase-footer-content-text.png"
+        }
+      }
+    ]
+  }
+}

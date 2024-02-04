@@ -1,0 +1,128 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "dp-my-account-prod.onshopbase.com",
+      "shop_name": "dp-my-account-prod",
+      "env": "prod"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "creator-my-product-sf-prodtest.onshopbase.com",
+      "shop_name": "creator-my-product-sf-prodtest",
+      "env": "prodtest",
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "dp-my-account-stf.myshopbase.net",
+      "shop_name": "dp-my-account-stf",
+      "env": "dev"
+    }
+  },
+  "username": "thupham@beeketing.net",
+  "password": "123456",
+  "cases": {
+    "SB_DP_SF_SP_7": {
+      "data": [
+        {
+          "testcase_id": "TC_SB_DP_SF_SP_7.1",
+          "password": "123456",
+          "current_pass": "1234567",
+          "new_pass": "1234567",
+          "confirm_pass": "1234567",
+          "is_success": false,
+          "message": "Current password is not correct"
+        },
+        {
+          "testcase_id": "TC_SB_DP_SF_SP_7.2",
+          "password": "123456",
+          "current_pass": "123456",
+          "new_pass": "1234567",
+          "confirm_pass": "123456",
+          "is_success": false,
+          "message": "Confirm password to match your new password"
+        },
+        {
+          "testcase_id": "TC_SB_DP_SF_SP_7.3",
+          "password": "123456",
+          "current_pass": "123456",
+          "new_pass": "1234567",
+          "confirm_pass": "1234567",
+          "is_success": true,
+          "message": "Your password has been changed successfully!"
+        },
+        {
+          "testcase_id": "TC_SB_DP_SF_SP_7.4",
+          "password": "1234567",
+          "current_pass": "1234567",
+          "new_pass": "123456",
+          "confirm_pass": "123456",
+          "is_success": true,
+          "message": "Your password has been changed successfully!"
+        }
+      ]
+    },
+    "SB_DP_SF_SP_10": {
+      "data": [
+        {
+          "testcase_id": "TC_SB_DP_SF_SP_10.1",
+          "password": "123456",
+          "current_pass": "1234567",
+          "new_pass": "1234567",
+          "status": 401
+        },
+        {
+          "testcase_id": "TC_SB_DP_SF_SP_10.2",
+          "password": "123456",
+          "current_pass": 1234567,
+          "new_pass": "1234567",
+          "status": 500
+        },
+        {
+          "testcase_id": "TC_SB_DP_SF_SP_10.3",
+          "password": "123456",
+          "current_pass": "123456",
+          "new_pass": "1234567",
+          "status": 200
+        },
+        {
+          "testcase_id": "TC_SB_DP_SF_SP_10.4",
+          "password": "1234567",
+          "current_pass": "1234567",
+          "new_pass": "123456",
+          "status": 200
+        }
+      ]
+    },
+    "SB_DP_SF_SP_4": {
+      "mail_not_exist": "123abc890@gmail.com",
+      "mail_exist": "thupham@maildrop.cc",
+      "mail_content": "Follow this link to reset your customer account password",
+      "new_password": "1234567",
+      "messages": {
+        "msg_not_exist_account": "Account does not exist.",
+        "msg_noti_sent_email": "We have sent you an email to reset password. Please check your inbox.",
+        "msg_reset_err": "Password reset error.",
+        "msg_login_err": "Your email or password is incorrect."
+      },
+      "data": [
+        {
+          "new_password": "123456",
+          "confirm_password": "1234567",
+          "msg": "Confirm password to match your new password"
+        },
+        {
+          "new_password": "1234567",
+          "confirm_password": "123456",
+          "msg": "Confirm password to match your new password"
+        },
+        {
+          "new_password": "1234567",
+          "confirm_password": "1234567",
+          "msg": "Your password has been reset successfully! You are logged in!"
+        }
+      ]
+    }
+  }
+}

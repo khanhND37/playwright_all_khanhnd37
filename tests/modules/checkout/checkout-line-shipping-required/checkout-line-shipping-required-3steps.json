@@ -1,0 +1,100 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "username": "opay-qe-2@beeketing.net",
+      "password": "Opay@123",
+      "domain": "au-line-shipping-required-plb-3-steps.onshopbase.com",
+      "shop_name": "au-line-shipping-required-plb-3-steps",
+      "products_checkout": [
+        {
+          "variant_id": 1000010753301209,
+          "quantity": 1
+        }
+      ],
+      "theme_v2": 1453177,
+      "shipping_address": {
+        "email": "testocg@maildrop.cc",
+        "first_name": "ShopBase",
+        "last_name": "Auto",
+        "address": "1600 W Loop S",
+        "country": "United States",
+        "state": "California",
+        "city": "Los Angeles",
+        "zipcode": "90003",
+        "country_code": "United States"
+      },
+      "phone_number": "0357974381"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "opay-qe-2@beeketing.net",
+      "password": "Opay@123",
+      "domain": "au-line-shipping-required-plb-3-steps-prodtest.onshopbase.com",
+      "shop_name": "au-line-shipping-required-plb-3-steps-prodtest",
+      "products_checkout": [
+        {
+          "variant_id": 1000010753301198,
+          "quantity": 1
+        }
+      ],
+      "accounts_domain": "accounts-test.shopbase.com",
+      "theme_v2": 1453175,
+      "shipping_address": {
+        "email": "testocg@maildrop.cc",
+        "first_name": "ShopBase",
+        "last_name": "Auto",
+        "address": "1600 W Loop S",
+        "country": "United States",
+        "state": "California",
+        "city": "Los Angeles",
+        "zipcode": "90003",
+        "country_code": "United States"
+      },
+      "phone_number": "0357974381"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "opay-qe-2@beeketing.net",
+      "password": "Opay@123",
+      "domain": "au-line-shipping-required-plb-3-steps.myshopbase.net",
+      "shop_name": "au-line-shipping-required-plb-3-steps",
+      "products_checkout": [
+        {
+          "variant_id": 1000001770456713,
+          "quantity": 1
+        }
+      ],
+      "theme_v2": 3176910,
+      "shipping_address": {
+        "email": "testocg@maildrop.cc",
+        "first_name": "ShopBase",
+        "last_name": "Auto",
+        "address": "1600 W Loop S",
+        "country": "United States",
+        "state": "California",
+        "city": "Los Angeles",
+        "zipcode": "90003",
+        "country_code": "United States"
+      },
+      "phone_number": "0357974381"
+    }
+  },
+  "cases": {
+    "SB_HAS_NOT_FILL_3STEPS": [
+      {
+        "case_id": "SB_CHE_CHF_250",
+        "case_name": "Verify checkout khi Buyer select Eco shipping method, checkout 3 steps, theme v2",
+        "shipping_method": "Eco Shipping"
+      },
+      {
+        "case_id": "SB_CHE_CHF_251",
+        "case_name": "Verify checkout khi Buyer select Standard shipping method, checkout 3 steps, theme v2",
+        "shipping_method": "Standard Shipping"
+      }
+    ],
+    "SB_CHE_CHF_252": {
+      "shipping_method": "Premium Shipping"
+    }
+  }
+}

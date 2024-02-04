@@ -1,0 +1,608 @@
+{
+  "env": {
+    "dev": {
+      "domain": "auto-block-wb.myshopbase.net",
+      "shop_name": "auto-block-wb",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10333928,
+      "user_id": 90252,
+      "themes_setting": 3238658,
+      "create_product": {
+        "product": {
+          "title": "Block Toggle list",
+          "published": true,
+          "product_type": "online_course"
+        }
+      },
+      "section_name": {
+        "content": "Test Toggle list"
+      },
+      "collapse_layer": {
+        "sectionName": "Section",
+        "sectionIndex": 1,
+        "isExpand": true
+      },
+      "open_layer": {
+        "sectionName": "Toggle list",
+        "sectionIndex": 1
+      },
+      "dnd_block": {
+        "from": {
+          "category": "Basics",
+          "template": "Toggle list"
+        },
+        "to": {
+          "position": {
+            "section": 1,
+            "column": 1
+          },
+          "isBottom": false
+        }
+      }
+    },
+    "prodtest": {
+      "domain": "auto-block-wb-prodtest.onshopbase.com",
+      "shop_name": "auto-block-wb-prodtest",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10480844,
+      "user_id": 11260206,
+      "themes_setting": 1643217,
+      "create_product": {
+        "product": {
+          "title": "Block Toggle list",
+          "published": true,
+          "product_type": "online_course"
+        }
+      },
+      "section_name": {
+        "content": "Test Toggle list"
+      },
+      "accounts_domain": "accounts-test.shopbase.com",
+      "collapse_layer": {
+        "sectionName": "Section",
+        "sectionIndex": 1,
+        "isExpand": true
+      },
+      "open_layer": {
+        "sectionName": "Toggle list",
+        "sectionIndex": 1
+      },
+      "dnd_block": {
+        "from": {
+          "category": "Basics",
+          "template": "Toggle list"
+        },
+        "to": {
+          "position": {
+            "section": 1,
+            "column": 1
+          },
+          "isBottom": false
+        }
+      }
+    },
+    "prod": {
+      "domain": "auto-block-wb.onshopbase.com",
+      "shop_name": "auto-block-wb",
+      "api": "https://api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10480842,
+      "user_id": 11260206,
+      "themes_setting": 1643219,
+      "create_product": {
+        "product": {
+          "title": "Block Toggle list",
+          "published": true,
+          "product_type": "online_course"
+        }
+      },
+      "section_name": {
+        "content": "Test Toggle list"
+      },
+      "collapse_layer": {
+        "sectionName": "Section",
+        "sectionIndex": 1,
+        "isExpand": true
+      },
+      "open_layer": {
+        "sectionName": "Toggle list",
+        "sectionIndex": 1
+      },
+      "dnd_block": {
+        "from": {
+          "category": "Basics",
+          "template": "Toggle list"
+        },
+        "to": {
+          "position": {
+            "section": 1,
+            "column": 1
+          },
+          "isBottom": false
+        }
+      }
+    }
+  },
+  "cases": {
+    "SB_WEB_BUILDER_LB_BA_1": {
+      "description": "Check data default when add block toggle list",
+      "data": {
+        "section_1": {
+          "dnd_block": {
+            "from": {
+              "category": "Basics",
+              "template": "Toggle list"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "column": 1
+              },
+              "isBottom": false
+            }
+          }
+        }
+      },
+      "expect": {
+        "sidebar": "sidebar_default_toggle.png",
+        "preview": "preview_default_toggle.png",
+        "storefront": "storefront_default_toggle.png"
+      },
+      "data_setting": {
+        "accordions": [
+          {
+            "paragraph": "<p class='p2'>Input your Paragraph here</p>",
+            "title": "<h4 class='h4'>Input your Title here</h4>"
+          },
+          {
+            "paragraph": "<p class='p2'>Input your Paragraph here</p>",
+            "title": "<h4 class='h4'>Input your Title here</h4>"
+          },
+          {
+            "paragraph": "<p class='p2'>Input your Paragraph here</p>",
+            "title": "<h4 class='h4'>Input your Title here</h4>"
+          }
+        ],
+        "default_expand": true
+      }
+    },
+    "SB_WEB_BUILDER_LB_BA_2": {
+      "description": "Check setting expand toggle list",
+      "data": {
+        "section_1": {
+          "dnd_blocks": [
+            {
+              "setting_expand": {
+                "default_expand": false
+              },
+              "expect_icon_expand": "add"
+            },
+            {
+              "setting_expand": {
+                "default_expand": true
+              },
+              "expect_icon_expand": "remove"
+            }
+          ]
+        }
+      },
+      "default_expand": {
+        "default_expand": true
+      }
+    },
+    "SB_WEB_BUILDER_LB_BA_3": {
+      "description": "Check add item toggle list",
+      "data": {
+        "section_1": {
+          "dnd_blocks": [
+            {
+              "from": {
+                "category": "Basics",
+                "template": "Toggle list"
+              },
+              "to": {
+                "position": {
+                  "section": 1,
+                  "column": 1
+                },
+                "isBottom": false
+              },
+              "add_item": 2,
+              "show_add_item": true
+            },
+            {
+              "from": {
+                "category": "Basics",
+                "template": "Toggle list"
+              },
+              "to": {
+                "position": {
+                  "section": 1,
+                  "column": 1,
+                  "block": 1
+                },
+                "isBottom": false
+              },
+              "add_item": 3,
+              "show_add_item": false
+            }
+          ]
+        }
+      },
+      "data_setting": [
+        {
+          "accordions": [
+            {
+              "paragraph": "<p class='p2'>Input your Paragraph here</p>",
+              "title": "<h4 class='h4'>Input your Title here</h4>"
+            },
+            {
+              "paragraph": "<p class='p2'>Input your Paragraph here</p>",
+              "title": "<h4 class='h4'>Input your Title here</h4>"
+            },
+            {
+              "paragraph": "<p class='p2'>Input your Paragraph here</p>",
+              "title": "<h4 class='h4'>Input your Title here</h4>"
+            }
+          ]
+        },
+        {
+          "accordions": [
+            {
+              "paragraph": "<p class='p2'>Input your Paragraph here</p>",
+              "title": "<h4 class='h4'>Input your Title here</h4>"
+            },
+            {
+              "paragraph": "<p class='p2'>Input your Paragraph here</p>",
+              "title": "<h4 class='h4'>Input your Title here</h4>"
+            },
+            {
+              "paragraph": "<p class='p2'>Input your Paragraph here</p>",
+              "title": "<h4 class='h4'>Input your Title here</h4>"
+            },
+            {
+              "paragraph": "<p class='p2'>Input your Paragraph here</p>",
+              "title": "<h4 class='h4'>Input your Title here</h4>"
+            },
+            {
+              "paragraph": "<p class='p2'>Input your Paragraph here</p>",
+              "title": "<h4 class='h4'>Input your Title here</h4>"
+            },
+            {
+              "paragraph": "<p class='p2'>Input your Paragraph here</p>",
+              "title": "<h4 class='h4'>Input your Title here</h4>"
+            },
+            {
+              "paragraph": "<p class='p2'>Input your Paragraph here</p>",
+              "title": "<h4 class='h4'>Input your Title here</h4>"
+            },
+            {
+              "paragraph": "<p class='p2'>Input your Paragraph here</p>",
+              "title": "<h4 class='h4'>Input your Title here</h4>"
+            },
+            {
+              "paragraph": "<p class='p2'>Input your Paragraph here</p>",
+              "title": "<h4 class='h4'>Input your Title here</h4>"
+            },
+            {
+              "paragraph": "<p class='p2'>Input your Paragraph here</p>",
+              "title": "<h4 class='h4'>Input your Title here</h4>"
+            }
+          ]
+        }
+      ],
+      "quantity_item_toggle": {
+        "min_item": 1,
+        "max_item": 10
+      }
+    },
+    "SB_WEB_BUILDER_LB_BA_4": {
+      "description": "Check edit item and drag drop item toggle list",
+      "data": {
+        "section_1": {
+          "dnd_block": {
+            "from": {
+              "category": "Basics",
+              "template": "Toggle list"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "column": 1
+              },
+              "isBottom": false
+            }
+          },
+          "setting_items": {
+            "position": {
+              "section": 1,
+              "block": 1
+            },
+            "title": [
+              {
+                "index": 1,
+                "text": "Are my results guaranteed?"
+              }
+            ],
+            "paragraph": [
+              {
+                "index": 1,
+                "text": "Like anything in life, you will get out of this bootcamp what you put into it"
+              }
+            ]
+          },
+          "dnd": {
+            "from": 1,
+            "to": 3
+          }
+        }
+      },
+      "expect": {
+        "preview": "preview_block_toggle_edit_item.png",
+        "storefront": "storefront_block_toggle_edit_item.png"
+      }
+    },
+    "SB_WEB_BUILDER_LB_BA_5": {
+      "description": "Check delete item toggle list",
+      "data": {
+        "section_1": {
+          "dnd_blocks": [
+            {
+              "from": {
+                "category": "Basics",
+                "template": "Toggle list"
+              },
+              "to": {
+                "position": {
+                  "section": 1,
+                  "column": 1
+                },
+                "isBottom": false
+              },
+              "delete_item": 1
+            },
+            {
+              "from": {
+                "category": "Basics",
+                "template": "Toggle list"
+              },
+              "to": {
+                "position": {
+                  "section": 1,
+                  "column": 1,
+                  "block": 1
+                },
+                "isBottom": false
+              },
+              "delete_item": 2
+            }
+          ]
+        }
+      }
+    },
+    "SB_WEB_BUILDER_LB_BA_7": {
+      "description": "Check setting width, height block toggle list",
+      "data": {
+        "section_1": {
+          "dnd_blocks": {
+            "from": {
+              "category": "Basics",
+              "template": "Toggle list"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "column": 1
+              },
+              "isBottom": true
+            },
+            "duplicate": 5
+          },
+          "settings_block": [
+            {
+              "data_setting": {
+                "width": {
+                  "unit": "Px",
+                  "value": 500
+                },
+                "height": {
+                  "unit": "Px",
+                  "value": 500
+                }
+              },
+              "expect_data": {
+                "width": "500px",
+                "height": "500px"
+              }
+            },
+            {
+              "data_setting": {
+                "width": {
+                  "unit": "Px",
+                  "value": 200
+                },
+                "height": {
+                  "unit": "%",
+                  "value": 200
+                }
+              },
+              "expect_data": {
+                "width": "200px",
+                "height": "100%"
+              }
+            },
+            {
+              "data_setting": {
+                "width": {
+                  "unit": "Px",
+                  "value": 200
+                },
+                "height": {
+                  "unit": "Auto"
+                }
+              },
+              "expect_data": {
+                "width": "200px",
+                "height": "auto"
+              }
+            },
+            {
+              "data_setting": {
+                "width": {
+                  "unit": "%",
+                  "value": 100
+                },
+                "height": {
+                  "unit": "Px",
+                  "value": 500
+                }
+              },
+              "expect_data": {
+                "width": "100%",
+                "height": "500px"
+              }
+            },
+            {
+              "data_setting": {
+                "width": {
+                  "unit": "Auto"
+                },
+                "height": {
+                  "unit": "Px",
+                  "value": 500
+                }
+              },
+              "expect_data": {
+                "width": "auto",
+                "height": "500px"
+              }
+            },
+            {
+              "data_setting": {
+                "width": {
+                  "unit": "Auto"
+                },
+                "height": {
+                  "unit": "%",
+                  "value": 100
+                }
+              },
+              "expect_data": {
+                "width": "auto",
+                "height": "100%"
+              }
+            }
+          ]
+        }
+      },
+      "expect": {
+        "preview": "preview_block_toggle_width_height_setting.png",
+        "storefront": "storefront_block_toggle_width_height_setting.png"
+      }
+    },
+    "SB_WEB_BUILDER_LB_BA_8": {
+      "description": "Check setting icon color, border, opacity, shadow, background, radius, padding, margin block toggle list",
+      "data": {
+        "section_1": {
+          "dnd_block": {
+            "from": {
+              "category": "Basics",
+              "template": "Toggle list"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "column": 1
+              },
+              "isBottom": false
+            }
+          },
+          "settings_block": {
+            "color": {
+              "preset": 6,
+              "hexText": "#F22727"
+            },
+            "align": "Right",
+            "width": {
+              "unit": "%",
+              "value": 30
+            },
+            "height": {
+              "unit": "Px",
+              "value": 360
+            },
+            "background": {
+              "color": {
+                "preset": 6,
+                "hexText": "#BAFFF5"
+              }
+            },
+            "border": {
+              "thickness": "l",
+              "color": {
+                "preset": 6,
+                "hexText": "#EA7FE8"
+              }
+            },
+            "opacity": {
+              "fill": true,
+              "number": 80
+            },
+            "radius": {
+              "fill": true,
+              "number": 8
+            },
+            "shadow": {
+              "option": "hard",
+              "size": "M",
+              "direction": "Top Left"
+            },
+            "margin": {
+              "top": 15,
+              "left": 20,
+              "bottom": 15,
+              "right": 20,
+              "input": true
+            },
+            "padding": {
+              "top": 5,
+              "left": 10,
+              "bottom": 5,
+              "right": 10,
+              "input": true
+            }
+          }
+        }
+      },
+      "expect": {
+        "preview": "preview_block_toggle_all_setting.png",
+        "storefront": "storefront_block_toggle_all_setting.png"
+      }
+    },
+    "SB_WEB_BUILDER_LB_BA_9": {
+      "description": "Check remove block toggle list",
+      "data": {
+        "section_1": {
+          "dnd_block": {
+            "from": {
+              "category": "Basics",
+              "template": "Toggle list"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "column": 1
+              },
+              "isBottom": false
+            }
+          }
+        }
+      }
+    }
+  }
+}

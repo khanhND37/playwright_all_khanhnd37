@@ -1,0 +1,395 @@
+{
+  "api": "https://api.shopbase.com",
+  "domain": "lecture-section-api.onshopbase.com",
+  "shop_name": "lecture-section-api",
+  "user_id": "73782",
+  "shop_id": "10369410",
+  "username": "shopbase@beeketing.net",
+  "password": "Q(f!3Kx+6n;?Us%F",
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "lecture-section-api.onshopbase.com",
+      "shop_name": "lecture-section-api",
+      "user_id": "73782",
+      "shop_id": "10369410",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "lecture-section-api-prodtest.onshopbase.com",
+      "shop_name": "lecture-section-api-prodtest",
+      "user_id": "73782",
+      "shop_id": "10369409",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "lecture-section-api.myshopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "user_id": 73800,
+      "shop_id": 10321855,
+      "shop_name": "lecture-section-api"
+    }
+  },
+  "cases": {
+    "SB_SC_SCP_221": {
+      "product": {
+        "handle": "product-create-lecture",
+        "product_type": "online_course",
+        "title": "Product online course create lecture"
+      },
+      "section_info": {
+        "product_id": 0,
+        "title": "Section online course 1",
+        "description": "This is new section for online course",
+        "status": "pushlished",
+        "position": 1
+      },
+      "lecture_info": {
+        "title": "lecture 1",
+        "description": "This is new lecture",
+        "status": "pushlished",
+        "position": 1,
+        "product_id": 0,
+        "section_id": 0
+      },
+      "lecture_verify": {
+        "title": "lecture 1",
+        "description": "This is new lecture",
+        "status": "pushlished",
+        "position": 1
+      }
+    },
+    "DATA_CREATE_LECTURE_MEDIAS": {
+      "data": [
+        {
+          "description": "Tạo mới lecture cho product online course có media là video",
+          "case_id": "SB_SC_SCP_220",
+          "product": {
+            "handle": "product-create-lecture-video",
+            "product_type": "digital_download",
+            "title": "Product create lecture has video"
+          },
+          "section_info": {
+            "title": "Section 1",
+            "description": "This is new section",
+            "status": "pushlished",
+            "position": 1
+          },
+          "lecture_info": {
+            "title": "Lecture 1",
+            "description": "This is new lecture",
+            "status": "pushlished",
+            "position": 1
+          },
+          "medias": [
+            {
+              "shop_id": 10321855,
+              "product_id": 0,
+              "path": "path 1232323",
+              "name": "path name 23232321",
+              "type": "video",
+              "subtitle_path": null,
+              "status": "unpublished"
+            }
+          ],
+          "lecture_verify": {
+            "title": "Lecture 1",
+            "description": "This is new lecture",
+            "status": "pushlished",
+            "position": 1,
+            "number_media": 1
+          }
+        },
+        {
+          "description": "Tạo mới lecture cho product online course có media là file",
+          "case_id": "SB_SC_SCP_219",
+          "product": {
+            "handle": "product-create-lecture-has-file",
+            "product_type": "digital_download",
+            "title": "Product digital download create lecture"
+          },
+          "section_info": {
+            "title": "Section 1",
+            "description": "This is new section",
+            "status": "pushlished",
+            "position": 1
+          },
+          "lecture_info": {
+            "title": "Lecture 1",
+            "description": "This is new lecture",
+            "status": "pushlished",
+            "position": 1
+          },
+          "medias": [
+            {
+              "shop_id": 10321855,
+              "product_id": 0,
+              "path": "path 3",
+              "name": "path name 3",
+              "type": "file",
+              "status": "unpublished"
+            }
+          ],
+          "lecture_verify": {
+            "title": "Lecture 1",
+            "description": "This is new lecture",
+            "status": "pushlished",
+            "position": 1,
+            "number_media": 1
+          }
+        },
+        {
+          "description": "Tạo mới lecture cho product online course có nhiều media",
+          "case_id": "SB_SC_SCP_218",
+          "product": {
+            "handle": "product-create-lecture-multi-media",
+            "product_type": "digital_download",
+            "title": "Product create lecture multi media"
+          },
+          "section_info": {
+            "title": "Section 1",
+            "description": "This is new section",
+            "status": "pushlished",
+            "position": 1
+          },
+          "lecture_info": {
+            "title": "Lecture 1",
+            "description": "This is new lecture",
+            "status": "pushlished",
+            "position": 1
+          },
+          "medias": [
+            {
+              "shop_id": 10321855,
+              "product_id": 0,
+              "path": "path 1232323",
+              "name": "path name 23232321",
+              "type": "video",
+              "subtitle_path": null,
+              "status": "unpublished"
+            },
+            {
+              "shop_id": 10321855,
+              "product_id": 0,
+              "path": "path 3",
+              "name": "path name 3",
+              "type": "file",
+              "status": "unpublished"
+            }
+          ],
+          "lecture_verify": {
+            "title": "Lecture 1",
+            "description": "This is new lecture",
+            "status": "pushlished",
+            "position": 1,
+            "number_media": 2
+          }
+        },
+        {
+          "description": "Check gọi API tạo mới lecture nhưng position đã tồn tại",
+          "case_id": "SB_SC_SCP_216",
+          "product": {
+            "handle": "product-create-lecture-multi-media",
+            "product_type": "digital_download",
+            "title": "Product create lecture multi media"
+          },
+          "section_info": {
+            "title": "Section 1",
+            "description": "This is new section",
+            "status": "pushlished",
+            "position": 1
+          },
+          "lecture_info": {
+            "title": "Lecture 1",
+            "description": "This is new lecture",
+            "status": "pushlished",
+            "position": 1
+          },
+          "medias": [
+            {
+              "shop_id": 10321855,
+              "product_id": 0,
+              "path": "path 1232323",
+              "name": "path name 23232321",
+              "type": "video",
+              "subtitle_path": null,
+              "status": "unpublished"
+            },
+            {
+              "shop_id": 10321855,
+              "product_id": 0,
+              "path": "path 3",
+              "name": "path name 3",
+              "type": "file",
+              "status": "unpublished"
+            }
+          ],
+          "lecture_verify": {
+            "title": "Lecture 1",
+            "description": "This is new lecture",
+            "status": "pushlished",
+            "position": 1,
+            "number_media": 2
+          }
+        }
+      ]
+    },
+    "SB_SC_SCP_217": {
+      "product": {
+        "handle": "product-create-lecture-multi-lecture",
+        "product_type": "digital_download",
+        "title": "Product create lecture multi lecture"
+      },
+      "section_info": {
+        "title": "Section 1",
+        "description": "This is new section",
+        "status": "pushlished",
+        "position": 1
+      },
+      "lecture_info": [
+        {
+          "title": "Lecture 1",
+          "description": "This is new lecture",
+          "status": "pushlished",
+          "position": 1
+        },
+        {
+          "title": "Lecture 2",
+          "description": "This is new lecture",
+          "status": "pushlished",
+          "position": 2
+        },
+        {
+          "title": "Lecture 3",
+          "description": "This is new lecture",
+          "status": "pushlished",
+          "position": 3
+        }
+      ],
+      "lecture_verify": [
+        {
+          "title": "Lecture 1",
+          "description": "This is new lecture",
+          "status": "pushlished",
+          "position": 1
+        },
+        {
+          "title": "Lecture 2",
+          "description": "This is new lecture",
+          "status": "pushlished",
+          "position": 2
+        },
+        {
+          "title": "Lecture 3",
+          "description": "This is new lecture",
+          "status": "pushlished",
+          "position": 3
+        }
+      ]
+    },
+    "SB_SC_SCP_215": {
+      "product": {
+        "handle": "product-create-lecture-multi-media",
+        "product_type": "digital_download",
+        "title": "Product create lecture multi media"
+      },
+      "section_info": {
+        "title": "Section 1",
+        "description": "This is new section",
+        "status": "pushlished",
+        "position": 1
+      },
+      "lecture_info": {
+        "title": "Lecture 1",
+        "description": "This is new lecture",
+        "status": "pushlished",
+        "position": 1
+      },
+      "lecture_update": {
+        "lecture": {
+          "id": 0,
+          "shop_id": 10321855,
+          "product_id": 0,
+          "section_id": 0,
+          "title": "test title 47",
+          "description": "test 47",
+          "status": "published",
+          "position": 12
+        },
+        "medias": [
+          {
+            "id": 0,
+            "shop_id": 10321855,
+            "product_id": 0,
+            "path": "path update",
+            "name": "path name update",
+            "type": "video",
+            "subtitle_path": null,
+            "status": "unpublished"
+          },
+          {
+            "shop_id": 10321855,
+            "product_id": 0,
+            "path": "path update 2",
+            "name": "path name update 2",
+            "type": "file",
+            "status": "unpublished"
+          }
+        ]
+      },
+      "update_message": {
+        "success": true,
+        "message": "success"
+      }
+    },
+    "SB_SC_SCP_214": {
+      "product": {
+        "handle": "product-create-lecture-multi-media",
+        "product_type": "digital_download",
+        "title": "Product create lecture multi media"
+      },
+      "section_info": {
+        "title": "Section 1",
+        "description": "This is new section",
+        "status": "pushlished",
+        "position": 1
+      },
+      "lecture_info": {
+        "title": "Lecture 1",
+        "description": "This is new lecture",
+        "status": "pushlished",
+        "position": 1
+      },
+      "medias": [
+        {
+          "id": 0,
+          "shop_id": 10321855,
+          "product_id": 0,
+          "path": "path update",
+          "name": "path name update",
+          "type": "video",
+          "subtitle_path": null,
+          "status": "unpublished"
+        },
+        {
+          "shop_id": 10321855,
+          "product_id": 0,
+          "path": "path update 2",
+          "name": "path name update 2",
+          "type": "file",
+          "status": "unpublished"
+        }
+      ],
+      "update_message": {
+        "success": true,
+        "message": "delete success"
+      }
+    }
+  }
+}

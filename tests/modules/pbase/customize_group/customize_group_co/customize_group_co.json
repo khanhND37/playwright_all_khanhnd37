@@ -1,0 +1,3403 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-customize-group-prod.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "user_id": 73782,
+      "shop_id": 10456712,
+      "shop_name": "au-customize-group-prod"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-customize-group-pbase-prodtest.onshopbase.com",
+      "shop_name": "au-customize-group-pbase-prodtest",
+      "user_id": 73782,
+      "shop_id": 10369593,
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-customize-group-pbase.myshopbase.net",
+      "shop_name": "au-customize-group-pbase",
+      "user_id": 73800,
+      "shop_id": 10321688,
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q"
+    }
+  },
+  "api": "https://api.shopbase.com",
+  "domain": "au-customize-group-prod.onshopbase.com",
+  "username": "shopbase@beeketing.net",
+  "password": "Q(f!3Kx+6n;?Us%F",
+  "user_id": 73782,
+  "shop_id": 10456712,
+  "shop_name": "au-customize-group-prod",
+  "time_out": 960000,
+  "max_diff_pixel_ratio": 0.05,
+  "threshold": 0.1,
+  "max_diff_pixels": 2000,
+  "cases": {
+    "DATA_DRIVEN": {
+      "data": [
+        {
+          "description": "SB_PRB_DCGP_07 - [PBase] Verify tạo nhiều customize group với Droplist khi tạo custom option",
+          "case_id": "SB_PRB_DCGP_07",
+          "product_info": [
+            {
+              "category": "Home & Living",
+              "base_product": "Quilt"
+            }
+          ],
+          "picture": "SB_PRB_DCGP_07.png",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 1",
+              "location_layer_x": "232",
+              "location_layer_y": "888",
+              "layer_size_h": "384",
+              "layer_size_w": "2518"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 2",
+              "location_layer_x": "232",
+              "location_layer_y": "1882",
+              "layer_size_h": "384",
+              "layer_size_w": "2518"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 3",
+              "location_layer_x": "232",
+              "location_layer_y": "2750",
+              "layer_size_h": "384",
+              "layer_size_w": "2518"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "BD_9.png",
+              "location_layer_x": "3075",
+              "location_layer_y": "249",
+              "layer_size_h": "1825",
+              "layer_size_w": "1369"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "icon.png",
+              "location_layer_x": "3621",
+              "location_layer_y": "2477",
+              "layer_size_h": "547",
+              "layer_size_w": "547"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "BD_27.png",
+              "location_layer_x": "2301",
+              "location_layer_y": "3330",
+              "layer_size_h": "1809",
+              "layer_size_w": "2336"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 4",
+              "location_layer_x": "232",
+              "location_layer_y": "3539",
+              "layer_size_h": "384",
+              "layer_size_w": "2518"
+            }
+          ],
+          "custom_options": [
+            {
+              "type": "Picture choice",
+              "target_layer": "BD_27",
+              "label": "Picture choice",
+              "type_clipart": "Folder",
+              "value_clipart": "Folder01",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 1",
+              "label": "Text field",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Text area",
+              "target_layer": "Text layer 2",
+              "label": "Text area",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Radio",
+              "target_layer": "Text layer 4",
+              "label": "Radio",
+              "value": "abc>def",
+              "position": "below"
+            },
+            {
+              "type": "Image",
+              "target_layer": "icon",
+              "label": "Image"
+            }
+          ],
+          "pricing_info": {
+            "title": "Campaign CO customize group droplist",
+            "description": "Campaign CO customize group droplist"
+          },
+          "group": [
+            [
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 1",
+                "layer_name": "Text layer 1"
+              },
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 2",
+                "layer_name": "Text layer 2"
+              },
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 3",
+                "layer_name": "BD_9"
+              }
+            ],
+            [
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 4",
+                "layer_name": "Text layer 3"
+              },
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 5",
+                "layer_name": "icon"
+              }
+            ]
+          ],
+          "customize_group": [
+            {
+              "option_group": "Droplist",
+              "label_group": "Please select the droplist 1",
+              "group_name": "Group 3, Group 2, Group 1",
+              "default_value": "Group 1"
+            },
+            {
+              "option_group": "Droplist",
+              "label_group": "Please select the droplist 2",
+              "group_name": "Group 5, Group 4",
+              "default_value": "Group 5"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Droplist",
+              "value": "Group 2",
+              "custom_name": "Please select the droplist 1"
+            },
+            {
+              "type": "Droplist",
+              "value": "Group 5",
+              "custom_name": "Please select the droplist 2"
+            },
+            {
+              "type": "Text area",
+              "value": "OpenCommerce",
+              "custom_name": "Text area"
+            },
+            {
+              "type": "Image",
+              "value": "artwork - Back.png",
+              "custom_name": "Image"
+            },
+            {
+              "type": "Picture choice",
+              "value": "BD_4",
+              "custom_name": "Picture choice"
+            },
+            {
+              "type": "Radio",
+              "value": "def",
+              "custom_name": "Radio"
+            }
+          ]
+        },
+        {
+          "description": "SB_PRB_DCGP_08 - [PBase] Verify tạo nhiều customize group với Radio khi tạo custom option",
+          "case_id": "SB_PRB_DCGP_08",
+          "product_info": [
+            {
+              "category": "Home & Living",
+              "base_product": "Quilt"
+            }
+          ],
+          "picture": "SB_PRB_CG_232.png",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 1",
+              "location_layer_x": "232",
+              "location_layer_y": "888",
+              "layer_size_h": "384",
+              "layer_size_w": "2518"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 2",
+              "location_layer_x": "232",
+              "location_layer_y": "1882",
+              "layer_size_h": "384",
+              "layer_size_w": "2518"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 3",
+              "location_layer_x": "232",
+              "location_layer_y": "2750",
+              "layer_size_h": "384",
+              "layer_size_w": "2518"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "BD_9.png",
+              "location_layer_x": "3075",
+              "location_layer_y": "249",
+              "layer_size_h": "1825",
+              "layer_size_w": "1369"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "icon.png",
+              "location_layer_x": "3621",
+              "location_layer_y": "2477",
+              "layer_size_h": "547",
+              "layer_size_w": "547"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "BD_27.png",
+              "location_layer_x": "2301",
+              "location_layer_y": "3330",
+              "layer_size_h": "1809",
+              "layer_size_w": "2336"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 4",
+              "location_layer_x": "232",
+              "location_layer_y": "3539",
+              "layer_size_h": "384",
+              "layer_size_w": "2518"
+            }
+          ],
+          "custom_options": [
+            {
+              "type": "Picture choice",
+              "target_layer": "BD_27",
+              "label": "Picture choice",
+              "type_clipart": "Folder",
+              "value_clipart": "Folder01",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 1",
+              "label": "Text field",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Text area",
+              "target_layer": "Text layer 2",
+              "label": "Text area",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Radio",
+              "target_layer": "Text layer 4",
+              "label": "Radio",
+              "value": "abc>def",
+              "position": "below"
+            },
+            {
+              "type": "Image",
+              "target_layer": "icon",
+              "label": "Image"
+            }
+          ],
+          "pricing_info": {
+            "title": "Campaign CO customize group radio",
+            "description": "Campaign CO customize group radio"
+          },
+          "group": [
+            [
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 1",
+                "layer_name": "Text layer 1"
+              },
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 2",
+                "layer_name": "Text layer 2"
+              },
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 3",
+                "layer_name": "BD_9"
+              }
+            ],
+            [
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 4",
+                "layer_name": "Text layer 3"
+              },
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 5",
+                "layer_name": "icon"
+              }
+            ]
+          ],
+          "customize_group": [
+            {
+              "option_group": "Radio",
+              "label_group": "Please select the radio 1",
+              "group_name": "Group 3, Group 2, Group 1",
+              "default_value": "Group 1"
+            },
+            {
+              "option_group": "Radio",
+              "label_group": "Please select the radio 2",
+              "group_name": "Group 5, Group 4",
+              "default_value": "Group 5"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Radio",
+              "value": "Group 3",
+              "custom_name": "Please select the radio 1"
+            },
+            {
+              "type": "Radio",
+              "value": "Group 4",
+              "custom_name": "Please select the radio 2"
+            },
+            {
+              "type": "Picture choice",
+              "value": "BD_1",
+              "custom_name": "Picture choice"
+            },
+            {
+              "type": "Radio",
+              "value": "abc",
+              "custom_name": "Radio"
+            }
+          ]
+        },
+        {
+          "description": "SB_PRB_DCGP_09 - [PBase] Verify tạo nhiều customize group với Picture choice khi tạo custom option",
+          "case_id": "SB_PRB_DCGP_09",
+          "product_info": [
+            {
+              "category": "Home & Living",
+              "base_product": "Standard Quilt"
+            }
+          ],
+          "picture": "SB_PRB_DCGP_09.png",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 1",
+              "location_layer_x": "232",
+              "location_layer_y": "888",
+              "layer_size_h": "384",
+              "layer_size_w": "2518"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 2",
+              "location_layer_x": "232",
+              "location_layer_y": "1882",
+              "layer_size_h": "384",
+              "layer_size_w": "2518"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 3",
+              "location_layer_x": "232",
+              "location_layer_y": "2750",
+              "layer_size_h": "384",
+              "layer_size_w": "2518"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "BD_9.png",
+              "location_layer_x": "3075",
+              "location_layer_y": "249",
+              "layer_size_h": "1825",
+              "layer_size_w": "1369"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "icon.png",
+              "location_layer_x": "3621",
+              "location_layer_y": "2477",
+              "layer_size_h": "547",
+              "layer_size_w": "547"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "BD_27.png",
+              "location_layer_x": "2301",
+              "location_layer_y": "3330",
+              "layer_size_h": "1809",
+              "layer_size_w": "2336"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 4",
+              "location_layer_x": "232",
+              "location_layer_y": "3539",
+              "layer_size_h": "384",
+              "layer_size_w": "2518"
+            }
+          ],
+          "custom_options": [
+            {
+              "type": "Picture choice",
+              "target_layer": "BD_27",
+              "label": "Picture choice",
+              "type_clipart": "Folder",
+              "value_clipart": "Folder01",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 1",
+              "label": "Text field",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Text area",
+              "target_layer": "Text layer 2",
+              "label": "Text area",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Radio",
+              "target_layer": "Text layer 4",
+              "label": "Radio",
+              "value": "abc>def",
+              "position": "below"
+            },
+            {
+              "type": "Image",
+              "target_layer": "icon",
+              "label": "Image"
+            }
+          ],
+          "pricing_info": {
+            "title": "Campaign CO customize group picture choice",
+            "description": "Campaign CO customize group picture choice"
+          },
+          "group": [
+            [
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 1",
+                "layer_name": "Text layer 1"
+              },
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 2",
+                "layer_name": "Text layer 2"
+              },
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 3",
+                "layer_name": "BD_9"
+              }
+            ],
+            [
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 4",
+                "layer_name": "Text layer 3"
+              },
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 5",
+                "layer_name": "icon"
+              }
+            ]
+          ],
+          "customize_group": [
+            {
+              "option_group": "Picture choice",
+              "label_group": "Please select the picture choice 1",
+              "group_name": "BD_13.png, BD_12.png, BD_11.png",
+              "default_value": "Group 2"
+            },
+            {
+              "option_group": "Picture choice",
+              "label_group": "Please select the picture choice 2",
+              "group_name": "BD_15.png, BD_14.png",
+              "default_value": "Group 4"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Picture choice",
+              "value": "Group 3",
+              "custom_name": "Please select the picture choice 1"
+            },
+            {
+              "type": "Picture choice",
+              "value": "Group 5",
+              "custom_name": "Please select the picture choice 2"
+            },
+            {
+              "type": "Picture choice",
+              "value": "BD_5",
+              "custom_name": "Picture choice"
+            },
+            {
+              "type": "Radio",
+              "value": "abc",
+              "custom_name": "Radio"
+            },
+            {
+              "type": "Image",
+              "value": "sun.png",
+              "custom_name": "Image"
+            }
+          ]
+        },
+        {
+          "description": "SB_PRB_DCGP_11 - [PBase] Verify tạo nhiều customize group với Radio, Picture choice, Droplist khi tạo custom option",
+          "case_id": "SB_PRB_DCGP_11",
+          "product_info": [
+            {
+              "category": "Home & Living",
+              "base_product": "Quilt"
+            }
+          ],
+          "picture": "SB_PRB_DCGP_11.png",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 1",
+              "location_layer_x": "232",
+              "location_layer_y": "888",
+              "layer_size_h": "384",
+              "layer_size_w": "2518"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 2",
+              "location_layer_x": "232",
+              "location_layer_y": "1882",
+              "layer_size_h": "384",
+              "layer_size_w": "2518"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 3",
+              "location_layer_x": "232",
+              "location_layer_y": "2750",
+              "layer_size_h": "384",
+              "layer_size_w": "2518"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "BD_9.png",
+              "location_layer_x": "3075",
+              "location_layer_y": "249",
+              "layer_size_h": "1825",
+              "layer_size_w": "1369"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "icon.png",
+              "location_layer_x": "3621",
+              "location_layer_y": "2477",
+              "layer_size_h": "547",
+              "layer_size_w": "547"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "BD_27.png",
+              "location_layer_x": "2301",
+              "location_layer_y": "3330",
+              "layer_size_h": "1809",
+              "layer_size_w": "2336"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 4",
+              "location_layer_x": "232",
+              "location_layer_y": "3539",
+              "layer_size_h": "384",
+              "layer_size_w": "2518"
+            }
+          ],
+          "custom_options": [
+            {
+              "type": "Picture choice",
+              "target_layer": "BD_27",
+              "label": "Picture choice",
+              "type_clipart": "Folder",
+              "value_clipart": "Folder01",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 1",
+              "label": "Text field",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Text area",
+              "target_layer": "Text layer 2",
+              "label": "Text area",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Radio",
+              "target_layer": "Text layer 4",
+              "label": "Radio",
+              "value": "abc>def",
+              "position": "below"
+            },
+            {
+              "type": "Image",
+              "target_layer": "icon",
+              "label": "Image"
+            }
+          ],
+          "pricing_info": {
+            "title": "Campaign CO customize group radio, droplist and picture choice",
+            "description": "Campaign CO customize group radio, droplist and picture choice"
+          },
+          "group": [
+            [
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 1",
+                "layer_name": "Text layer 1"
+              },
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 2",
+                "layer_name": "Text layer 2"
+              },
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 3",
+                "layer_name": "BD_9"
+              }
+            ],
+            [
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 4",
+                "layer_name": "Text layer 3"
+              },
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 5",
+                "layer_name": "icon"
+              }
+            ],
+            [
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 6",
+                "layer_name": "Text layer 4"
+              },
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 7",
+                "layer_name": "BD_27"
+              }
+            ]
+          ],
+          "customize_group": [
+            {
+              "option_group": "Radio",
+              "label_group": "Please select the radio",
+              "group_name": "Group 3, Group 2, Group 1",
+              "default_value": "Group 1"
+            },
+            {
+              "option_group": "Picture choice",
+              "label_group": "Please select the picture choice",
+              "group_name": "BD_5.png, BD_4.png",
+              "default_value": "Group 5"
+            },
+            {
+              "option_group": "Droplist",
+              "label_group": "Please select the droplist",
+              "group_name": "Group 7, Group 6",
+              "default_value": "Group 7"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Radio",
+              "value": "Group 2",
+              "custom_name": "Please select the radio"
+            },
+            {
+              "type": "Picture choice",
+              "value": "Group 5",
+              "custom_name": "Please select the picture choice"
+            },
+            {
+              "type": "Droplist",
+              "value": "Group 6",
+              "custom_name": "Please select the droplist"
+            },
+            {
+              "type": "Text area",
+              "value": "OpenCommerce Group",
+              "custom_name": "Text area"
+            },
+            {
+              "type": "Radio",
+              "value": "def",
+              "custom_name": "Radio"
+            },
+            {
+              "type": "Image",
+              "value": "artwork1 - Front.png",
+              "custom_name": "Image"
+            }
+          ]
+        },
+        {
+          "description": "[PBase] Verify tạo nhiều customize group với Radio, Droplist và Picture choice khi tạo custom option trong trường hợp add nhiều base product 2D",
+          "case_id": "SB_PRB_CG_245",
+          "product_info": [
+            {
+              "category": "Apparel",
+              "base_product": "Ladies T-shirt"
+            },
+            {
+              "category": "Apparel",
+              "base_product": "Unisex T-shirt"
+            },
+            {
+              "category": "Apparel",
+              "base_product": "Crewneck Sweatshirt"
+            },
+            {
+              "category": "Apparel",
+              "base_product": "Long Sleeve Tee"
+            }
+          ],
+          "picture": "SB_PRB_CG_245_front.png",
+          "picture_back": "SB_PRB_CG_245_back.png",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 1",
+              "location_layer_x": "57",
+              "location_layer_y": "261",
+              "layer_size_h": "117",
+              "layer_size_w": "764",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 2",
+              "location_layer_x": "57",
+              "location_layer_y": "581",
+              "layer_size_h": "117",
+              "layer_size_w": "764",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 3",
+              "location_layer_x": "57",
+              "location_layer_y": "841",
+              "layer_size_h": "117",
+              "layer_size_w": "764",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "BD_9.png",
+              "location_layer_x": "705",
+              "location_layer_y": "140",
+              "layer_size_h": "881",
+              "layer_size_w": "661",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "icon.png",
+              "location_layer_x": "477",
+              "location_layer_y": "1106",
+              "layer_size_h": "547",
+              "layer_size_w": "547",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "BD_27.png",
+              "location_layer_x": "0",
+              "location_layer_y": "138",
+              "layer_size_h": "1162",
+              "layer_size_w": "1500",
+              "front_or_back": "Back"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 4",
+              "location_layer_x": "366",
+              "location_layer_y": "1482",
+              "layer_size_h": "112",
+              "layer_size_w": "769",
+              "front_or_back": "Back"
+            }
+          ],
+          "custom_options": [
+            {
+              "type": "Picture choice",
+              "target_layer": "BD_27",
+              "label": "Picture choice",
+              "type_clipart": "Folder",
+              "value_clipart": "Folder01",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 1",
+              "label": "Text field",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Text area",
+              "target_layer": "Text layer 2",
+              "label": "Text area",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Radio",
+              "target_layer": "Text layer 4",
+              "label": "Radio",
+              "value": "abc>def",
+              "position": "below"
+            },
+            {
+              "type": "Image",
+              "target_layer": "icon",
+              "label": "Image"
+            }
+          ],
+          "pricing_info": {
+            "title": "Campaign base 2D",
+            "description": "Campaign base 2D"
+          },
+          "group": [
+            [
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 1",
+                "layer_name": "Text layer 1",
+                "side": "Front"
+              },
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 2",
+                "layer_name": "Text layer 2",
+                "side": "Front"
+              },
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 3",
+                "layer_name": "BD_9",
+                "side": "Front"
+              }
+            ],
+            [
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 4",
+                "layer_name": "Text layer 3",
+                "side": "Front"
+              },
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 5",
+                "layer_name": "icon",
+                "side": "Front"
+              }
+            ],
+            [
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 6",
+                "layer_name": "Text layer 4",
+                "side": "Back"
+              },
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 7",
+                "layer_name": "BD_27",
+                "side": "Back"
+              }
+            ]
+          ],
+          "customize_group": [
+            {
+              "option_group": "Radio",
+              "label_group": "Please select the radio",
+              "group_name": "Group 3, Group 2, Group 1",
+              "default_value": "Group 1"
+            },
+            {
+              "option_group": "Picture choice",
+              "label_group": "Please select the picture choice",
+              "group_name": "BD_5.png, BD_4.png",
+              "default_value": "Group 5"
+            },
+            {
+              "option_group": "Droplist",
+              "label_group": "Please select the droplist",
+              "group_name": "Group 7, Group 6",
+              "default_value": "Group 7"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Radio",
+              "value": "Group 2",
+              "custom_name": "Please select the radio"
+            },
+            {
+              "type": "Picture choice",
+              "value": "Group 5",
+              "custom_name": "Please select the picture choice"
+            },
+            {
+              "type": "Droplist",
+              "value": "Group 6",
+              "custom_name": "Please select the droplist"
+            },
+            {
+              "type": "Text area",
+              "value": "OpenCommerce Group",
+              "custom_name": "Text area"
+            },
+            {
+              "type": "Radio",
+              "value": "def",
+              "custom_name": "Radio"
+            },
+            {
+              "type": "Image",
+              "value": "artwork1 - Front.png",
+              "custom_name": "Image"
+            }
+          ]
+        },
+        {
+          "description": "[PBase] Verify tạo nhiều customize group với Radio, Droplist và Picture choice khi tạo custom option trong trường hợp add base product 3D",
+          "case_id": "SB_PRB_CG_246",
+          "product_info": [
+            {
+              "category": "All Over Print",
+              "base_product": "AOP T-Shirt"
+            }
+          ],
+          "picture": "SB_PRB_CG_246_front.png",
+          "picture_back": "SB_PRB_CG_246_back.png",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 1",
+              "location_layer_x": "848",
+              "location_layer_y": "1810",
+              "layer_size_h": "459",
+              "layer_size_w": "3013",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 2",
+              "location_layer_x": "848",
+              "location_layer_y": "2541",
+              "layer_size_h": "459",
+              "layer_size_w": "3013",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 3",
+              "location_layer_x": "848",
+              "location_layer_y": "3301",
+              "layer_size_h": "459",
+              "layer_size_w": "3013",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "BD_9.png",
+              "location_layer_x": "3078",
+              "location_layer_y": "2544",
+              "layer_size_h": "1974",
+              "layer_size_w": "1480",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "icon.png",
+              "location_layer_x": "2436",
+              "location_layer_y": "4168",
+              "layer_size_h": "1127",
+              "layer_size_w": "1127",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "BD_27.png",
+              "location_layer_x": "1832",
+              "location_layer_y": "2096",
+              "layer_size_h": "1809",
+              "layer_size_w": "2336",
+              "front_or_back": "Back"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 4",
+              "location_layer_x": "1494",
+              "location_layer_y": "3905",
+              "layer_size_h": "459",
+              "layer_size_w": "3013",
+              "front_or_back": "Back"
+            }
+          ],
+          "custom_options": [
+            {
+              "type": "Picture choice",
+              "target_layer": "BD_27",
+              "label": "Picture choice",
+              "type_clipart": "Folder",
+              "value_clipart": "Folder01",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 1",
+              "label": "Text field",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Text area",
+              "target_layer": "Text layer 2",
+              "label": "Text area",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Radio",
+              "target_layer": "Text layer 4",
+              "label": "Radio",
+              "value": "abc>def",
+              "position": "below"
+            },
+            {
+              "type": "Image",
+              "target_layer": "icon",
+              "label": "Image"
+            }
+          ],
+          "pricing_info": {
+            "title": "Campaign base 3D",
+            "description": "Campaign base 3D"
+          },
+          "group": [
+            [
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 1",
+                "layer_name": "Text layer 1",
+                "side": "Front"
+              },
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 2",
+                "layer_name": "Text layer 2",
+                "side": "Front"
+              },
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 3",
+                "layer_name": "BD_9",
+                "side": "Front"
+              }
+            ],
+            [
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 4",
+                "layer_name": "Text layer 3",
+                "side": "Front"
+              },
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 5",
+                "layer_name": "icon",
+                "side": "Front"
+              }
+            ],
+            [
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 6",
+                "layer_name": "Text layer 4",
+                "side": "Back"
+              },
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 7",
+                "layer_name": "BD_27",
+                "side": "Back"
+              }
+            ]
+          ],
+          "customize_group": [
+            {
+              "option_group": "Radio",
+              "label_group": "Please select the radio",
+              "group_name": "Group 3, Group 2, Group 1",
+              "default_value": "Group 1"
+            },
+            {
+              "option_group": "Picture choice",
+              "label_group": "Please select the picture choice",
+              "group_name": "BD_5.png, BD_4.png",
+              "default_value": "Group 5"
+            },
+            {
+              "option_group": "Droplist",
+              "label_group": "Please select the droplist",
+              "group_name": "Group 7, Group 6",
+              "default_value": "Group 7"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Radio",
+              "value": "Group 1",
+              "custom_name": "Please select the radio"
+            },
+            {
+              "type": "Picture choice",
+              "value": "Group 5",
+              "custom_name": "Please select the picture choice"
+            },
+            {
+              "type": "Droplist",
+              "value": "Group 7",
+              "custom_name": "Please select the droplist"
+            },
+            {
+              "type": "Picture choice",
+              "value": "BD_5",
+              "custom_name": "Picture choice"
+            },
+            {
+              "type": "Text field",
+              "value": "Opener",
+              "custom_name": "Text field"
+            },
+            {
+              "type": "Image",
+              "value": "sun.png",
+              "custom_name": "Image"
+            }
+          ]
+        },
+        {
+          "description": "[PBase] Veify campaign có Conditional logic CO targer layer trong Group là con CO layer ngoài Group với customize droplist",
+          "case_id": "SB_PRB_CG_280",
+          "product_info": [
+            {
+              "category": "Apparel",
+              "base_product": "Long Sleeve Tee"
+            }
+          ],
+          "picture": "SB_PRB_CG_280_front.png",
+          "picture_back": "SB_PRB_CG_280_back.png",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_value": "Layer text dog name",
+              "layer_name": "Text layer 1",
+              "layer_name_new": "Layer text dog name",
+              "location_layer_x": "520",
+              "location_layer_y": "269",
+              "layer_size_h": "159",
+              "layer_size_w": "1060",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Layer text dog breed",
+              "layer_name": "Text layer 1",
+              "layer_name_new": "Layer text dog breed",
+              "location_layer_x": "520",
+              "location_layer_y": "536",
+              "layer_size_h": "159",
+              "layer_size_w": "1060",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Text layer 1",
+              "location_layer_x": "520",
+              "location_layer_y": "1392",
+              "layer_size_h": "159",
+              "layer_size_w": "1060",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Dog name.png",
+              "location_layer_x": "672",
+              "location_layer_y": "785",
+              "layer_size_h": "1532",
+              "layer_size_w": "757",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Dog breed.png",
+              "location_layer_x": "672",
+              "location_layer_y": "785",
+              "layer_size_h": "1532",
+              "layer_size_w": "757",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Add your text",
+              "location_layer_x": "477",
+              "location_layer_y": "633",
+              "layer_size_h": "155",
+              "layer_size_w": "1060",
+              "front_or_back": "Back"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "image 1.png",
+              "location_layer_x": "1429",
+              "location_layer_y": "927",
+              "layer_size_h": "547",
+              "layer_size_w": "547",
+              "front_or_back": "Back"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Layer text cat name",
+              "layer_name": "Text layer 3",
+              "layer_name_new": "Layer text cat name",
+              "location_layer_x": "477",
+              "location_layer_y": "207",
+              "layer_size_h": "155",
+              "layer_size_w": "1060",
+              "front_or_back": "Back"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Layer text cat breed",
+              "layer_name": "Text layer 3",
+              "layer_name_new": "Layer text cat breed",
+              "location_layer_x": "477",
+              "location_layer_y": "415",
+              "layer_size_h": "155",
+              "layer_size_w": "1060",
+              "front_or_back": "Back"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Cat name.png",
+              "location_layer_x": "672",
+              "location_layer_y": "710",
+              "layer_size_h": "1532",
+              "layer_size_w": "757",
+              "front_or_back": "Back"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Cat breed.png",
+              "location_layer_x": "672",
+              "location_layer_y": "710",
+              "layer_size_h": "1532",
+              "layer_size_w": "757",
+              "front_or_back": "Back"
+            }
+          ],
+          "custom_options": [
+            {
+              "type": "Radio",
+              "target_layer": "Text layer 1",
+              "label": "Option 1",
+              "value": "1>2",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Layer text dog name",
+              "label": "Option 2",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Picture choice",
+              "target_layer": "Dog breed",
+              "label": "Option 3",
+              "type_clipart": "Folder",
+              "value_clipart": "Folder Dog 01",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Layer text cat name",
+              "label": "Option 4",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Picture choice",
+              "target_layer": "Cat breed",
+              "label": "Option 5",
+              "type_clipart": "Folder",
+              "value_clipart": "Folder Cat 01",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 2",
+              "label": "Option 6",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Image",
+              "target_layer": "image 1",
+              "label": "Option 7"
+            }
+          ],
+          "pricing_info": {
+            "title": "Campaign droplist 1",
+            "description": "Campaign droplist 1"
+          },
+          "group": [
+            [
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 1",
+                "layer_name": "Layer text dog name, Dog name",
+                "side": "Front"
+              },
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 2",
+                "layer_name": "Layer text dog breed, Dog breed",
+                "side": "Front"
+              }
+            ],
+            [
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 3",
+                "layer_name": "Layer text cat name, Cat name",
+                "side": "Back"
+              },
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 4",
+                "layer_name": "Layer text cat breed, Cat breed",
+                "side": "Back"
+              }
+            ]
+          ],
+          "customize_group": [
+            {
+              "option_group": "Droplist",
+              "label_group": "Please select the droplist 1",
+              "group_name": "Group 2, Group 1",
+              "default_value": "Group 1"
+            },
+            {
+              "option_group": "Droplist",
+              "label_group": "Please select the droplist 2",
+              "group_name": "Group 4, Group 3",
+              "default_value": "Group 3"
+            }
+          ],
+          "conditional_logic_info": [
+            {
+              "custom_name": "Option 1",
+              "condition": ["is equal to>1"],
+              "then_show_value": ["Option 2"]
+            },
+            {
+              "custom_name": "Option 5",
+              "condition": ["is equal to>Cat 1"],
+              "then_show_value": ["Option 7"]
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Droplist",
+              "value": "Group 1",
+              "custom_name": "Please select the droplist 1"
+            },
+            {
+              "type": "Droplist",
+              "value": "Group 4",
+              "custom_name": "Please select the droplist 2"
+            },
+            {
+              "type": "Radio",
+              "value": "1",
+              "custom_name": "Option 1"
+            },
+            {
+              "type": "Text field",
+              "value": "Dog Name",
+              "custom_name": "Option 2"
+            },
+            {
+              "type": "Picture choice",
+              "value": "Cat 1",
+              "custom_name": "Option 5"
+            },
+            {
+              "type": "Text field",
+              "value": "Cat name",
+              "custom_name": "Option 6"
+            },
+            {
+              "type": "Image",
+              "value": "Cat 2.png",
+              "custom_name": "Option 7"
+            }
+          ]
+        },
+        {
+          "description": "[PBase] Veify campaign có Conditional logic CO targer layer trong Group là con CO layer ngoài Group với customize radio",
+          "case_id": "SB_PRB_CG_282",
+          "product_info": [
+            {
+              "category": "Apparel",
+              "base_product": "Long Sleeve Tee"
+            }
+          ],
+          "picture": "SB_PRB_CG_282_front.png",
+          "picture_back": "SB_PRB_CG_282_back.png",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_value": "Layer text dog name",
+              "layer_name": "Text layer 1",
+              "layer_name_new": "Layer text dog name",
+              "location_layer_x": "520",
+              "location_layer_y": "269",
+              "layer_size_h": "159",
+              "layer_size_w": "1060",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Layer text dog breed",
+              "layer_name": "Text layer 1",
+              "layer_name_new": "Layer text dog breed",
+              "location_layer_x": "520",
+              "location_layer_y": "536",
+              "layer_size_h": "159",
+              "layer_size_w": "1060",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Text layer 1",
+              "location_layer_x": "520",
+              "location_layer_y": "1392",
+              "layer_size_h": "159",
+              "layer_size_w": "1060",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Dog name.png",
+              "location_layer_x": "672",
+              "location_layer_y": "785",
+              "layer_size_h": "1532",
+              "layer_size_w": "757",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Dog breed.png",
+              "location_layer_x": "672",
+              "location_layer_y": "785",
+              "layer_size_h": "1532",
+              "layer_size_w": "757",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Add your text",
+              "location_layer_x": "477",
+              "location_layer_y": "633",
+              "layer_size_h": "155",
+              "layer_size_w": "1060",
+              "front_or_back": "Back"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "image 1.png",
+              "location_layer_x": "1429",
+              "location_layer_y": "927",
+              "layer_size_h": "547",
+              "layer_size_w": "547",
+              "front_or_back": "Back"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Layer text cat name",
+              "layer_name": "Text layer 3",
+              "layer_name_new": "Layer text cat name",
+              "location_layer_x": "477",
+              "location_layer_y": "207",
+              "layer_size_h": "155",
+              "layer_size_w": "1060",
+              "front_or_back": "Back"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Layer text cat breed",
+              "layer_name": "Text layer 3",
+              "layer_name_new": "Layer text cat breed",
+              "location_layer_x": "477",
+              "location_layer_y": "415",
+              "layer_size_h": "155",
+              "layer_size_w": "1060",
+              "front_or_back": "Back"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Cat name.png",
+              "location_layer_x": "672",
+              "location_layer_y": "710",
+              "layer_size_h": "1532",
+              "layer_size_w": "757",
+              "front_or_back": "Back"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Cat breed.png",
+              "location_layer_x": "672",
+              "location_layer_y": "710",
+              "layer_size_h": "1532",
+              "layer_size_w": "757",
+              "front_or_back": "Back"
+            }
+          ],
+          "custom_options": [
+            {
+              "type": "Radio",
+              "target_layer": "Text layer 1",
+              "label": "Option 1",
+              "value": "1>2",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Layer text dog name",
+              "label": "Option 2",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Picture choice",
+              "target_layer": "Dog breed",
+              "label": "Option 3",
+              "type_clipart": "Folder",
+              "value_clipart": "Folder Dog 01",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Layer text cat name",
+              "label": "Option 4",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Picture choice",
+              "target_layer": "Cat breed",
+              "label": "Option 5",
+              "type_clipart": "Folder",
+              "value_clipart": "Folder Cat 01",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 2",
+              "label": "Option 6",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Image",
+              "target_layer": "image 1",
+              "label": "Option 7"
+            }
+          ],
+          "pricing_info": {
+            "title": "Campaign radio 1",
+            "description": "Campaign radio 1"
+          },
+          "group": [
+            [
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 1",
+                "layer_name": "Layer text dog name, Dog name",
+                "side": "Front"
+              },
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 2",
+                "layer_name": "Layer text dog breed, Dog breed",
+                "side": "Front"
+              }
+            ],
+            [
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 3",
+                "layer_name": "Layer text cat name, Cat name",
+                "side": "Back"
+              },
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 4",
+                "layer_name": "Layer text cat breed, Cat breed",
+                "side": "Back"
+              }
+            ]
+          ],
+          "customize_group": [
+            {
+              "option_group": "Radio",
+              "label_group": "Please select the radio 1",
+              "group_name": "Group 2, Group 1",
+              "default_value": "Group 1"
+            },
+            {
+              "option_group": "Radio",
+              "label_group": "Please select the radio 2",
+              "group_name": "Group 4, Group 3",
+              "default_value": "Group 3"
+            }
+          ],
+          "conditional_logic_info": [
+            {
+              "custom_name": "Option 1",
+              "condition": ["is equal to>1"],
+              "then_show_value": ["Option 2"]
+            },
+            {
+              "custom_name": "Option 5",
+              "condition": ["is equal to>Cat 1"],
+              "then_show_value": ["Option 7"]
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Radio",
+              "value": "Group 1",
+              "custom_name": "Please select the radio 1"
+            },
+            {
+              "type": "Radio",
+              "value": "Group 3",
+              "custom_name": "Please select the radio 2"
+            },
+            {
+              "type": "Radio",
+              "value": "1",
+              "custom_name": "Option 1"
+            },
+            {
+              "type": "Text field",
+              "value": "Dog name",
+              "custom_name": "Option 2"
+            },
+            {
+              "type": "Text field",
+              "value": "Your name",
+              "custom_name": "Option 4"
+            },
+            {
+              "type": "Text field",
+              "value": "Cat name",
+              "custom_name": "Option 6"
+            }
+          ]
+        },
+        {
+          "description": "[PBase] Veify campaign có Conditional logic CO targer layer trong Group là con CO layer ngoài Group với customize picture choice",
+          "case_id": "SB_PRB_CG_284",
+          "product_info": [
+            {
+              "category": "Apparel",
+              "base_product": "Long Sleeve Tee"
+            }
+          ],
+          "picture": "SB_PRB_CG_284_front.png",
+          "picture_back": "SB_PRB_CG_284_back.png",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_value": "Layer text dog name",
+              "layer_name": "Text layer 1",
+              "layer_name_new": "Layer text dog name",
+              "location_layer_x": "520",
+              "location_layer_y": "269",
+              "layer_size_h": "159",
+              "layer_size_w": "1060",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Layer text dog breed",
+              "layer_name": "Text layer 1",
+              "layer_name_new": "Layer text dog breed",
+              "location_layer_x": "520",
+              "location_layer_y": "536",
+              "layer_size_h": "159",
+              "layer_size_w": "1060",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Text layer 1",
+              "location_layer_x": "520",
+              "location_layer_y": "1392",
+              "layer_size_h": "159",
+              "layer_size_w": "1060",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Dog name.png",
+              "location_layer_x": "672",
+              "location_layer_y": "785",
+              "layer_size_h": "1532",
+              "layer_size_w": "757",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Dog breed.png",
+              "location_layer_x": "672",
+              "location_layer_y": "785",
+              "layer_size_h": "1532",
+              "layer_size_w": "757",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Add your text",
+              "location_layer_x": "477",
+              "location_layer_y": "633",
+              "layer_size_h": "155",
+              "layer_size_w": "1060",
+              "front_or_back": "Back"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "image 1.png",
+              "location_layer_x": "1429",
+              "location_layer_y": "927",
+              "layer_size_h": "547",
+              "layer_size_w": "547",
+              "front_or_back": "Back"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Layer text cat name",
+              "layer_name": "Text layer 3",
+              "layer_name_new": "Layer text cat name",
+              "location_layer_x": "477",
+              "location_layer_y": "207",
+              "layer_size_h": "155",
+              "layer_size_w": "1060",
+              "front_or_back": "Back"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Layer text cat breed",
+              "layer_name": "Text layer 3",
+              "layer_name_new": "Layer text cat breed",
+              "location_layer_x": "477",
+              "location_layer_y": "415",
+              "layer_size_h": "155",
+              "layer_size_w": "1060",
+              "front_or_back": "Back"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Cat name.png",
+              "location_layer_x": "672",
+              "location_layer_y": "710",
+              "layer_size_h": "1532",
+              "layer_size_w": "757",
+              "front_or_back": "Back"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Cat breed.png",
+              "location_layer_x": "672",
+              "location_layer_y": "710",
+              "layer_size_h": "1532",
+              "layer_size_w": "757",
+              "front_or_back": "Back"
+            }
+          ],
+          "custom_options": [
+            {
+              "type": "Radio",
+              "target_layer": "Text layer 1",
+              "label": "Option 1",
+              "value": "1>2",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Layer text dog name",
+              "label": "Option 2",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Picture choice",
+              "target_layer": "Dog breed",
+              "label": "Option 3",
+              "type_clipart": "Folder",
+              "value_clipart": "Folder Dog 01",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Layer text cat name",
+              "label": "Option 4",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Picture choice",
+              "target_layer": "Cat breed",
+              "label": "Option 5",
+              "type_clipart": "Folder",
+              "value_clipart": "Folder Cat 01",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 2",
+              "label": "Option 6",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Image",
+              "target_layer": "image 1",
+              "label": "Option 7"
+            }
+          ],
+          "pricing_info": {
+            "title": "Campaign picture choice 1",
+            "description": "Campaign picture choice 1"
+          },
+          "group": [
+            [
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 1",
+                "layer_name": "Layer text dog name, Dog name",
+                "side": "Front"
+              },
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 2",
+                "layer_name": "Layer text dog breed, Dog breed",
+                "side": "Front"
+              }
+            ],
+            [
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 3",
+                "layer_name": "Layer text cat name, Cat name",
+                "side": "Back"
+              },
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 4",
+                "layer_name": "Layer text cat breed, Cat breed",
+                "side": "Back"
+              }
+            ]
+          ],
+          "customize_group": [
+            {
+              "option_group": "Picture choice",
+              "label_group": "Please select the picture choice 1",
+              "group_name": "BD_2.png, BD_1.png",
+              "default_value": "Group 2"
+            },
+            {
+              "option_group": "Picture choice",
+              "label_group": "Please select the picture choice 2",
+              "group_name": "BD_4.png, BD_3.png",
+              "default_value": "Group 3"
+            }
+          ],
+          "conditional_logic_info": [
+            {
+              "custom_name": "Option 1",
+              "condition": ["is equal to>1"],
+              "then_show_value": ["Option 2"]
+            },
+            {
+              "custom_name": "Option 5",
+              "condition": ["is equal to>Cat 1"],
+              "then_show_value": ["Option 7"]
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Picture choice",
+              "value": "Group 1",
+              "custom_name": "Please select the picture choice 1"
+            },
+            {
+              "type": "Picture choice",
+              "value": "Group 4",
+              "custom_name": "Please select the picture choice 2"
+            },
+            {
+              "type": "Radio",
+              "value": "1",
+              "custom_name": "Option 1"
+            },
+            {
+              "type": "Text field",
+              "value": "Dog Name",
+              "custom_name": "Option 2"
+            },
+            {
+              "type": "Picture choice",
+              "value": "Cat 1",
+              "custom_name": "Option 5"
+            },
+            {
+              "type": "Text field",
+              "value": "Cat name",
+              "custom_name": "Option 6"
+            },
+            {
+              "type": "Image",
+              "value": "Cat 2.png",
+              "custom_name": "Option 7"
+            }
+          ]
+        },
+        {
+          "description": "[PBase] Verify campaign có Conditional logic CO targer layer trong Group là cha CO layer ngoài Group với customize droplist",
+          "case_id": "SB_PRB_CG_281",
+          "product_info": [
+            {
+              "category": "Apparel",
+              "base_product": "Long Sleeve Tee"
+            }
+          ],
+          "picture": "SB_PRB_CG_281_front.png",
+          "picture_back": "SB_PRB_CG_281_back.png",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_value": "Layer text dog name",
+              "layer_name": "Text layer 1",
+              "layer_name_new": "Layer text dog name",
+              "location_layer_x": "520",
+              "location_layer_y": "269",
+              "layer_size_h": "159",
+              "layer_size_w": "1060",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Layer text dog breed",
+              "layer_name": "Text layer 1",
+              "layer_name_new": "Layer text dog breed",
+              "location_layer_x": "520",
+              "location_layer_y": "536",
+              "layer_size_h": "159",
+              "layer_size_w": "1060",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Text layer 1",
+              "location_layer_x": "520",
+              "location_layer_y": "1392",
+              "layer_size_h": "159",
+              "layer_size_w": "1060",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Dog name.png",
+              "location_layer_x": "672",
+              "location_layer_y": "785",
+              "layer_size_h": "1532",
+              "layer_size_w": "757",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Dog breed.png",
+              "location_layer_x": "672",
+              "location_layer_y": "785",
+              "layer_size_h": "1532",
+              "layer_size_w": "757",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Add your text",
+              "location_layer_x": "477",
+              "location_layer_y": "633",
+              "layer_size_h": "155",
+              "layer_size_w": "1060",
+              "front_or_back": "Back"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "image 1.png",
+              "location_layer_x": "1429",
+              "location_layer_y": "927",
+              "layer_size_h": "547",
+              "layer_size_w": "547",
+              "front_or_back": "Back"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Layer text cat name",
+              "layer_name": "Text layer 3",
+              "layer_name_new": "Layer text cat name",
+              "location_layer_x": "477",
+              "location_layer_y": "207",
+              "layer_size_h": "155",
+              "layer_size_w": "1060",
+              "front_or_back": "Back"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Layer text cat breed",
+              "layer_name": "Text layer 3",
+              "layer_name_new": "Layer text cat breed",
+              "location_layer_x": "477",
+              "location_layer_y": "415",
+              "layer_size_h": "155",
+              "layer_size_w": "1060",
+              "front_or_back": "Back"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Cat name.png",
+              "location_layer_x": "672",
+              "location_layer_y": "710",
+              "layer_size_h": "1532",
+              "layer_size_w": "757",
+              "front_or_back": "Back"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Cat breed.png",
+              "location_layer_x": "672",
+              "location_layer_y": "710",
+              "layer_size_h": "1532",
+              "layer_size_w": "757",
+              "front_or_back": "Back"
+            }
+          ],
+          "custom_options": [
+            {
+              "type": "Text field",
+              "target_layer": "Layer text dog name",
+              "label": "Option 1",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Picture choice",
+              "target_layer": "Dog breed",
+              "label": "Option 2",
+              "type_clipart": "Folder",
+              "value_clipart": "Folder Dog 01",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Layer text cat name",
+              "label": "Option 3",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Picture choice",
+              "target_layer": "Cat breed",
+              "label": "Option 4",
+              "type_clipart": "Folder",
+              "value_clipart": "Folder Cat 01",
+              "position": "below"
+            },
+            {
+              "type": "Radio",
+              "target_layer": "Text layer 1",
+              "label": "Option 5",
+              "value": "1>2",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 2",
+              "label": "Option 6",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Image",
+              "target_layer": "image 1",
+              "label": "Option 7"
+            }
+          ],
+          "pricing_info": {
+            "title": "Campaign droplist 2",
+            "description": "Campaign droplist 2"
+          },
+          "group": [
+            [
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 1",
+                "layer_name": "Layer text dog name, Dog name",
+                "side": "Front"
+              },
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 2",
+                "layer_name": "Layer text dog breed, Dog breed",
+                "side": "Front"
+              }
+            ],
+            [
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 3",
+                "layer_name": "Layer text cat name, Cat name",
+                "side": "Back"
+              },
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 4",
+                "layer_name": "Layer text cat breed, Cat breed",
+                "side": "Back"
+              }
+            ]
+          ],
+          "customize_group": [
+            {
+              "option_group": "Droplist",
+              "label_group": "Please select the droplist 1",
+              "group_name": "Group 2, Group 1",
+              "default_value": "Group 1"
+            },
+            {
+              "option_group": "Droplist",
+              "label_group": "Please select the droplist 2",
+              "group_name": "Group 4, Group 3",
+              "default_value": "Group 3"
+            }
+          ],
+          "conditional_logic_info": [
+            {
+              "custom_name": "Option 2",
+              "condition": ["is equal to>Dog 1"],
+              "then_show_value": ["Option 5"]
+            },
+            {
+              "custom_name": "Option 5",
+              "condition": ["is equal to>1"],
+              "then_show_value": ["Option 6"]
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Droplist",
+              "value": "Group 2",
+              "custom_name": "Please select the droplist 1"
+            },
+            {
+              "type": "Droplist",
+              "value": "Group 3",
+              "custom_name": "Please select the droplist 2"
+            },
+            {
+              "type": "Picture choice",
+              "value": "Dog 1",
+              "custom_name": "Option 2"
+            },
+            {
+              "type": "Text field",
+              "value": "Dog Name",
+              "custom_name": "Option 3"
+            },
+            {
+              "type": "Radio",
+              "value": "1",
+              "custom_name": "Option 5"
+            },
+            {
+              "type": "Text field",
+              "value": "Cat name",
+              "custom_name": "Option 6"
+            },
+            {
+              "type": "Image",
+              "value": "Cat 2.png",
+              "custom_name": "Option 7"
+            }
+          ]
+        },
+        {
+          "description": "[PBase] Campaign có Conditional logic CO targer layer trong Group là cha CO layer ngoài Group với customize radio",
+          "case_id": "SB_PRB_CG_283",
+          "product_info": [
+            {
+              "category": "Apparel",
+              "base_product": "Long Sleeve Tee"
+            }
+          ],
+          "picture": "SB_PRB_CG_283_front.png",
+          "picture_back": "SB_PRB_CG_283_back.png",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_value": "Layer text dog name",
+              "layer_name": "Text layer 1",
+              "layer_name_new": "Layer text dog name",
+              "location_layer_x": "520",
+              "location_layer_y": "269",
+              "layer_size_h": "159",
+              "layer_size_w": "1060",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Layer text dog breed",
+              "layer_name": "Text layer 1",
+              "layer_name_new": "Layer text dog breed",
+              "location_layer_x": "520",
+              "location_layer_y": "536",
+              "layer_size_h": "159",
+              "layer_size_w": "1060",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Text layer 1",
+              "location_layer_x": "520",
+              "location_layer_y": "1392",
+              "layer_size_h": "159",
+              "layer_size_w": "1060",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Dog name.png",
+              "location_layer_x": "672",
+              "location_layer_y": "785",
+              "layer_size_h": "1532",
+              "layer_size_w": "757",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Dog breed.png",
+              "location_layer_x": "672",
+              "location_layer_y": "785",
+              "layer_size_h": "1532",
+              "layer_size_w": "757",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Add your text",
+              "location_layer_x": "477",
+              "location_layer_y": "633",
+              "layer_size_h": "155",
+              "layer_size_w": "1060",
+              "front_or_back": "Back"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "image 1.png",
+              "location_layer_x": "1429",
+              "location_layer_y": "927",
+              "layer_size_h": "547",
+              "layer_size_w": "547",
+              "front_or_back": "Back"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Layer text cat name",
+              "layer_name": "Text layer 3",
+              "layer_name_new": "Layer text cat name",
+              "location_layer_x": "477",
+              "location_layer_y": "207",
+              "layer_size_h": "155",
+              "layer_size_w": "1060",
+              "front_or_back": "Back"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Layer text cat breed",
+              "layer_name": "Text layer 3",
+              "layer_name_new": "Layer text cat breed",
+              "location_layer_x": "477",
+              "location_layer_y": "415",
+              "layer_size_h": "155",
+              "layer_size_w": "1060",
+              "front_or_back": "Back"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Cat name.png",
+              "location_layer_x": "672",
+              "location_layer_y": "710",
+              "layer_size_h": "1532",
+              "layer_size_w": "757",
+              "front_or_back": "Back"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Cat breed.png",
+              "location_layer_x": "672",
+              "location_layer_y": "710",
+              "layer_size_h": "1532",
+              "layer_size_w": "757",
+              "front_or_back": "Back"
+            }
+          ],
+          "custom_options": [
+            {
+              "type": "Text field",
+              "target_layer": "Layer text dog name",
+              "label": "Option 1",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Picture choice",
+              "target_layer": "Dog breed",
+              "label": "Option 2",
+              "type_clipart": "Folder",
+              "value_clipart": "Folder Dog 01",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Layer text cat name",
+              "label": "Option 3",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Picture choice",
+              "target_layer": "Cat breed",
+              "label": "Option 4",
+              "type_clipart": "Folder",
+              "value_clipart": "Folder Cat 01",
+              "position": "below"
+            },
+            {
+              "type": "Radio",
+              "target_layer": "Text layer 1",
+              "label": "Option 5",
+              "value": "1>2",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 2",
+              "label": "Option 6",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Image",
+              "target_layer": "image 1",
+              "label": "Option 7"
+            }
+          ],
+          "pricing_info": {
+            "title": "Campaign radio 2",
+            "description": "Campaign radio 2"
+          },
+          "group": [
+            [
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 1",
+                "layer_name": "Layer text dog name, Dog name",
+                "side": "Front"
+              },
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 2",
+                "layer_name": "Layer text dog breed, Dog breed",
+                "side": "Front"
+              }
+            ],
+            [
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 3",
+                "layer_name": "Layer text cat name, Cat name",
+                "side": "Back"
+              },
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 4",
+                "layer_name": "Layer text cat breed, Cat breed",
+                "side": "Back"
+              }
+            ]
+          ],
+          "customize_group": [
+            {
+              "option_group": "Radio",
+              "label_group": "Please select the radio 1",
+              "group_name": "Group 2, Group 1",
+              "default_value": "Group 1"
+            },
+            {
+              "option_group": "Radio",
+              "label_group": "Please select the radio 2",
+              "group_name": "Group 4, Group 3",
+              "default_value": "Group 3"
+            }
+          ],
+          "conditional_logic_info": [
+            {
+              "custom_name": "Option 2",
+              "condition": ["is equal to>Dog 1"],
+              "then_show_value": ["Option 5"]
+            },
+            {
+              "custom_name": "Option 5",
+              "condition": ["is equal to>1"],
+              "then_show_value": ["Option 6"]
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Radio",
+              "value": "Group 1",
+              "custom_name": "Please select the radio 1"
+            },
+            {
+              "type": "Radio",
+              "value": "Group 4",
+              "custom_name": "Please select the radio 2"
+            },
+            {
+              "type": "Text field",
+              "value": "Dog name",
+              "custom_name": "Option 1"
+            },
+            {
+              "type": "Picture choice",
+              "value": "Cat 1",
+              "custom_name": "Option 4"
+            },
+            {
+              "type": "Image",
+              "value": "Cat 2.png",
+              "custom_name": "Option 7"
+            }
+          ]
+        },
+        {
+          "description": "[PBase] Campaign có Conditional logic CO targer layer trong Group là cha CO layer ngoài Group với customize picture choice",
+          "case_id": "SB_PRB_CG_285",
+          "product_info": [
+            {
+              "category": "Apparel",
+              "base_product": "Long Sleeve Tee"
+            }
+          ],
+          "picture": "SB_PRB_CG_285_front.png",
+          "picture_back": "SB_PRB_CG_285_back.png",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_value": "Layer text dog name",
+              "layer_name": "Text layer 1",
+              "layer_name_new": "Layer text dog name",
+              "location_layer_x": "520",
+              "location_layer_y": "269",
+              "layer_size_h": "159",
+              "layer_size_w": "1060",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Layer text dog breed",
+              "layer_name": "Text layer 1",
+              "layer_name_new": "Layer text dog breed",
+              "location_layer_x": "520",
+              "location_layer_y": "536",
+              "layer_size_h": "159",
+              "layer_size_w": "1060",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Text layer 1",
+              "location_layer_x": "520",
+              "location_layer_y": "1392",
+              "layer_size_h": "159",
+              "layer_size_w": "1060",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Dog name.png",
+              "location_layer_x": "672",
+              "location_layer_y": "785",
+              "layer_size_h": "1532",
+              "layer_size_w": "757",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Dog breed.png",
+              "location_layer_x": "672",
+              "location_layer_y": "785",
+              "layer_size_h": "1532",
+              "layer_size_w": "757",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Add your text",
+              "location_layer_x": "477",
+              "location_layer_y": "633",
+              "layer_size_h": "155",
+              "layer_size_w": "1060",
+              "front_or_back": "Back"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "image 1.png",
+              "location_layer_x": "1429",
+              "location_layer_y": "927",
+              "layer_size_h": "547",
+              "layer_size_w": "547",
+              "front_or_back": "Back"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Layer text cat name",
+              "layer_name": "Text layer 3",
+              "layer_name_new": "Layer text cat name",
+              "location_layer_x": "477",
+              "location_layer_y": "207",
+              "layer_size_h": "155",
+              "layer_size_w": "1060",
+              "front_or_back": "Back"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Layer text cat breed",
+              "layer_name": "Text layer 3",
+              "layer_name_new": "Layer text cat breed",
+              "location_layer_x": "477",
+              "location_layer_y": "415",
+              "layer_size_h": "155",
+              "layer_size_w": "1060",
+              "front_or_back": "Back"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Cat name.png",
+              "location_layer_x": "672",
+              "location_layer_y": "710",
+              "layer_size_h": "1532",
+              "layer_size_w": "757",
+              "front_or_back": "Back"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Cat breed.png",
+              "location_layer_x": "672",
+              "location_layer_y": "710",
+              "layer_size_h": "1532",
+              "layer_size_w": "757",
+              "front_or_back": "Back"
+            }
+          ],
+          "custom_options": [
+            {
+              "type": "Text field",
+              "target_layer": "Layer text dog name",
+              "label": "Option 1",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Picture choice",
+              "target_layer": "Dog breed",
+              "label": "Option 2",
+              "type_clipart": "Folder",
+              "value_clipart": "Folder Dog 01",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Layer text cat name",
+              "label": "Option 3",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Picture choice",
+              "target_layer": "Cat breed",
+              "label": "Option 4",
+              "type_clipart": "Folder",
+              "value_clipart": "Folder Cat 01",
+              "position": "below"
+            },
+            {
+              "type": "Radio",
+              "target_layer": "Text layer 1",
+              "label": "Option 5",
+              "value": "1>2",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 2",
+              "label": "Option 6",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Image",
+              "target_layer": "image 1",
+              "label": "Option 7"
+            }
+          ],
+          "pricing_info": {
+            "title": "Campaign picture choice 2",
+            "description": "Campaign picture choice 2"
+          },
+          "group": [
+            [
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 1",
+                "layer_name": "Layer text dog name, Dog name",
+                "side": "Front"
+              },
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 2",
+                "layer_name": "Layer text dog breed, Dog breed",
+                "side": "Front"
+              }
+            ],
+            [
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 3",
+                "layer_name": "Layer text cat name, Cat name",
+                "side": "Back"
+              },
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 4",
+                "layer_name": "Layer text cat breed, Cat breed",
+                "side": "Back"
+              }
+            ]
+          ],
+          "customize_group": [
+            {
+              "option_group": "Picture choice",
+              "label_group": "Please select the picture choice 1",
+              "group_name": "BD_2.png, BD_1.png",
+              "default_value": "Group 1"
+            },
+            {
+              "option_group": "Picture choice",
+              "label_group": "Please select the picture choice 2",
+              "group_name": "BD_4.png, BD_3.png",
+              "default_value": "Group 3"
+            }
+          ],
+          "conditional_logic_info": [
+            {
+              "custom_name": "Option 2",
+              "condition": ["is equal to>Dog 1"],
+              "then_show_value": ["Option 5"]
+            },
+            {
+              "custom_name": "Option 5",
+              "condition": ["is equal to>1"],
+              "then_show_value": ["Option 6"]
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Picture choice",
+              "value": "Group 2",
+              "custom_name": "Please select the picture choice 1"
+            },
+            {
+              "type": "Picture choice",
+              "value": "Group 3",
+              "custom_name": "Please select the picture choice 2"
+            },
+            {
+              "type": "Picture choice",
+              "value": "Dog 1",
+              "custom_name": "Option 2"
+            },
+            {
+              "type": "Text field",
+              "value": "Dog Name",
+              "custom_name": "Option 3"
+            },
+            {
+              "type": "Radio",
+              "value": "1",
+              "custom_name": "Option 5"
+            },
+            {
+              "type": "Text field",
+              "value": "Cat name",
+              "custom_name": "Option 6"
+            },
+            {
+              "type": "Image",
+              "value": "Cat 2.png",
+              "custom_name": "Option 7"
+            }
+          ]
+        },
+        {
+          "description": "SB_PRB_CG_237 - [PBase] Verify tạo customize group với Droplist và Radio khi tạo custom option",
+          "case_id": "SB_PRB_CG_237",
+          "product_info": [
+            {
+              "category": "Home & Living",
+              "base_product": "Quilt"
+            }
+          ],
+          "picture": "SB_PRB_CG_237.png",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 1",
+              "location_layer_x": "232",
+              "location_layer_y": "888",
+              "layer_size_h": "384",
+              "layer_size_w": "2518"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 2",
+              "location_layer_x": "232",
+              "location_layer_y": "1882",
+              "layer_size_h": "384",
+              "layer_size_w": "2518"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 3",
+              "location_layer_x": "232",
+              "location_layer_y": "2750",
+              "layer_size_h": "384",
+              "layer_size_w": "2518"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "BD_9.png",
+              "location_layer_x": "3075",
+              "location_layer_y": "249",
+              "layer_size_h": "1825",
+              "layer_size_w": "1369"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "icon.png",
+              "location_layer_x": "3621",
+              "location_layer_y": "2477",
+              "layer_size_h": "547",
+              "layer_size_w": "547"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "BD_27.png",
+              "location_layer_x": "2301",
+              "location_layer_y": "3330",
+              "layer_size_h": "1809",
+              "layer_size_w": "2336"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 4",
+              "location_layer_x": "232",
+              "location_layer_y": "3539",
+              "layer_size_h": "384",
+              "layer_size_w": "2518"
+            }
+          ],
+          "custom_options": [
+            {
+              "type": "Picture choice",
+              "target_layer": "BD_27",
+              "label": "Picture choice",
+              "type_clipart": "Folder",
+              "value_clipart": "Folder01",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 1",
+              "label": "Text field",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Text area",
+              "target_layer": "Text layer 2",
+              "label": "Text area",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Radio",
+              "target_layer": "Text layer 4",
+              "label": "Radio",
+              "value": "abc>def",
+              "position": "below"
+            },
+            {
+              "type": "Image",
+              "target_layer": "icon",
+              "label": "Image"
+            }
+          ],
+          "pricing_info": {
+            "title": "Campaign CO customize group droplist and radio",
+            "description": "Campaign CO customize group droplist and radio"
+          },
+          "group": [
+            [
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 1",
+                "layer_name": "Text layer 1"
+              },
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 2",
+                "layer_name": "Text layer 2"
+              },
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 3",
+                "layer_name": "BD_9"
+              }
+            ],
+            [
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 4",
+                "layer_name": "Text layer 3"
+              },
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 5",
+                "layer_name": "icon"
+              }
+            ]
+          ],
+          "customize_group": [
+            {
+              "option_group": "Droplist",
+              "label_group": "Please select the droplist",
+              "group_name": "Group 3, Group 2, Group 1",
+              "default_value": "Group 1"
+            },
+            {
+              "option_group": "Radio",
+              "label_group": "Please select the radio",
+              "group_name": "Group 5, Group 4",
+              "default_value": "Group 5"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Droplist",
+              "value": "Group 2",
+              "custom_name": "Please select the droplist"
+            },
+            {
+              "type": "Radio",
+              "value": "Group 5",
+              "custom_name": "Please select the radio"
+            },
+            {
+              "type": "Text area",
+              "value": "OpenCommerce",
+              "custom_name": "Text area"
+            },
+            {
+              "type": "Image",
+              "value": "artwork - Back.png",
+              "custom_name": "Image"
+            },
+            {
+              "type": "Picture choice",
+              "value": "BD_4",
+              "custom_name": "Picture choice"
+            },
+            {
+              "type": "Radio",
+              "value": "def",
+              "custom_name": "Radio"
+            }
+          ]
+        },
+        {
+          "description": "SB_PRB_CG_238 - [PBase] Verify tạo customize group với Droplist và Picture choice khi tạo custom option",
+          "case_id": "SB_PRB_CG_238",
+          "product_info": [
+            {
+              "category": "Home & Living",
+              "base_product": "Quilt"
+            }
+          ],
+          "picture": "SB_PRB_CG_238.png",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 1",
+              "location_layer_x": "232",
+              "location_layer_y": "888",
+              "layer_size_h": "384",
+              "layer_size_w": "2518"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 2",
+              "location_layer_x": "232",
+              "location_layer_y": "1882",
+              "layer_size_h": "384",
+              "layer_size_w": "2518"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 3",
+              "location_layer_x": "232",
+              "location_layer_y": "2750",
+              "layer_size_h": "384",
+              "layer_size_w": "2518"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "BD_9.png",
+              "location_layer_x": "3075",
+              "location_layer_y": "249",
+              "layer_size_h": "1825",
+              "layer_size_w": "1369"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "icon.png",
+              "location_layer_x": "3621",
+              "location_layer_y": "2477",
+              "layer_size_h": "547",
+              "layer_size_w": "547"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "BD_27.png",
+              "location_layer_x": "2301",
+              "location_layer_y": "3330",
+              "layer_size_h": "1809",
+              "layer_size_w": "2336"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 4",
+              "location_layer_x": "232",
+              "location_layer_y": "3539",
+              "layer_size_h": "384",
+              "layer_size_w": "2518"
+            }
+          ],
+          "custom_options": [
+            {
+              "type": "Picture choice",
+              "target_layer": "BD_27",
+              "label": "Picture choice",
+              "type_clipart": "Folder",
+              "value_clipart": "Folder01",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 1",
+              "label": "Text field",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Text area",
+              "target_layer": "Text layer 2",
+              "label": "Text area",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Radio",
+              "target_layer": "Text layer 4",
+              "label": "Radio",
+              "value": "abc>def",
+              "position": "below"
+            },
+            {
+              "type": "Image",
+              "target_layer": "icon",
+              "label": "Image"
+            }
+          ],
+          "pricing_info": {
+            "title": "Campaign CO customize group droplist and picture choice",
+            "description": "Campaign CO customize group droplist and picture choice"
+          },
+          "group": [
+            [
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 1",
+                "layer_name": "Text layer 1"
+              },
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 2",
+                "layer_name": "Text layer 2"
+              },
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 3",
+                "layer_name": "BD_9"
+              }
+            ],
+            [
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 4",
+                "layer_name": "Text layer 3"
+              },
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 5",
+                "layer_name": "icon"
+              }
+            ]
+          ],
+          "customize_group": [
+            {
+              "option_group": "Droplist",
+              "label_group": "Please select the droplist",
+              "group_name": "Group 3, Group 2, Group 1",
+              "default_value": "Group 1"
+            },
+            {
+              "option_group": "Picture choice",
+              "label_group": "Please select the picture choice",
+              "group_name": "BD_5.png, BD_4.png",
+              "default_value": "Group 5"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Droplist",
+              "value": "Group 2",
+              "custom_name": "Please select the droplist"
+            },
+            {
+              "type": "Picture choice",
+              "value": "Group 5",
+              "custom_name": "Please select the picture choice"
+            },
+            {
+              "type": "Text area",
+              "value": "OpenCommerce",
+              "custom_name": "Text area"
+            },
+            {
+              "type": "Image",
+              "value": "artwork - Back.png",
+              "custom_name": "Image"
+            },
+            {
+              "type": "Picture choice",
+              "value": "BD_4",
+              "custom_name": "Picture choice"
+            },
+            {
+              "type": "Radio",
+              "value": "def",
+              "custom_name": "Radio"
+            }
+          ]
+        },
+        {
+          "description": "SB_PRB_CG_239 - [PBase] Verify tạo customize group với Radio và Picture choice khi tạo custom option",
+          "case_id": "SB_PRB_CG_239",
+          "product_info": [
+            {
+              "category": "Home & Living",
+              "base_product": "Quilt"
+            }
+          ],
+          "picture": "SB_PRB_CG_239.png",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 1",
+              "location_layer_x": "232",
+              "location_layer_y": "888",
+              "layer_size_h": "384",
+              "layer_size_w": "2518"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 2",
+              "location_layer_x": "232",
+              "location_layer_y": "1882",
+              "layer_size_h": "384",
+              "layer_size_w": "2518"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 3",
+              "location_layer_x": "232",
+              "location_layer_y": "2750",
+              "layer_size_h": "384",
+              "layer_size_w": "2518"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "BD_9.png",
+              "location_layer_x": "3075",
+              "location_layer_y": "249",
+              "layer_size_h": "1825",
+              "layer_size_w": "1369"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "icon.png",
+              "location_layer_x": "3621",
+              "location_layer_y": "2477",
+              "layer_size_h": "547",
+              "layer_size_w": "547"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "BD_27.png",
+              "location_layer_x": "2301",
+              "location_layer_y": "3330",
+              "layer_size_h": "1809",
+              "layer_size_w": "2336"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 4",
+              "location_layer_x": "232",
+              "location_layer_y": "3539",
+              "layer_size_h": "384",
+              "layer_size_w": "2518"
+            }
+          ],
+          "custom_options": [
+            {
+              "type": "Picture choice",
+              "target_layer": "BD_27",
+              "label": "Picture choice",
+              "type_clipart": "Folder",
+              "value_clipart": "Folder01",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 1",
+              "label": "Text field",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Text area",
+              "target_layer": "Text layer 2",
+              "label": "Text area",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Radio",
+              "target_layer": "Text layer 4",
+              "label": "Radio",
+              "value": "abc>def",
+              "position": "below"
+            },
+            {
+              "type": "Image",
+              "target_layer": "icon",
+              "label": "Image"
+            }
+          ],
+          "pricing_info": {
+            "title": "Campaign CO customize group radio and picture choice",
+            "description": "Campaign CO customize group radio and picture choice"
+          },
+          "group": [
+            [
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 1",
+                "layer_name": "Text layer 1"
+              },
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 2",
+                "layer_name": "Text layer 2"
+              },
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 3",
+                "layer_name": "BD_9"
+              }
+            ],
+            [
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 4",
+                "layer_name": "Text layer 3"
+              },
+              {
+                "current_group": "New group 1",
+                "new_group": "Group 5",
+                "layer_name": "icon"
+              }
+            ]
+          ],
+          "customize_group": [
+            {
+              "option_group": "Radio",
+              "label_group": "Please select the radio",
+              "group_name": "Group 3, Group 2, Group 1",
+              "default_value": "Group 1"
+            },
+            {
+              "option_group": "Picture choice",
+              "label_group": "Please select the picture choice",
+              "group_name": "BD_5.png, BD_4.png",
+              "default_value": "Group 5"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Radio",
+              "value": "Group 2",
+              "custom_name": "Please select the radio"
+            },
+            {
+              "type": "Picture choice",
+              "value": "Group 5",
+              "custom_name": "Please select the picture choice"
+            },
+            {
+              "type": "Text area",
+              "value": "OpenCommerce",
+              "custom_name": "Text area"
+            },
+            {
+              "type": "Image",
+              "value": "artwork - Back.png",
+              "custom_name": "Image"
+            },
+            {
+              "type": "Picture choice",
+              "value": "BD_4",
+              "custom_name": "Picture choice"
+            },
+            {
+              "type": "Radio",
+              "value": "def",
+              "custom_name": "Radio"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

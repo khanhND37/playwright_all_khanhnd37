@@ -1,0 +1,126 @@
+{
+  "env": {
+    "dev": {
+      "domain": "plusbase-auto.myshopbase.net",
+      "shop_name": "plusbase-auto.myshopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "api": "https://gapi.dev.shopbase.net",
+      "shop_id": 10321495,
+      "user_id": 73800,
+      "hive_domain": "hive.dev.shopbase.net",
+      "hive_username": "shopbase",
+      "hive_password": "123456",
+      "odoo_host": "https://odoo.dev.shopbase.net/",
+      "odoo_db": "sbase_fulfillment_dev",
+      "odoo_username": "admin",
+      "odoo_password": "admin"
+    },
+    "prodtest": {
+      "domain": "plusbase-auto-prodtest.onshopbase.com",
+      "shop_name": "plusbase-auto-prodtest.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "api": "https://prod-test-api.shopbase.com",
+      "shop_id": 10370177,
+      "user_id": 73782,
+      "hive_domain": "hive.shopbase.com",
+      "hive_username": "shopbase",
+      "hive_password": "UxsLHz^Wjkf35*/w",
+      "odoo_host": "https://autotest-erp-plus.shopbase.dev",
+      "odoo_db": "shopbase_fulfillment",
+      "odoo_username": "qaocg",
+      "odoo_password": "LFmy=qGLvwW^E63b",
+      "cases": {
+        "SB_PLB_CTL_UIC_7": {
+          "max_collection": 6
+        }
+      },
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "prod": {
+      "domain": "plusbase-auto.onshopbase.com",
+      "shop_name": "plusbase-auto.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10269907,
+      "user_id": 73782,
+      "api": "https://api.shopbase.com",
+      "hive_domain": "hive.shopbase.com",
+      "hive_username": "shopbase",
+      "hive_password": "UxsLHz^Wjkf35*/w",
+      "odoo_host": "https://autotest-erp-plus.shopbase.dev",
+      "odoo_db": "shopbase_fulfillment",
+      "odoo_username": "qaocg",
+      "odoo_password": "LFmy=qGLvwW^E63b",
+      "cases": {
+        "SB_PLB_CTL_UIC_7": {
+          "max_collection": 6
+        }
+      }
+    }
+  },
+  "cases": {
+    "SB_PLB_CTL_UIC_1": {
+      "description": "Verify show header",
+      "expect": {
+        "snapshot": "TC-PLB-CTL-UIC-1-1.png,TC-PLB-CTL-UIC-1-2.png"
+      }
+    },
+    "SB_PLB_CTL_UIC_3": {
+      "description": "Verify show banner"
+    },
+    "SB_PLB_CTL_UIC_4": {
+      "description": "Verify search result with All categories",
+      "data": [
+        {
+          "key_search": "Not any product match"
+        },
+        {
+          "key_search": "plus"
+        }
+      ]
+    },
+    "SB_PLB_CTL_UIC_5": {
+      "description": "Verify search result with category",
+      "data": [
+        {
+          "key_search": "Not any product match"
+        },
+        {
+          "key_search": "(Test product)"
+        }
+      ]
+    },
+    "SB_PLB_CTL_UIC_7": {
+      "description": "Verify show collections",
+      "max_collection": 4
+    },
+    "SB_PLB_CTL_UIC_13": {
+      "description": "Verify show categories"
+    },
+    "SB_PLB_CTL_UIC_16": {
+      "description": "Verify paging collection New Arrivals"
+    },
+    "SB_PLB_CTL_UIC_17": {
+      "description": "Verify sort products collection New Arrivals",
+      "sorts": [
+        {
+          "name": "Product cost: low to high",
+          "sort_mode": "asc",
+          "sort_field": "x_plusbase_base_cost"
+        },
+        {
+          "name": "Product cost: high to low",
+          "sort_mode": "desc",
+          "sort_field": "x_plusbase_base_cost"
+        },
+        {
+          "name": "Most views",
+          "sort_mode": "desc",
+          "sort_field": "view"
+        }
+      ]
+    }
+  }
+}

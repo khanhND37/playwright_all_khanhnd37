@@ -1,0 +1,539 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-translation-product.myshopbase.net",
+      "shop_name": "au-translation-product",
+      "shop_id": 10333283,
+      "username": "dpro-qe-1@beeketing.net  ",
+      "password": "43AhIn|VWp;[?9&",
+      "user_id": 89797
+    },
+    "local": {
+      "api": "https://prod-test-api.shopbase.com",
+      "accounts_domain": "accounts-test.shopbase.com",
+      "domain": "au-translation-product-ui-prodtest.onshopbase.com",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "shop_name": "au-translation-product-ui-prodtest",
+      "user_id": 11244582,
+      "shop_id": 10486529
+    },
+    "prod": {},
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "accounts_domain": "accounts-test.shopbase.com",
+      "domain": "au-translation-product-ui-prodtest.onshopbase.com",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "shop_name": "au-translation-product-ui-prodtest",
+      "user_id": 11244582,
+      "shop_id": 10486529
+    }
+  },
+  "cases": {
+    "SB_SET_TL_59": {
+      "case_code": "SB_SET_TL_59",
+      "language": "German",
+      "status": "Published languages",
+      "product": {
+        "not_exist": "proddd fake",
+        "exist": "1",
+        "expect_search_result": ["Product 11", "Product 1", "Product 10"]
+      },
+      "verify": {
+        "first_product": {
+          "search": "Product 1",
+          "expected_result": [
+            {
+              "field_name": "Title",
+              "source_value": "Product 1",
+              "target_value": "Produkt 1"
+            },
+            {
+              "field_name": "Description",
+              "source_value": "<h2 style=\"font-weight: var(--h-font-weight); font-size: var(--h2-font-size); text-align: left;\" data-mce-style=\"font-weight: var(--h-font-weight); font-size: var(--h2-font-size); text-align: left;\">300ml water tank</h2><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><br></p><h6 style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); text-align: left;\" data-mce-style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); text-align: left;\">Up to 300ml water tank helps you clean the whole mouth without having to refill.</h6><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><br></p><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><img style=\"height: auto !important;\" src=\"https://dev-img.shopbase.net/files/10432814/2023/06/14/1686719828ed2c93df8d.png\" alt=\"\" width=\"100%\" data-mce-src=\"https://dev-img.shopbase.net/files/10432814/2023/06/14/1686719828ed2c93df8d.png\" data-mce-style=\"height: auto !important;\"></p><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><br></p><h4 style=\"font-weight: var(--h-font-weight); font-size: var(--h4-font-size); text-align: left;\" data-mce-style=\"font-weight: var(--h-font-weight); font-size: var(--h4-font-size); text-align: left;\">3 modes efficient clean teeth.</h4><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><br></p><h6 style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); text-align: left;\" data-mce-style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); text-align: left;\">The Cordless Advanced includes 3 pressure settings allowing you to personalize your water pressure intensity.</h6><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><br></p><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><img style=\"height: auto !important;\" src=\"https://dev-img.shopbase.net/files/10432814/2023/06/14/168671987540a16e3249.png\" alt=\"\" width=\"100%\" data-mce-src=\"https://dev-img.shopbase.net/files/10432814/2023/06/14/168671987540a16e3249.png\" data-mce-style=\"height: auto !important;\"></p><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><br></p><h4 style=\"font-weight: var(--h-font-weight); font-size: var(--h4-font-size); text-align: left;\" data-mce-style=\"font-weight: var(--h-font-weight); font-size: var(--h4-font-size); text-align: left;\">High intensity pulsed</h4><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><br></p><h6 style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); text-align: left;\" data-mce-style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); text-align: left;\">The Waterpik Cordless Advanced Water Flosser provides a unique combination of water pressure and pulsations to clean deep between teeth and below the gumline, removing plaque and debris that traditional brushing and flossing can't reach.</h6><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><br></p><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><img style=\"height: auto !important;\" src=\"https://dev-img.shopbase.net/files/10432814/2023/06/14/1686719906b08c377229.png\" alt=\"\" width=\"100%\" data-mce-src=\"https://dev-img.shopbase.net/files/10432814/2023/06/14/1686719906b08c377229.png\" data-mce-style=\"height: auto !important;\"></p><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><br></p><h4 style=\"font-weight: var(--h-font-weight); font-size: var(--h4-font-size); text-align: left;\" data-mce-style=\"font-weight: var(--h-font-weight); font-size: var(--h4-font-size); text-align: left;\">IPX7 waterproof level</h4><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><br></p><h6 style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); text-align: left;\" data-mce-style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); text-align: left;\">It also features a waterproof design for use in the shower, 4 hour rapid charge.</h6><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><br></p><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><img style=\"height: auto !important;\" src=\"https://dev-img.shopbase.net/files/10432814/2023/06/14/1686719954226e7d4c9b.png\" alt=\"\" width=\"100%\" data-mce-src=\"https://dev-img.shopbase.net/files/10432814/2023/06/14/1686719954226e7d4c9b.png\" data-mce-style=\"height: auto !important;\"></p><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><br></p><h4 style=\"font-weight: var(--h-font-weight); font-size: var(--h4-font-size); text-align: left;\" data-mce-style=\"font-weight: var(--h-font-weight); font-size: var(--h4-font-size); text-align: left;\">Specs</h4><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><br></p><ul style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><li><h6 style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); font-style: var(--h-font-style);\" data-mce-style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); font-style: var(--h-font-style);\">Dimensions: 4 x 2.8 x 11.6 inches; 12.8 Ounces</h6></li><li><h6 style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); font-style: var(--h-font-style);\" data-mce-style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); font-style: var(--h-font-style);\">DO NOT WASH</h6></li><li><h6 style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); font-style: var(--h-font-style);\" data-mce-style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); font-style: var(--h-font-style);\">Store In A Cool, Dry Place</h6></li><li><h6 style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); font-style: var(--h-font-style);\" data-mce-style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); font-style: var(--h-font-style);\">Gently Wipe To Remove Dust</h6></li><li><h6 style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); font-style: var(--h-font-style);\" data-mce-style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); font-style: var(--h-font-style);\">Due to variations of light and color settings of computer/personal device screens, colors may appear slightly different from photographic images</h6></li><li><h6 style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); font-style: var(--h-font-style);\" data-mce-style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); font-style: var(--h-font-style);\">Due to the manufacturing process, sizes of items listed in descriptions are approximate and actual size may vary slightly</h6></li></ul>",
+              "target_value": "<h2 style=\"font-weight: var(--h-font-weight); font-size: var(--h2-font-size); text-align: left;\" data-mce-style=\"font-weight: var(--h-font-weight); font-size: var(--h2-font-size); text-align: left;\">translated 300ml water tank to German</h2><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><br></p><h6 style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); text-align: left;\" data-mce-style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); text-align: left;\">translated Up to 300ml water tank helps you clean the whole mouth without having to refill. to German</h6><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><br></p><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><img style=\"height: auto !important;\" src=\"https://dev-img.shopbase.net/files/10432814/2023/06/14/1686719828ed2c93df8d.png\" alt=\"\" width=\"100%\" data-mce-src=\"https://dev-img.shopbase.net/files/10432814/2023/06/14/1686719828ed2c93df8d.png\" data-mce-style=\"height: auto !important;\"></p><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><br></p><h4 style=\"font-weight: var(--h-font-weight); font-size: var(--h4-font-size); text-align: left;\" data-mce-style=\"font-weight: var(--h-font-weight); font-size: var(--h4-font-size); text-align: left;\">translated 3 modes efficient clean teeth. to German</h4><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><br></p><h6 style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); text-align: left;\" data-mce-style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); text-align: left;\">translated The Cordless Advanced includes 3 pressure settings allowing you to personalize your water pressure intensity. to German</h6><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><br></p><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><img style=\"height: auto !important;\" src=\"https://dev-img.shopbase.net/files/10432814/2023/06/14/168671987540a16e3249.png\" alt=\"\" width=\"100%\" data-mce-src=\"https://dev-img.shopbase.net/files/10432814/2023/06/14/168671987540a16e3249.png\" data-mce-style=\"height: auto !important;\"></p><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><br></p><h4 style=\"font-weight: var(--h-font-weight); font-size: var(--h4-font-size); text-align: left;\" data-mce-style=\"font-weight: var(--h-font-weight); font-size: var(--h4-font-size); text-align: left;\">translated High intensity pulsed to German</h4><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><br></p><h6 style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); text-align: left;\" data-mce-style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); text-align: left;\">translated The Waterpik Cordless Advanced Water Flosser provides a unique combination of water pressure and pulsations to clean deep between teeth and below the gumline, removing plaque and debris that traditional brushing and flossing can't reach. to German</h6><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><br></p><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><img style=\"height: auto !important;\" src=\"https://dev-img.shopbase.net/files/10432814/2023/06/14/1686719906b08c377229.png\" alt=\"\" width=\"100%\" data-mce-src=\"https://dev-img.shopbase.net/files/10432814/2023/06/14/1686719906b08c377229.png\" data-mce-style=\"height: auto !important;\"></p><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><br></p><h4 style=\"font-weight: var(--h-font-weight); font-size: var(--h4-font-size); text-align: left;\" data-mce-style=\"font-weight: var(--h-font-weight); font-size: var(--h4-font-size); text-align: left;\">translated IPX7 waterproof level to German</h4><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><br></p><h6 style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); text-align: left;\" data-mce-style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); text-align: left;\">translated It also features a waterproof design for use in the shower, 4 hour rapid charge. to German</h6><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><br></p><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><img style=\"height: auto !important;\" src=\"https://dev-img.shopbase.net/files/10432814/2023/06/14/1686719954226e7d4c9b.png\" alt=\"\" width=\"100%\" data-mce-src=\"https://dev-img.shopbase.net/files/10432814/2023/06/14/1686719954226e7d4c9b.png\" data-mce-style=\"height: auto !important;\"></p><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><br></p><h4 style=\"font-weight: var(--h-font-weight); font-size: var(--h4-font-size); text-align: left;\" data-mce-style=\"font-weight: var(--h-font-weight); font-size: var(--h4-font-size); text-align: left;\">translated Specs to German</h4><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><br></p><ul style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><li><h6 style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); font-style: var(--h-font-style);\" data-mce-style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); font-style: var(--h-font-style);\">translated Dimensions: 4 x 2.8 x 11.6 inches; 12.8 Ounces to German</h6></li><li><h6 style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); font-style: var(--h-font-style);\" data-mce-style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); font-style: var(--h-font-style);\">translated DO NOT WASH to German</h6></li><li><h6 style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); font-style: var(--h-font-style);\" data-mce-style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); font-style: var(--h-font-style);\">translated Store In A Cool, Dry Place to German</h6></li><li><h6 style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); font-style: var(--h-font-style);\" data-mce-style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); font-style: var(--h-font-style);\">translated Gently Wipe To Remove Dust to German</h6></li><li><h6 style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); font-style: var(--h-font-style);\" data-mce-style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); font-style: var(--h-font-style);\">translated Due to variations of light and color settings of computer/personal device screens, colors may appear slightly different from photographic images to German</h6></li><li><h6 style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); font-style: var(--h-font-style);\" data-mce-style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); font-style: var(--h-font-style);\">translated Due to the manufacturing process, sizes of items listed in descriptions are approximate and actual size may vary slightly to German</h6></li></ul>"
+            },
+            {
+              "field_name": "Variant title",
+              "source_value": "S / Normal",
+              "target_value": "translated S / Normal to German"
+            },
+            {
+              "field_name": "Variant title",
+              "source_value": "S / VIP",
+              "target_value": "translated S / VIP to German"
+            },
+            {
+              "field_name": "Variant title",
+              "source_value": "S / SVIP",
+              "target_value": "translated S / SVIP to German"
+            },
+            {
+              "field_name": "Variant title",
+              "source_value": "S / Platinum",
+              "target_value": "translated S / Platinum to German"
+            },
+            {
+              "field_name": "Variant title",
+              "source_value": "M / Normal",
+              "target_value": "translated M / Normal to German"
+            },
+            {
+              "field_name": "Variant title",
+              "source_value": "M / VIP",
+              "target_value": "translated M / VIP to German"
+            },
+            {
+              "field_name": "Variant title",
+              "source_value": "M / SVIP",
+              "target_value": "translated M / SVIP to German"
+            },
+            {
+              "field_name": "Variant title",
+              "source_value": "M / Platinum",
+              "target_value": "translated M / Platinum to German"
+            },
+            {
+              "field_name": "Variant title",
+              "source_value": "L / Normal",
+              "target_value": "translated L / Normal to German"
+            },
+            {
+              "field_name": "Variant title",
+              "source_value": "L / VIP",
+              "target_value": "translated L / VIP to German"
+            },
+            {
+              "field_name": "Variant title",
+              "source_value": "L / SVIP",
+              "target_value": "translated L / SVIP to German"
+            },
+            {
+              "field_name": "Variant title",
+              "source_value": "L / Platinum",
+              "target_value": "translated L / Platinum to German"
+            },
+            {
+              "field_name": "Option name",
+              "source_value": "Size",
+              "target_value": "Größe"
+            },
+            {
+              "field_name": "Option value",
+              "source_value": "S",
+              "target_value": "translated S to German"
+            },
+            {
+              "field_name": "Option value",
+              "source_value": "M",
+              "target_value": "translated M to German"
+            },
+            {
+              "field_name": "Option value",
+              "source_value": "L",
+              "target_value": "translated L to German"
+            },
+            {
+              "field_name": "Option name",
+              "source_value": "Type",
+              "target_value": "Geben Sie den Text ein"
+            },
+            {
+              "field_name": "Option value",
+              "source_value": "Normal",
+              "target_value": "translated Normal to German"
+            },
+            {
+              "field_name": "Option value",
+              "source_value": "VIP",
+              "target_value": "VIP"
+            },
+            {
+              "field_name": "Option value",
+              "source_value": "SVIP",
+              "target_value": "translated SVIP to German"
+            },
+            {
+              "field_name": "Option value",
+              "source_value": "Platinum",
+              "target_value": "translated Platinum to German"
+            },
+            {
+              "field_name": "Label",
+              "source_value": "<p>Text custom option</p>",
+              "target_value": "<p>translated Text custom option to German</p>"
+            },
+            {
+              "field_name": "Placeholder",
+              "source_value": "Text custom option",
+              "target_value": "translated Text custom option to German"
+            },
+            {
+              "field_name": "Label",
+              "source_value": "<p>Text area custom option</p>",
+              "target_value": "<p>translated Text area custom option to German</p>"
+            },
+            {
+              "field_name": "Placeholder",
+              "source_value": "Text area custom option default",
+              "target_value": "translated Text area custom option default to German"
+            },
+            {
+              "field_name": "Label",
+              "source_value": "<p>Image custom option</p>",
+              "target_value": "<p>translated Image custom option to German</p>"
+            },
+            {
+              "field_name": "Help text",
+              "source_value": "You should upload image in 500x200 pixel to get the best quality",
+              "target_value": "Sie sollten ein Bild mit einer Größe von 500x200 Pixel hochladen, um die beste Qualität zu erhalten."
+            },
+            {
+              "field_name": "Label",
+              "source_value": "<p>Radio&nbsp;</p>",
+              "target_value": "<p>translated Radio&nbsp; to German</p>"
+            },
+            {
+              "field_name": "Value",
+              "source_value": "First item",
+              "target_value": "translated First item to German"
+            },
+            {
+              "field_name": "Value",
+              "source_value": "Second item",
+              "target_value": "translated Second item to German"
+            },
+            {
+              "field_name": "Value",
+              "source_value": "Third item",
+              "target_value": "translated Third item to German"
+            },
+            {
+              "field_name": "Label",
+              "source_value": "<p>Checkbox custom option</p>",
+              "target_value": "<p>translated Checkbox custom option to German</p>"
+            },
+            {
+              "field_name": "Value",
+              "source_value": "First item",
+              "target_value": "translated First item to German"
+            },
+            {
+              "field_name": "Value",
+              "source_value": "Second item",
+              "target_value": "translated Second item to German"
+            },
+            {
+              "field_name": "Value",
+              "source_value": "Third item",
+              "target_value": "translated Third item to German"
+            },
+            {
+              "field_name": "Value",
+              "source_value": "Fourth item",
+              "target_value": "translated Fourth item to German"
+            },
+            {
+              "field_name": "Label",
+              "source_value": "<p>Option</p>",
+              "target_value": "<p>translated Option to German</p>"
+            },
+            {
+              "field_name": "Value",
+              "source_value": "event",
+              "target_value": "translated event to German"
+            },
+            {
+              "field_name": "Value",
+              "source_value": "avatar",
+              "target_value": "translated avatar to German"
+            },
+            {
+              "field_name": "Value",
+              "source_value": "4",
+              "target_value": "4"
+            },
+            {
+              "field_name": "Value",
+              "source_value": "3",
+              "target_value": "3"
+            },
+            {
+              "field_name": "Value",
+              "source_value": "2",
+              "target_value": "2"
+            },
+            {
+              "field_name": "Value",
+              "source_value": "1",
+              "target_value": "1"
+            }
+          ],
+          "expected_result1": [
+            {
+              "field_name": "Title",
+              "source_value": "Product 1",
+              "target_value": "Produkt 1"
+            },
+            {
+              "field_name": "Description",
+              "source_value": "<h2 style=\"font-weight: var(--h-font-weight); font-size: var(--h2-font-size); text-align: left;\" data-mce-style=\"font-weight: var(--h-font-weight); font-size: var(--h2-font-size); text-align: left;\">300ml water tank</h2><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><br></p><h6 style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); text-align: left;\" data-mce-style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); text-align: left;\">Up to 300ml water tank helps you clean the whole mouth without having to refill.</h6><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><br></p><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><img style=\"height: auto !important;\" src=\"https://dev-img.shopbase.net/files/10432814/2023/06/14/1686719828ed2c93df8d.png\" alt=\"\" width=\"100%\" data-mce-src=\"https://dev-img.shopbase.net/files/10432814/2023/06/14/1686719828ed2c93df8d.png\" data-mce-style=\"height: auto !important;\"></p><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><br></p><h4 style=\"font-weight: var(--h-font-weight); font-size: var(--h4-font-size); text-align: left;\" data-mce-style=\"font-weight: var(--h-font-weight); font-size: var(--h4-font-size); text-align: left;\">3 modes efficient clean teeth.</h4><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><br></p><h6 style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); text-align: left;\" data-mce-style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); text-align: left;\">The Cordless Advanced includes 3 pressure settings allowing you to personalize your water pressure intensity.</h6><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><br></p><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><img style=\"height: auto !important;\" src=\"https://dev-img.shopbase.net/files/10432814/2023/06/14/168671987540a16e3249.png\" alt=\"\" width=\"100%\" data-mce-src=\"https://dev-img.shopbase.net/files/10432814/2023/06/14/168671987540a16e3249.png\" data-mce-style=\"height: auto !important;\"></p><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><br></p><h4 style=\"font-weight: var(--h-font-weight); font-size: var(--h4-font-size); text-align: left;\" data-mce-style=\"font-weight: var(--h-font-weight); font-size: var(--h4-font-size); text-align: left;\">High intensity pulsed</h4><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><br></p><h6 style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); text-align: left;\" data-mce-style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); text-align: left;\">The Waterpik Cordless Advanced Water Flosser provides a unique combination of water pressure and pulsations to clean deep between teeth and below the gumline, removing plaque and debris that traditional brushing and flossing can't reach.</h6><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><br></p><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><img style=\"height: auto !important;\" src=\"https://dev-img.shopbase.net/files/10432814/2023/06/14/1686719906b08c377229.png\" alt=\"\" width=\"100%\" data-mce-src=\"https://dev-img.shopbase.net/files/10432814/2023/06/14/1686719906b08c377229.png\" data-mce-style=\"height: auto !important;\"></p><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><br></p><h4 style=\"font-weight: var(--h-font-weight); font-size: var(--h4-font-size); text-align: left;\" data-mce-style=\"font-weight: var(--h-font-weight); font-size: var(--h4-font-size); text-align: left;\">IPX7 waterproof level</h4><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><br></p><h6 style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); text-align: left;\" data-mce-style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); text-align: left;\">It also features a waterproof design for use in the shower, 4 hour rapid charge.</h6><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><br></p><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><img style=\"height: auto !important;\" src=\"https://dev-img.shopbase.net/files/10432814/2023/06/14/1686719954226e7d4c9b.png\" alt=\"\" width=\"100%\" data-mce-src=\"https://dev-img.shopbase.net/files/10432814/2023/06/14/1686719954226e7d4c9b.png\" data-mce-style=\"height: auto !important;\"></p><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><br></p><h4 style=\"font-weight: var(--h-font-weight); font-size: var(--h4-font-size); text-align: left;\" data-mce-style=\"font-weight: var(--h-font-weight); font-size: var(--h4-font-size); text-align: left;\">Specs</h4><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><br></p><ul style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><li><h6 style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); font-style: var(--h-font-style);\" data-mce-style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); font-style: var(--h-font-style);\">Dimensions: 4 x 2.8 x 11.6 inches; 12.8 Ounces</h6></li><li><h6 style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); font-style: var(--h-font-style);\" data-mce-style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); font-style: var(--h-font-style);\">DO NOT WASH</h6></li><li><h6 style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); font-style: var(--h-font-style);\" data-mce-style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); font-style: var(--h-font-style);\">Store In A Cool, Dry Place</h6></li><li><h6 style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); font-style: var(--h-font-style);\" data-mce-style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); font-style: var(--h-font-style);\">Gently Wipe To Remove Dust</h6></li><li><h6 style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); font-style: var(--h-font-style);\" data-mce-style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); font-style: var(--h-font-style);\">Due to variations of light and color settings of computer/personal device screens, colors may appear slightly different from photographic images</h6></li><li><h6 style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); font-style: var(--h-font-style);\" data-mce-style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); font-style: var(--h-font-style);\">Due to the manufacturing process, sizes of items listed in descriptions are approximate and actual size may vary slightly</h6></li></ul>",
+              "target_value": "<h2 style=\"font-weight: var(--h-font-weight); font-size: var(--h2-font-size); text-align: left;\">translated 300ml water tank to German</h2>\n<p style=\"text-align: left;\">&nbsp;</p>\n<h6 style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); text-align: left;\">translated Up to 300ml water tank helps you clean the whole mouth without having to refill. to German</h6>\n<p style=\"text-align: left;\">&nbsp;</p>\n<p style=\"text-align: left;\"><img style=\"height: auto !important;\" src=\"https://dev-img.shopbase.net/files/10432814/2023/06/14/1686719828ed2c93df8d.png\" alt=\"\" width=\"100%\" /></p>\n<p style=\"text-align: left;\">&nbsp;</p>\n<h4 style=\"font-weight: var(--h-font-weight); font-size: var(--h4-font-size); text-align: left;\">translated 3 modes efficient clean teeth. to German</h4>\n<p style=\"text-align: left;\">&nbsp;</p>\n<h6 style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); text-align: left;\">translated The Cordless Advanced includes 3 pressure settings allowing you to personalize your water pressure intensity. to German</h6>\n<p style=\"text-align: left;\">&nbsp;</p>\n<p style=\"text-align: left;\"><img style=\"height: auto !important;\" src=\"https://dev-img.shopbase.net/files/10432814/2023/06/14/168671987540a16e3249.png\" alt=\"\" width=\"100%\" /></p>\n<p style=\"text-align: left;\">&nbsp;</p>\n<h4 style=\"font-weight: var(--h-font-weight); font-size: var(--h4-font-size); text-align: left;\">translated High intensity pulsed to German</h4>\n<p style=\"text-align: left;\">&nbsp;</p>\n<h6 style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); text-align: left;\">translated The Waterpik Cordless Advanced Water Flosser provides a unique combination of water pressure and pulsations to clean deep between teeth and below the gumline, removing plaque and debris that traditional brushing and flossing can't reach. to German</h6>\n<p style=\"text-align: left;\">&nbsp;</p>\n<p style=\"text-align: left;\"><img style=\"height: auto !important;\" src=\"https://dev-img.shopbase.net/files/10432814/2023/06/14/1686719906b08c377229.png\" alt=\"\" width=\"100%\" /></p>\n<p style=\"text-align: left;\">&nbsp;</p>\n<h4 style=\"font-weight: var(--h-font-weight); font-size: var(--h4-font-size); text-align: left;\">translated IPX7 waterproof level to German</h4>\n<p style=\"text-align: left;\">&nbsp;</p>\n<h6 style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); text-align: left;\">translated It also features a waterproof design for use in the shower, 4 hour rapid charge. to German</h6>\n<p style=\"text-align: left;\">&nbsp;</p>\n<p style=\"text-align: left;\"><img style=\"height: auto !important;\" src=\"https://dev-img.shopbase.net/files/10432814/2023/06/14/1686719954226e7d4c9b.png\" alt=\"\" width=\"100%\" /></p>\n<p style=\"text-align: left;\">&nbsp;</p>\n<h4 style=\"font-weight: var(--h-font-weight); font-size: var(--h4-font-size); text-align: left;\">translated Specs to German</h4>\n<p style=\"text-align: left;\">&nbsp;</p>\n<ul style=\"text-align: left;\">\n<li>\n<h6 style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); font-style: var(--h-font-style);\">translated Dimensions: 4 x 2.8 x 11.6 inches; 12.8 Ounces to German</h6>\n</li>\n<li>\n<h6 style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); font-style: var(--h-font-style);\">translated DO NOT WASH to German</h6>\n</li>\n<li>\n<h6 style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); font-style: var(--h-font-style);\">translated Store In A Cool, Dry Place to German</h6>\n</li>\n<li>\n<h6 style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); font-style: var(--h-font-style);\">translated Gently Wipe To Remove Dust to German</h6>\n</li>\n<li>\n<h6 style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); font-style: var(--h-font-style);\">translated Due to variations of light and color settings of computer/personal device screens, colors may appear slightly different from photographic images to German</h6>\n</li>\n<li>\n<h6 style=\"font-weight: var(--h-font-weight); font-size: var(--h6-font-size); font-style: var(--h-font-style);\">translated Due to the manufacturing process, sizes of items listed in descriptions are approximate and actual size may vary slightly to German</h6>\n</li>\n</ul>"
+            },
+            {
+              "field_name": "Variant title",
+              "source_value": "S / Normal",
+              "target_value": "translated S / Normal to German"
+            },
+            {
+              "field_name": "Variant title",
+              "source_value": "S / VIP",
+              "target_value": "translated S / VIP to German"
+            },
+            {
+              "field_name": "Variant title",
+              "source_value": "S / SVIP",
+              "target_value": "translated S / SVIP to German"
+            },
+            {
+              "field_name": "Variant title",
+              "source_value": "S / Platinum",
+              "target_value": "translated S / Platinum to German"
+            },
+            {
+              "field_name": "Variant title",
+              "source_value": "M / Normal",
+              "target_value": "translated M / Normal to German"
+            },
+            {
+              "field_name": "Variant title",
+              "source_value": "M / VIP",
+              "target_value": "translated M / VIP to German"
+            },
+            {
+              "field_name": "Variant title",
+              "source_value": "M / SVIP",
+              "target_value": "translated M / SVIP to German"
+            },
+            {
+              "field_name": "Variant title",
+              "source_value": "M / Platinum",
+              "target_value": "translated M / Platinum to German"
+            },
+            {
+              "field_name": "Variant title",
+              "source_value": "L / Normal",
+              "target_value": "translated L / Normal to German"
+            },
+            {
+              "field_name": "Variant title",
+              "source_value": "L / VIP",
+              "target_value": "translated L / VIP to German"
+            },
+            {
+              "field_name": "Variant title",
+              "source_value": "L / SVIP",
+              "target_value": "translated L / SVIP to German"
+            },
+            {
+              "field_name": "Variant title",
+              "source_value": "L / Platinum",
+              "target_value": "translated L / Platinum to German"
+            },
+            {
+              "field_name": "Option name",
+              "source_value": "Size",
+              "target_value": "Größe"
+            },
+            {
+              "field_name": "Option value",
+              "source_value": "S",
+              "target_value": "Wir bieten eine große Auswahl an hochwertigen Produkten zu erschwinglichen Preisen. Unser Webshop ist benutzerfreundlich und bietet eine sichere Zahlungsabwicklung. Durchstöbern Sie unser Sortiment und finden Sie das perfekte Produkt für Ihre Bedürfnisse. Wir bieten auch schnellen Versand und einen zuverlässigen Kundenservice. Bestellen Sie noch heute und erleben Sie eine unvergleichliche Einkaufserfahrung!"
+            },
+            {
+              "field_name": "Option value",
+              "source_value": "M",
+              "target_value": "it unserer Plattform können Sie ganz einfach und bequem online einkaufen. Entdecken Sie eine große Auswahl an Produkten, profitieren Sie von unseren aktuellen Angeboten und bestellen Sie mit nur wenigen Klicks. Wir liefern schnell und zuverlässig direkt zu Ihnen nach Hause. Kaufen Sie jetzt und genießen Sie ein stressfreies Einkaufserlebnis!"
+            },
+            {
+              "field_name": "Option value",
+              "source_value": "L",
+              "target_value": "iebe Kunden,wir möchten Ihnen mitteilen, dass unser Online-Shop ab sofort wieder für Sie geöffnet ist. Entdecken Sie jetzt unsere neuen Angebote und Produkte. Wir freuen uns auf Ihren Besuch!Mit freundlichen Grüßen,Ihr Online-Shop Team"
+            },
+            {
+              "field_name": "Option name",
+              "source_value": "Type",
+              "target_value": "Geben Sie den Text ein"
+            },
+            {
+              "field_name": "Option value",
+              "source_value": "Normal",
+              "target_value": "VIP"
+            },
+            {
+              "field_name": "Option value",
+              "source_value": "VIP",
+              "target_value": "translated VIP to German"
+            },
+            {
+              "field_name": "Option value",
+              "source_value": "SVIP",
+              "target_value": "translated SVIP to German"
+            },
+            {
+              "field_name": "Option value",
+              "source_value": "Platinum",
+              "target_value": "translated Platinum to German"
+            },
+            {
+              "field_name": "Label",
+              "source_value": "<p>Text custom option</p>",
+              "target_value": "<p>translated Text custom option to German</p>"
+            },
+            {
+              "field_name": "Placeholder",
+              "source_value": "Text custom option",
+              "target_value": "translated Text custom option to German"
+            },
+            {
+              "field_name": "Label",
+              "source_value": "<p>Text area custom option</p>",
+              "target_value": "<p>translated Text area custom option to German</p>"
+            },
+            {
+              "field_name": "Placeholder",
+              "source_value": "Text area custom option default",
+              "target_value": "translated Text area custom option default to German"
+            },
+            {
+              "field_name": "Label",
+              "source_value": "<p>Image custom option</p>",
+              "target_value": "<p>translated Image custom option to German</p>"
+            },
+            {
+              "field_name": "Help text",
+              "source_value": "You should upload image in 500x200 pixel to get the best quality",
+              "target_value": "Sie sollten ein Bild mit einer Größe von 500x200 Pixel hochladen, um die beste Qualität zu erhalten."
+            },
+            {
+              "field_name": "Label",
+              "source_value": "<p>Radio&nbsp;</p>",
+              "target_value": "<p>Radio</p>"
+            },
+            {
+              "field_name": "Value",
+              "source_value": "First item",
+              "target_value": "translated First item to German"
+            },
+            {
+              "field_name": "Value",
+              "source_value": "Second item",
+              "target_value": "translated Second item to German"
+            },
+            {
+              "field_name": "Value",
+              "source_value": "Third item",
+              "target_value": "translated Third item to German"
+            },
+            {
+              "field_name": "Label",
+              "source_value": "<p>Checkbox custom option</p>",
+              "target_value": "<p>translated Checkbox custom option to German</p>"
+            },
+            {
+              "field_name": "Value",
+              "source_value": "First item",
+              "target_value": "translated First item to German"
+            },
+            {
+              "field_name": "Value",
+              "source_value": "Second item",
+              "target_value": "translated Second item to German"
+            },
+            {
+              "field_name": "Value",
+              "source_value": "Third item",
+              "target_value": "translated Third item to German"
+            },
+            {
+              "field_name": "Value",
+              "source_value": "Fourth item",
+              "target_value": "translated Fourth item to German"
+            },
+            {
+              "field_name": "Label",
+              "source_value": "<p>Option</p>",
+              "target_value": "<p>translated Option to German</p>"
+            },
+            {
+              "field_name": "Value",
+              "source_value": "event",
+              "target_value": "translated event to German"
+            },
+            {
+              "field_name": "Value",
+              "source_value": "avatar",
+              "target_value": "translated avatar to German"
+            },
+            {
+              "field_name": "Value",
+              "source_value": "4",
+              "target_value": "4"
+            },
+            {
+              "field_name": "Value",
+              "source_value": "3",
+              "target_value": "3"
+            },
+            {
+              "field_name": "Value",
+              "source_value": "2",
+              "target_value": "2"
+            },
+            {
+              "field_name": "Value",
+              "source_value": "1",
+              "target_value": "1"
+            }
+          ]
+        },
+        "second_product": {
+          "search": "Product 11",
+          "expected_result": [
+            {
+              "field_name": "Title",
+              "source_value": "Product 11",
+              "target_value": "translated Product 11 to German"
+            },
+            {
+              "field_name": "Variant title",
+              "source_value": "Default Title",
+              "target_value": "Standard Titel"
+            },
+            {
+              "field_name": "Option name",
+              "source_value": "Title",
+              "target_value": "E-Commerce mit Leichtigkeit"
+            },
+            {
+              "field_name": "Option value",
+              "source_value": "Default Title",
+              "target_value": "Standard Titel"
+            }
+          ]
+        }
+      },
+      "input": {
+        "text_field": "This title has been modified by automation test",
+        "editor_field": "line 1\nline 2\nline 3"
+      },
+      "snapshot": {
+        "topbar": "topbar.png",
+        "search_container": "search_container.png",
+        "body": "body.png"
+      }
+    }
+  }
+}

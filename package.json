@@ -1,0 +1,87 @@
+{
+  "name": "ocg-autopilot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "wrapper() { echo 'run test '$1 $2 $3;envx=${4:-production}; docker build -t custom-playwright . && docker run -v /app/node_modules -v $(pwd):/app -w /app -e CI_ENV=$envx --rm --env-file .env.docker custom-playwright npx playwright test $1 $2 $3;}; wrapper",
+    "test": "npx playwright test ",
+    "report": "npx playwright show-report ",
+    "sync-conf": "npx ts-node-dev -r tsconfig-paths/register src/cli/cli.ts sync-conf ",
+    "upload-to-s3": "npx ts-node-dev -r tsconfig-paths/register src/cli/cli.ts upload-to-s3",
+    "gen-config-type": "npx ts-node-dev -r tsconfig-paths/register script/quicktype.ts",
+    "replace-json": "npx ts-node-dev -r tsconfig-paths/register script/replace-json.ts",
+    "configure-husky": "npx husky install && npx husky add .husky/pre-commit \"npx --no-install lint-staged\"",
+    "postinstall": "husky install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/code-frame": "^7.18.6",
+    "app-root-path": "^3.0.0",
+    "async": "^3.2.4",
+    "aws-sdk": "^2.1151.0",
+    "colors": "^1.4.0",
+    "commander": "^9.3.0",
+    "cross-env": "^7.0.3",
+    "csv-parse": "^5.2.0",
+    "dayjs": "^1.11.3",
+    "deasync": "^0.1.26",
+    "dotenv": "^16.0.2",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.4",
+    "exceljs": "^4.3.0",
+    "isomorphic-fetch": "^3.0.0",
+    "lodash.merge": "^4.6.2",
+    "mysql2": "^2.3.3",
+    "node-abort-controller": "^3.0.1",
+    "node-fetch": "2",
+    "odoo-xmlrpc": "^1.0.8",
+    "pg": "^8.7.3",
+    "playwright-extra": "^4.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "quicktype-core": "^23.0.37",
+    "sequelize": "^6.19.0",
+    "sqlite3": "^5.1.4",
+    "stack-utils": "^2.0.6",
+    "typescript": "^4.8.3",
+    "winston": "^3.7.2",
+    "winston-daily-rotate-file": "^4.6.1",
+    "xmlrpc": "^1.3.2",
+    "yazl": "^2.5.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.39.0",
+    "@typescript-eslint/eslint-plugin": "^5.20.0",
+    "@typescript-eslint/parser": "^5.20.0",
+    "allure-commandline": "^2.17.2",
+    "chalk": "^4.1.1",
+    "eslint": "^8.51.0",
+    "eslint-plugin-playwright": "^0.9.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "os": "^0.1.2",
+    "prettier": "^2.7.1",
+    "tsconfig-paths": "^4.0.0",
+    "typescript-eslint": "^0.0.1-alpha.0"
+  },
+  "repository": "git@gitlab.shopbase.dev:brodev/qa/ocg-autopilot-2.git",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.json": [
+      "prettier --write"
+    ],
+    "**/*.{js,ts}": [
+      "prettier --write",
+      "eslint --fix --max-warnings 0"
+    ],
+    "**/*.{html,css,less,ejs}": [
+      "prettier --write"
+    ]
+  }
+}

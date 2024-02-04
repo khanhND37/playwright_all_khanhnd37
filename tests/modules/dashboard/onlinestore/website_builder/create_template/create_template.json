@@ -1,0 +1,2426 @@
+{
+  "env": {
+    "local": {
+      "domain": "au-template-wb.myshopbase.net",
+      "shop_name": "au-template-wb",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_id": 10322688,
+      "user_id": 73800,
+      "pre_condition": {
+        "create_product": {
+          "is_publish": false,
+          "product_type": "online_course"
+        },
+        "apply_template": {
+          "template_id": 403,
+          "type": "product"
+        }
+      }
+    },
+    "prodtest": {
+      "domain": "au-template-wb-prodtest.onshopbase.com",
+      "shop_name": "au-template-wb-prodtest",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10376313,
+      "user_id": 73782,
+      "pre_condition": {
+        "create_product": {
+          "is_publish": false,
+          "product_type": "online_course"
+        },
+        "apply_template": {
+          "template_id": 10,
+          "type": "product"
+        }
+      },
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "prod": {
+      "domain": "au-template-wb.onshopbase.com",
+      "shop_name": "au-template-wb",
+      "api": "https://api.shopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10376312,
+      "user_id": 73782,
+      "pre_condition": {
+        "create_product": {
+          "is_publish": false,
+          "product_type": "online_course"
+        },
+        "apply_template": {
+          "template_id": 10,
+          "type": "product"
+        }
+      }
+    }
+  },
+  "cases": {
+    "SB_WEB_BUILDER_BT_14": {
+      "description": "Create a template",
+      "data": {
+        "section_1": {
+          "dnd_section": {
+            "category": "Basics",
+            "template": "Single column",
+            "to": {
+              "position": {
+                "section": 1
+              },
+              "top": 0
+            }
+          },
+          "quick_bar_setting": {
+            "position": {
+              "section": 1
+            },
+            "editLayout": "Edit layout",
+            "selectLayout": "Layout style",
+            "layout_style": {
+              "column": 3,
+              "spacing": 0
+            }
+          },
+          "dnd_blocks": [
+            {
+              "category": "Basics",
+              "template": "Paragraph",
+              "to": {
+                "position": {
+                  "section": 1,
+                  "column": 1
+                }
+              }
+            },
+            {
+              "category": "Basics",
+              "template": "Paragraph",
+              "to": {
+                "position": {
+                  "section": 1,
+                  "column": 1
+                }
+              }
+            },
+            {
+              "category": "Basics",
+              "template": "Countdown",
+              "to": {
+                "position": {
+                  "section": 1,
+                  "column": 2
+                }
+              }
+            },
+            {
+              "category": "Basics",
+              "template": "Button",
+              "to": {
+                "position": {
+                  "section": 1,
+                  "column": 3
+                }
+              }
+            }
+          ],
+          "settings_section": {
+            "styles": {
+              "background": {
+                "color": {
+                  "preset": 4
+                }
+              },
+              "padding": {
+                "top": 4,
+                "left": 0,
+                "bottom": 4,
+                "right": 0
+              }
+            }
+          },
+          "setting_column_1": {
+            "text": [
+              {
+                "position": {
+                  "section": 1,
+                  "column": 1,
+                  "block": 1
+                },
+                "value": "Limited Time Offer"
+              },
+              {
+                "position": {
+                  "section": 1,
+                  "column": 1,
+                  "block": 2
+                },
+                "value": "Your exclusive 95% offer expires in"
+              }
+            ]
+          },
+          "setting_column_2": {
+            "styles": {
+              "number_color": {
+                "preset": 1
+              },
+              "unit_color": {
+                "preset": 1
+              },
+              "width": {
+                "unit": "%",
+                "value": 100
+              },
+              "height": {
+                "unit": "Auto"
+              }
+            },
+            "settings": {
+              "type": "Custom",
+              "hours": "2",
+              "restart_when": "Page loaded"
+            }
+          },
+          "setting_column_3": {
+            "styles": {
+              "style": "Secondary",
+              "align": "Right"
+            },
+            "settings": {
+              "title": "Get Deal Now",
+              "url": "Go to section",
+              "section": "section checkout page"
+            }
+          }
+        },
+        "section_2": {
+          "dnd_section": {
+            "category": "Basics",
+            "template": "Single column",
+            "to": {
+              "position": {
+                "section": 2
+              },
+              "top": 0
+            }
+          },
+          "settings_section": {
+            "styles": {
+              "background": {
+                "color": {
+                  "preset": 5
+                }
+              },
+              "padding": {
+                "top": 12,
+                "left": 0,
+                "bottom": 12,
+                "right": 0
+              }
+            }
+          },
+          "dnd_blocks": [
+            {
+              "category": "Basics",
+              "template": "Image",
+              "to": {
+                "position": {
+                  "section": 2,
+                  "column": 1
+                }
+              }
+            }
+          ],
+          "setting_block_1": {
+            "styles": {
+              "width": {
+                "unit": "Px",
+                "value": 130
+              },
+              "height": {
+                "unit": "Px",
+                "value": 48
+              },
+              "align": "Center"
+            },
+            "settings": {
+              "image": "data/shopbase/front/web_builder/logo-light.png",
+              "target_url": "Go to section",
+              "section": "section checkout page"
+            }
+          }
+        },
+        "section_3": {
+          "dnd_section": {
+            "category": "Basics",
+            "template": "Single column",
+            "to": {
+              "position": {
+                "section": 3
+              },
+              "top": 0
+            }
+          },
+          "dnd_blocks": [
+            {
+              "category": "Basics",
+              "template": "Heading",
+              "to": {
+                "position": {
+                  "section": 3,
+                  "column": 1
+                }
+              }
+            },
+            {
+              "category": "Basics",
+              "template": "Paragraph",
+              "to": {
+                "position": {
+                  "section": 3,
+                  "column": 1,
+                  "block": 1
+                }
+              }
+            },
+            {
+              "category": "Basics",
+              "template": "Button",
+              "to": {
+                "position": {
+                  "section": 3,
+                  "column": 1,
+                  "block": 2
+                }
+              }
+            },
+            {
+              "category": "Basics",
+              "template": "Video",
+              "to": {
+                "position": {
+                  "section": 3,
+                  "column": 1,
+                  "block": 3
+                }
+              }
+            }
+          ],
+          "settings_section": {
+            "styles": {
+              "background": {
+                "color": {
+                  "preset": 7
+                },
+                "image": "data/shopbase/front/web_builder/call-to-action-bg.jpg"
+              },
+              "padding": {
+                "top": 32,
+                "left": 0,
+                "bottom": 64,
+                "right": 0
+              }
+            }
+          },
+          "setting_block_1": {
+            "text": {
+              "position": {
+                "section": 3,
+                "column": 1,
+                "block": 1
+              },
+              "value": "Achieve Financial Freedom Faster and Safer"
+            }
+          },
+          "setting_block_2": {
+            "text": {
+              "position": {
+                "section": 3,
+                "column": 1,
+                "block": 2
+              },
+              "value": "Learn the strategies top financial analysis use to help their clients build wealth."
+            }
+          },
+          "setting_block_3": {
+            "styles": {
+              "style": "Primary",
+              "align": "Center",
+              "margin": {
+                "top": 0,
+                "left": 0,
+                "bottom": 28,
+                "right": 0
+              }
+            },
+            "settings": {
+              "title": "Claim 95% OFF Deal Now!",
+              "target_url": "Go to section"
+            }
+          },
+          "setting_block_4": {
+            "styles": {
+              "align": "Center",
+              "width": {
+                "unit": "Px",
+                "value": 928
+              },
+              "height": {
+                "unit": "Px",
+                "value": 522
+              },
+              "border": {
+                "thickness": "m",
+                "size": 67,
+                "color": {
+                  "preset": 1
+                }
+              }
+            },
+            "settings": {
+              "video": "https://www.youtube.com/watch?v=ii91oi0OpXM",
+              "description": "Video Finance Course",
+              "autoplay": false,
+              "mute": true,
+              "show_layer_control": true,
+              "loop": true,
+              "custom_thumbnail": true,
+              "thumbnail": "data/shopbase/front/web_builder/video-thumbnail.jpg"
+            }
+          }
+        },
+        "section_4": {
+          "dnd_section": {
+            "category": "Basics",
+            "template": "Single column",
+            "to": {
+              "position": {
+                "section": 4
+              },
+              "top": 0
+            }
+          },
+          "settings_section": {
+            "styles": {
+              "background": {
+                "color": {
+                  "preset": 4
+                }
+              },
+              "padding": {
+                "top": 24,
+                "left": 0,
+                "bottom": 24,
+                "right": 0
+              }
+            }
+          },
+          "quick_bar_setting": {
+            "position": {
+              "section": 4
+            },
+            "editLayout": "Edit layout",
+            "selectLayout": "Layout style",
+            "layout_style": {
+              "column": 4,
+              "spacing": 10
+            }
+          },
+          "insert_blocks": [
+            {
+              "category": "Basics",
+              "template": "Container",
+              "parentPosition": {
+                "section": 4,
+                "column": 1
+              }
+            },
+            {
+              "category": "Basics",
+              "template": "Icon",
+              "parentPosition": {
+                "section": 4,
+                "column": 1,
+                "block": 1
+              }
+            }
+          ],
+          "setting_block_container": {
+            "styles": {
+              "width": {
+                "unit": "%",
+                "value": 100
+              },
+              "height": {
+                "unit": "Auto"
+              }
+            }
+          },
+          "dnd_blocks": [
+            {
+              "category": "Basics",
+              "template": "Heading",
+              "to": {
+                "position": {
+                  "section": 4,
+                  "column": 1,
+                  "block": 2
+                }
+              }
+            },
+            {
+              "category": "Basics",
+              "template": "Paragraph",
+              "to": {
+                "position": {
+                  "section": 4,
+                  "column": 1,
+                  "block": 3
+                }
+              }
+            }
+          ],
+          "setting_column_1": {
+            "setting_block_icon": {
+              "styles": {
+                "icon_color": {
+                  "color": {
+                    "preset": 4
+                  }
+                },
+                "align": "Center"
+              },
+              "settings": {
+                "icon": "Insert Emoticon"
+              }
+            },
+            "setting_block_heading": {
+              "position": {
+                "section": 4,
+                "column": 1,
+                "block": 3
+              },
+              "text": "185,283"
+            },
+            "setting_block_paragraph": {
+              "position": {
+                "section": 4,
+                "column": 1,
+                "block": 4
+              },
+              "text": "Happy Students"
+            }
+          },
+          "duplicate_column": {
+            "position": {
+              "section": 4,
+              "column": 1
+            },
+            "number": 3
+          },
+          "duplicate_column1": [
+            {
+              "position": {
+                "section": 4,
+                "column": 1
+              }
+            },
+            {
+              "position": {
+                "section": 4,
+                "column": 1
+              }
+            },
+            {
+              "position": {
+                "section": 4,
+                "column": 1
+              }
+            }
+          ],
+          "dnd_in_preview": [
+            {
+              "from": {
+                "position": {
+                  "section": 4,
+                  "column": 1,
+                  "block": 1
+                }
+              },
+              "to": {
+                "position": {
+                  "section": 4,
+                  "column": 2
+                },
+                "top": 0
+              }
+            },
+            {
+              "from": {
+                "position": {
+                  "section": 4,
+                  "column": 1,
+                  "block": 1
+                }
+              },
+              "to": {
+                "position": {
+                  "section": 4,
+                  "column": 3
+                },
+                "top": 0
+              }
+            },
+            {
+              "from": {
+                "position": {
+                  "section": 4,
+                  "column": 1,
+                  "block": 1
+                }
+              },
+              "to": {
+                "position": {
+                  "section": 4,
+                  "column": 4
+                },
+                "top": 0
+              }
+            }
+          ],
+          "setting_columns_2_3_4": {
+            "setting_block_icon": [
+              {
+                "container_position": {
+                  "section": 4,
+                  "column": 4,
+                  "block": 1
+                },
+                "position": {
+                  "section": 4,
+                  "column": 4,
+                  "block": 2
+                },
+                "icon": "insert drive file"
+              },
+              {
+                "container_position": {
+                  "section": 4,
+                  "column": 3,
+                  "block": 1
+                },
+                "position": {
+                  "section": 4,
+                  "column": 3,
+                  "block": 2
+                },
+                "icon": "thumb up off alt"
+              },
+              {
+                "container_position": {
+                  "section": 4,
+                  "column": 2,
+                  "block": 1
+                },
+                "position": {
+                  "section": 4,
+                  "column": 2,
+                  "block": 2
+                },
+                "icon": "language"
+              }
+            ],
+            "setting_block_heading": [
+              {
+                "container_position": {
+                  "section": 4,
+                  "column": 4,
+                  "block": 1
+                },
+                "position": {
+                  "section": 4,
+                  "column": 4,
+                  "block": 3
+                },
+                "text": "3,250,294"
+              },
+              {
+                "container_position": {
+                  "section": 4,
+                  "column": 3,
+                  "block": 1
+                },
+                "position": {
+                  "section": 4,
+                  "column": 3,
+                  "block": 3
+                },
+                "text": "23,898"
+              },
+              {
+                "container_position": {
+                  "section": 4,
+                  "column": 2,
+                  "block": 1
+                },
+                "position": {
+                  "section": 4,
+                  "column": 2,
+                  "block": 3
+                },
+                "text": "195"
+              }
+            ],
+            "setting_block_paragraph": [
+              {
+                "container_position": {
+                  "section": 4,
+                  "column": 4,
+                  "block": 1
+                },
+                "position": {
+                  "section": 4,
+                  "column": 4,
+                  "block": 4
+                },
+                "text": "Lessons Taken"
+              },
+              {
+                "container_position": {
+                  "section": 4,
+                  "column": 3,
+                  "block": 1
+                },
+                "position": {
+                  "section": 4,
+                  "column": 3,
+                  "block": 4
+                },
+                "text": "5-Star Reviews"
+              },
+              {
+                "container_position": {
+                  "section": 4,
+                  "column": 2,
+                  "block": 1
+                },
+                "position": {
+                  "section": 4,
+                  "column": 2,
+                  "block": 4
+                },
+                "text": "Countries"
+              }
+            ]
+          }
+        },
+        "section_5": {
+          "dnd_section": {
+            "category": "Basics",
+            "template": "Single column",
+            "to": {
+              "position": {
+                "section": 5
+              },
+              "top": 0
+            }
+          },
+          "settings_section": {
+            "styles": {
+              "background": {
+                "color": {
+                  "preset": 6,
+                  "hexText": "#FFFFFF"
+                }
+              },
+              "padding": {
+                "top": 48,
+                "left": 0,
+                "bottom": 48,
+                "right": 0
+              }
+            }
+          },
+          "dnd_blocks": [
+            {
+              "category": "Basics",
+              "template": "Image",
+              "to": {
+                "position": {
+                  "section": 5,
+                  "column": 1
+                }
+              }
+            },
+            {
+              "category": "Basics",
+              "template": "Paragraph",
+              "to": {
+                "position": {
+                  "section": 5,
+                  "column": 1,
+                  "block": 1
+                }
+              }
+            },
+            {
+              "category": "Basics",
+              "template": "Heading",
+              "to": {
+                "position": {
+                  "section": 5,
+                  "column": 1,
+                  "block": 2
+                }
+              }
+            },
+            {
+              "category": "Basics",
+              "template": "Paragraph",
+              "to": {
+                "position": {
+                  "section": 5,
+                  "column": 1,
+                  "block": 3
+                }
+              }
+            }
+          ],
+          "setting_block_1": {
+            "styles": {
+              "align": "Center",
+              "width": {
+                "unit": "Px",
+                "value": 736
+              },
+              "margin": {
+                "top": 0,
+                "left": 0,
+                "bottom": 12,
+                "right": 0
+              }
+            },
+            "settings": {
+              "image": "data/shopbase/front/web_builder/about.jpg",
+              "alt_text": "image introducing"
+            }
+          },
+          "setting_block_2": {
+            "position": {
+              "section": 5,
+              "block": 2
+            },
+            "text": "INTRODUCING"
+          },
+          "setting_block_3": {
+            "position": {
+              "section": 5,
+              "block": 3
+            },
+            "text": "Financial Literacy For All"
+          },
+          "setting_block_4": {
+            "position": {
+              "section": 5,
+              "block": 4
+            },
+            "text": "We have been producing top-notch, comprehensive, and affordable courses on financial trading and value investing for students all over the world since 2014."
+          },
+          "duplicate_blocks": {
+            "position": {
+              "section": 5,
+              "block": 4
+            },
+            "number": 2
+          },
+          "setting_block_5": {
+            "position": {
+              "section": 5,
+              "block": 5
+            },
+            "text": "Whether you're an entrepreneur, a CEO, a trader, an investor, or just interested in what we do — we're here to help you build a better future.",
+            "styles": {
+              "margin": {
+                "top": 0,
+                "left": 0,
+                "bottom": 12,
+                "right": 0
+              }
+            }
+          },
+          "setting_block_6": {
+            "position": {
+              "section": 5,
+              "block": 6
+            },
+            "text": "We offer courses that answer ALL your investing and trading questions and show you what's working in the market right now. You'll learn like an insider and get access to all the resources you need to succeed."
+          }
+        },
+        "section_6": {
+          "dnd_section": {
+            "category": "Basics",
+            "template": "Single column",
+            "to": {
+              "position": {
+                "section": 6
+              },
+              "top": 0
+            }
+          },
+          "quick_bar_setting": {
+            "position": {
+              "section": 6
+            },
+            "editLayout": "Edit layout",
+            "selectLayout": "Layout style",
+            "layout_style": {
+              "column": 2,
+              "spacing": 10
+            }
+          },
+          "dnd_blocks": [
+            {
+              "category": "Basics",
+              "template": "Image",
+              "to": {
+                "position": {
+                  "section": 6,
+                  "column": 1
+                }
+              }
+            },
+            {
+              "category": "Basics",
+              "template": "Heading",
+              "to": {
+                "position": {
+                  "section": 6,
+                  "column": 2
+                }
+              }
+            },
+            {
+              "category": "Basics",
+              "template": "Bullet",
+              "to": {
+                "position": {
+                  "section": 6,
+                  "column": 2,
+                  "block": 1
+                }
+              }
+            },
+            {
+              "category": "Basics",
+              "template": "Paragraph",
+              "to": {
+                "position": {
+                  "section": 6,
+                  "column": 2,
+                  "block": 2
+                }
+              }
+            }
+          ],
+          "settings_section": {
+            "styles": {
+              "background": {
+                "color": {
+                  "preset": 1
+                }
+              },
+              "padding": {
+                "top": 48,
+                "left": 0,
+                "bottom": 48,
+                "right": 0
+              }
+            }
+          },
+          "setting_column_1": {
+            "styles": {
+              "width": {
+                "unit": "%",
+                "value": 100
+              }
+            },
+            "settings": {
+              "image": "data/shopbase/front/web_builder/benefit.jpg",
+              "alt_text": "Image benefit"
+            }
+          },
+          "setting_column_2": {
+            "setting_block_1": {
+              "position": {
+                "section": 6,
+                "column": 2,
+                "block": 1
+              },
+              "text": "In The Next 6 Months, You Could…"
+            },
+            "setting_block_2": {
+              "styles": {
+                "align": "Left",
+                "bullet_color": {
+                  "color": {
+                    "preset": 3
+                  }
+                },
+                "padding": {
+                  "top": 48,
+                  "left": 0,
+                  "bottom": 48,
+                  "right": 0
+                }
+              },
+              "settings": {
+                "icon": [
+                  {
+                    "item": 1,
+                    "iconName": "check circle outline"
+                  },
+                  {
+                    "item": 2,
+                    "iconName": "check circle outline"
+                  },
+                  {
+                    "item": 3,
+                    "iconName": "check circle outline"
+                  }
+                ]
+              },
+              "setting_items": {
+                "position": {
+                  "section": 6,
+                  "column": 2,
+                  "block": 2
+                },
+                "title": [
+                  {
+                    "index": 1,
+                    "text": "Finally be debt free"
+                  },
+                  {
+                    "index": 2,
+                    "text": "Have a sizable savings account"
+                  },
+                  {
+                    "index": 3,
+                    "text": "Be generating passive income"
+                  }
+                ]
+              }
+            },
+            "setting_block_3": {
+              "position": {
+                "section": 6,
+                "column": 2,
+                "block": 3
+              },
+              "text": "The right financial moves can make all the difference. We’ll cover it all in Financial Freedom Bootcamp."
+            }
+          }
+        },
+        "section_7": {
+          "dnd_section": {
+            "category": "Basics",
+            "template": "Single column",
+            "to": {
+              "position": {
+                "section": 7
+              },
+              "top": 0
+            }
+          },
+          "quick_bar_setting": {
+            "position": {
+              "section": 7
+            },
+            "editLayout": "Edit layout",
+            "selectLayout": [
+              {
+                "action": "Add row",
+                "layout_style": {
+                  "column": 2,
+                  "spacing": 10
+                }
+              },
+              {
+                "action": "Add row",
+                "layout_style": {
+                  "column": 2,
+                  "spacing": 10
+                }
+              }
+            ]
+          },
+          "insert_blocks": [
+            {
+              "category": "Basics",
+              "template": "Container",
+              "parentPosition": {
+                "section": 7,
+                "column": 2
+              }
+            },
+            {
+              "category": "Basics",
+              "template": "Image",
+              "parentPosition": {
+                "section": 7,
+                "column": 2,
+                "block": 1
+              }
+            }
+          ],
+          "dnd_blocks": [
+            {
+              "category": "Basics",
+              "template": "Heading",
+              "to": {
+                "position": {
+                  "section": 7,
+                  "column": 1
+                }
+              }
+            },
+            {
+              "category": "Basics",
+              "template": "Paragraph",
+              "to": {
+                "position": {
+                  "section": 7,
+                  "column": 2,
+                  "block": 2
+                }
+              }
+            },
+            {
+              "category": "Basics",
+              "template": "Heading",
+              "to": {
+                "position": {
+                  "section": 7,
+                  "column": 2,
+                  "block": 3
+                }
+              }
+            },
+            {
+              "category": "Basics",
+              "template": "Paragraph",
+              "to": {
+                "position": {
+                  "section": 7,
+                  "column": 2,
+                  "block": 4
+                }
+              }
+            },
+            {
+              "category": "Basics",
+              "template": "Bullet",
+              "to": {
+                "position": {
+                  "section": 7,
+                  "column": 2,
+                  "block": 5
+                }
+              }
+            },
+            {
+              "category": "Basics",
+              "template": "Paragraph",
+              "to": {
+                "position": {
+                  "section": 7,
+                  "column": 2,
+                  "block": 6
+                }
+              }
+            }
+          ],
+          "settings_section": {
+            "styles": {
+              "background": {
+                "color": {
+                  "preset": 6,
+                  "hexText": "#FFFFFF"
+                }
+              },
+              "padding": {
+                "top": 48,
+                "left": 0,
+                "bottom": 48,
+                "right": 0
+              }
+            }
+          },
+          "setting_row_1": {
+            "position": {
+              "section": 7,
+              "column": 1,
+              "block": 1
+            },
+            "text": "What's Included In The Bootcamp?"
+          },
+          "setting_row_2": {
+            "setting_block_container": {
+              "styles": {
+                "width": {
+                  "unit": "%",
+                  "value": 100
+                },
+                "height": {
+                  "unit": "Auto"
+                }
+              }
+            },
+            "setting_block_image": {
+              "styles": {
+                "width": {
+                  "unit": "%",
+                  "value": 100
+                }
+              },
+              "settings": {
+                "image": "data/shopbase/front/web_builder/product-1.jpg",
+                "alt_text": "Image product",
+                "target_url": "Go to section"
+              }
+            },
+            "setting_block_paragraph_1": {
+              "position": {
+                "section": 7,
+                "column": 2,
+                "block": 3
+              },
+              "text": "MODULE 1",
+              "styles": {
+                "width": {
+                  "unit": "%",
+                  "value": 100
+                }
+              }
+            },
+            "setting_block_heading": {
+              "position": {
+                "section": 7,
+                "column": 2,
+                "block": 4
+              },
+              "text": "The Art of God Credit",
+              "styles": {
+                "width": {
+                  "unit": "%",
+                  "value": 100
+                }
+              }
+            },
+            "setting_block_paragraph_2": {
+              "position": {
+                "section": 7,
+                "column": 2,
+                "block": 5
+              },
+              "text": "Your credit is the basis of your financial stability. Learn actionable steps you can take to increase your score to over 750 in the next 6 months, including:",
+              "styles": {
+                "width": {
+                  "unit": "%",
+                  "value": 100
+                },
+                "margin": {
+                  "top": 8,
+                  "left": 0,
+                  "bottom": 6,
+                  "right": 0
+                }
+              }
+            },
+            "setting_block_bullet": {
+              "styles": {
+                "align": "Left",
+                "bullet_color": {
+                  "color": {
+                    "preset": 3
+                  }
+                },
+                "margin": {
+                  "top": 0,
+                  "left": 0,
+                  "bottom": 48,
+                  "right": 0
+                },
+                "width": {
+                  "unit": "%",
+                  "value": 100
+                }
+              },
+              "settings": {
+                "icons": [
+                  {
+                    "item": 1,
+                    "iconName": "check circle outline"
+                  },
+                  {
+                    "item": 2,
+                    "iconName": "check circle outline"
+                  },
+                  {
+                    "item": 3,
+                    "iconName": "check circle outline"
+                  }
+                ]
+              },
+              "setting_items": {
+                "position": {
+                  "section": 7,
+                  "column": 2,
+                  "block": 6
+                },
+                "title": [
+                  {
+                    "index": 1,
+                    "text": "Good debt: What it is and how to build/manage it"
+                  },
+                  {
+                    "index": 2,
+                    "text": "How many credit cards you should have"
+                  },
+                  {
+                    "index": 3,
+                    "text": "The correct balance of revolving and installment debt"
+                  }
+                ]
+              }
+            },
+            "setting_block_paragraph_3": {
+              "position": {
+                "section": 7,
+                "column": 2,
+                "block": 7
+              },
+              "text": "You’ll finish this course with a complete picture of what makes up your credit score and how to achieve the score you need for your next big purchase.",
+              "styles": {
+                "width": {
+                  "unit": "%",
+                  "value": 100
+                }
+              }
+            }
+          },
+          "duplicate_column": [
+            {
+              "position": {
+                "section": 7,
+                "column": 2
+              }
+            },
+            {
+              "position": {
+                "section": 7,
+                "column": 2
+              }
+            },
+            {
+              "position": {
+                "section": 7,
+                "column": 2
+              }
+            }
+          ],
+          "dnd_in_preview": [
+            {
+              "from": {
+                "position": {
+                  "section": 7,
+                  "column": 2,
+                  "block": 1
+                }
+              },
+              "to": {
+                "position": {
+                  "section": 7,
+                  "column": 3
+                },
+                "top": 0
+              }
+            },
+            {
+              "from": {
+                "position": {
+                  "section": 7,
+                  "column": 2,
+                  "block": 1
+                }
+              },
+              "to": {
+                "position": {
+                  "section": 7,
+                  "column": 4
+                },
+                "top": 0
+              }
+            },
+            {
+              "from": {
+                "position": {
+                  "section": 7,
+                  "column": 2,
+                  "block": 1
+                }
+              },
+              "to": {
+                "position": {
+                  "section": 7,
+                  "column": 5
+                },
+                "top": 0
+              }
+            }
+          ],
+          "setting_columns_3_4_5": {
+            "setting_block_images": [
+              {
+                "container_position": {
+                  "section": 7,
+                  "column": 3,
+                  "block": 1
+                },
+                "position": {
+                  "section": 7,
+                  "column": 3,
+                  "block": 2
+                },
+                "settings": {
+                  "image": ""
+                }
+              },
+              {
+                "container_position": {
+                  "section": 7,
+                  "column": 4,
+                  "block": 1
+                },
+                "position": {
+                  "section": 7,
+                  "column": 4,
+                  "block": 2
+                },
+                "settings": {
+                  "image": ""
+                }
+              },
+              {
+                "container_position": {
+                  "section": 7,
+                  "column": 5,
+                  "block": 1
+                },
+                "position": {
+                  "section": 7,
+                  "column": 5,
+                  "block": 2
+                },
+                "settings": {
+                  "image": ""
+                }
+              }
+            ],
+            "setting_block_headings_paragraphs": [
+              {
+                "container_position": {
+                  "section": 7,
+                  "column": 3,
+                  "block": 1
+                },
+                "position": {
+                  "section": 7,
+                  "column": 3,
+                  "block": 3
+                },
+                "text": "MODULE 2"
+              },
+              {
+                "position": {
+                  "section": 7,
+                  "column": 3,
+                  "block": 4
+                },
+                "text": "The Secret To Savings"
+              },
+              {
+                "position": {
+                  "section": 7,
+                  "column": 3,
+                  "block": 5
+                },
+                "text": "With your credit in good shape, the next step is to build a sizable nest egg you can rely on. In this lesson, you’ll learn:"
+              },
+              {
+                "position": {
+                  "section": 7,
+                  "column": 3,
+                  "block": 7
+                },
+                "text": "You’ll finish this course with a savings goal and a plan to make it a reality."
+              },
+              {
+                "container_position": {
+                  "section": 7,
+                  "column": 4,
+                  "block": 1
+                },
+                "position": {
+                  "section": 7,
+                  "column": 4,
+                  "block": 3
+                },
+                "text": "MODULE 3"
+              },
+              {
+                "position": {
+                  "section": 7,
+                  "column": 4,
+                  "block": 4
+                },
+                "text": "Earning Passive Income"
+              },
+              {
+                "position": {
+                  "section": 7,
+                  "column": 4,
+                  "block": 5
+                },
+                "text": "The secret to building wealth is to stop trading your time for money. In this lesson, you’ll learn:"
+              },
+              {
+                "position": {
+                  "section": 7,
+                  "column": 4,
+                  "block": 7
+                },
+                "text": "You’ll finish this lesson with your passive income plan for the next 5 years."
+              },
+              {
+                "container_position": {
+                  "section": 7,
+                  "column": 5,
+                  "block": 1
+                },
+                "position": {
+                  "section": 7,
+                  "column": 5,
+                  "block": 3
+                },
+                "text": "MODULE 4"
+              },
+              {
+                "position": {
+                  "section": 7,
+                  "column": 5,
+                  "block": 4
+                },
+                "text": "Retirement 101"
+              },
+              {
+                "position": {
+                  "section": 7,
+                  "column": 3,
+                  "block": 5
+                },
+                "text": "For many, the goal is to retire as soon as possible and still live a comfortable lifestyle. In this course, you’ll learn:"
+              },
+              {
+                "position": {
+                  "section": 7,
+                  "column": 3,
+                  "block": 7
+                },
+                "text": "You’ll finish this course with a retirement plan and a road map to get there."
+              }
+            ],
+            "setting_block_bullets": [
+              {
+                "container_position": {
+                  "section": 7,
+                  "column": 3,
+                  "block": 1
+                },
+                "position": {
+                  "section": 7,
+                  "column": 3,
+                  "block": 6
+                },
+                "title": [
+                  {
+                    "index": 1,
+                    "text": "How to include savings in your budget"
+                  },
+                  {
+                    "index": 2,
+                    "text": "Saving more without earning more"
+                  },
+                  {
+                    "index": 3,
+                    "text": "The best place to keep your savings"
+                  }
+                ]
+              },
+              {
+                "container_position": {
+                  "section": 7,
+                  "column": 4,
+                  "block": 1
+                },
+                "position": {
+                  "section": 7,
+                  "column": 4,
+                  "block": 6
+                },
+                "title": [
+                  {
+                    "index": 1,
+                    "text": "The different types of passive income"
+                  },
+                  {
+                    "index": 2,
+                    "text": "How to diversify your revenue"
+                  },
+                  {
+                    "index": 3,
+                    "text": "The best tax strategies for passive income"
+                  }
+                ]
+              },
+              {
+                "container_position": {
+                  "section": 7,
+                  "column": 5,
+                  "block": 1
+                },
+                "position": {
+                  "section": 7,
+                  "column": 5,
+                  "block": 6
+                },
+                "title": [
+                  {
+                    "index": 1,
+                    "text": "How much you need to retire at any age"
+                  },
+                  {
+                    "index": 2,
+                    "text": "The best way to manage retirement funds"
+                  },
+                  {
+                    "index": 3,
+                    "text": "The best investments to make based on your age"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "section_8": {
+          "dnd_section": {
+            "category": "Basics",
+            "template": "Single column",
+            "to": {
+              "position": {
+                "section": 8
+              },
+              "top": 0
+            }
+          },
+          "settings_section": {
+            "styles": {
+              "background": {
+                "color": {
+                  "preset": 7
+                },
+                "image": "data/shopbase/front/web_builder/call-to-action-bg.jpg"
+              },
+              "padding": {
+                "top": 48,
+                "left": 0,
+                "bottom": 48,
+                "right": 0
+              }
+            }
+          },
+          "dnd_blocks": [
+            {
+              "category": "Basics",
+              "template": "Heading",
+              "to": {
+                "position": {
+                  "section": 8,
+                  "column": 1
+                }
+              }
+            },
+            {
+              "category": "Basics",
+              "template": "Paragraph",
+              "to": {
+                "position": {
+                  "section": 8,
+                  "column": 1,
+                  "block": 1
+                }
+              }
+            },
+            {
+              "category": "Basics",
+              "template": "Countdown",
+              "to": {
+                "position": {
+                  "section": 8,
+                  "column": 1,
+                  "block": 2
+                }
+              }
+            },
+            {
+              "category": "Basics",
+              "template": "Button",
+              "to": {
+                "position": {
+                  "section": 8,
+                  "column": 1,
+                  "block": 3
+                }
+              }
+            }
+          ],
+          "setting_block_heading": {
+            "position": {
+              "section": 8,
+              "block": 1
+            },
+            "text": "Yes, It Really Is Possible!"
+          },
+          "setting_block_paragraph": {
+            "position": {
+              "section": 8,
+              "block": 2
+            },
+            "styles": {
+              "margin": {
+                "top": 6,
+                "left": 0,
+                "bottom": 12,
+                "right": 0
+              }
+            },
+            "text": "In Financial Freedom Bootcamp, you’ll learn how to finally take control of your financial future."
+          },
+          "setting_block_countdown": {
+            "styles": {
+              "number_color": {
+                "preset": 1
+              },
+              "unit_color": {
+                "preset": 1,
+                "opacity": 32
+              },
+              "width": {
+                "unit": "%",
+                "value": 100
+              },
+              "height": {
+                "unit": "Auto"
+              },
+              "margin": {
+                "top": 0,
+                "left": 0,
+                "bottom": 16,
+                "right": 0
+              }
+            },
+            "settings": {
+              "type": "Exact time",
+              "date": 3,
+              "time": "01:02:44"
+            }
+          },
+          "setting_block_button": {
+            "styles": {
+              "style": "Primary",
+              "align": "Center"
+            },
+            "settings": {
+              "title": "Claim 95% OFF Deal Now!",
+              "link": "Go to section"
+            }
+          }
+        },
+        "section_9": {
+          "dnd_section": {
+            "category": "Basics",
+            "template": "Single column",
+            "to": {
+              "position": {
+                "section": 9
+              },
+              "top": 0
+            }
+          },
+          "quick_bar_setting": {
+            "position": {
+              "section": 9
+            },
+            "editLayout": "Edit layout",
+            "selectLayout": "Layout style",
+            "layout_style": {
+              "column": 2,
+              "spacing": 10
+            }
+          },
+          "edit_layout_column_1": {
+            "styles": {
+              "padding": {
+                "top": 32,
+                "left": 48,
+                "bottom": 32,
+                "right": 0
+              }
+            }
+          },
+          "settings_section": {
+            "styles": {
+              "background": {
+                "color": {
+                  "preset": 1
+                }
+              },
+              "padding": {
+                "top": 48,
+                "left": 0,
+                "bottom": 48,
+                "right": 0
+              }
+            }
+          },
+          "insert_block": {
+            "category": "Basics",
+            "template": "Paragraph",
+            "parentPosition": {
+              "section": 9,
+              "column": 1
+            }
+          },
+          "dnd_blocks": [
+            {
+              "category": "Basics",
+              "template": "Heading",
+              "to": {
+                "position": {
+                  "section": 9,
+                  "column": 1,
+                  "block": 1
+                }
+              }
+            },
+            {
+              "category": "Basics",
+              "template": "Paragraph",
+              "to": {
+                "position": {
+                  "section": 9,
+                  "column": 1,
+                  "block": 2
+                }
+              }
+            },
+            {
+              "category": "Basics",
+              "template": "Paragraph",
+              "to": {
+                "position": {
+                  "section": 9,
+                  "column": 1,
+                  "block": 3
+                }
+              }
+            },
+            {
+              "category": "Basics",
+              "template": "Image",
+              "to": {
+                "position": {
+                  "section": 9,
+                  "column": 1,
+                  "block": 4
+                }
+              }
+            },
+            {
+              "category": "Basics",
+              "template": "Image",
+              "to": {
+                "position": {
+                  "section": 9,
+                  "column": 2
+                }
+              }
+            }
+          ],
+          "setting_column_1": {
+            "setting_block_paragraph_1": {
+              "position": {
+                "section": 9,
+                "column": 1,
+                "block": 1
+              },
+              "text": "NICE TO MEET YOU",
+              "styles": {
+                "width": {
+                  "unit": "%",
+                  "value": 100
+                }
+              }
+            },
+            "setting_block_heading": {
+              "position": {
+                "section": 9,
+                "column": 1,
+                "block": 2
+              },
+              "text": "I'm Liam Oliver",
+              "styles": {
+                "width": {
+                  "unit": "%",
+                  "value": 100
+                }
+              }
+            },
+            "setting_block_paragraph_2": {
+              "position": {
+                "section": 9,
+                "column": 1,
+                "block": 3
+              },
+              "text": "After graduating with my MBA, I was hit with over 100K in student loan debt. Not exactly the way I expected to start my new career! But with smart financial decisions and a little hard work, I was debt-free in a year and well on my way to early retirement.",
+              "styles": {
+                "width": {
+                  "unit": "%",
+                  "value": 100
+                },
+                "margin": {
+                  "top": 16,
+                  "left": 0,
+                  "bottom": 6,
+                  "right": 0
+                }
+              }
+            },
+            "setting_block_paragraph_3": {
+              "position": {
+                "section": 9,
+                "column": 1,
+                "block": 4
+              },
+              "text": "Now I use what I've learned to help people just like you find financial freedom. I’ll show you how to earn more, save more, and put your money to work for you with smart investments.",
+              "styles": {
+                "width": {
+                  "unit": "%",
+                  "value": 100
+                },
+                "margin": {
+                  "top": 0,
+                  "left": 0,
+                  "bottom": 16,
+                  "right": 0
+                }
+              }
+            },
+            "setting_block_image": {
+              "styles": {
+                "width": {
+                  "unit": "Px",
+                  "value": 190
+                },
+                "height": {
+                  "unit": "Px",
+                  "value": 53
+                },
+                "align": "Center"
+              },
+              "settings": {
+                "image": "data/shopbase/front/web_builder/Liam Oliver.png",
+                "alt": "Image signature",
+                "target_url": "Go to section",
+                "section": "section checkout page"
+              }
+            }
+          },
+          "setting_column_2": {
+            "styles": {
+              "width": {
+                "unit": "%",
+                "value": 100
+              },
+              "border": {
+                "thickness": "s",
+                "size": 66.6667,
+                "color": {
+                  "preset": 2
+                }
+              }
+            },
+            "settings": {
+              "image": "data/shopbase/front/web_builder/about-author.jpg",
+              "alt": "Image letter",
+              "target_url": "Go to section",
+              "section": "section checkout page"
+            }
+          }
+        },
+        "section_10": {
+          "dnd_section": {
+            "category": "Basics",
+            "template": "Single column",
+            "to": {
+              "position": {
+                "section": 10
+              },
+              "top": 0
+            }
+          },
+          "quick_bar_setting": {
+            "position": {
+              "section": 10
+            },
+            "actions": [
+              {
+                "action": "Edit layout",
+                "layout_style": {
+                  "column": 2,
+                  "spacing": 10
+                }
+              },
+              {
+                "action": "Add row",
+                "layout_style": {
+                  "column": 3,
+                  "spacing": 10
+                }
+              }
+            ]
+          },
+          "insert_blocks": [
+            {
+              "category": "Basics",
+              "template": "Heading",
+              "parentPosition": {
+                "section": 10,
+                "column": 1
+              }
+            },
+            {
+              "category": "Block template",
+              "template": "Rating",
+              "parentPosition": {
+                "section": 10,
+                "column": 2
+              }
+            }
+          ],
+          "dnd_blocks": [
+            {
+              "category": "Block template",
+              "template": "Review",
+              "to": {
+                "position": {
+                  "section": 10,
+                  "column": 3
+                }
+              }
+            },
+            {
+              "category": "Block template",
+              "template": "Review",
+              "to": {
+                "position": {
+                  "section": 10,
+                  "column": 4
+                }
+              }
+            },
+            {
+              "category": "Block template",
+              "template": "Review",
+              "to": {
+                "position": {
+                  "section": 10,
+                  "column": 5
+                }
+              }
+            }
+          ],
+          "duplicate_blocks": [
+            {
+              "position": {
+                "section": 10,
+                "column": 5,
+                "block": 1
+              }
+            },
+            {
+              "position": {
+                "section": 10,
+                "column": 4,
+                "block": 1
+              }
+            },
+            {
+              "position": {
+                "section": 10,
+                "column": 3,
+                "block": 1
+              }
+            }
+          ],
+          "setting_block_heading": {
+            "position": {
+              "section": 10,
+              "column": 1,
+              "block": 1
+            },
+            "text": "What Our Students Are Saying?",
+            "styles": {
+              "width": {
+                "unit": "%",
+                "value": 100
+              }
+            }
+          },
+          "setting_reviews_card": [
+            {
+              "container_position": {
+                "section": 10,
+                "column": 3,
+                "block": 1
+              },
+              "position": {
+                "section": 10,
+                "column": 3,
+                "block": 3
+              },
+              "text": "Abdelsalam K."
+            },
+            {
+              "container_position": {
+                "section": 10,
+                "column": 3,
+                "block": 1
+              },
+              "position": {
+                "section": 10,
+                "column": 3,
+                "block": 4
+              },
+              "text": "“Simone quite simply challenges you to be your best version of you, to really define what your niche is and then empowers you to own it, that you have clarity and consistency resulting in an impactful and authentic brand which wins you business”"
+            },
+            {
+              "container_position": {
+                "section": 10,
+                "column": 3,
+                "block": 5
+              },
+              "position": {
+                "section": 10,
+                "column": 3,
+                "block": 7
+              },
+              "text": "Fola O."
+            },
+            {
+              "container_position": {
+                "section": 10,
+                "column": 3,
+                "block": 5
+              },
+              "position": {
+                "section": 10,
+                "column": 3,
+                "block": 8
+              },
+              "text": "“As a former teacher, I was encouraged to see these important elements high lighted.”"
+            },
+            {
+              "container_position": {
+                "section": 10,
+                "column": 4,
+                "block": 1
+              },
+              "position": {
+                "section": 10,
+                "column": 4,
+                "block": 3
+              },
+              "text": "Jane W."
+            },
+            {
+              "container_position": {
+                "section": 10,
+                "column": 4,
+                "block": 1
+              },
+              "position": {
+                "section": 10,
+                "column": 4,
+                "block": 4
+              },
+              "text": "“The course was insightful. I don't know how I can print out my online certificate.”"
+            },
+            {
+              "container_position": {
+                "section": 10,
+                "column": 4,
+                "block": 5
+              },
+              "position": {
+                "section": 10,
+                "column": 4,
+                "block": 7
+              },
+              "text": "Venroy V."
+            },
+            {
+              "container_position": {
+                "section": 10,
+                "column": 4,
+                "block": 5
+              },
+              "position": {
+                "section": 10,
+                "column": 4,
+                "block": 8
+              },
+              "text": "“Useful details on people management suitable for all levels of management roles. Good topics & course contents.”"
+            },
+            {
+              "container_position": {
+                "section": 10,
+                "column": 5,
+                "block": 1
+              },
+              "position": {
+                "section": 10,
+                "column": 5,
+                "block": 3
+              },
+              "text": "Robert P."
+            },
+            {
+              "container_position": {
+                "section": 10,
+                "column": 5,
+                "block": 1
+              },
+              "position": {
+                "section": 10,
+                "column": 5,
+                "block": 4
+              },
+              "text": "“Really enjoyed the course. It's a great entry level option for people interested in finding out about people management.”"
+            },
+            {
+              "container_position": {
+                "section": 10,
+                "column": 5,
+                "block": 5
+              },
+              "position": {
+                "section": 10,
+                "column": 5,
+                "block": 7
+              },
+              "text": "Charlie D."
+            },
+            {
+              "container_position": {
+                "section": 10,
+                "column": 5,
+                "block": 5
+              },
+              "position": {
+                "section": 10,
+                "column": 5,
+                "block": 8
+              },
+              "text": "“I really benefited from the People management course. Valuable input from other participants, too, and the course has a really good structure.”"
+            }
+          ]
+        },
+        "section_11": {
+          "dnd_section": {
+            "category": "Section template",
+            "template": "Pricing",
+            "to": {
+              "position": {
+                "section": 11
+              },
+              "top": 0
+            }
+          }
+        },
+        "section_13": {
+          "dnd_section": {
+            "category": "Basics",
+            "template": "Single column",
+            "to": {
+              "position": {
+                "section": 12
+              }
+            }
+          },
+          "settings_section": {
+            "styles": {
+              "background": {
+                "color": {
+                  "preset": 6,
+                  "hexText": "#FFFFFF"
+                }
+              },
+              "padding": {
+                "top": 28,
+                "left": 0,
+                "bottom": 48,
+                "right": 0
+              }
+            }
+          },
+          "dnd_blocks": [
+            {
+              "category": "Basics",
+              "template": "Heading",
+              "to": {
+                "position": {
+                  "section": 13,
+                  "column": 1
+                }
+              }
+            },
+            {
+              "category": "Basics",
+              "template": "Accordion",
+              "to": {
+                "position": {
+                  "section": 13,
+                  "column": 1,
+                  "block": 1
+                }
+              }
+            }
+          ],
+          "setting_block_heading": {
+            "position": {
+              "section": 13,
+              "column": 1,
+              "block": 1
+            },
+            "text": "Frequently asked questions",
+            "styles": {
+              "margin": {
+                "top": 0,
+                "left": 0,
+                "bottom": 12,
+                "right": 0
+              },
+              "align": "Center"
+            }
+          },
+          "setting_block_accordion": {
+            "styles": {
+              "width": {
+                "unit": "Px",
+                "value": 736
+              },
+              "background": {
+                "color": {
+                  "preset": 7
+                }
+              }
+            },
+            "settings": {
+              "default_expand": true,
+              "add_items": 1
+            },
+            "setting_items": {
+              "position": {
+                "section": 13,
+                "block": 2
+              },
+              "title": [
+                {
+                  "index": 1,
+                  "text": "Are my results guaranteed?"
+                },
+                {
+                  "index": 2,
+                  "text": "Can I share course info with a friend?"
+                },
+                {
+                  "index": 3,
+                  "text": "Do you have any incentives if I refer a friend?"
+                },
+                {
+                  "index": 4,
+                  "text": "I loved this bootcamp and want more! What other courses do you offer?"
+                }
+              ],
+              "paragraph": [
+                {
+                  "index": 1,
+                  "text": "Like anything in life, you will get out of this bootcamp what you put into it. While we do offer a 14-day money-back guarantee, the results you get are up to you. We can promise that if you commit to the process and put in the work, you will see results."
+                }
+              ]
+            }
+          }
+        },
+        "section_14": {
+          "dnd_section": {
+            "category": "Basics",
+            "template": "Single column",
+            "to": {
+              "position": {
+                "section": 13
+              }
+            }
+          },
+          "dnd_blocks": {
+            "category": "Basics",
+            "template": "Divider",
+            "to": {
+              "position": {
+                "section": 14,
+                "column": 1
+              }
+            }
+          },
+          "setting_block_divider": {
+            "styles": {
+              "background": {
+                "color": {
+                  "preset": 5,
+                  "opacity": 12
+                }
+              }
+            }
+          }
+        }
+      },
+      "snapshots": {
+        "preview": "preview_template.jpeg",
+        "storefront": "storefront_template.jpeg"
+      }
+    }
+  }
+}

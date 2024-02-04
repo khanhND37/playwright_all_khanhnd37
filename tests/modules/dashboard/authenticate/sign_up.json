@@ -1,0 +1,82 @@
+{
+  "domain": "accounts.shopbase.com",
+  "cases": {
+    "unsuccessful": {
+      "data": [
+        {
+          "testcaseId": "TC_SB_AU_PPRS_2",
+          "email": "",
+          "password": "12Qwaszx@",
+          "shopName": "need_to_be_delete",
+          "status": "Please enter an email address"
+        },
+        {
+          "testcaseId": "TC_SB_AU_PPRS_3",
+          "email": "vietanhnguyen_",
+          "password": "",
+          "shopName": "need_to_be_delete",
+          "status": "Password must have at least 8 characters."
+        },
+        {
+          "testcaseId": "TC_SB_AU_PPRS_4",
+          "email": "vietanhnguyen_",
+          "password": "12Qwaszx@",
+          "shopName": "",
+          "status": "Please enter a store name"
+        },
+        {
+          "testcaseId": "TC_SB_AU_PPRS_5",
+          "email": "vietanhnguyen_",
+          "password": "123456",
+          "shopName": "need_to_be_delete",
+          "status": "Password must have at least 8 characters."
+        },
+        {
+          "testcaseId": "TC_SB_AU_PPRS_7",
+          "email": "vietanhnguyen_",
+          "password": "Qwaszx@@",
+          "shopName": "need_to_be_delete",
+          "status": "Password must contain at least 1 digit (0-9), 1 lowercase character (a-z), 1 uppercase character (A-Z), 1 special character (!@#$%^&*)."
+        },
+        {
+          "testcaseId": "TC_SB_AU_PPRS_8",
+          "email": "vietanhnguyen_",
+          "password": "12qwaszx@",
+          "shopName": "need_to_be_delete",
+          "status": "Password must contain at least 1 digit (0-9), 1 lowercase character (a-z), 1 uppercase character (A-Z), 1 special character (!@#$%^&*)."
+        },
+        {
+          "testcaseId": "TC_SB_AU_PPRS_9",
+          "email": "vietanhnguyen_",
+          "password": "12qwaszx@",
+          "shopName": "need_to_be_delete",
+          "status": "Password must contain at least 1 digit (0-9), 1 lowercase character (a-z), 1 uppercase character (A-Z), 1 special character (!@#$%^&*)."
+        },
+        {
+          "testcaseId": "TC_SB_AU_PPRS_10",
+          "email": "vietanhnguyen_",
+          "password": "12Qwaszxx",
+          "shopName": "need_to_be_delete",
+          "status": "Password must contain at least 1 digit (0-9), 1 lowercase character (a-z), 1 uppercase character (A-Z), 1 special character (!@#$%^&*)."
+        }
+      ]
+    },
+    "successfull": {
+      "data": [
+        {
+          "testcaseId": "TC_SB_AU_PPRS_11",
+          "email": "vietanhnguyen_",
+          "password": "12Qwaszx@",
+          "shopName": "need_to_be_delete",
+          "status": "Let's get to know each other"
+        }
+      ]
+    }
+  },
+  "env": {
+    "prodtest": {
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://prod-test-api.shopbase.com"
+    }
+  }
+}

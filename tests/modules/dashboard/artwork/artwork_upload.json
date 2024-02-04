@@ -1,0 +1,78 @@
+{
+  "timeout": 1000000,
+  "param_threshold": 0.1,
+  "max_diff_pixel_ratio": 0.05,
+  "max_diff_pixels": 2000,
+  "url_artwork": "/admin/pod/artworks",
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-test-artwork-upload.onshopbase.com",
+      "shop_name": "au-test-artwork-upload",
+      "user_id": 74303,
+      "shop_id": 10465227,
+      "username": "shopbase2@beeketing.net",
+      "password": "raMse).7L/b4;k#@"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-test-artwork-upload-prod.onshopbase.com",
+      "shop_name": "au-test-artwork-upload-prod",
+      "shop_id": 10393632,
+      "user_id": 74303,
+      "username": "shopbase2@beeketing.net",
+      "password": "raMse).7L/b4;k#@",
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-test-artwork-upload.myshopbase.net",
+      "shop_name": "au-test-artwork-upload",
+      "shop_id": 10331857,
+      "use_id": 73800,
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q"
+    }
+  },
+  "cases": {
+    "SB_PRB_LB_AL_2": {
+      "images": [
+        {
+          "type": "csv",
+          "paths": ["./data/printhub/Import-order-prh-success.csv"],
+          "image_name": "SB_PRB_LB_AL_2_1"
+        },
+        {
+          "type": "jpg",
+          "paths": ["./data/printbase/artwork/artwork2.jpg"],
+          "image_name": "SB_PRB_LB_AL_2_2"
+        },
+        {
+          "type": "jpg",
+          "paths": [
+            "./data/printbase/artwork/arr_artwork1.jpg",
+            "./data/printbase/artwork/arr_artwork2.jpg",
+            "./data/printbase/artwork/artwork8.jpg",
+            "./data/printbase/artwork/artwork10.jpg"
+          ],
+          "image_name": "SB_PRB_LB_AL_2_4"
+        },
+        {
+          "type": "jpg",
+          "paths": [
+            "./data/printbase/artwork/arr_artwork5.jpg",
+            "./data/printbase/artwork/arr_artwork6.jpg",
+            "./data/printbase/artwork/arr_artwork7.jpg",
+            "./data/printhub/Import-order-prh-1-order-2-shipping-address.csv"
+          ],
+          "image_name": "SB_PRB_LB_AL_2_5"
+        },
+        {
+          "type": "psd",
+          "paths": ["./data/shopbase/rug.psd"],
+          "image_name": "SB_PRB_LB_AL_2_6"
+        }
+      ]
+    }
+  }
+}

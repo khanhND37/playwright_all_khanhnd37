@@ -1,0 +1,2908 @@
+{
+  "api": "https://gapi.dev.shopbase.net",
+  "domain": "shipping-profile-sbase.myshopbase.net",
+  "shop_name": "shipping-profile-sbase",
+  "username": "nganmai@beeketing.net",
+  "password": "123456",
+  "email": "tester@maildrop.cc",
+  "shipping_address": {
+    "address1": "814 Mission Street",
+    "address2": "",
+    "city": "Ha Noi",
+    "company": "",
+    "country": "Vietnam",
+    "country_code": "VN",
+    "country_name": "Vietnam",
+    "cpf_or_cnpj_number": "",
+    "first_name": "Shipping profile",
+    "last_name": "Auto",
+    "name": "Auto",
+    "phone": "505-646-2276",
+    "province": "Hn",
+    "province_code": "",
+    "zip": "10000",
+    "remember_me": false
+  },
+  "card_info": {
+    "number": "4111111111111111",
+    "holder_name": "Shopbase",
+    "expire_date": "12 / 24",
+    "cvv": "100"
+  },
+  "cases": {
+    "TC_SB_SET_SP_SPR_6": {
+      "product_checkout": [
+        {
+          "name": "yonex",
+          "quantity": 1
+        }
+      ],
+      "profile_info": {
+        "name": "Clothes",
+        "products": [
+          {
+            "name": "T-shirt",
+            "price": 25,
+            "weight": 1
+          },
+          {
+            "name": "Jeans",
+            "price": 50,
+            "weight": 3
+          }
+        ],
+        "zone_name": "DOMESTIC",
+        "zone_countries": ["United states", "Vietnam"]
+      },
+      "price_based_rate": {
+        "type": "Price based rates",
+        "name": "Standard shipping",
+        "price": 4.99,
+        "min_price": 10,
+        "max_price": 50,
+        "min_shipping_time": 2,
+        "max_shipping_time": 5
+      },
+      "item_based_rate": {
+        "type": "Item based rates",
+        "name": "Economic shipping",
+        "price": 5.99,
+        "additional_price": 1.99,
+        "min_shipping_time": 6,
+        "max_shipping_time": 10
+      },
+      "weight_based_rate": {
+        "type": "Weight based rates",
+        "name": "Fast shipping",
+        "price": 6.99,
+        "min_weight": 0.2,
+        "max_weight": 5,
+        "min_shipping_time": 2,
+        "max_shipping_time": 20
+      }
+    },
+    "TC_GP_DHSM": [
+      {
+        "case_id": "TC_SB_SET_SP_SPR_7",
+        "case_name": "Không có shipping method khi: Item không có custom profile, General không có zone ship đến shipping address",
+        "case_step": "Verify shipping methods khi Checkout T-shirt/S đến Việt Nam",
+        "shipping_zones": [
+          {
+            "name": "Afghanistan",
+            "countries": [
+              {
+                "code": "AF",
+                "id": 1,
+                "name": "Afghanistan",
+                "provinces": null
+              }
+            ]
+          }
+        ],
+        "products_checkout": [
+          {
+            "variant_id": 1000001765346207,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "case_id": "TC_SB_SET_SP_SPR_8",
+        "case_name": "Không có shipping method khi: Item không có custom profile, General có zone ship đến shipping address, nhưng Không có rate nào trong đó",
+        "case_step": "Verify shipping methods khi Checkout T-shirt/S đến Việt Nam",
+        "shipping_zones": [
+          {
+            "name": "Afghanistan",
+            "countries": [
+              {
+                "id": 237,
+                "name": "Vietnam",
+                "code": "VN"
+              }
+            ]
+          }
+        ],
+        "products_checkout": [
+          {
+            "variant_id": 1000001765346207,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "case_id": "TC_SB_SET_SP_SPR_9",
+        "case_name": "Không có shipping method khi: Item không có custom profile, General có zone ship đến shipping address, có các rate, nhưng item Không thoả mãn rate nào",
+        "case_step": "Verify shipping methods khi Checkout T-shirt/S đến Việt Nam",
+        "shipping_zones": [
+          {
+            "name": "Vietnam",
+            "weight_based_shipping_rate": [
+              {
+                "name": "Standard shipping",
+                "weight_high": 50,
+                "weight_low": 10,
+                "weight_unit": "lb",
+                "price": 8
+              }
+            ],
+            "price_based_shipping_rate": [
+              {
+                "name": "Fast shipping",
+                "min_order_subtotal": 0,
+                "max_order_subtotal": 50,
+                "price": 9
+              }
+            ],
+            "countries": [
+              {
+                "id": 237,
+                "name": "Vietnam",
+                "code": "VN"
+              }
+            ]
+          }
+        ],
+        "products_checkout": [
+          {
+            "variant_id": 1000001765346207,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "TC_CP_DHSM": [
+      {
+        "case_id": "TC_SB_SET_SP_SPR_10",
+        "case_name": "Không có shipping method khi: Item nằm trong 1 custom profile, profile không có zone ship đến shipping address",
+        "case_step": "Verify shipping methods khi Checkout T-shirt/S đến Việt Nam",
+        "shipping_profiles": [
+          {
+            "is_general": false,
+            "name": "Clothes profile",
+            "shipping_zones": [
+              {
+                "name": "Afghanistan",
+                "countries": [
+                  {
+                    "code": "AF",
+                    "id": 1,
+                    "name": "Afghanistan"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346207"]
+          }
+        ],
+        "products_checkout": [
+          {
+            "variant_id": 1000001765346207,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "case_id": "TC_SB_SET_SP_SPR_11",
+        "case_name": "Không có shipping method khi: Custom profile của item có zone ship đến shipping address, nhưng Không có rate nào trong đó",
+        "case_step": "Verify shipping methods khi Checkout T-shirt/S đến Việt Nam",
+        "shipping_profiles": [
+          {
+            "is_general": false,
+            "name": "Clothes profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346207"]
+          }
+        ],
+        "products_checkout": [
+          {
+            "variant_id": 1000001765346207,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "case_id": "TC_SB_SET_SP_SPR_12",
+        "case_name": "Không có shipping method khi: Custom profile của item có zone ship đến shipping address, có các rate, nhưng item Không thoả mãn rate nào",
+        "case_step": "Verify shipping methods khi Checkout T-shirt/S đến Việt Nam",
+        "shipping_profiles": [
+          {
+            "is_general": false,
+            "name": "Clothes profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "weight_based_shipping_rate": [
+                  {
+                    "name": "Standard shipping",
+                    "weight_high": 50,
+                    "weight_low": 10,
+                    "weight_unit": "lb",
+                    "price": 8
+                  }
+                ],
+                "price_based_shipping_rate": [
+                  {
+                    "name": "Fast shipping",
+                    "min_order_subtotal": 0,
+                    "max_order_subtotal": 50,
+                    "price": 9
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346207"]
+          }
+        ],
+        "products_checkout": [
+          {
+            "variant_id": 1000001765346207,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "case_id": "TC_SB_SET_SP_SPR_13",
+        "case_name": "Không có shipping method khi: 2 item cùng profile, có 1 item thoả mãn shipping rate, nhưng total order không thoả mãn",
+        "case_step": "Verify shipping methods khi Checkout T-shirt/M + Jeans/S đến Việt Nam",
+        "shipping_profiles": [
+          {
+            "is_general": false,
+            "name": "Clothes profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "weight_based_shipping_rate": [
+                  {
+                    "name": "Standard shipping",
+                    "weight_high": 50,
+                    "weight_low": 10,
+                    "weight_unit": "lb",
+                    "price": 8
+                  }
+                ],
+                "price_based_shipping_rate": [
+                  {
+                    "name": "Fast shipping",
+                    "min_order_subtotal": 0,
+                    "max_order_subtotal": 50,
+                    "price": 9
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346208", "1000001765346474"]
+          }
+        ],
+        "products_checkout": [
+          {
+            "variant_id": 1000001765346208,
+            "quantity": 1
+          },
+          {
+            "variant_id": 1000001765346474,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "case_id": "TC_SB_SET_SP_SPR_14",
+        "case_name": "Không có shipping method khi: 2 item cùng profile, cả 2 đều thoả mãn shipping rate, nhưng total order không thoả mãn",
+        "case_step": "Verify shipping methods khi Checkout T-shirt/M + Jeans/M đến Việt Nam",
+        "shipping_profiles": [
+          {
+            "is_general": false,
+            "name": "Clothes profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "weight_based_shipping_rate": [
+                  {
+                    "name": "Standard shipping",
+                    "weight_high": 50,
+                    "weight_low": 10,
+                    "weight_unit": "lb",
+                    "price": 8
+                  }
+                ],
+                "price_based_shipping_rate": [
+                  {
+                    "name": "Fast shipping",
+                    "min_order_subtotal": 0,
+                    "max_order_subtotal": 50,
+                    "price": 9
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346208", "1000001765346475"]
+          }
+        ],
+        "products_checkout": [
+          {
+            "variant_id": 1000001765346208,
+            "quantity": 1
+          },
+          {
+            "variant_id": 1000001765346474,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "case_id": "TC_SB_SET_SP_SPR_15",
+        "case_name": "Không có shipping method khi: 2 item khác profile, trong đó có 1 profile không có shipping zone đến shipping address",
+        "case_step": "Verify shipping methods khi Checkout T-shirt/M + Jeans/M đến Việt Nam",
+        "shipping_profiles": [
+          {
+            "is_general": false,
+            "name": "Clothes profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "weight_based_shipping_rate": [
+                  {
+                    "name": "Standard shipping",
+                    "weight_high": 50,
+                    "weight_low": 10,
+                    "weight_unit": "lb",
+                    "price": 8
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346208"]
+          },
+          {
+            "is_general": false,
+            "name": "Clothes profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346475"]
+          }
+        ],
+        "products_checkout": [
+          {
+            "variant_id": 1000001765346208,
+            "quantity": 1
+          },
+          {
+            "variant_id": 1000001765346474,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "case_id": "TC_SB_SET_SP_SPR_16",
+        "case_name": "Không có shipping method khi: Các item khác profile, trong đó có 2 item cùng profile không thoả mãn range weight based",
+        "case_step": "Verify shipping methods khi Checkout T-shirt/M + Jeans/M + Hat/J đến Việt Nam",
+        "shipping_profiles": [
+          {
+            "is_general": false,
+            "name": "Clothes profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "weight_based_shipping_rate": [
+                  {
+                    "name": "Standard shipping",
+                    "weight_high": 50,
+                    "weight_low": 10,
+                    "weight_unit": "lb",
+                    "price": 8
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346208", "1000001765346475"]
+          },
+          {
+            "is_general": false,
+            "name": "Accessories profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "price_based_shipping_rate": [
+                  {
+                    "name": "Fast shipping",
+                    "min_order_subtotal": 0,
+                    "price": 9
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346476"]
+          }
+        ],
+        "products_checkout": [
+          {
+            "variant_id": 1000001765346208,
+            "quantity": 1
+          },
+          {
+            "variant_id": 1000001765346475,
+            "quantity": 1
+          },
+          {
+            "variant_id": 1000001765346476,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "case_id": "TC_SB_SET_SP_SPR_17",
+        "case_name": "Không có shipping method khi: Khác profile, Tất cả item đều có shipping rate (có price base), Total order lại không thoả mãn Price base rate của ít nhất 1 item",
+        "case_step": "Verify shipping methods khi Checkout T-shirt/M + Jeans/M + Hat/J đến Việt Nam",
+        "shipping_profiles": [
+          {
+            "is_general": false,
+            "name": "Clothes profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "price_based_shipping_rate": [
+                  {
+                    "name": "Fast shipping",
+                    "price": 9
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346208", "1000001765346475"]
+          },
+          {
+            "is_general": false,
+            "name": "Accessories profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "price_based_shipping_rate": [
+                  {
+                    "name": "Fast shipping",
+                    "min_order_subtotal": 0,
+                    "max_order_subtotal": 30,
+                    "price": 9
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346476"]
+          }
+        ],
+        "products_checkout": [
+          {
+            "variant_id": 1000001765346208,
+            "quantity": 1
+          },
+          {
+            "variant_id": 1000001765346475,
+            "quantity": 1
+          },
+          {
+            "variant_id": 1000001765346476,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "TC_GP_HSM": [
+      {
+        "case_id": "TC_SB_SET_SP_SPR_18",
+        "case_name": "1 Item không thuộc custom profile nào, Item thỏa mãn các rate khác tên nhau trong general profile",
+        "case_step": "Verify shipping methods khi Checkout 1sp T-shirt/L đến Việt Nam",
+        "shipping_zones": [
+          {
+            "name": "Vietnam",
+            "item_based_shipping_rate": [
+              {
+                "name": "Economy shipping",
+                "additional_item_price": 6,
+                "first_item_price": 7
+              }
+            ],
+            "weight_based_shipping_rate": [
+              {
+                "name": "Standard shipping",
+                "weight_high": 50,
+                "weight_low": 0,
+                "weight_unit": "lb",
+                "price": 8
+              }
+            ],
+            "price_based_shipping_rate": [
+              {
+                "name": "Express shipping",
+                "min_order_subtotal": 0,
+                "max_order_subtotal": 50,
+                "price": 9
+              }
+            ],
+            "countries": [
+              {
+                "id": 237,
+                "name": "Vietnam",
+                "code": "VN"
+              }
+            ]
+          }
+        ],
+        "products_checkout": [
+          {
+            "variant_id": 1000001765346477,
+            "quantity": 1
+          }
+        ],
+        "expected_shipping_methods": [
+          {
+            "amount": 7,
+            "method_title": "Economy shipping"
+          },
+          {
+            "amount": 8,
+            "method_title": "Standard shipping"
+          },
+          {
+            "amount": 9,
+            "method_title": "Express shipping"
+          }
+        ]
+      },
+      {
+        "case_id": "TC_SB_SET_SP_SPR_19",
+        "case_name": "1 Item không thuộc custom profile, Item thỏa mãn rate trong general profile, trong đó có các rate có tên giống nhau và cùng giá ship",
+        "case_step": "Verify shipping methods khi Checkout 1sp T-shirt/L đến Việt Nam",
+        "shipping_zones": [
+          {
+            "name": "Vietnam",
+            "item_based_shipping_rate": [
+              {
+                "name": "Economy shipping",
+                "additional_item_price": 6,
+                "first_item_price": 7
+              },
+              {
+                "name": "Economy shipping",
+                "additional_item_price": 5,
+                "first_item_price": 7
+              }
+            ],
+            "weight_based_shipping_rate": [
+              {
+                "name": "Express shipping",
+                "weight_high": 50,
+                "weight_low": 0,
+                "weight_unit": "lb",
+                "price": 9
+              }
+            ],
+            "price_based_shipping_rate": [
+              {
+                "name": "Express shipping",
+                "min_order_subtotal": 0,
+                "max_order_subtotal": 50,
+                "price": 9
+              }
+            ],
+            "countries": [
+              {
+                "id": 237,
+                "name": "Vietnam",
+                "code": "VN"
+              }
+            ]
+          }
+        ],
+        "products_checkout": [
+          {
+            "variant_id": 1000001765346477,
+            "quantity": 1
+          }
+        ],
+        "expected_shipping_methods": [
+          {
+            "amount": 7,
+            "method_title": "Economy shipping"
+          },
+          {
+            "amount": 9,
+            "method_title": "Express shipping"
+          }
+        ]
+      },
+      {
+        "case_id": "TC_SB_SET_SP_SPR_20",
+        "case_name": "1 Item không thuộc custom profile, Item thỏa mãn rate trong general profile, trong đó có các rate có tên giống nhau và khác giá ship",
+        "case_step": "Verify shipping methods khi Checkout 1sp T-shirt/L đến Việt Nam",
+        "shipping_zones": [
+          {
+            "name": "Vietnam",
+            "item_based_shipping_rate": [
+              {
+                "name": "Economy shipping",
+                "additional_item_price": 6,
+                "first_item_price": 7
+              },
+              {
+                "name": "Economy shipping",
+                "additional_item_price": 5,
+                "first_item_price": 7
+              }
+            ],
+            "weight_based_shipping_rate": [
+              {
+                "name": "Express shipping",
+                "weight_high": 50,
+                "weight_low": 0,
+                "weight_unit": "lb",
+                "price": 9
+              }
+            ],
+            "price_based_shipping_rate": [
+              {
+                "name": "Express shipping",
+                "min_order_subtotal": 0,
+                "max_order_subtotal": 50,
+                "price": 9
+              }
+            ],
+            "countries": [
+              {
+                "id": 237,
+                "name": "Vietnam",
+                "code": "VN"
+              }
+            ]
+          }
+        ],
+        "products_checkout": [
+          {
+            "variant_id": 1000001765346477,
+            "quantity": 2
+          }
+        ],
+        "expected_shipping_methods": [
+          {
+            "amount": 12,
+            "method_title": "Economy shipping"
+          },
+          {
+            "amount": 9,
+            "method_title": "Express shipping"
+          }
+        ]
+      }
+    ],
+    "TC_CP_HSM": [
+      {
+        "case_id": "TC_SB_SET_SP_SPR_21",
+        "case_name": "1 Item thuộc custom profile, Item thỏa mãn các rate có tên khác nhau trong đó",
+        "case_step": "Verify shipping methods khi Checkout 1sp T-shirt/L đến Việt Nam",
+        "shipping_profiles": [
+          {
+            "is_general": false,
+            "name": "Clothes profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "item_based_shipping_rate": [
+                  {
+                    "name": "Economy shipping",
+                    "additional_item_price": 6,
+                    "first_item_price": 7
+                  }
+                ],
+                "weight_based_shipping_rate": [
+                  {
+                    "name": "Standard shipping",
+                    "weight_high": 50,
+                    "weight_low": 0,
+                    "weight_unit": "lb",
+                    "price": 8
+                  }
+                ],
+                "price_based_shipping_rate": [
+                  {
+                    "name": "Express shipping",
+                    "min_order_subtotal": 0,
+                    "max_order_subtotal": 50,
+                    "price": 9
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346477"]
+          }
+        ],
+        "products_checkout": [
+          {
+            "variant_id": 1000001765346477,
+            "quantity": 1
+          }
+        ],
+        "expected_shipping_methods": [
+          {
+            "amount": 7,
+            "method_title": "Economy shipping"
+          },
+          {
+            "amount": 8,
+            "method_title": "Standard shipping"
+          },
+          {
+            "amount": 9,
+            "method_title": "Express shipping"
+          }
+        ]
+      },
+      {
+        "case_id": "TC_SB_SET_SP_SPR_22",
+        "case_name": "1 Item thuộc custom profile, Item thỏa mãn các rate có tên giống nhau và cùng giá ship",
+        "case_step": "Verify shipping methods khi Checkout 1sp T-shirt/L đến Việt Nam",
+        "shipping_profiles": [
+          {
+            "is_general": false,
+            "name": "Clothes profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "item_based_shipping_rate": [
+                  {
+                    "name": "Economy shipping",
+                    "additional_item_price": 6,
+                    "first_item_price": 7
+                  },
+                  {
+                    "name": "Economy shipping",
+                    "additional_item_price": 5,
+                    "first_item_price": 7
+                  }
+                ],
+                "weight_based_shipping_rate": [
+                  {
+                    "name": "Express shipping",
+                    "weight_high": 50,
+                    "weight_low": 0,
+                    "weight_unit": "lb",
+                    "price": 9
+                  }
+                ],
+                "price_based_shipping_rate": [
+                  {
+                    "name": "Express shipping",
+                    "min_order_subtotal": 0,
+                    "max_order_subtotal": 50,
+                    "price": 9
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346477"]
+          }
+        ],
+        "products_checkout": [
+          {
+            "variant_id": 1000001765346477,
+            "quantity": 1
+          }
+        ],
+        "expected_shipping_methods": [
+          {
+            "amount": 7,
+            "method_title": "Economy shipping"
+          },
+          {
+            "amount": 9,
+            "method_title": "Express shipping"
+          }
+        ]
+      },
+      {
+        "case_id": "TC_SB_SET_SP_SPR_23",
+        "case_name": "Nhiều item cùng thuộc custom profile, Item thỏa mãn các rate có tên giống nhau và khác giá ship",
+        "case_step": "Verify shipping methods khi Checkout 2sp T-shirt/L đến Việt Nam",
+        "shipping_profiles": [
+          {
+            "is_general": false,
+            "name": "Clothes profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "item_based_shipping_rate": [
+                  {
+                    "name": "Economy shipping",
+                    "additional_item_price": 6,
+                    "first_item_price": 7
+                  },
+                  {
+                    "name": "Economy shipping",
+                    "additional_item_price": 5,
+                    "first_item_price": 7
+                  }
+                ],
+                "weight_based_shipping_rate": [
+                  {
+                    "name": "Express shipping",
+                    "weight_high": 50,
+                    "weight_low": 0,
+                    "weight_unit": "lb",
+                    "price": 9
+                  }
+                ],
+                "price_based_shipping_rate": [
+                  {
+                    "name": "Express shipping",
+                    "min_order_subtotal": 0,
+                    "max_order_subtotal": 50,
+                    "price": 9
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346477"]
+          }
+        ],
+        "products_checkout": [
+          {
+            "variant_id": 1000001765346477,
+            "quantity": 2
+          }
+        ],
+        "expected_shipping_methods": [
+          {
+            "amount": 12,
+            "method_title": "Economy shipping"
+          },
+          {
+            "amount": 9,
+            "method_title": "Express shipping"
+          }
+        ]
+      },
+      {
+        "case_id": "TC_SB_SET_SP_SPR_24",
+        "case_name": "Các item trong order đều thuộc 1 profile, và thoả mãn các rate name khác nhau trong profile đó",
+        "case_step": "Verify shipping methods khi Checkout T-shirt/M + Jeans/M + Hat/J đến Việt Nam",
+        "shipping_profiles": [
+          {
+            "is_general": false,
+            "name": "Clothes profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "item_based_shipping_rate": [
+                  {
+                    "name": "Economy shipping",
+                    "additional_item_price": 6,
+                    "first_item_price": 7
+                  }
+                ],
+                "weight_based_shipping_rate": [
+                  {
+                    "name": "Standard shipping",
+                    "weight_high": 200,
+                    "weight_low": 0,
+                    "weight_unit": "lb",
+                    "price": 8
+                  },
+                  {
+                    "name": "Stand shipping",
+                    "weight_high": 100,
+                    "weight_low": 0,
+                    "weight_unit": "lb",
+                    "price": 2
+                  }
+                ],
+                "price_based_shipping_rate": [
+                  {
+                    "name": "Exp shipping",
+                    "min_order_subtotal": 0,
+                    "max_order_subtotal": 50,
+                    "price": 9
+                  },
+                  {
+                    "name": "Express shipping",
+                    "min_order_subtotal": 50,
+                    "price": 10
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346208", "1000001765346475"]
+          }
+        ],
+        "products_checkout": [
+          {
+            "variant_id": 1000001765346208,
+            "quantity": 2
+          },
+          {
+            "variant_id": 1000001765346475,
+            "quantity": 2
+          }
+        ],
+        "expected_shipping_methods": [
+          {
+            "amount": 25,
+            "method_title": "Economy shipping"
+          },
+          {
+            "amount": 8,
+            "method_title": "Standard shipping"
+          },
+          {
+            "amount": 10,
+            "method_title": "Express shipping"
+          }
+        ]
+      },
+      {
+        "case_id": "TC_SB_SET_SP_SPR_25",
+        "case_name": "Các Item nằm trong 1 custom profile, thỏa mãn các rate có tên giống nhau và cùng giá ship",
+        "case_step": "Verify shipping methods khi Checkout T-shirt/M + Jeans/M + Hat/J đến Việt Nam",
+        "shipping_profiles": [
+          {
+            "is_general": false,
+            "name": "Clothes profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "item_based_shipping_rate": [
+                  {
+                    "name": "Economy shipping",
+                    "additional_item_price": 1,
+                    "first_item_price": 19
+                  },
+                  {
+                    "name": "Economy shipping",
+                    "additional_item_price": 5,
+                    "first_item_price": 7
+                  }
+                ],
+                "price_based_shipping_rate": [
+                  {
+                    "name": "Express shipping",
+                    "min_order_subtotal": 0,
+                    "price": 9
+                  }
+                ],
+                "weight_based_shipping_rate": [
+                  {
+                    "name": "Express shipping",
+                    "weight_high": 500,
+                    "weight_low": 0,
+                    "weight_unit": "lb",
+                    "price": 9
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346208", "1000001765346475"]
+          }
+        ],
+        "products_checkout": [
+          {
+            "variant_id": 1000001765346208,
+            "quantity": 2
+          },
+          {
+            "variant_id": 1000001765346475,
+            "quantity": 2
+          }
+        ],
+        "expected_shipping_methods": [
+          {
+            "amount": 22,
+            "method_title": "Economy shipping"
+          },
+          {
+            "amount": 9,
+            "method_title": "Express shipping"
+          }
+        ]
+      },
+      {
+        "case_id": "TC_SB_SET_SP_SPR_26",
+        "case_name": "Các Item nằm trong 1 custom profile, thỏa mãn các rate có tên giống nhau và khác giá ship",
+        "case_step": "Verify shipping methods khi Checkout T-shirt/M + Jeans/M + Hat/J đến Việt Nam",
+        "shipping_profiles": [
+          {
+            "is_general": false,
+            "name": "Clothes profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "item_based_shipping_rate": [
+                  {
+                    "name": "Economy shipping",
+                    "additional_item_price": 1,
+                    "first_item_price": 9
+                  },
+                  {
+                    "name": "Economy shipping",
+                    "additional_item_price": 5,
+                    "first_item_price": 7
+                  }
+                ],
+                "price_based_shipping_rate": [
+                  {
+                    "name": "Express shipping",
+                    "min_order_subtotal": 0,
+                    "price": 10
+                  }
+                ],
+                "weight_based_shipping_rate": [
+                  {
+                    "name": "Express shipping",
+                    "weight_high": 500,
+                    "weight_low": 0,
+                    "weight_unit": "lb",
+                    "price": 9
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346208", "1000001765346475"]
+          }
+        ],
+        "products_checkout": [
+          {
+            "variant_id": 1000001765346208,
+            "quantity": 2
+          },
+          {
+            "variant_id": 1000001765346475,
+            "quantity": 2
+          }
+        ],
+        "expected_shipping_methods": [
+          {
+            "amount": 12,
+            "method_title": "Economy shipping"
+          },
+          {
+            "amount": 9,
+            "method_title": "Express shipping"
+          }
+        ]
+      },
+      {
+        "case_id": "TC_SB_SET_SP_SPR_27",
+        "case_name": "Các item trong order đều thuộc 1 profile. Một/ một vài item trong order không thoả mãn shipping rate nào, nhưng cả order lại thoả mãn",
+        "case_step": "Verify shipping methods khi Checkout 2 Item T-shirt/M, 2 Item Jeans/M đến Việt Nam",
+        "shipping_profiles": [
+          {
+            "is_general": false,
+            "name": "Clothes profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "price_based_shipping_rate": [
+                  {
+                    "name": "Express shipping",
+                    "min_order_subtotal": 90,
+                    "max_order_subtotal": 150,
+                    "price": 9
+                  }
+                ],
+                "weight_based_shipping_rate": [
+                  {
+                    "name": "Standard shipping",
+                    "weight_high": 500,
+                    "weight_low": 10,
+                    "weight_unit": "lb",
+                    "price": 8
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346208", "1000001765346475"]
+          }
+        ],
+        "products_checkout": [
+          {
+            "variant_id": 1000001765346208,
+            "quantity": 2
+          },
+          {
+            "variant_id": 1000001765346475,
+            "quantity": 2
+          }
+        ],
+        "expected_shipping_methods": [
+          {
+            "amount": 8,
+            "method_title": "Standard shipping"
+          },
+          {
+            "amount": 9,
+            "method_title": "Express shipping"
+          }
+        ]
+      },
+      {
+        "case_id": "TC_SB_SET_SP_SPR_28",
+        "case_name": "Các item trong order thuộc các profile khác nhau, mỗi profile thoả mãn 1 rate, và chúng có tên khác nhau",
+        "case_step": "Verify shipping methods khi Checkout T-shirt/M + Jeans/M + Hat/J đến Việt Nam",
+        "shipping_profiles": [
+          {
+            "is_general": false,
+            "name": "T-shirt profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "weight_based_shipping_rate": [
+                  {
+                    "name": "Standard shipping",
+                    "weight_high": 500,
+                    "weight_low": 10,
+                    "weight_unit": "lb",
+                    "price": 8
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346208"]
+          },
+          {
+            "is_general": false,
+            "name": "Jeans profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "price_based_shipping_rate": [
+                  {
+                    "name": "Express shipping",
+                    "min_order_subtotal": 90,
+                    "max_order_subtotal": 150,
+                    "price": 9
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346475"]
+          },
+          {
+            "is_general": false,
+            "name": "Hat profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "item_based_shipping_rate": [
+                  {
+                    "name": "Economy shipping",
+                    "additional_item_price": 5,
+                    "first_item_price": 7
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346476"]
+          }
+        ],
+        "products_checkout": [
+          {
+            "variant_id": 1000001765346208,
+            "quantity": 1
+          },
+          {
+            "variant_id": 1000001765346475,
+            "quantity": 1
+          },
+          {
+            "variant_id": 1000001765346476,
+            "quantity": 1
+          }
+        ],
+        "expected_shipping_methods": [
+          {
+            "amount": 24,
+            "method_title": "Standard shipping"
+          }
+        ]
+      },
+      {
+        "case_id": "TC_SB_SET_SP_SPR_29",
+        "case_name": "Các item trong order thuộc các profile khác nhau, 1 profile thoả mãn 1 rate, profile còn lại thoả mãn nhiều rate, và chúng có tên khác nhau",
+        "case_step": "Verify shipping methods khi Checkout 2 Item T-shirt/M, 2 Item Jeans/M đến Việt Nam",
+        "shipping_profiles": [
+          {
+            "is_general": false,
+            "name": "T-shirt profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "weight_based_shipping_rate": [
+                  {
+                    "name": "Standard shipping",
+                    "weight_high": 500,
+                    "weight_low": 10,
+                    "weight_unit": "lb",
+                    "price": 8
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346208"]
+          },
+          {
+            "is_general": false,
+            "name": "Jeans profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "price_based_shipping_rate": [
+                  {
+                    "name": "Express shipping",
+                    "min_order_subtotal": 90,
+                    "max_order_subtotal": 150,
+                    "price": 9
+                  }
+                ],
+                "item_based_shipping_rate": [
+                  {
+                    "name": "Normal shipping",
+                    "additional_item_price": 4,
+                    "first_item_price": 7
+                  },
+                  {
+                    "name": "Economy shipping",
+                    "additional_item_price": 6,
+                    "first_item_price": 7
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346475"]
+          }
+        ],
+        "products_checkout": [
+          {
+            "variant_id": 1000001765346208,
+            "quantity": 2
+          },
+          {
+            "variant_id": 1000001765346475,
+            "quantity": 2
+          }
+        ],
+        "expected_shipping_methods": [
+          {
+            "amount": 17,
+            "method_title": "Standard shipping"
+          },
+          {
+            "amount": 21,
+            "method_title": "Express shipping"
+          }
+        ]
+      },
+      {
+        "case_id": "TC_SB_SET_SP_SPR_30",
+        "case_name": "Các item trong order thuộc các profile khác nhau, các profile thoả mãn nhiều rate, và chúng có tên khác nhau",
+        "case_step": "Verify shipping methods khi Checkout 2 Item T-shirt/M, 2 Item Jeans/M đến Việt Nam",
+        "shipping_profiles": [
+          {
+            "is_general": false,
+            "name": "T-shirt profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "weight_based_shipping_rate": [
+                  {
+                    "name": "Fast shipping",
+                    "weight_high": 500,
+                    "weight_low": 10,
+                    "weight_unit": "lb",
+                    "price": 8
+                  }
+                ],
+                "item_based_shipping_rate": [
+                  {
+                    "name": "Standard shipping",
+                    "additional_item_price": 1,
+                    "first_item_price": 7.5
+                  }
+                ],
+                "price_based_shipping_rate": [
+                  {
+                    "name": "Express shipping",
+                    "min_order_subtotal": 90,
+                    "max_order_subtotal": 150,
+                    "price": 9
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346208"]
+          },
+          {
+            "is_general": false,
+            "name": "Jeans profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "item_based_shipping_rate": [
+                  {
+                    "name": "Normal shipping",
+                    "additional_item_price": 4,
+                    "first_item_price": 7
+                  },
+                  {
+                    "name": "Economy shipping",
+                    "additional_item_price": 6,
+                    "first_item_price": 7
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346475"]
+          }
+        ],
+        "products_checkout": [
+          {
+            "variant_id": 1000001765346208,
+            "quantity": 2
+          },
+          {
+            "variant_id": 1000001765346475,
+            "quantity": 2
+          }
+        ],
+        "expected_shipping_methods": [
+          {
+            "amount": 19,
+            "method_title": "Standard shipping"
+          },
+          {
+            "amount": 22,
+            "method_title": "Express shipping"
+          }
+        ]
+      },
+      {
+        "case_id": "TC_SB_SET_SP_SPR_31",
+        "case_name": "Các item trong order thuộc các profile khác nhau, nhưng các item đều thỏa mãn các rate có rate name giống nhau",
+        "case_step": "Verify shipping methods khi Checkout 2 Item T-shirt/M, 2 Item Jeans/M đến Việt Nam",
+        "shipping_profiles": [
+          {
+            "is_general": false,
+            "name": "T-shirt profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "item_based_shipping_rate": [
+                  {
+                    "name": "Economy shipping",
+                    "additional_item_price": 6,
+                    "first_item_price": 7
+                  },
+                  {
+                    "name": "Standard shipping",
+                    "additional_item_price": 5,
+                    "first_item_price": 8
+                  },
+                  {
+                    "name": "Fast shipping",
+                    "additional_item_price": 7,
+                    "first_item_price": 8
+                  }
+                ],
+                "price_based_shipping_rate": [
+                  {
+                    "name": "Standard shipping",
+                    "min_order_subtotal": 0,
+                    "max_order_subtotal": 150,
+                    "price": 10
+                  }
+                ],
+                "weight_based_shipping_rate": [
+                  {
+                    "name": "Express shipping",
+                    "weight_high": 500,
+                    "weight_low": 10,
+                    "weight_unit": "lb",
+                    "price": 10
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346208"]
+          },
+          {
+            "is_general": false,
+            "name": "Jeans profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "item_based_shipping_rate": [
+                  {
+                    "name": "Fast shipping",
+                    "additional_item_price": 5,
+                    "first_item_price": 8
+                  },
+                  {
+                    "name": "Express shipping",
+                    "additional_item_price": 7,
+                    "first_item_price": 9
+                  },
+                  {
+                    "name": "Fast shipping",
+                    "additional_item_price": 4,
+                    "first_item_price": 4
+                  }
+                ],
+                "price_based_shipping_rate": [
+                  {
+                    "name": "Standard shipping",
+                    "min_order_subtotal": 0,
+                    "max_order_subtotal": 150,
+                    "price": 2
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346475"]
+          }
+        ],
+        "products_checkout": [
+          {
+            "variant_id": 1000001765346208,
+            "quantity": 2
+          },
+          {
+            "variant_id": 1000001765346475,
+            "quantity": 2
+          }
+        ],
+        "expected_shipping_methods": [
+          {
+            "amount": 12,
+            "method_title": "Standard shipping"
+          },
+          {
+            "amount": 26,
+            "method_title": "Express shipping"
+          },
+          {
+            "amount": 23,
+            "method_title": "Fast shipping"
+          }
+        ]
+      },
+      {
+        "case_id": "TC_SB_SET_SP_SPR_32",
+        "case_name": "Các item trong order thuộc các profile khác nhau, Một/ một vài item trong order khi mua riêng không thoả mãn shipping rate nào, nhưng cả order lại thoả mãn (Price base)",
+        "case_step": "Verify shipping methods khi Checkout 2 Item T-shirt/XS, 2 Item Jeans/L đến Việt Nam",
+        "shipping_profiles": [
+          {
+            "is_general": false,
+            "name": "T-shirt profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "price_based_shipping_rate": [
+                  {
+                    "name": "Fast shipping",
+                    "min_order_subtotal": 100,
+                    "max_order_subtotal": 150,
+                    "price": 6
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346478"]
+          },
+          {
+            "is_general": false,
+            "name": "Jeans profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "item_based_shipping_rate": [
+                  {
+                    "name": "Standard shipping",
+                    "additional_item_price": 3,
+                    "first_item_price": 6
+                  }
+                ],
+                "weight_based_shipping_rate": [
+                  {
+                    "name": "Express Shipping",
+                    "weight_high": 5,
+                    "weight_low": 0.1,
+                    "weight_unit": "lb",
+                    "price": 8
+                  }
+                ],
+                "price_based_shipping_rate": [
+                  {
+                    "name": "Normal shipping",
+                    "min_order_subtotal": 50,
+                    "max_order_subtotal": 150,
+                    "price": 6
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346479"]
+          }
+        ],
+        "products_checkout": [
+          {
+            "variant_id": 1000001765346478,
+            "quantity": 2
+          },
+          {
+            "variant_id": 1000001765346479,
+            "quantity": 2
+          }
+        ],
+        "expected_shipping_methods": [
+          {
+            "amount": 12,
+            "method_title": "Standard shipping"
+          },
+          {
+            "amount": 15,
+            "method_title": "Express shipping"
+          }
+        ]
+      }
+    ],
+    "TC_CO_PPC": [
+      {
+        "case_id": "TC_SB_SET_SP_SPR_36",
+        "case_name": "Item post-purchase thoả mãn shipping rate item based trùng với 1 trong các rates thuộc method đã chọn đã chọn (theo logic rate name giống nhau) của order -> shipping sẽ cộng giá additional",
+        "case_step": "Checkout 2 Items T-shirt/M, 2 Items Jeans/M thành công với method Fast shipping",
+        "shipping_profiles": [
+          {
+            "is_general": false,
+            "name": "T-shirt profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "item_based_shipping_rate": [
+                  {
+                    "name": "Economy shipping",
+                    "additional_item_price": 6,
+                    "first_item_price": 7
+                  },
+                  {
+                    "name": "Standard shipping",
+                    "additional_item_price": 5,
+                    "first_item_price": 8
+                  },
+                  {
+                    "name": "Fast shipping",
+                    "additional_item_price": 7,
+                    "first_item_price": 8
+                  }
+                ],
+                "price_based_shipping_rate": [
+                  {
+                    "name": "Standard shipping",
+                    "min_order_subtotal": 0,
+                    "max_order_subtotal": 200,
+                    "price": 10
+                  }
+                ],
+                "weight_based_shipping_rate": [
+                  {
+                    "name": "Express shipping",
+                    "weight_high": 500,
+                    "weight_low": 10,
+                    "weight_unit": "lb",
+                    "price": 10
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346208", "1000001765346476"]
+          },
+          {
+            "is_general": false,
+            "name": "Jeans profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "item_based_shipping_rate": [
+                  {
+                    "name": "Fast shipping",
+                    "additional_item_price": 5,
+                    "first_item_price": 8
+                  },
+                  {
+                    "name": "Express shipping",
+                    "additional_item_price": 7,
+                    "first_item_price": 9
+                  },
+                  {
+                    "name": "Fast shipping",
+                    "additional_item_price": 4,
+                    "first_item_price": 4
+                  }
+                ],
+                "price_based_shipping_rate": [
+                  {
+                    "name": "Standard shipping",
+                    "min_order_subtotal": 0,
+                    "max_order_subtotal": 200,
+                    "price": 2
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346475"]
+          }
+        ],
+        "products_checkout": [
+          {
+            "variant_id": 1000001765346208,
+            "quantity": 2
+          },
+          {
+            "variant_id": 1000001765346475,
+            "quantity": 2
+          }
+        ],
+        "product_ppc": {
+          "variant_id": 1000001765346476,
+          "quantity": 1,
+          "post_purchase_price": 20
+        },
+        "usell_id": 73251049118,
+        "shipping_method_before_ppc": {
+          "amount": 23,
+          "method_title": "Fast shipping"
+        },
+        "shipping_method_after_ppc": {
+          "amount": 30,
+          "method_title": "Fast shipping"
+        }
+      },
+      {
+        "case_id": "TC_SB_SET_SP_SPR_37",
+        "case_name": "Item post-purchase thoả mãn shipping rate weight based trùng với 1 trong các rates thuộc method đã chọn (theo logic rate name giống nhau) của order -> shipping fee sẽ giữ nguyên",
+        "case_step": "Checkout 2 Items T-shirt/M, 2 Items Jeans/M thành công với method Express shipping",
+        "shipping_profiles": [
+          {
+            "is_general": false,
+            "name": "T-shirt profile-36",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "item_based_shipping_rate": [
+                  {
+                    "name": "Economy shipping",
+                    "additional_item_price": 6,
+                    "first_item_price": 7
+                  },
+                  {
+                    "name": "Standard shipping",
+                    "additional_item_price": 5,
+                    "first_item_price": 8
+                  },
+                  {
+                    "name": "Fast shipping",
+                    "additional_item_price": 7,
+                    "first_item_price": 8
+                  }
+                ],
+                "price_based_shipping_rate": [
+                  {
+                    "name": "Standard shipping",
+                    "min_order_subtotal": 0,
+                    "max_order_subtotal": 200,
+                    "price": 10
+                  }
+                ],
+                "weight_based_shipping_rate": [
+                  {
+                    "name": "Express shipping",
+                    "weight_high": 500,
+                    "weight_low": 10,
+                    "weight_unit": "lb",
+                    "price": 10
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346208", "1000001765346476"]
+          },
+          {
+            "is_general": false,
+            "name": "Jeans profile-36",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "item_based_shipping_rate": [
+                  {
+                    "name": "Fast shipping",
+                    "additional_item_price": 5,
+                    "first_item_price": 8
+                  },
+                  {
+                    "name": "Express shipping",
+                    "additional_item_price": 7,
+                    "first_item_price": 9
+                  },
+                  {
+                    "name": "Fast shipping",
+                    "additional_item_price": 4,
+                    "first_item_price": 4
+                  }
+                ],
+                "price_based_shipping_rate": [
+                  {
+                    "name": "Standard shipping",
+                    "min_order_subtotal": 0,
+                    "max_order_subtotal": 200,
+                    "price": 2
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346475"]
+          }
+        ],
+        "products_checkout": [
+          {
+            "variant_id": 1000001765346208,
+            "quantity": 2
+          },
+          {
+            "variant_id": 1000001765346475,
+            "quantity": 2
+          }
+        ],
+        "product_ppc": {
+          "variant_id": 1000001765346476,
+          "quantity": 1,
+          "post_purchase_price": 20
+        },
+        "usell_id": 73251049118,
+        "shipping_method_before_ppc": {
+          "amount": 26,
+          "method_title": "Express shipping"
+        },
+        "shipping_method_after_ppc": {
+          "amount": 26,
+          "method_title": "Express shipping"
+        }
+      },
+      {
+        "case_id": "TC_SB_SET_SP_SPR_38",
+        "case_name": "Item post-purchase thoả mãn shipping rate price based trùng với 1 trong các rates thuộc method đã chọn (theo logic rate name giống nhau) của order -> shipping fee sẽ giữ nguyên",
+        "case_step": "Checkout 2 Items T-shirt/M, 2 Items Jeans/M thành công với method Standard shipping",
+        "shipping_profiles": [
+          {
+            "is_general": false,
+            "name": "T-shirt profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "item_based_shipping_rate": [
+                  {
+                    "name": "Economy shipping",
+                    "additional_item_price": 6,
+                    "first_item_price": 7
+                  },
+                  {
+                    "name": "Standard shipping",
+                    "additional_item_price": 5,
+                    "first_item_price": 8
+                  },
+                  {
+                    "name": "Fast shipping",
+                    "additional_item_price": 7,
+                    "first_item_price": 8
+                  }
+                ],
+                "price_based_shipping_rate": [
+                  {
+                    "name": "Standard shipping",
+                    "min_order_subtotal": 0,
+                    "max_order_subtotal": 200,
+                    "price": 10
+                  }
+                ],
+                "weight_based_shipping_rate": [
+                  {
+                    "name": "Express shipping",
+                    "weight_high": 500,
+                    "weight_low": 10,
+                    "weight_unit": "lb",
+                    "price": 10
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346208", "1000001765346476"]
+          },
+          {
+            "is_general": false,
+            "name": "Jeans profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "item_based_shipping_rate": [
+                  {
+                    "name": "Fast shipping",
+                    "additional_item_price": 5,
+                    "first_item_price": 8
+                  },
+                  {
+                    "name": "Express shipping",
+                    "additional_item_price": 7,
+                    "first_item_price": 9
+                  },
+                  {
+                    "name": "Fast shipping",
+                    "additional_item_price": 4,
+                    "first_item_price": 4
+                  }
+                ],
+                "price_based_shipping_rate": [
+                  {
+                    "name": "Standard shipping",
+                    "min_order_subtotal": 0,
+                    "max_order_subtotal": 200,
+                    "price": 2
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346475"]
+          }
+        ],
+        "products_checkout": [
+          {
+            "variant_id": 1000001765346208,
+            "quantity": 2
+          },
+          {
+            "variant_id": 1000001765346475,
+            "quantity": 2
+          }
+        ],
+        "product_ppc": {
+          "variant_id": 1000001765346476,
+          "quantity": 1,
+          "post_purchase_price": 20
+        },
+        "usell_id": 73251049118,
+        "shipping_method_before_ppc": {
+          "amount": 12,
+          "method_title": "Standard shipping"
+        },
+        "shipping_method_after_ppc": {
+          "amount": 12,
+          "method_title": "Standard shipping"
+        }
+      },
+      {
+        "case_id": "TC_SB_SET_SP_SPR_39",
+        "case_name": "Item post-purchase có các shipping rates thoả mãn mà trong đó không có rate nào thuộc method đã chọn (theo logic rate name giống nhau) của order -> shipping cộng thêm rate có giá thấp nhất của PPC",
+        "case_step": "Checkout 2 Items T-shirt/M, 2 Items Jeans/M thành công với method Fast shipping",
+        "shipping_profiles": [
+          {
+            "is_general": false,
+            "name": "T-shirt profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "item_based_shipping_rate": [
+                  {
+                    "name": "Economy shipping",
+                    "additional_item_price": 6,
+                    "first_item_price": 7
+                  },
+                  {
+                    "name": "Standard shipping",
+                    "additional_item_price": 5,
+                    "first_item_price": 8
+                  },
+                  {
+                    "name": "Fast shipping",
+                    "additional_item_price": 7,
+                    "first_item_price": 8
+                  }
+                ],
+                "price_based_shipping_rate": [
+                  {
+                    "name": "Standard shipping",
+                    "min_order_subtotal": 0,
+                    "max_order_subtotal": 200,
+                    "price": 10
+                  }
+                ],
+                "weight_based_shipping_rate": [
+                  {
+                    "name": "Express shipping",
+                    "weight_high": 500,
+                    "weight_low": 10,
+                    "weight_unit": "lb",
+                    "price": 10
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346208"]
+          },
+          {
+            "is_general": false,
+            "name": "Jeans profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "item_based_shipping_rate": [
+                  {
+                    "name": "Fast shipping",
+                    "additional_item_price": 5,
+                    "first_item_price": 8
+                  },
+                  {
+                    "name": "Express shipping",
+                    "additional_item_price": 7,
+                    "first_item_price": 9
+                  },
+                  {
+                    "name": "Fast shipping",
+                    "additional_item_price": 4,
+                    "first_item_price": 4
+                  }
+                ],
+                "price_based_shipping_rate": [
+                  {
+                    "name": "Standard shipping",
+                    "min_order_subtotal": 0,
+                    "max_order_subtotal": 200,
+                    "price": 2
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346475"]
+          },
+          {
+            "is_general": false,
+            "name": "Hat profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "item_based_shipping_rate": [
+                  {
+                    "name": "Fast shipping",
+                    "additional_item_price": 5,
+                    "first_item_price": 8
+                  },
+                  {
+                    "name": "Express shipping",
+                    "additional_item_price": 7,
+                    "first_item_price": 9
+                  },
+                  {
+                    "name": "Fast shipping",
+                    "additional_item_price": 4,
+                    "first_item_price": 4
+                  }
+                ],
+                "price_based_shipping_rate": [
+                  {
+                    "name": "Standard shipping",
+                    "min_order_subtotal": 0,
+                    "max_order_subtotal": 200,
+                    "price": 3
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346476"]
+          }
+        ],
+        "products_checkout": [
+          {
+            "variant_id": 1000001765346208,
+            "quantity": 2
+          },
+          {
+            "variant_id": 1000001765346475,
+            "quantity": 2
+          }
+        ],
+        "product_ppc": {
+          "variant_id": 1000001765346476,
+          "quantity": 1,
+          "post_purchase_price": 20
+        },
+        "usell_id": 73251049118,
+        "shipping_method_before_ppc": {
+          "amount": 23,
+          "method_title": "Fast shipping"
+        },
+        "shipping_method_after_ppc": {
+          "amount": 26,
+          "method_title": "Fast shipping"
+        }
+      },
+      {
+        "case_id": "TC_SB_SET_SP_SPR_40",
+        "case_name": "Item post-purchase thoả mãn shipping rate price based trùng với 1 trong các rates thuộc method đã chọn đã chọn (theo logic rate name khác nhau) của order -> shipping fee sẽ giữ nguyên",
+        "case_step": "Checkout 2 Items T-shirt/M, 2 Items Jeans/M thành công với method Express shipping",
+        "shipping_profiles": [
+          {
+            "is_general": false,
+            "name": "T-shirt and Hat profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "weight_based_shipping_rate": [
+                  {
+                    "name": "Fast shipping",
+                    "weight_high": 500,
+                    "weight_low": 10,
+                    "weight_unit": "lb",
+                    "price": 8
+                  }
+                ],
+                "item_based_shipping_rate": [
+                  {
+                    "name": "Standard shipping",
+                    "additional_item_price": 1,
+                    "first_item_price": 7.5
+                  }
+                ],
+                "price_based_shipping_rate": [
+                  {
+                    "name": "Express shipping",
+                    "min_order_subtotal": 90,
+                    "max_order_subtotal": 200,
+                    "price": 9
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346208", "1000001765346476"]
+          },
+          {
+            "is_general": false,
+            "name": "Jeans profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "item_based_shipping_rate": [
+                  {
+                    "name": "Normal shipping",
+                    "additional_item_price": 4,
+                    "first_item_price": 7
+                  },
+                  {
+                    "name": "Economy shipping",
+                    "additional_item_price": 6,
+                    "first_item_price": 7
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346475"]
+          }
+        ],
+        "products_checkout": [
+          {
+            "variant_id": 1000001765346208,
+            "quantity": 2
+          },
+          {
+            "variant_id": 1000001765346475,
+            "quantity": 2
+          }
+        ],
+        "product_ppc": {
+          "variant_id": 1000001765346476,
+          "quantity": 1,
+          "post_purchase_price": 20
+        },
+        "usell_id": 73251049118,
+        "shipping_method_before_ppc": {
+          "amount": 22,
+          "method_title": "Express shipping"
+        },
+        "shipping_method_after_ppc": {
+          "amount": 22,
+          "method_title": "Express shipping"
+        }
+      },
+      {
+        "case_id": "TC_SB_SET_SP_SPR_41",
+        "case_name": "Item post-purchase thoả mãn shipping rate weight based trùng với 1 trong các rates thuộc method đã chọn đã chọn (theo logic rate name khác nhau) của order -> shipping fee sẽ giữ nguyên",
+        "case_step": "Checkout 2 Items T-shirt/M, 2 Items Jeans/M thành công với method Standard shipping",
+        "shipping_profiles": [
+          {
+            "is_general": false,
+            "name": "T-shirt and Hat profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "weight_based_shipping_rate": [
+                  {
+                    "name": "Fast shipping",
+                    "weight_unit": "lb",
+                    "price": 8
+                  }
+                ],
+                "item_based_shipping_rate": [
+                  {
+                    "name": "Standard shipping",
+                    "additional_item_price": 1,
+                    "first_item_price": 7.5
+                  }
+                ],
+                "price_based_shipping_rate": [
+                  {
+                    "name": "Express shipping",
+                    "min_order_subtotal": 90,
+                    "max_order_subtotal": 200,
+                    "price": 9
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346208", "1000001765346476"]
+          },
+          {
+            "is_general": false,
+            "name": "Jeans profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "item_based_shipping_rate": [
+                  {
+                    "name": "Normal shipping",
+                    "additional_item_price": 4,
+                    "first_item_price": 7
+                  },
+                  {
+                    "name": "Economy shipping",
+                    "additional_item_price": 6,
+                    "first_item_price": 7
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346475"]
+          }
+        ],
+        "products_checkout": [
+          {
+            "variant_id": 1000001765346208,
+            "quantity": 2
+          },
+          {
+            "variant_id": 1000001765346475,
+            "quantity": 2
+          }
+        ],
+        "product_ppc": {
+          "variant_id": 1000001765346476,
+          "quantity": 1,
+          "post_purchase_price": 20
+        },
+        "usell_id": 73251049118,
+        "shipping_method_before_ppc": {
+          "amount": 19,
+          "method_title": "Standard shipping"
+        },
+        "shipping_method_after_ppc": {
+          "amount": 19,
+          "method_title": "Standard shipping"
+        }
+      },
+      {
+        "case_id": "TC_SB_SET_SP_SPR_47",
+        "case_name": "Item post-purchase thoả mãn shipping rate item based trùng với 1 trong các rates thuộc method đã chọn đã chọn (theo logic rate name khác nhau) của order -> shipping sẽ cộng giá additional",
+        "case_step": "Checkout 2 Items T-shirt/M, 2 Items Jeans/M thành công với method Express shipping",
+        "shipping_profiles": [
+          {
+            "is_general": false,
+            "name": "T-shirt profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "weight_based_shipping_rate": [
+                  {
+                    "name": "Fast shipping",
+                    "weight_high": 500,
+                    "weight_low": 10,
+                    "weight_unit": "lb",
+                    "price": 8
+                  }
+                ],
+                "item_based_shipping_rate": [
+                  {
+                    "name": "Standard shipping",
+                    "additional_item_price": 1,
+                    "first_item_price": 7.5
+                  }
+                ],
+                "price_based_shipping_rate": [
+                  {
+                    "name": "Express shipping",
+                    "min_order_subtotal": 90,
+                    "max_order_subtotal": 200,
+                    "price": 9
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346208"]
+          },
+          {
+            "is_general": false,
+            "name": "Jeans and Hat profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "item_based_shipping_rate": [
+                  {
+                    "name": "Normal shipping",
+                    "additional_item_price": 4,
+                    "first_item_price": 7
+                  },
+                  {
+                    "name": "Economy shipping",
+                    "additional_item_price": 6,
+                    "first_item_price": 7
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346475", "1000001765346476"]
+          }
+        ],
+        "products_checkout": [
+          {
+            "variant_id": 1000001765346208,
+            "quantity": 2
+          },
+          {
+            "variant_id": 1000001765346475,
+            "quantity": 2
+          }
+        ],
+        "product_ppc": {
+          "variant_id": 1000001765346476,
+          "quantity": 1,
+          "post_purchase_price": 20
+        },
+        "usell_id": 73251049118,
+        "shipping_method_before_ppc": {
+          "amount": 19,
+          "method_title": "Standard shipping"
+        },
+        "shipping_method_after_ppc": {
+          "amount": 23,
+          "method_title": "Standard shipping"
+        }
+      },
+      {
+        "case_id": "TC_SB_SET_SP_SPR_48",
+        "case_name": "Item post-purchase có các shipping rates thoả mãn mà trong đó không có rate nào thuộc method đã chọn  (theo logic rate name khác nhau, chọn Standard shipping) của order  -> shipping cộng thêm rate có giá thấp nhất của PPC",
+        "case_step": "Checkout 2 Items T-shirt/M, 2 Items Jeans/M thành công với method Standard shipping",
+        "shipping_profiles": [
+          {
+            "is_general": false,
+            "name": "T-shirt profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "weight_based_shipping_rate": [
+                  {
+                    "name": "Fast shipping",
+                    "weight_high": 500,
+                    "weight_low": 10,
+                    "weight_unit": "lb",
+                    "price": 8
+                  }
+                ],
+                "item_based_shipping_rate": [
+                  {
+                    "name": "Standard shipping",
+                    "additional_item_price": 1,
+                    "first_item_price": 7.5
+                  }
+                ],
+                "price_based_shipping_rate": [
+                  {
+                    "name": "Express shipping",
+                    "min_order_subtotal": 90,
+                    "max_order_subtotal": 200,
+                    "price": 9
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346208"]
+          },
+          {
+            "is_general": false,
+            "name": "Jeans profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "item_based_shipping_rate": [
+                  {
+                    "name": "Normal shipping",
+                    "additional_item_price": 4,
+                    "first_item_price": 7
+                  },
+                  {
+                    "name": "Economy shipping",
+                    "additional_item_price": 6,
+                    "first_item_price": 7
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346475"]
+          },
+          {
+            "is_general": false,
+            "name": "Hat profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "item_based_shipping_rate": [
+                  {
+                    "name": "Fast shipping",
+                    "additional_item_price": 5,
+                    "first_item_price": 8
+                  },
+                  {
+                    "name": "Express shipping",
+                    "additional_item_price": 7,
+                    "first_item_price": 9
+                  },
+                  {
+                    "name": "Fast shipping",
+                    "additional_item_price": 4,
+                    "first_item_price": 4
+                  }
+                ],
+                "price_based_shipping_rate": [
+                  {
+                    "name": "Standard shipping",
+                    "min_order_subtotal": 0,
+                    "max_order_subtotal": 200,
+                    "price": 3
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346476"]
+          }
+        ],
+        "products_checkout": [
+          {
+            "variant_id": 1000001765346208,
+            "quantity": 2
+          },
+          {
+            "variant_id": 1000001765346475,
+            "quantity": 2
+          }
+        ],
+        "product_ppc": {
+          "variant_id": 1000001765346476,
+          "quantity": 1,
+          "post_purchase_price": 20
+        },
+        "usell_id": 73251049118,
+        "shipping_method_before_ppc": {
+          "amount": 19,
+          "method_title": "Standard shipping"
+        },
+        "shipping_method_after_ppc": {
+          "amount": 22,
+          "method_title": "Standard shipping"
+        }
+      },
+      {
+        "case_id": "TC_SB_SET_SP_SPR_49",
+        "case_name": "Item post-purchase có các shipping rates thoả mãn mà trong đó không có rate nào thuộc method đã chọn (theo logic rate name khác nhau, chọn Express shipping) của order  -> shipping cộng thêm rate có giá thấp nhất của PPC",
+        "case_step": "Checkout 2 Items T-shirt/M, 2 Items Jeans/M thành công với method Express shipping",
+        "shipping_profiles": [
+          {
+            "is_general": false,
+            "name": "T-shirt profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "weight_based_shipping_rate": [
+                  {
+                    "name": "Fast shipping",
+                    "weight_high": 500,
+                    "weight_low": 10,
+                    "weight_unit": "lb",
+                    "price": 8
+                  }
+                ],
+                "item_based_shipping_rate": [
+                  {
+                    "name": "Standard shipping",
+                    "additional_item_price": 1,
+                    "first_item_price": 7.5
+                  }
+                ],
+                "price_based_shipping_rate": [
+                  {
+                    "name": "Express shipping",
+                    "min_order_subtotal": 90,
+                    "max_order_subtotal": 200,
+                    "price": 9
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346208"]
+          },
+          {
+            "is_general": false,
+            "name": "Jeans profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "item_based_shipping_rate": [
+                  {
+                    "name": "Normal shipping",
+                    "additional_item_price": 4,
+                    "first_item_price": 7
+                  },
+                  {
+                    "name": "Economy shipping",
+                    "additional_item_price": 6,
+                    "first_item_price": 7
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346475"]
+          },
+          {
+            "is_general": false,
+            "name": "Hat profile",
+            "shipping_zones": [
+              {
+                "name": "Vietnam",
+                "item_based_shipping_rate": [
+                  {
+                    "name": "Fast shipping",
+                    "additional_item_price": 5,
+                    "first_item_price": 8
+                  },
+                  {
+                    "name": "Express shipping",
+                    "additional_item_price": 7,
+                    "first_item_price": 9
+                  },
+                  {
+                    "name": "Fast shipping",
+                    "additional_item_price": 4,
+                    "first_item_price": 4
+                  }
+                ],
+                "price_based_shipping_rate": [
+                  {
+                    "name": "Standard shipping",
+                    "min_order_subtotal": 0,
+                    "max_order_subtotal": 200,
+                    "price": 3
+                  }
+                ],
+                "countries": [
+                  {
+                    "id": 237,
+                    "name": "Vietnam",
+                    "code": "VN"
+                  }
+                ]
+              }
+            ],
+            "variant_ids": ["1000001765346476"]
+          }
+        ],
+        "products_checkout": [
+          {
+            "variant_id": 1000001765346208,
+            "quantity": 2
+          },
+          {
+            "variant_id": 1000001765346475,
+            "quantity": 2
+          }
+        ],
+        "product_ppc": {
+          "variant_id": 1000001765346476,
+          "quantity": 1,
+          "post_purchase_price": 20
+        },
+        "usell_id": 73251049118,
+        "shipping_method_before_ppc": {
+          "amount": 22,
+          "method_title": "Express shipping"
+        },
+        "shipping_method_after_ppc": {
+          "amount": 31,
+          "method_title": "Express shipping"
+        }
+      }
+    ]
+  },
+  "env": {
+    "prodtest": {
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://prod-test-api.shopbase.com"
+    }
+  }
+}

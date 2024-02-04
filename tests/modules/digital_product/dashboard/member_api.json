@@ -1,0 +1,649 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net"
+    },
+    "prodtest": {
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://prod-test-api.shopbase.com"
+    }
+  },
+  "api": "https://gapi.dev.shopbase.net",
+  "cases": {
+    "TC_SB_DP_DB_MB_23": {
+      "domain": "susan-coupon.myshopbase.net",
+      "username": "huongle@beeketing.net",
+      "password": "@tester123",
+      "shop_name": "susan-coupon",
+      "data": [
+        {
+          "description": "[API] - Send request với id_member valid",
+          "url": "https://susan-coupon.myshopbase.net/admin/dp-member/member/534888.json",
+          "method": "GET",
+          "request": {},
+          "response": {
+            "status": 200,
+            "data": {
+              "email": "thupham@beeketing.net",
+              "first_order_id": 1307796284262,
+              "last_order_id": 1307796284274,
+              "last_order_name": "1062",
+              "orders_count": 4
+            },
+            "customer_last_login": 1662613865
+          }
+        },
+        {
+          "description": "[API] - Send request với id_member invalid",
+          "url": "https://susan-coupon.myshopbase.net/admin/dp-member/member/abc888.json",
+          "method": "GET",
+          "request": {},
+          "response": {
+            "status": 404,
+            "message": "Not Found"
+          }
+        }
+      ]
+    },
+    "TC_SB_DP_DB_MB_19": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "shop-add-member-api.myshopbase.net",
+      "username": "huongle@beeketing.net",
+      "password": "@tester123",
+      "shop_name": "shop-add-member-api",
+      "data": {
+        "method": "DELETE",
+        "response": {
+          "status": 200,
+          "data": {}
+        }
+      },
+      "param_before": {}
+    },
+    "TC_SB_DP_DB_MB_13": {
+      "domain": "shop-creator-api.myshopbase.net",
+      "username": "huongle@beeketing.net",
+      "password": "@tester123",
+      "shop_name": "shop-creator-api",
+      "data": {
+        "url": "https://shop-creator-api.myshopbase.net/admin/dp-member.json",
+        "method": "GET",
+        "request": {},
+        "response": {
+          "status": 200,
+          "data": [],
+          "message": ""
+        }
+      }
+    },
+    "TC_SB_DP_DB_MB_14": {
+      "domain": "susan-coupon.myshopbase.net",
+      "username": "huongle@beeketing.net",
+      "password": "@tester123",
+      "shop_name": "susan-coupon",
+      "data": [
+        {
+          "description": "Send request với limit default",
+          "url": "https://susan-coupon.myshopbase.net/admin/dp-member.json?limit=50&page=1&order=created_at+desc&includes=metadata",
+          "method": "GET",
+          "request": {},
+          "response": {
+            "status": 200,
+            "_metadata": {
+              "page": 1,
+              "limit": 50,
+              "page_count": 50,
+              "total_count": 236
+            },
+            "data": []
+          }
+        },
+        {
+          "description": "Send request với limit = 20",
+          "url": "https://susan-coupon.myshopbase.net/admin/dp-member.json?limit=20&page=1&order=created_at+desc&includes=metadata",
+          "method": "GET",
+          "request": {},
+          "response": {
+            "status": 200,
+            "_metadata": {
+              "page": 1,
+              "limit": 20,
+              "page_count": 20,
+              "total_count": 236
+            },
+            "data": []
+          }
+        },
+        {
+          "description": "Send request với limit > maxlength",
+          "url": "https://susan-coupon.myshopbase.net/admin/dp-member.json?limit=50&page=1&order=created_at+desc&includes=metadata",
+          "method": "GET",
+          "request": {},
+          "response": {
+            "status": 200,
+            "_metadata": {
+              "page": 1,
+              "limit": 50,
+              "page_count": 50,
+              "total_count": 236
+            },
+            "data": []
+          }
+        },
+        {
+          "description": "Send request với param {{product_ids}} = <value>",
+          "url": "https://susan-coupon.myshopbase.net/admin/dp-member.json?limit=50&page=1&order=created_at+desc&product_ids=1000000362462454,1000000362462455&includes=metadata",
+          "method": "GET",
+          "request": {},
+          "response": {
+            "status": 200,
+            "_metadata": {
+              "page": 1,
+              "limit": 50,
+              "page_count": 3,
+              "total_count": 3
+            },
+            "data": []
+          }
+        }
+      ]
+    },
+    "TC_SB_DP_DB_MB_16": {
+      "domain": "susan-coupon.myshopbase.net",
+      "username": "huongle@beeketing.net",
+      "password": "@tester123",
+      "shop_name": "susan-coupon",
+      "data": {
+        "url": "https://susan-coupon.myshopbase.net/admin/customers/export.json?limit=50&page=1",
+        "method": "POST",
+        "request": {
+          "data": {
+            "ids": [
+              536710, 536706, 536705, 536704, 536703, 536702, 536701, 536700, 536699, 536693, 536692, 536691, 536690,
+              536689, 536680, 536671, 536595, 536596, 536597, 536585, 536534, 536533, 536532, 536522, 536520, 536421,
+              536422, 536423, 536424, 536261, 536260, 536257, 536111, 536104, 536103, 536102, 536101, 536100, 536089,
+              536088, 536087, 536086, 536085, 536084, 536075, 536074, 536067, 536061, 536055, 536054
+            ]
+          }
+        },
+        "response": {
+          "status": 200,
+          "data": {
+            "success": true,
+            "link": "https://assets-dev.btdmp.com/sbase/export_customer/members_10063658_2022"
+          }
+        }
+      }
+    },
+    "TC_SB_DP_DB_MB_17": {
+      "domain": "shop-add-member-api.myshopbase.net",
+      "username": "huongle@beeketing.net",
+      "password": "@tester123",
+      "shop_name": "shop-add-member-api",
+      "data": [
+        {
+          "case": "Missing First Name",
+          "data": {
+            "first_name": "",
+            "last_name": "ShopBase",
+            "note": "",
+            "phone": "0868802147",
+            "calling_code": "1",
+            "tags": "vip",
+            "country_id": 231
+          },
+          "response": {
+            "status": 200,
+            "data": {}
+          }
+        },
+        {
+          "case": "Missing Last Name",
+          "data": {
+            "member": {
+              "first_name": "Test",
+              "last_name": "",
+              "note": "",
+              "phone": "0868802147",
+              "calling_code": "1",
+              "tags": "vip, promax"
+            },
+            "country_id": 231
+          },
+          "response": {
+            "status": 200,
+            "data": {}
+          }
+        },
+        {
+          "case": "Missing Email",
+          "data": {
+            "url": "https://shop-add-member-api.myshopbase.net/admin/dp-member/member.json",
+            "method": "POST",
+            "request": {
+              "data": {
+                "member": {
+                  "email": "",
+                  "first_name": "Test",
+                  "last_name": "",
+                  "note": "",
+                  "phone": "0868802147",
+                  "calling_code": "1",
+                  "tags": ""
+                },
+                "country_id": 231
+              }
+            },
+            "response": {
+              "status": 400,
+              "message": "Data member invalid: Missing email or wrong email format"
+            }
+          }
+        },
+        {
+          "case": "Missing Note, Tags",
+          "data": {
+            "member": {
+              "first_name": "Test",
+              "last_name": "",
+              "note": "",
+              "phone": "0868802147",
+              "calling_code": "1",
+              "tags": ""
+            },
+            "country_id": 231
+          },
+          "response": {
+            "status": 200,
+            "data": {}
+          }
+        },
+        {
+          "case": "Email is wrong format",
+          "data": {
+            "url": "https://shop-add-member-api.myshopbase.net/admin/dp-member/member.json",
+            "method": "POST",
+            "request": {
+              "data": {
+                "member": {
+                  "email": "@beeketing.net",
+                  "first_name": "Test",
+                  "last_name": "",
+                  "note": "test",
+                  "phone": "0868802147",
+                  "calling_code": "1",
+                  "tags": ""
+                },
+                "country_id": 231
+              }
+            },
+            "response": {
+              "status": 400,
+              "message": "Data member invalid: Missing email or wrong email format"
+            }
+          }
+        },
+        {
+          "case": "Enter an existing email",
+          "data": {
+            "url": "https://shop-add-member-api.myshopbase.net/admin/dp-member/member.json",
+            "method": "POST",
+            "request": {
+              "data": {
+                "member": {
+                  "email": "thupham@beeketing.net",
+                  "first_name": "Test",
+                  "last_name": "",
+                  "note": "test",
+                  "phone": "0868802147",
+                  "calling_code": "1",
+                  "tags": ""
+                },
+                "country_id": 231
+              }
+            },
+            "response": {
+              "status": 422,
+              "message": "Email has already been taken"
+            }
+          }
+        },
+        {
+          "case": "Phone is wrong format",
+          "data": {
+            "url": "https://shop-add-member-api.myshopbase.net/admin/dp-member/member.json",
+            "method": "POST",
+            "request": {
+              "data": {
+                "member": {
+                  "email": "thupham@beeketing.net",
+                  "first_name": "Test",
+                  "last_name": "",
+                  "note": "test",
+                  "phone": "abc",
+                  "calling_code": "1",
+                  "tags": ""
+                },
+                "country_id": 231
+              }
+            },
+            "response": {
+              "status": 400,
+              "message": "Data member invalid: Missing phone or wrong phone number format"
+            }
+          }
+        },
+        {
+          "case": "Fill out all the information fields ",
+          "data": {
+            "member": {
+              "first_name": "Auto Create Member",
+              "last_name": "ShopBase",
+              "note": "test",
+              "phone": "0868802147",
+              "calling_code": "1",
+              "tags": "test"
+            },
+            "country_id": 231
+          },
+          "response": {
+            "status": 200,
+            "data": {}
+          }
+        }
+      ]
+    },
+    "TC_SB_DP_DB_MB_18": {
+      "domain": "shop-add-member-api.myshopbase.net",
+      "username": "huongle@beeketing.net",
+      "password": "@tester123",
+      "shop_name": "shop-add-member-api",
+      "data": [
+        {
+          "case": "Missing First Name",
+          "data": {
+            "url": "https://shop-add-member-api.myshopbase.net/admin/dp-member/member/537195.json",
+            "method": "PUT",
+            "request": {
+              "data": {
+                "member": {
+                  "email": "autoedit@beeketing.net",
+                  "first_name": "",
+                  "last_name": "Member Auto Edit SB Creator",
+                  "note": "test",
+                  "phone": "0868802123",
+                  "calling_code": "84",
+                  "tags": "test",
+                  "id": 537195
+                },
+                "country_id": 237
+              }
+            },
+            "response": {
+              "status": 200
+            }
+          }
+        },
+        {
+          "case": "Missing Last Name, Note, Tags",
+          "data": {
+            "url": "https://shop-add-member-api.myshopbase.net/admin/dp-member/member/537195.json",
+            "method": "PUT",
+            "request": {
+              "data": {
+                "member": {
+                  "email": "autoedit@beeketing.net",
+                  "first_name": "Member Auto Edit SB Creator",
+                  "last_name": "",
+                  "note": "",
+                  "phone": "0868802123",
+                  "calling_code": "84",
+                  "tags": "",
+                  "id": 537195
+                },
+                "country_id": 237
+              }
+            },
+            "response": {
+              "status": 200
+            }
+          }
+        },
+        {
+          "case": "Missing Email",
+          "data": {
+            "url": "https://shop-add-member-api.myshopbase.net/admin/dp-member/member/537010.json",
+            "method": "PUT",
+            "request": {
+              "data": {
+                "member": {
+                  "email": "",
+                  "first_name": "Member Auto Edit SB Creator",
+                  "last_name": "",
+                  "note": "test",
+                  "phone": "0868802123",
+                  "calling_code": "84",
+                  "tags": "test",
+                  "id": 537195
+                },
+                "country_id": 237
+              }
+            },
+            "response": {
+              "status": 400,
+              "message": "Data member invalid: Missing email or wrong email format"
+            }
+          }
+        },
+        {
+          "case": "Email is wrong format",
+          "data": {
+            "url": "https://shop-add-member-api.myshopbase.net/admin/dp-member/member/537010.json",
+            "method": "PUT",
+            "request": {
+              "data": {
+                "member": {
+                  "email": "@beeketing.net",
+                  "first_name": "Member Auto Edit SB Creator",
+                  "last_name": "Dashboard",
+                  "note": "test",
+                  "phone": "0868802123",
+                  "calling_code": "84",
+                  "tags": "test",
+                  "id": 537195
+                },
+                "country_id": 237
+              }
+            },
+            "response": {
+              "status": 400,
+              "message": "Data member invalid: Missing email or wrong email format"
+            }
+          }
+        },
+        {
+          "case": "Enter an existing email",
+          "data": {
+            "url": "https://shop-add-member-api.myshopbase.net/admin/dp-member/member/537010.json",
+            "method": "PUT",
+            "request": {
+              "data": {
+                "member": {
+                  "email": "thupham@beeketing.net",
+                  "first_name": "Member Auto Edit SB Creator",
+                  "last_name": "",
+                  "note": "test",
+                  "phone": "0868802123",
+                  "calling_code": "84",
+                  "tags": "test",
+                  "id": 537195
+                },
+                "country_id": 237
+              }
+            },
+            "response": {
+              "status": 422,
+              "message": "Email has already been taken"
+            }
+          }
+        },
+        {
+          "case": "Phone is wrong format",
+          "data": {
+            "url": "https://shop-add-member-api.myshopbase.net/admin/dp-member/member/537010.json",
+            "method": "PUT",
+            "request": {
+              "data": {
+                "member": {
+                  "email": "autoedit@beeketing.net",
+                  "first_name": "Member Auto Edit SB Creator",
+                  "last_name": "Dashboard",
+                  "note": "test",
+                  "phone": "abc",
+                  "calling_code": "84",
+                  "tags": "test",
+                  "id": 537195
+                },
+                "country_id": 237
+              }
+            },
+            "response": {
+              "status": 400,
+              "message": "Data member invalid: Missing phone or wrong phone number format"
+            }
+          }
+        }
+      ]
+    },
+    "TC_SB_DP_DB_MB_20": {
+      "domain": "susan-coupon.myshopbase.net",
+      "username": "huongle@beeketing.net",
+      "password": "@tester123",
+      "shop_name": "susan-coupon",
+      "data": [
+        {
+          "description": "Send request thêm member vào khóa học có type = published",
+          "url": "https://susan-coupon.myshopbase.net/admin/dp-member/member/536051/products/enroll.json",
+          "method": "POST",
+          "request": {
+            "data": {
+              "shop_id": 10063658,
+              "member_id": 536051,
+              "product_ids": "1000000000014864"
+            }
+          },
+          "response": {
+            "status": 200,
+            "data": {
+              "success": true
+            }
+          }
+        },
+        {
+          "description": "Send request thêm member vào khóa học có type = unpublished",
+          "url": "https://susan-coupon.myshopbase.net/admin/dp-member/member/536051/products/enroll.json",
+          "method": "POST",
+          "request": {
+            "data": {
+              "shop_id": 10063658,
+              "member_id": 536702,
+              "product_ids": "1000000000000936"
+            }
+          },
+          "response": {
+            "status": 200,
+            "data": {
+              "success": false,
+              "message": "Product not found"
+            }
+          }
+        },
+        {
+          "description": "Send request thêm member vào khóa học có type = deleted",
+          "url": "https://susan-coupon.myshopbase.net/admin/dp-member/member/536051/products/enroll.json",
+          "method": "POST",
+          "request": {
+            "data": {
+              "shop_id": 10063658,
+              "member_id": 536051,
+              "product_ids": "1000000000014080"
+            }
+          },
+          "response": {
+            "status": 200,
+            "data": {
+              "message": "Product not found",
+              "success": true
+            }
+          }
+        },
+        {
+          "description": "Send request thêm member vào nhiều khóa học",
+          "url": "https://susan-coupon.myshopbase.net/admin/dp-member/member/536051/products/enroll.json",
+          "method": "POST",
+          "request": {
+            "data": {
+              "shop_id": 10063658,
+              "member_id": 536051,
+              "product_ids": "1000000000014182,1000000000008403,1000000000000344"
+            }
+          },
+          "response": {
+            "status": 200,
+            "data": {
+              "success": true
+            }
+          }
+        }
+      ]
+    },
+    "TC_SB_DP_DB_MB_21": {
+      "domain": "susan-coupon.myshopbase.net",
+      "username": "huongle@beeketing.net",
+      "password": "@tester123",
+      "shop_name": "susan-coupon",
+      "data": [
+        {
+          "description": "Send request xóa user khỏi 1 khóa học mà user đang access",
+          "url": "https://susan-coupon.myshopbase.net/admin/dp-member/member/product/control-access.json",
+          "method": "PUT",
+          "request": {
+            "data": {
+              "member_id": 536051,
+              "product_ids": "1000000000014182",
+              "status": 0,
+              "shop_id": 10063658
+            }
+          },
+          "response": {
+            "status": 200,
+            "data": {
+              "success": true,
+              "messages": ["Update success success"]
+            }
+          }
+        },
+        {
+          "description": "Send request xóa user khỏi 2 khóa học mà user đang access",
+          "url": "https://susan-coupon.myshopbase.net/admin/dp-member/member/product/control-access.json",
+          "method": "PUT",
+          "request": {
+            "data": {
+              "member_id": 536051,
+              "product_ids": "1000000000008403,1000000000000344",
+              "status": 0,
+              "shop_id": 10063658
+            }
+          },
+          "response": {
+            "status": 200,
+            "data": {
+              "success": false,
+              "messages": ["Update success success"]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

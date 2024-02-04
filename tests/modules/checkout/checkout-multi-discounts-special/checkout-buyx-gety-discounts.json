@@ -1,0 +1,144 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "username": "qe-2@beeketing.net",
+      "password": "Qe2@OCGQE",
+      "domain": "au-multiple-discounts-special.onshopbase.com",
+      "shipping_address": {
+        "email": "testerOCG@mailtothis.com",
+        "first_name": "ShopBase",
+        "last_name": "Auto",
+        "address": "1600 W Loop S",
+        "city": "Los Angeles",
+        "country": "United States",
+        "state": "New York",
+        "country_code": "US",
+        "country_name": "United States",
+        "zipcode": "10001",
+        "phone_number": "0336555555"
+      }
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "qe-2@beeketing.net",
+      "password": "Qe2@OCGQE",
+      "domain": "au-multiple-discounts-special-prodtest.onshopbase.com",
+      "shipping_address": {
+        "email": "testerOCG@mailtothis.com",
+        "first_name": "ShopBase",
+        "last_name": "Auto",
+        "address": "1600 W Loop S",
+        "city": "Los Angeles",
+        "country": "United States",
+        "state": "New York",
+        "country_code": "US",
+        "country_name": "United States",
+        "zipcode": "10001",
+        "phone_number": "0336555555"
+      },
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "opay-qe-2@beeketing.net",
+      "password": "Opay@123",
+      "domain": "au-multiple-discounts-special.myshopbase.net",
+      "shipping_address": {
+        "email": "testerOCG@mailtothis.com",
+        "first_name": "ShopBase",
+        "last_name": "Auto",
+        "address": "1600 W Loop S",
+        "city": "Los Angeles",
+        "country": "United States",
+        "state": "New York",
+        "country_code": "US",
+        "country_name": "United States",
+        "zipcode": "10001",
+        "phone_number": "0336555555"
+      }
+    }
+  },
+  "cases": {
+    "SB_DRIVEN_BUY_X_GET_Y": [
+      {
+        "case_id": "SB_DC_MD_SB_34",
+        "case_name": "Apply 1 manual discount Buy x get y, 1 auto discount Buy x get y (có cùng target product) nhưng khác nhau offer",
+        "products_checkout": [
+          {
+            "name": "Bikini",
+            "quantity": 2,
+            "price": 40
+          },
+          {
+            "name": "Bikini 2",
+            "quantity": 2,
+            "price": 30
+          },
+          {
+            "name": "Post purchase",
+            "quantity": 2,
+            "price": 50
+          }
+        ],
+        "discount_code": ["SB_34_capture_buy_x_get_y_2", "SB_34_35_capture_buy_x_get_y"]
+      },
+      {
+        "case_id": "SB_DC_MD_SB_33",
+        "case_name": "Apply 1 manual discount Buy x get y, 1 auto discount Buy x get y (có cùng target product) nhưng khác nhau offer",
+        "products_checkout": [
+          {
+            "name": "Bikini",
+            "quantity": 2,
+            "price": 40
+          },
+          {
+            "name": "Post purchase",
+            "quantity": 2,
+            "price": 50
+          }
+        ],
+        "discount_code": ["SB_33_capture_buy_x_get_y", "SB_33_capture_buy_x_get_y_2"]
+      },
+      {
+        "case_id": "SB_DC_MD_SB_32",
+        "case_name": "Apply nhiều manual discount Buy x get y (có cùng target product) nhưng khác nhau offer",
+        "products_checkout": [
+          {
+            "name": "Bikini",
+            "quantity": 2,
+            "price": 40
+          },
+          {
+            "name": "Bikini 2",
+            "quantity": 2,
+            "price": 30
+          },
+          {
+            "name": "Post purchase",
+            "quantity": 2,
+            "price": 50
+          }
+        ],
+        "discount_code": ["SB_31_32_capture_buy_x_get_y", "SB_32_capture_buy_x_get_y_2"]
+      },
+      {
+        "case_id": "SB_DC_MD_SB_31",
+        "case_name": "Apply nhiều manual discount Buy x get y với cùng một offer giống nhau",
+        "products_checkout": [
+          {
+            "name": "Bikini",
+            "quantity": 2,
+            "price": 40
+          },
+          {
+            "name": "Post purchase",
+            "quantity": 2,
+            "price": 50
+          }
+        ],
+        "discount_code": ["SB_31_32_capture_buy_x_get_y", "SB_31_capture_buy_x_get_y_2"]
+      }
+    ]
+  }
+}

@@ -1,0 +1,252 @@
+{
+  "env": {
+    "prod": {
+      "odoo_host": "https://autotest-erp-plus.shopbase.dev",
+      "odoo_db": "shopbase_fulfillment",
+      "odoo_username": "qaocg",
+      "odoo_password": "LFmy=qGLvwW^E63b",
+      "cases": {
+        "SB_SBFF_IS_21": {
+          "product_template_id": 1803327,
+          "product_product_ids": [20855335, 20855345],
+          "product_product_sku_expect": [
+            {
+              "id": 20855335,
+              "option1": "BLA21",
+              "option2": "4XL1"
+            },
+            {
+              "id": 20855345,
+              "option1": "SKY",
+              "option2": "2XL"
+            }
+          ]
+        },
+        "SB_SBFF_IS_22": {
+          "product_template_id": 1803327
+        },
+        "SB_SBFF_IS_23": {
+          "product_template_id": 1955949,
+          "product_product_ids": [24648181, 24648182],
+          "product_product_sku_expect": [
+            {
+              "id": 24648181,
+              "option": "BRO"
+            },
+            {
+              "id": 24648182,
+              "option": "GOL"
+            }
+          ],
+          "product_template_id_2": 1955950,
+          "product_product_ids_2": [24648185, 24648187],
+          "product_product_sku_expect_2": [
+            {
+              "id": 24648185,
+              "compare_id": 24648181
+            },
+            {
+              "id": 24648187,
+              "compare_id": 24648182
+            }
+          ]
+        },
+        "SB_SBFF_IS_24": {
+          "product_template_id": 1803327,
+          "product_template_attribute_value_id": 11251316,
+          "old_attribute_name": "Silver",
+          "new_attribute_name": "Gold",
+          "product_product_ids": [20855329],
+          "clear_product_product_ids": [20855330],
+          "product_product_sku_expect": [
+            {
+              "id": 20855329,
+              "option1": "SIL1",
+              "option2": "4XL1"
+            }
+          ],
+          "clear_product_product_sku_expect": [
+            {
+              "id": 20855330,
+              "option1": "GOL11",
+              "option2": "3XL"
+            }
+          ]
+        },
+        "SB_SBFF_IS_26": {
+          "product_template_id": 1803327,
+          "product_product_ids": [20855335, 20855345],
+          "product_product_sku_expect": [
+            {
+              "id": 20855335,
+              "option1": "BLA21",
+              "option2": "4XL1"
+            },
+            {
+              "id": 20855345,
+              "option1": "SKY",
+              "option2": "2XL"
+            }
+          ],
+          "product_template_id_2": 1803328,
+          "product_product_ids_2": [20855381, 20855377],
+          "product_product_sku_expect_2": [
+            {
+              "id": 20855381,
+              "option1": "BLA21",
+              "option2": "4XL1",
+              "compare_id": 20855335
+            },
+            {
+              "id": 20855377,
+              "option1": "SKY",
+              "option2": "2XL",
+              "compare_id": 20855345
+            }
+          ]
+        }
+      }
+    },
+    "dev": {
+      "odoo_host": "https://odoo.dev.shopbase.net/",
+      "odoo_db": "sbase_fulfillment_dev",
+      "odoo_username": "admin",
+      "odoo_password": "admin",
+      "cases": {
+        "SB_SBFF_IS_21": {
+          "product_template_id": 1154893,
+          "product_product_ids": [1261151, 1261161],
+          "product_product_sku_expect": [
+            {
+              "id": 1261151,
+              "option1": "BLA1",
+              "option2": "4XL"
+            },
+            {
+              "id": 1261161,
+              "option1": "SKY",
+              "option2": "2XL"
+            }
+          ]
+        },
+        "SB_SBFF_IS_22": {
+          "product_template_id": 1154893
+        },
+        "SB_SBFF_IS_23": {
+          "product_template_id": 1157489,
+          "product_product_ids": [1338189, 1338188],
+          "product_product_sku_expect": [
+            {
+              "id": 1338189,
+              "option": "GOL"
+            },
+            {
+              "id": 1338188,
+              "option": "BRO"
+            }
+          ],
+          "product_template_id_2": 1157488,
+          "product_product_ids_2": [1338186, 1338184],
+          "product_product_sku_expect_2": [
+            {
+              "id": 1338186,
+              "compare_id": 1338189
+            },
+            {
+              "id": 1338184,
+              "compare_id": 1338188
+            }
+          ]
+        },
+        "SB_SBFF_IS_24": {
+          "product_template_id": 1154893,
+          "product_template_attribute_value_id": 1054730,
+          "old_attribute_name": "Silver",
+          "new_attribute_name": "Gold",
+          "product_product_ids": [1261145],
+          "clear_product_product_ids": [1261146],
+          "product_product_sku_expect": [
+            {
+              "id": 1261145,
+              "option1": "SIL1",
+              "option2": "4XL"
+            }
+          ],
+          "clear_product_product_sku_expect": [
+            {
+              "id": 1261146,
+              "option1": "GOL",
+              "option2": "3XL"
+            }
+          ]
+        },
+        "SB_SBFF_IS_26": {
+          "product_template_id": 1154893,
+          "product_product_ids": [1261151, 1261161],
+          "product_product_sku_expect": [
+            {
+              "id": 1261151,
+              "option1": "BLA1",
+              "option2": "4XL"
+            },
+            {
+              "id": 1261161,
+              "option1": "SKY",
+              "option2": "2XL"
+            }
+          ],
+          "product_template_id_2": 1154894,
+          "product_product_ids_2": [1261010, 1261006],
+          "product_product_sku_expect_2": [
+            {
+              "id": 1261010,
+              "option1": "BLA1",
+              "option2": "4XL",
+              "compare_id": 1261151
+            },
+            {
+              "id": 1261006,
+              "option1": "SKY",
+              "option2": "2XL",
+              "compare_id": 1261161
+            }
+          ]
+        }
+      }
+    },
+    "prodtest": {
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://prod-test-api.shopbase.com"
+    }
+  },
+  "cases": {
+    "SB_SBFF_IS_21": {
+      "category_code": "HG",
+      "action_gen_sku_status": "success",
+      "action_gen_sku_title": "Auto gen SKU product"
+    },
+    "SB_SBFF_IS_22": {
+      "gen_sku_missing_category_error": "Missing category code."
+    },
+    "SB_SBFF_IS_23": {
+      "category_code": "HG",
+      "action_gen_sku_status": "success",
+      "sourcing_link": "https://detail.1688.com/offer/11111111111.html",
+      "action_gen_sku_title": "have the same sourcing link. Please check and update SKU if needed"
+    },
+    "SB_SBFF_IS_24": {
+      "category_code": "HG",
+      "action_gen_sku_status": "success",
+      "action_gen_sku_title": "Auto gen SKU product"
+    },
+    "SB_SBFF_IS_26": {
+      "category_code": "HG",
+      "action_gen_sku_status": "success",
+      "gen_sku_missing_category_error": "Missing category code.",
+      "category_code_2": "AC",
+      "action_gen_sku_title": "Auto gen SKU product",
+      "sourcing_link": "https://detail.1688.com/offer/1111111111.html",
+      "sourcing_link_2": "https://detail.1688.com/offer/2222222222.html"
+    }
+  }
+}

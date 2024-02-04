@@ -1,0 +1,189 @@
+{
+  "url_catalog": "/admin/pod/catalog",
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-camp-personalize.onshopbase.com",
+      "shop_name": "au-camp-personalize",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "user_id": 73782,
+      "shop_id": 10204282,
+      "time_out": 800000,
+      "param_threshold": 0.1
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-camp-personalize-prodtest.onshopbase.com",
+      "shop_name": "au-camp-personalize-prodtest",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "user_id": 73782,
+      "shop_id": 10376364,
+      "time_out": 600000,
+      "param_threshold": 0.1,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-camp-personalize.myshopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_name": "au-camp-personalize",
+      "user_id": 73800,
+      "shop_id": 10322693,
+      "time_out": 600000,
+      "param_threshold": 0.1
+    }
+  },
+  "cases": {
+    "SB_PRB_LP_4": {
+      "camp_infos": {
+        "product_infos": [
+          {
+            "category": "Home & Living",
+            "base_product": "Sherpa Blanket",
+            "title": "Campaign_personalize"
+          }
+        ],
+        "layers": [
+          {
+            "layer_type": "Text",
+            "layer_value": "Text 1",
+            "location_layer_x": "276",
+            "location_layer_y": "291",
+            "layer_size_h": "1801",
+            "layer_size_w": "502"
+          },
+          {
+            "layer_type": "Text",
+            "layer_value": "Text 2",
+            "location_layer_x": "2233",
+            "location_layer_y": "420",
+            "layer_size_h": "1801",
+            "layer_size_w": "502"
+          },
+          {
+            "layer_type": "Text",
+            "layer_value": "Text 3",
+            "location_layer_x": "171",
+            "location_layer_y": "1077",
+            "layer_size_h": "1801",
+            "layer_size_w": "502"
+          },
+          {
+            "layer_type": "Text",
+            "layer_value": "Text 4",
+            "location_layer_x": "1276",
+            "location_layer_y": "1781",
+            "layer_size_h": "1801",
+            "layer_size_w": "502"
+          },
+          {
+            "layer_type": "Image",
+            "image_name": "background 1.png",
+            "location_layer_x": "276",
+            "location_layer_y": "4186",
+            "layer_size_h": "1000",
+            "layer_size_w": "1000"
+          },
+          {
+            "layer_type": "Image",
+            "image_name": "background 2.png",
+            "location_layer_x": "3024",
+            "location_layer_y": "3918",
+            "layer_size_h": "1000",
+            "layer_size_w": "1000"
+          },
+          {
+            "layer_type": "Text",
+            "layer_value": "Text 5",
+            "location_layer_x": "2305",
+            "location_layer_y": "1078",
+            "layer_size_h": "1801",
+            "layer_size_w": "502"
+          }
+        ],
+        "custom_options": [
+          {
+            "type": "Text field",
+            "target_layer": "Text layer 1",
+            "label": "Test Text field",
+            "position": "below",
+            "font": "Lilly Mae Regular"
+          },
+          {
+            "type": "Text area",
+            "target_layer": "Text layer 2",
+            "label": "Test Text area",
+            "position": "below"
+          },
+          {
+            "type": "Image",
+            "label": "Image",
+            "target_layer": "background 1",
+            "position": "below"
+          },
+          {
+            "type": "Picture choice",
+            "label": "Picture choice",
+            "target_layer": "background 2",
+            "type_clipart": "Folder",
+            "value_clipart": "Clipart1_1",
+            "type_display_clipart": "Show with Thumbnail images",
+            "position": "below"
+          },
+          {
+            "type": "Radio",
+            "value": "Text test 1>Text test 2",
+            "target_layer": "Text layer 3",
+            "label": "Test radio",
+            "position": "below"
+          },
+          {
+            "type": "Droplist",
+            "value": "Text test 1>Text test 2",
+            "target_layer": "Text layer 4",
+            "label": "Test Droplist"
+          }
+        ],
+        "pricing_info": {
+          "title": "Campaign personalize 1",
+          "description": "Description Campaign personalize"
+        }
+      }
+    },
+    "SB_PRB_LP_5": {
+      "camp_infos": {
+        "product_infos": [
+          {
+            "category": "Home & Living",
+            "base_product": "Sherpa Blanket",
+            "title": "Campaign_personalize"
+          }
+        ],
+        "layers": [
+          {
+            "layer_type": "Text",
+            "layer_value": "Text 1",
+            "location_layer_x": "200",
+            "location_layer_y": "100"
+          }
+        ],
+        "custom_options": [
+          {
+            "type": "Text field",
+            "target_layer": "Text layer 1",
+            "label": "Test 1"
+          }
+        ],
+        "pricing_info": {
+          "title": "Campaign personalize 2",
+          "description": "Description Campaign personalize"
+        }
+      },
+      "variant": ["Large", "X-Large"],
+      "price": ["$44.99", "$59.99"]
+    }
+  }
+}

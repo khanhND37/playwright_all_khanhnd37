@@ -1,0 +1,1829 @@
+{
+  "env": {
+    "prod": {
+      "domain": "au-inside-customer-testimonials.onshopbase.com",
+      "shop_name": "au-inside-customer-testimonials.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "api": "https://api.shopbase.com",
+      "shop_id": 10357350,
+      "user_id": 73782
+    },
+    "prodtest": {
+      "domain": "au-inside-customer-testimonials-prodtest.onshopbase.com",
+      "shop_name": "au-inside-customer-testimonials-prodtest.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "api": "https://prod-test-api.shopbase.com",
+      "shop_id": 10358282,
+      "user_id": 73782,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "domain": "au-inside-customer-testimonials.myshopbase.net",
+      "shop_name": "au-inside-customer-testimonials.myshopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "api": "https://gapi.dev.shopbase.net",
+      "shop_id": 10321595,
+      "user_id": 73800,
+      "cases": {
+        "CHANGE_SETTINGS": {
+          "description": "cases setting data",
+          "data": [
+            {
+              "description": "Check show Customer Testimonial on SF with data default",
+              "case_id": "SB_OLS_THE_INS_SF_CS_4",
+              "input": {
+                "home": {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "alt_text": "Describe this image to improve SEO",
+                        "content": "Add customer reviews and testimonials to show case your store's happy customers.",
+                        "customer_name": "Customer's name",
+                        "image": null,
+                        "overlay_opacity": 50
+                      },
+                      "type": "customer-name",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "Describe this image to improve SEO",
+                        "content": "Add customer reviews and testimonials to show case your store's happy customers.",
+                        "customer_name": "Customer's name",
+                        "image": null,
+                        "overlay_opacity": 50
+                      },
+                      "type": "customer-name",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "Describe this image to improve SEO",
+                        "content": "Add customer reviews and testimonials to show case your store's happy customers.",
+                        "customer_name": "Customer's name",
+                        "image": null,
+                        "overlay_opacity": 50
+                      },
+                      "type": "customer-name",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "change_slides_every": 7,
+                    "number_of_testimonials": 3,
+                    "section_headline": "ENERGIZE YOUR SHOP, WITH A THEME BUILT FOR SPEED",
+                    "show_navigation": true,
+                    "show_pagination": true,
+                    "text_alignment": "center"
+                  },
+                  "type": "testimonials",
+                  "visible": true
+                }
+              },
+              "expect": {
+                "count_section": 1,
+                "count_block": 3,
+                "screenshot_setting_data": "web-customer-testimonial-default.png"
+              }
+            },
+            {
+              "description": "Check show Customer Testimonial with setting full data",
+              "case_id": "SB_OLS_THE_INS_SF_CS_6",
+              "input": {
+                "home": {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "alt_text": "alt text img1",
+                        "content": "<p>Sam is Head of Content at Drip. His work has been featured on and quoted in several major media outlets including The Times, The Economist, and CNBC.</p>",
+                        "customer_name": "John Doe",
+                        "image": "https://dev-img.btdmp.com/sbase-file/10321595/2022/09/26/16641609435fd569e109.jpeg",
+                        "overlay_opacity": 30
+                      },
+                      "type": "customer-name",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "alt text img2",
+                        "content": "<p><strong>Sam is Head of Content at Drip</strong></p>",
+                        "customer_name": "Maria",
+                        "image": null,
+                        "overlay_opacity": 56
+                      },
+                      "type": "customer-name",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "alt text img3",
+                        "content": "",
+                        "customer_name": "Michael",
+                        "image": "https://dev-img.btdmp.com/sbase-file/10321595/2022/09/26/1664160614447cf88e3a.jpeg",
+                        "overlay_opacity": 1
+                      },
+                      "type": "customer-name",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "change_slides_every": 10,
+                    "number_of_testimonials": 2,
+                    "section_headline": "CUSTOMER'S FEEDBACK",
+                    "show_navigation": true,
+                    "show_pagination": true,
+                    "text_alignment": "left"
+                  },
+                  "type": "testimonials",
+                  "visible": true
+                }
+              },
+              "expect": {
+                "count_section": 1,
+                "count_block": 3,
+                "screenshot_setting_data": "web-customer-testimonial-setting-full-data.png"
+              }
+            },
+            {
+              "description": "Check show Customer Testimonial with setting full data without indicator, icon next/back",
+              "case_id": "SB_OLS_THE_INS_SF_CS_7",
+              "input": {
+                "home": {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "alt_text": "alt text img1",
+                        "content": "<p>Sam is Head of Content at Drip. His work has been featured on and quoted in several major media outlets including The Times, The Economist, and CNBC.</p>",
+                        "customer_name": "John Doe",
+                        "image": "https://dev-img.btdmp.com/sbase-file/10321595/2022/09/26/16641609435fd569e109.jpeg",
+                        "overlay_opacity": 30
+                      },
+                      "type": "customer-name",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "alt text img2",
+                        "content": "<p><strong>Sam is Head of Content at Drip</strong></p>",
+                        "customer_name": "Maria",
+                        "image": null,
+                        "overlay_opacity": 56
+                      },
+                      "type": "customer-name",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "alt text img3",
+                        "content": "",
+                        "customer_name": "Michael",
+                        "image": "https://dev-img.btdmp.com/sbase-file/10321595/2022/09/26/1664160614447cf88e3a.jpeg",
+                        "overlay_opacity": 1
+                      },
+                      "type": "customer-name",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "change_slides_every": 8,
+                    "number_of_testimonials": 2,
+                    "section_headline": "ENERGIZE YOUR SHOP, WITH A THEME BUILT FOR SPEED 123",
+                    "show_navigation": false,
+                    "show_pagination": false,
+                    "text_alignment": "right"
+                  },
+                  "type": "testimonials",
+                  "visible": true
+                }
+              },
+              "expect": {
+                "count_section": 1,
+                "count_block": 3,
+                "screenshot_setting_data": "web-customer-testimonial-without-indicator-icon-next-back.png"
+              }
+            },
+            {
+              "description": "Check add block Customer's name",
+              "case_id": "SB_OLS_THE_INS_SF_CS_5",
+              "input": {
+                "home": {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "alt_text": "alt text img1",
+                        "content": "<p>Sam is Head of Content at Drip. His work has been featured on and quoted in several major media outlets including The Times, The Economist, and CNBC.</p>",
+                        "customer_name": "John Doe",
+                        "image": "https://dev-img.btdmp.com/sbase-file/10321595/2022/09/26/16641609435fd569e109.jpeg",
+                        "overlay_opacity": 30
+                      },
+                      "type": "customer-name",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "Describe this image to improve SEO",
+                        "content": "Add customer reviews and testimonials to show case your store's happy customers.",
+                        "customer_name": "Customer's name",
+                        "image": null,
+                        "overlay_opacity": 50
+                      },
+                      "type": "customer-name",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "change_slides_every": 5,
+                    "number_of_testimonials": 3,
+                    "section_headline": "CUSTOMER'S FEEDBACK",
+                    "show_navigation": true,
+                    "show_pagination": true,
+                    "text_alignment": "left"
+                  },
+                  "type": "testimonials",
+                  "visible": true
+                }
+              },
+              "expect": {
+                "count_section": 1,
+                "count_block": 2,
+                "screenshot_setting_data": "web-customer-testimonial-add-block.png"
+              }
+            },
+            {
+              "description": "Check drag and drop block",
+              "case_id": "SB_OLS_THE_INS_SF_CS_14",
+              "input": {
+                "home": {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "alt_text": "alt text img2",
+                        "content": "<p><strong>Sam is Head of Content at Drip</strong></p>",
+                        "customer_name": "Maria",
+                        "image": null,
+                        "overlay_opacity": 56
+                      },
+                      "type": "customer-name",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "alt text img3",
+                        "content": "",
+                        "customer_name": "Michael",
+                        "image": "https://dev-img.btdmp.com/sbase-file/10321595/2022/09/26/1664160614447cf88e3a.jpeg",
+                        "overlay_opacity": 1
+                      },
+                      "type": "customer-name",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "alt text img1",
+                        "content": "<p>Sam is Head of Content at Drip. His work has been featured on and quoted in several major media outlets including The Times, The Economist, and CNBC.</p>",
+                        "customer_name": "John Doe",
+                        "image": "https://dev-img.btdmp.com/sbase-file/10321595/2022/09/26/16641609435fd569e109.jpeg",
+                        "overlay_opacity": 30
+                      },
+                      "type": "customer-name",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "change_slides_every": 10,
+                    "number_of_testimonials": 3,
+                    "section_headline": "CUSTOMER'S FEEDBACK",
+                    "show_navigation": true,
+                    "show_pagination": true,
+                    "text_alignment": "left"
+                  },
+                  "type": "testimonials",
+                  "visible": true
+                }
+              },
+              "expect": {
+                "count_section": 1,
+                "count_block": 3,
+                "screenshot_setting_data": "web-customer-testimonial-drag-and-drop-block.png"
+              }
+            },
+            {
+              "description": "Check hide block Customer's name",
+              "case_id": "SB_OLS_THE_INS_SF_CS_9",
+              "input": {
+                "home": {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "alt_text": "alt text img1",
+                        "content": "<p>Sam is Head of Content at Drip. His work has been featured on and quoted in several major media outlets including The Times, The Economist, and CNBC.</p>",
+                        "customer_name": "John Doe",
+                        "image": "https://dev-img.btdmp.com/sbase-file/10321595/2022/09/26/16641609435fd569e109.jpeg",
+                        "overlay_opacity": 30
+                      },
+                      "type": "customer-name",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "alt text img2",
+                        "content": "<p><strong>Sam is Head of Content at Drip</strong></p>",
+                        "customer_name": "Maria",
+                        "image": null,
+                        "overlay_opacity": 56
+                      },
+                      "type": "customer-name"
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "alt text img3",
+                        "content": "",
+                        "customer_name": "Michael",
+                        "image": "https://dev-img.btdmp.com/sbase-file/10321595/2022/09/26/1664160614447cf88e3a.jpeg",
+                        "overlay_opacity": 1
+                      },
+                      "type": "customer-name",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "change_slides_every": 8,
+                    "number_of_testimonials": 3,
+                    "section_headline": "ENERGIZE YOUR SHOP, WITH A THEME BUILT FOR SPEED 123",
+                    "show_navigation": true,
+                    "show_pagination": true,
+                    "text_alignment": "right"
+                  },
+                  "type": "testimonials",
+                  "visible": true
+                }
+              },
+              "expect": {
+                "count_section": 1,
+                "count_block": 2,
+                "screenshot_setting_data": "web-customer-testimonial-hide-block.png"
+              }
+            },
+            {
+              "description": "Check unhide block Customer's name",
+              "case_id": "SB_OLS_THE_INS_SF_CS_10",
+              "input": {
+                "home": {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "alt_text": "alt text img1",
+                        "content": "<p>Sam is Head of Content at Drip. His work has been featured on and quoted in several major media outlets including The Times, The Economist, and CNBC.</p>",
+                        "customer_name": "John Doe",
+                        "image": "https://dev-img.btdmp.com/sbase-file/10321595/2022/09/26/16641609435fd569e109.jpeg",
+                        "overlay_opacity": 30
+                      },
+                      "type": "customer-name",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "alt text img2",
+                        "content": "<p><strong>Sam is Head of Content at Drip</strong></p>",
+                        "customer_name": "Maria",
+                        "image": null,
+                        "overlay_opacity": 56
+                      },
+                      "type": "customer-name",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "alt text img3",
+                        "content": "",
+                        "customer_name": "Michael",
+                        "image": "https://dev-img.btdmp.com/sbase-file/10321595/2022/09/26/1664160614447cf88e3a.jpeg",
+                        "overlay_opacity": 1
+                      },
+                      "type": "customer-name",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "change_slides_every": 8,
+                    "number_of_testimonials": 3,
+                    "section_headline": "ENERGIZE YOUR SHOP, WITH A THEME BUILT FOR SPEED 123",
+                    "show_navigation": true,
+                    "show_pagination": true,
+                    "text_alignment": "right"
+                  },
+                  "type": "testimonials",
+                  "visible": true
+                }
+              },
+              "expect": {
+                "count_section": 1,
+                "count_block": 3,
+                "screenshot_setting_data": "web-customer-testimonial-unhide-block.png"
+              }
+            },
+            {
+              "description": "Check duplicate block Customer's name",
+              "case_id": "SB_OLS_THE_INS_SF_CS_12",
+              "input": {
+                "home": {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "alt_text": "alt text img1",
+                        "content": "<p>Sam is Head of Content at Drip. His work has been featured on and quoted in several major media outlets including The Times, The Economist, and CNBC.</p>",
+                        "customer_name": "John Doe",
+                        "image": "https://dev-img.btdmp.com/sbase-file/10321595/2022/09/26/16641609435fd569e109.jpeg",
+                        "overlay_opacity": 30
+                      },
+                      "type": "customer-name",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "alt text img1",
+                        "content": "<p>Sam is Head of Content at Drip. His work has been featured on and quoted in several major media outlets including The Times, The Economist, and CNBC.</p>",
+                        "customer_name": "John Doe",
+                        "image": "https://dev-img.btdmp.com/sbase-file/10321595/2022/09/26/16641609435fd569e109.jpeg",
+                        "overlay_opacity": 30
+                      },
+                      "type": "customer-name",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "change_slides_every": 5,
+                    "number_of_testimonials": 3,
+                    "section_headline": "CUSTOMER'S FEEDBACK",
+                    "show_navigation": true,
+                    "show_pagination": true,
+                    "text_alignment": "right"
+                  },
+                  "type": "testimonials",
+                  "visible": true
+                }
+              },
+              "expect": {
+                "count_section": 1,
+                "count_block": 2,
+                "screenshot_setting_data": "web-customer-testimonial-duplicate-block.png"
+              }
+            },
+            {
+              "description": "Check remove block Customer's name",
+              "case_id": "SB_OLS_THE_INS_SF_CS_17",
+              "input": {
+                "home": {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "alt_text": "alt text img1",
+                        "content": "<p>Sam is Head of Content at Drip. His work has been featured on and quoted in several major media outlets including The Times, The Economist, and CNBC.</p>",
+                        "customer_name": "John Doe",
+                        "image": "https://dev-img.btdmp.com/sbase-file/10321595/2022/09/26/16641609435fd569e109.jpeg",
+                        "overlay_opacity": 30
+                      },
+                      "type": "customer-name",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "alt text img2",
+                        "content": "<p><strong>Sam is Head of Content at Drip</strong></p>",
+                        "customer_name": "Maria",
+                        "image": null,
+                        "overlay_opacity": 56
+                      },
+                      "type": "customer-name",
+                      "visible": true
+                    },
+                    {
+                      "type": "customer-name",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "change_slides_every": 4,
+                    "number_of_testimonials": 3,
+                    "section_headline": "CUSTOMER'S FEEDBACK",
+                    "show_navigation": true,
+                    "show_pagination": true,
+                    "text_alignment": "left"
+                  },
+                  "type": "testimonials",
+                  "visible": true
+                }
+              },
+              "expect": {
+                "count_section": 1,
+                "count_block": 2,
+                "screenshot_setting_data": "web-customer-testimonial-remove-block.png"
+              }
+            }
+          ]
+        },
+        "ACTIONS": {
+          "description": "cases setting section",
+          "data": [
+            {
+              "description": "Check drag and drop section Customer Testimonials",
+              "case_id": "SB_OLS_THE_INS_SF_CS_13",
+              "input": {
+                "home": {
+                  "default": [
+                    {
+                      "blocks": [
+                        {
+                          "settings": {
+                            "alt_text": "",
+                            "color_background_content": "#194d33",
+                            "first_button_label": "Shop now",
+                            "first_button_link": "",
+                            "heading": "INSIDE SHOPBASE THEME",
+                            "image": null,
+                            "image_link": {},
+                            "second_button_label": "Read story",
+                            "second_button_link": "",
+                            "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                            "text_alignment": "center"
+                          },
+                          "type": "slideshow",
+                          "visible": true
+                        }
+                      ],
+                      "settings": {
+                        "change_slides_every": 6,
+                        "current_layout": "single_slide",
+                        "full_width": false,
+                        "opacity": 30,
+                        "parallax": false,
+                        "ratio": "21:9"
+                      },
+                      "type": "slideshow",
+                      "visible": true
+                    },
+                    {
+                      "blocks": [],
+                      "settings": {
+                        "custom_html_code": "",
+                        "custom_html_full_width": false
+                      },
+                      "type": "custom-html",
+                      "visible": true
+                    },
+                    {
+                      "blocks": [
+                        {
+                          "settings": {
+                            "alt_text": "alt text img1",
+                            "content": "<p>Sam is Head of Content at Drip. His work has been featured on and quoted in several major media outlets including The Times, The Economist, and CNBC.</p>",
+                            "customer_name": "John Doe",
+                            "image": "https://dev-img.btdmp.com/sbase-file/10321595/2022/09/26/16641609435fd569e109.jpeg",
+                            "overlay_opacity": 30
+                          },
+                          "type": "customer-name",
+                          "visible": true
+                        }
+                      ],
+                      "settings": {
+                        "change_slides_every": 10,
+                        "number_of_testimonials": 2,
+                        "section_headline": "CUSTOMER'S FEEDBACK",
+                        "show_navigation": true,
+                        "show_pagination": true,
+                        "text_alignment": "left"
+                      },
+                      "type": "testimonials",
+                      "visible": true
+                    }
+                  ]
+                }
+              },
+              "expect": {
+                "index_section": [
+                  {
+                    "type_section": "slideshow",
+                    "index": 0
+                  },
+                  {
+                    "type_section": "custom-html",
+                    "index": 1
+                  },
+                  {
+                    "type_section": "testimonials",
+                    "index": 2
+                  }
+                ]
+              }
+            },
+            {
+              "description": "Check hide section Customer Testimonials",
+              "case_id": "SB_OLS_THE_INS_SF_CS_8",
+              "input": {
+                "home": {
+                  "default": [
+                    {
+                      "blocks": [
+                        {
+                          "settings": {
+                            "alt_text": "alt text img1",
+                            "content": "<p>Sam is Head of Content at Drip. His work has been featured on and quoted in several major media outlets including The Times, The Economist, and CNBC.</p>",
+                            "customer_name": "John Doe",
+                            "image": "https://dev-img.btdmp.com/sbase-file/10321595/2022/09/26/16641609435fd569e109.jpeg",
+                            "overlay_opacity": 30
+                          },
+                          "type": "customer-name",
+                          "visible": true
+                        }
+                      ],
+                      "settings": {
+                        "change_slides_every": 10,
+                        "number_of_testimonials": 2,
+                        "section_headline": "CUSTOMER'S FEEDBACK",
+                        "show_navigation": true,
+                        "show_pagination": true,
+                        "text_alignment": "left"
+                      },
+                      "type": "testimonials"
+                    },
+                    {
+                      "blocks": [
+                        {
+                          "settings": {
+                            "alt_text": "",
+                            "color_background_content": "#194d33",
+                            "first_button_label": "Shop now",
+                            "first_button_link": "",
+                            "heading": "INSIDE SHOPBASE THEME",
+                            "image": null,
+                            "image_link": {},
+                            "second_button_label": "Read story",
+                            "second_button_link": "",
+                            "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                            "text_alignment": "center"
+                          },
+                          "type": "slideshow",
+                          "visible": true
+                        }
+                      ],
+                      "settings": {
+                        "change_slides_every": 6,
+                        "current_layout": "single_slide",
+                        "full_width": false,
+                        "opacity": 30,
+                        "parallax": false,
+                        "ratio": "21:9"
+                      },
+                      "type": "slideshow",
+                      "visible": true
+                    },
+                    {
+                      "blocks": [],
+                      "settings": {
+                        "custom_html_code": "",
+                        "custom_html_full_width": false
+                      },
+                      "type": "custom-html",
+                      "visible": true
+                    }
+                  ]
+                }
+              },
+              "expect": {
+                "index_section": [
+                  {
+                    "type_section": "slideshow",
+                    "index": 0
+                  },
+                  {
+                    "type_section": "custom-html",
+                    "index": 1
+                  }
+                ]
+              }
+            },
+            {
+              "description": "Check unhide section Customer Testimonials",
+              "case_id": "SB_OLS_THE_INS_SF_CS_16",
+              "input": {
+                "home": {
+                  "default": [
+                    {
+                      "blocks": [
+                        {
+                          "settings": {
+                            "alt_text": "alt text img1",
+                            "content": "<p>Sam is Head of Content at Drip. His work has been featured on and quoted in several major media outlets including The Times, The Economist, and CNBC.</p>",
+                            "customer_name": "John Doe",
+                            "image": "https://dev-img.btdmp.com/sbase-file/10321595/2022/09/26/16641609435fd569e109.jpeg",
+                            "overlay_opacity": 30
+                          },
+                          "type": "customer-name",
+                          "visible": true
+                        }
+                      ],
+                      "settings": {
+                        "change_slides_every": 10,
+                        "number_of_testimonials": 2,
+                        "section_headline": "CUSTOMER'S FEEDBACK",
+                        "show_navigation": true,
+                        "show_pagination": true,
+                        "text_alignment": "left"
+                      },
+                      "type": "testimonials",
+                      "visible": true
+                    },
+                    {
+                      "blocks": [
+                        {
+                          "settings": {
+                            "alt_text": "",
+                            "color_background_content": "#194d33",
+                            "first_button_label": "Shop now",
+                            "first_button_link": "",
+                            "heading": "INSIDE SHOPBASE THEME",
+                            "image": null,
+                            "image_link": {},
+                            "second_button_label": "Read story",
+                            "second_button_link": "",
+                            "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                            "text_alignment": "center"
+                          },
+                          "type": "slideshow",
+                          "visible": true
+                        }
+                      ],
+                      "settings": {
+                        "change_slides_every": 6,
+                        "current_layout": "single_slide",
+                        "full_width": false,
+                        "opacity": 30,
+                        "parallax": false,
+                        "ratio": "21:9"
+                      },
+                      "type": "slideshow",
+                      "visible": true
+                    },
+                    {
+                      "blocks": [],
+                      "settings": {
+                        "custom_html_code": "",
+                        "custom_html_full_width": false
+                      },
+                      "type": "custom-html",
+                      "visible": true
+                    }
+                  ]
+                }
+              },
+              "expect": {
+                "index_section": [
+                  {
+                    "type_section": "testimonials",
+                    "index": 0
+                  },
+                  {
+                    "type_section": "slideshow",
+                    "index": 2
+                  },
+                  {
+                    "type_section": "custom-html",
+                    "index": 3
+                  }
+                ]
+              }
+            },
+            {
+              "description": "Check duplicate section Customer Testimonials",
+              "case_id": "SB_OLS_THE_INS_SF_CS_11",
+              "input": {
+                "home": {
+                  "default": [
+                    {
+                      "blocks": [
+                        {
+                          "settings": {
+                            "alt_text": "alt text img1",
+                            "content": "<p>Sam is Head of Content at Drip. His work has been featured on and quoted in several major media outlets including The Times, The Economist, and CNBC.</p>",
+                            "customer_name": "John Doe",
+                            "image": "https://dev-img.btdmp.com/sbase-file/10321595/2022/09/26/16641609435fd569e109.jpeg",
+                            "overlay_opacity": 30
+                          },
+                          "type": "customer-name",
+                          "visible": true
+                        }
+                      ],
+                      "settings": {
+                        "change_slides_every": 3,
+                        "number_of_testimonials": 1,
+                        "section_headline": "CUSTOMER'S FEEDBACK 123",
+                        "show_navigation": true,
+                        "show_pagination": true,
+                        "text_alignment": "left"
+                      },
+                      "type": "testimonials",
+                      "visible": true
+                    },
+                    {
+                      "blocks": [
+                        {
+                          "settings": {
+                            "alt_text": "alt text img1",
+                            "content": "<p>Sam is Head of Content at Drip. His work has been featured on and quoted in several major media outlets including The Times, The Economist, and CNBC.</p>",
+                            "customer_name": "John Doe",
+                            "image": "https://dev-img.btdmp.com/sbase-file/10321595/2022/09/26/16641609435fd569e109.jpeg",
+                            "overlay_opacity": 30
+                          },
+                          "type": "customer-name",
+                          "visible": true
+                        }
+                      ],
+                      "settings": {
+                        "change_slides_every": 3,
+                        "number_of_testimonials": 1,
+                        "section_headline": "CUSTOMER'S FEEDBACK 123",
+                        "show_navigation": true,
+                        "show_pagination": true,
+                        "text_alignment": "left"
+                      },
+                      "type": "testimonials",
+                      "visible": true
+                    }
+                  ]
+                }
+              },
+              "expect": {
+                "screenshot_setting_data": "web-customer-testimonial-duplicate-section.png"
+              }
+            },
+            {
+              "description": "Check remove section Customer Testimonial",
+              "case_id": "SB_OLS_THE_INS_SF_CS_18",
+              "input": {
+                "home": {
+                  "default": [
+                    {
+                      "blocks": [
+                        {
+                          "settings": {
+                            "alt_text": "",
+                            "color_background_content": "#194d33",
+                            "first_button_label": "Shop now",
+                            "first_button_link": "",
+                            "heading": "INSIDE SHOPBASE THEME",
+                            "image": null,
+                            "image_link": {},
+                            "second_button_label": "Read story",
+                            "second_button_link": "",
+                            "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                            "text_alignment": "center"
+                          },
+                          "type": "slideshow",
+                          "visible": true
+                        }
+                      ],
+                      "settings": {
+                        "change_slides_every": 6,
+                        "current_layout": "single_slide",
+                        "full_width": false,
+                        "opacity": 30,
+                        "parallax": false,
+                        "ratio": "21:9"
+                      },
+                      "type": "slideshow",
+                      "visible": true
+                    },
+                    {
+                      "blocks": [],
+                      "settings": {
+                        "custom_html_code": "",
+                        "custom_html_full_width": false
+                      },
+                      "type": "custom-html",
+                      "visible": true
+                    }
+                  ]
+                }
+              },
+              "expect": {
+                "index_section": [
+                  {
+                    "type_section": "slideshow",
+                    "index": 0
+                  },
+                  {
+                    "type_section": "custom-html",
+                    "index": 1
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "cases": {
+    "CHANGE_SETTINGS": {
+      "description": "cases setting data",
+      "data": [
+        {
+          "description": "Check show Customer Testimonial on SF with data default",
+          "case_id": "SB_OLS_THE_INS_SF_CS_4",
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "alt_text": "Describe this image to improve SEO",
+                    "content": "Add customer reviews and testimonials to show case your store's happy customers.",
+                    "customer_name": "Customer's name",
+                    "image": null,
+                    "overlay_opacity": 50
+                  },
+                  "type": "customer-name",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "Describe this image to improve SEO",
+                    "content": "Add customer reviews and testimonials to show case your store's happy customers.",
+                    "customer_name": "Customer's name",
+                    "image": null,
+                    "overlay_opacity": 50
+                  },
+                  "type": "customer-name",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "Describe this image to improve SEO",
+                    "content": "Add customer reviews and testimonials to show case your store's happy customers.",
+                    "customer_name": "Customer's name",
+                    "image": null,
+                    "overlay_opacity": 50
+                  },
+                  "type": "customer-name",
+                  "visible": true
+                }
+              ],
+              "settings": {
+                "change_slides_every": 7,
+                "number_of_testimonials": 3,
+                "section_headline": "ENERGIZE YOUR SHOP, WITH A THEME BUILT FOR SPEED",
+                "show_navigation": true,
+                "show_pagination": true,
+                "text_alignment": "center"
+              },
+              "type": "testimonials",
+              "visible": true
+            }
+          },
+          "expect": {
+            "count_section": 1,
+            "count_block": 3,
+            "screenshot_setting_data": "web-customer-testimonial-default.png"
+          }
+        },
+        {
+          "description": "Check show Customer Testimonial with setting full data",
+          "case_id": "SB_OLS_THE_INS_SF_CS_6",
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "alt_text": "alt text img1",
+                    "content": "<p>Sam is Head of Content at Drip. His work has been featured on and quoted in several major media outlets including The Times, The Economist, and CNBC.</p>",
+                    "customer_name": "John Doe",
+                    "image": "https://img.shopbase.com/files/10224996/2022/08/09/166003792215cef479dd.jpeg",
+                    "overlay_opacity": 30
+                  },
+                  "type": "customer-name",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "alt text img2",
+                    "content": "<p><strong>Sam is Head of Content at Drip</strong></p>",
+                    "customer_name": "Maria",
+                    "image": null,
+                    "overlay_opacity": 56
+                  },
+                  "type": "customer-name",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "alt text img3",
+                    "content": "",
+                    "customer_name": "Michael",
+                    "image": "https://img.shopbase.com/files/10224996/2022/08/09/16600383325af966a201.jpeg",
+                    "overlay_opacity": 1
+                  },
+                  "type": "customer-name",
+                  "visible": true
+                }
+              ],
+              "settings": {
+                "change_slides_every": 10,
+                "number_of_testimonials": 2,
+                "section_headline": "CUSTOMER'S FEEDBACK",
+                "show_navigation": true,
+                "show_pagination": true,
+                "text_alignment": "left"
+              },
+              "type": "testimonials",
+              "visible": true
+            }
+          },
+          "expect": {
+            "count_section": 1,
+            "count_block": 3,
+            "screenshot_setting_data": "web-customer-testimonial-setting-full-data.png",
+            "screenshot_button_next": "web-customer-testimonials-navigation-next.png",
+            "screenshot_button_prev": "web-customer-testimonials-navigation-prev.png",
+            "screenshot_indicator": "web-customer-testimonials-indicator.png"
+          }
+        },
+        {
+          "description": "Check show Customer Testimonial with setting full data without indicator, icon next/back",
+          "case_id": "SB_OLS_THE_INS_SF_CS_7",
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "alt_text": "alt text img1",
+                    "content": "<p>Sam is Head of Content at Drip. His work has been featured on and quoted in several major media outlets including The Times, The Economist, and CNBC.</p>",
+                    "customer_name": "John Doe",
+                    "image": "https://img.shopbase.com/files/10224996/2022/08/09/166003792215cef479dd.jpeg",
+                    "overlay_opacity": 30
+                  },
+                  "type": "customer-name",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "alt text img2",
+                    "content": "<p><strong>Sam is Head of Content at Drip</strong></p>",
+                    "customer_name": "Maria",
+                    "image": null,
+                    "overlay_opacity": 56
+                  },
+                  "type": "customer-name",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "alt text img3",
+                    "content": "",
+                    "customer_name": "Michael",
+                    "image": "https://img.shopbase.com/files/10224996/2022/08/09/16600383325af966a201.jpeg",
+                    "overlay_opacity": 1
+                  },
+                  "type": "customer-name",
+                  "visible": true
+                }
+              ],
+              "settings": {
+                "change_slides_every": 8,
+                "number_of_testimonials": 2,
+                "section_headline": "ENERGIZE YOUR SHOP, WITH A THEME BUILT FOR SPEED 123",
+                "show_navigation": false,
+                "show_pagination": false,
+                "text_alignment": "right"
+              },
+              "type": "testimonials",
+              "visible": true
+            }
+          },
+          "expect": {
+            "count_section": 1,
+            "count_block": 3,
+            "screenshot_setting_data": "web-customer-testimonial-without-indicator-icon-next-back.png"
+          }
+        },
+        {
+          "description": "Check add block Customer's name",
+          "case_id": "SB_OLS_THE_INS_SF_CS_5",
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "alt_text": "alt text img1",
+                    "content": "<p>Sam is Head of Content at Drip. His work has been featured on and quoted in several major media outlets including The Times, The Economist, and CNBC.</p>",
+                    "customer_name": "John Doe",
+                    "image": "https://img.shopbase.com/files/10224996/2022/08/09/166003792215cef479dd.jpeg",
+                    "overlay_opacity": 30
+                  },
+                  "type": "customer-name",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "Describe this image to improve SEO",
+                    "content": "Add customer reviews and testimonials to show case your store's happy customers.",
+                    "customer_name": "Customer's name",
+                    "image": null,
+                    "overlay_opacity": 50
+                  },
+                  "type": "customer-name",
+                  "visible": true
+                }
+              ],
+              "settings": {
+                "change_slides_every": 5,
+                "number_of_testimonials": 3,
+                "section_headline": "CUSTOMER'S FEEDBACK",
+                "show_navigation": true,
+                "show_pagination": true,
+                "text_alignment": "left"
+              },
+              "type": "testimonials",
+              "visible": true
+            }
+          },
+          "expect": {
+            "count_section": 1,
+            "count_block": 2,
+            "screenshot_setting_data": "web-customer-testimonial-add-block.png"
+          }
+        },
+        {
+          "description": "Check drag and drop block",
+          "case_id": "SB_OLS_THE_INS_SF_CS_14",
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "alt_text": "alt text img2",
+                    "content": "<p><strong>Sam is Head of Content at Drip</strong></p>",
+                    "customer_name": "Maria",
+                    "image": null,
+                    "overlay_opacity": 56
+                  },
+                  "type": "customer-name",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "alt text img3",
+                    "content": "",
+                    "customer_name": "Michael",
+                    "image": "https://img.shopbase.com/files/10224996/2022/08/09/16600383325af966a201.jpeg",
+                    "overlay_opacity": 1
+                  },
+                  "type": "customer-name",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "alt text img1",
+                    "content": "<p>Sam is Head of Content at Drip. His work has been featured on and quoted in several major media outlets including The Times, The Economist, and CNBC.</p>",
+                    "customer_name": "John Doe",
+                    "image": "https://img.shopbase.com/files/10224996/2022/08/09/166003792215cef479dd.jpeg",
+                    "overlay_opacity": 30
+                  },
+                  "type": "customer-name",
+                  "visible": true
+                }
+              ],
+              "settings": {
+                "change_slides_every": 10,
+                "number_of_testimonials": 3,
+                "section_headline": "CUSTOMER'S FEEDBACK",
+                "show_navigation": true,
+                "show_pagination": true,
+                "text_alignment": "left"
+              },
+              "type": "testimonials",
+              "visible": true
+            }
+          },
+          "expect": {
+            "count_section": 1,
+            "count_block": 3,
+            "screenshot_setting_data": "web-customer-testimonial-drag-and-drop-block.png"
+          }
+        },
+        {
+          "description": "Check hide block Customer's name",
+          "case_id": "SB_OLS_THE_INS_SF_CS_9",
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "alt_text": "alt text img1",
+                    "content": "<p>Sam is Head of Content at Drip. His work has been featured on and quoted in several major media outlets including The Times, The Economist, and CNBC.</p>",
+                    "customer_name": "John Doe",
+                    "image": "https://img.shopbase.com/files/10224996/2022/08/09/166003792215cef479dd.jpeg",
+                    "overlay_opacity": 30
+                  },
+                  "type": "customer-name",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "alt text img2",
+                    "content": "<p><strong>Sam is Head of Content at Drip</strong></p>",
+                    "customer_name": "Maria",
+                    "image": null,
+                    "overlay_opacity": 56
+                  },
+                  "type": "customer-name"
+                },
+                {
+                  "settings": {
+                    "alt_text": "alt text img3",
+                    "content": "",
+                    "customer_name": "Michael",
+                    "image": "https://img.shopbase.com/files/10224996/2022/08/09/16600383325af966a201.jpeg",
+                    "overlay_opacity": 1
+                  },
+                  "type": "customer-name",
+                  "visible": true
+                }
+              ],
+              "settings": {
+                "change_slides_every": 8,
+                "number_of_testimonials": 3,
+                "section_headline": "ENERGIZE YOUR SHOP, WITH A THEME BUILT FOR SPEED 123",
+                "show_navigation": true,
+                "show_pagination": true,
+                "text_alignment": "right"
+              },
+              "type": "testimonials",
+              "visible": true
+            }
+          },
+          "expect": {
+            "count_section": 1,
+            "count_block": 2,
+            "screenshot_setting_data": "web-customer-testimonial-hide-block.png"
+          }
+        },
+        {
+          "description": "Check unhide block Customer's name",
+          "case_id": "SB_OLS_THE_INS_SF_CS_10",
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "alt_text": "alt text img1",
+                    "content": "<p>Sam is Head of Content at Drip. His work has been featured on and quoted in several major media outlets including The Times, The Economist, and CNBC.</p>",
+                    "customer_name": "John Doe",
+                    "image": "https://img.shopbase.com/files/10224996/2022/08/09/166003792215cef479dd.jpeg",
+                    "overlay_opacity": 30
+                  },
+                  "type": "customer-name",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "alt text img2",
+                    "content": "<p><strong>Sam is Head of Content at Drip</strong></p>",
+                    "customer_name": "Maria",
+                    "image": null,
+                    "overlay_opacity": 56
+                  },
+                  "type": "customer-name",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "alt text img3",
+                    "content": "",
+                    "customer_name": "Michael",
+                    "image": "https://img.shopbase.com/files/10224996/2022/08/09/16600383325af966a201.jpeg",
+                    "overlay_opacity": 1
+                  },
+                  "type": "customer-name",
+                  "visible": true
+                }
+              ],
+              "settings": {
+                "change_slides_every": 8,
+                "number_of_testimonials": 3,
+                "section_headline": "ENERGIZE YOUR SHOP, WITH A THEME BUILT FOR SPEED 123",
+                "show_navigation": true,
+                "show_pagination": true,
+                "text_alignment": "right"
+              },
+              "type": "testimonials",
+              "visible": true
+            }
+          },
+          "expect": {
+            "count_section": 1,
+            "count_block": 3,
+            "screenshot_setting_data": "web-customer-testimonial-unhide-block.png"
+          }
+        },
+        {
+          "description": "Check duplicate block Customer's name",
+          "case_id": "SB_OLS_THE_INS_SF_CS_12",
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "alt_text": "alt text img1",
+                    "content": "<p>Sam is Head of Content at Drip. His work has been featured on and quoted in several major media outlets including The Times, The Economist, and CNBC.</p>",
+                    "customer_name": "John Doe",
+                    "image": "https://img.shopbase.com/files/10224996/2022/08/09/166003792215cef479dd.jpeg",
+                    "overlay_opacity": 30
+                  },
+                  "type": "customer-name",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "alt text img1",
+                    "content": "<p>Sam is Head of Content at Drip. His work has been featured on and quoted in several major media outlets including The Times, The Economist, and CNBC.</p>",
+                    "customer_name": "John Doe",
+                    "image": "https://img.shopbase.com/files/10224996/2022/08/09/166003792215cef479dd.jpeg",
+                    "overlay_opacity": 30
+                  },
+                  "type": "customer-name",
+                  "visible": true
+                }
+              ],
+              "settings": {
+                "change_slides_every": 5,
+                "number_of_testimonials": 3,
+                "section_headline": "CUSTOMER'S FEEDBACK",
+                "show_navigation": true,
+                "show_pagination": true,
+                "text_alignment": "right"
+              },
+              "type": "testimonials",
+              "visible": true
+            }
+          },
+          "expect": {
+            "count_section": 1,
+            "count_block": 2,
+            "screenshot_setting_data": "web-customer-testimonial-duplicate-block.png"
+          }
+        },
+        {
+          "description": "Check remove block Customer's name",
+          "case_id": "SB_OLS_THE_INS_SF_CS_17",
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "alt_text": "alt text img1",
+                    "content": "<p>Sam is Head of Content at Drip. His work has been featured on and quoted in several major media outlets including The Times, The Economist, and CNBC.</p>",
+                    "customer_name": "John Doe",
+                    "image": "https://img.shopbase.com/files/10224996/2022/08/09/166003792215cef479dd.jpeg",
+                    "overlay_opacity": 30
+                  },
+                  "type": "customer-name",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "alt text img2",
+                    "content": "<p><strong>Sam is Head of Content at Drip</strong></p>",
+                    "customer_name": "Maria",
+                    "image": null,
+                    "overlay_opacity": 56
+                  },
+                  "type": "customer-name",
+                  "visible": true
+                },
+                {
+                  "type": "customer-name",
+                  "visible": true
+                }
+              ],
+              "settings": {
+                "change_slides_every": 4,
+                "number_of_testimonials": 3,
+                "section_headline": "CUSTOMER'S FEEDBACK",
+                "show_navigation": true,
+                "show_pagination": true,
+                "text_alignment": "left"
+              },
+              "type": "testimonials",
+              "visible": true
+            }
+          },
+          "expect": {
+            "count_section": 1,
+            "count_block": 2,
+            "screenshot_setting_data": "web-customer-testimonial-remove-block.png"
+          }
+        }
+      ]
+    },
+    "ACTIONS": {
+      "description": "cases setting section",
+      "data": [
+        {
+          "description": "Check drag and drop section Customer Testimonials",
+          "case_id": "SB_OLS_THE_INS_SF_CS_13",
+          "input": {
+            "home": {
+              "default": [
+                {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "alt_text": "",
+                        "color_background_content": "#194d33",
+                        "first_button_label": "Shop now",
+                        "first_button_link": "",
+                        "heading": "INSIDE SHOPBASE THEME",
+                        "image": null,
+                        "image_link": {},
+                        "second_button_label": "Read story",
+                        "second_button_link": "",
+                        "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                        "text_alignment": "center"
+                      },
+                      "type": "slideshow",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "change_slides_every": 6,
+                    "current_layout": "single_slide",
+                    "full_width": false,
+                    "opacity": 30,
+                    "parallax": false,
+                    "ratio": "21:9"
+                  },
+                  "type": "slideshow",
+                  "visible": true
+                },
+                {
+                  "blocks": [],
+                  "settings": {
+                    "custom_html_code": "",
+                    "custom_html_full_width": false
+                  },
+                  "type": "custom-html",
+                  "visible": true
+                },
+                {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "alt_text": "alt text img1",
+                        "content": "<p>Sam is Head of Content at Drip. His work has been featured on and quoted in several major media outlets including The Times, The Economist, and CNBC.</p>",
+                        "customer_name": "John Doe",
+                        "image": "https://img.shopbase.com/files/10224996/2022/08/09/166003792215cef479dd.jpeg",
+                        "overlay_opacity": 30
+                      },
+                      "type": "customer-name",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "change_slides_every": 10,
+                    "number_of_testimonials": 2,
+                    "section_headline": "CUSTOMER'S FEEDBACK",
+                    "show_navigation": true,
+                    "show_pagination": true,
+                    "text_alignment": "left"
+                  },
+                  "type": "testimonials",
+                  "visible": true
+                }
+              ]
+            }
+          },
+          "expect": {
+            "index_section": [
+              {
+                "type_section": "slideshow",
+                "index": 0
+              },
+              {
+                "type_section": "custom-html",
+                "index": 1
+              },
+              {
+                "type_section": "testimonials",
+                "index": 2
+              }
+            ]
+          }
+        },
+        {
+          "description": "Check hide section Customer Testimonials",
+          "case_id": "SB_OLS_THE_INS_SF_CS_8",
+          "input": {
+            "home": {
+              "default": [
+                {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "alt_text": "alt text img1",
+                        "content": "<p>Sam is Head of Content at Drip. His work has been featured on and quoted in several major media outlets including The Times, The Economist, and CNBC.</p>",
+                        "customer_name": "John Doe",
+                        "image": "https://img.shopbase.com/files/10224996/2022/08/09/166003792215cef479dd.jpeg",
+                        "overlay_opacity": 30
+                      },
+                      "type": "customer-name",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "change_slides_every": 10,
+                    "number_of_testimonials": 2,
+                    "section_headline": "CUSTOMER'S FEEDBACK",
+                    "show_navigation": true,
+                    "show_pagination": true,
+                    "text_alignment": "left"
+                  },
+                  "type": "testimonials"
+                },
+                {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "alt_text": "",
+                        "color_background_content": "#194d33",
+                        "first_button_label": "Shop now",
+                        "first_button_link": "",
+                        "heading": "INSIDE SHOPBASE THEME",
+                        "image": null,
+                        "image_link": {},
+                        "second_button_label": "Read story",
+                        "second_button_link": "",
+                        "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                        "text_alignment": "center"
+                      },
+                      "type": "slideshow",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "change_slides_every": 6,
+                    "current_layout": "single_slide",
+                    "full_width": false,
+                    "opacity": 30,
+                    "parallax": false,
+                    "ratio": "21:9"
+                  },
+                  "type": "slideshow",
+                  "visible": true
+                },
+                {
+                  "blocks": [],
+                  "settings": {
+                    "custom_html_code": "",
+                    "custom_html_full_width": false
+                  },
+                  "type": "custom-html",
+                  "visible": true
+                }
+              ]
+            }
+          },
+          "expect": {
+            "index_section": [
+              {
+                "type_section": "slideshow",
+                "index": 0
+              },
+              {
+                "type_section": "custom-html",
+                "index": 1
+              }
+            ]
+          }
+        },
+        {
+          "description": "Check unhide section Customer Testimonials",
+          "case_id": "SB_OLS_THE_INS_SF_CS_16",
+          "input": {
+            "home": {
+              "default": [
+                {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "alt_text": "alt text img1",
+                        "content": "<p>Sam is Head of Content at Drip. His work has been featured on and quoted in several major media outlets including The Times, The Economist, and CNBC.</p>",
+                        "customer_name": "John Doe",
+                        "image": "https://img.shopbase.com/files/10224996/2022/08/09/166003792215cef479dd.jpeg",
+                        "overlay_opacity": 30
+                      },
+                      "type": "customer-name",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "change_slides_every": 10,
+                    "number_of_testimonials": 2,
+                    "section_headline": "CUSTOMER'S FEEDBACK",
+                    "show_navigation": true,
+                    "show_pagination": true,
+                    "text_alignment": "left"
+                  },
+                  "type": "testimonials",
+                  "visible": true
+                },
+                {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "alt_text": "",
+                        "color_background_content": "#194d33",
+                        "first_button_label": "Shop now",
+                        "first_button_link": "",
+                        "heading": "INSIDE SHOPBASE THEME",
+                        "image": null,
+                        "image_link": {},
+                        "second_button_label": "Read story",
+                        "second_button_link": "",
+                        "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                        "text_alignment": "center"
+                      },
+                      "type": "slideshow",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "change_slides_every": 6,
+                    "current_layout": "single_slide",
+                    "full_width": false,
+                    "opacity": 30,
+                    "parallax": false,
+                    "ratio": "21:9"
+                  },
+                  "type": "slideshow",
+                  "visible": true
+                },
+                {
+                  "blocks": [],
+                  "settings": {
+                    "custom_html_code": "",
+                    "custom_html_full_width": false
+                  },
+                  "type": "custom-html",
+                  "visible": true
+                }
+              ]
+            }
+          },
+          "expect": {
+            "index_section": [
+              {
+                "type_section": "testimonials",
+                "index": 0
+              },
+              {
+                "type_section": "slideshow",
+                "index": 2
+              },
+              {
+                "type_section": "custom-html",
+                "index": 3
+              }
+            ]
+          }
+        },
+        {
+          "description": "Check duplicate section Customer Testimonials",
+          "case_id": "SB_OLS_THE_INS_SF_CS_11",
+          "input": {
+            "home": {
+              "default": [
+                {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "alt_text": "alt text img1",
+                        "content": "<p>Sam is Head of Content at Drip. His work has been featured on and quoted in several major media outlets including The Times, The Economist, and CNBC.</p>",
+                        "customer_name": "John Doe",
+                        "image": "https://img.shopbase.com/files/10224996/2022/08/09/166003792215cef479dd.jpeg",
+                        "overlay_opacity": 30
+                      },
+                      "type": "customer-name",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "change_slides_every": 3,
+                    "number_of_testimonials": 1,
+                    "section_headline": "CUSTOMER'S FEEDBACK 123",
+                    "show_navigation": true,
+                    "show_pagination": true,
+                    "text_alignment": "left"
+                  },
+                  "type": "testimonials",
+                  "visible": true
+                },
+                {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "alt_text": "alt text img1",
+                        "content": "<p>Sam is Head of Content at Drip. His work has been featured on and quoted in several major media outlets including The Times, The Economist, and CNBC.</p>",
+                        "customer_name": "John Doe",
+                        "image": "https://img.shopbase.com/files/10224996/2022/08/09/166003792215cef479dd.jpeg",
+                        "overlay_opacity": 30
+                      },
+                      "type": "customer-name",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "change_slides_every": 3,
+                    "number_of_testimonials": 1,
+                    "section_headline": "CUSTOMER'S FEEDBACK 123",
+                    "show_navigation": true,
+                    "show_pagination": true,
+                    "text_alignment": "left"
+                  },
+                  "type": "testimonials",
+                  "visible": true
+                }
+              ]
+            }
+          },
+          "expect": {
+            "screenshot_setting_data": "web-customer-testimonial-duplicate-section.png"
+          }
+        },
+        {
+          "description": "Check remove section Customer Testimonial",
+          "case_id": "SB_OLS_THE_INS_SF_CS_18",
+          "input": {
+            "home": {
+              "default": [
+                {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "alt_text": "",
+                        "color_background_content": "#194d33",
+                        "first_button_label": "Shop now",
+                        "first_button_link": "",
+                        "heading": "INSIDE SHOPBASE THEME",
+                        "image": null,
+                        "image_link": {},
+                        "second_button_label": "Read story",
+                        "second_button_link": "",
+                        "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                        "text_alignment": "center"
+                      },
+                      "type": "slideshow",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "change_slides_every": 6,
+                    "current_layout": "single_slide",
+                    "full_width": false,
+                    "opacity": 30,
+                    "parallax": false,
+                    "ratio": "21:9"
+                  },
+                  "type": "slideshow",
+                  "visible": true
+                },
+                {
+                  "blocks": [],
+                  "settings": {
+                    "custom_html_code": "",
+                    "custom_html_full_width": false
+                  },
+                  "type": "custom-html",
+                  "visible": true
+                }
+              ]
+            }
+          },
+          "expect": {
+            "index_section": [
+              {
+                "type_section": "slideshow",
+                "index": 0
+              },
+              {
+                "type_section": "custom-html",
+                "index": 1
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

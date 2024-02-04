@@ -1,0 +1,55 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-robotstxt.onshopbase.com",
+      "shop_name": "au-robotstxt.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10360946,
+      "user_id": 73782
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-prodtest-robotstxt.onshopbase.com",
+      "shop_name": "au-prodtest-robotstxt.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10360947,
+      "user_id": 73782,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-robotstxt.myshopbase.net",
+      "shop_name": "au-robotstxt.myshopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_id": 10321299,
+      "user_id": 73800
+    }
+  },
+  "cases": {
+    "SB_OLS_PFR_22": {
+      "description": "Verify redirect when click text link Learn more",
+      "expect": {
+        "redirect_url": "https://developers.google.com/search/docs/crawling-indexing/robots/create-robots-txt"
+      }
+    },
+    "SB_OLS_PFR_23": {
+      "description": "Verify robots.txt when clear all data at at robots.txt file"
+    },
+    "SB_OLS_PFR_26": {
+      "description": "Verify robots.txt when input invalid data into robots.txt file",
+      "input_text": "collection"
+    },
+    "SB_OLS_PFR_24": {
+      "description": "Verify robots.txt when input valid data into robots.txt file",
+      "input_text": "Crawl-delay: 20"
+    },
+    "SB_OLS_PFR_99": {
+      "description": "Verify when click button Test with Google",
+      "expect_url": "https://support.google.com/webmasters/answer/6062598"
+    }
+  }
+}

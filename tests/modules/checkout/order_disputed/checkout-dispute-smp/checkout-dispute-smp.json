@@ -1,0 +1,124 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-checkout-smp-ne-one-page.myshopbase.net",
+      "shop_name": "au-checkout-smp-ne-one-page",
+      "username": "opay-qe-1@beeketing.net",
+      "password": "Z6el|q4&:hwCrVx",
+      "user_id": 90009,
+      "shop_id": 10327488,
+      "product_info": [
+        {
+          "name": "Product 2",
+          "variant_id": 1000001769286965,
+          "quantity": 1
+        }
+      ],
+      "retry": 10
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "accounts_domain": "accounts-test.shopbase.com",
+      "domain": "au-ne-che-spay-reseller-onepage-prodtest.onshopbase.com",
+      "shop_name": "au-ne-che-spay-reseller-onepage-prodtest",
+      "user_id": 11247306,
+      "shop_id": 10432525,
+      "username": "opay-qe-1@beeketing.net",
+      "password": "CZFX[b_G5T:+N*Y",
+      "product_info": [
+        {
+          "name": "Product 1",
+          "variant_id": 1000010649290390,
+          "quantity": 2
+        }
+      ],
+      "retry": 5
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "accounts_domain": "accounts.shopbase.com",
+      "domain": "au-ne-che-spay-reseller-onepage.onshopbase.com",
+      "shop_name": "au-ne-che-spay-reseller-onepage",
+      "user_id": 11247306,
+      "shop_id": 10432319,
+      "username": "opay-qe-1@beeketing.net",
+      "password": "CZFX[b_G5T:+N*Y",
+      "product_info": [
+        {
+          "name": "Product 1",
+          "variant_id": 1000010648249464,
+          "quantity": 2
+        }
+      ],
+      "retry": 5
+    }
+  },
+  "customer_info": {
+    "email": "tester@maildrop.cc",
+    "first_name": "Tester",
+    "last_name": "Auto",
+    "address": "1600 W Loop S",
+    "country": "United States",
+    "state": "Texas",
+    "city": "Houston",
+    "zipcode": "77027",
+    "phone_number": "505-646-2276"
+  },
+  "cases": {
+    "SB_ORD_DISP_SPAY3_1": {
+      "card_info": {
+        "number": "4000000000000259",
+        "holder_name": "Shopbase",
+        "expire_date": "12 / 34",
+        "cvv": "116"
+      }
+    },
+    "SB_CHARGE_BACK": [
+      {
+        "case_id": "SB_ORD_DISP_SPAY3_2",
+        "case_name": "Check that chargebacks notification is displayed in order details after checkout via 4000000000002685",
+        "card_info": {
+          "number": "4000000000002685",
+          "holder_name": "Shopbase",
+          "expire_date": "12 / 34",
+          "cvv": "116"
+        }
+      },
+      {
+        "case_id": "SB_ORD_DISP_SPAY3_3",
+        "case_name": "Check that inquiry notification is displayed in order details after checkout via 4000000000001976",
+        "card_info": {
+          "number": "4000000000001976",
+          "holder_name": "Shopbase",
+          "expire_date": "12 / 34",
+          "cvv": "116"
+        }
+      }
+    ],
+    "SB_SUBMIT_CHARGE_BACK": [
+      {
+        "case_id": "SB_ORD_DISP_SPAY3_4",
+        "case_name": "Check submiting chargeback response form with full info for each fields with each reason successfully",
+        "card_info": {
+          "number": "4000000000002685",
+          "holder_name": "Shopbase",
+          "expire_date": "12 / 34",
+          "cvv": "116"
+        },
+        "evidence_submited": "winning_evidence"
+      },
+      {
+        "case_id": "SB_ORD_DISP_SPAY3_5",
+        "case_name": "Check submiting inquiry response form with full info for each fields with each reason successfully",
+        "card_info": {
+          "number": "4000000000001976",
+          "holder_name": "Shopbase",
+          "expire_date": "12 / 34",
+          "cvv": "116"
+        },
+        "evidence_submited": "winning_evidence"
+      }
+    ]
+  }
+}

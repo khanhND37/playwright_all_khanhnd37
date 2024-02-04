@@ -1,0 +1,168 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "opay-qe-1@beeketing.net",
+      "password": "Z6el|q4&:hwCrVx",
+      "domain": "au-ne-pp-standard-3steps.myshopbase.net",
+      "shop_name": "au-ne-pp-standard-3steps",
+      "user_id": 90009,
+      "shop_id": 10334446,
+      "products_checkout": [
+        {
+          "name": "Bikini",
+          "variant_id": 1000001780615768,
+          "quantity": 2
+        },
+        {
+          "name": "Bikini2",
+          "variant_id": 1000001780615772,
+          "quantity": 2
+        }
+      ],
+      "products_checkout_ppc": [
+        {
+          "name": "Tax Override",
+          "variant_id": 1000001780615774,
+          "quantity": 2
+        },
+        {
+          "name": "Bikini2",
+          "variant_id": 1000001780615772,
+          "quantity": 2
+        }
+      ],
+      "setting_checkout_form": {
+        "checkout_layout": "multi-step"
+      },
+      "setting_checkout_onepage_info": {
+        "checkout_layout": "one-page"
+      },
+      "template_id": 3228932
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "domain": "au-ne-pp-standard-prodtest.onshopbase.com",
+      "shop_name": "au-ne-pp-standard-prodtest",
+      "user_id": 11244582,
+      "shop_id": 10484352,
+      "products_checkout": [
+        {
+          "name": "Bikini",
+          "variant_id": 1000011244545347,
+          "quantity": 2
+        },
+        {
+          "name": "Bikini2",
+          "variant_id": 1000011244545349,
+          "quantity": 2
+        }
+      ],
+      "products_checkout_ppc": [
+        {
+          "name": "Tax Override",
+          "variant_id": 1000011244545343,
+          "quantity": 2
+        },
+        {
+          "name": "Bikini2",
+          "variant_id": 1000011244545349,
+          "quantity": 2
+        }
+      ],
+      "setting_checkout_form": {
+        "checkout_layout": "multi-step"
+      },
+      "setting_checkout_onepage_info": {
+        "checkout_layout": "one-page"
+      },
+      "template_id": 1609570
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "username": "opay-qe-1@beeketing.net",
+      "password": "CZFX[b_G5T:+N*Y",
+      "domain": "au-ne-pp-standard.onshopbase.com",
+      "shop_name": "au-ne-pp-standard",
+      "user_id": 11247306,
+      "shop_id": 10484361,
+      "products_checkout": [
+        {
+          "name": "Bikini",
+          "variant_id": 1000011244717918,
+          "quantity": 2
+        },
+        {
+          "name": "Bikini2",
+          "variant_id": 1000011244717920,
+          "quantity": 2
+        }
+      ],
+      "products_checkout_ppc": [
+        {
+          "name": "Tax Override",
+          "variant_id": 1000011244717915,
+          "quantity": 2
+        },
+        {
+          "name": "Bikini2",
+          "variant_id": 1000011244717920,
+          "quantity": 2
+        }
+      ],
+      "setting_checkout_form": {
+        "checkout_layout": "multi-step"
+      },
+      "setting_checkout_onepage_info": {
+        "checkout_layout": "one-page"
+      },
+      "template_id": 1609601
+    }
+  },
+  "cases": {
+    "SB_CHE_PP_NE_3STEPS": [
+      {
+        "case_id": "SB_NEWECOM_CO_124",
+        "case_name": "Kiểm tra order detail khi checkout thành công với cổng Paypal standard, checkout 3 steps",
+        "payment_method": "PayPal"
+      }
+    ],
+    "SB_CHE_PP_NE_3STEPS_PPC": [
+      {
+        "case_id": "SB_NEWECOM_CO_126",
+        "case_name": "Kiểm tra order detail khi checkout thành công với cổng Paypal standard, checkout 3 steps có add PPC",
+        "payment_method": "PayPal",
+        "product_ppc_name": "Bikini"
+      },
+      {
+        "case_id": "SB_NEWECOM_CO_129",
+        "case_name": "Kiểm tra order detail khi checkout thành công với cổng Paypal standard, checkout 3 steps không add PPC",
+        "payment_method": "PayPal",
+        "product_ppc_name": ""
+      }
+    ],
+    "SB_CHE_PP_NE_1PAGE": [
+      {
+        "case_id": "SB_NEWECOM_CO_125",
+        "case_name": "Kiểm tra order detail khi checkout thành công với cổng Paypal standard, checkout 1 page",
+        "payment_method": "PayPal"
+      }
+    ],
+    "SB_CHE_PP_NE_1PAGE_PPC": [
+      {
+        "case_id": "SB_NEWECOM_CO_127",
+        "case_name": "Kiểm tra order detail khi checkout thành công với cổng Paypal standard, checkout 1 page có add PPC",
+        "payment_method": "PayPal",
+        "product_ppc_name": "Bikini"
+      },
+      {
+        "case_id": "SB_NEWECOM_CO_128",
+        "case_name": "Kiểm tra order detail khi checkout thành công với cổng Paypal standard, checkout 1 page không add PPC",
+        "payment_method": "PayPal",
+        "product_ppc_name": ""
+      }
+    ]
+  }
+}

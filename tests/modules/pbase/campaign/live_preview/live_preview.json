@@ -1,0 +1,910 @@
+{
+  "param_threshold": 0.1,
+  "max_diff_pixel_ratio": 0.05,
+  "max_diff_pixels": 2000,
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-printbase-livepreview.onshopbase.com",
+      "shop_name": "au-printbase-livepreview",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "user_id": 73782,
+      "shop_id": 10370519,
+      "personalize": {
+        "enable": true,
+        "mode": "button"
+      }
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-printbase-livepreview-protest.onshopbase.com",
+      "shop_name": "au-printbase-livepreview-protest",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "user_id": 73782,
+      "shop_id": 10371911,
+      "personalize": {
+        "enable": true,
+        "mode": "button"
+      },
+      "accounts_domain": "accounts-test.shopbase.com"
+    }
+  },
+  "cases": {
+    "SB_PRB_LP_218": {
+      "campaign": {
+        "name": "Unisex T-shirt"
+      },
+      "xpath_variant_color_1": "(//div[normalize-space()='Color: white']//following-sibling::button)[1]",
+      "xpath_variant_color_2": "(//div[normalize-space()='Color: white']//following-sibling::button)[2]",
+      "xpath_variant_size_1": "//button[normalize-space()='11oz']",
+      "xpath_variant_size_2": "//button[normalize-space()='15oz']",
+      "price": "(//span[normalize-space()='$19.49'])[1]",
+      "price_original": "//del[normalize-space()='$34.49']"
+    },
+    "DATA_INPUT_CO_VALID": {
+      "data": [
+        {
+          "description": "[Live Preview CO text field] Check valid when CO only allow characters",
+          "case_name": "SB_PRB_LP_219",
+          "step": "View Campaign `Personalize textfield input only characters` ngoài SF. > Input [CO text] > Click btn [Preview]",
+          "campaign": {
+            "name": "Personalize textfield input only characters"
+          },
+          "themes_setting": "Inside",
+          "custom_option_info": [
+            {
+              "type": "Text field",
+              "value": "",
+              "custom_name": "CO text"
+            },
+            {
+              "type": "Text field",
+              "value": "!@@##@ #@#@#",
+              "custom_name": "CO text"
+            },
+            {
+              "type": "Text field",
+              "value": "1234",
+              "custom_name": "CO text"
+            },
+            {
+              "type": "Text field",
+              "value": "😋",
+              "custom_name": "CO text"
+            }
+          ],
+          "message_error": [
+            "Please finish this field",
+            "Your custom text has invalid characters. We only accept characters.",
+            "Your custom text has invalid characters. We only accept characters.",
+            "Your custom text has invalid characters. We only accept characters."
+          ],
+          "data_success": {
+            "custom_option_info": [
+              {
+                "type": "Text field",
+                "value": "Add your text abc",
+                "custom_name": "CO text"
+              }
+            ]
+          }
+        },
+        {
+          "description": "[Live Preview CO text field] Check valid  when CO only allow Number",
+          "case_name": "SB_PRB_LP_220",
+          "step": "View Campaign `Personalize textfield input only number` ngoài SF. > Input [CO text] > Click btn [Preview]",
+          "campaign": {
+            "name": "Personalize textfield input only number"
+          },
+          "themes_setting": "Inside",
+          "custom_option_info": [
+            {
+              "type": "Text field",
+              "value": "!@@##@ #@#@#",
+              "custom_name": "CO text"
+            },
+            {
+              "type": "Text field",
+              "value": "abc",
+              "custom_name": "CO text"
+            },
+            {
+              "type": "Text field",
+              "value": "😋",
+              "custom_name": "CO text"
+            }
+          ],
+          "message_error": [
+            "Your custom text has invalid characters. We only accept numbers.",
+            "Your custom text has invalid characters. We only accept numbers.",
+            "Your custom text has invalid characters. We only accept numbers."
+          ],
+          "data_success": {
+            "custom_option_info": [
+              {
+                "type": "Text field",
+                "value": "123456",
+                "custom_name": "CO text"
+              }
+            ]
+          }
+        },
+        {
+          "description": "[Live Preview CO text field] Check valid when CO only allow Special characters",
+          "case_name": "SB_PRB_LP_221",
+          "step": "View Campaign `Personalize textfield input only Special characters` ngoài SF. > Input [CO text] > Click btn [Preview]",
+          "campaign": {
+            "name": "Personalize textfield input only Special characters"
+          },
+          "themes_setting": "Inside",
+          "custom_option_info": [
+            {
+              "type": "Text field",
+              "value": "123456",
+              "custom_name": "CO text"
+            },
+            {
+              "type": "Text field",
+              "value": "abc",
+              "custom_name": "CO text"
+            },
+            {
+              "type": "Text field",
+              "value": "😋",
+              "custom_name": "CO text"
+            }
+          ],
+          "message_error": [
+            "Your custom text has invalid characters. We only accept special characters.",
+            "Your custom text has invalid characters. We only accept special characters.",
+            "Your custom text has invalid characters. We only accept special characters."
+          ],
+          "data_success": {
+            "custom_option_info": [
+              {
+                "type": "Text field",
+                "value": "#$%^&*()+",
+                "custom_name": "CO text"
+              }
+            ]
+          }
+        },
+        {
+          "description": "[Live Preview CO text field] Check kết hợp nhiều giá trị: characters , number, special characters",
+          "case_name": "SB_PRB_LP_222",
+          "step": "View campaign ngoài SF. > Input [CO text] > Click btn [Preview]",
+          "campaign": {
+            "name": "Personalize textfield"
+          },
+          "themes_setting": "Inside",
+          "custom_option_info": [
+            {
+              "type": "Text field",
+              "value": "😋",
+              "custom_name": "CO text"
+            }
+          ],
+          "message_error": [
+            "Your custom text has invalid characters. We only accept numbers, characters & special characters."
+          ],
+          "data_success": {
+            "custom_option_info": [
+              {
+                "type": "Text field",
+                "value": "!@@##@ #@#@#",
+                "custom_name": "CO text"
+              },
+              {
+                "type": "Text field",
+                "value": "abcd",
+                "custom_name": "CO text"
+              },
+              {
+                "type": "Text field",
+                "value": "123456",
+                "custom_name": "CO text"
+              },
+              {
+                "type": "Text field",
+                "value": "avnb 123456 @#@",
+                "custom_name": "CO text"
+              },
+              {
+                "type": "Text field",
+                "value": "",
+                "custom_name": "CO text"
+              }
+            ]
+          }
+        },
+        {
+          "description": "[Live Preview CO text field] Check font custom option khác font system",
+          "case_name": "SB_PRB_LP_223",
+          "step": "View Campaign ngoài SF > Input [CO text]. Click btn [Preview]",
+          "campaign": {
+            "name": "Personalize textfield khac font"
+          },
+          "themes_setting": "Inside",
+          "data_success": {
+            "custom_option_info": [
+              {
+                "type": "Text field",
+                "value": "Test text 123",
+                "custom_name": "CO text"
+              }
+            ]
+          }
+        },
+        {
+          "description": "[Live Preview CO text field] Check preview khi font chọn font trong `System`",
+          "case_name": "SB_PRB_LP_224",
+          "step": "View Campaign ngoài SF > Input [CO text]. Click btn [Preview]",
+          "campaign": {
+            "name": "Personalize textfield font system"
+          },
+          "themes_setting": "Inside",
+          "data_success": {
+            "custom_option_info": [
+              {
+                "type": "Text field",
+                "value": "Test text 123",
+                "custom_name": "CO text"
+              }
+            ]
+          }
+        },
+        {
+          "description": "[Live Preview CO text area] Check tạo CO text area Allow the following characters",
+          "case_name": "SB_PRB_LP_226",
+          "step": "View campaign ngoài SF. > Input [CO text] > Click btn [Preview]",
+          "campaign": {
+            "name": "Personalize TextArea input only characters"
+          },
+          "themes_setting": "Inside",
+          "custom_option_info": [
+            {
+              "type": "Text area",
+              "value": "",
+              "custom_name": "CO text"
+            },
+            {
+              "type": "Text area",
+              "value": "!@@##@ #@#@#",
+              "custom_name": "CO text"
+            },
+            {
+              "type": "Text area",
+              "value": "1234",
+              "custom_name": "CO text"
+            },
+            {
+              "type": "Text area",
+              "value": "😋",
+              "custom_name": "CO text"
+            }
+          ],
+          "message_error": [
+            "Please finish this field",
+            "Your custom text has invalid characters. We only accept characters.",
+            "Your custom text has invalid characters. We only accept characters.",
+            "Your custom text has invalid characters. We only accept characters."
+          ],
+          "data_success": {
+            "custom_option_info": [
+              {
+                "type": "Text area",
+                "value": "Add your text abc",
+                "custom_name": "CO text"
+              }
+            ]
+          }
+        },
+        {
+          "description": "[Live Preview CO text area] Check tạo CO text area Allow the following Numbers",
+          "case_name": "SB_PRB_LP_227",
+          "step": "View campaign ngoài SF. > Input [CO text] > Click btn [Preview]",
+          "campaign": {
+            "name": "Personalize TextArea input only number"
+          },
+          "themes_setting": "Inside",
+          "custom_option_info": [
+            {
+              "type": "Text area",
+              "value": "!@@##@ #@#@#",
+              "custom_name": "CO text"
+            },
+            {
+              "type": "Text area",
+              "value": "abc",
+              "custom_name": "CO text"
+            },
+            {
+              "type": "Text area",
+              "value": "😋",
+              "custom_name": "CO text"
+            }
+          ],
+          "message_error": [
+            "Your custom text has invalid characters. We only accept numbers.",
+            "Your custom text has invalid characters. We only accept numbers.",
+            "Your custom text has invalid characters. We only accept numbers."
+          ],
+          "data_success": {
+            "custom_option_info": [
+              {
+                "type": "Text area",
+                "value": "123456",
+                "custom_name": "CO text"
+              }
+            ]
+          }
+        },
+        {
+          "description": "[Live Preview CO text area] Check tạo CO text area Allow the following special characters.",
+          "case_name": "SB_PRB_LP_228",
+          "step": "View campaign ngoài SF. > Input [CO text] > Click btn [Preview]",
+          "campaign": {
+            "name": "Personalize TextArea input only Special characters"
+          },
+          "themes_setting": "Inside",
+          "custom_option_info": [
+            {
+              "type": "Text area",
+              "value": "123456",
+              "custom_name": "CO text"
+            },
+            {
+              "type": "Text area",
+              "value": "abc",
+              "custom_name": "CO text"
+            },
+            {
+              "type": "Text area",
+              "value": "😋",
+              "custom_name": "CO text"
+            }
+          ],
+          "message_error": [
+            "Your custom text has invalid characters. We only accept special characters.",
+            "Your custom text has invalid characters. We only accept special characters.",
+            "Your custom text has invalid characters. We only accept special characters."
+          ],
+          "data_success": {
+            "custom_option_info": [
+              {
+                "type": "Text area",
+                "value": "#$%^&*()+",
+                "custom_name": "CO text"
+              }
+            ]
+          }
+        },
+        {
+          "description": "[Live Preview CO text area] Check kết hợp nhiều giá trị: Characters , Number, special characters",
+          "case_name": "SB_PRB_LP_229",
+          "step": "View campaign ngoài SF. > Input [CO text] > Click btn [Preview]",
+          "campaign": {
+            "name": "Personalize TextArea"
+          },
+          "themes_setting": "Inside",
+          "custom_option_info": [
+            {
+              "type": "Text area",
+              "value": "😋",
+              "custom_name": "CO text"
+            }
+          ],
+          "message_error": [
+            "Your custom text has invalid characters. We only accept numbers, characters & special characters."
+          ],
+          "data_success": {
+            "custom_option_info": [
+              {
+                "type": "Text area",
+                "value": "!@@##@ #@#@#",
+                "custom_name": "CO text"
+              },
+              {
+                "type": "Text area",
+                "value": "abcd",
+                "custom_name": "CO text"
+              },
+              {
+                "type": "Text area",
+                "value": "123456",
+                "custom_name": "CO text"
+              },
+              {
+                "type": "Text area",
+                "value": "avnb 123456 @#@",
+                "custom_name": "CO text"
+              },
+              {
+                "type": "Text area",
+                "value": "",
+                "custom_name": "CO text"
+              }
+            ]
+          }
+        },
+        {
+          "description": "Live Preview CO Radio",
+          "case_name": "SB_PRB_LP_230",
+          "step": "View Campaign ngoài SF > Select option Radio. Click btn [Preview]",
+          "campaign": {
+            "name": "Camp_personalize_CO_Radio"
+          },
+          "themes_setting": "Inside",
+          "data_success": {
+            "custom_option_info": [
+              {
+                "type": "Radio",
+                "value": "Text test 1",
+                "custom_name": "Radio"
+              },
+              {
+                "type": "Radio",
+                "value": "Text test 2",
+                "custom_name": "Radio"
+              }
+            ]
+          }
+        },
+        {
+          "description": "Live Preview CO Droplist",
+          "case_name": "SB_PRB_LP_231",
+          "step": "View Campaign ngoài SF > Select option Droplist. Click btn [Preview]",
+          "campaign": {
+            "name": "Camp personalize CO Droplist"
+          },
+          "themes_setting": "Inside",
+          "data_success": {
+            "custom_option_info": [
+              {
+                "type": "Droplist",
+                "value": "Text test 1",
+                "custom_name": "Droplist"
+              },
+              {
+                "type": "Droplist",
+                "value": "Text test 2",
+                "custom_name": "Droplist"
+              }
+            ]
+          }
+        },
+        {
+          "description": "Live Preview CO Image",
+          "case_name": "SB_PRB_LP_232",
+          "step": "View Campaign ngoài SF > Select image. Click btn [Preview]",
+          "campaign": {
+            "name": "Personalize_CO_image"
+          },
+          "themes_setting": "Inside",
+          "data_success": {
+            "custom_option_info": [
+              {
+                "custom_name": "Image",
+                "type": "Image",
+                "value": "Did I Do Something Wrong.png"
+              }
+            ]
+          }
+        },
+        {
+          "description": "Live Preview CO Checkbox",
+          "case_name": "SB_PRB_LP_235",
+          "step": "View Campaign ngoài SF > Select checkbox. Click btn [Preview]",
+          "campaign": {
+            "name": "Personalize_only_checkbox"
+          },
+          "themes_setting": "Inside",
+          "data_success": {
+            "custom_option_info": [
+              {
+                "custom_name": "Options",
+                "type": "Checkbox",
+                "value": "uncheck"
+              },
+              {
+                "custom_name": "Options",
+                "type": "Checkbox",
+                "value": "check"
+              }
+            ]
+          }
+        },
+        {
+          "description": "Check preview với campaign personalize chứa file psd có group layer (group layer có effect)",
+          "case_name": "SB_PRB_LP_239",
+          "step": "View Campaign ngoài SF > Input value custom option. Click btn [Preview]",
+          "campaign": {
+            "name": "Personalize_group_layer"
+          },
+          "themes_setting": "Inside",
+          "data_success": {
+            "custom_option_info": [
+              {
+                "custom_name": "Custom text",
+                "type": "Text field",
+                "value": "Test text 1"
+              }
+            ]
+          }
+        },
+        {
+          "description": "Check luồng tạo campaign personalize với file psd có layer loại clipping mask (có layer chứa effect)",
+          "case_name": "SB_PRB_LP_241",
+          "step": "View Campaign ngoài SF > Input value custom option. Click btn [Preview]",
+          "campaign": {
+            "name": "Psd_clip_mask"
+          },
+          "themes_setting": "Inside",
+          "data_success": {
+            "custom_option_info": [
+              {
+                "custom_name": "Text",
+                "type": "Text field",
+                "value": "Test text"
+              }
+            ]
+          }
+        },
+        {
+          "description": "Check luồng tạo campaign personalize với file psd có layer loại clipping mask",
+          "case_name": "SB_PRB_LP_242",
+          "step": "View Campaign ngoài SF > Input value custom option. Check show button [Preview] Click btn [Preview]",
+          "campaign": {
+            "name": "Clip_mask_psd"
+          },
+          "themes_setting": "Inside",
+          "data_success": {
+            "custom_option_info": [
+              {
+                "custom_name": "Text",
+                "type": "Text field",
+                "value": "Test text"
+              }
+            ]
+          }
+        },
+        {
+          "description": "Check luồng tạo campaign personalize với file psd có layer loại clipping mask Err text bị tụt xuống dưới",
+          "case_name": "SB_PRB_LP_243",
+          "step": "View Campaign ngoài SF > Input value custom option. Check show button [Preview] Click btn [Preview]",
+          "campaign": {
+            "name": "Clipmask_03"
+          },
+          "themes_setting": "Inside",
+          "data_success": {
+            "custom_option_info": [
+              {
+                "custom_name": "Text",
+                "type": "Text field",
+                "value": "Ma ma"
+              }
+            ]
+          }
+        },
+        {
+          "description": "Check luồng tạo campaign personalize với file psd có layer loại clipping mask layer image Err ảnh bị mờ phần CO image",
+          "case_name": "SB_PRB_LP_245",
+          "step": "View Campaign ngoài SF > Input value custom option. Check show button [Preview] Click btn [Preview]",
+          "campaign": {
+            "name": "LandscapeCanvas_psd"
+          },
+          "themes_setting": "Inside",
+          "data_success": {
+            "custom_option_info": [
+              {
+                "custom_name": "Image",
+                "type": "Image",
+                "value": "mk-circle.jpeg"
+              }
+            ]
+          }
+        },
+        {
+          "description": "Check luồng tao campaign personalize với file : artwork_64632",
+          "case_name": "SB_PRB_LP_249",
+          "step": "View Campaign ngoài SF > Input value custom option. Check show button [Preview] Click btn [Preview]",
+          "campaign": {
+            "name": "Artwork_64632_psd"
+          },
+          "custom_option_info": [
+            {
+              "type": "Text field",
+              "value": "Name Sarah",
+              "custom_name": "Text"
+            }
+          ]
+        }
+      ]
+    },
+    "DATA_VERIFY_PREVIEW": {
+      "data": [
+        {
+          "description": "[Live Preview CO text field] Check tạo nhiều CO text",
+          "case_name": "SB_PRB_LP_225",
+          "step": "View Campaign ngoài SF > Input [CO text]. Click btn [Preview]",
+          "campaign": {
+            "name": "Personalize_multi_CO_textfield"
+          },
+          "custom_option_info": [
+            {
+              "type": "Text field",
+              "value": "Test text 1",
+              "custom_name": "Text 1"
+            },
+            {
+              "type": "Text field",
+              "value": "Test text 2",
+              "custom_name": "Text 2"
+            },
+            {
+              "type": "Text field",
+              "value": "Test text 3",
+              "custom_name": "Text 3"
+            }
+          ]
+        },
+        {
+          "description": "Live Preview CO Picture choice folder clipart",
+          "case_name": "SB_PRB_LP_233",
+          "step": "View Campaign ngoài SF >Verify ảnh PC > Chọn ảnh picture choice. Click btn [Preview]",
+          "campaign": {
+            "name": "Campaign_PC_folder"
+          },
+          "custom_option_info": [
+            {
+              "custom_name": "Picture show thumbnail",
+              "type": "Picture choice",
+              "value": "Clipart1"
+            },
+            {
+              "custom_name": "Picture show droplist",
+              "type": "Picture choice folder show droplist",
+              "value": "Clipart2"
+            }
+          ],
+          "picture": [
+            "(//div[parent::div[contains(@class,'product-property')]]//img)[1]",
+            "(//div[parent::div[contains(@class,'product-property')]]//img)[2]",
+            "(//div[parent::div[contains(@class,'product-property')]]//img)[3]"
+          ]
+        },
+        {
+          "description": "Live Preview CO Picture choice group clipart",
+          "case_name": "SB_PRB_LP_234",
+          "step": "View Campaign ngoài SF > Chọn ảnh clipart. Click btn [Preview]",
+          "campaign": {
+            "name": "Campaign_PC_group"
+          },
+          "custom_option_info": [
+            {
+              "custom_name": "Picture group show thumbnail",
+              "type": "Picture choice group show thumbnail",
+              "folder_clipart": "Clipart folder 2",
+              "value": "jpeg"
+            },
+            {
+              "custom_name": "Picture group show droplist",
+              "type": "Picture choice group show droplist",
+              "folder_clipart": "Clipart folder 1",
+              "value": "Clipart1"
+            }
+          ],
+          "picture": [
+            "(//div[parent::div[contains(@class,'product-property')]]//img)[1]",
+            "(//div[parent::div[contains(@class,'product-property')]]//img)[2]",
+            "(//div[parent::div[contains(@class,'product-property')]]//img)[3]"
+          ]
+        },
+        {
+          "description": "Check luồng tạo camp personalize với camp 3D 2 mặt",
+          "case_name": "SB_PRB_LP_238",
+          "step": "View Campaign ngoài SF > Input data into all CO > Click btn [Preview]",
+          "campaign": {
+            "name": "Campaign_3D_two_side"
+          },
+          "custom_option_info": [
+            {
+              "custom_name": "Picture",
+              "type": "Picture choice",
+              "value": "png"
+            },
+            {
+              "custom_name": "Text",
+              "type": "Text field",
+              "value": "Test text"
+            }
+          ]
+        },
+        {
+          "description": "Check luồng tao campaign personalize với file psd không chứa effect",
+          "case_name": "SB_PRB_LP_252",
+          "step": "View Campaign ngoài SF > Input data into all CO > Click btn [Preview]",
+          "campaign": {
+            "name": "Canvas_1_psd"
+          },
+          "custom_option_info": [
+            {
+              "custom_name": "Picture",
+              "type": "Picture choice",
+              "value": "Wavy"
+            },
+            {
+              "custom_name": "Text",
+              "type": "Text field",
+              "value": "Test text"
+            }
+          ]
+        },
+        {
+          "description": "Check luồng tạo campaign với file psd có text layer dùng TypeOptions (Underline )",
+          "case_name": "SB_PRB_LP_259",
+          "step": "View Campaign ngoài SF > Input data into all CO > Click btn [Preview]",
+          "campaign": {
+            "name": "Personalize_Text_Underline"
+          },
+          "custom_option_info": [
+            {
+              "type": "Text field",
+              "value": "Test text 1",
+              "custom_name": "Custom text"
+            }
+          ]
+        },
+        {
+          "description": "Check Preview với file psd chứa alightment text",
+          "case_name": "SB_PRB_LP_264",
+          "step": "View Campaign ngoài SF > Input data into all CO > Click btn [Preview]",
+          "campaign": {
+            "name": "Text_aligment_PSD"
+          },
+          "custom_option_info": [
+            {
+              "custom_name": "Left aligment",
+              "type": "Text field",
+              "value": "1111"
+            },
+            {
+              "custom_name": "Right aligment",
+              "type": "Text field",
+              "value": "2222"
+            },
+            {
+              "custom_name": "Center aligment",
+              "type": "Text field",
+              "value": "3333"
+            }
+          ]
+        },
+        {
+          "description": "Check Preview với file psd có layer trùng",
+          "case_name": "SB_PRB_LP_265",
+          "step": "View Campaign ngoài SF > Input data into all CO > Click btn [Preview]",
+          "campaign": {
+            "name": "Personalize_same_name"
+          },
+          "custom_option_info": [
+            {
+              "type": "Text field",
+              "value": "Test text 1",
+              "custom_name": "Custom text"
+            }
+          ]
+        }
+      ]
+    },
+    "DATA_NOT_PREVIEW": {
+      "data": [
+        {
+          "description": "Check preview với campaign personalize chứa file psd có group layer (group layer có effect)",
+          "case_name": "SB_PRB_LP_240",
+          "step": "View Campaign ngoài SF > Input [CO text]. Verify không hiển thị btn [Preview]",
+          "campaign": {
+            "name": "Camp psd has effect text"
+          },
+          "custom_option_info": [
+            {
+              "type": "Text field",
+              "value": "Test text 1",
+              "custom_name": "Text1"
+            },
+            {
+              "type": "Text field",
+              "value": "Test text 2",
+              "custom_name": "Text2"
+            },
+            {
+              "type": "Text field",
+              "value": "Test text 3",
+              "custom_name": "Text3"
+            }
+          ]
+        },
+        {
+          "description": "Check luồng tạo campaign personalize với file psd có layer loại rotate text (test với text xoay các góc 30,45,90,180)",
+          "case_name": "SB_PRB_LP_246",
+          "step": "View Campaign ngoài SF > Input [CO text]. Verify không hiển thị btn [Preview]",
+          "campaign": {
+            "name": "Psd_rotate_text"
+          },
+          "custom_option_info": [
+            {
+              "type": "Text field",
+              "value": "Test text 1",
+              "custom_name": "Text"
+            }
+          ]
+        },
+        {
+          "description": "Check luồng tạo campaign personalize với file psd có layer loại text effect ",
+          "case_name": "SB_PRB_LP_247",
+          "step": "View Campaign ngoài SF > Input [CO text]. Verify không hiển thị btn [Preview]",
+          "campaign": {
+            "name": "Psd_effect_text"
+          },
+          "custom_option_info": [
+            {
+              "type": "Text field",
+              "value": "Test text 1",
+              "custom_name": "Text"
+            }
+          ]
+        },
+        {
+          "description": "Check luồng tao campaign personalize với file psd chứa effect Inner glow",
+          "case_name": "SB_PRB_LP_251",
+          "step": "View Campaign ngoài SF > Input [CO text]. Verify không hiển thị btn [Preview]",
+          "campaign": {
+            "name": "Psd_effect_Inner_glow"
+          },
+          "custom_option_info": [
+            {
+              "type": "Text field",
+              "value": "Test text 1",
+              "custom_name": "Text"
+            },
+            {
+              "type": "Text field",
+              "value": "Test text 2",
+              "custom_name": "Text2"
+            }
+          ]
+        }
+      ]
+    },
+    "SB_PRB_LP_267": {
+      "personalize": [
+        {
+          "enable": false,
+          "mode": "instant_button"
+        },
+        {
+          "enable": true,
+          "mode": "button"
+        },
+        {
+          "enable": true,
+          "mode": "instant_button"
+        },
+        {
+          "enable": true,
+          "mode": "instant"
+        }
+      ],
+      "campaign": {
+        "name": "Camp_personalize_CO_Radio"
+      },
+      "custom_option_info": {
+        "type": "Radio",
+        "value": "Text test 2",
+        "custom_name": "Radio"
+      }
+    }
+  }
+}

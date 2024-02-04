@@ -1,0 +1,57 @@
+{
+  "cases": {
+    "TC_CONF_002": {
+      "shop_position": 3,
+      "shop_name": "2mailchimp-sb.onshopbase.com",
+      "nested_obj_level_1": {
+        "p1": 1,
+        "nested_arr_level_2": ["a", "b"],
+        "nested_obj_level_2": {
+          "p1.1": true
+        }
+      }
+    }
+  },
+  "env": {
+    "prod": {
+      "domain": "accounts.shopbase.net.cn",
+      "api": "https://api.shopbase.com",
+      "username": "havu@beeketing.net",
+      "password": "qafront@123",
+      "shop_name": "sbase-new",
+      "cases": {
+        "TC_CONF_002": {
+          "shop_position": 99,
+          "new_param": "1",
+          "nested_obj_level_1": {
+            "p2": 1,
+            "nested_arr_level_2": ["c"],
+            "nested_obj_level_2": {
+              "p1.1": true,
+              "p1.2": "test"
+            }
+          }
+        }
+      }
+    },
+    "stag": {
+      "domain": "accounts.stag.shopbase.net",
+      "api": "https://api.stag.shopbase.net",
+      "shop_name": "sbase-stag-new",
+      "cases": {
+        "TC_CONF_002": {
+          "shop_position": 22,
+          "nested_obj_level_1": {
+            "p1": 10,
+            "nested_arr_level_2": ["c", "d"],
+            "nested_obj_level_2": {
+              "p1.1": false,
+              "p1.2": "test_1",
+              "p1.3": "xyz"
+            }
+          }
+        }
+      }
+    }
+  }
+}

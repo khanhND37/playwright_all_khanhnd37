@@ -1,0 +1,1271 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-conditional-logic.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "user_id": 73782,
+      "shop_id": 10204282,
+      "shop_name": "au-conditional-logic",
+      "time_out": 600000,
+      "param_snapshot_options": {
+        "max_diff_pixel_ratio": 0.05,
+        "thres_hold": 0.1,
+        "max_diff_pixels": 2000
+      }
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-conditional-logic-prodtest.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "user_id": 73782,
+      "shop_id": 10425399,
+      "shop_name": "au-conditional-logic-prodtest",
+      "time_out": 600000,
+      "param_snapshot_options": {
+        "max_diff_pixel_ratio": 0.05,
+        "thres_hold": 0.1,
+        "max_diff_pixels": 2000
+      },
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-conditional-logic-dev.myshopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "user_id": 73800,
+      "shop_id": 10326723,
+      "shop_name": "au-conditional-logic-dev",
+      "time_out": 600000,
+      "param_snapshot_options": {
+        "max_diff_pixel_ratio": 0.05,
+        "thres_hold": 0.1,
+        "max_diff_pixels": 2000
+      }
+    }
+  },
+  "cases": {
+    "ADD_CONDITION": {
+      "data": [
+        {
+          "description": "[Conditional logic] Add conditional logic thành công với IS EQUAL",
+          "case_id": "SB_PB_PRB_CL_55",
+          "product_info": {
+            "category": "Apparel",
+            "product_name": "Unisex T-shirt"
+          },
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 1",
+              "location_layer_x": "210",
+              "location_layer_y": "1111",
+              "layer_size_h": "179",
+              "layer_size_w": "1680",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 2",
+              "location_layer_x": "210",
+              "location_layer_y": "1111",
+              "layer_size_h": "179",
+              "layer_size_w": "1680",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "image 1.jpg",
+              "location_layer_x": "683",
+              "location_layer_y": "700",
+              "layer_size_h": "1000",
+              "layer_size_w": "734",
+              "front_or_back": "Back"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "image 2.png",
+              "location_layer_x": "794",
+              "location_layer_y": "980",
+              "layer_size_h": "441",
+              "layer_size_w": "513",
+              "front_or_back": "Back"
+            }
+          ],
+          "custom_options": [
+            {
+              "type": "Picture choice",
+              "target_layer": "image 1",
+              "label": "CO1",
+              "type_clipart": "Folder",
+              "value_clipart": "clipart_folder",
+              "position": "below"
+            },
+            {
+              "type": "Image",
+              "target_layer": "image 2",
+              "label": "CO2",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 1",
+              "label": "CO3",
+              "position": "below"
+            },
+            {
+              "type": "Text area",
+              "target_layer": "Text layer 2",
+              "label": "CO4"
+            }
+          ],
+          "condition_info": {
+            "custom_name": "CO1",
+            "condition": ["is equal to>IMG2"],
+            "then_show_value": ["CO2", "CO3", "CO4"]
+          },
+          "pricing_info": {
+            "title": "SB_PB_PRB_CL_55",
+            "description": "Description Campaign condition logic"
+          },
+          "conditional_logic_show": {
+            "list_custom": ["Picture>CO1>IMG2"],
+            "then_show_value": ["base-upload,relative input-base,textarea-base"],
+            "is_show_value": [true]
+          },
+          "snapshot_verify": {
+            "add_conditional_logic": "add-conditional-logic-SB_PB_PRB_CL_55.png",
+            "list_conditional_logic": "list-conditional-logic-SB_PB_PRB_CL_55.png"
+          }
+        },
+        {
+          "description": "[Conditional logic] Add conditional logic thành công với IS NOT EQUAL",
+          "case_id": "SB_PB_PRB_CL_56",
+          "product_info": {
+            "category": "Apparel",
+            "product_name": "Unisex T-shirt"
+          },
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 1",
+              "location_layer_x": "210",
+              "location_layer_y": "1111",
+              "layer_size_h": "179",
+              "layer_size_w": "1680",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 2",
+              "location_layer_x": "210",
+              "location_layer_y": "1111",
+              "layer_size_h": "179",
+              "layer_size_w": "1680",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "image 1.jpg",
+              "location_layer_x": "683",
+              "location_layer_y": "700",
+              "layer_size_h": "1000",
+              "layer_size_w": "734",
+              "front_or_back": "Back"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "image 2.png",
+              "location_layer_x": "794",
+              "location_layer_y": "980",
+              "layer_size_h": "441",
+              "layer_size_w": "513",
+              "front_or_back": "Back"
+            }
+          ],
+          "custom_options": [
+            {
+              "type": "Picture choice",
+              "target_layer": "image 1",
+              "label": "CO1",
+              "type_clipart": "Folder",
+              "value_clipart": "clipart_folder",
+              "position": "below"
+            },
+            {
+              "type": "Image",
+              "target_layer": "image 2",
+              "label": "CO2",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 1",
+              "label": "CO3",
+              "position": "below"
+            },
+            {
+              "type": "Text area",
+              "target_layer": "Text layer 2",
+              "label": "CO4"
+            }
+          ],
+          "condition_info": {
+            "custom_name": "CO1",
+            "condition": ["is not equal to>IMG2"],
+            "then_show_value": ["CO2", "CO3", "CO4"]
+          },
+          "pricing_info": {
+            "title": "SB_PB_PRB_CL_56",
+            "description": "Description Campaign condition logic"
+          },
+          "conditional_logic_show": {
+            "list_custom": ["Picture>CO1>IMG2"],
+            "then_show_value": ["base-upload,relative input-base,textarea-base"],
+            "is_show_value": [false]
+          },
+          "snapshot_verify": {
+            "add_conditional_logic": "add-conditional-logic-SB_PB_PRB_CL_56.png",
+            "list_conditional_logic": "list-conditional-logic-SB_PB_PRB_CL_56.png"
+          }
+        },
+        {
+          "description": "[Conditional logic] Add conditional logic thành công khi sử dụng Condition NOT EQUAL và Condition EQUAL",
+          "case_id": "SB_PB_PRB_CL_57",
+          "product_info": {
+            "category": "Apparel",
+            "product_name": "Unisex T-shirt"
+          },
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 1",
+              "location_layer_x": "210",
+              "location_layer_y": "1111",
+              "layer_size_h": "179",
+              "layer_size_w": "1680",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 2",
+              "location_layer_x": "210",
+              "location_layer_y": "1111",
+              "layer_size_h": "179",
+              "layer_size_w": "1680",
+              "front_or_back": "Front"
+            }
+          ],
+          "custom_options": [
+            {
+              "type": "Radio",
+              "target_layer": "Text layer 1",
+              "label": "CO1",
+              "position": "below",
+              "value": "a>b"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 1",
+              "label": "CO2",
+              "position": "below"
+            },
+            {
+              "type": "Text area",
+              "target_layer": "Text layer 2",
+              "label": "CO3"
+            }
+          ],
+          "condition_info": {
+            "custom_name": "CO1",
+            "condition": ["is equal to>a", "is not equal to>b"],
+            "then_show_value": ["CO2", "CO3"],
+            "add_condition": "yes"
+          },
+          "pricing_info": {
+            "title": "SB_PB_PRB_CL_57",
+            "description": "Description Campaign condition logic"
+          },
+          "conditional_logic_show": {
+            "list_custom": ["Radio>CO1>a", "Radio>CO1>b"],
+            "then_show_value": ["radio-group,textarea-base,relative input-base", "radio-group"],
+            "is_show_value": [true, true]
+          },
+          "snapshot_verify": {
+            "add_conditional_logic": "add-conditional-logic-SB_PB_PRB_CL_57.png",
+            "list_conditional_logic": "list-conditional-logic-SB_PB_PRB_CL_57.png"
+          }
+        }
+      ]
+    },
+    "SB_PB_PRB_CL_61": {
+      "product_info": {
+        "category": "Apparel",
+        "product_name": "Unisex T-shirt"
+      },
+      "layers": [
+        {
+          "layer_type": "Text",
+          "layer_value": "Text 1",
+          "location_layer_x": "210",
+          "location_layer_y": "1111",
+          "layer_size_h": "179",
+          "layer_size_w": "1680",
+          "front_or_back": "Front"
+        },
+        {
+          "layer_type": "Text",
+          "layer_value": "Text 2",
+          "location_layer_x": "210",
+          "location_layer_y": "1111",
+          "layer_size_h": "179",
+          "layer_size_w": "1680",
+          "front_or_back": "Front"
+        },
+        {
+          "layer_type": "Text",
+          "layer_value": "Text 3",
+          "location_layer_x": "210",
+          "location_layer_y": "1111",
+          "layer_size_h": "179",
+          "layer_size_w": "1680",
+          "front_or_back": "Front"
+        },
+        {
+          "layer_type": "Image",
+          "image_name": "image 1.jpg",
+          "location_layer_x": "683",
+          "location_layer_y": "700",
+          "layer_size_h": "1000",
+          "layer_size_w": "734",
+          "front_or_back": "Back"
+        },
+        {
+          "layer_type": "Image",
+          "image_name": "image 2.png",
+          "location_layer_x": "794",
+          "location_layer_y": "980",
+          "layer_size_h": "441",
+          "layer_size_w": "513",
+          "front_or_back": "Back"
+        }
+      ],
+      "custom_options": [
+        {
+          "type": "Droplist",
+          "value": "value 1>value 2",
+          "target_layer": "Text layer 1",
+          "label": "CO1",
+          "position": "below"
+        },
+        {
+          "type": "Text field",
+          "target_layer": "Text layer 2",
+          "label": "CO2",
+          "position": "below"
+        },
+        {
+          "type": "Checkbox",
+          "target_layer": "Text layer 2",
+          "value": "a,b",
+          "label": "CO3"
+        }
+      ],
+      "condition_info": {
+        "custom_name": "CO1",
+        "condition": ["is equal to>value 1"],
+        "then_show_value": ["CO2", "CO3"]
+      },
+      "pricing_info": {
+        "title": "SB_PB_PRB_CL_61",
+        "description": "Description Campaign condition logic"
+      },
+      "conditional_logic_show": {
+        "list_custom": ["Droplist>CO1>value 1"],
+        "then_show_value": ["select-box,relative input-base,checkbox-group"],
+        "is_show_value": [true]
+      }
+    },
+    "SB_PB_PRB_CL_62": {
+      "product_info": {
+        "category": "Apparel",
+        "product_name": "Unisex T-shirt"
+      },
+      "layers": [
+        {
+          "layer_type": "Text",
+          "layer_value": "Text 1",
+          "location_layer_x": "210",
+          "location_layer_y": "1111",
+          "layer_size_h": "179",
+          "layer_size_w": "1680",
+          "front_or_back": "Front"
+        },
+        {
+          "layer_type": "Text",
+          "layer_value": "Text 2",
+          "location_layer_x": "210",
+          "location_layer_y": "1111",
+          "layer_size_h": "179",
+          "layer_size_w": "1680",
+          "front_or_back": "Front"
+        },
+        {
+          "layer_type": "Text",
+          "layer_value": "Text 3",
+          "location_layer_x": "210",
+          "location_layer_y": "1111",
+          "layer_size_h": "179",
+          "layer_size_w": "1680",
+          "front_or_back": "Front"
+        },
+        {
+          "layer_type": "Image",
+          "image_name": "image 1.jpg",
+          "location_layer_x": "683",
+          "location_layer_y": "700",
+          "layer_size_h": "1000",
+          "layer_size_w": "734",
+          "front_or_back": "Back"
+        },
+        {
+          "layer_type": "Image",
+          "image_name": "image 2.png",
+          "location_layer_x": "794",
+          "location_layer_y": "980",
+          "layer_size_h": "441",
+          "layer_size_w": "513",
+          "front_or_back": "Back"
+        }
+      ],
+      "custom_options": [
+        {
+          "type": "Droplist",
+          "value": "value 1>value 2",
+          "target_layer": "Text layer 1",
+          "label": "CO1",
+          "position": "below"
+        },
+        {
+          "type": "Text field",
+          "target_layer": "Text layer 2",
+          "label": "CO2",
+          "position": "below"
+        },
+        {
+          "type": "Checkbox",
+          "target_layer": "Text layer 1",
+          "label": "CO3",
+          "value": "a,b"
+        }
+      ],
+      "condition_info": {
+        "custom_name": "CO1",
+        "condition": ["is not equal to>value 1"],
+        "then_show_value": ["CO2"]
+      },
+      "pricing_info": {
+        "title": "SB_PB_PRB_CL_62",
+        "description": "Description Campaign condition logic"
+      },
+      "edit_conditional_logic": [
+        {
+          "step_description": "step edit equal conditional logic",
+          "conditional_logic_edit": {
+            "custom_name": "CO1",
+            "condition": ["is equal to>value 1"],
+            "then_show_value": ["CO2"]
+          },
+          "conditional_logic_show_sf": {
+            "list_custom": ["Droplist>CO1>value 1"],
+            "then_show_value": ["select-box,relative input-base,checkbox-group"],
+            "is_show_value": [true]
+          },
+          "verify_edit_conditional_logic": "conditional-logic-edit-equal-SB_PB_PRB_CL_62.png"
+        },
+        {
+          "step_description": "step edit value conditional logic",
+          "conditional_logic_edit": {
+            "custom_name": "CO1",
+            "condition": ["is equal to>value 2"],
+            "then_show_value": ["CO2"]
+          },
+          "conditional_logic_show_sf": {
+            "list_custom": ["Droplist>CO1>value 2"],
+            "then_show_value": ["select-box,relative input-base,checkbox-group"],
+            "is_show_value": [true]
+          },
+          "verify_edit_conditional_logic": "conditional-logic-edit-value-SB_PB_PRB_CL_62.png"
+        },
+        {
+          "step_description": "step edit then show conditional logic",
+          "conditional_logic_edit": {
+            "custom_name": "CO1",
+            "condition": ["is equal to>value 2"],
+            "then_show_value": ["CO3"]
+          },
+          "conditional_logic_show_sf": {
+            "list_custom": ["Droplist>CO1>value 2"],
+            "then_show_value": ["select-box,relative input-base,checkbox-group"],
+            "is_show_value": [true]
+          },
+          "verify_edit_conditional_logic": "conditional-logic-edit-then-show-SB_PB_PRB_CL_62.png"
+        }
+      ]
+    },
+    "SB_PB_PRB_CL_65": {
+      "product_info": {
+        "category": "Apparel",
+        "product_name": "Unisex T-shirt"
+      },
+      "layers": [
+        {
+          "layer_type": "Text",
+          "layer_value": "Text 1",
+          "location_layer_x": "210",
+          "location_layer_y": "1111",
+          "layer_size_h": "179",
+          "layer_size_w": "1680",
+          "front_or_back": "Front"
+        },
+        {
+          "layer_type": "Text",
+          "layer_value": "Text 2",
+          "location_layer_x": "210",
+          "location_layer_y": "1111",
+          "layer_size_h": "179",
+          "layer_size_w": "1680",
+          "front_or_back": "Front"
+        },
+        {
+          "layer_type": "Text",
+          "layer_value": "Text 3",
+          "location_layer_x": "210",
+          "location_layer_y": "1111",
+          "layer_size_h": "179",
+          "layer_size_w": "1680",
+          "front_or_back": "Front"
+        },
+        {
+          "layer_type": "Image",
+          "image_name": "image 1.jpg",
+          "location_layer_x": "683",
+          "location_layer_y": "700",
+          "layer_size_h": "1000",
+          "layer_size_w": "734",
+          "front_or_back": "Back"
+        },
+        {
+          "layer_type": "Image",
+          "image_name": "image 2.png",
+          "location_layer_x": "794",
+          "location_layer_y": "980",
+          "layer_size_h": "441",
+          "layer_size_w": "513",
+          "front_or_back": "Back"
+        }
+      ],
+      "custom_options": [
+        {
+          "type": "Droplist",
+          "value": "value 1>value 2",
+          "target_layer": "Text layer 1",
+          "label": "CO1",
+          "position": "below"
+        },
+        {
+          "type": "Text field",
+          "target_layer": "Text layer 2",
+          "label": "CO2",
+          "position": "below"
+        },
+        {
+          "type": "Checkbox",
+          "target_layer": "Text layer 1",
+          "label": "CO3",
+          "value": "a,b",
+          "position": "below"
+        },
+        {
+          "type": "Radio",
+          "target_layer": "Text layer 3",
+          "label": "CO4",
+          "value": "a>b>c",
+          "position": "below"
+        },
+        {
+          "type": "Picture choice",
+          "target_layer": "image 1",
+          "label": "CO5",
+          "type_clipart": "Folder",
+          "value_clipart": "Folder_65",
+          "position": "below"
+        },
+        {
+          "type": "Image",
+          "target_layer": "image 1",
+          "label": "CO6",
+          "position": "below"
+        },
+        {
+          "type": "Text area",
+          "target_layer": "Text layer 3",
+          "label": "CO7"
+        }
+      ],
+      "condition_info": {
+        "custom_name": "CO1",
+        "condition": ["is equal to>value 1", "is equal to>value 2"],
+        "then_show_value": ["CO5"]
+      },
+      "snapshot_verify": {
+        "add_conditional_logic": "add-conditional-logic-SB_PB_PRB_CL_65.png",
+        "list_conditional_logic": "list-conditional-logic-SB_PB_PRB_CL_65.png",
+        "edit_value_droplist": "edit-value-droplist-SB_PB_PRB_CL_65.png",
+        "verify_edit_conditional_logic": "conditional-logic-edit-equal-and-thenShow-SB_PB_PRB_CL_65.png"
+      },
+      "custom_options_edit": [
+        {
+          "label_edit": "CO1",
+          "value": "value 3>value 4",
+          "type": "Droplist",
+          "is_edit_custom": true
+        }
+      ],
+      "conditional_logic_edit": {
+        "custom_name": "CO1",
+        "condition": ["is equal to>value 3", "is equal to>value 4"],
+        "then_show_value": ["CO5"]
+      }
+    },
+    "SB_PB_PRB_CL_66": {
+      "clipart_folder_info": [
+        {
+          "folder_name": "Folder_66",
+          "images": ["BD_3.png", "BD_4.png", "BD_5.png"]
+        }
+      ],
+      "verify_list_clipart_after_edited": ["BD_4", "BD_5"],
+      "verify_list_clipart_before_edited": ["BD_3", "BD_4", "BD_5"],
+      "product_info": {
+        "category": "Apparel",
+        "product_name": "Unisex T-shirt"
+      },
+      "layers": [
+        {
+          "layer_type": "Text",
+          "layer_value": "Text 1",
+          "location_layer_x": "210",
+          "location_layer_y": "1111",
+          "layer_size_h": "179",
+          "layer_size_w": "1680",
+          "front_or_back": "Front"
+        },
+        {
+          "layer_type": "Image",
+          "image_name": "image 1.jpg",
+          "location_layer_x": "683",
+          "location_layer_y": "700",
+          "layer_size_h": "1000",
+          "layer_size_w": "734",
+          "front_or_back": "Back"
+        }
+      ],
+      "custom_options": [
+        {
+          "type": "Picture choice",
+          "target_layer": "image 1",
+          "label": "CO1",
+          "type_clipart": "Folder",
+          "value_clipart": "Folder_66",
+          "position": "below"
+        },
+        {
+          "type": "Text field",
+          "target_layer": "Text layer 1",
+          "label": "CO2"
+        }
+      ],
+      "custom_options_edit": [
+        {
+          "type": "Picture choice",
+          "target_layer": "image 1",
+          "label": "CO1",
+          "type_clipart": "Folder",
+          "value_clipart": "Folder_66"
+        }
+      ],
+      "condition_info": {
+        "custom_name": "CO1",
+        "condition": ["is equal to>BD_4"],
+        "then_show_value": ["CO2"]
+      },
+      "snapshot_verify": {
+        "add_conditional_logic": "add-conditional-logic-SB_PB_PRB_CL_66.png",
+        "list_conditional_logic": "list-conditional-logic-SB_PB_PRB_CL_66.png",
+        "verify_img_clipart": "verify-img-clipart-on-sf-SB_PB_PRB_CL_66.png"
+      },
+      "pricing_info": {
+        "title": "SB_PB_PRB_CL_66",
+        "description": "Description Campaign condition logic"
+      }
+    },
+    "EDIT_FOLDER_CLIPART": {
+      "data": [
+        {
+          "description": "[Conditional logic] Check conditional logic của campaign với CO loại PC và chọn clipart folder khi edit name image",
+          "case_id": "SB_PB_PRB_CL_67",
+          "clipart_folder_info": [
+            {
+              "folder_name": "Folder_67",
+              "images": ["BD_3.png", "BD_4.png", "BD_5.png"]
+            }
+          ],
+          "edit_clipart_folder_info": [
+            {
+              "image_name": "BD_5,BD_4,BD_33",
+              "checkIsEdit": true,
+              "nameClipart": "Folder_67"
+            }
+          ],
+          "verify_list_clipart_after_edited": ["BD_33", "BD_4", "BD_5"],
+          "product_info": {
+            "category": "Apparel",
+            "product_name": "Unisex T-shirt"
+          },
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 1",
+              "location_layer_x": "210",
+              "location_layer_y": "1111",
+              "layer_size_h": "179",
+              "layer_size_w": "1680",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "image 1.jpg",
+              "location_layer_x": "683",
+              "location_layer_y": "700",
+              "layer_size_h": "1000",
+              "layer_size_w": "734",
+              "front_or_back": "Back"
+            }
+          ],
+          "custom_options": [
+            {
+              "type": "Picture choice",
+              "target_layer": "image 1",
+              "label": "CO1",
+              "type_clipart": "Folder",
+              "value_clipart": "Folder_67",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 1",
+              "label": "CO2"
+            }
+          ],
+          "custom_options_edit": [
+            {
+              "type": "Picture choice",
+              "target_layer": "image 1",
+              "label": "CO1",
+              "type_clipart": "Folder",
+              "value_clipart": "Folder_67"
+            }
+          ],
+          "condition_info": {
+            "custom_name": "CO1",
+            "condition": ["is equal to>BD_4"],
+            "then_show_value": ["CO2"]
+          },
+          "snapshot_verify": {
+            "add_conditional_logic": "add-conditional-logic-SB_PB_PRB_CL_67.png",
+            "list_conditional_logic": "list-conditional-logic-SB_PB_PRB_CL_67.png"
+          },
+          "pricing_info": {
+            "title": "SB_PB_PRB_CL_67",
+            "description": "Description Campaign condition logic"
+          }
+        },
+        {
+          "description": "[Conditional logic] Check conditional logic của campaign với CO loại PC và chọn clipart folder khi thêm image",
+          "case_id": "SB_PB_PRB_CL_68",
+          "clipart_folder_info": [
+            {
+              "folder_name": "Folder_68",
+              "images": ["BD_3.png", "BD_4.png", "BD_5.png"]
+            }
+          ],
+          "edit_clipart_folder_info": [
+            {
+              "images": ["BD_6.png"],
+              "checkIsEdit": true,
+              "nameClipart": "Folder_68"
+            }
+          ],
+          "verify_list_clipart_after_edited": ["BD_3", "BD_4", "BD_5", "BD_6"],
+          "product_info": {
+            "category": "Apparel",
+            "product_name": "Unisex T-shirt"
+          },
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 1",
+              "location_layer_x": "210",
+              "location_layer_y": "1111",
+              "layer_size_h": "179",
+              "layer_size_w": "1680",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "image 1.jpg",
+              "location_layer_x": "683",
+              "location_layer_y": "700",
+              "layer_size_h": "1000",
+              "layer_size_w": "734",
+              "front_or_back": "Back"
+            }
+          ],
+          "custom_options": [
+            {
+              "type": "Picture choice",
+              "target_layer": "image 1",
+              "label": "CO1",
+              "type_clipart": "Folder",
+              "value_clipart": "Folder_68",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 1",
+              "label": "CO2"
+            }
+          ],
+          "custom_options_edit": [
+            {
+              "type": "Picture choice",
+              "target_layer": "image 1",
+              "label": "CO1",
+              "type_clipart": "Folder",
+              "value_clipart": "Folder_68"
+            }
+          ],
+          "condition_info": {
+            "custom_name": "CO1",
+            "condition": ["is equal to>BD_4"],
+            "then_show_value": ["CO2"]
+          },
+          "snapshot_verify": {
+            "add_conditional_logic": "add-conditional-logic-SB_PB_PRB_CL_68.png",
+            "list_conditional_logic": "list-conditional-logic-SB_PB_PRB_CL_68.png"
+          },
+          "pricing_info": {
+            "title": "SB_PB_PRB_CL_68",
+            "description": "Description Campaign condition logic"
+          }
+        }
+      ]
+    },
+    "SB_PB_PRB_CL_69": {
+      "clipart_folder_info": [
+        {
+          "folder_name": "Folder_69",
+          "images": ["BD_3.png", "BD_4.png", "BD_5.png"]
+        }
+      ],
+      "product_info": {
+        "category": "Apparel",
+        "product_name": "Unisex T-shirt"
+      },
+      "layers": [
+        {
+          "layer_type": "Text",
+          "layer_value": "Text 1",
+          "location_layer_x": "210",
+          "location_layer_y": "1111",
+          "layer_size_h": "179",
+          "layer_size_w": "1680",
+          "front_or_back": "Front"
+        },
+        {
+          "layer_type": "Image",
+          "image_name": "image 1.jpg",
+          "location_layer_x": "683",
+          "location_layer_y": "700",
+          "layer_size_h": "1000",
+          "layer_size_w": "734",
+          "front_or_back": "Back"
+        }
+      ],
+      "custom_options": [
+        {
+          "type": "Picture choice",
+          "target_layer": "image 1",
+          "label": "CO1",
+          "type_clipart": "Folder",
+          "value_clipart": "Folder_69",
+          "position": "below"
+        },
+        {
+          "type": "Text field",
+          "target_layer": "Text layer 1",
+          "label": "CO2"
+        }
+      ],
+      "custom_options_edit": [
+        {
+          "type": "Picture choice",
+          "target_layer": "image 1",
+          "label": "CO1",
+          "type_clipart": "Folder",
+          "value_clipart": "Folder_69"
+        }
+      ],
+      "condition_info": {
+        "custom_name": "CO1",
+        "condition": ["is equal to>BD_4"],
+        "then_show_value": ["CO2"]
+      },
+      "snapshot_verify": {
+        "add_conditional_logic": "add-conditional-logic-SB_PB_PRB_CL_69.png",
+        "list_conditional_logic": "list-conditional-logic-SB_PB_PRB_CL_69.png",
+        "delete_clipart": "delete-clipart-logic-SB_PB_PRB_CL_69.png"
+      },
+      "pricing_info": {
+        "title": "SB_PB_PRB_CL_69",
+        "description": "Description Campaign condition logic"
+      }
+    },
+    "SB_PB_PRB_CL_70": {
+      "clipart_folder_info": [
+        {
+          "folder_name": "Folder_70C",
+          "group_name": "Group_70",
+          "images": ["BD_5.png"]
+        }
+      ],
+      "product_info": {
+        "category": "Apparel",
+        "product_name": "Unisex T-shirt"
+      },
+      "layers": [
+        {
+          "layer_type": "Text",
+          "layer_value": "Text 1",
+          "location_layer_x": "210",
+          "location_layer_y": "1111",
+          "layer_size_h": "179",
+          "layer_size_w": "1680",
+          "front_or_back": "Front"
+        },
+        {
+          "layer_type": "Image",
+          "image_name": "image 1.jpg",
+          "location_layer_x": "683",
+          "location_layer_y": "700",
+          "layer_size_h": "1000",
+          "layer_size_w": "734",
+          "front_or_back": "Back"
+        }
+      ],
+      "custom_options": [
+        {
+          "type": "Picture choice",
+          "target_layer": "image 1",
+          "label": "CO1",
+          "type_clipart": "Group",
+          "value_clipart": "Group_70",
+          "position": "below"
+        },
+        {
+          "type": "Text field",
+          "target_layer": "Text layer 1",
+          "label": "CO2"
+        }
+      ],
+      "condition_info": {
+        "custom_name": "CO1",
+        "condition": ["is equal to>Folder_70B"],
+        "then_show_value": ["CO2"]
+      },
+      "clipart_folder_verify": {
+        "clipart_folder_before_edit": ["Folder_70A", "Folder_70B", "Folder_70C"],
+        "clipart_folder_after_edit": ["Folder_70A", "Folder_70B"]
+      },
+      "pricing_info": {
+        "title": "SB_PB_PRB_CL_70",
+        "description": "Description Campaign condition logic"
+      }
+    },
+    "SB_PB_PRB_CL_71": {
+      "clipart_folder_info": [
+        {
+          "folder_name": "Folder_71C",
+          "group_name": "Group_71",
+          "images": ["BD_5.png"]
+        }
+      ],
+      "edit_clipart_folder_info": [
+        {
+          "folder_name": "Folder_71C_update",
+          "checkIsEdit": true,
+          "nameClipart": "Folder_71C"
+        }
+      ],
+      "product_info": {
+        "category": "Apparel",
+        "product_name": "Unisex T-shirt"
+      },
+      "layers": [
+        {
+          "layer_type": "Text",
+          "layer_value": "Text 1",
+          "location_layer_x": "210",
+          "location_layer_y": "1111",
+          "layer_size_h": "179",
+          "layer_size_w": "1680",
+          "front_or_back": "Front"
+        },
+        {
+          "layer_type": "Image",
+          "image_name": "image 1.jpg",
+          "location_layer_x": "683",
+          "location_layer_y": "700",
+          "layer_size_h": "1000",
+          "layer_size_w": "734",
+          "front_or_back": "Back"
+        }
+      ],
+      "custom_options": [
+        {
+          "type": "Picture choice",
+          "target_layer": "image 1",
+          "label": "CO1",
+          "type_clipart": "Group",
+          "value_clipart": "Group_71",
+          "position": "below"
+        },
+        {
+          "type": "Text field",
+          "target_layer": "Text layer 1",
+          "label": "CO2"
+        }
+      ],
+      "condition_info": {
+        "custom_name": "CO1",
+        "condition": ["is equal to>Folder_71B"],
+        "then_show_value": ["CO2"]
+      },
+      "clipart_folder_verify": {
+        "clipart_folder_before_edit": ["Folder_71A", "Folder_71B", "Folder_71C"],
+        "clipart_folder_after_edit": ["Folder_71A", "Folder_71B", "Folder_71C_update"]
+      },
+      "pricing_info": {
+        "title": "SB_PB_PRB_CL_71",
+        "description": "Description Campaign condition logic"
+      }
+    },
+    "SB_PB_PRB_CL_72": {
+      "add_more_clipart_folder_info": [
+        {
+          "folder_name": "Folder_72D",
+          "group_name": "Group_72",
+          "images": ["BD_4.png"]
+        }
+      ],
+      "product_info": {
+        "category": "Apparel",
+        "product_name": "Unisex T-shirt"
+      },
+      "layers": [
+        {
+          "layer_type": "Text",
+          "layer_value": "Text 1",
+          "location_layer_x": "210",
+          "location_layer_y": "1111",
+          "layer_size_h": "179",
+          "layer_size_w": "1680",
+          "front_or_back": "Front"
+        },
+        {
+          "layer_type": "Image",
+          "image_name": "image 1.jpg",
+          "location_layer_x": "683",
+          "location_layer_y": "700",
+          "layer_size_h": "1000",
+          "layer_size_w": "734",
+          "front_or_back": "Back"
+        }
+      ],
+      "custom_options": [
+        {
+          "type": "Picture choice",
+          "target_layer": "image 1",
+          "label": "CO1",
+          "type_clipart": "Group",
+          "value_clipart": "Group_72",
+          "position": "below"
+        },
+        {
+          "type": "Text field",
+          "target_layer": "Text layer 1",
+          "label": "CO2"
+        }
+      ],
+      "condition_info": {
+        "custom_name": "CO1",
+        "condition": ["is equal to>Folder_72B"],
+        "then_show_value": ["CO2"]
+      },
+      "clipart_folder_verify": {
+        "clipart_folder_before_edit": ["Folder_72A", "Folder_72B", "Folder_72C"],
+        "clipart_folder_after_edit": ["Folder_72A", "Folder_72B", "Folder_72C", "Folder_72D"]
+      },
+      "pricing_info": {
+        "title": "SB_PB_PRB_CL_72",
+        "description": "Description Campaign condition logic"
+      }
+    },
+    "SB_PB_PRB_CL_73": {
+      "clipart_group_info": {
+        "group_name": "Group_73",
+        "action": "Select existing clipart folders",
+        "folder_name": "Folder_73A,Folder_73B,Folder_73C"
+      },
+      "product_info": {
+        "category": "Apparel",
+        "product_name": "Unisex T-shirt"
+      },
+      "layers": [
+        {
+          "layer_type": "Text",
+          "layer_value": "Text 1",
+          "location_layer_x": "210",
+          "location_layer_y": "1111",
+          "layer_size_h": "179",
+          "layer_size_w": "1680",
+          "front_or_back": "Front"
+        },
+        {
+          "layer_type": "Image",
+          "image_name": "image 1.jpg",
+          "location_layer_x": "683",
+          "location_layer_y": "700",
+          "layer_size_h": "1000",
+          "layer_size_w": "734",
+          "front_or_back": "Back"
+        }
+      ],
+      "custom_options": [
+        {
+          "type": "Picture choice",
+          "target_layer": "image 1",
+          "label": "CO1",
+          "type_clipart": "Group",
+          "value_clipart": "Group_73",
+          "position": "below"
+        },
+        {
+          "type": "Text field",
+          "target_layer": "Text layer 1",
+          "label": "CO2"
+        }
+      ],
+      "condition_info": {
+        "custom_name": "CO1",
+        "condition": ["is equal to>Folder_73B"],
+        "then_show_value": ["CO2"]
+      },
+      "snapshot_verify": {
+        "delete_clipart_group": "delete_clipart_group-SB_PB_PRB_CL_73.png"
+      },
+      "pricing_info": {
+        "title": "SB_PB_PRB_CL_73",
+        "description": "Description Campaign condition logic"
+      }
+    },
+    "SB_PB_PRB_CL_75": {
+      "product_info": {
+        "category": "Apparel",
+        "product_name": "Unisex T-shirt"
+      },
+      "layers": [
+        {
+          "layer_type": "Text",
+          "layer_value": "Text 1",
+          "location_layer_x": "210",
+          "location_layer_y": "1111",
+          "layer_size_h": "179",
+          "layer_size_w": "1680",
+          "front_or_back": "Front"
+        },
+        {
+          "layer_type": "Text",
+          "layer_value": "Text 2",
+          "location_layer_x": "210",
+          "location_layer_y": "1111",
+          "layer_size_h": "179",
+          "layer_size_w": "1680",
+          "front_or_back": "Front"
+        },
+        {
+          "layer_type": "Image",
+          "image_name": "image 1.jpg",
+          "location_layer_x": "683",
+          "location_layer_y": "700",
+          "layer_size_h": "1000",
+          "layer_size_w": "734",
+          "front_or_back": "Front"
+        }
+      ],
+      "custom_options": [
+        {
+          "type": "Droplist",
+          "value": "value 1>value 2",
+          "target_layer": "Text layer 1",
+          "label": "CO1",
+          "position": "below"
+        },
+        {
+          "type": "Text field",
+          "target_layer": "Text layer 2",
+          "label": "CO2",
+          "position": "below"
+        },
+        {
+          "type": "Text field",
+          "target_layer": "Text layer 1",
+          "label": "CO3"
+        }
+      ],
+      "condition_info": {
+        "custom_name": "CO1",
+        "condition": ["is equal to>value 1", "is equal to>value 2"],
+        "then_show_value": ["CO3"]
+      },
+      "conditional_logic_verify": {
+        "conditional_logic_shop_1": ["value 1", "value 2"]
+      },
+      "snapshot_verify": {
+        "conditional_logic_duplicate": "conditional_logic_duplicate-SB_PB_PRB_CL_75.png"
+      },
+      "pricing_info": {
+        "title": "SB_PB_PRB_CL_75",
+        "description": "Description Campaign condition logic"
+      },
+      "pricing_info_duplicate": {
+        "title": "SB_PB_PRB_CL_75 duplicate",
+        "description": "Description Campaign condition logic"
+      }
+    }
+  }
+}

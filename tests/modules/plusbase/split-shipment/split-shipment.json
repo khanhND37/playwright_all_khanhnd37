@@ -1,0 +1,536 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "shop_name": "au-split-shipment",
+      "username": "plus-qe-2@beeketing.net",
+      "password": "VDDSzj45Z0#l",
+      "user_id": 90044,
+      "shop_id": 10327949,
+      "domain": "au-split-shipment.myshopbase.net",
+      "odoo_host": "https://odoo.dev.shopbase.net/",
+      "odoo_db": "sbase_fulfillment_dev",
+      "odoo_username": "admin",
+      "odoo_password": "admin",
+      "plb_template": {
+        "domain": "plusbase-checkout.myshopbase.net",
+        "shop_name": "plusbase-checkout.myshopbase.net",
+        "user_id": "87262",
+        "shop_id": "10060862",
+        "username": "phuongpham@beeketing.net",
+        "password": "123456",
+        "shop": "plusbase-checkout"
+      },
+      "theme": "inside",
+      "country_currency": "United States",
+
+      "cases": {
+        "SB_PLB_SPS_29": {
+          "product_id": 1156594,
+          "varriants": [
+            ["One Size", "Dark Grey"],
+            ["One Size", "Beige"],
+            ["One Size", "Navy Blue"],
+            ["One Size", "Khaki"]
+          ],
+          "split_description": "Each package can only ship up to 3 items. If there is a 4 item, it will be split into a new package, and the shipping cost for that item will be calculated as the same as the 1st item.Learn more about conditions in which order needs to be split for shipping."
+        },
+        "SB_PLB_SPS_30": {
+          "product_id": 1156591,
+          "varriants": [
+            ["M", "Camel 1"],
+            ["M", "Camel 2"]
+          ],
+          "split_description": "Each package can only ship up to 3 items. If there is a 4 item, it will be split into a new package, and the shipping cost for that item will be calculated as the same as the 1st item.Learn more about conditions in which order needs to be split for shipping."
+        },
+        "SB_PLB_SPS_31": {
+          "product_id": 1156592,
+          "varriants": [
+            ["M", "Black"],
+            ["M", "Red"]
+          ],
+          "split_description": "Each package can only ship up to 3 items. If there is a 4 item, it will be split into a new package, and the shipping cost for that item will be calculated as the same as the 1st item.Learn more about conditions in which order needs to be split for shipping."
+        },
+        "SB_PLB_SPS_28": {
+          "product_id": 1156660,
+          "varriants": [
+            ["One Size", "Black"],
+            ["One Size", "Gray"],
+            ["One Size", "Khaki"],
+            ["One Size", "White"]
+          ],
+          "rules_id": 1000197,
+          "split_description": "Each package can only ship up to 176 items. If there is a 177 item, it will be split into a new package, and the shipping cost for that item will be calculated as the same as the 1st item.Learn more about conditions in which order needs to be split for shipping."
+        },
+        "SB_PLB_SPS_32": {
+          "data": [
+            {
+              "case_id": "SB_PLB_SPS_32",
+              "description": "Verify hiển thị split shipment trong màn Private request khi product đã được config split shipment",
+              "product_tmpl_id": 1156592,
+              "product_product_id": 1309347,
+              "odoo_country": "US",
+              "is_combo": false,
+              "products_checkout": [
+                {
+                  "variant_id": 1000001770198174,
+                  "quantity": 5
+                }
+              ]
+            },
+            {
+              "case_id": "SB_PLB_SPS_33",
+              "description": "Verify shipping cost được tính theo split shipment của product Catalog trong order detail khi không markup shipping",
+              "product_tmpl_id": 1156591,
+              "product_product_id": 1309344,
+              "odoo_country": "US",
+              "is_combo": false,
+              "products_checkout": [
+                {
+                  "variant_id": 1000001770197874,
+                  "quantity": 5
+                }
+              ]
+            },
+            {
+              "case_id": "SB_PLB_SPS_34",
+              "description": "Verify shipping cost được tính theo split shipment của product Aliexperss khi không markup shipping",
+              "product_tmpl_id": 1156594,
+              "product_product_id": 1309365,
+              "odoo_country": "US",
+              "is_combo": false,
+              "products_checkout": [
+                {
+                  "variant_id": 1000001770325912,
+                  "quantity": 5
+                }
+              ]
+            },
+            {
+              "case_id": "SB_PLB_SPS_35",
+              "description": "Verify shipping cost được tính theo split shipment khi checkout với item chứa combo khi không markup shipping",
+              "product_id": 1100000000598566,
+              "product_tmpl_id": 1157400,
+              "product_product_id": 1335065,
+              "odoo_country": "US",
+              "is_combo": true,
+              "products_checkout": [
+                {
+                  "variant_id": 1000001771240659,
+                  "quantity": 5
+                },
+                {
+                  "variant_id": 1000001771240660,
+                  "quantity": 1
+                }
+              ]
+            }
+          ]
+        },
+        "SB_PLB_SPS_36": {
+          "shipping_zones": {
+            "is_disabled": false
+          },
+          "data": [
+            {
+              "case_id": "SB_PLB_SPS_36",
+              "description": "Verify shipping cost được tính theo split shipment khi được markup shipping",
+              "product_tmpl_id": 1156594,
+              "product_product_id": 1309365,
+              "odoo_country": "US",
+              "is_combo": false,
+              "products_checkout": [
+                {
+                  "variant_id": 1000001770325912,
+                  "quantity": 5
+                }
+              ],
+              "payment_method": "Afterpay"
+            },
+            {
+              "case_id": "SB_PLB_SPS_46",
+              "description": "Verify shipping cost được tính theo split shipment khi checkout với item chứa combo khi được markup shipping",
+              "product_id": 1100000000598566,
+              "product_tmpl_id": 1157400,
+              "product_product_id": 1335065,
+              "odoo_country": "US",
+              "is_combo": true,
+              "products_checkout": [
+                {
+                  "variant_id": 1000001777636475,
+                  "quantity": 5
+                },
+                {
+                  "variant_id": 1000001777738841,
+                  "quantity": 1
+                }
+              ],
+              "payment_method": "Afterpay"
+            }
+          ]
+        }
+      }
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "shop_name": "au-split-shipment-prodtest",
+      "username": "plus-qe-2@beeketing.net",
+      "password": "Q37t^Q7Sa4W8",
+      "user_id": 11248586,
+      "shop_id": 10443662,
+      "domain": "au-split-shipment-prodtest.onshopbase.com",
+      "odoo_host": "https://autotest-erp-plus.shopbase.dev",
+      "odoo_db": "shopbase_fulfillment",
+      "odoo_username": "qaocg",
+      "odoo_password": "LFmy=qGLvwW^E63b",
+      "plb_template": {
+        "domain": "plusbase-templateprodtest.onshopbase.com",
+        "shop_name": "plusbase-templateprodtest.onshopbase.com",
+        "user_id": "9131323",
+        "shop_id": "10364655",
+        "username": "qas@beeketing.net",
+        "password": "123456",
+        "shop": "plusbase-templateprodtest"
+      },
+      "theme": "inside",
+      "country_currency": "United States",
+
+      "cases": {
+        "SB_PLB_SPS_29": {
+          "product_id": 1920876,
+          "varriants": [
+            ["One Size", "Dark Grey"],
+            ["One Size", "Beige"],
+            ["One Size", "Navy Blue"],
+            ["One Size", "Khaki"]
+          ],
+          "split_description": "Each package can only ship up to 3 items. If there is a 4 item, it will be split into a new package, and the shipping cost for that item will be calculated as the same as the 1st item.Learn more about conditions in which order needs to be split for shipping."
+        },
+        "SB_PLB_SPS_30": {
+          "product_id": 1920880,
+          "varriants": [
+            ["M", "Camel 1"],
+            ["M", "Camel 2"]
+          ],
+          "split_description": "Each package can only ship up to 3 items. If there is a 4 item, it will be split into a new package, and the shipping cost for that item will be calculated as the same as the 1st item.Learn more about conditions in which order needs to be split for shipping."
+        },
+        "SB_PLB_SPS_31": {
+          "product_id": 1920900,
+          "varriants": [
+            ["M", "Black"],
+            ["M", "Red"]
+          ],
+          "split_description": "Each package can only ship up to 3 items. If there is a 4 item, it will be split into a new package, and the shipping cost for that item will be calculated as the same as the 1st item.Learn more about conditions in which order needs to be split for shipping."
+        },
+        "SB_PLB_SPS_28": {
+          "product_id": 1920916,
+          "varriants": [
+            ["One Size", "Black"],
+            ["One Size", "Gray"],
+            ["One Size", "Khaki"],
+            ["One Size", "White"]
+          ],
+          "rules_id": 1002390,
+          "split_description": "Each package can only ship up to 176 items. If there is a 177 item, it will be split into a new package, and the shipping cost for that item will be calculated as the same as the 1st item.Learn more about conditions in which order needs to be split for shipping."
+        },
+        "SB_PLB_SPS_32": {
+          "data": [
+            {
+              "case_id": "SB_PLB_SPS_32",
+              "description": "Verify hiển thị split shipment trong màn Private request khi product đã được config split shipment",
+              "product_tmpl_id": 1920900,
+              "product_product_id": 23626937,
+              "is_combo": false,
+              "odoo_country": "US",
+              "products_checkout": [
+                {
+                  "variant_id": 1000010748590549,
+                  "quantity": 5
+                }
+              ]
+            },
+            {
+              "case_id": "SB_PLB_SPS_33",
+              "description": "Verify shipping cost được tính theo split shipment của product Catalog trong order detail khi không markup shipping",
+              "product_tmpl_id": 1920880,
+              "product_product_id": 23626186,
+              "is_combo": false,
+              "odoo_country": "US",
+              "products_checkout": [
+                {
+                  "variant_id": 1000010748588460,
+                  "quantity": 5
+                }
+              ]
+            },
+            {
+              "case_id": "SB_PLB_SPS_34",
+              "description": "Verify shipping cost được tính theo split shipment của product Aliexperss khi không markup shipping",
+              "product_tmpl_id": 1920876,
+              "product_product_id": 23626130,
+              "is_combo": false,
+              "odoo_country": "US",
+              "products_checkout": [
+                {
+                  "variant_id": 1000010748767781,
+                  "quantity": 5
+                }
+              ]
+            },
+            {
+              "case_id": "SB_PLB_SPS_35",
+              "description": "Verify shipping cost được tính theo split shipment khi checkout với item chứa combo khi không markup shipping",
+              "product_id": 1000000480513192,
+              "product_tmpl_id": 1948138,
+              "product_product_id": 24438258,
+              "odoo_country": "US",
+              "is_combo": true,
+              "products_checkout": [
+                {
+                  "variant_id": 1000010777401285,
+                  "quantity": 5
+                },
+                {
+                  "variant_id": 1000010777401491,
+                  "quantity": 1
+                }
+              ]
+            }
+          ]
+        },
+        "SB_PLB_SPS_36": {
+          "data": [
+            {
+              "case_id": "SB_PLB_SPS_36",
+              "description": "Verify shipping cost được tính theo split shipment khi được markup shipping",
+              "product_tmpl_id": 1920876,
+              "product_product_id": 23626130,
+              "is_combo": false,
+              "odoo_country": "US",
+              "products_checkout": [
+                {
+                  "variant_id": 1000010748767781,
+                  "quantity": 5
+                }
+              ],
+              "payment_method": "Afterpay"
+            },
+            {
+              "case_id": "SB_PLB_SPS_46",
+              "description": "Verify shipping cost được tính theo split shipment khi checkout với item chứa combo khi được markup shipping",
+              "product_id": 1000000480513192,
+              "product_tmpl_id": 1948138,
+              "product_product_id": 24438258,
+              "odoo_country": "US",
+              "is_combo": true,
+              "products_checkout": [
+                {
+                  "variant_id": 1000010777401285,
+                  "quantity": 5
+                },
+                {
+                  "variant_id": 1000010777401491,
+                  "quantity": 1
+                }
+              ],
+              "payment_method": "Afterpay"
+            }
+          ]
+        }
+      }
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "shop_name": "au-split-shiment",
+      "username": "plus-qe-2@beeketing.net",
+      "password": "Q37t^Q7Sa4W8",
+      "user_id": 11248586,
+      "shop_id": 10443667,
+      "domain": "au-split-shiment.onshopbase.com",
+      "odoo_host": "https://autotest-erp-plus.shopbase.dev",
+      "odoo_db": "shopbase_fulfillment",
+      "odoo_username": "qaocg",
+      "odoo_password": "LFmy=qGLvwW^E63b",
+      "plb_template": {
+        "domain": "template-store.onshopbase.com",
+        "shop_name": "template-store.onshopbase.com",
+        "user_id": "9131323",
+        "shop_id": "10258217",
+        "username": "qas@beeketing.net",
+        "password": "123456",
+        "shop": "template-store"
+      },
+      "theme": "inside",
+      "country_currency": "United States",
+
+      "cases": {
+        "SB_PLB_SPS_29": {
+          "product_id": 1920876,
+          "varriants": [
+            ["One Size", "Dark Grey"],
+            ["One Size", "Beige"],
+            ["One Size", "Navy Blue"],
+            ["One Size", "Khaki"]
+          ],
+          "split_description": "Each package can only ship up to 3 items. If there is a 4 item, it will be split into a new package, and the shipping cost for that item will be calculated as the same as the 1st item.Learn more about conditions in which order needs to be split for shipping."
+        },
+        "SB_PLB_SPS_30": {
+          "product_id": 1920880,
+          "varriants": [
+            ["M", "Camel 1"],
+            ["M", "Camel 2"]
+          ],
+          "split_description": "Each package can only ship up to 3 items. If there is a 4 item, it will be split into a new package, and the shipping cost for that item will be calculated as the same as the 1st item.Learn more about conditions in which order needs to be split for shipping."
+        },
+        "SB_PLB_SPS_31": {
+          "product_id": 1920900,
+          "varriants": [
+            ["M", "Black"],
+            ["M", "Red"]
+          ],
+          "split_description": "Each package can only ship up to 3 items. If there is a 4 item, it will be split into a new package, and the shipping cost for that item will be calculated as the same as the 1st item.Learn more about conditions in which order needs to be split for shipping."
+        },
+        "SB_PLB_SPS_28": {
+          "product_id": 1920916,
+          "varriants": [
+            ["One Size", "Black"],
+            ["One Size", "Gray"],
+            ["One Size", "Khaki"],
+            ["One Size", "White"]
+          ],
+          "rules_id": 1002390,
+          "split_description": "Each package can only ship up to 176 items. If there is a 177 item, it will be split into a new package, and the shipping cost for that item will be calculated as the same as the 1st item.Learn more about conditions in which order needs to be split for shipping."
+        },
+        "SB_PLB_SPS_32": {
+          "data": [
+            {
+              "case_id": "SB_PLB_SPS_32",
+              "description": "Verify hiển thị split shipment trong màn Private request khi product đã được config split shipment",
+              "product_tmpl_id": 1920900,
+              "product_product_id": 23626937,
+              "is_combo": false,
+              "odoo_country": "US",
+              "products_checkout": [
+                {
+                  "variant_id": 1000010754038628,
+                  "quantity": 5
+                }
+              ]
+            },
+            {
+              "case_id": "SB_PLB_SPS_33",
+              "description": "Verify shipping cost được tính theo split shipment của product Catalog trong order detail khi không markup shipping",
+              "product_tmpl_id": 1920880,
+              "product_product_id": 23626186,
+              "is_combo": false,
+              "odoo_country": "US",
+              "products_checkout": [
+                {
+                  "variant_id": 1000010754039312,
+                  "quantity": 5
+                }
+              ]
+            },
+            {
+              "case_id": "SB_PLB_SPS_34",
+              "description": "Verify shipping cost được tính theo split shipment của product Aliexperss khi không markup shipping",
+              "product_tmpl_id": 1920876,
+              "product_product_id": 23626130,
+              "odoo_country": "US",
+              "products_checkout": [
+                {
+                  "variant_id": 1000010754038819,
+                  "quantity": 5
+                }
+              ]
+            },
+            {
+              "case_id": "SB_PLB_SPS_35",
+              "description": "Verify shipping cost được tính theo split shipment khi checkout với item chứa combo khi không markup shipping",
+              "product_id": 1000000480291867,
+              "product_tmpl_id": 1948138,
+              "product_product_id": 24438258,
+              "odoo_country": "US",
+              "is_combo": true,
+              "products_checkout": [
+                {
+                  "variant_id": 1000010772925156,
+                  "quantity": 5
+                },
+                {
+                  "variant_id": 1000010772925409,
+                  "quantity": 1
+                }
+              ]
+            }
+          ]
+        },
+        "SB_PLB_SPS_36": {
+          "data": [
+            {
+              "case_id": "SB_PLB_SPS_36",
+              "description": "Verify shipping cost được tính theo split shipment khi được markup shipping",
+              "product_tmpl_id": 1920876,
+              "product_product_id": 23626130,
+              "odoo_country": "US",
+              "products_checkout": [
+                {
+                  "variant_id": 1000010754038819,
+                  "quantity": 5
+                }
+              ],
+              "is_combo": false,
+              "payment_method": "Afterpay"
+            },
+            {
+              "case_id": "SB_PLB_SPS_46",
+              "description": "Verify shipping cost được tính theo split shipment khi checkout với item chứa combo khi được markup shipping",
+              "product_id": 1000000480291867,
+              "product_tmpl_id": 1948138,
+              "product_product_id": 24438258,
+              "odoo_country": "US",
+              "is_combo": true,
+              "products_checkout": [
+                {
+                  "variant_id": 1000010772925156,
+                  "quantity": 5
+                },
+                {
+                  "variant_id": 1000010772925409,
+                  "quantity": 1
+                }
+              ],
+              "payment_method": "Afterpay"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "timeout": 600000,
+  "email_buyer": "shopbase@beeketing.net",
+  "shipping_address": {
+    "address1": "814 Mission Street",
+    "address2": "",
+    "city": "Los Angeles",
+    "company": "",
+    "country": "United States",
+    "country_code": "US",
+    "country_name": "United States",
+    "cpf_or_cnpj_number": "",
+    "first_name": "Shop",
+    "last_name": "Base",
+    "name": "Jena",
+    "phone": "505-646-2276",
+    "province": "California",
+    "province_code": "CA",
+    "zip": "90001"
+  },
+  "cases": {
+    "SB_PLB_SPS_29": {},
+    "SB_PLB_SPS_28": {},
+    "SB_PLB_SPS_30": {},
+    "SB_PLB_SPS_31": {},
+    "SB_PLB_SPS_32": {}
+  }
+}

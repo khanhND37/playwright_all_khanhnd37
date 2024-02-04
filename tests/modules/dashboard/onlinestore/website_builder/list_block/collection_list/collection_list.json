@@ -1,0 +1,1054 @@
+{
+  "env": {
+    "dev": {
+      "domain": "au-collection-list.myshopbase.net",
+      "shop_name": "au-collection-list",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "43AhIn|VWp;[?9&",
+      "shop_id": 10326890,
+      "user_id": 89797,
+      "site_id": 3164435,
+      "block_data": {
+        "section_index": 2,
+        "block_index": 1
+      },
+      "dnd_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 1
+          },
+          "isBottom": false
+        }
+      }
+    },
+    "local1": {
+      "domain": "au-collection-list.myshopbase.net",
+      "shop_name": "au-collection-list",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "43AhIn|VWp;[?9&",
+      "shop_id": 10326890,
+      "user_id": 89797,
+      "site_id": 3164435,
+      "block_data": {
+        "section_index": 2,
+        "block_index": 1
+      },
+      "dnd_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 1
+          },
+          "isBottom": false
+        }
+      }
+    },
+    "prodtest": {
+      "domain": "au-collection-list-test.onshopbase.com",
+      "shop_name": "au-collection-list-test",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "shop_id": 10430130,
+      "user_id": 11244582,
+      "site_id": 1566980,
+      "block_data": {
+        "section_index": 2,
+        "block_index": 1
+      },
+      "accounts_domain": "accounts-test.shopbase.com",
+      "dnd_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 1
+          },
+          "isBottom": false
+        }
+      }
+    },
+    "local": {
+      "domain": "au-collection-list-test.onshopbase.com",
+      "shop_name": "au-collection-list-test",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "shop_id": 10430130,
+      "user_id": 11244582,
+      "site_id": 1566980,
+      "block_data": {
+        "section_index": 2,
+        "block_index": 1
+      },
+      "accounts_domain": "accounts-test.shopbase.com",
+      "dnd_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 1
+          },
+          "isBottom": false
+        }
+      }
+    },
+    "prod": {
+      "domain": "au-collection-list.onshopbase.com",
+      "shop_name": "au-collection-list",
+      "api": "https://api.shopbase.com",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "shop_id": 10430110,
+      "user_id": 11244582,
+      "site_id": 1396193,
+      "block_data": {
+        "section_index": 2,
+        "block_index": 1
+      },
+      "dnd_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 1
+          },
+          "isBottom": false
+        }
+      }
+    }
+  },
+  "cases": {
+    "SB_SC_SCWB_213": {
+      "data": {
+        "style": {
+          "layout": {
+            "value": "mix"
+          },
+          "items_radius": {
+            "id": "items_radius",
+            "config": {
+              "fill": true,
+              "number": 20
+            }
+          },
+          "content_color": {
+            "id": "content_color",
+            "color": {
+              "preset": 5
+            }
+          },
+          "content_background": {
+            "id": "content_background",
+            "value": {
+              "color": {
+                "preset": 2
+              }
+            }
+          },
+          "button_style": {
+            "id": "button_content",
+            "value": "Secondary"
+          },
+          "block_align": {
+            "id": "align_self",
+            "value": "left"
+          },
+          "width": {
+            "label": "width",
+            "value": {
+              "unit": "%",
+              "value": 80
+            }
+          },
+          "opacity": {
+            "label": "opacity",
+            "config": {
+              "fill": true,
+              "number": 80
+            }
+          },
+          "radius": {
+            "label": "border_radius",
+            "config": {
+              "fill": true,
+              "number": 70
+            }
+          },
+          "padding": {
+            "label": "padding",
+            "value": {
+              "top": 10,
+              "left": 10,
+              "bottom": 10,
+              "right": 20,
+              "input": true
+            }
+          },
+          "margin": {
+            "label": "margin",
+            "value": {
+              "top": 20,
+              "left": 30,
+              "bottom": 10,
+              "right": 20,
+              "input": true
+            }
+          }
+        }
+      },
+      "collection_name": ["Collection 1", "Collection 2", "Collection 3"],
+      "expect": {
+        "snapshot": {
+          "mobile_preview": "preview-mobile.png",
+          "mobile_sf": "preview-mobile-sf.png"
+        }
+      }
+    },
+    "SB_SC_SCWB_212": {
+      "data": {
+        "collection_payload": {
+          "custom_collection": {
+            "collection_type": "custom",
+            "disjunctive": true,
+            "body_html": "",
+            "title": "Collection 5",
+            "rules": [
+              {
+                "column": "tag",
+                "relation": "equals",
+                "condition": ""
+              }
+            ],
+            "collection_availability": 1,
+            "handle": ""
+          }
+        },
+        "update_collection": {
+          "title": "Collection 5a",
+          "body_html": "<p>Description collection 5a</p>"
+        }
+      },
+      "collection_name": ["Collection 1", "Collection 2", "Collection 3", "Collection 4"],
+      "expect": {
+        "last_collection_title": "Collection 4",
+        "snapshot": {}
+      }
+    },
+    "SB_SC_SCWB_211": {
+      "data": {
+        "style": {
+          "layout": {
+            "value": "mix"
+          },
+          "items_radius": {
+            "id": "items_radius",
+            "config": {
+              "fill": true,
+              "number": 20
+            }
+          },
+          "content_position": {
+            "label": "content_position",
+            "position": 9
+          },
+          "content_color": {
+            "id": "content_color",
+            "color": {
+              "preset": 5
+            }
+          },
+          "content_background": {
+            "id": "content_background",
+            "value": {
+              "color": {
+                "preset": 2
+              }
+            }
+          },
+          "button_style": {
+            "id": "button_content",
+            "value": "Secondary"
+          },
+          "block_align": {
+            "id": "align_self",
+            "value": "left"
+          },
+          "width": {
+            "label": "width",
+            "value": {
+              "unit": "%",
+              "value": 80
+            }
+          },
+          "opacity": {
+            "label": "opacity",
+            "config": {
+              "fill": true,
+              "number": 80
+            }
+          },
+          "radius": {
+            "label": "border_radius",
+            "config": {
+              "fill": true,
+              "number": 20
+            }
+          },
+          "padding": {
+            "label": "padding",
+            "value": {
+              "top": 20,
+              "left": 20,
+              "bottom": 20,
+              "right": 20,
+              "input": true
+            }
+          },
+          "margin": {
+            "label": "margin",
+            "value": {
+              "top": 10,
+              "left": 0,
+              "bottom": 10,
+              "right": 0,
+              "input": true
+            }
+          }
+        },
+        "block_index": {
+          "block": 2,
+          "section": 3
+        },
+        "collection": "Collection 4"
+      },
+      "expect": {
+        "snapshot": {
+          "layout": "list-5-layout.png",
+          "layout_mobile": "list-5-layout-mobile.png",
+          "sf_preview": "sf-preview-all-collections.png",
+          "wb_preview": "preview-all-collections.png"
+        }
+      }
+    },
+    "SB_SC_SCWB_210": {
+      "data": {
+        "common_style": {
+          "block_align": {
+            "id": "align_self",
+            "value": "left"
+          },
+          "width": {
+            "label": "width",
+            "value": {
+              "unit": "%",
+              "value": 80
+            }
+          },
+          "opacity": {
+            "label": "opacity",
+            "config": {
+              "fill": true,
+              "number": 80
+            }
+          },
+          "radius": {
+            "label": "border_radius",
+            "config": {
+              "fill": true,
+              "number": 20
+            }
+          },
+          "padding": {
+            "label": "padding",
+            "value": {
+              "top": 20,
+              "left": 20,
+              "bottom": 20,
+              "right": 20,
+              "input": true
+            }
+          },
+          "margin": {
+            "label": "margin",
+            "value": {
+              "top": 10,
+              "left": 0,
+              "bottom": 10,
+              "right": 0,
+              "input": true
+            }
+          }
+        }
+      },
+      "collection_name": ["Collection 1", "Collection 2", "Collection 3", "Collection 4"],
+      "expect": {
+        "snapshot": {
+          "common_style": "sf-preview-common-style.png",
+          "dashboard_common_style": "bd-preview-common-style.png"
+        }
+      }
+    },
+    "SB_SC_SCWB_209": {
+      "data": {
+        "button_styles": ["primary", "secondary"],
+        "style": {
+          "primary": {
+            "id": "button_content",
+            "value": "Primary"
+          },
+          "secondary": {
+            "id": "button_content",
+            "value": "Secondary"
+          }
+        },
+        "button_content": "View now"
+      },
+      "expect": {
+        "class": {
+          "primary": "btn-primary",
+          "secondary": "btn-secondary"
+        }
+      }
+    },
+    "SB_SC_SCWB_208": {
+      "data": {
+        "widget_id": "content_background",
+        "color_1": {
+          "color": {
+            "preset": 2
+          },
+          "expect": "rgba(217, 217, 217, 1)"
+        },
+        "none": {
+          "color": "none",
+          "expect": ""
+        },
+        "margin_content_outside": "16px"
+      }
+    },
+    "SB_SC_SCWB_207": {
+      "data": {
+        "content_color": {
+          "id": "content_color",
+          "color": {
+            "preset": 2
+          },
+          "expect": "rgba(217, 217, 217, 1)"
+        },
+        "expect_color_none": ""
+      }
+    },
+    "SB_SC_SCWB_206": {
+      "data": {
+        "horizontal_positions": ["left", "center", "right"],
+        "vertical_positions": ["top", "middle", "bottom"]
+      }
+    },
+    "SB_SC_SCWB_205": {
+      "data": {
+        "sizes": ["s", "m", "l", "xs"],
+        "widget_id": "content_size"
+      },
+      "expect": {
+        "class": {
+          "xs": "extra-small",
+          "l": "large",
+          "m": "medium",
+          "s": "small"
+        }
+      }
+    },
+    "SB_SC_SCWB_204": {
+      "data": {
+        "item_radius_valid": [
+          {
+            "id": "items_radius",
+            "config": {
+              "fill": true,
+              "number": 0
+            },
+            "expect": "0px"
+          },
+          {
+            "id": "items_radius",
+            "config": {
+              "fill": true,
+              "number": 10
+            },
+            "expect": "10px"
+          },
+          {
+            "id": "items_radius",
+            "config": {
+              "fill": true,
+              "number": 280
+            },
+            "expect": "280px"
+          }
+        ]
+      },
+      "item_radius_no_valid": {
+        "id": "items_radius",
+        "config": {
+          "fill": true,
+          "number": 281
+        }
+      },
+      "expect": {
+        "max_value": 280
+      }
+    },
+    "SB_SC_SCWB_203": {
+      "step_data": [
+        {
+          "description": "Với layout = Image & text, resize width block collection list >= 350 px",
+          "layout": "image_text",
+          "resize": 510
+        },
+        {
+          "description": "Với layout = Grid, resize width block collection list >= 350px",
+          "layout": "grid",
+          "resize": 400
+        },
+        {
+          "description": "Edit width block collection list < 350px",
+          "layout": "grid",
+          "resize": 250
+        },
+        {
+          "description": "Với layout = Slide, resize width block collection list >= 350px",
+          "layout": "slide",
+          "resize": 350
+        },
+        {
+          "description": "Edit width block collection list < 350px",
+          "layout": "slide",
+          "resize": 349
+        },
+        {
+          "description": "Với layout = Mix, resize width block collection list >= 710px",
+          "layout": "mix",
+          "resize": 1020
+        },
+        {
+          "description": "Edit width block collection list < 710px",
+          "layout": "mix",
+          "resize": 709
+        },
+        {
+          "description": "Edit width block collection list < 350px",
+          "layout": "mix",
+          "resize": 250
+        },
+        {
+          "description": "Với layout = Brick, resize width block collection list >= 710px",
+          "layout": "brick",
+          "resize": 710
+        },
+        {
+          "description": "Edit width block collection list < 710px",
+          "layout": "brick",
+          "resize": 250
+        },
+        {
+          "description": "Edit width block collection list < 350 px",
+          "layout": "image_text",
+          "resize": 300
+        }
+      ]
+    },
+    "SB_SC_SCWB_202": {
+      "expect": {
+        "snapshot": {
+          "layout_grid": "sf-layout-grid.png",
+          "layout_slide": "sf-layout-slide.png",
+          "layout_mix": "sf-layout-mix.png",
+          "layout_content_outside": "sf-layout-content-outside.png",
+          "layout_brick": "sf-layout-brick.png",
+          "layout_image_text": "sf-layout-image-text.png"
+        }
+      }
+    },
+    "SB_SC_SCWB_200": {
+      "add_section": {
+        "parent_position": {
+          "section": 1
+        },
+        "template": "Single column"
+      },
+      "dnd_block": {
+        "from": {
+          "category": "Basics",
+          "template": "Collection list"
+        },
+        "to": {
+          "position": {
+            "section": 2,
+            "column": 1
+          },
+          "isBottom": false
+        }
+      },
+      "collection_list": ["Collection 1", "Collection 2", "Collection 3", "Collection 4"],
+      "data": {
+        "no_match_title": "xyz",
+        "match_title": "Collection "
+      }
+    },
+    "SB_SC_SCWB_199": {
+      "add_section": {
+        "parent_position": {
+          "section": 1
+        },
+        "template": "Single column"
+      },
+      "dnd_block": {
+        "from": {
+          "category": "Basics",
+          "template": "Collection list"
+        },
+        "to": {
+          "position": {
+            "section": 2,
+            "column": 1
+          },
+          "isBottom": false
+        }
+      },
+      "data": {
+        "new_label": "View collection",
+        "default_label": "View now"
+      }
+    },
+    "SB_SC_SCWB_198": {
+      "add_section": {
+        "parent_position": {
+          "section": 1
+        },
+        "template": "Single column"
+      },
+      "dnd_block": {
+        "from": {
+          "category": "Basics",
+          "template": "Collection list"
+        },
+        "to": {
+          "position": {
+            "section": 2,
+            "column": 1
+          },
+          "isBottom": false
+        }
+      },
+      "expect": {
+        "snapshot": {
+          "tab_settings": "default-tab-settings.png",
+          "default": "default.png",
+          "sf_default": "sf-default.png"
+        }
+      }
+    },
+    "SB_SC_SCWB_201": {
+      "data": {
+        "valid_collection_data": {
+          "sub_heading": "Col 01",
+          "heading": "Collection 01",
+          "description": "Collection description 0001"
+        },
+        "invalid_collection_data": {
+          "sub_heading": "Lorem ipsum dolor sit amet consectetur adipiscin",
+          "heading": "Lorem ipsum dolor sit amet consectetur adipiscing elit dictum te",
+          "description": "orem ipsum dolor sit amet consectetur adipiscing elit vel, praesent at nisi maecenas pretium in curae eu, class eros malesuada nulla velit congue venenatis. Fermentum lectus egestas ante a pharetra fringilla ullamcorper."
+        },
+        "dnd_collection": {
+          "from_idx": 3,
+          "to_idx": 2
+        }
+      },
+      "collection_name": ["Collection 1", "Collection 2", "Collection 3", "Collection 4"],
+      "expect": {
+        "snapshot": {
+          "invalid_data": "preview-looong-data.png"
+        },
+        "heading_after_delete": "Collection 3",
+        "last_item_after_dnd": "Collection 3"
+      }
+    },
+    "DATA_SETTING_LAYOUT_DEFAULT": {
+      "data": [
+        {
+          "description": "Collection list_Check default Layout Brick và Image & Text của block collection list",
+          "case_name": "SB_WEB_BUILDER_LB_NCL_01",
+          "layouts": [
+            {
+              "layout": "brick"
+            },
+            {
+              "layout": "image_text"
+            }
+          ],
+          "data_setting_spacing": [
+            {
+              "spacing": "40"
+            },
+            {
+              "spacing": "41"
+            }
+          ],
+          "max_value": "40"
+        },
+        {
+          "description": "Collection list_Check block Collection list trên mobile với các setting layout default",
+          "case_name": "SB_WEB_BUILDER_LB_NCL_04",
+          "layouts": [
+            {
+              "mobile": "mobile",
+              "layout": "brick"
+            },
+            {
+              "mobile": "mobile",
+              "layout": "image_text"
+            }
+          ],
+          "data_setting_spacing": [
+            {
+              "spacing": "40"
+            },
+            {
+              "spacing": "41"
+            }
+          ],
+          "max_value": "40"
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_LB_NCL_02": {
+      "data_setting_layout_no_collection": {
+        "layout_setting": {
+          "spacing": "32",
+          "image_hight": "XL",
+          "overlay": {
+            "preset": 2
+          }
+        }
+      },
+      "data": [
+        {
+          "description": "Select 1 collection cho block theo data- Set 1 bộ data với layout = Brick: Check hiển thị collection list block",
+          "collection_name": "Collection 1",
+          "layout_setting": {
+            "spacing": "24",
+            "image_hight": "S",
+            "overlay": {
+              "preset": 3
+            }
+          },
+          "snapshot": {
+            "wb_preview": "brick_wb_1_collection.png",
+            "sf_preview": "brick_sf_1_collection.png"
+          }
+        },
+        {
+          "description": "Select 2 collection cho block theo data- Set 1 bộ data với layout = Brick: Check hiển thị collection list block",
+          "collection_name": "Collection 2",
+          "layout_setting": {
+            "spacing": "20",
+            "image_hight": "M",
+            "overlay": {
+              "preset": 4
+            }
+          },
+          "snapshot": {
+            "wb_preview": "brick_wb_2_collection.png",
+            "sf_preview": "brick_sf_2_collection.png"
+          }
+        },
+        {
+          "description": "Select 3 collection cho block theo data- Set 1 bộ data với layout = Brick: Check hiển thị collection list block",
+          "collection_name": "Collection 3",
+          "layout_setting": {
+            "spacing": "25",
+            "image_hight": "L",
+            "overlay": {
+              "preset": 5
+            }
+          },
+          "snapshot": {
+            "wb_preview": "brick_wb_3_collection.png",
+            "sf_preview": "brick_sf_3_collection.png"
+          }
+        },
+        {
+          "description": "Select 4 collection cho block theo data- Set 1 bộ data với layout = Brick: Check hiển thị collection list block",
+          "collection_name": "Collection 4",
+          "layout_setting": {
+            "spacing": "32",
+            "image_hight": "XL",
+            "overlay": {
+              "preset": 2
+            }
+          },
+          "snapshot": {
+            "wb_preview": "brick_wb_4_collection.png",
+            "sf_preview": "brick_sf_4_collection.png"
+          }
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_LB_NCL_03": {
+      "data_setting_layout_no_collection": {
+        "layout_setting": {
+          "spacing": "20",
+          "image_hight": "S"
+        }
+      },
+      "data": [
+        {
+          "description": "Select 1 collection cho block theo data- Set 1 bộ data với layout = Image & Text : Check hiển thị collection list block",
+          "collection_name": "Collection 1",
+          "layout_setting": {
+            "spacing": "24",
+            "image_hight": "S"
+          },
+          "snapshot": {
+            "wb_preview": "image_text_wb_1_collection.png",
+            "sf_preview": "image_text_sf_1_collection.png"
+          }
+        },
+        {
+          "description": "Select 2 collection cho block theo data- Set 1 bộ data với layout = Image & Text : Check hiển thị collection list block",
+          "collection_name": "Collection 2",
+          "layout_setting": {
+            "spacing": "30",
+            "image_hight": "M"
+          },
+          "snapshot": {
+            "wb_preview": "image_text_wb_2_collection.png",
+            "sf_preview": "image_text_sf_2_collection.png"
+          }
+        }
+      ]
+    },
+    "DATA_SETTING_LAYOUT_MOBILE": {
+      "data": [
+        {
+          "description": "Collection list_Check block Collection list trên mobile với setting layout = Mix",
+          "case_name": "SB_WEB_BUILDER_LB_NCL_07",
+          "collection_name": ["Collection 1", "Collection 2", "Collection 3"],
+          "layout": "mix",
+          "layout_setting": {
+            "spacing": "24",
+            "image_hight": "S",
+            "overlay": {
+              "preset": 4
+            }
+          },
+          "snapshot": {
+            "wb_preview": "mobile_mix_wb_preview.png",
+            "sf_preview": "mobile_mix_sf_preview.png"
+          }
+        },
+        {
+          "description": "Collection list_Check block Collection list trên mobile với setting layout = Brick",
+          "case_name": "SB_WEB_BUILDER_LB_NCL_08",
+          "collection_name": ["Collection 1", "Collection 2", "Collection 3"],
+          "layout": "brick",
+          "layout_setting": {
+            "spacing": "20",
+            "image_hight": "M",
+            "overlay": {
+              "preset": 4
+            }
+          },
+          "snapshot": {
+            "wb_preview": "mobile_brick_wb_preview.png",
+            "sf_preview": "mobile_brick_sf_preview.png"
+          }
+        },
+        {
+          "description": "Collection list_Check block Collection list trên mobile với setting layout = Image & Text",
+          "case_name": "SB_WEB_BUILDER_LB_NCL_10",
+          "collection_name": ["Collection 1", "Collection 2", "Collection 3"],
+          "layout": "image_text",
+          "layout_setting": {
+            "spacing": "10",
+            "image_hight": "M"
+          },
+          "snapshot": {
+            "wb_preview": "mobile_image_text_wb_preview.png",
+            "sf_preview": "mobile_image_text_sf_preview.png"
+          }
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_LB_NCL_05": {
+      "collection_name": ["Collection 1", "Collection 2", "Collection 3", "Collection 4"],
+      "set_items_per_row": [
+        {
+          "layout_mobile": {
+            "name": "Grid",
+            "object_fit": "cover",
+            "ratio": "square",
+            "size": 1,
+            "spacing": 24
+          }
+        },
+        {
+          "layout_mobile": {
+            "name": "Grid",
+            "object_fit": "cover",
+            "ratio": "square",
+            "size": 2,
+            "spacing": 12
+          }
+        },
+        {
+          "layout_mobile": {
+            "name": "Grid",
+            "object_fit": "cover",
+            "ratio": "square",
+            "size": 3,
+            "spacing": 24
+          }
+        }
+      ],
+      "screenshot_name": {
+        "wb_sidebar": "grid_layout_default.png"
+      }
+    },
+    "SB_WEB_BUILDER_LB_NCL_06": {
+      "collection_name": ["Collection 1", "Collection 2", "Collection 3", "Collection 4"],
+      "screenshot_name": {
+        "screenshot_dashboard_1": "carousel_per_row_1_dashboard.png",
+        "screenshot_dashboard_2": "carousel_per_row_2_dashboard.png",
+        "screenshot_dashboard_3": "carousel_per_row_3_dashboard.png",
+        "screenshot_SF_1": "carousel_per_row_1_sf.png",
+        "screenshot_SF_2": "carousel_per_row_2_sf.png",
+        "screenshot_SF_3": "carousel_per_row_3_sf.png",
+        "screen_SF_switch_slide_1": "carousel_per_row_1_switch_slide.png",
+        "screen_SF_switch_slide_2": "carousel_per_row_1_switch_slide_2.png",
+        "screen_SF_switch_slide_3": "carousel_per_row_3_switch_slide_2.png"
+      },
+      "data": [
+        {
+          "layout_mobile": {
+            "name": "Slide",
+            "object_fit": "cover",
+            "overlay_color": {
+              "code": "",
+              "opacity": 0
+            },
+            "ratio": "square",
+            "segment_selected": "large",
+            "size": 1,
+            "spacing": 12
+          }
+        },
+        {
+          "layout_mobile": {
+            "name": "Slide",
+            "object_fit": "cover",
+            "overlay_color": {
+              "code": "",
+              "opacity": 0
+            },
+            "ratio": "square",
+            "segment_selected": "medium",
+            "size": 2,
+            "spacing": 12
+          }
+        },
+        {
+          "layout_mobile": {
+            "name": "Slide",
+            "object_fit": "cover",
+            "overlay_color": {
+              "code": "",
+              "opacity": 0
+            },
+            "ratio": "square",
+            "segment_selected": "small",
+            "size": 3,
+            "spacing": 4
+          }
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_LB_NCL_09": {
+      "collection_name": ["Collection 1", "Collection 2", "Collection 3", "Collection 4"],
+      "set_items_per_row": [
+        {
+          "layout_mobile": {
+            "name": "ContentOutside",
+            "object_fit": "cover",
+            "overlay_color": {
+              "code": "",
+              "opacity": 0
+            },
+            "ratio": "square",
+            "segment_selected": "medium",
+            "size": 1,
+            "spacing": 4
+          }
+        },
+        {
+          "layout_mobile": {
+            "name": "ContentOutside",
+            "object_fit": "cover",
+            "overlay_color": {
+              "code": "",
+              "opacity": 0
+            },
+            "ratio": "square",
+            "segment_selected": "medium",
+            "size": 2,
+            "spacing": 4
+          }
+        },
+        {
+          "layout_mobile": {
+            "name": "ContentOutside",
+            "object_fit": "cover",
+            "overlay_color": {
+              "code": "",
+              "opacity": 0
+            },
+            "ratio": "square",
+            "segment_selected": "medium",
+            "size": 3,
+            "spacing": 4
+          }
+        }
+      ]
+    }
+  },
+  "dnd_block": {
+    "from": {
+      "category": "Basics",
+      "template": "Collection list"
+    },
+    "to": {
+      "position": {
+        "section": 2,
+        "column": 1
+      },
+      "isBottom": false
+    }
+  }
+}

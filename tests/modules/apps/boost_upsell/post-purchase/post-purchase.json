@@ -1,0 +1,184 @@
+{
+  "checkout": {
+    "email": "nule@qa.team",
+    "first_name": "Nu",
+    "last_name": "Le",
+    "address": "130 Trung Phung",
+    "city": "Ha Noi",
+    "country": "Vietnam",
+    "zip": "100000",
+    "phone": "0364240695",
+    "cardNumber": "4242424242424242",
+    "shippingMethod": false,
+    "cardHolder": "TEST NAME",
+    "expireDate": "12/31",
+    "cvv": "123"
+  },
+  "env": {
+    "local": {
+      "domain": "au-upsell-post-purchase-prodtest.onshopbase.com",
+      "shop_name": "au-upsell-post-purchase-prodtest",
+      "domain_tail": "ngochd7.website",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10433574,
+      "user_id": 11260206,
+      "pre_condition": {
+        "theme_id": 3,
+        "template_name": "Inside"
+      },
+      "offer_ids": [
+        9942122, 9942121, 9942120, 9942119, 9942118, 9942117, 9942116, 9942115, 9942114, 9942113, 9942112, 9942111,
+        9942303, 9942305
+      ],
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "domain": "au-upsell-post-purchase-dev.myshopbase.net",
+      "shop_name": "au-upsell-post-purchase-dev",
+      "domain_tail": "sbdev.tk",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10327689,
+      "user_id": 90252,
+      "pre_condition": {
+        "theme_id": 3,
+        "template_name": "Inside"
+      },
+      "offer_ids": [
+        100004533, 100004532, 100004531, 100004530, 100004529, 100004528, 100004527, 100004526, 100004525, 100004524,
+        100004523, 100004522, 100004521, 100004520
+      ]
+    },
+    "prodtest": {
+      "domain": "au-upsell-post-purchase-prodtest.onshopbase.com",
+      "shop_name": "au-upsell-post-purchase-prodtest",
+      "domain_tail": "ngochd7.website",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10433574,
+      "user_id": 11260206,
+      "pre_condition": {
+        "theme_id": 3,
+        "template_name": "Inside"
+      },
+      "offer_ids": [
+        9942122, 9942121, 9942120, 9942119, 9942118, 9942117, 9942116, 9942115, 9942114, 9942113, 9942112, 9942111,
+        9942303, 9942305
+      ],
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "prod": {
+      "domain": "au-upsell-post-purchase.onshopbase.com",
+      "shop_name": "au-upsell-post-purchase",
+      "domain_tail": "sbprod.tk",
+      "api": "https://api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10431616,
+      "user_id": 11260206,
+      "pre_condition": {
+        "theme_id": 3,
+        "template_name": "Inside"
+      },
+      "offer_ids": [
+        9942313, 9942314, 9942315, 9942316, 9942317, 9942318, 9942319, 9942320, 9942321, 9942322, 9942323, 9942312,
+        9942328, 9942330
+      ]
+    }
+  },
+  "cases": {
+    "SB_SF_UPOP_02": {
+      "data": {
+        "product_handle": ["product-f", "product-a"]
+      }
+    },
+    "SB_SF_UPOP_3": {
+      "data": {
+        "product_handle": "product-a",
+        "discount": "Save 30%"
+      }
+    },
+    "SB_SF_UPOP_4": {
+      "data": {
+        "product_handle": "product-f",
+        "discount": "Save 0%",
+        "price": "$100.00"
+      }
+    },
+    "SB_SF_UPOP_5": {
+      "data": {
+        "product_handle": ["product-a", "product-e", "product-d"],
+        "discount": ["Save 20%", "Save 50%"],
+        "price": ["$80.00", "$50.00"],
+        "order_summary": "$250.00"
+      }
+    },
+    "SB_SF_UPOP_6": {
+      "data": {
+        "product_handle": ["product-d", "product-j"],
+        "discount": "Save 20%",
+        "price": "$80.00",
+        "quantity_product": 4
+      }
+    },
+    "SB_SF_UPOP_7": {
+      "data": {
+        "product_handle": "product-f",
+        "price": "Only $100.00",
+        "quantity_product": 4,
+        "productsName": ["Product A", "Product B", "Product C", "Product E", "Product G", "Product H"]
+      }
+    },
+    "SB_SF_UPOP_9": {
+      "data": {
+        "product_handle": "product-a",
+        "discount": "Save 30%",
+        "quantity_product": 12
+      }
+    },
+    "SB_SF_UPOP_14": {
+      "data": {
+        "product_handle": "product-f"
+      }
+    },
+    "SB_SF_UPOP_17": {
+      "data": {
+        "product_handle": "product-c",
+        "discount": "Save 0%",
+        "price": "$100.00",
+        "order_summary": "$200.00",
+        "message": "Offer will end in  5 : 00",
+        "subtotal_price": 100
+      }
+    },
+    "SB_SF_UPOP_18": {
+      "data": {
+        "product_handle": "product-c",
+        "quantity_product": 1
+      }
+    },
+    "SB_SF_UPOP_19": {
+      "data": {
+        "product_handle": ["product-a", "product-b", "product-d", "product-e"],
+        "number_sale": [90, 50, 100]
+      }
+    },
+    "SB_SF_UPOP_20": {
+      "data": {
+        "checkbox_content": "If the customer purchased the product, keep offering it again for post-purchase upsell",
+        "helptext": "Only products that were targeted will be offered, those purchased but not targeted will not appear in the offer"
+      }
+    },
+    "SB_SF_UPOP_22": {
+      "data": {
+        "product_handle": ["product-a", "product-e", "product-f"],
+        "discount": "Save 40%",
+        "price": "$60.00"
+      }
+    }
+  }
+}

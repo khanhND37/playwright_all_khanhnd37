@@ -1,0 +1,93 @@
+{
+  "api": "https://api.shopbase.com",
+  "domain": "digital-test-mode-prodtest-1.onshopbase.com",
+  "second_domain": "digital-test-mode-free-trial-prodtest.onshopbase.com",
+  "user_id": 73782,
+  "shop_id": 10386228,
+  "username": "shopbase@beeketing.net",
+  "password": "Q(f!3Kx+6n;?Us%F",
+  "shop_name": "digital-test-mode-prodtest-1",
+  "second_shop_name": "digital-test-mode-free-trial-prodtest",
+  "timeout": 240000,
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "digital-test-mode-1.onshopbase.com",
+      "second_domain": "digital-test-mode-free-trial-1.onshopbase.com",
+      "user_id": 73782,
+      "shop_id": 10386259,
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_name": "digital-test-mode-1",
+      "second_shop_name": "digital-test-mode-free-trial-1",
+      "timeout": 240000
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "digital-test-mode-prodtest-1.onshopbase.com",
+      "second_domain": "digital-test-mode-free-trial-prodtest.onshopbase.com",
+      "user_id": 73782,
+      "shop_id": 10386228,
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_name": "digital-test-mode-prodtest-1",
+      "second_shop_name": "digital-test-mode-free-trial-prodtest",
+      "timeout": 240000,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "digital-test-mode.myshopbase.net",
+      "second_domain": "digital-test-mode-free-trial-1.myshopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "user_id": 73800,
+      "shop_id": 10322287,
+      "shop_name": "digital-test-mode",
+      "second_shop_name": "digital-test-mode-free-trial-1",
+      "timeout": 240000
+    }
+  },
+  "product_request": {
+    "product": {
+      "title": "Checkout test mode",
+      "product_type": "online_course",
+      "published": true
+    }
+  },
+  "cases": {
+    "SB_SC_SCSF_SCSFC_19": {
+      "email": "phuongnguyen4@beeketing.net",
+      "product_handle": "checkout-test-mode"
+    },
+    "SB_SC_SCSF_SCSFC_18": {
+      "product_handle": "checkout-test-mode",
+      "email": "hoanguyen3@beeketing.net",
+      "payment": {
+        "active": true,
+        "title": "Stripe-1",
+        "code": "stripe",
+        "provider_options": {
+          "name": "Stripe-1",
+          "public_key": "pk_test_51H0MC6CcU7rfeHrk7sE9cyETJZgKI3RR2jWs9MqL2iJ67o8M2aj0SrH56PlYgkdmbhs1HmD2ODpbwzp72Af4NIbe002OIRtxHL",
+          "secret_key": "sk_test_51H0MC6CcU7rfeHrkYB0CZVbfsSfP99Q5hhnGj7hjxbXMn6d7v6hpRlE06JoRbLd2KMWqqitg7twTBCZAKpBorMd700NXQUNss7",
+          "api_key": true
+        }
+      }
+    },
+    "SB_SC_SCSF_SCSFC_24": {
+      "product_handle": "checkout-test-mode",
+      "email": "phuongnguyen4@beeketing.net",
+      "card_live": {
+        "number": "5268760042642061",
+        "expire_date": "02/29",
+        "cvv": "100"
+      },
+      "pricing": {
+        "type": "One-time payment",
+        "title": "Price",
+        "amount": "20"
+      }
+    }
+  }
+}

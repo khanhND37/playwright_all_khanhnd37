@@ -1,0 +1,263 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-payment-shield-v2.onshopbase.com",
+      "shop_name": "au-payment-shield-v2",
+      "user_id": 11260365,
+      "shop_id": 10446195,
+      "username": "qe-2@beeketing.net",
+      "password": "Qe2@OCGQE",
+      "products_checkout": [
+        {
+          "name": "Cairbull Cycling Helmet",
+          "variant_id": 1000010768172809,
+          "quantity": 2
+        }
+      ],
+      "card_shield_domain": "payment-shield.sbprod.tk",
+      "stripe_payment_method_id": 2979413
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-payment-shield-v2-prodtest.onshopbase.com",
+      "shop_name": "au-payment-shield-v2-prodtest",
+      "user_id": 11260365,
+      "shop_id": 10444256,
+      "username": "qe-2@beeketing.net",
+      "password": "Qe2@OCGQE",
+      "accounts_domain": "accounts-test.shopbase.com",
+      "products_checkout": [
+        {
+          "name": "Cairbull Cycling Helmet",
+          "variant_id": 1000010751795242,
+          "quantity": 2
+        }
+      ],
+      "card_shield_domain": "space01.ngochd7.website",
+      "stripe_payment_method_id": 2979429
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-payment-shield-v2.myshopbase.net",
+      "shop_name": "au-payment-shield-v2",
+      "user_id": 90246,
+      "shop_id": 10328809,
+      "username": "opay-qe-2@beeketing.net",
+      "password": "Opay@123",
+      "products_checkout": [
+        {
+          "name": "Croptop",
+          "variant_id": 1000001770070976,
+          "quantity": 2
+        }
+      ],
+      "card_shield_domain": "charge-dispute.sbdev.tk",
+      "stripe_payment_method_id": 134511530
+    }
+  },
+  "timeout": 300000,
+  "shipping_method": "Standard Shipping",
+  "cases": {
+    "TC_STRIPE_HOSTED": {
+      "data": [
+        {
+          "case_id": "SB_SB_SF_HD_PS_34",
+          "description": "[SF theme v2] Checkout với cổng Stripe EU Bancontact có apply proxy domain có PPC",
+          "email": "tester@maildrop.cc",
+          "shipping_address": {
+            "address1": "814 Mission Street",
+            "address2": "",
+            "city": "Los Angeles",
+            "company": "",
+            "country_code": "BE",
+            "country_name": "Belgium",
+            "cpf_or_cnpj_number": "",
+            "first_name": "Shopbase",
+            "last_name": "Auto",
+            "name": "Jena",
+            "phone": "0111111111",
+            "province": "",
+            "province_code": "",
+            "zip": "90001",
+            "remember_me": false
+          },
+          "payment_method_info": {
+            "payment_type": "Bancontact",
+            "payment_code": "bancontact",
+            "country_code": "BE"
+          },
+          "product_ppc": {
+            "name": "Bikini",
+            "quantity": 1
+          }
+        },
+        {
+          "case_id": "SB_SB_SF_HD_PS_35",
+          "description": "[SF theme v2] Checkout với cổng Stripe EU Giropay có apply proxy domain",
+          "email": "tester@maildrop.cc",
+          "shipping_address": {
+            "address1": "814 Mission Street",
+            "address2": "",
+            "city": "Los Angeles",
+            "company": "",
+            "country_code": "DE",
+            "country_name": "Germany",
+            "cpf_or_cnpj_number": "",
+            "first_name": "Shopbase",
+            "last_name": "Auto",
+            "name": "Jena",
+            "phone": "0111111111",
+            "province": "",
+            "province_code": "",
+            "zip": "90001",
+            "remember_me": false
+          },
+          "payment_method_info": {
+            "payment_type": "giropay",
+            "payment_code": "giropay",
+            "country_code": "DE"
+          }
+        },
+        {
+          "case_id": "SB_SB_SF_HD_PS_36",
+          "description": "[SF theme v2] Checkout với cổng Stripe EU iDEAL có apply proxy domain có PPC",
+          "email": "tester@maildrop.cc",
+          "shipping_address": {
+            "address1": "814 Mission Street",
+            "address2": "",
+            "city": "Los Angeles",
+            "company": "",
+            "country_code": "NL",
+            "country_name": "Netherlands",
+            "cpf_or_cnpj_number": "",
+            "first_name": "Shopbase",
+            "last_name": "Auto",
+            "name": "Jena",
+            "phone": "0111111111",
+            "province": "",
+            "province_code": "",
+            "zip": "90001",
+            "remember_me": false
+          },
+          "payment_method_info": {
+            "payment_type": "iDEAL",
+            "payment_code": "iDEAL",
+            "country_code": "NL"
+          },
+          "product_ppc": {
+            "name": "Bikini",
+            "quantity": 1
+          }
+        },
+        {
+          "case_id": "SB_SB_SF_HD_PS_38",
+          "description": "[SF theme v2] Checkout với cổng Stripe EU Sofort có apply proxy domain",
+          "email": "tester@maildrop.cc",
+          "shipping_address": {
+            "address1": "814 Mission Street",
+            "address2": "",
+            "city": "Los Angeles",
+            "company": "",
+            "country_code": "DE",
+            "country_name": "Germany",
+            "cpf_or_cnpj_number": "",
+            "first_name": "Shopbase",
+            "last_name": "Auto",
+            "name": "Jena",
+            "phone": "0111111111",
+            "province": "",
+            "province_code": "",
+            "zip": "90001",
+            "remember_me": false
+          },
+          "payment_method_info": {
+            "payment_type": "Sofort",
+            "payment_code": "sofort",
+            "country_code": "DE"
+          }
+        },
+        {
+          "case_id": "SB_SB_SF_HD_PS_39",
+          "description": "[SF theme v2] Checkout với cổng Stripe EU Klarna có apply proxy domain",
+          "email": "tester@maildrop.cc",
+          "shipping_address": {
+            "address1": "New Burlington St",
+            "city": "London",
+            "country_id": 230,
+            "first_name": "Shopbase",
+            "last_name": "Auto",
+            "phone": "08082580300",
+            "zip": "W13 3BG",
+            "country": "United Kingdom",
+            "country_code": "GB",
+            "country_name": "United Kingdom",
+            "province_code": "",
+            "cpf_number": "",
+            "buyer_accepts_sms": true,
+            "buyer_change_accepts_sms": false,
+            "default": false,
+            "name": "Shopbase Auto"
+          },
+          "payment_method_info": {
+            "payment_type": "Klarna",
+            "payment_code": "klarna",
+            "country_code": "GB"
+          }
+        },
+        {
+          "case_id": "SB_SB_SF_HD_PS_40",
+          "description": "[SF theme v2] Checkout với cổng Stripe EU Afterpay có apply proxy domain",
+          "email": "tester@maildrop.cc",
+          "shipping_address": {
+            "address1": "New Burlington St",
+            "address2": "",
+            "city": "London",
+            "company": "",
+            "country_code": "GB",
+            "country_name": "United Kingdom",
+            "cpf_or_cnpj_number": "",
+            "first_name": "Shopbase",
+            "last_name": "Auto",
+            "name": "Jena",
+            "phone": "08082580300",
+            "province": "",
+            "province_code": "",
+            "zip": "90001",
+            "remember_me": false
+          },
+          "payment_method_info": {
+            "payment_type": "Afterpay",
+            "payment_code": "afterpay",
+            "country_code": "GB"
+          }
+        }
+      ]
+    },
+    "SB_SB_SF_HD_PS_49": {
+      "email": "tester@maildrop.cc",
+      "shipping_address": {
+        "address1": "814 Mission Street",
+        "address2": "",
+        "city": "Los Angeles",
+        "company": "",
+        "country_code": "DE",
+        "country_name": "Germany",
+        "cpf_or_cnpj_number": "",
+        "first_name": "Shopbase",
+        "last_name": "Auto",
+        "name": "Jena",
+        "phone": "0111111111",
+        "province": "",
+        "province_code": "",
+        "zip": "90001",
+        "remember_me": false
+      },
+      "payment_method_info": {
+        "payment_type": "Sofort",
+        "payment_code": "sofort",
+        "country_code": "DE"
+      }
+    }
+  }
+}

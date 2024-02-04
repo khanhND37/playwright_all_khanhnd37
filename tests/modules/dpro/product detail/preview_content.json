@@ -1,0 +1,55 @@
+{
+  "api": "https://gapi.dev.shopbase.net",
+  "domain": "digital-preview-product.myshopbase.net",
+  "username": "shopbase@beeketing.net",
+  "password": "S#|j>m2N[q",
+  "user_id": "73800",
+  "shop_id": "10321270",
+  "shop_name": "digital-preview-product",
+  "url": "https://digital-preview-product.myshopbase.net",
+  "username_sf": "shopbase@beeketing.net",
+  "password_sf": "123456",
+  "timeout": 240000,
+  "cases": {
+    "DATA_DRIVEN": {
+      "data": [
+        {
+          "description": "[API] Get product detail storefront thành công với X-ShopBase-Access-Token",
+          "id": "TC_SB_DP_DPD_38",
+          "handle": "product-preview",
+          "token_type": "x-shopbase-access-token",
+          "token": "",
+          "product": {
+            "messages": ["Success get data"],
+            "handle": "product-preview",
+            "title": "product preview",
+            "type": "online_course",
+            "number": 1,
+            "image": "https://dev-img.btdmp.com/10321/10321270/products/1662533916465.jpg"
+          }
+        },
+        {
+          "description": "[API] Get product detail storefront thành công với x-dp-customer-token",
+          "id": "TC_SB_DP_DPD_39",
+          "handle": "product-preview",
+          "token_type": "x-dp-customer-token",
+          "token": "",
+          "product": {
+            "messages": ["Success get data"],
+            "handle": "product-preview",
+            "title": "product preview",
+            "type": "online_course",
+            "number": 1,
+            "image": "https://dev-img.btdmp.com/10321/10321270/products/1662533916465.jpg"
+          }
+        }
+      ]
+    }
+  },
+  "env": {
+    "prodtest": {
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://prod-test-api.shopbase.com"
+    }
+  }
+}

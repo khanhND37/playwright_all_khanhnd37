@@ -1,0 +1,455 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-blog-dev.myshopbase.net",
+      "shop_name": "au-blog-dev",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "43AhIn|VWp;[?9&",
+      "user_id": 89797,
+      "blog_default": "blog don't delete",
+      "blog_post_default": "blog post don't delete",
+      "author": "Dpro Team"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-blog-v2-prodtest.onshopbase.com",
+      "shop_name": "au-blog-v2-prodtest",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "blog_default": "blog don't delete",
+      "blog_post_default": "blog post don't delete",
+      "author": "Dpro Team"
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-blog-prod.onshopbase.com",
+      "shop_name": "au-blog-prod",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "blog_default": "blog don't delete",
+      "blog_post_default": "blog post don't delete",
+      "author": "Dpro Team"
+    }
+  },
+  "cases": {
+    "SB_BL_DCB_01": {
+      "blog_info": [
+        {
+          "title": "Add new SB_BL_DCB_1.1",
+          "comment_type": "Comments are allowed, and are automatically published",
+          "seo": true,
+          "page_title": "test page title seo",
+          "meta_description": "test meta description",
+          "handle": "add-new-01"
+        },
+        {
+          "title": "Add new SB_BL_DCB_1.2",
+          "comment_type": "Comments are disabled",
+          "seo": true,
+          "page_title": "test page title seo",
+          "handle": "add-new-02"
+        },
+        {
+          "title": "Add new SB_BL_DCB_1.3",
+          "comment_type": "Comments are allowed, pending moderation",
+          "seo": false,
+          "handle": "add-new-sb-bl-dcb-1-3"
+        }
+      ]
+    },
+    "SB_BL_01": {
+      "preconditon_add_blog": true,
+      "blog_info": [
+        {
+          "title": "Add new SB_BL_1",
+          "comment_type": "Comments are allowed, and are automatically published",
+          "seo": true,
+          "page_title": "blog page title"
+        }
+      ],
+      "edit_blog": {
+        "title": "edit blog SB_BL_1",
+        "comment_type": "Comments are disabled",
+        "seo": true,
+        "page_title": "edit blog title seo",
+        "meta_description": "edit blog meta description",
+        "handle": "test-edit-blog"
+      }
+    },
+    "SB_BL_2": {
+      "preconditon_add_blog": true,
+      "blog_info": [
+        {
+          "title": "Delete blog",
+          "comment_type": "Comments are allowed, and are automatically published",
+          "handle": "delete-blog"
+        }
+      ],
+      "blog_post_info": [
+        {
+          "title": "new blog post SB_BL_2",
+          "handle": "new-blog-post-sb-bl-2",
+          "visibility": "Visible",
+          "blog": "Delete blog"
+        }
+      ]
+    },
+    "SB_BL_4": {
+      "blog_info": [
+        {
+          "title": "Dropshipping guide beginners",
+          "comment_type": "Comments are allowed, and are automatically published"
+        },
+        {
+          "title": "Ultimate Dropshipping Guide",
+          "comment_type": "Comments are disabled"
+        }
+      ],
+      "blog_post_info": [
+        {
+          "title": "Add new blog post full data",
+          "content": "Comments are allowed, and are automatically published",
+          "excerpt": "PlusBase x GEC: Coffee Free Talk in Hanoi",
+          "seo": true,
+          "page_title": "test page title seo",
+          "meta_description": "test meta description",
+          "handle": "add-new-blog-post-full-data",
+          "visibility": "Visible",
+          "featured_image": "./data/shopbase/SB_BL_4.png",
+          "blog": "Dropshipping guide beginners",
+          "tags": ["vintage"]
+        },
+        {
+          "title": "Add new blog post SB_BL_4 field require",
+          "visibility": "Hidden",
+          "blog": "Ultimate Dropshipping Guide",
+          "handle": "add-new-blog-post-sb-bl-4-field-require"
+        }
+      ]
+    },
+    "SB_BL_7": {
+      "preconditon_add_blog_post": true,
+      "blog_info": [
+        {
+          "title": "Dropshipping guide beginners",
+          "comment_type": "Comments are allowed, and are automatically published"
+        },
+        {
+          "title": "Ultimate Dropshipping Guide",
+          "comment_type": "Comments are disabled"
+        }
+      ],
+      "blog_post_info": [
+        {
+          "title": "new blog post SB_BL_7",
+          "visibility": "Hidden",
+          "blog": "Ultimate Dropshipping Guide"
+        },
+        {
+          "title": "blog post full data SB_BL_7",
+          "content": "Take your business to the moon with ShopBase",
+          "excerpt": "PlusBase x GEC: Coffee Free Talk in Hanoi",
+          "visibility": "Visible",
+          "featured_image": "./data/shopbase/SB_BL_7.png",
+          "blog": "Dropshipping guide beginners",
+          "tags": ["vintage"]
+        }
+      ],
+      "edit_blog_post_info": [
+        {
+          "title": "new blog post SB_BL_7",
+          "visibility": "Visible",
+          "author": "Trang Le",
+          "handle": "new-blog-post-sb-bl-7",
+          "blog": "Ultimate Dropshipping Guide",
+          "featured_image": "./data/shopbase/SB_BL_7.png",
+          "tags": ["vintage", "collection"]
+        },
+        {
+          "title": "blog post edit",
+          "content": "All the feature in one place",
+          "excerpt": "Build a profitable Print-On-Demand business in a few clicks with ShopBase",
+          "author": "Trang Le",
+          "seo": true,
+          "page_title": "blog post page title",
+          "handle": "blog-post-sb-bl-7",
+          "featured_image": "./data/shopbase/SB_BL_7_edit.png",
+          "blog": "Ultimate Dropshipping Guide",
+          "tags": ["summer"]
+        }
+      ]
+    },
+    "SB_BL_8": {
+      "preconditon_add_blog_post": true,
+      "blog_info": [
+        {
+          "title": "Dropshipping guide beginners",
+          "comment_type": "Comments are allowed, and are automatically published",
+          "handle": "dropshipping-guide-beginners"
+        }
+      ],
+      "blog_post_info": [
+        {
+          "title": "Delete blog post SB_BL_8",
+          "visibility": "Visible",
+          "blog": "Dropshipping guide beginners",
+          "handle": "delete-blog-post-sb-bl-8"
+        },
+        {
+          "title": "not delete blog post SB_BL_8",
+          "visibility": "Visible",
+          "blog": "Dropshipping guide beginners",
+          "handle": "not-delete-blog-post-sb-bl-8"
+        }
+      ]
+    },
+    "SB_BL_10": {
+      "preconditon_add_blog_post": true,
+      "blog_info": [
+        {
+          "title": "Dropshipping guide beginners",
+          "comment_type": "Comments are allowed, and are automatically published"
+        },
+        {
+          "title": "Ultimate Dropshipping Guide",
+          "comment_type": "Comments are allowed, and are automatically published"
+        }
+      ],
+      "blog_post_info": [
+        {
+          "title": "Blog post SB_BL_10.1",
+          "visibility": "Visible",
+          "blog": "Dropshipping guide beginners",
+          "handle": "blog-post-sb-bl-10-1",
+          "tags": ["summer"]
+        },
+        {
+          "title": "Blog post SB_BL_10.2",
+          "visibility": "Visible",
+          "blog": "Dropshipping guide beginners",
+          "handle": "blog-post-sb-bl-10-2",
+          "featured_image": "./data/shopbase/SB_BL_7.png",
+          "tags": ["vintage"]
+        },
+        {
+          "title": "Blog post SB_BL_10.3",
+          "visibility": "Hidden",
+          "blog": "Ultimate Dropshipping Guide",
+          "handle": "blog-post-sb-bl-10-3",
+          "author": "Trang Le",
+          "tags": ["summer", "collection"]
+        }
+      ],
+      "filter_tag": {
+        "type": "Tagged with",
+        "type_input": "textbox",
+        "value": "summer",
+        "expected": ["Blog post SB_BL_10.1", "Blog post SB_BL_10.3"]
+      },
+      "filter_visibility": [
+        {
+          "type": "Visibility",
+          "type_input": "radio",
+          "value": "Visible",
+          "expected": ["Blog post SB_BL_10.1", "Blog post SB_BL_10.2"]
+        },
+        {
+          "type": "Visibility",
+          "type_input": "radio",
+          "value": "Hidden",
+          "expected": ["blog post don't delete", "Blog post SB_BL_10.3"]
+        }
+      ],
+      "filter_blog": {
+        "type": "Blog",
+        "type_input": "select",
+        "value": "Ultimate Dropshipping Guide",
+        "expected": ["Blog post SB_BL_10.3"]
+      },
+      "filter_title": [
+        {
+          "type": "Title",
+          "type_input": "radio",
+          "value": "Contains",
+          "text_input": "sb_bl",
+          "expected": ["Blog post SB_BL_10.1", "Blog post SB_BL_10.2", "Blog post SB_BL_10.3"]
+        },
+        {
+          "type": "Title",
+          "type_input": "radio",
+          "value": "Doesn't contain",
+          "text_input": "sb_bl",
+          "expected": ["blog post don't delete"]
+        }
+      ],
+      "filter_image": [
+        {
+          "type": "Image",
+          "type_input": "radio",
+          "value": "Has image",
+          "expected": ["Blog post SB_BL_10.2"]
+        },
+        {
+          "type": "Image",
+          "type_input": "radio",
+          "value": "Doesn't have image",
+          "expected": ["blog post don't delete", "Blog post SB_BL_10.1", "Blog post SB_BL_10.3"]
+        }
+      ],
+      "filter_author": {
+        "type": "Author",
+        "type_input": "select",
+        "value": "Trang Le",
+        "expected": ["Blog post SB_BL_10.3"]
+      }
+    },
+    "SB_BL_11": {
+      "preconditon_add_blog_post": true,
+      "blog_info": [
+        {
+          "title": "Dropshipping guide beginners",
+          "comment_type": "Comments are allowed, and are automatically published"
+        }
+      ],
+      "blog_post_info": [
+        {
+          "title": "Blog post SB_BL_11.1",
+          "visibility": "Hidden",
+          "blog": "Dropshipping guide beginners",
+          "handle": "blog-post-sb-bl-11-1",
+          "tags": ["summer"]
+        },
+        {
+          "title": "Blog post SB_BL_11.2",
+          "visibility": "Visible",
+          "blog": "Dropshipping guide beginners",
+          "handle": "blog-post-sb-bl-11-2",
+          "tags": ["vintage", "collection"]
+        }
+      ],
+      "add_tags": ["collection", "vintage"],
+      "remove_tags": ["summer", "vintage"]
+    },
+    "SB_BL_12": {
+      "preconditon_add_blog_post": true,
+      "blog_info": [
+        {
+          "title": "Dropshipping guide beginners",
+          "comment_type": "Comments are allowed, and are automatically published"
+        },
+        {
+          "title": "Ultimate Dropshipping Guide",
+          "comment_type": "Comments are allowed, pending moderation"
+        }
+      ],
+      "blog_post_info": [
+        {
+          "title": "Blog post SB_BL_12.1",
+          "visibility": "Visible",
+          "blog": "Dropshipping guide beginners",
+          "handle": "blog-post-sb-bl-12-1"
+        },
+        {
+          "title": "Blog post SB_BL_12.2",
+          "visibility": "Visible",
+          "blog": "Ultimate Dropshipping Guide",
+          "handle": "blog-post-sb-bl-12-2"
+        }
+      ],
+      "comments": [
+        {
+          "blog_post": "Blog post SB_BL_12.1",
+          "handle_blog_post": "blog-post-sb-bl-12-1",
+          "your_name": "dpro auto 01",
+          "your_email": "dpro",
+          "website": "shopbase.com",
+          "comment": "Thank you for being a part of the ShopBase, PrintBase community",
+          "comment_status": "approved"
+        },
+        {
+          "blog_post": "Blog post SB_BL_12.2",
+          "handle_blog_post": "blog-post-sb-bl-12-2",
+          "your_name": "dpro auto 02",
+          "your_email": "dpro",
+          "website": "printbase.com",
+          "comment": "test comment"
+        },
+        {
+          "blog_post": "Blog post SB_BL_12.1",
+          "handle_blog_post": "blog-post-sb-bl-12-1",
+          "your_name": "dpro auto 03",
+          "your_email": "dpro",
+          "website": "shopbase.com",
+          "comment": "This is a very good article"
+        },
+        {
+          "blog_post": "Blog post SB_BL_12.2",
+          "handle_blog_post": "blog-post-sb-bl-12-2",
+          "your_name": "dpro auto 04",
+          "your_email": "dpro",
+          "website": "printbase.com",
+          "comment": "no comment"
+        }
+      ],
+      "expected": {
+        "show_number_comment_db": "Showing 1 Comments",
+        "number_comment_sf": "1 comment",
+        "comment_info": [
+          {
+            "username": "dpro auto 02",
+            "comment": "This is a very good article"
+          }
+        ]
+      }
+    },
+    "SB_BL_14": {
+      "preconditon_add_blog_post": true,
+      "blog_info": [
+        {
+          "title": "Dropshipping guide beginners",
+          "comment_type": "Comments are allowed, and are automatically published"
+        },
+        {
+          "title": "Ultimate Dropshipping Guide",
+          "comment_type": "Comments are allowed, pending moderation"
+        }
+      ],
+      "blog_post_info": [
+        {
+          "title": "Blog post SB_BL_14.1",
+          "visibility": "Visible",
+          "blog": "Dropshipping guide beginners",
+          "handle": "blog-post-sb-bl-14-1"
+        },
+        {
+          "title": "Blog post SB_BL_14.2",
+          "visibility": "Visible",
+          "blog": "Ultimate Dropshipping Guide",
+          "handle": "blog-post-sb-bl-14-2"
+        }
+      ],
+      "comments": [
+        {
+          "blog_post": "Blog post SB_BL_14.1",
+          "handle_blog_post": "blog-post-sb-bl-14-1",
+          "your_name": "dpro auto 01",
+          "your_email": "dpro",
+          "website": "shopbase.com",
+          "comment": "Thank you for being a part of the ShopBase.",
+          "comment_status": "approved"
+        },
+        {
+          "blog_post": "Blog post SB_BL_14.2",
+          "handle_blog_post": "blog-post-sb-bl-14-2",
+          "your_name": "dpro auto 02",
+          "your_email": "dpro",
+          "website": "shopbase.com",
+          "comment": "This is a very good article"
+        }
+      ]
+    }
+  }
+}

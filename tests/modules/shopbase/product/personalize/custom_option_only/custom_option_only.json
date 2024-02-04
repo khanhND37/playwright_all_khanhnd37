@@ -1,0 +1,2583 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-custom-option-only-sb.onshopbase.com",
+      "shop_name": "au-custom-option-only-sb",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10371862,
+      "user_id": 73782,
+      "timeout": 480000
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-custom-option-only-sb-prodtest.onshopbase.com",
+      "shop_name": "au-custom-option-only-sb-prodtest",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10371906,
+      "user_id": 73782,
+      "timeout": 480000,
+      "accounts_domain": "accounts-test.shopbase.com",
+      "cases": {
+        "DATA_DRIVEN": {
+          "data": [
+            {
+              "description": "Tạo Custom option only với Text field",
+              "case_id": "SB_PRO_SBP_1513",
+              "product_all_info": {
+                "title": "Product text field",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "custom_option_blank_field": {
+                "type": "Text field",
+                "position": 1,
+                "default_data": {
+                  "label_display": "Text"
+                },
+                "messageError": {
+                  "name": "Please finish this field",
+                  "allow_following_characters": "You have to select at least one option."
+                }
+              },
+              "custom_option_error_characters": {
+                "type": "Text field",
+                "default_name": "Custom Option 1",
+                "default_value": "123@",
+                "placeholder": "Please input tex field",
+                "custom_name": "CO1",
+                "label": "CO1",
+                "index": 1,
+                "position": 1,
+                "allow_following": "Characters",
+                "add_another_option": "no",
+                "error_message": "Your default value has invalid characters. We only accept characters."
+              },
+              "custom_option_error_numbers": {
+                "type": "Text field",
+                "default_name": "Custom Option 1",
+                "default_value": "abc",
+                "placeholder": "Please input tex field",
+                "custom_name": "CO1",
+                "label": "CO1",
+                "index": 1,
+                "position": 1,
+                "allow_following": "Numbers",
+                "add_another_option": "no",
+                "error_message": "Your default value has invalid characters. We only accept numbers."
+              },
+              "custom_option_error_emoji": {
+                "type": "Text field",
+                "default_name": "Custom Option 1",
+                "default_value": "123a",
+                "placeholder": "Please input tex field",
+                "custom_name": "CO1",
+                "label": "CO1",
+                "index": 1,
+                "position": 1,
+                "allow_following": "Emoji",
+                "add_another_option": "no",
+                "error_message": "Your default value has invalid characters. We only accept emoji."
+              },
+              "custom_option_info": {
+                "type": "Text field",
+                "default_name": "Custom Option 1",
+                "custom_name": "CO1",
+                "label": "CO1",
+                "index": 1,
+                "position": 1,
+                "placeholder": "Please input text field",
+                "default_value": "text",
+                "allow_following": "Characters, Numbers, Special Characters",
+                "add_another_option": "no"
+              },
+              "custom_option_data": {
+                "type": "text",
+                "name": "CO1",
+                "label": "<p>CO1</p>",
+                "placeholder": "Please input text field",
+                "default_value": "text",
+                "allowed_characters": ["characters", "numbers", "symbol"]
+              },
+              "custom_option_blank_field_SF": {
+                "type": "Text field",
+                "list_custom": ["Text field>CO1>"],
+                "message": "Please finish this field"
+              },
+              "custom_option_data_SF": {
+                "type": "Text field",
+                "list_custom": ["Text field>CO1>Test"],
+                "value": "CO1: Test"
+              },
+              "snapshot_name": [
+                "default-value-SB_PRO_SBP_1513.png",
+                "default-value-picture-choice-SB_PRO_SBP_1513.png",
+                "custom-option-close-SB_PRO_SBP_1513.png",
+                "custom-option-data-SB_PRO_SBP_1513.png",
+                "preview-image-SB_PRO_SBP_1513.png",
+                "print-file-SB_PRO_SBP_1513.png",
+                "custom-option-on-SF-SB_PRO_SBP_1513.png"
+              ]
+            },
+            {
+              "description": "Tạo Custom option only với Textarea",
+              "case_id": "SB_PRO_SBP_1514",
+              "product_all_info": {
+                "title": "Product text area",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "custom_option_blank_field": {
+                "type": "Text area",
+                "position": 1,
+                "default_data": {
+                  "label_display": "Text"
+                },
+                "messageError": {
+                  "name": "Please finish this field"
+                }
+              },
+              "custom_option_error_characters": {
+                "type": "Text area",
+                "default_name": "Custom Option 1",
+                "default_value": "123@",
+                "placeholder": "Please input tex field",
+                "custom_name": "CO1",
+                "label": "CO1",
+                "index": 1,
+                "position": 1,
+                "allow_following": "Characters",
+                "add_another_option": "no",
+                "error_message": "Your default value has invalid characters. We only accept characters."
+              },
+              "custom_option_error_numbers": {
+                "type": "Text area",
+                "default_name": "Custom Option 1",
+                "default_value": "abc",
+                "placeholder": "Please input tex field",
+                "custom_name": "CO1",
+                "label": "CO1",
+                "index": 1,
+                "position": 1,
+                "allow_following": "Numbers",
+                "add_another_option": "no",
+                "error_message": "Your default value has invalid characters. We only accept numbers."
+              },
+              "custom_option_error_emoji": {
+                "type": "Text area",
+                "default_name": "Custom Option 1",
+                "default_value": "123a",
+                "placeholder": "Please input tex field",
+                "custom_name": "CO1",
+                "label": "CO1",
+                "index": 1,
+                "position": 1,
+                "allow_following": "Emoji",
+                "add_another_option": "no",
+                "error_message": "Your default value has invalid characters. We only accept emoji."
+              },
+              "custom_option_info": {
+                "type": "Text area",
+                "default_name": "Custom Option 1",
+                "custom_name": "CO1",
+                "label": "CO1",
+                "index": 1,
+                "position": 1,
+                "placeholder": "Please input text field",
+                "default_value": "text",
+                "allow_following": "Characters, Numbers, Special Characters",
+                "add_another_option": "no"
+              },
+              "custom_option_data": {
+                "type": "textarea",
+                "name": "CO1",
+                "label": "<p>CO1</p>",
+                "placeholder": "Please input text field",
+                "default_value": "text",
+                "allowed_characters": ["characters", "numbers", "symbol"]
+              },
+              "custom_option_blank_field_SF": {
+                "type": "Text area",
+                "list_custom": ["Text area>CO1>"],
+                "message": "Please finish this field"
+              },
+              "custom_option_data_SF": {
+                "type": "Text area",
+                "list_custom": ["Text area>CO1>Test"],
+                "value": "CO1: Test"
+              },
+              "snapshot_name": [
+                "default-value-SB_PRO_SBP_1514.png",
+                "default-value-picture-choice-SB_PRO_SBP_1514.png",
+                "custom-option-close-SB_PRO_SBP_1514.png",
+                "custom-option-data-SB_PRO_SBP_1514.png",
+                "preview-image-SB_PRO_SBP_1514.png",
+                "print-file-SB_PRO_SBP_1514.png",
+                "custom-option-on-SF-SB_PRO_SBP_1514.png"
+              ]
+            },
+            {
+              "description": "Tạo Custom option only với Image",
+              "case_id": "SB_PRO_SBP_1515",
+              "product_all_info": {
+                "title": "Product image",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "custom_option_blank_field": {
+                "type": "Image",
+                "default_data": {
+                  "label_display": "Image",
+                  "help_text_optional": "You should upload image in 500x200 pixel to get the best quality",
+                  "min_size": "0"
+                },
+                "messageError": {
+                  "name": "Please finish this field"
+                }
+              },
+              "custom_option_info": {
+                "type": "Image",
+                "default_name": "Custom Option 1",
+                "custom_name": "CO1",
+                "label": "CO1",
+                "index": 1,
+                "add_another_option": "no"
+              },
+              "custom_option_data": {
+                "type": "file",
+                "name": "CO1",
+                "label": "<p>CO1</p>",
+                "help_text": "You should upload image in 500x200 pixel to get the best quality",
+                "placeholder": "",
+                "default_value": ""
+              },
+              "custom_option_blank_field_SF": {
+                "type": "Image",
+                "list_custom": ["Image>CO1>"],
+                "message": "Please upload a file."
+              },
+              "custom_option_invalid_SF": {
+                "type": "Image",
+                "upload_file_s3": {
+                  "s3_path": "files/SB_PRO_VAD_17_imgMore20MB.jpg",
+                  "file_path": "data/shopbase/imgMore20MB.jpg"
+                },
+                "list_custom": ["Image>CO1>s3_path"],
+                "message": "Maximum file size is 20 MB"
+              },
+              "custom_option_data_SF": {
+                "type": "Image",
+                "list_custom": ["Image>CO1>BD_7.png"],
+                "value": ".png"
+              },
+              "snapshot_name": [
+                "default-value-SB_PRO_SBP_1515.png",
+                "default-value-picture-choice-SB_PRO_SBP_1515.png",
+                "custom-option-close-SB_PRO_SBP_1515.png",
+                "custom-option-data-SB_PRO_SBP_1515.png",
+                "preview-image-SB_PRO_SBP_1515.png",
+                "print-file-SB_PRO_SBP_1515.png",
+                "custom-option-on-SF-SB_PRO_SBP_1515.png"
+              ]
+            },
+            {
+              "description": "Tạo Custom option only với Radio",
+              "case_id": "SB_PRO_SBP_1516",
+              "product_all_info": {
+                "title": "Product radio",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "custom_option_blank_field": {
+                "type": "Radio buttons",
+                "default_data": {
+                  "label_display": "Option"
+                },
+                "messageError": {
+                  "name": "Please finish this field",
+                  "value": "Please finish this field"
+                }
+              },
+              "custom_option_info": {
+                "type": "Radio buttons",
+                "default_name": "Custom Option 1",
+                "custom_name": "CO1",
+                "label": "CO1",
+                "values": "a,b,c",
+                "default_check": "b",
+                "index": 1,
+                "add_another_option": "no"
+              },
+              "custom_option_data": {
+                "type": "radio",
+                "name": "CO1",
+                "label": "<p>CO1</p>",
+                "help_text": "",
+                "placeholder": "",
+                "default_value": "",
+                "values": [
+                  {
+                    "text": "a",
+                    "thumbnail": "",
+                    "value": "a"
+                  },
+                  {
+                    "text": "b",
+                    "thumbnail": "",
+                    "value": "b"
+                  },
+                  {
+                    "text": "c",
+                    "thumbnail": "",
+                    "value": "c"
+                  }
+                ]
+              },
+              "custom_option_data_SF": {
+                "type": "Radio buttons",
+                "list_custom": ["Radio buttons>CO1>a"],
+                "value": "CO1: a"
+              },
+              "snapshot_name": [
+                "default-value-SB_PRO_SBP_1516.png",
+                "default-value-picture-choice-SB_PRO_SBP_1516.png",
+                "custom-option-close-SB_PRO_SBP_1516.png",
+                "custom-option-data-SB_PRO_SBP_1516.png",
+                "preview-image-SB_PRO_SBP_1516.png",
+                "print-file-SB_PRO_SBP_1516.png",
+                "custom-option-on-SF-SB_PRO_SBP_1516.png"
+              ]
+            },
+            {
+              "description": "Tạo Custom option only với Droplist",
+              "case_id": "SB_PRO_SBP_1517",
+              "product_all_info": {
+                "title": "Product droplist",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "custom_option_blank_field": {
+                "type": "Droplist",
+                "default_data": {
+                  "label_display": "Option",
+                  "placeholder": "Please select the option"
+                },
+                "messageError": {
+                  "name": "Please finish this field",
+                  "value": "Please finish this field"
+                }
+              },
+              "custom_option_info": {
+                "type": "Droplist",
+                "default_name": "Custom Option 1",
+                "custom_name": "CO1",
+                "label": "CO1",
+                "values": "a,b,c",
+                "default_check": "b",
+                "index": 1,
+                "add_another_option": "no"
+              },
+              "custom_option_data": {
+                "type": "select",
+                "name": "CO1",
+                "label": "<p>CO1</p>",
+                "help_text": "",
+                "placeholder": "Please select the option",
+                "default_value": "",
+                "values": [
+                  {
+                    "text": "a",
+                    "thumbnail": "",
+                    "value": "a"
+                  },
+                  {
+                    "text": "b",
+                    "thumbnail": "",
+                    "value": "b"
+                  },
+                  {
+                    "text": "c",
+                    "thumbnail": "",
+                    "value": "c"
+                  }
+                ]
+              },
+              "custom_option_data_SF": {
+                "type": "Droplist",
+                "list_custom": ["Droplist>CO1>a"],
+                "value": "CO1: a"
+              },
+              "snapshot_name": [
+                "default-value-SB_PRO_SBP_1517.png",
+                "default-value-picture-choice-SB_PRO_SBP_1517.png",
+                "custom-option-close-SB_PRO_SBP_1517.png",
+                "custom-option-data-SB_PRO_SBP_1517.png",
+                "preview-image-SB_PRO_SBP_1517.png",
+                "print-file-SB_PRO_SBP_1517.png",
+                "custom-option-on-SF-SB_PRO_SBP_1517.png"
+              ]
+            },
+            {
+              "description": "Tạo Custom option only với Checkbox",
+              "case_id": "SB_PRO_SBP_1518",
+              "product_all_info": {
+                "title": "Product checkbox",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "custom_option_blank_field": {
+                "type": "Checkbox",
+                "default_data": {
+                  "label_display": "Option"
+                },
+                "messageError": {
+                  "name": "Please finish this field",
+                  "value": "Please finish this field"
+                }
+              },
+              "custom_option_info": {
+                "type": "Checkbox",
+                "default_name": "Custom Option 1",
+                "custom_name": "CO1",
+                "label": "CO1",
+                "values": "a,b,c,d,e",
+                "index": 1,
+                "add_another_option": "no"
+              },
+              "custom_option_data": {
+                "type": "checkbox",
+                "name": "CO1",
+                "label": "<p>CO1</p>",
+                "placeholder": "",
+                "default_value": "",
+                "values": [
+                  {
+                    "text": "a",
+                    "thumbnail": "",
+                    "value": "a"
+                  },
+                  {
+                    "text": "b",
+                    "thumbnail": "",
+                    "value": "b"
+                  },
+                  {
+                    "text": "c",
+                    "thumbnail": "",
+                    "value": "c"
+                  },
+                  {
+                    "text": "d",
+                    "thumbnail": "",
+                    "value": "d"
+                  },
+                  {
+                    "text": "e",
+                    "thumbnail": "",
+                    "value": "e"
+                  }
+                ]
+              },
+              "custom_option_data_SF": {
+                "type": "Checkbox",
+                "list_custom": ["Checkbox>CO1>b,c"],
+                "value": "CO1: b,c"
+              },
+              "snapshot_name": [
+                "default-value-SB_PRO_SBP_1518.png",
+                "default-value-picture-choice-SB_PRO_SBP_1518.png",
+                "custom-option-close-SB_PRO_SBP_1518.png",
+                "custom-option-data-SB_PRO_SBP_1518.png",
+                "preview-image-SB_PRO_SBP_1518.png",
+                "print-file-SB_PRO_SBP_1518.png",
+                "custom-option-on-SF-SB_PRO_SBP_1518.png"
+              ]
+            },
+            {
+              "description": "Tạo custom option với picture choice clipart Folder",
+              "case_id": "SB_PRO_SBP_1519",
+              "product_all_info": {
+                "title": "Product picture choice clipart Folder",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "custom_option_blank_field": {
+                "type": "Picture choice",
+                "default_data": {
+                  "label_display": "Option"
+                },
+                "messageError": {
+                  "name": "Please finish this field"
+                }
+              },
+              "custom_option_info": {
+                "type": "Picture choice",
+                "default_name": "Custom Option 1",
+                "custom_name": "CO1",
+                "label": "CO1",
+                "type_clipart": "Folder",
+                "values": "test",
+                "index": 1,
+                "add_another_option": "no"
+              },
+              "custom_option_data": {
+                "type": "picture",
+                "name": "CO1",
+                "label": "<p>CO1</p>",
+                "placeholder": "",
+                "default_value": "",
+                "p_o_d_data": {
+                  "clipart_type": "folder",
+                  "is_customize_group": false,
+                  "is_separate_layer": false,
+                  "layer_data": "",
+                  "layers": null,
+                  "show_type": "thumbnail",
+                  "sub_custom_options": null
+                }
+              },
+              "custom_option_blank_field_SF": {
+                "type": "Picture choice",
+                "list_custom": ["Picture choice>CO1>"],
+                "message": "Please finish this field"
+              },
+              "custom_option_data_SF": {
+                "type": "Picture choice",
+                "list_custom": ["Picture choice>CO1>image1"],
+                "value": "CO1: image1"
+              },
+              "snapshot_name": [
+                "default-value-SB_PRO_SBP_1519.png",
+                "default-value-picture-choice-SB_PRO_SBP_1519.png",
+                "custom-option-close-SB_PRO_SBP_1519.png",
+                "custom-option-data-SB_PRO_SBP_1519.png",
+                "preview-image-SB_PRO_SBP_1519.png",
+                "print-file-SB_PRO_SBP_1519.png",
+                "custom-option-on-SF-SB_PRO_SBP_1519.png"
+              ]
+            },
+            {
+              "description": "Tạo custom option với Picture choice clipart group",
+              "case_id": "SB_PRO_SBP_1520",
+              "product_all_info": {
+                "title": "Product picture choice clipart group",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "custom_option_blank_field": {
+                "type": "Picture choice",
+                "default_data": {
+                  "label_display": "Option"
+                },
+                "messageError": {
+                  "name": "Please finish this field"
+                }
+              },
+              "custom_option_info": {
+                "type": "Picture choice",
+                "default_name": "Custom Option 1",
+                "custom_name": "CO1",
+                "label": "CO1",
+                "type_clipart": "Group",
+                "values": "test",
+                "index": 1,
+                "add_another_option": "no"
+              },
+              "custom_option_data": {
+                "type": "picture",
+                "name": "CO1",
+                "label": "<p>CO1</p>",
+                "placeholder": "",
+                "default_value": "",
+                "clipart_type": "group"
+              },
+              "custom_option_blank_field_SF": {
+                "type": "Picture choice",
+                "list_custom": ["Picture choice>CO1>"],
+                "message": "Please finish this field"
+              },
+              "custom_option_data_SF": {
+                "type": "Picture choice group",
+                "list_custom": ["Picture choice group show thumbnail>CO1>test>image1"],
+                "value": "CO1: test",
+                "value_picture": "test: image1"
+              },
+              "snapshot_name": [
+                "default-value-SB_PRO_SBP_1520.png",
+                "default-value-picture-choice-SB_PRO_SBP_1520.png",
+                "custom-option-close-SB_PRO_SBP_1520.png",
+                "custom-option-data-SB_PRO_SBP_1520.png",
+                "preview-image-SB_PRO_SBP_1520.png",
+                "print-file-SB_PRO_SBP_1520.png",
+                "custom-option-on-SF-SB_PRO_SBP_1520.png"
+              ]
+            }
+          ]
+        },
+        "SB_PRO_SBP_1521": {
+          "product_all_info": {
+            "title": "Product all custom option",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "custom_option_text_field": {
+            "type": "Text field",
+            "default_name": "Custom Option 1",
+            "custom_name": "Text field",
+            "label": "Text field",
+            "index": 1,
+            "position": 1,
+            "placeholder": "Please input text field",
+            "default_value": "text",
+            "allow_following": "Characters, Numbers, Special Characters, Emoji"
+          },
+          "custom_option_text_area": {
+            "type": "Text area",
+            "default_name": "Custom Option 2",
+            "custom_name": "Text area",
+            "label": "Text area",
+            "index": 2,
+            "position": 2,
+            "placeholder": "Please input text area",
+            "default_value": "text",
+            "allow_following": "Characters, Numbers, Special Characters, Emoji"
+          },
+          "custom_option_image": {
+            "type": "Image",
+            "default_name": "Custom Option 3",
+            "custom_name": "Image",
+            "label": "Image",
+            "index": 3
+          },
+          "custom_option_picture_choice": {
+            "type": "Picture choice",
+            "default_name": "Custom Option 4",
+            "custom_name": "Picture choice",
+            "label": "Picture choice",
+            "type_clipart": "Folder",
+            "values": "test",
+            "index": 5
+          },
+          "custom_option_radio_button": {
+            "type": "Radio buttons",
+            "default_name": "Custom Option 5",
+            "custom_name": "Radio buttons",
+            "label": "Radio buttons",
+            "values": "a,b,c",
+            "default_check": "b",
+            "index": 6
+          },
+          "custom_option_droplist": {
+            "type": "Droplist",
+            "default_name": "Custom Option 6",
+            "custom_name": "Droplist",
+            "label": "Droplist",
+            "values": "a,b,c",
+            "default_check": "b",
+            "index": 7,
+            "position": 2
+          },
+          "custom_option_checkbox": {
+            "type": "Checkbox",
+            "default_name": "Custom Option 7",
+            "custom_name": "Checkbox",
+            "label": "Checkbox",
+            "values": "a,b,c,d,e",
+            "index": 8
+          },
+          "custom_option_data": [
+            {
+              "type": "text",
+              "name": "Text field",
+              "label": "<p>Text field</p>",
+              "placeholder": "Please input text field",
+              "default_value": "text",
+              "allowed_characters": ["characters", "numbers", "symbol", "emoji"]
+            },
+            {
+              "type": "textarea",
+              "name": "Text area",
+              "label": "<p>Text area</p>",
+              "placeholder": "Please input text area",
+              "default_value": "text",
+              "allowed_characters": ["characters", "numbers", "symbol", "emoji"]
+            },
+            {
+              "type": "file",
+              "name": "Image",
+              "label": "<p>Image</p>",
+              "help_text": "You should upload image in 500x200 pixel to get the best quality",
+              "placeholder": "",
+              "default_value": ""
+            },
+            {
+              "type": "radio",
+              "name": "Radio buttons",
+              "label": "<p>Radio buttons</p>",
+              "help_text": "",
+              "placeholder": "",
+              "default_value": "",
+              "values": [
+                {
+                  "text": "a",
+                  "thumbnail": "",
+                  "value": "a"
+                },
+                {
+                  "text": "b",
+                  "thumbnail": "",
+                  "value": "b"
+                },
+                {
+                  "text": "c",
+                  "thumbnail": "",
+                  "value": "c"
+                }
+              ]
+            },
+            {
+              "type": "select",
+              "name": "Droplist",
+              "label": "<p>Droplist</p>",
+              "help_text": "",
+              "placeholder": "Please select the option",
+              "default_value": "",
+              "values": [
+                {
+                  "text": "a",
+                  "thumbnail": "",
+                  "value": "a"
+                },
+                {
+                  "text": "b",
+                  "thumbnail": "",
+                  "value": "b"
+                },
+                {
+                  "text": "c",
+                  "thumbnail": "",
+                  "value": "c"
+                }
+              ]
+            },
+            {
+              "type": "checkbox",
+              "name": "Checkbox",
+              "label": "<p>Checkbox</p>",
+              "placeholder": "",
+              "default_value": "",
+              "values": [
+                {
+                  "text": "a",
+                  "thumbnail": "",
+                  "value": "a"
+                },
+                {
+                  "text": "b",
+                  "thumbnail": "",
+                  "value": "b"
+                },
+                {
+                  "text": "c",
+                  "thumbnail": "",
+                  "value": "c"
+                },
+                {
+                  "text": "d",
+                  "thumbnail": "",
+                  "value": "d"
+                },
+                {
+                  "text": "e",
+                  "thumbnail": "",
+                  "value": "e"
+                }
+              ]
+            },
+            {
+              "type": "picture",
+              "name": "Picture choice",
+              "label": "<p>Picture choice</p>",
+              "placeholder": "",
+              "default_value": "",
+              "p_o_d_data": {
+                "clipart_type": "folder",
+                "is_customize_group": false,
+                "is_separate_layer": false,
+                "layer_data": "",
+                "layers": null,
+                "show_type": "thumbnail",
+                "sub_custom_options": null
+              }
+            }
+          ],
+          "image_snapshot": {
+            "image_list_CO": "prodtest-list-custom-option-SB_PRO_SBP_1521.png",
+            "image_list_CO_preview_image": "prodtest-preview-image-SB_PRO_SBP_1521.png",
+            "image_list_CO_print_file": "prodtest-print-file-SB_PRO_SBP_1521.png",
+            "custom_option_sf": "prodtest-custom-option-SF-SB_PRO_SBP_1521.png"
+          },
+          "custom_option_data_SF": {
+            "list_custom": [
+              "Text field>Text field>Test",
+              "Text area>Text area>Test",
+              "Image>Image>BD_7.png",
+              "Picture choice>Picture choice>image1",
+              "Radio buttons>Radio buttons>a",
+              "Droplist>Droplist>a",
+              "Checkbox>Checkbox>c"
+            ],
+            "value": [
+              "Text field: Test",
+              "Text area: Test",
+              ".png",
+              "Picture choice: image1",
+              "Radio buttons: a",
+              "Droplist: a",
+              "Checkbox: c"
+            ]
+          }
+        }
+      }
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-custom-option-only-sb.myshopbase.net",
+      "shop_name": "au-custom-option-only-sb",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_id": 10322923,
+      "user_id": 73800,
+      "timeout": 480000,
+      "cases": {
+        "DATA_DRIVEN": {
+          "data": [
+            {
+              "description": "Tạo Custom option only với Text field",
+              "case_id": "SB_PRO_SBP_1513",
+              "product_all_info": {
+                "title": "Product text field",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "custom_option_blank_field": {
+                "type": "Text field",
+                "position": 1,
+                "default_data": {
+                  "label_display": "Text"
+                },
+                "messageError": {
+                  "name": "Please finish this field",
+                  "allow_following_characters": "You have to select at least one option."
+                }
+              },
+              "custom_option_error_characters": {
+                "type": "Text field",
+                "default_name": "Custom Option 1",
+                "default_value": "123@",
+                "placeholder": "Please input tex field",
+                "custom_name": "CO1",
+                "label": "CO1",
+                "index": 1,
+                "position": 1,
+                "allow_following": "Characters",
+                "add_another_option": "no",
+                "error_message": "Your default value has invalid characters. We only accept characters."
+              },
+              "custom_option_error_numbers": {
+                "type": "Text field",
+                "default_name": "Custom Option 1",
+                "default_value": "abc",
+                "placeholder": "Please input tex field",
+                "custom_name": "CO1",
+                "label": "CO1",
+                "index": 1,
+                "position": 1,
+                "allow_following": "Numbers",
+                "add_another_option": "no",
+                "error_message": "Your default value has invalid characters. We only accept numbers."
+              },
+              "custom_option_error_emoji": {
+                "type": "Text field",
+                "default_name": "Custom Option 1",
+                "default_value": "123a",
+                "placeholder": "Please input tex field",
+                "custom_name": "CO1",
+                "label": "CO1",
+                "index": 1,
+                "position": 1,
+                "allow_following": "Emoji",
+                "add_another_option": "no",
+                "error_message": "Your default value has invalid characters. We only accept emoji."
+              },
+              "custom_option_info": {
+                "type": "Text field",
+                "default_name": "Custom Option 1",
+                "custom_name": "CO1",
+                "label": "CO1",
+                "index": 1,
+                "position": 1,
+                "placeholder": "Please input text field",
+                "default_value": "text",
+                "allow_following": "Characters, Numbers, Special Characters",
+                "add_another_option": "no"
+              },
+              "custom_option_data": {
+                "type": "text",
+                "name": "CO1",
+                "label": "<p>CO1</p>",
+                "placeholder": "Please input text field",
+                "default_value": "text",
+                "allowed_characters": ["characters", "numbers", "symbol"]
+              },
+              "custom_option_blank_field_SF": {
+                "type": "Text field",
+                "list_custom": ["Text field>CO1>"],
+                "message": "Please finish this field"
+              },
+              "custom_option_data_SF": {
+                "type": "Text field",
+                "list_custom": ["Text field>CO1>Test"],
+                "value": "CO1: Test"
+              },
+              "snapshot_name": [
+                "dev-default-value-SB_PRO_SBP_1513.png",
+                "dev-default-value-picture-choice-SB_PRO_SBP_1513.png",
+                "dev-custom-option-close-SB_PRO_SBP_1513.png",
+                "dev-custom-option-data-SB_PRO_SBP_1513.png",
+                "dev-preview-image-SB_PRO_SBP_1513.png",
+                "dev-print-file-SB_PRO_SBP_1513.png",
+                "dev-custom-option-on-SF-SB_PRO_SBP_1513.png"
+              ]
+            },
+            {
+              "description": "Tạo Custom option only với Textarea",
+              "case_id": "SB_PRO_SBP_1514",
+              "product_all_info": {
+                "title": "Product text area",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "custom_option_blank_field": {
+                "type": "Text area",
+                "position": 1,
+                "default_data": {
+                  "label_display": "Text"
+                },
+                "messageError": {
+                  "name": "Please finish this field"
+                }
+              },
+              "custom_option_error_characters": {
+                "type": "Text area",
+                "default_name": "Custom Option 1",
+                "default_value": "123@",
+                "placeholder": "Please input tex field",
+                "custom_name": "CO1",
+                "label": "CO1",
+                "index": 1,
+                "position": 1,
+                "allow_following": "Characters",
+                "add_another_option": "no",
+                "error_message": "Your default value has invalid characters. We only accept characters."
+              },
+              "custom_option_error_numbers": {
+                "type": "Text area",
+                "default_name": "Custom Option 1",
+                "default_value": "abc",
+                "placeholder": "Please input tex field",
+                "custom_name": "CO1",
+                "label": "CO1",
+                "index": 1,
+                "position": 1,
+                "allow_following": "Numbers",
+                "add_another_option": "no",
+                "error_message": "Your default value has invalid characters. We only accept numbers."
+              },
+              "custom_option_error_emoji": {
+                "type": "Text area",
+                "default_name": "Custom Option 1",
+                "default_value": "123a",
+                "placeholder": "Please input tex field",
+                "custom_name": "CO1",
+                "label": "CO1",
+                "index": 1,
+                "position": 1,
+                "allow_following": "Emoji",
+                "add_another_option": "no",
+                "error_message": "Your default value has invalid characters. We only accept emoji."
+              },
+              "custom_option_info": {
+                "type": "Text area",
+                "default_name": "Custom Option 1",
+                "custom_name": "CO1",
+                "label": "CO1",
+                "index": 1,
+                "position": 1,
+                "placeholder": "Please input text field",
+                "default_value": "text",
+                "allow_following": "Characters, Numbers, Special Characters",
+                "add_another_option": "no"
+              },
+              "custom_option_data": {
+                "type": "textarea",
+                "name": "CO1",
+                "label": "<p>CO1</p>",
+                "placeholder": "Please input text field",
+                "default_value": "text",
+                "allowed_characters": ["characters", "numbers", "symbol"]
+              },
+              "custom_option_blank_field_SF": {
+                "type": "Text area",
+                "list_custom": ["Text area>CO1>"],
+                "message": "Please finish this field"
+              },
+              "custom_option_data_SF": {
+                "type": "Text area",
+                "list_custom": ["Text area>CO1>Test"],
+                "value": "CO1: Test"
+              },
+              "snapshot_name": [
+                "dev-default-value-SB_PRO_SBP_1514.png",
+                "dev-default-value-picture-choice-SB_PRO_SBP_1514.png",
+                "dev-custom-option-close-SB_PRO_SBP_1514.png",
+                "dev-custom-option-data-SB_PRO_SBP_1514.png",
+                "dev-preview-image-SB_PRO_SBP_1514.png",
+                "dev-print-file-SB_PRO_SBP_1514.png",
+                "dev-custom-option-on-SF-SB_PRO_SBP_1514.png"
+              ]
+            },
+            {
+              "description": "Tạo Custom option only với Image",
+              "case_id": "SB_PRO_SBP_1515",
+              "product_all_info": {
+                "title": "Product image",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "custom_option_blank_field": {
+                "type": "Image",
+                "default_data": {
+                  "label_display": "Image",
+                  "help_text_optional": "You should upload image in 500x200 pixel to get the best quality",
+                  "min_size": "0"
+                },
+                "messageError": {
+                  "name": "Please finish this field"
+                }
+              },
+              "custom_option_info": {
+                "type": "Image",
+                "default_name": "Custom Option 1",
+                "custom_name": "CO1",
+                "label": "CO1",
+                "index": 1,
+                "add_another_option": "no"
+              },
+              "custom_option_data": {
+                "type": "file",
+                "name": "CO1",
+                "label": "<p>CO1</p>",
+                "help_text": "You should upload image in 500x200 pixel to get the best quality",
+                "placeholder": "",
+                "default_value": ""
+              },
+              "custom_option_blank_field_SF": {
+                "type": "Image",
+                "list_custom": ["Image>CO1>"],
+                "message": "Please upload a file."
+              },
+              "custom_option_invalid_SF": {
+                "type": "Image",
+                "upload_file_s3": {
+                  "s3_path": "files/SB_PRO_VAD_17_imgMore20MB.jpg",
+                  "file_path": "data/shopbase/imgMore20MB.jpg"
+                },
+                "list_custom": ["Image>CO1>s3_path"],
+                "message": "Maximum file size is 20 MB"
+              },
+              "custom_option_data_SF": {
+                "type": "Image",
+                "list_custom": ["Image>CO1>BD_7.png"],
+                "value": ".png"
+              },
+              "snapshot_name": [
+                "dev-default-value-SB_PRO_SBP_1515.png",
+                "dev-default-value-picture-choice-SB_PRO_SBP_1515.png",
+                "dev-custom-option-close-SB_PRO_SBP_1515.png",
+                "dev-custom-option-data-SB_PRO_SBP_1515.png",
+                "dev-preview-image-SB_PRO_SBP_1515.png",
+                "dev-print-file-SB_PRO_SBP_1515.png",
+                "dev-custom-option-on-SF-SB_PRO_SBP_1515.png"
+              ]
+            },
+            {
+              "description": "Tạo Custom option only với Radio",
+              "case_id": "SB_PRO_SBP_1516",
+              "product_all_info": {
+                "title": "Product radio",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "custom_option_blank_field": {
+                "type": "Radio buttons",
+                "default_data": {
+                  "label_display": "Option"
+                },
+                "messageError": {
+                  "name": "Please finish this field",
+                  "value": "Please finish this field"
+                }
+              },
+              "custom_option_info": {
+                "type": "Radio buttons",
+                "default_name": "Custom Option 1",
+                "custom_name": "CO1",
+                "label": "CO1",
+                "values": "a,b,c",
+                "default_check": "b",
+                "index": 1,
+                "add_another_option": "no"
+              },
+              "custom_option_data": {
+                "type": "radio",
+                "name": "CO1",
+                "label": "<p>CO1</p>",
+                "help_text": "",
+                "placeholder": "",
+                "default_value": "",
+                "values": [
+                  {
+                    "text": "a",
+                    "thumbnail": "",
+                    "value": "a"
+                  },
+                  {
+                    "text": "b",
+                    "thumbnail": "",
+                    "value": "b"
+                  },
+                  {
+                    "text": "c",
+                    "thumbnail": "",
+                    "value": "c"
+                  }
+                ]
+              },
+              "custom_option_data_SF": {
+                "type": "Radio buttons",
+                "list_custom": ["Radio buttons>CO1>a"],
+                "value": "CO1: a"
+              },
+              "snapshot_name": [
+                "dev-default-value-SB_PRO_SBP_1516.png",
+                "dev-default-value-picture-choice-SB_PRO_SBP_1516.png",
+                "dev-custom-option-close-SB_PRO_SBP_1516.png",
+                "dev-custom-option-data-SB_PRO_SBP_1516.png",
+                "dev-preview-image-SB_PRO_SBP_1516.png",
+                "dev-print-file-SB_PRO_SBP_1516.png",
+                "dev-custom-option-on-SF-SB_PRO_SBP_1516.png"
+              ]
+            },
+            {
+              "description": "Tạo Custom option only với Droplist",
+              "case_id": "SB_PRO_SBP_1517",
+              "product_all_info": {
+                "title": "Product droplist",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "custom_option_blank_field": {
+                "type": "Droplist",
+                "default_data": {
+                  "label_display": "Option",
+                  "placeholder": "Please select the option"
+                },
+                "messageError": {
+                  "name": "Please finish this field",
+                  "value": "Please finish this field"
+                }
+              },
+              "custom_option_info": {
+                "type": "Droplist",
+                "default_name": "Custom Option 1",
+                "custom_name": "CO1",
+                "label": "CO1",
+                "values": "a,b,c",
+                "default_check": "b",
+                "index": 1,
+                "add_another_option": "no"
+              },
+              "custom_option_data": {
+                "type": "select",
+                "name": "CO1",
+                "label": "<p>CO1</p>",
+                "help_text": "",
+                "placeholder": "Please select the option",
+                "default_value": "",
+                "values": [
+                  {
+                    "text": "a",
+                    "thumbnail": "",
+                    "value": "a"
+                  },
+                  {
+                    "text": "b",
+                    "thumbnail": "",
+                    "value": "b"
+                  },
+                  {
+                    "text": "c",
+                    "thumbnail": "",
+                    "value": "c"
+                  }
+                ]
+              },
+              "custom_option_data_SF": {
+                "type": "Droplist",
+                "list_custom": ["Droplist>CO1>a"],
+                "value": "CO1: a"
+              },
+              "snapshot_name": [
+                "dev-default-value-SB_PRO_SBP_1517.png",
+                "dev-default-value-picture-choice-SB_PRO_SBP_1517.png",
+                "dev-custom-option-close-SB_PRO_SBP_1517.png",
+                "dev-custom-option-data-SB_PRO_SBP_1517.png",
+                "dev-preview-image-SB_PRO_SBP_1517.png",
+                "dev-print-file-SB_PRO_SBP_1517.png",
+                "dev-custom-option-on-SF-SB_PRO_SBP_1517.png"
+              ]
+            },
+            {
+              "description": "Tạo Custom option only với Checkbox",
+              "case_id": "SB_PRO_SBP_1518",
+              "product_all_info": {
+                "title": "Product checkbox",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "custom_option_blank_field": {
+                "type": "Checkbox",
+                "default_data": {
+                  "label_display": "Option"
+                },
+                "messageError": {
+                  "name": "Please finish this field",
+                  "value": "Please finish this field"
+                }
+              },
+              "custom_option_info": {
+                "type": "Checkbox",
+                "default_name": "Custom Option 1",
+                "custom_name": "CO1",
+                "label": "CO1",
+                "values": "a,b,c,d,e",
+                "index": 1,
+                "add_another_option": "no"
+              },
+              "custom_option_data": {
+                "type": "checkbox",
+                "name": "CO1",
+                "label": "<p>CO1</p>",
+                "placeholder": "",
+                "default_value": "",
+                "values": [
+                  {
+                    "text": "a",
+                    "thumbnail": "",
+                    "value": "a"
+                  },
+                  {
+                    "text": "b",
+                    "thumbnail": "",
+                    "value": "b"
+                  },
+                  {
+                    "text": "c",
+                    "thumbnail": "",
+                    "value": "c"
+                  },
+                  {
+                    "text": "d",
+                    "thumbnail": "",
+                    "value": "d"
+                  },
+                  {
+                    "text": "e",
+                    "thumbnail": "",
+                    "value": "e"
+                  }
+                ]
+              },
+              "custom_option_data_SF": {
+                "type": "Checkbox",
+                "list_custom": ["Checkbox>CO1>b,c"],
+                "value": "CO1: b,c"
+              },
+              "snapshot_name": [
+                "dev-default-value-SB_PRO_SBP_1518.png",
+                "dev-default-value-picture-choice-SB_PRO_SBP_1518.png",
+                "dev-custom-option-close-SB_PRO_SBP_1518.png",
+                "dev-custom-option-data-SB_PRO_SBP_1518.png",
+                "dev-preview-image-SB_PRO_SBP_1518.png",
+                "dev-print-file-SB_PRO_SBP_1518.png",
+                "dev-custom-option-on-SF-SB_PRO_SBP_1518.png"
+              ]
+            },
+            {
+              "description": "Tạo custom option với picture choice clipart Folder",
+              "case_id": "SB_PRO_SBP_1519",
+              "product_all_info": {
+                "title": "Product picture choice clipart Folder",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "custom_option_blank_field": {
+                "type": "Picture choice",
+                "default_data": {
+                  "label_display": "Option"
+                },
+                "messageError": {
+                  "name": "Please finish this field"
+                }
+              },
+              "custom_option_info": {
+                "type": "Picture choice",
+                "default_name": "Custom Option 1",
+                "custom_name": "CO1",
+                "label": "CO1",
+                "type_clipart": "Folder",
+                "values": "test",
+                "index": 1,
+                "add_another_option": "no"
+              },
+              "custom_option_data": {
+                "type": "picture",
+                "name": "CO1",
+                "label": "<p>CO1</p>",
+                "placeholder": "",
+                "default_value": "",
+                "p_o_d_data": {
+                  "clipart_type": "folder",
+                  "is_customize_group": false,
+                  "is_separate_layer": false,
+                  "layer_data": "",
+                  "layers": null,
+                  "show_type": "thumbnail",
+                  "sub_custom_options": null
+                }
+              },
+              "custom_option_blank_field_SF": {
+                "type": "Picture choice",
+                "list_custom": ["Picture choice>CO1>"],
+                "message": "Please finish this field"
+              },
+              "custom_option_data_SF": {
+                "type": "Picture choice",
+                "list_custom": ["Picture choice>CO1>image1"],
+                "value": "CO1: image1"
+              },
+              "snapshot_name": [
+                "dev-default-value-SB_PRO_SBP_1519.png",
+                "dev-default-value-picture-choice-SB_PRO_SBP_1519.png",
+                "dev-custom-option-close-SB_PRO_SBP_1519.png",
+                "dev-custom-option-data-SB_PRO_SBP_1519.png",
+                "dev-preview-image-SB_PRO_SBP_1519.png",
+                "dev-print-file-SB_PRO_SBP_1519.png",
+                "dev-custom-option-on-SF-SB_PRO_SBP_1519.png"
+              ]
+            },
+            {
+              "description": "Tạo custom option với Picture choice clipart group",
+              "case_id": "SB_PRO_SBP_1520",
+              "product_all_info": {
+                "title": "Product picture choice clipart group",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "custom_option_blank_field": {
+                "type": "Picture choice",
+                "default_data": {
+                  "label_display": "Option"
+                },
+                "messageError": {
+                  "name": "Please finish this field"
+                }
+              },
+              "custom_option_info": {
+                "type": "Picture choice",
+                "default_name": "Custom Option 1",
+                "custom_name": "CO1",
+                "label": "CO1",
+                "type_clipart": "Group",
+                "values": "test",
+                "index": 1,
+                "add_another_option": "no"
+              },
+              "custom_option_data": {
+                "type": "picture",
+                "name": "CO1",
+                "label": "<p>CO1</p>",
+                "placeholder": "",
+                "default_value": "",
+                "clipart_type": "group"
+              },
+              "custom_option_blank_field_SF": {
+                "type": "Picture choice",
+                "list_custom": ["Picture choice>CO1>"],
+                "message": "Please finish this field"
+              },
+              "custom_option_data_SF": {
+                "type": "Picture choice group",
+                "list_custom": ["Picture choice group show thumbnail>CO1>test>image1"],
+                "value": "CO1: test",
+                "value_picture": "test: image1"
+              },
+              "snapshot_name": [
+                "dev-default-value-SB_PRO_SBP_1520.png",
+                "dev-default-value-picture-choice-SB_PRO_SBP_1520.png",
+                "dev-custom-option-close-SB_PRO_SBP_1520.png",
+                "dev-custom-option-data-SB_PRO_SBP_1520.png",
+                "dev-preview-image-SB_PRO_SBP_1520.png",
+                "dev-print-file-SB_PRO_SBP_1520.png",
+                "dev-custom-option-on-SF-SB_PRO_SBP_1520.png"
+              ]
+            }
+          ]
+        },
+        "SB_PRO_SBP_1521": {
+          "product_all_info": {
+            "title": "Product all custom option",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "custom_option_text_field": {
+            "type": "Text field",
+            "default_name": "Custom Option 1",
+            "custom_name": "Text field",
+            "label": "Text field",
+            "index": 1,
+            "position": 1,
+            "placeholder": "Please input text field",
+            "default_value": "text",
+            "allow_following": "Characters, Numbers, Special Characters, Emoji"
+          },
+          "custom_option_text_area": {
+            "type": "Text area",
+            "default_name": "Custom Option 2",
+            "custom_name": "Text area",
+            "label": "Text area",
+            "index": 2,
+            "position": 2,
+            "placeholder": "Please input text area",
+            "default_value": "text",
+            "allow_following": "Characters, Numbers, Special Characters, Emoji"
+          },
+          "custom_option_image": {
+            "type": "Image",
+            "default_name": "Custom Option 3",
+            "custom_name": "Image",
+            "label": "Image",
+            "index": 3
+          },
+          "custom_option_picture_choice": {
+            "type": "Picture choice",
+            "default_name": "Custom Option 4",
+            "custom_name": "Picture choice",
+            "label": "Picture choice",
+            "type_clipart": "Folder",
+            "values": "test",
+            "index": 5
+          },
+          "custom_option_radio_button": {
+            "type": "Radio buttons",
+            "default_name": "Custom Option 5",
+            "custom_name": "Radio buttons",
+            "label": "Radio buttons",
+            "values": "a,b,c",
+            "default_check": "b",
+            "index": 6
+          },
+          "custom_option_droplist": {
+            "type": "Droplist",
+            "default_name": "Custom Option 6",
+            "custom_name": "Droplist",
+            "label": "Droplist",
+            "values": "a,b,c",
+            "default_check": "b",
+            "index": 7,
+            "position": 2
+          },
+          "custom_option_checkbox": {
+            "type": "Checkbox",
+            "default_name": "Custom Option 7",
+            "custom_name": "Checkbox",
+            "label": "Checkbox",
+            "values": "a,b,c,d,e",
+            "index": 8
+          },
+          "custom_option_data": [
+            {
+              "type": "text",
+              "name": "Text field",
+              "label": "<p>Text field</p>",
+              "placeholder": "Please input text field",
+              "default_value": "text",
+              "allowed_characters": ["characters", "numbers", "symbol", "emoji"]
+            },
+            {
+              "type": "textarea",
+              "name": "Text area",
+              "label": "<p>Text area</p>",
+              "placeholder": "Please input text area",
+              "default_value": "text",
+              "allowed_characters": ["characters", "numbers", "symbol", "emoji"]
+            },
+            {
+              "type": "file",
+              "name": "Image",
+              "label": "<p>Image</p>",
+              "help_text": "You should upload image in 500x200 pixel to get the best quality",
+              "placeholder": "",
+              "default_value": ""
+            },
+            {
+              "type": "radio",
+              "name": "Radio buttons",
+              "label": "<p>Radio buttons</p>",
+              "help_text": "",
+              "placeholder": "",
+              "default_value": "",
+              "values": [
+                {
+                  "text": "a",
+                  "thumbnail": "",
+                  "value": "a"
+                },
+                {
+                  "text": "b",
+                  "thumbnail": "",
+                  "value": "b"
+                },
+                {
+                  "text": "c",
+                  "thumbnail": "",
+                  "value": "c"
+                }
+              ]
+            },
+            {
+              "type": "select",
+              "name": "Droplist",
+              "label": "<p>Droplist</p>",
+              "help_text": "",
+              "placeholder": "Please select the option",
+              "default_value": "",
+              "values": [
+                {
+                  "text": "a",
+                  "thumbnail": "",
+                  "value": "a"
+                },
+                {
+                  "text": "b",
+                  "thumbnail": "",
+                  "value": "b"
+                },
+                {
+                  "text": "c",
+                  "thumbnail": "",
+                  "value": "c"
+                }
+              ]
+            },
+            {
+              "type": "checkbox",
+              "name": "Checkbox",
+              "label": "<p>Checkbox</p>",
+              "placeholder": "",
+              "default_value": "",
+              "values": [
+                {
+                  "text": "a",
+                  "thumbnail": "",
+                  "value": "a"
+                },
+                {
+                  "text": "b",
+                  "thumbnail": "",
+                  "value": "b"
+                },
+                {
+                  "text": "c",
+                  "thumbnail": "",
+                  "value": "c"
+                },
+                {
+                  "text": "d",
+                  "thumbnail": "",
+                  "value": "d"
+                },
+                {
+                  "text": "e",
+                  "thumbnail": "",
+                  "value": "e"
+                }
+              ]
+            },
+            {
+              "type": "picture",
+              "name": "Picture choice",
+              "label": "<p>Picture choice</p>",
+              "placeholder": "",
+              "default_value": "",
+              "p_o_d_data": {
+                "clipart_type": "folder",
+                "is_customize_group": false,
+                "is_separate_layer": false,
+                "layer_data": "",
+                "layers": null,
+                "show_type": "thumbnail",
+                "sub_custom_options": null
+              }
+            }
+          ],
+          "image_snapshot": {
+            "image_list_CO": "dev-list-custom-option-SB_PRO_SBP_1521.png",
+            "image_list_CO_preview_image": "dev-preview-image-SB_PRO_SBP_1521.png",
+            "image_list_CO_print_file": "dev-print-file-SB_PRO_SBP_1521.png",
+            "custom_option_sf": "dev-custom-option-SF-SB_PRO_SBP_1521.png"
+          },
+          "custom_option_data_SF": {
+            "list_custom": [
+              "Text field>Text field>Test",
+              "Text area>Text area>Test",
+              "Image>Image>BD_7.png",
+              "Picture choice>Picture choice>image1",
+              "Radio buttons>Radio buttons>a",
+              "Droplist>Droplist>a",
+              "Checkbox>Checkbox>c"
+            ],
+            "value": [
+              "Text field: Test",
+              "Text area: Test",
+              ".png",
+              "Picture choice: image1",
+              "Radio buttons: a",
+              "Droplist: a",
+              "Checkbox: c"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "max_diff_pixel_ratio": 0.05,
+  "threshold": 0.1,
+  "max_diff_pixels": 2000,
+  "message_add_product_success": "Product was successfully saved!",
+  "cases": {
+    "DATA_DRIVEN": {
+      "data": [
+        {
+          "description": "Tạo Custom option only với Text field",
+          "case_id": "SB_PRO_SBP_1513",
+          "product_all_info": {
+            "title": "Product text field",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "custom_option_blank_field": {
+            "type": "Text field",
+            "position": 1,
+            "default_data": {
+              "label_display": "Text"
+            },
+            "messageError": {
+              "name": "Please finish this field",
+              "allow_following_characters": "You have to select at least one option."
+            }
+          },
+          "custom_option_error_characters": {
+            "type": "Text field",
+            "default_name": "Custom Option 1",
+            "default_value": "123@",
+            "placeholder": "Please input tex field",
+            "custom_name": "CO1",
+            "label": "CO1",
+            "index": 1,
+            "position": 1,
+            "allow_following": "Characters",
+            "add_another_option": "no",
+            "error_message": "Your default value has invalid characters. We only accept characters."
+          },
+          "custom_option_error_numbers": {
+            "type": "Text field",
+            "default_name": "Custom Option 1",
+            "default_value": "abc",
+            "placeholder": "Please input tex field",
+            "custom_name": "CO1",
+            "label": "CO1",
+            "index": 1,
+            "position": 1,
+            "allow_following": "Numbers",
+            "add_another_option": "no",
+            "error_message": "Your default value has invalid characters. We only accept numbers."
+          },
+          "custom_option_error_emoji": {
+            "type": "Text field",
+            "default_name": "Custom Option 1",
+            "default_value": "123a",
+            "placeholder": "Please input tex field",
+            "custom_name": "CO1",
+            "label": "CO1",
+            "index": 1,
+            "position": 1,
+            "allow_following": "Emoji",
+            "add_another_option": "no",
+            "error_message": "Your default value has invalid characters. We only accept emoji."
+          },
+          "custom_option_info": {
+            "type": "Text field",
+            "default_name": "Custom Option 1",
+            "custom_name": "CO1",
+            "label": "CO1",
+            "index": 1,
+            "position": 1,
+            "placeholder": "Please input text field",
+            "default_value": "text",
+            "allow_following": "Characters, Numbers, Special Characters",
+            "add_another_option": "no"
+          },
+          "custom_option_data": {
+            "type": "text",
+            "name": "CO1",
+            "label": "<p>CO1</p>",
+            "placeholder": "Please input text field",
+            "default_value": "text",
+            "allowed_characters": ["characters", "numbers", "symbol"]
+          },
+          "custom_option_blank_field_SF": {
+            "type": "Text field",
+            "list_custom": ["Text field>CO1>"],
+            "message": "Please finish this field"
+          },
+          "custom_option_data_SF": {
+            "type": "Text field",
+            "list_custom": ["Text field>CO1>Test"],
+            "value": "CO1: Test"
+          },
+          "snapshot_name": [
+            "default-value-SB_PRO_SBP_1513.png",
+            "default-value-picture-choice-SB_PRO_SBP_1513.png",
+            "custom-option-close-SB_PRO_SBP_1513.png",
+            "custom-option-data-SB_PRO_SBP_1513.png",
+            "preview-image-SB_PRO_SBP_1513.png",
+            "print-file-SB_PRO_SBP_1513.png",
+            "custom-option-on-SF-SB_PRO_SBP_1513.png"
+          ]
+        },
+        {
+          "description": "Tạo Custom option only với Textarea",
+          "case_id": "SB_PRO_SBP_1514",
+          "product_all_info": {
+            "title": "Product text area",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "custom_option_blank_field": {
+            "type": "Text area",
+            "position": 1,
+            "default_data": {
+              "label_display": "Text"
+            },
+            "messageError": {
+              "name": "Please finish this field"
+            }
+          },
+          "custom_option_error_characters": {
+            "type": "Text area",
+            "default_name": "Custom Option 1",
+            "default_value": "123@",
+            "placeholder": "Please input tex field",
+            "custom_name": "CO1",
+            "label": "CO1",
+            "index": 1,
+            "position": 1,
+            "allow_following": "Characters",
+            "add_another_option": "no",
+            "error_message": "Your default value has invalid characters. We only accept characters."
+          },
+          "custom_option_error_numbers": {
+            "type": "Text area",
+            "default_name": "Custom Option 1",
+            "default_value": "abc",
+            "placeholder": "Please input tex field",
+            "custom_name": "CO1",
+            "label": "CO1",
+            "index": 1,
+            "position": 1,
+            "allow_following": "Numbers",
+            "add_another_option": "no",
+            "error_message": "Your default value has invalid characters. We only accept numbers."
+          },
+          "custom_option_error_emoji": {
+            "type": "Text area",
+            "default_name": "Custom Option 1",
+            "default_value": "123a",
+            "placeholder": "Please input tex field",
+            "custom_name": "CO1",
+            "label": "CO1",
+            "index": 1,
+            "position": 1,
+            "allow_following": "Emoji",
+            "add_another_option": "no",
+            "error_message": "Your default value has invalid characters. We only accept emoji."
+          },
+          "custom_option_info": {
+            "type": "Text area",
+            "default_name": "Custom Option 1",
+            "custom_name": "CO1",
+            "label": "CO1",
+            "index": 1,
+            "position": 1,
+            "placeholder": "Please input text field",
+            "default_value": "text",
+            "allow_following": "Characters, Numbers, Special Characters",
+            "add_another_option": "no"
+          },
+          "custom_option_data": {
+            "type": "textarea",
+            "name": "CO1",
+            "label": "<p>CO1</p>",
+            "placeholder": "Please input text field",
+            "default_value": "text",
+            "allowed_characters": ["characters", "numbers", "symbol"]
+          },
+          "custom_option_blank_field_SF": {
+            "type": "Text area",
+            "list_custom": ["Text area>CO1>"],
+            "message": "Please finish this field"
+          },
+          "custom_option_data_SF": {
+            "type": "Text area",
+            "list_custom": ["Text area>CO1>Test"],
+            "value": "CO1: Test"
+          },
+          "snapshot_name": [
+            "default-value-SB_PRO_SBP_1514.png",
+            "default-value-picture-choice-SB_PRO_SBP_1514.png",
+            "custom-option-close-SB_PRO_SBP_1514.png",
+            "custom-option-data-SB_PRO_SBP_1514.png",
+            "preview-image-SB_PRO_SBP_1514.png",
+            "print-file-SB_PRO_SBP_1514.png",
+            "custom-option-on-SF-SB_PRO_SBP_1514.png"
+          ]
+        },
+        {
+          "description": "Tạo Custom option only với Image",
+          "case_id": "SB_PRO_SBP_1515",
+          "product_all_info": {
+            "title": "Product image",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "custom_option_blank_field": {
+            "type": "Image",
+            "default_data": {
+              "label_display": "Image",
+              "help_text_optional": "You should upload image in 500x200 pixel to get the best quality",
+              "min_size": "0"
+            },
+            "messageError": {
+              "name": "Please finish this field"
+            }
+          },
+          "custom_option_info": {
+            "type": "Image",
+            "default_name": "Custom Option 1",
+            "custom_name": "CO1",
+            "label": "CO1",
+            "index": 1,
+            "add_another_option": "no"
+          },
+          "custom_option_data": {
+            "type": "file",
+            "name": "CO1",
+            "label": "<p>CO1</p>",
+            "help_text": "You should upload image in 500x200 pixel to get the best quality",
+            "placeholder": "",
+            "default_value": ""
+          },
+          "custom_option_blank_field_SF": {
+            "type": "Image",
+            "list_custom": ["Image>CO1>"],
+            "message": "Please upload a file."
+          },
+          "custom_option_invalid_SF": {
+            "type": "Image",
+            "upload_file_s3": {
+              "s3_path": "files/SB_PRO_VAD_17_imgMore20MB.jpg",
+              "file_path": "data/shopbase/imgMore20MB.jpg"
+            },
+            "list_custom": ["Image>CO1>s3_path"],
+            "message": "Maximum file size is 20 MB"
+          },
+          "custom_option_data_SF": {
+            "type": "Image",
+            "list_custom": ["Image>CO1>BD_7.png"],
+            "value": ".png"
+          },
+          "snapshot_name": [
+            "default-value-SB_PRO_SBP_1515.png",
+            "default-value-picture-choice-SB_PRO_SBP_1515.png",
+            "custom-option-close-SB_PRO_SBP_1515.png",
+            "custom-option-data-SB_PRO_SBP_1515.png",
+            "preview-image-SB_PRO_SBP_1515.png",
+            "print-file-SB_PRO_SBP_1515.png",
+            "custom-option-on-SF-SB_PRO_SBP_1515.png"
+          ]
+        },
+        {
+          "description": "Tạo Custom option only với Radio",
+          "case_id": "SB_PRO_SBP_1516",
+          "product_all_info": {
+            "title": "Product radio",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "custom_option_blank_field": {
+            "type": "Radio buttons",
+            "default_data": {
+              "label_display": "Option"
+            },
+            "messageError": {
+              "name": "Please finish this field",
+              "value": "Please finish this field"
+            }
+          },
+          "custom_option_info": {
+            "type": "Radio buttons",
+            "default_name": "Custom Option 1",
+            "custom_name": "CO1",
+            "label": "CO1",
+            "values": "a,b,c",
+            "default_check": "b",
+            "index": 1,
+            "add_another_option": "no"
+          },
+          "custom_option_data": {
+            "type": "radio",
+            "name": "CO1",
+            "label": "<p>CO1</p>",
+            "help_text": "",
+            "placeholder": "",
+            "default_value": "",
+            "values": [
+              {
+                "text": "a",
+                "thumbnail": "",
+                "value": "a"
+              },
+              {
+                "text": "b",
+                "thumbnail": "",
+                "value": "b"
+              },
+              {
+                "text": "c",
+                "thumbnail": "",
+                "value": "c"
+              }
+            ]
+          },
+          "custom_option_data_SF": {
+            "type": "Radio buttons",
+            "list_custom": ["Radio buttons>CO1>a"],
+            "value": "CO1: a"
+          },
+          "snapshot_name": [
+            "default-value-SB_PRO_SBP_1516.png",
+            "default-value-picture-choice-SB_PRO_SBP_1516.png",
+            "custom-option-close-SB_PRO_SBP_1516.png",
+            "custom-option-data-SB_PRO_SBP_1516.png",
+            "preview-image-SB_PRO_SBP_1516.png",
+            "print-file-SB_PRO_SBP_1516.png",
+            "custom-option-on-SF-SB_PRO_SBP_1516.png"
+          ]
+        },
+        {
+          "description": "Tạo Custom option only với Droplist",
+          "case_id": "SB_PRO_SBP_1517",
+          "product_all_info": {
+            "title": "Product droplist",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "custom_option_blank_field": {
+            "type": "Droplist",
+            "default_data": {
+              "label_display": "Option",
+              "placeholder": "Please select the option"
+            },
+            "messageError": {
+              "name": "Please finish this field",
+              "value": "Please finish this field"
+            }
+          },
+          "custom_option_info": {
+            "type": "Droplist",
+            "default_name": "Custom Option 1",
+            "custom_name": "CO1",
+            "label": "CO1",
+            "values": "a,b,c",
+            "default_check": "b",
+            "index": 1,
+            "add_another_option": "no"
+          },
+          "custom_option_data": {
+            "type": "select",
+            "name": "CO1",
+            "label": "<p>CO1</p>",
+            "help_text": "",
+            "placeholder": "Please select the option",
+            "default_value": "",
+            "values": [
+              {
+                "text": "a",
+                "thumbnail": "",
+                "value": "a"
+              },
+              {
+                "text": "b",
+                "thumbnail": "",
+                "value": "b"
+              },
+              {
+                "text": "c",
+                "thumbnail": "",
+                "value": "c"
+              }
+            ]
+          },
+          "custom_option_data_SF": {
+            "type": "Droplist",
+            "list_custom": ["Droplist>CO1>a"],
+            "value": "CO1: a"
+          },
+          "snapshot_name": [
+            "default-value-SB_PRO_SBP_1517.png",
+            "default-value-picture-choice-SB_PRO_SBP_1517.png",
+            "custom-option-close-SB_PRO_SBP_1517.png",
+            "custom-option-data-SB_PRO_SBP_1517.png",
+            "preview-image-SB_PRO_SBP_1517.png",
+            "print-file-SB_PRO_SBP_1517.png",
+            "custom-option-on-SF-SB_PRO_SBP_1517.png"
+          ]
+        },
+        {
+          "description": "Tạo Custom option only với Checkbox",
+          "case_id": "SB_PRO_SBP_1518",
+          "product_all_info": {
+            "title": "Product checkbox",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "custom_option_blank_field": {
+            "type": "Checkbox",
+            "default_data": {
+              "label_display": "Option"
+            },
+            "messageError": {
+              "name": "Please finish this field",
+              "value": "Please finish this field"
+            }
+          },
+          "custom_option_info": {
+            "type": "Checkbox",
+            "default_name": "Custom Option 1",
+            "custom_name": "CO1",
+            "label": "CO1",
+            "values": "a,b,c,d,e",
+            "index": 1,
+            "add_another_option": "no"
+          },
+          "custom_option_data": {
+            "type": "checkbox",
+            "name": "CO1",
+            "label": "<p>CO1</p>",
+            "placeholder": "",
+            "default_value": "",
+            "values": [
+              {
+                "text": "a",
+                "thumbnail": "",
+                "value": "a"
+              },
+              {
+                "text": "b",
+                "thumbnail": "",
+                "value": "b"
+              },
+              {
+                "text": "c",
+                "thumbnail": "",
+                "value": "c"
+              },
+              {
+                "text": "d",
+                "thumbnail": "",
+                "value": "d"
+              },
+              {
+                "text": "e",
+                "thumbnail": "",
+                "value": "e"
+              }
+            ]
+          },
+          "custom_option_data_SF": {
+            "type": "Checkbox",
+            "list_custom": ["Checkbox>CO1>b,c"],
+            "value": "CO1: b,c"
+          },
+          "snapshot_name": [
+            "default-value-SB_PRO_SBP_1518.png",
+            "default-value-picture-choice-SB_PRO_SBP_1518.png",
+            "custom-option-close-SB_PRO_SBP_1518.png",
+            "custom-option-data-SB_PRO_SBP_1518.png",
+            "preview-image-SB_PRO_SBP_1518.png",
+            "print-file-SB_PRO_SBP_1518.png",
+            "custom-option-on-SF-SB_PRO_SBP_1518.png"
+          ]
+        },
+        {
+          "description": "Tạo custom option với picture choice clipart Folder",
+          "case_id": "SB_PRO_SBP_1519",
+          "product_all_info": {
+            "title": "Product picture choice clipart Folder",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "custom_option_blank_field": {
+            "type": "Picture choice",
+            "default_data": {
+              "label_display": "Option"
+            },
+            "messageError": {
+              "name": "Please finish this field"
+            }
+          },
+          "custom_option_info": {
+            "type": "Picture choice",
+            "default_name": "Custom Option 1",
+            "custom_name": "CO1",
+            "label": "CO1",
+            "type_clipart": "Folder",
+            "values": "test",
+            "index": 1,
+            "add_another_option": "no"
+          },
+          "custom_option_data": {
+            "type": "picture",
+            "name": "CO1",
+            "label": "<p>CO1</p>",
+            "placeholder": "",
+            "default_value": "",
+            "p_o_d_data": {
+              "clipart_type": "folder",
+              "is_customize_group": false,
+              "is_separate_layer": false,
+              "layer_data": "",
+              "layers": null,
+              "show_type": "thumbnail",
+              "sub_custom_options": null
+            }
+          },
+          "custom_option_blank_field_SF": {
+            "type": "Picture choice",
+            "list_custom": ["Picture choice>CO1>"],
+            "message": "Please finish this field"
+          },
+          "custom_option_data_SF": {
+            "type": "Picture choice",
+            "list_custom": ["Picture choice>CO1>image1"],
+            "value": "CO1: image1"
+          },
+          "snapshot_name": [
+            "default-value-SB_PRO_SBP_1519.png",
+            "default-value-picture-choice-SB_PRO_SBP_1519.png",
+            "custom-option-close-SB_PRO_SBP_1519.png",
+            "custom-option-data-SB_PRO_SBP_1519.png",
+            "preview-image-SB_PRO_SBP_1519.png",
+            "print-file-SB_PRO_SBP_1519.png",
+            "custom-option-on-SF-SB_PRO_SBP_1519.png"
+          ]
+        },
+        {
+          "description": "Tạo custom option với Picture choice clipart group",
+          "case_id": "SB_PRO_SBP_1520",
+          "product_all_info": {
+            "title": "Product picture choice clipart group",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "custom_option_blank_field": {
+            "type": "Picture choice",
+            "default_data": {
+              "label_display": "Option"
+            },
+            "messageError": {
+              "name": "Please finish this field"
+            }
+          },
+          "custom_option_info": {
+            "type": "Picture choice",
+            "default_name": "Custom Option 1",
+            "custom_name": "CO1",
+            "label": "CO1",
+            "type_clipart": "Group",
+            "values": "test",
+            "index": 1,
+            "add_another_option": "no"
+          },
+          "custom_option_data": {
+            "type": "picture",
+            "name": "CO1",
+            "label": "<p>CO1</p>",
+            "placeholder": "",
+            "default_value": "",
+            "clipart_type": "group"
+          },
+          "custom_option_blank_field_SF": {
+            "type": "Picture choice",
+            "list_custom": ["Picture choice>CO1>"],
+            "message": "Please finish this field"
+          },
+          "custom_option_data_SF": {
+            "type": "Picture choice group",
+            "list_custom": ["Picture choice group show thumbnail>CO1>test>image1"],
+            "value": "CO1: test",
+            "value_picture": "test: image1"
+          },
+          "snapshot_name": [
+            "default-value-SB_PRO_SBP_1520.png",
+            "default-value-picture-choice-SB_PRO_SBP_1520.png",
+            "custom-option-close-SB_PRO_SBP_1520.png",
+            "custom-option-data-SB_PRO_SBP_1520.png",
+            "preview-image-SB_PRO_SBP_1520.png",
+            "print-file-SB_PRO_SBP_1520.png",
+            "custom-option-on-SF-SB_PRO_SBP_1520.png"
+          ]
+        }
+      ]
+    },
+    "SB_PRO_SBP_1521": {
+      "product_all_info": {
+        "title": "Product all custom option",
+        "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+        "image_name": "Logo1.jpg",
+        "vendor": "Uniqlo",
+        "price": "10",
+        "compare_at_price": "20"
+      },
+      "custom_option_text_field": {
+        "type": "Text field",
+        "default_name": "Custom Option 1",
+        "custom_name": "Text field",
+        "label": "Text field",
+        "index": 1,
+        "position": 1,
+        "placeholder": "Please input text field",
+        "default_value": "text",
+        "allow_following": "Characters, Numbers, Special Characters, Emoji"
+      },
+      "custom_option_text_area": {
+        "type": "Text area",
+        "default_name": "Custom Option 2",
+        "custom_name": "Text area",
+        "label": "Text area",
+        "index": 2,
+        "position": 2,
+        "placeholder": "Please input text area",
+        "default_value": "text",
+        "allow_following": "Characters, Numbers, Special Characters, Emoji"
+      },
+      "custom_option_image": {
+        "type": "Image",
+        "default_name": "Custom Option 3",
+        "custom_name": "Image",
+        "label": "Image",
+        "index": 3
+      },
+      "custom_option_picture_choice": {
+        "type": "Picture choice",
+        "default_name": "Custom Option 4",
+        "custom_name": "Picture choice",
+        "label": "Picture choice",
+        "type_clipart": "Folder",
+        "values": "test",
+        "index": 5
+      },
+      "custom_option_radio_button": {
+        "type": "Radio buttons",
+        "default_name": "Custom Option 5",
+        "custom_name": "Radio buttons",
+        "label": "Radio buttons",
+        "values": "a,b,c",
+        "default_check": "b",
+        "index": 6
+      },
+      "custom_option_droplist": {
+        "type": "Droplist",
+        "default_name": "Custom Option 6",
+        "custom_name": "Droplist",
+        "label": "Droplist",
+        "values": "a,b,c",
+        "default_check": "b",
+        "index": 7,
+        "position": 2
+      },
+      "custom_option_checkbox": {
+        "type": "Checkbox",
+        "default_name": "Custom Option 7",
+        "custom_name": "Checkbox",
+        "label": "Checkbox",
+        "values": "a,b,c,d,e",
+        "index": 8
+      },
+      "custom_option_data": [
+        {
+          "type": "text",
+          "name": "Text field",
+          "label": "<p>Text field</p>",
+          "placeholder": "Please input text field",
+          "default_value": "text",
+          "allowed_characters": ["characters", "numbers", "symbol", "emoji"]
+        },
+        {
+          "type": "textarea",
+          "name": "Text area",
+          "label": "<p>Text area</p>",
+          "placeholder": "Please input text area",
+          "default_value": "text",
+          "allowed_characters": ["characters", "numbers", "symbol", "emoji"]
+        },
+        {
+          "type": "file",
+          "name": "Image",
+          "label": "<p>Image</p>",
+          "help_text": "You should upload image in 500x200 pixel to get the best quality",
+          "placeholder": "",
+          "default_value": ""
+        },
+        {
+          "type": "radio",
+          "name": "Radio buttons",
+          "label": "<p>Radio buttons</p>",
+          "help_text": "",
+          "placeholder": "",
+          "default_value": "",
+          "values": [
+            {
+              "text": "a",
+              "thumbnail": "",
+              "value": "a"
+            },
+            {
+              "text": "b",
+              "thumbnail": "",
+              "value": "b"
+            },
+            {
+              "text": "c",
+              "thumbnail": "",
+              "value": "c"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "name": "Droplist",
+          "label": "<p>Droplist</p>",
+          "help_text": "",
+          "placeholder": "Please select the option",
+          "default_value": "",
+          "values": [
+            {
+              "text": "a",
+              "thumbnail": "",
+              "value": "a"
+            },
+            {
+              "text": "b",
+              "thumbnail": "",
+              "value": "b"
+            },
+            {
+              "text": "c",
+              "thumbnail": "",
+              "value": "c"
+            }
+          ]
+        },
+        {
+          "type": "checkbox",
+          "name": "Checkbox",
+          "label": "<p>Checkbox</p>",
+          "placeholder": "",
+          "default_value": "",
+          "values": [
+            {
+              "text": "a",
+              "thumbnail": "",
+              "value": "a"
+            },
+            {
+              "text": "b",
+              "thumbnail": "",
+              "value": "b"
+            },
+            {
+              "text": "c",
+              "thumbnail": "",
+              "value": "c"
+            },
+            {
+              "text": "d",
+              "thumbnail": "",
+              "value": "d"
+            },
+            {
+              "text": "e",
+              "thumbnail": "",
+              "value": "e"
+            }
+          ]
+        },
+        {
+          "type": "picture",
+          "name": "Picture choice",
+          "label": "<p>Picture choice</p>",
+          "placeholder": "",
+          "default_value": "",
+          "p_o_d_data": {
+            "clipart_type": "folder",
+            "is_customize_group": false,
+            "is_separate_layer": false,
+            "layer_data": "",
+            "layers": null,
+            "show_type": "thumbnail",
+            "sub_custom_options": null
+          }
+        }
+      ],
+      "image_snapshot": {
+        "image_list_CO": "list-custom-option-SB_PRO_SBP_1521.png",
+        "image_list_CO_preview_image": "preview-image-SB_PRO_SBP_1521.png",
+        "image_list_CO_print_file": "print-file-SB_PRO_SBP_1521.png",
+        "custom_option_sf": "custom-option-SF-SB_PRO_SBP_1521.png"
+      },
+      "custom_option_data_SF": {
+        "list_custom": [
+          "Text field>Text field>Test",
+          "Text area>Text area>Test",
+          "Image>Image>BD_7.png",
+          "Picture choice>Picture choice>image1",
+          "Radio buttons>Radio buttons>a",
+          "Droplist>Droplist>a",
+          "Checkbox>Checkbox>c"
+        ],
+        "value": [
+          "Text field: Test",
+          "Text area: Test",
+          ".png",
+          "Picture choice: image1",
+          "Radio buttons: a",
+          "Droplist: a",
+          "Checkbox: c"
+        ]
+      }
+    }
+  }
+}

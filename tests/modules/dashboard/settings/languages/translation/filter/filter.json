@@ -1,0 +1,357 @@
+{
+  "env": {
+    "local": {
+      "api": "https://gapi.dev.shopbase.net",
+      "accounts_domain": "accounts.dev.shopbase.net",
+      "domain": "au-trans-filter.myshopbase.net",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "43AhIn|VWp;[?9&",
+      "shop_name": "au-trans-filter"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "accounts_domain": "accounts.dev.shopbase.net",
+      "domain": "au-trans-filter.myshopbase.net",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "43AhIn|VWp;[?9&",
+      "shop_name": "au-trans-filter",
+      "user_id": 89797,
+      "shop_id": 10333681
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "accounts_domain": "accounts.shopbase.com",
+      "domain": "au-trans-filter-prodtest.onshopbase.com",
+      "shop_name": "au-trans-filter-prodtest",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "shop_id": 10486299
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "accounts_domain": "accounts.shopbase.com",
+      "domain": "au-trans-filter-prod.onshopbase.com",
+      "shop_name": "au-trans-filter-prod",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "shop_id": 10486829
+    }
+  },
+  "default_language": "English",
+  "default_language_locale": "en-us",
+  "default_filter": {
+    "checked": [],
+    "custom": [
+      {
+        "handle": "custom__custom_tag",
+        "title": "Custom tag",
+        "tags": ["woman", "hats"]
+      }
+    ]
+  },
+  "collection_handle": ["test-filter", "all"],
+  "cases": {
+    "SB_SET_TL_83": {
+      "case_description": "[DB - UI/UX] Kiểm tra màn translate detail của store data - Pages - Filters",
+      "language_data": {
+        "language": "German",
+        "status": "Published languages",
+        "entity": "Filter"
+      },
+      "data_manual": {
+        "field_name": "Label Color",
+        "value": "manual"
+      },
+      "field_name_check_auto_icon": "Label product types",
+      "data_edit_more_characters": {
+        "field_name": "Label price",
+        "value": "Lorem ipsum dolor sit amet consectetur adipiscing elit vehicula, venenatis natoque urna dui mi et labore et dolore magna aliqua."
+      },
+      "filter_data": {
+        "filters": ["availability", "price", "product types", "vendor", "Color", "Size", "Custom tag"],
+        "checked": true
+      },
+      "edit_custom_filter": {
+        "name": "Custom tag",
+        "edit": {
+          "name": "Edited custom filter name",
+          "tags": ["woman", "signature"]
+        }
+      }
+    },
+    "SB_SET_TL_102": {
+      "case_description": "[DB+SF - Function] Kiểm tra tính năng auto translate khi enable auto translate Pages - Filters",
+      "language_data": {
+        "language": "Vietnamese",
+        "status": "Published languages",
+        "entity": "Filter",
+        "language_locale": "vi-vn"
+      },
+      "language_locale": "vi-vn",
+      "toast_success": "Successfully update this language",
+      "filter_data": {
+        "filters": ["availability", "price", "product types", "vendor", "Color", "Size", "Custom tag"],
+        "checked": true,
+        "expected_result_translation": [
+          {
+            "field_name": "Label availability",
+            "source_value": "availability",
+            "source_type": "text",
+            "target_value": "translated availability to Vietnamese",
+            "target_type": "text"
+          },
+          {
+            "field_name": "Label price",
+            "source_value": "price",
+            "source_type": "text",
+            "target_value": "translated price to Vietnamese",
+            "target_type": "text"
+          },
+          {
+            "field_name": "Label product types",
+            "source_value": "product types",
+            "source_type": "text",
+            "target_value": "translated product types to Vietnamese",
+            "target_type": "text"
+          },
+          {
+            "field_name": "Label vendor",
+            "source_value": "vendor",
+            "source_type": "text",
+            "target_value": "translated vendor to Vietnamese",
+            "target_type": "text"
+          },
+          {
+            "field_name": "Label Color",
+            "source_value": "Color",
+            "source_type": "text",
+            "target_value": "translated Color to Vietnamese",
+            "target_type": "text"
+          },
+          {
+            "field_name": "Label Size",
+            "source_value": "Size",
+            "source_type": "text",
+            "target_value": "translated Size to Vietnamese",
+            "target_type": "text"
+          },
+          {
+            "field_name": "Label Custom tag",
+            "source_value": "Custom tag",
+            "source_type": "text",
+            "target_value": "translated Custom tag to Vietnamese",
+            "target_type": "text"
+          }
+        ]
+      },
+      "add_filter": {
+        "filters": [],
+        "custom": {
+          "name": "Custom add and delete",
+          "tags": ["woman", "signature"]
+        },
+        "checked": false,
+        "expected_result_translation": [
+          {
+            "field_name": "Label availability",
+            "source_value": "availability",
+            "source_type": "text",
+            "target_value": "translated availability to Vietnamese",
+            "target_type": "text"
+          },
+          {
+            "field_name": "Label price",
+            "source_value": "price",
+            "source_type": "text",
+            "target_value": "translated price to Vietnamese",
+            "target_type": "text"
+          },
+          {
+            "field_name": "Label product types",
+            "source_value": "product types",
+            "source_type": "text",
+            "target_value": "translated product types to Vietnamese",
+            "target_type": "text"
+          },
+          {
+            "field_name": "Label vendor",
+            "source_value": "vendor",
+            "source_type": "text",
+            "target_value": "translated vendor to Vietnamese",
+            "target_type": "text"
+          },
+          {
+            "field_name": "Label Color",
+            "source_value": "Color",
+            "source_type": "text",
+            "target_value": "translated Color to Vietnamese",
+            "target_type": "text"
+          },
+          {
+            "field_name": "Label Size",
+            "source_value": "Size",
+            "source_type": "text",
+            "target_value": "translated Size to Vietnamese",
+            "target_type": "text"
+          },
+          {
+            "field_name": "Label Custom tag",
+            "source_value": "Custom tag",
+            "source_type": "text",
+            "target_value": "translated Custom tag to Vietnamese",
+            "target_type": "text"
+          },
+          {
+            "field_name": "Label Custom add and delete",
+            "source_value": "Custom add and delete",
+            "source_type": "text",
+            "target_value": "translated Custom add and delete to Vietnamese",
+            "target_type": "text"
+          }
+        ]
+      },
+      "remove_filter": {
+        "filters": ["Size", "vendor", "availability"],
+        "checked": false,
+        "expected_result_translation": [
+          {
+            "field_name": "Label price",
+            "source_value": "price",
+            "source_type": "text",
+            "target_value": "translated price to Vietnamese",
+            "target_type": "text"
+          },
+          {
+            "field_name": "Label product types",
+            "source_value": "product types",
+            "source_type": "text",
+            "target_value": "translated product types to Vietnamese",
+            "target_type": "text"
+          },
+          {
+            "field_name": "Label Color",
+            "source_value": "Color",
+            "source_type": "text",
+            "target_value": "translated Color to Vietnamese",
+            "target_type": "text"
+          },
+          {
+            "field_name": "Label Custom tag",
+            "source_value": "Custom tag",
+            "source_type": "text",
+            "target_value": "translated Custom tag to Vietnamese",
+            "target_type": "text"
+          },
+          {
+            "field_name": "Label Custom add and delete",
+            "source_value": "Custom add and delete",
+            "source_type": "text",
+            "target_value": "translated Custom add and delete to Vietnamese",
+            "target_type": "text"
+          }
+        ]
+      },
+      "edit_custom_filter": {
+        "name": "Custom add and delete",
+        "edit": {
+          "name": "Edited custom filter name",
+          "tags": ["woman", "signature"]
+        },
+        "expected_result_translation": [
+          {
+            "field_name": "Label price",
+            "source_value": "price",
+            "source_type": "text",
+            "target_value": "translated price to Vietnamese",
+            "target_type": "text"
+          },
+          {
+            "field_name": "Label product types",
+            "source_value": "product types",
+            "source_type": "text",
+            "target_value": "translated product types to Vietnamese",
+            "target_type": "text"
+          },
+          {
+            "field_name": "Label Color",
+            "source_value": "Color",
+            "source_type": "text",
+            "target_value": "translated Color to Vietnamese",
+            "target_type": "text"
+          },
+          {
+            "field_name": "Label Custom tag",
+            "source_value": "Custom tag",
+            "source_type": "text",
+            "target_value": "translated Custom tag to Vietnamese",
+            "target_type": "text"
+          },
+          {
+            "field_name": "Label Edited custom filter name",
+            "source_value": "Edited custom filter name",
+            "source_type": "text",
+            "target_value": "translated Edited custom filter name to Vietnamese",
+            "target_type": "text"
+          }
+        ]
+      },
+      "edit_manual_translate": [
+        {
+          "input_data_type": "text",
+          "field_name": "Label price",
+          "content": "price manual"
+        },
+        {
+          "input_data_type": "text",
+          "field_name": "Label product types",
+          "content": "product types manual"
+        },
+        {
+          "input_data_type": "text",
+          "field_name": "Label Color",
+          "content": "Color manual"
+        },
+        {
+          "input_data_type": "text",
+          "field_name": "Label Custom tag",
+          "content": "Custom tag manual"
+        },
+        {
+          "input_data_type": "text",
+          "field_name": "Label Edited custom filter name",
+          "content": "Custom filter name manual"
+        }
+      ],
+      "delete_translation": [
+        {
+          "input_data_type": "text",
+          "field_name": "Label price",
+          "content": ""
+        },
+        {
+          "input_data_type": "text",
+          "field_name": "Label product types",
+          "content": ""
+        },
+        {
+          "input_data_type": "text",
+          "field_name": "Label Color",
+          "content": ""
+        },
+        {
+          "input_data_type": "text",
+          "field_name": "Label Custom tag",
+          "content": ""
+        },
+        {
+          "input_data_type": "text",
+          "field_name": "Label Edited custom filter name",
+          "content": ""
+        }
+      ],
+      "expected_sf_origin": ["price", "product_type", "color", "custom tag", "edited custom filter name"]
+    }
+  }
+}

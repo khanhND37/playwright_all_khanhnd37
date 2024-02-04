@@ -1,0 +1,141 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "shop_name": "au-sizechart-plb-tn.onshopbase.com",
+      "username": "shopbase3@beeketing.net",
+      "password": "aAeg*PJR4.t6V:P",
+      "domain": "au-sizechart-plb-tn.onshopbase.com",
+      "odoo_host": "https://autotest-erp-plus.shopbase.dev",
+      "odoo_db": "shopbase_fulfillment",
+      "odoo_username": "qaocg",
+      "odoo_password": "LFmy=qGLvwW^E63b",
+      "plb_template": {
+        "domain": "template-store.onshopbase.com",
+        "shop_name": "template-store.onshopbase.com",
+        "user_id": "9131323",
+        "shop_id": "10258217",
+        "username": "qas@beeketing.net",
+        "password": "123456",
+        "shop": "template-store"
+      }
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "shop_name": "au-sizechart-plb-tn-prodtest.onshopbase.com",
+      "username": "shopbase3@beeketing.net",
+      "password": "aAeg*PJR4.t6V:P",
+      "domain": "au-sizechart-plb-prodtest-tn.onshopbase.com",
+      "odoo_host": "https://autotest-erp-plus.shopbase.dev",
+      "odoo_db": "shopbase_fulfillment",
+      "odoo_username": "qaocg",
+      "odoo_password": "LFmy=qGLvwW^E63b",
+      "plb_template": {
+        "domain": "plusbase-tem-prodtest.onshopbase.com",
+        "shop_name": "plusbase-tem-prodtest.onshopbase.com",
+        "user_id": "255993",
+        "shop_id": "10326128",
+        "username": "trangnguyen@beeketing.net",
+        "password": "123456",
+        "shop": "plusbase-tem-prodtest"
+      },
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "shop_name": "au-sizechart-plb-tn.myshopbase.net",
+      "username": "shopbase3@beeketing.net",
+      "password": "=l-N&YG}g<'KLJk",
+      "domain": "au-sizechart-plb-tn.myshopbase.net",
+      "odoo_host": "https://odoo.dev.shopbase.net",
+      "odoo_db": "sbase_fulfillment_dev",
+      "odoo_username": "admin",
+      "odoo_password": "admin",
+      "plb_template": {
+        "domain": "plusbase-checkout.myshopbase.net",
+        "shop_name": "plusbase-checkout.myshopbase.net",
+        "user_id": "87262",
+        "shop_id": "10060862",
+        "username": "phuongpham@beeketing.net",
+        "password": "123456",
+        "shop": "plusbase-checkout"
+      }
+    }
+  },
+  "cases": {
+    "SB_PLB_OTMSC_10": {
+      "product_name": "(Test product) Levents verify message",
+      "alert_message": "Size chart has updated! You can preview in here."
+    },
+    "SB_PLB_OTMSC_16": {
+      "product_name": "(Test product) Local t-shirt",
+      "product_handle": "test-product-local-t-shirt-13",
+      "sizechart_name": "(TEST AUTOMATION) SIZE CHART",
+      "data_size_guide": [
+        ["L", "38", "23.2-23.7", "24.4", "4", "M", "36", "21.9-22.4", "23", "6"],
+        ["L", "14.96", "9.13-9.33", "9.61", "1.57", "M", "14.17", "8.62-8.82", "9.06", "2.36"]
+      ],
+      "message": "Successfully saved"
+    },
+    "SB_PLB_OTMSC_15": {
+      "product_name": "(Test product) Ao thun case 15",
+      "product_handle": "test-product-ao-thun-case-15",
+      "sizechart_name": "(TEST AUTOMATION) SIZE CHART",
+      "message": "Successfully saved"
+    },
+    "SB_PLB_OTMSC_14": {
+      "product_name": "(Test product) Ao thun case 14",
+      "product_handle": "test-product-ao-thun-case-14",
+      "sizechart_name": "(TEST AUTOMATION) SIZE CHART",
+      "data_size_guide": [
+        ["S", "38", "23.2-23.7", "24.4", "4", "M", "36", "21.9-22.4", "23", "6"],
+        ["S", "14.96", "23.2-23.7", "9.61", "1.57", "M", "14.17", "21.9-22.4", "9.06", "2.36"]
+      ],
+      "message": "Successfully saved"
+    },
+    "SB_PLB_OTMSC_17": {
+      "product_name": "(Test product) Mushroom Tapestry",
+      "product_handle": "test-product-mushroom-tapestry",
+      "data_size_guide": [
+        [
+          "XS-100cmX70cm",
+          "100x70",
+          "S-150cmX100cm",
+          "150x100",
+          "M-150cmX130cm",
+          "150x130",
+          "L-200cmX150cm",
+          "200x150",
+          "XL-230cmX150cm",
+          "230x150",
+          "XXL-230cmX180cm",
+          "230x150"
+        ],
+        [
+          "XS-100cmX70cm",
+          "39.37x27.56",
+          "S-150cmX100cm",
+          "59.06x39.37",
+          "M-150cmX130cm",
+          "59.06x51.18",
+          "L-200cmX150cm",
+          "78.74x59.06",
+          "XL-230cmX150cm",
+          "90.55x59.06",
+          "XXL-230cmX180cm",
+          "90.55x59.06"
+        ]
+      ]
+    },
+    "SB_PLB_OTMSC_11": {
+      "product_name": "(Test product) Ao bang variant mapping",
+      "variants": ["S", "M"]
+    },
+    "SB_PLB_OTMSC_12": {
+      "product_name": "(Test product) Product khac variant mapping",
+      "message": "Product was successfully saved!",
+      "new_variant": "new",
+      "index_variant": 2
+    }
+  }
+}

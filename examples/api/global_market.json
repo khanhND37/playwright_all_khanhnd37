@@ -1,0 +1,385 @@
+{
+  "api": "https://api.shopbase.com",
+  "username": "shopbase@beeketing.net",
+  "password": "S#|j>m2N[q",
+  "shop_name": "au-currency",
+  "cases": {
+    "TC_API_GLOBAL_MARKET_CREATE": {
+      "data": [
+        {
+          "key": "create global market",
+          "url": "https://au-currency.myshopbase.net/admin/global-markets.json",
+          "method": "POST",
+          "request": {
+            "data": {
+              "name": "Asia",
+              "global_market_countries": [
+                {
+                  "country_code": "CN",
+                  "country_id": 45,
+                  "country_name": "China"
+                },
+                {
+                  "country_code": "JP",
+                  "country_id": 110,
+                  "country_name": "Japan"
+                }
+              ]
+            }
+          },
+          "response": {
+            "status": 200,
+            "data": {}
+          }
+        }
+      ]
+    },
+    "TC_API_GLOBAL_MARKET_CLOSE": {
+      "data": [
+        {
+          "key": "global market có status close",
+          "url": "https://au-currency.myshopbase.net/admin/global-markets/182.json",
+          "method": "PUT",
+          "request": {
+            "data": {
+              "id": 182,
+              "name": "countries EU",
+              "shop_id": 10248912,
+              "is_multiple_currency": false,
+              "currency": "EUR",
+              "exchange_rate": 1,
+              "exchange_rate_auto": 0.940944,
+              "is_rate_auto": true,
+              "is_rounding": false,
+              "rounding": 0.99,
+              "price_adjustment": 10,
+              "is_active": false,
+              "global_market_countries": [
+                {
+                  "id": 3133,
+                  "currency": "EUR",
+                  "global_market_id": 182,
+                  "country_id": 82,
+                  "country_code": "DE",
+                  "country_name": "Germany",
+                  "exchange_rate": 0.952064,
+                  "exchange_rate_auto": 0.940944,
+                  "is_rate_auto": true,
+                  "is_rounding": true,
+                  "rounding": 0.99,
+                  "price_adjustment": 0
+                },
+                {
+                  "id": 3159,
+                  "currency": "THB",
+                  "global_market_id": 182,
+                  "country_id": 216,
+                  "country_code": "TH",
+                  "country_name": "Thailand",
+                  "exchange_rate": 34.713405,
+                  "exchange_rate_auto": 34.2475,
+                  "is_rate_auto": true,
+                  "is_rounding": false,
+                  "rounding": 0.99,
+                  "price_adjustment": 0
+                }
+              ],
+              "price_adjustment_type": "price_increase"
+            }
+          },
+          "response": {
+            "status": 200,
+            "data": {}
+          }
+        }
+      ]
+    },
+    "TC_API_GLOBAL_MARKET_UPDATE[1]": {
+      "data": [
+        {
+          "key": "Merchant set global market có: multi currency = off,market manual rate,increase price adjustment,rouding",
+          "url": "https://au-currency.myshopbase.net/admin/global-markets/182.json",
+          "method": "PUT",
+          "request": {
+            "data": {
+              "id": 182,
+              "name": "countries EU",
+              "shop_id": 10248912,
+              "is_multiple_currency": false,
+              "currency": "EUR",
+              "exchange_rate": 0.95,
+              "exchange_rate_auto": 0.940944,
+              "is_rate_auto": false,
+              "is_rounding": true,
+              "rounding": 0.99,
+              "price_adjustment": 10,
+              "is_active": true,
+              "global_market_countries": [
+                {
+                  "id": 3133,
+                  "currency": "EUR",
+                  "global_market_id": 182,
+                  "country_id": 82,
+                  "country_code": "DE",
+                  "country_name": "Germany",
+                  "exchange_rate": 0.952064,
+                  "exchange_rate_auto": 0.940944,
+                  "is_rate_auto": true,
+                  "is_rounding": true,
+                  "rounding": 0.99,
+                  "price_adjustment": 0
+                },
+                {
+                  "id": 3159,
+                  "currency": "THB",
+                  "global_market_id": 182,
+                  "country_id": 216,
+                  "country_code": "TH",
+                  "country_name": "Thailand",
+                  "exchange_rate": 34.713405,
+                  "exchange_rate_auto": 34.2475,
+                  "is_rate_auto": true,
+                  "is_rounding": false,
+                  "rounding": 0.99,
+                  "price_adjustment": 0
+                }
+              ],
+              "price_adjustment_type": "price_increase"
+            }
+          },
+          "response": {
+            "status": 200,
+            "data": {}
+          }
+        }
+      ]
+    },
+    "TC_API_GLOBAL_MARKET_UPDATE[2]": {
+      "data": [
+        {
+          "key": "Merchant set global market có: multi currency = off,market manual rate,decrease price adjustment,rouding",
+          "url": "https://au-currency.myshopbase.net/admin/global-markets/182.json",
+          "method": "PUT",
+          "request": {
+            "data": {
+              "id": 182,
+              "name": "countries EU",
+              "shop_id": 10248912,
+              "is_multiple_currency": false,
+              "currency": "EUR",
+              "exchange_rate": 0.95,
+              "exchange_rate_auto": 0.940944,
+              "is_rate_auto": false,
+              "is_rounding": true,
+              "rounding": 0,
+              "price_adjustment": -10,
+              "is_active": true,
+              "global_market_countries": [
+                {
+                  "id": 3133,
+                  "currency": "EUR",
+                  "global_market_id": 182,
+                  "country_id": 82,
+                  "country_code": "DE",
+                  "country_name": "Germany",
+                  "exchange_rate": 0.952064,
+                  "exchange_rate_auto": 0.940944,
+                  "is_rate_auto": true,
+                  "is_rounding": true,
+                  "rounding": 0.99,
+                  "price_adjustment": 0
+                },
+                {
+                  "id": 3159,
+                  "currency": "THB",
+                  "global_market_id": 182,
+                  "country_id": 216,
+                  "country_code": "TH",
+                  "country_name": "Thailand",
+                  "exchange_rate": 34.713405,
+                  "exchange_rate_auto": 34.2475,
+                  "is_rate_auto": true,
+                  "is_rounding": false,
+                  "rounding": 0.99,
+                  "price_adjustment": 0
+                }
+              ],
+              "price_adjustment_type": "price_increase"
+            }
+          },
+          "response": {
+            "status": 200,
+            "data": {}
+          }
+        }
+      ]
+    },
+    "TC_API_GLOBAL_MARKET_UPDATE[3]": {
+      "data": [
+        {
+          "key": "Merchant set global market có multi currency = off, market manual rate , price adjustment bằng 0, off rouding",
+          "url": "https://au-currency.myshopbase.net/admin/global-markets/182.json",
+          "method": "PUT",
+          "request": {
+            "data": {
+              "id": 182,
+              "name": "countries EU",
+              "shop_id": 10248912,
+              "is_multiple_currency": false,
+              "currency": "EUR",
+              "exchange_rate": 0.95,
+              "exchange_rate_auto": 0.940944,
+              "is_rate_auto": false,
+              "is_rounding": false,
+              "rounding": 0,
+              "price_adjustment": 0,
+              "is_active": true,
+              "global_market_countries": [
+                {
+                  "id": 3133,
+                  "currency": "EUR",
+                  "global_market_id": 182,
+                  "country_id": 82,
+                  "country_code": "DE",
+                  "country_name": "Germany",
+                  "exchange_rate": 0.952064,
+                  "exchange_rate_auto": 0.940944,
+                  "is_rate_auto": true,
+                  "is_rounding": true,
+                  "rounding": 0.99,
+                  "price_adjustment": 0
+                },
+                {
+                  "id": 3159,
+                  "currency": "THB",
+                  "global_market_id": 182,
+                  "country_id": 216,
+                  "country_code": "TH",
+                  "country_name": "Thailand",
+                  "exchange_rate": 34.713405,
+                  "exchange_rate_auto": 34.2475,
+                  "is_rate_auto": true,
+                  "is_rounding": false,
+                  "rounding": 0.99,
+                  "price_adjustment": 0
+                }
+              ],
+              "price_adjustment_type": "price_increase"
+            }
+          },
+          "response": {
+            "status": 200,
+            "data": {}
+          }
+        }
+      ]
+    },
+    "TC_API_GLOBAL_MARKET_UPDATE[4]": {
+      "data": [
+        {
+          "key": "Merchant set global market có multi currency = off, market auto rate , increase price adjustment, rouding",
+          "url": "https://au-currency.myshopbase.net/admin/global-markets/182.json",
+          "method": "PUT",
+          "request": {
+            "data": {
+              "id": 182,
+              "name": "countries EU",
+              "shop_id": 10248912,
+              "is_multiple_currency": false,
+              "currency": "EUR",
+              "exchange_rate": 0.95,
+              "exchange_rate_auto": 0.940944,
+              "is_rate_auto": true,
+              "is_rounding": true,
+              "rounding": 0.99,
+              "price_adjustment": 10,
+              "is_active": true,
+              "global_market_countries": [
+                {
+                  "id": 3133,
+                  "currency": "EUR",
+                  "global_market_id": 182,
+                  "country_id": 82,
+                  "country_code": "DE",
+                  "country_name": "Germany",
+                  "exchange_rate": 0.952064,
+                  "exchange_rate_auto": 0.940944,
+                  "is_rate_auto": true,
+                  "is_rounding": true,
+                  "rounding": 0.99,
+                  "price_adjustment": 0
+                },
+                {
+                  "id": 3159,
+                  "currency": "THB",
+                  "global_market_id": 182,
+                  "country_id": 216,
+                  "country_code": "TH",
+                  "country_name": "Thailand",
+                  "exchange_rate": 34.713405,
+                  "exchange_rate_auto": 34.2475,
+                  "is_rate_auto": true,
+                  "is_rounding": false,
+                  "rounding": 0.99,
+                  "price_adjustment": 0
+                }
+              ],
+              "price_adjustment_type": "price_increase"
+            }
+          },
+          "response": {
+            "status": 200,
+            "data": {}
+          }
+        }
+      ]
+    },
+    "TC_API_GLOBAL_MARKET_UPDATE[5]": {
+      "data": [
+        {
+          "key": " Merchant set global market có multi currency = on,",
+          "url": "https://au-currency.myshopbase.net/admin/global-markets/182/countries.json",
+          "method": "PUT",
+          "request": {
+            "data": [
+              {
+                "id": 3288,
+                "currency": "EUR",
+                "global_market_id": 182,
+                "country_id": 82,
+                "country_code": "DE",
+                "country_name": "Germany",
+                "exchange_rate": 0.95,
+                "exchange_rate_auto": 0.940944,
+                "is_rate_auto": false,
+                "is_rounding": true,
+                "rounding": 0.99,
+                "price_adjustment": 10,
+                "price_adjustment_type": "price_increase"
+              },
+              {
+                "id": 3289,
+                "currency": "THB",
+                "global_market_id": 182,
+                "country_id": 216,
+                "country_code": "TH",
+                "country_name": "Thailand",
+                "exchange_rate": 34.2475,
+                "exchange_rate_auto": 34.2475,
+                "is_rate_auto": true,
+                "is_rounding": true,
+                "rounding": 0,
+                "price_adjustment": -10,
+                "price_adjustment_type": "price_decrease"
+              }
+            ]
+          },
+          "response": {
+            "status": 200,
+            "data": {}
+          }
+        }
+      ]
+    }
+  }
+}

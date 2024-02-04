@@ -1,0 +1,108 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "plusbase-checkout.myshopbase.net",
+      "shop_name": "plusbase-checkout",
+      "user_id": 87262,
+      "shop_id": 10060862,
+      "username": "phuongpham@beeketing.net",
+      "password": "123456",
+      "shop": "plusbase-checkout",
+      "shop_template": "multipleshipping",
+      "order_number": "#plb10247550_1452",
+      "hive_info": {
+        "domain": "hive.dev.shopbase.net",
+        "username": "shopbase",
+        "password": "123456"
+      },
+      "order_id": 1307796307307,
+      "odoo_host": "https://odoo.dev.shopbase.net",
+      "odoo_db": "sbase_fulfillment_dev",
+      "odoo_username": "admin",
+      "odoo_password": "admin"
+    },
+    "prodtest": {
+      "domain": "plusbase-templateprodtest.onshopbase.com",
+      "api": "https://prod-test-api.shopbase.com",
+      "shop_name": "plusbase-templateprodtest",
+      "username": "qas@beeketing.net",
+      "password": "123456",
+      "user_id": 9131323,
+      "shop_id": 10364655,
+      "order_number": "#plb10364805_1003",
+      "order_id": 451405395,
+      "hive_info": {
+        "domain": "hive.shopbase.com",
+        "username": "shopbase",
+        "password": "UxsLHz^Wjkf35*/w"
+      },
+      "odoo_host": "https://autotest-erp-plus.shopbase.dev",
+      "odoo_db": "shopbase_fulfillment",
+      "odoo_username": "qaocg",
+      "odoo_password": "LFmy=qGLvwW^E63b",
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "prod": {
+      "domain": "template-store.onshopbase.com",
+      "shop_name": "template-store",
+      "user_id": 9131323,
+      "shop_id": 10258217,
+      "username": "qas@beeketing.net",
+      "password": "123456",
+      "shop": "template-store",
+      "api": "https://api.shopbase.com",
+      "order_number": "#plb10363885_1545",
+      "hive_info": {
+        "domain": "hive.shopbase.com",
+        "username": "shopbase",
+        "password": "UxsLHz^Wjkf35*/w"
+      },
+      "order_id": 452761277,
+      "odoo_host": "https://autotest-erp-plus.shopbase.dev",
+      "odoo_db": "shopbase_fulfillment",
+      "odoo_username": "qaocg",
+      "odoo_password": "LFmy=qGLvwW^E63b"
+    }
+  },
+  "email_scheduler": "thangnguyen2@beeketing.net",
+  "cases": {
+    "SB_RPLS_RCPSL_6": {
+      "data": [
+        {
+          "case_id": "SB_RPLS_RCPSL_6",
+          "description": "Verify data khi tạo claim Resend thành công",
+          "prefer_solution": "Resend",
+          "reason_claim": "other",
+          "envidence": "QA test claim",
+          "new_status": "Approved"
+        },
+        {
+          "case_id": "SB_RPLS_RCPSL_7",
+          "description": "Verify data khi tạo claim Refund thành công",
+          "prefer_solution": "Refund",
+          "reason_claim": "other",
+          "envidence": "QA test claim",
+          "new_status": "Approved",
+          "refund_amount": "1"
+        },
+        {
+          "case_id": "SB_RPLS_RCPSL_9",
+          "description": "Verify data claim khi change status claim trên hive từ New sang Rejected",
+          "prefer_solution": "Refund",
+          "reason_claim": "other",
+          "envidence": "QA test claim",
+          "new_status": "Rejected"
+        },
+        {
+          "case_id": "SB_RPLS_RCPSL_10",
+          "description": "Verify data claim khi cancel claim",
+          "prefer_solution": "Refund",
+          "reason_claim": "other",
+          "envidence": "QA test claim",
+          "new_status": "Cancel"
+        }
+      ]
+    }
+  }
+}

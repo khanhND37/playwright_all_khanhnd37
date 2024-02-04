@@ -1,0 +1,150 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "username": "qe-2@beeketing.net",
+      "password": "Qe2@OCGQE",
+      "domain": "au-multiple-discounts-special.onshopbase.com",
+      "shipping_address": {
+        "email": "testerOCG@mailtothis.com",
+        "first_name": "ShopBase",
+        "last_name": "Auto",
+        "address": "1600 W Loop S",
+        "city": "Los Angeles",
+        "country": "United States",
+        "state": "New York",
+        "country_code": "US",
+        "country_name": "United States",
+        "zipcode": "10001",
+        "phone_number": "0336555555"
+      },
+      "secret_key": "",
+      "gateway_code": ""
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "qe-2@beeketing.net",
+      "password": "Qe2@OCGQE",
+      "domain": "au-multiple-discounts-special-prodtest.onshopbase.com",
+      "shipping_address": {
+        "email": "testerOCG@mailtothis.com",
+        "first_name": "ShopBase",
+        "last_name": "Auto",
+        "address": "1600 W Loop S",
+        "city": "Los Angeles",
+        "country": "United States",
+        "state": "New York",
+        "country_code": "US",
+        "country_name": "United States",
+        "zipcode": "10001",
+        "phone_number": "0336555555"
+      },
+      "secret_key": "",
+      "gateway_code": "",
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "opay-qe-2@beeketing.net",
+      "password": "Opay@123",
+      "domain": "au-multiple-discounts-special.myshopbase.net",
+      "shipping_address": {
+        "email": "testerOCG@mailtothis.com",
+        "first_name": "ShopBase",
+        "last_name": "Auto",
+        "address": "1600 W Loop S",
+        "city": "Los Angeles",
+        "country": "United States",
+        "state": "New York",
+        "country_code": "US",
+        "country_name": "United States",
+        "zipcode": "10001",
+        "phone_number": "0336555555"
+      },
+      "secret_key": "",
+      "gateway_code": ""
+    }
+  },
+  "cases": {
+    "SB_CHECKOUT_FLOW_CART": [
+      {
+        "case_id": "SB_DC_MD_SB_43",
+        "case_name": "Apply discount và kiểm tra hiển thị ở cart page, cart drawer, mini cart (Có discount auto là discount shipping)",
+        "products_checkout": [
+          {
+            "name": "Bikini",
+            "quantity": 1,
+            "price": 40
+          },
+          {
+            "name": "Bikini 2",
+            "quantity": 1,
+            "price": 30
+          },
+          {
+            "name": "Post purchase",
+            "quantity": 1,
+            "price": 50
+          }
+        ],
+        "discount_code": [
+          "Opay_Discount_Fixamt",
+          "Opay_Discount_Percent",
+          "Opay_Discount_buyxgety",
+          "Opay_Discount_Fixamt_1"
+        ],
+        "auto_discount": [
+          "Opay_auto_free shipping",
+          "Auto upsell offer pre-purchase",
+          "Auto upsell offer in cart",
+          "Auto upsell offer bundle"
+        ],
+        "expect_offer_discount": 36
+      },
+      {
+        "case_id": "SB_DC_MD_SB_42",
+        "case_name": "Apply discount và kiểm tra hiển thị ở cart page, cart drawer, mini cart (Có discount auto là discount product)",
+        "products_checkout": [
+          {
+            "name": "Bikini",
+            "quantity": 1,
+            "price": 40
+          },
+          {
+            "name": "Bikini 2",
+            "quantity": 1,
+            "price": 30
+          },
+          {
+            "name": "Bikini 3",
+            "quantity": 1,
+            "price": 20
+          },
+          {
+            "name": "Bikini 4",
+            "quantity": 1,
+            "price": 10
+          },
+          {
+            "name": "Post purchase",
+            "quantity": 1,
+            "price": 50
+          }
+        ],
+        "discount_code": [
+          "Opay_Discount_Fixamt",
+          "Opay_Discount_Percent",
+          "Opay_Discount_buyxgety",
+          "Opay_Discount_Fixamt_1"
+        ],
+        "auto_discount": [
+          "Opay_auto_free shipping",
+          "Auto upsell offer pre-purchase",
+          "Auto upsell offer in cart",
+          "Auto upsell offer bundle"
+        ],
+        "expect_offer_discount": 36
+      }
+    ]
+  }
+}

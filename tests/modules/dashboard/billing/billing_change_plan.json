@@ -1,0 +1,88 @@
+{
+  "env": {
+    "prod": {
+      "domain": "au-billing-change-plan.onshopbase.com",
+      "user_id": 74303,
+      "shop_id": 10439798,
+      "api": "https://api.shopbase.com",
+      "shop_name": "au-billing-change-plan",
+      "username": "shopbase2@beeketing.net",
+      "password": "raMse).7L/b4;k#@"
+    },
+    "prodtest": {
+      "domain": "au-billing-change-plan-prodtest.onshopbase.com",
+      "user_id": 74303,
+      "shop_id": 10439799,
+      "api": "https://prod-test-api.shopbase.com",
+      "shop_name": "au-billing-change-plan-prodtest",
+      "username": "shopbase2@beeketing.net",
+      "password": "raMse).7L/b4;k#@"
+    },
+    "dev": {
+      "domain": "au-billing-change-plan.myshopbase.net",
+      "user_id": 89201,
+      "shop_id": 10328326,
+      "api": "https://gapi.dev.shopbase.net",
+      "shop_name": "au-billing-change-plan",
+      "username": "shopbase9@beeketing.net",
+      "password": "AutoBilling@123",
+      "basic_plan": "Basic Base",
+      "standard_plan": "Standard Base",
+      "pro_plan": "Pro Base",
+      "time_plan_monthly": "Monthly",
+      "time_plan_yearly": "Annually"
+    }
+  },
+  "cases": {
+    "BILL": {
+      "data": [
+        {
+          "case_id": "SB_BAL_BILL_BFL_500",
+          "description": "Kiểm tra Upgrade and Downgrade plan với Shopbase khi không apply coupon"
+        },
+        {
+          "case_id": "SB_BAL_BILL_BFL_501",
+          "description": "Kiểm tra Upgrade and Downgrade plan với Shopbase khi apply coupon",
+          "discount": {
+            "code": "datatest10",
+            "value": 10,
+            "type": "percentage"
+          }
+        },
+        {
+          "case_id": "SB_BAL_BILL_BFL_502",
+          "description": "Kiểm tra Upgrade and Downgrade plan với Shopbase khi apply coupon free trial",
+          "discount": {
+            "code": "datatest10day",
+            "value": 10,
+            "type": "days"
+          }
+        },
+        {
+          "case_id": "SB_BAL_BILL_BFL_503",
+          "description": "Kiểm tra Upgrade and Downgrade plan với Shopbase khi apply coupon percentage với X tháng",
+          "discount": {
+            "code": "testcouponNexttime",
+            "value": 20,
+            "type": "percentage",
+            "time": "3 months",
+            "days": 90
+          }
+        }
+      ]
+    },
+    "SB_BAL_BILL_BFL_491": {
+      "coupon": "datatest10",
+      "discount_value": 10,
+      "info_discount": "give 10% for your package",
+      "invoice_info": {
+        "content": "Subscription fee collecting",
+        "type": "OUT",
+        "detail": "Paid for subscription bill",
+        "transactions_type": "OUT",
+        "transactions_content": "The payment for the subscription bill",
+        "transactions_status": "Paid"
+      }
+    }
+  }
+}

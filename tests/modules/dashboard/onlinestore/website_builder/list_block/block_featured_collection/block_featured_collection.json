@@ -1,0 +1,608 @@
+{
+  "env": {
+    "dev": {
+      "domain": "au-featured-collection-dev.myshopbase.net",
+      "shop_name": "au-featured-collection-dev",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "43AhIn|VWp;[?9&",
+      "user_id": 89797,
+      "shop_id": 10326966,
+      "shop_theme_id": 3166459,
+      "theme_data": 3188888,
+      "case_access_dashboard_first": ["SB_WEB_BUILDER_LB_NFC_08"]
+    },
+    "prod": {
+      "domain": "au-featured-collection-prod.onshopbase.com",
+      "shop_name": "au-featured-collection-prod",
+      "api": "https://api.shopbase.com",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "shop_id": 10430526,
+      "shop_theme_id": 1397905,
+      "theme_data": 1499622,
+      "case_access_dashboard_first": ["SB_WEB_BUILDER_LB_NFC_08"]
+    },
+    "prodtest": {
+      "domain": "au-featured-collection-prodtest.onshopbase.com",
+      "shop_name": "au-featured-collection-prodtest",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "shop_id": 10430869,
+      "shop_theme_id": 1399196,
+      "theme_data": 1499619,
+      "case_access_dashboard_first": ["SB_WEB_BUILDER_LB_NFC_08"],
+      "accounts_domain": "accounts-test.shopbase.com"
+    }
+  },
+  "block_template": {
+    "from": {
+      "category": "Basics",
+      "template": "Featured Collection"
+    },
+    "to": {
+      "position": {
+        "section": 1,
+        "column": 1
+      },
+      "isBottom": false
+    }
+  },
+  "cases": {
+    "SB_WEB_BUILDER_LB_NFC_01": {
+      "description": "Check trạng thái default khi add mới block featured collection",
+      "expected": {
+        "snapshot_on_preview": "01_block_on_preview.png",
+        "snapshot_on_SF": "01_block_on_SF.png",
+        "snapshot_sidebar_design": "01_sidebar_design.png",
+        "snapshot_sidebar_content": "01_sidebar_content.png"
+      }
+    },
+    "SB_WEB_BUILDER_LB_NFC_02": {
+      "description": "Check setting trường layout",
+      "snapshot_popup_layout": "02_snapshot_popup_layout.png",
+      "default_data": {
+        "spacing": "8px",
+        "grid_min_width": "352px",
+        "mix_min_width": "512px",
+        "slide_max_spacing": "16px"
+      },
+      "layout_grid": {
+        "min_width": "256px",
+        "spacing": 18
+      },
+      "layout_slide": {
+        "min_width": "320px",
+        "spacing": 360
+      },
+      "layout_mix": {
+        "spacing": 10
+      }
+    },
+    "SB_WEB_BUILDER_LB_NFC_03": {
+      "description": "Check setting trường Products to show",
+      "number_of_product_invalid": [
+        {
+          "input": "0",
+          "value": 1
+        },
+        {
+          "input": "32",
+          "value": 30
+        }
+      ],
+      "number_of_product_valid": [
+        {
+          "input": "2",
+          "value": 2
+        },
+        {
+          "input": "15",
+          "value": 4
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_LB_NFC_04": {
+      "description": "Check toggle Cover",
+      "collection_no_have_image": {
+        "collection_name": "Collection 2"
+      },
+      "collection_have_image": {
+        "collection_name": "Collection 1"
+      }
+    },
+    "SB_WEB_BUILDER_LB_NFC_05": {
+      "description": "Check trường cover image",
+      "tooltip_content": "Leave blank to use default collection image",
+      "snapshot_image_popup": "05_snapshot_image_popup.png",
+      "file_image": "data/shopbase/front/background.jpg"
+    },
+    "SB_WEB_BUILDER_LB_NFC_06": {
+      "setting_position": [
+        {
+          "data": "left-top",
+          "index": "0",
+          "text_align": "left",
+          "position": "top"
+        },
+        {
+          "data": "center-top",
+          "index": "1",
+          "text_align": "center",
+          "position": "top"
+        },
+        {
+          "data": "right-top",
+          "index": "2",
+          "text_align": "right",
+          "position": "top"
+        },
+        {
+          "data": "left-center",
+          "index": "3",
+          "text_align": "left",
+          "position": "center"
+        },
+        {
+          "data": "center-center",
+          "index": "4",
+          "text_align": "center",
+          "position": "center"
+        },
+        {
+          "data": "right-center",
+          "index": "5",
+          "text_align": "right",
+          "position": "center"
+        },
+        {
+          "data": "left-bottom",
+          "index": "6",
+          "text_align": "left",
+          "position": "bottom"
+        },
+        {
+          "data": "center-bottom",
+          "index": "7",
+          "text_align": "center",
+          "position": "bottom"
+        },
+        {
+          "data": "right-bottom",
+          "index": "8",
+          "text_align": "right",
+          "position": "bottom"
+        }
+      ],
+      "padding": "24px"
+    },
+    "SB_WEB_BUILDER_LB_NFC_10": {
+      "description": "Check sửa data tab content",
+      "collection_content": {
+        "name": "Collection 1",
+        "description": "Description collection 1",
+        "button_label": "View All"
+      },
+      "content_edit": {
+        "heading": "Auto test featured collection",
+        "description": "Description block featured collection",
+        "button_label": "Shop now"
+      }
+    },
+    "SB_WEB_BUILDER_LB_NFC_08": {
+      "description": "Check data của block featured collection apply thay đổi khi edit/delete/make unavailable collection trong dashboard",
+      "collection_name": "Collection 5",
+      "collection_name_edited": "A Collection new edited",
+      "collection_handle": "collection-edit",
+      "product_names": ["product B", "product C"],
+      "number_of_product": 2
+    },
+    "SB_WEB_BUILDER_LB_NFC_09": {
+      "description": "Check block featured collection trên mobile",
+      "block_data": {
+        "number_of_product": "2",
+        "align_block": "flex-end",
+        "opacity": 80,
+        "radius": 20,
+        "padding": {
+          "top": 0,
+          "left": 0,
+          "bottom": 0,
+          "right": 0,
+          "input": true
+        },
+        "margin": {
+          "top": 0,
+          "left": 0,
+          "bottom": 0,
+          "right": 0,
+          "input": true
+        },
+        "heading": "collection test mobile",
+        "description": "auto test collection",
+        "button_label": "Shop now"
+      },
+      "layout_grid": [
+        {
+          "card_size": "Small",
+          "snapshot_on_WB": "09_layout_grid_small_WB.png",
+          "snapshot_on_SF": "09_layout_grid_small_SF.png"
+        },
+        {
+          "card_size": "Large",
+          "snapshot_on_WB": "09_layout_grid_large_WB.png",
+          "snapshot_on_SF": "09_layout_grid_large_SF.png"
+        }
+      ],
+      "layout_slide": [
+        {
+          "card_size": "Small",
+          "snapshot_on_WB": "09_layout_slide_small_WB.png",
+          "snapshot_on_SF": "09_layout_slide_small_SF.png",
+          "min_width": "256px"
+        },
+        {
+          "card_size": "Large",
+          "snapshot_on_WB": "09_layout_slide_large_WB.png",
+          "snapshot_on_SF": "09_layout_slide_large_SF.png",
+          "min_width": "352px"
+        }
+      ],
+      "layout_mix": {
+        "spacing_layout_mix": 8,
+        "snapshot_on_WB": "09_layout_mix_WB.png",
+        "snapshot_on_SF": "09_layout_mix_SF.png"
+      }
+    },
+    "SB_WEB_BUILDER_LB_NFC_07": {
+      "description": "Check block featured collection với 1 bộ data common",
+      "setting_data": [
+        {
+          "style": {
+            "align": {
+              "label": "align_self",
+              "type": "Right"
+            },
+            "width": {
+              "label": "width",
+              "value": {
+                "unit": "Px",
+                "value": 200
+              }
+            },
+            "background": {
+              "label": "background",
+              "value": {
+                "color": {
+                  "preset": 3,
+                  "opacity": 50
+                }
+              }
+            },
+            "border": {
+              "label": "border",
+              "value": {
+                "thickness": "s",
+                "color": {
+                  "preset": 3,
+                  "opacity": 50
+                }
+              }
+            },
+            "opacity": {
+              "label": "opacity",
+              "config": {
+                "fill": true,
+                "number": 100
+              }
+            },
+            "radius": {
+              "label": "border_radius",
+              "config": {
+                "fill": true,
+                "number": 0
+              }
+            },
+            "shadow": {
+              "label": "box_shadow",
+              "config": {
+                "option": "hard",
+                "size": "M",
+                "direction": "Top Right"
+              }
+            },
+            "padding": {
+              "label": "padding",
+              "value": {
+                "top": 5,
+                "left": 5,
+                "bottom": 5,
+                "right": 5,
+                "input": true
+              }
+            },
+            "margin": {
+              "label": "margin",
+              "value": {
+                "top": 10,
+                "left": 10,
+                "bottom": 10,
+                "right": 10,
+                "input": true
+              }
+            }
+          },
+          "verify_css": {
+            "width_block": 200,
+            "shadow": "rgb(0, 0, 0) 8px -8px 0px 0px",
+            "align_block": "flex-end",
+            "opacity": 100,
+            "radius": 0,
+            "padding": 5,
+            "margin": 10,
+            "background": "rgba(140, 140, 140, 0.5) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "1px solid rgba(140, 140, 140, 0.5)"
+          }
+        },
+        {
+          "style": {
+            "align": {
+              "label": "align_self",
+              "type": "Center"
+            },
+            "width": {
+              "label": "width",
+              "value": {
+                "unit": "Fill"
+              }
+            },
+            "background": {
+              "label": "background",
+              "value": {
+                "color": {
+                  "preset": 2
+                }
+              }
+            },
+            "border": {
+              "label": "border",
+              "value": {
+                "thickness": "l",
+                "color": {
+                  "preset": 5
+                }
+              }
+            },
+            "opacity": {
+              "label": "opacity",
+              "config": {
+                "fill": true,
+                "number": 20
+              }
+            },
+            "radius": {
+              "label": "border_radius",
+              "config": {
+                "fill": true,
+                "number": 15
+              }
+            },
+            "shadow": {
+              "label": "box_shadow",
+              "config": {
+                "option": "hard",
+                "size": "L",
+                "direction": "Bottom Left"
+              }
+            },
+            "padding": {
+              "label": "padding",
+              "value": {
+                "top": 0,
+                "left": 0,
+                "bottom": 0,
+                "right": 0,
+                "input": true
+              }
+            },
+            "margin": {
+              "label": "margin",
+              "value": {
+                "top": 10,
+                "left": 10,
+                "bottom": 10,
+                "right": 10,
+                "input": true
+              }
+            }
+          },
+          "verify_css": {
+            "width_block": 1100,
+            "shadow": "rgb(0, 0, 0) -12px 12px 0px 0px",
+            "align_block": "center",
+            "opacity": 20,
+            "radius": 15,
+            "padding": 0,
+            "margin": 10,
+            "background": "rgba(217, 217, 217, 0.5) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "10px solid rgba(20, 20, 20, 0.5)"
+          }
+        },
+        {
+          "style": {
+            "align": {
+              "label": "align_self",
+              "type": "Center"
+            },
+            "width": {
+              "label": "width",
+              "value": {
+                "unit": "Px",
+                "value": 500
+              }
+            },
+            "background": {
+              "label": "background",
+              "value": {
+                "color": {
+                  "preset": 2
+                }
+              }
+            },
+            "border": {
+              "label": "border",
+              "value": {
+                "thickness": "l",
+                "color": {
+                  "preset": 5
+                }
+              }
+            },
+            "opacity": {
+              "label": "opacity",
+              "config": {
+                "fill": true,
+                "number": 20
+              }
+            },
+            "radius": {
+              "label": "border_radius",
+              "config": {
+                "fill": true,
+                "number": 15
+              }
+            },
+            "shadow": {
+              "label": "box_shadow",
+              "config": {
+                "option": "hard",
+                "size": "L",
+                "direction": "Bottom Left"
+              }
+            },
+            "padding": {
+              "label": "padding",
+              "value": {
+                "top": 0,
+                "left": 0,
+                "bottom": 0,
+                "right": 0,
+                "input": true
+              }
+            },
+            "margin": {
+              "label": "margin",
+              "value": {
+                "top": 0,
+                "left": 0,
+                "bottom": 0,
+                "right": 0,
+                "input": true
+              }
+            }
+          },
+          "verify_css": {
+            "width_block": 500,
+            "shadow": "rgb(0, 0, 0) -12px 12px 0px 0px",
+            "align_block": "center",
+            "opacity": 20,
+            "radius": 15,
+            "padding": 0,
+            "margin": 0,
+            "background": "rgba(217, 217, 217, 0.5) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "10px solid rgba(20, 20, 20, 0.5)"
+          }
+        },
+        {
+          "style": {
+            "align": {
+              "label": "align_self",
+              "type": "Left"
+            },
+            "width": {
+              "label": "width",
+              "value": {
+                "unit": "%",
+                "value": 20
+              }
+            },
+            "background": {
+              "label": "background",
+              "value": {
+                "color": {
+                  "preset": 2
+                }
+              }
+            },
+            "border": {
+              "label": "border",
+              "value": {
+                "thickness": "m",
+                "color": {
+                  "preset": 3,
+                  "opacity": 50
+                }
+              }
+            },
+            "opacity": {
+              "label": "opacity",
+              "config": {
+                "fill": true,
+                "number": 80
+              }
+            },
+            "radius": {
+              "label": "border_radius",
+              "config": {
+                "fill": true,
+                "number": 10
+              }
+            },
+            "shadow": {
+              "label": "box_shadow",
+              "config": {
+                "option": "soft",
+                "size": "S",
+                "direction": "Top Left"
+              }
+            },
+            "padding": {
+              "label": "padding",
+              "value": {
+                "top": 0,
+                "left": 0,
+                "bottom": 0,
+                "right": 0,
+                "input": true
+              }
+            },
+            "margin": {
+              "label": "margin",
+              "value": {
+                "top": 5,
+                "left": 5,
+                "bottom": 5,
+                "right": 5,
+                "input": true
+              }
+            }
+          },
+          "verify_css": {
+            "width_block": 224,
+            "shadow": "rgba(0, 0, 0, 0.12) -4px -4px 12px -4px",
+            "align_block": "flex-start",
+            "opacity": 80,
+            "radius": 10,
+            "padding": 0,
+            "margin": 5,
+            "background": "rgba(217, 217, 217, 0.5) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "4px solid rgba(140, 140, 140, 0.5)"
+          }
+        }
+      ]
+    }
+  }
+}

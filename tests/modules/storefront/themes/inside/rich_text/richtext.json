@@ -1,0 +1,251 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "domain": "au-inside-rich-text.onshopbase.com",
+      "shop_name": "au-inside-rich-text.onshopbase.com",
+      "user_id": 73782,
+      "shop_id": 10365342
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "domain": "au-inside-rich-text-prodtest.onshopbase.com",
+      "shop_name": "au-inside-rich-text-prodtest.onshopbase.com",
+      "user_id": 73782,
+      "shop_id": 10365349,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "domain": "au-inside-rich-text.myshopbase.net",
+      "shop_name": "au-inside-rich-text.myshopbase.net",
+      "user_id": 73800,
+      "shop_id": 10321578
+    }
+  },
+  "cases": {
+    "RICH_TEXT": {
+      "data": [
+        {
+          "description": "Check display Rich text on SF with data default",
+          "case_id": "SB_OLS_THE_INS_SF_RICH_TEXT_1",
+          "expect": {
+            "name_snapshot": "richtext1_default.png"
+          },
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "heading": "ENERGIZE YOUR SHOP, WITH A THEME BUILT FOR SPEED"
+                  },
+                  "type": "heading",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "text": "Roller is next generation ecommerce at its best: an incredibly flexible and sophisticated theme that will make your shop as stunning as it is fast"
+                  },
+                  "type": "description",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "button_label": "View our impressive features here.",
+                    "button_link": "",
+                    "button_type": "text_button"
+                  },
+                  "type": "button",
+                  "visible": true
+                }
+              ],
+              "id": "xmt",
+              "settings": {
+                "heading_position": "margin",
+                "text_alignment": "left"
+              },
+              "type": "rich-text",
+              "visible": true
+            }
+          }
+        },
+        {
+          "description": "Check display Rich text on SF when setting section",
+          "case_id": "SB_OLS_THE_INS_SF_RICH_TEXT_2",
+          "expect": {
+            "name_snapshot": "richtext2_sectionsetting.png",
+            "redirect_link": {
+              "redirect_selector": "[type='rich-text'] a",
+              "redirect_url": "/products/product-1",
+              "wait_element": "[data-id='product']"
+            }
+          },
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "heading": "Rich text heading"
+                  },
+                  "type": "heading",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "text": "<p><span style=\"color: #000000; font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: #ffffff;\">Roller is next generation ecommerce at its best: Rich text section</span></p>"
+                  },
+                  "type": "description",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "button_label": "Rich text button",
+                    "button_link": {
+                      "name": "",
+                      "position": 0,
+                      "subject": {
+                        "handle": "product-1"
+                      },
+                      "type": "products",
+                      "type_options": {
+                        "subject": "",
+                        "subject_id": 1000000435026730,
+                        "title": "product 1"
+                      }
+                    },
+                    "button_type": "text_button"
+                  },
+                  "type": "button",
+                  "visible": true
+                }
+              ],
+              "id": "3of",
+              "settings": {
+                "heading_position": "above",
+                "text_alignment": "center"
+              },
+              "type": "rich-text",
+              "visible": true
+            }
+          }
+        },
+        {
+          "description": "Check display Rich text on SF when button label is blank",
+          "case_id": "SB_OLS_THE_INS_SF_RICH_TEXT_5",
+          "expect": {
+            "name_snapshot": "richtext5_blank_button.png"
+          },
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "heading": "Rich text heading"
+                  },
+                  "type": "heading",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "text": "<p><span style=\"color: #000000; font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: #ffffff;\">Roller is next generation ecommerce at its best: Rich text section</span></p>"
+                  },
+                  "type": "description",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "button_label": "",
+                    "button_link": {
+                      "name": "",
+                      "position": 0,
+                      "subject": {
+                        "handle": "product-1"
+                      },
+                      "type": "products",
+                      "type_options": {
+                        "subject": "",
+                        "subject_id": 1000000435026866,
+                        "title": "product 1"
+                      }
+                    },
+                    "button_type": "text_button"
+                  },
+                  "type": "button",
+                  "visible": true
+                }
+              ],
+              "id": "DsP",
+              "settings": {
+                "heading_position": "above",
+                "text_alignment": "center"
+              },
+              "type": "rich-text",
+              "visible": true
+            }
+          }
+        },
+        {
+          "description": "Check display Rich text on SF when drap/drop block",
+          "case_id": "SB_OLS_THE_INS_SF_RICH_TEXT_7",
+          "expect": {
+            "name_snapshot": "richtext7_drapdrop.png"
+          },
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "button_label": "Rich text button",
+                    "button_link": {
+                      "name": "",
+                      "position": 0,
+                      "subject": {
+                        "handle": "faq"
+                      },
+                      "type": "pages",
+                      "type_options": {
+                        "subject": "",
+                        "subject_id": 85294247355,
+                        "title": "FAQs"
+                      }
+                    },
+                    "button_type": "display_as_a_button"
+                  },
+                  "type": "button",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "heading": "Rich text heading"
+                  },
+                  "type": "heading",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "text": "<p><span style=\"color: #000000; font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: #ffffff;\">Roller is next generation ecommerce at its best: Rich text section</span></p>"
+                  },
+                  "type": "description",
+                  "visible": true
+                }
+              ],
+              "id": "Pd9",
+              "settings": {
+                "heading_position": "above",
+                "text_alignment": "right"
+              },
+              "type": "rich-text",
+              "visible": true
+            }
+          }
+        }
+      ]
+    }
+  }
+}

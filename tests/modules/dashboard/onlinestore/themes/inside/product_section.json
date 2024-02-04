@@ -1,0 +1,368 @@
+{
+  "api": "https://api.shopbase.com",
+  "domain": "au-inside-productpagev2.onshopbase.com",
+  "shop_name": "au-inside-productpagev2",
+  "username": "shopbase@beeketing.net",
+  "shop_id": 10295885,
+  "user_id": 73782,
+  "password": "Q(f!3Kx+6n;?Us%F",
+  "timeout": "180000",
+  "cases": {
+    "TC_INS_DB_Product_Default": {
+      "blocks": [
+        {
+          "selector": "[data-section-label=\"Product\"] [data-block-label=\"Product title\"]",
+          "count": 1
+        },
+        {
+          "selector": "[data-section-label=\"Product\"] [data-block-label=\"Review\"]",
+          "count": 1
+        },
+        {
+          "selector": "[data-section-label=\"Product\"] [data-block-label=\"Price\"]",
+          "count": 1
+        },
+        {
+          "selector": "[data-section-label=\"Product\"] [data-block-label=\"Timer countdown\"]",
+          "count": 1
+        },
+        {
+          "selector": "[data-section-label=\"Product\"] [data-block-label=\"Product countdown\"]",
+          "count": 1
+        },
+        {
+          "selector": "[data-section-label=\"Product\"] [data-block-label=\"Variants selector\"]",
+          "count": 1
+        },
+        {
+          "selector": "[data-section-label=\"Product\"] [data-block-label=\"Realtime visitors\"]",
+          "count": 1
+        },
+        {
+          "selector": "[data-section-label=\"Product\"] [data-block-label=\"Buy buttons\"]",
+          "count": 1
+        },
+        {
+          "selector": "[data-section-label=\"Product\"] [data-block-label=\"Estimate shipping time\"]",
+          "count": 1
+        },
+        {
+          "selector": "[data-section-label=\"Product\"] [data-block-label=\"Quantity discount\"]",
+          "count": 1
+        },
+        {
+          "selector": "[data-section-label=\"Product\"] [data-block-label=\"Bundles\"]",
+          "count": 1
+        },
+        {
+          "selector": "[data-section-label=\"Product\"] [data-block-label=\"Accessories\"]",
+          "count": 1
+        },
+        {
+          "selector": "[data-section-label=\"Product\"] [data-block-label=\"Trust badge\"]",
+          "count": 1
+        },
+        {
+          "selector": "[data-section-label=\"Product\"] [data-block-label=\"Collections\"]",
+          "count": 1
+        },
+        {
+          "selector": "[data-section-label=\"Product\"] [data-block-label=\"Social share buttons\"]",
+          "count": 1
+        },
+        {
+          "selector": "[data-section-label=\"Product\"] [data-block-label=\"Product description\"]",
+          "count": 1
+        },
+        {
+          "selector": "[data-section-label=\"Product\"] [data-block-label=\"Collapse tab\"]",
+          "count": 2
+        }
+      ]
+    },
+    "TC_INS_DB_Product_Add_Remove_Show_Hide_Duplicate_Blocks": {
+      "blocks_default": ["Product title", "Price", "Variants selector", "Buy buttons", "Estimate shipping time"],
+      "blocks_default_can_show_hide": "Estimate shipping time",
+      "blocks_default_can_remove": [
+        "Review",
+        "Timer countdown",
+        "Product countdown",
+        "Realtime visitors",
+        "Quantity discount",
+        "Bundles",
+        "Accessories",
+        "Trust badge",
+        "Collections",
+        "Social share buttons",
+        "Product description",
+        "Collapse tab",
+        "Collapse tab"
+      ],
+      "blocks_can_add": [
+        "Product SKU",
+        "Vendor",
+        "Product tags",
+        "Product type",
+        "Collections",
+        "Trust badge",
+        "Social share buttons",
+        "Product description",
+        "Collapse tab",
+        "Page",
+        "Text",
+        "Bundles",
+        "Accessories",
+        "Quantity discount",
+        "Review",
+        "Timer countdown",
+        "Product countdown",
+        "Realtime visitors"
+      ],
+      "blocks_add_section": [
+        "Product SKU",
+        "Vendor",
+        "Product tags",
+        "Product type",
+        "Collections",
+        "Trust badge",
+        "Social share buttons",
+        "Product description",
+        "Bundles",
+        "Accessories",
+        "Quantity discount",
+        "Review",
+        "Timer countdown",
+        "Product countdown",
+        "Realtime visitors"
+      ],
+      "blocks_can_add_multiple": ["Collapse tab", "Page", "Text"]
+    },
+    "TC_INS_DB_Product_Default_Setting": {
+      "product_settings_default": [
+        {
+          "selector": "label[data-key=\"auto_scroll_over_header\"] input",
+          "expected": {}
+        },
+        {
+          "selector": "label[data-key=\"enable_breadcrumb\"] input",
+          "expected": {}
+        },
+        {
+          "selector": "label[data-key=\"show_sticky_button_on_desktop\"] input",
+          "expected": {}
+        },
+        {
+          "selector": "label[data-key=\"show_sticky_button_on_mobile\"] input",
+          "expected": {}
+        }
+      ],
+      "customize_settings_default": [
+        {
+          "selector": "[data-key=\"photo_list\"] button",
+          "expected": "All photos",
+          "is_dropdown": true
+        },
+        {
+          "selector": "label[data-key=\"enable_image_zoom\"] input",
+          "expected": {}
+        },
+        {
+          "selector": "label[data-key=\"enable_carousel_custom_option\"] input",
+          "expected": {}
+        },
+        {
+          "selector": "label[data-key=\"product_title_top\"] input",
+          "expected": {}
+        },
+        {
+          "selector": "[data-key=\"template_product\"] button",
+          "expected": "Description on the right",
+          "is_dropdown": true
+        }
+      ],
+      "description_positions": ["Description on the right", "Description below product form"]
+    },
+    "TC_INS_DB_Product_Default_Block_Price": {
+      "customize_settings_default": [
+        {
+          "selector": "[data-key=\"saving_format\"] button",
+          "expected": "Amount",
+          "is_dropdown": true
+        },
+        {
+          "selector": "label[data-key=\"show_price_savings\"] input",
+          "expected": {}
+        },
+        {
+          "selector": "label[data-key=\"show_compare_at_price\"] input",
+          "expected": {}
+        }
+      ],
+      "sale_type": ["Amount", "Percentage"]
+    },
+    "TC_INS_DB_Product_Default_Block_Buy_Buttons": {
+      "customize_settings_default": [
+        {
+          "selector": "label[data-key=\"show_quantity_box\"] input",
+          "expected": {}
+        },
+        {
+          "selector": "label[data-key=\"show_quantity_box_and_add_cart_button\"] input",
+          "expected": {
+            "checked": false
+          }
+        },
+        {
+          "selector": "label[data-key=\"enable_same_line_quantity_box\"] input",
+          "expected": {
+            "checked": false
+          }
+        },
+        {
+          "selector": "label[data-key=\"show_dynamic_checkout_button\"] input",
+          "expected": {
+            "checked": false
+          }
+        }
+      ],
+      "uncheck_show_quantity": [
+        {
+          "selector": "label[data-key=\"show_quantity_box\"] input",
+          "expected": {
+            "checked": false
+          }
+        },
+        {
+          "selector": "label[data-key=\"show_quantity_box_and_add_cart_button\"] input",
+          "expected": {
+            "checked": false
+          }
+        },
+        {
+          "selector": "label[data-key=\"show_dynamic_checkout_button\"] input",
+          "expected": {
+            "checked": false
+          }
+        }
+      ],
+      "checked_show_dynamic_checkout": [
+        {
+          "selector": "label[data-key=\"show_quantity_box\"] input",
+          "expected": {}
+        },
+        {
+          "selector": "label[data-key=\"show_quantity_box_and_add_cart_button\"] input",
+          "expected": {
+            "checked": false
+          }
+        },
+        {
+          "selector": "label[data-key=\"enable_same_line_quantity_box\"] input",
+          "expected": {
+            "checked": false
+          }
+        },
+        {
+          "selector": "label[data-key=\"show_dynamic_checkout_button\"] input",
+          "expected": {}
+        },
+        {
+          "selector": "label[data-key=\"buy_with_paypal\"] input",
+          "expected": {
+            "checked": false
+          }
+        }
+      ]
+    },
+    "TC_INS_DB_Product_Default_Block_Variant": {
+      "customize_settings_default": [
+        {
+          "selector": "[data-key=\"options_style\"] button",
+          "expected": "Buttons",
+          "is_dropdown": true
+        },
+        {
+          "selector": "label[data-key=\"hide_selector_enable\"] input",
+          "expected": {}
+        },
+        {
+          "selector": "label[data-key=\"link_product_options\"] input",
+          "expected": {
+            "checked": false
+          }
+        },
+        {
+          "selector": "label[data-key=\"enable_select_variant_by_image\"] input",
+          "expected": {
+            "checked": false
+          }
+        },
+        {
+          "selector": "label[data-key=\"enable_group_swatches\"] input",
+          "expected": {}
+        },
+        {
+          "selector": "label[data-key=\"enable_color_swatches\"] input",
+          "expected": {}
+        }
+      ],
+      "options_style": ["Buttons", "Dropdown"]
+    },
+    "TC_INS_DB_Product_Default_Block_Social": {
+      "key_settings": ["enable_facebook", "enable_tweet", "enable_pinterest"]
+    },
+    "TC_INS_DB_Product_Change_Block_Text": {
+      "style": ["Bodytext", "Subtitle", "Uppercase"]
+    },
+    "TC_INS_DB_Product_Change_Block_Third_Party_App": {
+      "upsell": [
+        {
+          "label": "Quantity discount",
+          "title_expect": "Quantity discounts"
+        },
+        {
+          "label": "Bundles",
+          "title_expect": "Bundles"
+        },
+        {
+          "label": "Accessories",
+          "title_expect": "Accessories"
+        }
+      ],
+      "boost_convert": [
+        {
+          "label": "Timer countdown",
+          "title_selector": "#timer-countdown-list > div .fs-large",
+          "title_expect": "Timer list"
+        },
+        {
+          "label": "Product countdown",
+          "title_selector": ".product-countdown .offer-heading h2",
+          "title_expect": "Product countdown"
+        },
+        {
+          "label": "Realtime visitors",
+          "title_selector": ".realtime-visitors .offer-heading h2",
+          "title_expect": "Real-time visitors"
+        }
+      ]
+    },
+    "TC_INS_DB_Product_Change_Block_No_Customize": {
+      "blocks": [
+        "Product title",
+        "Product SKU",
+        "Vendor",
+        "Collections",
+        "Product type",
+        "Product tags",
+        "Estimate shipping time"
+      ]
+    }
+  },
+  "env": {
+    "prodtest": {
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://prod-test-api.shopbase.com"
+    }
+  }
+}

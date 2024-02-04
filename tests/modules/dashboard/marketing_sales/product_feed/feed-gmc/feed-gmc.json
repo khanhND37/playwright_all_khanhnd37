@@ -1,0 +1,246 @@
+{
+  "env": {
+    "dev": {
+      "domain": "au-sale-channel-gmc-dev.myshopbase.net",
+      "api": "https://gapi.dev.shopbase.net",
+      "shop_name": "au-sale-channel-gmc-dev",
+      "username": "shopbase@beeketing.net",
+      "user_id": 73800,
+      "shop_id": 10327343,
+      "password": "S#|j>m2N[q",
+      "public_domain": "au-sale-channel-gmc-dev.myshopbase.net",
+      "gmc_acc": "gmcocg3@gmail.com",
+      "gmc_pass": "Abc123!@#",
+      "google_credentials": {
+        "email": "gmcocg3@gmail.com",
+        "password": "Abc123!@#"
+      }
+    },
+    "prodtest": {
+      "domain": "au-sale-channel-gmc-prodtest.onshopbase.com",
+      "user_id": 73782,
+      "shop_id": 10431135,
+      "api": "https://prod-test-api.shopbase.com",
+      "shop_name": "au-sale-channel-gmc-prodtest",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "public_domain": "au-sale-channel-domain-prodtest.sbprod.tk",
+      "gmc_acc": "gmcocg5@gmail.com",
+      "gmc_pass": "Abc123!@#",
+      "accounts_domain": "accounts-test.shopbase.com",
+      "google_credentials": {
+        "email": "gmcocg5@gmail.com",
+        "password": "Abc123!@#"
+      }
+    },
+    "prod": {
+      "domain": "au-sale-channel-gmc.onshopbase.com",
+      "user_id": 73782,
+      "shop_id": 10431131,
+      "api": "https://api.shopbase.com",
+      "shop_name": "au-sale-channel-gmc",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "public_domain": "au-sale-channel-domain.sbprod.tk",
+      "gmc_acc": "gmcocg4@gmail.com",
+      "gmc_pass": "Abc123!@#",
+      "google_credentials": {
+        "email": "gmcocg4@gmail.com",
+        "password": "Abc123!@#"
+      }
+    }
+  },
+  "time_out": 500000,
+  "max_diff_pixel_ratio": 0.05,
+  "threshold": 0.5,
+  "max_diff_pixels": 2000,
+  "cases": {
+    "SB_SET_SC_GMC_1": {
+      "feed_info_1": [
+        {
+          "name": "Feed API test back to all product",
+          "feed_type": "All products",
+          "sales_channel": "Google",
+          "export_mode": "Export only first variation of a product",
+          "add_variant_option_to_title": 1,
+          "product_title_mode": "seo_title",
+          "product_description_mode": "seo_description",
+          "is_custom_products": false,
+          "brand": "Super testing man",
+          "google_product_category": "Apparel & Accessories",
+          "gender": "male",
+          "age_group": "toddler"
+        }
+      ],
+      "product_no_img": {
+        "title": "Product no image",
+        "description": "Product no image"
+      },
+      "feed_info_2": [
+        {
+          "name": "Feed API test no image",
+          "feed_type": "All products",
+          "sales_channel": "Google",
+          "export_mode": "Export all variations of a product",
+          "add_variant_option_to_title": 1,
+          "product_title_mode": "default_title",
+          "product_description_mode": "default_description",
+          "is_custom_products": false,
+          "brand": "Super testing man",
+          "google_product_category": "Apparel & Accessories",
+          "gender": "unisex",
+          "age_group": "adult"
+        }
+      ]
+    },
+    "SB_SET_SC_GMC_2": {
+      "feed_info": [
+        {
+          "name": "Feed API test SB_SET_SC_GMC_2",
+          "feed_type": "All products",
+          "sales_channel": "Google",
+          "export_mode": "Export all variations of a product",
+          "add_variant_option_to_title": 1,
+          "product_title_mode": "default_title",
+          "product_description_mode": "default_description",
+          "is_custom_products": false,
+          "brand": "Super testing man",
+          "google_product_category": "Apparel & Accessories",
+          "gender": "unisex",
+          "age_group": "adult"
+        }
+      ],
+      "product_2": {
+        "title": "Product SB_SET_SC_GMC_2",
+        "description": "Product SB_SET_SC_GMC_2",
+        "image_name": "Logo1.jpg",
+        "image_URL": "https://statics.pancake.vn/web-media/8e/70/4a/34/111b1be7be1c193e1da233094ec6539e3687b78a6f845eca4b78c1ea.jpg"
+      }
+    },
+    "SB_SET_SC_GMC_5": {
+      "feed_info_old": [
+        {
+          "name": "Feed API test update",
+          "feed_type": "All products",
+          "sales_channel": "Google",
+          "export_mode": "Export only first variation of a product",
+          "add_variant_option_to_title": 1,
+          "product_title_mode": "seo_title",
+          "product_description_mode": "seo_description",
+          "is_custom_products": false,
+          "brand": "Super testing man",
+          "google_product_category": "Apparel & Accessories",
+          "gender": "male",
+          "age_group": "toddler"
+        }
+      ],
+      "feed_info_new": [
+        {
+          "name": "Feed API test update",
+          "feed_type": "All products",
+          "sales_channel": "Google",
+          "export_mode": "Export all variations of a product",
+          "add_variant_option_to_title": 1,
+          "product_title_mode": "default_title",
+          "product_description_mode": "default_description",
+          "is_custom_products": false,
+          "brand": "Super testing man",
+          "google_product_category": "Apparel & Accessories",
+          "gender": "unisex",
+          "age_group": "adult"
+        }
+      ]
+    },
+    "SB_SET_SC_GMC_14": {
+      "feed_info": [
+        {
+          "name": "Feed API test SB_SET_SC_GMC_14",
+          "feed_type": "All products",
+          "sales_channel": "Google",
+          "export_mode": "Export all variations of a product",
+          "add_variant_option_to_title": 1,
+          "product_title_mode": "seo_title",
+          "product_description_mode": "seo_description",
+          "is_custom_products": false,
+          "brand": "Super testing man",
+          "google_product_category": "Apparel & Accessories",
+          "gender": "male",
+          "age_group": "toddler"
+        }
+      ],
+      "product_type": "Polo Shirt",
+      "size": "M"
+    },
+    "SB_SET_SC_GMC_10": {
+      "feed_info": [
+        {
+          "name": "Feed API test SB_SET_SC_GMC_10",
+          "feed_type": "All products",
+          "sales_channel": "Google",
+          "export_mode": "Export only first variation of a product",
+          "add_variant_option_to_title": 1,
+          "product_title_mode": "seo_title",
+          "product_description_mode": "seo_description",
+          "is_custom_products": false,
+          "brand": "Super testing man",
+          "google_product_category": "Apparel & Accessories",
+          "gender": "unisex",
+          "age_group": "toddler"
+        }
+      ],
+      "update_product_feed_info": {
+        "id": "Test id of this product variant",
+        "availability": "in stock",
+        "condition": "used",
+        "description": "Update in CSV file",
+        "image_link": "https://cdn.pixabay.com/photo/2013/07/12/17/47/test-pattern-152459_960_720.png",
+        "title": "Product update in CSV",
+        "price": 10000,
+        "brand": "Test this brand",
+        "age_group": "toddler",
+        "color": "Super black",
+        "gender": "unisex",
+        "item_group_id": "Test item group id",
+        "google_product_category": "Apparel & Accessories",
+        "material": "Digital",
+        "pattern": "Layer 1",
+        "product_type": "Test > Test item group products > Test product",
+        "shipping_weight": "100 g",
+        "size": "XML",
+        "custom_label_0": "Custom test 0",
+        "custom_label_1": "Custom test 1",
+        "custom_label_2": "Custom test 2",
+        "custom_label_3": "Custom test 3",
+        "custom_label_4": "Custom test 4",
+        "identifier_exists": true,
+        "ads_label": "Ads label testing",
+        "ads_grouping": "test ads",
+        "shipping_label": "Test shipping",
+        "product_identifier": "default",
+        "size_system": "EU",
+        "size_type": "regular",
+        "unit_pricing_measure": "15g",
+        "unit_pricing_base_measure": "15g"
+      }
+    },
+    "SB_SET_SC_GMC_RF_4": {
+      "feed_info": [
+        {
+          "name": "Feed file SB_SET_SC_GMC_RF_4",
+          "feed_type": "All products",
+          "sales_channel": "Others",
+          "export_mode": "Export only first variation of a product",
+          "add_variant_option_to_title": 1,
+          "product_title_mode": "default_title",
+          "product_description_mode": "default_description",
+          "is_custom_products": false,
+          "brand": "Super testing man",
+          "google_product_category": "Apparel & Accessories",
+          "gender": "male",
+          "age_group": "toddler"
+        }
+      ],
+      "new_product_title": "New Title for case SB_SET_SC_GMC_RF_4"
+    }
+  }
+}

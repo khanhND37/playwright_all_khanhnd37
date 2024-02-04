@@ -1,0 +1,4379 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-customize-multi-group-co.onshopbase.com",
+      "username": "acon-qe-1@beeketing.net",
+      "password": "%zF72w9k7g%_Jwj",
+      "user_id": 11260208,
+      "shop_id": 10474691,
+      "shop_name": "au-customize-multi-group-co",
+      "timeout": 1500000
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-customize-multi-group-co-prodtest.onshopbase.com",
+      "shop_name": "au-customize-multi-group-co-prodtest",
+      "user_id": 11260208,
+      "shop_id": 10474692,
+      "username": "acon-qe-1@beeketing.net",
+      "password": "%zF72w9k7g%_Jwj",
+      "accounts_domain": "accounts-test.shopbase.com",
+      "timeout": 1500000
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-customize-group-co-dev.myshopbase.net",
+      "shop_name": "au-customize-group-co-dev",
+      "user_id": 73800,
+      "shop_id": 10321680,
+      "username": "acon-qe-1@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "timeout": 1500000,
+      "cases": {
+        "DATA_DRIVEN": {
+          "data": [
+            {
+              "case_id": "SB_CGSB_25",
+              "description": "Verify customize group khi có nhiều group layer và nhiều custom option với layer image thường khi tạo cả preview image và print file",
+              "product_info": {
+                "title": "SB_CGSB_25",
+                "image_name": "thuy.jpg",
+                "description": "SB_CGSB_25",
+                "price": "10"
+              },
+              "picture": {
+                "list_custom_option": "list-custom-option-dev.png",
+                "customize_group_detail": "customize-group-detail-dev.png",
+                "conditional_logic": "conditional-logic-dev.png",
+                "list_custom_option_print_file": "list-custom-option-print-file-dev.png",
+                "image_instant_preview": "image-instant-preview-dev",
+                "image_preview": "image-preview-dev",
+                "gen_print_file": "gen-print-file-dev.png"
+              },
+              "image_mockup": "thuy1.jpg",
+              "button_click_open_editor": "Create Preview image",
+              "print_file_mockup": "thuy1.jpg",
+              "layers": [
+                {
+                  "layer_type": "Text",
+                  "layer_value": "Cat 1",
+                  "location_layer_x": "90",
+                  "location_layer_y": "327",
+                  "layer_size_h": "28",
+                  "layer_size_w": "133",
+                  "layer_name": "Text layer 1",
+                  "layer_name_new": "Name Cat 1",
+                  "color": "#7ED321"
+                },
+                {
+                  "layer_type": "Image",
+                  "image_name": "Cat 1.jpg",
+                  "location_layer_x": "102",
+                  "location_layer_y": "212",
+                  "layer_size_h": "109",
+                  "layer_size_w": "109"
+                },
+                {
+                  "layer_type": "Text",
+                  "layer_value": "Cat 2",
+                  "location_layer_x": "193",
+                  "location_layer_y": "327",
+                  "layer_size_h": "25",
+                  "layer_size_w": "121",
+                  "layer_name": "Text layer 1",
+                  "layer_name_new": "Name Cat 2",
+                  "color": "#7ED321"
+                },
+                {
+                  "layer_type": "Image",
+                  "image_name": "Cat 2.jpg",
+                  "location_layer_x": "198",
+                  "location_layer_y": "210",
+                  "layer_size_h": "109",
+                  "layer_size_w": "109"
+                },
+                {
+                  "layer_type": "Text",
+                  "layer_value": "Cat 3",
+                  "location_layer_x": "275",
+                  "location_layer_y": "327",
+                  "layer_size_h": "25",
+                  "layer_size_w": "118",
+                  "layer_name": "Text layer 1",
+                  "layer_name_new": "Name Cat 3",
+                  "color": "#7ED321"
+                },
+                {
+                  "layer_type": "Image",
+                  "image_name": "Cat 3.png",
+                  "location_layer_x": "275",
+                  "location_layer_y": "209",
+                  "layer_size_h": "109",
+                  "layer_size_w": "109"
+                },
+                {
+                  "layer_type": "Text",
+                  "layer_value": "Cat 4",
+                  "location_layer_x": "376",
+                  "location_layer_y": "330",
+                  "layer_size_h": "24",
+                  "layer_size_w": "117",
+                  "layer_name": "Text layer 1",
+                  "layer_name_new": "Name Cat 4",
+                  "color": "#7ED321"
+                },
+                {
+                  "layer_type": "Image",
+                  "image_name": "Cat 4.png",
+                  "location_layer_x": "371",
+                  "location_layer_y": "208",
+                  "layer_size_h": "109",
+                  "layer_size_w": "109"
+                }
+              ],
+              "groups": [
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 1"
+                },
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 2"
+                },
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 3"
+                },
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 4"
+                }
+              ],
+              "add_layers_to_group": [
+                {
+                  "layer_name": "Name Cat 1, Cat 1",
+                  "group_name": "Group 1"
+                },
+                {
+                  "layer_name": "Name Cat 1, Cat 1, Name Cat 2, Cat 2",
+                  "group_name": "Group 2"
+                },
+                {
+                  "layer_name": "Name Cat 1, Cat 1, Name Cat 2, Cat 2, Name Cat 3, Cat 3",
+                  "group_name": "Group 3"
+                },
+                {
+                  "layer_name": "Name Cat 1, Cat 1, Name Cat 2, Cat 2, Name Cat 3, Cat 3, Name Cat 4, Cat 4",
+                  "group_name": "Group 4"
+                }
+              ],
+              "customize_group": {
+                "option_group": "Droplist",
+                "label_group": "Number of Cat",
+                "group_name": "Group 4, Group 3, Group 2, Group 1",
+                "default_value": "Group 4"
+              },
+              "custom_option": [
+                {
+                  "type": "Text field",
+                  "target_layer": "Name Cat 1",
+                  "label": "Name Cat 1",
+                  "allow_character": "Characters, Numbers",
+                  "position": "below"
+                },
+                {
+                  "type": "Image",
+                  "target_layer": "Cat 1",
+                  "label": "Image Cat 1",
+                  "position": "below"
+                },
+                {
+                  "type": "Text field",
+                  "target_layer": "Name Cat 2",
+                  "label": "Name Cat 2",
+                  "allow_character": "Characters, Numbers",
+                  "position": "below"
+                },
+                {
+                  "type": "Image",
+                  "target_layer": "Cat 2",
+                  "label": "Image Cat 2",
+                  "position": "below"
+                },
+                {
+                  "type": "Text field",
+                  "target_layer": "Name Cat 3",
+                  "label": "Name Cat 3",
+                  "allow_character": "Characters, Numbers",
+                  "position": "below"
+                },
+                {
+                  "type": "Image",
+                  "target_layer": "Cat 3",
+                  "label": "Image Cat 3",
+                  "position": "below"
+                },
+                {
+                  "type": "Text field",
+                  "target_layer": "Name Cat 4",
+                  "label": "Name Cat 4",
+                  "allow_character": "Characters, Numbers",
+                  "position": "below"
+                },
+                {
+                  "type": "Image",
+                  "target_layer": "Cat 4",
+                  "label": "Image Cat 4"
+                }
+              ],
+              "custom_options_sf": [
+                [
+                  {
+                    "custom_name": "Number of Cat",
+                    "type": "Droplist",
+                    "value": "Group 1"
+                  },
+                  {
+                    "custom_name": "Name Cat 1",
+                    "type": "Text field",
+                    "value": "Name 1"
+                  },
+                  {
+                    "custom_name": "Image Cat 1",
+                    "type": "Image",
+                    "value": "BD_1.png"
+                  }
+                ],
+                [
+                  {
+                    "custom_name": "Number of Cat",
+                    "type": "Droplist",
+                    "value": "Group 2"
+                  },
+                  {
+                    "custom_name": "Name Cat 2",
+                    "type": "Text field",
+                    "value": "Name 2"
+                  },
+                  {
+                    "custom_name": "Image Cat 2",
+                    "type": "Image",
+                    "value": "BD_2.png"
+                  }
+                ],
+                [
+                  {
+                    "custom_name": "Number of Cat",
+                    "type": "Droplist",
+                    "value": "Group 3"
+                  },
+                  {
+                    "custom_name": "Name Cat 3",
+                    "type": "Text field",
+                    "value": "Name 3"
+                  },
+                  {
+                    "custom_name": "Image Cat 3",
+                    "type": "Image",
+                    "value": "BD_3.png"
+                  }
+                ],
+                [
+                  {
+                    "custom_name": "Number of Cat",
+                    "type": "Droplist",
+                    "value": "Group 4"
+                  },
+                  {
+                    "custom_name": "Name Cat 4",
+                    "type": "Text field",
+                    "value": "Name 4"
+                  },
+                  {
+                    "custom_name": "Image Cat 4",
+                    "type": "Image",
+                    "value": "BD_4.png"
+                  }
+                ]
+              ]
+            },
+            {
+              "case_id": "SB_CGSB_24",
+              "description": "Verify customize group khi có nhiều group layer và nhiều custom option với layer image thường khi chỉ tạo print file",
+              "product_info": {
+                "title": "SB_CGSB_24",
+                "image_name": "thuy.jpg",
+                "description": "SB_CGSB_24",
+                "price": "10"
+              },
+              "picture": {
+                "list_custom_option": "list-custom-option-dev.png",
+                "customize_group_detail": "customize-group-detail-dev.png",
+                "conditional_logic": "conditional-logic-dev.png",
+                "list_custom_option_print_file": "list-custom-option-print-file-dev.png",
+                "image_instant_preview": "image-instant-preview-dev",
+                "image_preview": "image-preview-dev",
+                "gen_print_file": "gen-print-file-dev.png"
+              },
+              "image_mockup": "thuy1.jpg",
+              "button_click_open_editor": "Create Print file",
+              "layers": [
+                {
+                  "layer_type": "Text",
+                  "layer_value": "Cat 1",
+                  "location_layer_x": "90",
+                  "location_layer_y": "327",
+                  "layer_size_h": "28",
+                  "layer_size_w": "133",
+                  "layer_name": "Text layer 1",
+                  "layer_name_new": "Name Cat 1",
+                  "color": "#7ED321"
+                },
+                {
+                  "layer_type": "Image",
+                  "image_name": "Cat 1.jpg",
+                  "location_layer_x": "102",
+                  "location_layer_y": "212",
+                  "layer_size_h": "109",
+                  "layer_size_w": "109"
+                },
+                {
+                  "layer_type": "Text",
+                  "layer_value": "Cat 2",
+                  "location_layer_x": "193",
+                  "location_layer_y": "327",
+                  "layer_size_h": "25",
+                  "layer_size_w": "121",
+                  "layer_name": "Text layer 1",
+                  "layer_name_new": "Name Cat 2",
+                  "color": "#7ED321"
+                },
+                {
+                  "layer_type": "Image",
+                  "image_name": "Cat 2.jpg",
+                  "location_layer_x": "198",
+                  "location_layer_y": "210",
+                  "layer_size_h": "109",
+                  "layer_size_w": "109"
+                },
+                {
+                  "layer_type": "Text",
+                  "layer_value": "Cat 3",
+                  "location_layer_x": "275",
+                  "location_layer_y": "327",
+                  "layer_size_h": "25",
+                  "layer_size_w": "118",
+                  "layer_name": "Text layer 1",
+                  "layer_name_new": "Name Cat 3",
+                  "color": "#7ED321"
+                },
+                {
+                  "layer_type": "Image",
+                  "image_name": "Cat 3.png",
+                  "location_layer_x": "275",
+                  "location_layer_y": "209",
+                  "layer_size_h": "109",
+                  "layer_size_w": "109"
+                },
+                {
+                  "layer_type": "Text",
+                  "layer_value": "Cat 4",
+                  "location_layer_x": "376",
+                  "location_layer_y": "330",
+                  "layer_size_h": "24",
+                  "layer_size_w": "117",
+                  "layer_name": "Text layer 1",
+                  "layer_name_new": "Name Cat 4",
+                  "color": "#7ED321"
+                },
+                {
+                  "layer_type": "Image",
+                  "image_name": "Cat 4.png",
+                  "location_layer_x": "371",
+                  "location_layer_y": "208",
+                  "layer_size_h": "109",
+                  "layer_size_w": "109"
+                }
+              ],
+              "groups": [
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 1"
+                },
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 2"
+                },
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 3"
+                },
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 4"
+                }
+              ],
+              "add_layers_to_group": [
+                {
+                  "layer_name": "Name Cat 1, Cat 1",
+                  "group_name": "Group 1"
+                },
+                {
+                  "layer_name": "Name Cat 1, Cat 1, Name Cat 2, Cat 2",
+                  "group_name": "Group 2"
+                },
+                {
+                  "layer_name": "Name Cat 1, Cat 1, Name Cat 2, Cat 2, Name Cat 3, Cat 3",
+                  "group_name": "Group 3"
+                },
+                {
+                  "layer_name": "Name Cat 1, Cat 1, Name Cat 2, Cat 2, Name Cat 3, Cat 3, Name Cat 4, Cat 4",
+                  "group_name": "Group 4"
+                }
+              ],
+              "customize_group": {
+                "option_group": "Droplist",
+                "label_group": "Number of Cat",
+                "group_name": "Group 4, Group 3, Group 2, Group 1",
+                "default_value": "Group 4"
+              },
+              "custom_option": [
+                {
+                  "type": "Text field",
+                  "target_layer": "Name Cat 1",
+                  "label": "Name Cat 1",
+                  "allow_character": "Characters, Numbers",
+                  "position": "below"
+                },
+                {
+                  "type": "Image",
+                  "target_layer": "Cat 1",
+                  "label": "Image Cat 1",
+                  "position": "below"
+                },
+                {
+                  "type": "Text field",
+                  "target_layer": "Name Cat 2",
+                  "label": "Name Cat 2",
+                  "allow_character": "Characters, Numbers",
+                  "position": "below"
+                },
+                {
+                  "type": "Image",
+                  "target_layer": "Cat 2",
+                  "label": "Image Cat 2",
+                  "position": "below"
+                },
+                {
+                  "type": "Text field",
+                  "target_layer": "Name Cat 3",
+                  "label": "Name Cat 3",
+                  "allow_character": "Characters, Numbers",
+                  "position": "below"
+                },
+                {
+                  "type": "Image",
+                  "target_layer": "Cat 3",
+                  "label": "Image Cat 3",
+                  "position": "below"
+                },
+                {
+                  "type": "Text field",
+                  "target_layer": "Name Cat 4",
+                  "label": "Name Cat 4",
+                  "allow_character": "Characters, Numbers",
+                  "position": "below"
+                },
+                {
+                  "type": "Image",
+                  "target_layer": "Cat 4",
+                  "label": "Image Cat 4"
+                }
+              ],
+              "custom_options_sf": [
+                {
+                  "custom_name": "Number of Cat",
+                  "type": "Droplist",
+                  "value": "Group 4"
+                },
+                {
+                  "custom_name": "Name Cat 1",
+                  "type": "Text field",
+                  "value": "Name 1"
+                },
+                {
+                  "custom_name": "Image Cat 1",
+                  "type": "Image",
+                  "value": "BD_1.png",
+                  "hide_popover_crop": true
+                },
+                {
+                  "custom_name": "Name Cat 2",
+                  "type": "Text field",
+                  "value": "Name 2"
+                },
+                {
+                  "custom_name": "Image Cat 2",
+                  "type": "Image",
+                  "value": "BD_2.png",
+                  "hide_popover_crop": true
+                },
+                {
+                  "custom_name": "Name Cat 3",
+                  "type": "Text field",
+                  "value": "Name 3"
+                },
+                {
+                  "custom_name": "Image Cat 3",
+                  "type": "Image",
+                  "value": "BD_3.png",
+                  "hide_popover_crop": true
+                },
+                {
+                  "custom_name": "Name Cat 4",
+                  "type": "Text field",
+                  "value": "Name 4"
+                },
+                {
+                  "custom_name": "Image Cat 4",
+                  "type": "Image",
+                  "value": "BD_4.png",
+                  "hide_popover_crop": true
+                }
+              ]
+            },
+            {
+              "case_id": "SB_CGSB_23",
+              "description": "Verify customize group khi có nhiều group layer và nhiều custom option với layer image thường khi chỉ tạo preview image",
+              "product_info": {
+                "title": "SB_CGSB_23",
+                "image_name": "thuy.jpg",
+                "description": "SB_CGSB_23",
+                "price": "10"
+              },
+              "picture": {
+                "list_custom_option": "list-custom-option-dev.png",
+                "customize_group_detail": "customize-group-detail-dev.png",
+                "conditional_logic": "conditional-logic-dev.png",
+                "list_custom_option_print_file": "list-custom-option-print-file-dev.png",
+                "image_instant_preview": "image-instant-preview-dev",
+                "image_preview": "image-preview-dev",
+                "gen_print_file": "gen-print-file-dev.png"
+              },
+              "image_mockup": "thuy1.jpg",
+              "image_print_file": "sunrise.png",
+              "button_click_open_editor": "Create Preview image",
+              "layers": [
+                {
+                  "layer_type": "Text",
+                  "layer_value": "Cat 1",
+                  "location_layer_x": "90",
+                  "location_layer_y": "327",
+                  "layer_size_h": "28",
+                  "layer_size_w": "133",
+                  "layer_name": "Text layer 1",
+                  "layer_name_new": "Name Cat 1",
+                  "color": "#7ED321"
+                },
+                {
+                  "layer_type": "Image",
+                  "image_name": "Cat 1.jpg",
+                  "location_layer_x": "102",
+                  "location_layer_y": "212",
+                  "layer_size_h": "109",
+                  "layer_size_w": "109"
+                },
+                {
+                  "layer_type": "Text",
+                  "layer_value": "Cat 2",
+                  "location_layer_x": "193",
+                  "location_layer_y": "327",
+                  "layer_size_h": "25",
+                  "layer_size_w": "121",
+                  "layer_name": "Text layer 1",
+                  "layer_name_new": "Name Cat 2",
+                  "color": "#7ED321"
+                },
+                {
+                  "layer_type": "Image",
+                  "image_name": "Cat 2.jpg",
+                  "location_layer_x": "198",
+                  "location_layer_y": "210",
+                  "layer_size_h": "109",
+                  "layer_size_w": "109"
+                },
+                {
+                  "layer_type": "Text",
+                  "layer_value": "Cat 3",
+                  "location_layer_x": "275",
+                  "location_layer_y": "327",
+                  "layer_size_h": "25",
+                  "layer_size_w": "118",
+                  "layer_name": "Text layer 1",
+                  "layer_name_new": "Name Cat 3",
+                  "color": "#7ED321"
+                },
+                {
+                  "layer_type": "Image",
+                  "image_name": "Cat 3.png",
+                  "location_layer_x": "275",
+                  "location_layer_y": "209",
+                  "layer_size_h": "109",
+                  "layer_size_w": "109"
+                },
+                {
+                  "layer_type": "Text",
+                  "layer_value": "Cat 4",
+                  "location_layer_x": "376",
+                  "location_layer_y": "330",
+                  "layer_size_h": "24",
+                  "layer_size_w": "117",
+                  "layer_name": "Text layer 1",
+                  "layer_name_new": "Name Cat 4",
+                  "color": "#7ED321"
+                },
+                {
+                  "layer_type": "Image",
+                  "image_name": "Cat 4.png",
+                  "location_layer_x": "371",
+                  "location_layer_y": "208",
+                  "layer_size_h": "109",
+                  "layer_size_w": "109"
+                }
+              ],
+              "groups": [
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 1"
+                },
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 2"
+                },
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 3"
+                },
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 4"
+                }
+              ],
+              "add_layers_to_group": [
+                {
+                  "layer_name": "Name Cat 1, Cat 1",
+                  "group_name": "Group 1"
+                },
+                {
+                  "layer_name": "Name Cat 1, Cat 1, Name Cat 2, Cat 2",
+                  "group_name": "Group 2"
+                },
+                {
+                  "layer_name": "Name Cat 1, Cat 1, Name Cat 2, Cat 2, Name Cat 3, Cat 3",
+                  "group_name": "Group 3"
+                },
+                {
+                  "layer_name": "Name Cat 1, Cat 1, Name Cat 2, Cat 2, Name Cat 3, Cat 3, Name Cat 4, Cat 4",
+                  "group_name": "Group 4"
+                }
+              ],
+              "customize_group": {
+                "option_group": "Droplist",
+                "label_group": "Number of Cat",
+                "group_name": "Group 4, Group 3, Group 2, Group 1",
+                "default_value": "Group 4"
+              },
+
+              "custom_option": [
+                {
+                  "type": "Text field",
+                  "target_layer": "Name Cat 1",
+                  "label": "Name Cat 1",
+                  "allow_character": "Characters, Numbers",
+                  "position": "below"
+                },
+                {
+                  "type": "Image",
+                  "target_layer": "Cat 1",
+                  "label": "Image Cat 1",
+                  "position": "below"
+                },
+                {
+                  "type": "Text field",
+                  "target_layer": "Name Cat 2",
+                  "label": "Name Cat 2",
+                  "allow_character": "Characters, Numbers",
+                  "position": "below"
+                },
+                {
+                  "type": "Image",
+                  "target_layer": "Cat 2",
+                  "label": "Image Cat 2",
+                  "position": "below"
+                },
+                {
+                  "type": "Text field",
+                  "target_layer": "Name Cat 3",
+                  "label": "Name Cat 3",
+                  "allow_character": "Characters, Numbers",
+                  "position": "below"
+                },
+                {
+                  "type": "Image",
+                  "target_layer": "Cat 3",
+                  "label": "Image Cat 3",
+                  "position": "below"
+                },
+                {
+                  "type": "Text field",
+                  "target_layer": "Name Cat 4",
+                  "label": "Name Cat 4",
+                  "allow_character": "Characters, Numbers",
+                  "position": "below"
+                },
+                {
+                  "type": "Image",
+                  "target_layer": "Cat 4",
+                  "label": "Image Cat 4"
+                }
+              ],
+              "custom_options_sf": [
+                [
+                  {
+                    "custom_name": "Number of Cat",
+                    "type": "Droplist",
+                    "value": "Group 1"
+                  },
+                  {
+                    "custom_name": "Name Cat 1",
+                    "type": "Text field",
+                    "value": "Name 1"
+                  },
+                  {
+                    "custom_name": "Image Cat 1",
+                    "type": "Image",
+                    "value": "BD_1.png"
+                  }
+                ],
+                [
+                  {
+                    "custom_name": "Number of Cat",
+                    "type": "Droplist",
+                    "value": "Group 2"
+                  },
+                  {
+                    "custom_name": "Name Cat 2",
+                    "type": "Text field",
+                    "value": "Name 2"
+                  },
+                  {
+                    "custom_name": "Image Cat 2",
+                    "type": "Image",
+                    "value": "BD_2.png"
+                  }
+                ],
+                [
+                  {
+                    "custom_name": "Number of Cat",
+                    "type": "Droplist",
+                    "value": "Group 3"
+                  },
+                  {
+                    "custom_name": "Name Cat 3",
+                    "type": "Text field",
+                    "value": "Name 3"
+                  },
+                  {
+                    "custom_name": "Image Cat 3",
+                    "type": "Image",
+                    "value": "BD_3.png"
+                  }
+                ],
+                [
+                  {
+                    "custom_name": "Number of Cat",
+                    "type": "Droplist",
+                    "value": "Group 4"
+                  },
+                  {
+                    "custom_name": "Name Cat 4",
+                    "type": "Text field",
+                    "value": "Name 4"
+                  },
+                  {
+                    "custom_name": "Image Cat 4",
+                    "type": "Image",
+                    "value": "BD_4.png"
+                  }
+                ]
+              ]
+            },
+            {
+              "case_id": "SB_CGSB_26",
+              "description": "Verify độ ưu tiên hiển thị của các layer trong customize group và conditional logic khi chỉ tạo print file",
+              "product_info": {
+                "title": "SB_CGSB_26",
+                "image_name": "Logo1.jpg",
+                "price": "10"
+              },
+              "picture": {
+                "list_custom_option": "list-custom-option-dev.png",
+                "customize_group_detail": "customize-group-detail-dev.png",
+                "conditional_logic": "conditional-logic-dev.png",
+                "list_custom_option_print_file": "list-custom-option-print-file-dev.png",
+                "image_instant_preview": "image-instant-preview-dev",
+                "image_preview": "image-preview-dev",
+                "gen_print_file": "gen-print-file-dev.png"
+              },
+              "image_mockup": "sunrise.png",
+              "button_click_open_editor": "Create Preview image",
+              "layers": [
+                {
+                  "layer_type": "Text",
+                  "layer_value": "Pet 1",
+                  "location_layer_x": "9",
+                  "location_layer_y": "676",
+                  "layer_size_h": "53",
+                  "layer_size_w": "253",
+                  "layer_name": "Text layer 1",
+                  "layer_name_new": "Pet 1"
+                },
+                {
+                  "layer_type": "Image",
+                  "image_name": "Dog 1.png",
+                  "location_layer_x": "59",
+                  "location_layer_y": "290",
+                  "layer_size_h": "371",
+                  "layer_size_w": "184"
+                },
+                {
+                  "layer_type": "Text",
+                  "layer_value": "Pet 2",
+                  "location_layer_x": "195",
+                  "location_layer_y": "676",
+                  "layer_size_h": "50",
+                  "layer_size_w": "237",
+                  "layer_name": "Text layer 1",
+                  "layer_name_new": "Pet 2"
+                },
+                {
+                  "layer_type": "Image",
+                  "image_name": "Dog 2.png",
+                  "location_layer_x": "242",
+                  "location_layer_y": "290",
+                  "layer_size_h": "371",
+                  "layer_size_w": "183"
+                },
+                {
+                  "layer_type": "Text",
+                  "layer_value": "Pet 3",
+                  "location_layer_x": "363",
+                  "location_layer_y": "676",
+                  "layer_size_h": "53",
+                  "layer_size_w": "251",
+                  "layer_name": "Text layer 1",
+                  "layer_name_new": "Pet 3"
+                },
+                {
+                  "layer_type": "Image",
+                  "image_name": "Dog 3.png",
+                  "location_layer_x": "420",
+                  "location_layer_y": "290",
+                  "layer_size_h": "366",
+                  "layer_size_w": "181"
+                },
+                {
+                  "layer_type": "Text",
+                  "layer_value": "Pet 4",
+                  "location_layer_x": "536",
+                  "location_layer_y": "676",
+                  "layer_size_h": "53",
+                  "layer_size_w": "251",
+                  "layer_name": "Text layer 1",
+                  "layer_name_new": "Pet 4"
+                },
+                {
+                  "layer_type": "Image",
+                  "image_name": "Dog 4.png",
+                  "location_layer_x": "590",
+                  "location_layer_y": "290",
+                  "layer_size_h": "372",
+                  "layer_size_w": "184"
+                }
+              ],
+              "groups": [
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 1"
+                },
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 2"
+                },
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 3"
+                },
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 4"
+                }
+              ],
+              "add_layers_to_group": [
+                {
+                  "layer_name": "Pet 1, Dog 1",
+                  "group_name": "Group 1"
+                },
+                {
+                  "layer_name": "Pet 1, Dog 1, Pet 2, Dog 2",
+                  "group_name": "Group 2"
+                },
+                {
+                  "layer_name": "Pet 1, Dog 1, Pet 2, Dog 2, Pet 3, Dog 3",
+                  "group_name": "Group 3"
+                },
+                {
+                  "layer_name": "Pet 1, Dog 1, Pet 2, Dog 2, Pet 3, Dog 3, Pet 4, Dog 4",
+                  "group_name": "Group 4"
+                }
+              ],
+              "customize_group": {
+                "option_group": "Droplist",
+                "label_group": "Number of Pets",
+                "group_name": "Group 4, Group 3, Group 2, Group 1",
+                "default_value": "Group 4"
+              },
+              "custom_option": [
+                {
+                  "type": "Text field",
+                  "target_layer": "Pet 1",
+                  "label": "Name Pet 1",
+                  "allow_character": "Characters, Numbers",
+                  "position": "below"
+                },
+                {
+                  "type": "Droplist",
+                  "target_layer": "Pet 1",
+                  "label": "#1: Dog or Cat?",
+                  "value": "Dog,Cat",
+                  "position": "below"
+                },
+                {
+                  "type": "Picture choice",
+                  "target_layer": "Dog 1",
+                  "label": "Dog 1",
+                  "type_clipart": "Folder",
+                  "value_clipart": "Dog 1",
+                  "position": "below"
+                },
+                {
+                  "type": "Picture choice",
+                  "target_layer": "Dog 1",
+                  "label": "Cat 1",
+                  "type_clipart": "Folder",
+                  "value_clipart": "Cat 1",
+                  "position": "below"
+                },
+                {
+                  "type": "Text field",
+                  "target_layer": "Pet 2",
+                  "label": "Name Pet 2",
+                  "allow_character": "Characters, Numbers",
+                  "position": "below"
+                },
+                {
+                  "type": "Droplist",
+                  "target_layer": "Pet 2",
+                  "label": "#2: Dog or Cat?",
+                  "value": "Dog,Cat",
+                  "position": "below"
+                },
+                {
+                  "type": "Picture choice",
+                  "target_layer": "Dog 2",
+                  "label": "Dog 2",
+                  "type_clipart": "Folder",
+                  "value_clipart": "Dog 2",
+                  "position": "below"
+                },
+                {
+                  "type": "Picture choice",
+                  "target_layer": "Dog 2",
+                  "label": "Cat 2",
+                  "type_clipart": "Folder",
+                  "value_clipart": "Cat 2",
+                  "position": "below"
+                },
+                {
+                  "type": "Text field",
+                  "target_layer": "Pet 3",
+                  "label": "Name Pet 3",
+                  "allow_character": "Characters, Numbers",
+                  "position": "below"
+                },
+                {
+                  "type": "Droplist",
+                  "target_layer": "Pet 3",
+                  "label": "#3: Dog or Cat?",
+                  "value": "Dog,Cat",
+                  "position": "below"
+                },
+                {
+                  "type": "Picture choice",
+                  "target_layer": "Dog 3",
+                  "label": "Dog 3",
+                  "type_clipart": "Folder",
+                  "value_clipart": "Dog 3",
+                  "position": "below"
+                },
+                {
+                  "type": "Picture choice",
+                  "target_layer": "Dog 3",
+                  "label": "Cat 3",
+                  "type_clipart": "Folder",
+                  "value_clipart": "Cat 3",
+                  "position": "below"
+                },
+                {
+                  "type": "Text field",
+                  "target_layer": "Pet 4",
+                  "label": "Name Pet 4",
+                  "allow_character": "Characters, Numbers",
+                  "position": "below"
+                },
+                {
+                  "type": "Droplist",
+                  "target_layer": "Pet 4",
+                  "label": "#4: Dog or Cat?",
+                  "value": "Dog,Cat",
+                  "position": "below"
+                },
+                {
+                  "type": "Picture choice",
+                  "target_layer": "Dog 4",
+                  "label": "Dog 4",
+                  "type_clipart": "Folder",
+                  "value_clipart": "Dog 4",
+                  "position": "below"
+                },
+                {
+                  "type": "Picture choice",
+                  "target_layer": "Dog 4",
+                  "label": "Cat 4",
+                  "type_clipart": "Folder",
+                  "value_clipart": "Cat 4"
+                }
+              ],
+              "conditional_logic_info": [
+                {
+                  "custom_name": "#1: Dog or Cat?",
+                  "add_condition": "yes",
+                  "condition": ["is equal to>Dog", "is equal to>Cat"],
+                  "then_show_value": ["Dog 1", "Cat 1"],
+                  "is_back_to_list": true
+                },
+                {
+                  "custom_name": "#2: Dog or Cat?",
+                  "add_condition": "yes",
+                  "condition": ["is equal to>Dog", "is equal to>Cat"],
+                  "then_show_value": ["Dog 2", "Cat 2"],
+                  "is_back_to_list": true
+                },
+                {
+                  "custom_name": "#3: Dog or Cat?",
+                  "add_condition": "yes",
+                  "condition": ["is equal to>Dog", "is equal to>Cat"],
+                  "then_show_value": ["Dog 3", "Cat 3"],
+                  "is_back_to_list": true
+                },
+                {
+                  "custom_name": "#4: Dog or Cat?",
+                  "add_condition": "yes",
+                  "condition": ["is equal to>Dog", "is equal to>Cat"],
+                  "then_show_value": ["Dog 4", "Cat 4"],
+                  "is_back_to_list": true
+                }
+              ],
+              "custom_options_sf": [
+                [
+                  {
+                    "custom_name": "Number of Pets",
+                    "type": "Droplist",
+                    "value": "Group 1"
+                  },
+                  {
+                    "custom_name": "Name Pet 1",
+                    "type": "Text field",
+                    "value": "Cat 1"
+                  },
+                  {
+                    "custom_name": "#1: Dog or Cat?",
+                    "type": "Droplist",
+                    "value": "Cat"
+                  },
+                  {
+                    "custom_name": "Cat 1",
+                    "type": "Picture choice",
+                    "value": "Cat 1"
+                  }
+                ],
+                [
+                  {
+                    "custom_name": "Number of Pets",
+                    "type": "Droplist",
+                    "value": "Group 2"
+                  },
+                  {
+                    "custom_name": "Name Pet 2",
+                    "type": "Text field",
+                    "value": "Cat 2"
+                  },
+                  {
+                    "custom_name": "#2: Dog or Cat?",
+                    "type": "Droplist",
+                    "value": "Cat"
+                  },
+                  {
+                    "custom_name": "Cat 2",
+                    "type": "Picture choice",
+                    "value": "Cat 2"
+                  }
+                ],
+                [
+                  {
+                    "custom_name": "Number of Pets",
+                    "type": "Droplist",
+                    "value": "Group 3"
+                  },
+                  {
+                    "custom_name": "Name Pet 1",
+                    "type": "Text field",
+                    "value": "Cat 3"
+                  },
+                  {
+                    "custom_name": "#3: Dog or Cat?",
+                    "type": "Droplist",
+                    "value": "Cat"
+                  },
+                  {
+                    "custom_name": "Cat 3",
+                    "type": "Picture choice",
+                    "value": "Cat 3"
+                  }
+                ],
+                [
+                  {
+                    "custom_name": "Number of Pets",
+                    "type": "Droplist",
+                    "value": "Group 4"
+                  },
+                  {
+                    "custom_name": "Name Pet 4",
+                    "type": "Text field",
+                    "value": "Cat 4"
+                  },
+                  {
+                    "custom_name": "#4: Dog or Cat?",
+                    "type": "Droplist",
+                    "value": "Cat"
+                  },
+                  {
+                    "custom_name": "Cat 4",
+                    "type": "Picture choice",
+                    "value": "Cat 4"
+                  }
+                ]
+              ]
+            },
+            {
+              "case_id": "SB_CGSB_27",
+              "description": "Verify độ ưu tiên hiển thị của các layer trong customize group và conditional logic khi chỉ tạo print file",
+              "product_info": {
+                "title": "SB_CGSB_27",
+                "image_name": "Logo1.jpg",
+                "price": "10"
+              },
+              "picture": {
+                "list_custom_option": "list-custom-option-dev.png",
+                "customize_group_detail": "customize-group-detail-dev.png",
+                "conditional_logic": "conditional-logic-dev.png",
+                "list_custom_option_print_file": "list-custom-option-print-file-dev.png",
+                "image_instant_preview": "image-instant-preview-dev",
+                "image_preview": "image-preview-dev",
+                "gen_print_file": "gen-print-file-dev.png"
+              },
+              "image_mockup": "sunrise.png",
+              "button_click_open_editor": "Create Print file",
+              "layers": [
+                {
+                  "layer_type": "Text",
+                  "layer_value": "Pet 1",
+                  "location_layer_x": "9",
+                  "location_layer_y": "676",
+                  "layer_size_h": "53",
+                  "layer_size_w": "253",
+                  "layer_name": "Text layer 1",
+                  "layer_name_new": "Pet 1"
+                },
+                {
+                  "layer_type": "Image",
+                  "image_name": "Dog 1.png",
+                  "location_layer_x": "59",
+                  "location_layer_y": "290",
+                  "layer_size_h": "371",
+                  "layer_size_w": "184"
+                },
+                {
+                  "layer_type": "Text",
+                  "layer_value": "Pet 2",
+                  "location_layer_x": "195",
+                  "location_layer_y": "676",
+                  "layer_size_h": "50",
+                  "layer_size_w": "237",
+                  "layer_name": "Text layer 1",
+                  "layer_name_new": "Pet 2"
+                },
+                {
+                  "layer_type": "Image",
+                  "image_name": "Dog 2.png",
+                  "location_layer_x": "242",
+                  "location_layer_y": "290",
+                  "layer_size_h": "371",
+                  "layer_size_w": "183"
+                },
+                {
+                  "layer_type": "Text",
+                  "layer_value": "Pet 3",
+                  "location_layer_x": "363",
+                  "location_layer_y": "676",
+                  "layer_size_h": "53",
+                  "layer_size_w": "251",
+                  "layer_name": "Text layer 1",
+                  "layer_name_new": "Pet 3"
+                },
+                {
+                  "layer_type": "Image",
+                  "image_name": "Dog 3.png",
+                  "location_layer_x": "420",
+                  "location_layer_y": "290",
+                  "layer_size_h": "366",
+                  "layer_size_w": "181"
+                },
+                {
+                  "layer_type": "Text",
+                  "layer_value": "Pet 4",
+                  "location_layer_x": "536",
+                  "location_layer_y": "676",
+                  "layer_size_h": "53",
+                  "layer_size_w": "251",
+                  "layer_name": "Text layer 1",
+                  "layer_name_new": "Pet 4"
+                },
+                {
+                  "layer_type": "Image",
+                  "image_name": "Dog 4.png",
+                  "location_layer_x": "590",
+                  "location_layer_y": "290",
+                  "layer_size_h": "372",
+                  "layer_size_w": "184"
+                }
+              ],
+              "groups": [
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 1"
+                },
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 2"
+                },
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 3"
+                },
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 4"
+                }
+              ],
+              "add_layers_to_group": [
+                {
+                  "layer_name": "Pet 1, Dog 1",
+                  "group_name": "Group 1"
+                },
+                {
+                  "layer_name": "Pet 1, Dog 1, Pet 2, Dog 2",
+                  "group_name": "Group 2"
+                },
+                {
+                  "layer_name": "Pet 1, Dog 1, Pet 2, Dog 2, Pet 3, Dog 3",
+                  "group_name": "Group 3"
+                },
+                {
+                  "layer_name": "Pet 1, Dog 1, Pet 2, Dog 2, Pet 3, Dog 3, Pet 4, Dog 4",
+                  "group_name": "Group 4"
+                }
+              ],
+              "customize_group": {
+                "option_group": "Droplist",
+                "label_group": "Number of Pets",
+                "group_name": "Group 4, Group 3, Group 2, Group 1",
+                "default_value": "Group 4"
+              },
+              "custom_option": [
+                {
+                  "type": "Text field",
+                  "target_layer": "Pet 1",
+                  "label": "Name Pet 1",
+                  "allow_character": "Characters, Numbers",
+                  "position": "below"
+                },
+                {
+                  "type": "Droplist",
+                  "target_layer": "Pet 1",
+                  "label": "#1: Dog or Cat?",
+                  "value": "Dog,Cat",
+                  "position": "below"
+                },
+                {
+                  "type": "Picture choice",
+                  "target_layer": "Dog 1",
+                  "label": "Dog 1",
+                  "type_clipart": "Folder",
+                  "value_clipart": "Dog 1",
+                  "position": "below"
+                },
+                {
+                  "type": "Picture choice",
+                  "target_layer": "Dog 1",
+                  "label": "Cat 1",
+                  "type_clipart": "Folder",
+                  "value_clipart": "Cat 1",
+                  "position": "below"
+                },
+                {
+                  "type": "Text field",
+                  "target_layer": "Pet 2",
+                  "label": "Name Pet 2",
+                  "allow_character": "Characters, Numbers",
+                  "position": "below"
+                },
+                {
+                  "type": "Droplist",
+                  "target_layer": "Pet 2",
+                  "label": "#2: Dog or Cat?",
+                  "value": "Dog,Cat",
+                  "position": "below"
+                },
+                {
+                  "type": "Picture choice",
+                  "target_layer": "Dog 2",
+                  "label": "Dog 2",
+                  "type_clipart": "Folder",
+                  "value_clipart": "Dog 2",
+                  "position": "below"
+                },
+                {
+                  "type": "Picture choice",
+                  "target_layer": "Dog 2",
+                  "label": "Cat 2",
+                  "type_clipart": "Folder",
+                  "value_clipart": "Cat 2",
+                  "position": "below"
+                },
+                {
+                  "type": "Text field",
+                  "target_layer": "Pet 3",
+                  "label": "Name Pet 3",
+                  "allow_character": "Characters, Numbers",
+                  "position": "below"
+                },
+                {
+                  "type": "Droplist",
+                  "target_layer": "Pet 3",
+                  "label": "#3: Dog or Cat?",
+                  "value": "Dog,Cat",
+                  "position": "below"
+                },
+                {
+                  "type": "Picture choice",
+                  "target_layer": "Dog 3",
+                  "label": "Dog 3",
+                  "type_clipart": "Folder",
+                  "value_clipart": "Dog 3",
+                  "position": "below"
+                },
+                {
+                  "type": "Picture choice",
+                  "target_layer": "Dog 3",
+                  "label": "Cat 3",
+                  "type_clipart": "Folder",
+                  "value_clipart": "Cat 3",
+                  "position": "below"
+                },
+                {
+                  "type": "Text field",
+                  "target_layer": "Pet 4",
+                  "label": "Name Pet 4",
+                  "allow_character": "Characters, Numbers",
+                  "position": "below"
+                },
+                {
+                  "type": "Droplist",
+                  "target_layer": "Pet 4",
+                  "label": "#4: Dog or Cat?",
+                  "value": "Dog,Cat",
+                  "position": "below"
+                },
+                {
+                  "type": "Picture choice",
+                  "target_layer": "Dog 4",
+                  "label": "Dog 4",
+                  "type_clipart": "Folder",
+                  "value_clipart": "Dog 4",
+                  "position": "below"
+                },
+                {
+                  "type": "Picture choice",
+                  "target_layer": "Dog 4",
+                  "label": "Cat 4",
+                  "type_clipart": "Folder",
+                  "value_clipart": "Cat 4"
+                }
+              ],
+              "conditional_logic_info": [
+                {
+                  "custom_name": "#1: Dog or Cat?",
+                  "add_condition": "yes",
+                  "condition": ["is equal to>Dog", "is equal to>Cat"],
+                  "then_show_value": ["Dog 1", "Cat 1"],
+                  "is_back_to_list": true
+                },
+                {
+                  "custom_name": "#2: Dog or Cat?",
+                  "add_condition": "yes",
+                  "condition": ["is equal to>Dog", "is equal to>Cat"],
+                  "then_show_value": ["Dog 2", "Cat 2"],
+                  "is_back_to_list": true
+                },
+                {
+                  "custom_name": "#3: Dog or Cat?",
+                  "add_condition": "yes",
+                  "condition": ["is equal to>Dog", "is equal to>Cat"],
+                  "then_show_value": ["Dog 3", "Cat 3"],
+                  "is_back_to_list": true
+                },
+                {
+                  "custom_name": "#4: Dog or Cat?",
+                  "add_condition": "yes",
+                  "condition": ["is equal to>Dog", "is equal to>Cat"],
+                  "then_show_value": ["Dog 4", "Cat 4"],
+                  "is_back_to_list": true
+                }
+              ],
+              "custom_options_sf": [
+                {
+                  "custom_name": "Number of Pets",
+                  "type": "Droplist",
+                  "value": "Group 4"
+                },
+                {
+                  "custom_name": "Name Pet 1",
+                  "type": "Text field",
+                  "value": "Cat 1"
+                },
+                {
+                  "custom_name": "#1: Dog or Cat?",
+                  "type": "Droplist",
+                  "value": "Cat"
+                },
+                {
+                  "custom_name": "Cat 1",
+                  "type": "Picture choice",
+                  "value": "Cat 1"
+                },
+                {
+                  "custom_name": "Name Pet 2",
+                  "type": "Text field",
+                  "value": "Cat 2"
+                },
+                {
+                  "custom_name": "#2: Dog or Cat?",
+                  "type": "Droplist",
+                  "value": "Cat"
+                },
+                {
+                  "custom_name": "Cat 2",
+                  "type": "Picture choice",
+                  "value": "Cat 2"
+                },
+                {
+                  "custom_name": "Name Pet 3",
+                  "type": "Text field",
+                  "value": "Cat 3"
+                },
+                {
+                  "custom_name": "#3: Dog or Cat?",
+                  "type": "Droplist",
+                  "value": "Cat"
+                },
+                {
+                  "custom_name": "Cat 3",
+                  "type": "Picture choice",
+                  "value": "Cat 3"
+                },
+                {
+                  "custom_name": "Name Pet 4",
+                  "type": "Text field",
+                  "value": "Cat 4"
+                },
+                {
+                  "custom_name": "#4: Dog or Cat?",
+                  "type": "Droplist",
+                  "value": "Cat"
+                },
+                {
+                  "custom_name": "Cat 4",
+                  "type": "Picture choice",
+                  "value": "Cat 4"
+                }
+              ]
+            },
+            {
+              "case_id": "SB_CGSB_28",
+              "description": "Verify độ ưu tiên hiển thị của các layer trong customize group và conditional logic khi tạo cả preview và print file",
+              "product_info": {
+                "title": "SB_CGSB_28",
+                "image_name": "Logo1.jpg",
+                "price": "10"
+              },
+              "picture": {
+                "list_custom_option": "list-custom-option-dev.png",
+                "customize_group_detail": "customize-group-detail-dev.png",
+                "conditional_logic": "conditional-logic-dev.png",
+                "list_custom_option_print_file": "list-custom-option-print-file-dev.png",
+                "image_instant_preview": "image-instant-preview-dev",
+                "image_preview": "image-preview-dev",
+                "gen_print_file": "gen-print-file-dev.png"
+              },
+              "image_mockup": "sunrise.png",
+              "button_click_open_editor": "Create Preview image",
+              "print_file_mockup": "sunrise.png",
+              "layers": [
+                {
+                  "layer_type": "Text",
+                  "layer_value": "Pet 1",
+                  "location_layer_x": "9",
+                  "location_layer_y": "676",
+                  "layer_size_h": "53",
+                  "layer_size_w": "253",
+                  "layer_name": "Text layer 1",
+                  "layer_name_new": "Pet 1"
+                },
+                {
+                  "layer_type": "Image",
+                  "image_name": "Dog 1.png",
+                  "location_layer_x": "59",
+                  "location_layer_y": "290",
+                  "layer_size_h": "371",
+                  "layer_size_w": "184"
+                },
+                {
+                  "layer_type": "Text",
+                  "layer_value": "Pet 2",
+                  "location_layer_x": "195",
+                  "location_layer_y": "676",
+                  "layer_size_h": "50",
+                  "layer_size_w": "237",
+                  "layer_name": "Text layer 1",
+                  "layer_name_new": "Pet 2"
+                },
+                {
+                  "layer_type": "Image",
+                  "image_name": "Dog 2.png",
+                  "location_layer_x": "242",
+                  "location_layer_y": "290",
+                  "layer_size_h": "371",
+                  "layer_size_w": "183"
+                },
+                {
+                  "layer_type": "Text",
+                  "layer_value": "Pet 3",
+                  "location_layer_x": "363",
+                  "location_layer_y": "676",
+                  "layer_size_h": "53",
+                  "layer_size_w": "251",
+                  "layer_name": "Text layer 1",
+                  "layer_name_new": "Pet 3"
+                },
+                {
+                  "layer_type": "Image",
+                  "image_name": "Dog 3.png",
+                  "location_layer_x": "420",
+                  "location_layer_y": "290",
+                  "layer_size_h": "366",
+                  "layer_size_w": "181"
+                },
+                {
+                  "layer_type": "Text",
+                  "layer_value": "Pet 4",
+                  "location_layer_x": "536",
+                  "location_layer_y": "676",
+                  "layer_size_h": "53",
+                  "layer_size_w": "251",
+                  "layer_name": "Text layer 1",
+                  "layer_name_new": "Pet 4"
+                },
+                {
+                  "layer_type": "Image",
+                  "image_name": "Dog 4.png",
+                  "location_layer_x": "590",
+                  "location_layer_y": "290",
+                  "layer_size_h": "372",
+                  "layer_size_w": "184"
+                }
+              ],
+              "groups": [
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 1"
+                },
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 2"
+                },
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 3"
+                },
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 4"
+                }
+              ],
+              "add_layers_to_group": [
+                {
+                  "layer_name": "Pet 1, Dog 1",
+                  "group_name": "Group 1"
+                },
+                {
+                  "layer_name": "Pet 1, Dog 1, Pet 2, Dog 2",
+                  "group_name": "Group 2"
+                },
+                {
+                  "layer_name": "Pet 1, Dog 1, Pet 2, Dog 2, Pet 3, Dog 3",
+                  "group_name": "Group 3"
+                },
+                {
+                  "layer_name": "Pet 1, Dog 1, Pet 2, Dog 2, Pet 3, Dog 3, Pet 4, Dog 4",
+                  "group_name": "Group 4"
+                }
+              ],
+              "customize_group": {
+                "option_group": "Droplist",
+                "label_group": "Number of Pets",
+                "group_name": "Group 4, Group 3, Group 2, Group 1",
+                "default_value": "Group 4"
+              },
+              "custom_option": [
+                {
+                  "type": "Text field",
+                  "target_layer": "Pet 1",
+                  "label": "Name Pet 1",
+                  "allow_character": "Characters, Numbers",
+                  "position": "below"
+                },
+                {
+                  "type": "Droplist",
+                  "target_layer": "Pet 1",
+                  "label": "#1: Dog or Cat?",
+                  "value": "Dog,Cat",
+                  "position": "below"
+                },
+                {
+                  "type": "Picture choice",
+                  "target_layer": "Dog 1",
+                  "label": "Dog 1",
+                  "type_clipart": "Folder",
+                  "value_clipart": "Dog 1",
+                  "position": "below"
+                },
+                {
+                  "type": "Picture choice",
+                  "target_layer": "Dog 1",
+                  "label": "Cat 1",
+                  "type_clipart": "Folder",
+                  "value_clipart": "Cat 1",
+                  "position": "below"
+                },
+                {
+                  "type": "Text field",
+                  "target_layer": "Pet 2",
+                  "label": "Name Pet 2",
+                  "allow_character": "Characters, Numbers",
+                  "position": "below"
+                },
+                {
+                  "type": "Droplist",
+                  "target_layer": "Pet 2",
+                  "label": "#2: Dog or Cat?",
+                  "value": "Dog,Cat",
+                  "position": "below"
+                },
+                {
+                  "type": "Picture choice",
+                  "target_layer": "Dog 2",
+                  "label": "Dog 2",
+                  "type_clipart": "Folder",
+                  "value_clipart": "Dog 2",
+                  "position": "below"
+                },
+                {
+                  "type": "Picture choice",
+                  "target_layer": "Dog 2",
+                  "label": "Cat 2",
+                  "type_clipart": "Folder",
+                  "value_clipart": "Cat 2",
+                  "position": "below"
+                },
+                {
+                  "type": "Text field",
+                  "target_layer": "Pet 3",
+                  "label": "Name Pet 3",
+                  "allow_character": "Characters, Numbers",
+                  "position": "below"
+                },
+                {
+                  "type": "Droplist",
+                  "target_layer": "Pet 3",
+                  "label": "#3: Dog or Cat?",
+                  "value": "Dog,Cat",
+                  "position": "below"
+                },
+                {
+                  "type": "Picture choice",
+                  "target_layer": "Dog 3",
+                  "label": "Dog 3",
+                  "type_clipart": "Folder",
+                  "value_clipart": "Dog 3",
+                  "position": "below"
+                },
+                {
+                  "type": "Picture choice",
+                  "target_layer": "Dog 3",
+                  "label": "Cat 3",
+                  "type_clipart": "Folder",
+                  "value_clipart": "Cat 3",
+                  "position": "below"
+                },
+                {
+                  "type": "Text field",
+                  "target_layer": "Pet 4",
+                  "label": "Name Pet 4",
+                  "allow_character": "Characters, Numbers",
+                  "position": "below"
+                },
+                {
+                  "type": "Droplist",
+                  "target_layer": "Pet 4",
+                  "label": "#4: Dog or Cat?",
+                  "value": "Dog,Cat",
+                  "position": "below"
+                },
+                {
+                  "type": "Picture choice",
+                  "target_layer": "Dog 4",
+                  "label": "Dog 4",
+                  "type_clipart": "Folder",
+                  "value_clipart": "Dog 4",
+                  "position": "below"
+                },
+                {
+                  "type": "Picture choice",
+                  "target_layer": "Dog 4",
+                  "label": "Cat 4",
+                  "type_clipart": "Folder",
+                  "value_clipart": "Cat 4"
+                }
+              ],
+              "conditional_logic_info": [
+                {
+                  "custom_name": "#1: Dog or Cat?",
+                  "add_condition": "yes",
+                  "condition": ["is equal to>Dog", "is equal to>Cat"],
+                  "then_show_value": ["Dog 1", "Cat 1"],
+                  "is_back_to_list": true
+                },
+                {
+                  "custom_name": "#2: Dog or Cat?",
+                  "add_condition": "yes",
+                  "condition": ["is equal to>Dog", "is equal to>Cat"],
+                  "then_show_value": ["Dog 2", "Cat 2"],
+                  "is_back_to_list": true
+                },
+                {
+                  "custom_name": "#3: Dog or Cat?",
+                  "add_condition": "yes",
+                  "condition": ["is equal to>Dog", "is equal to>Cat"],
+                  "then_show_value": ["Dog 3", "Cat 3"],
+                  "is_back_to_list": true
+                },
+                {
+                  "custom_name": "#4: Dog or Cat?",
+                  "add_condition": "yes",
+                  "condition": ["is equal to>Dog", "is equal to>Cat"],
+                  "then_show_value": ["Dog 4", "Cat 4"],
+                  "is_back_to_list": true
+                }
+              ],
+              "custom_options_sf": [
+                [
+                  {
+                    "custom_name": "Number of Pets",
+                    "type": "Droplist",
+                    "value": "Group 1"
+                  },
+                  {
+                    "custom_name": "Name Pet 1",
+                    "type": "Text field",
+                    "value": "Cat 1"
+                  },
+                  {
+                    "custom_name": "#1: Dog or Cat?",
+                    "type": "Droplist",
+                    "value": "Cat"
+                  },
+                  {
+                    "custom_name": "Cat 1",
+                    "type": "Picture choice",
+                    "value": "Cat 1"
+                  }
+                ],
+                [
+                  {
+                    "custom_name": "Number of Pets",
+                    "type": "Droplist",
+                    "value": "Group 2"
+                  },
+                  {
+                    "custom_name": "Name Pet 2",
+                    "type": "Text field",
+                    "value": "Cat 2"
+                  },
+                  {
+                    "custom_name": "#2: Dog or Cat?",
+                    "type": "Droplist",
+                    "value": "Cat"
+                  },
+                  {
+                    "custom_name": "Cat 2",
+                    "type": "Picture choice",
+                    "value": "Cat 2"
+                  }
+                ],
+                [
+                  {
+                    "custom_name": "Number of Pets",
+                    "type": "Droplist",
+                    "value": "Group 3"
+                  },
+                  {
+                    "custom_name": "Name Pet 3",
+                    "type": "Text field",
+                    "value": "Cat 3"
+                  },
+                  {
+                    "custom_name": "#3: Dog or Cat?",
+                    "type": "Droplist",
+                    "value": "Cat"
+                  },
+                  {
+                    "custom_name": "Cat 3",
+                    "type": "Picture choice",
+                    "value": "Cat 3"
+                  }
+                ],
+                [
+                  {
+                    "custom_name": "Number of Pets",
+                    "type": "Droplist",
+                    "value": "Group 4"
+                  },
+                  {
+                    "custom_name": "Name Pet 4",
+                    "type": "Text field",
+                    "value": "Cat 4"
+                  },
+                  {
+                    "custom_name": "#4: Dog or Cat?",
+                    "type": "Droplist",
+                    "value": "Cat"
+                  },
+                  {
+                    "custom_name": "Cat 4",
+                    "type": "Picture choice",
+                    "value": "Cat 4"
+                  }
+                ]
+              ]
+            },
+            {
+              "case_id": "SB_CGSB_29",
+              "description": "Verify độ ưu tiên hiển thị của các layer trong customize group và conditional logic khi tạo cả preview và print file",
+              "product_info": {
+                "title": "SB_CGSB_29",
+                "image_name": "thuy.jpg",
+                "price": "10"
+              },
+              "picture": {
+                "list_custom_option": "list-custom-option-dev.png",
+                "customize_group_detail": "customize-group-detail-dev.png",
+                "conditional_logic": "conditional-logic-dev.png",
+                "list_custom_option_print_file": "list-custom-option-print-file-dev.png",
+                "image_instant_preview": "image-instant-preview-dev",
+                "image_preview": "image-preview-dev",
+                "gen_print_file": "gen-print-file-dev.png"
+              },
+              "image_mockup": "thuy1.jpg",
+              "button_click_open_editor": "Create Preview image",
+              "print_file_mockup": "thuy1.jpg",
+              "layers": [
+                {
+                  "layer_type": "Text",
+                  "layer_value": "Cat 1",
+                  "location_layer_x": "90",
+                  "location_layer_y": "327",
+                  "layer_size_h": "28",
+                  "layer_size_w": "133",
+                  "layer_name": "Text layer 1",
+                  "layer_name_new": "Cat 1",
+                  "color": "#7ED321"
+                },
+                {
+                  "layer_type": "Image",
+                  "image_name": "Cat 1.jpg",
+                  "location_layer_x": "102",
+                  "location_layer_y": "212",
+                  "layer_size_h": "109",
+                  "layer_size_w": "109"
+                },
+                {
+                  "layer_type": "Text",
+                  "layer_value": "Cat 2",
+                  "location_layer_x": "193",
+                  "location_layer_y": "327",
+                  "layer_size_h": "25",
+                  "layer_size_w": "121",
+                  "layer_name": "Text layer 1",
+                  "layer_name_new": "Cat 2",
+                  "color": "#7ED321"
+                },
+                {
+                  "layer_type": "Image",
+                  "image_name": "Cat 2.jpg",
+                  "location_layer_x": "198",
+                  "location_layer_y": "210",
+                  "layer_size_h": "109",
+                  "layer_size_w": "109"
+                },
+                {
+                  "layer_type": "Text",
+                  "layer_value": "Cat 3",
+                  "location_layer_x": "275",
+                  "location_layer_y": "327",
+                  "layer_size_h": "25",
+                  "layer_size_w": "118",
+                  "layer_name": "Text layer 1",
+                  "layer_name_new": "Cat 3",
+                  "color": "#7ED321"
+                },
+                {
+                  "layer_type": "Image",
+                  "image_name": "Cat 3.png",
+                  "location_layer_x": "275",
+                  "location_layer_y": "209",
+                  "layer_size_h": "109",
+                  "layer_size_w": "109"
+                },
+                {
+                  "layer_type": "Text",
+                  "layer_value": "Cat 4",
+                  "location_layer_x": "376",
+                  "location_layer_y": "330",
+                  "layer_size_h": "24",
+                  "layer_size_w": "117",
+                  "layer_name": "Text layer 1",
+                  "layer_name_new": "Cat 4",
+                  "color": "#7ED321"
+                },
+                {
+                  "layer_type": "Image",
+                  "image_name": "Cat 4.png",
+                  "location_layer_x": "371",
+                  "location_layer_y": "208",
+                  "layer_size_h": "109",
+                  "layer_size_w": "109"
+                }
+              ],
+              "groups": [
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 1"
+                },
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 2"
+                },
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 3"
+                },
+                {
+                  "current_group": "New group 1",
+                  "new_group": "Group 4"
+                }
+              ],
+              "add_layers_to_group": [
+                {
+                  "layer_name": "Cat 1, Cat 1",
+                  "group_name": "Group 1"
+                },
+                {
+                  "layer_name": "Cat 1, Cat 1, Cat 2, Cat 2",
+                  "group_name": "Group 2"
+                },
+                {
+                  "layer_name": "Cat 1, Cat 1, Cat 2, Cat 2, Cat 3, Cat 3",
+                  "group_name": "Group 3"
+                },
+                {
+                  "layer_name": "Cat 1, Cat 1, Cat 2, Cat 2, Cat 3, Cat 3, Cat 4, Cat 4",
+                  "group_name": "Group 4"
+                }
+              ],
+              "customize_group": {
+                "option_group": "Droplist",
+                "label_group": "Number of Cats",
+                "group_name": "Group 4, Group 3, Group 2, Group 1",
+                "default_value": "Group 4"
+              },
+              "custom_option": [
+                {
+                  "type": "Text field",
+                  "target_layer": "Cat 1",
+                  "label": "Name Cat 1",
+                  "allow_character": "Characters, Numbers",
+                  "position": "below"
+                },
+                {
+                  "type": "Picture choice",
+                  "target_layer": "Cat 1",
+                  "label": "Cat 1",
+                  "type_clipart": "Folder",
+                  "value_clipart": "Cat 1",
+                  "position": "below"
+                },
+                {
+                  "type": "Text field",
+                  "target_layer": "Cat 2",
+                  "label": "Name Cat 2",
+                  "allow_character": "Characters, Numbers",
+                  "position": "below"
+                },
+                {
+                  "type": "Picture choice",
+                  "target_layer": "Cat 2",
+                  "label": "Cat 2",
+                  "type_clipart": "Folder",
+                  "value_clipart": "Cat 2",
+                  "position": "below"
+                },
+                {
+                  "type": "Text field",
+                  "target_layer": "Cat 3",
+                  "label": "Name Cat 3",
+                  "allow_character": "Characters, Numbers",
+                  "position": "below"
+                },
+                {
+                  "type": "Picture choice",
+                  "target_layer": "Cat 3",
+                  "label": "Cat 3",
+                  "type_clipart": "Folder",
+                  "value_clipart": "Cat 3",
+                  "position": "below"
+                },
+                {
+                  "type": "Text field",
+                  "target_layer": "Cat 4",
+                  "label": "Name Cat 4",
+                  "allow_character": "Characters, Numbers",
+                  "position": "below"
+                },
+                {
+                  "type": "Picture choice",
+                  "target_layer": "Cat 4",
+                  "label": "Cat 4",
+                  "type_clipart": "Folder",
+                  "value_clipart": "Cat 4"
+                }
+              ],
+              "custom_options_sf": [
+                [
+                  {
+                    "custom_name": "Number of Cats",
+                    "type": "Droplist",
+                    "value": "Group 1"
+                  },
+                  {
+                    "custom_name": "Name Cat 1",
+                    "type": "Text field",
+                    "value": "Name 1"
+                  },
+                  {
+                    "custom_name": "Cat 1",
+                    "type": "Picture choice",
+                    "value": "Cat 1"
+                  }
+                ],
+                [
+                  {
+                    "custom_name": "Number of Cats",
+                    "type": "Droplist",
+                    "value": "Group 2"
+                  },
+                  {
+                    "custom_name": "Name Cat 2",
+                    "type": "Text field",
+                    "value": "Name 2"
+                  },
+                  {
+                    "custom_name": "Cat 2",
+                    "type": "Picture choice",
+                    "value": "Cat 2"
+                  }
+                ],
+                [
+                  {
+                    "custom_name": "Number of Cats",
+                    "type": "Droplist",
+                    "value": "Group 3"
+                  },
+                  {
+                    "custom_name": "Name Cat 3",
+                    "type": "Text field",
+                    "value": "Name 3"
+                  },
+                  {
+                    "custom_name": "Cat 3",
+                    "type": "Picture choice",
+                    "value": "Cat 3"
+                  }
+                ],
+                [
+                  {
+                    "custom_name": "Number of Cats",
+                    "type": "Droplist",
+                    "value": "Group 4"
+                  },
+                  {
+                    "custom_name": "Name Cat 4",
+                    "type": "Text field",
+                    "value": "Name 4"
+                  },
+                  {
+                    "custom_name": "Cat 4",
+                    "type": "Picture choice",
+                    "value": "Cat 4"
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "customer_info": {
+    "email": "xuyenpham@beeketing.net",
+    "first_name": "Xuyen",
+    "last_name": "Pham",
+    "address": "1600 W Loop S",
+    "country": "United States",
+    "country_code": "US",
+    "state": "California",
+    "city": "California",
+    "zipcode": "90001",
+    "phone_number": "2028610737"
+  },
+  "card_info": {
+    "number": "4111111111111111",
+    "holder_name": "xuyen",
+    "expire_date": "12 / 34",
+    "cvv": "116"
+  },
+  "cases": {
+    "DATA_DRIVEN": {
+      "data": [
+        {
+          "case_id": "SB_CGSB_25",
+          "description": "Verify customize group khi có nhiều group layer và nhiều custom option với layer image thường khi tạo cả preview image và print file",
+          "product_info": {
+            "title": "SB_CGSB_25",
+            "image_name": "thuy.jpg",
+            "description": "SB_CGSB_25",
+            "price": "10"
+          },
+          "picture": {
+            "list_custom_option": "list-custom-option.png",
+            "customize_group_detail": "customize-group-detail.png",
+            "conditional_logic": "conditional-logic.png",
+            "list_custom_option_print_file": "list-custom-option-print-file.png",
+            "image_instant_preview": "image-instant-preview",
+            "image_preview": "image-preview",
+            "gen_print_file": "gen-print-file.png"
+          },
+          "image_mockup": "thuy1.jpg",
+          "button_click_open_editor": "Create Preview image",
+          "print_file_mockup": "thuy1.jpg",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_value": "Cat 1",
+              "location_layer_x": "90",
+              "location_layer_y": "327",
+              "layer_size_h": "28",
+              "layer_size_w": "133",
+              "layer_name": "Text layer 1",
+              "layer_name_new": "Name Cat 1",
+              "color": "#7ED321"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Cat 1.jpg",
+              "location_layer_x": "102",
+              "location_layer_y": "212",
+              "layer_size_h": "109",
+              "layer_size_w": "109"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Cat 2",
+              "location_layer_x": "193",
+              "location_layer_y": "327",
+              "layer_size_h": "25",
+              "layer_size_w": "121",
+              "layer_name": "Text layer 1",
+              "layer_name_new": "Name Cat 2",
+              "color": "#7ED321"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Cat 2.jpg",
+              "location_layer_x": "198",
+              "location_layer_y": "210",
+              "layer_size_h": "109",
+              "layer_size_w": "109"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Cat 3",
+              "location_layer_x": "275",
+              "location_layer_y": "327",
+              "layer_size_h": "25",
+              "layer_size_w": "118",
+              "layer_name": "Text layer 1",
+              "layer_name_new": "Name Cat 3",
+              "color": "#7ED321"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Cat 3.png",
+              "location_layer_x": "275",
+              "location_layer_y": "209",
+              "layer_size_h": "109",
+              "layer_size_w": "109"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Cat 4",
+              "location_layer_x": "376",
+              "location_layer_y": "330",
+              "layer_size_h": "24",
+              "layer_size_w": "117",
+              "layer_name": "Text layer 1",
+              "layer_name_new": "Name Cat 4",
+              "color": "#7ED321"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Cat 4.png",
+              "location_layer_x": "371",
+              "location_layer_y": "208",
+              "layer_size_h": "109",
+              "layer_size_w": "109"
+            }
+          ],
+          "groups": [
+            {
+              "current_group": "New group 1",
+              "new_group": "Group 1"
+            },
+            {
+              "current_group": "New group 1",
+              "new_group": "Group 2"
+            },
+            {
+              "current_group": "New group 1",
+              "new_group": "Group 3"
+            },
+            {
+              "current_group": "New group 1",
+              "new_group": "Group 4"
+            }
+          ],
+          "add_layers_to_group": [
+            {
+              "layer_name": "Name Cat 1, Cat 1",
+              "group_name": "Group 1"
+            },
+            {
+              "layer_name": "Name Cat 1, Cat 1, Name Cat 2, Cat 2",
+              "group_name": "Group 2"
+            },
+            {
+              "layer_name": "Name Cat 1, Cat 1, Name Cat 2, Cat 2, Name Cat 3, Cat 3",
+              "group_name": "Group 3"
+            },
+            {
+              "layer_name": "Name Cat 1, Cat 1, Name Cat 2, Cat 2, Name Cat 3, Cat 3, Name Cat 4, Cat 4",
+              "group_name": "Group 4"
+            }
+          ],
+          "customize_group": {
+            "option_group": "Droplist",
+            "label_group": "Number of Cat",
+            "group_name": "Group 4, Group 3, Group 2, Group 1",
+            "default_value": "Group 4"
+          },
+          "custom_option": [
+            {
+              "type": "Text field",
+              "target_layer": "Name Cat 1",
+              "label": "Name Cat 1",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Image",
+              "target_layer": "Cat 1",
+              "label": "Image Cat 1",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Name Cat 2",
+              "label": "Name Cat 2",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Image",
+              "target_layer": "Cat 2",
+              "label": "Image Cat 2",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Name Cat 3",
+              "label": "Name Cat 3",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Image",
+              "target_layer": "Cat 3",
+              "label": "Image Cat 3",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Name Cat 4",
+              "label": "Name Cat 4",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Image",
+              "target_layer": "Cat 4",
+              "label": "Image Cat 4"
+            }
+          ],
+          "custom_options_sf": [
+            [
+              {
+                "custom_name": "Number of Cat",
+                "type": "Droplist",
+                "value": "Group 1"
+              },
+              {
+                "custom_name": "Name Cat 1",
+                "type": "Text field",
+                "value": "Name 1"
+              },
+              {
+                "custom_name": "Image Cat 1",
+                "type": "Image",
+                "value": "BD_1.png"
+              }
+            ],
+            [
+              {
+                "custom_name": "Number of Cat",
+                "type": "Droplist",
+                "value": "Group 2"
+              },
+              {
+                "custom_name": "Name Cat 2",
+                "type": "Text field",
+                "value": "Name 2"
+              },
+              {
+                "custom_name": "Image Cat 2",
+                "type": "Image",
+                "value": "BD_2.png"
+              }
+            ],
+            [
+              {
+                "custom_name": "Number of Cat",
+                "type": "Droplist",
+                "value": "Group 3"
+              },
+              {
+                "custom_name": "Name Cat 3",
+                "type": "Text field",
+                "value": "Name 3"
+              },
+              {
+                "custom_name": "Image Cat 3",
+                "type": "Image",
+                "value": "BD_3.png"
+              }
+            ],
+            [
+              {
+                "custom_name": "Number of Cat",
+                "type": "Droplist",
+                "value": "Group 4"
+              },
+              {
+                "custom_name": "Name Cat 4",
+                "type": "Text field",
+                "value": "Name 4"
+              },
+              {
+                "custom_name": "Image Cat 4",
+                "type": "Image",
+                "value": "BD_4.png"
+              }
+            ]
+          ]
+        },
+        {
+          "case_id": "SB_CGSB_24",
+          "description": "Verify customize group khi có nhiều group layer và nhiều custom option với layer image thường khi chỉ tạo print file",
+          "product_info": {
+            "title": "SB_CGSB_24",
+            "image_name": "thuy.jpg",
+            "description": "SB_CGSB_24",
+            "price": "10"
+          },
+          "picture": {
+            "list_custom_option": "list-custom-option.png",
+            "customize_group_detail": "customize-group-detail.png",
+            "conditional_logic": "conditional-logic.png",
+            "list_custom_option_print_file": "list-custom-option-print-file.png",
+            "image_instant_preview": "image-instant-preview",
+            "image_preview": "image-preview",
+            "gen_print_file": "gen-print-file.png"
+          },
+          "image_mockup": "thuy1.jpg",
+          "button_click_open_editor": "Create Print file",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_value": "Cat 1",
+              "location_layer_x": "90",
+              "location_layer_y": "327",
+              "layer_size_h": "28",
+              "layer_size_w": "133",
+              "layer_name": "Text layer 1",
+              "layer_name_new": "Name Cat 1",
+              "color": "#7ED321"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Cat 1.jpg",
+              "location_layer_x": "102",
+              "location_layer_y": "212",
+              "layer_size_h": "109",
+              "layer_size_w": "109"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Cat 2",
+              "location_layer_x": "193",
+              "location_layer_y": "327",
+              "layer_size_h": "25",
+              "layer_size_w": "121",
+              "layer_name": "Text layer 1",
+              "layer_name_new": "Name Cat 2",
+              "color": "#7ED321"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Cat 2.jpg",
+              "location_layer_x": "198",
+              "location_layer_y": "210",
+              "layer_size_h": "109",
+              "layer_size_w": "109"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Cat 3",
+              "location_layer_x": "275",
+              "location_layer_y": "327",
+              "layer_size_h": "25",
+              "layer_size_w": "118",
+              "layer_name": "Text layer 1",
+              "layer_name_new": "Name Cat 3",
+              "color": "#7ED321"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Cat 3.png",
+              "location_layer_x": "275",
+              "location_layer_y": "209",
+              "layer_size_h": "109",
+              "layer_size_w": "109"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Cat 4",
+              "location_layer_x": "376",
+              "location_layer_y": "330",
+              "layer_size_h": "24",
+              "layer_size_w": "117",
+              "layer_name": "Text layer 1",
+              "layer_name_new": "Name Cat 4",
+              "color": "#7ED321"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Cat 4.png",
+              "location_layer_x": "371",
+              "location_layer_y": "208",
+              "layer_size_h": "109",
+              "layer_size_w": "109"
+            }
+          ],
+          "groups": [
+            {
+              "current_group": "New group 1",
+              "new_group": "Group 1"
+            },
+            {
+              "current_group": "New group 1",
+              "new_group": "Group 2"
+            },
+            {
+              "current_group": "New group 1",
+              "new_group": "Group 3"
+            },
+            {
+              "current_group": "New group 1",
+              "new_group": "Group 4"
+            }
+          ],
+          "add_layers_to_group": [
+            {
+              "layer_name": "Name Cat 1, Cat 1",
+              "group_name": "Group 1"
+            },
+            {
+              "layer_name": "Name Cat 1, Cat 1, Name Cat 2, Cat 2",
+              "group_name": "Group 2"
+            },
+            {
+              "layer_name": "Name Cat 1, Cat 1, Name Cat 2, Cat 2, Name Cat 3, Cat 3",
+              "group_name": "Group 3"
+            },
+            {
+              "layer_name": "Name Cat 1, Cat 1, Name Cat 2, Cat 2, Name Cat 3, Cat 3, Name Cat 4, Cat 4",
+              "group_name": "Group 4"
+            }
+          ],
+          "customize_group": {
+            "option_group": "Droplist",
+            "label_group": "Number of Cat",
+            "group_name": "Group 4, Group 3, Group 2, Group 1",
+            "default_value": "Group 4"
+          },
+          "custom_option": [
+            {
+              "type": "Text field",
+              "target_layer": "Name Cat 1",
+              "label": "Name Cat 1",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Image",
+              "target_layer": "Cat 1",
+              "label": "Image Cat 1",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Name Cat 2",
+              "label": "Name Cat 2",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Image",
+              "target_layer": "Cat 2",
+              "label": "Image Cat 2",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Name Cat 3",
+              "label": "Name Cat 3",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Image",
+              "target_layer": "Cat 3",
+              "label": "Image Cat 3",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Name Cat 4",
+              "label": "Name Cat 4",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Image",
+              "target_layer": "Cat 4",
+              "label": "Image Cat 4"
+            }
+          ],
+          "custom_options_sf": [
+            {
+              "custom_name": "Number of Cat",
+              "type": "Droplist",
+              "value": "Group 4"
+            },
+            {
+              "custom_name": "Name Cat 1",
+              "type": "Text field",
+              "value": "Name 1"
+            },
+            {
+              "custom_name": "Image Cat 1",
+              "type": "Image",
+              "value": "BD_1.png",
+              "hide_popover_crop": true
+            },
+            {
+              "custom_name": "Name Cat 2",
+              "type": "Text field",
+              "value": "Name 2"
+            },
+            {
+              "custom_name": "Image Cat 2",
+              "type": "Image",
+              "value": "BD_2.png",
+              "hide_popover_crop": true
+            },
+            {
+              "custom_name": "Name Cat 3",
+              "type": "Text field",
+              "value": "Name 3"
+            },
+            {
+              "custom_name": "Image Cat 3",
+              "type": "Image",
+              "value": "BD_3.png",
+              "hide_popover_crop": true
+            },
+            {
+              "custom_name": "Name Cat 4",
+              "type": "Text field",
+              "value": "Name 4"
+            },
+            {
+              "custom_name": "Image Cat 4",
+              "type": "Image",
+              "value": "BD_4.png",
+              "hide_popover_crop": true
+            }
+          ]
+        },
+        {
+          "case_id": "SB_CGSB_23",
+          "description": "Verify customize group khi có nhiều group layer và nhiều custom option với layer image thường khi chỉ tạo preview image",
+          "product_info": {
+            "title": "SB_CGSB_23",
+            "image_name": "thuy.jpg",
+            "description": "SB_CGSB_23",
+            "price": "10"
+          },
+          "picture": {
+            "list_custom_option": "list-custom-option.png",
+            "customize_group_detail": "customize-group-detail.png",
+            "conditional_logic": "conditional-logic.png",
+            "list_custom_option_print_file": "list-custom-option-print-file.png",
+            "image_instant_preview": "image-instant-preview",
+            "image_preview": "image-preview",
+            "gen_print_file": "gen-print-file.png"
+          },
+          "image_mockup": "thuy1.jpg",
+          "image_print_file": "sunrise.png",
+          "button_click_open_editor": "Create Preview image",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_value": "Cat 1",
+              "location_layer_x": "90",
+              "location_layer_y": "327",
+              "layer_size_h": "28",
+              "layer_size_w": "133",
+              "layer_name": "Text layer 1",
+              "layer_name_new": "Name Cat 1",
+              "color": "#7ED321"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Cat 1.jpg",
+              "location_layer_x": "102",
+              "location_layer_y": "212",
+              "layer_size_h": "109",
+              "layer_size_w": "109"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Cat 2",
+              "location_layer_x": "193",
+              "location_layer_y": "327",
+              "layer_size_h": "25",
+              "layer_size_w": "121",
+              "layer_name": "Text layer 1",
+              "layer_name_new": "Name Cat 2",
+              "color": "#7ED321"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Cat 2.jpg",
+              "location_layer_x": "198",
+              "location_layer_y": "210",
+              "layer_size_h": "109",
+              "layer_size_w": "109"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Cat 3",
+              "location_layer_x": "275",
+              "location_layer_y": "327",
+              "layer_size_h": "25",
+              "layer_size_w": "118",
+              "layer_name": "Text layer 1",
+              "layer_name_new": "Name Cat 3",
+              "color": "#7ED321"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Cat 3.png",
+              "location_layer_x": "275",
+              "location_layer_y": "209",
+              "layer_size_h": "109",
+              "layer_size_w": "109"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Cat 4",
+              "location_layer_x": "376",
+              "location_layer_y": "330",
+              "layer_size_h": "24",
+              "layer_size_w": "117",
+              "layer_name": "Text layer 1",
+              "layer_name_new": "Name Cat 4",
+              "color": "#7ED321"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Cat 4.png",
+              "location_layer_x": "371",
+              "location_layer_y": "208",
+              "layer_size_h": "109",
+              "layer_size_w": "109"
+            }
+          ],
+          "groups": [
+            {
+              "current_group": "New group 1",
+              "new_group": "Group 1"
+            },
+            {
+              "current_group": "New group 1",
+              "new_group": "Group 2"
+            },
+            {
+              "current_group": "New group 1",
+              "new_group": "Group 3"
+            },
+            {
+              "current_group": "New group 1",
+              "new_group": "Group 4"
+            }
+          ],
+          "add_layers_to_group": [
+            {
+              "layer_name": "Name Cat 1, Cat 1",
+              "group_name": "Group 1"
+            },
+            {
+              "layer_name": "Name Cat 1, Cat 1, Name Cat 2, Cat 2",
+              "group_name": "Group 2"
+            },
+            {
+              "layer_name": "Name Cat 1, Cat 1, Name Cat 2, Cat 2, Name Cat 3, Cat 3",
+              "group_name": "Group 3"
+            },
+            {
+              "layer_name": "Name Cat 1, Cat 1, Name Cat 2, Cat 2, Name Cat 3, Cat 3, Name Cat 4, Cat 4",
+              "group_name": "Group 4"
+            }
+          ],
+          "customize_group": {
+            "option_group": "Droplist",
+            "label_group": "Number of Cat",
+            "group_name": "Group 4, Group 3, Group 2, Group 1",
+            "default_value": "Group 4"
+          },
+
+          "custom_option": [
+            {
+              "type": "Text field",
+              "target_layer": "Name Cat 1",
+              "label": "Name Cat 1",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Image",
+              "target_layer": "Cat 1",
+              "label": "Image Cat 1",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Name Cat 2",
+              "label": "Name Cat 2",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Image",
+              "target_layer": "Cat 2",
+              "label": "Image Cat 2",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Name Cat 3",
+              "label": "Name Cat 3",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Image",
+              "target_layer": "Cat 3",
+              "label": "Image Cat 3",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Name Cat 4",
+              "label": "Name Cat 4",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Image",
+              "target_layer": "Cat 4",
+              "label": "Image Cat 4"
+            }
+          ],
+          "custom_options_sf": [
+            [
+              {
+                "custom_name": "Number of Cat",
+                "type": "Droplist",
+                "value": "Group 1"
+              },
+              {
+                "custom_name": "Name Cat 1",
+                "type": "Text field",
+                "value": "Name 1"
+              },
+              {
+                "custom_name": "Image Cat 1",
+                "type": "Image",
+                "value": "BD_1.png"
+              }
+            ],
+            [
+              {
+                "custom_name": "Number of Cat",
+                "type": "Droplist",
+                "value": "Group 2"
+              },
+              {
+                "custom_name": "Name Cat 2",
+                "type": "Text field",
+                "value": "Name 2"
+              },
+              {
+                "custom_name": "Image Cat 2",
+                "type": "Image",
+                "value": "BD_2.png"
+              }
+            ],
+            [
+              {
+                "custom_name": "Number of Cat",
+                "type": "Droplist",
+                "value": "Group 3"
+              },
+              {
+                "custom_name": "Name Cat 3",
+                "type": "Text field",
+                "value": "Name 3"
+              },
+              {
+                "custom_name": "Image Cat 3",
+                "type": "Image",
+                "value": "BD_3.png"
+              }
+            ],
+            [
+              {
+                "custom_name": "Number of Cat",
+                "type": "Droplist",
+                "value": "Group 4"
+              },
+              {
+                "custom_name": "Name Cat 4",
+                "type": "Text field",
+                "value": "Name 4"
+              },
+              {
+                "custom_name": "Image Cat 4",
+                "type": "Image",
+                "value": "BD_4.png"
+              }
+            ]
+          ]
+        },
+        {
+          "case_id": "SB_CGSB_26",
+          "description": "Verify độ ưu tiên hiển thị của các layer trong customize group và conditional logic khi chỉ tạo preview image",
+          "product_info": {
+            "title": "SB_CGSB_26",
+            "image_name": "Logo1.jpg",
+            "price": "10"
+          },
+          "picture": {
+            "list_custom_option": "list-custom-option.png",
+            "customize_group_detail": "customize-group-detail.png",
+            "conditional_logic": "conditional-logic.png",
+            "list_custom_option_print_file": "list-custom-option-print-file.png",
+            "image_instant_preview": "image-instant-preview",
+            "image_preview": "image-preview",
+            "gen_print_file": "gen-print-file.png"
+          },
+          "image_mockup": "sunrise.png",
+          "button_click_open_editor": "Create Preview image",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_value": "Pet 1",
+              "location_layer_x": "9",
+              "location_layer_y": "676",
+              "layer_size_h": "53",
+              "layer_size_w": "253",
+              "layer_name": "Text layer 1",
+              "layer_name_new": "Pet 1"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Dog 1.png",
+              "location_layer_x": "59",
+              "location_layer_y": "290",
+              "layer_size_h": "371",
+              "layer_size_w": "184"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Pet 2",
+              "location_layer_x": "195",
+              "location_layer_y": "676",
+              "layer_size_h": "50",
+              "layer_size_w": "237",
+              "layer_name": "Text layer 1",
+              "layer_name_new": "Pet 2"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Dog 2.png",
+              "location_layer_x": "242",
+              "location_layer_y": "290",
+              "layer_size_h": "371",
+              "layer_size_w": "183"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Pet 3",
+              "location_layer_x": "363",
+              "location_layer_y": "676",
+              "layer_size_h": "53",
+              "layer_size_w": "251",
+              "layer_name": "Text layer 1",
+              "layer_name_new": "Pet 3"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Dog 3.png",
+              "location_layer_x": "420",
+              "location_layer_y": "290",
+              "layer_size_h": "366",
+              "layer_size_w": "181"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Pet 4",
+              "location_layer_x": "536",
+              "location_layer_y": "676",
+              "layer_size_h": "53",
+              "layer_size_w": "251",
+              "layer_name": "Text layer 1",
+              "layer_name_new": "Pet 4"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Dog 4.png",
+              "location_layer_x": "590",
+              "location_layer_y": "290",
+              "layer_size_h": "372",
+              "layer_size_w": "184"
+            }
+          ],
+          "groups": [
+            {
+              "current_group": "New group 1",
+              "new_group": "Group 1"
+            },
+            {
+              "current_group": "New group 1",
+              "new_group": "Group 2"
+            },
+            {
+              "current_group": "New group 1",
+              "new_group": "Group 3"
+            },
+            {
+              "current_group": "New group 1",
+              "new_group": "Group 4"
+            }
+          ],
+          "add_layers_to_group": [
+            {
+              "layer_name": "Pet 1, Dog 1",
+              "group_name": "Group 1"
+            },
+            {
+              "layer_name": "Pet 1, Dog 1, Pet 2, Dog 2",
+              "group_name": "Group 2"
+            },
+            {
+              "layer_name": "Pet 1, Dog 1, Pet 2, Dog 2, Pet 3, Dog 3",
+              "group_name": "Group 3"
+            },
+            {
+              "layer_name": "Pet 1, Dog 1, Pet 2, Dog 2, Pet 3, Dog 3, Pet 4, Dog 4",
+              "group_name": "Group 4"
+            }
+          ],
+          "customize_group": {
+            "option_group": "Droplist",
+            "label_group": "Number of Pets",
+            "group_name": "Group 4, Group 3, Group 2, Group 1",
+            "default_value": "Group 4"
+          },
+          "custom_option": [
+            {
+              "type": "Text field",
+              "target_layer": "Pet 1",
+              "label": "Name Pet 1",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Droplist",
+              "target_layer": "Pet 1",
+              "label": "#1: Dog or Cat?",
+              "value": "Dog,Cat",
+              "position": "below"
+            },
+            {
+              "type": "Picture choice",
+              "target_layer": "Dog 1",
+              "label": "Dog 1",
+              "type_clipart": "Folder",
+              "value_clipart": "Dog 1",
+              "position": "below"
+            },
+            {
+              "type": "Picture choice",
+              "target_layer": "Dog 1",
+              "label": "Cat 1",
+              "type_clipart": "Folder",
+              "value_clipart": "Cat 1",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Pet 2",
+              "label": "Name Pet 2",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Droplist",
+              "target_layer": "Pet 2",
+              "label": "#2: Dog or Cat?",
+              "value": "Dog,Cat",
+              "position": "below"
+            },
+            {
+              "type": "Picture choice",
+              "target_layer": "Dog 2",
+              "label": "Dog 2",
+              "type_clipart": "Folder",
+              "value_clipart": "Dog 2",
+              "position": "below"
+            },
+            {
+              "type": "Picture choice",
+              "target_layer": "Dog 2",
+              "label": "Cat 2",
+              "type_clipart": "Folder",
+              "value_clipart": "Cat 2",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Pet 3",
+              "label": "Name Pet 3",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Droplist",
+              "target_layer": "Pet 3",
+              "label": "#3: Dog or Cat?",
+              "value": "Dog,Cat",
+              "position": "below"
+            },
+            {
+              "type": "Picture choice",
+              "target_layer": "Dog 3",
+              "label": "Dog 3",
+              "type_clipart": "Folder",
+              "value_clipart": "Dog 3",
+              "position": "below"
+            },
+            {
+              "type": "Picture choice",
+              "target_layer": "Dog 3",
+              "label": "Cat 3",
+              "type_clipart": "Folder",
+              "value_clipart": "Cat 3",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Pet 4",
+              "label": "Name Pet 4",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Droplist",
+              "target_layer": "Pet 4",
+              "label": "#4: Dog or Cat?",
+              "value": "Dog,Cat",
+              "position": "below"
+            },
+            {
+              "type": "Picture choice",
+              "target_layer": "Dog 4",
+              "label": "Dog 4",
+              "type_clipart": "Folder",
+              "value_clipart": "Dog 4",
+              "position": "below"
+            },
+            {
+              "type": "Picture choice",
+              "target_layer": "Dog 4",
+              "label": "Cat 4",
+              "type_clipart": "Folder",
+              "value_clipart": "Cat 4"
+            }
+          ],
+          "conditional_logic_info": [
+            {
+              "custom_name": "#1: Dog or Cat?",
+              "add_condition": "yes",
+              "condition": ["is equal to>Dog", "is equal to>Cat"],
+              "then_show_value": ["Dog 1", "Cat 1"],
+              "is_back_to_list": true
+            },
+            {
+              "custom_name": "#2: Dog or Cat?",
+              "add_condition": "yes",
+              "condition": ["is equal to>Dog", "is equal to>Cat"],
+              "then_show_value": ["Dog 2", "Cat 2"],
+              "is_back_to_list": true
+            },
+            {
+              "custom_name": "#3: Dog or Cat?",
+              "add_condition": "yes",
+              "condition": ["is equal to>Dog", "is equal to>Cat"],
+              "then_show_value": ["Dog 3", "Cat 3"],
+              "is_back_to_list": true
+            },
+            {
+              "custom_name": "#4: Dog or Cat?",
+              "add_condition": "yes",
+              "condition": ["is equal to>Dog", "is equal to>Cat"],
+              "then_show_value": ["Dog 4", "Cat 4"],
+              "is_back_to_list": true
+            }
+          ],
+          "custom_options_sf": [
+            [
+              {
+                "custom_name": "Number of Pets",
+                "type": "Droplist",
+                "value": "Group 1"
+              },
+              {
+                "custom_name": "Name Pet 1",
+                "type": "Text field",
+                "value": "Cat 1"
+              },
+              {
+                "custom_name": "#1: Dog or Cat?",
+                "type": "Droplist",
+                "value": "Cat"
+              },
+              {
+                "custom_name": "Cat 1",
+                "type": "Picture choice",
+                "value": "Cat 1"
+              }
+            ],
+            [
+              {
+                "custom_name": "Number of Pets",
+                "type": "Droplist",
+                "value": "Group 2"
+              },
+              {
+                "custom_name": "Name Pet 2",
+                "type": "Text field",
+                "value": "Cat 2"
+              },
+              {
+                "custom_name": "#2: Dog or Cat?",
+                "type": "Droplist",
+                "value": "Cat"
+              },
+              {
+                "custom_name": "Cat 2",
+                "type": "Picture choice",
+                "value": "Cat 2"
+              }
+            ],
+            [
+              {
+                "custom_name": "Number of Pets",
+                "type": "Droplist",
+                "value": "Group 3"
+              },
+              {
+                "custom_name": "Name Pet 1",
+                "type": "Text field",
+                "value": "Cat 3"
+              },
+              {
+                "custom_name": "#3: Dog or Cat?",
+                "type": "Droplist",
+                "value": "Cat"
+              },
+              {
+                "custom_name": "Cat 3",
+                "type": "Picture choice",
+                "value": "Cat 3"
+              }
+            ],
+            [
+              {
+                "custom_name": "Number of Pets",
+                "type": "Droplist",
+                "value": "Group 4"
+              },
+              {
+                "custom_name": "Name Pet 4",
+                "type": "Text field",
+                "value": "Cat 4"
+              },
+              {
+                "custom_name": "#4: Dog or Cat?",
+                "type": "Droplist",
+                "value": "Cat"
+              },
+              {
+                "custom_name": "Cat 4",
+                "type": "Picture choice",
+                "value": "Cat 4"
+              }
+            ]
+          ]
+        },
+        {
+          "case_id": "SB_CGSB_27",
+          "description": "Verify độ ưu tiên hiển thị của các layer trong customize group và conditional logic khi chỉ tạo print file",
+          "product_info": {
+            "title": "SB_CGSB_27",
+            "image_name": "Logo1.jpg",
+            "price": "10"
+          },
+          "picture": {
+            "list_custom_option": "list-custom-option.png",
+            "customize_group_detail": "customize-group-detail.png",
+            "conditional_logic": "conditional-logic.png",
+            "list_custom_option_print_file": "list-custom-option-print-file.png",
+            "image_instant_preview": "image-instant-preview",
+            "image_preview": "image-preview",
+            "gen_print_file": "gen-print-file.png"
+          },
+          "image_mockup": "sunrise.png",
+          "button_click_open_editor": "Create Print file",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_value": "Pet 1",
+              "location_layer_x": "9",
+              "location_layer_y": "676",
+              "layer_size_h": "53",
+              "layer_size_w": "253",
+              "layer_name": "Text layer 1",
+              "layer_name_new": "Pet 1"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Dog 1.png",
+              "location_layer_x": "59",
+              "location_layer_y": "290",
+              "layer_size_h": "371",
+              "layer_size_w": "184"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Pet 2",
+              "location_layer_x": "195",
+              "location_layer_y": "676",
+              "layer_size_h": "50",
+              "layer_size_w": "237",
+              "layer_name": "Text layer 1",
+              "layer_name_new": "Pet 2"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Dog 2.png",
+              "location_layer_x": "242",
+              "location_layer_y": "290",
+              "layer_size_h": "371",
+              "layer_size_w": "183"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Pet 3",
+              "location_layer_x": "363",
+              "location_layer_y": "676",
+              "layer_size_h": "53",
+              "layer_size_w": "251",
+              "layer_name": "Text layer 1",
+              "layer_name_new": "Pet 3"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Dog 3.png",
+              "location_layer_x": "420",
+              "location_layer_y": "290",
+              "layer_size_h": "366",
+              "layer_size_w": "181"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Pet 4",
+              "location_layer_x": "536",
+              "location_layer_y": "676",
+              "layer_size_h": "53",
+              "layer_size_w": "251",
+              "layer_name": "Text layer 1",
+              "layer_name_new": "Pet 4"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Dog 4.png",
+              "location_layer_x": "590",
+              "location_layer_y": "290",
+              "layer_size_h": "372",
+              "layer_size_w": "184"
+            }
+          ],
+          "groups": [
+            {
+              "current_group": "New group 1",
+              "new_group": "Group 1"
+            },
+            {
+              "current_group": "New group 1",
+              "new_group": "Group 2"
+            },
+            {
+              "current_group": "New group 1",
+              "new_group": "Group 3"
+            },
+            {
+              "current_group": "New group 1",
+              "new_group": "Group 4"
+            }
+          ],
+          "add_layers_to_group": [
+            {
+              "layer_name": "Pet 1, Dog 1",
+              "group_name": "Group 1"
+            },
+            {
+              "layer_name": "Pet 1, Dog 1, Pet 2, Dog 2",
+              "group_name": "Group 2"
+            },
+            {
+              "layer_name": "Pet 1, Dog 1, Pet 2, Dog 2, Pet 3, Dog 3",
+              "group_name": "Group 3"
+            },
+            {
+              "layer_name": "Pet 1, Dog 1, Pet 2, Dog 2, Pet 3, Dog 3, Pet 4, Dog 4",
+              "group_name": "Group 4"
+            }
+          ],
+          "customize_group": {
+            "option_group": "Droplist",
+            "label_group": "Number of Pets",
+            "group_name": "Group 4, Group 3, Group 2, Group 1",
+            "default_value": "Group 4"
+          },
+          "custom_option": [
+            {
+              "type": "Text field",
+              "target_layer": "Pet 1",
+              "label": "Name Pet 1",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Droplist",
+              "target_layer": "Pet 1",
+              "label": "#1: Dog or Cat?",
+              "value": "Dog,Cat",
+              "position": "below"
+            },
+            {
+              "type": "Picture choice",
+              "target_layer": "Dog 1",
+              "label": "Dog 1",
+              "type_clipart": "Folder",
+              "value_clipart": "Dog 1",
+              "position": "below"
+            },
+            {
+              "type": "Picture choice",
+              "target_layer": "Dog 1",
+              "label": "Cat 1",
+              "type_clipart": "Folder",
+              "value_clipart": "Cat 1",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Pet 2",
+              "label": "Name Pet 2",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Droplist",
+              "target_layer": "Pet 2",
+              "label": "#2: Dog or Cat?",
+              "value": "Dog,Cat",
+              "position": "below"
+            },
+            {
+              "type": "Picture choice",
+              "target_layer": "Dog 2",
+              "label": "Dog 2",
+              "type_clipart": "Folder",
+              "value_clipart": "Dog 2",
+              "position": "below"
+            },
+            {
+              "type": "Picture choice",
+              "target_layer": "Dog 2",
+              "label": "Cat 2",
+              "type_clipart": "Folder",
+              "value_clipart": "Cat 2",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Pet 3",
+              "label": "Name Pet 3",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Droplist",
+              "target_layer": "Pet 3",
+              "label": "#3: Dog or Cat?",
+              "value": "Dog,Cat",
+              "position": "below"
+            },
+            {
+              "type": "Picture choice",
+              "target_layer": "Dog 3",
+              "label": "Dog 3",
+              "type_clipart": "Folder",
+              "value_clipart": "Dog 3",
+              "position": "below"
+            },
+            {
+              "type": "Picture choice",
+              "target_layer": "Dog 3",
+              "label": "Cat 3",
+              "type_clipart": "Folder",
+              "value_clipart": "Cat 3",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Pet 4",
+              "label": "Name Pet 4",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Droplist",
+              "target_layer": "Pet 4",
+              "label": "#4: Dog or Cat?",
+              "value": "Dog,Cat",
+              "position": "below"
+            },
+            {
+              "type": "Picture choice",
+              "target_layer": "Dog 4",
+              "label": "Dog 4",
+              "type_clipart": "Folder",
+              "value_clipart": "Dog 4",
+              "position": "below"
+            },
+            {
+              "type": "Picture choice",
+              "target_layer": "Dog 4",
+              "label": "Cat 4",
+              "type_clipart": "Folder",
+              "value_clipart": "Cat 4"
+            }
+          ],
+          "conditional_logic_info": [
+            {
+              "custom_name": "#1: Dog or Cat?",
+              "add_condition": "yes",
+              "condition": ["is equal to>Dog", "is equal to>Cat"],
+              "then_show_value": ["Dog 1", "Cat 1"],
+              "is_back_to_list": true
+            },
+            {
+              "custom_name": "#2: Dog or Cat?",
+              "add_condition": "yes",
+              "condition": ["is equal to>Dog", "is equal to>Cat"],
+              "then_show_value": ["Dog 2", "Cat 2"],
+              "is_back_to_list": true
+            },
+            {
+              "custom_name": "#3: Dog or Cat?",
+              "add_condition": "yes",
+              "condition": ["is equal to>Dog", "is equal to>Cat"],
+              "then_show_value": ["Dog 3", "Cat 3"],
+              "is_back_to_list": true
+            },
+            {
+              "custom_name": "#4: Dog or Cat?",
+              "add_condition": "yes",
+              "condition": ["is equal to>Dog", "is equal to>Cat"],
+              "then_show_value": ["Dog 4", "Cat 4"],
+              "is_back_to_list": true
+            }
+          ],
+          "custom_options_sf": [
+            {
+              "custom_name": "Number of Pets",
+              "type": "Droplist",
+              "value": "Group 4"
+            },
+            {
+              "custom_name": "Name Pet 1",
+              "type": "Text field",
+              "value": "Cat 1"
+            },
+            {
+              "custom_name": "#1: Dog or Cat?",
+              "type": "Droplist",
+              "value": "Cat"
+            },
+            {
+              "custom_name": "Cat 1",
+              "type": "Picture choice",
+              "value": "Cat 1"
+            },
+            {
+              "custom_name": "Name Pet 2",
+              "type": "Text field",
+              "value": "Cat 2"
+            },
+            {
+              "custom_name": "#2: Dog or Cat?",
+              "type": "Droplist",
+              "value": "Cat"
+            },
+            {
+              "custom_name": "Cat 2",
+              "type": "Picture choice",
+              "value": "Cat 2"
+            },
+            {
+              "custom_name": "Name Pet 3",
+              "type": "Text field",
+              "value": "Cat 3"
+            },
+            {
+              "custom_name": "#3: Dog or Cat?",
+              "type": "Droplist",
+              "value": "Cat"
+            },
+            {
+              "custom_name": "Cat 3",
+              "type": "Picture choice",
+              "value": "Cat 3"
+            },
+            {
+              "custom_name": "Name Pet 4",
+              "type": "Text field",
+              "value": "Cat 4"
+            },
+            {
+              "custom_name": "#4: Dog or Cat?",
+              "type": "Droplist",
+              "value": "Cat"
+            },
+            {
+              "custom_name": "Cat 4",
+              "type": "Picture choice",
+              "value": "Cat 4"
+            }
+          ]
+        },
+        {
+          "case_id": "SB_CGSB_28",
+          "description": "Verify độ ưu tiên hiển thị của các layer trong customize group và conditional logic khi tạo cả preview và print file",
+          "product_info": {
+            "title": "SB_CGSB_28",
+            "image_name": "Logo1.jpg",
+            "price": "10"
+          },
+          "picture": {
+            "list_custom_option": "list-custom-option.png",
+            "customize_group_detail": "customize-group-detail.png",
+            "conditional_logic": "conditional-logic.png",
+            "list_custom_option_print_file": "list-custom-option-print-file.png",
+            "image_instant_preview": "image-instant-preview",
+            "image_preview": "image-preview",
+            "gen_print_file": "gen-print-file.png"
+          },
+          "image_mockup": "sunrise.png",
+          "button_click_open_editor": "Create Preview image",
+          "print_file_mockup": "sunrise.png",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_value": "Pet 1",
+              "location_layer_x": "9",
+              "location_layer_y": "676",
+              "layer_size_h": "53",
+              "layer_size_w": "253",
+              "layer_name": "Text layer 1",
+              "layer_name_new": "Pet 1"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Dog 1.png",
+              "location_layer_x": "59",
+              "location_layer_y": "290",
+              "layer_size_h": "371",
+              "layer_size_w": "184"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Pet 2",
+              "location_layer_x": "195",
+              "location_layer_y": "676",
+              "layer_size_h": "50",
+              "layer_size_w": "237",
+              "layer_name": "Text layer 1",
+              "layer_name_new": "Pet 2"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Dog 2.png",
+              "location_layer_x": "242",
+              "location_layer_y": "290",
+              "layer_size_h": "371",
+              "layer_size_w": "183"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Pet 3",
+              "location_layer_x": "363",
+              "location_layer_y": "676",
+              "layer_size_h": "53",
+              "layer_size_w": "251",
+              "layer_name": "Text layer 1",
+              "layer_name_new": "Pet 3"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Dog 3.png",
+              "location_layer_x": "420",
+              "location_layer_y": "290",
+              "layer_size_h": "366",
+              "layer_size_w": "181"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Pet 4",
+              "location_layer_x": "536",
+              "location_layer_y": "676",
+              "layer_size_h": "53",
+              "layer_size_w": "251",
+              "layer_name": "Text layer 1",
+              "layer_name_new": "Pet 4"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Dog 4.png",
+              "location_layer_x": "590",
+              "location_layer_y": "290",
+              "layer_size_h": "372",
+              "layer_size_w": "184"
+            }
+          ],
+          "groups": [
+            {
+              "current_group": "New group 1",
+              "new_group": "Group 1"
+            },
+            {
+              "current_group": "New group 1",
+              "new_group": "Group 2"
+            },
+            {
+              "current_group": "New group 1",
+              "new_group": "Group 3"
+            },
+            {
+              "current_group": "New group 1",
+              "new_group": "Group 4"
+            }
+          ],
+          "add_layers_to_group": [
+            {
+              "layer_name": "Pet 1, Dog 1",
+              "group_name": "Group 1"
+            },
+            {
+              "layer_name": "Pet 1, Dog 1, Pet 2, Dog 2",
+              "group_name": "Group 2"
+            },
+            {
+              "layer_name": "Pet 1, Dog 1, Pet 2, Dog 2, Pet 3, Dog 3",
+              "group_name": "Group 3"
+            },
+            {
+              "layer_name": "Pet 1, Dog 1, Pet 2, Dog 2, Pet 3, Dog 3, Pet 4, Dog 4",
+              "group_name": "Group 4"
+            }
+          ],
+          "customize_group": {
+            "option_group": "Droplist",
+            "label_group": "Number of Pets",
+            "group_name": "Group 4, Group 3, Group 2, Group 1",
+            "default_value": "Group 4"
+          },
+          "custom_option": [
+            {
+              "type": "Text field",
+              "target_layer": "Pet 1",
+              "label": "Name Pet 1",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Droplist",
+              "target_layer": "Pet 1",
+              "label": "#1: Dog or Cat?",
+              "value": "Dog,Cat",
+              "position": "below"
+            },
+            {
+              "type": "Picture choice",
+              "target_layer": "Dog 1",
+              "label": "Dog 1",
+              "type_clipart": "Folder",
+              "value_clipart": "Dog 1",
+              "position": "below"
+            },
+            {
+              "type": "Picture choice",
+              "target_layer": "Dog 1",
+              "label": "Cat 1",
+              "type_clipart": "Folder",
+              "value_clipart": "Cat 1",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Pet 2",
+              "label": "Name Pet 2",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Droplist",
+              "target_layer": "Pet 2",
+              "label": "#2: Dog or Cat?",
+              "value": "Dog,Cat",
+              "position": "below"
+            },
+            {
+              "type": "Picture choice",
+              "target_layer": "Dog 2",
+              "label": "Dog 2",
+              "type_clipart": "Folder",
+              "value_clipart": "Dog 2",
+              "position": "below"
+            },
+            {
+              "type": "Picture choice",
+              "target_layer": "Dog 2",
+              "label": "Cat 2",
+              "type_clipart": "Folder",
+              "value_clipart": "Cat 2",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Pet 3",
+              "label": "Name Pet 3",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Droplist",
+              "target_layer": "Pet 3",
+              "label": "#3: Dog or Cat?",
+              "value": "Dog,Cat",
+              "position": "below"
+            },
+            {
+              "type": "Picture choice",
+              "target_layer": "Dog 3",
+              "label": "Dog 3",
+              "type_clipart": "Folder",
+              "value_clipart": "Dog 3",
+              "position": "below"
+            },
+            {
+              "type": "Picture choice",
+              "target_layer": "Dog 3",
+              "label": "Cat 3",
+              "type_clipart": "Folder",
+              "value_clipart": "Cat 3",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Pet 4",
+              "label": "Name Pet 4",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Droplist",
+              "target_layer": "Pet 4",
+              "label": "#4: Dog or Cat?",
+              "value": "Dog,Cat",
+              "position": "below"
+            },
+            {
+              "type": "Picture choice",
+              "target_layer": "Dog 4",
+              "label": "Dog 4",
+              "type_clipart": "Folder",
+              "value_clipart": "Dog 4",
+              "position": "below"
+            },
+            {
+              "type": "Picture choice",
+              "target_layer": "Dog 4",
+              "label": "Cat 4",
+              "type_clipart": "Folder",
+              "value_clipart": "Cat 4"
+            }
+          ],
+          "conditional_logic_info": [
+            {
+              "custom_name": "#1: Dog or Cat?",
+              "add_condition": "yes",
+              "condition": ["is equal to>Dog", "is equal to>Cat"],
+              "then_show_value": ["Dog 1", "Cat 1"],
+              "is_back_to_list": true
+            },
+            {
+              "custom_name": "#2: Dog or Cat?",
+              "add_condition": "yes",
+              "condition": ["is equal to>Dog", "is equal to>Cat"],
+              "then_show_value": ["Dog 2", "Cat 2"],
+              "is_back_to_list": true
+            },
+            {
+              "custom_name": "#3: Dog or Cat?",
+              "add_condition": "yes",
+              "condition": ["is equal to>Dog", "is equal to>Cat"],
+              "then_show_value": ["Dog 3", "Cat 3"],
+              "is_back_to_list": true
+            },
+            {
+              "custom_name": "#4: Dog or Cat?",
+              "add_condition": "yes",
+              "condition": ["is equal to>Dog", "is equal to>Cat"],
+              "then_show_value": ["Dog 4", "Cat 4"],
+              "is_back_to_list": true
+            }
+          ],
+          "custom_options_sf": [
+            [
+              {
+                "custom_name": "Number of Pets",
+                "type": "Droplist",
+                "value": "Group 1"
+              },
+              {
+                "custom_name": "Name Pet 1",
+                "type": "Text field",
+                "value": "Cat 1"
+              },
+              {
+                "custom_name": "#1: Dog or Cat?",
+                "type": "Droplist",
+                "value": "Cat"
+              },
+              {
+                "custom_name": "Cat 1",
+                "type": "Picture choice",
+                "value": "Cat 1"
+              }
+            ],
+            [
+              {
+                "custom_name": "Number of Pets",
+                "type": "Droplist",
+                "value": "Group 2"
+              },
+              {
+                "custom_name": "Name Pet 2",
+                "type": "Text field",
+                "value": "Cat 2"
+              },
+              {
+                "custom_name": "#2: Dog or Cat?",
+                "type": "Droplist",
+                "value": "Cat"
+              },
+              {
+                "custom_name": "Cat 2",
+                "type": "Picture choice",
+                "value": "Cat 2"
+              }
+            ],
+            [
+              {
+                "custom_name": "Number of Pets",
+                "type": "Droplist",
+                "value": "Group 3"
+              },
+              {
+                "custom_name": "Name Pet 3",
+                "type": "Text field",
+                "value": "Cat 3"
+              },
+              {
+                "custom_name": "#3: Dog or Cat?",
+                "type": "Droplist",
+                "value": "Cat"
+              },
+              {
+                "custom_name": "Cat 3",
+                "type": "Picture choice",
+                "value": "Cat 3"
+              }
+            ],
+            [
+              {
+                "custom_name": "Number of Pets",
+                "type": "Droplist",
+                "value": "Group 4"
+              },
+              {
+                "custom_name": "Name Pet 4",
+                "type": "Text field",
+                "value": "Cat 4"
+              },
+              {
+                "custom_name": "#4: Dog or Cat?",
+                "type": "Droplist",
+                "value": "Cat"
+              },
+              {
+                "custom_name": "Cat 4",
+                "type": "Picture choice",
+                "value": "Cat 4"
+              }
+            ]
+          ]
+        },
+        {
+          "case_id": "SB_CGSB_29",
+          "description": "Verify độ ưu tiên hiển thị của các layer trong customize group và conditional logic khi tạo cả preview và print file",
+          "product_info": {
+            "title": "SB_CGSB_29",
+            "image_name": "thuy.jpg",
+            "price": "10"
+          },
+          "picture": {
+            "list_custom_option": "list-custom-option.png",
+            "customize_group_detail": "customize-group-detail.png",
+            "conditional_logic": "conditional-logic.png",
+            "list_custom_option_print_file": "list-custom-option-print-file.png",
+            "image_instant_preview": "image-instant-preview",
+            "image_preview": "image-preview",
+            "gen_print_file": "gen-print-file.png"
+          },
+          "image_mockup": "thuy1.jpg",
+          "button_click_open_editor": "Create Preview image",
+          "print_file_mockup": "thuy1.jpg",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_value": "Cat 1",
+              "location_layer_x": "90",
+              "location_layer_y": "327",
+              "layer_size_h": "28",
+              "layer_size_w": "133",
+              "layer_name": "Text layer 1",
+              "layer_name_new": "Cat 1",
+              "color": "#7ED321"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Cat 1.jpg",
+              "location_layer_x": "102",
+              "location_layer_y": "212",
+              "layer_size_h": "109",
+              "layer_size_w": "109"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Cat 2",
+              "location_layer_x": "193",
+              "location_layer_y": "327",
+              "layer_size_h": "25",
+              "layer_size_w": "121",
+              "layer_name": "Text layer 1",
+              "layer_name_new": "Cat 2",
+              "color": "#7ED321"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Cat 2.jpg",
+              "location_layer_x": "198",
+              "location_layer_y": "210",
+              "layer_size_h": "109",
+              "layer_size_w": "109"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Cat 3",
+              "location_layer_x": "275",
+              "location_layer_y": "327",
+              "layer_size_h": "25",
+              "layer_size_w": "118",
+              "layer_name": "Text layer 1",
+              "layer_name_new": "Cat 3",
+              "color": "#7ED321"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Cat 3.png",
+              "location_layer_x": "275",
+              "location_layer_y": "209",
+              "layer_size_h": "109",
+              "layer_size_w": "109"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Cat 4",
+              "location_layer_x": "376",
+              "location_layer_y": "330",
+              "layer_size_h": "24",
+              "layer_size_w": "117",
+              "layer_name": "Text layer 1",
+              "layer_name_new": "Cat 4",
+              "color": "#7ED321"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "Cat 4.png",
+              "location_layer_x": "371",
+              "location_layer_y": "208",
+              "layer_size_h": "109",
+              "layer_size_w": "109"
+            }
+          ],
+          "groups": [
+            {
+              "current_group": "New group 1",
+              "new_group": "Group 1"
+            },
+            {
+              "current_group": "New group 1",
+              "new_group": "Group 2"
+            },
+            {
+              "current_group": "New group 1",
+              "new_group": "Group 3"
+            },
+            {
+              "current_group": "New group 1",
+              "new_group": "Group 4"
+            }
+          ],
+          "add_layers_to_group": [
+            {
+              "layer_name": "Cat 1, Cat 1",
+              "group_name": "Group 1"
+            },
+            {
+              "layer_name": "Cat 1, Cat 1, Cat 2, Cat 2",
+              "group_name": "Group 2"
+            },
+            {
+              "layer_name": "Cat 1, Cat 1, Cat 2, Cat 2, Cat 3, Cat 3",
+              "group_name": "Group 3"
+            },
+            {
+              "layer_name": "Cat 1, Cat 1, Cat 2, Cat 2, Cat 3, Cat 3, Cat 4, Cat 4",
+              "group_name": "Group 4"
+            }
+          ],
+          "customize_group": {
+            "option_group": "Droplist",
+            "label_group": "Number of Cats",
+            "group_name": "Group 4, Group 3, Group 2, Group 1",
+            "default_value": "Group 4"
+          },
+          "custom_option": [
+            {
+              "type": "Text field",
+              "target_layer": "Cat 1",
+              "label": "Name Cat 1",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Picture choice",
+              "target_layer": "Cat 1",
+              "label": "Cat 1",
+              "type_clipart": "Folder",
+              "value_clipart": "Cat 1",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Cat 2",
+              "label": "Name Cat 2",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Picture choice",
+              "target_layer": "Cat 2",
+              "label": "Cat 2",
+              "type_clipart": "Folder",
+              "value_clipart": "Cat 2",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Cat 3",
+              "label": "Name Cat 3",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Picture choice",
+              "target_layer": "Cat 3",
+              "label": "Cat 3",
+              "type_clipart": "Folder",
+              "value_clipart": "Cat 3",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Cat 4",
+              "label": "Name Cat 4",
+              "allow_character": "Characters, Numbers",
+              "position": "below"
+            },
+            {
+              "type": "Picture choice",
+              "target_layer": "Cat 4",
+              "label": "Cat 4",
+              "type_clipart": "Folder",
+              "value_clipart": "Cat 4"
+            }
+          ],
+          "custom_options_sf": [
+            [
+              {
+                "custom_name": "Number of Cats",
+                "type": "Droplist",
+                "value": "Group 1"
+              },
+              {
+                "custom_name": "Name Cat 1",
+                "type": "Text field",
+                "value": "Name 1"
+              },
+              {
+                "custom_name": "Cat 1",
+                "type": "Picture choice",
+                "value": "Cat 1"
+              }
+            ],
+            [
+              {
+                "custom_name": "Number of Cats",
+                "type": "Droplist",
+                "value": "Group 2"
+              },
+              {
+                "custom_name": "Name Cat 2",
+                "type": "Text field",
+                "value": "Name 2"
+              },
+              {
+                "custom_name": "Cat 2",
+                "type": "Picture choice",
+                "value": "Cat 2"
+              }
+            ],
+            [
+              {
+                "custom_name": "Number of Cats",
+                "type": "Droplist",
+                "value": "Group 3"
+              },
+              {
+                "custom_name": "Name Cat 3",
+                "type": "Text field",
+                "value": "Name 3"
+              },
+              {
+                "custom_name": "Cat 3",
+                "type": "Picture choice",
+                "value": "Cat 3"
+              }
+            ],
+            [
+              {
+                "custom_name": "Number of Cats",
+                "type": "Droplist",
+                "value": "Group 4"
+              },
+              {
+                "custom_name": "Name Cat 4",
+                "type": "Text field",
+                "value": "Name 4"
+              },
+              {
+                "custom_name": "Cat 4",
+                "type": "Picture choice",
+                "value": "Cat 4"
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  }
+}

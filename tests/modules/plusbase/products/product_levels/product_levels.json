@@ -1,0 +1,184 @@
+{
+  "env": {
+    "prod": {
+      "domain": "au-product-level.onshopbase.com",
+      "api": "https://api.shopbase.com",
+      "shop_name": "au-product-level",
+      "username": "shopbase3@beeketing.net",
+      "password": "aAeg*PJR4.t6V:P",
+      "domain_template": "template-store.onshopbase.com",
+      "username_template": "qas@beeketing.net",
+      "password_template": "123456",
+      "user_id": 206811,
+      "shop_id": 10384962,
+      "product_sb_id": 1000000451268090,
+      "odoo_host": "https://autotest-erp-plus.shopbase.dev",
+      "odoo_db": "shopbase_fulfillment",
+      "odoo_username": "qaocg",
+      "odoo_password": "LFmy=qGLvwW^E63b",
+      "product_template_ids": [1463748, 1465068, 1469749, 1469751],
+      "tax_rates": [0, 0.1, 0.1]
+    },
+    "prodtest": {
+      "domain": "au-product-level-prodtest.onshopbase.com",
+      "api": "https://prod-test-api.shopbase.com",
+      "shop_name": "au-product-level-prodtest",
+      "username": "shopbase3@beeketing.net",
+      "password": "aAeg*PJR4.t6V:P",
+      "domain_template": "plusbase-templateprodtest.onshopbase.com",
+      "username_template": "qas@beeketing.net",
+      "password_template": "123456",
+      "user_id": 206811,
+      "shop_id": 10422595,
+      "product_sb_id": 1000000470367597,
+      "odoo_host": "https://autotest-erp-plus.shopbase.dev",
+      "odoo_db": "shopbase_fulfillment",
+      "odoo_username": "qaocg",
+      "odoo_password": "LFmy=qGLvwW^E63b",
+      "product_template_ids": [1463748, 1465068, 1469749, 1469751],
+      "tax_rates": [0, 0.1, 0.1],
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "domain": "au-product-level.myshopbase.net",
+      "api": "https://gapi.dev.shopbase.net",
+      "shop_name": "au-product-level",
+      "username": "shopbase3@beeketing.net",
+      "password": "=l-N&YG}g<'KLJk",
+      "domain_template": "plusbase-checkout.myshopbase.net",
+      "username_template": "phuongpham@beeketing.net",
+      "password_template": "123456",
+      "user_id": 86961,
+      "shop_id": 10323533,
+      "product_sb_id": 1000000000179744,
+      "odoo_host": "https://odoo.dev.shopbase.net/",
+      "odoo_db": "sbase_fulfillment_dev",
+      "odoo_username": "admin",
+      "odoo_password": "admin",
+      "product_template_ids": [1145180, 1145190, 1154746, 1155243],
+      "tax_rates": [0, 0.1, 0.15]
+    }
+  },
+  "payment_fee_rate": 0.03,
+  "card_info": {
+    "number": "4242424242424242",
+    "holder_name": "Shopbase",
+    "expire_date": "03 / 33",
+    "cvv": "119"
+  },
+  "customer_info": {
+    "email": "tester@maildrop.cc",
+    "first_name": "Shop",
+    "last_name": "Base",
+    "address": "1600 W Loop S",
+    "country": "United States",
+    "state": "California",
+    "city": "Los Angeles",
+    "zipcode": "90001",
+    "phone_number": "0357974381"
+  },
+  "discount_info": {
+    "type": "",
+    "code": "",
+    "value": 0
+  },
+  "is_tax_exclude": true,
+  "tax_include": 0,
+  "cases": {
+    "SB_PLB_PLB-UD-PR_SPL_94": {
+      "product_info": {
+        "name": "(Test product) Navy Blue High Waist Baggy Womens Jeans Streetwear y2k 2022 Fashion Streetwear Casual Summer Wide Leg Premium Pants",
+        "quantity": "1"
+      }
+    },
+    "SB_PLB_PLB-UD-PR_SPL_98": {
+      "product_info": {
+        "name": "(Test product) 2022New Woman Jeans High Waist Skinny Denim Straight Pants Women Sexy Elastic Slim Blue Denim Trousers Washed Jeans",
+        "quantity": "1"
+      }
+    },
+    "SB_PLB_PLB-UD-PR_SPL_100": {
+      "data": [
+        {
+          "description": "Verify processing rate của order có nhiều line item với mức processing rate khác nhau ",
+          "case_id": "SB_PLB_PLB-UD-PR_SPL_100",
+          "shipping_types": "PlusBase Standard Shipping",
+          "shipping_checkout": "Standard Shipping",
+          "country_code": "US",
+          "product_infos": [
+            {
+              "selling_price": 30.99,
+              "base_cost": 10,
+              "index_tax_rate": 0,
+              "processing_rate": 0.055,
+              "index_shipping_cost": 2,
+              "shipping_fee": 4.99
+            },
+            {
+              "selling_price": 75.99,
+              "base_cost": 10,
+              "index_tax_rate": 2,
+              "processing_rate": 0.04,
+              "index_shipping_cost": 3,
+              "shipping_fee": 4.99
+            }
+          ],
+          "product_checkout": [
+            {
+              "name": "(Test product) MiuKoMiYa Straight Jeans Women High Waist Streetwear Light Blue Boyfriend Denim Pants Ladies Wide Leg White Jeans For Women 2022",
+              "quantity": "1",
+              "options": ["S"],
+              "productQtyClass": "product__quantity"
+            },
+            {
+              "name": "(Test product) Yitimoky Woolen Pants for Women Office Lady High Waist Clothes Work Black Coffee Full Length Trousers Korean Fashion Bottoms New",
+              "quantity": "1",
+              "options": ["S"],
+              "productQtyClass": "product__quantity"
+            }
+          ]
+        },
+        {
+          "description": "Verify processing rate của order có variant POD và variant Dropship với mức processing rate khác nhau",
+          "case_id": "SB_PLB_PLB-UD-PR_SPL_102",
+          "shipping_types": "PlusBase Standard Shipping",
+          "shipping_checkout": "Standard Shipping",
+          "country_code": "US",
+          "product_infos": [
+            {
+              "selling_price": 30.99,
+              "base_cost": 10,
+              "index_tax_rate": 1,
+              "processing_rate": 0.055,
+              "index_shipping_cost": 2,
+              "shipping_fee": 4.99
+            },
+            {
+              "selling_price": 31.99,
+              "base_cost": 11.99,
+              "index_tax_rate": 0,
+              "processing_rate": 0.04,
+              "shipping_cost": 6.99,
+              "index_shipping_cost": 4,
+              "shipping_fee": 4.99
+            }
+          ],
+          "product_checkout": [
+            {
+              "name": "(Test product) MiuKoMiYa Straight Jeans Women High Waist Streetwear Light Blue Boyfriend Denim Pants Ladies Wide Leg White Jeans For Women 2022",
+              "quantity": "1",
+              "options": ["S"],
+              "productQtyClass": "product__quantity"
+            },
+            {
+              "name": "(Test product) product automation feature product level",
+              "quantity": "1",
+              "options": ["S"],
+              "productQtyClass": "product__quantity"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

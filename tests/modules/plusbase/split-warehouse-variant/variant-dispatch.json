@@ -1,0 +1,233 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-variant-dispatch.myshopbase.net",
+      "shop_name": "au-variant-dispatch",
+      "user_id": 90044,
+      "shop_id": 10333669,
+      "username": "plus-qe-2@beeketing.net",
+      "password": "VDDSzj45Z0#l",
+      "odoo_host": "https://odoo.dev.shopbase.net/",
+      "odoo_db": "sbase_fulfillment_dev",
+      "odoo_username": "admin",
+      "odoo_password": "admin",
+      "cases": {
+        "SB_PLB_SW_01": {
+          "product_template_id": 1159220,
+          "variant_dispatch_warehouse_id": 1000012,
+          "aliexpress_warehouse_id": 1000010,
+          "chaoshi_warehouse_id": 1000011,
+          "invalid_aliexpress_product_product_ids:": [1373755],
+          "valid_aliexpress_product_product_ids": [1373755, 1373757],
+          "valid_chaoshi_product_product_ids": [1373756],
+          "aliexpress_carrier_id": 26,
+          "chaoshi_carrier_id": 40,
+          "err": {
+            "lack_variant": "Variant dispatch lack variants",
+            "invalid_shipping": "Invalid shipping method"
+          }
+        },
+        "SB_PLB_SW_04": {
+          "product_template_id": 1159222,
+          "support_shipping_methods": ["Standard Shipping", "Premium Shipping"],
+          "validate_shipping_price_steps": [
+            {
+              "variant_id": 1373765,
+              "variant_options": ["S", "black"],
+              "sale_order_id": 1018720,
+              "shipping_methods": [
+                {
+                  "name": "Standard Shipping",
+                  "first": 2.99,
+                  "additional": 1.51
+                }
+              ]
+            },
+            {
+              "variant_id": 1373773,
+              "variant_options": ["S", "GRAY"],
+              "sale_order_id": 1018720,
+              "shipping_methods": [
+                {
+                  "name": "Standard Shipping",
+                  "first": 14.79,
+                  "additional": 13.35
+                },
+                {
+                  "name": "Premium Shipping",
+                  "first": 30.35,
+                  "additional": 20.65
+                }
+              ]
+            }
+          ],
+          "validate_shipping_countries": [
+            {
+              "variant_name": "black / S",
+              "fulfillment_by": "AliExpress"
+            },
+            {
+              "variant_name": "GRAY / S",
+              "fulfillment_by": "Trusted supplier"
+            }
+          ]
+        }
+      }
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-variant-dispatch-prodtest.onshopbase.com",
+      "shop_name": "au-variant-dispatch-prodtest",
+      "user_id": 11248586,
+      "shop_id": 10497707,
+      "username": "plus-qe-2@beeketing.net",
+      "password": "VDDSzj45Z0#l",
+      "odoo_host": "https://autotest-erp-plus.shopbase.dev",
+      "odoo_db": "shopbase_fulfillment",
+      "odoo_username": "qaocg",
+      "odoo_password": "LFmy=qGLvwW^E63b",
+      "cases": {
+        "SB_PLB_SW_01": {
+          "product_template_id": 2222603,
+          "variant_dispatch_warehouse_id": 1000009,
+          "aliexpress_warehouse_id": 1000001,
+          "chaoshi_warehouse_id": 1000002,
+          "invalid_aliexpress_product_product_ids:": [35164233],
+          "valid_aliexpress_product_product_ids": [35164233, 35164232],
+          "valid_chaoshi_product_product_ids": [35164234],
+          "aliexpress_carrier_id": 25,
+          "chaoshi_carrier_id": 30,
+          "err": {
+            "lack_variant": "Variant dispatch lack variants",
+            "invalid_shipping": "Invalid shipping method"
+          }
+        },
+        "SB_PLB_SW_04": {
+          "product_template_id": 2222632,
+          "support_shipping_methods": ["Standard Shipping", "Premium Shipping"],
+          "validate_shipping_price_steps": [
+            {
+              "variant_id": 35164534,
+              "variant_options": ["M", "black"],
+              "sale_order_id": 2823086,
+              "shipping_methods": [
+                {
+                  "name": "Standard Shipping",
+                  "first": 2.99,
+                  "additional": 1.51
+                }
+              ]
+            },
+            {
+              "variant_id": 35164538,
+              "variant_options": ["M", "Khaki"],
+              "sale_order_id": 2823086,
+              "shipping_methods": [
+                {
+                  "name": "Standard Shipping",
+                  "first": 17.99,
+                  "additional": 16.55
+                },
+                {
+                  "name": "Premium Shipping",
+                  "first": 31.15,
+                  "additional": 31.15
+                }
+              ]
+            }
+          ],
+          "validate_shipping_countries": [
+            {
+              "variant_name": "black / M",
+              "fulfillment_by": "AliExpress"
+            },
+            {
+              "variant_name": "Khaki / M",
+              "fulfillment_by": "Trusted supplier"
+            }
+          ]
+        }
+      }
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-variant-dispatch.onshopbase.com",
+      "shop_name": "au-variant-dispatch",
+      "user_id": 11248586,
+      "shop_id": 10497659,
+      "username": "plus-qe-2@beeketing.net",
+      "password": "Q37t^Q7Sa4W8",
+      "odoo_host": "https://autotest-erp-plus.shopbase.dev",
+      "odoo_db": "shopbase_fulfillment",
+      "odoo_username": "qaocg",
+      "odoo_password": "LFmy=qGLvwW^E63b",
+      "cases": {
+        "SB_PLB_SW_01": {
+          "product_template_id": 2222603,
+          "variant_dispatch_warehouse_id": 1000009,
+          "aliexpress_warehouse_id": 1000001,
+          "chaoshi_warehouse_id": 1000002,
+          "invalid_aliexpress_product_product_ids:": [35164233],
+          "valid_aliexpress_product_product_ids": [35164233, 35164232],
+          "valid_chaoshi_product_product_ids": [35164234],
+          "aliexpress_carrier_id": 25,
+          "chaoshi_carrier_id": 30,
+          "err": {
+            "lack_variant": "Variant dispatch lack variants",
+            "invalid_shipping": "Invalid shipping method"
+          }
+        },
+        "SB_PLB_SW_04": {
+          "product_template_id": 2222632,
+          "support_shipping_methods": ["Standard Shipping", "Premium Shipping"],
+          "validate_shipping_price_steps": [
+            {
+              "variant_id": 35164534,
+              "variant_options": ["M", "black"],
+              "sale_order_id": 2823086,
+              "shipping_methods": [
+                {
+                  "name": "Standard Shipping",
+                  "first": 2.99,
+                  "additional": 1.51
+                }
+              ]
+            },
+            {
+              "variant_id": 35164538,
+              "variant_options": ["M", "Khaki"],
+              "sale_order_id": 2823086,
+              "shipping_methods": [
+                {
+                  "name": "Standard Shipping",
+                  "first": 17.99,
+                  "additional": 16.55
+                },
+                {
+                  "name": "Premium Shipping",
+                  "first": 31.15,
+                  "additional": 31.15
+                }
+              ]
+            }
+          ],
+          "validate_shipping_countries": [
+            {
+              "variant_name": "black / M",
+              "fulfillment_by": "AliExpress"
+            },
+            {
+              "variant_name": "Khaki / M",
+              "fulfillment_by": "Trusted supplier"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "cases": {
+    "SB_PLB_SW_01": {},
+    "SB_PLB_SW_04": {}
+  }
+}

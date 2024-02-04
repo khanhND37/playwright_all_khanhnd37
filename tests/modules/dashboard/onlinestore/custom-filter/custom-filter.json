@@ -1,0 +1,858 @@
+{
+  "env": {
+    "dev": {
+      "domain": "au-v2-custom-filter.myshopbase.net",
+      "shop_name": "au-v2-custom-filter",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10330675,
+      "user_id": 90252,
+      "test_theme_id": 3189174,
+      "collection_test": "Women's collection"
+    },
+    "prodtest": {
+      "domain": "au-v2-custom-filter-prodtest.onshopbase.com",
+      "shop_name": "au-v2-custom-filter-prodtest",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10459055,
+      "user_id": 11260206,
+      "test_theme_id": 1502265,
+      "collection_test": "Women's collection"
+    },
+    "prod": {
+      "domain": "au-v2-custom-filter.onshopbase.com",
+      "shop_name": "au-v2-custom-filter",
+      "api": "https://api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10459057,
+      "user_id": 11260206,
+      "test_theme_id": 1499698,
+      "collection_test": "Women's collection"
+    }
+  },
+  "cases": {
+    "SB_OLS_NVG_CF_04": {
+      "set_filters": {
+        "checked": [
+          {
+            "title": "availability",
+            "handle": "availability",
+            "type": "product_information"
+          },
+          {
+            "title": "vendor",
+            "handle": "vendor",
+            "type": "product_information"
+          },
+          {
+            "title": "price",
+            "handle": "price",
+            "type": "product_information"
+          },
+          {
+            "title": "product types",
+            "handle": "product-types",
+            "type": "product_information"
+          }
+        ]
+      }
+    },
+    "SB_OLS_NVG_CF_11": {
+      "expected_min_filters_count": 5,
+      "expected_all_filters_count": 6
+    },
+    "SB_OLS_NVG_CF_15": {
+      "untick_all": {
+        "checked": []
+      },
+      "filter_data": {
+        "filters": ["Material", "Color", "Size"],
+        "checked": true
+      }
+    },
+    "SB_OLS_NVG_CF_17": {
+      "set_filters": {
+        "checked": [
+          {
+            "title": "availability",
+            "handle": "availability",
+            "type": "product_information"
+          },
+          {
+            "title": "vendor",
+            "handle": "vendor",
+            "type": "product_information"
+          },
+          {
+            "title": "Size",
+            "handle": "Size",
+            "type": "product_options"
+          }
+        ]
+      },
+      "remove_filters": {
+        "filters": ["Size", "Vendor", "Availability"],
+        "checked": false
+      }
+    },
+    "SB_OLS_NVG_CF_24": {
+      "set_filters": {
+        "checked": [
+          {
+            "title": "availability",
+            "handle": "availability",
+            "type": "product_information"
+          },
+          {
+            "title": "vendor",
+            "handle": "vendor",
+            "type": "product_information"
+          },
+          {
+            "title": "Size",
+            "handle": "Size",
+            "type": "product_options"
+          }
+        ]
+      },
+      "filters": {
+        "checked": [
+          {
+            "handle": "availability",
+            "title": "availability",
+            "type": "product_information"
+          },
+          {
+            "handle": "price",
+            "title": "price",
+            "type": "product_information"
+          },
+          {
+            "handle": "product_type",
+            "title": "product types",
+            "type": "product_information"
+          },
+          {
+            "handle": "vendor",
+            "title": "vendor",
+            "type": "product_information"
+          }
+        ]
+      },
+      "collection_handle": "collections/test-custom-filter",
+      "sort_newest": "created:desc"
+    },
+    "SB_OLS_NVG_CF_77": {
+      "set_filters": {
+        "checked": [
+          {
+            "title": "availability",
+            "handle": "availability",
+            "type": "product_information"
+          },
+          {
+            "title": "vendor",
+            "handle": "vendor",
+            "type": "product_information"
+          },
+          {
+            "title": "Size",
+            "handle": "Size",
+            "type": "product_options"
+          },
+          {
+            "handle": "price",
+            "title": "price",
+            "type": "product_information"
+          }
+        ]
+      },
+      "collection_handle": "collections/test-custom-filter",
+      "available_only": "Available only",
+      "price_filter": {
+        "from": 15.0,
+        "to": 25.0
+      },
+      "expected": {
+        "disabled": "disabled",
+        "products_filtered": 2,
+        "all_products": 4
+      }
+    },
+    "SB_OLS_NVG_CF_78": {
+      "set_filters": {
+        "checked": [
+          {
+            "title": "availability",
+            "handle": "availability",
+            "type": "product_information"
+          },
+          {
+            "handle": "product_type",
+            "title": "product types",
+            "type": "product_information"
+          },
+          {
+            "title": "Size",
+            "handle": "Size",
+            "type": "product_options"
+          }
+        ]
+      },
+      "collection_handle": "collections/test-custom-filter",
+      "product_type": "Necklace",
+      "expected": {
+        "filter_count": 1,
+        "result_count": 1,
+        "filter_text": "product type: Necklace",
+        "product_title": "Necklace vip pro",
+        "product_price": "$35,000.00"
+      }
+    },
+    "SB_OLS_NVG_CF_79": {
+      "set_filters": {
+        "checked": [
+          {
+            "title": "availability",
+            "handle": "availability",
+            "type": "product_information"
+          },
+          {
+            "handle": "product_type",
+            "title": "product types",
+            "type": "product_information"
+          },
+          {
+            "title": "Size",
+            "handle": "Size",
+            "type": "product_options"
+          },
+          {
+            "handle": "price",
+            "title": "price",
+            "type": "product_information"
+          },
+          {
+            "handle": "Color",
+            "title": "Color",
+            "type": "product_options"
+          }
+        ]
+      },
+      "collection_handle": "collections/test-custom-filter",
+      "select_filters": {
+        "position": "In drawer",
+        "filters": [
+          {
+            "name": "Available only",
+            "check": true
+          },
+          {
+            "name": "Blue",
+            "check": true
+          }
+        ],
+        "price": {
+          "from": 5.0,
+          "to": 19.99
+        }
+      },
+      "filter_size": {
+        "position": "In drawer",
+        "filters": [
+          {
+            "name": "XL",
+            "check": true
+          }
+        ]
+      },
+      "expected": {
+        "filter_count": 1,
+        "filters_count": 3,
+        "filters_text": ["availability: Available only", "price: 5 - 19.99 USD", "color: Blue"],
+        "filter_text": "size: Xl",
+        "result_count": 1,
+        "results_count": 2,
+        "product_title_multi_filters": "Bikini hehehe",
+        "product_price_multi_filters": "$10.00",
+        "product_title_size_filters": ["Bikini vjp pr01", "Bikini hehehe"]
+      }
+    },
+    "SB_OLS_NVG_CF_80": {
+      "set_filters": {
+        "checked": [
+          {
+            "title": "availability",
+            "handle": "availability",
+            "type": "product_information"
+          },
+          {
+            "handle": "product_type",
+            "title": "product types",
+            "type": "product_information"
+          },
+          {
+            "handle": "price",
+            "title": "price",
+            "type": "product_information"
+          }
+        ]
+      },
+      "collection_handle": "collections/test-custom-filter",
+      "multi_filters": {
+        "position": "In drawer",
+        "filters": [
+          {
+            "name": "Necklace",
+            "check": true
+          },
+          {
+            "name": "Clothes",
+            "check": true
+          }
+        ],
+        "price": {
+          "to": 40000
+        }
+      },
+      "expected": {
+        "filters_count": 3,
+        "filters_text": ["price: Less than 40000 USD", "product type: Necklace", "product type: Clothes"],
+        "results_count": 4,
+        "products": [
+          {
+            "title": "Necklace vip pro",
+            "price": "$35,000.00"
+          },
+          {
+            "title": "Bikini vjp 02",
+            "price": "$20.00"
+          },
+          {
+            "title": "Bikini vjp pr01",
+            "price": "$20.00"
+          },
+          {
+            "title": "Bikini hehehe",
+            "price": "$10.00"
+          }
+        ]
+      }
+    },
+    "SB_OLS_NVG_CF_81": {
+      "set_filters": {
+        "checked": [
+          {
+            "handle": "product_type",
+            "title": "product types",
+            "type": "product_information"
+          },
+          {
+            "handle": "price",
+            "title": "price",
+            "type": "product_information"
+          }
+        ]
+      },
+      "collection_handle": "collections/test-custom-filter",
+      "filter_no_result": {
+        "position": "In drawer",
+        "price": {
+          "from": 25.0,
+          "to": 34999
+        },
+        "expected_filter_tag": "price: 25 - 34999 USD"
+      }
+    },
+    "SB_OLS_NVG_CFBT_36": {
+      "setup_filters": {
+        "checked": [
+          {
+            "handle": "custom__vip_custom",
+            "title": "VIP custom",
+            "type": "custom"
+          }
+        ],
+        "custom": [
+          {
+            "title": "VIP custom",
+            "handle": "custom__vip_custom",
+            "tags": ["bikini", "summer", "diamond", "jewelry"]
+          }
+        ]
+      },
+      "color_swatches": true,
+      "filters_sf": [
+        {
+          "data": ["Bikini", "Diamond", "Jewelry", "Summer"],
+          "handle": "custom__vip_custom",
+          "label": "vip custom",
+          "type": "product_tags"
+        }
+      ],
+      "collection_handle": "collections/test-custom-filter",
+      "navigation_menu": "admin/menus",
+      "edit_custom_filter": {
+        "name": "VIP custom",
+        "edit": {
+          "name": "Edited custom filter name",
+          "tags": ["women", "gold"]
+        }
+      }
+    },
+    "SB_OLS_NVG_CFBT_38": {
+      "setup_filters": {
+        "checked": [
+          {
+            "handle": "custom__sexy",
+            "title": "Sexy",
+            "type": "custom"
+          },
+          {
+            "handle": "custom__sexy1",
+            "title": "Sexy",
+            "type": "custom"
+          }
+        ],
+        "custom": [
+          {
+            "title": "Sexy",
+            "handle": "custom__sexy",
+            "tags": ["bikini", "summer", "women"]
+          },
+          {
+            "title": "Sexy",
+            "handle": "custom__sexy1",
+            "tags": ["gold", "diamond", "jewelry"]
+          }
+        ]
+      },
+      "color_swatches": true,
+      "filters_sf": [
+        {
+          "data": ["Bikini", "Summer", "Women"],
+          "handle": "custom__sexy",
+          "label": "sexy",
+          "type": "product_tags"
+        },
+        {
+          "data": ["Diamond", "Gold", "Jewelry"],
+          "handle": "custom__sexy1",
+          "label": "sexy",
+          "type": "product_tags"
+        }
+      ],
+      "collection_handle": "collections/test-custom-filter",
+      "custom_filter_1": {
+        "position": "In drawer",
+        "filter": [
+          {
+            "name": "bikini",
+            "check": true
+          }
+        ]
+      },
+      "expected": {
+        "title": "Sexy",
+        "custom_filter_count": 2,
+        "products_result": ["Bikini vjp 02", "Bikini vjp pr01", "Bikini hehehe"]
+      }
+    },
+    "SB_OLS_NVG_CFBT_39": {
+      "setup_filters": {
+        "checked": [
+          {
+            "handle": "custom__sexy",
+            "title": "Sexy",
+            "type": "custom"
+          },
+          {
+            "handle": "custom__sexy1",
+            "title": "sexy",
+            "type": "custom"
+          }
+        ],
+        "custom": [
+          {
+            "title": "Sexy",
+            "handle": "custom__sexy",
+            "tags": ["bikini", "summer", "women"]
+          },
+          {
+            "title": "sexy",
+            "handle": "custom__sexy1",
+            "tags": ["gold", "diamond", "jewelry"]
+          }
+        ]
+      },
+      "color_swatches": true,
+      "filters_sf": [
+        {
+          "data": ["Bikini", "Summer", "Women"],
+          "handle": "custom__sexy",
+          "label": "sexy",
+          "type": "product_tags"
+        },
+        {
+          "data": ["Diamond", "Gold", "Jewelry"],
+          "handle": "custom__sexy1",
+          "label": "sexy",
+          "type": "product_tags"
+        }
+      ],
+      "collection_handle": "collections/test-custom-filter",
+      "custom_filter_1": {
+        "position": "In drawer",
+        "filter": [
+          {
+            "name": "bikini",
+            "check": true
+          }
+        ]
+      },
+      "expected": {
+        "title": "Sexy",
+        "custom_filter_count": 2,
+        "products_result": ["Bikini vjp 02", "Bikini vjp pr01", "Bikini hehehe"]
+      }
+    },
+    "SB_OLS_NVG_CFBT_40": {
+      "setup_filters": {
+        "checked": [
+          {
+            "handle": "price",
+            "title": "price",
+            "type": "product_information"
+          },
+          {
+            "handle": "custom__price",
+            "title": "Price",
+            "type": "custom"
+          }
+        ],
+        "custom": [
+          {
+            "handle": "custom__price",
+            "title": "Price",
+            "tags": ["red", "black", "blue"]
+          }
+        ]
+      },
+      "color_swatches": true,
+      "filters_sf": [
+        {
+          "data": null,
+          "handle": "price",
+          "label": "price",
+          "type": "products_information"
+        },
+        {
+          "data": ["Black", "Blue", "Red"],
+          "handle": "custom__price",
+          "label": "price",
+          "type": "product_tags"
+        }
+      ],
+      "price_filter": {
+        "position": "In drawer",
+        "price": {
+          "from": 15.0,
+          "to": 25.0
+        }
+      },
+      "custom_tag": {
+        "position": "In drawer",
+        "filters": [
+          {
+            "name": "Black",
+            "check": true
+          }
+        ]
+      },
+      "collection_handle": "collections/test-custom-filter",
+      "expected": {
+        "price_tag": "Price: 15 - 25 USD",
+        "custom_tag": "Price: Black",
+        "normal_filter": [
+          { "title": "Bikini vjp 02", "price": "$20.00" },
+          { "title": "Bikini vjp pr01", "price": "$20.00" }
+        ],
+        "custom_filter": [{ "title": "Bikini hehehe", "price": "$10.00" }]
+      }
+    },
+    "SB_OLS_NVG_CFBT_41": {
+      "setup_filters": {
+        "checked": [
+          {
+            "handle": "Color",
+            "title": "Color",
+            "type": "product_options"
+          },
+          {
+            "handle": "custom__color",
+            "title": "Color",
+            "type": "custom"
+          }
+        ],
+        "custom": [
+          {
+            "handle": "custom__color",
+            "title": "Color",
+            "tags": ["red", "black", "blue"]
+          }
+        ]
+      },
+      "color_swatches": false,
+      "filters_sf": [
+        {
+          "colors": {
+            "Black": "#000000",
+            "Blue": "#054AE8",
+            "Grey": "#8F968A",
+            "Pink": "#F490B6",
+            "Purple": "#4b256e",
+            "Red": "#FF0000"
+          },
+          "handle": "color",
+          "label": "color",
+          "type": "product_options"
+        },
+        {
+          "data": ["Black", "Blue", "Red"],
+          "handle": "custom__color",
+          "label": "color",
+          "type": "product_tags"
+        }
+      ],
+      "collection_handle": "collections/test-custom-filter",
+      "color1_filter": {
+        "position": "In drawer",
+        "filters": [
+          {
+            "name": "Purple",
+            "check": true
+          },
+          {
+            "name": "Pink",
+            "check": true
+          }
+        ]
+      },
+      "color2_filter": {
+        "position": "In drawer",
+        "filters": [
+          {
+            "name": "Red",
+            "index": 1,
+            "check": true
+          },
+          {
+            "name": "Blue",
+            "index": 1,
+            "check": true
+          }
+        ]
+      },
+      "expected": {
+        "filter1_tag": ["Color: Purple", "Color: Pink"],
+        "filter2_tag": ["Color: Red", "Color: Blue"],
+        "color1_filter": [
+          { "title": "Bikini hehehe", "price": "$10.00" },
+          { "title": "Bikini vjp 02", "price": "$20.00" },
+          { "title": "Bikini vjp pr01", "price": "$20.00" }
+        ],
+        "color2_filter": [{ "title": "Bikini hehehe", "price": "$10.00" }]
+      }
+    },
+    "SB_OLS_NVG_CFBT_42": {
+      "setup_filters": {
+        "checked": [
+          {
+            "handle": "custom__vip",
+            "title": "VIP",
+            "type": "custom"
+          }
+        ],
+        "custom": [
+          {
+            "handle": "custom__vip",
+            "title": "VIP",
+            "tags": ["blue", "gold", "diamond"]
+          }
+        ]
+      },
+      "color_swatches": false,
+      "filters_sf": [
+        {
+          "data": ["Blue", "Diamond", "Gold"],
+          "handle": "custom__vip",
+          "label": "vip",
+          "type": "product_tags"
+        }
+      ],
+      "collection_handle": "collections/test-custom-filter",
+      "custom_filter": {
+        "position": "In drawer",
+        "filters": [
+          {
+            "name": "Blue",
+            "check": true
+          },
+          {
+            "name": "Gold",
+            "check": true
+          }
+        ]
+      },
+      "uncheck_filter": {
+        "position": "In drawer",
+        "filters": [
+          {
+            "name": "Blue",
+            "check": false
+          }
+        ]
+      },
+      "expected": {
+        "tag_before": ["VIP: Blue", "VIP: Gold"],
+        "tag_after": ["VIP: Gold"],
+        "products_before": [
+          {
+            "title": "Bikini hehehe",
+            "price": "$10.00"
+          },
+          {
+            "title": "Necklace vip pro",
+            "price": "$35,000.00"
+          }
+        ],
+        "products_after": [
+          {
+            "title": "Necklace vip pro",
+            "price": "$35,000.00"
+          }
+        ]
+      }
+    },
+    "SB_OLS_NVG_CFBT_43": {
+      "setup_filters": {
+        "checked": [
+          {
+            "handle": "custom__more",
+            "title": "More",
+            "type": "custom"
+          },
+          {
+            "handle": "Color",
+            "title": "Color",
+            "type": "product_options"
+          }
+        ],
+        "custom": [
+          {
+            "handle": "custom__more",
+            "title": "More",
+            "tags": ["gold", "cat", "blue"]
+          }
+        ]
+      },
+      "color_swatches": false,
+      "filters_sf": [
+        {
+          "data": ["Blue", "Cat", "Gold"],
+          "handle": "custom__more",
+          "label": "more",
+          "type": "product_tags"
+        },
+        {
+          "colors": {
+            "Black": "#000000",
+            "Blue": "#054AE8",
+            "Grey": "#8F968A",
+            "Pink": "#F490B6",
+            "Purple": "#4b256e",
+            "Red": "#FF0000"
+          },
+          "handle": "color",
+          "label": "color",
+          "type": "product_options"
+        }
+      ],
+      "collection_handle": "collections/test-custom-filter",
+      "filters_include_custom": {
+        "position": "In drawer",
+        "filters": [
+          {
+            "name": "Black",
+            "check": true
+          },
+          {
+            "name": "Blue",
+            "check": true
+          },
+          {
+            "name": "Cat",
+            "check": true
+          },
+          {
+            "name": "Gold",
+            "check": true
+          }
+        ]
+      },
+      "expected": {
+        "tags_filters": ["Color: Black", "More: Blue", "More: Gold", "More: Cat"],
+        "products": [
+          {
+            "title": "Bikini hehehe",
+            "price": "$10.00"
+          }
+        ]
+      }
+    },
+    "SB_OLS_NVG_CFBT_51": {
+      "setup_filters": {
+        "checked": [
+          {
+            "handle": "Color",
+            "title": "Color",
+            "type": "product_options"
+          }
+        ]
+      },
+      "color_swatches": true,
+      "filters_sf": [
+        {
+          "type": "product_options",
+          "label": "color",
+          "colors": {
+            "Black": "#000000",
+            "Blue": "#054AE8",
+            "Grey": "#8F968A",
+            "Pink": "#F490B6",
+            "Purple": "#4b256e",
+            "Red": "#FF0000"
+          },
+          "handle": "color"
+        }
+      ],
+      "color_swatches_filter": {
+        "position": "In drawer",
+        "options": ["Blue"]
+      },
+      "collection_handle": "collections/test-custom-filter",
+      "expected": {
+        "color_swatches": ["Black", "Blue", "Grey", "Pink", "Purple", "Red"],
+        "filter_tag": "Color: Blue",
+        "products": [
+          { "title": "Bikini vjp 02", "price": "$20.00" },
+          { "title": "Bikini hehehe", "price": "$10.00" }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,277 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "wb-block-form.myshopbase.net",
+      "shop_name": "wb-block-form",
+      "shop_id": 10324213,
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "user_id": 73800,
+      "template_id": 505,
+      "position": {
+        "section": 1,
+        "column": 1,
+        "type": "exclude-popup"
+      }
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "wb-block-form-prod.onshopbase.com",
+      "shop_name": "wb-block-form-prod",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "user_id": 73782,
+      "shop_id": 10369592,
+      "template_id": 2248,
+      "position": {
+        "section": 3,
+        "column": 1,
+        "type": "exclude-popup"
+      }
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "wb-block-form-prodtest2.onshopbase.com",
+      "shop_name": "wb-block-form-prodtest2",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "user_id": 73782,
+      "shop_id": 10424830,
+      "template_id": 2248,
+      "position": {
+        "section": 3,
+        "column": 1,
+        "type": "exclude-popup"
+      },
+      "accounts_domain": "accounts-test.shopbase.com"
+    }
+  },
+  "cases": {
+    "SB_NEWECOM_BF_7": {
+      "screen_shot": "SB_NEWECOM_BF_7",
+      "design_settings": {
+        "type": "contact_form",
+        "width": {
+          "label": "width",
+          "value": {
+            "value": 50,
+            "unit": "%"
+          }
+        },
+        "background": {
+          "label": "background",
+          "value": {
+            "color": {
+              "preset": 1
+            }
+          }
+        },
+        "radius": {
+          "label": "border_radius",
+          "config": {
+            "number": 10
+          }
+        },
+        "padding": {
+          "label": "padding",
+          "value": {
+            "top": 10,
+            "right": 10,
+            "bottom": 10,
+            "left": 10,
+            "input": true
+          }
+        },
+        "margin": {
+          "label": "margin",
+          "value": {
+            "top": 10,
+            "right": 10,
+            "bottom": 10,
+            "left": 10,
+            "input": true
+          }
+        }
+      },
+      "form_settings": {
+        "form_title": "Contact Us",
+        "submit_message": "Thank you! The form was submitted",
+        "opt_in_option": true,
+        "fields": [
+          {
+            "name": "Email"
+          },
+          {
+            "name": "First Name",
+            "placeholder": "Enter first name"
+          },
+          {
+            "name": "Last Name",
+            "label": "Last Name edited"
+          },
+          {
+            "name": "Phone"
+          },
+          {
+            "name": "Text"
+          },
+          {
+            "name": "Text area",
+            "label": "Text Area"
+          },
+          {
+            "name": "Checkbox",
+            "options": ["Option 1", "Option 2", "Option 3"]
+          },
+          {
+            "name": "Radio",
+            "options": ["Option 1", "Option 2", "Option 3"]
+          },
+          {
+            "name": "Select",
+            "options": ["Option 1", "Option 2", "Option 3"]
+          }
+        ]
+      },
+      "input_form": {
+        "First Name": "Plus",
+        "Last Name edited": "Base",
+        "Phone": "0912345678",
+        "Text": "Text",
+        "Text Area": "Text area",
+        "Checkbox": "Option 1",
+        "Radio": "Option 2",
+        "Select": "Option 3",
+        "Email": "test@maildrop.cc"
+      },
+      "input_type": {
+        "Checkbox": "check",
+        "Radio": "check",
+        "Select": "select",
+        "Text Area": "textarea"
+      }
+    },
+    "SB_NEWECOM_BF_14": {
+      "design_settings": {
+        "type": "contact_form"
+      },
+      "form_settings": {
+        "save_as": "Save contact & send form to mail",
+        "save_email": "@maildrop.cc",
+        "form_title": "Contact Us",
+        "submit_message": "Thank you! The form was submitted",
+        "fields": [
+          {
+            "name": "Email"
+          },
+          {
+            "name": "First Name",
+            "placeholder": "Enter first name"
+          },
+          {
+            "name": "Last Name"
+          }
+        ]
+      },
+      "input_form": {
+        "First Name": "Plus",
+        "Last Name": "Base",
+        "Email": "test@maildrop.cc"
+      },
+      "input_type": {},
+      "mail_title": "New form submissions"
+    },
+    "SB_NEWECOM_BF_16": {
+      "design_settings": {
+        "type": "contact_form"
+      },
+      "form_settings": {
+        "form_title": "Contact Us",
+        "after_submit": "Show coupon code",
+        "coupon": "TEST",
+        "fields": [
+          {
+            "name": "Email"
+          },
+          {
+            "name": "First Name",
+            "placeholder": "Enter first name"
+          },
+          {
+            "name": "Last Name"
+          }
+        ]
+      },
+      "input_form": {
+        "First Name": "Plus",
+        "Last Name": "Base",
+        "Email": "test@maildrop.cc"
+      },
+      "input_type": {}
+    },
+    "SB_NEWECOM_BF_17": {
+      "design_settings": {
+        "type": "contact_form"
+      },
+      "form_settings": {
+        "form_title": "Contact Us",
+        "after_submit": "Redirect to a URL",
+        "submit_url": "https://realplusbase.onshopbase.com/",
+        "fields": [
+          {
+            "name": "Email"
+          },
+          {
+            "name": "First Name",
+            "placeholder": "Enter first name"
+          },
+          {
+            "name": "Last Name"
+          }
+        ]
+      },
+      "input_form": {
+        "First Name": "Plus",
+        "Last Name": "Base",
+        "Email": "test@maildrop.cc"
+      },
+      "input_type": {}
+    },
+    "SB_NEWECOM_BF_19": {
+      "design_settings": {
+        "type": "contact_form"
+      },
+      "form_settings": {
+        "form_title": "Contact Us",
+        "submit_message": "Thank you! The form was submitted",
+        "send_contact": ["Klaviyo"],
+        "fields": [
+          {
+            "name": "Email"
+          },
+          {
+            "name": "First Name",
+            "placeholder": "Enter first name"
+          },
+          {
+            "name": "Last Name"
+          }
+        ]
+      },
+      "input_form": {
+        "First Name": "Plus",
+        "Last Name": "Base",
+        "Email": "test@maildrop.cc"
+      },
+      "input_type": {},
+      "klaviyo": {
+        "key": "pk_031299ea4ddc2946a289cbe2198342b460",
+        "id": "Ytgzce",
+        "revision": "2023-01-24"
+      }
+    }
+  },
+  "page_title": "Block form",
+  "quick_bar_buttons": ["Duplicate", "Hide", "Save as template", "Delete"]
+}

@@ -1,0 +1,242 @@
+{
+  "env": {
+    "local": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-language-list-dev.myshopbase.net",
+      "shop_name": "au-language-list-dev",
+      "shop_id": 10332548,
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "43AhIn|VWp;[?9&",
+      "user_id": 89797,
+      "theme_data": 3204122,
+      "domain_sign_in": "accounts.dev.shopbase.net/sign-in",
+      "mailinator": "vananhnguyen1",
+      "account_create_shop": {
+        "email": "vananhnguyen1@beeketing.net",
+        "password": "Vanh1234@",
+        "store_name": "need_to_be_delete"
+      },
+      "shop_data": {
+        "first_name": "Shop",
+        "last_name": "Base",
+        "store_coutry": "Vietnam",
+        "per_location": "Vietnam",
+        "phone_number": "0983240334",
+        "business_model": "General Dropshipping",
+        "monthly_revenue": "$0-20.000",
+        "platform": "I want a ShopBase store"
+      }
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-language-list-dev.myshopbase.net",
+      "shop_name": "au-language-list-dev",
+      "shop_id": 10332548,
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "43AhIn|VWp;[?9&",
+      "user_id": 89797,
+      "theme_data": 3204122,
+      "domain_sign_in": "accounts.dev.shopbase.net/sign-in",
+      "account_create_shop": {
+        "email": "vananhnguyen1@beeketing.net",
+        "password": "Vanh1234@",
+        "store_name": "need_to_be_delete"
+      },
+      "shop_data": {
+        "store_coutry": "Vietnam",
+        "per_location": "Vietnam",
+        "phone_number": "0983240334",
+        "business_model": "General Dropshipping",
+        "monthly_revenue": "$0-20.000",
+        "platform": "I want a ShopBase store"
+      }
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-language-list-prodtest.onshopbase.com",
+      "shop_name": "au-language-list-prodtest",
+      "shop_id": 10486106,
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "theme_data": 1617107,
+      "domain_sign_in": "accounts.shopbase.com/sign-in",
+      "account_create_shop": {
+        "email": "vananhnguyen1@beeketing.net",
+        "password": "Vanh1234@",
+        "store_name": "need_to_be_delete"
+      },
+      "shop_data": {
+        "store_coutry": "Vietnam",
+        "per_location": "Vietnam",
+        "phone_number": "0983240334",
+        "business_type": "I sell Physical Products",
+        "business_model": "General Dropshipping",
+        "monthly_revenue": "$0-20.000",
+        "platform": "I want a ShopBase store"
+      }
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-language-list-prod.onshopbase.com",
+      "shop_name": "au-language-list-prod",
+      "shop_id": 10486114,
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "theme_data": 1617111,
+      "domain_sign_in": "accounts.shopbase.com/sign-in",
+      "account_create_shop": {
+        "email": "vananhnguyen1@beeketing.net",
+        "password": "Vanh1234@",
+        "store_name": "need_to_be_delete"
+      },
+      "shop_data": {
+        "store_coutry": "Vietnam",
+        "per_location": "Vietnam",
+        "phone_number": "0983240334",
+        "business_type": "I sell Physical Products",
+        "business_model": "General Dropshipping",
+        "monthly_revenue": "$0-20.000",
+        "platform": "I want a ShopBase store"
+      }
+    }
+  },
+  "language_default": "English",
+  "currency_default": "US Dollar",
+  "primary_market_default": {
+    "country": "United States",
+    "currency": "US dollar (USD)"
+  },
+  "cases": {
+    "SB_SET_TL_07": {
+      "expected_ui_blocks": [
+        {
+          "heading": "Published languages",
+          "desc": "These languages are visible to all your customers."
+        },
+        {
+          "heading": "Unpublished languages",
+          "desc": "These languages are only visible to you."
+        }
+      ],
+      "new_primary_market": {
+        "country": "China",
+        "currency": "Chinese yuan (CNY)"
+      }
+    },
+    "SB_SET_TL_12": {
+      "add_languages": ["Vietnamese", "German"],
+      "mess_set_default_success": "Successfully update this language"
+    },
+    "SB_SET_TL_13": {
+      "add_languages": ["Chinese (Simplified)", "German"],
+      "mess_set_default_success": "Successfully update this language"
+    },
+    "SB_SET_TL_17": {
+      "add_languages": ["German", "Japanese"],
+      "expected": [
+        {
+          "language": "German",
+          "language_sf": "Deutsch (DE)"
+        },
+        {
+          "language": "Japanese",
+          "language_sf": "日本語 (Nihongo) (JA)"
+        }
+      ]
+    },
+    "SB_SET_TL_18": {
+      "add_languages": ["German", "Japanese"],
+      "toggle_turn_off": ["Pages", "Products"],
+      "toggle_turn_on": ["All pages content", "Apps", "Online store", "Notifications"],
+      "expected": [
+        {
+          "language": "German",
+          "language_sf": "Deutsch (DE)"
+        },
+        {
+          "language": "Japanese",
+          "language_sf": "日本語 (Nihongo) (JA)"
+        }
+      ]
+    },
+    "SB_SET_TL_19": {
+      "add_language": "German"
+    },
+    "SB_SET_TL_20": {
+      "add_languages_1": ["German", "French"],
+      "add_languages_2": ["Bengali", "Hindi"],
+      "pre_condtition_market": [
+        {
+          "name": "Asia",
+          "countries": ["India", "Malaysia", "Laos", "China"]
+        },
+        {
+          "name": "Euro",
+          "countries": ["Germany", "France", "Austria"]
+        }
+      ],
+      "new_market_1": {
+        "name": "test add language",
+        "countries": ["Bangladesh"]
+      },
+      "new_market_2": {
+        "name": "test add language",
+        "countries": ["Bahamas", "China", "Laos"],
+        "language_not_added": ["Chinese (Simplified)", "Chinese (Traditional)", "Lao"]
+      },
+      "desc_popup_cf_add_language": "The languages listed below are spoken in the countries you are including. Would you like to incorporate these languages into your store?",
+      "new_market_3": {
+        "name": "market test add language",
+        "countries": ["Comoros", "Ukraine"],
+        "language_not_added": ["Arabic", "Ukrainian"]
+      },
+      "new_market_4": {
+        "name": "new market",
+        "countries": ["Taiwan", "Bahamas", "Italy"],
+        "language_not_added": ["Chinese (Traditional)", "Italian"]
+      },
+      "mess_add_success": "Language added successfully",
+      "new_market_5": {
+        "name": "new market 2",
+        "countries": ["Hong Kong", "Morocco", "Hungary"],
+        "language_not_added": ["Arabic", "Hungarian"]
+      },
+      "edit_market_1": {
+        "name": "market edit A",
+        "countries": ["Bangladesh"],
+        "language_not_added": ["Chinese (Simplified)", "Chinese (Traditional)", "Lao"]
+      },
+      "edit_market_2": {
+        "name": "market edit A",
+        "countries": ["Greece"],
+        "language_not_added": ["Chinese (Simplified)", "Chinese (Traditional)", "Lao", "Greek"]
+      },
+      "edit_market_3": {
+        "name": "market B",
+        "language_not_added": ["Chinese (Simplified)", "Chinese (Traditional)", "Lao", "Greek"]
+      },
+      "edit_market_4": {
+        "name": "market C",
+        "language_not_added": ["Chinese (Simplified)"]
+      }
+    },
+    "SB_SET_TL_21": {
+      "new_primary_market_1": {
+        "country": "China",
+        "currency": "Chinese yuan (CNY)",
+        "language_not_added": ["Chinese (Simplified)", "Chinese (Traditional)"]
+      },
+      "mess_update_market_success": "Successfully updated primary market",
+      "new_primary_market_2": {
+        "country": "Canada"
+      },
+      "new_primary_market_3": {
+        "country": "Taiwan",
+        "currency": "New Taiwan dollar (TWD)",
+        "language_not_added": ["Chinese (Traditional)"]
+      }
+    }
+  }
+}

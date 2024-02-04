@@ -1,0 +1,623 @@
+{
+  "timeout": 1000000,
+  "param_threshold": 0.1,
+  "max_diff_pixel_ratio": 0.05,
+  "max_diff_pixels": 2000,
+  "message_save_water_mark_success": "Setting was saved successfully",
+  "message_create_product_success": "Product was created successfully!",
+  "url_watermark": "/admin/watermark",
+  "product": {
+    "title": "Product T Shirt",
+    "description": "In addition to product designs, you can explore the marketplace for food, funny, and job designs sold by independent artists.",
+    "image_name": "t-shirt.jpg"
+  },
+  "url_home": "/admin",
+  "cases": {
+    "DATA_DRIVEN_SET_TYPE_ANY": {},
+    "DATA_DRIVEN_SET_TYPE_AND_STYLE": {},
+    "SB_WTM_40": {},
+    "SB_WTM_43": {},
+    "SB_WTM_42": {}
+  },
+  "email_scheduler": "xuyenpham@beeketing.net",
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-order-sbase.onshopbase.com",
+      "shop_name": "au-order-sbase",
+      "user_id": 74303,
+      "shop_id": 10340278,
+      "username": "shopbase2@beeketing.net",
+      "password": "raMse).7L/b4;k#@",
+      "product_name": "Product T Shirt",
+      "watermark_default": {
+        "enable": true,
+        "type": "text",
+        "store_name": "au-order-sbase",
+        "store_logo_url": "https://img.shopbase.com/files/10340278/2023/01/05/167288866984b67956d9.png",
+        "style": "style4"
+      },
+      "watermark_off": {
+        "enable": false,
+        "type": "text",
+        "store_name": "au-order-sbase",
+        "store_logo_url": "https://img.shopbase.com/files/10340278/2023/01/05/167288866984b67956d9.png",
+        "style": "style4"
+      },
+      "cases": {
+        "DATA_DRIVEN_SET_TYPE_ANY": {
+          "data": [
+            {
+              "case_id": "SB_WTM_29",
+              "description": "[ShopBase] Merchant set watermark với type Text",
+              "watermark": {
+                "enable": true,
+                "type": "text",
+                "store_name": "au-order-sbase",
+                "store_logo_url": "https://img.shopbase.com/files/10340278/2023/01/05/167288866984b67956d9.png",
+                "style": "style4"
+              },
+              "style": ["Text Strips", "Spatial Mark"],
+              "type": "Text"
+            },
+            {
+              "case_id": "SB_WTM_30",
+              "description": "[ShopBase] Merchant set watermark với type Logo",
+              "watermark": {
+                "enable": true,
+                "type": "image",
+                "store_name": "au-order-sbase",
+                "store_logo_url": "https://img.shopbase.com/files/10340278/2023/01/05/167288866984b67956d9.png",
+                "style": "style3"
+              },
+              "style": ["Symbol Strips", "Spatial Symbol", "Grayscale Spatial Symbol", "Symbol Grid"],
+              "type": "Logo (2MB)"
+            }
+          ]
+        },
+        "DATA_DRIVEN_SET_TYPE_AND_STYLE": {
+          "data": [
+            {
+              "case_id": "SB_WTM_31",
+              "description": "[ShopBase] Kiểm tra hiển thị watermark khi set type Text và style Spatial Mark",
+              "watermark": {
+                "enable": true,
+                "type": "text",
+                "store_name": "au-order-sbase",
+                "store_logo_url": "https://img.shopbase.com/files/10340278/2023/01/05/167288866984b67956d9.png",
+                "style": "style5"
+              }
+            },
+            {
+              "case_id": "SB_WTM_32",
+              "description": "[ShopBase] Kiểm tra hiển thị watermark khi set type Text và style Text Strips",
+              "watermark": {
+                "enable": true,
+                "type": "text",
+                "store_name": "au-order-sbase",
+                "store_logo_url": "https://img.shopbase.com/files/10340278/2023/01/05/167288866984b67956d9.png",
+                "style": "style4"
+              }
+            },
+            {
+              "case_id": "SB_WTM_33",
+              "description": "[ShopBase] Kiểm tra hiển thị watermark khi set type Logo và style Symbol Strips",
+              "watermark": {
+                "enable": true,
+                "type": "image",
+                "store_name": "au-order-sbase",
+                "store_logo_url": "https://img.shopbase.com/files/10340278/2023/01/05/167288866984b67956d9.png",
+                "style": "style3"
+              }
+            },
+            {
+              "case_id": "SB_WTM_34",
+              "description": "[ShopBase] Kiểm tra hiển thị watermark khi set type Logo và style Spatial Symbol",
+              "watermark": {
+                "enable": true,
+                "type": "image",
+                "store_name": "au-order-sbase",
+                "store_logo_url": "https://img.shopbase.com/files/10340278/2023/01/05/167288866984b67956d9.png",
+                "style": "style1"
+              }
+            },
+            {
+              "case_id": "SB_WTM_35",
+              "description": "[ShopBase] Kiểm tra hiển thị watermark khi set type Logo và style Grayscale Spatial Symbol",
+              "watermark": {
+                "enable": true,
+                "type": "image",
+                "store_name": "au-order-sbase",
+                "store_logo_url": "https://img.shopbase.com/files/10340278/2023/01/05/167288866984b67956d9.png",
+                "style": "style2"
+              }
+            },
+            {
+              "case_id": "SB_WTM_36",
+              "description": "[ShopBase] Kiểm tra hiển thị watermark khi set type Logo và style Symbol Grid",
+              "watermark": {
+                "enable": true,
+                "type": "image",
+                "store_name": "au-order-sbase",
+                "store_logo_url": "https://img.shopbase.com/files/10340278/2023/01/05/167288866984b67956d9.png",
+                "style": "style6"
+              }
+            }
+          ]
+        },
+        "SB_WTM_40": {
+          "file": "./data/shopbase/export_product_water_mark.csv",
+          "name_product": "Product T Shirt",
+          "file_name": "export_product_water_mark.csv",
+          "status": "Completed",
+          "process": "Imported 1/1 products.",
+          "watermark": {
+            "enable": true,
+            "type": "text",
+            "store_name": "au-order-sbase",
+            "store_logo_url": "https://img.shopbase.com/files/10340278/2023/01/05/167288866984b67956d9.png",
+            "style": "style5"
+          },
+          "picture": {
+            "image_detai": "SB_WTM_40_detail.png",
+            "image_storefront": "SB_WTM_40_storefront.png"
+          }
+        },
+        "SB_WTM_43": {
+          "picture": {
+            "image_detail": "SB_WTM_43_detail.png",
+            "image_storefront": "SB_WTM_43_storefront.png"
+          },
+          "watermark": {
+            "enable": true,
+            "type": "image",
+            "store_name": "au-staff-watermark",
+            "store_logo_url": "https://img.thesitebase.net/sbase-file/watermark/shopbase-logo.png",
+            "style": "style3"
+          },
+          "clone_info": {
+            "type": "product",
+            "second_shop": "au-staff-watermark.onshopbase.com",
+            "action": "Override the existing products",
+            "keep_id": false
+          },
+          "shop_clone": {
+            "domain": "au-staff-watermark.onshopbase.com",
+            "shop_id": 10390611
+          },
+          "product": {
+            "title": "Product Export",
+            "description": "In addition to product designs, you can explore the marketplace for food, funny, and job designs sold by independent artists.",
+            "image_name": "t-shirt.jpg"
+          },
+          "watermark_first": {
+            "enable": true,
+            "type": "text",
+            "store_name": "au-order-sbase",
+            "store_logo_url": "https://img.shopbase.com/files/10340278/2023/01/05/167288866984b67956d9.png",
+            "style": "style5"
+          }
+        },
+        "SB_WTM_42": {
+          "product": {
+            "title": "Product Export",
+            "description": "In addition to product designs, you can explore the marketplace for food, funny, and job designs sold by independent artists.",
+            "image_name": "t-shirt.jpg"
+          },
+          "watermark": {
+            "enable": true,
+            "type": "text",
+            "store_name": "au-order-sbase",
+            "store_logo_url": "https://img.shopbase.com/files/10340278/2023/01/05/167288866984b67956d9.png",
+            "style": "style5"
+          },
+          "export_info": {
+            "product_export": "Selected products",
+            "file_format": "CSV for Excel, Numbers, or other spreadsheet programs"
+          },
+          "forder_name": "watermark",
+          "file_csv": "./data/watermark/export.csv"
+        }
+      }
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-order-sbase-test.onshopbase.com",
+      "shop_name": "au-order-sbase-test",
+      "shop_id": 10389586,
+      "user_id": 74303,
+      "username": "shopbase2@beeketing.net",
+      "password": "raMse).7L/b4;k#@",
+      "product_name": "Product T Shirt",
+      "watermark_default": {
+        "enable": true,
+        "type": "text",
+        "store_name": "au-order-sbase-test",
+        "store_logo_url": "https://img.shopbase.com/files/10389586/2023/01/09/1673254649a24614da87.png",
+        "style": "style4"
+      },
+      "watermark_off": {
+        "enable": false,
+        "type": "text",
+        "store_name": "au-order-sbase-test",
+        "store_logo_url": "https://img.shopbase.com/files/10389586/2023/01/09/1673254649a24614da87.png",
+        "style": "style4"
+      },
+      "cases": {
+        "DATA_DRIVEN_SET_TYPE_ANY": {
+          "data": [
+            {
+              "case_id": "SB_WTM_29",
+              "description": "[ShopBase] Merchant set watermark với type Text",
+              "watermark": {
+                "enable": true,
+                "type": "text",
+                "store_name": "au-order-sbase-test",
+                "store_logo_url": "https://img.shopbase.com/files/10389586/2023/01/09/1673254649a24614da87.png",
+                "style": "style4"
+              },
+              "type": "Text",
+              "style": ["Text Strips", "Spatial Mark"]
+            },
+            {
+              "case_id": "SB_WTM_30",
+              "description": "[ShopBase] Merchant set watermark với type Logo",
+              "watermark": {
+                "enable": true,
+                "type": "image",
+                "store_name": "au-order-sbase-test",
+                "store_logo_url": "https://img.shopbase.com/files/10389586/2023/01/09/1673254649a24614da87.png",
+                "style": "style3"
+              },
+              "style": ["Symbol Strips", "Spatial Symbol", "Grayscale Spatial Symbol", "Symbol Grid"],
+              "type": "Logo (2MB)"
+            }
+          ]
+        },
+        "DATA_DRIVEN_SET_TYPE_AND_STYLE": {
+          "data": [
+            {
+              "case_id": "SB_WTM_31",
+              "description": "[ShopBase] Kiểm tra hiển thị watermark khi set type Text và style Spatial Mark",
+              "watermark": {
+                "enable": true,
+                "type": "text",
+                "store_name": "au-order-sbase",
+                "store_logo_url": "https://img.shopbase.com/files/10340278/2023/01/05/167288866984b67956d9.png",
+                "style": "style5"
+              }
+            },
+            {
+              "case_id": "SB_WTM_32",
+              "description": "[ShopBase] Kiểm tra hiển thị watermark khi set type Text và style Text Strips",
+              "watermark": {
+                "enable": true,
+                "type": "text",
+                "store_name": "au-order-sbase",
+                "store_logo_url": "https://img.shopbase.com/files/10340278/2023/01/05/167288866984b67956d9.png",
+                "style": "style4"
+              }
+            },
+            {
+              "case_id": "SB_WTM_33",
+              "description": "[ShopBase] Kiểm tra hiển thị watermark khi set type Logo và style Symbol Strips",
+              "watermark": {
+                "enable": true,
+                "type": "image",
+                "store_name": "au-order-sbase",
+                "store_logo_url": "https://img.shopbase.com/files/10340278/2023/01/05/167288866984b67956d9.png",
+                "style": "style3"
+              }
+            },
+            {
+              "case_id": "SB_WTM_34",
+              "description": "[ShopBase] Kiểm tra hiển thị watermark khi set type Logo và style Spatial Symbol",
+              "watermark": {
+                "enable": true,
+                "type": "image",
+                "store_name": "au-order-sbase",
+                "store_logo_url": "https://img.shopbase.com/files/10340278/2023/01/05/167288866984b67956d9.png",
+                "style": "style1"
+              }
+            },
+            {
+              "case_id": "SB_WTM_35",
+              "description": "[ShopBase] Kiểm tra hiển thị watermark khi set type Logo và style Grayscale Spatial Symbol",
+              "watermark": {
+                "enable": true,
+                "type": "image",
+                "store_name": "au-order-sbase",
+                "store_logo_url": "https://img.shopbase.com/files/10340278/2023/01/05/167288866984b67956d9.png",
+                "style": "style2"
+              }
+            },
+            {
+              "case_id": "SB_WTM_36",
+              "description": "[ShopBase] Kiểm tra hiển thị watermark khi set type Logo và style Symbol Grid",
+              "watermark": {
+                "enable": true,
+                "type": "image",
+                "store_name": "au-order-sbase",
+                "store_logo_url": "https://img.shopbase.com/files/10340278/2023/01/05/167288866984b67956d9.png",
+                "style": "style6"
+              }
+            }
+          ]
+        },
+        "SB_WTM_40": {
+          "file": "./data/shopbase/export_product_water_mark.csv",
+          "name_product": "Product T Shirt",
+          "file_name": "export_product_water_mark.csv",
+          "status": "Completed",
+          "process": "Imported 1/1 products.",
+          "watermark": {
+            "enable": true,
+            "type": "text",
+            "store_name": "au-order-sbase",
+            "store_logo_url": "https://img.shopbase.com/files/10340278/2023/01/05/167288866984b67956d9.png",
+            "style": "style5"
+          },
+          "picture": {
+            "image_detai": "SB_WTM_40_detail.png",
+            "image_storefront": "SB_WTM_40_storefront.png"
+          }
+        },
+        "SB_WTM_43": {
+          "picture": {
+            "image_detail": "SB_WTM_43_detail.png",
+            "image_storefront": "SB_WTM_43_storefront.png"
+          },
+          "watermark": {
+            "enable": true,
+            "type": "image",
+            "store_name": "au-staff-watermark-test",
+            "store_logo_url": "https://img.thesitebase.net/sbase-file/watermark/shopbase-logo.png",
+            "style": "style3"
+          },
+          "clone_info": {
+            "type": "product",
+            "second_shop": "au-staff-watermark-test.onshopbase.com",
+            "action": "Override the existing products",
+            "keep_id": false
+          },
+          "shop_clone": {
+            "domain": "au-staff-watermark-test.onshopbase.com",
+            "shop_id": 10390620
+          },
+          "product": {
+            "title": "Product Export",
+            "description": "In addition to product designs, you can explore the marketplace for food, funny, and job designs sold by independent artists.",
+            "image_name": "t-shirt.jpg"
+          },
+          "watermark_first": {
+            "enable": true,
+            "type": "text",
+            "store_name": "au-order-sbase",
+            "store_logo_url": "https://img.shopbase.com/files/10340278/2023/01/05/167288866984b67956d9.png",
+            "style": "style5"
+          }
+        },
+        "SB_WTM_42": {
+          "product": {
+            "title": "Product Export",
+            "description": "In addition to product designs, you can explore the marketplace for food, funny, and job designs sold by independent artists.",
+            "image_name": "t-shirt.jpg"
+          },
+          "watermark": {
+            "enable": true,
+            "type": "text",
+            "store_name": "au-order-sbase",
+            "store_logo_url": "https://img.shopbase.com/files/10340278/2023/01/05/167288866984b67956d9.png",
+            "style": "style5"
+          },
+          "export_info": {
+            "product_export": "Selected products",
+            "file_format": "CSV for Excel, Numbers, or other spreadsheet programs"
+          },
+          "forder_name": "watermark",
+          "file_csv": "./data/watermark/export.csv"
+        }
+      },
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-order-sbase.myshopbase.net",
+      "shop_name": "au-order-sbase",
+      "shop_id": 10323650,
+      "use_id": 73800,
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "product_name": "Product T Shirt",
+      "watermark_default": {
+        "enable": true,
+        "type": "text",
+        "store_name": "au-order-sbase",
+        "store_logo_url": "https://dev-img.btdmp.com/sbase-file/10323650/2023/01/09/167325373687c5eb457d.png",
+        "style": "style4"
+      },
+      "watermark_off": {
+        "enable": false,
+        "type": "text",
+        "store_name": "au-order-sbase",
+        "store_logo_url": "https://dev-img.btdmp.com/sbase-file/10323650/2023/01/09/167325373687c5eb457d.png",
+        "style": "style4"
+      },
+      "cases": {
+        "DATA_DRIVEN_SET_TYPE_ANY": {
+          "data": [
+            {
+              "case_id": "SB_WTM_29",
+              "description": "[ShopBase] Merchant set watermark với type Text",
+              "watermark": {
+                "enable": true,
+                "type": "text",
+                "store_name": "au-order-sbase",
+                "store_logo_url": "https://dev-img.btdmp.com/sbase-file/10323650/2023/01/09/167325373687c5eb457d.png",
+                "style": "style4"
+              },
+              "style": ["Text Strips", "Spatial Mark"],
+              "type": "Text"
+            },
+            {
+              "case_id": "SB_WTM_30",
+              "description": "[ShopBase] Merchant set watermark với type Logo",
+              "watermark": {
+                "enable": true,
+                "type": "image",
+                "store_name": "au-order-sbase",
+                "store_logo_url": "https://dev-img.btdmp.com/sbase-file/10323650/2023/01/09/167325373687c5eb457d.png",
+                "style": "style3"
+              },
+              "style": ["Symbol Strips", "Spatial Symbol", "Grayscale Spatial Symbol", "Symbol Grid"],
+              "type": "Logo (2MB)"
+            }
+          ]
+        },
+        "DATA_DRIVEN_SET_TYPE_AND_STYLE": {
+          "data": [
+            {
+              "case_id": "SB_WTM_31",
+              "description": "[ShopBase] Kiểm tra hiển thị watermark khi set type Text và style Spatial Mark",
+              "watermark": {
+                "enable": true,
+                "type": "text",
+                "store_name": "au-order-sbase",
+                "store_logo_url": "https://dev-img.btdmp.com/sbase-file/10323650/2023/01/09/167325373687c5eb457d.png",
+                "style": "style5"
+              }
+            },
+            {
+              "case_id": "SB_WTM_32",
+              "description": "[ShopBase] Kiểm tra hiển thị watermark khi set type Text và style Text Strips",
+              "watermark": {
+                "enable": true,
+                "type": "text",
+                "store_name": "au-order-sbase",
+                "store_logo_url": "https://dev-img.btdmp.com/sbase-file/10323650/2023/01/09/167325373687c5eb457d.png",
+                "style": "style4"
+              }
+            },
+            {
+              "case_id": "SB_WTM_33",
+              "description": "[ShopBase] Kiểm tra hiển thị watermark khi set type Logo và style Symbol Strips",
+              "watermark": {
+                "enable": true,
+                "type": "image",
+                "store_name": "au-order-sbase",
+                "store_logo_url": "https://dev-img.btdmp.com/sbase-file/10323650/2023/01/09/167325373687c5eb457d.png",
+                "style": "style3"
+              }
+            },
+            {
+              "case_id": "SB_WTM_34",
+              "description": "[ShopBase] Kiểm tra hiển thị watermark khi set type Logo và style Spatial Symbol",
+              "watermark": {
+                "enable": true,
+                "type": "image",
+                "store_name": "au-order-sbase",
+                "store_logo_url": "https://dev-img.btdmp.com/sbase-file/10323650/2023/01/09/167325373687c5eb457d.png",
+                "style": "style1"
+              }
+            },
+            {
+              "case_id": "SB_WTM_35",
+              "description": "[ShopBase] Kiểm tra hiển thị watermark khi set type Logo và style Grayscale Spatial Symbol",
+              "watermark": {
+                "enable": true,
+                "type": "image",
+                "store_name": "au-order-sbase",
+                "store_logo_url": "https://dev-img.btdmp.com/sbase-file/10323650/2023/01/09/167325373687c5eb457d.png",
+                "style": "style2"
+              }
+            },
+            {
+              "case_id": "SB_WTM_36",
+              "description": "[ShopBase] Kiểm tra hiển thị watermark khi set type Logo và style Symbol Grid",
+              "watermark": {
+                "enable": true,
+                "type": "image",
+                "store_name": "au-order-sbase",
+                "store_logo_url": "https://dev-img.btdmp.com/sbase-file/10323650/2023/01/09/167325373687c5eb457d.png",
+                "style": "style6"
+              }
+            }
+          ]
+        },
+        "SB_WTM_43": {
+          "product": {
+            "title": "Product Export",
+            "description": "In addition to product designs, you can explore the marketplace for food, funny, and job designs sold by independent artists.",
+            "image_name": "t-shirt.jpg"
+          },
+          "clone_info": {
+            "type": "product",
+            "second_shop": "au-staff-watermark.myshopbase.net",
+            "action": "Override the existing products",
+            "keep_id": false
+          },
+          "picture": {
+            "image_detail": "SB_WTM_43_detail.png",
+            "image_storefront": "SB_WTM_43_storefront.png"
+          },
+          "watermark": {
+            "enable": true,
+            "type": "image",
+            "store_name": "au-staff-watermark",
+            "store_logo_url": "https://img.thesitebase.net/sbase-file/watermark/shopbase-logo.png",
+            "style": "style3"
+          },
+          "shop_clone": {
+            "domain": "au-staff-watermark.myshopbase.net",
+            "shop_id": 10323848
+          },
+          "watermark_first": {
+            "enable": true,
+            "type": "text",
+            "store_name": "au-order-sbase",
+            "store_logo_url": "https://img.shopbase.com/files/10340278/2023/01/05/167288866984b67956d9.png",
+            "style": "style5"
+          }
+        },
+        "SB_WTM_42": {
+          "product": {
+            "title": "Product Export",
+            "description": "In addition to product designs, you can explore the marketplace for food, funny, and job designs sold by independent artists.",
+            "image_name": "t-shirt.jpg"
+          },
+          "watermark": {
+            "enable": true,
+            "type": "text",
+            "store_name": "au-order-sbase",
+            "store_logo_url": "https://dev-img.btdmp.com/sbase-file/10323650/2023/01/09/167325373687c5eb457d.png",
+            "style": "style5"
+          },
+          "export_info": {
+            "product_export": "Selected products",
+            "file_format": "CSV for Excel, Numbers, or other spreadsheet programs"
+          },
+          "forder_name": "watermark",
+          "file_csv": "./data/watermark/export.csv"
+        },
+        "SB_WTM_40": {
+          "file": "./data/shopbase/export_product_water_mark.csv",
+          "name_product": "Product T Shirt",
+          "file_name": "export_product_water_mark.csv",
+          "status": "Completed",
+          "process": "Imported 1/1 products.",
+          "watermark": {
+            "enable": true,
+            "type": "text",
+            "store_name": "au-order-sbase",
+            "store_logo_url": "https://dev-img.btdmp.com/sbase-file/10323650/2023/01/09/167325373687c5eb457d.png",
+            "style": "style5"
+          },
+          "picture": {
+            "image_detai": "SB_WTM_40_detail.png",
+            "image_storefront": "SB_WTM_40_storefront.png"
+          }
+        }
+      }
+    }
+  }
+}

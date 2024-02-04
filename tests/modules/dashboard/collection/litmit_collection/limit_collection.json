@@ -1,0 +1,44 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-limit-collection.myshopbase.net",
+      "shop_name": "au-limit-collection",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_id": 10322876,
+      "user_id": 73800
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-limit-collection-prodtest.onshopbase.com",
+      "shop_name": "au-limit-collection-prodtest",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10379062,
+      "user_id": 73782,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-limit-collection.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_name": "au-limit-collection",
+      "shop_id": 10376319,
+      "user_id": 73782
+    }
+  },
+  "time_out": 180000,
+  "cases": {
+    "SB_CL_SPC_10": {
+      "collection_limit": {
+        "collection_title": "Collection limit",
+        "collection_type": "Automated",
+        "condition_type": "all conditions",
+        "conditions": ["Product tag>is equal to>bedding"]
+      },
+      "message_limit": "Your store has reached its collection limit (5,000 collections). Learn more."
+    }
+  }
+}

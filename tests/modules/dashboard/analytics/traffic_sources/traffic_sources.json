@@ -1,0 +1,598 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-traffic-sources.onshopbase.com",
+      "domain_multi_sf": "au-traffic-sources-new-sf.onshopbase.com",
+      "shop_name": "au-traffic-sources",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10431117,
+      "user_id": 73782,
+      "report_type": "traffic_source",
+      "customer_info": {
+        "email": "tester@maildrop.cc",
+        "first_name": "My",
+        "last_name": "Beo",
+        "address": "130 Trung Phung",
+        "country": "United States",
+        "state": "Texas",
+        "city": "Houston",
+        "zipcode": "77027",
+        "phone_number": "7136978890"
+      },
+      "card_info": {
+        "number": "4242424242424242",
+        "holder_name": "My Beo Vippro",
+        "expire_date": "12 / 25",
+        "cvv": "116"
+      }
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-traffic-sources-prodtest.onshopbase.com",
+      "domain_multi_sf": "au-traffic-sources-new-sf-prodtest.onshopbase.com",
+      "shop_name": "au-traffic-sources-prodtest",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10431119,
+      "user_id": 73782,
+      "report_type": "traffic_source",
+      "customer_info": {
+        "email": "tester@maildrop.cc",
+        "first_name": "My",
+        "last_name": "Beo",
+        "address": "130 Trung Phung",
+        "country": "United States",
+        "state": "Texas",
+        "city": "Houston",
+        "zipcode": "77027",
+        "phone_number": "7136978890"
+      },
+      "card_info": {
+        "number": "4242424242424242",
+        "holder_name": "My Beo Vippro",
+        "expire_date": "12 / 25",
+        "cvv": "116"
+      },
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-traffic-sources.myshopbase.net",
+      "domain_multi_sf": "au-traffic-sources-new-sf.myshopbase.net",
+      "shop_name": "au-traffic-sources",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_id": 10327340,
+      "user_id": 73800,
+      "report_type": "traffic_source",
+      "customer_info": {
+        "email": "tester@maildrop.cc",
+        "first_name": "My",
+        "last_name": "Beo",
+        "address": "130 Trung Phung",
+        "country": "United States",
+        "state": "Texas",
+        "city": "Houston",
+        "zipcode": "77027",
+        "phone_number": "7136978890"
+      },
+      "card_info": {
+        "number": "4242424242424242",
+        "holder_name": "My Beo Vippro",
+        "expire_date": "12 / 25",
+        "cvv": "116"
+      }
+    }
+  },
+  "timeout": 700000,
+  "cases": {
+    "SB_ANA_TS_1": {
+      "product": {
+        "title": "Product SB_ANA_TS_1",
+        "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+        "image_name": "Logo1.jpg",
+        "vendor": "Uniqlo",
+        "price": "10",
+        "compare_at_price": "20",
+        "sku": "1ZLQJGJP8nU"
+      }
+    },
+    "TRAFFIC DIRECT": {
+      "data": [
+        {
+          "case_id": "SB_ANA_TS_44",
+          "description": "Multiple SF_Kiểm tra hiển thị số lượng truy cập theo Direct",
+          "is_multi_sf": true,
+          "product": {
+            "title": "Product SB_ANA_TS_44",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20",
+            "sku": "1ZLQJGJP8nU"
+          },
+          "linkUTM": "?utm_source=source&utm_medium=medium&utm_campaign=name&utm_term=term&utm_content=content",
+          "view_page": 1
+        },
+        {
+          "case_id": "SB_ANA_TS_2",
+          "description": "Kiểm tra hiển thị số lượng truy cập theo Direct",
+          "product": {
+            "title": "Product SB_ANA_TS_2",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20",
+            "sku": "1ZLQJGJP8nU"
+          },
+          "linkUTM": "?utm_source=source&utm_medium=medium&utm_campaign=name&utm_term=term&utm_content=content",
+          "view_page": 1
+        }
+      ]
+    },
+    "SB_ANA_TS_3": {
+      "product": {
+        "title": "Product SB_ANA_TS_3",
+        "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+        "image_name": "Logo1.jpg",
+        "vendor": "Uniqlo",
+        "price": "10",
+        "compare_at_price": "20",
+        "sku": "1ZLQJGJP8nU"
+      },
+      "link_tag_manager": "tagassistant.google.com"
+    },
+    "TRAFFIC GOOGLE": {
+      "data": [
+        {
+          "case_id": "SB_ANA_TS_42",
+          "description": "Multiple SF_Kiểm tra hiển thị số lượng truy cập theo gclid (Google click identifier)",
+          "is_multi_sf": true,
+          "product": {
+            "title": "Product SB_ANA_TS_42",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20",
+            "sku": "1ZLQJGJP8nU"
+          },
+          "linkUTM": "?utm_source=source&utm_medium=medium&utm_campaign=name&utm_term=term&utm_content=content&gclid=gg151020211620",
+          "view_page": 1
+        },
+        {
+          "case_id": "SB_ANA_TS_6",
+          "description": "Kiểm tra hiển thị số lượng truy cập theo gclid (Google click identifier)",
+          "product": {
+            "title": "Product SB_ANA_TS_6",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20",
+            "sku": "1ZLQJGJP8nU"
+          },
+          "linkUTM": "?utm_source=source&utm_medium=medium&utm_campaign=name&utm_term=term&utm_content=content&gclid=gg151020211620",
+          "view_page": 1
+        }
+      ]
+    },
+    "TRAFFIC BING": {
+      "data": [
+        {
+          "case_id": "SB_ANA_TS_41",
+          "description": "Multiple SF_Kiểm tra hiển thị số lượng truy cập theo msclkid (Bing)",
+          "is_multi_sf": true,
+          "product": {
+            "title": "Product SB_ANA_TS_41",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20",
+            "sku": "1ZLQJGJP8nU"
+          },
+          "linkUTM": "?utm_source=source&utm_medium=medium&utm_campaign=name&utm_term=term&utm_content=content&msclkid=msc151020211620",
+          "view_page": 2
+        },
+        {
+          "case_id": "SB_ANA_TS_7",
+          "description": "Kiểm tra hiển thị số lượng truy cập theo msclkid (Bing)",
+          "product": {
+            "title": "Product SB_ANA_TS_7",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20",
+            "sku": "1ZLQJGJP8nU"
+          },
+          "linkUTM": "?utm_source=source&utm_medium=medium&utm_campaign=name&utm_term=term&utm_content=content&msclkid=msc151020211620",
+          "view_page": 1
+        }
+      ]
+    },
+    "TRAFFIC SOCIAL": {
+      "data": [
+        {
+          "case_id": "SB_ANA_TS_40",
+          "description": "Multiple SF_Kiểm tra hiển thị số lượng truy cập theo fbclid (Facebook click identifier)",
+          "is_multi_sf": true,
+          "product": {
+            "title": "Product SB_ANA_TS_8",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20",
+            "sku": "1ZLQJGJP8nU"
+          },
+          "linkUTM": "?utm_source=source&utm_medium=medium&utm_campaign=name&utm_term=term&utm_content=content&fbclid=fb151020211620",
+          "view_page": 1
+        },
+        {
+          "case_id": "SB_ANA_TS_8",
+          "description": "Kiểm tra hiển thị số lượng truy cập theo fbclid (Facebook click identifier)",
+          "product": {
+            "title": "Product SB_ANA_TS_8",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20",
+            "sku": "1ZLQJGJP8nU"
+          },
+          "linkUTM": "?utm_source=source&utm_medium=medium&utm_campaign=name&utm_term=term&utm_content=content&fbclid=fb151020211620",
+          "view_page": 1
+        }
+      ]
+    },
+    "TRAFFIC DCLID GOOGLE": {
+      "data": [
+        {
+          "case_id": "SB_ANA_TS_39",
+          "description": "Multiple SF_Kiểm tra hiển thị số lượng truy cập theo dclid (DoubleClick click identifier, now Google)",
+          "is_multi_sf": true,
+          "product": {
+            "title": "Product SB_ANA_TS_39",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20",
+            "sku": "1ZLQJGJP8nU"
+          },
+          "linkUTM": "?utm_source=source&utm_medium=medium&utm_campaign=name&utm_term=term&utm_content=content&dclid=dcgg151020211620",
+          "view_page": 1
+        },
+        {
+          "case_id": "SB_ANA_TS_9",
+          "description": "Kiểm tra hiển thị số lượng truy cập theo dclid (DoubleClick click identifier, now Google)",
+          "product": {
+            "title": "Product SB_ANA_TS_9",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20",
+            "sku": "1ZLQJGJP8nU"
+          },
+          "linkUTM": "?utm_source=source&utm_medium=medium&utm_campaign=name&utm_term=term&utm_content=content&dclid=dcgg151020211620",
+          "view_page": 1
+        }
+      ]
+    },
+    "SB_ANA_TS_10": {
+      "product": {
+        "title": "Product SB_ANA_TS_10",
+        "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+        "image_name": "Logo1.jpg",
+        "vendor": "Uniqlo",
+        "price": "10",
+        "compare_at_price": "20",
+        "sku": "1ZLQJGJP8nU"
+      }
+    },
+    "TRAFFIC FILTER": {
+      "data": [
+        {
+          "case_id": "SB_ANA_TS_38",
+          "description": "Multiple SF_Kiểm tra fillter theo UTM params",
+          "is_multi_sf": true,
+          "product": {
+            "title": "Product SB_ANA_TS_38",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20",
+            "sku": "1ZLQJGJP8nU"
+          },
+          "linkUTM": "?utm_source=source&utm_medium=medium&utm_campaign=name&utm_term=term&utm_content=content",
+          "reportDataExp": {
+            "add_to_cart": 1,
+            "reached_checkout": 1,
+            "total_items": 1,
+            "total_orders": 1,
+            "view_content": 1
+          },
+          "data_session_detail": {
+            "source_identifier": "direct",
+            "referring_site": "N/A",
+            "first_page_visited": [
+              "/products/product-sb-ana-ts-38?utm_source=source",
+              "&utm_medium=medium&utm_campaign=name&utm_term=term&utm_content=content"
+            ],
+            "utm_source": "source",
+            "utm_medium": "medium",
+            "utm_campaign": "name",
+            "utm_term": "term",
+            "utm_content": "content"
+          }
+        },
+        {
+          "case_id": "SB_ANA_TS_11",
+          "description": "Kiểm tra fillter theo UTM params",
+          "product": {
+            "title": "Product SB_ANA_TS_11",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20",
+            "sku": "1ZLQJGJP8nU"
+          },
+          "linkUTM": "?utm_source=source&utm_medium=medium&utm_campaign=name&utm_term=term&utm_content=content",
+          "reportDataExp": {
+            "add_to_cart": 1,
+            "reached_checkout": 1,
+            "total_items": 1,
+            "total_orders": 1,
+            "view_content": 1
+          },
+          "data_session_detail": {
+            "source_identifier": "direct",
+            "referring_site": "N/A",
+            "first_page_visited": [
+              "/products/product-sb-ana-ts-11",
+              "?utm_source=source&utm_medium=medium&utm_campaign=name&utm_term=term&utm_content=content"
+            ],
+            "utm_source": "source",
+            "utm_medium": "medium",
+            "utm_campaign": "name",
+            "utm_term": "term",
+            "utm_content": "content"
+          }
+        }
+      ]
+    },
+    "SB_ANA_TS_13": {
+      "product": {
+        "title": "Product SB_ANA_TS_13",
+        "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+        "image_name": "Logo1.jpg",
+        "vendor": "Uniqlo",
+        "price": "10",
+        "compare_at_price": "20",
+        "sku": "1ZLQJGJP8nU"
+      }
+    },
+    "TRAFFIC SEARCH": {
+      "data": [
+        {
+          "case_id": "SB_ANA_TS_36",
+          "description": "Multiple SF_Kiểm tra khi search theo 1 UTM param",
+          "is_multi_sf": true,
+          "product": {
+            "title": "Product SB_ANA_TS_36",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20",
+            "sku": "1ZLQJGJP8nU"
+          },
+          "linkUTM": "?utm_source=source&utm_medium=medium&utm_campaign=name&utm_term=term&utm_content=content",
+          "reportDataExp": {
+            "add_to_cart": 1,
+            "reached_checkout": 1,
+            "total_items": 1,
+            "total_orders": 1,
+            "view_content": 1
+          },
+          "data_session_detail": {
+            "source_identifier": "direct",
+            "referring_site": "N/A",
+            "first_page_visited": [
+              "/products/product-sb-ana-ts-36",
+              "?utm_source=source&utm_medium=medium&utm_campaign=name&utm_term=term&utm_content=content"
+            ],
+            "utm_source": "source",
+            "utm_medium": "medium",
+            "utm_campaign": "name",
+            "utm_term": "term",
+            "utm_content": "content"
+          }
+        },
+        {
+          "case_id": "SB_ANA_TS_14",
+          "description": "Kiểm tra khi search theo 1 UTM param",
+          "product": {
+            "title": "Product SB_ANA_TS_14",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20",
+            "sku": "1ZLQJGJP8nU"
+          },
+          "linkUTM": "?utm_source=source&utm_medium=medium&utm_campaign=name&utm_term=term&utm_content=content",
+          "reportDataExp": {
+            "add_to_cart": 1,
+            "reached_checkout": 1,
+            "total_items": 1,
+            "total_orders": 1,
+            "view_content": 1
+          },
+          "data_session_detail": {
+            "source_identifier": "direct",
+            "referring_site": "N/A",
+            "first_page_visited": [
+              "/products/product-sb-ana-ts-14",
+              "?utm_source=source&utm_medium=medium&utm_campaign=name&utm_term=term&utm_content=content"
+            ],
+            "utm_source": "source",
+            "utm_medium": "medium",
+            "utm_campaign": "name",
+            "utm_term": "term",
+            "utm_content": "content"
+          }
+        }
+      ]
+    },
+    "TRAFFIC UTM": {
+      "data": [
+        {
+          "case_id": "SB_ANA_TS_35",
+          "description": "Multiple SF_Kiểm tra khi URL bao gồm ít nhất một UTM",
+          "is_multi_sf": true,
+          "product": {
+            "title": "Product SB_ANA_TS_35",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20",
+            "sku": "1ZLQJGJP8nU"
+          },
+          "linkUTM": "?utm_medium=medium_15&utm_term=term_15&utm_content=content_15",
+          "data_session_detail": {
+            "source_identifier": "direct",
+            "referring_site": "N/A",
+            "first_page_visited": [
+              "/products/product-sb-ana-ts-35",
+              "?utm_medium=medium_15&utm_term=term_15&utm_content=content_15"
+            ],
+            "utm_source": "not set",
+            "utm_medium": "medium_15",
+            "utm_campaign": "not set",
+            "utm_term": "term_15",
+            "utm_content": "content_15"
+          },
+          "reportDataExp": {
+            "add_to_cart": 1,
+            "reached_checkout": 1,
+            "total_items": 1,
+            "total_orders": 1,
+            "view_content": 1
+          }
+        },
+        {
+          "case_id": "SB_ANA_TS_15",
+          "description": "Kiểm tra khi URL bao gồm ít nhất một UTM",
+          "product": {
+            "title": "Product SB_ANA_TS_15",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20",
+            "sku": "1ZLQJGJP8nU"
+          },
+          "linkUTM": "?utm_medium=medium_15&utm_term=term_15&utm_content=content_15",
+          "data_session_detail": {
+            "source_identifier": "direct",
+            "referring_site": "N/A",
+            "first_page_visited": [
+              "/products/product-sb-ana-ts-15",
+              "?utm_medium=medium_15&utm_term=term_15&utm_content=content_15"
+            ],
+            "utm_source": "not set",
+            "utm_medium": "medium_15",
+            "utm_campaign": "not set",
+            "utm_term": "term_15",
+            "utm_content": "content_15"
+          },
+          "reportDataExp": {
+            "add_to_cart": 1,
+            "reached_checkout": 1,
+            "total_items": 1,
+            "total_orders": 1,
+            "view_content": 1
+          }
+        }
+      ]
+    },
+    "TRAFFIC NONE UTM": {
+      "data": [
+        {
+          "case_id": "SB_ANA_TS_33",
+          "description": "Multiple SF_Kiểm tra khi k xác đinh được lưu lượng truy cập nào từ URL",
+          "is_multi_sf": true,
+          "product": {
+            "title": "Product SB_ANA_TS_33",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20",
+            "sku": "1ZLQJGJP8nU"
+          },
+          "linkUTM": "",
+          "data_session_detail": {
+            "source_identifier": "direct",
+            "referring_site": "N/A",
+            "first_page_visited": ["/products/product-sb-ana-ts-33"],
+            "utm_source": "direct",
+            "utm_medium": "none",
+            "utm_campaign": "not set",
+            "utm_term": "not set",
+            "utm_content": "not set"
+          },
+          "reportDataExp": {
+            "add_to_cart": 1,
+            "reached_checkout": 1,
+            "total_items": 1,
+            "total_orders": 1,
+            "view_content": 1
+          }
+        },
+        {
+          "case_id": "SB_ANA_TS_17",
+          "description": "Kiểm tra khi k xác đinh được lưu lượng truy cập nào từ URL",
+          "product": {
+            "title": "Product SB_ANA_TS_17",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20",
+            "sku": "1ZLQJGJP8nU"
+          },
+          "linkUTM": "",
+          "data_session_detail": {
+            "source_identifier": "direct",
+            "referring_site": "N/A",
+            "first_page_visited": ["/products/product-sb-ana-ts-17"],
+            "utm_source": "direct",
+            "utm_medium": "none",
+            "utm_campaign": "not set",
+            "utm_term": "not set",
+            "utm_content": "not set"
+          },
+          "reportDataExp": {
+            "add_to_cart": 1,
+            "reached_checkout": 1,
+            "total_items": 1,
+            "total_orders": 1,
+            "view_content": 1
+          }
+        }
+      ]
+    }
+  }
+}

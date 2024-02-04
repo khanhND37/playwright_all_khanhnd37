@@ -1,0 +1,701 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "a-add-and-edit-product.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "user_id": 73782,
+      "shop_id": 10399974,
+      "shop_name": "a-add-and-edit-product"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-product-details-sb-prodtest.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "user_id": 73782,
+      "shop_id": 10398085,
+      "shop_name": "au-product-details-sb-prodtest",
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-product-details-sb.myshopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "user_id": 73800,
+      "shop_id": 10324390,
+      "shop_name": "au-product-details-sb"
+    }
+  },
+  "timeout": "920000",
+  "create_product_success": "Product was created successfully!",
+  "max_diff_pixel_ratio": 0.05,
+  "threshold": 0.1,
+  "max_diff_pixels": 2000,
+  "collection_url": "collections/",
+  "type_url": "products/types?q=",
+  "tag_url": "products/tags?q=",
+  "cases": {
+    "TC_SB_PRO_SP_85": {
+      "product_all_info": {
+        "title": "Product all info",
+        "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+        "image_name": "Logo1.jpg",
+        "product_type": "Shirt",
+        "vendor": "Uniqlo",
+        "tag": "tag1",
+        "price": "10",
+        "compare_at_price": "20",
+        "cost_per_item": "5",
+        "sku": "A123456B",
+        "bar_code": "B654321A",
+        "inventory_policy": "ShopBase tracks this product's inventory",
+        "quantity": "100",
+        "weight": "50"
+      },
+      "product_validate_SF": {
+        "description": "<p>Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.</p>",
+        "product_type": "Shirt",
+        "vendor": "Uniqlo",
+        "tag": "tag1",
+        "price": 10,
+        "compare_at_price": 20,
+        "sku": "A123456B",
+        "bar_code": "B654321A",
+        "quantity": 100
+      }
+    },
+    "SB_PRO_test_201": {
+      "product_tile": {
+        "title": "Product seo title"
+      },
+      "product_seo_title": {
+        "page_title_default": "Product seo title",
+        "page_title": "Title @123",
+        "meta_description": "Description @123"
+      },
+      "product_sf": {
+        "title_sf": "Product seo title",
+        "url_handle_sf": "/products/product-seo-title"
+      }
+    },
+    "SB_PRO_test_202": {
+      "product_info": {
+        "title": "handle product"
+      },
+      "product_seo_title": {
+        "handle_default": "handle-product",
+        "handle": "Product@Handle XYZ"
+      },
+      "product_sf": {
+        "title_sf": "handle product",
+        "url_handle_sf": "/products/product-handle-xyz"
+      }
+    },
+    "SB_PRO_test_203": {
+      "product_info": {
+        "title": "Product A",
+        "page_title": "Product A",
+        "meta_description": "Product"
+      }
+    },
+    "SB_PRO_test_204": {
+      "product_tile": {
+        "title": "Test change title",
+        "new_title": "Changed title"
+      },
+      "product_seo_title": {
+        "page_title_default": "Changed title",
+        "handle_expect": "test-change-title"
+      },
+      "product_sf": {
+        "title_sf": "Changed title",
+        "url_handle_sf": "/products/test-change-title"
+      }
+    },
+    "SB_PRO_test_193": {
+      "product_info": {
+        "title": "Product A"
+      }
+    },
+    "SB_PRO_test_95": {
+      "product_max_length": {
+        "max_length_title": "255"
+      },
+      "product_no_title": {
+        "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+        "image_name": "Logo1.jpg",
+        "product_type": "Shirt",
+        "vendor": "Uniqlo",
+        "tag": "tag1",
+        "price": "10",
+        "compare_at_price": "20",
+        "cost_per_item": "5",
+        "sku": "A123456B",
+        "bar_code": "B654321A",
+        "inventory_policy": "ShopBase tracks this product's inventory",
+        "quantity": "100",
+        "weight": "50",
+        "error_message": "Title can't be blank"
+      }
+    },
+    "SB_PRO_test_194": {
+      "product_info": {
+        "title": "Product 194",
+        "description": "This is description of the product.",
+        "image_URL": "https://vimeo.com/713797842,https://fastly.picsum.photos/id/194/2000/2500.jpg?hmac=8ZmXm7Ml021NEKios3rD4cUjIPgbbGnoGF2IxFPc6f0",
+        "price": "50",
+        "compare_at_price": "70",
+        "cost_per_item": "20",
+        "sku": "PH-AP-UnisexT-shirt-White-S-251857",
+        "bar_code": "TBBHW03-1",
+        "weight": "5",
+        "product_type": "Product",
+        "vendor": "Shopbase",
+        "tag": "all-over-print",
+        "collections": "Quan Test",
+        "variant_tag": "track-123-2023",
+        "option_name_1": "Size",
+        "option_values_1": "M,L,XL,",
+        "option_name_2": "Color",
+        "option_values_2": "White,Blue,Brown,",
+        "option_name_3": "Style",
+        "option_values_3": "A,B,C,",
+        "page_title": "test SEO web",
+        "meta_description": "Mô tả gì đấy để thu hút khách hàng."
+      },
+      "product_validate_dashboard": {
+        "description": "<p>This is description of the product.</p>",
+        "image_URL": "https://vimeo.com/713797842",
+        "price": 50,
+        "compare_at_price": 70,
+        "cost_per_item": 20,
+        "sku": "PH-AP-UnisexT-shirt-White-S-251857",
+        "bar_code": "TBBHW03-1",
+        "weight": 5,
+        "product_type": "Product",
+        "vendor": "Shopbase",
+        "tag": "all-over-print"
+      },
+      "product_validate_SF": {
+        "description": "<p>This is description of the product.</p>",
+        "image_URL": "https://vimeo.com/713797842",
+        "price": 50,
+        "compare_at_price": 70,
+        "sku": "PH-AP-UnisexT-shirt-White-S-251857",
+        "bar_code": "TBBHW03-1",
+        "product_type": "Product",
+        "vendor": "Shopbase",
+        "tag": "all-over-print"
+      }
+    },
+    "SB_PRO_test_113": {
+      "product_info": {
+        "product": "Product 194",
+        "title_new": "Product B",
+        "product_without_img": "Product XXX",
+        "title": "Product 194",
+        "description": "Description",
+        "image_URL": "https://vimeo.com/713797842",
+        "price": "50",
+        "compare_at_price": "70",
+        "cost_per_item": "20",
+        "sku": "PH-AP-UnisexT-shirt-White-S-251857",
+        "bar_code": "TBBHW03-1",
+        "weight": "5",
+        "product_type": "Product",
+        "vendor": "Shopbase",
+        "tag": "all-over-print"
+      },
+      "product_validate_dashboard": {
+        "title": "Product B",
+        "description": "<p>Description</p>",
+        "image_URL": "https://vimeo.com/713797842",
+        "price": 50,
+        "compare_at_price": 70,
+        "cost_per_item": 20,
+        "sku": "PH-AP-UnisexT-shirt-White-S-251857",
+        "bar_code": "TBBHW03-1",
+        "weight": 5,
+        "product_type": "Product",
+        "vendor": "Shopbase",
+        "tag": "all-over-print"
+      },
+      "product_validate_SF": {
+        "description": "<p>Description</p>",
+        "image_URL": "https://vimeo.com/713797842",
+        "price": 50,
+        "compare_at_price": 70,
+        "sku": "PH-AP-UnisexT-shirt-White-S-251857",
+        "bar_code": "TBBHW03-1",
+        "product_type": "Product",
+        "vendor": "Shopbase",
+        "tag": "all-over-print"
+      },
+      "product_valid_db_without_img": {
+        "title": "Product B",
+        "description": "<p>Description</p>",
+        "price": 50,
+        "compare_at_price": 70,
+        "cost_per_item": 20,
+        "sku": "PH-AP-UnisexT-shirt-White-S-251857",
+        "bar_code": "TBBHW03-1",
+        "weight": 5,
+        "product_type": "Product",
+        "vendor": "Shopbase",
+        "tag": "all-over-print"
+      },
+      "product_sf_without_img": {
+        "description": "<p>Description</p>",
+        "price": 50,
+        "compare_at_price": 70,
+        "sku": "PH-AP-UnisexT-shirt-White-S-251857",
+        "bar_code": "TBBHW03-1",
+        "product_type": "Product",
+        "vendor": "Shopbase",
+        "tag": "all-over-print"
+      }
+    },
+    "SB_PRO_test_195": {
+      "target_url": "_blank",
+      "product_info": {
+        "product_name": "Product A",
+        "description": {
+          "field": "Link",
+          "description_URL": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
+          "text_to_display": "Input link",
+          "title_description": "Description",
+          "open_link_in": "Current window"
+        }
+      },
+      "product_desc_target_url": {
+        "product_name": "Product A",
+        "description": {
+          "field": "Link",
+          "description_URL": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
+          "text_to_display": "Input link",
+          "title_description": "Description",
+          "open_link_in": "New window"
+        }
+      }
+    },
+    "TC_SB_PRO_test_272": {
+      "product_info": {
+        "title": "Example T-Shirt",
+        "description": "Made from 100% heavy weight cotton, this is the ultimate basic T-shirt.",
+        "image_URL": "https://vimeo.com/713797842",
+        "price": "50",
+        "compare_at_price": "70",
+        "cost_per_item": "20",
+        "sku": "PH-AP-UnisexT-shirt-White-S-251857",
+        "bar_code": "TBBHW03-1",
+        "weight": "5",
+        "product_type": "Shirts",
+        "vendor": "Acme",
+        "tag": "mens t-shirt example"
+      },
+      "title": "Example T-Shirt",
+      "title_length_value": "255 / 255",
+      "message_title": "Title can't be blank",
+      "save_product_success": "Product was successfully saved!",
+      "limit_title": "Alone Astronaut Walking Snowillustration Painting Astronaut Luxury Multi Canvas Prints,Multi Piece Panel Canvas Gallery Art Print Print Alone Astronaut Walking Snowillustration Painting Astronaut Luxury Multi Canvas Prints, Multi Piece Panel Canvas Gallery Art Print Print Alone Astronaut Walking Snowillustration Painting Astronaut Luxury Multi Canvas Prints,Multi Piece Panel Canvas Gallery Art Print Print",
+      "title_update": "Alone Astronaut Walking Snowillustration Painting Astronaut Luxury Multi Canvas Prints Multi Piece Panel Canvas Gallery Art Print Alone",
+      "product_validate_detail": {
+        "product_name": "Alone Astronaut Walking Snowillustration Painting Astronaut Luxury Multi Canvas Prints,Multi Piece Panel Canvas Gallery Art Print Print",
+        "description": "Made from 100% heavy weight cotton, this is the ultimate basic T-shirt.",
+        "tag": "mens t-shirt example",
+        "product_type": "Shirts",
+        "product_vendor": "Acme",
+        "number_media": 12,
+        "size": ["Lithograph", "Small", "Medium"]
+      },
+      "product_validate_sf": {
+        "product_name": "Alone Astronaut Walking Snowillustration Painting Astronaut Luxury Multi Canvas Prints,Multi Piece Panel Canvas Gallery Art Print Print",
+        "description": "Made from 100% heavy weight cotton, this is the ultimate basic T-shirt.",
+        "tag": "mens t-shirt example",
+        "product_type": "Shirts",
+        "product_vendor": "Acme"
+      },
+      "file": "/assets/import_product_csv/product-sample-import1.csv"
+    },
+    "TC_SB_PRO_test_273": {
+      "title": "Alone Astronaut Walking Snowillustration Painting Astronaut Luxury Multi Canvas Prints,Multi Piece Panel Canvas Gallery Art Print Print",
+      "save_product_success": "Product was successfully saved!",
+      "product_validate_detail": {
+        "product_name": "Alone Astronaut Walking Snowillustration Painting Astronaut Luxury Multi Canvas Prints,Multi Piece Panel Canvas Gallery Art Print Print",
+        "description": "<p>Made from 100% heavy weight cotton, this is the ultimate basic T-shirt.</p>",
+        "tag": "mens t-shirt example",
+        "product_type": "Unisex T-shirt",
+        "product_vendor": "Acme",
+        "number_media": 12,
+        "size": ["Lithograph", "Small", "Medium"]
+      },
+      "product_validate_sf": {
+        "product_name": "Alone Astronaut Walking Snowillustration Painting Astronaut Luxury Multi Canvas Prints,Multi Piece Panel Canvas Gallery Art Print Print",
+        "description": "<p>Made from 100% heavy weight cotton, this is the ultimate basic T-shirt.</p>",
+        "tag": "mens t-shirt example",
+        "product_type": "Unisex T-shirt",
+        "product_vendor": "Acme"
+      }
+    },
+    "TC_SB_PRO_test_274": {
+      "title": "Alone Astronaut Walking Snowillustration Painting Astronaut Luxury Multi Canvas Prints,Multi Piece Panel Canvas Gallery Art Print Print",
+      "save_product_success": "Product was successfully saved!",
+      "product_validate_detail": {
+        "product_name": "Alone Astronaut Walking Snowillustration Painting Astronaut Luxury Multi Canvas Prints,Multi Piece Panel Canvas Gallery Art Print Print",
+        "description": "<p>Made from 100% heavy weight cotton, this is the ultimate basic T-shirt.</p>",
+        "tag": "mens t-shirt example",
+        "product_type": "Unisex T-shirt",
+        "product_vendor": "Shopbase",
+        "number_media": 12,
+        "size": ["Lithograph", "Small", "Medium"]
+      },
+      "product_validate_sf": {
+        "product_name": "Alone Astronaut Walking Snowillustration Painting Astronaut Luxury Multi Canvas Prints,Multi Piece Panel Canvas Gallery Art Print Print",
+        "description": "<p>Made from 100% heavy weight cotton, this is the ultimate basic T-shirt.</p>",
+        "tag": "mens t-shirt example",
+        "product_type": "Unisex T-shirt",
+        "product_vendor": "Shopbase"
+      }
+    },
+    "TC_SB_PRO_test_275": {
+      "title": "Alone Astronaut Walking Snowillustration Painting Astronaut Luxury Multi Canvas Prints,Multi Piece Panel Canvas Gallery Art Print Print",
+      "remove_tags": "mens t-shirt example",
+      "save_product_success": "Product was successfully saved!",
+      "product_validate_detail": {
+        "product_name": "Alone Astronaut Walking Snowillustration Painting Astronaut Luxury Multi Canvas Prints,Multi Piece Panel Canvas Gallery Art Print Print",
+        "description": "<p>Made from 100% heavy weight cotton, this is the ultimate basic T-shirt.</p>",
+        "tag": "thuyhoang,hoangthuy,kma",
+        "product_type": "Unisex T-shirt",
+        "product_vendor": "Shopbase",
+        "number_media": 12,
+        "size": ["Lithograph", "Small", "Medium"]
+      },
+      "product_validate_sf": {
+        "product_name": "Alone Astronaut Walking Snowillustration Painting Astronaut Luxury Multi Canvas Prints,Multi Piece Panel Canvas Gallery Art Print Print",
+        "description": "<p>Made from 100% heavy weight cotton, this is the ultimate basic T-shirt.</p>",
+        "tag": "thuyhoang,hoangthuy,kma",
+        "product_type": "Unisex T-shirt",
+        "product_vendor": "Shopbase"
+      }
+    },
+    "TC_SB_PRO_test_276": {
+      "title": "Product has 500 image",
+      "image": "earth.png",
+      "product_validate_detail": {
+        "product_name": "Product has 500 image",
+        "number_media": 500
+      }
+    },
+    "TC_SB_PRO_test_277": {
+      "title": "Alone Astronaut Walking Snowillustration Painting Astronaut Luxury Multi Canvas Prints,Multi Piece Panel Canvas Gallery Art Print Print",
+      "medias": "BD_1.png, BD_2.png, BD_3.png, BD_4.png, BD_5.png",
+      "product_validate_detail": {
+        "product_name": "Alone Astronaut Walking Snowillustration Painting Astronaut Luxury Multi Canvas Prints,Multi Piece Panel Canvas Gallery Art Print Print",
+        "description": "<p>Made from 100% heavy weight cotton, this is the ultimate basic T-shirt.</p>",
+        "tag": "thuyhoang,hoangthuy,kma",
+        "product_type": "Unisex T-shirt",
+        "product_vendor": "Shopbase",
+        "number_media": 17,
+        "size": ["Lithograph", "Small", "Medium"]
+      },
+      "product_validate_sf": {
+        "product_name": "Alone Astronaut Walking Snowillustration Painting Astronaut Luxury Multi Canvas Prints,Multi Piece Panel Canvas Gallery Art Print Print",
+        "description": "<p>Made from 100% heavy weight cotton, this is the ultimate basic T-shirt.</p>",
+        "tag": "thuyhoang,hoangthuy,kma",
+        "product_type": "Unisex T-shirt",
+        "product_vendor": "Shopbase"
+      }
+    },
+    "SB_PRO_test_104": {
+      "btn_preview": "Preview Media",
+      "btn_edit_media_text": "Edit media alt text",
+      "product_detail": {
+        "product_name": "Product A",
+        "image_URL": "https://www.youtube.com/watch?v=ux3pu3fq2s4",
+        "image": "BD_1.png"
+      },
+      "product_detail_sf": {
+        "product_name": "Product A",
+        "image_URL": "https://vimeo.com/716208763",
+        "medias": "BD_1.png"
+      },
+      "media_number": 1
+    },
+    "SB_PRO_test_105": {
+      "weight_max_lenght": 20,
+      "weight_min": 0,
+      "product_weight_max_lenght": {
+        "title": "Product case 105",
+        "weight": "11111111111111111111111111111111111111111111"
+      },
+      "product_weight_str": {
+        "title": "Product case 105",
+        "weight": "FBL1431!@$"
+      },
+      "product_detail_sf": {
+        "product_name": "Product case 105",
+        "weight": "0"
+      }
+    },
+    "SB_PRO_test_106": {
+      "min_price": 0,
+      "product_price_str": "xxxxxxxx",
+      "product_detail": {
+        "product_name": "Product A Price",
+        "price": "50",
+        "compare_at_price": "100",
+        "cost_per_item": "20"
+      }
+    },
+    "SB_PRO_test_111": {
+      "default_max_value": 255,
+      "product_type_max": "Theo trích dẫn của thư viện toàn cầu được lưu trữ: Chữ Quốc ngữ Việt Nam là hệ chữ viết thống nhất chính thức hiện nay của tiếng Việt, sửdụng ký tự La Tinh, dựa trên các bảng chữ cái của nhóm ngôn ngữ Rôman, đặc biệt là bảng chữ cái Bồ Đào Nha với các dấu",
+      "product_vendor_max": "Theo trích dẫn của thư viện toàn cầu được lưu trữ: Chữ Quốc ngữ Việt Nam là hệ chữ viết thống nhất chính thức hiện nay của tiếng Việt, sửdụng ký tự La Tinh, dựa trên các bảng chữ cái của nhóm ngôn ngữ Rôman, đặc biệt là bảng chữ cái Bồ Đào Nha với các dấu",
+      "product_info": {
+        "title": "Product A Type test case 111",
+        "description": "Made from 100% heavy weight cotton, this is the ultimate basic T-shirt.",
+        "image_URL": "https://vimeo.com/713797842",
+        "price": "50",
+        "compare_at_price": "70",
+        "cost_per_item": "20",
+        "sku": "PH-AP-UnisexT-shirt-White-S-251857",
+        "bar_code": "TBBHW03-1",
+        "weight": "5",
+        "product_type": "Shirts",
+        "vendor": "OCG",
+        "tag": "mens t-shirt example"
+      },
+      "product_detail": {
+        "product_name": "Product A Type test case 111",
+        "type": "Shirts new type",
+        "vendor": "OCG new vendor"
+      }
+    },
+    "SB_PRO_test_112": {
+      "default_value": 0,
+      "tag_place_holder": "Vintage, cotton, summer",
+      "tag_max_length": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident similique sunt in culpa qui officia deserunt mollitia animi id est laborum et dolorum fuga",
+      "list_tag": "Tag_01,Tag_02,Tag_03",
+      "selected_tag": "Tag_01",
+      "product_detail": {
+        "product_name": "Product A Tag",
+        "tags": "agag,2576,!@$#%^&*"
+      }
+    },
+    "SB_PRO_test_199": {
+      "min_quantity": 0,
+      "quantity_str": "xxxxxxx",
+      "inventory_options": "ShopBase tracks this product's inventory,Don't track inventory",
+      "product_detail": {
+        "product_name": "Product A Price",
+        "inventory_policy": "ShopBase tracks this product's inventory",
+        "quantity": "3.99"
+      }
+    },
+    "SB_PRO_test_200": {
+      "product_detail": {
+        "product_name": "Product A SKU",
+        "sku": "Acafd!#@$%^",
+        "bar_code": "12414"
+      }
+    },
+    "SB_PRO_test_116": {
+      "product_with_variants": {
+        "title": "Product A",
+        "value_size": "S,M,L",
+        "block_pricing": false
+      }
+    },
+    "SB_PRO_test_196": {
+      "embed_url": "https://www.youtube.com/embed/3PHXvlpOkf4",
+      "product_detail": {
+        "product_name": "product M",
+        "description": {
+          "field": "General",
+          "source": "https://www.youtube.com/watch?v=3PHXvlpOkf4",
+          "width": "425"
+        }
+      },
+      "product_detail_embed": {
+        "product_name": "product M",
+        "description": {
+          "field": "Embed",
+          "embed_code": "https://www.youtube.com/watch?v=3PHXvlpOkf4"
+        }
+      }
+    },
+    "SB_PRO_test_197": {
+      "product_detail": {
+        "product_name": "product M",
+        "description": {
+          "field": "General",
+          "source": "https://thumbs.dreamstime.com/b/web-201904261.jpg",
+          "width": "425"
+        }
+      },
+      "product_detail_upload": {
+        "product_name": "product M",
+        "description": {
+          "field": "Upload",
+          "imageName": "image1.jpeg"
+        }
+      }
+    },
+    "SB_PRO_test_198": {
+      "product_detail": {
+        "product_name": "product D",
+        "description": {
+          "content": "Hello",
+          "text_color": "Red",
+          "text_align": "Center",
+          "color_code": "#e03e2d"
+        }
+      }
+    },
+    "SB_PRO_test_114": {
+      "img_loading_time": 5000,
+      "product_status": {
+        "unavailable": "Unavailable",
+        "available": "Available"
+      },
+      "product_info": {
+        "title": "product not visiable",
+        "collections": "Collection check product unavailable"
+      },
+      "collection_info": {
+        "collection_title": "Collection check product unavailable",
+        "collection_type": "Manual"
+      }
+    },
+    "SB_PRO_test_207": {
+      "product_info": {
+        "product_name": "Product Add Media theo Advanced",
+        "description": {
+          "field": "Advanced",
+          "alternative_source_URL": "https://www.youtube.com/embed/3PHXvlpOkf4",
+          "media_poster": "https://cdn.trangcongnghe.vn/uploads/posts/2016-12/songoku-da-tro-thanh-mot-sieu-xayda-so-1-nhu-the-nao_5.jpeg"
+        }
+      }
+    },
+    "SB_PRO_SP_101": {
+      "product_all_info": {
+        "title": "Product unavailable",
+        "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+        "image_name": "Logo1.jpg",
+        "product_type": "Shirt",
+        "vendor": "Uniqlo",
+        "tag": "tag1",
+        "price": "10",
+        "compare_at_price": "20",
+        "cost_per_item": "5",
+        "sku": "A123456B",
+        "bar_code": "B654321A",
+        "inventory_policy": "ShopBase tracks this product's inventory",
+        "quantity": "100",
+        "weight": "50"
+      }
+    },
+    "SB_PRO_test_290": {
+      "product_info": {
+        "title": "Product have type, vendor, collections, tags",
+        "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+        "image_name": "Logo1.jpg",
+        "product_type": "Shirt",
+        "vendor": "Uniqlo",
+        "tag": "tag1",
+        "price": "10",
+        "compare_at_price": "20",
+        "cost_per_item": "5",
+        "sku": "A123456B",
+        "bar_code": "B654321A",
+        "inventory_policy": "ShopBase tracks this product's inventory",
+        "quantity": "100",
+        "weight": "50",
+        "collections": "Quan Test"
+      },
+      "collection_info": {
+        "collection_title": "Quan Test",
+        "collection_type": "Manual"
+      }
+    },
+    "SB_PRO_test_280": {
+      "product_info": {
+        "title": "Product test",
+        "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+        "image_URL": "https://statics.pancake.vn/web-media/8e/70/4a/34/111b1be7be1c193e1da233094ec6539e3687b78a6f845eca4b78c1ea.jpg,https://statics.pancake.vn/web-media/e9/eb/ea/01/78e326223f5f62d6fa7f5c9db4997f0678aaf723b5b6f35aec93591e.jpg,https://statics.pancake.vn/web-media/cc/dc/b7/ab/f0e70e3cb86e3172a468ed0ed8fabc92149e15d190735e64bd753f79.jpg,https://statics.pancake.vn/web-media/57/c3/7a/66/aa66e5fc6d69090e25679db1f81a1185930f5a70a6d049f77bcd9856.jpg,https://statics.pancake.vn/web-media/44/13/aa/77/0a508bb08435318dae74d81fac7f62a4d332e2da3553cf51fd3dd72f.jpg",
+        "product_type": "Shirt",
+        "vendor": "Uniqlo",
+        "tag": "tag1",
+        "price": "10",
+        "compare_at_price": "20",
+        "cost_per_item": "5",
+        "sku": "A123456B",
+        "bar_code": "B654321A",
+        "inventory_policy": "ShopBase tracks this product's inventory",
+        "quantity": "100",
+        "weight": "50"
+      },
+      "photo_list_style": "Only from the variant group",
+      "product_variant": {
+        "value_size": "S,M,L,XL,XXL",
+        "price": "20",
+        "compare_at_price": "30",
+        "sku": "SKU-test",
+        "bar_code": "test"
+      }
+    },
+    "SB_PRO_test_288": {
+      "product_info": {
+        "title": "Product test default variant",
+        "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+        "image_URL": "https://statics.pancake.vn/web-media/8e/70/4a/34/111b1be7be1c193e1da233094ec6539e3687b78a6f845eca4b78c1ea.jpg",
+        "price": "10",
+        "compare_at_price": "20",
+        "cost_per_item": "10"
+      },
+      "product_variant": {
+        "value_size": "S,M,L",
+        "value_color": "Blue,Yellow,Green",
+        "price": "20",
+        "compare_at_price": "30",
+        "sku": "SKU-test",
+        "bar_code": "test"
+      },
+      "not_default_variant": {
+        "none_default_variant": true,
+        "exclude_options": {
+          "enable": false,
+          "list_options_exclude": []
+        }
+      },
+      "variant_options": [
+        {
+          "option": "Size:",
+          "message": "Please select a Size"
+        },
+        {
+          "option": "Color:",
+          "message": "Please select a Color"
+        }
+      ],
+      "variant": {
+        "size": "L",
+        "color": "Yellow"
+      },
+      "select_default_variant": {
+        "none_default_variant": false,
+        "exclude_options": {
+          "enable": false,
+          "list_options_exclude": []
+        }
+      },
+      "default_variant": {
+        "size": "S",
+        "color": "Blue"
+      }
+    }
+  }
+}

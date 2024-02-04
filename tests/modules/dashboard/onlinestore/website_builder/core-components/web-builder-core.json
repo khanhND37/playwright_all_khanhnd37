@@ -1,0 +1,378 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "accounts_domain": "accounts.dev.shopbase.net",
+      "domain": "au-wb-core.myshopbase.net",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_name": "au-wb-core",
+      "user_id": 90252,
+      "shop_id": 10333481,
+      "theme_id": 3213275,
+      "cases": {
+        "SB_WEB_BUILDER_CWB_01": {
+          "blocks": [
+            {
+              "default_dnd_snapshot": "01-1-DND-Heading-dev.png"
+            },
+            {
+              "default_dnd_snapshot": "01-2-DND-Image-dev.png"
+            },
+            {
+              "default_dnd_snapshot": "01-3-DND-Button-dev.png"
+            },
+            {
+              "default_dnd_snapshot": "01-4-DND-Toggle-List-dev.png"
+            },
+            {
+              "default_dnd_snapshot": "01-5-DND-Bullet-dev.png"
+            }
+          ]
+        }
+      }
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "accounts_domain": "accounts-test.shopbase.com",
+      "domain": "au-wb-cores-prodtest.onshopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_name": "au-wb-cores-prodtest",
+      "user_id": 11260206,
+      "shop_id": 10475930,
+      "theme_id": 1571096
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "accounts_domain": "accounts.shopbase.com",
+      "domain": "au-wb-core.onshopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_name": "au-wb-core",
+      "user_id": 11260206,
+      "shop_id": 10475932,
+      "theme_id": 1571104
+    }
+  },
+  "cases": {
+    "SB_WEB_BUILDER_CWB_01": {
+      "blocks": [
+        {
+          "data": {
+            "from": {
+              "category": "Basics",
+              "template": "Heading"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "column": 1
+              }
+            }
+          },
+          "default_dnd_snapshot": "01-1-DND-Heading.png"
+        },
+        {
+          "data": {
+            "from": {
+              "category": "Basics",
+              "template": "Image"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "block": 1
+              },
+              "isBottom": false
+            }
+          },
+          "default_dnd_snapshot": "01-2-DND-Image.png"
+        },
+        {
+          "data": {
+            "from": {
+              "category": "Basics",
+              "template": "Button"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "block": 1
+              },
+              "isBottom": false
+            }
+          },
+          "default_dnd_snapshot": "01-3-DND-Button.png"
+        },
+        {
+          "data": {
+            "from": {
+              "category": "Basics",
+              "template": "Toggle list"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "block": 1
+              },
+              "isBottom": false
+            }
+          },
+          "default_dnd_snapshot": "01-4-DND-Toggle-List.png"
+        },
+        {
+          "data": {
+            "from": {
+              "category": "Basics",
+              "template": "Bullet"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "block": 1
+              },
+              "isBottom": false
+            }
+          },
+          "default_dnd_snapshot": "01-5-DND-Bullet.png"
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_CWB_02": {
+      "add_paragraph": {
+        "parent_position": {
+          "section": 1,
+          "column": 1
+        }
+      },
+      "add_video": {
+        "parent_position": {
+          "section": 2,
+          "column": 1
+        }
+      }
+    },
+    "SB_WEB_BUILDER_CWB_03": {
+      "add_rating": {
+        "parent_position": {
+          "section": 1,
+          "column": 1
+        }
+      },
+      "edit_common_first": {
+        "align": {
+          "label": "align_self",
+          "type": "Left"
+        },
+        "background": {
+          "label": "background",
+          "value": {
+            "color": {
+              "preset": 5
+            }
+          }
+        },
+        "border": {
+          "label": "border",
+          "value": {
+            "thickness": "s"
+          }
+        },
+        "opacity": {
+          "label": "opacity",
+          "config": {
+            "fill": true,
+            "number": 25
+          }
+        },
+        "radius": {
+          "label": "border_radius",
+          "config": {
+            "fill": true,
+            "number": 99
+          }
+        },
+        "shadow": {
+          "label": "box_shadow",
+          "config": {
+            "option": "soft",
+            "size": "M"
+          }
+        },
+        "padding": {
+          "label": "padding",
+          "value": {
+            "input": true,
+            "top": 5,
+            "bottom": 5,
+            "left": 5,
+            "right": 5
+          }
+        },
+        "margin": {
+          "label": "margin",
+          "value": {
+            "input": true,
+            "top": 10,
+            "bottom": 10,
+            "left": 10,
+            "right": 10
+          }
+        },
+        "expected": {
+          "align_left": "flex-start",
+          "background_color_5": "rgb(20, 20, 20) none repeat scroll 0% 0% / auto padding-box border-box",
+          "border_s": "1px solid",
+          "opacity_25": "0.25",
+          "radius_99": "99px",
+          "shadow_soft": "rgba(0, 0, 0, 0.16) 8px 8px 24px -8px",
+          "padding_5": "5px",
+          "margin_10": "10px"
+        }
+      },
+      "edit_common_second": {
+        "align": {
+          "label": "align_self",
+          "type": "Right"
+        },
+        "background": {
+          "label": "background",
+          "value": {
+            "image": {
+              "url": "data/shopbase/21-dai-noi-hue.jpg"
+            }
+          }
+        },
+        "border": {
+          "label": "border",
+          "value": {
+            "thickness": "m"
+          }
+        },
+        "opacity": {
+          "label": "opacity",
+          "config": {
+            "fill": true,
+            "number": 70
+          }
+        },
+        "radius": {
+          "label": "border_radius",
+          "config": {
+            "fill": true,
+            "number": 56
+          }
+        },
+        "shadow": {
+          "label": "box_shadow",
+          "config": {
+            "option": "hard",
+            "size": "L"
+          }
+        },
+        "padding": {
+          "label": "padding",
+          "value": {
+            "input": true,
+            "top": 10,
+            "bottom": 10,
+            "left": 84,
+            "right": 84
+          }
+        },
+        "margin": {
+          "label": "margin",
+          "value": {
+            "input": true,
+            "top": 64,
+            "bottom": 64,
+            "left": 32,
+            "right": 32
+          }
+        },
+        "expected": {
+          "align_right": "flex-end",
+          "background_image": "rgba\\(0, 0, 0, 0\\) url",
+          "border_m": "4px solid",
+          "opacity_70": "0.7",
+          "radius_56": "56px",
+          "shadow_hard": "rgb(0, 0, 0) 12px 12px 0px 0px",
+          "padding_10_84": "10px 84px",
+          "margin_64_32": "64px 32px"
+        }
+      },
+      "edit_common_third": {
+        "align": {
+          "label": "align_self",
+          "type": "Center"
+        },
+        "background": {
+          "label": "background",
+          "value": {
+            "color": {
+              "preset": 6,
+              "hexText": "#000080"
+            }
+          }
+        },
+        "border": {
+          "label": "border",
+          "value": {
+            "thickness": "l"
+          }
+        },
+        "opacity": {
+          "label": "opacity",
+          "config": {
+            "fill": true,
+            "number": 99
+          }
+        },
+        "radius": {
+          "label": "border_radius",
+          "config": {
+            "fill": true,
+            "number": 1
+          }
+        },
+        "shadow": {
+          "label": "box_shadow",
+          "config": {
+            "option": "none"
+          }
+        },
+        "padding": {
+          "label": "padding",
+          "value": {
+            "input": true,
+            "top": 50,
+            "bottom": 50,
+            "left": 100,
+            "right": 100
+          }
+        },
+        "margin": {
+          "label": "margin",
+          "value": {
+            "input": true,
+            "top": 200,
+            "bottom": 200,
+            "left": 100,
+            "right": 100
+          }
+        },
+        "expected": {
+          "align_center": "center",
+          "background_custom": "rgb(0, 0, 128) none repeat scroll 0% 0% / auto padding-box border-box",
+          "border_l": "10px solid",
+          "opacity_99": "0.99",
+          "radius_1": "1px",
+          "shadow_none": "rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "padding_50_100": "50px 100px",
+          "margin_200_100": "200px 100px"
+        }
+      }
+    }
+  }
+}

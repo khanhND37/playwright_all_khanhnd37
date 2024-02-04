@@ -1,0 +1,1839 @@
+{
+  "env": {
+    "local": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-sb-product-card.myshopbase.net",
+      "shop_name": "au-sb-product-card",
+      "shop_id": 10326780,
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "43AhIn|VWp;[?9&",
+      "user_id": 89797,
+      "theme_id": 3163731,
+      "shop_creator": {
+        "domain": "au-creator-product-card.myshopbase.net",
+        "shop_name": "au-creator-product-card",
+        "shop_id": 10326938,
+        "theme_id": 3164813
+      }
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-sb-product-card.myshopbase.net",
+      "shop_name": "au-sb-product-card",
+      "shop_id": 10326780,
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "43AhIn|VWp;[?9&",
+      "user_id": 89797,
+      "theme_id": 3163731,
+      "shop_creator": {
+        "domain": "au-creator-product-card.myshopbase.net",
+        "shop_name": "au-creator-product-card",
+        "shop_id": 10326938,
+        "theme_id": 3164813
+      }
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-sb-product-card.onshopbase.com",
+      "shop_name": "au-sb-product-card",
+      "shop_id": 10427707,
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "theme_id": 1390155,
+      "shop_creator": {
+        "domain": "au-creator-product-card.onshopbase.com",
+        "shop_name": "au-creator-product-card",
+        "shop_id": 10428011,
+        "theme_id": 1390799
+      }
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-sb-product-card-prodtest.onshopbase.com",
+      "shop_name": "au-sb-product-card-prodtest",
+      "shop_id": 10427716,
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "theme_id": 1390944,
+      "shop_creator": {
+        "domain": "au-creator-product-card-prodtest.onshopbase.com",
+        "shop_name": "au-creator-product-card-prodtest",
+        "shop_id": 10430146,
+        "theme_id": 1396390
+      },
+      "accounts_domain": "accounts-test.shopbase.com"
+    }
+  },
+  "cases": {
+    "SB_NEWECOM_WS_PDC_01": {
+      "expected": {
+        "tooltips": {
+          "sold_out": {
+            "text": "Display badges on out-of-stock products.",
+            "link": "Learn more"
+          },
+          "sale": {
+            "text": "Display badges on products with a compare-at-price higher than the current sales price.",
+            "link": "Learn more"
+          },
+          "rating": {
+            "text": "Display product ratings gathered from the Review app.",
+            "link": "Learn more"
+          },
+          "when_click_atc": "When buyer click Add to cart"
+        },
+        "popover": {
+          "snapshot_popover_product_card": "popover-product-card.png"
+        }
+      }
+    },
+    "SB_NEWECOM_WS_PDC_02": {
+      "expected": {
+        "image_ratio_dropdown": ["Portrait", "Square", "Landscape"],
+        "image_cover_dropdown": ["Cover", "Contain"],
+        "image_ratio": [
+          {
+            "value": "Portrait",
+            "tooltip": "Portrait 3:4",
+            "padding": "133.33%"
+          },
+          {
+            "value": "Square",
+            "tooltip": "Square 1:1",
+            "padding": "100%"
+          },
+          {
+            "value": "Landscape",
+            "tooltip": "Landscape 16:9",
+            "padding": "56.25%"
+          }
+        ]
+      }
+    },
+    "SB_NEWECOM_WS_PDC_03": {
+      "expected": {
+        "hover_effect_dropdown": ["Zoom in", "Image carousel"]
+      }
+    },
+    "SB_NEWECOM_WS_PDC_04": {
+      "pre_condition": {
+        "align": {
+          "label": "text_align",
+          "type": "Left"
+        },
+        "background": {
+          "label": "card_background",
+          "value": {
+            "color": {
+              "preset": 1
+            }
+          }
+        },
+        "border": {
+          "label": "card_border",
+          "value": {
+            "thickness": "none"
+          }
+        },
+        "show_rating": {
+          "label_rating": "show_rating",
+          "setting": {
+            "turn_on": {
+              "show_icon": true
+            }
+          }
+        },
+        "padding": {
+          "label": "card_padding",
+          "value": {
+            "top": 5,
+            "left": 5,
+            "bottom": 5,
+            "right": 5,
+            "input": true
+          }
+        }
+      },
+      "truncated_product_name": "Barette Hat - For the summer 2015 collection, transverse geological boundaries and temperatures. Color Straw. 100% Raffia Straw. Made in U.S.A. One Size.",
+      "expected": {
+        "font_dropdown": ["Paragraph 1", "Paragraph 2", "Paragraph 3"]
+      },
+      "font_paragraph": [
+        {
+          "paragraph": "Paragraph 1",
+          "font_number": 1,
+          "font_size": "18px"
+        },
+        {
+          "paragraph": "Paragraph 2",
+          "font_number": 2,
+          "font_size": "16px"
+        },
+        {
+          "paragraph": "Paragraph 3",
+          "font_number": 3,
+          "font_size": "14px"
+        }
+      ]
+    },
+    "SB_NEWECOM_WS_PDC_05": {
+      "pre_condition": {
+        "ratio": "Landscape",
+        "cover": "Cover",
+        "font": "Paragraph 2",
+        "compared_price": {
+          "label": "show_compare_price",
+          "show_icon": true
+        },
+        "soldout": {
+          "label": "sold_out_badge",
+          "show_icon": false
+        },
+        "sale": {
+          "label": "sale_badge",
+          "show_icon": false
+        },
+        "show_rating": {
+          "label_rating": "show_rating",
+          "setting": {
+            "turn_on": {
+              "show_icon": true
+            }
+          },
+          "rating_icon": "Star",
+          "rating_color": {
+            "preset": 6,
+            "hexText": "#EEA920"
+          }
+        }
+      },
+      "snapshot_preview": "common-setting-product-card",
+      "styles": [
+        {
+          "border": {
+            "label": "card_border",
+            "value": {
+              "thickness": "s",
+              "style": "Dash",
+              "side": "All",
+              "color": {
+                "preset": 5,
+                "opacity": 50
+              }
+            }
+          },
+          "radius": {
+            "label": "border_radius",
+            "config": {
+              "fill": true,
+              "number": 0
+            }
+          },
+          "shadow": {
+            "label": "card_shadow",
+            "config": {
+              "option": "none",
+              "size": "",
+              "direction": ""
+            }
+          },
+          "padding": {
+            "label": "card_padding",
+            "value": {
+              "top": 0,
+              "left": 0,
+              "bottom": 0,
+              "right": 0,
+              "input": true
+            }
+          },
+          "align": {
+            "label": "text_align",
+            "type": "Center"
+          },
+          "background": {
+            "label": "card_background",
+            "value": {
+              "color": {
+                "preset": 3,
+                "opacity": 50
+              }
+            }
+          }
+        },
+        {
+          "border": {
+            "label": "card_border",
+            "value": {
+              "thickness": "m",
+              "style": "Solid",
+              "side": "Top & Bottom",
+              "color": {
+                "preset": 3,
+                "opacity": 80
+              }
+            }
+          },
+          "radius": {
+            "label": "border_radius",
+            "config": {
+              "fill": true,
+              "number": 5
+            }
+          },
+          "shadow": {
+            "label": "card_shadow",
+            "config": {
+              "option": "soft",
+              "size": "L",
+              "direction": "Top Right"
+            }
+          },
+          "padding": {
+            "label": "card_padding",
+            "value": {
+              "top": 10,
+              "left": 10,
+              "bottom": 10,
+              "right": 10,
+              "input": true
+            }
+          },
+          "align": {
+            "label": "text_align",
+            "type": "Left"
+          },
+          "background": {
+            "label": "card_background",
+            "value": {
+              "color": {
+                "preset": 2
+              }
+            }
+          }
+        },
+        {
+          "border": {
+            "label": "card_border",
+            "value": {
+              "thickness": "l",
+              "style": "Dash",
+              "side": "Left & Right",
+              "color": {
+                "preset": 5
+              }
+            }
+          },
+          "radius": {
+            "label": "border_radius",
+            "config": {
+              "fill": true,
+              "number": 10
+            }
+          },
+          "shadow": {
+            "label": "card_shadow",
+            "config": {
+              "option": "hard",
+              "size": "L",
+              "direction": "Top Left"
+            }
+          },
+          "padding": {
+            "label": "card_padding",
+            "value": {
+              "top": 5,
+              "left": 10,
+              "bottom": 15,
+              "right": 5,
+              "input": true
+            }
+          },
+          "align": {
+            "label": "text_align",
+            "type": "Right"
+          },
+          "background": {
+            "label": "card_background",
+            "value": {
+              "color": {
+                "preset": 3
+              }
+            }
+          }
+        },
+        {
+          "border": {
+            "label": "card_border",
+            "value": {
+              "thickness": "none"
+            }
+          },
+          "radius": {
+            "label": "border_radius",
+            "config": {
+              "fill": true,
+              "number": 15
+            }
+          },
+          "shadow": {
+            "label": "card_shadow",
+            "config": {
+              "option": "hard",
+              "size": "M",
+              "direction": "Bottom Left"
+            }
+          },
+          "padding": {
+            "label": "card_padding",
+            "value": {
+              "top": 5,
+              "left": 5,
+              "bottom": 5,
+              "right": 5,
+              "input": true
+            }
+          },
+          "align": {
+            "label": "text_align",
+            "type": "Center"
+          },
+          "background": {
+            "label": "card_background",
+            "value": {
+              "color": {
+                "preset": 3
+              }
+            }
+          }
+        },
+        {
+          "border": {
+            "label": "card_border",
+            "value": {
+              "thickness": "l",
+              "style": "Dash",
+              "side": "Bottom",
+              "color": {
+                "preset": 5
+              }
+            }
+          },
+          "radius": {
+            "label": "border_radius",
+            "config": {
+              "fill": true,
+              "number": 0
+            }
+          },
+          "shadow": {
+            "label": "card_shadow",
+            "config": {
+              "option": "hard",
+              "size": "S",
+              "direction": "Bottom Right"
+            }
+          },
+          "padding": {
+            "label": "card_padding",
+            "value": {
+              "top": 0,
+              "left": 0,
+              "bottom": 0,
+              "right": 0,
+              "input": true
+            }
+          },
+          "align": {
+            "label": "text_align",
+            "type": "Left"
+          },
+          "background": {
+            "label": "card_background",
+            "value": {
+              "image": {
+                "url": "data/shopbase/artwork_case_06.jpg",
+                "size": "Contain",
+                "position": 5,
+                "repeat": true
+              }
+            }
+          }
+        },
+        {
+          "border": {
+            "label": "card_border",
+            "value": {
+              "thickness": "s",
+              "style": "Solid",
+              "side": "Top",
+              "color": {
+                "preset": 5
+              }
+            }
+          },
+          "radius": {
+            "label": "border_radius",
+            "config": {
+              "fill": true,
+              "number": 5
+            }
+          },
+          "shadow": {
+            "label": "card_shadow",
+            "config": {
+              "option": "soft",
+              "size": "M",
+              "direction": "Bottom"
+            }
+          },
+          "padding": {
+            "label": "card_padding",
+            "value": {
+              "top": 10,
+              "left": 10,
+              "bottom": 10,
+              "right": 10,
+              "input": true
+            }
+          },
+          "align": {
+            "label": "text_align",
+            "type": "Right"
+          },
+          "background": {
+            "label": "card_background",
+            "value": {
+              "image": {
+                "url": "data/shopbase/artwork_case_06.jpg",
+                "size": "Cover",
+                "position": 2,
+                "repeat": false
+              }
+            }
+          }
+        },
+        {
+          "border": {
+            "label": "card_border",
+            "value": {
+              "thickness": "m",
+              "style": "Dash",
+              "side": "Left",
+              "color": {
+                "preset": 6,
+                "hexText": "#39D231CC"
+              }
+            }
+          },
+          "radius": {
+            "label": "border_radius",
+            "config": {
+              "fill": true,
+              "number": 10
+            }
+          },
+          "shadow": {
+            "label": "card_shadow",
+            "config": {
+              "option": "soft",
+              "size": "S",
+              "direction": "Top Right"
+            }
+          },
+          "padding": {
+            "label": "card_padding",
+            "value": {
+              "top": 5,
+              "left": 10,
+              "bottom": 15,
+              "right": 5,
+              "input": true
+            }
+          },
+          "align": {
+            "label": "text_align",
+            "type": "Center"
+          },
+          "background": {
+            "label": "card_background",
+            "value": {
+              "color": {
+                "preset": 7
+              }
+            }
+          }
+        },
+        {
+          "border": {
+            "label": "card_border",
+            "value": {
+              "thickness": "l",
+              "style": "Solid",
+              "side": "Right",
+              "color": {
+                "preset": 3
+              }
+            }
+          },
+          "radius": {
+            "label": "border_radius",
+            "config": {
+              "fill": true,
+              "number": 15
+            }
+          },
+          "shadow": {
+            "label": "card_shadow",
+            "config": {
+              "option": "none",
+              "size": "",
+              "direction": ""
+            }
+          },
+          "padding": {
+            "label": "card_padding",
+            "value": {
+              "top": 5,
+              "left": 5,
+              "bottom": 5,
+              "right": 5,
+              "input": true
+            }
+          },
+          "align": {
+            "label": "text_align",
+            "type": "Left"
+          },
+          "background": {
+            "label": "card_background",
+            "value": {
+              "color": {
+                "preset": 6,
+                "hexText": "#39D231CC",
+                "opacityText": "20"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "SB_NEWECOM_WS_PDC_06": {
+      "product_name": {
+        "all_variant_soldout": "Charles Hat in Steel Grey",
+        "no_variant_soldout": "Big Moon Hat",
+        "one_of_variants_soldout": "Hobo Hat"
+      },
+      "label_soldout": "sold_out_badge",
+      "label_radius": "border_radius",
+      "setting": {
+        "turn_on": {
+          "show_icon": true,
+          "radius": {
+            "fill": true,
+            "number": 20
+          }
+        },
+        "turn_off": {
+          "show_icon": false
+        }
+      }
+    },
+    "SB_NEWECOM_WS_PDC_07": {
+      "product_name": {
+        "price_is_less_than_compare_price": "Barette Hat - For the summer 2015 collection, transverse geological boundaries and temperatures. Color Straw. 100% Raffia Straw. Made in U.S.A. One Size.",
+        "price_is_less_than_compare_price_but_soldout": "Charles Hat in Steel Grey",
+        "price_is_greater_than_compare_price": "Big Moon Hat",
+        "price_is_equal_to_compare_price": "Hobo Hat"
+      },
+      "label_sale": "sale_badge",
+      "label_radius": "border_radius",
+      "setting": {
+        "turn_on": {
+          "show_icon": true,
+          "radius": {
+            "fill": true,
+            "number": 20
+          }
+        },
+        "turn_off": {
+          "show_icon": false
+        }
+      }
+    },
+    "SB_NEWECOM_WS_PDC_08": {
+      "label": "add_cart_button",
+      "available_product_name": "Big Moon Hat",
+      "soldout_product_name": "Charles Hat in Steel Grey",
+      "setting": {
+        "turn_on": {
+          "show_icon": true
+        },
+        "turn_off": {
+          "show_icon": false
+        }
+      }
+    },
+    "SB_NEWECOM_WS_PDC_09": {
+      "expected": {
+        "click_atc_dropdown": ["Open cart drawer", "Go to cart page"]
+      }
+    },
+    "SB_NEWECOM_WS_PDC_10": {
+      "pre_condition": {
+        "add_cart_button": {
+          "label": "add_cart_button",
+          "show_icon": true
+        },
+        "show_rating": {
+          "label_rating": "show_rating",
+          "setting": {
+            "turn_on": {
+              "show_icon": true
+            }
+          }
+        }
+      },
+      "product_name": "Big Moon Hat"
+    },
+    "SB_NEWECOM_WS_PDC_11": {
+      "collection_handle": "hats",
+      "expected": {
+        "image_ratio": [
+          {
+            "value": "Portrait",
+            "padding": "133.33%"
+          },
+          {
+            "value": "Square",
+            "padding": "100%"
+          },
+          {
+            "value": "Landscape",
+            "padding": "56.25%"
+          }
+        ],
+        "font": {
+          "pre_condition": {
+            "align": {
+              "label": "text_align",
+              "type": "Left"
+            },
+            "background": {
+              "label": "card_background",
+              "value": {
+                "color": {
+                  "preset": 1
+                }
+              }
+            },
+            "border": {
+              "label": "card_border",
+              "value": {
+                "thickness": "none"
+              }
+            },
+            "show_rating": {
+              "label_rating": "show_rating",
+              "setting": {
+                "turn_on": {
+                  "show_icon": true
+                }
+              },
+              "rating_icon": "Star",
+              "rating_color": {
+                "preset": 6,
+                "hexText": "#EEA920"
+              }
+            },
+            "padding": {
+              "label": "card_padding",
+              "value": {
+                "top": 5,
+                "left": 5,
+                "bottom": 5,
+                "right": 5,
+                "input": true
+              }
+            }
+          },
+          "truncated_product_name": "Barette Hat - For the summer 2015 collection, transverse geological boundaries and temperatures. Color Straw. 100% Raffia Straw. Made in U.S.A. One Size.",
+          "font_paragraph": [
+            {
+              "paragraph": "Paragraph 1",
+              "font_number": 1,
+              "font_size": "18px"
+            },
+            {
+              "paragraph": "Paragraph 2",
+              "font_number": 2,
+              "font_size": "16px"
+            },
+            {
+              "paragraph": "Paragraph 3",
+              "font_number": 3,
+              "font_size": "14px"
+            }
+          ]
+        },
+        "common_setting": {
+          "pre_condition": {
+            "compared_price": {
+              "label": "show_compare_price",
+              "show_icon": true
+            },
+            "soldout": {
+              "label": "sold_out_badge",
+              "show_icon": false
+            },
+            "sale": {
+              "label": "sale_badge",
+              "show_icon": false
+            },
+            "add_cart_button": {
+              "label": "add_cart_button",
+              "show_icon": false
+            }
+          },
+          "snapshot_preview": "common-setting-product-card",
+          "styles": [
+            {
+              "border": {
+                "label": "card_border",
+                "value": {
+                  "thickness": "s",
+                  "style": "Dash",
+                  "side": "All",
+                  "color": {
+                    "preset": 5,
+                    "opacity": 50
+                  }
+                }
+              },
+              "radius": {
+                "label": "border_radius",
+                "config": {
+                  "fill": true,
+                  "number": 0
+                }
+              },
+              "shadow": {
+                "label": "card_shadow",
+                "config": {
+                  "option": "none",
+                  "size": "",
+                  "direction": ""
+                }
+              },
+              "padding": {
+                "label": "card_padding",
+                "value": {
+                  "top": 0,
+                  "left": 0,
+                  "bottom": 0,
+                  "right": 0,
+                  "input": true
+                }
+              },
+              "align": {
+                "label": "text_align",
+                "type": "Center"
+              },
+              "background": {
+                "label": "card_background",
+                "value": {
+                  "color": {
+                    "preset": 3,
+                    "opacity": 50
+                  }
+                }
+              }
+            },
+            {
+              "border": {
+                "label": "card_border",
+                "value": {
+                  "thickness": "m",
+                  "style": "Solid",
+                  "side": "Top & Bottom",
+                  "color": {
+                    "preset": 3,
+                    "opacity": 80
+                  }
+                }
+              },
+              "radius": {
+                "label": "border_radius",
+                "config": {
+                  "fill": true,
+                  "number": 5
+                }
+              },
+              "shadow": {
+                "label": "card_shadow",
+                "config": {
+                  "option": "soft",
+                  "size": "L",
+                  "direction": "Top Right"
+                }
+              },
+              "padding": {
+                "label": "card_padding",
+                "value": {
+                  "top": 10,
+                  "left": 10,
+                  "bottom": 10,
+                  "right": 10,
+                  "input": true
+                }
+              },
+              "align": {
+                "label": "text_align",
+                "type": "Left"
+              },
+              "background": {
+                "label": "card_background",
+                "value": {
+                  "color": {
+                    "preset": 2
+                  }
+                }
+              }
+            },
+            {
+              "border": {
+                "label": "card_border",
+                "value": {
+                  "thickness": "l",
+                  "style": "Dash",
+                  "side": "Left & Right",
+                  "color": {
+                    "preset": 5
+                  }
+                }
+              },
+              "radius": {
+                "label": "border_radius",
+                "config": {
+                  "fill": true,
+                  "number": 10
+                }
+              },
+              "shadow": {
+                "label": "card_shadow",
+                "config": {
+                  "option": "hard",
+                  "size": "L",
+                  "direction": "Top Left"
+                }
+              },
+              "padding": {
+                "label": "card_padding",
+                "value": {
+                  "top": 5,
+                  "left": 10,
+                  "bottom": 15,
+                  "right": 5,
+                  "input": true
+                }
+              },
+              "align": {
+                "label": "text_align",
+                "type": "Right"
+              },
+              "background": {
+                "label": "card_background",
+                "value": {
+                  "color": {
+                    "preset": 3
+                  }
+                }
+              }
+            },
+            {
+              "border": {
+                "label": "card_border",
+                "value": {
+                  "thickness": "none"
+                }
+              },
+              "radius": {
+                "label": "border_radius",
+                "config": {
+                  "fill": true,
+                  "number": 15
+                }
+              },
+              "shadow": {
+                "label": "card_shadow",
+                "config": {
+                  "option": "hard",
+                  "size": "M",
+                  "direction": "Bottom Left"
+                }
+              },
+              "padding": {
+                "label": "card_padding",
+                "value": {
+                  "top": 5,
+                  "left": 5,
+                  "bottom": 5,
+                  "right": 5,
+                  "input": true
+                }
+              },
+              "align": {
+                "label": "text_align",
+                "type": "Center"
+              },
+              "background": {
+                "label": "card_background",
+                "value": {
+                  "color": {
+                    "preset": 3
+                  }
+                }
+              }
+            },
+            {
+              "border": {
+                "label": "card_border",
+                "value": {
+                  "thickness": "l",
+                  "style": "Dash",
+                  "side": "Bottom",
+                  "color": {
+                    "preset": 5
+                  }
+                }
+              },
+              "radius": {
+                "label": "border_radius",
+                "config": {
+                  "fill": true,
+                  "number": 0
+                }
+              },
+              "shadow": {
+                "label": "card_shadow",
+                "config": {
+                  "option": "hard",
+                  "size": "S",
+                  "direction": "Bottom Right"
+                }
+              },
+              "padding": {
+                "label": "card_padding",
+                "value": {
+                  "top": 0,
+                  "left": 0,
+                  "bottom": 0,
+                  "right": 0,
+                  "input": true
+                }
+              },
+              "align": {
+                "label": "text_align",
+                "type": "Left"
+              },
+              "background": {
+                "label": "card_background",
+                "value": {
+                  "image": {
+                    "url": "data/shopbase/artwork_case_06.jpg",
+                    "size": "Contain",
+                    "position": 5,
+                    "repeat": true
+                  }
+                }
+              }
+            },
+            {
+              "border": {
+                "label": "card_border",
+                "value": {
+                  "thickness": "s",
+                  "style": "Solid",
+                  "side": "Top",
+                  "color": {
+                    "preset": 5
+                  }
+                }
+              },
+              "radius": {
+                "label": "border_radius",
+                "config": {
+                  "fill": true,
+                  "number": 5
+                }
+              },
+              "shadow": {
+                "label": "card_shadow",
+                "config": {
+                  "option": "soft",
+                  "size": "M",
+                  "direction": "Bottom"
+                }
+              },
+              "padding": {
+                "label": "card_padding",
+                "value": {
+                  "top": 10,
+                  "left": 10,
+                  "bottom": 10,
+                  "right": 10,
+                  "input": true
+                }
+              },
+              "align": {
+                "label": "text_align",
+                "type": "Right"
+              },
+              "background": {
+                "label": "card_background",
+                "value": {
+                  "image": {
+                    "url": "data/shopbase/artwork_case_06.jpg",
+                    "size": "Cover",
+                    "position": 2,
+                    "repeat": false
+                  }
+                }
+              }
+            },
+            {
+              "border": {
+                "label": "card_border",
+                "value": {
+                  "thickness": "m",
+                  "style": "Dash",
+                  "side": "Left",
+                  "color": {
+                    "preset": 6,
+                    "hexText": "#39D231CC"
+                  }
+                }
+              },
+              "radius": {
+                "label": "border_radius",
+                "config": {
+                  "fill": true,
+                  "number": 10
+                }
+              },
+              "shadow": {
+                "label": "card_shadow",
+                "config": {
+                  "option": "soft",
+                  "size": "S",
+                  "direction": "Top Right"
+                }
+              },
+              "padding": {
+                "label": "card_padding",
+                "value": {
+                  "top": 5,
+                  "left": 10,
+                  "bottom": 15,
+                  "right": 5,
+                  "input": true
+                }
+              },
+              "align": {
+                "label": "text_align",
+                "type": "Center"
+              },
+              "background": {
+                "label": "card_background",
+                "value": {
+                  "color": {
+                    "preset": 7
+                  }
+                }
+              }
+            },
+            {
+              "border": {
+                "label": "card_border",
+                "value": {
+                  "thickness": "l",
+                  "style": "Solid",
+                  "side": "Right",
+                  "color": {
+                    "preset": 3
+                  }
+                }
+              },
+              "radius": {
+                "label": "border_radius",
+                "config": {
+                  "fill": true,
+                  "number": 15
+                }
+              },
+              "shadow": {
+                "label": "card_shadow",
+                "config": {
+                  "option": "none",
+                  "size": "",
+                  "direction": ""
+                }
+              },
+              "padding": {
+                "label": "card_padding",
+                "value": {
+                  "top": 5,
+                  "left": 5,
+                  "bottom": 5,
+                  "right": 5,
+                  "input": true
+                }
+              },
+              "align": {
+                "label": "text_align",
+                "type": "Left"
+              },
+              "background": {
+                "label": "card_background",
+                "value": {
+                  "color": {
+                    "preset": 6,
+                    "hexText": "#39D231CC",
+                    "opacityText": "20"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "SB_NEWECOM_WS_PDC_12": {
+      "collection_handle": "hats",
+      "pre_condition": {
+        "radius": {
+          "label": "border_radius",
+          "config": {
+            "fill": true,
+            "number": 20
+          }
+        }
+      },
+      "sold_out": {
+        "product_name": {
+          "all_variant_soldout": "Charles Hat in Steel Grey",
+          "no_variant_soldout": "Big Moon Hat",
+          "one_of_variants_soldout": "Hobo Hat"
+        },
+        "label": "sold_out_badge",
+        "setting": {
+          "turn_on": {
+            "show_icon": true
+          },
+          "turn_off": {
+            "show_icon": false
+          }
+        }
+      },
+      "sale": {
+        "product_name": {
+          "price_is_less_than_compare_price": "Barette Hat - For the summer 2015 collection, transverse geological boundaries and temperatures. Color Straw. 100% Raffia Straw. Made in U.S.A. One Size.",
+          "price_is_greater_than_compare_price": "Big Moon Hat",
+          "price_is_equal_to_compare_price": "Hobo Hat"
+        },
+        "label": "sale_badge",
+        "setting": {
+          "turn_on": {
+            "show_icon": true
+          },
+          "turn_off": {
+            "show_icon": false
+          }
+        }
+      },
+      "add_cart_button": {
+        "label": "add_cart_button",
+        "available_product_name": "Big Moon Hat",
+        "soldout_product_name": "Charles Hat in Steel Grey",
+        "setting": {
+          "turn_on": {
+            "show_icon": true
+          },
+          "turn_off": {
+            "show_icon": false
+          }
+        }
+      }
+    },
+    "SB_NEWECOM_WS_PDC_18": {
+      "collection_handle": "hats",
+      "product_name": {
+        "product_no_review": "Charles Hat in Steel Grey",
+        "product_has_review": "Big Moon Hat",
+        "product_same_group_review": "Hobo Hat"
+      },
+      "rating_text": "(5.0) 1 review",
+      "label_rating": "show_rating",
+      "setting": {
+        "turn_on": {
+          "show_icon": true
+        },
+        "turn_off": {
+          "show_icon": false
+        }
+      },
+      "pre_condition": {
+        "font": "Paragraph 2",
+        "rating_color": {
+          "preset": 6,
+          "hexText": "#EEA920"
+        },
+        "radius": {
+          "label_radius": "border_radius",
+          "value": {
+            "fill": true,
+            "number": 0
+          }
+        },
+        "background": {
+          "label": "card_background",
+          "value": {
+            "color": {
+              "preset": 1
+            }
+          }
+        },
+        "align": {
+          "label": "text_align",
+          "type": "Center"
+        }
+      },
+      "expected": {
+        "rating_icons": [
+          {
+            "text": "Star Rounded"
+          },
+          {
+            "text": "Heart"
+          },
+          {
+            "text": "Star"
+          }
+        ],
+        "rating_colors": [
+          {
+            "color": {
+              "preset": 3
+            },
+            "value": "rgb(140, 140, 140)"
+          },
+          {
+            "color": {
+              "preset": 6,
+              "hexText": "#C11E1E"
+            },
+            "value": "rgb(193, 30, 30)"
+          },
+          {
+            "color": {
+              "preset": 7
+            },
+            "value": "rgb(0, 0, 0)"
+          },
+          {
+            "color": {
+              "preset": 6,
+              "hexText": "#EEA920"
+            },
+            "value": "rgb(238, 169, 32)"
+          }
+        ]
+      }
+    },
+    "SB_NEWECOM_WS_PDC_19": {
+      "collection_handle": "hats",
+      "product_name": {
+        "product_no_review": "Charles Hat in Steel Grey",
+        "product_has_review": "Big Moon Hat",
+        "product_same_group_review": "Hobo Hat"
+      },
+      "rating_text": "(5.0) 1 review",
+      "label_rating": "show_rating",
+      "setting": {
+        "turn_on": {
+          "show_icon": true
+        },
+        "turn_off": {
+          "show_icon": false
+        }
+      },
+      "pre_condition": {
+        "font": "Paragraph 2",
+        "rating_color": {
+          "preset": 6,
+          "hexText": "#EEA920"
+        },
+        "radius": {
+          "label_radius": "border_radius",
+          "value": {
+            "fill": true,
+            "number": 0
+          }
+        },
+        "background": {
+          "label": "card_background",
+          "value": {
+            "color": {
+              "preset": 1
+            }
+          }
+        },
+        "align": {
+          "label": "text_align",
+          "type": "Center"
+        }
+      },
+      "expected": {
+        "rating_icons": [
+          {
+            "text": "Star Rounded",
+            "value": "M17.7693"
+          },
+          {
+            "text": "Heart",
+            "value": "M11.0782"
+          },
+          {
+            "text": "Star",
+            "value": "M12.5167"
+          }
+        ],
+        "rating_colors": [
+          {
+            "color": {
+              "preset": 3
+            },
+            "value": "rgb(140, 140, 140)"
+          },
+          {
+            "color": {
+              "preset": 6,
+              "hexText": "#C11E1E"
+            },
+            "value": "rgb(193, 30, 30)"
+          },
+          {
+            "color": {
+              "preset": 7
+            },
+            "value": "rgb(0, 0, 0)"
+          },
+          {
+            "color": {
+              "preset": 6,
+              "hexText": "#EEA920"
+            },
+            "value": "rgb(238, 169, 32)"
+          }
+        ]
+      }
+    },
+    "SB_NEWECOM_WS_PDC_15": {
+      "handles": ["collection", "my_products"],
+      "snapshot": {
+        "popover_product_card": "popover-product-card-creator.png",
+        "common_setting": "common-setting-product-card-creator"
+      },
+      "styles": [
+        {
+          "image_ratio": {
+            "value": "Portrait",
+            "padding": "133.33%"
+          },
+          "image_cover": {
+            "value": "Cover"
+          },
+          "font": {
+            "value": "Paragraph 1"
+          },
+          "border": {
+            "label": "card_border",
+            "value": {
+              "thickness": "l",
+              "style": "Solid",
+              "side": "All",
+              "color": {
+                "preset": 5
+              }
+            }
+          },
+          "radius": {
+            "label": "border_radius",
+            "config": {
+              "fill": true,
+              "number": 0
+            }
+          },
+          "shadow": {
+            "label": "card_shadow",
+            "config": {
+              "option": "none",
+              "size": "",
+              "direction": ""
+            }
+          },
+          "padding": {
+            "label": "card_padding",
+            "value": {
+              "top": 0,
+              "left": 0,
+              "bottom": 0,
+              "right": 0,
+              "input": true
+            }
+          },
+          "align": {
+            "label": "text_align",
+            "type": "Left"
+          },
+          "background": {
+            "label": "card_background",
+            "value": {
+              "color": {
+                "preset": 2
+              }
+            }
+          }
+        },
+        {
+          "image_ratio": {
+            "value": "Square",
+            "padding": "100%"
+          },
+          "image_cover": {
+            "value": "Contain"
+          },
+          "font": {
+            "value": "Paragraph 2"
+          },
+          "border": {
+            "label": "card_border",
+            "value": {
+              "thickness": "m",
+              "style": "Dash",
+              "side": "Top & Bottom",
+              "color": {
+                "preset": 5,
+                "opacity": 50
+              }
+            }
+          },
+          "radius": {
+            "label": "border_radius",
+            "config": {
+              "fill": true,
+              "number": 5
+            }
+          },
+          "shadow": {
+            "label": "card_shadow",
+            "config": {
+              "option": "soft",
+              "size": "M",
+              "direction": "Top Right"
+            }
+          },
+          "padding": {
+            "label": "card_padding",
+            "value": {
+              "top": 5,
+              "left": 5,
+              "bottom": 5,
+              "right": 5,
+              "input": true
+            }
+          },
+          "align": {
+            "label": "text_align",
+            "type": "Center"
+          },
+          "background": {
+            "label": "card_background",
+            "value": {
+              "color": {
+                "preset": 3,
+                "opacity": 50
+              }
+            }
+          }
+        },
+        {
+          "image_ratio": {
+            "value": "Landscape",
+            "padding": "56.25%"
+          },
+          "image_cover": {
+            "value": "Cover"
+          },
+          "font": {
+            "value": "Paragraph 3"
+          },
+          "border": {
+            "label": "card_border",
+            "value": {
+              "thickness": "s",
+              "style": "Solid",
+              "side": "Left & Right",
+              "color": {
+                "preset": 3
+              }
+            }
+          },
+          "radius": {
+            "label": "border_radius",
+            "config": {
+              "fill": true,
+              "number": 10
+            }
+          },
+          "shadow": {
+            "label": "card_shadow",
+            "config": {
+              "option": "hard",
+              "size": "L",
+              "direction": "Bottom Left"
+            }
+          },
+          "padding": {
+            "label": "card_padding",
+            "value": {
+              "top": 10,
+              "left": 5,
+              "bottom": 15,
+              "right": 10,
+              "input": true
+            }
+          },
+          "align": {
+            "label": "text_align",
+            "type": "Right"
+          },
+          "background": {
+            "label": "card_background",
+            "value": {
+              "color": {
+                "preset": 2,
+                "opacity": 80
+              }
+            }
+          }
+        }
+      ]
+    },
+    "SB_NEWECOM_WS_PDC_16": {
+      "handles": {
+        "all_products_page": "collection",
+        "my_product_list": "my-products"
+      },
+      "product_name": "Test Product card",
+      "product_handle": "test-product-card"
+    },
+    "SB_NEWECOM_WS_PDC_17": {
+      "product_handle": "test-product-card",
+      "handles": {
+        "all_products_page": "collection",
+        "my_product_list": "my-products"
+      },
+      "snapshot": {
+        "common_setting": "common-setting-product-card-creator-mobile"
+      },
+      "styles": [
+        {
+          "image_ratio": {
+            "value": "Portrait",
+            "padding": "133.33%"
+          },
+          "image_cover": {
+            "value": "Cover"
+          },
+          "font": {
+            "value": "Paragraph 1"
+          },
+          "border": {
+            "label": "card_border",
+            "value": {
+              "thickness": "l",
+              "style": "Solid",
+              "side": "All",
+              "color": {
+                "preset": 5
+              }
+            }
+          },
+          "radius": {
+            "label": "border_radius",
+            "config": {
+              "fill": true,
+              "number": 0
+            }
+          },
+          "shadow": {
+            "label": "card_shadow",
+            "config": {
+              "option": "none",
+              "size": "",
+              "direction": ""
+            }
+          },
+          "padding": {
+            "label": "card_padding",
+            "value": {
+              "top": 0,
+              "left": 0,
+              "bottom": 0,
+              "right": 0,
+              "input": true
+            }
+          },
+          "align": {
+            "label": "text_align",
+            "type": "Left"
+          },
+          "background": {
+            "label": "card_background",
+            "value": {
+              "color": {
+                "preset": 2
+              }
+            }
+          }
+        },
+        {
+          "image_ratio": {
+            "value": "Square",
+            "padding": "100%"
+          },
+          "image_cover": {
+            "value": "Contain"
+          },
+          "font": {
+            "value": "Paragraph 2"
+          },
+          "border": {
+            "label": "card_border",
+            "value": {
+              "thickness": "m",
+              "style": "Dash",
+              "side": "Top & Bottom",
+              "color": {
+                "preset": 5,
+                "opacity": 50
+              }
+            }
+          },
+          "radius": {
+            "label": "border_radius",
+            "config": {
+              "fill": true,
+              "number": 5
+            }
+          },
+          "shadow": {
+            "label": "card_shadow",
+            "config": {
+              "option": "soft",
+              "size": "M",
+              "direction": "Top Right"
+            }
+          },
+          "padding": {
+            "label": "card_padding",
+            "value": {
+              "top": 5,
+              "left": 5,
+              "bottom": 5,
+              "right": 5,
+              "input": true
+            }
+          },
+          "align": {
+            "label": "text_align",
+            "type": "Center"
+          },
+          "background": {
+            "label": "card_background",
+            "value": {
+              "color": {
+                "preset": 3,
+                "opacity": 50
+              }
+            }
+          }
+        },
+        {
+          "image_ratio": {
+            "value": "Landscape",
+            "padding": "56.25%"
+          },
+          "image_cover": {
+            "value": "Cover"
+          },
+          "font": {
+            "value": "Paragraph 3"
+          },
+          "border": {
+            "label": "card_border",
+            "value": {
+              "thickness": "s",
+              "style": "Solid",
+              "side": "Left & Right",
+              "color": {
+                "preset": 3
+              }
+            }
+          },
+          "radius": {
+            "label": "border_radius",
+            "config": {
+              "fill": true,
+              "number": 10
+            }
+          },
+          "shadow": {
+            "label": "card_shadow",
+            "config": {
+              "option": "hard",
+              "size": "L",
+              "direction": "Bottom Left"
+            }
+          },
+          "padding": {
+            "label": "card_padding",
+            "value": {
+              "top": 10,
+              "left": 5,
+              "bottom": 15,
+              "right": 10,
+              "input": true
+            }
+          },
+          "align": {
+            "label": "text_align",
+            "type": "Right"
+          },
+          "background": {
+            "label": "card_background",
+            "value": {
+              "color": {
+                "preset": 2,
+                "opacity": 80
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

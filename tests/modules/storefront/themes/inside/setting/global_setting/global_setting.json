@@ -1,0 +1,488 @@
+{
+  "env": {
+    "prod": {
+      "domain": "au-inside-global-setting.onshopbase.com",
+      "shop_name": "au-inside-global-setting",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "api": "https://api.shopbase.com",
+      "shop_id": 10341657,
+      "user_id": 73782
+    },
+    "prodtest": {
+      "domain": "au-inside-global-setting-prodtest.onshopbase.com",
+      "shop_name": "au-inside-global-setting-prodtest",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "api": "https://prod-test-api.shopbase.com",
+      "shop_id": 10382258,
+      "user_id": 73782,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "domain": "au-inside-global-setting.myshopbase.net",
+      "shop_name": "au-inside-global-setting",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "api": "https://gapi.dev.shopbase.net",
+      "shop_id": 10323329,
+      "user_id": 73800
+    }
+  },
+  "cases": {
+    "SB_OLS_THE_INS_SF_GLOBAL_SETTING_01": {
+      "data": {
+        "global_settings": {
+          "collection_list_pagination": "lazy",
+          "enable_sort_collection_list": true
+        }
+      },
+      "sorts": [
+        {
+          "sort_label": "Oldest",
+          "sort": {
+            "field": "created_at",
+            "direction": "asc"
+          }
+        },
+        {
+          "sort_label": "Newest",
+          "sort": {
+            "field": "created_at",
+            "direction": "desc"
+          }
+        },
+        {
+          "sort_label": "Alphabet, A -> Z",
+          "sort": {
+            "field": "title",
+            "direction": "asc"
+          }
+        },
+        {
+          "sort_label": "Alphabet, Z -> A",
+          "sort": {
+            "field": "title",
+            "direction": "desc"
+          }
+        },
+        {
+          "sort_label": "Price, Low to high",
+          "sort": {
+            "field": "price",
+            "direction": "asc"
+          }
+        },
+        {
+          "sort_label": "Price, High to low",
+          "sort": {
+            "field": "price",
+            "direction": "desc"
+          }
+        }
+      ],
+      "expected": {
+        "sort_default_all": "created:desc",
+        "sort_default_detail": "manual",
+        "total_el_default": 12,
+        "options": [
+          "Featured",
+          "Newest",
+          "Oldest",
+          "Alphabet, A -> Z",
+          "Alphabet, Z -> A",
+          "Price, Low to high",
+          "Price, High to low"
+        ]
+      }
+    },
+    "SB_OLS_THE_INS_SF_GLOBAL_SETTING_4": {
+      "data": {
+        "global_settings": {
+          "collection_list_pagination": "paging",
+          "enable_sort_collection_list": false
+        }
+      },
+      "expected": {
+        "total_el_default": 12
+      }
+    },
+    "SB_OLS_THE_INS_SF_GLOBAL_SETTING_5": {
+      "data": {
+        "global_settings": {
+          "collection_list_pagination": "paging",
+          "enable_sort_collection_list": true
+        }
+      },
+      "actions": [
+        {
+          "step": "Click vào droplist sort, sort theo điều kiện Newest",
+          "sort_label": "Newest",
+          "sort": {
+            "field": "created_at",
+            "direction": "desc"
+          }
+        },
+        {
+          "step": "Click vào droplist sort, sort theo điều kiện Price, Low to high",
+          "sort_label": "Price, Low to high",
+          "sort": {
+            "field": "price",
+            "direction": "asc"
+          }
+        }
+      ],
+      "expected": {
+        "sort_default_all": "created:desc",
+        "sort_default_detail": "manual",
+        "total_el_default": 12
+      },
+      "sleep": 60000
+    },
+    "SB_OLS_THE_INS_SF_GLOBAL_SETTING_8": {
+      "data": {
+        "global_settings": {
+          "collection_list_pagination": "lazy",
+          "enable_sort_collection_list": false
+        }
+      },
+      "expected": {
+        "total_el_default": 12
+      }
+    },
+    "SB_OLS_THE_INS_SF_GLOBAL_SETTING_9": {
+      "data": {
+        "global_settings": {
+          "enable_sort_search_result": true,
+          "sort_search_by_logic": "created_at"
+        }
+      },
+      "search": "Plastic Cup",
+      "expected": {
+        "product_per_page": 12,
+        "sort_default": "created_at",
+        "options": ["Most related", "Best selling", "Most viewed", "Newest"]
+      }
+    },
+    "SB_OLS_THE_INS_SF_GLOBAL_SETTING_14": {
+      "data": {
+        "global_settings": {
+          "enable_sort_search_result": false
+        }
+      },
+      "search": "Plastic Cup",
+      "sleep": 60000
+    },
+    "SETTING_SEARCH": [
+      {
+        "description": "Search_Desktop_Check hiển thị search result khi Enable sort in search results = checked + Default logic = Best selling",
+        "id": "SB_OLS_THE_INS_SF_GLOBAL_SETTING_11",
+        "data": {
+          "global_settings": {
+            "enable_sort_search_result": true,
+            "sort_search_by_logic": "sold"
+          }
+        },
+        "search": "travel outdoor",
+        "expected": [
+          "Portable Cat Carrier Bag Car Seat Pet Cat Bed Travel Central Control Non Slip Universal Vehicle Armrest Box Pet Cat Carrier Seat",
+          "Portable Kawaii Bear Cup 1.3L Tumbler With Straw Cute Water Bottle For Girl Kid Large Capacity Mug Outdoor Sport Drinking Kettle"
+        ]
+      },
+      {
+        "description": "Search_Desktop_Check hiển thị search result khi Enable sort in search results = checked + Default logic = Most viewed",
+        "id": "SB_OLS_THE_INS_SF_GLOBAL_SETTING_12",
+        "data": {
+          "global_settings": {
+            "enable_sort_search_result": true,
+            "sort_search_by_logic": "viewed"
+          }
+        },
+        "search": "travel outdoor",
+        "expected": [
+          "Portable Kawaii Bear Cup 1.3L Tumbler With Straw Cute Water Bottle For Girl Kid Large Capacity Mug Outdoor Sport Drinking Kettle",
+          "Portable Cat Carrier Bag Car Seat Pet Cat Bed Travel Central Control Non Slip Universal Vehicle Armrest Box Pet Cat Carrier Seat"
+        ]
+      }
+    ],
+    "SETTING_PRODUCT_CARD": [
+      {
+        "description": "Check product when setting image square, center, show sales banners, add to cart, shape sharp",
+        "id": "SB_OLS_THE_INS_SF_GLOBAL_SETTING_15",
+        "data": {
+          "global_settings": {
+            "collection_list_pagination": "paging",
+            "enable_sort_collection_list": true,
+            "enable_sort_search_result": true,
+            "layout": "square",
+            "layout_alignment": "center",
+            "per_row_mobile": "2",
+            "scroll_to_top": true,
+            "shape_global": "sharp",
+            "show_add_cart_button": true,
+            "show_labels_banners": true,
+            "sort_search_by_logic": "created_at"
+          }
+        },
+        "expect": {
+          "desktop": {
+            "page": [
+              {
+                "link": "collections/all",
+                "add_to_cart": true,
+                "sale_banner": true,
+                "image_display": "square",
+                "content_align": "center"
+              },
+              {
+                "link": "collections/cat",
+                "add_to_cart": true,
+                "sale_banner": true,
+                "image_display": "square",
+                "content_align": "center"
+              },
+              {
+                "link": "products/cartoon"
+              }
+            ],
+            "shape": "sharp"
+          }
+        }
+      },
+      {
+        "description": "Mobile_Check product when setting image square, center, show sales banners, add to cart, shape sharp",
+        "id": "SB_OLS_THE_INS_SF_GLOBAL_SETTING_16",
+        "data": {
+          "global_settings": {
+            "collection_list_pagination": "paging",
+            "enable_sort_collection_list": true,
+            "enable_sort_search_result": true,
+            "layout": "square",
+            "layout_alignment": "center",
+            "per_row_mobile": "2",
+            "scroll_to_top": true,
+            "shape_global": "sharp",
+            "show_add_cart_button": true,
+            "show_labels_banners": true,
+            "sort_search_by_logic": "created_at"
+          }
+        },
+        "expect": {
+          "mobile": {
+            "link": "collections/all",
+            "per_row": 2
+          }
+        }
+      },
+      {
+        "description": "Check product when setting image portraits, left, not show sales banners, add to cart, shape round",
+        "id": "SB_OLS_THE_INS_SF_GLOBAL_SETTING_17",
+        "data": {
+          "global_settings": {
+            "collection_list_pagination": "paging",
+            "enable_sort_collection_list": true,
+            "enable_sort_search_result": true,
+            "layout": "portraits",
+            "layout_alignment": "left",
+            "per_row_mobile": "1",
+            "scroll_to_top": true,
+            "shape_global": "round",
+            "show_add_cart_button": false,
+            "show_labels_banners": false,
+            "sort_search_by_logic": "created_at"
+          }
+        },
+        "expect": {
+          "desktop": {
+            "page": [
+              {
+                "link": "collections/all",
+                "add_to_cart": false,
+                "sale_banner": false,
+                "image_display": "portraits",
+                "content_align": "left"
+              },
+              {
+                "link": "collections/cat",
+                "add_to_cart": false,
+                "sale_banner": false,
+                "image_display": "portraits",
+                "content_align": "left"
+              },
+              {
+                "link": "products/cartoon"
+              }
+            ],
+            "shape": "round"
+          }
+        }
+      },
+      {
+        "description": "Mobile_Check product when setting image portraits, left, not show sales banners, add to cart, shape round",
+        "id": "SB_OLS_THE_INS_SF_GLOBAL_SETTING_18",
+        "data": {
+          "global_settings": {
+            "collection_list_pagination": "paging",
+            "enable_sort_collection_list": true,
+            "enable_sort_search_result": true,
+            "layout": "portraits",
+            "layout_alignment": "left",
+            "per_row_mobile": "1",
+            "scroll_to_top": true,
+            "shape_global": "round",
+            "show_add_cart_button": false,
+            "show_labels_banners": false,
+            "sort_search_by_logic": "created_at"
+          }
+        },
+        "expect": {
+          "mobile": {
+            "link": "collections/all",
+            "per_row": 1
+          }
+        }
+      },
+      {
+        "description": "Check product when setting image ratio, show sales banners, not show add to cart, shape cut",
+        "id": "SB_OLS_THE_INS_SF_GLOBAL_SETTING_19",
+        "data": {
+          "global_settings": {
+            "collection_list_pagination": "paging",
+            "enable_sort_collection_list": true,
+            "enable_sort_search_result": true,
+            "layout": "default",
+            "layout_alignment": "center",
+            "per_row_mobile": "1",
+            "scroll_to_top": true,
+            "shape_global": "cut",
+            "show_add_cart_button": false,
+            "show_labels_banners": true,
+            "sort_search_by_logic": "created_at"
+          }
+        },
+        "expect": {
+          "desktop": {
+            "page": [
+              {
+                "link": "collections/all",
+                "add_to_cart": false,
+                "sale_banner": true,
+                "image_display": "default",
+                "content_align": "center"
+              },
+              {
+                "link": "collections/cat",
+                "add_to_cart": false,
+                "sale_banner": true,
+                "image_display": "default",
+                "content_align": "center"
+              },
+              {
+                "link": "products/cartoon"
+              }
+            ],
+            "shape": "cut"
+          }
+        }
+      }
+    ],
+    "SETTING_ADVANCED_SETTING": [
+      {
+        "description": "Check scroll when Enable icon back to top = checked",
+        "id": "SB_OLS_THE_INS_SF_GLOBAL_SETTING_20",
+        "data": {
+          "global_settings": {
+            "collection_list_pagination": "lazy",
+            "enable_sort_collection_list": true,
+            "enable_sort_search_result": true,
+            "layout": "default",
+            "layout_alignment": "left",
+            "per_row_mobile": "1",
+            "scroll_to_top": true,
+            "shape_global": "sharp",
+            "show_add_cart_button": false,
+            "show_labels_banners": false,
+            "sort_search_by_logic": "created_at"
+          }
+        },
+        "expect": {
+          "desktop": {
+            "scroll": true
+          }
+        }
+      },
+      {
+        "description": "Mobile_Check scroll when Enable icon back to top = checked",
+        "id": "SB_OLS_THE_INS_SF_GLOBAL_SETTING_21",
+        "data": {
+          "global_settings": {
+            "collection_list_pagination": "lazy",
+            "enable_sort_collection_list": true,
+            "enable_sort_search_result": true,
+            "layout": "default",
+            "layout_alignment": "left",
+            "per_row_mobile": "1",
+            "scroll_to_top": true,
+            "shape_global": "sharp",
+            "show_add_cart_button": false,
+            "show_labels_banners": false,
+            "sort_search_by_logic": "created_at"
+          }
+        },
+        "expect": {
+          "mobile": {
+            "scroll": true
+          }
+        }
+      },
+      {
+        "description": "Check scroll when Enable icon back to top = unchecked",
+        "id": "SB_OLS_THE_INS_SF_GLOBAL_SETTING_22",
+        "data": {
+          "global_settings": {
+            "collection_list_pagination": "lazy",
+            "enable_sort_collection_list": true,
+            "enable_sort_search_result": true,
+            "layout": "default",
+            "layout_alignment": "left",
+            "per_row_mobile": "1",
+            "scroll_to_top": false,
+            "shape_global": "sharp",
+            "show_add_cart_button": false,
+            "show_labels_banners": false,
+            "sort_search_by_logic": "created_at"
+          }
+        },
+        "expect": {
+          "desktop": {
+            "scroll": false
+          }
+        }
+      },
+      {
+        "description": "Mobile_Check scroll when Enable icon back to top = unchecked",
+        "id": "SB_OLS_THE_INS_SF_GLOBAL_SETTING_23",
+        "data": {
+          "global_settings": {
+            "collection_list_pagination": "lazy",
+            "enable_sort_collection_list": true,
+            "enable_sort_search_result": true,
+            "layout": "default",
+            "layout_alignment": "left",
+            "per_row_mobile": "1",
+            "scroll_to_top": false,
+            "shape_global": "sharp",
+            "show_add_cart_button": false,
+            "show_labels_banners": false,
+            "sort_search_by_logic": "created_at"
+          }
+        },
+        "expect": {
+          "mobile": {
+            "scroll": false
+          }
+        }
+      }
+    ]
+  }
+}

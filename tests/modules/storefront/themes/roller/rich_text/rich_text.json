@@ -1,0 +1,133 @@
+{
+  "cases": {
+    "RICH_TEXT_ROLLER": {
+      "data": [
+        {
+          "description": "Check display Rich text on SF with data default",
+          "case_id": "SB_OLS_THE_ROLLER_RICH_TEXT_1",
+          "expect": {
+            "name_snapshot": "richtext1_default.png"
+          },
+          "input": {
+            "home": {
+              "blocks": [],
+              "id": "KFm",
+              "settings": {
+                "heading": "Energize Your Shop, With A Theme Built For Speed",
+                "link": "",
+                "link_label": "View our impressive features here.",
+                "text": "Roller is next generation ecommerce at its  best: an incredibly flexible and sophisticated theme that will make your shop as stunning as it is fast",
+                "text_alignment": "centre"
+              },
+              "type": "rich-text",
+              "visible": true
+            }
+          }
+        },
+        {
+          "description": "Check display Rich text on SF with data default",
+          "case_id": "SB_OLS_THE_ROLLER_RICH_TEXT_2",
+          "expect": {
+            "name_snapshot": "richtext2_settingsection.png",
+            "redirect_link": {
+              "redirect_selector": "[type='rich-text'] a",
+              "redirect_url": "/products/product-1",
+              "wait_element": "[data-id='product_page']"
+            }
+          },
+          "input": {
+            "home": {
+              "blocks": [],
+              "id": "PSt",
+              "settings": {
+                "heading": "Rich text heading",
+                "link": {
+                  "name": "",
+                  "position": 0,
+                  "subject": {
+                    "handle": "product-1"
+                  },
+                  "type": "products",
+                  "type_options": {
+                    "subject": "",
+                    "subject_id": 1000000435250672,
+                    "title": "product 1"
+                  }
+                },
+                "link_label": "Rich text label",
+                "text": "<p><span style=\"color: #000000; font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: #ffffff;\">Roller is next generation ecommerce at its best: Rich text section</span></p>",
+                "text_alignment": "left"
+              },
+              "type": "rich-text",
+              "visible": true
+            }
+          }
+        },
+        {
+          "description": "Check display Rich text on SF when button label is blank",
+          "case_id": "SB_OLS_THE_ROLLER_RICH_TEXT_3",
+          "expect": {
+            "name_snapshot": "richtext3_blank_label.png"
+          },
+          "input": {
+            "home": {
+              "blocks": [],
+              "id": "PSt",
+              "settings": {
+                "heading": "Rich text heading",
+                "link": {
+                  "name": "",
+                  "position": 0,
+                  "subject": {
+                    "handle": "product-1"
+                  },
+                  "type": "products",
+                  "type_options": {
+                    "subject": "",
+                    "subject_id": 1000000435250672,
+                    "title": "product 1"
+                  }
+                },
+                "link_label": "",
+                "text": "<p><span style=\"color: #000000; font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: #ffffff;\">Roller is next generation ecommerce at its best: Rich text section</span></p>",
+                "text_alignment": "right"
+              },
+              "type": "rich-text",
+              "visible": true
+            }
+          }
+        }
+      ]
+    }
+  },
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "domain": "au-roller-rich-text.onshopbase.com",
+      "shop_name": "au-roller-rich-text.onshopbase.com",
+      "user_id": 73782,
+      "shop_id": 10365552
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "domain": "au-roller-rich-text-prodtest.onshopbase.com",
+      "shop_name": "au-roller-rich-text-prodtest.onshopbase.com",
+      "user_id": 73782,
+      "shop_id": 10365567,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "domain": "au-roller-rich-text.myshopbase.net",
+      "shop_name": "au-roller-rich-text.myshopbase.net",
+      "user_id": 73800,
+      "shop_id": 10321586
+    }
+  }
+}

@@ -1,0 +1,546 @@
+{
+  "env": {
+    "dev": {
+      "hive_domain": "hive.dev.shopbase.net",
+      "hive_username": "hanhdo@beeketing.net",
+      "hive_password": "123456",
+      "domain": "test-onboad.myshopbase.net",
+      "accounts_domain": "accounts.dev.shopbase.net",
+      "link_hive": "gapi.dev.shopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_name": "au onboarding homepage",
+      "shop_name_test": "test onboad",
+      "step_result": ["enable_payment_provider", "add_product", "add_domain", "install_tracking", "customize_theme"],
+      "user_id": 73800,
+      "shop_id": 10323612,
+      "store_country": ["VN"],
+      "per_location": ["VN"],
+      "phone_number": "0344321906",
+      "business_model": ["Niche Dropshipping"],
+      "platform": ["I want a ShopBase store"]
+    },
+    "prod-test": {
+      "hive_domain": "hive-test.dev.shopbase.net",
+      "hive_username": "shopbase",
+      "hive_password": "UxsLHz^Wjkf35*/w",
+      "domain": "onboading-prod-test.onshopbase.com",
+      "accounts_domain": "accounts.shopbase.net",
+      "link_hive": "api.shopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_name": "onboading-prod-test",
+      "shop_name_test": "onboading-prod-test",
+      "step_result": ["enable_payment_provider", "add_product", "add_domain", "install_tracking", "customize_theme"],
+      "user_id": 73800,
+      "shop_id": 10323612,
+      "store_country": ["VN"],
+      "per_location": ["VN"],
+      "phone_number": "0344321906",
+      "business_model": ["Niche Dropshipping"],
+      "platform": ["I want a ShopBase store"]
+    },
+    "prod": {
+      "hive_domain": "hive.shopbase.net",
+      "hive_username": "shopbase",
+      "hive_password": "UxsLHz^Wjkf35*/w",
+      "domain": "test-onboad.myshopbase.net",
+      "accounts_domain": "accounts.dev.shopbase.net",
+      "link_hive": "api.shopbase.comt",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_name": "test onboad",
+      "shop_name_test": "test onboad",
+      "step_result": ["enable_payment_provider", "add_product", "add_domain", "install_tracking", "customize_theme"],
+      "user_id": 89205,
+      "shop_id": 10322163,
+      "store_country": ["VN"],
+      "per_location": ["VN"],
+      "phone_number": "0344321906",
+      "business_model": ["Niche Dropshipping"],
+      "platform": ["I want a ShopBase store"]
+    },
+    "prodtest": {
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://prod-test-api.shopbase.com"
+    }
+  },
+  "cases": {
+    "SB_HSB_OB_OHP_4": {
+      "filter_option": "Name",
+      "btn_confirm": "Yes, delete",
+      "data_create_onboarding": {
+        "name": "Create onboarding",
+        "store_type": ["General Dropship", "Niche Dropship", "Manufacture/Private Label", "White Label", "Other"],
+        "priority": "1",
+        "country": ["China", "Việt Nam", "Other"],
+        "status": "Disable",
+        "data_content": {
+          "language": "English",
+          "onboard1": {
+            "onboard_title": "Start selling after a day or two with 5 steps & Enjoy your first 50 orders won't be charged for the transaction fee",
+            "onboard_item_form_data": [
+              {
+                "event": "add_product",
+                "title": "Add product",
+                "icon": "tag-plus",
+                "progress_bar_desc": "Build your product catalog and add what you want to sell.",
+                "content": {
+                  "title": "Add your first product",
+                  "desc": "Adding products have never been easier with these 2 ways: Manually create product listings or Import AliExpress products with URL",
+                  "button": "Create product listings",
+                  "secondary_button": "Or import AliExpress products with URLs",
+                  "link1": "product",
+                  "link2": "https://help.shopbase.com/en/article/how-to-import-products-from-aliexpress-to-sell-on-shopbase-js1q8c/",
+                  "image": "https://img.shopbase.com/files/internal/media/158994733501d9d9ff41.png"
+                },
+                "content_after_done": {
+                  "title": "You've added your first product",
+                  "desc": "Add more products or go on to another step",
+                  "button": "Create more product listings",
+                  "secondary_button": "Other ways to add product",
+                  "link1": "product",
+                  "link2": "https://help.shopbase.com/en/category/products-16yun10/",
+                  "image": "https://img.shopbase.com/files/internal/media/158994733501d9d9ff41.png"
+                }
+              },
+              {
+                "event": "enable_payment_provider",
+                "title": "Activate payment provider",
+                "icon": "credit-card-settings",
+                "progress_bar_desc": "Set up a payment provider so your customers can check out and you can get paid.",
+                "content": {
+                  "title": "Choose the way your customers pay for their purchases",
+                  "desc": "Set up one or more payment providers (PayPal, Stripe, Cardpay or Checkout.com ) in your store to let customers pay using credit cards or PayPal",
+                  "button": "Enable payment provider",
+                  "secondary_button": "Learn more about payment providers",
+                  "link1": "setting_payments",
+                  "link2": "https://help.shopbase.com/en/article/connect-payment-providers-to-your-store-1ok8bg8/",
+                  "image": "https://img.shopbase.com/files/internal/media/15899474689ef632d5d7.png"
+                },
+                "content_after_done": {
+                  "title": "You've enable payments",
+                  "desc": "Set up another payment provider or go on to another step",
+                  "button": "Go to payment settings",
+                  "secondary_button": "Learn about payment providers",
+                  "link1": "setting_payments",
+                  "link2": "https://help.shopbase.com/en/article/overview-of-payment-lktw7z/",
+                  "image": "https://img.shopbase.com/files/internal/media/15899474689ef632d5d7.png"
+                }
+              },
+              {
+                "event": "add_domain",
+                "title": "Add custom domain",
+                "icon": "link-plus",
+                "progress_bar_desc": "Your current domain is . Add or buy a custom domain to help customers remember your online store.",
+                "content": {
+                  "title": "Add custom domain to increase brand trust for your store",
+                  "desc": "Your domain reflects how trustworthy your store is. Plus, your buyers are able to check out their orders only after your custom domain is added & active",
+                  "button": "Add or buy a domain",
+                  "secondary_button": "Learn how to add a custom domain",
+                  "link1": "domain",
+                  "link2": "https://help.shopbase.com/en/article/add-your-existing-domain-to-shopbase-store-1olhc36/",
+                  "image": "https://help.shopbase.com/en/article/add-your-existing-domain-to-shopbase-store-1olhc36/"
+                },
+                "content_after_done": {
+                  "title": "Your domain has been connected",
+                  "desc": "Add or buy another domain, or go on to another step",
+                  "button": "Go to domain settings",
+                  "secondary_button": "Buy another domain",
+                  "link1": "domain",
+                  "link2": "https://help.shopbase.com/en/article/add-your-existing-domain-to-shopbase-store-1olhc36/",
+                  "image": "https://img.shopbase.com/files/internal/media/1589947519781c1f5a26.png"
+                }
+              },
+              {
+                "event": "install_tracking",
+                "title": "Install tracking",
+                "icon": "earth",
+                "progress_bar_desc": "Track and optimize all your Facebook or Google Ads campaigns.",
+                "content": {
+                  "title": "Set up essential tracking codes to track your marketing results",
+                  "desc": "Track your store visitors' behaviours & run your advertising effectively with these data collected.",
+                  "button": "Install tracking codes",
+                  "secondary_button": "Set up a Facebook Pixel",
+                  "link1": "preferences",
+                  "link2": "https://help.shopbase.com/en/article/set-up-facebook-pixel-3dfq0o/",
+                  "image": "https://img.shopbase.com/files/internal/media/15899476144d152407c0.png"
+                },
+                "content_after_done": {
+                  "title": "You've added necessary tracking codes",
+                  "desc": "Add more tracking tools if needed or go on to another step",
+                  "button": "Add another tracking tool",
+                  "secondary_button": "Set up a Facebook Pixel",
+                  "link1": "preferences",
+                  "link2": "https://help.shopbase.com/en/article/set-up-facebook-pixel-3dfq0o/",
+                  "image": "https://img.shopbase.com/files/internal/media/15899476144d152407c0.png"
+                }
+              }
+            ]
+          },
+          "onboard2": {
+            "onboard_title": "2 easy steps to get your store well-prepared for the customer visits",
+            "onboard_item_form_data": [
+              {
+                "event": "customize_theme",
+                "title": "Customize theme",
+                "icon": "palette",
+                "progress_bar_desc": "Choose a theme and add a logo, product slideshow, and colors that match your brand.",
+                "content": {
+                  "title": "Tailor the look of your store without coding skills needed",
+                  "desc": "From your chosen store template, let's edit your store's logo, colors, and other basic elements to create an impressive look that resonates with the brand image you want to build",
+                  "button": "Customize theme",
+                  "secondary_button": "Understand ShopBase themes",
+                  "link1": "themes",
+                  "link2": "https://help.shopbase.com/en/article/overview-of-themes-1am0ye9/",
+                  "image": "https://img.shopbase.com/files/internal/media/1589947639ab3243d942.png"
+                },
+                "content_after_done": {
+                  "title": "You've made some changes to your theme",
+                  "desc": "Update more to sharpen the look of your store, or go on to another step",
+                  "button": "Customize theme",
+                  "secondary_button": "Learn the advanced theme settings",
+                  "link1": "themes",
+                  "link2": "https://help.shopbase.com/en/category/themes-100wbfg/",
+                  "image": "https://img.shopbase.com/files/internal/media/1589947639ab3243d942.png"
+                }
+              },
+              {
+                "event": "config_boost_upsell",
+                "title": "Config Boost Upsell",
+                "icon": "chart-line",
+                "progress_bar_desc": "Pitch additional products to get your customers to buy more or acquire more enhanced products.",
+                "content": {
+                  "title": "Increase your revenue easily & effectively",
+                  "desc": "Pitch additional products to get your customers to buy more or acquire more enhanced products",
+                  "button": "Config Boost Upsell",
+                  "secondary_button": "Understand App Boost Upsell",
+                  "link1": "boost-upsell:dashboard",
+                  "link2": "https://help.shopbase.com/en/article/connect-payment-providers-to-your-store-1ok8bg8/",
+                  "image": "https://img.shopbase.com/files/internal/media/1589947639ab3243d942.png"
+                },
+                "content_after_done": {
+                  "title": "You've have successfully config upsell",
+                  "desc": "Update more boost upsell options, or discover Boost Convert to increase CR",
+                  "button": "Config Boost Upsell",
+                  "secondary_button": "Understand Boost Convert",
+                  "link1": "boost-upsell:dashboard",
+                  "link2": "https://help.shopbase.com/en/article/overview-of-boost-convert-app-19um97m/",
+                  "image": "https://img.shopbase.com/files/internal/media/1589947639ab3243d942.png"
+                }
+              },
+              {
+                "event": "register_gmc",
+                "title": "Register Merchant Center",
+                "icon": "google",
+                "progress_bar_desc": "Get ready to sell on Google Shopping.",
+                "content": {
+                  "title": "No worries when selling on Google Shopping",
+                  "desc": "Easily set up your Google Merchant Center account with the help of ShopBase!",
+                  "button": "Connect Merchant Center",
+                  "secondary_button": "Automatically register Merchant Center",
+                  "link1": "channel-google",
+                  "link2": "https://help.shopbase.com/en/article/automatically-register-google-merchant-center-and-set-up-online-store-as5yf/",
+                  "image": "https://assets.shopbase.com/onboarding/gmc_onboarding_1.png"
+                },
+                "content_after_done": {
+                  "title": "Congratulation! You've connected Google Merchant Center",
+                  "desc": "Follow Google's guidelines and manage your products directly in Merchant Center.",
+                  "button": "Manage product feed",
+                  "secondary_button": "Sync your products to Merchant Center",
+                  "link1": "channel-google",
+                  "link2": "https://help.shopbase.com/en/article/automatically-sync-product-feed-to-google-merchant-center-1sa5yn8/",
+                  "image": "https://assets.shopbase.com/onboarding/gmc_onboarding_2.png"
+                }
+              },
+              {
+                "event": "setup_sales_channel",
+                "title": "Explore sales channels",
+                "icon": "margin",
+                "progress_bar_desc": "Boost sales via multiple channels.",
+                "content": {
+                  "title": "Boost sales via multiple channels",
+                  "desc": "Discover new sale channels to get more customers and generate more revenue.",
+                  "button": "Explore sales channels",
+                  "secondary_button": "Learn more about sales channels",
+                  "link1": "sales-channels",
+                  "link2": "https://help.shopbase.com/en/article/overview-of-multichannel-marketing-az3vpi/#3-a-sales-channels",
+                  "image": "https://img.shopbase.com/files/internal/media/16469071845af3111c79.png"
+                },
+                "content_after_done": {
+                  "title": "You've have successfully connect sales channels",
+                  "desc": "Connect more sales channels option to increase traffic and sales.",
+                  "button": "Connect sales channels",
+                  "secondary_button": "Explore more sales channels",
+                  "link1": "sales-channels",
+                  "link2": "https://help.shopbase.com/en/article/overview-of-multichannel-marketing-az3vpi/#3-a-sales-channels",
+                  "image": "https://img.shopbase.com/files/internal/media/16469071845af3111c79.png"
+                }
+              },
+              {
+                "event": "connect_mkt_email",
+                "title": "Connect email services",
+                "icon": "email-check-outline",
+                "progress_bar_desc": "Increase customer retention & sales by using email marketing services for your store",
+                "content": {
+                  "title": "Connect email services",
+                  "desc": "Increase customer retention & sales by using email marketing services for your store.",
+                  "button": "Connect email services",
+                  "secondary_button": "Learn more about email marketing",
+                  "link1": "marketing-email",
+                  "link2": "https://help.shopbase.com/en/article/overview-of-multichannel-marketing-az3vpi/#3-b-email-marketing-channels",
+                  "image": "https://img.shopbase.com/files/internal/media/16469071860f5771fcbc.png"
+                },
+                "content_after_done": {
+                  "title": "You've have successfully connect email services",
+                  "desc": "Config abandoned cart email content to win back customers.",
+                  "button": "Configure abandoned cart emails",
+                  "secondary_button": "Explore more abandoned card email templates",
+                  "link1": "marketing-email",
+                  "link2": "https://help.shopbase.com/en/article/email-and-sms-templates-for-abandoned-checkout-recovery-nbcp0w/",
+                  "image": "https://img.shopbase.com/files/internal/media/16469071860f5771fcbc.png"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "data_edit": {
+        "name": "Edit onboarding",
+        "store_type": ["General Dropship", "Niche Dropship", "Manufacture/Private Label", "White Label", "Other"],
+        "priority": "1",
+        "country": ["China", "Việt Nam", "Other"],
+        "status": "Disable",
+        "data_content": {
+          "language": "English",
+          "onboard1": {
+            "onboard_title": "Start selling after a day or two with 5 steps & Enjoy your first 50 orders won't be charged for the transaction fee",
+            "onboard_item_form_data": [
+              {
+                "event": "add_product",
+                "title": "Add product",
+                "icon": "tag-plus",
+                "progress_bar_desc": "Build your product catalog and add what you want to sell.",
+                "content": {
+                  "title": "Add your first product",
+                  "desc": "Adding products have never been easier with these 2 ways: Manually create product listings or Import AliExpress products with URL",
+                  "button": "Create product listings",
+                  "secondary_button": "Or import AliExpress products with URLs",
+                  "link1": "product",
+                  "link2": "https://help.shopbase.com/en/article/how-to-import-products-from-aliexpress-to-sell-on-shopbase-js1q8c/",
+                  "image": "https://img.shopbase.com/files/internal/media/158994733501d9d9ff41.png"
+                },
+                "content_after_done": {
+                  "title": "You've added your first product",
+                  "desc": "Add more products or go on to another step",
+                  "button": "Create more product listings",
+                  "secondary_button": "Other ways to add product",
+                  "link1": "product",
+                  "link2": "https://help.shopbase.com/en/category/products-16yun10/",
+                  "image": "https://img.shopbase.com/files/internal/media/158994733501d9d9ff41.png"
+                }
+              },
+              {
+                "event": "enable_payment_provider",
+                "title": "Activate payment provider",
+                "icon": "credit-card-settings",
+                "progress_bar_desc": "Set up a payment provider so your customers can check out and you can get paid.",
+                "content": {
+                  "title": "Choose the way your customers pay for their purchases",
+                  "desc": "Set up one or more payment providers (PayPal, Stripe, Cardpay or Checkout.com ) in your store to let customers pay using credit cards or PayPal",
+                  "button": "Enable payment provider",
+                  "secondary_button": "Learn more about payment providers",
+                  "link1": "setting_payments",
+                  "link2": "https://help.shopbase.com/en/article/connect-payment-providers-to-your-store-1ok8bg8/",
+                  "image": "https://img.shopbase.com/files/internal/media/15899474689ef632d5d7.png"
+                },
+                "content_after_done": {
+                  "title": "You've enable payments",
+                  "desc": "Set up another payment provider or go on to another step",
+                  "button": "Go to payment settings",
+                  "secondary_button": "Learn about payment providers",
+                  "link1": "setting_payments",
+                  "link2": "https://help.shopbase.com/en/article/overview-of-payment-lktw7z/",
+                  "image": "https://img.shopbase.com/files/internal/media/15899474689ef632d5d7.png"
+                }
+              },
+              {
+                "event": "add_domain",
+                "title": "Add custom domain",
+                "icon": "link-plus",
+                "progress_bar_desc": "Your current domain is . Add or buy a custom domain to help customers remember your online store.",
+                "content": {
+                  "title": "Add custom domain to increase brand trust for your store",
+                  "desc": "Your domain reflects how trustworthy your store is. Plus, your buyers are able to check out their orders only after your custom domain is added & active",
+                  "button": "Add or buy a domain",
+                  "secondary_button": "Learn how to add a custom domain",
+                  "link1": "domain",
+                  "link2": "https://help.shopbase.com/en/article/add-your-existing-domain-to-shopbase-store-1olhc36/",
+                  "image": "https://help.shopbase.com/en/article/add-your-existing-domain-to-shopbase-store-1olhc36/"
+                },
+                "content_after_done": {
+                  "title": "Your domain has been connected",
+                  "desc": "Add or buy another domain, or go on to another step",
+                  "button": "Go to domain settings",
+                  "secondary_button": "Buy another domain",
+                  "link1": "domain",
+                  "link2": "https://help.shopbase.com/en/article/add-your-existing-domain-to-shopbase-store-1olhc36/",
+                  "image": "https://img.shopbase.com/files/internal/media/1589947519781c1f5a26.png"
+                }
+              },
+              {
+                "event": "install_tracking",
+                "title": "Install tracking",
+                "icon": "earth",
+                "progress_bar_desc": "Track and optimize all your Facebook or Google Ads campaigns.",
+                "content": {
+                  "title": "Set up essential tracking codes to track your marketing results",
+                  "desc": "Track your store visitors' behaviours & run your advertising effectively with these data collected.",
+                  "button": "Install tracking codes",
+                  "secondary_button": "Set up a Facebook Pixel",
+                  "link1": "preferences",
+                  "link2": "https://help.shopbase.com/en/article/set-up-facebook-pixel-3dfq0o/",
+                  "image": "https://img.shopbase.com/files/internal/media/15899476144d152407c0.png"
+                },
+                "content_after_done": {
+                  "title": "You've added necessary tracking codes",
+                  "desc": "Add more tracking tools if needed or go on to another step",
+                  "button": "Add another tracking tool",
+                  "secondary_button": "Set up a Facebook Pixel",
+                  "link1": "preferences",
+                  "link2": "https://help.shopbase.com/en/article/set-up-facebook-pixel-3dfq0o/",
+                  "image": "https://img.shopbase.com/files/internal/media/15899476144d152407c0.png"
+                }
+              }
+            ]
+          },
+          "onboard2": {
+            "onboard_title": "2 easy steps to get your store well-prepared for the customer visits",
+            "onboard_item_form_data": [
+              {
+                "event": "customize_theme",
+                "title": "Customize theme",
+                "icon": "palette",
+                "progress_bar_desc": "Choose a theme and add a logo, product slideshow, and colors that match your brand.",
+                "content": {
+                  "title": "Tailor the look of your store without coding skills needed",
+                  "desc": "From your chosen store template, let's edit your store's logo, colors, and other basic elements to create an impressive look that resonates with the brand image you want to build",
+                  "button": "Customize theme",
+                  "secondary_button": "Understand ShopBase themes",
+                  "link1": "themes",
+                  "link2": "https://help.shopbase.com/en/article/overview-of-themes-1am0ye9/",
+                  "image": "https://img.shopbase.com/files/internal/media/1589947639ab3243d942.png"
+                },
+                "content_after_done": {
+                  "title": "You've made some changes to your theme",
+                  "desc": "Update more to sharpen the look of your store, or go on to another step",
+                  "button": "Customize theme",
+                  "secondary_button": "Learn the advanced theme settings",
+                  "link1": "themes",
+                  "link2": "https://help.shopbase.com/en/category/themes-100wbfg/",
+                  "image": "https://img.shopbase.com/files/internal/media/1589947639ab3243d942.png"
+                }
+              },
+              {
+                "event": "config_boost_upsell",
+                "title": "Config Boost Upsell",
+                "icon": "chart-line",
+                "progress_bar_desc": "Pitch additional products to get your customers to buy more or acquire more enhanced products.",
+                "content": {
+                  "title": "Increase your revenue easily & effectively",
+                  "desc": "Pitch additional products to get your customers to buy more or acquire more enhanced products",
+                  "button": "Config Boost Upsell",
+                  "secondary_button": "Understand App Boost Upsell",
+                  "link1": "boost-upsell:dashboard",
+                  "link2": "https://help.shopbase.com/en/article/connect-payment-providers-to-your-store-1ok8bg8/",
+                  "image": "https://img.shopbase.com/files/internal/media/1589947639ab3243d942.png"
+                },
+                "content_after_done": {
+                  "title": "You've have successfully config upsell",
+                  "desc": "Update more boost upsell options, or discover Boost Convert to increase CR",
+                  "button": "Config Boost Upsell",
+                  "secondary_button": "Understand Boost Convert",
+                  "link1": "boost-upsell:dashboard",
+                  "link2": "https://help.shopbase.com/en/article/overview-of-boost-convert-app-19um97m/",
+                  "image": "https://img.shopbase.com/files/internal/media/1589947639ab3243d942.png"
+                }
+              },
+              {
+                "event": "register_gmc",
+                "title": "Register Merchant Center",
+                "icon": "google",
+                "progress_bar_desc": "Get ready to sell on Google Shopping.",
+                "content": {
+                  "title": "No worries when selling on Google Shopping",
+                  "desc": "Easily set up your Google Merchant Center account with the help of ShopBase!",
+                  "button": "Connect Merchant Center",
+                  "secondary_button": "Automatically register Merchant Center",
+                  "link1": "channel-google",
+                  "link2": "https://help.shopbase.com/en/article/automatically-register-google-merchant-center-and-set-up-online-store-as5yf/",
+                  "image": "https://assets.shopbase.com/onboarding/gmc_onboarding_1.png"
+                },
+                "content_after_done": {
+                  "title": "Congratulation! You've connected Google Merchant Center",
+                  "desc": "Follow Google's guidelines and manage your products directly in Merchant Center.",
+                  "button": "Manage product feed",
+                  "secondary_button": "Sync your products to Merchant Center",
+                  "link1": "channel-google",
+                  "link2": "https://help.shopbase.com/en/article/automatically-sync-product-feed-to-google-merchant-center-1sa5yn8/",
+                  "image": "https://assets.shopbase.com/onboarding/gmc_onboarding_2.png"
+                }
+              },
+              {
+                "event": "setup_sales_channel",
+                "title": "Explore sales channels",
+                "icon": "margin",
+                "progress_bar_desc": "Boost sales via multiple channels.",
+                "content": {
+                  "title": "Boost sales via multiple channels",
+                  "desc": "Discover new sale channels to get more customers and generate more revenue.",
+                  "button": "Explore sales channels",
+                  "secondary_button": "Learn more about sales channels",
+                  "link1": "sales-channels",
+                  "link2": "https://help.shopbase.com/en/article/overview-of-multichannel-marketing-az3vpi/#3-a-sales-channels",
+                  "image": "https://img.shopbase.com/files/internal/media/16469071845af3111c79.png"
+                },
+                "content_after_done": {
+                  "title": "You've have successfully connect sales channels",
+                  "desc": "Connect more sales channels option to increase traffic and sales.",
+                  "button": "Connect sales channels",
+                  "secondary_button": "Explore more sales channels",
+                  "link1": "sales-channels",
+                  "link2": "https://help.shopbase.com/en/article/overview-of-multichannel-marketing-az3vpi/#3-a-sales-channels",
+                  "image": "https://img.shopbase.com/files/internal/media/16469071845af3111c79.png"
+                }
+              },
+              {
+                "event": "connect_mkt_email",
+                "title": "Connect email services",
+                "icon": "email-check-outline",
+                "progress_bar_desc": "Increase customer retention & sales by using email marketing services for your store",
+                "content": {
+                  "title": "Connect email services",
+                  "desc": "Increase customer retention & sales by using email marketing services for your store.",
+                  "button": "Connect email services",
+                  "secondary_button": "Learn more about email marketing",
+                  "link1": "marketing-email",
+                  "link2": "https://help.shopbase.com/en/article/overview-of-multichannel-marketing-az3vpi/#3-b-email-marketing-channels",
+                  "image": "https://img.shopbase.com/files/internal/media/16469071860f5771fcbc.png"
+                },
+                "content_after_done": {
+                  "title": "You've have successfully connect email services",
+                  "desc": "Config abandoned cart email content to win back customers.",
+                  "button": "Configure abandoned cart emails",
+                  "secondary_button": "Explore more abandoned card email templates",
+                  "link1": "marketing-email",
+                  "link2": "https://help.shopbase.com/en/article/email-and-sms-templates-for-abandoned-checkout-recovery-nbcp0w/",
+                  "image": "https://img.shopbase.com/files/internal/media/16469071860f5771fcbc.png"
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,715 @@
+{
+  "env": {
+    "dev": {
+      "domain": "au-ne-block-bundle-dev.myshopbase.net",
+      "shop_name": "au-ne-block-bundle-dev",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10326841,
+      "user_id": 90252,
+      "theme_test": 3168227,
+      "page_type": "/products/",
+      "products_title": ["Product A", "Product B", "Product C"],
+      "add_bundle": {
+        "parent_position": {
+          "section": 1,
+          "column": 1
+        },
+        "basics_cate": "Basics",
+        "template": "Bundles"
+      },
+      "smart_bundles_on": {
+        "smart_cross_sell": {
+          "discount_enable": true,
+          "discount_percentage": 50,
+          "enable": true
+        }
+      },
+      "smart_bundles_off": {
+        "smart_cross_sell": {
+          "discount_enable": false,
+          "enable": false
+        }
+      }
+    },
+    "prodtest": {
+      "domain": "au-ne-block-bundle-prodtest.onshopbase.com",
+      "shop_name": "au-ne-block-bundle-prodtest",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10429724,
+      "user_id": 11260206,
+      "theme_test": 1416440,
+      "page_type": "/products/",
+      "products_title": ["Product A", "Product B", "Product C"],
+      "add_bundle": {
+        "parent_position": {
+          "section": 1,
+          "column": 1
+        },
+        "basics_cate": "Basics",
+        "template": "Bundles"
+      },
+      "smart_bundles_on": {
+        "smart_cross_sell": {
+          "discount_enable": true,
+          "discount_percentage": 50,
+          "enable": true
+        }
+      },
+      "smart_bundles_off": {
+        "smart_cross_sell": {
+          "discount_enable": false,
+          "enable": false
+        }
+      },
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "prod": {
+      "domain": "au-ne-block-bundle-prod.onshopbase.com",
+      "shop_name": "au-ne-block-bundle-prod",
+      "api": "https://api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10429147,
+      "user_id": 11260206,
+      "theme_test": 1415035,
+      "page_type": "/products/",
+      "products_title": ["Product A", "Product B", "Product C"],
+      "add_bundle": {
+        "parent_position": {
+          "section": 1,
+          "column": 1
+        },
+        "basics_cate": "Basics",
+        "template": "Bundles"
+      },
+      "smart_bundles_on": {
+        "smart_cross_sell": {
+          "discount_enable": true,
+          "discount_percentage": 50,
+          "enable": true
+        }
+      },
+      "smart_bundles_off": {
+        "smart_cross_sell": {
+          "discount_enable": false,
+          "enable": false
+        }
+      }
+    }
+  },
+  "cases": {
+    "SB_WEB_BUILDER_LBA_BBO_01": {
+      "active_offers": ["Test Bundle offer"],
+      "expected": {
+        "active": "active",
+        "shape_default": "Rectangle",
+        "position_default": "Auto",
+        "width_value_default": "100",
+        "width_unit_default": "%",
+        "background_default": "",
+        "border_color_default": "",
+        "border_value_default": "none",
+        "opacity_default": "100",
+        "radius_default": "0",
+        "shadow_default": "none",
+        "padding_default": "0,0,0,0",
+        "margin_default": "0,0,0,0",
+        "toggle_on": "true",
+        "button_action_default": "Go to checkout page",
+        "checkout_url": "/checkouts/",
+        "h4_font_size": "20px",
+        "p3_font_size": "14px",
+        "p2_font_size": "16px",
+        "sub_text_font_size": "12px",
+        "color_5": "rgb(20, 20, 20)",
+        "color_4": "rgb(64, 64, 64)",
+        "divider": "rgba(20, 20, 20, 0.06)",
+        "primary_btn": "btn-primary",
+        "sub_text_color": "rgba(20, 20, 20, 0.48)",
+        "bundle_offer_default": "BBO-01-Default-block-in-preview.png"
+      }
+    },
+    "SB_WEB_BUILDER_LBA_BBO_02": {
+      "active_offers": ["Test Bundle offer"],
+      "data_design": {
+        "content_align": "flex-start",
+        "shape": "rounded",
+        "align_self": "flex-end",
+        "width": {
+          "value": 500,
+          "unit": "px"
+        },
+        "background": {
+          "color": {
+            "code": "color_4",
+            "opacity": 100
+          },
+          "image": "",
+          "position": "center center",
+          "repeat": "no-repeat",
+          "size": "cover",
+          "mode": "color"
+        },
+        "opacity": 80,
+        "border_radius": 10,
+        "box_shadow": {
+          "blur": 0,
+          "color": {
+            "code": "#000000",
+            "opacity": 100
+          },
+          "direction": "bottom_right",
+          "size": "large",
+          "spread": 0,
+          "type": "hard",
+          "x": 12,
+          "y": 12
+        },
+        "padding": {
+          "bottom": 10,
+          "left": 10,
+          "right": 10,
+          "top": 10
+        },
+        "margin": {
+          "bottom": 20,
+          "left": 20,
+          "right": 20,
+          "top": 20
+        }
+      },
+      "data_content": {
+        "data_source": {
+          "type": "usell",
+          "config": {
+            "category": "Product",
+            "source": "Product B"
+          }
+        },
+        "heading": {
+          "is_on": false
+        },
+        "button_action": "Continue shopping"
+      },
+      "expected": {
+        "preview_content_align": "start",
+        "preview_shape": "rounded",
+        "preview_position": "relative",
+        "preview_align": "flex-end",
+        "preview_width": "500px",
+        "preview_background": "rgb(64, 64, 64)",
+        "preview_border": "0px none rgb(0, 0, 0)",
+        "preview_opacity": "0.8",
+        "preview_radius": "10px",
+        "preview_shadow": "rgb(0, 0, 0) 12px 12px 0px 0px",
+        "preview_padding": "10px",
+        "preview_margin": "20px",
+        "checkout_or_cart": "/checkouts/|/cart/"
+      }
+    },
+    "SB_WEB_BUILDER_LBA_BBO_03": {
+      "active_offers": ["Test Bundle offer"],
+      "data_driven": [
+        {
+          "content_align": "Left",
+          "expected_content_align": "start"
+        },
+        {
+          "content_align": "Center",
+          "expected_content_align": "center"
+        },
+        {
+          "content_align": "Right",
+          "expected_content_align": "end"
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_LBA_BBO_04": {
+      "active_offers": ["Test Bundle offer"],
+      "data_driven": [
+        {
+          "shape": "rectangle",
+          "expected_shape": "rectangle"
+        },
+        {
+          "shape": "rounded",
+          "expected_shape": "rounded"
+        },
+        {
+          "shape": "pill",
+          "expected_shape": "pill"
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_LBA_BBO_05": {
+      "active_offers": ["Test Bundle offer"],
+      "data_source": {
+        "no_offer": {
+          "category": "Product",
+          "source": "[BBO_05] Product No Offer"
+        },
+        "product_a": {
+          "category": "Product",
+          "source": "Product A"
+        },
+        "product_c": {
+          "category": "Product",
+          "source": "Product C"
+        }
+      },
+      "expected": {
+        "missing_data_source": "Bundles: missing data",
+        "missing_source_message": "This is a sample data. To display data from your product. Please connect your section to a product",
+        "placeholder_product": "Product title",
+        "bundle_a": {
+          "products": ["This product: Product A", "Product B", "Product C"],
+          "products_price": ["$10.00", "$10.00", "$10.00"],
+          "total_price": "$27.00",
+          "discount": "$30.00"
+        },
+        "bundle_c": {
+          "products": ["This product: Product C", "Product A", "Product B"],
+          "products_price": ["$10.00", "$10.00", "$10.00"],
+          "total_price": "$27.00",
+          "discount": "$30.00"
+        }
+      },
+      "add_blank_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 1
+          },
+          "isBottom": false
+        }
+      },
+      "dnd_block": {
+        "from": {
+          "category": "Basics",
+          "template": "Bundles"
+        },
+        "to": {
+          "position": {
+            "section": 1,
+            "column": 1
+          },
+          "isBottom": false
+        }
+      }
+    },
+    "SB_WEB_BUILDER_LBA_BBO_06": {
+      "active_offers": ["Test Bundle offer"],
+      "switch_off": {
+        "heading": {
+          "is_on": false
+        }
+      },
+      "switch_on": {
+        "heading": {
+          "is_on": true
+        }
+      }
+    },
+    "SB_WEB_BUILDER_LBA_BBO_07": {
+      "active_offers": ["Test Bundle offer"],
+      "edit_action": [
+        {
+          "button_action": "Go to checkout page",
+          "expected_url": "/checkouts/"
+        },
+        {
+          "button_action": "Go to cart page",
+          "expected_url": "/cart"
+        },
+        {
+          "button_action": "Continue shopping",
+          "expected_url": "/products/"
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_LBA_BBO_08": {
+      "active_offers": ["Test Bundle offer", "[BBO_08] Test offer"],
+      "selected": "selected",
+      "edit_width": {
+        "width": {
+          "label": "width",
+          "value": {
+            "unit": "Px",
+            "value": 500
+          }
+        }
+      },
+      "decrease_width": 445,
+      "expected": {
+        "image_width_min": 149,
+        "image_width_max": 153,
+        "width_after_decrease": "230px",
+        "image_min_width": 54,
+        "image_width_after_edit": 61,
+        "padding_image": "6px",
+        "images_margin": {
+          "left": "0px",
+          "right": "0px"
+        },
+        "clip_content_snapshot": "BBO-08-Bundle-Clipping-Content.png",
+        "sidebar_width_value": "230",
+        "sidebar_width_unit": "Px"
+      }
+    },
+    "SB_WEB_BUILDER_LBA_BBO_09": {
+      "active_offers": ["Test Bundle offer"],
+      "expected": {
+        "active_tab_default": "Content"
+      }
+    },
+    "SB_WEB_BUILDER_LBA_BBO_10": {
+      "active_offers": ["Test Bundle offer"],
+      "expected": {
+        "block_bundle_snapshot": "BBO-10-Duplicated-Bundle-Block.png",
+        "bundles_count": 2,
+        "bundle_loaded": "rgb(20, 20, 20)",
+        "preview_content_align": "start",
+        "preview_shape": "rectangle",
+        "preview_position": "relative",
+        "preview_align": "center",
+        "preview_width": "1120px",
+        "preview_background": "rgba(0, 0, 0, 0)",
+        "preview_border": "0px none rgb(0, 0, 0)",
+        "preview_opacity": "1",
+        "preview_radius": "0px",
+        "preview_shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+        "preview_padding": "0px",
+        "preview_margin": "0px"
+      }
+    },
+    "SB_WEB_BUILDER_LBA_BBO_11": {
+      "active_offers": ["Test Bundle offer"],
+      "dnd_button": {
+        "from": {
+          "category": "Basics",
+          "template": "Button"
+        },
+        "to": {
+          "position": {
+            "section": 1,
+            "block": 1
+          },
+          "isBottom": false
+        }
+      },
+      "position_manual": {
+        "position": {
+          "label": "position",
+          "type": "Manual"
+        }
+      },
+      "position_auto": {
+        "position": {
+          "label": "position",
+          "type": "Auto"
+        }
+      },
+      "expected": {
+        "disabled": "is-disabled",
+        "forward": {
+          "bundle_z_index": "5",
+          "button_z_index": "4"
+        },
+        "backward": {
+          "bundle_z_index": "4",
+          "button_z_index": "5"
+        }
+      }
+    },
+    "SB_WEB_BUILDER_LBA_BBO_12": {
+      "active_offers": ["Test Bundle offer"],
+      "expand_section": "Section",
+      "show_block": "Bundles"
+    },
+    "SB_WEB_BUILDER_LBA_BBO_13": {
+      "active_offers": ["Test Bundle offer"],
+      "save_data": {
+        "template_name": "Test save as template",
+        "library": {
+          "title": "Test Library",
+          "new": true
+        },
+        "category": {
+          "title": "Test Cate",
+          "new": true
+        }
+      },
+      "expected": {
+        "success_message": "Save template successfully to Category Test Cate."
+      }
+    },
+    "SB_WEB_BUILDER_LBA_BBO_14": {
+      "active_offers": ["Test Bundle offer"],
+      "section_name": "Section",
+      "block": "Bundles"
+    },
+    "SB_WEB_BUILDER_LBA_BBO_15": {
+      "active_offers": ["Test Bundle offer", "[BBO_15] Test offer"],
+      "product_no_img": "[BBO_15] Product no Img",
+      "product_img": "[BBO_15] Product has Img",
+      "expected": {
+        "product_no_img_title": "[BBO_15] Product no Img",
+        "product_img_title": "[BBO_15] Product has Img"
+      }
+    },
+    "SB_WEB_BUILDER_LBA_BBO_16": {
+      "active_offers": ["Test Bundle offer", "[BBO_16] Test offer 2", "[BBO_16] Test offer 3"],
+      "offer_message": {
+        "offer_1": "Frequently bought together",
+        "offer_2": "Hang on! We have this offer just for you!",
+        "offer_3": "Special deal of the day"
+      },
+      "expected": {
+        "disabled": "is-disabled"
+      }
+    },
+    "SB_WEB_BUILDER_LBA_BBO_17": {
+      "active_offers": ["[BBO_17] Test offer"],
+      "edit_content": {
+        "button_action": "Continue shopping"
+      },
+      "product_new": "[BBO_17] Product New",
+      "product_new_price": 50,
+      "expected": {
+        "bundle_loaded": "rgb(20, 20, 20)",
+        "bundles_total_price": "$54.00",
+        "bundles_discount_price": "$60.00",
+        "total_price_untick_prod_a": "$50.00",
+        "total_price_untick_all": "$0.00",
+        "total_price_tick_prod_a": "$10.00",
+        "prod_a_quantity_first_add": "1",
+        "prod_a_quantity_second_add": "2",
+        "prod_new_quantity": "1",
+        "offer_discount": "$6.00",
+        "cart_page": "/cart",
+        "checkout_page": "/checkouts/",
+        "total": "$64.00"
+      }
+    },
+    "SB_WEB_BUILDER_LBA_BBO_19": {
+      "active_offers": ["Test Bundle offer", "[BBO_19] Test offer products with variant"],
+      "select_variant": "S / Red",
+      "expected": {
+        "checkout_page": "/checkouts/",
+        "variant_checkout_prod_1": "Red",
+        "variant_checkout_prod_2": "S / Red"
+      }
+    },
+    "SB_WEB_BUILDER_LBA_BBO_22": {
+      "active_offers": [
+        "Test Bundle offer",
+        "[BBO_22] Bundles offer 10% Default Off",
+        "[BBO_22] Bundles offer 5% Default Off"
+      ],
+      "offer_1_name": "[BBO_22] Bundles offer 10% Default Off",
+      "discount_offer_1": "{\"percentage_discount\":10}",
+      "offer_2_name": "[BBO_22] Bundles offer 5% Default Off",
+      "discount_offer_2": "{\"percentage_discount\":5}",
+      "product_1": "[BBO_22] 1 - Product 15$ offer 1 & 2",
+      "product_2": "[BBO_22] 2 - Product 45$ offer 1",
+      "product_3": "[BBO_22] 3 - Product 5$ offer 2",
+      "edit_action": {
+        "button_action": "Continue shopping"
+      },
+      "cart_page": "/cart",
+      "expected": {
+        "total_price_offer1_off": "$60.00",
+        "total_price_offer1_on": "$54.00",
+        "original_price_1": "$60.00",
+        "total_price_offer2_on": "$19.00",
+        "original_price_2": "$20.00",
+        "checkout_page": "/checkouts/",
+        "checkout_total_discount_10": "$74.00",
+        "checkout_total_discount_5": "$34.00"
+      }
+    },
+    "SB_WEB_BUILDER_LBA_BBO_23": {
+      "active_offers": ["[BBO_23 & SM_01] Test offer", "[BBO_23] Quantity Offer"],
+      "discount_data": "{\"percentage_discount\":10}",
+      "expected": {
+        "total_price_offer": "$18.00",
+        "checkout_page": "/checkouts/",
+        "total_in_checkout": "$15.00"
+      }
+    },
+    "SB_WEB_BUILDER_LBA_BBO_25": {
+      "active_offers": ["[BBO_25-31] Test offer"],
+      "custom_option_required": "30% sugar, 50% ice, no milk",
+      "expected": {
+        "bundle_loaded": "rgb(20, 20, 20)",
+        "product_names": [
+          "Product A",
+          "Product B",
+          "[BBO_25-31] Required custom option",
+          "[BBO_25-31] Not required option"
+        ],
+        "custom_popup_width": "798px",
+        "popup_title": "Customize products",
+        "popup_alert": "You need to customize your products before adding them to cart.",
+        "img_count": 4,
+        "bundle_total_price": "$54.00",
+        "bundle_original_price": "$60.00",
+        "color_5": "rgb(20, 20, 20)",
+        "color_4": "rgb(64, 64, 64)",
+        "h4_font_size": "20px",
+        "p1_font_size": "18px",
+        "p2_font_size": "16px",
+        "target_prod_price": "$9.00",
+        "bold_style": "bold",
+        "target_prod_original_price": "$10.00",
+        "primary_btn": "btn-primary",
+        "product_detail_page": "/products/product-a",
+        "warning_custom_option": "Please finish this field",
+        "checkout_page": "/checkouts/",
+        "custom_option_checkout": "Detail info: 30% sugar, 50% ice, no milk"
+      }
+    },
+    "SB_WEB_BUILDER_LBA_BBO_27": {
+      "active_offers": ["Test Bundle offer"],
+      "expected": {
+        "product_names": ["This product: Product A", "Product B", "Product C"],
+        "total_price_offer": "$27.00"
+      }
+    },
+    "SB_WEB_BUILDER_LBA_BBO_28": {
+      "active_offers": ["Test Bundle offer"],
+      "email": "dinhtruong@qa.team",
+      "first_name": "Dinh",
+      "last_name": "Truong",
+      "address": "130 Trung Phung",
+      "city": "Ha Noi",
+      "country": "Vietnam",
+      "zip": "100000",
+      "phone": "0364240695",
+      "test_card": "4242424242424242",
+      "card_holder": "TEST NAME",
+      "expired_date": "12/31",
+      "cvv": "123",
+      "timeout": 300000,
+      "expected": {
+        "first_view": 1,
+        "first_add_to_cart": 1,
+        "checkout_page": "/checkouts/",
+        "sales": 18,
+        "first_checkout": 1,
+        "bundle_loaded": "rgb(20, 20, 20)"
+      }
+    },
+    "SB_WEB_BUILDER_LBA_BBO_30": {
+      "active_offers": ["Test Bundle offer"],
+      "update_offer": {
+        "activated": true,
+        "offer_type": "bundle",
+        "offer_message": "Special deal of the day",
+        "discount_data": "{\"percentage_discount\":20}"
+      },
+      "default_heading": "Frequently bought together",
+      "expected": {
+        "product_names": ["This product: Product A", "Product B", "Product C"],
+        "price_discount_default": "$27.00",
+        "heading_update": "Special deal of the day",
+        "price_discount_update": "$24.00",
+        "product_title_placeholder": "Product title",
+        "placeholder_price": "$0.00"
+      }
+    },
+    "SB_WEB_BUILDER_LBA_BBO_31": {
+      "active_offers": ["[BBO_25-31] Test offer"],
+      "product_handle": "product-a",
+      "custom_option_required": "30% sugar, 50% ice, no milk",
+      "expected": {
+        "bundle_loaded": "rgb(20, 20, 20)",
+        "product_names": [
+          "Product A",
+          "Product B",
+          "[BBO_25-31] Required custom option",
+          "[BBO_25-31] Not required option"
+        ],
+        "custom_popup_width": "428px",
+        "popup_title": "Customize products",
+        "popup_alert": "You need to customize your products before adding them to cart.",
+        "img_count": 4,
+        "bundle_total_price": "$54.00",
+        "bundle_original_price": "$60.00",
+        "color_5": "rgb(20, 20, 20)",
+        "color_4": "rgb(64, 64, 64)",
+        "h4_font_size": "20px",
+        "p1_font_size": "18px",
+        "p2_font_size": "16px",
+        "target_prod_price": "$9.00",
+        "bold_style": "bold",
+        "target_prod_original_price": "$10.00",
+        "primary_btn": "btn-primary",
+        "product_detail_page": "/products/product-a",
+        "warning_custom_option": "Please finish this field",
+        "checkout_page": "/checkouts/",
+        "custom_option_checkout": "Detail info: 30% sugar, 50% ice, no milk"
+      }
+    },
+    "SB_WEB_BUILDER_SM_01": {
+      "manual_offer": {
+        "discount_data": "{\"percentage_discount\":30}"
+      },
+      "enable_smart_bundle": {
+        "smart_cross_sell": {
+          "discount_enable": true,
+          "discount_percentage": 50,
+          "enable": true
+        }
+      },
+      "disable_smart_bundle": {
+        "smart_cross_sell": {
+          "discount_enable": false,
+          "enable": false
+        }
+      },
+      "cart_page": "cart",
+      "expected": {
+        "bundle_loaded": "rgb(20, 20, 20)",
+        "total_price_manual": "$14.00",
+        "discount_percent": 0.5,
+        "product_title_placeholder": "Product title",
+        "placeholder_price": "$0.00"
+      }
+    },
+    "SB_WEB_BUILDER_SM_09": {
+      "email": "dinhtruong@qa.team",
+      "first_name": "Dinh",
+      "last_name": "Truong",
+      "address": "130 Trung Phung",
+      "city": "Ha Noi",
+      "country": "Vietnam",
+      "zip": "100000",
+      "phone": "0364240695",
+      "test_card": "4242424242424242",
+      "card_holder": "TEST NAME",
+      "expired_date": "12/31",
+      "cvv": "123",
+      "verify_timeout": 500000,
+      "expected": {
+        "bundle_loaded": "rgb(20, 20, 20)",
+        "checkout_page": "/checkouts/",
+        "discount_percent": 0.5,
+        "order": 1
+      }
+    },
+    "SB_WEB_BUILDER_SM_10": {
+      "verify_timeout": 500000,
+      "expected": {
+        "bundle_loaded": "rgb(20, 20, 20)"
+      }
+    }
+  }
+}

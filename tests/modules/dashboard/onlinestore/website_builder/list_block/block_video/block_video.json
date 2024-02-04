@@ -1,0 +1,406 @@
+{
+  "env": {
+    "local": {
+      "domain": "wb-block-video.myshopbase.net",
+      "shop_name": "wb-block-video",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_id": 10323396,
+      "user_id": 73800,
+      "create_product": {
+        "product": {
+          "title": "Block Video",
+          "published": true,
+          "product_type": "online_course"
+        }
+      },
+      "add_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 1
+          },
+          "isBottom": false
+        }
+      },
+      "section_name": {
+        "content": "Test Video"
+      },
+      "web_base_id": 1,
+      "template_name": "Blank page"
+    },
+    "dev": {
+      "domain": "auto-block-wb.myshopbase.net",
+      "shop_name": "auto-block-wb",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10333928,
+      "user_id": 90252,
+      "themes_setting": 3238599,
+      "create_product": {
+        "product": {
+          "title": "Block Video",
+          "published": true,
+          "product_type": "online_course"
+        }
+      },
+      "add_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 1
+          },
+          "isBottom": false
+        }
+      },
+      "section_name": {
+        "content": "Test Video"
+      },
+      "web_base_id": 1,
+      "template_name": "Blank page",
+      "collapse_layer": {
+        "sectionName": "Section",
+        "sectionIndex": 1,
+        "isExpand": true
+      },
+      "open_layer": {
+        "sectionName": "Video",
+        "sectionIndex": 1
+      }
+    },
+    "prodtest": {
+      "domain": "auto-block-wb-prodtest.onshopbase.com",
+      "shop_name": "auto-block-wb-prodtest",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10480844,
+      "user_id": 11260206,
+      "themes_setting": 1638044,
+      "create_product": {
+        "product": {
+          "title": "Block Video",
+          "published": true,
+          "product_type": "online_course"
+        }
+      },
+      "add_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 1
+          },
+          "isBottom": false
+        }
+      },
+      "section_name": {
+        "content": "Test Video"
+      },
+      "web_base_id": 1,
+      "template_name": "Blank page",
+      "accounts_domain": "accounts-test.shopbase.com",
+      "collapse_layer": {
+        "sectionName": "Section",
+        "sectionIndex": 1,
+        "isExpand": true
+      },
+      "open_layer": {
+        "sectionName": "Video",
+        "sectionIndex": 1
+      }
+    },
+    "prod": {
+      "domain": "auto-block-wb.onshopbase.com",
+      "shop_name": "auto-block-wb",
+      "api": "https://api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10480842,
+      "user_id": 11260206,
+      "themes_setting": 1638046,
+      "create_product": {
+        "product": {
+          "title": "Block Video",
+          "published": true,
+          "product_type": "online_course"
+        }
+      },
+      "add_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 1
+          },
+          "isBottom": false
+        }
+      },
+      "section_name": {
+        "content": "Test Video"
+      },
+      "web_base_id": 1,
+      "template_name": "Blank page",
+      "collapse_layer": {
+        "sectionName": "Section",
+        "sectionIndex": 1,
+        "isExpand": true
+      },
+      "open_layer": {
+        "sectionName": "Video",
+        "sectionIndex": 1
+      }
+    }
+  },
+  "cases": {
+    "SB_WEB_BUILDER_LB_BV_1": {
+      "description": "Check data default block Video",
+      "data": {
+        "section": {
+          "dnd_block": {
+            "from": {
+              "category": "Basics",
+              "template": "Video"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "column": 1
+              },
+              "isBottom": false
+            }
+          }
+        }
+      },
+      "expect": {
+        "snapshot_stylebar": "default_stylebar.png",
+        "snapshot_settingsbar": "default_settingbar.png",
+        "snapshot_storefront": "default_video_storefront.png"
+      },
+      "data_setting": {
+        "alt_text": "",
+        "auto_play": false,
+        "end_at": 0,
+        "media": {
+          "name": "Default.mp4",
+          "path": "https://youtu.be/ouHaAzfPx4U",
+          "status": "published",
+          "third_party_id": "",
+          "third_party_name": "youtube",
+          "thumbnail": "https://img.youtube.com/vi/ouHaAzfPx4U/maxresdefault.jpg",
+          "type": "media"
+        },
+        "show_player_control": true,
+        "start_at": 0,
+        "thumbnail_image": ""
+      }
+    },
+    "SB_WEB_BUILDER_LB_BV_2": {
+      "description": "Check data default block Video",
+      "data": {
+        "section": {
+          "dnd_block": {
+            "from": {
+              "category": "Basics",
+              "template": "Video"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "column": 1
+              },
+              "isBottom": false
+            }
+          }
+        }
+      },
+      "expect": {
+        "snapshot_removevideo": "remove_video.png",
+        "snapshot_sidebar_removevideo": "sidebar_remove_video.png",
+        "snapshot_storefront_removevideo": "remove_video_storefront.png"
+      }
+    },
+    "SB_WEB_BUILDER_LB_BV_3": {
+      "description": "Check add link block Video",
+      "data": {
+        "section": {
+          "dnd_block": {
+            "from": {
+              "category": "Basics",
+              "template": "Video"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "column": 1
+              },
+              "isBottom": false
+            }
+          }
+        }
+      },
+      "invalid_link": "https://www.google.com",
+      "valid_link": "https://www.youtube.com/watch?v=n_PxYUOvwJA",
+      "alt_text": "Alt text of Video block",
+      "toggle_thumnail_image": true,
+      "thumnail_image": "data/shopbase/earth.png",
+      "checkbox_autoplay": false,
+      "expect": {
+        "snapshot_preview_addvideo": "preview_add_videolink.png",
+        "snapshot_storefront_addvideo": "storefront_add_videolink.png"
+      }
+    },
+    "SB_WEB_BUILDER_LB_BV_6": {
+      "description": "Check setting data block Video",
+      "data": {
+        "section": {
+          "dnd_block": {
+            "from": {
+              "category": "Basics",
+              "template": "Video"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "column": 1
+              },
+              "isBottom": false
+            }
+          }
+        },
+        "blockSetting": {
+          "align": "Right",
+          "width": {
+            "unit": "%",
+            "value": 70
+          },
+          "height": {
+            "unit": "Px",
+            "value": 450
+          },
+          "background": {
+            "color": {
+              "preset": 6,
+              "hexText": "#13B69F"
+            }
+          },
+          "border": {
+            "thickness": "m",
+            "color": {
+              "preset": 2
+            }
+          },
+          "opacity": {
+            "fill": true,
+            "number": 80
+          },
+          "shadow": {
+            "option": "hard",
+            "size": "M",
+            "direction": "Top Right"
+          },
+          "padding": {
+            "top": 5,
+            "left": 5,
+            "bottom": 5,
+            "right": 5,
+            "input": true
+          },
+          "margin": {
+            "top": 5,
+            "left": 5,
+            "bottom": 5,
+            "right": 5,
+            "input": true
+          }
+        }
+      },
+      "expect": {
+        "snapshot_preview_settingdata": "preview_settingdata.png",
+        "snapshot_storefront_settingdata": "storefront_settingdata.png"
+      }
+    },
+    "SB_WEB_BUILDER_LB_BV_7": {
+      "description": "Check remove block Video ",
+      "data": {
+        "section": {
+          "dnd_block": {
+            "from": {
+              "category": "Basics",
+              "template": "Video"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "column": 1
+              },
+              "isBottom": false
+            }
+          }
+        }
+      }
+    },
+    "SB_WEB_BUILDER_LB_BV_12": {
+      "description": "Check setting time duration ở block video ",
+      "data": {
+        "delete_default_video": {
+          "media": {},
+          "thumbnail_image": "",
+          "alt_text": "",
+          "auto_play": false,
+          "show_player_control": true,
+          "start_at": 0,
+          "end_at": 0
+        },
+        "input_video_link": {
+          "media": {
+            "type": "media",
+            "third_party_id": "JtLcTYFx09E",
+            "third_party_name": "youtube",
+            "thumbnail": "https://img.youtube.com/vi/JtLcTYFx09E/hqdefault.jpg",
+            "path": "https://www.youtube.com/watch?v=JtLcTYFx09E&t=273s",
+            "name": "https://www.youtube.com/watch?v=JtLcTYFx09E&t=273s"
+          },
+          "thumbnail_image": "",
+          "alt_text": "",
+          "auto_play": false,
+          "show_player_control": true,
+          "start_at": 0,
+          "end_at": 0
+        },
+        "duration_time_default": "00:00",
+        "convert_start_at": "08:20",
+        "convert_end_at": "16:40",
+        "set_timer": ["00:20", "00:40", "500", "1000", "30:00"],
+        "section": {
+          "dnd_block": {
+            "from": {
+              "category": "Basics",
+              "template": "Video"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "column": 1
+              },
+              "isBottom": false
+            }
+          }
+        },
+        "timer": [0, 20, 40, 1800]
+      }
+    }
+  }
+}

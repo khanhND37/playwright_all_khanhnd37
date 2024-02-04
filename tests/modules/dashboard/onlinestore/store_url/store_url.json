@@ -1,0 +1,89 @@
+{
+  "env": {
+    "dev": {
+      "domain": "au-username-new.myshopbase.net",
+      "shop_name": "au-username-new.myshopbase.net",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_id": 10326753,
+      "user_id": 73800,
+      "creator_url": "https://creator.sbdev.tk",
+      "cases": {
+        "SB_CUN_05": {
+          "connected_to_domain": "vylqq.sbdev.tk"
+        }
+      }
+    },
+    "prodtest": {
+      "domain": "au-username-new-prodtest.onshopbase.com",
+      "shop_name": "au-username-new-prodtest.onshopbase.com",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10427371,
+      "user_id": 73782,
+      "creator_url": "https://prod-test.creator.eco",
+      "cases": {
+        "SB_CUN_05": {
+          "connected_to_domain": "vylqq.ngochd7.website"
+        }
+      },
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "prod": {
+      "domain": "au-username-new.onshopbase.com",
+      "shop_name": "username-new.onshopbase.com",
+      "api": "https://api.shopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10426082,
+      "user_id": 73782,
+      "creator_url": "https://creator.eco",
+      "cases": {
+        "SB_CUN_05": {
+          "connected_to_domain": "havu2.sbprod.tk"
+        }
+      }
+    }
+  },
+  "email_scheduler": "vyle1@beeketing.net",
+  "cases": {
+    "SB_CUN_03": {
+      "fallback_to_default": true,
+      "store_usernames": [
+        {
+          "case_description": "Bỏ trống user name > Save",
+          "input": "",
+          "expect": {
+            "type": "message",
+            "output_message": "Username must be at least 5 characters. Please try again."
+          }
+        },
+        {
+          "case_description": "Edit username có <5 kí tự > Save",
+          "input": "use",
+          "expect": {
+            "type": "message",
+            "output_message": "Username must be at least 5 characters. Please try again."
+          }
+        },
+        {
+          "case_description": "Edit username trùng với username đã có > Save",
+          "input": "au-username-new-duplicate",
+          "expect": {
+            "type": "message",
+            "output_message": "Username is already taken. Please try another one"
+          }
+        },
+        {
+          "case_description": "Edit username validate, có >= 5 kí tự > Save",
+          "input": "au-username-new-valid-{env}",
+          "expect": {
+            "type": "validateNewUsername"
+          }
+        }
+      ]
+    }
+  }
+}

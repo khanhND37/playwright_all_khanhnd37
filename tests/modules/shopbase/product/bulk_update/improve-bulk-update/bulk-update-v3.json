@@ -1,0 +1,1458 @@
+{
+  "timeout_slow_test": 400000,
+  "csv_file": "tests/modules/shopbase/product/bulk_update/improve-bulk-update/import-product-csv/BUD_532-541.csv",
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-imp-bulk-update.onshopbase.com",
+      "shop_name": "au-imp-bulk-update",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "user_id": 11260206,
+      "shop_id": 10484810
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-v3-bulk-update-prodtest.onshopbase.com",
+      "shop_name": "au-v3-bulk-update-prodtest",
+      "user_id": 11260206,
+      "shop_id": 10484813,
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-imp-bulk-update.myshopbase.net",
+      "shop_name": "au-imp-bulk-update",
+      "user_id": 90252,
+      "shop_id": 10333736,
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123"
+    }
+  },
+  "email_scheduler": "dinhtruong@beeketing.net",
+  "cases": {
+    "SB_PRO_BUD_527": {
+      "expected": {
+        "filter_products": {
+          "help_docs_url": "article/conditions-for-automated-collections",
+          "tooltip_content": "Learn more about filter conditions"
+        },
+        "actions": {
+          "help_docs_url": "article/actions-supported-by-bulk-updates",
+          "tooltip_content": "Learn more about supported actions"
+        }
+      }
+    },
+    "SB_PRO_BUD_528": {
+      "expected": {
+        "filter_products_options": [
+          "Product title",
+          "Product type",
+          "Product vendor",
+          "Product price",
+          "Product tag",
+          "Compare at price",
+          "Weight",
+          "Inventory stock",
+          "Variant title",
+          "Collection",
+          "Custom option name"
+        ],
+        "filter_variant_options": ["Variant title", "Variant price", "Variant compare-at-price", "Variant weight"],
+        "filter_products_conditions": {
+          "Product title": [
+            {
+              "name": "is equal to"
+            },
+            {
+              "name": "is not equal to"
+            },
+            {
+              "name": "is greater than",
+              "disabled": "is-disabled"
+            },
+            {
+              "name": "is less than",
+              "disabled": "is-disabled"
+            },
+            {
+              "name": "starts with"
+            },
+            {
+              "name": "ends with"
+            },
+            {
+              "name": "contains"
+            },
+            {
+              "name": "doesn't contain"
+            }
+          ],
+          "Product type": [
+            {
+              "name": "is equal to"
+            },
+            {
+              "name": "is not equal to"
+            },
+            {
+              "name": "is greater than",
+              "disabled": "is-disabled"
+            },
+            {
+              "name": "is less than",
+              "disabled": "is-disabled"
+            },
+            {
+              "name": "starts with"
+            },
+            {
+              "name": "ends with"
+            },
+            {
+              "name": "contains"
+            },
+            {
+              "name": "doesn't contain"
+            }
+          ],
+          "Product vendor": [
+            {
+              "name": "is equal to"
+            },
+            {
+              "name": "is not equal to"
+            },
+            {
+              "name": "is greater than",
+              "disabled": "is-disabled"
+            },
+            {
+              "name": "is less than",
+              "disabled": "is-disabled"
+            },
+            {
+              "name": "starts with"
+            },
+            {
+              "name": "ends with"
+            },
+            {
+              "name": "contains"
+            },
+            {
+              "name": "doesn't contain"
+            }
+          ],
+          "Product price": [
+            {
+              "name": "is equal to"
+            },
+            {
+              "name": "is not equal to"
+            },
+            {
+              "name": "is greater than"
+            },
+            {
+              "name": "is less than"
+            },
+            {
+              "name": "starts with",
+              "disabled": "is-disabled"
+            },
+            {
+              "name": "ends with",
+              "disabled": "is-disabled"
+            },
+            {
+              "name": "contains",
+              "disabled": "is-disabled"
+            },
+            {
+              "name": "doesn't contain",
+              "disabled": "is-disabled"
+            }
+          ],
+          "Product tag": [
+            {
+              "name": "is equal to"
+            },
+            {
+              "name": "is not equal to",
+              "disabled": "is-disabled"
+            },
+            {
+              "name": "is greater than",
+              "disabled": "is-disabled"
+            },
+            {
+              "name": "is less than",
+              "disabled": "is-disabled"
+            },
+            {
+              "name": "starts with",
+              "disabled": "is-disabled"
+            },
+            {
+              "name": "ends with",
+              "disabled": "is-disabled"
+            },
+            {
+              "name": "contains"
+            },
+            {
+              "name": "doesn't contain"
+            }
+          ],
+          "Compare at price": [
+            {
+              "name": "is equal to"
+            },
+            {
+              "name": "is not equal to"
+            },
+            {
+              "name": "is greater than"
+            },
+            {
+              "name": "is less than"
+            },
+            {
+              "name": "starts with",
+              "disabled": "is-disabled"
+            },
+            {
+              "name": "ends with",
+              "disabled": "is-disabled"
+            },
+            {
+              "name": "contains",
+              "disabled": "is-disabled"
+            },
+            {
+              "name": "doesn't contain",
+              "disabled": "is-disabled"
+            }
+          ],
+          "Weight": [
+            {
+              "name": "is equal to"
+            },
+            {
+              "name": "is not equal to"
+            },
+            {
+              "name": "is greater than"
+            },
+            {
+              "name": "is less than"
+            },
+            {
+              "name": "starts with",
+              "disabled": "is-disabled"
+            },
+            {
+              "name": "ends with",
+              "disabled": "is-disabled"
+            },
+            {
+              "name": "contains",
+              "disabled": "is-disabled"
+            },
+            {
+              "name": "doesn't contain",
+              "disabled": "is-disabled"
+            }
+          ],
+          "Inventory stock": [
+            {
+              "name": "is equal to"
+            },
+            {
+              "name": "is not equal to"
+            },
+            {
+              "name": "is greater than"
+            },
+            {
+              "name": "is less than"
+            },
+            {
+              "name": "starts with",
+              "disabled": "is-disabled"
+            },
+            {
+              "name": "ends with",
+              "disabled": "is-disabled"
+            },
+            {
+              "name": "contains",
+              "disabled": "is-disabled"
+            },
+            {
+              "name": "doesn't contain",
+              "disabled": "is-disabled"
+            }
+          ],
+          "Variant title": [
+            {
+              "name": "is equal to"
+            },
+            {
+              "name": "is not equal to"
+            },
+            {
+              "name": "is greater than",
+              "disabled": "is-disabled"
+            },
+            {
+              "name": "is less than",
+              "disabled": "is-disabled"
+            },
+            {
+              "name": "starts with"
+            },
+            {
+              "name": "ends with"
+            },
+            {
+              "name": "contains"
+            },
+            {
+              "name": "doesn't contain"
+            }
+          ],
+          "Collection": [
+            {
+              "name": "is equal to"
+            },
+            {
+              "name": "is not equal to"
+            },
+            {
+              "name": "is greater than",
+              "disabled": "is-disabled"
+            },
+            {
+              "name": "is less than",
+              "disabled": "is-disabled"
+            },
+            {
+              "name": "starts with",
+              "disabled": "is-disabled"
+            },
+            {
+              "name": "ends with",
+              "disabled": "is-disabled"
+            },
+            {
+              "name": "contains",
+              "disabled": "is-disabled"
+            },
+            {
+              "name": "doesn't contain",
+              "disabled": "is-disabled"
+            }
+          ],
+          "Custom option name": [
+            {
+              "name": "is equal to"
+            },
+            {
+              "name": "is not equal to",
+              "disabled": "is-disabled"
+            },
+            {
+              "name": "is greater than",
+              "disabled": "is-disabled"
+            },
+            {
+              "name": "is less than",
+              "disabled": "is-disabled"
+            },
+            {
+              "name": "starts with"
+            },
+            {
+              "name": "ends with"
+            },
+            {
+              "name": "contains"
+            },
+            {
+              "name": "doesn't contain"
+            }
+          ]
+        },
+        "filter_variant_conditions": {
+          "Variant title": [
+            {
+              "name": "is equal to"
+            },
+            {
+              "name": "is not equal to"
+            },
+            {
+              "name": "is greater than",
+              "disabled": "is-disabled"
+            },
+            {
+              "name": "is less than",
+              "disabled": "is-disabled"
+            },
+            {
+              "name": "starts with"
+            },
+            {
+              "name": "ends with"
+            },
+            {
+              "name": "contains"
+            },
+            {
+              "name": "doesn't contain"
+            }
+          ],
+          "Variant price": [
+            {
+              "name": "is equal to"
+            },
+            {
+              "name": "is not equal to"
+            },
+            {
+              "name": "is greater than"
+            },
+            {
+              "name": "is less than"
+            },
+            {
+              "name": "starts with",
+              "disabled": "is-disabled"
+            },
+            {
+              "name": "ends with",
+              "disabled": "is-disabled"
+            },
+            {
+              "name": "contains",
+              "disabled": "is-disabled"
+            },
+            {
+              "name": "doesn't contain",
+              "disabled": "is-disabled"
+            }
+          ],
+          "Variant compare-at-price": [
+            {
+              "name": "is equal to"
+            },
+            {
+              "name": "is not equal to"
+            },
+            {
+              "name": "is greater than"
+            },
+            {
+              "name": "is less than"
+            },
+            {
+              "name": "starts with",
+              "disabled": "is-disabled"
+            },
+            {
+              "name": "ends with",
+              "disabled": "is-disabled"
+            },
+            {
+              "name": "contains",
+              "disabled": "is-disabled"
+            },
+            {
+              "name": "doesn't contain",
+              "disabled": "is-disabled"
+            }
+          ],
+          "Variant weight": [
+            {
+              "name": "is equal to"
+            },
+            {
+              "name": "is not equal to"
+            },
+            {
+              "name": "is greater than"
+            },
+            {
+              "name": "is less than"
+            },
+            {
+              "name": "starts with",
+              "disabled": "is-disabled"
+            },
+            {
+              "name": "ends with",
+              "disabled": "is-disabled"
+            },
+            {
+              "name": "contains",
+              "disabled": "is-disabled"
+            },
+            {
+              "name": "doesn't contain",
+              "disabled": "is-disabled"
+            }
+          ]
+        }
+      }
+    },
+    "SB_PRO_BUD_529": {
+      "new_actions": [
+        "Find and replace text in description",
+        "Add images to product media",
+        "Replace all product images by the uploaded ones",
+        "Replace tag",
+        "Change product type",
+        "Remove product type",
+        "Increase price",
+        "Decrease price",
+        "Delete variant's option value",
+        "Delete variant tag",
+        "Add variant tag",
+        "Replace variant tag",
+        "Delete custom options",
+        "Change Inventory policy",
+        "Allow customer to purchase when product's out of stock",
+        "Add Pixel Id",
+        "Add Access token",
+        "Change product page design"
+      ],
+      "search_keywords": [
+        {
+          "text": "no-results-action",
+          "results": ["There are no results for this action"]
+        },
+        {
+          "text": "Change product page design",
+          "results": ["Change product page design"]
+        },
+        {
+          "text": "change product page design",
+          "results": ["Change product page design"]
+        },
+        {
+          "text": "CHANGE PRODUCT PAGE DESIGN",
+          "results": ["Change product page design"]
+        },
+        {
+          "text": "Change prOduCt pAge deSign",
+          "results": ["Change product page design"]
+        },
+        {
+          "text": "variant",
+          "results": [
+            "Change variant's option value",
+            "Delete variant's option value",
+            "Delete variant tag",
+            "Add variant tag",
+            "Replace variant tag"
+          ]
+        },
+        {
+          "text": "remove",
+          "results": ["Remove product type", "Remove text from product title", "Remove tags", "Remove from collection"]
+        }
+      ],
+      "expected": {
+        "actions_ui_snapshot": "BUD-529-All-New-Actions-UI.png",
+        "duplicate_tooltip": "Duplicate action",
+        "remove_tooltip": "Remove action"
+      }
+    },
+    "SB_PRO_BUD_530": {},
+    "SB_PRO_BUD_532": {
+      "description": "Product title contains 2023 AND Product tag is equal to new, Variant title is equal to S / Cotten / Women AND Variant price is less than 300",
+      "product_condition": "All conditions",
+      "variant_condition": "All conditions",
+      "product_data": [
+        {
+          "row": 1,
+          "has": "Product title",
+          "condition": "contains",
+          "value": "2023"
+        },
+        {
+          "row": 2,
+          "has": "Product tag",
+          "condition": "is equal to",
+          "value": "new",
+          "add": true
+        }
+      ],
+      "variant_data": [
+        {
+          "row": 1,
+          "has": "Variant title",
+          "condition": "is equal to",
+          "value": "S / Cotten / Women"
+        },
+        {
+          "row": 2,
+          "has": "Variant price",
+          "condition": "is less than",
+          "value": "300",
+          "add": true
+        }
+      ],
+      "action": {
+        "name": "Find and replace text in description",
+        "data": {
+          "Find and replace text in description": {
+            "option": "this autumn",
+            "value": "this winter"
+          }
+        }
+      },
+      "action_repeat": {
+        "name": "Find and replace text in description",
+        "data": {
+          "Find and replace text in description": {
+            "option": "this winter",
+            "value": "this autumn"
+          }
+        }
+      },
+      "expected": {
+        "filter_product_in_preview": ["Product title contains \"2023\"", "Product tag is equal to \"new\""],
+        "filter_variant_in_preview": [
+          "Variant title is equal to \"S / Cotten / Women\"",
+          "Variant price is less than \"300 USD\""
+        ],
+        "action_apply_order_text": "Below actions will be taken from top to bottom",
+        "actions_in_preview": ["Find and replace text \"this autumn\" to \"this winter\" in description"],
+        "sample_matching_products": [
+          {
+            "name": "[A] [@SB_PRO_BUD_532_541] Best couple pajamas 2023",
+            "type": "Unisex",
+            "vendor": "Triumph's Collection"
+          },
+          {
+            "name": "[A] [@SB_PRO_BUD_532_541] Best couple sleepwear 2023",
+            "type": "Unisex",
+            "vendor": "Triumph's Collection"
+          },
+          {
+            "name": "[A] [@SB_PRO_BUD_532_541] Trendie hoodie 2023",
+            "type": "Unisex",
+            "vendor": "Triumph's Collection"
+          }
+        ],
+        "new_description": "New arrivals for couple this winter",
+        "filter_column": "Product title contains \"2023\"And And RemoveProduct tag is equal to \"new\"",
+        "update_for_column": "Variant title is equal to \"S / Cotten / Women\"And And RemoveVariant price is less than \"300 USD\"",
+        "action_column": "Find and replace text \"this autumn\" to \"this winter\" in description",
+        "action_column_repeat": "Find and replace text \"this winter\" to \"this autumn\" in description",
+        "number_of_updated_products_column": "3",
+        "description_repeat": "New arrivals for couple this autumn"
+      }
+    },
+    "SB_PRO_BUD_533": {
+      "import_product": true,
+      "product_condition": "Any condition",
+      "product_data": [
+        {
+          "row": 1,
+          "has": "Product title",
+          "condition": "doesn't contain",
+          "value": "2023"
+        },
+        {
+          "row": 2,
+          "has": "Product tag",
+          "condition": "is equal to",
+          "value": "new",
+          "add": true
+        }
+      ],
+      "actions": [
+        {
+          "name": "Find and replace text in description",
+          "data": {
+            "Find and replace text in description": {
+              "option": "this autumn",
+              "value": "this winter"
+            }
+          }
+        },
+        {
+          "name": "Add images to product media",
+          "data": {
+            "Add images to product media": ["data/shopbase/image1.jpeg"]
+          }
+        },
+        {
+          "name": "Replace all product images by the uploaded ones",
+          "data": {
+            "Replace all product images by the uploaded ones": ["data/shopbase/Cat 3.png"]
+          }
+        },
+        {
+          "name": "Delete variant's option value",
+          "data": {
+            "Delete variant's option value": {
+              "option": "Size",
+              "value": "14K"
+            }
+          }
+        },
+        {
+          "name": "Delete variant tag",
+          "data": {
+            "Delete variant tag": "hot"
+          }
+        },
+        {
+          "name": "Add variant tag",
+          "data": {
+            "Add variant tag": "Cool"
+          }
+        },
+        {
+          "name": "Replace variant tag",
+          "data": {
+            "Replace variant tag": "Replaced"
+          }
+        },
+        {
+          "name": "Delete custom options",
+          "data": {
+            "Delete custom options": {
+              "option": "is equal to",
+              "value": "Custom"
+            }
+          }
+        },
+        {
+          "name": "Change Inventory policy",
+          "data": {
+            "Change Inventory policy": "Shopbase tracks this product's inventory"
+          }
+        },
+        {
+          "name": "Allow customer to purchase when product's out of stock",
+          "data": {
+            "Allow customer to purchase when product's out of stock": true
+          }
+        },
+        {
+          "name": "Change product page design",
+          "data": {
+            "Change product page design": "Custom product page Auto",
+            "index": 0
+          }
+        },
+        {
+          "name": "Add Pixel Id",
+          "data": {
+            "Add Pixel Id": "New pixel id"
+          }
+        },
+        {
+          "name": "Add Access token",
+          "data": {
+            "Add Access token": "n3w-t0k3n"
+          }
+        }
+      ],
+      "expected": {
+        "filter_product_in_preview": ["Product title doesn't contain \"2023\"", "Product tag is equal to \"new\""],
+        "actions_in_preview": [
+          "Find and replace text \"this autumn\" to \"this winter\" in description",
+          "Add images to product media",
+          "Replace all product images by the uploaded ones",
+          "Delete variant option value \"14K\" from option name \"Size\"",
+          "Delete variant tag \"hot\"",
+          "Add variant tag \"Cool\"",
+          "Replace variant tag \"Replaced\"",
+          "Delete custom options which their option name is equal to \"Custom\"",
+          "Change Inventory management to \"ShopBase tracks this product's inventory\"",
+          "Allow customer to purchase when product's out of stock \"on\"",
+          "Change product page design to \"Custom product page Auto\"",
+          "Add pixel id \"New pixel id\"",
+          "Add access token \"n3w-t0k3n\""
+        ],
+        "sample_matching_products": [
+          {
+            "name": "[A] [@SB_PRO_BUD_532_541] Best couple pajamas 2023",
+            "type": "Unisex",
+            "vendor": "Triumph's Collection"
+          },
+          {
+            "name": "[A] [@SB_PRO_BUD_532_541] Best couple sleepwear 2023",
+            "type": "Unisex",
+            "vendor": "Triumph's Collection"
+          },
+          {
+            "name": "[A] [@SB_PRO_BUD_532_541] Trendie hoodie 2023",
+            "type": "Unisex",
+            "vendor": "Triumph's Collection"
+          },
+          {
+            "name": "[B] [@SB_PRO_BUD_532_541] Swagger Sunglasses",
+            "type": "sunglasses",
+            "vendor": "Local brand"
+          },
+          {
+            "name": "[B] [@SB_PRO_BUD_532_541] Extreme sporty bag",
+            "type": "bags",
+            "vendor": "Local brand"
+          },
+          {
+            "name": "[D] [@SB_PRO_BUD_532_541] BMX x Supreme",
+            "type": "bmx",
+            "vendor": "bike"
+          }
+        ],
+        "filter_column": "Product title doesn't contain \"2023\"Or Or RemoveProduct tag is equal to \"new\"",
+        "update_for_column": "All variants",
+        "action_column": "Find and replace text \"this autumn\" to \"this winter\" in description,\n\nAdd images to product media,\n\nReplace all product images by the uploaded ones,\n\nDelete variant option value \"14K\" from option name \"Size\",\n\nDelete variant tag \"hot\",\n\nAdd variant tag \"Cool\",\n\nReplace variant tag \"Replaced\",\n\nDelete custom options which their option name is equal to \"Custom\",\n\nChange Inventory management to \"ShopBase tracks this product's inventory\",\n\nAllow customer to purchase when product's out of stock \"on\",\n\nChange product page design to \"Custom product page Auto\",\n\nAdd pixel id \"New pixel id\",\n\nAdd access token \"n3w-t0k3n\"",
+        "inventory_policy": "shopbase",
+        "new_description": "New arrivals for couple this winter",
+        "new_access_token": "n3w-t0k3n",
+        "new_pixel_id": "New pixel id",
+        "custom_page_design": "Custom product page Auto"
+      }
+    },
+    "NEW_ACTIONS": {
+      "data": [
+        {
+          "case_id": "SB_PRO_BUD_535",
+          "description": "Find and replace text in description & Add images to product media",
+          "product_condition": "Any condition",
+          "variant_condition": "All conditions",
+          "product_data": [
+            {
+              "row": 1,
+              "has": "Product title",
+              "condition": "contains",
+              "value": "2023"
+            },
+            {
+              "row": 2,
+              "has": "Product tag",
+              "condition": "is equal to",
+              "value": "new",
+              "add": true
+            }
+          ],
+          "variant_data": [
+            {
+              "row": 1,
+              "has": "Variant title",
+              "condition": "is equal to",
+              "value": "S / Cotten / Women"
+            },
+            {
+              "row": 2,
+              "has": "Variant price",
+              "condition": "is less than",
+              "value": "300",
+              "add": true
+            }
+          ],
+          "actions": [
+            {
+              "name": "Find and replace text in description",
+              "data": {
+                "Find and replace text in description": {
+                  "option": "this autumn",
+                  "value": "this winter"
+                }
+              }
+            },
+            {
+              "name": "Add images to product media",
+              "data": {
+                "Add images to product media": ["data/shopbase/image1.jpeg", "data/shopbase/image3.jpeg"]
+              }
+            }
+          ]
+        },
+        {
+          "case_id": "SB_PRO_BUD_536",
+          "description": "Replace all product images by the uploaded ones  & Replace tag",
+          "product_condition": "All conditions",
+          "variant_condition": "All conditions",
+          "product_data": [
+            {
+              "row": 1,
+              "has": "Product title",
+              "condition": "doesn't contain",
+              "value": "2023"
+            },
+            {
+              "row": 2,
+              "has": "Product tag",
+              "condition": "is equal to",
+              "value": "new",
+              "add": true
+            }
+          ],
+          "variant_data": [
+            {
+              "row": 1,
+              "has": "Variant title",
+              "condition": "is equal to",
+              "value": "S / Black"
+            },
+            {
+              "row": 2,
+              "has": "Variant price",
+              "condition": "is greater than",
+              "value": "550",
+              "add": true
+            }
+          ],
+          "actions": [
+            {
+              "name": "Replace all product images by the uploaded ones",
+              "data": {
+                "Replace all product images by the uploaded ones": [
+                  "data/shopbase/image1.jpeg",
+                  "data/shopbase/image3.jpeg"
+                ]
+              }
+            },
+            {
+              "name": "Replace tag",
+              "data": {
+                "Replace tag": {
+                  "option": "men",
+                  "value": "man"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "case_id": "SB_PRO_BUD_537",
+          "description": "Change product  type  & Change product vendor to",
+          "product_condition": "All conditions",
+          "variant_condition": "All conditions",
+          "product_data": [
+            {
+              "row": 1,
+              "has": "Product title",
+              "condition": "contains",
+              "value": "2023"
+            },
+            {
+              "row": 2,
+              "has": "Product tag",
+              "condition": "doesn't contain",
+              "value": "new",
+              "add": true
+            }
+          ],
+          "variant_data": [
+            {
+              "row": 1,
+              "has": "Variant title",
+              "condition": "is equal to",
+              "value": "Gold / 24K"
+            },
+            {
+              "row": 2,
+              "has": "Variant price",
+              "condition": "is greater than",
+              "value": "2000",
+              "add": true
+            }
+          ],
+          "actions": [
+            {
+              "name": "Change product type",
+              "data": {
+                "Change product type": "Animals & Pet Supplies"
+              }
+            },
+            {
+              "name": "Change product vendor",
+              "data": {
+                "Change product vendor": "Balenciaga"
+              }
+            }
+          ]
+        },
+        {
+          "case_id": "SB_PRO_BUD_538",
+          "description": "Remove product type  & Increase price",
+          "product_condition": "All conditions",
+          "variant_condition": "All conditions",
+          "product_data": [
+            {
+              "row": 1,
+              "has": "Product title",
+              "condition": "doesn't contain",
+              "value": "2023"
+            },
+            {
+              "row": 2,
+              "has": "Product tag",
+              "condition": "doesn't contain",
+              "value": "new",
+              "add": true
+            }
+          ],
+          "variant_data": [
+            {
+              "row": 1,
+              "has": "Variant title",
+              "condition": "is not equal to",
+              "value": "Diamond / 18K"
+            }
+          ],
+          "actions": [
+            {
+              "name": "Remove product type",
+              "data": {
+                "Remove product type": true
+              }
+            },
+            {
+              "name": "Increase price",
+              "data": {
+                "Increase price": {
+                  "option": "by amount",
+                  "value": "50"
+                }
+              }
+            },
+            {
+              "name": "Increase price",
+              "data": {
+                "Increase price": {
+                  "option": "by percentage",
+                  "value": "10"
+                },
+                "action_index": 2
+              }
+            }
+          ]
+        },
+        {
+          "case_id": "SB_PRO_BUD_539",
+          "description": "Decrease price  & Delete variant's option value",
+          "product_condition": "All conditions",
+          "variant_condition": "All conditions",
+          "product_data": [
+            {
+              "row": 1,
+              "has": "Product title",
+              "condition": "doesn't contain",
+              "value": "2023"
+            },
+            {
+              "row": 2,
+              "has": "Product tag",
+              "condition": "contains",
+              "value": "new",
+              "add": true
+            }
+          ],
+          "variant_data": [
+            {
+              "row": 1,
+              "has": "Variant price",
+              "condition": "is greater than",
+              "value": "500"
+            }
+          ],
+          "actions": [
+            {
+              "name": "Decrease price",
+              "data": {
+                "Decrease price": {
+                  "option": "by amount",
+                  "value": "25"
+                }
+              }
+            },
+            {
+              "name": "Decrease price",
+              "data": {
+                "Decrease price": {
+                  "option": "by percentage",
+                  "value": "35"
+                },
+                "action_index": 2
+              }
+            },
+            {
+              "name": "Delete variant's option value",
+              "data": {
+                "Delete variant's option value": {
+                  "option": "Color",
+                  "value": "Yellow"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "case_id": "SB_PRO_BUD_540",
+          "description": "Change variant's option value  & Delete custom options",
+          "product_condition": "All conditions",
+          "variant_condition": "All conditions",
+          "product_data": [
+            {
+              "row": 1,
+              "has": "Product title",
+              "condition": "contains",
+              "value": "Wedding rings"
+            },
+            {
+              "row": 2,
+              "has": "Product tag",
+              "condition": "is equal to",
+              "value": "engage",
+              "add": true
+            }
+          ],
+          "variant_data": [
+            {
+              "row": 1,
+              "has": "Variant title",
+              "condition": "is equal to",
+              "value": "Gold / 24K"
+            }
+          ],
+          "actions": [
+            {
+              "name": "Change variant's option value",
+              "data": {
+                "Change variant's option value": {
+                  "name": "Size",
+                  "from": "14K",
+                  "to": "12K"
+                }
+              }
+            },
+            {
+              "name": "Delete custom options",
+              "data": {
+                "Delete custom options": {
+                  "option": "is equal to",
+                  "value": "Custom"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "case_id": "SB_PRO_BUD_541",
+          "description": "Change Inventory policy  & Allow customer to purchase when product's out of stock",
+          "product_condition": "All conditions",
+          "variant_condition": "All conditions",
+          "product_data": [
+            {
+              "row": 1,
+              "has": "Product title",
+              "condition": "doesn't contain",
+              "value": "2023"
+            },
+            {
+              "row": 2,
+              "has": "Product tag",
+              "condition": "doesn't contain",
+              "value": "new",
+              "add": true
+            }
+          ],
+          "variant_data": [
+            {
+              "row": 1,
+              "has": "Variant title",
+              "condition": "doesn't contain",
+              "value": "L / Blue"
+            }
+          ],
+          "actions": [
+            {
+              "name": "Change Inventory policy",
+              "data": {
+                "Change Inventory policy": "Shopbase tracks this product's inventory"
+              }
+            },
+            {
+              "name": "Allow customer to purchase when product's out of stock",
+              "data": {
+                "Allow customer to purchase when product's out of stock": true
+              }
+            }
+          ]
+        },
+        {
+          "case_id": "SB_PRO_BUD_542",
+          "description": "Add Pixel Id & Add Access token",
+          "product_condition": "All conditions",
+          "variant_condition": "All conditions",
+          "product_data": [
+            {
+              "row": 1,
+              "has": "Product title",
+              "condition": "doesn't contain",
+              "value": "2023"
+            },
+            {
+              "row": 2,
+              "has": "Product tag",
+              "condition": "doesn't contain",
+              "value": "new",
+              "add": true
+            }
+          ],
+          "variant_data": [
+            {
+              "row": 1,
+              "has": "Variant title",
+              "condition": "doesn't contain",
+              "value": "L / Blue"
+            }
+          ],
+          "actions": [
+            {
+              "name": "Add Pixel Id",
+              "data": {
+                "Add Pixel Id": "Edited-id"
+              }
+            },
+            {
+              "name": "Add Access token",
+              "data": {
+                "Add Access token": "n3w-t0k3n"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "SB_PRO_BUD_535": {
+      "import_product": true,
+      "expected": {
+        "actions_in_preview": [
+          "Find and replace text \"this autumn\" to \"this winter\" in description",
+          "Add images to product media"
+        ],
+        "sample_matching_products": [
+          {
+            "name": "[A] [@SB_PRO_BUD_532_541] Best couple pajamas 2023",
+            "type": "Unisex",
+            "vendor": "Triumph's Collection"
+          },
+          {
+            "name": "[A] [@SB_PRO_BUD_532_541] Best couple sleepwear 2023",
+            "type": "Unisex",
+            "vendor": "Triumph's Collection"
+          },
+          {
+            "name": "[A] [@SB_PRO_BUD_532_541] Trendie hoodie 2023",
+            "type": "Unisex",
+            "vendor": "Triumph's Collection"
+          }
+        ],
+        "new_description": "New arrivals for couple this winter",
+        "filter_column": "Product title contains \"2023\"Or Or RemoveProduct tag is equal to \"new\"",
+        "update_for_column": "Variant title is equal to \"S / Cotten / Women\"And And RemoveVariant price is less than \"300 USD\"",
+        "action_column": "Find and replace text \"this autumn\" to \"this winter\" in description,\n\nAdd images to product media",
+        "number_of_updated_products_column": "3"
+      }
+    },
+    "SB_PRO_BUD_536": {
+      "import_product": true,
+      "expected": {
+        "actions_in_preview": ["Replace all product images by the uploaded ones", "Replace tag \"men\" to \"man\""],
+        "sample_matching_products": [
+          {
+            "name": "[B] [@SB_PRO_BUD_532_541] Swagger Sunglasses",
+            "type": "sunglasses",
+            "vendor": "Local brand"
+          },
+          {
+            "name": "[B] [@SB_PRO_BUD_532_541] Extreme sporty bag",
+            "type": "bags",
+            "vendor": "Local brand"
+          }
+        ],
+        "filter_column": "Product title doesn't contain \"2023\"And And RemoveProduct tag is equal to \"new\"",
+        "update_for_column": "Variant title is equal to \"S / Black\"And And RemoveVariant price is greater than \"550 USD\"",
+        "action_column": "Replace all product images by the uploaded ones,\n\nReplace tag \"men\" to \"man\"",
+        "number_of_updated_products_column": "2",
+        "new_tags": [
+          {
+            "product": "[B] [@SB_PRO_BUD_532_541] Extreme sporty bag",
+            "tags": ["new", "man", "women", "bags", "sporty"]
+          },
+          {
+            "product": "[B] [@SB_PRO_BUD_532_541] Swagger Sunglasses",
+            "tags": ["new", "man", "women"]
+          }
+        ]
+      }
+    },
+    "SB_PRO_BUD_537": {
+      "import_product": true,
+      "expected": {
+        "actions_in_preview": [
+          "Change product type to \"Animals & Pet Supplies\"",
+          "Change product vendor to \"Balenciaga\""
+        ],
+        "sample_matching_products": [
+          {
+            "name": "[C] [@SB_PRO_BUD_532_541] Luxury Necklace 2023",
+            "type": "necklace",
+            "vendor": "Diamond, gold"
+          },
+          {
+            "name": "[C] [@SB_PRO_BUD_532_541] Wedding rings 2023",
+            "type": "rings",
+            "vendor": "Diamond, gold"
+          }
+        ],
+        "filter_column": "Product title contains \"2023\"And And RemoveProduct tag doesn't contain \"new\"",
+        "update_for_column": "Variant title is equal to \"Gold / 24K\"And And RemoveVariant price is greater than \"2000 USD\"",
+        "action_column": "Change product type to \"Animals & Pet Supplies\",\n\nChange product vendor to \"Balenciaga\"",
+        "number_of_updated_products_column": "2",
+        "new_type": "Animals & Pet Supplies",
+        "new_vendor": "Balenciaga"
+      }
+    },
+    "SB_PRO_BUD_538": {
+      "import_product": true,
+      "expected": {
+        "actions_in_preview": [
+          "Remove product type",
+          "Increase price by amount \"50\" USD",
+          "Increase price by percentage \"10\"%"
+        ],
+        "sample_matching_products": [
+          {
+            "name": "[D] [@SB_PRO_BUD_532_541] BMX x Supreme",
+            "type": "bmx",
+            "vendor": "bike"
+          }
+        ],
+        "filter_column": "Product title doesn't contain \"2023\"And And RemoveProduct tag doesn't contain \"new\"",
+        "update_for_column": "Variant title is not equal to \"Diamond / 18K\"",
+        "action_column": "Remove product type,\n\nIncrease price by amount \"50\" USD, \n\nIncrease price by percentage \"10\"%",
+        "number_of_updated_products_column": "1",
+        "new_type": "",
+        "new_price": {
+          "increase": {
+            "amount": 50,
+            "percent": 1.1
+          }
+        }
+      }
+    },
+    "SB_PRO_BUD_539": {
+      "import_product": true,
+      "expected": {
+        "actions_in_preview": [
+          "Decrease price by amount \"25\" USD",
+          "Decrease price by percentage \"35\"%",
+          "Delete variant option value \"Yellow\" from option name \"Color\""
+        ],
+        "sample_matching_products": [
+          {
+            "name": "[B] [@SB_PRO_BUD_532_541] Swagger Sunglasses",
+            "type": "sunglasses",
+            "vendor": "Local brand"
+          },
+          {
+            "name": "[B] [@SB_PRO_BUD_532_541] Extreme sporty bag",
+            "type": "bags",
+            "vendor": "Local brand"
+          }
+        ],
+        "filter_column": "Product title doesn't contain \"2023\"And And RemoveProduct tag contains \"new\"",
+        "update_for_column": "Variant price is greater than \"500 USD\"",
+        "action_column": "Decrease price by amount \"25\" USD,\n\nDecrease price by percentage \"35\"%,\n\nDelete variant option value \"Yellow\" from option name \"Color\"",
+        "number_of_updated_products_column": "2",
+        "new_price": {
+          "decrease": {
+            "amount": 25,
+            "percent": 0.35
+          }
+        },
+        "new_variants": ["S", "M", "L", "Blue", "Pink", "Black"]
+      }
+    },
+    "SB_PRO_BUD_540": {
+      "import_product": true,
+      "expected": {
+        "actions_in_preview": [
+          "Change variant's option to \"12K\"",
+          "Delete custom options which their option name is equal to \"Custom\""
+        ],
+        "sample_matching_products": [
+          {
+            "name": "[C] [@SB_PRO_BUD_532_541] Wedding rings 2023",
+            "type": "rings",
+            "vendor": "Diamond, gold"
+          }
+        ],
+        "filter_column": "Product title contains \"Wedding rings\"And And RemoveProduct tag is equal to \"engage\"",
+        "update_for_column": "Variant title is equal to \"Gold / 24K\"",
+        "action_column": "Change variant's option to \"12K\", Delete custom options which their option name is equal to \"Custom\"",
+        "number_of_updated_products_column": "1",
+        "new_variants": ["Diamond", "Gold", "14K", "16K", "18K", " 24K"],
+        "delete_custom_option": "Custom"
+      }
+    },
+    "SB_PRO_BUD_541": {
+      "import_product": true,
+      "expected": {
+        "actions_in_preview": [
+          "Change Inventory management to \"ShopBase tracks this product's inventory\"",
+          "Allow customer to purchase when product's out of stock \"on\""
+        ],
+        "sample_matching_products": [
+          {
+            "name": "[D] [@SB_PRO_BUD_532_541] BMX x Supreme",
+            "type": "bmx",
+            "vendor": "bike"
+          }
+        ],
+        "filter_column": "Product title doesn't contain \"2023\"And And RemoveProduct tag doesn't contain \"new\"",
+        "update_for_column": "Variant title doesn't contain \"L / Blue\"",
+        "action_column": "Change Inventory management to \"ShopBase tracks this product's inventory\", Allow customer to purchase when product's out of stock \"on\"",
+        "number_of_updated_products_column": "1",
+        "inventory_policy": "shopbase",
+        "purchase_out_of_stock": true
+      }
+    },
+    "SB_PRO_BUD_542": {
+      "import_product": true,
+      "expected": {
+        "actions_in_preview": ["Add pixel id \"Edited-id\"", "Add access token \"n3w-t0k3n\""],
+        "sample_matching_products": [
+          {
+            "name": "[D] [@SB_PRO_BUD_532_541] BMX x Supreme",
+            "type": "bmx",
+            "vendor": "bike"
+          }
+        ],
+        "filter_column": "Product title doesn't contain \"2023\"And And RemoveProduct tag doesn't contain \"new\"",
+        "update_for_column": "Variant title doesn't contain \"L / Blue\"",
+        "action_column": "Add pixel id \"Edited-id\", Add access token \"n3w-t0k3n\"",
+        "number_of_updated_products_column": "1",
+        "new_pixel_id": "Edited-id",
+        "new_access_token": "n3w-t0k3n"
+      }
+    }
+  }
+}

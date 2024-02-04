@@ -1,0 +1,346 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-preselect-variant.myshopbase.net",
+      "shop_name": "au-preselect-variant",
+      "shop_id": 10326691,
+      "username": "dpro-qe-1@beeketing.net  ",
+      "password": "43AhIn|VWp;[?9&",
+      "theme_id": 3196095,
+      "user_id": 89797,
+      "section_name": "Preselect variant",
+      "product_name": "Livingston Demilune Console, Umber"
+    },
+    "local": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-preselect-variant-prod.onshopbase.com",
+      "shop_name": "au-preselect-variant-prod",
+      "shop_id": 10428475,
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "theme_id": 1409109,
+      "section_name": "Preselect variant",
+      "product_name": "Livingston Demilune Console, Umber"
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-preselect-variant-prod.onshopbase.com",
+      "shop_name": "au-preselect-variant-prod",
+      "shop_id": 10428475,
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "theme_id": 1409109,
+      "section_name": "Preselect variant",
+      "product_name": "Livingston Demilune Console, Umber"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-preselect-variant.onshopbase.com",
+      "shop_name": "au-preselect-variant",
+      "shop_id": 10428475,
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "theme_id": 1408502,
+      "section_name": "Preselect variant",
+      "product_name": "Livingston Demilune Console, Umber",
+      "accounts_domain": "accounts-test.shopbase.com"
+    }
+  },
+  "cases": {
+    "SB_NEWECOM_NEP_85": {
+      "expect_tooltip": "The default variant is the one selected on a customer's first visit. Selecting a different variant here overrides the Default variant selection in Website settings"
+    },
+    "SB_NEWECOM_NEP_86": {
+      "handle_product": "livingston-demilune-console-umber",
+      "payload": [
+        {
+          "option1": "M",
+          "option2": "Green"
+        },
+        {
+          "option1": "M",
+          "option2": "Blue"
+        },
+        {
+          "option1": "M",
+          "option2": "Grey"
+        }
+      ]
+    },
+    "SB_NEWECOM_NEP_87": {
+      "input_data": ["S / White", "White", "ABCDEF"],
+      "fill_input": "White",
+      "delete_input": ["S / White", "S / Black", "S / Red"]
+    },
+    "SB_NEWECOM_NEP_88": {
+      "option_expect": "S / Red",
+      "expected": {
+        "option_none": 0,
+        "option_value": 2
+      }
+    },
+    "SB_NEWECOM_NEP_89": {
+      "add_block": {
+        "parent_position": {
+          "section": 1,
+          "column": 1
+        },
+        "template": "Button"
+      },
+      "input_option": "S / Red",
+      "size_option": "S",
+      "color_option": "rgb(255, 0, 0)"
+    },
+    "SB_NEWECOM_NEP_90": {
+      "add_block": {
+        "from": {
+          "category": "Basics",
+          "template": "Button"
+        },
+        "to": {
+          "position": {
+            "section": 1,
+            "column": 1
+          },
+          "isBottom": false
+        }
+      },
+      "styling_settings": {
+        "colors": {
+          "default_settings": ["#FAFAFA", "#D9D9D9", "#8C8C8C", "#404040", "#141414"],
+          "case_settings": ["#F2F2F2", "#CCCCCC", "#48A6EA", "#5C5C5C", "#262626"]
+        },
+        "fonts": {
+          "default_settings": {
+            "font": "Montserrat",
+            "style": "Medium",
+            "heading_4": "20"
+          },
+          "case_settings": {
+            "font": "Aclonica",
+            "style": "Regular",
+            "heading_4": "25"
+          }
+        },
+        "buttons": {
+          "default_settings": {
+            "text_color": {
+              "preset": 1
+            },
+            "background_color": {
+              "color": {
+                "preset": 6,
+                "hexText": "#262626"
+              }
+            },
+            "border": {
+              "thickness": "none"
+            }
+          },
+          "case_settings": {
+            "text_color": {
+              "preset": 6,
+              "hexText": "#FFFFFF"
+            },
+            "background_color": {
+              "color": {
+                "preset": 6,
+                "hexText": "#B4444470"
+              }
+            },
+            "border": {
+              "thickness": "s"
+            }
+          }
+        }
+      }
+    },
+    "SB_NEWECOM_NEP_91": {
+      "add_block": {
+        "from": {
+          "category": "Basics",
+          "template": "Button"
+        },
+        "to": {
+          "position": {
+            "section": 1,
+            "column": 1
+          },
+          "isBottom": false
+        }
+      },
+      "styling_settings": {
+        "colors": {
+          "default_settings": ["#FAFAFA", "#D9D9D9", "#8C8C8C", "#404040", "#141414"],
+          "case_settings": ["#F2F2F2", "#CCCCCC", "#48A6EA", "#5C5C5C", "#262626"]
+        },
+        "fonts": {
+          "default_settings": {
+            "font": "Montserrat",
+            "style": "Medium",
+            "heading_4": "20"
+          },
+          "case_settings": {
+            "font": "Aclonica",
+            "style": "Regular",
+            "heading_4": "25"
+          }
+        },
+        "buttons": {
+          "default_settings": {
+            "text_color": {
+              "preset": 1
+            },
+            "background_color": {
+              "color": {
+                "preset": 6,
+                "hexText": "#262626"
+              }
+            },
+            "border": {
+              "thickness": "none"
+            }
+          },
+          "case_settings": {
+            "text_color": {
+              "preset": 6,
+              "hexText": "#FFFFFF"
+            },
+            "background_color": {
+              "color": {
+                "preset": 6,
+                "hexText": "#B4444470"
+              }
+            },
+            "border": {
+              "thickness": "s"
+            }
+          }
+        }
+      }
+    },
+    "SB_NEWECOM_NEP_92": {
+      "add_block": {
+        "from": {
+          "category": "Basics",
+          "template": "Button"
+        },
+        "to": {
+          "position": {
+            "section": 1,
+            "column": 1
+          },
+          "isBottom": false
+        }
+      },
+      "cases": [
+        {
+          "id": 1,
+          "setup_web_builder": {
+            "products": ["Brooke Club Chair, Blue Stripe", "Writer's Club Chair"],
+            "websetting": "Do not select any variant",
+            "variant": "None"
+          },
+          "preview_add_to_card": {
+            "expect": ["add_card_success", "require_input"]
+          },
+          "storefront_add_to_card": {
+            "expect": ["add_card_success", "require_input"]
+          }
+        },
+        {
+          "id": 2,
+          "setup_web_builder": {
+            "products": ["Brooke Club Chair, Blue Stripe", "Writer's Club Chair"],
+            "websetting": "Auto choose the first variant",
+            "variant": "None"
+          },
+          "preview_add_to_card": {
+            "expect": ["add_card_success", "require_input"]
+          },
+          "storefront_add_to_card": {
+            "expect": ["add_card_success", "require_input"]
+          }
+        },
+        {
+          "id": 3,
+          "setup_web_builder": {
+            "products": ["Quinn Ottoman, Ivory/Black"],
+            "websetting": "Do not select any variant",
+            "variant": "M / Red"
+          },
+          "preview_add_to_card": {
+            "expect": ["add_card_success"]
+          },
+          "storefront_add_to_card": {
+            "expect": ["add_card_success"]
+          }
+        }
+      ]
+    },
+    "SB_NEWECOM_NEP_93": {
+      "add_block": {
+        "from": {
+          "category": "Basics",
+          "template": "Button"
+        },
+        "to": {
+          "position": {
+            "section": 1,
+            "column": 1
+          },
+          "isBottom": false
+        }
+      },
+      "data": [
+        {
+          "data_source_product": "Product no custom option 1 variant",
+          "default_variant_selector": "Do not select variant",
+          "default_variant": "None",
+          "expected": {
+            "expected_price": 10
+          }
+        },
+        {
+          "data_source_product": "Livingston Demilune Console, Umber",
+          "default_variant_selector": "Do not select variant",
+          "default_variant": "S / Red",
+          "expected": {
+            "expected_price": 699,
+            "expected_variant": "S / Red"
+          }
+        },
+        {
+          "data_source_product": "Product no custom option 1 variant",
+          "default_variant_selector": "Auto choose the first variant",
+          "default_variant": "None",
+          "expected": {
+            "expected_price": 10
+          }
+        },
+        {
+          "data_source_product": "Livingston Demilune Console, Umber",
+          "default_variant_selector": "Auto choose the first variant",
+          "default_variant": "None",
+          "expected": {
+            "expected_price": 0,
+            "expected_variant": "M / Green"
+          }
+        },
+        {
+          "data_source_product": "Livingston Demilune Console, Umber",
+          "default_variant_selector": "Auto choose the first variant",
+          "default_variant": "S / Red",
+          "expected": {
+            "expected_price": 0,
+            "expected_variant": "S / Red"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,261 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-manage-prod-data-feed-2.onshopbase.com",
+      "shop_name": "au-manage-prod-data-feed-2",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10386472,
+      "user_id": 73782,
+      "time_zone": "Asia/Bangkok",
+      "import_product_path": "/assets/import_product_csv/products_for_feed.csv",
+      "handle_product_validate": "ns-ha370",
+      "time_out": 10000,
+      "time_out_api_calling": 14000,
+      "time_out_tc": 240000
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-prodtest-manage-prod-data-feed.onshopbase.com",
+      "shop_name": "au-prodtest-manage-prod-data-feed",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10388385,
+      "user_id": 73782,
+      "time_zone": "Asia/Bangkok",
+      "import_product_path": "/assets/import_product_csv/products_for_feed.csv",
+      "handle_product_validate": "ns-ha370",
+      "time_out": 10000,
+      "time_out_api_calling": 14000,
+      "time_out_tc": 240000,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-manage-prod-data-feed.myshopbase.net",
+      "shop_name": "au-manage-prod-data-feed",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_id": 10323623,
+      "user_id": 73800,
+      "time_zone": "Asia/Bangkok",
+      "import_product_path": "/assets/import_product_csv/products_for_feed.csv",
+      "handle_product_validate": "ns-ha370",
+      "time_out": 10000,
+      "time_out_api_calling": 14000,
+      "time_out_tc": 300000
+    }
+  },
+  "cases": {
+    "SB_SET_SC_GMC_1": {
+      "status_of_product": "Ineligible",
+      "handle_product_no_image": "product-test-sync-manage-product-data",
+      "feed_info": {
+        "name": "Feed API test only first variant option",
+        "feed_type": "All products",
+        "sales_channel": "Google",
+        "export_mode": "Export only first variation of a product",
+        "add_variant_option_to_title": 1,
+        "product_title_mode": "seo_title",
+        "product_description_mode": "seo_description",
+        "is_custom_products": true,
+        "brand": "Super testing au manage product data",
+        "google_product_category": "Apparel & Accessories",
+        "gender": "unisex",
+        "age_group": "adult"
+      },
+      "product_info": {
+        "title": "Product Test Sync Manage Product Data",
+        "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+        "vendor": "Uniqlo",
+        "price": "10",
+        "compare_at_price": "20"
+      }
+    },
+    "SB_SET_SC_GMC_2": {
+      "feed_info": {
+        "name": "Feed API test back to all product",
+        "feed_type": "All products",
+        "sales_channel": "Google",
+        "export_mode": "Export only first variation of a product",
+        "add_variant_option_to_title": 1,
+        "product_title_mode": "default_title",
+        "product_description_mode": "default_description",
+        "is_custom_products": true,
+        "brand": "Super testing au manage product data",
+        "google_product_category": "Apparel & Accessories",
+        "gender": "unisex",
+        "age_group": "adult"
+      }
+    },
+    "SB_SET_SC_GMC_5": {
+      "feed_info": {
+        "name": "Feed API test back to all product",
+        "feed_type": "All products",
+        "sales_channel": "Google",
+        "export_mode": "Export only first variation of a product",
+        "add_variant_option_to_title": 1,
+        "product_title_mode": "seo_title",
+        "product_description_mode": "seo_description",
+        "is_custom_products": true,
+        "brand": "Super testing au manage product data",
+        "google_product_category": "Apparel & Accessories",
+        "gender": "unisex",
+        "age_group": "adult"
+      },
+      "feed_update": {
+        "name": "Feed API test update product feed setting",
+        "feed_type": "All products",
+        "sales_channel": "Google",
+        "export_mode": "Export all variations of a product",
+        "add_variant_option_to_title": 1,
+        "product_title_mode": "seo_title",
+        "product_description_mode": "seo_description",
+        "is_custom_products": true,
+        "brand": "Super testing au manage product data",
+        "google_product_category": "Apparel & Accessories",
+        "gender": "unisex",
+        "age_group": "adult"
+      }
+    },
+    "SB_SET_SC_GMC_6": {
+      "feed_info": {
+        "name": "Feed API test back to all product",
+        "feed_type": "All products",
+        "sales_channel": "Google",
+        "export_mode": "Export only first variation of a product",
+        "add_variant_option_to_title": 1,
+        "product_title_mode": "seo_title",
+        "product_description_mode": "seo_description",
+        "is_custom_products": true,
+        "brand": "Super testing au manage product data",
+        "google_product_category": "Apparel & Accessories",
+        "gender": "unisex",
+        "age_group": "adult"
+      },
+      "edit_variant_value": {
+        "value_size": "Test Size Product",
+        "price": "1000",
+        "compare_at_price": "0",
+        "sku": "SKU-SETTING-FOR-FEED",
+        "bar_code": "1234567890123",
+        "inventory_policy": "Don't track inventory",
+        "weight": "50",
+        "weightUnit": "g"
+      },
+      "compare_variant_info": {
+        "size": "Test Size Product",
+        "price": "1000",
+        "compare_at_price": "0",
+        "sku": "SKU-SETTING-FOR-FEED",
+        "bar_code": "1234567890123",
+        "shipping_weight_value": "50",
+        "shipping_weight_unit": "g"
+      }
+    },
+    "SB_SET_SC_GMC_7": {
+      "field_update": "Assign Age Group",
+      "value_update": "infant",
+      "feed_info": {
+        "name": "Feed API test back to all product",
+        "feed_type": "All products",
+        "sales_channel": "Google",
+        "export_mode": "Export only first variation of a product",
+        "add_variant_option_to_title": 1,
+        "product_title_mode": "seo_title",
+        "product_description_mode": "seo_description",
+        "is_custom_products": true,
+        "brand": "Super testing au manage product data",
+        "google_product_category": "Apparel & Accessories",
+        "gender": "unisex",
+        "age_group": "adult"
+      }
+    },
+    "SB_SET_SC_GMC_10": {
+      "feed_info": {
+        "name": "Feed API test back to all product",
+        "feed_type": "All products",
+        "sales_channel": "Google",
+        "export_mode": "Export only first variation of a product",
+        "add_variant_option_to_title": 1,
+        "product_title_mode": "seo_title",
+        "product_description_mode": "seo_description",
+        "is_custom_products": true,
+        "brand": "Super testing au manage product data",
+        "google_product_category": "Apparel & Accessories",
+        "gender": "unisex",
+        "age_group": "adult"
+      },
+      "update_product_feed_info": {
+        "id": "Test id of this product variant",
+        "availability": "in stock",
+        "condition": "used",
+        "description": "Extremely superman abc xyz",
+        "image_link": "https://cdn.pixabay.com/photo/2013/07/12/17/47/test-pattern-152459_960_720.png",
+        "title": "This is title product",
+        "price": 10000,
+        "brand": "Test this brand",
+        "age_group": "toddler",
+        "color": "Super black",
+        "gender": "unisex",
+        "item_group_id": "Test item group id",
+        "google_product_category": "Apparel & Accessories",
+        "material": "Digital",
+        "pattern": "Layer 1",
+        "product_type": "Test > Test item group products > Test product",
+        "shipping_weight": "100 g",
+        "size": "XML",
+        "custom_label_0": "Custom test 0",
+        "custom_label_1": "Custom test 1",
+        "custom_label_2": "Custom test 2",
+        "custom_label_3": "Custom test 3",
+        "custom_label_4": "Custom test 4",
+        "identifier_exists": true,
+        "ads_label": "Ads label testing",
+        "ads_grouping": "test ads",
+        "shipping_label": "Test shipping",
+        "product_identifier": "default",
+        "size_system": "EU",
+        "size_type": "regular",
+        "unit_pricing_measure": "15g",
+        "unit_pricing_base_measure": "15g"
+      }
+    },
+    "SB_SET_SC_GMC_13": {
+      "feed_info": {
+        "name": "Feed API test back to all product",
+        "feed_type": "All products",
+        "sales_channel": "Google",
+        "export_mode": "Export only first variation of a product",
+        "add_variant_option_to_title": 0,
+        "product_title_mode": "default_title",
+        "product_description_mode": "default_description",
+        "is_custom_products": true,
+        "brand": "Super testing au manage product data",
+        "google_product_category": "Apparel & Accessories",
+        "gender": "unisex",
+        "age_group": "adult"
+      },
+      "title_product": "3D Apparel - I'm Willing To Die For My Rights - Ver 2"
+    },
+    "SB_SET_SC_GMC_14": {
+      "field_update": "Assign Age Group",
+      "value_update": "infant",
+      "feed_info": {
+        "name": "Feed API test back to all product",
+        "feed_type": "All products",
+        "sales_channel": "Google",
+        "export_mode": "Export only first variation of a product",
+        "add_variant_option_to_title": 0,
+        "product_title_mode": "default_title",
+        "product_description_mode": "default_description",
+        "is_custom_products": true,
+        "brand": "Super testing au manage product data",
+        "google_product_category": "Apparel & Accessories",
+        "gender": "unisex",
+        "age_group": "adult"
+      }
+    }
+  }
+}

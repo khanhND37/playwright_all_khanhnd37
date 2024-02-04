@@ -1,0 +1,212 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-eu-payment.onshopbase.com",
+      "shop_name": "au-eu-payment",
+      "user_id": 74303,
+      "shop_id": 10398879,
+      "username": "shopbase2@beeketing.net",
+      "password": "raMse).7L/b4;k#@",
+      "stripe_secret_key": "sk_test_51H0MEvDrQ1c0YGaqvcoK99JXsl3cizVLw2rwkd224I2ljBzryJ3EAXldQKS7VDatwFk6JvNDwXM3wnvJJmGuVE6n00MqLP1opC"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-eu-payment-prodtest.onshopbase.com",
+      "shop_name": "au-eu-payment-prodtest",
+      "user_id": 74303,
+      "shop_id": 10398887,
+      "username": "shopbase2@beeketing.net",
+      "password": "raMse).7L/b4;k#@",
+      "accounts_domain": "accounts-test.shopbase.com",
+      "stripe_secret_key": "sk_test_51H0MEvDrQ1c0YGaqvcoK99JXsl3cizVLw2rwkd224I2ljBzryJ3EAXldQKS7VDatwFk6JvNDwXM3wnvJJmGuVE6n00MqLP1opC"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-checkout-eu-payment.myshopbase.net",
+      "shop_name": "au-checkout-eu-payment",
+      "user_id": 73800,
+      "shop_id": 10324278,
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "stripe_secret_key": "sk_test_51H0MEvDrQ1c0YGaqvcoK99JXsl3cizVLw2rwkd224I2ljBzryJ3EAXldQKS7VDatwFk6JvNDwXM3wnvJJmGuVE6n00MqLP1opC"
+    }
+  },
+  "api": "https://gapi.dev.shopbase.net",
+  "domain": "au-checkout-eu-payment.myshopbase.net",
+  "shop_name": "au-checkout-eu-payment",
+  "user_id": 73800,
+  "shop_id": 10324278,
+  "username": "shopbase@beeketing.net",
+  "password": "S#|j>m2N[q",
+  "stripe_secret_key": "sk_test_51H0MEvDrQ1c0YGaqvcoK99JXsl3cizVLw2rwkd224I2ljBzryJ3EAXldQKS7VDatwFk6JvNDwXM3wnvJJmGuVE6n00MqLP1opC",
+  "list_user_agent": [
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.3 Safari/605.1.1",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.1",
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.3",
+    "Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.3",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.3",
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.3"
+  ],
+  "email_scheduler": "uyenpham@beeketing.net",
+  "product": {
+    "name": "Post Purchase",
+    "quantity": 1
+  },
+  "timeout": 350000,
+  "shipping_method": "Standard Shipping",
+  "cases": {
+    "TC_ST_EU_01": {
+      "data": [
+        {
+          "case_id": "TC_SB_CHE_STR_EU_75",
+          "description": "Kiểm tra order details, email confirmation khi checkout thành công 1 order không có PPC qua Sofort",
+          "customer_info": {
+            "email": "sofortsbase@maildrop.cc",
+            "first_name": "Shopbase",
+            "last_name": "Auto",
+            "address": "1600 W Loop S",
+            "country": "Germany",
+            "city": "Houston",
+            "zipcode": "77027",
+            "country_code": "DE",
+            "phone_number": "0111111111"
+          },
+          "payment_method_info": {
+            "payment_type": "Sofort",
+            "payment_code": "sofort",
+            "checkout_token": "",
+            "country_code": "DE"
+          },
+          "schedule_time": 60
+        },
+        {
+          "case_id": "TC_SB_CHE_STR_EU_76",
+          "description": "Kiểm tra order details, email confirmation khi checkout thành công 1 order có PPC qua Sofort",
+          "customer_info": {
+            "email": "sofortsbase@maildrop.cc",
+            "first_name": "Shopbase",
+            "last_name": "Auto",
+            "address": "1600 W Loop S",
+            "country": "Germany",
+            "city": "Houston",
+            "zipcode": "77027",
+            "country_code": "DE",
+            "phone_number": "0111111111"
+          },
+          "product_ppc": {
+            "name": "Bikini",
+            "quantity": 1
+          },
+          "payment_method_info": {
+            "payment_type": "Sofort",
+            "payment_code": "sofort",
+            "checkout_token": "",
+            "country_code": "DE"
+          },
+          "schedule_time": 60
+        },
+        {
+          "case_id": "TC_SB_CHE_STR_EU_90",
+          "description": "Kiểm tra order details, email confirmation khi checkout thành công 1 order không có PPC qua Klarna",
+          "customer_info": {
+            "email": "klarnasbase@maildrop.cc",
+            "first_name": "Shopbase",
+            "last_name": "Auto",
+            "address": "New Burlington St",
+            "country": "United Kingdom",
+            "city": "London",
+            "zipcode": "W13 3BG",
+            "country_code": "GB",
+            "phone_number": "08082580300"
+          },
+          "payment_method_info": {
+            "payment_type": "Klarna",
+            "payment_code": "klarna",
+            "checkout_token": "",
+            "country_code": "GB"
+          },
+          "schedule_time": 3
+        },
+        {
+          "case_id": "TC_SB_CHE_STR_EU_91",
+          "description": "Kiểm tra order details, email confirmation khi checkout thành công 1 order có PPC qua Klarna",
+          "customer_info": {
+            "email": "klarnasbase@maildrop.cc",
+            "first_name": "Shopbase",
+            "last_name": "Auto",
+            "address": "New Burlington St",
+            "country": "United Kingdom",
+            "city": "London",
+            "zipcode": "W13 3BG",
+            "country_code": "GB",
+            "phone_number": "08082580300"
+          },
+          "product_ppc": {
+            "name": "Bikini",
+            "quantity": 1
+          },
+          "payment_method_info": {
+            "payment_type": "Klarna",
+            "payment_code": "klarna",
+            "checkout_token": "",
+            "country_code": "GB"
+          },
+          "schedule_time": 3
+        },
+        {
+          "case_id": "TC_SB_CHE_STR_EU_104",
+          "description": "Kiểm tra order details, email confirmation khi checkout thành công 1 order không có PPC qua Afterpay",
+          "customer_info": {
+            "email": "afterpaysbase@maildrop.cc",
+            "first_name": "Shopbase",
+            "last_name": "Auto",
+            "address": "1600 W Loop S",
+            "country": "United Kingdom",
+            "city": "Houston",
+            "zipcode": "77027",
+            "country_code": "GB",
+            "phone_number": "0111111111"
+          },
+          "payment_method_info": {
+            "payment_type": "Afterpay",
+            "payment_code": "afterpay_clearpay",
+            "checkout_token": "",
+            "country_code": "GB"
+          },
+          "schedule_time": 3
+        },
+        {
+          "case_id": "TC_SB_CHE_STR_EU_107",
+          "description": "Kiểm tra order details, email confirmation khi checkout thành công 1 order có PPC qua Afterpay",
+          "customer_info": {
+            "email": "afterpaysbase@maildrop.cc",
+            "first_name": "Shopbase",
+            "last_name": "Auto",
+            "address": "1600 W Loop S",
+            "country": "United Kingdom",
+            "city": "Houston",
+            "zipcode": "77027",
+            "country_code": "GB",
+            "phone_number": "0111111111"
+          },
+          "product_ppc": {
+            "name": "Bikini",
+            "quantity": 1
+          },
+          "payment_method_info": {
+            "payment_type": "Afterpay",
+            "payment_code": "afterpay_clearpay",
+            "checkout_token": "",
+            "country_code": "GB"
+          },
+          "schedule_time": 3
+        }
+      ]
+    }
+  }
+}

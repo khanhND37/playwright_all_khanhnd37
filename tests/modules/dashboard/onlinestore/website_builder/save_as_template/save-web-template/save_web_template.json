@@ -1,0 +1,133 @@
+{
+  "env": {
+    "local": {
+      "domain": "au-save-web-template-prodtest.onshopbase.com",
+      "shop_name": "au-save-web-template-prodtest",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "shop_id": 10446771,
+      "user_id": 11244582,
+      "theme_v3": "Casual Style",
+      "theme_v2": "Inside"
+    },
+    "dev": {
+      "domain": "save-web-as-template.myshopbase.net",
+      "shop_name": "save-web-as-template",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "43AhIn|VWp;[?9&",
+      "shop_id": 10328413,
+      "user_id": 89797,
+      "theme_v3": "Casual Clothing",
+      "theme_v2": "Inside"
+    },
+    "prod": {
+      "domain": "au-ne-save-web-template.onshopbase.com",
+      "shop_name": "au-ne-save-web-template",
+      "api": "https://api.shopbase.com",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "shop_id": 10441559,
+      "user_id": 11244582,
+      "theme_v3": "Casual Style",
+      "theme_v2": "Inside"
+    },
+    "prodtest": {
+      "domain": "au-save-web-template-prodtest.onshopbase.com",
+      "shop_name": "au-save-web-template-prodtest",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "shop_id": 10446771,
+      "user_id": 11244582,
+      "theme_v3": "Casual Style",
+      "theme_v2": "Inside"
+    }
+  },
+  "cases": {
+    "SB_WEB_BUILDER_SAT_SWAT_01": {
+      "theme_v3": "Criadora",
+      "theme_v2": "Inside",
+      "expect": {
+        "snapshot_popup_save_as_template": "popup-save-as-template.png"
+      }
+    },
+    "SB_WEB_BUILDER_SAT_SWAT_02": {
+      "theme_v3": "Casual Clothing",
+      "library": "Library 01",
+      "input_data": [
+        {
+          "template_name": "",
+          "library": "Library 01",
+          "expected": {
+            "ex_message_err": "Please input template name"
+          }
+        },
+        {
+          "template_name": "Template 1 Template 1 Template 1 Template 1",
+          "library": "Library 01",
+          "expected": {
+            "exp_template_name": "Template 1 Template 1 Template"
+          }
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_SAT_SWAT_03": {
+      "pre_condition": {
+        "title": "Lib 02",
+        "description": "Test web"
+      },
+      "expect_lib": "Lib 02",
+      "data": {
+        "template_name": "Test  lib blank",
+        "expected": {
+          "ex_message_err": "Please choose library"
+        }
+      },
+      "lib_edit": "Lib 02 edit"
+    },
+    "SB_WEB_BUILDER_SAT_SWAT_04": {
+      "lib_title": "Lib 04",
+      "library": "Library 01"
+    },
+    "SB_WEB_BUILDER_SAT_SWAT_07": {
+      "template_name": "Test  07",
+      "library": "Library 01"
+    },
+    "SB_WEB_BUILDER_SAT_SWAT_08": {
+      "file_over_2MB": "data/shopbase/dashboard/thumnail.png",
+      "file_preview_desktop": "data/shopbase/dashboard/preview-desktop.png",
+      "template_name": "Test  08",
+      "library": "Library 01"
+    },
+    "SB_WEB_BUILDER_SAT_SWAT_09": {
+      "file_over_2MB": "data/shopbase/dashboard/thumnail.png",
+      "file_preview_mobile": "data/shopbase/dashboard/preview-mobile.png",
+      "template_name": "Web template 09",
+      "library": "Library 01"
+    },
+    "SB_WEB_BUILDER_SAT_SWAT_10": {
+      "file_over_2MB": "data/shopbase/dashboard/thumnail.png",
+      "file_preview_thumbnail": "data/shopbase/dashboard/preview_thumbnail.png",
+      "template_name": "Web template 10",
+      "library": "Library 01"
+    },
+    "SB_WEB_BUILDER_SAT_SWAT_11": {
+      "template_name": "Test 11",
+      "library": "Library 01"
+    },
+    "SB_WEB_BUILDER_SAT_SWAT_12": {
+      "template_name": "Test 11",
+      "library": "Library 01"
+    },
+    "SB_WEB_BUILDER_SAT_SWAT_13": {
+      "template_name": "Test 11",
+      "library": "Library 01"
+    },
+    "SB_WEB_BUILDER_SAT_SWAT_24": {
+      "template_name": "Web template 24",
+      "library": "Library 01"
+    }
+  }
+}

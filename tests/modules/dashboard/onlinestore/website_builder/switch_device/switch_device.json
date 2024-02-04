@@ -1,0 +1,2387 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "wb-switch-device-dev.myshopbase.net",
+      "shop_name": "wb-switch-device-dev",
+      "shop_id": 10322952,
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "user_id": 73800,
+      "create_product": {
+        "product": {
+          "title": "Switch device Test",
+          "published": true,
+          "product_type": "online_course"
+        }
+      },
+      "web_base_id": 1,
+      "template_name": "Meditation Course"
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "wb-switch-device-prod.onshopbase.com",
+      "shop_name": "wb-switch-device-prod",
+      "shop_id": 10379723,
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "user_id": 73782,
+      "create_product": {
+        "product": {
+          "title": "Switch device Test",
+          "published": true,
+          "product_type": "online_course"
+        }
+      },
+      "web_base_id": 1,
+      "template_name": "Meditation Course"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "switch-device-prodtest.onshopbase.com",
+      "shop_name": "switch-device-prodtest",
+      "shop_id": 10425158,
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "user_id": 73782,
+      "create_product": {
+        "product": {
+          "title": "Switch device Test",
+          "published": true,
+          "product_type": "online_course"
+        }
+      },
+      "web_base_id": 1,
+      "template_name": "Meditation Course",
+      "accounts_domain": "accounts-test.shopbase.com"
+    }
+  },
+  "cases": {
+    "SB_DESKTOP_VIEWPORT": {
+      "button": "Switch Desktop view",
+      "expected": {
+        "tooltip": "Switch to desktop view"
+      },
+      "data": [
+        {
+          "code_name": "SB_WEB_BUILDER_NAV_SD_01",
+          "snapshot_prefix": "SD_1",
+          "title": "Check hiển thị màn hình khi preview desktop ở màn hình > = 1457px",
+          "viewport_size": {
+            "width": 1458,
+            "height": 1080
+          },
+          "expected": {
+            "sidebar_width": 256,
+            "border": 1,
+            "preview_width": 1200
+          }
+        },
+        {
+          "code_name": "SB_WEB_BUILDER_NAV_SD_02",
+          "snapshot_prefix": "SD_2",
+          "title": "Check hiển thị màn hình khi preview desktop ở màn hình < 1457px",
+          "viewport_size": {
+            "width": 1450,
+            "height": 1080
+          },
+          "expected": {
+            "sidebar_width": 256,
+            "border": 1,
+            "preview_width": 1200
+          }
+        }
+      ]
+    },
+    "SB_MOBILE_VIEWPORT": {
+      "button": "Switch Mobile view",
+      "expected": {
+        "toggle": "mobile",
+        "tooltip": "Switch to mobile view",
+        "message": "Changes made on mobile will not apply on desktop"
+      },
+      "data": [
+        {
+          "code_name": "SB_WEB_BUILDER_NAV_SD_03",
+          "title": "Check hiển thị màn hình khi preview mobile ở màn hình >= 1457px",
+          "viewport_size": {
+            "width": 1458,
+            "height": 1080
+          },
+          "expected": {
+            "sidebar_width": 256,
+            "border": 1,
+            "preview_width": 375
+          }
+        },
+        {
+          "code_name": "SB_WEB_BUILDER_NAV_SD_04",
+          "title": "Check hiển thị màn hình khi preview mobile ở màn hình < 1457px",
+          "viewport_size": {
+            "width": 1450,
+            "height": 1080
+          },
+          "expected": {
+            "sidebar_width": 256,
+            "border": 1,
+            "preview_width": 375
+          }
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_NAV_SD_05": {
+      "create_section": {
+        "parent_position": {
+          "section": 1
+        },
+        "position": "Top",
+        "category": "Basics",
+        "template": "Single column"
+      },
+      "hide_section": "Test section - 02",
+      "expected": {
+        "sidebar_order": [
+          {
+            "name": "Test section - 01",
+            "index": 0,
+            "default_value": {
+              "full_width": "false",
+              "border_value": "small",
+              "border_color": "background: rgb(38, 216, 157);",
+              "background_attribute": "style",
+              "background": "rgb\\(240, 250, 241\\)",
+              "padding": "0,0,0,0",
+              "margin": "0,0,0,0"
+            }
+          },
+          {
+            "name": "Test section - 02",
+            "index": 1,
+            "default_value": {
+              "full_width": "false",
+              "border_value": "large",
+              "border_color": "background: rgb(159, 223, 170);",
+              "background_attribute": "style",
+              "background": "rgb\\(240, 250, 241\\)",
+              "padding": "0,0,0,0",
+              "margin": "0,0,0,0"
+            }
+          },
+          {
+            "name": "Test section - 03",
+            "index": 2,
+            "default_value": {
+              "full_width": "true",
+              "border_value": "4px",
+              "border_color": "background: rgb(230, 38, 38);",
+              "background_attribute": "src",
+              "background": "jpeg",
+              "padding": "28,44,92,62",
+              "margin": "30,56,16,62"
+            }
+          }
+        ],
+        "mobile_after_edit": [
+          {
+            "name": "Test section - 01",
+            "index": 0
+          },
+          {
+            "name": "Test section - 02",
+            "index": 2
+          },
+          {
+            "name": "Test section - 03",
+            "index": 1
+          }
+        ],
+        "desktop_after_edit": [
+          {
+            "name": "Test section - 01",
+            "index": 0,
+            "default_value": {
+              "full_width": "false",
+              "border_value": "small",
+              "border_color": "background: rgb(38, 216, 157);",
+              "background_attribute": "style",
+              "background": "rgb\\(240, 250, 241\\)",
+              "padding": "0,0,0,0",
+              "margin": "0,0,0,0"
+            }
+          },
+          {
+            "name": "Test section - 02",
+            "index": 1,
+            "default_value": {
+              "full_width": "false",
+              "border_value": "large",
+              "border_color": "background: rgb(159, 223, 170);",
+              "background_attribute": "style",
+              "background": "rgb\\(240, 250, 241\\)",
+              "padding": "0,0,0,0",
+              "margin": "0,0,0,0"
+            }
+          },
+          {
+            "name": "Test section - 03",
+            "index": 2,
+            "default_value": {
+              "full_width": "true",
+              "border_value": "4px",
+              "border_color": "background: rgb(230, 38, 38);",
+              "background_attribute": "src",
+              "background": "jpeg",
+              "padding": "28,44,92,62",
+              "margin": "30,56,16,62"
+            }
+          }
+        ]
+      },
+      "data": [
+        {
+          "full_width": true,
+          "border": {
+            "thickness": "custom",
+            "size": {
+              "fill": true,
+              "number": 4
+            },
+            "color": {
+              "preset": 6,
+              "hexText": "#E62626"
+            }
+          },
+          "background": {
+            "image": {
+              "new": {
+                "upload": "data/shopbase/21-dai-noi-hue.jpg"
+              }
+            }
+          },
+          "margin": {
+            "top": 30,
+            "left": 62,
+            "bottom": 16,
+            "right": 56,
+            "input": true
+          },
+          "padding": {
+            "top": 28,
+            "left": 62,
+            "bottom": 92,
+            "right": 44,
+            "input": true
+          },
+          "settings_info": {
+            "content": "Test section - 03"
+          }
+        },
+        {
+          "full_width": false,
+          "height": {
+            "value": 100,
+            "unit": "Px"
+          },
+          "border": {
+            "thickness": "l",
+            "color": {
+              "preset": 2
+            }
+          },
+          "background": {
+            "color": {
+              "preset": 1
+            }
+          },
+          "margin": {
+            "top": 0,
+            "left": 0,
+            "bottom": 0,
+            "right": 0,
+            "input": true
+          },
+          "padding": {
+            "top": 0,
+            "left": 0,
+            "bottom": 0,
+            "right": 0,
+            "input": true
+          },
+          "settings_info": {
+            "content": "Test section - 02"
+          }
+        },
+        {
+          "full_width": false,
+          "height": {
+            "value": 100,
+            "unit": "Px"
+          },
+          "border": {
+            "thickness": "s",
+            "color": {
+              "preset": 3
+            }
+          },
+          "background": {
+            "color": {
+              "preset": 1
+            }
+          },
+          "margin": {
+            "top": 0,
+            "left": 0,
+            "bottom": 0,
+            "right": 0,
+            "input": true
+          },
+          "padding": {
+            "top": 0,
+            "left": 0,
+            "bottom": 0,
+            "right": 0,
+            "input": true
+          },
+          "settings_info": {
+            "content": "Test section - 01"
+          }
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_NAV_SD_06": {
+      "create_section": {
+        "parent_position": {
+          "section": 1
+        },
+        "position": "Top",
+        "category": "Basics",
+        "template": "Single column"
+      },
+      "edit_section": {
+        "content": "Test section - 01",
+        "sub_layer": {
+          "name": "Row",
+          "index": 3
+        }
+      },
+      "first_row": {
+        "border": {
+          "thickness": "m"
+        },
+        "background": {
+          "color": {
+            "preset": 1
+          }
+        },
+        "margin": {
+          "top": 0,
+          "left": 0,
+          "bottom": 0,
+          "right": 0,
+          "input": true
+        },
+        "padding": {
+          "top": 0,
+          "left": 0,
+          "bottom": 0,
+          "right": 0,
+          "input": true
+        }
+      },
+      "data": [
+        {
+          "row_index": 1,
+          "border": {
+            "thickness": "custom",
+            "size": {
+              "fill": true,
+              "number": 7
+            },
+            "color": {
+              "preset": 3
+            }
+          },
+          "background": {
+            "image": {
+              "new": {
+                "upload": "data/shopbase/front/web_builder/logo-light.png"
+              }
+            }
+          },
+          "margin": {
+            "top": 33,
+            "left": 44,
+            "bottom": 50,
+            "right": 52,
+            "input": true
+          },
+          "padding": {
+            "top": 22,
+            "left": 22,
+            "bottom": 22,
+            "right": 22,
+            "input": true
+          }
+        },
+        {
+          "row_index": 2,
+          "border": {
+            "thickness": "custom",
+            "size": {
+              "fill": true,
+              "number": 5
+            },
+            "color": {
+              "preset": 6
+            }
+          },
+          "background": {
+            "color": {
+              "preset": 6
+            }
+          },
+          "margin": {
+            "top": 33,
+            "left": 44,
+            "bottom": 50,
+            "right": 52,
+            "input": true
+          },
+          "padding": {
+            "top": 22,
+            "left": 22,
+            "bottom": 22,
+            "right": 22,
+            "input": true
+          }
+        }
+      ],
+      "dnd_mobile": {
+        "from": {
+          "layer": "Row",
+          "index": 2
+        },
+        "to": {
+          "layer": "Row",
+          "index": 3
+        }
+      },
+      "design": [
+        {
+          "column_index": 1,
+          "spacing_mobile": "16px",
+          "spacing_desktop": "32px",
+          "border_value": "medium",
+          "border_color": "background: rgb(32, 85, 96);",
+          "background_attribute": "style",
+          "background": "rgb\\(240, 250, 241\\)",
+          "padding_desktop": "0,0,0,0",
+          "padding_mobile": "10,16,10,16",
+          "margin": "0,0,0,0"
+        },
+        {
+          "column_index": 2,
+          "spacing_mobile": "16px",
+          "spacing_desktop": "32px",
+          "border_value": "7px",
+          "border_color": "background: rgb(38, 216, 157);",
+          "background_attribute": "src",
+          "background": "png",
+          "padding_desktop": "22,22,22,22",
+          "padding_mobile": "10,16,10,16",
+          "margin": "33,52,50,44"
+        }
+      ],
+      "hidden_row": {
+        "spacing_mobile": "16px",
+        "spacing_desktop": "32px",
+        "border_value": "5px",
+        "border_color": "background: rgb(0, 0, 0);",
+        "background_attribute": "style",
+        "background": "rgb\\(0, 0, 0\\)",
+        "padding_mobile": "10,16,10,16",
+        "padding_desktop": "22,22,22,22",
+        "margin": "33,52,50,44"
+      },
+      "mobile_after_dnd": [
+        {
+          "column_index": 1,
+          "row_index": 1,
+          "spacing": "16px",
+          "border_value": "medium",
+          "border_color": "background: rgb(32, 85, 96);",
+          "background_attribute": "style",
+          "background": "rgb\\(240, 250, 241\\)",
+          "padding": "10,16,10,16",
+          "margin": "0,0,0,0"
+        },
+        {
+          "column_index": 2,
+          "row_index": 2,
+          "spacing": "16px",
+          "border_value": "5px",
+          "border_color": "background: rgb(0, 0, 0);",
+          "background_attribute": "style",
+          "background": "rgb\\(0, 0, 0\\)",
+          "padding": "10,16,10,16",
+          "margin": "33,52,50,44"
+        },
+        {
+          "column_index": 3,
+          "row_index": 3,
+          "spacing": "16px",
+          "border_value": "7px",
+          "border_color": "background: rgb(38, 216, 157);",
+          "background_attribute": "src",
+          "background": "png",
+          "padding": "10,16,10,16",
+          "margin": "33,52,50,44"
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_NAV_SD_07": {
+      "create_section": {
+        "parent_position": {
+          "section": 1
+        },
+        "position": "Top",
+        "category": "Basics",
+        "template": "Single column"
+      },
+      "edit_section": {
+        "content": "Test section - 01"
+      },
+      "second_row": {
+        "name": "Row",
+        "index": 2
+      },
+      "second_column": {
+        "name": "Column",
+        "index": 2
+      },
+      "spacing": 10,
+      "first_column_design": {
+        "border": {
+          "thickness": "s",
+          "color": {
+            "preset": 3
+          }
+        },
+        "background": {
+          "color": {
+            "preset": 4
+          }
+        },
+        "padding": {
+          "top": 6,
+          "left": 7,
+          "bottom": 8,
+          "right": 9,
+          "input": true
+        }
+      },
+      "second_column_design": {
+        "border": {
+          "thickness": "custom",
+          "size": {
+            "fill": true,
+            "number": 2
+          },
+          "color": {
+            "preset": 6
+          }
+        },
+        "background": {
+          "image": {
+            "new": {
+              "upload": "data/shopbase/front/web_builder/product-4.jpg"
+            }
+          }
+        },
+        "padding": {
+          "top": 20,
+          "left": 25,
+          "bottom": 15,
+          "right": 25,
+          "input": true
+        }
+      },
+      "third_column_design": {
+        "border": {
+          "thickness": "custom",
+          "size": {
+            "fill": true,
+            "number": 3
+          },
+          "color": {
+            "preset": 2
+          }
+        },
+        "background": {
+          "color": {
+            "preset": 3
+          }
+        },
+        "padding": {
+          "top": 10,
+          "left": 15,
+          "bottom": 10,
+          "right": 15,
+          "input": true
+        }
+      },
+      "dnd_block": {
+        "category": "Basics",
+        "template": "Icon",
+        "to": {
+          "position": {
+            "section": 1,
+            "column": 3
+          }
+        }
+      },
+      "edit_spacing": {
+        "spacing": 20
+      },
+      "dnd_column": {
+        "from": {
+          "layer": "Column",
+          "index": 2
+        },
+        "to": {
+          "layer": "Column",
+          "index": 3
+        }
+      },
+      "expected": {
+        "desktop_spacing_value": "10px",
+        "design": [
+          {
+            "column_index": 1,
+            "layout": "Vertical",
+            "clipping_content": "false",
+            "border_value": "small",
+            "border_color": "background: rgb(38, 216, 157);",
+            "background_attribute": "style",
+            "background": "rgb\\(32, 85, 96\\)",
+            "padding_desktop": "6,9,8,7",
+            "padding_mobile": "6,9,8,7"
+          },
+          {
+            "column_index": 2,
+            "layout": "Vertical",
+            "clipping_content": "false",
+            "border_value": "2px",
+            "border_color": "background: rgb(0, 0, 0);",
+            "background_attribute": "src",
+            "background": "jpeg",
+            "padding_desktop": "20,25,15,25",
+            "padding_mobile": "20,25,15,25"
+          },
+          {
+            "column_index": 3,
+            "layout": "Vertical",
+            "clipping_content": "false",
+            "border_value": "3px",
+            "border_color": "background: rgb(159, 223, 170);",
+            "background_attribute": "style",
+            "background": "rgb\\(38, 216, 157\\)",
+            "padding_desktop": "10,15,10,15",
+            "padding_mobile": "10,15,10,15"
+          }
+        ],
+        "after_changed": [
+          {
+            "column_index": 1,
+            "layout": "Vertical",
+            "clipping_content": "false",
+            "border_value": "small",
+            "border_color": "background: rgb(38, 216, 157);",
+            "background_attribute": "style",
+            "background": "rgb\\(32, 85, 96\\)",
+            "padding_desktop": "6,9,8,7",
+            "padding_mobile": "6,9,8,7"
+          },
+          {
+            "column_index": 2,
+            "layout": "Vertical",
+            "clipping_content": "false",
+            "border_value": "3px",
+            "border_color": "background: rgb(159, 223, 170);",
+            "background_attribute": "style",
+            "background": "rgb\\(38, 216, 157\\)",
+            "padding_desktop": "10,15,10,15",
+            "padding_mobile": "10,15,10,15"
+          },
+          {
+            "column_index": 3,
+            "layout": "Vertical",
+            "clipping_content": "false",
+            "border_value": "2px",
+            "border_color": "background: rgb(0, 0, 0);",
+            "background_attribute": "src",
+            "background": "jpeg",
+            "padding_desktop": "20,25,15,25",
+            "padding_mobile": "20,25,15,25"
+          }
+        ]
+      }
+    },
+    "SD_BLOCKS": {
+      "add_section": {
+        "parent_position": {
+          "section": 1
+        },
+        "category": "Basics",
+        "template": "Single column"
+      },
+      "data": [
+        {
+          "block_type": "Heading",
+          "component": "heading",
+          "code_name": "SB_WEB_BUILDER_NAV_SD_09",
+          "add_block": {
+            "parent_position": {
+              "section": 1,
+              "column": 1
+            },
+            "category": "Basics",
+            "template": "Heading"
+          },
+          "edit_style": {
+            "width": {
+              "label": "width",
+              "value": {
+                "unit": "Px",
+                "value": 800
+              }
+            },
+            "background": {
+              "label": "background",
+              "value": {
+                "color": {
+                  "preset": 1
+                }
+              }
+            },
+            "border": {
+              "label": "border",
+              "value": {
+                "thickness": "s"
+              }
+            },
+            "opacity": {
+              "label": "opacity",
+              "config": {
+                "fill": true,
+                "number": 55
+              }
+            },
+            "radius": {
+              "label": "border_radius",
+              "config": {
+                "fill": true,
+                "number": 26
+              }
+            },
+            "shadow": {
+              "label": "box_shadow",
+              "config": {
+                "option": "soft",
+                "size": "m"
+              }
+            },
+            "align": {
+              "label": "align_self",
+              "type": "Left"
+            },
+            "padding": {
+              "label": "padding",
+              "value": {
+                "top": 10,
+                "left": 60,
+                "bottom": 110,
+                "right": 160,
+                "input": true
+              }
+            },
+            "margin": {
+              "label": "margin",
+              "value": {
+                "top": 0,
+                "left": 1,
+                "bottom": 2,
+                "right": 3,
+                "input": true
+              }
+            }
+          },
+          "mobile_default": {
+            "width_value": "0",
+            "width_unit": "Auto"
+          },
+          "desktop_default": {
+            "width_value": "0",
+            "width_unit": "Auto",
+            "width": {
+              "min": 356,
+              "max": 359
+            },
+            "height": {
+              "min": 39,
+              "max": 52
+            },
+            "background": "rgba\\(0, 0, 0, 0\\)",
+            "border": "0px solid",
+            "radius": "0px",
+            "opacity": "1",
+            "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+            "padding": "0px",
+            "margin": "0px"
+          },
+          "after_edit": {
+            "height": {
+              "min": 294,
+              "max": 296
+            },
+            "width": {
+              "min": 325,
+              "max": 330
+            },
+            "background": "rgb\\(240, 250, 241\\)",
+            "border": "1px solid",
+            "radius": "26px",
+            "opacity": "0.55",
+            "shadow": "rgba(0, 0, 0, 0.16) 8px 8px 24px -8px",
+            "padding": "10px 160px 110px 60px",
+            "margin": "0px 3px 2px 1px"
+          }
+        },
+        {
+          "block_type": "Paragraph",
+          "component": "paragraph",
+          "code_name": "SB_WEB_BUILDER_NAV_SD_10",
+          "add_block": {
+            "parent_position": {
+              "section": 1,
+              "column": 1
+            },
+            "category": "Basics",
+            "template": "Paragraph"
+          },
+          "edit_style": {
+            "width": {
+              "label": "width",
+              "value": {
+                "unit": "%",
+                "value": 100
+              }
+            },
+            "background": {
+              "label": "background",
+              "value": {
+                "color": {
+                  "preset": 1
+                }
+              }
+            },
+            "border": {
+              "label": "border",
+              "value": {
+                "thickness": "m"
+              }
+            },
+            "opacity": {
+              "label": "opacity",
+              "config": {
+                "fill": true,
+                "number": 96
+              }
+            },
+            "radius": {
+              "label": "border_radius",
+              "config": {
+                "fill": true,
+                "number": 69
+              }
+            },
+            "shadow": {
+              "label": "box_shadow",
+              "config": {
+                "option": "soft",
+                "size": "l"
+              }
+            },
+            "align": {
+              "label": "align_self",
+              "type": "Right"
+            },
+            "padding": {
+              "label": "padding",
+              "value": {
+                "top": 1,
+                "left": 33,
+                "bottom": 67,
+                "right": 189,
+                "input": true
+              }
+            },
+            "margin": {
+              "label": "margin",
+              "value": {
+                "top": 200,
+                "left": 123,
+                "bottom": 27,
+                "right": 33,
+                "input": true
+              }
+            }
+          },
+          "mobile_default": {
+            "width_value": "0",
+            "width_unit": "Auto"
+          },
+          "desktop_default": {
+            "width_value": "0",
+            "width_unit": "Auto",
+            "width": {
+              "min": 174,
+              "max": 180
+            },
+            "height": {
+              "min": 24,
+              "max": 27
+            },
+            "background": "rgba\\(0, 0, 0, 0\\)",
+            "border": "0px solid",
+            "radius": "0px",
+            "opacity": "1",
+            "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+            "padding": "0px",
+            "margin": "0px"
+          },
+          "after_edit": {
+            "height": {
+              "min": 150,
+              "max": 153
+            },
+            "width": {
+              "min": 326,
+              "max": 330
+            },
+            "background": "rgb\\(240, 250, 241\\)",
+            "border": "4px solid",
+            "radius": "69px",
+            "opacity": "0.96",
+            "shadow": "rgba(0, 0, 0, 0.24) 12px 12px 32px -12px",
+            "padding": "1px 189px 67px 33px",
+            "margin": "200px 33px 27px 123px"
+          }
+        },
+        {
+          "block_type": "Image",
+          "component": "block_image",
+          "code_name": "SB_WEB_BUILDER_NAV_SD_11",
+          "add_block": {
+            "parent_position": {
+              "section": 1,
+              "column": 1
+            },
+            "category": "Basics",
+            "template": "Image"
+          },
+          "edit_style": {
+            "shape": {
+              "label": "shape",
+              "type": 3
+            },
+            "width": {
+              "label": "width",
+              "value": {
+                "unit": "Px",
+                "value": 600
+              }
+            },
+            "background": {
+              "label": "background",
+              "value": {
+                "color": {
+                  "preset": 2
+                }
+              }
+            },
+            "opacity": {
+              "label": "opacity",
+              "config": {
+                "fill": true,
+                "number": 36
+              }
+            },
+            "align": {
+              "label": "align_self",
+              "type": "Right"
+            },
+            "shadow": {
+              "label": "image_shadow",
+              "config": {
+                "option": "hard",
+                "size": "s"
+              }
+            }
+          },
+          "mobile_default": {
+            "width_value": "50",
+            "width_unit": "%"
+          },
+          "desktop_default": {
+            "width_value": "50",
+            "width_unit": "%",
+            "width": {
+              "min": 560,
+              "max": 562
+            },
+            "height": {
+              "min": 419,
+              "max": 421
+            },
+            "background": "rgba\\(0, 0, 0, 0\\)",
+            "border": "0px",
+            "radius": "0px",
+            "opacity": "1",
+            "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+            "padding": "0px",
+            "margin": "0px"
+          },
+          "after_edit": {
+            "height": {
+              "min": 244,
+              "max": 246
+            },
+            "width": {
+              "min": 326,
+              "max": 330
+            },
+            "background": "rgb\\(159, 223, 170\\)",
+            "border": "0px",
+            "radius": "0px",
+            "opacity": "0.36",
+            "shadow": "rgb(0, 0, 0) 4px 4px 0px 0px",
+            "padding": "0px",
+            "margin": "0px"
+          }
+        },
+        {
+          "component": "video",
+          "block_type": "Video",
+          "code_name": "SB_WEB_BUILDER_NAV_SD_12",
+          "add_block": {
+            "parent_position": {
+              "section": 1,
+              "column": 1
+            },
+            "category": "Basics",
+            "template": "Video"
+          },
+          "edit_style": {
+            "width": {
+              "label": "width",
+              "value": {
+                "unit": "Px",
+                "value": 555
+              }
+            },
+            "background": {
+              "label": "background",
+              "value": {
+                "color": {
+                  "preset": 4
+                }
+              }
+            },
+            "border": {
+              "label": "border",
+              "value": {
+                "thickness": "l"
+              }
+            },
+            "opacity": {
+              "label": "opacity",
+              "config": {
+                "fill": true,
+                "number": 73
+              }
+            },
+            "shadow": {
+              "label": "box_shadow",
+              "config": {
+                "option": "soft",
+                "size": "m"
+              }
+            },
+            "align": {
+              "label": "align_self",
+              "type": "Right"
+            },
+            "padding": {
+              "label": "padding",
+              "value": {
+                "top": 22,
+                "left": 33,
+                "bottom": 44,
+                "right": 55,
+                "input": true
+              }
+            }
+          },
+          "mobile_default": {
+            "width_value": "100",
+            "width_unit": "%"
+          },
+          "desktop_default": {
+            "width_value": "50",
+            "width_unit": "%",
+            "width": {
+              "min": 560,
+              "max": 560
+            },
+            "height": {
+              "min": 315,
+              "max": 315
+            },
+            "background": "rgba\\(0, 0, 0, 0\\)",
+            "border": "0px",
+            "radius": "0px",
+            "opacity": "1",
+            "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+            "padding": "0px",
+            "margin": "0px"
+          },
+          "after_edit": {
+            "height": {
+              "min": 208,
+              "max": 210
+            },
+            "width": {
+              "min": 326,
+              "max": 330
+            },
+            "background": "rgb\\(32, 85, 96\\)",
+            "border": "10px solid rgb\\(32, 85, 96\\)",
+            "radius": "0px",
+            "opacity": "0.73",
+            "shadow": "rgba(0, 0, 0, 0.16) 8px 8px 24px -8px",
+            "padding": "22px 55px 44px 33px",
+            "margin": "0px"
+          }
+        },
+        {
+          "block_type": "Icon",
+          "component": "icon",
+          "code_name": "SB_WEB_BUILDER_NAV_SD_13",
+          "add_block": {
+            "parent_position": {
+              "section": 1,
+              "column": 1
+            },
+            "category": "Basics",
+            "template": "Icon"
+          },
+          "edit_style": {
+            "width": {
+              "label": "width",
+              "value": {
+                "unit": "Px",
+                "value": 555
+              }
+            },
+            "background": {
+              "label": "background",
+              "value": {
+                "color": {
+                  "preset": 5
+                }
+              }
+            },
+            "border": {
+              "label": "border",
+              "value": {
+                "thickness": "s"
+              }
+            },
+            "opacity": {
+              "label": "opacity",
+              "config": {
+                "fill": true,
+                "number": 10
+              }
+            },
+            "radius": {
+              "label": "border_radius",
+              "config": {
+                "fill": true,
+                "number": 45
+              }
+            },
+            "shadow": {
+              "label": "box_shadow",
+              "config": {
+                "option": "hard",
+                "size": "l"
+              }
+            },
+            "padding": {
+              "label": "padding",
+              "value": {
+                "top": 1,
+                "left": 123,
+                "bottom": 22,
+                "right": 24,
+                "input": true
+              }
+            }
+          },
+          "mobile_default": {
+            "width_value": "24",
+            "width_unit": "Px"
+          },
+          "desktop_default": {
+            "width_value": "24",
+            "width_unit": "Px",
+            "width": {
+              "min": 24,
+              "max": 24
+            },
+            "height": {
+              "min": 24,
+              "max": 24
+            },
+            "background": "rgba\\(0, 0, 0, 0\\)",
+            "border": "0px",
+            "radius": "0px",
+            "opacity": "1",
+            "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+            "padding": "0px",
+            "margin": "0px"
+          },
+          "after_edit": {
+            "height": {
+              "min": 202,
+              "max": 204
+            },
+            "width": {
+              "min": 326,
+              "max": 330
+            },
+            "background": "rgb\\(10, 27, 31\\)",
+            "border": "1px solid",
+            "radius": "45px",
+            "opacity": "0.1",
+            "shadow": "rgb(0, 0, 0) 12px 12px 0px 0px",
+            "padding": "1px 24px 22px 123px",
+            "margin": "0px"
+          }
+        },
+        {
+          "block_type": "Button",
+          "component": "button",
+          "code_name": "SB_WEB_BUILDER_NAV_SD_14",
+          "add_block": {
+            "parent_position": {
+              "section": 1,
+              "column": 1
+            },
+            "category": "Basics",
+            "template": "Button"
+          },
+          "edit_style": {
+            "style": "Primary",
+            "color": {
+              "label": "btn_color",
+              "value": {
+                "preset": 7
+              }
+            },
+            "width": {
+              "label": "width",
+              "value": {
+                "unit": "Px",
+                "value": 1200
+              }
+            },
+            "border": {
+              "label": "btn_border",
+              "value": {
+                "thickness": "l"
+              }
+            },
+            "opacity": {
+              "label": "opacity",
+              "config": {
+                "fill": true,
+                "number": 98
+              }
+            },
+            "radius": {
+              "label": "btn_radius",
+              "config": {
+                "fill": true,
+                "number": 45
+              }
+            },
+            "shadow": {
+              "label": "btn_shadow",
+              "config": {
+                "option": "soft",
+                "size": "m"
+              }
+            },
+            "padding": {
+              "label": "btn_padding",
+              "value": {
+                "top": 3,
+                "left": 111,
+                "bottom": 32,
+                "right": 98,
+                "input": true
+              }
+            }
+          },
+          "mobile_default": {
+            "width_value": "100",
+            "width_unit": "%"
+          },
+          "desktop_default": {
+            "width_value": "145",
+            "width_unit": "Px",
+            "width": {
+              "min": 145,
+              "max": 145
+            },
+            "height": {
+              "min": 56,
+              "max": 56
+            },
+            "background": "rgb\\(32, 85, 96\\)",
+            "border": "0px",
+            "radius": "0px",
+            "opacity": "1",
+            "shadow": "rgba(0, 0, 0, 0) 4px 4px 12px -4px",
+            "padding": "0px 24px",
+            "margin": "0px"
+          },
+          "after_edit": {
+            "height": {
+              "min": 56,
+              "max": 56
+            },
+            "width": {
+              "min": 326,
+              "max": 330
+            },
+            "background": "rgb\\(32, 85, 96\\)",
+            "border": "10px",
+            "radius": "32px",
+            "opacity": "1",
+            "shadow": "rgba(0, 0, 0, 0.16) 8px 8px 24px -8px",
+            "padding": "3px 98px 32px 111px",
+            "margin": "0px"
+          }
+        },
+        {
+          "block_type": "Bullet",
+          "component": "bullet",
+          "code_name": "SB_WEB_BUILDER_NAV_SD_15",
+          "add_block": {
+            "parent_position": {
+              "section": 1,
+              "column": 1
+            },
+            "category": "Basics",
+            "template": "Bullet"
+          },
+          "edit_style": {
+            "color": {
+              "label": "icon_color",
+              "value": {
+                "preset": 2
+              }
+            },
+            "align": {
+              "label": "align_self",
+              "type": "Right"
+            },
+            "width": {
+              "label": "width",
+              "value": {
+                "unit": "Px",
+                "value": 1100
+              }
+            },
+            "border": {
+              "label": "border",
+              "value": {
+                "thickness": "m"
+              }
+            },
+            "opacity": {
+              "label": "opacity",
+              "config": {
+                "fill": true,
+                "number": 55
+              }
+            },
+            "radius": {
+              "label": "border_radius",
+              "config": {
+                "fill": true,
+                "number": 23
+              }
+            },
+            "shadow": {
+              "label": "box_shadow",
+              "config": {
+                "option": "soft",
+                "size": "s"
+              }
+            },
+            "margin": {
+              "label": "margin",
+              "value": {
+                "top": 3,
+                "left": 111,
+                "bottom": 32,
+                "right": 98,
+                "input": true
+              }
+            }
+          },
+          "mobile_default": {
+            "width_value": "100",
+            "width_unit": "%"
+          },
+          "desktop_default": {
+            "width_value": "0",
+            "width_unit": "Auto",
+            "width": {
+              "min": 74,
+              "max": 76
+            },
+            "height": {
+              "min": 98,
+              "max": 100
+            },
+            "background": "rgba\\(0, 0, 0, 0\\)",
+            "border": "0px",
+            "radius": "0px",
+            "opacity": "1",
+            "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+            "padding": "0px",
+            "margin": "0px"
+          },
+          "after_edit": {
+            "height": {
+              "min": 106,
+              "max": 108
+            },
+            "width": {
+              "min": 326,
+              "max": 330
+            },
+            "background": "rgba\\(0, 0, 0, 0\\)",
+            "border": "4px",
+            "radius": "23px",
+            "opacity": "0.55",
+            "shadow": "rgba(0, 0, 0, 0.12) 4px 4px 12px -4px",
+            "padding": "0px",
+            "margin": "3px 98px 32px 111px"
+          }
+        },
+        {
+          "block_type": "Toggle list",
+          "component": "toggle-list",
+          "code_name": "SB_WEB_BUILDER_NAV_SD_16",
+          "add_block": {
+            "parent_position": {
+              "section": 1,
+              "column": 1
+            },
+            "category": "Basics",
+            "template": "Toggle list"
+          },
+          "edit_style": {
+            "color": {
+              "label": "icon_color",
+              "value": {
+                "preset": 2
+              }
+            },
+            "align": {
+              "label": "align_self",
+              "type": "Right"
+            },
+            "width": {
+              "label": "width",
+              "value": {
+                "unit": "Px",
+                "value": 1100
+              }
+            },
+            "border": {
+              "label": "border",
+              "value": {
+                "thickness": "m"
+              }
+            },
+            "opacity": {
+              "label": "opacity",
+              "config": {
+                "fill": true,
+                "number": 55
+              }
+            },
+            "radius": {
+              "label": "border_radius",
+              "config": {
+                "fill": true,
+                "number": 23
+              }
+            },
+            "shadow": {
+              "label": "box_shadow",
+              "config": {
+                "option": "hard",
+                "size": "s"
+              }
+            },
+            "margin": {
+              "label": "margin",
+              "value": {
+                "top": 3,
+                "left": 111,
+                "bottom": 32,
+                "right": 98,
+                "input": true
+              }
+            }
+          },
+          "mobile_default": {
+            "width_value": "100",
+            "width_unit": "%"
+          },
+          "desktop_default": {
+            "width_value": "230",
+            "width_unit": "Px",
+            "width": {
+              "min": 230,
+              "max": 230
+            },
+            "height": {
+              "min": 443,
+              "max": 445
+            },
+            "background": "rgba\\(0, 0, 0, 0\\)",
+            "border": "0px",
+            "radius": "0px",
+            "opacity": "1",
+            "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+            "padding": "0px",
+            "margin": "0px"
+          },
+          "after_edit": {
+            "height": {
+              "min": 358,
+              "max": 360
+            },
+            "width": {
+              "min": 326,
+              "max": 330
+            },
+            "background": "rgba\\(0, 0, 0, 0\\)",
+            "border": "4px",
+            "radius": "23px",
+            "opacity": "0.55",
+            "shadow": "rgb(0, 0, 0) 4px 4px 0px 0px",
+            "padding": "0px",
+            "margin": "3px 98px 32px 111px"
+          }
+        },
+        {
+          "block_type": "Divider",
+          "component": "divider",
+          "code_name": "SB_WEB_BUILDER_NAV_SD_18",
+          "add_block": {
+            "parent_position": {
+              "section": 1,
+              "column": 1
+            },
+            "category": "Basics",
+            "template": "Divider"
+          },
+          "edit_style": {
+            "align": {
+              "label": "align_self",
+              "type": "Right"
+            },
+            "width": {
+              "label": "width",
+              "value": {
+                "unit": "Px",
+                "value": 1100
+              }
+            },
+            "opacity": {
+              "label": "opacity",
+              "config": {
+                "fill": true,
+                "number": 55
+              }
+            },
+            "radius": {
+              "label": "border_radius",
+              "config": {
+                "fill": true,
+                "number": 23
+              }
+            },
+            "shadow": {
+              "label": "box_shadow",
+              "config": {
+                "option": "soft",
+                "size": "s"
+              }
+            },
+            "padding": {
+              "label": "padding",
+              "value": {
+                "top": 99,
+                "left": 111,
+                "bottom": 132,
+                "right": 98,
+                "input": true
+              }
+            }
+          },
+          "mobile_default": {
+            "width_value": "50",
+            "width_unit": "%"
+          },
+          "desktop_default": {
+            "width_value": "50",
+            "width_unit": "%",
+            "width": {
+              "min": 560,
+              "max": 560
+            },
+            "height": {
+              "min": 2,
+              "max": 2
+            },
+            "background": "rgb\\(10, 27, 31\\)",
+            "border": "0px",
+            "radius": "0px",
+            "opacity": "1",
+            "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+            "padding": "0px",
+            "margin": "30px 0px"
+          },
+          "after_edit": {
+            "height": {
+              "min": 231,
+              "max": 231
+            },
+            "width": {
+              "min": 326,
+              "max": 330
+            },
+            "background": "rgb\\(10, 27, 31\\)",
+            "border": "0px",
+            "radius": "23px",
+            "opacity": "0.55",
+            "shadow": "rgba(0, 0, 0, 0.12) 4px 4px 12px -4px",
+            "padding": "99px 98px 132px 111px",
+            "margin": "30px 0px"
+          }
+        },
+        {
+          "block_type": "Container",
+          "component": "container",
+          "code_name": "SB_WEB_BUILDER_NAV_SD_19",
+          "add_block": {
+            "parent_position": {
+              "section": 1,
+              "column": 1
+            },
+            "category": "Basics",
+            "template": "Container"
+          },
+          "edit_style": {
+            "align": {
+              "label": "align_self",
+              "type": "Right"
+            },
+            "width": {
+              "label": "width",
+              "value": {
+                "unit": "Px",
+                "value": 2000
+              }
+            },
+            "border": {
+              "label": "border",
+              "value": {
+                "thickness": "m"
+              }
+            },
+            "opacity": {
+              "label": "opacity",
+              "config": {
+                "fill": true,
+                "number": 55
+              }
+            },
+            "radius": {
+              "label": "border_radius",
+              "config": {
+                "fill": true,
+                "number": 23
+              }
+            },
+            "shadow": {
+              "label": "box_shadow",
+              "config": {
+                "option": "hard",
+                "size": "s"
+              }
+            },
+            "margin": {
+              "label": "margin",
+              "value": {
+                "top": 3,
+                "left": 111,
+                "bottom": 32,
+                "right": 98,
+                "input": true
+              }
+            }
+          },
+          "mobile_default": {
+            "width_value": "100",
+            "width_unit": "%"
+          },
+          "desktop_default": {
+            "width_value": "100",
+            "width_unit": "%",
+            "width": {
+              "min": 1120,
+              "max": 1120
+            },
+            "height": {
+              "min": 94,
+              "max": 96
+            },
+            "background": "rgb\\(240, 250, 241\\)",
+            "border": "0px",
+            "radius": "0px",
+            "opacity": "1",
+            "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+            "padding": "32px 0px",
+            "margin": "0px"
+          },
+          "after_edit": {
+            "height": {
+              "min": 102,
+              "max": 104
+            },
+            "width": {
+              "min": 326,
+              "max": 330
+            },
+            "background": "rgb\\(240, 250, 241\\)",
+            "border": "4px",
+            "radius": "23px",
+            "opacity": "0.55",
+            "shadow": "rgb(0, 0, 0) 4px 4px 0px 0px",
+            "padding": "32px 0px",
+            "margin": "3px 98px 32px 111px"
+          }
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_NAV_SD_20": {
+      "setup_desktop": {
+        "width": {
+          "label": "full_width",
+          "is_on": true
+        },
+        "border": {
+          "label": "border",
+          "value": {
+            "thickness": "m"
+          }
+        },
+        "background": {
+          "label": "background",
+          "value": {
+            "color": {
+              "preset": 5
+            }
+          }
+        }
+      },
+      "setup_mobile": {
+        "border": {
+          "label": "border",
+          "value": {
+            "thickness": "m"
+          }
+        },
+        "background": {
+          "label": "background",
+          "value": {
+            "color": {
+              "preset": 6,
+              "hexText": "#C31212CC"
+            }
+          }
+        }
+      },
+      "add_section": {
+        "parent_position": {
+          "section": 1
+        },
+        "position": "Bottom",
+        "category": "Basics",
+        "template": "Single column"
+      },
+      "section_name": {
+        "content": "Test section SD-20"
+      },
+      "add_block": {
+        "category": "Basics",
+        "template": "Heading",
+        "parent_position": {
+          "section": 2,
+          "column": 1
+        }
+      },
+      "dnd_block": {
+        "category": "Basics",
+        "template": "Button",
+        "to": {
+          "position": {
+            "section": 2,
+            "column": 1
+          }
+        }
+      },
+      "expected": {
+        "side_bar": {
+          "full_width": "true",
+          "border": "medium",
+          "border_color": "",
+          "background": "",
+          "padding": "64,0,64,0",
+          "margin": "0,0,0,0"
+        },
+        "preview": {
+          "column_width": {
+            "min": 1636,
+            "max": 1640
+          },
+          "height": "200px",
+          "border": "4px",
+          "background": "rgb\\(10, 27, 31\\)",
+          "padding": "64px 0px",
+          "margin": "0px"
+        }
+      }
+    },
+    "SB_WEB_BUILDER_NAV_SD_21": {
+      "add_section": {
+        "parent_position": {
+          "section": 1
+        },
+        "category": "Basics",
+        "template": "1:1"
+      },
+      "add_blocks": [
+        {
+          "from": {
+            "category": "Basics",
+            "template": "Icon"
+          },
+          "to": {
+            "position": {
+              "section": 1,
+              "column": 1
+            }
+          }
+        },
+        {
+          "from": {
+            "category": "Basics",
+            "template": "Button"
+          },
+          "to": {
+            "position": {
+              "section": 1,
+              "block": 1
+            }
+          }
+        },
+        {
+          "from": {
+            "category": "Basics",
+            "template": "Icon"
+          },
+          "to": {
+            "position": {
+              "section": 1,
+              "column": 2
+            }
+          }
+        },
+        {
+          "from": {
+            "category": "Basics",
+            "template": "Button"
+          },
+          "to": {
+            "position": {
+              "section": 1,
+              "block": 3
+            }
+          }
+        },
+        {
+          "from": {
+            "category": "Basics",
+            "template": "Icon"
+          },
+          "to": {
+            "position": {
+              "section": 1,
+              "column": 3
+            }
+          }
+        },
+        {
+          "from": {
+            "category": "Basics",
+            "template": "Button"
+          },
+          "to": {
+            "position": {
+              "section": 1,
+              "block": 5
+            }
+          }
+        },
+        {
+          "from": {
+            "category": "Basics",
+            "template": "Icon"
+          },
+          "to": {
+            "position": {
+              "section": 1,
+              "column": 4
+            }
+          }
+        },
+        {
+          "from": {
+            "category": "Basics",
+            "template": "Button"
+          },
+          "to": {
+            "position": {
+              "section": 1,
+              "block": 7
+            }
+          }
+        }
+      ],
+      "section_name": {
+        "content": "Test section SD-21"
+      },
+      "dnd_blocks": {
+        "mobile": {
+          "from": {
+            "position": {
+              "section": 1,
+              "block": 2
+            }
+          },
+          "to": {
+            "position": {
+              "section": 1,
+              "column": 2
+            }
+          }
+        },
+        "desktop": {
+          "from": {
+            "position": {
+              "section": 1,
+              "row": 1,
+              "column": 1,
+              "block": 1
+            }
+          },
+          "to": {
+            "position": {
+              "section": 1,
+              "row": 2,
+              "column": 2
+            }
+          },
+          "isHover": false
+        }
+      },
+      "dragged_block": {
+        "name": "Button",
+        "block": 2
+      },
+      "expected": {
+        "message": "All devices updated with your recent changes",
+        "mobile": {
+          "first_column": {
+            "block_name": "icon",
+            "sidebar_name": "Icon",
+            "block_count": 1
+          },
+          "second_column": {
+            "block_name": ["icon", "button", "button"],
+            "sidebar_name": ["Icon", "Button", "Button"],
+            "block_count": 3
+          }
+        },
+        "desktop": {
+          "fourth_column": {
+            "block_name": ["icon", "button", "icon"],
+            "sidebar_name": ["Icon", "Button", "Icon"],
+            "block_count": 3
+          }
+        }
+      }
+    },
+    "SB_WEB_BUILDER_NAV_SD_22": {
+      "add_sections": [
+        {
+          "config": {
+            "parent_position": {
+              "section": 1
+            },
+            "category": "Basics",
+            "template": "1:1"
+          },
+          "settings": {
+            "content": "Test section - 02"
+          },
+          "index": 1,
+          "dnd_block": {
+            "from": {
+              "category": "Basics",
+              "template": "Icon"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "column": 1
+              }
+            }
+          },
+          "add_block": {
+            "category": "Basics",
+            "template": "Button",
+            "parent_position": {
+              "section": 1,
+              "column": 2
+            }
+          }
+        },
+        {
+          "config": {
+            "parent_position": {
+              "section": 1
+            },
+            "category": "Basics",
+            "template": "1:1"
+          },
+          "settings": {
+            "content": "Test section - 01"
+          },
+          "index": 1,
+          "layout": {
+            "column": 2
+          },
+          "dnd_block": {
+            "from": {
+              "category": "Basics",
+              "template": "Icon"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "column": 1
+              }
+            }
+          },
+          "add_block": {
+            "category": "Basics",
+            "template": "Button",
+            "parent_position": {
+              "section": 1,
+              "column": 2
+            }
+          }
+        }
+      ],
+      "mobile_margin": {
+        "top": 34,
+        "left": 22,
+        "bottom": 123,
+        "right": 200,
+        "input": true
+      },
+      "block_position": {
+        "section": 1,
+        "block": 2
+      }
+    },
+    "SB_WEB_BUILDER_NAV_SD_23": {
+      "add_section": {
+        "parent_position": {
+          "section": 1
+        },
+        "category": "Basics",
+        "template": "Single column"
+      },
+      "section_name": {
+        "content": "Test section - 01"
+      },
+      "expected": {
+        "section_quickbar": [
+          {
+            "button": "Move up"
+          },
+          {
+            "button": "Move down"
+          },
+          {
+            "button": "Duplicate"
+          },
+          {
+            "button": "Hide"
+          },
+          {
+            "button": "Save as Template"
+          },
+          {
+            "button": "Delete"
+          }
+        ],
+        "row_quickbar": [
+          {
+            "button": "Move up"
+          },
+          {
+            "button": "Move down"
+          },
+          {
+            "button": "Delete"
+          },
+          {
+            "button": "Duplicate"
+          }
+        ],
+        "bread_crumb": "Test section - 01",
+        "section_state": {
+          "attribute": "class",
+          "value": "selected"
+        },
+        "test_section_count": 1,
+        "save_template_description": "Save this section to a library as a template to reuse. You could add it from the Insert (+) panel.",
+        "learn_more": "save-and-reuse-block-and-section-templates-on-shopbase-creator"
+      }
+    },
+    "SB_WEB_BUILDER_NAV_SD_24": {
+      "add_section": {
+        "parent_position": {
+          "section": 1
+        },
+        "category": "Basics",
+        "template": "Single column"
+      },
+      "section_name": {
+        "content": "Test section - SD-24"
+      },
+      "duplicated_row": {
+        "section": 1,
+        "row": 3
+      },
+      "expected": {
+        "row_quickbar": [
+          {
+            "button": "Duplicate"
+          },
+          {
+            "button": "Move up"
+          },
+          {
+            "button": "Move down"
+          },
+          {
+            "button": "Delete"
+          }
+        ],
+        "row_selected": "selected",
+        "duplicate_row": {
+          "layout": "1 Column",
+          "spacing": "16px",
+          "height_value": "0",
+          "height_unit": "Auto",
+          "border_value": "none",
+          "border_color": "",
+          "background": "",
+          "padding": "10,16,10,16",
+          "margin": "0,0,0,0"
+        }
+      }
+    },
+    "SB_WEB_BUILDER_NAV_SD_25": {
+      "add_section": {
+        "parent_position": {
+          "section": 1
+        },
+        "category": "Basics",
+        "template": "Single column"
+      },
+      "section_name": {
+        "content": "Test section SD-25"
+      },
+      "first_column": {
+        "name": "Column",
+        "index": 1
+      },
+      "add_block": {
+        "parent_position": {
+          "section": 1,
+          "column": 1
+        },
+        "category": "Basics",
+        "template": "Button"
+      },
+      "add_column": {
+        "column": 2
+      },
+      "expected": {
+        "column_quickbar": [
+          {
+            "button": "Move left"
+          },
+          {
+            "button": "Move right"
+          }
+        ],
+        "disabled": "disabled"
+      }
+    },
+    "SB_WEB_BUILDER_NAV_SD_26": {
+      "add_section": {
+        "parent_position": {
+          "section": 1
+        },
+        "category": "Basics",
+        "template": "Single column"
+      },
+      "section_name": {
+        "content": "Test section SD-26"
+      },
+      "add_block": {
+        "parent_position": {
+          "section": 1,
+          "column": 1
+        },
+        "category": "Basics",
+        "template": "Button"
+      },
+      "block_button": {
+        "section": 1,
+        "block": 1
+      },
+      "block_icon": {
+        "section": 1,
+        "block": 2
+      },
+      "expected": {
+        "save_template_description": "Save this block to a library as a template to reuse. You could add it from the Insert (+) panel.",
+        "learn_more": "save-and-reuse-block-and-section-templates-on-shopbase-creator",
+        "block_quickbar": [
+          {
+            "button": "Move up"
+          },
+          {
+            "button": "Move down"
+          },
+          {
+            "button": "Duplicate"
+          },
+          {
+            "button": "Hide"
+          },
+          {
+            "button": "Save as Template"
+          },
+          {
+            "button": "Delete"
+          }
+        ],
+        "disabled_value": "is-disabled",
+        "z_index_forward": {
+          "attribute": "style",
+          "value": "z-index: 5"
+        },
+        "z_index_backward": {
+          "attribute": "style",
+          "value": "z-index: 4"
+        },
+        "label": "Enroll Now",
+        "style": "selected",
+        "align": "active",
+        "text_color": "background: rgb(240, 250, 241);",
+        "position": "Manual",
+        "width_value": "100",
+        "width_unit": "%",
+        "background": "background: rgb(32, 85, 96);",
+        "border_value": "none",
+        "border_color": "",
+        "opacity": "100",
+        "radius": "0",
+        "shadow": "none",
+        "padding": "0,0,24,24",
+        "margin": "0,0,0,0"
+      },
+      "position": {
+        "label": "position",
+        "type": "Manual"
+      },
+      "duplicated_block": {
+        "section": 1,
+        "block": 2
+      }
+    },
+    "SB_WEB_BUILDER_NAV_SD_27": {
+      "insert_panel": "insert",
+      "section_template": {
+        "category": "Basics",
+        "template": "Single column"
+      },
+      "block_template": {
+        "category": "Basics",
+        "template": "Heading"
+      }
+    }
+  }
+}

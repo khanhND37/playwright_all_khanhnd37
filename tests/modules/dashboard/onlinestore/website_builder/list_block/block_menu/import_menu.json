@@ -1,0 +1,373 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "import-menu-ne.myshopbase.net",
+      "shop_name": "import-menu-ne",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "user_id": 90252,
+      "shop_id": 10327931,
+      "template_id": 652,
+      "dnd_blank_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 1
+          },
+          "isBottom": false
+        }
+      },
+      "dnd_block": {
+        "from": {
+          "category": "Basics",
+          "template": "Menu"
+        },
+        "to": {
+          "position": {
+            "section": 1,
+            "column": 1
+          }
+        }
+      }
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "import-menu-ne-prodtest.onshopbase.com",
+      "shop_name": "import-menu-ne-prodtest",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "user_id": 11260206,
+      "shop_id": 10439707,
+      "template_id": 382,
+      "dnd_blank_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 2
+          },
+          "isBottom": false
+        }
+      },
+      "dnd_block": {
+        "from": {
+          "category": "Basics",
+          "template": "Menu"
+        },
+        "to": {
+          "position": {
+            "section": 2,
+            "column": 1
+          }
+        }
+      }
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "import-menu-ne.onshopbase.com",
+      "shop_name": "import-menu-ne",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "user_id": 11260206,
+      "shop_id": 10439726,
+      "template_id": 382,
+      "dnd_blank_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 2
+          },
+          "isBottom": false
+        }
+      },
+      "dnd_block": {
+        "from": {
+          "category": "Basics",
+          "template": "Menu"
+        },
+        "to": {
+          "position": {
+            "section": 2,
+            "column": 1
+          }
+        }
+      }
+    }
+  },
+  "cases": {
+    "SB_WEB_BUILDER_LB_BMN_33": {
+      "description": "Check import menu chỉ có 1 level thành công",
+      "expect": {
+        "text_import": "If you’ve already setup your menu in admin dashboard.",
+        "link_import": "Click here to import",
+        "snapshot": "LB_BMN_33_Popup_select_menu.png",
+        "select": {
+          "name_menu": "Menu 1",
+          "index": 0
+        },
+        "menu": [
+          {
+            "item": {
+              "menu": 1
+            },
+            "label": "Item 1",
+            "show_icon": "false",
+            "action": "Go to page",
+            "page": "Home",
+            "new_tab": "false",
+            "badge": "None",
+            "type": "Dropdown",
+            "redirect": "/"
+          },
+          {
+            "item": {
+              "menu": 2
+            },
+            "label": "Item 2",
+            "show_icon": "false",
+            "action": "Go to page",
+            "page": "All collections",
+            "new_tab": "false",
+            "badge": "None",
+            "type": "Dropdown",
+            "redirect": "/collections"
+          }
+        ]
+      }
+    },
+    "SB_WEB_BUILDER_LB_BMN_34": {
+      "description": "Check import menu có 2 level thành công",
+      "expect": {
+        "select": {
+          "name_menu": "Menu 2",
+          "index": 0
+        },
+        "menu": [
+          {
+            "item": {
+              "menu": 1
+            },
+            "label": "Item 1",
+            "show_icon": "false",
+            "action": "Go to page",
+            "page": "All products",
+            "new_tab": "false",
+            "badge": "None",
+            "type": "Dropdown",
+            "redirect": "collections/all",
+            "count_submenu": 2,
+            "submenu": {
+              "type": "Text link",
+              "item": {
+                "menu": 1,
+                "subMenu": 1
+              },
+              "label": "Item 1.1",
+              "show_icon": "false",
+              "title": "false",
+              "action": "Go to page",
+              "page": " Adler 8-Light Chandelier, Antiqued Gold ",
+              "new_tab": "false",
+              "badge": "None",
+              "redirect": "/products/adler-8-light-chandelier-antiqued-gold"
+            }
+          },
+          {
+            "item": {
+              "menu": 2
+            },
+            "label": "Item 2",
+            "show_icon": "false",
+            "action": "Go to page",
+            "page": "All reviews",
+            "new_tab": "false",
+            "badge": "None",
+            "type": "Dropdown",
+            "redirect": "pages/all-reviews",
+            "count_submenu": 0
+          },
+          {
+            "item": {
+              "menu": 3
+            },
+            "label": "Item 3",
+            "show_icon": "false",
+            "action": "Go to page",
+            "page": "All collections",
+            "new_tab": "false",
+            "badge": "None",
+            "type": "Dropdown",
+            "redirect": "/collections",
+            "count_submenu": 5,
+            "submenu": {
+              "type": "Text link",
+              "item": {
+                "menu": 3,
+                "subMenu": 4
+              },
+              "label": "Item 3.4",
+              "show_icon": "false",
+              "title": "false",
+              "action": "Go to page",
+              "page": "Lighting",
+              "new_tab": "false",
+              "badge": "None",
+              "redirect": "/collections/lighting"
+            }
+          },
+          {
+            "item": {
+              "menu": 4
+            },
+            "label": "Item 3",
+            "show_icon": "false",
+            "action": "Go to page",
+            "page": "Privacy Policy",
+            "new_tab": "false",
+            "badge": "None",
+            "type": "Dropdown",
+            "redirect": "/pages/privacy-policy",
+            "count_submenu": 0
+          }
+        ]
+      }
+    },
+    "SB_WEB_BUILDER_LB_BMN_35": {
+      "description": "Check import menu có 3 level thành công",
+      "expect": {
+        "select": {
+          "name_menu": "Menu 2",
+          "index": 1
+        },
+        "menu": [
+          {
+            "item": {
+              "menu": 1
+            },
+            "label": "Item 1",
+            "show_icon": "false",
+            "action": "Go to page",
+            "page": "Blog posts",
+            "new_tab": "false",
+            "badge": "None",
+            "type": "Dropdown",
+            "redirect": "blogs/blog-posts",
+            "count_submenu": 1,
+            "submenu": {
+              "count_submenu": 1,
+              "type": "Text link",
+              "item": {
+                "menu": 1,
+                "subMenu": 1
+              },
+              "label": "Item 1.1",
+              "show_icon": "false",
+              "title": "false",
+              "action": "Go to page",
+              "page": " The Top Hiking Destinations for Adventure Seekers ",
+              "new_tab": "false",
+              "badge": "None",
+              "redirect": "/blogs/the-top-hiking-destinations-for-adventure-seekers",
+              "megamenu": {
+                "type": "Text link",
+                "item": {
+                  "menu": 1,
+                  "subMenu": 1,
+                  "megaMenu": 1
+                },
+                "label": "Item 1.1.1",
+                "show_icon": "false",
+                "title": "false",
+                "action": "Open a link",
+                "page": "https://www.google.com/",
+                "new_tab": "false",
+                "badge": "None",
+                "redirect": "https://www.google.com/"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "SB_WEB_BUILDER_LB_BMN_36": {
+      "description": "Check import menu ở cùng 1 menu nhiều lần",
+      "expect": {
+        "select": [
+          {
+            "name_menu": "Menu 1",
+            "index": 0,
+            "preview": "LB_BMN_36_preview_menu_import_lan_1.png"
+          },
+          {
+            "name_menu": "Menu 2",
+            "index": 1,
+            "preview": "LB_BMN_36_preview_menu_import_lan_2.png",
+            "SF": "LB_BMN_36_SF_menu_import_lan_2.png"
+          }
+        ],
+        "design": {
+          "background": {
+            "color": {
+              "preset": 2
+            }
+          },
+          "radius": {
+            "fill": true,
+            "number": 10
+          }
+        }
+      }
+    },
+    "SB_WEB_BUILDER_LB_BMN_37": {
+      "description": "Check import menu không thành công",
+      "expect": {
+        "select": [
+          {
+            "name_menu": "Menu 1",
+            "index": 0,
+            "action": "Discard"
+          },
+          {
+            "name_menu": "Menu 2",
+            "index": 0,
+            "action": "x"
+          },
+          {
+            "name_menu": "Menu 2",
+            "index": 1,
+            "action": "area empty"
+          }
+        ],
+        "SF": "import_menu_data_default.png"
+      }
+    },
+    "SB_WEB_BUILDER_LB_BMN_38": {
+      "description": "Check hiển thị khi click undo/redo sau khi import thành công",
+      "expect": {
+        "select": {
+          "name_menu": "Menu 1",
+          "index": 0
+        },
+        "actions": [
+          {
+            "action": "undo",
+            "SF": "import_menu_data_default.png"
+          },
+          {
+            "action": "redo",
+            "SF": "import_menu_after_redo.png"
+          }
+        ]
+      }
+    }
+  }
+}

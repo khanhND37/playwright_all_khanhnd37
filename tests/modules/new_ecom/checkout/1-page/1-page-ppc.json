@@ -1,0 +1,126 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "username": "opay-qe-1@beeketing.net",
+      "password": "CZFX[b_G5T:+N*Y",
+      "domain": "au-checkout-ne-one-page.onshopbase.com",
+      "shop_name": "au-checkout-ne-one-page",
+      "products_checkout_ppc": [
+        {
+          "name": "WINNER 3rd full album [Remember]",
+          "variant_id": 1000010598072687,
+          "quantity": 1
+        },
+        {
+          "name": "WINNER 3rd full album [Remember]",
+          "variant_id": 1000010598072688,
+          "quantity": 1
+        }
+      ]
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "opay-qe-1@beeketing.net",
+      "password": "CZFX[b_G5T:+N*Y",
+      "domain": "au-checkout-ne-one-page-prodtest.onshopbase.com",
+      "shop_name": "au-checkout-ne-one-page-prodtest",
+      "products_checkout_ppc": [
+        {
+          "name": "WINNER 3rd full album [Remember]",
+          "variant_id": 1000010598534993,
+          "quantity": 1
+        },
+        {
+          "name": "WINNER 3rd full album [Remember]",
+          "variant_id": 1000010598534994,
+          "quantity": 1
+        }
+      ],
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "opay-qe-1@beeketing.net",
+      "password": "Z6el|q4&:hwCrVx",
+      "domain": "au-checkout-ne-one-page.myshopbase.net",
+      "shop_name": "au-checkout-ne-one-page",
+      "products_checkout_ppc": [
+        {
+          "name": "WINNER 3rd full album [Remember]",
+          "variant_id": 1000001768192626,
+          "quantity": 1
+        },
+        {
+          "name": "WINNER 3rd full album [Remember]",
+          "variant_id": 1000001768192627,
+          "quantity": 1
+        }
+      ]
+    }
+  },
+  "cases": {
+    "SB_CHE_CHEN_NE_1PAGE_PPC": [
+      {
+        "case_id": "SB_NEWECOM_CO_05",
+        "case_name": "NE - Kiểm tra order detail khi checkout thành công với cổng Stripe, checkout 1 page có add PPC",
+        "payment_method": "Stripe",
+        "product_ppc_name": "Bikini"
+      },
+      {
+        "case_id": "SB_NEWECOM_CO_56",
+        "case_name": "Kiểm tra order detail khi checkout thành công với cổng Oceanpayment, checkout 1 page có add PPC",
+        "payment_method": "OceanPayment",
+        "product_ppc_name": "Bikini"
+      },
+      {
+        "case_id": "SB_NEWECOM_CO_04",
+        "case_name": "NE - Kiểm tra order detail khi checkout thành công với cổng Stripe, checkout 1 page không add PPC",
+        "payment_method": "Stripe",
+        "product_ppc_name": ""
+      },
+      {
+        "case_id": "SB_NEWECOM_CO_57",
+        "case_name": "Kiểm tra order detail khi checkout thành công với cổng Oceanpayment, checkout 1 page không add PPC",
+        "payment_method": "OceanPayment",
+        "product_ppc_name": ""
+      },
+      {
+        "case_id": "SB_NEWECOM_CO_157",
+        "case_name": "Kiểm tra order detail khi checkout thành công với cổng Bank transfer, checkout 1 page có add PPC",
+        "payment_method": "BankTransfer",
+        "product_ppc_name": "Bikini"
+      },
+      {
+        "case_id": "SB_NEWECOM_CO_158",
+        "case_name": "Kiểm tra order detail khi checkout thành công với cổng Bank transfer, checkout 1 page không add PPC",
+        "payment_method": "BankTransfer",
+        "product_ppc_name": ""
+      },
+      {
+        "case_id": "SB_NEWECOM_CO_163",
+        "case_name": "Kiểm tra order detail khi checkout thành công với cổng COD, checkout 1 page có add PPC",
+        "payment_method": "cod",
+        "product_ppc_name": "Bikini"
+      },
+      {
+        "case_id": "SB_NEWECOM_CO_164",
+        "case_name": "Kiểm tra order detail khi checkout thành công với cổng COD, checkout 1 page không add PPC",
+        "payment_method": "cod",
+        "product_ppc_name": ""
+      },
+      {
+        "case_id": "SB_NEWECOM_CO_72",
+        "case_name": "Kiểm tra order detail khi checkout thành công với cổng Asiabill, checkout 1 page không add PPC",
+        "payment_method": "Asiabill",
+        "product_ppc_name": ""
+      },
+      {
+        "case_id": "SB_NEWECOM_CO_71",
+        "case_name": "Kiểm tra order detail khi checkout thành công với cổng Asiabill, checkout 1 page có add PPC",
+        "payment_method": "Asiabill",
+        "product_ppc_name": "Bikini"
+      }
+    ]
+  }
+}

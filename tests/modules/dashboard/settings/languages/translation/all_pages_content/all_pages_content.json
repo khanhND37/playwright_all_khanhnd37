@@ -1,0 +1,107 @@
+{
+  "env": {
+    "local": {
+      "api": "https://gapi.dev.shopbase.net",
+      "accounts_domain": "accounts.dev.shopbase.net",
+      "domain": "au-translation-entity-wb.myshopbase.net",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "43AhIn|VWp;[?9&",
+      "shop_name": "au-translation-entity-wb",
+      "user_id": 89797,
+      "shop_id": 10333640
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "accounts_domain": "accounts.dev.shopbase.net",
+      "domain": "au-translation-entity-wb.myshopbase.net",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "43AhIn|VWp;[?9&",
+      "shop_name": "au-translation-entity-wb",
+      "user_id": 89797,
+      "shop_id": 10333640
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-translation-entity-wb-prod.onshopbase.com",
+      "shop_name": "au-translation-entity-wb-prod",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "shop_id": 10486120,
+      "theme_id": 1617118
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-translation-entity-wb-prodtest.onshopbase.com",
+      "shop_name": "au-translation-entity-wb-prodtest",
+      "accounts_domain": "accounts-test.shopbase.com",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "shop_id": 10486118,
+      "theme_id": 1617114
+    }
+  },
+  "cases": {
+    "SB_SET_LG_TLL_23": {
+      "case_description": "[DB - UI/UX] Kiểm tra màn translate detail của All pages content - all pages",
+      "data": {
+        "entity_name": "Website pages",
+        "language_code": "cs",
+        "subfolder": "cs-us",
+        "language": "Czech",
+        "default_language": "English"
+      },
+      "data_entities": [
+        {
+          "entity_name": "Website pages",
+          "expect": ["Home", "Test icon", "Test page", "Order Tracking", "FAQs", "Contact us"]
+        },
+        {
+          "entity_name": "E-commerce pages",
+          "expect": [
+            "All collections",
+            "Collection detail",
+            "Product detail",
+            "Search result",
+            "Cart",
+            "Checkout",
+            "Thank you"
+          ]
+        },
+        {
+          "entity_name": "Blog pages",
+          "expect": ["Blog", "Blog post"]
+        },
+        {
+          "entity_name": "Member pages",
+          "expect": ["My profile", "Sign in", "Sign up", "Order history", "Change password"]
+        },
+        {
+          "entity_name": "System pages",
+          "expect": ["Error", "404"]
+        }
+      ],
+      "entity_translate": {
+        "entity": "Website pages",
+        "page": "Test icon"
+      }
+    },
+    "SB_SET_TL_53": {
+      "case_description": "[DB - UI/UX] Kiểm tra màn translate detail của All pages content - Header & footer",
+      "data": {
+        "entity_name": "Header & Footer",
+        "language_code": "cs",
+        "subfolder": "cs-us",
+        "language": "Czech",
+        "default_language": "English"
+      },
+      "header_sections": ["Annoucement", "Header"],
+      "footer_sections": ["Footer", "Cart drawer", "Popup"],
+      "block": {
+        "name": "Form",
+        "fields": ["Form name", "Message"]
+      }
+    }
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "username": "opay-qe-1@beeketing.net",
+      "password": "CZFX[b_G5T:+N*Y",
+      "user_id": 11247306,
+      "shop_id": 10475335,
+      "domain": "au-ne-eu-payment-3steps.onshopbase.com",
+      "shop_name": "au-ne-eu-payment-3steps",
+      "products_checkout": [
+        {
+          "name": "Bikini",
+          "variant_id": 1000011155791339,
+          "quantity": 2
+        },
+        {
+          "name": "Messenger Bags",
+          "variant_id": 1000011155791323,
+          "quantity": 2
+        }
+      ]
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "opay-qe-1@beeketing.net",
+      "password": "CZFX[b_G5T:+N*Y",
+      "user_id": 11247306,
+      "shop_id": 10475338,
+      "domain": "au-ne-eu-payment-3steps-prodtest.onshopbase.com",
+      "shop_name": "au-ne-eu-payment-3steps-prodtest",
+      "products_checkout": [
+        {
+          "name": "Bikini",
+          "variant_id": 1000011155861498,
+          "quantity": 2
+        },
+        {
+          "name": "Messenger Bags",
+          "variant_id": 1000011155861498,
+          "quantity": 2
+        }
+      ],
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "opay-qe-1@beeketing.net",
+      "password": "Z6el|q4&:hwCrVx",
+      "user_id": 90009,
+      "shop_id": 10333442,
+      "domain": "au-ne-eu-payment-3steps.myshopbase.net",
+      "shop_name": "au-ne-eu-payment-3steps",
+      "products_checkout": [
+        {
+          "name": "Bikini",
+          "variant_id": 1000001778032516,
+          "quantity": 2
+        },
+        {
+          "name": "Messenger Bags",
+          "variant_id": 1000001778032512,
+          "quantity": 2
+        }
+      ]
+    }
+  },
+  "cases": {
+    "SB_CHE_CHEN_NE_3STEPS_EU_PAYMENTS": [
+      {
+        "case_id": "SB_NEWECOM_CO_82",
+        "case_name": "NE - Kiểm tra order detail khi checkout thành công với cổng Bancontact, checkout 3 steps",
+        "payment_method": "Bancontact",
+        "email": "bancontact@maildrop.cc",
+        "shipping_address": {
+          "address1": "814 Mission Street",
+          "address2": "",
+          "city": "Los Angeles",
+          "company": "",
+          "country_code": "BE",
+          "country_name": "Belgium",
+          "cpf_or_cnpj_number": "",
+          "first_name": "Shopbase",
+          "last_name": "Auto",
+          "name": "Jena",
+          "phone": "0111111111",
+          "province": "",
+          "province_code": "",
+          "zip": "90001",
+          "remember_me": false
+        },
+        "currency": "EUR"
+      },
+      {
+        "case_id": "SB_NEWECOM_CO_88",
+        "case_name": "NE - Kiểm tra order detail khi checkout thành công với cổng Giropay, checkout 3 steps",
+        "payment_method": "giropay",
+        "email": "giropay@maildrop.cc",
+        "shipping_address": {
+          "address1": "814 Mission Street",
+          "address2": "",
+          "city": "Los Angeles",
+          "company": "",
+          "country_code": "DE",
+          "country_name": "Germany",
+          "cpf_or_cnpj_number": "",
+          "first_name": "Shopbase",
+          "last_name": "Auto",
+          "name": "Jena",
+          "phone": "0111111111",
+          "province": "",
+          "province_code": "",
+          "zip": "90001",
+          "remember_me": false
+        },
+        "currency": "EUR"
+      },
+      {
+        "case_id": "SB_NEWECOM_CO_94",
+        "case_name": "NE - Kiểm tra order detail khi checkout thành công với cổng iDEAL, checkout 3 steps",
+        "payment_method": "iDEAL",
+        "email": "ideal@maildrop.cc",
+        "shipping_address": {
+          "address1": "814 Mission Street",
+          "address2": "",
+          "city": "Los Angeles",
+          "company": "",
+          "country_code": "NL",
+          "country_name": "Netherlands",
+          "cpf_or_cnpj_number": "",
+          "first_name": "Shopbase",
+          "last_name": "Auto",
+          "name": "Jena",
+          "phone": "0111111111",
+          "province": "",
+          "province_code": "",
+          "zip": "90001",
+          "remember_me": false
+        },
+        "currency": "EUR"
+      },
+      {
+        "case_id": "SB_NEWECOM_CO_100",
+        "case_name": "NE - Kiểm tra order detail khi checkout thành công với cổng SEPA, checkout 3 steps",
+        "payment_method": "SEPA Direct Debit",
+        "email": "sepa@maildrop.cc",
+        "shipping_address": {
+          "address1": "814 Mission Street",
+          "address2": "",
+          "city": "Los Angeles",
+          "company": "",
+          "country_code": "DE",
+          "country_name": "Germany",
+          "cpf_or_cnpj_number": "",
+          "first_name": "Shopbase",
+          "last_name": "Auto",
+          "name": "Jena",
+          "phone": "0111111111",
+          "province": "",
+          "province_code": "",
+          "zip": "90001",
+          "remember_me": false
+        },
+        "currency": "EUR"
+      },
+      {
+        "case_id": "SB_NEWECOM_CO_106",
+        "case_name": "NE - Kiểm tra order detail khi checkout thành công với cổng Sofort, checkout 3 steps",
+        "payment_method": "Sofort",
+        "email": "sofort@maildrop.cc",
+        "shipping_address": {
+          "address1": "814 Mission Street",
+          "address2": "",
+          "city": "Los Angeles",
+          "company": "",
+          "country_code": "DE",
+          "country_name": "Germany",
+          "cpf_or_cnpj_number": "",
+          "first_name": "Shopbase",
+          "last_name": "Auto",
+          "name": "Jena",
+          "phone": "0111111111",
+          "province": "",
+          "province_code": "",
+          "zip": "90001",
+          "remember_me": false
+        },
+        "currency": "EUR"
+      }
+    ]
+  }
+}

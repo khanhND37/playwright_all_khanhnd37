@@ -1,0 +1,164 @@
+{
+  "env": {
+    "dev": {
+      "domain": "search-multiple-sf.myshopbase.net",
+      "shop_name": "search-multiple-sf",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10330202,
+      "user_id": 90252
+    },
+    "prodtest": {
+      "domain": "search-multiple-sf-prodtest.onshopbase.com",
+      "shop_name": "search-multiple-sf-prodtest",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10454359,
+      "user_id": 11260206
+    },
+    "prod": {
+      "domain": "search-multiple-sf.onshopbase.com",
+      "shop_name": "search-multiple-sf",
+      "api": "https://api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10454362,
+      "user_id": 11260206
+    }
+  },
+  "cases": {
+    "SB_NEWECOM_MSF_MSFL_59": {
+      "data": [
+        {
+          "step": "Nhập data search = name SF đúng tuyệt đối",
+          "data_search": "multi SF store",
+          "result_count": 1
+        },
+        {
+          "step": "Nhập data search = name SF đúng 1 phần",
+          "data_search": "mu",
+          "result_count": 5
+        },
+        {
+          "step": "Nhập data search = name SF đúng, chỉ khác chữ hoa chữ thường",
+          "data_search": "MuLti sF",
+          "result_count": 1
+        },
+        {
+          "step": "Nhập data search = public domain SF đúng tuyệt đối",
+          "data_search": "frontqe-1.sbdev.tk",
+          "result_count": 1
+        },
+        {
+          "step": "Nhập data search = public domain SF đúng 1 phần",
+          "data_search": "rontqe-1.",
+          "result_count": 1
+        },
+        {
+          "step": "Nhập data search = public domain SF đúng, chỉ khác chữ hoa chữ thường",
+          "data_search": "FronTqe-1.SbdEv.tk",
+          "result_count": 1
+        },
+        {
+          "step": "Nhập data search = rỗng",
+          "data_search": "",
+          "result_count": 9
+        },
+        {
+          "step": "Nhập data search = name đã rename",
+          "data_search": "racing showroom",
+          "result_count": 1
+        },
+        {
+          "step": "Nhập data search trả về <= 9 SF",
+          "data_search": "store",
+          "result_count": 4
+        },
+        {
+          "step": "Nhập data search trả về > 9 SF",
+          "data_search": "shop",
+          "result_count": 9,
+          "pagination": 2,
+          "result_count_page_2": 2
+        }
+      ]
+    },
+    "SB_NEWECOM_MSF_MSFL_60": {
+      "data": [
+        {
+          "step": "Nhập data search = name SF không tồn tại",
+          "data_search": "white palace",
+          "result_count": 0
+        },
+        {
+          "step": "Nhập data search = name SF có tồn tại nhưng không thuộc acc đang login",
+          "data_search": "sb-huyen",
+          "result_count": 0
+        },
+        {
+          "step": "Nhập data search = public domain SF ko tồn tại",
+          "data_search": "huyen2402.sbdev.tk",
+          "result_count": 0
+        },
+        {
+          "step": "Nhập data search = public domain tồn tại nhưng không thuộc acc đang login",
+          "data_search": "frontqe.sbdev.tk",
+          "result_count": 0
+        },
+        {
+          "step": "Nhập data search = car showroom",
+          "data_search": "car showroom",
+          "result_count": 0
+        }
+      ]
+    },
+    "SB_NEWECOM_MSF_MSFL_61": {
+      "expect": {
+        "result_active": 9,
+        "result_inactive": 0
+      }
+    },
+    "SB_NEWECOM_MSF_MSFL_62": {
+      "data": [
+        {
+          "step": "Search data hợp lê + chọn status = Active",
+          "data_search": "multi SF store",
+          "status": "Active",
+          "result_count": 1
+        },
+        {
+          "step": "Search data không hợp lê + chọn status = Active",
+          "data_search": "white palace",
+          "status": "Active",
+          "result_count": 0
+        },
+        {
+          "step": "Search data hợp lê + chọn status = Inactive",
+          "data_search": "store",
+          "status": "Closed",
+          "result_count": 0
+        },
+        {
+          "step": "Search data không hợp lê + chọn status = Inactive",
+          "data_search": "sb-huyen",
+          "status": "Closed",
+          "result_count": 0
+        }
+      ]
+    },
+    "SB_NEWECOM_MSF_MSFL_63": {
+      "data": {
+        "shop_name": "rename-multiple-sff",
+        "name_valid": "Candy fruit",
+        "name_less_4_character": "cat",
+        "name_existing": "sb-huyen"
+      },
+      "expect": {
+        "heading_popup": "Enter a new name for storefront",
+        "public_domain": "rename-multiple-sff"
+      }
+    }
+  }
+}

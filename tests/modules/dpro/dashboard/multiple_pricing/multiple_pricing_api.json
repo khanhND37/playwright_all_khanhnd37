@@ -1,0 +1,633 @@
+{
+  "api": "https://gapi.dev.shopbase.net",
+  "domain": "creator-multiple-pricing.myshopbase.net",
+  "username": "shopbase@beeketing.net",
+  "password": "S#|j>m2N[q",
+  "user_id": 73800,
+  "shop_id": 10322616,
+  "shop_name": "creator-multiple-pricing",
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "creator-multiple-pricing.onshopbase.com",
+      "shop_name": "creator-multiple-pricing",
+      "user_id": 73782,
+      "shop_id": 10375820,
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "creator-multiple-pricing-prodtest.onshopbase.com",
+      "shop_name": "creator-multiple-pricing-prodtest",
+      "user_id": 73782,
+      "shop_id": 10375816,
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "creator-multiple-pricing.myshopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "user_id": 73800,
+      "shop_id": 10322616,
+      "shop_name": "creator-multiple-pricing"
+    }
+  },
+  "cases": {
+    "DATA_CREATE_PRICING": {
+      "data": [
+        {
+          "description": "[API] Gửi request tạo mới 1 pricing option bằng API Update list pricing option",
+          "case_id": "SB_SC_SCP_152",
+          "product_info": {
+            "product_type": "online_course",
+            "title": "Product create 1 pricing option"
+          },
+          "pricing_request": {
+            "pricing_options": [
+              {
+                "name": "One-time payment",
+                "title": "create pricing option one-time payment",
+                "price": 10
+              }
+            ]
+          }
+        },
+        {
+          "description": "[API] Gửi request tạo mới nhiều pricing option bằng API Update list pricing option",
+          "case_id": "SB_SC_SCP_153",
+          "product_info": {
+            "product_type": "online_course",
+            "title": "Product create multiple pricing option"
+          },
+          "pricing_request": {
+            "pricing_options": [
+              {
+                "price": 10,
+                "name": "One-time payment",
+                "title": "Pricing option one-time paymnt",
+                "position": 2,
+                "quantity_limit": {
+                  "limit": "100",
+                  "enabled": true
+                },
+                "access_limit": {
+                  "limit": 0,
+                  "enabled": false
+                },
+                "time_limit": {
+                  "time_limit_type": "",
+                  "time": 0,
+                  "time_type": "",
+                  "enabled": false
+                }
+              },
+              {
+                "price": 0,
+                "name": "Free",
+                "title": "Pricing option free",
+                "position": 2,
+                "quantity_limit": {
+                  "limit": "100",
+                  "enabled": true
+                },
+                "access_limit": {
+                  "limit": 0,
+                  "enabled": false
+                },
+                "time_limit": {
+                  "time_limit_type": "",
+                  "time": 0,
+                  "time_type": "",
+                  "enabled": false
+                }
+              },
+              {
+                "price": 20,
+                "name": "One-time payment",
+                "title": "Pricing option one-time payment",
+                "position": 2,
+                "quantity_limit": {
+                  "limit": "100",
+                  "enabled": true
+                },
+                "access_limit": {
+                  "limit": 1,
+                  "enabled": true
+                },
+                "time_limit": {
+                  "time_limit_type": "",
+                  "time": 0,
+                  "time_type": "",
+                  "enabled": false
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "SB_SC_SCP_154": {
+      "digital_download_info": {
+        "product_type": "digital_download",
+        "title": "Product digital download add pricing"
+      },
+      "coaching_session_info": {
+        "product_type": "coaching_session",
+        "title": "Product coaching session add pricing"
+      },
+      "pricing_request": {
+        "pricing_options": [
+          {
+            "price": 10,
+            "name": "One-time payment",
+            "title": "Pricing option one-time paymnt",
+            "position": 2,
+            "quantity_limit": {
+              "limit": "100",
+              "enabled": true
+            },
+            "access_limit": {
+              "limit": 0,
+              "enabled": false
+            },
+            "time_limit": {
+              "time_limit_type": "",
+              "time": 0,
+              "time_type": "",
+              "enabled": false
+            }
+          },
+          {
+            "price": 0,
+            "name": "Free",
+            "title": "Pricing option free",
+            "position": 2,
+            "quantity_limit": {
+              "limit": "100",
+              "enabled": true
+            },
+            "access_limit": {
+              "limit": 0,
+              "enabled": false
+            },
+            "time_limit": {
+              "time_limit_type": "",
+              "time": 0,
+              "time_type": "",
+              "enabled": false
+            }
+          }
+        ]
+      },
+      "response_digital_download": {
+        "code": "product type digital_download not support multi pricing",
+        "data": null,
+        "message": "product type digital_download not support multi pricing",
+        "success": false
+      },
+      "response_coaching_session": {
+        "code": "product type coaching_session not support multi pricing",
+        "data": null,
+        "message": "product type coaching_session not support multi pricing",
+        "success": false
+      }
+    },
+    "DATA_UPDATE_PRICING": {
+      "data": [
+        {
+          "description": "[API] Gửi request update 1 pricing option bằng API Update list pricing option",
+          "case_id": "SB_SC_SCP_155",
+          "product_info": {
+            "product_type": "online_course",
+            "title": "Product create 1 pricing option"
+          },
+          "create_pricing_request": {
+            "pricing_options": [
+              {
+                "name": "One-time payment",
+                "title": "create pricing option one-time payment",
+                "price": 10,
+                "quantity_limit": {
+                  "limit": "100",
+                  "enabled": true
+                },
+                "access_limit": {
+                  "limit": 0,
+                  "enabled": false
+                },
+                "time_limit": {
+                  "time_limit_type": "",
+                  "time": 0,
+                  "time_type": "",
+                  "enabled": false
+                }
+              }
+            ]
+          },
+          "update_pricing_request": {
+            "pricing_options": [
+              {
+                "id": 0,
+                "variant_id": 0,
+                "price": 0,
+                "name": "Free",
+                "quantity_limit": {
+                  "limit": "",
+                  "enabled": false,
+                  "type": "dont_track_inventory"
+                },
+                "access_limit": {
+                  "limit": 0,
+                  "enabled": false
+                },
+                "time_limit": {
+                  "time_limit_type": "",
+                  "time": 0,
+                  "time_type": "",
+                  "enabled": false
+                },
+                "section_access": "",
+                "created_at": 0,
+                "updated_at": 0,
+                "sold": 0,
+                "title": "",
+                "position": 0,
+                "lecture_access": []
+              },
+              {
+                "id": 0,
+                "variant_id": 0,
+                "price": 0,
+                "name": "Free",
+                "quantity_limit": {
+                  "limit": "",
+                  "enabled": false,
+                  "type": "dont_track_inventory"
+                },
+                "access_limit": {
+                  "limit": 0,
+                  "enabled": false
+                },
+                "time_limit": {
+                  "time_limit_type": "",
+                  "time": 0,
+                  "time_type": "",
+                  "enabled": false
+                },
+                "section_access": "",
+                "created_at": 0,
+                "updated_at": 0,
+                "sold": 0,
+                "title": "",
+                "position": 0,
+                "lecture_access": []
+              }
+            ]
+          }
+        },
+        {
+          "description": "[API] Gửi request update nhiều pricing option bằng API Update list pricing option",
+          "case_id": "SB_SC_SCP_156",
+          "product_info": {
+            "product_type": "online_course",
+            "title": "Product create 1 pricing option"
+          },
+          "create_pricing_request": {
+            "pricing_options": [
+              {
+                "name": "One-time payment",
+                "title": "create pricing option one-time payment",
+                "price": 10,
+                "quantity_limit": {
+                  "limit": "100",
+                  "enabled": true
+                },
+                "access_limit": {
+                  "limit": 0,
+                  "enabled": false
+                },
+                "time_limit": {
+                  "time_limit_type": "",
+                  "time": 0,
+                  "time_type": "",
+                  "enabled": false
+                }
+              }
+            ]
+          },
+          "update_pricing_request": {
+            "pricing_options": [
+              {
+                "id": 0,
+                "variant_id": 0,
+                "price": 0,
+                "name": "Free",
+                "quantity_limit": {
+                  "limit": "",
+                  "enabled": false,
+                  "type": "dont_track_inventory"
+                },
+                "access_limit": {
+                  "limit": 0,
+                  "enabled": false
+                },
+                "time_limit": {
+                  "time_limit_type": "",
+                  "time": 0,
+                  "time_type": "",
+                  "enabled": false
+                },
+                "section_access": "",
+                "created_at": 0,
+                "updated_at": 0,
+                "sold": 0,
+                "title": "",
+                "position": 0,
+                "lecture_access": []
+              },
+              {
+                "id": 0,
+                "variant_id": 0,
+                "price": 0,
+                "name": "Free",
+                "quantity_limit": {
+                  "limit": "",
+                  "enabled": false,
+                  "type": "dont_track_inventory"
+                },
+                "access_limit": {
+                  "limit": 0,
+                  "enabled": false
+                },
+                "time_limit": {
+                  "time_limit_type": "",
+                  "time": 0,
+                  "time_type": "",
+                  "enabled": false
+                },
+                "section_access": "",
+                "created_at": 0,
+                "updated_at": 0,
+                "sold": 0,
+                "title": "",
+                "position": 0,
+                "lecture_access": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "DATA_UPDATE_COMPONENT": {
+      "data": [
+        {
+          "description": "[API] Gửi request update từng fields cho pricing option bằng API Update list pricing option",
+          "case_id": "SB_SC_SCP_157",
+          "step_data_list": [
+            {
+              "step_description": "",
+              "product_info": {
+                "product_type": "online_course",
+                "title": "Product online course update fields"
+              },
+              "update_pricing_request": {
+                "pricing_options": [
+                  {
+                    "id": 0,
+                    "variant_id": 0,
+                    "price": 10,
+                    "name": "One-time payment",
+                    "title": "Pricing option one-time payment"
+                  }
+                ]
+              }
+            },
+            {
+              "step_description": "",
+              "product_info": {
+                "product_type": "online_course",
+                "title": "Product online course update fields"
+              },
+              "update_pricing_request": {
+                "pricing_options": [
+                  {
+                    "id": 0,
+                    "variant_id": 0,
+                    "quantity_limit": {
+                      "limit": "",
+                      "enabled": false,
+                      "type": "dont_track_inventory"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "step_description": "",
+              "product_info": {
+                "product_type": "online_course",
+                "title": "Product online course update fields"
+              },
+              "update_pricing_request": {
+                "pricing_options": [
+                  {
+                    "id": 0,
+                    "variant_id": 0,
+                    "access_limit": {
+                      "limit": 3,
+                      "enabled": true
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "step_description": "",
+              "product_info": {
+                "product_type": "online_course",
+                "title": "Product online course update fields"
+              },
+              "update_pricing_request": {
+                "pricing_options": [
+                  {
+                    "id": 0,
+                    "variant_id": 0,
+                    "access_limit": {
+                      "limit": 3,
+                      "enabled": true
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "step_description": "",
+              "product_info": {
+                "product_type": "online_course",
+                "title": "Product online course update fields"
+              },
+              "update_pricing_request": {
+                "pricing_options": [
+                  {
+                    "id": 0,
+                    "variant_id": 0,
+                    "time_limit": {
+                      "time_limit_type": "",
+                      "time": 0,
+                      "time_type": "",
+                      "enabled": false
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "description": "[API] Gửi request update mapping giữa lecture và pricing_option cho pricing option bằng API Update list pricing option",
+          "case_id": "SB_SC_SCP_158",
+          "product_info": {
+            "product_type": "online_course",
+            "title": "Product online course update mapping lecture"
+          },
+          "step_data_list": [
+            {
+              "step_description": "",
+              "product_info": {
+                "product_type": "online_course",
+                "title": "Product online course update fields"
+              },
+              "update_pricing_request": {
+                "pricing_options": [
+                  {
+                    "id": 0,
+                    "variant_id": 0,
+                    "section_access": 0,
+                    "created_at": 0,
+                    "updated_at": 0,
+                    "sold": 0,
+                    "title": "",
+                    "position": 0,
+                    "lecture_access": 0
+                  }
+                ]
+              }
+            },
+            {
+              "step_description": "",
+              "product_info": {
+                "product_type": "online_course",
+                "title": "Product online course update fields"
+              },
+              "update_pricing_request": {
+                "pricing_options": [
+                  {
+                    "id": 0,
+                    "variant_id": 0,
+                    "section_access": "",
+                    "created_at": 0,
+                    "updated_at": 0,
+                    "sold": 0,
+                    "title": "",
+                    "position": 0,
+                    "lecture_access": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "SB_SC_SCP_162": {
+      "product_info": {
+        "product_type": "online_course",
+        "title": "Product 1 pricing option"
+      }
+    },
+    "SB_SC_SCP_163": {
+      "product_info": {
+        "product_type": "online_course",
+        "title": "Product multiple pricing option"
+      },
+      "pricing_request": {
+        "pricing_options": [
+          {
+            "variant_id": 1000001766027992,
+            "name": "One-time payment",
+            "title": "Test api"
+          }
+        ]
+      },
+      "pricing_response": {
+        "variant_offers": [
+          {
+            "price": 10,
+            "name": "One-time payment",
+            "quantity_limit": {
+              "limit": "",
+              "enabled": false,
+              "type": "dont_track_inventory"
+            },
+            "access_limit": {
+              "limit": 0,
+              "enabled": false
+            },
+            "time_limit": {
+              "time_limit_type": "",
+              "time": 0,
+              "time_type": "",
+              "enabled": false
+            },
+            "section_access": "",
+            "created_at": 0,
+            "updated_at": 0,
+            "sold": 0,
+            "title": "Test api",
+            "position": 0,
+            "lecture_access": null
+          },
+          {
+            "price": 10,
+            "name": "One-time payment",
+            "quantity_limit": {
+              "limit": "",
+              "enabled": false,
+              "type": "dont_track_inventory"
+            },
+            "access_limit": {
+              "limit": 0,
+              "enabled": false
+            },
+            "time_limit": {
+              "time_limit_type": "",
+              "time": 0,
+              "time_type": "",
+              "enabled": false
+            },
+            "section_access": "",
+            "created_at": 0,
+            "updated_at": 0,
+            "sold": 0,
+            "title": "Test api",
+            "position": 0,
+            "lecture_access": null
+          }
+        ]
+      }
+    },
+    "SB_SC_SCP_164": {
+      "product_id": 1111,
+      "pricing_response": {
+        "code": "Invalid params",
+        "data": null,
+        "message": "Invalid params",
+        "success": false
+      }
+    }
+  }
+}

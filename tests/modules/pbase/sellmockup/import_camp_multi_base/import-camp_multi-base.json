@@ -1,0 +1,76 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-import-campaign-prod.onshopbase.com",
+      "shop_name": "au-import-campaign-prod",
+      "username": "xuyenpham+1@beeketing.net",
+      "password": "Ocg12345@",
+      "shop_id": 10440151,
+      "user_id": 11264390,
+      "timeout": 9000000
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-import-campaign-prodtest.onshopbase.com",
+      "shop_name": "au-import-campaign-prodtest",
+      "username": "xuyenpham+1@beeketing.net",
+      "password": "Ocg12345@",
+      "shop_id": 10440152,
+      "user_id": 11264390,
+      "timeout": 9000000,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-import-campaign-dev.myshopbase.net",
+      "username": "xuyenpham+1@beeketing.net",
+      "password": "Ocg12345@",
+      "shop_name": "au-import-campaign-dev",
+      "user_id": 90272,
+      "shop_id": 10328371,
+      "timeout": 9000000
+    }
+  },
+  "email_get_noti": "import@maildrop.cc",
+  "email_scheduler": "thuyhoang@beeketing.net",
+  "cases": {
+    "SB_PRB_SCWM_03": {
+      "import_campaign": {
+        "file_path": "data/printbase/import_campaign/import-camp-csv-multi-base.csv",
+        "file_name": "import-camp-csv-multi-base.csv",
+        "total_campaign": 1
+      },
+      "import_info": {
+        "status": "Completed",
+        "process": "Imported 1/1 products."
+      },
+      "verify_time": 2,
+      "campaign_detail": {
+        "campaign_name": "Import camp Campaign has 10 base products",
+        "description": "Hoc vien Ki thuat mat ma",
+        "tags": "cotton,t-shirt,v-neck,ladies,hoodie,long-sleeve,tank-top,crewneck,sweatshirt",
+        "style": ["Unisex T-shirt", "Premium Unisex T-shirt", "V-neck T-shirt"],
+        "color": ["White", "Black", "Dark Chocolate", "Ash", "Forest"],
+        "size": ["S", "M", "L", "XL", "2XL", "3XL", "XS"],
+        "number_image": 75
+      },
+      "campaign_sf": {
+        "variant": "3XL",
+        "style": "V-neck T-shirt",
+        "color": "Dark Chocolate",
+        "sale_price": "$20.49",
+        "compare_price": "$35.49"
+      },
+      "picture": {
+        "image": "image.png"
+      },
+      "import_status_mail": {
+        "success": "1",
+        "fail": "0",
+        "skip": "0",
+        "image_status": "Done"
+      }
+    }
+  }
+}

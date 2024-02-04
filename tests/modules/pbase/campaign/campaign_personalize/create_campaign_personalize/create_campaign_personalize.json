@@ -1,0 +1,778 @@
+{
+  "time_out": 1000000,
+  "url_catalog": "/admin/pod/catalog",
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-camp-personalize.onshopbase.com",
+      "shop_name": "au-camp-personalize",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "user_id": 73782,
+      "shop_id": 10204282
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-camp-personalize-prodtest.onshopbase.com",
+      "shop_name": "au-camp-personalize-prodtest",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "user_id": 73782,
+      "shop_id": 10376364,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-camp-personalize.myshopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_name": "au-camp-personalize",
+      "user_id": 73800,
+      "shop_id": 10322693
+    }
+  },
+  "cases": {
+    "DATA_DRIVEN": {
+      "data": [
+        {
+          "description": "[Live Preview CO text field] Check kết hợp nhiều giá trị : Characters, Numbers",
+          "case_code": "SB_PRB_LP_10",
+          "step": "View Campaign ngoài SF > Input [CO text]. Click btn [Preview] > Xóa value CO vừa input. Click btn [Preview]",
+          "product_info": [
+            {
+              "category": "Home & Living",
+              "base_product": "Sherpa Blanket",
+              "title": "Personalize textfield"
+            }
+          ],
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 1",
+              "location_layer_x": "500",
+              "location_layer_y": "1000",
+              "layer_size_h": "3000",
+              "layer_size_w": "2000"
+            }
+          ],
+          "custom_options": [
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 1",
+              "label": "CO text",
+              "allow_character": "Characters, Numbers",
+              "font": "Lilly Mae Regular"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Text field",
+              "value": "😋",
+              "custom_name": "CO text"
+            },
+            {
+              "type": "Text field",
+              "value": "!@@##@ #@#@#",
+              "custom_name": "CO text"
+            },
+            {
+              "type": "Text field",
+              "value": "",
+              "custom_name": "CO text"
+            }
+          ],
+          "message_error": [
+            "Your custom text has invalid characters. We only accept characters & numbers.",
+            "Your custom text has invalid characters. We only accept characters & numbers.",
+            "Please finish this field"
+          ],
+          "data_success": {
+            "custom_option_info": [
+              {
+                "type": "Text field",
+                "value": "abcd",
+                "custom_name": "CO text"
+              },
+              {
+                "type": "Text field",
+                "value": "123456",
+                "custom_name": "CO text"
+              },
+              {
+                "type": "Text field",
+                "value": "abcd 123456",
+                "custom_name": "CO text"
+              }
+            ]
+          },
+          "themes_setting": "Inside",
+          "pricing_info": {
+            "title": "Personalize textfield",
+            "description": "Description Campaign personalize"
+          }
+        },
+        {
+          "description": "[Live Preview CO text field] Check tạo nhiều CO text",
+          "case_code": "SB_PRB_LP_13",
+          "step": "View Campaign ngoài SF > Input [CO text]. Click btn [Preview]",
+          "product_info": [
+            {
+              "category": "Drinkware",
+              "base_product": "Beverage Mug",
+              "title": "Campaign_multi_textfield"
+            }
+          ],
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 1",
+              "location_layer_x": "200",
+              "location_layer_y": "100",
+              "layer_size_h": "250",
+              "layer_size_w": "800"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 2",
+              "location_layer_x": "200",
+              "location_layer_y": "300",
+              "layer_size_h": "250",
+              "layer_size_w": "800"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 3",
+              "location_layer_x": "200",
+              "location_layer_y": "500",
+              "layer_size_h": "250",
+              "layer_size_w": "800"
+            }
+          ],
+          "custom_options": [
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 1",
+              "label": "Test 1",
+              "position": "below",
+              "font": "Lilly Mae Regular"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 2",
+              "label": "Test 2",
+              "position": "below",
+              "font": "Lilly Mae Regular"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 3",
+              "label": "Test 3",
+              "font": "Lilly Mae Regular"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Text field",
+              "value": "Test text 1",
+              "custom_name": "Test 1"
+            },
+            {
+              "type": "Text field",
+              "value": "Test text 2",
+              "custom_name": "Test 2"
+            },
+            {
+              "type": "Text field",
+              "value": "Test text 3",
+              "custom_name": "Test 3"
+            }
+          ],
+          "themes_setting": "Inside",
+          "pricing_info": {
+            "title": "Campaign multi textfield",
+            "description": "Description Campaign personalize"
+          }
+        },
+        {
+          "description": "[Live Preview CO text area] Check kết hợp nhiều giá trị : Characters , Numbers",
+          "case_code": "SB_PRB_LP_17",
+          "step": "View Campaign ngoài SF > Input [CO text]. Click btn [Preview]",
+          "product_info": [
+            {
+              "category": "Drinkware",
+              "base_product": "Beverage Mug",
+              "title": "Campaign_textarea"
+            }
+          ],
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 1",
+              "location_layer_x": "200",
+              "location_layer_y": "100",
+              "layer_size_h": "250",
+              "layer_size_w": "800"
+            }
+          ],
+          "custom_options": [
+            {
+              "type": "Text area",
+              "target_layer": "Text layer 1",
+              "label": "Test 1",
+              "font": "Lilly Mae Regular"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "custom_name": "Test 1",
+              "type": "Text area",
+              "value": "Test text 1",
+              "value_2": "Test text 2"
+            }
+          ],
+          "themes_setting": "Inside",
+          "pricing_info": {
+            "title": "Campaign textarea",
+            "description": "Description Campaign personalize"
+          }
+        },
+        {
+          "description": "Live Preview CO Radio",
+          "case_code": "SB_PRB_LP_18",
+          "step": "View Campaign ngoài SF > Select option Radio. Click btn [Preview]",
+          "product_info": [
+            {
+              "category": "Accessories",
+              "base_product": "Drawstring Bag",
+              "title": "Campaign_radio"
+            }
+          ],
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 1",
+              "location_layer_x": "600",
+              "location_layer_y": "1000",
+              "layer_size_h": "500",
+              "layer_size_w": "1400"
+            }
+          ],
+          "custom_options": [
+            {
+              "type": "Radio",
+              "value": "Text test 1>Text test 2",
+              "target_layer": "Text layer 1",
+              "label": "Test radio",
+              "font": "Lilly Mae Regular"
+            }
+          ],
+          "data_success": {
+            "custom_option_info": [
+              {
+                "custom_name": "Test radio",
+                "type": "Radio",
+                "value": "Text test 1"
+              },
+              {
+                "custom_name": "Test radio",
+                "type": "Radio",
+                "value": "Text test 2"
+              }
+            ]
+          },
+          "themes_setting": "Inside",
+          "pricing_info": {
+            "title": "Campaign radio",
+            "description": "Description Campaign personalize"
+          }
+        },
+        {
+          "description": "Live Preview CO Droplist",
+          "case_code": "SB_PRB_LP_19",
+          "step": "View Campaign ngoài SF > Select option Droplist. Click btn [Preview]",
+          "product_info": [
+            {
+              "category": "Apparel",
+              "base_product": "Ladies T-shirt",
+              "title": "Campaign_droplist"
+            }
+          ],
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 1",
+              "location_layer_x": "150",
+              "location_layer_y": "750",
+              "layer_size_h": "200",
+              "layer_size_w": "1200"
+            }
+          ],
+          "custom_options": [
+            {
+              "type": "Droplist",
+              "value": "Text test 1>Text test 2",
+              "target_layer": "Text layer 1",
+              "label": "Test Droplist",
+              "font": "Lilly Mae Regular"
+            }
+          ],
+          "data_success": {
+            "custom_option_info": [
+              {
+                "custom_name": "Test Droplist",
+                "type": "Droplist",
+                "value": "Text test 1"
+              },
+              {
+                "custom_name": "Test Droplist",
+                "type": "Droplist",
+                "value": "Text test 2"
+              }
+            ]
+          },
+          "themes_setting": "Inside",
+          "pricing_info": {
+            "title": "Campaign droplist",
+            "description": "Description Campaign personalize"
+          }
+        },
+        {
+          "description": "Live Preview CO Image",
+          "case_code": "SB_PRB_LP_20",
+          "step": "View Campaign ngoài SF > Select image. Click btn [Preview]",
+          "product_info": [
+            {
+              "category": "Home & Living",
+              "base_product": "Quilt",
+              "title": "Personalize_CO_image"
+            }
+          ],
+          "layers": [
+            {
+              "layer_type": "Image",
+              "image_name": "background 1.png"
+            }
+          ],
+          "custom_options": [
+            {
+              "type": "Image",
+              "label": "Image",
+              "target_layer": "background 1"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "custom_name": "Image",
+              "type": "Image",
+              "value": "imgMore20MB.jpg"
+            }
+          ],
+          "message_error": ["Maximum file size is 20 MB"],
+          "s3_path": "files/SB_PRO_VAD_17_imgMore20MB.jpg",
+          "local_path": "data/shopbase/imgMore20MB.jpg",
+          "data_success": {
+            "custom_option_info": [
+              {
+                "custom_name": "Image",
+                "type": "Image",
+                "value": "BD_10.png"
+              }
+            ]
+          },
+          "themes_setting": "Inside",
+          "pricing_info": {
+            "title": "Personalize CO image",
+            "description": "Description Campaign personalize"
+          }
+        },
+        {
+          "description": "Live Preview CO Picture choice folder clipart",
+          "case_code": "SB_PRB_LP_21",
+          "step": "View Campaign ngoài SF > Verify ảnh PC > Chọn ảnh picture choice. Click btn [Preview]",
+          "product_info": [
+            {
+              "category": "Home & Living",
+              "base_product": "Quilt",
+              "title": "Campaign_PC_folder"
+            }
+          ],
+          "layers": [
+            {
+              "layer_type": "Image",
+              "image_name": "background 1.png",
+              "rotate_layer": "0",
+              "opacity_layer": "100",
+              "location_layer_x": "300",
+              "location_layer_y": "700",
+              "layer_size_h": "3000",
+              "layer_size_w": "2000"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "background 2.png",
+              "rotate_layer": "0",
+              "opacity_layer": "100",
+              "location_layer_x": "2500",
+              "location_layer_y": "700",
+              "layer_size_h": "3000",
+              "layer_size_w": "2000"
+            }
+          ],
+          "custom_options": [
+            {
+              "type": "Picture choice",
+              "label": "Picture show thumbnail",
+              "target_layer": "background 1",
+              "type_clipart": "Folder",
+              "value_clipart": "Clipart1_1",
+              "type_display_clipart": "Show with Thumbnail images",
+              "position": "below"
+            },
+            {
+              "type": "Picture choice",
+              "label": "Picture show droplist",
+              "target_layer": "background 2",
+              "type_clipart": "Folder",
+              "value_clipart": "Clipart2",
+              "type_display_clipart": "Show as a droplist with Clipart names"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "custom_name": "Picture show thumbnail",
+              "type": "Picture choice",
+              "value": "Png"
+            },
+            {
+              "custom_name": "Picture show droplist",
+              "type": "Picture choice folder show droplist",
+              "value": "background 2"
+            }
+          ],
+          "picture": [
+            "(//div[parent::div[contains(@class,'product-property')]]//img)[1]",
+            "(//div[parent::div[contains(@class,'product-property')]]//img)[2]",
+            "(//div[parent::div[contains(@class,'product-property')]]//img)[3]"
+          ],
+          "themes_setting": "Inside",
+          "pricing_info": {
+            "title": "Campaign PC folder",
+            "description": "Description Campaign personalize"
+          }
+        },
+        {
+          "description": "Live Preview CO Picture choice group clipart",
+          "case_code": "SB_PRB_LP_22",
+          "step": "View Campaign ngoài SF > Chọn ảnh clipart. Click btn [Preview]",
+          "product_info": [
+            {
+              "category": "Apparel",
+              "base_product": "V-neck T-shirt",
+              "title": "Campaign_PC_group"
+            }
+          ],
+          "layers": [
+            {
+              "layer_type": "Image",
+              "image_name": "background 1.png",
+              "location_layer_x": "0",
+              "location_layer_y": "10",
+              "layer_size_h": "1124",
+              "layer_size_w": "2390"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "background 2.png",
+              "location_layer_x": "1033",
+              "location_layer_y": "0",
+              "layer_size_h": "1032",
+              "layer_size_w": "2400"
+            }
+          ],
+          "custom_options": [
+            {
+              "type": "Picture choice",
+              "label": "Picture group show thumbnail",
+              "target_layer": "background 1",
+              "type_clipart": "Group",
+              "value_clipart": "Group 01",
+              "type_display_clipart": "Show with Thumbnail images",
+              "position": "below"
+            },
+            {
+              "type": "Picture choice",
+              "label": "Picture group show droplist",
+              "target_layer": "background 2",
+              "type_clipart": "Group",
+              "value_clipart": "Group 02",
+              "type_display_clipart": "Show as a droplist with Clipart names"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "custom_name": "Picture group show thumbnail",
+              "type": "Picture choice group show thumbnail",
+              "folder_clipart": "Clipart1_1",
+              "value": "Png"
+            },
+            {
+              "custom_name": "Picture group show droplist",
+              "type": "Picture choice group show droplist",
+              "folder_clipart": "Clipart2",
+              "value": "background 1"
+            }
+          ],
+          "themes_setting": "Inside",
+          "pricing_info": {
+            "title": "Campaign PC group",
+            "description": "Description Campaign personalize"
+          }
+        },
+        {
+          "description": "Live Preview CO Checkbox",
+          "case_code": "SB_PRB_LP_23",
+          "step": "View Campaign ngoài SF > Select checkbox. Click btn [Preview]",
+          "product_info": [
+            {
+              "category": "Apparel",
+              "base_product": "Unisex T-shirt",
+              "title": "Campaign_checkbox"
+            }
+          ],
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 1",
+              "location_layer_x": "600",
+              "location_layer_y": "1000",
+              "layer_size_h": "400",
+              "layer_size_w": "1600"
+            }
+          ],
+          "custom_options": [
+            {
+              "type": "Checkbox",
+              "value": "Text test 1>Text test 2",
+              "target_layer": "Text layer 1",
+              "label": "Test checkbox",
+              "font": "Lilly Mae Regular"
+            }
+          ],
+          "data_success": {
+            "custom_option_info": [
+              {
+                "custom_name": "Test checkbox",
+                "type": "Checkbox",
+                "value": "uncheck"
+              },
+              {
+                "custom_name": "Test checkbox",
+                "type": "Checkbox",
+                "value": "check"
+              }
+            ]
+          },
+          "themes_setting": "Inside",
+          "pricing_info": {
+            "title": "Campaign checkbox",
+            "description": "Description Campaign personalize"
+          }
+        },
+        {
+          "description": "Check preview camp personalize với camp 3D 2 mặt",
+          "case_code": "SB_PRB_LP_24",
+          "step": "View Campaign ngoài SF > Input các giá trị CO.. Click btn [Preview]",
+          "product_info": [
+            {
+              "category": "All Over Print",
+              "base_product": "AOP Beach Shorts",
+              "title": "Campaign_3D_two_side"
+            }
+          ],
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 1",
+              "location_layer_x": "700",
+              "location_layer_y": "3800",
+              "layer_size_h": "600",
+              "layer_size_w": "1900"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "background 1.png",
+              "location_layer_x": "3500",
+              "location_layer_y": "3600",
+              "layer_size_h": "2000",
+              "layer_size_w": "1800"
+            }
+          ],
+          "custom_options": [
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 1",
+              "label": "Test 1",
+              "font": "Lilly Mae Regular",
+              "position": "below"
+            },
+            {
+              "type": "Picture choice",
+              "label": "Picture show thumbnail",
+              "target_layer": "background 1",
+              "type_clipart": "Folder",
+              "value_clipart": "Clipart1_1",
+              "type_display_clipart": "Show with Thumbnail images"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Text field",
+              "value": "Test text 1",
+              "custom_name": "Test 1"
+            },
+            {
+              "custom_name": "Picture show thumbnail",
+              "type": "Picture choice",
+              "value": "Png"
+            }
+          ],
+          "themes_setting": "Inside",
+          "pricing_info": {
+            "title": "Campaign 3D two side",
+            "description": "Description Campaign personalize"
+          }
+        },
+        {
+          "description": "Check preview camp personalize với camp 2D 2 mặt",
+          "case_code": "SB_PRB_LP_25",
+          "step": "View Campaign ngoài SF > Input các giá trị CO.. Click btn [Preview]",
+          "product_info": [
+            {
+              "category": "Apparel",
+              "base_product": "Ladies T-shirt",
+              "title": "Campaign_2D_two_side"
+            }
+          ],
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 1",
+              "location_layer_x": "50",
+              "location_layer_y": "200",
+              "layer_size_h": "280",
+              "layer_size_w": "700"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "background 1.png",
+              "location_layer_x": "400",
+              "location_layer_y": "500",
+              "layer_size_h": "1000",
+              "layer_size_w": "1000"
+            }
+          ],
+          "custom_options": [
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 1",
+              "label": "Test 1",
+              "font": "Lilly Mae Regular",
+              "position": "below"
+            },
+            {
+              "type": "Picture choice",
+              "label": "Picture show thumbnail",
+              "target_layer": "background 1",
+              "type_clipart": "Folder",
+              "value_clipart": "Clipart1_1",
+              "type_display_clipart": "Show with Thumbnail images"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Text field",
+              "value": "Test text 1",
+              "custom_name": "Test 1"
+            },
+            {
+              "custom_name": "Picture show thumbnail",
+              "type": "Picture choice",
+              "value": "Png"
+            }
+          ],
+          "themes_setting": "Inside",
+          "pricing_info": {
+            "title": "Campaign 2D two side",
+            "description": "Description Campaign personalize"
+          }
+        },
+        {
+          "description": "Check Live preview với camp với CO target layer theo base",
+          "case_code": "SB_PRB_LP_26",
+          "step": "View Campaign ngoài SF > Input các giá trị CO. Click btn [Preview]",
+          "product_info": [
+            {
+              "category": "Apparel",
+              "base_product": "Ladies T-shirt",
+              "title": "Campaign_two_base"
+            },
+            {
+              "category": "Drinkware",
+              "base_product": "Beverage Mug",
+              "title": "Campaign_two_base"
+            }
+          ],
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 1",
+              "location_layer_x": "250",
+              "location_layer_y": "250",
+              "layer_size_h": "300",
+              "layer_size_w": "1100"
+            }
+          ],
+          "layers_base_2": [
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 1",
+              "location_layer_x": "250",
+              "location_layer_y": "250",
+              "layer_size_h": "300",
+              "layer_size_w": "1100"
+            },
+            {
+              "layer_type": "Text",
+              "layer_value": "Text 2",
+              "location_layer_x": "250",
+              "location_layer_y": "550",
+              "layer_size_h": "300",
+              "layer_size_w": "1100"
+            }
+          ],
+          "custom_options": [
+            {
+              "type": "Text field",
+              "target_layer_base_product": ["Text layer 1", "Text layer 2"],
+              "label": "Test 1",
+              "font": "Lilly Mae Regular"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Text field",
+              "value": "Test text 1",
+              "custom_name": "Test 1"
+            }
+          ],
+          "base_number": 2,
+          "themes_setting": "Inside",
+          "pricing_info": {
+            "title": "Campaign two base",
+            "description": "Description Campaign personalize"
+          }
+        }
+      ]
+    }
+  }
+}

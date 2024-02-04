@@ -1,0 +1,187 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "quan-shop-test.myshopbase.net",
+      "shop_name": "quan-shop-test",
+      "username": "shopbase1@beeketing.net",
+      "password": "F|0cGtp4dQL-&s6",
+      "shop_domain": "quan-shop-test.myshopbase.net"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "gmc-manual.onshopbase.com",
+      "shop_name": "gmc-manual",
+      "username": "shopbase1@beeketing.net",
+      "password": "=7#d2L9b3SuuA*%Q",
+      "shop_domain": "gmc-manual.onshopbase.com",
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "arthur-shop.onshopbase.com",
+      "shop_name": "arthur-shop",
+      "username": "shopbase1@beeketing.net",
+      "password": "=7#d2L9b3SuuA*%Q",
+      "shop_domain": "arthur-shop.onshopbase.com"
+    }
+  },
+  "product_info": {
+    "title": "Product all info",
+    "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+    "image_name": "Logo1.jpg",
+    "product_type": "Shirt",
+    "vendor": "Uniqlo",
+    "tag": "tag1",
+    "price": "10",
+    "compare_at_price": "20",
+    "cost_per_item": "5",
+    "sku": "A123456B",
+    "bar_code": "B654321A",
+    "inventory_policy": "ShopBase tracks this product's inventory",
+    "quantity": "100",
+    "weight": "50"
+  },
+  "product_variant": {
+    "value_size": "S,M,L,",
+    "value_color": "Black,White,",
+    "price": "20",
+    "compare_at_price": "30",
+    "sku": "SKU-test",
+    "bar_code": "test"
+  },
+  "maximize_media": 500,
+  "timeout": 600000,
+  "cases": {
+    "SB_PRO_VAD_11": {
+      "options_screen_screenshot": "optionsScreen.png",
+      "medias_screen_screenshot": "mediasScreen.png",
+      "inventory_screen_screenshot": "inventoryScreen.png",
+      "pricing_screen_screenshot": "pricingScreen.png",
+      "shipping_screen_screenshot": "shippingScreen.png",
+      "tag_screen_screenshot": "tagScreen.png"
+    },
+    "SB_PRO_VAD_12": {
+      "product_variant": {
+        "value_size": "XL",
+        "value_color": "Yellow",
+        "price": "50",
+        "compare_at_price": "60",
+        "cost_per_item": "50",
+        "sku": "SKU-test",
+        "bar_code": "test",
+        "quantity": "100",
+        "weight": "300",
+        "weightUnit": "g",
+        "media_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/020.png",
+        "media_upload": "tests/modules/shopbase/product/variant_detail/medias/pokemon-3.jpg"
+      }
+    },
+    "SB_PRO_VAD_21": {
+      "new_size": "XL",
+      "new_color": "Yellow"
+    },
+    "SB_PRO_VAD_22": {},
+    "VAR_TAG": {
+      "data": [
+        {
+          "case_id": "SB_PRO_VAD_2",
+          "case_name": "Add variant tag",
+          "case_step": "Add new variant tag",
+          "variant_tag": "tracking-id-123456789",
+          "product_info": {
+            "title": "Product have variant tag",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "product_type": "Shirt",
+            "vendor": "Uniqlo",
+            "tag": "tag1",
+            "price": "10",
+            "compare_at_price": "20",
+            "cost_per_item": "5",
+            "sku": "A123456B",
+            "bar_code": "B654321A",
+            "inventory_policy": "ShopBase tracks this product's inventory",
+            "quantity": "100",
+            "weight": "50"
+          }
+        },
+        {
+          "case_id": "SB_PRO_VAD_3",
+          "case_name": "Update variant tag",
+          "case_step": "Update variant tag",
+          "variant_tag": "tracking-id-987654321",
+          "product_name": "Product have variant tag"
+        },
+        {
+          "case_id": "SB_PRO_VAD_4",
+          "case_name": "Remove variant tag",
+          "case_step": "Remove variant tag",
+          "variant_tag": "",
+          "product_name": "Product have variant tag"
+        }
+      ]
+    },
+    "VAR_MEDIA": {
+      "data": [
+        {
+          "case_id": "SB_PRO_VAD_13",
+          "case_name": "Select 500 medias for variant in the medias of product",
+          "product_name": "Product variant 500 images (select)",
+          "media_select": "yes",
+          "max_image_quantity": "+499",
+          "image_quantity": "+498",
+          "success": true
+        },
+        {
+          "case_id": "SB_PRO_VAD_14",
+          "case_name": "Upload 500 medias for variant by URL",
+          "product_name": "Product variant 500 images (upload)",
+          "media_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MonkeyKing_0.jpg",
+          "max_image_quantity": "+499",
+          "image_quantity": "+498",
+          "success": true
+        },
+        {
+          "case_id": "SB_PRO_VAD_15",
+          "case_name": "Upload 500 medias for variant from device",
+          "product_name": "Product variant 500 images (upload)",
+          "media_upload": "tests/modules/shopbase/product/variant_detail/medias/pokemon-3.jpg",
+          "max_image_quantity": "+499",
+          "image_quantity": "+498",
+          "success": true
+        },
+        {
+          "case_id": "SB_PRO_VAD_16",
+          "case_name": "Upload ảnh thứ 501 của variant",
+          "product_name": "Product variant 500 images (select)"
+        },
+        {
+          "case_id": "SB_PRO_VAD_17",
+          "case_name": "Upload ảnh có dung lượng >20MB",
+          "product_name": "Product all info",
+          "s3_path": "files/SB_PRO_VAD_17_imgMore20MB.jpg",
+          "file_path": "tests/modules/shopbase/product/variant_detail/medias/imgMore20MB.jpg"
+        },
+        {
+          "case_id": "SB_PRO_VAD_18",
+          "case_name": "Upload ảnh không đúng định dạng (khác các định dạng sau: PNG, JPG, JPEG, GIF, WEBP)",
+          "product_name": "Product all info",
+          "file_path": "tests/modules/shopbase/product/variant_detail/medias/INV1582999.pdf"
+        },
+        {
+          "case_id": "SB_PRO_VAD_19",
+          "case_name": "Upload ảnh khi bị sai forrmat link",
+          "product_name": "Product all info",
+          "media_url": "https://ddragon.leagueoflegends.com/cdn/img/champion"
+        },
+        {
+          "case_id": "SB_PRO_VAD_20",
+          "case_name": "Upload ảnh lỗi kết nối với image hosting",
+          "product_name": "Product all info",
+          "media_url": "https://dtcl.lol/champions/TFT6_TheGoldenEgg.png"
+        }
+      ]
+    }
+  }
+}

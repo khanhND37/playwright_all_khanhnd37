@@ -1,0 +1,1544 @@
+{
+  "time_out": 2000000,
+  "param_threshold": 0.1,
+  "max_diff_pixel_ratio": 0.05,
+  "max_diff_pixels": 2000,
+  "email_scheduler": "hanhdo@beeketing.net",
+  "customer_info": {
+    "email": "tester@maildrop.cc",
+    "first_name": "Hong",
+    "last_name": "Hanh",
+    "address": "Me Linh Ha Noi",
+    "country": "Vietnam",
+    "city": "Ha Noi",
+    "zipcode": "100000",
+    "phone_number": "0344321906"
+  },
+  "card_info": {
+    "number": "4242424242424242",
+    "holder_name": "HANH",
+    "expire_date": "12 / 30",
+    "cvv": "116"
+  },
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "shop_name": "au-live-preview-special-effect-spec2",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "domain": "au-live-preview-special-effect-spec2.onshopbase.com",
+      "user_id": 73782,
+      "shop_id": 10470651
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "shop_name": "live-preview-special-effect-spec-prodtest",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "domain": "live-preview-special-effect-spec-prodtest.onshopbase.com",
+      "user_id": 73782,
+      "shop_id": 10399570,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-live-preview-special-effect-spec.myshopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_name": "au-live-preview-special-effect-spec",
+      "user_id": 73800,
+      "shop_id": 10324542
+    }
+  },
+  "cases": {
+    "PRODUCT_HAS_EFFECT": {
+      "data": [
+        {
+          "case_id": "TC_SB_PRB_LPSE_58",
+          "case_name": "[Shopbase]Check tạo preview image có hiệu ứng Stroke",
+          "product_all_info": {
+            "title": "Product test add preview effect stroke",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "image_preview": "BD_27.png",
+          "image_print_file": "BD_23.png",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 1",
+              "layer_value": "Test text value 1",
+              "location_layer_x": "55",
+              "location_layer_y": "55",
+              "style": {
+                "stroke": {
+                  "stroke_thickness": "80"
+                }
+              },
+              "font": "Lilly Mae Regular"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 1",
+              "placeholder": "Please input text field",
+              "custom_name": "Text field",
+              "label": "Text field ",
+              "default_value": "Text field",
+              "allow_character": "Characters, Numbers, Special Characters"
+            }
+          ],
+          "custom_option_data_SF": [
+            {
+              "type": "Text field",
+              "custom_name": "Text field",
+              "value": "Hong Hanh"
+            }
+          ]
+        },
+        {
+          "case_id": "TC_SB_PRB_LPSE_59",
+          "case_name": "[Shopbase]Check tạo preview image có hiệu ứng Curve",
+          "product_all_info": {
+            "title": "Product test add preview effect curve",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "image_preview": "BD_27.png",
+          "image_print_file": "BD_23.png",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 1",
+              "layer_value": "Test text value 1",
+              "location_layer_x": "55",
+              "location_layer_y": "55",
+              "shape": {
+                "curve": {
+                  "curve_input": "70"
+                }
+              },
+              "font": "Lilly Mae Regular"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 1",
+              "placeholder": "Please input text field",
+              "custom_name": "Text field",
+              "label": "Text field ",
+              "default_value": "Text field",
+              "allow_character": "Characters, Numbers, Special Characters"
+            }
+          ],
+          "custom_option_data_SF": [
+            {
+              "type": "Text field",
+              "custom_name": "Text field",
+              "value": "Hong Hanh"
+            }
+          ]
+        },
+        {
+          "case_id": "TC_SB_PRB_LPSE_61",
+          "case_name": "[Shopbase]Check product có preview có conditional logic layer text có hiệu ứng",
+          "product_all_info": {
+            "title": "Product test add preview effect stroke",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "image_preview": "BD_27.png",
+          "image_print_file": "BD_23.png",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 1",
+              "layer_value": "Test text value 1",
+              "location_layer_x": "55",
+              "location_layer_y": "55",
+              "font": "Lilly Mae Regular"
+            },
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 2",
+              "layer_value": "Test text value 2",
+              "location_layer_x": "70",
+              "location_layer_y": "70",
+              "style": {
+                "stroke": {
+                  "stroke_thickness": "80"
+                }
+              },
+              "font": "Lilly Mae Regular"
+            },
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 3",
+              "layer_value": "Test text value 3",
+              "location_layer_x": "150",
+              "location_layer_y": "150",
+              "shape": {
+                "curve": {
+                  "curve_input": "70"
+                }
+              },
+              "font": "Lilly Mae Regular"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Radio",
+              "value": "a,b",
+              "target_layer": "Text layer 1",
+              "label": "Test radio",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 2",
+              "placeholder": "Please input text field",
+              "custom_name": "Text field 1",
+              "label": "Text field 1",
+              "default_value": "Text field 1",
+              "allow_character": "Characters, Numbers, Special Characters",
+              "position": "below"
+            },
+            {
+              "type": "Text area",
+              "target_layer": "Text layer 3",
+              "placeholder": "Please input text field",
+              "custom_name": "Text field 2",
+              "label": "Text field 2",
+              "default_value": "Text field 2",
+              "allow_character": "Characters, Numbers, Special Characters"
+            }
+          ],
+          "custom_option_data_SF": [
+            {
+              "type": "Text field",
+              "custom_name": "Text field 1",
+              "value": "Hong Hanh"
+            },
+            {
+              "type": "Text area",
+              "custom_name": "Text field 2",
+              "value": "Do Thi Hong Hanh"
+            }
+          ],
+          "conditional_logic_info": [
+            {
+              "custom_name": "Test radio",
+              "add_condition": "yes",
+              "condition": ["is equal to>a", "is not equal to>b"],
+              "then_show_value": ["Text field 1", "Text field 2"]
+            }
+          ]
+        },
+        {
+          "case_id": "SB_PRB_LPSE_60",
+          "case_name": "[Shopbase]Check product có preview có nhiều CO",
+          "product_all_info": {
+            "title": "Product test add multi preview effect",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "image_preview": "BD_27.png",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 1",
+              "layer_value": "Test text value 1",
+              "location_layer_x": "55",
+              "location_layer_y": "12",
+              "style": {
+                "stroke": {
+                  "stroke_thickness": "80"
+                }
+              },
+              "font": "Lilly Mae Regular"
+            },
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 2",
+              "layer_value": "Test text value 2",
+              "location_layer_x": "43",
+              "location_layer_y": "41",
+              "shape": {
+                "curve": {
+                  "curve_input": "70"
+                }
+              },
+              "font": "Lilly Mae Regular"
+            },
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 3",
+              "layer_value": "Test text value 3",
+              "location_layer_x": "50",
+              "location_layer_y": "150",
+              "style": {
+                "stroke": {
+                  "stroke_thickness": "80"
+                }
+              },
+              "font": "Lilly Mae Regular"
+            },
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 4",
+              "layer_value": "Test text value 4",
+              "location_layer_x": "42",
+              "location_layer_y": "112",
+              "style": {
+                "stroke": {
+                  "stroke_thickness": "60"
+                }
+              },
+              "shape": {
+                "curve": {
+                  "curve_input": "50"
+                }
+              },
+              "font": "Lilly Mae Regular"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 1",
+              "placeholder": "Please input text field",
+              "custom_name": "Text field",
+              "label": "Text field ",
+              "default_value": "Text field",
+              "allow_character": "Characters, Numbers, Special Characters",
+              "position": "below"
+            },
+            {
+              "type": "Text area",
+              "target_layer": "Text layer 2",
+              "placeholder": "Please input text area",
+              "custom_name": "Text area",
+              "label": "Text area",
+              "default_value": "Text area",
+              "allow_character": "Characters, Numbers, Special Characters",
+              "position": "below"
+            },
+            {
+              "type": "Radio",
+              "target_layer": "Text layer 3",
+              "placeholder": "Please choose an option",
+              "custom_name": "Radio",
+              "label": "Radio",
+              "value": "Radio 1, Radio 2",
+              "position": "below"
+            },
+            {
+              "type": "Droplist",
+              "target_layer": "Text layer 4",
+              "placeholder": "Please choose a droplist",
+              "custom_name": "Droplist",
+              "label": "Droplist",
+              "value": "Droplist 1, Droplist 2"
+            }
+          ],
+          "custom_option_data_SF": [
+            {
+              "type": "Text field",
+              "custom_name": "Text field",
+              "value": "Open Commerce"
+            },
+            {
+              "type": "Text area",
+              "custom_name": "Text area",
+              "value": "Group"
+            },
+            {
+              "type": "Radio",
+              "custom_name": "Radio",
+              "value": "Radio 2"
+            },
+            {
+              "custom_name": "Droplist",
+              "value": "Droplist 2"
+            }
+          ]
+        }
+      ]
+    },
+    "PRINT_FILE_HAS_EFFECT": {
+      "data": [
+        {
+          "case_id": "TC_SB_PRB_LPSE_66",
+          "case_name": "[Shopbase]Check tạo print file có hiệu ứng cả Stroke và Curve",
+          "message_generate_print_file": "Request bulk generate print file orders successfully",
+          "product_all_info": {
+            "title": "Product test add printfile special effect",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "image_preview": "BD_27.png",
+          "image_print_file": "BD_23.png",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 1",
+              "layer_value": "Test text value 1",
+              "location_layer_x": "55",
+              "location_layer_y": "55",
+              "style": {
+                "stroke": {
+                  "stroke_thickness": "80"
+                }
+              },
+              "shape": {
+                "curve": {
+                  "curve_input": "80"
+                }
+              },
+              "font": "Lilly Mae Regular"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 1",
+              "placeholder": "Please input text field",
+              "custom_name": "Text field",
+              "label": "Text field ",
+              "default_value": "Text field",
+              "allow_character": "Characters, Numbers, Special Characters"
+            }
+          ],
+          "custom_option_data_SF": ["Text field>Text field>Hong Hanh"],
+          "button_click_open_editor": "Create Print file"
+        },
+        {
+          "case_id": "TC_SB_PRB_LPSE_68",
+          "case_name": "[Shopbase]Check tạo print file có hiệu ứng cả Stroke và Curve trong order",
+          "message_generate_print_file": "Request bulk generate print file orders successfully",
+          "product_all_info": {
+            "title": "Product test add printfile special effect",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "button_click_open_editor": "Create Preview image",
+          "image_preview": "BD_27.png",
+          "image_print_file": "BD_23.png",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 1",
+              "layer_value": "Test text value 1",
+              "location_layer_x": "55",
+              "location_layer_y": "55",
+              "style": {
+                "stroke": {
+                  "stroke_thickness": "80"
+                }
+              },
+              "font": "Lilly Mae Regular"
+            },
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 2",
+              "layer_value": "Test text value 2",
+              "location_layer_x": "90",
+              "location_layer_y": "90",
+              "shape": {
+                "curve": {
+                  "curve_input": "80"
+                }
+              },
+              "font": "Lilly Mae Regular"
+            },
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 3",
+              "layer_value": "Test text value 3",
+              "location_layer_x": "130",
+              "location_layer_y": "130",
+              "style": {
+                "stroke": {
+                  "stroke_thickness": "90"
+                }
+              },
+              "shape": {
+                "curve": {
+                  "curve_input": "50"
+                }
+              },
+              "font": "Lilly Mae Regular"
+            },
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 4",
+              "layer_value": "Test text value 4",
+              "location_layer_x": "160",
+              "location_layer_y": "160",
+              "style": {
+                "stroke": {
+                  "stroke_thickness": "70"
+                }
+              },
+              "shape": {
+                "curve": {
+                  "curve_input": "60"
+                }
+              },
+              "font": "Lilly Mae Regular"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 1",
+              "placeholder": "Please input text field",
+              "custom_name": "Text field 1",
+              "label": "Text field 1",
+              "default_value": "Text field",
+              "allow_character": "Characters, Numbers, Special Characters",
+              "position": "below"
+            },
+            {
+              "type": "Text area",
+              "target_layer": "Text layer 2",
+              "placeholder": "Please input text field",
+              "custom_name": "Text field 2",
+              "label": "Text field 2",
+              "default_value": "Text field",
+              "allow_character": "Characters, Numbers, Special Characters",
+              "position": "below"
+            },
+            {
+              "type": "Radio",
+              "value": "Text radio1,Text radio2",
+              "target_layer": "Text layer 3",
+              "label": "Test radio",
+              "position": "below"
+            },
+            {
+              "type": "Droplist",
+              "value": "Text test 1,Text test 2",
+              "target_layer": "Text layer 4",
+              "label": "Test Droplist"
+            }
+          ],
+          "custom_option_data_SF": ["Text field>Text field 1>Hong Hanh", "Text area>Text field 2>I'm DO THI HONG HANH"]
+        },
+        {
+          "case_id": "TC_SB_PRB_LPSE_64",
+          "case_name": "[Shopbase]Check tạo print file có hiệu ứng Stroke",
+          "message_generate_print_file": "Request bulk generate print file orders successfully",
+          "product_all_info": {
+            "title": "Product test add printfile special effect",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "image_preview": "BD_27.png",
+          "image_print_file": "BD_23.png",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 1",
+              "layer_value": "Test text value 1",
+              "location_layer_x": "55",
+              "location_layer_y": "55",
+              "style": {
+                "stroke": {
+                  "stroke_thickness": "60"
+                }
+              },
+              "font": "Lilly Mae Regular"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 1",
+              "placeholder": "Please input text field",
+              "custom_name": "Text field",
+              "label": "Text field ",
+              "default_value": "Text field",
+              "allow_character": "Characters, Numbers, Special Characters"
+            }
+          ],
+          "custom_option_data_SF": ["Text field>Text field>Do Thi Hong Hanh"],
+          "button_click_open_editor": "Create Print file"
+        },
+        {
+          "case_id": "TC_SB_PRB_LPSE_65",
+          "case_name": "[Shopbase]Check tạo print file có hiệu ứng Curve",
+          "message_generate_print_file": "Request bulk generate print file orders successfully",
+          "product_all_info": {
+            "title": "Product test add printfile special effect",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "image_preview": "BD_27.png",
+          "image_print_file": "BD_23.png",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 1",
+              "layer_value": "Test text value 1",
+              "location_layer_x": "55",
+              "location_layer_y": "55",
+              "shape": {
+                "curve": {
+                  "curve_input": "80"
+                }
+              },
+              "font": "Lilly Mae Regular"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 1",
+              "placeholder": "Please input text field",
+              "custom_name": "Text field",
+              "label": "Text field ",
+              "default_value": "Text field",
+              "allow_character": "Characters, Numbers, Special Characters"
+            }
+          ],
+          "custom_option_data_SF": ["Text field>Text field>Do Thi Hong Hanh"],
+          "button_click_open_editor": "Create Print file"
+        }
+      ]
+    },
+    "TC_SB_PRB_LPSE_62": {
+      "product_all_info": {
+        "title": "Product test add preview effect curve has group",
+        "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+        "image_name": "Logo1.jpg",
+        "vendor": "Uniqlo",
+        "price": "10",
+        "compare_at_price": "20"
+      },
+      "image_preview": "BD_27.png",
+      "image_print_file": "BD_23.png",
+      "layers": [
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 1",
+          "layer_value": "Test text value 1",
+          "location_layer_x": "55",
+          "location_layer_y": "55",
+          "style": {
+            "stroke": {
+              "stroke_thickness": "70"
+            }
+          },
+          "font": "Lilly Mae Regular"
+        },
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 2",
+          "layer_value": "Test text value 2",
+          "location_layer_x": "100",
+          "location_layer_y": "100",
+          "shape": {
+            "curve": {
+              "curve_input": "80"
+            }
+          },
+          "font": "Lilly Mae Regular"
+        }
+      ],
+      "groups_info": [
+        {
+          "current_group": "New group 1",
+          "new_group": "Group 1"
+        },
+        {
+          "current_group": "New group 1",
+          "new_group": "Group 2"
+        }
+      ],
+      "layers_group_info": [
+        {
+          "layer_name": "Text layer 1",
+          "group_name": "Group 1"
+        },
+        {
+          "layer_name": "Text layer 2",
+          "group_name": "Group 2"
+        }
+      ],
+      "custom_option_info": [
+        {
+          "type": "Text field",
+          "target_layer": "Text layer 1",
+          "placeholder": "Please input text field",
+          "custom_name": "Text field 1",
+          "label": "Text field 1",
+          "default_value": "Text field",
+          "allow_character": "Characters, Numbers, Special Characters",
+          "position": "below"
+        },
+        {
+          "type": "Text area",
+          "target_layer": "Text layer 2",
+          "placeholder": "Please input text field",
+          "custom_name": "Text field 2",
+          "label": "Text field 2",
+          "default_value": "Text field",
+          "allow_character": "Characters, Numbers, Special Characters"
+        }
+      ],
+      "customize_group": {
+        "option_group": "Droplist",
+        "label_group": "Please select the droplist 1",
+        "group_name": "Group 2, Group 1"
+      },
+      "custom_option_data_SF": [
+        {
+          "name_group": "Group 2",
+          "custom_info": [
+            {
+              "type": "Text area",
+              "custom_name": "Text field 2",
+              "value": "Hong Hanh"
+            }
+          ],
+          "picture": "TC_SB_PRB_LPSE_62_group_2"
+        },
+        {
+          "name_group": "Group 1",
+          "custom_info": [
+            {
+              "type": "Text field",
+              "custom_name": "Text field 1",
+              "value": "Hong Hanh"
+            }
+          ],
+          "picture": "TC_SB_PRB_LPSE_62_group_1"
+        }
+      ]
+    },
+    "SB_PRB_LPSE_69": {
+      "product_all_info": {
+        "title": "Product test duplicate with effect",
+        "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+        "image_name": "Logo1.jpg",
+        "vendor": "Uniqlo",
+        "price": "10",
+        "compare_at_price": "20"
+      },
+      "image_preview": "BD_27.png",
+      "image_print_file": "BD_23.png",
+      "layers": [
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 1",
+          "layer_value": "Test text value 1",
+          "location_layer_x": "55",
+          "location_layer_y": "55",
+          "style": {
+            "stroke": {
+              "stroke_thickness": "70"
+            }
+          },
+          "font": "Lilly Mae Regular"
+        },
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 2",
+          "layer_value": "Test text value 2",
+          "location_layer_x": "100",
+          "location_layer_y": "100",
+          "shape": {
+            "curve": {
+              "curve_input": "60"
+            }
+          },
+          "font": "Lilly Mae Regular"
+        }
+      ],
+      "groups_info": [
+        {
+          "current_group": "New group 1",
+          "new_group": "Group 1"
+        },
+        {
+          "current_group": "New group 1",
+          "new_group": "Group 2"
+        }
+      ],
+      "layers_group_info": [
+        {
+          "layer_name": "Text layer 1",
+          "group_name": "Group 1"
+        },
+        {
+          "layer_name": "Text layer 2",
+          "group_name": "Group 2"
+        }
+      ],
+      "custom_option_info": [
+        {
+          "type": "Text field",
+          "target_layer": "Text layer 1",
+          "placeholder": "Please input text field",
+          "custom_name": "Text field 1",
+          "label": "Text field 1",
+          "default_value": "Text field",
+          "allow_character": "Characters, Numbers, Special Characters",
+          "position": "below"
+        },
+        {
+          "type": "Text area",
+          "target_layer": "Text layer 2",
+          "placeholder": "Please input text field",
+          "custom_name": "Text field 2",
+          "label": "Text field 2",
+          "default_value": "Text field",
+          "allow_character": "Characters, Numbers, Special Characters"
+        }
+      ],
+      "customize_group": {
+        "option_group": "Droplist",
+        "label_group": "Please select the droplist 1",
+        "group_name": "Group 2, Group 1"
+      },
+      "custom_option_data_SF": [
+        {
+          "name_group": "Group 2",
+          "custom_info": [
+            {
+              "type": "Text area",
+              "custom_name": "Text field 2",
+              "value": "Beeketing"
+            }
+          ],
+          "picture": "SB_PRB_LPSE_69_group_2"
+        },
+        {
+          "name_group": "Group 1",
+          "custom_info": [
+            {
+              "type": "Text field",
+              "custom_name": "Text field 1",
+              "value": "OCG"
+            }
+          ],
+          "picture": "SB_PRB_LPSE_69_group_1"
+        }
+      ],
+      "custom_option_printfile_sf": [
+        {
+          "name_group": "Group 2",
+          "custom_info": [
+            {
+              "type": "Text area",
+              "custom_name": "Text field 2",
+              "value": "Beeketing"
+            }
+          ],
+          "picture": "SB_PRB_LPSE_69_group_2"
+        }
+      ]
+    },
+    "SB_PRB_PRB_PRO_SBP_64": {
+      "product_all_info": {
+        "title": "Product custom text effect curve",
+        "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+        "image_name": "Logo1.jpg",
+        "vendor": "Uniqlo",
+        "price": "10",
+        "compare_at_price": "20"
+      },
+      "image_preview": "BD_27.png",
+      "image_print_file": "BD_23.png",
+      "effect": "Shape",
+      "type_curve": "Curve",
+      "type_none": "None",
+      "layers": [
+        {
+          "layer_type": "Text",
+          "layer_value": "Text layer 1",
+          "layer_name": "Text layer 1",
+          "location_layer_x": "100",
+          "location_layer_y": "100",
+          "font": "Atocha W00 Regular"
+        },
+        {
+          "layer_type": "Text",
+          "layer_value": "Text layer 2",
+          "layer_name": "Text layer 2",
+          "font": "Atocha W00 Regular",
+          "location_layer_x": "100",
+          "location_layer_y": "900",
+          "shape": {
+            "curve": {
+              "curve_input": "-40"
+            }
+          }
+        }
+      ],
+      "default_value_envidence": "SB_PRB_PRB_PRO_SBP_64_default_value_envRun.png",
+      "default_apply_envidence": "SB_PRB_PRB_PRO_SBP_64_default_apply_envRun.png",
+      "input_value_envidence": "SB_PRB_PRB_PRO_SBP_64_input_value_envRun.png",
+      "none_curve_envidence": "SB_PRB_PRB_PRO_SBP_64_none_envRun.png",
+      "printfile_envidence": "SB_PRB_PRB_PRO_SBP_64_print_file_envRun.png"
+    },
+    "SB_PRB_PRB_PRO_SBP_67": {
+      "product_all_info": {
+        "title": "Product custom text overflow và alignment",
+        "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+        "image_name": "Logo1.jpg",
+        "vendor": "Uniqlo",
+        "price": "10",
+        "compare_at_price": "20"
+      },
+      "image_preview": "BD_27.png",
+      "image_print_file": "BD_23.png",
+      "layers": [
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 1",
+          "layer_value": "Test text value 1",
+          "location_layer_x": "55",
+          "location_layer_y": "55",
+          "layer_size_h": "100",
+          "layer_size_w": "350",
+          "font": "Atocha W00 Regular"
+        },
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 2",
+          "layer_value": "Test text value 2",
+          "location_layer_x": "100",
+          "location_layer_y": "700",
+          "layer_size_h": "300",
+          "layer_size_w": "500",
+          "text_overflow": "Shrink",
+          "text_alignment": {
+            "horizontal": "right"
+          },
+          "style": {
+            "stroke": {
+              "stroke_thickness": "35"
+            }
+          },
+          "font": "Atocha W00 Regular"
+        },
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 3",
+          "layer_value": "Test text value 3",
+          "location_layer_x": "100",
+          "location_layer_y": "400",
+          "layer_size_h": "100",
+          "layer_size_w": "500",
+          "text_overflow": "Scale",
+          "text_alignment": {
+            "vertical": "top"
+          },
+          "font": "Atocha W00 Regular"
+        }
+      ],
+      "custom_option_info": [
+        {
+          "type": "Text field",
+          "target_layer": "Text layer 2",
+          "placeholder": "Please input text field",
+          "custom_name": "Text field 2",
+          "label": "Text field 2",
+          "default_value": "Text field",
+          "allow_character": "Characters, Numbers, Special Characters",
+          "position": "below"
+        },
+        {
+          "type": "Text area",
+          "target_layer": "Text layer 3",
+          "placeholder": "Please input text field",
+          "custom_name": "Text area 3",
+          "label": "Text area 3",
+          "default_value": "Text area",
+          "allow_character": "Characters, Numbers, Special Characters"
+        }
+      ],
+      "custom_option_data_SF": [
+        {
+          "type": "Text field",
+          "custom_name": "Text field 2",
+          "value": "Open Commerce"
+        },
+        {
+          "type": "Text area",
+          "custom_name": "Text area 3",
+          "value": "Group - Beeketing"
+        }
+      ],
+      "default_scale_envidence": "SB_PRB_PRB_PRO_SBP_67_default_scale_envRun.png",
+      "editor_shrink_envidence": "SB_PRB_PRB_PRO_SBP_67_editor_shrink_envRun.png",
+      "editor_scale_envidence": "SB_PRB_PRB_PRO_SBP_67_editor_scale_envRun.png",
+      "editor_printfile_envidence": "SB_PRB_PRB_PRO_SBP_67_editor_printfile_envRun.png",
+      "store_front_envidence": "SB_PRB_PRB_PRO_SBP_67_store_front_envRun.png",
+      "printfile_envidence": "SB_PRB_PRB_PRO_SBP_67_printfile_envRun.png"
+    },
+    "SB_PRB_PRB_PRO_SBP_81": {
+      "product_all_info": {
+        "title": "Product CO includes curve and style",
+        "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+        "image_name": "Logo1.jpg",
+        "vendor": "Uniqlo",
+        "price": "10",
+        "compare_at_price": "20"
+      },
+      "image_preview": "BD_27.png",
+      "list_layer": [
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 1",
+          "layer_value": "Test text value 1",
+          "location_layer_x": "55",
+          "location_layer_y": "55",
+          "layer_size_h": "200",
+          "layer_size_w": "800",
+          "font": "Atocha W00 Regular",
+          "style": {
+            "shadow": {
+              "shadow_offset": "90",
+              "shadow_direction": "-23",
+              "shadow_opacity": "30",
+              "shadow_color": "F5E30F"
+            }
+          },
+          "shape": {
+            "curve": {
+              "curve_input": "-50"
+            }
+          }
+        },
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 2",
+          "layer_value": "Test text value 2",
+          "location_layer_x": "1000",
+          "location_layer_y": "200",
+          "layer_size_h": "300",
+          "layer_size_w": "900",
+          "font": "Atocha W00 Regular",
+          "style": {
+            "echo": {
+              "echo_offset": "60",
+              "echo_direction": "70",
+              "echo_color": "66A81D"
+            }
+          },
+          "shape": {
+            "curve": {
+              "curve_input": "-100"
+            }
+          }
+        },
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 3",
+          "layer_value": "Test text value 3",
+          "location_layer_x": "100",
+          "location_layer_y": "400",
+          "layer_size_h": "100",
+          "layer_size_w": "500",
+          "font": "Atocha W00 Regular",
+          "style": {
+            "stroke": {
+              "stroke_thickness": "47",
+              "stroke_color_new": "F5A623"
+            }
+          },
+          "shape": {
+            "curve": {
+              "curve_input": "100"
+            }
+          }
+        },
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 4",
+          "layer_value": "Test text value 4",
+          "location_layer_x": "200",
+          "location_layer_y": "1300",
+          "layer_size_h": "500",
+          "layer_size_w": "1600",
+          "font": "Atocha W00 Regular",
+          "style": {
+            "hollow": {
+              "hollow_thickness": "40",
+              "hollow_color": "8C1FA2"
+            }
+          },
+          "shape": {
+            "none": true
+          }
+        },
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 5",
+          "layer_value": "Test text value 5",
+          "location_layer_x": "250",
+          "location_layer_y": "1700",
+          "layer_size_h": "600",
+          "layer_size_w": "1000",
+          "font": "Atocha W00 Regular",
+          "style": {
+            "none": true
+          },
+          "shape": {
+            "curve": {
+              "curve_input": "60"
+            }
+          }
+        }
+      ],
+      "custom_option_info": [
+        {
+          "type": "Text field",
+          "target_layer": "Text layer 1",
+          "placeholder": "Please input text field",
+          "custom_name": "Text field 1",
+          "label": "Text field 1",
+          "default_value": "Text field",
+          "allow_character": "Characters, Numbers, Special Characters",
+          "position": "below"
+        },
+        {
+          "type": "Text area",
+          "target_layer": "Text layer 2",
+          "placeholder": "Please input text area",
+          "custom_name": "Text area 2",
+          "label": "Text area 2",
+          "default_value": "Text area",
+          "allow_character": "Characters, Numbers, Special Characters",
+          "position": "below"
+        },
+        {
+          "type": "Text field",
+          "target_layer": "Text layer 3",
+          "placeholder": "Please input text field",
+          "custom_name": "Text field 3",
+          "label": "Text field 3",
+          "default_value": "Text field",
+          "allow_character": "Characters, Numbers, Special Characters",
+          "position": "below"
+        },
+        {
+          "type": "Text field",
+          "target_layer": "Text layer 4",
+          "placeholder": "Please input text field",
+          "custom_name": "Text field 4",
+          "label": "Text field 4",
+          "default_value": "Text field",
+          "allow_character": "Characters, Numbers, Special Characters",
+          "position": "below"
+        },
+        {
+          "type": "Text area",
+          "target_layer": "Text layer 5",
+          "placeholder": "Please input text area",
+          "custom_name": "Text area 5",
+          "label": "Text area 5",
+          "default_value": "Text area",
+          "allow_character": "Characters, Numbers, Special Characters"
+        }
+      ],
+      "custom_option_data_SF": [
+        {
+          "type": "Text field",
+          "custom_name": "Text field 1",
+          "value": "Test shadow"
+        },
+        {
+          "type": "Text area",
+          "custom_name": "Text area 2",
+          "value": "Test echo"
+        },
+        {
+          "type": "Text field",
+          "custom_name": "Text field 3",
+          "value": "Test stroke"
+        },
+        {
+          "type": "Text field",
+          "custom_name": "Text field 4",
+          "value": "Test hollow"
+        },
+        {
+          "type": "Text area",
+          "custom_name": "Text area 5",
+          "value": "Test style none"
+        }
+      ],
+      "editor_preview_envidence": "SB_PRB_PRB_PRO_SBP_81_editor_preview_envRun.png",
+      "storefront_envidence": "SB_PRB_PRB_PRO_SBP_81_storefront_envRun.png",
+      "printfile_envidence": "SB_PRB_PRB_PRO_SBP_81_printfile_envRun.png"
+    },
+    "SB_PRB_PRB_PRO_SBP_83": {
+      "product_all_info": {
+        "title": "Product customize group with effect",
+        "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+        "image_name": "Logo1.jpg",
+        "vendor": "Uniqlo",
+        "price": "10",
+        "compare_at_price": "20"
+      },
+      "image_preview": "BD_27.png",
+      "list_layer": [
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 1",
+          "layer_value": "Test text value 1",
+          "location_layer_x": "55",
+          "location_layer_y": "55",
+          "layer_size_h": "200",
+          "layer_size_w": "800",
+          "font": "Atocha W00 Regular",
+          "style": {
+            "shadow": {
+              "shadow_offset": "30",
+              "shadow_direction": "140",
+              "shadow_opacity": "60",
+              "shadow_color": "ECE37B"
+            }
+          },
+          "shape": {
+            "curve": {
+              "curve_input": "28"
+            }
+          }
+        },
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 2",
+          "layer_value": "Test text value 2",
+          "location_layer_x": "500",
+          "location_layer_y": "300",
+          "layer_size_h": "500",
+          "layer_size_w": "600",
+          "font": "Atocha W00 Regular",
+          "style": {
+            "echo": {
+              "echo_offset": "100",
+              "echo_direction": "-130",
+              "echo_color": "6E9E3B"
+            }
+          },
+          "shape": {
+            "curve": {
+              "curve_input": "-100"
+            }
+          }
+        },
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 3",
+          "layer_value": "Test text value 3",
+          "location_layer_x": "200",
+          "location_layer_y": "1000",
+          "layer_size_h": "300",
+          "layer_size_w": "350",
+          "font": "Atocha W00 Regular",
+          "text_overflow": "Shrink",
+          "style": {
+            "stroke": {
+              "stroke_thickness": "60",
+              "stroke_color_new": "A3CCFD"
+            }
+          }
+        },
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 4",
+          "layer_value": "Test text value 4",
+          "location_layer_x": "1200",
+          "location_layer_y": "900",
+          "layer_size_h": "150",
+          "layer_size_w": "500",
+          "font": "Atocha W00 Regular",
+          "style": {
+            "hollow": {
+              "hollow_thickness": "70",
+              "hollow_color": "669E27"
+            }
+          },
+          "shape": {
+            "none": true
+          }
+        },
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 5",
+          "layer_value": "Test text value 5",
+          "location_layer_x": "700",
+          "location_layer_y": "1500",
+          "layer_size_h": "150",
+          "layer_size_w": "500",
+          "font": "Atocha W00 Regular",
+          "style": {
+            "none": true
+          },
+          "shape": {
+            "none": true
+          }
+        },
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 6",
+          "layer_value": "Test text value 6",
+          "location_layer_x": "90",
+          "location_layer_y": "1200",
+          "layer_size_h": "500",
+          "layer_size_w": "600",
+          "font": "Atocha W00 Regular",
+          "style": {
+            "hollow": {
+              "hollow_thickness": "30",
+              "hollow_color": "8C1FA2"
+            }
+          },
+          "shape": {
+            "curve": {
+              "curve_input": "-100"
+            }
+          }
+        },
+        {
+          "layer_type": "Image",
+          "image_name": "BD_9.png",
+          "location_layer_x": "0",
+          "location_layer_y": "1500",
+          "layer_size_h": "500",
+          "layer_size_w": "324"
+        },
+        {
+          "layer_type": "Image",
+          "image_name": "BD_12.png",
+          "location_layer_x": "1500",
+          "location_layer_y": "0",
+          "layer_size_h": "800",
+          "layer_size_w": "615"
+        },
+        {
+          "layer_type": "Image",
+          "image_name": "BD_8.png",
+          "location_layer_x": "0",
+          "location_layer_y": "0",
+          "layer_size_h": "500",
+          "layer_size_w": "360"
+        }
+      ],
+      "groups_info": [
+        {
+          "current_group": "New group 1",
+          "new_group": "Group 1"
+        },
+        {
+          "current_group": "New group 1",
+          "new_group": "Group 2"
+        },
+        {
+          "current_group": "New group 1",
+          "new_group": "Group 3"
+        },
+        {
+          "current_group": "New group 1",
+          "new_group": "BD_9.png"
+        },
+        {
+          "current_group": "New group 1",
+          "new_group": "BD_12.png"
+        },
+        {
+          "current_group": "New group 1",
+          "new_group": "BD_8.png"
+        }
+      ],
+      "layers_group_info": [
+        {
+          "layer_name": "Text layer 1",
+          "group_name": "Group 1"
+        },
+        {
+          "layer_name": "Text layer 2",
+          "group_name": "Group 2"
+        },
+        {
+          "layer_name": "Text layer 3",
+          "group_name": "Group 3"
+        },
+        {
+          "layer_name": "Text layer 4, BD_9",
+          "group_name": "BD_9.png"
+        },
+        {
+          "layer_name": "Text layer 5, BD_12",
+          "group_name": "BD_12.png"
+        },
+        {
+          "layer_name": "Text layer 6, BD_8",
+          "group_name": "BD_8.png"
+        }
+      ],
+      "customize_group": [
+        {
+          "option_group": "Droplist",
+          "is_delete_group": true,
+          "group_name_delete": "BD_12.png, BD_8.png, Group 3, Group 2",
+          "label_group": "Please select the option of droplist",
+          "group_name": "BD_9.png, Group 1"
+        },
+        {
+          "option_group": "Radio",
+          "is_delete_group": true,
+          "group_name_delete": "BD_8.png, BD_12.png",
+          "label_group": "Please select the option of radio",
+          "group_name": "Group 3, Group 2"
+        },
+        {
+          "option_group": "Picture choice",
+          "label_group": "Please select the option of picture choice",
+          "group_name": "BD_8.png, BD_12.png",
+          "image_name": "BD_8.png, BD_12.png"
+        }
+      ],
+      "custom_option_info": [
+        {
+          "type": "Text field",
+          "target_layer": "Text layer 1",
+          "placeholder": "Please input text field",
+          "custom_name": "Text field 1",
+          "label": "Text field 1",
+          "default_value": "Text field 1",
+          "allow_character": "Characters, Numbers, Special Characters",
+          "position": "below"
+        },
+        {
+          "type": "Text area",
+          "target_layer": "Text layer 2",
+          "placeholder": "Please input text area",
+          "custom_name": "Text area 2",
+          "label": "Text area 2",
+          "default_value": "Text area 2",
+          "allow_character": "Characters, Numbers, Special Characters",
+          "position": "below"
+        },
+        {
+          "type": "Text field",
+          "target_layer": "Text layer 3",
+          "placeholder": "Please input text field",
+          "custom_name": "Text field 3",
+          "label": "Text field 3",
+          "default_value": "Text field 3",
+          "allow_character": "Characters, Numbers, Special Characters",
+          "position": "below"
+        },
+        {
+          "type": "Text field",
+          "target_layer": "Text layer 4",
+          "placeholder": "Please input text field",
+          "custom_name": "Text field 4",
+          "label": "Text field 4",
+          "default_value": "Text field 4",
+          "allow_character": "Characters, Numbers, Special Characters",
+          "position": "below"
+        },
+        {
+          "type": "Text area",
+          "target_layer": "Text layer 5",
+          "placeholder": "Please input text area",
+          "custom_name": "Text area 5",
+          "label": "Text area 5",
+          "default_value": "Text area 5",
+          "allow_character": "Characters, Numbers, Special Characters",
+          "position": "below"
+        },
+        {
+          "type": "Text area",
+          "target_layer": "Text layer 6",
+          "placeholder": "Please input text area",
+          "custom_name": "Text area 6",
+          "label": "Text area 6",
+          "default_value": "Text area 6",
+          "allow_character": "Characters, Numbers, Special Characters"
+        }
+      ],
+      "custom_option_data_SF": [
+        {
+          "envidence_sf_id": "1",
+          "group_name": "BD_8.png, BD_9.png, Group 3",
+          "data_input_co": [
+            {
+              "type": "Text area",
+              "custom_name": "Text area 6",
+              "value": "Test text hollow 6 with curve 100"
+            },
+            {
+              "type": "Text field",
+              "custom_name": "Text field 4",
+              "value": "Test hollow 4"
+            },
+            {
+              "type": "Text field",
+              "custom_name": "Text field 3",
+              "value": "Test stroke 3"
+            }
+          ]
+        },
+        {
+          "envidence_sf_id": "2",
+          "group_name": "Group 1, Group 2, BD_12.png",
+          "data_input_co": [
+            {
+              "type": "Text area",
+              "custom_name": "Text area 2",
+              "value": "Test text echo 2 with curve -100"
+            },
+            {
+              "type": "Text field",
+              "custom_name": "Text field 1",
+              "value": "Test shadow"
+            },
+            {
+              "type": "Text area",
+              "custom_name": "Text area 5",
+              "value": "Test both none"
+            }
+          ]
+        }
+      ],
+      "editor_preview_envidence": "SB_PRB_PRB_PRO_SBP_83_editor_preview_envRun.png",
+      "editor_printfile_envidence": "SB_PRB_PRB_PRO_SBP_83_editor_printfile_envRun.png",
+      "storefront_envidence": "SB_PRB_PRB_PRO_SBP_83_storefront_envRun_groupId.png",
+      "printfile_envidence": "SB_PRB_PRB_PRO_SBP_83_printfile_envRun.png"
+    }
+  }
+}

@@ -1,0 +1,251 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "creator-order.myshopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "user_id": "73800",
+      "shop_id": 10321120,
+      "shop_name": "creator-order"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "creator-order.onshopbase.com",
+      "shop_name": "creator-order",
+      "user_id": "73782",
+      "shop_id": 10375058,
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "create-order-production.onshopbase.com",
+      "shop_name": "create-order-production",
+      "user_id": "73782",
+      "shop_id": 10375060,
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F"
+    }
+  },
+  "cases": {
+    "SB_SC_SCO_23": {
+      "order_list": {
+        "filter": []
+      }
+    },
+    "DATA_DRIVEN": {
+      "data": [
+        {
+          "description": "[API] Kiểm tra get order list theo status",
+          "case_name": "SB_SC_SCO_24",
+          "order_list": [
+            {
+              "step": "Call api get list order status Pending",
+              "filter": [
+                {
+                  "field": "order_status",
+                  "type": "string",
+                  "value": "Pending"
+                }
+              ]
+            },
+            {
+              "step": "Call api get list order status Paid",
+              "filter": [
+                {
+                  "field": "order_status",
+                  "type": "string",
+                  "value": "Paid"
+                }
+              ]
+            },
+            {
+              "step": "Call api get get list order status Refunded",
+              "filter": [
+                {
+                  "field": "order_status",
+                  "type": "string",
+                  "value": "Refunded"
+                }
+              ]
+            },
+            {
+              "step": "Call api get list order status Partialy_refunded",
+              "filter": [
+                {
+                  "field": "order_status",
+                  "type": "string",
+                  "value": "Partialy_refunded"
+                }
+              ]
+            },
+            {
+              "step": "Call api get list order status Partialy_paid",
+              "filter": [
+                {
+                  "field": "order_status",
+                  "type": "string",
+                  "value": "Partialy_paid"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "[API] Kiểm tra get list order theo lineitem",
+          "case_name": "SB_SC_SCO_25",
+          "order_list": [
+            {
+              "step": "Call api get list order chứa ký tự lineitem",
+              "filter": [
+                {
+                  "field": "product_name",
+                  "type": "string",
+                  "value": "Online"
+                }
+              ]
+            },
+            {
+              "step": "Call api get list order không chứa ký tự lineitem",
+              "filter": [
+                {
+                  "field": "not_product_name",
+                  "type": "string",
+                  "value": "Pending"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "[API] Kiểm tra get list order theo order date",
+          "case_name": "SB_SC_SCO_26",
+          "order_list": [
+            {
+              "step": "Call api get list order theo Order Date là Today",
+              "filter": [
+                {
+                  "field": "created_at",
+                  "type": "today"
+                }
+              ]
+            },
+            {
+              "step": "Call api get list order theo Order Date là yesterday",
+              "filter": [
+                {
+                  "field": "created_at",
+                  "type": "yesterday"
+                }
+              ]
+            },
+            {
+              "step": "Call api get list order theo Order Date là last7days",
+              "filter": [
+                {
+                  "field": "created_at",
+                  "type": "last7days"
+                }
+              ]
+            },
+            {
+              "step": "Call api get list order theo Order Date là thisMonth",
+              "filter": [
+                {
+                  "field": "created_at",
+                  "type": "thisMonth"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "[API] Kiểm tra get list order theo refund date",
+          "case_name": "SB_SC_SCO_27",
+          "order_list": [
+            {
+              "step": "Call api get list order trường Refund Date theo today",
+              "filter": [
+                {
+                  "field": "refund_at",
+                  "type": "today"
+                }
+              ]
+            },
+            {
+              "step": "Call api get list order trường Refund Date theo yesterday",
+              "filter": [
+                {
+                  "field": "refund_at",
+                  "type": "yesterday"
+                }
+              ]
+            },
+            {
+              "step": "Call api get list order trường Refund Date theo last7days",
+              "filter": [
+                {
+                  "field": "refund_at",
+                  "type": "last7days"
+                }
+              ]
+            },
+            {
+              "step": "Call api get list order trường Refund Date theo thisMonth",
+              "filter": [
+                {
+                  "field": "refund_at",
+                  "type": "thisMonth"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "[API] Kiểm tra get list order theo search keyword",
+          "case_name": "SB_SC_SCO_28",
+          "order_list": [
+            {
+              "step": "Call api get list order theo search_keyword like",
+              "filter": [
+                {
+                  "field": "search_keyword",
+                  "type": "string",
+                  "value": "1001"
+                },
+                {
+                  "field": "search_option",
+                  "type": "string",
+                  "value": "order_name"
+                }
+              ]
+            },
+            {
+              "step": "Call api get list order theo search_keyword equal",
+              "filter": [
+                {
+                  "field": "search_keyword",
+                  "type": "string",
+                  "value": "#10018"
+                },
+                {
+                  "field": "search_option",
+                  "type": "string",
+                  "value": "order_name"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SB_SC_SCO_29": {
+      "param": {
+        "limit": "50",
+        "page": "1"
+      }
+    }
+  }
+}

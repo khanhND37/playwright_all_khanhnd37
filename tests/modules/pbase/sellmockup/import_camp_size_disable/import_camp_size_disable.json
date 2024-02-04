@@ -1,0 +1,77 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-import-size-prod.onshopbase.com",
+      "shop_name": "au-import-size-prod",
+      "username": "xuyenpham+1@beeketing.net",
+      "password": "Ocg12345@",
+      "shop_id": 10444480,
+      "user_id": 11264390,
+      "timeout": 9000000
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-import-size-prodtest.onshopbase.com",
+      "shop_name": "au-import-size-prodtest",
+      "username": "xuyenpham+1@beeketing.net",
+      "password": "Ocg12345@",
+      "shop_id": 10444481,
+      "user_id": 11264390,
+      "timeout": 9000000
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-import-size-dev.myshopbase.net",
+      "username": "xuyenpham+1@beeketing.net",
+      "password": "Ocg12345@",
+      "shop_name": "au-import-size-dev",
+      "user_id": 90272,
+      "shop_id": 10328942,
+      "timeout": 9000000
+    }
+  },
+  "email_get_noti": "import@maildrop.cc",
+  "email_scheduler": "thuyhoang@beeketing.net",
+  "cases": {
+    "SB_PRB_SCWM_23": {
+      "import_campaign": {
+        "file_path": "data/printbase/import_campaign/import_camp_size_not_exist.csv",
+        "file_name": "import_camp_size_not_exist.csv",
+        "total_campaign": 1
+      },
+      "import_info": {
+        "status": "Completed",
+        "process": "Imported 1/1 products."
+      },
+      "verify_time": 2,
+      "campaign_detail": {
+        "campaign_name": "Import camp Beverage Mug size not exist",
+        "description": "",
+        "tags": "mug",
+        "style": ["Beverage Mug"],
+        "color": ["White", "Black"],
+        "size": ["11oz"],
+        "number_image": 2
+      },
+      "campaign_sf": {
+        "variant": "11oz",
+        "style": "Beverage Mug",
+        "color": "white",
+        "sale_price": "$19.49",
+        "compare_price": "$34.49"
+      },
+      "import_status_mail": {
+        "success": "1",
+        "fail": "0",
+        "skip": "0",
+        "image_status": "Done"
+      },
+      "error_content": "Errors:Line 3: Variant is unavailableLine 5: Variant is unavailable",
+      "picture": {
+        "image": "image.png",
+        "variant": "variant.png"
+      }
+    }
+  }
+}

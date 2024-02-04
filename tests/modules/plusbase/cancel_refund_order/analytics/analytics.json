@@ -1,0 +1,132 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "plusbase-auto.onshopbase.com",
+      "shop_name": "plusbase-auto.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10269907,
+      "user_id": 73782,
+      "plb_template": {
+        "domain": "template-store.onshopbase.com",
+        "shop_name": "template-store.onshopbase.com",
+        "user_id": "9131323",
+        "shop_id": "10258217",
+        "username": "qas@beeketing.net",
+        "password": "123456",
+        "shop": "template-store"
+      },
+      "time_out": 1200000
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "plusbase-auto-prodtest.onshopbase.com",
+      "shop_name": "plusbase-auto-prodtest.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10370177,
+      "user_id": 73782,
+      "plb_template": {
+        "domain": "plusbase-templateprodtest.onshopbase.com",
+        "shop_name": "plusbase-templateprodtest.onshopbase.com",
+        "user_id": "9131323",
+        "shop_id": "10364655",
+        "username": "qas@beeketing.net",
+        "password": "123456",
+        "shop": "plusbase-templateprodtest"
+      },
+      "time_out": 1200000,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "plusbase-auto.myshopbase.net",
+      "shop_name": "plusbase-auto.myshopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_id": 10321495,
+      "user_id": 73800,
+      "plb_template": {
+        "domain": "plusbase-checkout.myshopbase.net",
+        "shop_name": "plusbase-checkout.myshopbase.net",
+        "user_id": "87262",
+        "shop_id": "10060862",
+        "username": "phuongpham@beeketing.net",
+        "password": "123456",
+        "shop": "plusbase-checkout"
+      },
+      "time_out": 1000000
+    }
+  },
+  "customer_info": {
+    "email": "testCancelRefund@maildrop.cc",
+    "first_name": "Plus",
+    "last_name": "Base",
+    "address": "1845 Johnny Lane Milwaukee",
+    "country": "United States",
+    "state": "California",
+    "city": "Los Angeles",
+    "zipcode": "90001",
+    "phone_number": "0123456789"
+  },
+  "card_info": {
+    "number": "4242424242424242",
+    "holder_name": "Shopbase",
+    "expire_date": "12 / 26",
+    "cvv": "119"
+  },
+  "data_analytics": {
+    "summary": {
+      "view_content": 0,
+      "total_profit": 0
+    }
+  },
+  "time_out_api_calling": 250000,
+  "cases": {
+    "TC_SB_PLB_ROPLB_49": {
+      "Description": "Total profits ở page Analytics sau khi cancel/refund order",
+      "tax_include": false,
+      "products": [
+        {
+          "name": "(Test product) Dresses Woman Casual Solid Backless - auto",
+          "quantity": "2",
+          "options": ["white", "S"],
+          "productQtyClass": "product__quantity"
+        },
+        {
+          "name": "(Test product) Dresses Woman Casual Solid Backless - auto",
+          "quantity": "2",
+          "options": ["Set of 2 (1xblack + 1xwhite)", "S"],
+          "productQtyClass": "product__quantity"
+        }
+      ],
+      "discount": "Fixed amount 5",
+      "refunds": [
+        {
+          "lines": [
+            {
+              "product_name": "(Test product) Dresses Woman Casual Solid Backless - auto",
+              "variant_title": "Set of 2 (1xblack + 1xwhite) / S",
+              "quantity": 1,
+              "is_combo": false,
+              "is_ppc": false
+            }
+          ],
+          "input": {
+            "refund_buyer_selling": 48.44,
+            "refund_buyer_tip": 0,
+            "refund_buyer_shipping": 1.49,
+            "refund_buyer_payment": 1.52,
+            "refund_buyer_tax": 4.84,
+            "refund_seller_base_cost": 30,
+            "refund_seller_shipping": 0,
+            "refund_seller_tax": 0,
+            "refund_seller_payment": 1.52,
+            "refund_seller_processing": 0.68
+          }
+        }
+      ]
+    }
+  }
+}

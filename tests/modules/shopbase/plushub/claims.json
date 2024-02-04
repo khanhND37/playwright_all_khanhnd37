@@ -1,0 +1,125 @@
+{
+  "env": {
+    "dev": {
+      "domain": "au-sb-fulfillment.myshopbase.net",
+      "user_id": 73800,
+      "shop_id": 10323849,
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop": "au-sb-fulfillment",
+      "api": "https://gapi.dev.shopbase.net",
+      "order_number": "#SBAUTO1063",
+      "order_id": "1307796302116",
+      "hive_info": {
+        "domain": "hive.dev.shopbase.net",
+        "username": "shopbase",
+        "password": "123456"
+      }
+    },
+    "prodtest": {
+      "domain": "au-fulfillment-plushub-prodtest.onshopbase.com",
+      "user_id": 73782,
+      "shop_id": 10371373,
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop": "au-fulfillment-plushub-prodtest",
+      "order_number": "#QA4927",
+      "order_id": "455880235",
+      "api": "https://prod-test-api.shopbase.com",
+      "hive_info": {
+        "domain": "hive.shopbase.com",
+        "username": "shopbase",
+        "password": "UxsLHz^Wjkf35*/w"
+      },
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "prod": {
+      "domain": "au-fulfillment-plushub.onshopbase.com",
+      "user_id": 206811,
+      "shop_id": 10300683,
+      "username": "shopbase3@beeketing.net",
+      "password": "aAeg*PJR4.t6V:P",
+      "shop": "au-fulfillment-plushub",
+      "order_number": "#AUTO8889",
+      "order_id": "455878449",
+      "api": "https://api.shopbase.com",
+      "hive_info": {
+        "domain": "hive.shopbase.com",
+        "username": "shopbase",
+        "password": "UxsLHz^Wjkf35*/w"
+      }
+    }
+  },
+  "cases": {
+    "SB_RLSBFF_PLH_CLA_4": {
+      "list_reason": [
+        "order-not-delivered",
+        "late-delivery",
+        "missing-items",
+        "wrong-items",
+        "product-unacceptable",
+        "other"
+      ]
+    },
+    "SB_RLSBFF_PLH_CLA_5": {
+      "data": [
+        {
+          "case_id": "SB_RLSBFF_PLH_CLA_5",
+          "description": "Verify data sau khi tạo Claim Resend thành công",
+          "prefer_solution": "Resend",
+          "reason_claim": "other",
+          "envidence": "QA test claim"
+        },
+        {
+          "case_id": "SB_RLSBFF_PLH_CLA_6",
+          "description": "Verify data sau khi tạo Claim Refund thành công",
+          "prefer_solution": "Refund",
+          "reason_claim": "other",
+          "envidence": "QA test claim"
+        }
+      ]
+    },
+    "SB_RLSBFF_PLH_CLA_7": {
+      "data": [
+        {
+          "case_id": "SB_RLSBFF_PLH_CLA_7",
+          "description": "Verify data claim khi change status claim trên hive từ New sang Inreview",
+          "prefer_solution": "Resend",
+          "reason_claim": "other",
+          "envidence": "QA test claim",
+          "new_status": "In review"
+        },
+        {
+          "case_id": "SB_RLSBFF_PLH_CLA_8",
+          "description": "Verify data claim khi change status claim trên hive từ New sang Rejected",
+          "prefer_solution": "Refund",
+          "reason_claim": "other",
+          "envidence": "QA test claim",
+          "new_status": "Rejected"
+        },
+        {
+          "case_id": "SB_RLSBFF_PLH_CLA_10",
+          "description": "Verify data claim sau khi approved claim Resend",
+          "prefer_solution": "Resend",
+          "reason_claim": "other",
+          "envidence": "QA test claim",
+          "new_status": "Approved"
+        },
+        {
+          "case_id": "SB_RLSBFF_PLH_CLA_11",
+          "description": "Verify data claim sau khi approved claim Refund",
+          "prefer_solution": "Refund",
+          "reason_claim": "other",
+          "envidence": "QA test claim",
+          "new_status": "Approved",
+          "refund_amount": "1"
+        }
+      ]
+    }
+  },
+  "invoice_info": {
+    "content": "Refund for claim PlusHub",
+    "amount": "1.00",
+    "status": "Success"
+  }
+}

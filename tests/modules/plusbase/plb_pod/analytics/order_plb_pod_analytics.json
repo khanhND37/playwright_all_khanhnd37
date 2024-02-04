@@ -1,0 +1,138 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-plb-analytics-pod.onshopbase.com",
+      "shop_name": "au-plb-analytics-pod.onshopbase.com",
+      "username": "shopbase4@beeketing.net",
+      "password": "H7mQdQ]Zj]%[Nm?",
+      "shop_id": 10380372,
+      "user_id": 207114,
+      "plb_template": {
+        "domain": "template-store.onshopbase.com",
+        "shop_name": "template-store.onshopbase.com",
+        "user_id": "9131323",
+        "shop_id": "10258217",
+        "username": "qas@beeketing.net",
+        "password": "123456",
+        "shop": "template-store"
+      },
+      "time_out": 900000
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-plb-analytics-pod-prodtest.onshopbase.com",
+      "shop_name": "au-plb-analytics-pod-prodtest.onshopbase.com",
+      "username": "shopbase4@beeketing.net",
+      "password": "H7mQdQ]Zj]%[Nm?",
+      "shop_id": 10381154,
+      "user_id": 207114,
+      "plb_template": {
+        "domain": "plusbase-templateprodtest.onshopbase.com",
+        "shop_name": "plusbase-templateprodtest.onshopbase.com",
+        "user_id": "9131323",
+        "shop_id": "10364655",
+        "username": "qas@beeketing.net",
+        "password": "123456",
+        "shop": "plusbase-templateprodtest"
+      },
+      "time_out": 900000,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-plb-analytics-pod.myshopbase.net",
+      "shop_name": "au-plb-analytics-pod.myshopbase.net",
+      "username": "shopbase4@beeketing.net",
+      "password": "H7mQdQ]Zj]%[Nm?",
+      "shop_id": 10322959,
+      "user_id": 89321,
+      "plb_template": {
+        "domain": "plusbase-checkout.myshopbase.net",
+        "shop_name": "plusbase-checkout.myshopbase.net",
+        "user_id": "87262",
+        "shop_id": "10060862",
+        "username": "phuongpham@beeketing.net",
+        "password": "123456",
+        "shop": "plusbase-checkout"
+      },
+      "time_out": 900000
+    }
+  },
+  "data_analytics": {
+    "summary": {
+      "view_content": 0,
+      "total_profit": 0
+    }
+  },
+  "time_out_api_calling": 200000,
+  "customer_info": {
+    "email": "testAnalytics@maildrop.cc",
+    "first_name": "Plus",
+    "last_name": "Base",
+    "address": "1845 Johnny Lane Milwaukee",
+    "country": "United States",
+    "state": "California",
+    "city": "Los Angeles",
+    "zipcode": "90001",
+    "phone_number": "0123456789"
+  },
+  "card_info": {
+    "number": "4242424242424242",
+    "holder_name": "Shopbase",
+    "expire_date": "03 / 33",
+    "cvv": "119"
+  },
+  "cases": {
+    "TC_SB_PLB_PODPL_POPLA_1": {
+      "Description": "Total Profits ở page Analytics sau khi cancel all order có cả line POD và Dropship",
+      "tax_include": false,
+      "products": [
+        {
+          "name": "(Test product) Auto POD1 - Baseball Jersey",
+          "quantity": "1",
+          "options": ["S"],
+          "productQtyClass": "product__quantity"
+        },
+        {
+          "name": "(Test product) Auto Dropship1 - COLMI P8 GT 1.69 inch Smart Watch Men Full Touch Fitness Tracker Smart Clock IP67 Waterproof Women Smartwatch for Xiaomi Phone",
+          "quantity": "1",
+          "options": ["Black"],
+          "productQtyClass": "product__quantity"
+        },
+        {
+          "name": "(Test product) Auto Dropship1 - COLMI P8 GT 1.69 inch Smart Watch Men Full Touch Fitness Tracker Smart Clock IP67 Waterproof Women Smartwatch for Xiaomi Phone",
+          "quantity": "1",
+          "options": ["Set of 2 (1xBlue + 1xGray)"],
+          "productQtyClass": "product__quantity"
+        }
+      ],
+      "discount": "freeship"
+    },
+    "TC_SB_PLB_PODPL_POPLA_3": {
+      "Description": "Gross profit ở page Sale reports sau khi cancel all order có cả line POD và Dropship",
+      "tax_include": true,
+      "products": [
+        {
+          "name": "(Test product) Auto POD1 - Baseball Jersey",
+          "quantity": "1",
+          "options": ["S"],
+          "productQtyClass": "product__quantity"
+        },
+        {
+          "name": "(Test product) Auto Dropship1 - COLMI P8 GT 1.69 inch Smart Watch Men Full Touch Fitness Tracker Smart Clock IP67 Waterproof Women Smartwatch for Xiaomi Phone",
+          "quantity": "1",
+          "options": ["Black"],
+          "productQtyClass": "product__quantity"
+        },
+        {
+          "name": "(Test product) Auto Dropship1 - COLMI P8 GT 1.69 inch Smart Watch Men Full Touch Fitness Tracker Smart Clock IP67 Waterproof Women Smartwatch for Xiaomi Phone",
+          "quantity": "1",
+          "options": ["Set of 2 (1xBlue + 1xGray)"],
+          "productQtyClass": "product__quantity"
+        }
+      ],
+      "discount": "Fixed amount 5$"
+    }
+  }
+}

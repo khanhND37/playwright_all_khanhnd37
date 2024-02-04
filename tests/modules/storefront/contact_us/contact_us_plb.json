@@ -1,0 +1,140 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "shop_name": "au-sizechart-plb.onshopbase.com",
+      "username": "shopbase3@beeketing.net",
+      "user_id": 206811,
+      "shop_id": 10391237,
+      "password": "aAeg*PJR4.t6V:P",
+      "domain": "au-sizechart-plb.onshopbase.com",
+      "time_out": 500000,
+      "cases": {
+        "SB_SF_CTPB_53": {
+          "data": [
+            {
+              "case_id": "SB_SF_CTPB_53",
+              "description": "Verify chỉ gửi order confirmation email tối đa 4 lần",
+              "order_name": "#plb10391237_2200",
+              "order_id": "456886584",
+              "issue_reason": null,
+              "issue_type": "confirm order"
+            },
+            {
+              "case_id": "SB_SF_CTPB_48",
+              "description": "Verify chỉ gửi shipping confirmation email tối đa 4 lần",
+              "order_name": "#plb10391237_2202",
+              "order_id": "456886664",
+              "issue_reason": "The delivery date is not yet due but I want to check where my package is",
+              "issue_type": "shipment"
+            }
+          ]
+        }
+      }
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "shop_name": "au-sizechart-plb-prodtest.onshopbase.com",
+      "username": "shopbase3@beeketing.net",
+      "user_id": 206811,
+      "shop_id": 10391238,
+      "password": "aAeg*PJR4.t6V:P",
+      "domain": "au-sizechart-plb-prodtest.onshopbase.com",
+      "time_out": 500000,
+      "cases": {
+        "SB_SF_CTPB_53": {
+          "data": [
+            {
+              "case_id": "SB_SF_CTPB_53",
+              "description": "Verify chỉ gửi order confirmation email tối đa 4 lần",
+              "order_name": "#plb10391238_1741",
+              "order_id": "456887443",
+              "issue_reason": null,
+              "issue_type": "confirm order"
+            },
+            {
+              "case_id": "SB_SF_CTPB_48",
+              "description": "Verify chỉ gửi shipping confirmation email tối đa 4 lần",
+              "order_name": "#plb10391238_1739",
+              "order_id": "456887427",
+              "issue_reason": "The delivery date is not yet due but I want to check where my package is",
+              "issue_type": "shipment"
+            }
+          ]
+        }
+      },
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "shop_name": "au-sizechart-plb.myshopbase.net",
+      "username": "shopbase3@beeketing.net",
+      "user_id": 86961,
+      "shop_id": 10323921,
+      "password": "=l-N&YG}g<'KLJk",
+      "domain": "au-sizechart-plb.myshopbase.net",
+      "time_out": 500000,
+      "cases": {
+        "SB_SF_CTPB_53": {
+          "data": [
+            {
+              "case_id": "SB_SF_CTPB_53",
+              "description": "Verify chỉ gửi order confirmation email tối đa 4 lần",
+              "order_name": "#plb10323921_1694",
+              "order_id": "1307796473564",
+              "issue_reason": null,
+              "issue_type": "confirm order"
+            },
+            {
+              "case_id": "SB_SF_CTPB_48",
+              "description": "Verify chỉ gửi shipping confirmation email tối đa 4 lần",
+              "order_name": "#plb10323921_1695",
+              "order_id": "1307796473570",
+              "issue_reason": "The delivery date is not yet due but I want to check where my package is",
+              "issue_type": "shipment"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "product_info": {
+    "name": "1Pc Toilet Gel Stamp Flower Fragrance Bathroom Deodorizer Bowl Cleaner Toilet Wand Refills",
+    "quantity": "1"
+  },
+  "shipping_address": {
+    "email": "tester@maildrop.cc",
+    "first_name": "Shop",
+    "last_name": "Base",
+    "address": "1600 W Loop S",
+    "country": "United States",
+    "state": "California",
+    "city": "Chico",
+    "zipcode": "90001",
+    "phone_number": "505-646-2276"
+  },
+  "total_time_line": 4,
+  "cases": {
+    "SB_SF_CTPB_52": {
+      "email_no_purchase": "maile@gmail.com",
+      "has_check_out": false
+    },
+    "SB_SF_CTPB_54": {
+      "issue_reason": "The price is too high"
+    },
+    "SB_SF_CTPB_50": {
+      "data": [
+        {
+          "case_id": "SB_SF_CTPB_50",
+          "description": "Verify send email  trong trường hợp select issues type = 'I have not received order confirmation email' fill-in Order number field và email giống email trong order",
+          "has_order_name": true
+        },
+        {
+          "case_id": "SB_SF_CTPB_51",
+          "description": "Verify send email trong trường hợp select issues type = 'I have not received order confirmation email' không fill-in Order number field,  email giống email trong order",
+          "has_order_name": false
+        }
+      ]
+    }
+  }
+}

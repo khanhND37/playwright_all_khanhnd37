@@ -1,0 +1,86 @@
+{
+  "env": {
+    "local": {
+      "api": "https://prod-test-api.shopbase.com",
+      "accounts_domain": "accounts-test.shopbase.com",
+      "domain": "au-ne-prodtest-library.onshopbase.com",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "shop_name": "au-ne-prodtest-library",
+      "user_id": 11244582,
+      "shop_id": 10443291,
+      "library_id": 21238
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "accounts_domain": "accounts.dev.shopbase.net",
+      "domain": "au-ne-save-template.myshopbase.net",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "43AhIn|VWp;[?9&",
+      "shop_name": "au-ne-save-template",
+      "user_id": 89797,
+      "shop_id": 10328462,
+      "library_id": 14163
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "accounts_domain": "accounts-test.shopbase.com",
+      "domain": "au-ne-prodtest-library.onshopbase.com",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "shop_name": "au-ne-prodtest-library",
+      "user_id": 11244582,
+      "shop_id": 10443291,
+      "library_id": 21238
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "accounts_domain": "accounts.shopbase.com",
+      "domain": "au-ne-library.onshopbase.com",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "shop_name": "au-ne-library",
+      "user_id": 11244582,
+      "shop_id": 10443706,
+      "library_id": 22122
+    }
+  },
+  "cases": {
+    "SB_WEB_BUILDER_WB_LibraryAuto_LIBRARY_DETAIL_129": {
+      "case_description": "Check UI popup Edit info web template",
+      "template_data": {
+        "libraryName": "129-library"
+      },
+      "library_name": "Library no change",
+      "snapshot_popup_edit_info": "129.edit-info-popup.png"
+    },
+    "SB_WEB_BUILDER_WB_LibraryAuto_LIBRARY_DETAIL_128": {
+      "case_description": "Check edit web template in web builder",
+      "template_data": {
+        "name": "web template A",
+        "libraryName": "128-library"
+      },
+      "add_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 0
+          }
+        }
+      }
+    },
+    "SB_WEB_BUILDER_WB_LibraryAuto_LIBRARY_DETAIL_130": {
+      "case_description": "Check trường Template name trong popup edit info web template",
+      "template_data": {
+        "name": "130-Template name field",
+        "libraryName": "130-library"
+      },
+      "header_popup": "Edit Web template information",
+      "warning_message": "Please input template name",
+      "long_name": "Lorem ipsum dolor sit amet con."
+    }
+  }
+}

@@ -1,0 +1,616 @@
+{
+  "api": "https://api.shopbase.com",
+  "domain": "au-log-action-history.onshopbase.com",
+  "shop_name": "au-log-action-history",
+  "user_id": 74303,
+  "shop_id": "10479461",
+  "username": "shopbase2@beeketing.net",
+  "password": "raMse).7L/b4;k#@",
+  "email_scheduler": "linhnguyen12@beeketing.net",
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-log-action-history.onshopbase.com",
+      "shop_name": "au-log-action-history",
+      "user_id": 74303,
+      "shop_id": "10479461",
+      "username": "shopbase2@beeketing.net",
+      "password": "raMse).7L/b4;k#@"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-log-action-history-prodtest.onshopbase.com",
+      "shop_name": "au-log-action-history-prodtest",
+      "user_id": 74303,
+      "shop_id": "10479462",
+      "username": "shopbase2@beeketing.net",
+      "password": "raMse).7L/b4;k#@",
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-log-action-history.myshopbase.net",
+      "shop_name": "au-log-action-history",
+      "user_id": 73800,
+      "shop_id": "10333794",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q"
+    }
+  },
+  "cases": {
+    "ACTIVITY_LOG_3RD_CUS": {
+      "data": [
+        {
+          "case_id": "SB_SET_ACC_ACT_LOG_PP_11",
+          "case_name": "Check log with PayPal Pro",
+          "payment_method": "paypal-pro",
+          "info_register": {
+            "id": 0,
+            "name": "PayPalPro-1",
+            "code": "paypal-pro",
+            "provider_options": {
+              "partner": "PayPal",
+              "vendor": "shopbase",
+              "user": "shopbase",
+              "pwd": "June1$2020",
+              "enable_3d_secure": false,
+              "sandbox": true,
+              "cardinal_api_id": "",
+              "cardinal_api_key": "",
+              "cardinal_org_unit": ""
+            },
+            "active": true,
+            "title": "PayPalPro-1"
+          },
+          "info_update": {
+            "title": "PayPalPro-2"
+          },
+          "response": {
+            "create": {
+              "action": "add_payment_provider",
+              "detail": "Add PayPalPro-1 account"
+            },
+            "update": {
+              "action": "update_payment_provider",
+              "detail": "Change name from PayPalPro-01 to PayPalPro-02"
+            },
+            "deactive": {
+              "action": "change_status_payment_provider",
+              "detail": "Deactivate PayPalPro-2 account"
+            },
+            "reactive": {
+              "action": "change_status_payment_provider",
+              "detail": "Activate PayPalPro-2 account"
+            },
+            "delete": {
+              "action": "delete_payment_provider",
+              "detail": "Delete PayPalPro-2 account"
+            }
+          }
+        },
+        {
+          "case_id": "SB_SET_ACC_ACT_LOG_PP_12",
+          "case_name": "Check log with BrainTree",
+          "payment_method": "braintree",
+          "info_register": {
+            "id": 0,
+            "name": "BrainTree-1",
+            "code": "braintree",
+            "provider_options": {
+              "merchant_id": "np5d9fjn7spj3n4q",
+              "public_key": "fw74yzgnbm9d8pt9",
+              "secret_key": "80bdebaef6371d49286aad439a1ae9fc",
+              "sandbox": true,
+              "statement_descriptor": {
+                "name": ""
+              }
+            },
+            "active": true,
+            "title": "BrainTree-1"
+          },
+          "info_update": {
+            "title": "BrainTree-2"
+          },
+          "response": {
+            "create": {
+              "action": "add_payment_provider",
+              "detail": "Add BrainTree-1 account"
+            },
+            "update": {
+              "action": "update_payment_provider",
+              "detail": "Change name from BrainTree-01 to BrainTree-02"
+            },
+            "deactive": {
+              "action": "change_status_payment_provider",
+              "detail": "Deactivate BrainTree-2 account"
+            },
+            "reactive": {
+              "action": "change_status_payment_provider",
+              "detail": "Activate BrainTree-2 account"
+            },
+            "delete": {
+              "action": "delete_payment_provider",
+              "detail": "Delete BrainTree-2 account"
+            }
+          }
+        },
+        {
+          "case_id": "SB_SET_ACC_ACT_LOG_PP_13",
+          "case_name": "Check log with Unlimint",
+          "info_register": {
+            "id": 0,
+            "name": "Unlimint-1",
+            "code": "cardpay",
+            "provider_options": {
+              "terminal_code": "23921",
+              "terminal_password": "Y9D5Ro7pgbI8",
+              "callback_secret": "64kzmQR0c9IG",
+              "sandbox": true,
+              "statement_descriptor": {
+                "name": ""
+              }
+            },
+            "active": true,
+            "title": "Unlimint-1"
+          },
+          "payment_method": "cardpay",
+          "info_update": {
+            "title": "Unlimint-2"
+          },
+          "response": {
+            "create": {
+              "action": "add_payment_provider",
+              "detail": "Add Unlimint-1 account"
+            },
+            "update": {
+              "action": "update_payment_provider",
+              "detail": "Change name from Unlimint-01 to Unlimint-02"
+            },
+            "deactive": {
+              "action": "change_status_payment_provider",
+              "detail": "Deactivate Unlimint-2 account"
+            },
+            "reactive": {
+              "action": "change_status_payment_provider",
+              "detail": "Activate Unlimint-2 account"
+            },
+            "delete": {
+              "action": "delete_payment_provider",
+              "detail": "Delete Unlimint-2 account"
+            }
+          }
+        },
+        {
+          "case_id": "SB_SET_ACC_ACT_LOG_PP_14",
+          "case_name": "Check log with Checkout.com",
+          "info_register": {
+            "id": 0,
+            "name": "Checkout-com-1",
+            "code": "checkout-com",
+            "provider_options": {
+              "public_key": "pk_test_87488bcc-5023-402b-b363-c3962453987c",
+              "secret_key": "sk_test_d5989751-9342-4abc-99f0-0ef483eb9fb8",
+              "sandbox": true,
+              "threeDs_enable": false,
+              "statement_descriptor": {
+                "name": ""
+              }
+            },
+            "active": true,
+            "title": "Checkout-com-1"
+          },
+          "payment_method": "checkout-com",
+          "info_update": {
+            "title": "Checkout-com-2"
+          },
+          "response": {
+            "create": {
+              "action": "add_payment_provider",
+              "detail": "Add Checkout-com-1 account"
+            },
+            "update": {
+              "action": "update_payment_provider",
+              "detail": "Change name from Checkout-com-01 to Checkout-com-02"
+            },
+            "deactive": {
+              "action": "change_status_payment_provider",
+              "detail": "Deactivate Checkout-com-2 account"
+            },
+            "reactive": {
+              "action": "change_status_payment_provider",
+              "detail": "Activate Checkout-com-2 account"
+            },
+            "delete": {
+              "action": "delete_payment_provider",
+              "detail": "Delete Checkout-com-2 account"
+            }
+          }
+        },
+        {
+          "case_id": "SB_SET_ACC_ACT_LOG_PP_15",
+          "case_name": "Check log with Payoneer",
+          "info_register": {
+            "id": 0,
+            "name": "Payoneer-1",
+            "code": "payoneer",
+            "provider_options": {
+              "api_token": "h6i00c3huicgqtl5g754bq86t752v2fbndg0f6kd",
+              "store_code": "2586",
+              "api_user_name": "MRS_67983696",
+              "sandbox": true
+            },
+            "active": true,
+            "title": "Payoneer-1"
+          },
+          "payment_method": "payoneer",
+          "info_update": {
+            "title": "Payoneer-2"
+          },
+          "response": {
+            "create": {
+              "action": "add_payment_provider",
+              "detail": "Add Payoneer-1 account"
+            },
+            "update": {
+              "action": "update_payment_provider",
+              "detail": "Change name from Payoneer-01 to Payoneer-02"
+            },
+            "deactive": {
+              "action": "change_status_payment_provider",
+              "detail": "Deactivate Payoneer-2 account"
+            },
+            "reactive": {
+              "action": "change_status_payment_provider",
+              "detail": "Activate Payoneer-2 account"
+            },
+            "delete": {
+              "action": "delete_payment_provider",
+              "detail": "Delete Payoneer-2 account"
+            }
+          }
+        },
+        {
+          "case_id": "SB_SET_ACC_ACT_LOG_PP_16",
+          "case_name": "Check log with AsiaBill",
+          "info_register": {
+            "id": 0,
+            "name": "AsiaBill-1",
+            "code": "asia-bill",
+            "provider_options": {
+              "merNo": "12318",
+              "gatewayNo": "12318002",
+              "signKey": "12345678",
+              "sandbox": true
+            },
+            "active": true,
+            "title": "AsiaBill-1"
+          },
+          "payment_method": "asia-bill",
+          "info_update": {
+            "title": "AsiaBill-2"
+          },
+          "response": {
+            "create": {
+              "action": "add_payment_provider",
+              "detail": "Add AsiaBill-1 account"
+            },
+            "update": {
+              "action": "update_payment_provider",
+              "detail": "Change name from AsiaBill-01 to AsiaBill-02"
+            },
+            "deactive": {
+              "action": "change_status_payment_provider",
+              "detail": "Deactivate AsiaBill-2 account"
+            },
+            "reactive": {
+              "action": "change_status_payment_provider",
+              "detail": "Activate AsiaBill-2 account"
+            },
+            "delete": {
+              "action": "delete_payment_provider",
+              "detail": "Delete AsiaBill-2 account"
+            }
+          }
+        },
+        {
+          "case_id": "SB_SET_ACC_ACT_LOG_PP_17",
+          "case_name": "Check log with OceanPayment",
+          "info_register": {
+            "id": 0,
+            "name": "OceanPayment-1",
+            "code": "ocean-payment-1",
+            "provider_options": {
+              "account": "150260",
+              "terminal": "15026001",
+              "secure": "12345678",
+              "sandbox": false
+            },
+            "active": true,
+            "title": "OceanPayment-1"
+          },
+          "payment_method": "ocean-payment-1",
+          "info_update": {
+            "title": "OceanPayment-2"
+          },
+          "response": {
+            "create": {
+              "action": "add_payment_provider",
+              "detail": "Add OceanPayment-1 account"
+            },
+            "update": {
+              "action": "update_payment_provider",
+              "detail": "Change name from OceanPayment-01 to OceanPayment-02"
+            },
+            "deactive": {
+              "action": "change_status_payment_provider",
+              "detail": "Deactivate OceanPayment-2 account"
+            },
+            "reactive": {
+              "action": "change_status_payment_provider",
+              "detail": "Activate OceanPayment-2 account"
+            },
+            "delete": {
+              "action": "delete_payment_provider",
+              "detail": "Delete OceanPayment-2 account"
+            }
+          }
+        }
+      ]
+    },
+    "SB_SET_ACC_ACT_LOG_PP_07": {
+      "payment_method": "shopbase",
+      "gateway": "Shopbase Payments",
+      "info_update": {
+        "title": "Shopbase Payments OCG",
+        "statement_descriptor": {
+          "name": "Update Shopbase Payments"
+        }
+      },
+      "response": {
+        "active": {
+          "action": "change_status_shopbase_payment",
+          "detail": "Activate ShopBase Payment"
+        },
+        "update": {
+          "action": "update_payment_provider",
+          "detail": "Update ShopBase Payment"
+        },
+        "deactive": {
+          "action": "change_status_payment_provider",
+          "detail": "Deactivate ShopBase Payment"
+        }
+      }
+    },
+    "SB_SET_ACC_ACT_LOG_PP_08": {
+      "payment_method": "shopbase",
+      "gateway": "reseller",
+      "info_update": {
+        "statement_descriptor": {
+          "name": "Update Shopbase Marketplace Payments"
+        },
+        "enable_sub_payment_method": true,
+        "disable_sub_payment_method": false,
+        "payment_method_types_on": ["bancontact", "giropay"],
+        "payment_method_types_off": [],
+        "on_cardholder_name_hidden": true,
+        "off_cardholder_name_hidden": false
+      },
+      "response": {
+        "active": {
+          "action": "change_status_shopbase_payment",
+          "detail": "Activate ShopBase Marketplace Payment"
+        },
+        "update": {
+          "action": "update_payment_provider",
+          "detail": "Update ShopBase Marketplace Payment"
+        },
+        "deactive": {
+          "action": "change_status_shopbase_payment",
+          "detail": "Deactivate ShopBase Marketplace Payment"
+        },
+        "dispute": {
+          "action": "set_status_dispute",
+          "detail": "Update ShopBase Marketplace Payment"
+        }
+      }
+    },
+    "SB_SET_ACC_ACT_LOG_PP_09": {
+      "payment_method": "paypal-express",
+      "info_register": {
+        "id": 0,
+        "name": "PayPal-1",
+        "code": "paypal-express",
+        "provider_options": {
+          "name": "",
+          "brand_name": "",
+          "client_id": "AfL2WyCQuIis451KPSSrSIgAAfFyiqFDgz5FPYAk4N8som1mrPVlgtK4CFZamgA8UP9GQzFfOGW6ELoP",
+          "client_secret": "EOU0iGeg1J7DEzcD9tVYBzjLD7ia_tWSQ9g9Ia-E-nK5DGenuZwXGJAtEGOY7m6pwgDD95uV0bGJGaCW",
+          "disable_update_tracking": true,
+          "enable_smart_button": false,
+          "enable_express_checkout": false,
+          "sandbox": true
+        },
+        "active": true,
+        "title": "PayPal-1"
+      },
+      "info_update": {
+        "title": "PayPal-2",
+        "enter_payment_info": false,
+        "is_enable_paypal_smart_button": true,
+        "is_disable_paypal_smart_button": false,
+        "enable_paypal_paylater": true,
+        "disable_paypal_paylater": false,
+        "is_enable_tracking": true,
+        "enabled_order_info": ["product_name", "variant_title", "order_name", "product_id"],
+        "is_disable_tracking": false,
+        "brand_name": "PayPalStandard",
+        "enable_express_checkout": true
+      },
+      "response": {
+        "create": {
+          "action": "add_payment_provider",
+          "detail": "Add PayPal-1 account"
+        },
+        "reactive": {
+          "action": "change_status_payment_provider",
+          "detail": "Activate PayPal-2 account"
+        },
+        "rename": {
+          "action": "update_payment_provider",
+          "detail": "Change name from PayPal-01 to PayPal-02"
+        },
+        "update": {
+          "action": "update_payment_provider",
+          "detail": "Update PayPal-02 account"
+        },
+        "deactive": {
+          "action": "change_status_payment_provider",
+          "detail": "Deactivate PayPal-2 account"
+        },
+        "update_setting": {
+          "action": "update_paypal_payment",
+          "detail": "Update PayPal setting"
+        },
+        "delete": {
+          "action": "delete_payment_provider",
+          "detail": "Delete PayPal-2 account"
+        }
+      }
+    },
+    "SB_SET_ACC_ACT_LOG_PP_10": {
+      "payment_method": "stripe",
+      "payment_setting": {
+        "payment_code": "stripe",
+        "statement_descriptor": {
+          "name": "STStripe"
+        }
+      },
+      "info_register": {
+        "id": 0,
+        "name": "Stripe-1",
+        "code": "stripe",
+        "provider_options": {
+          "public_key": "pk_test_51H0MC6CcU7rfeHrk7sE9cyETJZgKI3RR2jWs9MqL2iJ67o8M2aj0SrH56PlYgkdmbhs1HmD2ODpbwzp72Af4NIbe002OIRtxHL",
+          "secret_key": "sk_test_51H0MC6CcU7rfeHrkYB0CZVbfsSfP99Q5hhnGj7hjxbXMn6d7v6hpRlE06JoRbLd2KMWqqitg7twTBCZAKpBorMd700NXQUNss7",
+          "api_key": true,
+          "disabled_credit_card": false,
+          "statement_descriptor": {
+            "name": ""
+          },
+          "payment_method_types": [],
+          "enable_sub_payment_method": false,
+          "enable_pay_now_pay_later_method": false,
+          "enable_express_checkout": false
+        },
+        "active": true,
+        "title": "Stripe-1"
+      },
+      "info_update": {
+        "title": "Stripe-2",
+        "is_cardholder_name_hidden_on": true,
+        "is_cardholder_name_hidden_off": false,
+        "enable_sub_payment_method_on": true,
+        "enable_sub_payment_method_off": false,
+        "enable_pay_now_pay_later_method_on": true,
+        "enable_pay_now_pay_later_method_off": false,
+        "payment_method_types_eu": ["bancontact"],
+        "payment_method_types_bnpl": ["klarna"],
+        "payment_method_types_off": [],
+        "statement_descriptor": {
+          "name": "Update Stripe"
+        }
+      },
+      "response": {
+        "create": {
+          "action": "add_payment_provider",
+          "detail": "Add Stripe-1 account"
+        },
+        "reactive": {
+          "action": "change_status_payment_provider",
+          "detail": "Activate Stripe-2 account"
+        },
+        "rename": {
+          "action": "update_payment_provider",
+          "detail": "Change name from Stripe-01 to Stripe-02"
+        },
+        "update": {
+          "action": "update_payment_provider",
+          "detail": "Update Stripe-2 account"
+        },
+        "deactive": {
+          "action": "change_status_payment_provider",
+          "detail": "Deactivate Stripe-2 account"
+        },
+        "update_setting": {
+          "action": "change_status_payment_rotation",
+          "detail": "Update Payment Setting"
+        },
+        "delete": {
+          "action": "delete_payment_provider",
+          "detail": "Delete Stripe-2 account"
+        }
+      }
+    },
+    "SB_SET_ACC_ACT_LOG_PP_21": {
+      "payment_method": "stripe",
+      "info_register": {
+        "id": 0,
+        "name": "Stripe-1",
+        "code": "stripe",
+        "provider_options": {
+          "public_key": "pk_test_51H0MC6CcU7rfeHrk7sE9cyETJZgKI3RR2jWs9MqL2iJ67o8M2aj0SrH56PlYgkdmbhs1HmD2ODpbwzp72Af4NIbe002OIRtxHL",
+          "secret_key": "sk_test_51H0MC6CcU7rfeHrkYB0CZVbfsSfP99Q5hhnGj7hjxbXMn6d7v6hpRlE06JoRbLd2KMWqqitg7twTBCZAKpBorMd700NXQUNss7",
+          "api_key": true,
+          "disabled_credit_card": false,
+          "statement_descriptor": {
+            "name": ""
+          },
+          "payment_method_types": [],
+          "enable_sub_payment_method": false,
+          "enable_pay_now_pay_later_method": false,
+          "enable_express_checkout": false
+        },
+        "active": true,
+        "title": "Stripe-1"
+      },
+      "code_test_gateway": "test-gateway",
+      "response": {
+        "action": "change_status_payment_provider",
+        "detail": "Activate Test Gateway account"
+      }
+    },
+    "SB_SET_ACC_ACT_LOG_PP_32": {
+      "payment_method": "stripe",
+      "info_register": {
+        "id": 0,
+        "name": "Stripe-1",
+        "code": "stripe",
+        "provider_options": {
+          "public_key": "pk_test_51H0MC6CcU7rfeHrk7sE9cyETJZgKI3RR2jWs9MqL2iJ67o8M2aj0SrH56PlYgkdmbhs1HmD2ODpbwzp72Af4NIbe002OIRtxHL",
+          "secret_key": "sk_test_51H0MC6CcU7rfeHrkYB0CZVbfsSfP99Q5hhnGj7hjxbXMn6d7v6hpRlE06JoRbLd2KMWqqitg7twTBCZAKpBorMd700NXQUNss7",
+          "api_key": true,
+          "disabled_credit_card": false,
+          "statement_descriptor": {
+            "name": ""
+          },
+          "payment_method_types": [],
+          "enable_sub_payment_method": false,
+          "enable_pay_now_pay_later_method": false,
+          "enable_express_checkout": false
+        },
+        "active": true,
+        "title": "Stripe-1"
+      },
+      "response": [
+        {
+          "action": "update_payment_provider",
+          "detail": "Update Stripe-1 account"
+        },
+        {
+          "action": "change_status_payment_rotation",
+          "detail": "Disable Payment Rotation"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1041 @@
+{
+  "api": "https://api.shopbase.com",
+  "username": "shopbase2@beeketing.net",
+  "password": "raMse).7L/b4;k#@",
+  "domain": "au-printbase-shipping-profile.onshopbase.com",
+  "shop_name": "au-printbase-shipping-profile",
+  "email": "tester@maildrop.cc",
+  "shipping_address_api": {
+    "address1": "10800 W Pico Blvd Suite 312",
+    "address2": "",
+    "city": "Los Angeles",
+    "company": "OCG",
+    "country": "United States",
+    "country_code": "US",
+    "country_name": "United States",
+    "first_name": "ShopBase",
+    "last_name": "Auto",
+    "phone": "0124567985",
+    "province": "California",
+    "province_code": "CA",
+    "sbcn_valid_address": 0,
+    "zip": "90003"
+  },
+  "card_info": {
+    "number": "4111111111111111",
+    "holder_name": "Shopbase",
+    "expire_date": "12 / 24",
+    "cvv": "100"
+  },
+  "cases": {
+    "SB_SET_SPP_SPR_3": {
+      "products_checkout": [
+        {
+          "name": "Rule21",
+          "quantity": 1
+        }
+      ],
+      "shipping_address": {
+        "email": "tester@maildrop.cc",
+        "first_name": "ShopBase",
+        "last_name": "Auto",
+        "address": "1600 W Loop S",
+        "country": "United States",
+        "state": "California",
+        "city": "Los Angeles",
+        "zipcode": "90003",
+        "phone_number": "0124567985"
+      },
+      "expected_shipping_methods": [
+        {
+          "amount": 7,
+          "method_title": "Economic Shipping"
+        },
+        {
+          "amount": 7,
+          "method_title": "Expedite Shipping"
+        }
+      ],
+      "additional_product": [
+        {
+          "name": "Rule22",
+          "quantity": 1
+        }
+      ],
+      "expected_shipping_methods_after_add_product": [
+        {
+          "amount": 9,
+          "method_title": "Economic Shipping"
+        },
+        {
+          "amount": 11,
+          "method_title": "Expedite Shipping"
+        }
+      ]
+    },
+    "SB_PLB_SP_SPP_SPR_47": {
+      "products_checkout": [
+        {
+          "name": "Rule22",
+          "quantity": 1
+        }
+      ],
+      "shipping_address": {
+        "email": "tester@maildrop.cc",
+        "first_name": "ShopBase",
+        "last_name": "Auto",
+        "address": "1600 W Loop S",
+        "country": "Russia",
+        "state": "Altai Republic",
+        "city": "Altai Republic",
+        "zipcode": "90003",
+        "phone_number": "0124567985"
+      },
+      "additional_product": [
+        {
+          "name": "Test regions",
+          "quantity": 1
+        }
+      ]
+    },
+    "SB_PLB_SP_SPP_SPR_48": {
+      "products_checkout": [
+        {
+          "variant_id": 1000006502709101,
+          "quantity": 2
+        }
+      ],
+      "expected_shipping_methods": [
+        {
+          "amount": 7,
+          "method_title": "Cali Standard"
+        },
+        {
+          "amount": 12,
+          "method_title": "Cali Express"
+        }
+      ],
+      "shipping_method_for_each_region": [
+        {
+          "shipping_address": {
+            "state": "Hawaii",
+            "city": "Ocean View",
+            "zipcode": "96737"
+          },
+          "expected_shipping_methods": [
+            {
+              "amount": 9,
+              "method_title": "US shipping"
+            }
+          ]
+        },
+        {
+          "shipping_address": {
+            "country": "Russia",
+            "state": "Altai Republic",
+            "city": "Altai Republic",
+            "zipcode": "659408"
+          },
+          "expected_shipping_methods": [
+            {
+              "amount": 12,
+              "method_title": "Russia"
+            }
+          ]
+        },
+        {
+          "shipping_address": {
+            "country": "Australia",
+            "state": "Western Australia",
+            "city": "Perth",
+            "zipcode": "6001"
+          },
+          "expected_shipping_methods": [
+            {
+              "amount": 10,
+              "method_title": "AU"
+            }
+          ]
+        },
+        {
+          "shipping_address": {
+            "country": "Australia",
+            "state": "Western Australia",
+            "city": "Murdoch",
+            "zipcode": "6001"
+          }
+        }
+      ]
+    },
+    "DD_14_15_16_18_19": [
+      {
+        "case_id": "SB_PLB_SP_SPP_SPR_14",
+        "case_name": "Order có 2 items Chung group, Rate name giống nhau, 1st item price bằng nhau",
+        "products_checkout": [
+          {
+            "name": "Rule21",
+            "variant_id": 1000006513486399,
+            "quantity": 2
+          },
+          {
+            "name": "Rule22",
+            "variant_id": 1000006502709254,
+            "quantity": 2
+          }
+        ],
+        "expected_shipping_methods": [
+          {
+            "amount": 13,
+            "method_title": "Economic Shipping"
+          },
+          {
+            "amount": 20,
+            "method_title": "Expedite Shipping"
+          }
+        ]
+      },
+      {
+        "case_id": "SB_PLB_SP_SPP_SPR_15",
+        "case_name": "Order có 2 items Chung group, có 1 Rate name giống nhau",
+        "products_checkout": [
+          {
+            "name": "Rule21",
+            "variant_id": 1000006513486399,
+            "quantity": 2
+          },
+          {
+            "name": "Rule3",
+            "variant_id": 1000006502712475,
+            "quantity": 2
+          }
+        ],
+        "expected_shipping_methods": [
+          {
+            "amount": 16,
+            "method_title": "Economic Shipping"
+          }
+        ]
+      },
+      {
+        "case_id": "SB_PLB_SP_SPP_SPR_16",
+        "case_name": "Order có 2 items Chung group, Rate name khác nhau (có phân biệt hoa thường)",
+        "products_checkout": [
+          {
+            "name": "Rule21",
+            "variant_id": 1000006513486399,
+            "quantity": 2
+          },
+          {
+            "name": "Rule5",
+            "variant_id": 1000006502710647,
+            "quantity": 2
+          }
+        ],
+        "expected_shipping_methods": [
+          {
+            "amount": 15,
+            "method_title": "Standard Shipping"
+          },
+          {
+            "amount": 22,
+            "method_title": "Fast Shipping"
+          }
+        ]
+      },
+      {
+        "case_id": "SB_PLB_SP_SPP_SPR_18",
+        "case_name": "Order có 2 items Khác group, Rate name giống nhau",
+        "products_checkout": [
+          {
+            "name": "Rule21",
+            "variant_id": 1000006513486399,
+            "quantity": 2
+          },
+          {
+            "name": "Rule4",
+            "variant_id": 1000006502710527,
+            "quantity": 2
+          }
+        ],
+        "expected_shipping_methods": [
+          {
+            "amount": 17,
+            "method_title": "Economic Shipping"
+          },
+          {
+            "amount": 25,
+            "method_title": "Expedite Shipping"
+          }
+        ]
+      },
+      {
+        "case_id": "SB_PLB_SP_SPP_SPR_19",
+        "case_name": "Order có 2 items Khác group, Rate name khác nhau",
+        "products_checkout": [
+          {
+            "name": "Rule21",
+            "variant_id": 1000006513486399,
+            "quantity": 2
+          },
+          {
+            "name": "Rule6",
+            "variant_id": 1000006502709111,
+            "quantity": 2
+          }
+        ],
+        "expected_shipping_methods": [
+          {
+            "amount": 19,
+            "method_title": "Standard Shipping"
+          },
+          {
+            "amount": 25,
+            "method_title": "Fast Shipping"
+          }
+        ]
+      }
+    ],
+    "DD_26_28_30_33": [
+      {
+        "case_id": "SB_PLB_SP_SPP_SPR_26",
+        "case_name": "PPC có rate trùng tên với Shipping method đã chọn của order. Cùng group",
+        "products_checkout": [
+          {
+            "name": "RulePPC1",
+            "variant_id": 1000006502709112,
+            "quantity": 2
+          }
+        ],
+        "product_ppc": {
+          "variant_id": 1000006513486399,
+          "quantity": 1,
+          "post_purchase_price": 25.99
+        },
+        "usell_id": 9182440,
+        "shipping_method_before_ppc": {
+          "amount": 8,
+          "method_title": "Expedite Shipping"
+        },
+        "shipping_method_after_ppc": {
+          "amount": 12,
+          "method_title": "Expedite Shipping"
+        }
+      },
+      {
+        "case_id": "SB_PLB_SP_SPP_SPR_28",
+        "case_name": "PPC có rate khác tên với Shipping method đã chọn của order.Cùng group.Item của order chỉ có duy nhất 1 rate.",
+        "products_checkout": [
+          {
+            "name": "RulePPC2",
+            "variant_id": 1000007644607685,
+            "quantity": 2
+          }
+        ],
+        "product_ppc": {
+          "variant_id": 1000006513486399,
+          "quantity": 1,
+          "post_purchase_price": 25.99
+        },
+        "usell_id": 9182440,
+        "shipping_method_before_ppc": {
+          "amount": 8,
+          "method_title": "Expedite"
+        },
+        "shipping_method_after_ppc": {
+          "amount": 10,
+          "method_title": "Expedite"
+        }
+      },
+      {
+        "case_id": "SB_PLB_SP_SPP_SPR_30",
+        "case_name": "PPC có rate khác tên với Shipping method đã chọn của order.Shipping method đã chọn của order là rate giá cao.Cùng group",
+        "products_checkout": [
+          {
+            "name": "Rule22",
+            "variant_id": 1000006502709254,
+            "quantity": 1
+          },
+          {
+            "name": "Rule5",
+            "variant_id": 1000006502710647,
+            "quantity": 1
+          }
+        ],
+        "product_ppc": {
+          "variant_id": 1000006513486399,
+          "quantity": 1,
+          "post_purchase_price": 25.99
+        },
+        "usell_id": 9182440,
+        "shipping_method_before_ppc": {
+          "amount": 13,
+          "method_title": "Fast Shipping"
+        },
+        "shipping_method_after_ppc": {
+          "amount": 17,
+          "method_title": "Fast Shipping"
+        }
+      },
+      {
+        "case_id": "SB_PLB_SP_SPP_SPR_33",
+        "case_name": "PPC có rate khác tên với Shipping method đã chọn của order.Shipping method đã chọn của order là rate giá thấp.Khác group",
+        "products_checkout": [
+          {
+            "name": "Rule6",
+            "variant_id": 1000006502709111,
+            "quantity": 1
+          },
+          {
+            "name": "Test regions",
+            "variant_id": 1000006502709101,
+            "quantity": 1
+          }
+        ],
+        "product_ppc": {
+          "variant_id": 1000006513486399,
+          "quantity": 1,
+          "post_purchase_price": 25.99
+        },
+        "usell_id": 9182440,
+        "shipping_method_before_ppc": {
+          "amount": 12,
+          "method_title": "Standard Shipping"
+        },
+        "shipping_method_after_ppc": {
+          "amount": 19,
+          "method_title": "Standard Shipping"
+        }
+      }
+    ]
+  },
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "domain": "au-shipping-profile-pbase.myshopbase.net",
+      "shop_name": "au-shipping-profile-pbase",
+      "cases": {
+        "SB_PLB_SP_SPP_SPR_48": {
+          "products_checkout": [
+            {
+              "name": "Test regions",
+              "variant_id": 1000001767802845,
+              "quantity": 2
+            }
+          ],
+          "expected_shipping_methods": [
+            {
+              "amount": 7,
+              "method_title": "Cali Standard"
+            },
+            {
+              "amount": 12,
+              "method_title": "Cali Express"
+            }
+          ],
+          "shipping_method_for_each_region": [
+            {
+              "shipping_address": {
+                "state": "Hawaii",
+                "city": "Ocean View",
+                "zipcode": "96737"
+              },
+              "expected_shipping_methods": [
+                {
+                  "amount": 9,
+                  "method_title": "US shipping"
+                }
+              ]
+            },
+            {
+              "shipping_address": {
+                "country": "Russia",
+                "state": "Altai Republic",
+                "city": "Altai Republic"
+              },
+              "expected_shipping_methods": [
+                {
+                  "amount": 12,
+                  "method_title": "Russia"
+                }
+              ]
+            },
+            {
+              "shipping_address": {
+                "country": "Australia",
+                "state": "Western Australia",
+                "city": "Perth"
+              },
+              "expected_shipping_methods": [
+                {
+                  "amount": 10,
+                  "method_title": "AU"
+                }
+              ]
+            },
+            {
+              "shipping_address": {
+                "city": "Murdoch"
+              }
+            }
+          ]
+        },
+        "DD_14_15_16_18_19": [
+          {
+            "case_id": "SB_PLB_SP_SPP_SPR_14",
+            "case_name": "Order có 2 items Chung group, Rate name giống nhau, 1st item price bằng nhau",
+            "products_checkout": [
+              {
+                "name": "Rule21",
+                "variant_id": 1000001767341428,
+                "quantity": 2
+              },
+              {
+                "name": "Rule22",
+                "variant_id": 1000001767341514,
+                "quantity": 2
+              }
+            ],
+            "expected_shipping_methods": [
+              {
+                "amount": 13,
+                "method_title": "Economic Shipping"
+              },
+              {
+                "amount": 20,
+                "method_title": "Expedite Shipping"
+              }
+            ]
+          },
+          {
+            "case_id": "SB_PLB_SP_SPP_SPR_15",
+            "case_name": "Order có 2 items Chung group, có 1 Rate name giống nhau",
+            "products_checkout": [
+              {
+                "name": "Rule21",
+                "variant_id": 1000001767341428,
+                "quantity": 2
+              },
+              {
+                "name": "Rule3",
+                "variant_id": 1000001767341518,
+                "quantity": 2
+              }
+            ],
+            "expected_shipping_methods": [
+              {
+                "amount": 16,
+                "method_title": "Economic Shipping"
+              }
+            ]
+          },
+          {
+            "case_id": "SB_PLB_SP_SPP_SPR_16",
+            "case_name": "Order có 2 items Chung group, Rate name khác nhau (có phân biệt hoa thường)",
+            "products_checkout": [
+              {
+                "name": "Rule21",
+                "variant_id": 1000001767341428,
+                "quantity": 2
+              },
+              {
+                "name": "Rule5",
+                "variant_id": 1000001767341530,
+                "quantity": 2
+              }
+            ],
+            "expected_shipping_methods": [
+              {
+                "amount": 15,
+                "method_title": "Standard Shipping"
+              },
+              {
+                "amount": 22,
+                "method_title": "Fast Shipping"
+              }
+            ]
+          },
+          {
+            "case_id": "SB_PLB_SP_SPP_SPR_18",
+            "case_name": "Order có 2 items Khác group, Rate name giống nhau",
+            "products_checkout": [
+              {
+                "name": "Rule21",
+                "variant_id": 1000001767341428,
+                "quantity": 2
+              },
+              {
+                "name": "Rule4",
+                "variant_id": 1000001769848203,
+                "quantity": 2
+              }
+            ],
+            "expected_shipping_methods": [
+              {
+                "amount": 17,
+                "method_title": "Economic Shipping"
+              },
+              {
+                "amount": 25,
+                "method_title": "Expedite Shipping"
+              }
+            ]
+          },
+          {
+            "case_id": "SB_PLB_SP_SPP_SPR_19",
+            "case_name": "Order có 2 items Khác group, Rate name khác nhau",
+            "products_checkout": [
+              {
+                "name": "Rule21",
+                "variant_id": 1000001767341428,
+                "quantity": 2
+              },
+              {
+                "name": "Rule6",
+                "variant_id": 1000001767341571,
+                "quantity": 2
+              }
+            ],
+            "expected_shipping_methods": [
+              {
+                "amount": 19,
+                "method_title": "Standard Shipping"
+              },
+              {
+                "amount": 25,
+                "method_title": "Fast Shipping"
+              }
+            ]
+          }
+        ],
+        "DD_26_28_30_33": [
+          {
+            "case_id": "SB_PLB_SP_SPP_SPR_26",
+            "case_name": "PPC có rate trùng tên với Shipping method đã chọn của order. Cùng group",
+            "products_checkout": [
+              {
+                "name": "RulePPC1",
+                "variant_id": 1000001771241438,
+                "quantity": 2
+              }
+            ],
+            "product_ppc": {
+              "variant_id": 1000001767341428,
+              "quantity": 1,
+              "post_purchase_price": 28.49
+            },
+            "usell_id": 73251091314,
+            "shipping_method_before_ppc": {
+              "amount": 8,
+              "method_title": "Expedite Shipping"
+            },
+            "shipping_method_after_ppc": {
+              "amount": 12,
+              "method_title": "Expedite Shipping"
+            }
+          },
+          {
+            "case_id": "SB_PLB_SP_SPP_SPR_28",
+            "case_name": "PPC có rate khác tên với Shipping method đã chọn của order.Cùng group.Item của order chỉ có duy nhất 1 rate.",
+            "products_checkout": [
+              {
+                "name": "RulePPC2",
+                "variant_id": 1000001769516670,
+                "quantity": 2
+              }
+            ],
+            "product_ppc": {
+              "variant_id": 1000001767341428,
+              "quantity": 1,
+              "post_purchase_price": 25.99
+            },
+            "usell_id": 73251091314,
+            "shipping_method_before_ppc": {
+              "amount": 8,
+              "method_title": "Expedite"
+            },
+            "shipping_method_after_ppc": {
+              "amount": 10,
+              "method_title": "Expedite"
+            }
+          },
+          {
+            "case_id": "SB_PLB_SP_SPP_SPR_30",
+            "case_name": "PPC có rate khác tên với Shipping method đã chọn của order.Shipping method đã chọn của order là rate giá cao.Cùng group",
+            "products_checkout": [
+              {
+                "name": "Rule22",
+                "variant_id": 1000001767341514,
+                "quantity": 1
+              },
+              {
+                "name": "Rule5",
+                "variant_id": 1000001767341530,
+                "quantity": 1
+              }
+            ],
+            "product_ppc": {
+              "variant_id": 1000001767341428,
+              "quantity": 1,
+              "post_purchase_price": 28.49
+            },
+            "usell_id": 73251091314,
+            "shipping_method_before_ppc": {
+              "amount": 13,
+              "method_title": "Fast Shipping"
+            },
+            "shipping_method_after_ppc": {
+              "amount": 17,
+              "method_title": "Fast Shipping"
+            }
+          },
+          {
+            "case_id": "SB_PLB_SP_SPP_SPR_33",
+            "case_name": "PPC có rate khác tên với Shipping method đã chọn của order.Shipping method đã chọn của order là rate giá thấp.Khác group",
+            "products_checkout": [
+              {
+                "name": "Rule6",
+                "variant_id": 1000001767341571,
+                "quantity": 1
+              },
+              {
+                "name": "Test regions",
+                "variant_id": 1000001767802845,
+                "quantity": 1
+              }
+            ],
+            "product_ppc": {
+              "variant_id": 1000001767341428,
+              "quantity": 1,
+              "post_purchase_price": 25.99
+            },
+            "usell_id": 73251091314,
+            "shipping_method_before_ppc": {
+              "amount": 12,
+              "method_title": "Standard Shipping"
+            },
+            "shipping_method_after_ppc": {
+              "amount": 19,
+              "method_title": "Standard Shipping"
+            }
+          }
+        ]
+      }
+    },
+    "prodtest": {
+      "domain": "au-printbase-shipping-profile-prodtest.onshopbase.com",
+      "shop_name": "au-printbase-shipping-profile-prodtest",
+      "cases": {
+        "SB_PLB_SP_SPP_SPR_48": {
+          "products_checkout": [
+            {
+              "name": "Test regions",
+              "variant_id": 1000007893314322,
+              "quantity": 2
+            }
+          ],
+          "expected_shipping_methods": [
+            {
+              "amount": 7,
+              "method_title": "Cali Standard"
+            },
+            {
+              "amount": 12,
+              "method_title": "Cali Express"
+            }
+          ],
+          "shipping_method_for_each_region": [
+            {
+              "shipping_address": {
+                "state": "Hawaii",
+                "city": "Ocean View",
+                "zipcode": "96737"
+              },
+              "expected_shipping_methods": [
+                {
+                  "amount": 9,
+                  "method_title": "US shipping"
+                }
+              ]
+            },
+            {
+              "shipping_address": {
+                "country": "Russia",
+                "state": "Altai Republic",
+                "city": "Altai Republic"
+              },
+              "expected_shipping_methods": [
+                {
+                  "amount": 12,
+                  "method_title": "Russia"
+                }
+              ]
+            },
+            {
+              "shipping_address": {
+                "country": "Australia",
+                "state": "Western Australia",
+                "city": "Perth"
+              },
+              "expected_shipping_methods": [
+                {
+                  "amount": 10,
+                  "method_title": "AU"
+                }
+              ]
+            },
+            {
+              "shipping_address": {
+                "city": "Murdoch"
+              }
+            }
+          ]
+        },
+        "DD_14_15_16_18_19": [
+          {
+            "case_id": "SB_PLB_SP_SPP_SPR_14",
+            "case_name": "Order có 2 items Chung group, Rate name giống nhau, 1st item price bằng nhau",
+            "products_checkout": [
+              {
+                "name": "Rule21",
+                "variant_id": 1000007893332720,
+                "quantity": 2
+              },
+              {
+                "name": "Rule22",
+                "variant_id": 1000007893353558,
+                "quantity": 2
+              }
+            ],
+            "expected_shipping_methods": [
+              {
+                "amount": 13,
+                "method_title": "Economic Shipping"
+              },
+              {
+                "amount": 20,
+                "method_title": "Expedite Shipping"
+              }
+            ]
+          },
+          {
+            "case_id": "SB_PLB_SP_SPP_SPR_15",
+            "case_name": "Order có 2 items Chung group, có 1 Rate name giống nhau",
+            "products_checkout": [
+              {
+                "name": "Rule21",
+                "variant_id": 1000007893332720,
+                "quantity": 2
+              },
+              {
+                "name": "Rule3",
+                "variant_id": 1000007893367543,
+                "quantity": 2
+              }
+            ],
+            "expected_shipping_methods": [
+              {
+                "amount": 16,
+                "method_title": "Economic Shipping"
+              }
+            ]
+          },
+          {
+            "case_id": "SB_PLB_SP_SPP_SPR_16",
+            "case_name": "Order có 2 items Chung group, Rate name khác nhau (có phân biệt hoa thường)",
+            "products_checkout": [
+              {
+                "name": "Rule21",
+                "variant_id": 1000007893332720,
+                "quantity": 2
+              },
+              {
+                "name": "Rule5",
+                "variant_id": 1000007893385418,
+                "quantity": 2
+              }
+            ],
+            "expected_shipping_methods": [
+              {
+                "amount": 15,
+                "method_title": "Standard Shipping"
+              },
+              {
+                "amount": 22,
+                "method_title": "Fast Shipping"
+              }
+            ]
+          },
+          {
+            "case_id": "SB_PLB_SP_SPP_SPR_18",
+            "case_name": "Order có 2 items Khác group, Rate name giống nhau",
+            "products_checkout": [
+              {
+                "name": "Rule21",
+                "variant_id": 1000007893332720,
+                "quantity": 2
+              },
+              {
+                "name": "Rule4",
+                "variant_id": 1000007893377165,
+                "quantity": 2
+              }
+            ],
+            "expected_shipping_methods": [
+              {
+                "amount": 17,
+                "method_title": "Economic Shipping"
+              },
+              {
+                "amount": 25,
+                "method_title": "Expedite Shipping"
+              }
+            ]
+          },
+          {
+            "case_id": "SB_PLB_SP_SPP_SPR_19",
+            "case_name": "Order có 2 items Khác group, Rate name khác nhau",
+            "products_checkout": [
+              {
+                "name": "Rule21",
+                "variant_id": 1000007893332720,
+                "quantity": 2
+              },
+              {
+                "name": "Rule6",
+                "variant_id": 1000007893395537,
+                "quantity": 2
+              }
+            ],
+            "expected_shipping_methods": [
+              {
+                "amount": 19,
+                "method_title": "Standard Shipping"
+              },
+              {
+                "amount": 25,
+                "method_title": "Fast Shipping"
+              }
+            ]
+          }
+        ],
+        "DD_26_28_30_33": [
+          {
+            "case_id": "SB_PLB_SP_SPP_SPR_26",
+            "case_name": "PPC có rate trùng tên với Shipping method đã chọn của order. Cùng group",
+            "products_checkout": [
+              {
+                "name": "RulePPC1",
+                "variant_id": 1000007893428410,
+                "quantity": 2
+              }
+            ],
+            "product_ppc": {
+              "variant_id": 1000007893332720,
+              "quantity": 1,
+              "post_purchase_price": 25.99
+            },
+            "usell_id": 9182440,
+            "shipping_method_before_ppc": {
+              "amount": 8,
+              "method_title": "Expedite Shipping"
+            },
+            "shipping_method_after_ppc": {
+              "amount": 12,
+              "method_title": "Expedite Shipping"
+            }
+          },
+          {
+            "case_id": "SB_PLB_SP_SPP_SPR_28",
+            "case_name": "PPC có rate khác tên với Shipping method đã chọn của order.Cùng group.Item của order chỉ có duy nhất 1 rate.",
+            "products_checkout": [
+              {
+                "name": "RulePPC2",
+                "variant_id": 1000007893414738,
+                "quantity": 2
+              }
+            ],
+            "product_ppc": {
+              "variant_id": 1000007893332720,
+              "quantity": 1,
+              "post_purchase_price": 25.99
+            },
+            "usell_id": 9182440,
+            "shipping_method_before_ppc": {
+              "amount": 8,
+              "method_title": "Expedite"
+            },
+            "shipping_method_after_ppc": {
+              "amount": 10,
+              "method_title": "Expedite"
+            }
+          },
+          {
+            "case_id": "SB_PLB_SP_SPP_SPR_30",
+            "case_name": "PPC có rate khác tên với Shipping method đã chọn của order.Shipping method đã chọn của order là rate giá cao.Cùng group",
+            "products_checkout": [
+              {
+                "name": "Rule22",
+                "variant_id": 1000007893353558,
+                "quantity": 1
+              },
+              {
+                "name": "Rule5",
+                "variant_id": 1000007893385418,
+                "quantity": 1
+              }
+            ],
+            "product_ppc": {
+              "variant_id": 1000007893332720,
+              "quantity": 1,
+              "post_purchase_price": 25.99
+            },
+            "usell_id": 9182440,
+            "shipping_method_before_ppc": {
+              "amount": 13,
+              "method_title": "Fast Shipping"
+            },
+            "shipping_method_after_ppc": {
+              "amount": 17,
+              "method_title": "Fast Shipping"
+            }
+          },
+          {
+            "case_id": "SB_PLB_SP_SPP_SPR_33",
+            "case_name": "PPC có rate khác tên với Shipping method đã chọn của order.Shipping method đã chọn của order là rate giá thấp.Khác group",
+            "products_checkout": [
+              {
+                "name": "Rule6",
+                "variant_id": 1000007893395537,
+                "quantity": 1
+              },
+              {
+                "name": "Test regions",
+                "variant_id": 1000007893314322,
+                "quantity": 1
+              }
+            ],
+            "product_ppc": {
+              "variant_id": 1000007893332720,
+              "quantity": 1,
+              "post_purchase_price": 25.99
+            },
+            "usell_id": 9182440,
+            "shipping_method_before_ppc": {
+              "amount": 12,
+              "method_title": "Standard Shipping"
+            },
+            "shipping_method_after_ppc": {
+              "amount": 19,
+              "method_title": "Standard Shipping"
+            }
+          }
+        ]
+      },
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://prod-test-api.shopbase.com"
+    },
+    "prod": {}
+  }
+}

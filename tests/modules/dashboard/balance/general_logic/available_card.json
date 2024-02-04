@@ -1,0 +1,2653 @@
+{
+  "env": {
+    "dev": {
+      "username": "duyenvu1+11@beeketing.net",
+      "password": "Abc123!@#",
+      "user_id": 89347,
+      "shop_id": 10326193,
+      "api": "https://gapi.dev.shopbase.net",
+      "shop_name": "au-balance",
+      "domain": "au-balance.myshopbase.net",
+      "hive_username": "shopbase",
+      "hive_password": "123456",
+      "hive_domain": "hive.dev.shopbase.net",
+      "time_out": 600000,
+      "reason_charge_to_zero": {
+        "form_reason": "run automation test",
+        "form_note": "run automation"
+      },
+      "cases": {
+        "CREDIT_CARD": {
+          "data": [
+            {
+              "case_id": "SB_BAL_OLD_BL_2",
+              "case_name": "select option at Top up amount",
+              "payment_method_label": "Credit card",
+              "select_amount": true,
+              "amount_input": "40",
+              "invoice_filter": {
+                "invoice": "Manual top-up"
+              },
+              "filter_condition_transaction": [
+                {
+                  "field": "Shop Domain",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "au-balance.myshopbase.net"
+                    }
+                  ]
+                },
+                {
+                  "field": "Invoice",
+                  "select_ddl_value": "Manual top-up"
+                }
+              ],
+              "filter_status": [
+                {
+                  "field": "Status",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "Paid"
+                    }
+                  ]
+                }
+              ],
+              "filter_tag": "Content:  Manual top-up",
+              "banner_transfers_success": "Successfully top-up total amount: US $40.00",
+              "invoice_info": {
+                "domain": "",
+                "shop_name": "",
+                "amount_display": "40.00",
+                "content": "Manual top-up",
+                "amount": "$40.00",
+                "status": "Success",
+                "type": "IN",
+                "detail": "Topped up manually",
+                "transactions_type": "IN",
+                "transactions_content": "Manual top-up",
+                "transactions_status": "Paid"
+              },
+              "source": "Source: Credit card"
+            },
+            {
+              "case_id": "SB_BAL_OLD_BL_83",
+              "case_name": "input a real number that's greater than 5 at field Other amount",
+              "payment_method_label": "Credit card",
+              "select_amount": false,
+              "amount_input": "12.5",
+              "invoice_filter": {
+                "invoice": "Manual top-up"
+              },
+              "filter_tag": "Content:  Manual top-up",
+              "banner_transfers_success": "Successfully top-up total amount: US $12.50",
+              "invoice_info": {
+                "domain": "",
+                "shop_name": "",
+                "amount_display": "12.50",
+                "content": "Manual top-up",
+                "amount": "$12.50",
+                "status": "Success",
+                "type": "IN",
+                "detail": "Topped up manually",
+                "transactions_type": "IN",
+                "transactions_content": "Manual top-up",
+                "transactions_status": "Paid"
+              },
+              "filter_condition_transaction": [
+                {
+                  "field": "Shop Domain",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "au-balance.myshopbase.net"
+                    }
+                  ]
+                },
+                {
+                  "field": "Invoice",
+                  "select_ddl_value": "Manual top-up"
+                }
+              ],
+              "filter_status": [
+                {
+                  "field": "Status",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "Paid"
+                    }
+                  ]
+                }
+              ],
+              "source": "Source: Credit card"
+            },
+            {
+              "case_id": "SB_BAL_OLD_BL_84",
+              "case_name": "input a number that's less than 5 at field Other amount",
+              "payment_method_label": "Credit card",
+              "select_amount": false,
+              "amount_input": "1.5",
+              "invoice_info": {
+                "amount_display": "1.50"
+              },
+              "text_error": "The minimum amount is $5.0",
+              "message_error": "invalid amount to top-up"
+            }
+          ]
+        },
+        "DATA_DRIVEN": {
+          "card_status": "Available",
+          "data": [
+            {
+              "case_name": "Auto top up khi Card = available _ Auto topup với giá trị bất kỳ > 10$",
+              "case_id": "SB_BAL_OLD_BL_109",
+              "amount_input": "20",
+              "value_balance_below": "100",
+              "invoice_filter": {
+                "invoice": "Automatical top-up"
+              },
+              "filter_tag": "Content:  Automatical top-up",
+              "invoice_info": {
+                "domain": "",
+                "shop_name": "",
+                "amount_display": "20.00",
+                "content": "Automatical top-up",
+                "amount": "$20.00",
+                "status": "Success",
+                "type": "IN",
+                "detail": "Topped up automatically",
+                "transactions_type": "IN",
+                "transactions_content": "Automatical top-up",
+                "transactions_status": "Paid"
+              },
+              "source": "Source: Credit card",
+              "filter_condition": [
+                {
+                  "field": "Shop Domain",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "au-balance.myshopbase.net"
+                    }
+                  ]
+                },
+                {
+                  "field": "Invoice",
+                  "select_ddl_value": "Automatical top-up"
+                }
+              ],
+              "filter_status": [
+                {
+                  "field": "Status",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "Paid"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "case_name": "Auto top up khi Card = available  _ Auto topup với giá trị bất kỳ < 10",
+              "case_id": "SB_BAL_OLD_BL_26",
+              "amount_input": "9.5",
+              "value_balance_below": "50"
+            }
+          ]
+        },
+        "SB_BAL_OLD_BL_16": {
+          "date_invoice_filter": {
+            "from_date": "2023-4-1",
+            "to_date": "2023-5-9"
+          },
+          "filter_condition_invoice": [
+            {
+              "field": "Shop Domain",
+              "checkbox_array": [
+                {
+                  "checkbox": "open-card-2.myshopbase.net"
+                }
+              ]
+            },
+            {
+              "field": "Invoice",
+              "select_ddl_value": "Automatical top-up"
+            },
+            {
+              "field": "Status",
+              "checkbox_array": [
+                {
+                  "checkbox": "Success"
+                }
+              ]
+            },
+            {
+              "field": "Amount",
+              "radio": "More than",
+              "value_textbox": "18"
+            }
+          ],
+          "filter_tag_invoice": "Status: Success",
+          "invoice_info": {
+            "shop_name": "open-card-2",
+            "domain": "open-card-2.myshopbase.net",
+            "amount_display": "19.00",
+            "content": "Automatical top-up",
+            "status": "Success",
+            "created_date": "Apr 2, 2023 11:28 AM",
+            "latest_transaction_date": "Apr 2, 2023 11:28 AM"
+          },
+          "date_transaction_filter": {
+            "created_from_date": "2023-5-5",
+            "created_to_date": "2023-5-5",
+            "available_from_date": "2023-5-5",
+            "available_to_date": "2023-5-5"
+          },
+          "filter_condition_transaction": [
+            {
+              "field": "Shop Domain",
+              "checkbox_array": [
+                {
+                  "checkbox": "au-balance.myshopbase.net"
+                }
+              ]
+            },
+            {
+              "field": "Invoice",
+              "select_ddl_value": "Subscription fee collecting"
+            },
+            {
+              "field": "Status",
+              "checkbox_array": [
+                {
+                  "checkbox": "Paid"
+                }
+              ]
+            },
+            {
+              "field": "Amount",
+              "radio": "More than",
+              "value_textbox": "-20"
+            },
+            {
+              "field": "Source",
+              "input_ddl_value": "General"
+            }
+          ],
+          "filter_tag_transaction": "Status: Paid",
+          "transaction_info": {
+            "domain": "au-balance.myshopbase.net",
+            "amount_display": "-19.00",
+            "content": "Subscription fee collecting",
+            "status": "Paid",
+            "created_date": "May 5, 2023 09:42 AM",
+            "available_date": "May 5, 2023 09:42 AM",
+            "balance": "$809.50",
+            "invoice_collapsed": "The payment for the subscription bill May  5, 2023 - Jun  4, 2023",
+            "source_collapsed": "Source: Credit card"
+          }
+        },
+        "SB_BAL_OLD_BL_13": {
+          "case_name": "Request with Available to payout < 50$",
+          "warning_payout_less_more_50": "Your current available balance is not adequate for requesting a payout. It must reach $50 minimum.",
+          "source_name": "General",
+          "payout_method": "Paypal account"
+        },
+        "PAYOUT": {
+          "data": [
+            {
+              "case_id": "SB_BAL_OLD_BL_111",
+              "case_name": "Request amount = 50$ at Available to payout > 50$, then Refuse request at Hive",
+              "info_refund": {
+                "invoice_type": "Refund (Available to Payout)",
+                "value": "51",
+                "form_reason": "run automation",
+                "form_note": "for refund Available to Payout"
+              },
+              "request_status_before": "Under Review",
+              "request_status_after": "refused",
+              "info_request": {
+                "source_name": "General",
+                "payout_method": "Paypal account",
+                "requested_amount": 50
+              },
+              "payout_review_info": {
+                "amount": 50,
+                "status": "under_review",
+                "method": "paypal"
+              },
+              "invoice_conditions": [
+                {
+                  "field": "Shop Domain",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "au-balance.myshopbase.net"
+                    }
+                  ]
+                }
+              ],
+              "source": "Source: General",
+              "invoice_review_info": {
+                "domain": "au-balance.myshopbase.net",
+                "shop_name": "au-balance",
+                "amount_display": "-50.00",
+                "content": "Pay out",
+                "status": "Success",
+                "type": "OUT",
+                "detail": "Paid out for the request on ",
+                "transactions_type": "OUT",
+                "transactions_content": "Pay out for the request on ",
+                "transactions_status": "Paid"
+              },
+              "payout_status_approve": false,
+              "reason_refuse": "run automation",
+              "invoice_info": {
+                "domain": "au-balance.myshopbase.net",
+                "shop_name": "au-balance",
+                "amount_display": "-50.00",
+                "content": "Pay out",
+                "status": "Refunded",
+                "type": "OUT",
+                "detail": "Paid out for the request on ",
+                "transactions_type": "IN",
+                "transactions_content": "Refund for payout request on ",
+                "transactions_status": "Paid"
+              }
+            },
+            {
+              "case_id": "SB_BAL_OLD_BL_12",
+              "case_name": "Request amount > 50$ with Available to payout > 50$, then Approve request at Hive",
+              "info_refund": {
+                "invoice_type": "Refund (Available to Payout)",
+                "value": "51",
+                "form_reason": "run automation",
+                "form_note": "for refund Available to Payout"
+              },
+              "request_status_before": "Under Review",
+              "request_status_after": "Approved",
+              "info_request": {
+                "source_name": "General",
+                "payout_method": "PingPong account",
+                "requested_amount": 51
+              },
+              "payout_review_info": {
+                "amount": 51,
+                "status": "under_review",
+                "method": "pingpong"
+              },
+              "invoice_conditions": [
+                {
+                  "field": "Shop Domain",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "au-balance.myshopbase.net"
+                    }
+                  ]
+                }
+              ],
+              "source": "Source: General",
+              "invoice_review_info": {
+                "domain": "au-balance.myshopbase.net",
+                "shop_name": "au-balance",
+                "amount_display": "-51.00",
+                "content": "Pay out",
+                "status": "Success",
+                "type": "OUT",
+                "detail": "Paid out for the request on ",
+                "transactions_type": "OUT",
+                "transactions_content": "Pay out for the request on ",
+                "transactions_status": "Paid"
+              },
+              "payout_status_approve": true,
+              "invoice_info": {
+                "domain": "au-balance.myshopbase.net",
+                "shop_name": "au-balance",
+                "amount_display": "-51.00",
+                "content": "Pay out",
+                "status": "Success",
+                "type": "OUT",
+                "detail": "Paid out for the request on ",
+                "transactions_type": "OUT",
+                "transactions_content": "Pay out for the request on ",
+                "transactions_status": "Paid"
+              }
+            },
+            {
+              "case_id": "SB_BAL_OLD_BL_110",
+              "case_name": "Request payout < 50$",
+              "warn_request_more_50": "The minimum requested amount must be greater than $50",
+              "info_refund": {
+                "invoice_type": "Refund (Available to Payout)",
+                "value": "50",
+                "form_reason": "run automation",
+                "form_note": "for refund Available to Payout"
+              },
+              "info_request": {
+                "source_name": "General",
+                "payout_method": "PingPong account",
+                "requested_amount": 12
+              }
+            }
+          ]
+        },
+        "TOP_UP_WIRE_TRANSFER": {
+          "data": [
+            {
+              "case_id": "SB_BAL_TOP_WT_3",
+              "case_name": "Kiểm tra tạo topup wire transfer, sau đó approved Topup thành công",
+              "payment_method": "Money transfer",
+              "select_amount": true,
+              "amount_input": "10",
+              "data_input_info_money_transfers": {
+                "transfer_funds": "PingPong",
+                "account_holder": "duyenvu1@beeketing.net",
+                "note": "run automation test",
+                "is_attack_file": true,
+                "path_file": "/data/shopbase/dashboard/attack_wire_transfer_balance.png"
+              },
+              "banner_transfers_success": "Successfully confirm top-up total amount: US $10.00",
+              "filter_condition": [
+                {
+                  "field": "Shop Domain",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "au-balance.myshopbase.net"
+                    }
+                  ]
+                },
+                {
+                  "field": "Invoice",
+                  "select_ddl_value": "Manual top-up via wire transfer"
+                }
+              ],
+              "filter_status": [
+                {
+                  "field": "Status",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "Paid"
+                    }
+                  ]
+                }
+              ],
+              "filter_tag": "Content:  Manual top-up via wire transfer",
+              "before_invoice_info": {
+                "shop_name": "au-balance",
+                "domain": "au-balance.myshopbase.net",
+                "amount_display": "10.00",
+                "content": "Manual top-up via wire transfer",
+                "content_transaction_collapse": "Manual top-up with payment id ",
+                "status": "In Review",
+                "type": "IN",
+                "detail": "Topped up manually via Bank transfer",
+                "transactions_type": "IN",
+                "transactions_content": "Manual top-up with payment id ",
+                "transactions_status": "Pending"
+              },
+              "filter_hive_balance": {
+                "label": "Owner email",
+                "value": "duyenvu1+11@beeketing.net",
+                "input_field": true
+              },
+              "status_topup_review": "Approve",
+              "after_invoice_info": {
+                "shop_name": "au-balance",
+                "domain": "au-balance.myshopbase.net",
+                "amount_display": "10.00",
+                "content": "Manual top-up via wire transfer",
+                "status": "Success",
+                "type": "IN",
+                "detail": "Topped up manually via Bank transfer",
+                "transactions_type": "IN",
+                "transactions_content": "Manual top-up with payment id ",
+                "transactions_status": "Paid"
+              },
+              "source": "Source: General"
+            },
+            {
+              "case_id": "SB_BAL_TOP_WT_5",
+              "case_name": "Kiểm tra tạo topup wire transfer, sau đó refused Topup thành công",
+              "payment_method": "Money transfer",
+              "select_amount": false,
+              "amount_input": "12.5",
+              "data_input_info_money_transfers": {
+                "transfer_funds": "Payoneer",
+                "account_holder": "duyenvu1@beeketing.net",
+                "note": "run automation test",
+                "is_attack_file": false
+              },
+              "banner_transfers_success": "Successfully confirm top-up total amount: US $12.50",
+              "filter_condition": [
+                {
+                  "field": "Shop Domain",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "au-balance.myshopbase.net"
+                    }
+                  ]
+                },
+                {
+                  "field": "Invoice",
+                  "select_ddl_value": "Manual top-up via wire transfer"
+                }
+              ],
+              "filter_status": [
+                {
+                  "field": "Status",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "Paid"
+                    }
+                  ]
+                }
+              ],
+              "filter_tag": "Content:  Manual top-up via wire transfer",
+              "before_invoice_info": {
+                "shop_name": "au-balance",
+                "domain": "au-balance.myshopbase.net",
+                "amount_display": "12.50",
+                "content": "Manual top-up via wire transfer",
+                "content_transaction_collapse": "Manual top-up with payment id ",
+                "status": "In Review",
+                "type": "IN",
+                "detail": "Topped up manually via Bank transfer",
+                "transactions_type": "IN",
+                "transactions_content": "Manual top-up with payment id ",
+                "transactions_status": "Pending"
+              },
+              "filter_hive_balance": {
+                "label": "Owner email",
+                "value": "duyenvu1+11@beeketing.net",
+                "input_field": true
+              },
+              "status_topup_review": "Refuse",
+              "after_invoice_info": {
+                "shop_name": "au-balance",
+                "domain": "au-balance.myshopbase.net",
+                "amount_display": "12.50",
+                "content": "Manual top-up via wire transfer",
+                "status": "Void",
+                "type": "IN",
+                "detail": "Topped up manually via Bank transfer",
+                "transactions_type": "IN",
+                "transactions_content": "Manual top-up with payment id ",
+                "transactions_status": "Failed"
+              },
+              "source": "Source: General"
+            }
+          ]
+        },
+        "TRANS_FEE": {
+          "data": [
+            {
+              "case_id": "SB_BAL_OLD_BL_5",
+              "case_name": "Kiểm tra tạo Transaction fee khi checkout thành công không có product post purchase",
+              "products_checkout": [
+                {
+                  "variant_id": 1000001769282936,
+                  "quantity": 1
+                }
+              ],
+              "invoice_conditions": [
+                {
+                  "field": "Shop Domain",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "au-balance.myshopbase.net"
+                    }
+                  ]
+                },
+                {
+                  "field": "Invoice",
+                  "select_ddl_value": "Transaction fee collecting"
+                },
+                {
+                  "field": "Status",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "Open"
+                    }
+                  ]
+                }
+              ],
+              "transaction_conditions": [
+                {
+                  "field": "Shop Domain",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "au-balance.myshopbase.net"
+                    }
+                  ]
+                },
+                {
+                  "field": "Invoice",
+                  "select_ddl_value": "Transaction fee collecting"
+                },
+                {
+                  "field": "Status",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "Pending"
+                    }
+                  ]
+                }
+              ],
+              "filter_tag_invoice": "Status: Open",
+              "filter_tag_transaction": "Status: Pending",
+              "source": "Source: General",
+              "invoice_info": {
+                "shop_name": "au-balance",
+                "domain": "au-balance.myshopbase.net",
+                "content": "Transaction fee collecting",
+                "status": "Open",
+                "type": "OUT",
+                "detail": "Paid for transaction fee of the order ",
+                "transactions_type": "OUT",
+                "transactions_content": "The payment for the transaction fee of the order ",
+                "transactions_status": "Pending"
+              }
+            },
+            {
+              "case_id": "SB_BAL_OLD_BL_107",
+              "case_name": "Kiểm tra tạo Transaction fee khi checkout thành công với post purchase",
+              "products_checkout": [
+                {
+                  "variant_id": 1000001769282936,
+                  "quantity": 1
+                }
+              ],
+              "postPurchase": {
+                "productPpc": {
+                  "variant_id": 1000001769282952,
+                  "quantity": 1
+                }
+              },
+              "invoice_conditions": [
+                {
+                  "field": "Shop Domain",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "au-balance.myshopbase.net"
+                    }
+                  ]
+                },
+                {
+                  "field": "Invoice",
+                  "select_ddl_value": "Transaction fee collecting"
+                },
+                {
+                  "field": "Status",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "Open"
+                    }
+                  ]
+                }
+              ],
+              "transaction_conditions": [
+                {
+                  "field": "Shop Domain",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "au-balance.myshopbase.net"
+                    }
+                  ]
+                },
+                {
+                  "field": "Invoice",
+                  "select_ddl_value": "Transaction fee collecting"
+                },
+                {
+                  "field": "Status",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "Pending"
+                    }
+                  ]
+                }
+              ],
+              "filter_tag_invoice": "Status: Open",
+              "filter_tag_transaction": "Status: Pending",
+              "source": "Source: General",
+              "invoice_info": {
+                "shop_name": "au-balance",
+                "domain": "au-balance.myshopbase.net",
+                "content": "Transaction fee collecting",
+                "status": "Open",
+                "type": "OUT",
+                "detail": "Paid for transaction fee of the order ",
+                "transactions_type": "OUT",
+                "transactions_content": "The payment for the transaction fee of the order ",
+                "transactions_status": "Pending"
+              }
+            }
+          ]
+        },
+        "SB_BAL_OLD_BL_38": {
+          "products_checkout": [
+            {
+              "variant_id": 1000001769282952,
+              "quantity": 1
+            }
+          ],
+          "refund_info": {
+            "product_name": "Nhật Bình black",
+            "product_qty": "1",
+            "reason": "run refund automation test"
+          },
+          "invoice_conditions": [
+            {
+              "field": "Shop Domain",
+              "checkbox_array": [
+                {
+                  "checkbox": "au-balance.myshopbase.net"
+                }
+              ]
+            },
+            {
+              "field": "Invoice",
+              "select_ddl_value": "Transaction fee collecting"
+            },
+            {
+              "field": "Status",
+              "checkbox_array": [
+                {
+                  "checkbox": "Open"
+                }
+              ]
+            }
+          ],
+          "transaction_conditions": [
+            {
+              "field": "Shop Domain",
+              "checkbox_array": [
+                {
+                  "checkbox": "au-balance.myshopbase.net"
+                }
+              ]
+            },
+            {
+              "field": "Invoice",
+              "select_ddl_value": "Transaction fee collecting"
+            },
+            {
+              "field": "Status",
+              "checkbox_array": [
+                {
+                  "checkbox": "Pending"
+                }
+              ]
+            }
+          ],
+          "filter_tag_invoice": "Status: Open",
+          "filter_tag_transaction": "Status: Pending",
+          "source": "Source: General",
+          "invoice_info": {
+            "shop_name": "au-balance",
+            "domain": "au-balance.myshopbase.net",
+            "content": "Transaction fee collecting",
+            "status": "Open",
+            "type": "OUT",
+            "detail": "Paid for transaction fee of the order ",
+            "transactions_type": "IN",
+            "transactions_content": "The refund transaction fee of the order ",
+            "transactions_status": "Pending"
+          }
+        },
+        "SB_BAL_OLD_BL_11": {
+          "info_charge_to_zero": {
+            "form_reason": "run automation test",
+            "form_note": "for Charge to Zero"
+          },
+          "info_charge": {
+            "invoice_type": "Charge",
+            "value": "20.00",
+            "form_reason": "run automation test",
+            "form_note": "for Charge"
+          },
+          "invoice_conditions": [
+            {
+              "field": "Shop Domain",
+              "checkbox_array": [
+                {
+                  "checkbox": "au-balance.myshopbase.net"
+                }
+              ]
+            },
+            {
+              "field": "Invoice",
+              "select_ddl_value": "Automatical top-up"
+            }
+          ],
+          "filter_tag_invoice": "Content:  Automatical top-up",
+          "source": "Source: Credit card",
+          "amount_charge": "-20.00",
+          "invoice_info": {
+            "shop_name": "au-balance",
+            "domain": "au-balance.myshopbase.net",
+            "amount_display": "20.00",
+            "content": "Automatical top-up",
+            "status": "Success",
+            "type": "IN",
+            "detail": "Topped up for run automation test",
+            "transactions_type": "IN",
+            "transactions_content": "Top-up for run automation test",
+            "transactions_status": "Paid"
+          }
+        },
+        "SB_BAL_OLD_BL_29": {
+          "plan": "Basic Base",
+          "time_plan": "Monthly",
+          "invoice_charge_filter": {
+            "domain": "au-balance.myshopbase.net",
+            "invoice": "Subscription fee collecting"
+          },
+          "filter_charge_tag": "Content:  Subscription fee collecting",
+          "invoice_charge_info": {
+            "shop_name": "au-balance",
+            "domain": "au-balance.myshopbase.net",
+            "amount_display": "-19.00",
+            "content": "Subscription fee collecting",
+            "status": "Success",
+            "type": "OUT",
+            "detail": "Paid for subscription bill ",
+            "transactions_type": "OUT",
+            "transactions_content": "The payment for the subscription bill ",
+            "transactions_status": "Paid"
+          },
+          "invoice_topup_filter": {
+            "domain": "au-balance.myshopbase.net",
+            "invoice": "Automatical top-up"
+          },
+          "filter_topup_tag": "Content:  Automatical top-up",
+          "invoice_topup_info": {
+            "shop_name": "au-balance",
+            "domain": "au-balance.myshopbase.net",
+            "amount_display": "19.00",
+            "content": "Automatical top-up",
+            "status": "Success",
+            "type": "IN",
+            "detail": "Topped up for paying the subscription bill ",
+            "transactions_type": "IN",
+            "transactions_content": "Top-up for paying the subscription bill ",
+            "transactions_status": "Paid"
+          },
+          "source": "Source: Credit card"
+        }
+      }
+    },
+    "prodtest": {
+      "username": "ducdao@beeketing.net",
+      "password": "123456",
+      "user_id": "143268",
+      "shop_id": "10378052",
+      "api": "https://prod-test-api.shopbase.com",
+      "shop_name": "au-balance-topup-protest",
+      "domain": "au-balance-topup-protest.onshopbase.com",
+      "hive_username": "shopbase",
+      "hive_password": "UxsLHz^Wjkf35*/w",
+      "hive_domain": "hive.shopbase.com",
+      "time_out": 600000,
+      "reason_charge_to_zero": {
+        "form_reason": "run automation test",
+        "form_note": "run automation"
+      },
+      "cases": {
+        "CREDIT_CARD": {
+          "data": [
+            {
+              "case_id": "SB_BAL_OLD_BL_2",
+              "case_name": "select option at Top up amount",
+              "payment_method_label": "Credit card",
+              "select_amount": true,
+              "amount_input": "40",
+              "invoice_filter": {
+                "invoice": "Manual top-up"
+              },
+              "filter_condition_transaction": [
+                {
+                  "field": "Shop Domain",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "au-balance-topup-protest.onshopbase.com"
+                    }
+                  ]
+                },
+                {
+                  "field": "Invoice",
+                  "select_ddl_value": "Manual top-up"
+                }
+              ],
+              "filter_status": [
+                {
+                  "field": "Status",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "Paid"
+                    }
+                  ]
+                }
+              ],
+              "filter_tag": "Content:  Manual top-up",
+              "banner_transfers_success": "Successfully top-up total amount: US $40.00",
+              "invoice_info": {
+                "domain": "",
+                "shop_name": "",
+                "amount_display": "40.00",
+                "content": "Manual top-up",
+                "amount": "$40.00",
+                "status": "Success",
+                "type": "IN",
+                "detail": "Topped up manually",
+                "transactions_type": "IN",
+                "transactions_content": "Manual top-up",
+                "transactions_status": "Paid"
+              },
+              "source": "Source: Credit card"
+            },
+            {
+              "case_id": "SB_BAL_OLD_BL_83",
+              "case_name": "input a real number that's greater than 5 at field Other amount",
+              "payment_method_label": "Credit card",
+              "select_amount": false,
+              "amount_input": "12.5",
+              "invoice_filter": {
+                "invoice": "Manual top-up"
+              },
+              "filter_tag": "Content:  Manual top-up",
+              "banner_transfers_success": "Successfully top-up total amount: US $12.50",
+              "invoice_info": {
+                "domain": "",
+                "shop_name": "",
+                "amount_display": "12.50",
+                "content": "Manual top-up",
+                "amount": "$12.50",
+                "status": "Success",
+                "type": "IN",
+                "detail": "Topped up manually",
+                "transactions_type": "IN",
+                "transactions_content": "Manual top-up",
+                "transactions_status": "Paid"
+              },
+              "filter_condition_transaction": [
+                {
+                  "field": "Shop Domain",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "au-balance-topup-protest.onshopbase.com"
+                    }
+                  ]
+                },
+                {
+                  "field": "Invoice",
+                  "select_ddl_value": "Manual top-up"
+                }
+              ],
+              "filter_status": [
+                {
+                  "field": "Status",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "Paid"
+                    }
+                  ]
+                }
+              ],
+              "source": "Source: Credit card"
+            },
+            {
+              "case_id": "SB_BAL_OLD_BL_84",
+              "case_name": "input a number that's less than 5 at field Other amount",
+              "payment_method_label": "Credit card",
+              "select_amount": false,
+              "amount_input": "1.5",
+              "invoice_info": {
+                "amount_display": "1.50"
+              },
+              "text_error": "The minimum amount is $5.0",
+              "message_error": "invalid amount to top-up"
+            }
+          ]
+        },
+        "DATA_DRIVEN": {
+          "data": [
+            {
+              "case_name": "Auto top up with the value smaller than 10$",
+              "case_id": "SB_BAL_OLD_BL_26",
+              "amount_input": "9.5",
+              "value_balance_below": "50"
+            },
+            {
+              "case_name": "Auto top up with the value greater than 10$",
+              "case_id": "SB_BAL_OLD_BL_109",
+              "amount_input": "20",
+              "value_balance_below": "100",
+              "invoice_filter": {
+                "invoice": "Automatical top-up"
+              },
+              "filter_tag": "Content:  Automatical top-up",
+              "invoice_info": {
+                "domain": "",
+                "shop_name": "",
+                "amount_display": "20.00",
+                "content": "Automatical top-up",
+                "amount": "$20.00",
+                "status": "Success",
+                "type": "IN",
+                "detail": "Topped up automatically",
+                "transactions_type": "IN",
+                "transactions_content": "Automatical top-up",
+                "transactions_status": "Paid"
+              },
+              "filter_condition": [
+                {
+                  "field": "Shop Domain",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "au-balance-topup-protest.onshopbase.com"
+                    }
+                  ]
+                },
+                {
+                  "field": "Invoice",
+                  "select_ddl_value": "Manual top-up via wire transfer"
+                }
+              ],
+              "filter_status": [
+                {
+                  "field": "Status",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "Paid"
+                    }
+                  ]
+                }
+              ],
+              "before_invoice_info": {
+                "shop_name": "au-balance-topup-protest",
+                "domain": "au-balance-topup-protest.onshopbase.com",
+                "amount_display": "10.00",
+                "content": "Manual top-up via wire transfer",
+                "content_transaction_collapse": "Manual top-up with payment id ",
+                "status": "In Review",
+                "type": "IN",
+                "detail": "Topped up manually via Bank transfer",
+                "transactions_type": "IN",
+                "transactions_content": "Manual top-up with payment id ",
+                "transactions_status": "Pending"
+              },
+              "filter_hive_balance": {
+                "label": "Owner email",
+                "value": "ducdao@beeketing.net",
+                "input_field": true
+              },
+              "status_topup_review": "Approve",
+              "after_invoice_info": {
+                "shop_name": "au-balance-topup-protest",
+                "domain": "au-balance-topup-protest.onshopbase.com",
+                "amount_display": "10.00",
+                "content": "Manual top-up via wire transfer",
+                "status": "Success",
+                "type": "IN",
+                "detail": "Topped up manually via Bank transfer",
+                "transactions_type": "IN",
+                "transactions_content": "Manual top-up with payment id ",
+                "transactions_status": "Paid"
+              },
+              "source": "Source: General"
+            }
+          ]
+        },
+        "SB_BAL_OLD_BL_16": {
+          "date_invoice_filter": {
+            "from_date": "2022-12-24",
+            "to_date": "2022-12-24"
+          },
+          "filter_condition_invoice": [
+            {
+              "field": "Shop Domain",
+              "checkbox_array": [
+                {
+                  "checkbox": "au-balance-topup-protest.onshopbase.com"
+                }
+              ]
+            },
+            {
+              "field": "Invoice",
+              "select_ddl_value": "Automatical top-up"
+            },
+            {
+              "field": "Status",
+              "checkbox_array": [
+                {
+                  "checkbox": "Success"
+                }
+              ]
+            },
+            {
+              "field": "Amount",
+              "radio": "More than",
+              "value_textbox": "77"
+            }
+          ],
+          "filter_tag_invoice": "Status: Success",
+          "invoice_info": {
+            "domain": "",
+            "amount_display": "78.00",
+            "content": "Automatical top-up",
+            "status": "Success",
+            "created_date": "Dec 24, 2022 07:03 PM",
+            "latest_transaction_date": "Dec 24, 2022 07:03 PM"
+          },
+          "date_transaction_filter": {
+            "created_from_date": "2022-12-26",
+            "created_to_date": "2022-12-26",
+            "available_from_date": "2022-12-26",
+            "available_to_date": "2022-12-26"
+          },
+          "filter_condition_transaction": [
+            {
+              "field": "Shop Domain",
+              "checkbox_array": [
+                {
+                  "checkbox": "au-balance-topup-protest.onshopbase.com"
+                }
+              ]
+            },
+            {
+              "field": "Invoice",
+              "select_ddl_value": "Subscription fee collecting"
+            },
+            {
+              "field": "Status",
+              "checkbox_array": [
+                {
+                  "checkbox": "Paid"
+                }
+              ]
+            },
+            {
+              "field": "Amount",
+              "radio": "More than",
+              "value_textbox": "-20"
+            },
+            {
+              "field": "Source",
+              "input_ddl_value": "General"
+            }
+          ],
+          "filter_tag_transaction": "Status: Paid",
+          "transaction_info": {
+            "domain": "au-balance-topup-protest.onshopbase.com",
+            "amount_display": "-19.00",
+            "content": "Subscription fee collecting",
+            "status": "Paid",
+            "created_date": "Dec 26, 2022 11:09 AM",
+            "available_date": "Dec 26, 2022 11:09 AM",
+            "balance": "$0.00",
+            "invoice_collapsed": "The payment for the subscription bill Dec 26, 2022 - Jan 25, 2023",
+            "source_collapsed": "Source: Credit card"
+          }
+        },
+        "SB_BAL_OLD_BL_13": {
+          "case_name": "Request with Available to payout < 50$",
+          "warning_payout_less_more_50": "Your current available balance is not adequate for requesting a payout. It must reach $50 minimum.",
+          "source_name": "General",
+          "payout_method": "Paypal account"
+        },
+        "PAYOUT": {
+          "data": [
+            {
+              "case_id": "SB_BAL_OLD_BL_111",
+              "case_name": "Request amount = 50$ at Available to payout > 50$, then Refuse request at Hive",
+              "info_refund": {
+                "invoice_type": "Refund (Available to Payout)",
+                "value": "51",
+                "form_reason": "run automation",
+                "form_note": "for refund Available to Payout"
+              },
+              "request_status_before": "Under Review",
+              "request_status_after": "refused",
+              "info_request": {
+                "source_name": "General",
+                "payout_method": "Paypal account",
+                "requested_amount": 50
+              },
+              "payout_review_info": {
+                "amount": 50,
+                "status": "under_review",
+                "method": "paypal"
+              },
+              "invoice_conditions": [
+                {
+                  "field": "Shop Domain",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "au-balance-topup-protest.onshopbase.com"
+                    }
+                  ]
+                }
+              ],
+              "source": "Source: General",
+              "invoice_review_info": {
+                "domain": "au-balance-topup-protest.onshopbase.com",
+                "shop_name": "au-balance-topup-protest",
+                "amount_display": "-50.00",
+                "content": "Pay out",
+                "status": "Success",
+                "type": "OUT",
+                "detail": "Paid out for the request on ",
+                "transactions_type": "OUT",
+                "transactions_content": "Pay out for the request on ",
+                "transactions_status": "Paid"
+              },
+              "payout_status_approve": false,
+              "reason_refuse": "run automation",
+              "invoice_info": {
+                "domain": "au-balance-topup-protest.onshopbase.com",
+                "shop_name": "au-balance-topup-protest",
+                "amount_display": "-50.00",
+                "content": "Pay out",
+                "status": "Refunded",
+                "type": "OUT",
+                "detail": "Paid out for the request on ",
+                "transactions_type": "IN",
+                "transactions_content": "Refund for payout request on ",
+                "transactions_status": "Paid"
+              }
+            },
+            {
+              "case_id": "SB_BAL_OLD_BL_12",
+              "case_name": "Request amount > 50$ with Available to payout > 50$, then Approve request at Hive",
+              "info_refund": {
+                "invoice_type": "Refund (Available to Payout)",
+                "value": "51",
+                "form_reason": "run automation",
+                "form_note": "for refund Available to Payout"
+              },
+              "request_status_before": "Under Review",
+              "request_status_after": "Approved",
+              "info_request": {
+                "source_name": "General",
+                "payout_method": "PingPong account",
+                "requested_amount": 51
+              },
+              "payout_review_info": {
+                "amount": 51,
+                "status": "under_review",
+                "method": "pingpong"
+              },
+              "invoice_conditions": [
+                {
+                  "field": "Shop Domain",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "au-balance-topup-protest.onshopbase.com"
+                    }
+                  ]
+                }
+              ],
+              "source": "Source: General",
+              "invoice_review_info": {
+                "domain": "au-balance-topup-protest.onshopbase.com",
+                "shop_name": "au-balance-topup-protest",
+                "amount_display": "-51.00",
+                "content": "Pay out",
+                "status": "Success",
+                "type": "OUT",
+                "detail": "Paid out for the request on ",
+                "transactions_type": "OUT",
+                "transactions_content": "Pay out for the request on ",
+                "transactions_status": "Paid"
+              },
+              "payout_status_approve": true,
+              "invoice_info": {
+                "domain": "au-balance-topup-protest.onshopbase.com",
+                "shop_name": "au-balance-topup-protest",
+                "amount_display": "-51.00",
+                "content": "Pay out",
+                "status": "Success",
+                "type": "OUT",
+                "detail": "Paid out for the request on ",
+                "transactions_type": "OUT",
+                "transactions_content": "Pay out for the request on ",
+                "transactions_status": "Paid"
+              }
+            },
+            {
+              "case_id": "SB_BAL_OLD_BL_110",
+              "case_name": "Request payout < 50$",
+              "warn_request_more_50": "The minimum requested amount must be greater than $50",
+              "info_refund": {
+                "invoice_type": "Refund (Available to Payout)",
+                "value": "50",
+                "form_reason": "run automation",
+                "form_note": "for refund Available to Payout"
+              },
+              "info_request": {
+                "source_name": "General",
+                "payout_method": "PingPong account",
+                "requested_amount": 12
+              }
+            }
+          ]
+        },
+        "TOP_UP_WIRE_TRANSFER": {
+          "data": [
+            {
+              "case_id": "SB_BAL_TOP_WT_3",
+              "case_name": "Kiểm tra tạo topup wire transfer, sau đó approved Topup thành công",
+              "payment_method": "Money transfer",
+              "select_amount": true,
+              "amount_input": "10",
+              "data_input_info_money_transfers": {
+                "transfer_funds": "US Bank Account",
+                "account_holder": "duyenvu1@beeketing.net",
+                "note": "run automation test",
+                "is_attack_file": true,
+                "path_file": "/data/shopbase/dashboard/attack_wire_transfer_balance.png"
+              },
+              "banner_transfers_success": "Successfully confirm top-up total amount: US $10.00",
+              "filter_condition": [
+                {
+                  "field": "Shop Domain",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "au-balance-topup-protest.onshopbase.com"
+                    }
+                  ]
+                },
+                {
+                  "field": "Invoice",
+                  "select_ddl_value": "Manual top-up via wire transfer"
+                }
+              ],
+              "filter_status": [
+                {
+                  "field": "Status",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "Paid"
+                    }
+                  ]
+                }
+              ],
+              "filter_tag": "Content:  Manual top-up via wire transfer",
+              "before_invoice_info": {
+                "shop_name": "au-balance-topup-protest",
+                "domain": "au-balance-topup-protest.onshopbase.com",
+                "amount_display": "10.00",
+                "content": "Manual top-up via wire transfer",
+                "content_transaction_collapse": "Manual top-up with payment id ",
+                "status": "In Review",
+                "type": "IN",
+                "detail": "Topped up manually via Bank transfer",
+                "transactions_type": "IN",
+                "transactions_content": "Manual top-up with payment id ",
+                "transactions_status": "Pending"
+              },
+              "filter_hive_balance": {
+                "label": "Owner email",
+                "value": "ducdao@beeketing.net",
+                "input_field": true
+              },
+              "status_topup_review": "Approve",
+              "after_invoice_info": {
+                "shop_name": "au-balance-topup-protest",
+                "domain": "au-balance-topup-protest.onshopbase.com",
+                "amount_display": "10.00",
+                "content": "Manual top-up via wire transfer",
+                "status": "Success",
+                "type": "IN",
+                "detail": "Topped up manually via Bank transfer",
+                "transactions_type": "IN",
+                "transactions_content": "Manual top-up with payment id ",
+                "transactions_status": "Paid"
+              },
+              "source": "Source: General"
+            },
+            {
+              "case_id": "SB_BAL_TOP_WT_5",
+              "case_name": "Kiểm tra tạo topup wire transfer, sau đó refused Topup thành công",
+              "payment_method": "Money transfer",
+              "select_amount": false,
+              "amount_input": "12.5",
+              "data_input_info_money_transfers": {
+                "transfer_funds": "PingPong",
+                "account_email": "duyenvu1@beeketing.net",
+                "transaction_id": "run automation test",
+                "is_attack_file": false
+              },
+              "banner_transfers_success": "Successfully confirm top-up total amount: US $12.50",
+              "filter_condition": [
+                {
+                  "field": "Shop Domain",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "au-balance-topup-protest.onshopbase.com"
+                    }
+                  ]
+                },
+                {
+                  "field": "Invoice",
+                  "select_ddl_value": "Manual top-up via wire transfer"
+                }
+              ],
+              "filter_status": [
+                {
+                  "field": "Status",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "Paid"
+                    }
+                  ]
+                }
+              ],
+              "filter_tag": "Content:  Manual top-up via wire transfer",
+              "before_invoice_info": {
+                "shop_name": "au-balance-topup-protest",
+                "domain": "au-balance-topup-protest.onshopbase.com",
+                "amount_display": "12.50",
+                "content": "Manual top-up via wire transfer",
+                "content_transaction_collapse": "Manual top-up with payment id ",
+                "status": "In Review",
+                "type": "IN",
+                "detail": "Topped up manually via PingPong transfer",
+                "transactions_type": "IN",
+                "transactions_content": "Manual top-up with payment id ",
+                "transactions_status": "Pending"
+              },
+              "filter_hive_balance": {
+                "label": "Owner email",
+                "value": "ducdao@beeketing.net",
+                "input_field": true
+              },
+              "status_topup_review": "Refuse",
+              "after_invoice_info": {
+                "shop_name": "au-balance-topup-protest",
+                "domain": "au-balance-topup-protest.onshopbase.com",
+                "amount_display": "12.50",
+                "content": "Manual top-up via wire transfer",
+                "status": "Void",
+                "type": "IN",
+                "detail": "Topped up manually via PingPong transfer",
+                "transactions_type": "IN",
+                "transactions_content": "Manual top-up with payment id ",
+                "transactions_status": "Failed"
+              },
+              "source": "Source: General"
+            }
+          ]
+        },
+        "TRANS_FEE": {
+          "data": [
+            {
+              "case_id": "SB_BAL_OLD_BL_5",
+              "case_name": "Checkout without post purchase",
+              "products_checkout": [
+                {
+                  "variant_id": 1000010110916422,
+                  "quantity": 1
+                }
+              ],
+              "invoice_conditions": [
+                {
+                  "field": "Shop Domain",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "au-balance-topup-protest.onshopbase.com"
+                    }
+                  ]
+                },
+                {
+                  "field": "Invoice",
+                  "select_ddl_value": "Transaction fee collecting"
+                },
+                {
+                  "field": "Status",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "Open"
+                    }
+                  ]
+                }
+              ],
+              "transaction_conditions": [
+                {
+                  "field": "Shop Domain",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "au-balance-topup-protest.onshopbase.com"
+                    }
+                  ]
+                },
+                {
+                  "field": "Invoice",
+                  "select_ddl_value": "Transaction fee collecting"
+                },
+                {
+                  "field": "Status",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "Pending"
+                    }
+                  ]
+                }
+              ],
+              "filter_tag_invoice": "Status: Open",
+              "filter_tag_transaction": "Status: Pending",
+              "source": "Source: General",
+              "invoice_info": {
+                "shop_name": "au-balance-topup-protest",
+                "domain": "au-balance-topup-protest.onshopbase.com",
+                "content": "Transaction fee collecting",
+                "status": "Open",
+                "type": "OUT",
+                "detail": "Paid for transaction fee of the order ",
+                "transactions_type": "OUT",
+                "transactions_content": "The payment for the transaction fee of the order ",
+                "transactions_status": "Pending"
+              }
+            },
+            {
+              "case_id": "SB_BAL_OLD_BL_107",
+              "case_name": "Checkout with post purchase",
+              "products_checkout": [
+                {
+                  "variant_id": 1000010110916422,
+                  "quantity": 1
+                }
+              ],
+              "postPurchase": {
+                "productPpc": {
+                  "variant_id": 1000010110916423,
+                  "quantity": 1
+                }
+              },
+              "invoice_conditions": [
+                {
+                  "field": "Shop Domain",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "au-balance-topup-protest.onshopbase.com"
+                    }
+                  ]
+                },
+                {
+                  "field": "Invoice",
+                  "select_ddl_value": "Transaction fee collecting"
+                },
+                {
+                  "field": "Status",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "Open"
+                    }
+                  ]
+                }
+              ],
+              "transaction_conditions": [
+                {
+                  "field": "Shop Domain",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "au-balance-topup-protest.onshopbase.com"
+                    }
+                  ]
+                },
+                {
+                  "field": "Invoice",
+                  "select_ddl_value": "Transaction fee collecting"
+                },
+                {
+                  "field": "Status",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "Pending"
+                    }
+                  ]
+                }
+              ],
+              "filter_tag_invoice": "Status: Open",
+              "filter_tag_transaction": "Status: Pending",
+              "source": "Source: General",
+              "invoice_info": {
+                "shop_name": "au-balance-topup-protest",
+                "domain": "au-balance-topup-protest.onshopbase.com",
+                "content": "Transaction fee collecting",
+                "status": "Open",
+                "type": "OUT",
+                "detail": "Paid for transaction fee of the order ",
+                "transactions_type": "OUT",
+                "transactions_content": "The payment for the transaction fee of the order ",
+                "transactions_status": "Pending"
+              }
+            }
+          ]
+        },
+        "SB_BAL_OLD_BL_38": {
+          "products_checkout": [
+            {
+              "variant_id": 1000010110916420,
+              "quantity": 1
+            }
+          ],
+          "refund_info": {
+            "product_name": "Reed Diffuser, Feu De Bois",
+            "product_qty": "1",
+            "reason": "run refund automation test"
+          },
+          "invoice_conditions": [
+            {
+              "field": "Shop Domain",
+              "checkbox_array": [
+                {
+                  "checkbox": "au-balance-topup-protest.onshopbase.com"
+                }
+              ]
+            },
+            {
+              "field": "Invoice",
+              "select_ddl_value": "Transaction fee collecting"
+            },
+            {
+              "field": "Status",
+              "checkbox_array": [
+                {
+                  "checkbox": "Open"
+                }
+              ]
+            }
+          ],
+          "transaction_conditions": [
+            {
+              "field": "Shop Domain",
+              "checkbox_array": [
+                {
+                  "checkbox": "au-balance-topup-protest.onshopbase.com"
+                }
+              ]
+            },
+            {
+              "field": "Invoice",
+              "select_ddl_value": "Transaction fee collecting"
+            },
+            {
+              "field": "Status",
+              "checkbox_array": [
+                {
+                  "checkbox": "Pending"
+                }
+              ]
+            }
+          ],
+          "filter_tag_invoice": "Status: Open",
+          "filter_tag_transaction": "Status: Pending",
+          "source": "Source: General",
+          "invoice_info": {
+            "shop_name": "au-balance-topup-protest",
+            "domain": "au-balance-topup-protest.onshopbase.com",
+            "content": "Transaction fee collecting",
+            "status": "Open",
+            "type": "OUT",
+            "detail": "Paid for transaction fee of the order ",
+            "transactions_type": "IN",
+            "transactions_content": "The refund transaction fee of the order ",
+            "transactions_status": "Pending"
+          }
+        },
+        "SB_BAL_OLD_BL_11": {
+          "info_charge_to_zero": {
+            "form_reason": "run automation test",
+            "form_note": "for Charge to Zero"
+          },
+          "info_charge": {
+            "invoice_type": "Charge",
+            "value": "20.00",
+            "form_reason": "run automation test",
+            "form_note": "for Charge"
+          },
+          "invoice_conditions": [
+            {
+              "field": "Shop Domain",
+              "checkbox_array": [
+                {
+                  "checkbox": "au-balance-topup-protest.onshopbase.com"
+                }
+              ]
+            },
+            {
+              "field": "Invoice",
+              "select_ddl_value": "Automatical top-up"
+            }
+          ],
+          "filter_tag_invoice": "Content:  Automatical top-up",
+          "source": "Source: Credit card",
+          "amount_charge": "-20.00",
+          "invoice_info": {
+            "shop_name": "au-balance-topup-protest",
+            "domain": "au-balance-topup-protest.onshopbase.com",
+            "amount_display": "20.00",
+            "content": "Automatical top-up",
+            "status": "Success",
+            "type": "IN",
+            "detail": "Topped up for run automation test",
+            "transactions_type": "IN",
+            "transactions_content": "Top-up for run automation test",
+            "transactions_status": "Paid"
+          }
+        }
+      }
+    },
+    "prod": {
+      "username": "ducdao@beeketing.net",
+      "password": "123456",
+      "user_id": "143268",
+      "shop_id": "10378053",
+      "api": "https://api.shopbase.com",
+      "shop_name": "au-balance-topup-prodlive",
+      "domain": "au-balance-topup-prodlive.onshopbase.com",
+      "hive_username": "shopbase",
+      "hive_password": "UxsLHz^Wjkf35*/w",
+      "hive_domain": "hive.shopbase.com",
+      "time_out": 600000,
+      "reason_charge_to_zero": {
+        "form_reason": "run automation test",
+        "form_note": "run automation"
+      },
+      "cases": {
+        "CREDIT_CARD": {
+          "data": [
+            {
+              "case_id": "SB_BAL_OLD_BL_2",
+              "case_name": "select option at Top up amount",
+              "payment_method_label": "Credit card",
+              "select_amount": true,
+              "amount_input": "40",
+              "invoice_filter": {
+                "invoice": "Manual top-up"
+              },
+              "filter_condition_transaction": [
+                {
+                  "field": "Shop Domain",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "au-balance-topup-prodlive.onshopbase.com"
+                    }
+                  ]
+                },
+                {
+                  "field": "Invoice",
+                  "select_ddl_value": "Manual top-up"
+                }
+              ],
+              "filter_status": [
+                {
+                  "field": "Status",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "Paid"
+                    }
+                  ]
+                }
+              ],
+              "filter_tag": "Content:  Manual top-up",
+              "banner_transfers_success": "Successfully top-up total amount: US $40.00",
+              "invoice_info": {
+                "domain": "",
+                "shop_name": "",
+                "amount_display": "40.00",
+                "content": "Manual top-up",
+                "amount": "$40.00",
+                "status": "Success",
+                "type": "IN",
+                "detail": "Topped up manually",
+                "transactions_type": "IN",
+                "transactions_content": "Manual top-up",
+                "transactions_status": "Paid"
+              },
+              "source": "Source: Credit card"
+            },
+            {
+              "case_id": "SB_BAL_OLD_BL_83",
+              "case_name": "input a real number that's greater than 5 at field Other amount",
+              "payment_method_label": "Credit card",
+              "select_amount": false,
+              "amount_input": "12.5",
+              "invoice_filter": {
+                "invoice": "Manual top-up"
+              },
+              "filter_tag": "Content:  Manual top-up",
+              "banner_transfers_success": "Successfully top-up total amount: US $12.50",
+              "invoice_info": {
+                "domain": "",
+                "shop_name": "",
+                "amount_display": "12.50",
+                "content": "Manual top-up",
+                "amount": "$12.50",
+                "status": "Success",
+                "type": "IN",
+                "detail": "Topped up manually",
+                "transactions_type": "IN",
+                "transactions_content": "Manual top-up",
+                "transactions_status": "Paid"
+              },
+              "filter_condition_transaction": [
+                {
+                  "field": "Shop Domain",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "au-balance-topup-prodlive.onshopbase.com"
+                    }
+                  ]
+                },
+                {
+                  "field": "Invoice",
+                  "select_ddl_value": "Manual top-up"
+                }
+              ],
+              "filter_status": [
+                {
+                  "field": "Status",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "Paid"
+                    }
+                  ]
+                }
+              ],
+              "source": "Source: Credit card"
+            },
+            {
+              "case_id": "SB_BAL_OLD_BL_84",
+              "case_name": "input a number that's less than 5 at field Other amount",
+              "payment_method_label": "Credit card",
+              "select_amount": false,
+              "amount_input": "1.5",
+              "invoice_info": {
+                "amount_display": "1.50"
+              },
+              "text_error": "The minimum amount is $5.0",
+              "message_error": "invalid amount to top-up"
+            }
+          ]
+        },
+        "DATA_DRIVEN": {
+          "data": [
+            {
+              "case_name": "Auto top up with the value smaller than 10$",
+              "case_id": "SB_BAL_OLD_BL_26",
+              "amount_input": "9.5",
+              "value_balance_below": "50"
+            },
+            {
+              "case_name": "Auto top up with the value greater than 10$",
+              "case_id": "SB_BAL_OLD_BL_109",
+              "amount_input": "20",
+              "value_balance_below": "100",
+              "invoice_filter": {
+                "invoice": "Automatical top-up"
+              },
+              "filter_tag": "Content:  Automatical top-up",
+              "invoice_info": {
+                "domain": "",
+                "shop_name": "",
+                "amount_display": "20.00",
+                "content": "Automatical top-up",
+                "amount": "$20.00",
+                "status": "Success",
+                "type": "IN",
+                "detail": "Topped up automatically",
+                "transactions_type": "IN",
+                "transactions_content": "Automatical top-up",
+                "transactions_status": "Paid"
+              },
+              "filter_condition": [
+                {
+                  "field": "Shop Domain",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "au-balance-topup-prodlive.onshopbase.com"
+                    }
+                  ]
+                },
+                {
+                  "field": "Invoice",
+                  "select_ddl_value": "Manual top-up via wire transfer"
+                }
+              ],
+              "filter_status": [
+                {
+                  "field": "Status",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "Paid"
+                    }
+                  ]
+                }
+              ],
+              "before_invoice_info": {
+                "shop_name": "au-balance-topup-prodlive",
+                "domain": "au-balance-topup-prodlive.onshopbase.com",
+                "amount_display": "10.00",
+                "content": "Manual top-up via wire transfer",
+                "content_transaction_collapse": "Manual top-up with payment id ",
+                "status": "In Review",
+                "type": "IN",
+                "detail": "Topped up manually via Bank transfer",
+                "transactions_type": "IN",
+                "transactions_content": "Manual top-up with payment id ",
+                "transactions_status": "Pending"
+              },
+              "filter_hive_balance": {
+                "label": "Owner email",
+                "value": "ducdao@beeketing.net",
+                "input_field": true
+              },
+              "status_topup_review": "Approve",
+              "after_invoice_info": {
+                "shop_name": "au-balance-topup-prodlive",
+                "domain": "au-balance-topup-prodlive.onshopbase.com",
+                "amount_display": "10.00",
+                "content": "Manual top-up via wire transfer",
+                "status": "Success",
+                "type": "IN",
+                "detail": "Topped up manually via Bank transfer",
+                "transactions_type": "IN",
+                "transactions_content": "Manual top-up with payment id ",
+                "transactions_status": "Paid"
+              },
+              "source": "Source: General"
+            }
+          ]
+        },
+        "SB_BAL_OLD_BL_16": {
+          "date_invoice_filter": {
+            "from_date": "2022-12-25",
+            "to_date": "2022-12-25"
+          },
+          "filter_condition_invoice": [
+            {
+              "field": "Shop Domain",
+              "checkbox_array": [
+                {
+                  "checkbox": "au-balance-topup-prodlive.onshopbase.com"
+                }
+              ]
+            },
+            {
+              "field": "Invoice",
+              "select_ddl_value": "Automatical top-up"
+            },
+            {
+              "field": "Status",
+              "checkbox_array": [
+                {
+                  "checkbox": "Success"
+                }
+              ]
+            },
+            {
+              "field": "Amount",
+              "radio": "More than",
+              "value_textbox": "18"
+            }
+          ],
+          "filter_tag_invoice": "Status: Success",
+          "invoice_info": {
+            "shop_name": "au-balance-topup-prodlive",
+            "domain": "au-balance-topup-prodlive.onshopbase.com",
+            "amount_display": "20.00",
+            "content": "Automatical top-up",
+            "status": "Success",
+            "created_date": "Dec 25, 2022 11:30 AM",
+            "latest_transaction_date": "Dec 25, 2022 11:30 AM"
+          },
+          "date_transaction_filter": {
+            "created_from_date": "2022-12-05",
+            "created_to_date": "2022-12-05",
+            "available_from_date": "2022-12-05",
+            "available_to_date": "2022-12-05"
+          },
+          "filter_tag_transaction": "Status: Paid",
+          "filter_condition_transaction": [
+            {
+              "field": "Shop Domain",
+              "checkbox_array": [
+                {
+                  "checkbox": "au-balance-topup-prodlive.onshopbase.com"
+                }
+              ]
+            },
+            {
+              "field": "Invoice",
+              "select_ddl_value": "Subscription fee collecting"
+            },
+            {
+              "field": "Status",
+              "checkbox_array": [
+                {
+                  "checkbox": "Paid"
+                }
+              ]
+            },
+            {
+              "field": "Amount",
+              "radio": "More than",
+              "value_textbox": "-20"
+            },
+            {
+              "field": "Source",
+              "input_ddl_value": "General"
+            }
+          ],
+          "transaction_info": {
+            "domain": "au-balance-topup-prodlive.onshopbase.com",
+            "amount_display": "-19.00",
+            "content": "Subscription fee collecting",
+            "status": "Paid",
+            "created_date": "Dec 5, 2022 11:13 AM",
+            "available_date": "Dec 5, 2022 11:13 AM",
+            "balance": "$21.00",
+            "invoice_collapsed": "The payment for the subscription bill Dec  5, 2022 - Jan  4, 2023",
+            "source_collapsed": "Source: Credit card"
+          }
+        },
+        "SB_BAL_OLD_BL_13": {
+          "case_name": "Request with Available to payout < 50$",
+          "warning_payout_less_more_50": "Your current available balance is not adequate for requesting a payout. It must reach $50 minimum.",
+          "source_name": "General",
+          "payout_method": "Paypal account"
+        },
+        "PAYOUT": {
+          "data": [
+            {
+              "case_id": "SB_BAL_OLD_BL_111",
+              "case_name": "Request amount = 50$ at Available to payout > 50$, then Refuse request at Hive",
+              "info_refund": {
+                "invoice_type": "Refund (Available to Payout)",
+                "value": "51",
+                "form_reason": "run automation",
+                "form_note": "for refund Available to Payout"
+              },
+              "request_status_before": "Under Review",
+              "request_status_after": "refused",
+              "info_request": {
+                "source_name": "General",
+                "payout_method": "Paypal account",
+                "requested_amount": 50
+              },
+              "payout_review_info": {
+                "amount": 50,
+                "status": "under_review",
+                "method": "paypal"
+              },
+              "invoice_conditions": [
+                {
+                  "field": "Shop Domain",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "au-balance-topup-prodlive.onshopbase.com"
+                    }
+                  ]
+                }
+              ],
+              "source": "Source: General",
+              "invoice_review_info": {
+                "domain": "au-balance-topup-prodlive.onshopbase.com",
+                "shop_name": "au-balance-topup-prodlive",
+                "amount_display": "-50.00",
+                "content": "Pay out",
+                "status": "Success",
+                "type": "OUT",
+                "detail": "Paid out for the request on ",
+                "transactions_type": "OUT",
+                "transactions_content": "Pay out for the request on ",
+                "transactions_status": "Paid"
+              },
+              "payout_status_approve": false,
+              "reason_refuse": "run automation",
+              "invoice_info": {
+                "domain": "au-balance-topup-prodlive.onshopbase.com",
+                "shop_name": "au-balance-topup-prodlive",
+                "amount_display": "-50.00",
+                "content": "Pay out",
+                "status": "Refunded",
+                "type": "OUT",
+                "detail": "Paid out for the request on ",
+                "transactions_type": "IN",
+                "transactions_content": "Refund for payout request on ",
+                "transactions_status": "Paid"
+              }
+            },
+            {
+              "case_id": "SB_BAL_OLD_BL_12",
+              "case_name": "Request amount > 50$ with Available to payout > 50$, then Approve request at Hive",
+              "info_refund": {
+                "invoice_type": "Refund (Available to Payout)",
+                "value": "51",
+                "form_reason": "run automation",
+                "form_note": "for refund Available to Payout"
+              },
+              "request_status_before": "Under Review",
+              "request_status_after": "Approved",
+              "info_request": {
+                "source_name": "General",
+                "payout_method": "PingPong account",
+                "requested_amount": 51
+              },
+              "payout_review_info": {
+                "amount": 51,
+                "status": "under_review",
+                "method": "pingpong"
+              },
+              "invoice_conditions": [
+                {
+                  "field": "Shop Domain",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "au-balance-topup-prodlive.onshopbase.com"
+                    }
+                  ]
+                }
+              ],
+              "source": "Source: General",
+              "invoice_review_info": {
+                "domain": "au-balance-topup-prodlive.onshopbase.com",
+                "shop_name": "au-balance-topup-prodlive",
+                "amount_display": "-51.00",
+                "content": "Pay out",
+                "status": "Success",
+                "type": "OUT",
+                "detail": "Paid out for the request on ",
+                "transactions_type": "OUT",
+                "transactions_content": "Pay out for the request on ",
+                "transactions_status": "Paid"
+              },
+              "payout_status_approve": true,
+              "invoice_info": {
+                "domain": "au-balance-topup-prodlive.onshopbase.com",
+                "shop_name": "au-balance-topup-prodlive",
+                "amount_display": "-51.00",
+                "content": "Pay out",
+                "status": "Success",
+                "type": "OUT",
+                "detail": "Paid out for the request on ",
+                "transactions_type": "OUT",
+                "transactions_content": "Pay out for the request on ",
+                "transactions_status": "Paid"
+              }
+            },
+            {
+              "case_id": "SB_BAL_OLD_BL_110",
+              "case_name": "Request payout < 50$",
+              "warn_request_more_50": "The minimum requested amount must be greater than $50",
+              "info_refund": {
+                "invoice_type": "Refund (Available to Payout)",
+                "value": "50",
+                "form_reason": "run automation",
+                "form_note": "for refund Available to Payout"
+              },
+              "info_request": {
+                "source_name": "General",
+                "payout_method": "PingPong account",
+                "requested_amount": 12
+              }
+            }
+          ]
+        },
+        "TOP_UP_WIRE_TRANSFER": {
+          "data": [
+            {
+              "case_id": "SB_BAL_TOP_WT_3",
+              "case_name": "Kiểm tra tạo topup wire transfer, sau đó approved Topup thành công",
+              "payment_method": "Money transfer",
+              "select_amount": true,
+              "amount_input": "10",
+              "data_input_info_money_transfers": {
+                "transfer_funds": "US Bank Account",
+                "account_holder": "duyenvu1@beeketing.net",
+                "note": "run automation test",
+                "is_attack_file": true,
+                "path_file": "/data/shopbase/dashboard/attack_wire_transfer_balance.png"
+              },
+              "banner_transfers_success": "Successfully confirm top-up total amount: US $10.00",
+              "filter_condition": [
+                {
+                  "field": "Shop Domain",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "au-balance-topup-prodlive.onshopbase.com"
+                    }
+                  ]
+                },
+                {
+                  "field": "Invoice",
+                  "select_ddl_value": "Manual top-up via wire transfer"
+                }
+              ],
+              "filter_status": [
+                {
+                  "field": "Status",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "Paid"
+                    }
+                  ]
+                }
+              ],
+              "filter_tag": "Content:  Manual top-up via wire transfer",
+              "before_invoice_info": {
+                "shop_name": "au-balance-topup-prodlive",
+                "domain": "au-balance-topup-prodlive.onshopbase.com",
+                "amount_display": "10.00",
+                "content": "Manual top-up via wire transfer",
+                "content_transaction_collapse": "Manual top-up with payment id ",
+                "status": "In Review",
+                "type": "IN",
+                "detail": "Topped up manually via Bank transfer",
+                "transactions_type": "IN",
+                "transactions_content": "Manual top-up with payment id ",
+                "transactions_status": "Pending"
+              },
+              "filter_hive_balance": {
+                "label": "Owner email",
+                "value": "ducdao@beeketing.net",
+                "input_field": true
+              },
+              "status_topup_review": "Approve",
+              "after_invoice_info": {
+                "shop_name": "au-balance-topup-prodlive",
+                "domain": "au-balance-topup-prodlive.onshopbase.com",
+                "amount_display": "10.00",
+                "content": "Manual top-up via wire transfer",
+                "status": "Success",
+                "type": "IN",
+                "detail": "Topped up manually via Bank transfer",
+                "transactions_type": "IN",
+                "transactions_content": "Manual top-up with payment id ",
+                "transactions_status": "Paid"
+              },
+              "source": "Source: General"
+            },
+            {
+              "case_id": "SB_BAL_TOP_WT_5",
+              "case_name": "Kiểm tra tạo topup wire transfer, sau đó refused Topup thành công",
+              "payment_method": "Money transfer",
+              "select_amount": false,
+              "amount_input": "12.5",
+              "data_input_info_money_transfers": {
+                "transfer_funds": "PingPong",
+                "account_email": "duyenvu1@beeketing.net",
+                "transaction_id": "run automation test",
+                "is_attack_file": false
+              },
+              "banner_transfers_success": "Successfully confirm top-up total amount: US $12.50",
+              "filter_condition": [
+                {
+                  "field": "Shop Domain",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "au-balance-topup-prodlive.onshopbase.com"
+                    }
+                  ]
+                },
+                {
+                  "field": "Invoice",
+                  "select_ddl_value": "Manual top-up via wire transfer"
+                }
+              ],
+              "filter_status": [
+                {
+                  "field": "Status",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "Paid"
+                    }
+                  ]
+                }
+              ],
+              "filter_tag": "Content:  Manual top-up via wire transfer",
+              "before_invoice_info": {
+                "shop_name": "au-balance-topup-prodlive",
+                "domain": "au-balance-topup-prodlive.onshopbase.com",
+                "amount_display": "12.50",
+                "content": "Manual top-up via wire transfer",
+                "content_transaction_collapse": "Manual top-up with payment id ",
+                "status": "In Review",
+                "type": "IN",
+                "detail": "Topped up manually via PingPong transfer",
+                "transactions_type": "IN",
+                "transactions_content": "Manual top-up with payment id ",
+                "transactions_status": "Pending"
+              },
+              "filter_hive_balance": {
+                "label": "Owner email",
+                "value": "ducdao@beeketing.net",
+                "input_field": true
+              },
+              "status_topup_review": "Refuse",
+              "after_invoice_info": {
+                "shop_name": "au-balance-topup-prodlive",
+                "domain": "au-balance-topup-prodlive.onshopbase.com",
+                "amount_display": "12.50",
+                "content": "Manual top-up via wire transfer",
+                "status": "Void",
+                "type": "IN",
+                "detail": "Topped up manually via PingPong transfer",
+                "transactions_type": "IN",
+                "transactions_content": "Manual top-up with payment id ",
+                "transactions_status": "Failed"
+              },
+              "source": "Source: General"
+            }
+          ]
+        },
+        "TRANS_FEE": {
+          "data": [
+            {
+              "case_id": "SB_BAL_OLD_BL_5",
+              "case_name": "Checkout without post purchase",
+              "products_checkout": [
+                {
+                  "variant_id": 1000010110917248,
+                  "quantity": 1
+                }
+              ],
+              "invoice_conditions": [
+                {
+                  "field": "Shop Domain",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "au-balance-topup-prodlive.onshopbase.com"
+                    }
+                  ]
+                },
+                {
+                  "field": "Invoice",
+                  "select_ddl_value": "Transaction fee collecting"
+                },
+                {
+                  "field": "Status",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "Open"
+                    }
+                  ]
+                }
+              ],
+              "transaction_conditions": [
+                {
+                  "field": "Shop Domain",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "au-balance-topup-prodlive.onshopbase.com"
+                    }
+                  ]
+                },
+                {
+                  "field": "Invoice",
+                  "select_ddl_value": "Transaction fee collecting"
+                },
+                {
+                  "field": "Status",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "Pending"
+                    }
+                  ]
+                }
+              ],
+              "filter_tag_invoice": "Status: Open",
+              "filter_tag_transaction": "Status: Pending",
+              "source": "Source: General",
+              "invoice_info": {
+                "shop_name": "au-balance-topup-prodlive",
+                "domain": "au-balance-topup-prodlive.onshopbase.com",
+                "content": "Transaction fee collecting",
+                "status": "Open",
+                "type": "OUT",
+                "detail": "Paid for transaction fee of the order ",
+                "transactions_type": "OUT",
+                "transactions_content": "The payment for the transaction fee of the order ",
+                "transactions_status": "Pending"
+              }
+            },
+            {
+              "case_id": "SB_BAL_OLD_BL_107",
+              "case_name": "Checkout with post purchase",
+              "products_checkout": [
+                {
+                  "variant_id": 1000010110917248,
+                  "quantity": 1
+                }
+              ],
+              "postPurchase": {
+                "productPpc": {
+                  "variant_id": 1000010110917243,
+                  "quantity": 1
+                }
+              },
+              "invoice_conditions": [
+                {
+                  "field": "Shop Domain",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "au-balance-topup-prodlive.onshopbase.com"
+                    }
+                  ]
+                },
+                {
+                  "field": "Invoice",
+                  "select_ddl_value": "Transaction fee collecting"
+                },
+                {
+                  "field": "Status",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "Open"
+                    }
+                  ]
+                }
+              ],
+              "transaction_conditions": [
+                {
+                  "field": "Shop Domain",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "au-balance-topup-prodlive.onshopbase.com"
+                    }
+                  ]
+                },
+                {
+                  "field": "Invoice",
+                  "select_ddl_value": "Transaction fee collecting"
+                },
+                {
+                  "field": "Status",
+                  "checkbox_array": [
+                    {
+                      "checkbox": "Pending"
+                    }
+                  ]
+                }
+              ],
+              "filter_tag_invoice": "Status: Open",
+              "filter_tag_transaction": "Status: Pending",
+              "source": "Source: General",
+              "invoice_info": {
+                "shop_name": "au-balance-topup-prodlive",
+                "domain": "au-balance-topup-prodlive.onshopbase.com",
+                "content": "Transaction fee collecting",
+                "status": "Open",
+                "type": "OUT",
+                "detail": "Paid for transaction fee of the order ",
+                "transactions_type": "OUT",
+                "transactions_content": "The payment for the transaction fee of the order ",
+                "transactions_status": "Pending"
+              }
+            }
+          ]
+        },
+        "SB_BAL_OLD_BL_38": {
+          "products_checkout": [
+            {
+              "variant_id": 1000010110917241,
+              "quantity": 1
+            }
+          ],
+          "refund_info": {
+            "product_name": "Reed Diffuser, Feu De Bois",
+            "product_qty": "1",
+            "reason": "run refund automation test"
+          },
+          "invoice_conditions": [
+            {
+              "field": "Shop Domain",
+              "checkbox_array": [
+                {
+                  "checkbox": "au-balance-topup-prodlive.onshopbase.com"
+                }
+              ]
+            },
+            {
+              "field": "Invoice",
+              "select_ddl_value": "Transaction fee collecting"
+            },
+            {
+              "field": "Status",
+              "checkbox_array": [
+                {
+                  "checkbox": "Open"
+                }
+              ]
+            }
+          ],
+          "transaction_conditions": [
+            {
+              "field": "Shop Domain",
+              "checkbox_array": [
+                {
+                  "checkbox": "au-balance-topup-prodlive.onshopbase.com"
+                }
+              ]
+            },
+            {
+              "field": "Invoice",
+              "select_ddl_value": "Transaction fee collecting"
+            },
+            {
+              "field": "Status",
+              "checkbox_array": [
+                {
+                  "checkbox": "Pending"
+                }
+              ]
+            }
+          ],
+          "filter_tag_invoice": "Status: Open",
+          "filter_tag_transaction": "Status: Pending",
+          "source": "Source: General",
+          "invoice_info": {
+            "shop_name": "au-balance-topup-prodlive",
+            "domain": "au-balance-topup-prodlive.onshopbase.com",
+            "content": "Transaction fee collecting",
+            "status": "Open",
+            "type": "OUT",
+            "detail": "Paid for transaction fee of the order ",
+            "transactions_type": "IN",
+            "transactions_content": "The refund transaction fee of the order ",
+            "transactions_status": "Pending"
+          }
+        },
+        "SB_BAL_OLD_BL_11": {
+          "info_charge_to_zero": {
+            "form_reason": "run automation test",
+            "form_note": "for Charge to Zero"
+          },
+          "info_charge": {
+            "invoice_type": "Charge",
+            "value": "20.00",
+            "form_reason": "run automation test",
+            "form_note": "for Charge"
+          },
+          "invoice_conditions": [
+            {
+              "field": "Shop Domain",
+              "checkbox_array": [
+                {
+                  "checkbox": "au-balance-topup-prodlive.onshopbase.com"
+                }
+              ]
+            },
+            {
+              "field": "Invoice",
+              "select_ddl_value": "Automatical top-up"
+            }
+          ],
+          "filter_tag_invoice": "Content:  Automatical top-up",
+          "source": "Source: Credit card",
+          "amount_charge": "-20.00",
+          "invoice_info": {
+            "shop_name": "au-balance-topup-prodlive",
+            "domain": "au-balance-topup-prodlive.onshopbase.com",
+            "amount_display": "20.00",
+            "content": "Automatical top-up",
+            "status": "Success",
+            "type": "IN",
+            "detail": "Topped up for run automation test",
+            "transactions_type": "IN",
+            "transactions_content": "Top-up for run automation test",
+            "transactions_status": "Paid"
+          }
+        }
+      }
+    }
+  },
+  "cases": {
+    "CREDIT_CARD": {
+      "data": [
+        {
+          "SB_BAL_OLD_BL_2": {},
+          "SB_BAL_OLD_BL_83": {},
+          "SB_BAL_OLD_BL_84": {}
+        }
+      ]
+    },
+    "DATA_DRIVEN": {
+      "data": [
+        {
+          "SB_BAL_OLD_BL_109": {},
+          "SB_BAL_OLD_BL_26": {}
+        }
+      ]
+    },
+    "SB_BAL_OLD_BL_16": {},
+    "SB_BAL_OLD_BL_13": {},
+    "PAYOUT": {
+      "data": [
+        {
+          "SB_BAL_OLD_BL_111": {},
+          "SB_BAL_OLD_BL_12": {},
+          "SB_BAL_OLD_BL_110": {}
+        }
+      ]
+    },
+    "TOP_UP_WIRE_TRANSFER": {
+      "data": [
+        {
+          "SB_BAL_TOP_WT_3": {},
+          "SB_BAL_TOP_WT_5": {}
+        }
+      ]
+    },
+    "TRANS_FEE": {
+      "data": [
+        {
+          "SB_BAL_OLD_BL_5": {},
+          "SB_BAL_OLD_BL_107": {}
+        }
+      ]
+    },
+    "SB_BAL_OLD_BL_38": {},
+    "SB_BAL_OLD_BL_11": {},
+    "SB_BAL_OLD_BL_29": {}
+  }
+}

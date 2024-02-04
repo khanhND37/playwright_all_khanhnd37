@@ -1,0 +1,533 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-create-personalize-product.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "user_id": 73782,
+      "shop_id": 10252856,
+      "shop_name": "au-create-personalize-product",
+      "timeout": "180000"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-create-personalize-product-prodtest.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "user_id": 73782,
+      "shop_id": 10321210,
+      "shop_name": "au-create-personalize-product-prodtest",
+      "timeout": "180000",
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-create-personalize-product.onshopbase.com",
+      "shop_name": "au-create-personalize-product",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_id": 10322310,
+      "user_id": 73800,
+      "timeout": "180000"
+    }
+  },
+  "customer_info": {
+    "email": "tester@maildrop.cc",
+    "first_name": "Hoang",
+    "last_name": "Thuy",
+    "address": "1600 W Loop S",
+    "country": "United States",
+    "state": "Texas",
+    "city": "Houston",
+    "zipcode": "77027",
+    "phone_number": "505-646-2276"
+  },
+  "card_info": {
+    "number": "4242424242424242",
+    "holder_name": "My",
+    "expire_date": "12 / 30",
+    "cvv": "116"
+  },
+  "cases": {
+    "SB_PRO_test_183": {
+      "product_info": {
+        "title": "Customize group with droplist",
+        "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+        "image_name": "Logo1.jpg",
+        "vendor": "Uniqlo",
+        "price": "10",
+        "compare_at_price": "20"
+      },
+      "product_validate_detail": {
+        "title": "Customize group with droplist",
+        "number_image": 1
+      },
+      "image_preview": "BD_1.png",
+      "image_printfile": "BD_3.png",
+      "layers": [
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 1",
+          "layer_value": "Test text value 1"
+        },
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 2",
+          "layer_value": "Test text value 2",
+          "location_layer_x": "50",
+          "location_layer_y": "50"
+        },
+        {
+          "layer_type": "Image",
+          "layer_value": "Test image value 2",
+          "image_name": "BD_2.png"
+        },
+        {
+          "layer_type": "Image",
+          "layer_value": "Test image value 4",
+          "image_name": "BD_4.png"
+        },
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 3",
+          "layer_value": "Test text value 3",
+          "location_layer_x": "86",
+          "location_layer_y": "86"
+        },
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 4",
+          "layer_value": "Test text value 4",
+          "location_layer_x": "120",
+          "location_layer_y": "120"
+        },
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 5",
+          "layer_value": "Test text value 5",
+          "location_layer_x": "140",
+          "location_layer_y": "140"
+        }
+      ],
+      "groups": [
+        {
+          "current_group": "New group 1",
+          "new_group": "Group 1",
+          "layer_name": "Text layer 1,Text layer 2, Text layer 3, BD_2"
+        },
+        {
+          "current_group": "New group 1",
+          "new_group": "Group 2",
+          "layer_name": "Text layer 4, Text layer 5, BD_4"
+        }
+      ],
+      "custom_options": [
+        {
+          "type": "Text field",
+          "target_layer": "Text layer 1",
+          "label": "Text 1",
+          "max_length": "20",
+          "default_value": "default",
+          "allow_character": "Characters, Numbers, Special Characters",
+          "position": "below"
+        },
+        {
+          "type": "Text area",
+          "target_layer": "Text layer 2",
+          "label": "Text 2",
+          "max_length": "255",
+          "default_value": "default",
+          "allow_character": "Characters, Numbers, Special Characters",
+          "position": "below"
+        },
+        {
+          "type": "Image",
+          "target_layer": "BD_2",
+          "label": "Image 1",
+          "position": "below"
+        },
+        {
+          "type": "Radio",
+          "target_layer": "Text layer 3",
+          "label": "Radio",
+          "value": "thuyhoang,hoangthuy",
+          "position": "below"
+        },
+        {
+          "type": "Droplist",
+          "target_layer": "Text layer 4",
+          "label": "Droplist",
+          "value": "America,Spain",
+          "position": "below"
+        },
+        {
+          "type": "Picture choice",
+          "target_layer": "BD_4",
+          "label": "Picture choice",
+          "type_clipart": "Group",
+          "value_clipart": "Group 01"
+        }
+      ],
+      "customize_group": {
+        "option_group": "Droplist",
+        "label_group": "Please select the option",
+        "group_name": "Group 2, Group 1"
+      },
+      "custom_options_vadidate": [
+        "Please select the option",
+        "Text 1",
+        "Text 2",
+        "Image 1",
+        "Radio",
+        "Droplist",
+        "Picture choice"
+      ],
+      "custom_options_sf": [
+        {
+          "type": "Droplist",
+          "custom_name": "Please select the option",
+          "value": "Group 1"
+        },
+        {
+          "type": "Droplist",
+          "custom_name": "Droplist",
+          "value": "Spain"
+        },
+        {
+          "type": "Droplist",
+          "custom_name": "Picture choice",
+          "value": "Folder 02"
+        },
+        {
+          "type": "Picture choice",
+          "custom_name": "Folder 02",
+          "value": "BD_22"
+        }
+      ],
+      "label_print_file": "Print file has been generated",
+      "total_order_sf": "$14.99"
+    },
+    "SB_PRO_test_184": {
+      "product_info": {
+        "title": "Customize group with radio",
+        "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+        "image_name": "Logo1.jpg",
+        "vendor": "Uniqlo",
+        "price": "10",
+        "compare_at_price": "20"
+      },
+      "product_validate_detail": {
+        "title": "Customize group with radio",
+        "number_image": 1
+      },
+      "image_preview": "BD_6.png",
+      "image_printfile": "BD_8.png",
+      "layers": [
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 1",
+          "layer_value": "Test text value 1"
+        },
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 2",
+          "layer_value": "Test text value 2",
+          "location_layer_x": "50",
+          "location_layer_y": "50"
+        },
+        {
+          "layer_type": "Image",
+          "layer_value": "Test image value 2",
+          "image_name": "BD_2.png"
+        },
+        {
+          "layer_type": "Image",
+          "layer_value": "Test image value 4",
+          "image_name": "BD_4.png"
+        },
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 3",
+          "layer_value": "Test text value 3",
+          "location_layer_x": "86",
+          "location_layer_y": "86"
+        },
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 4",
+          "layer_value": "Test text value 4",
+          "location_layer_x": "120",
+          "location_layer_y": "120"
+        },
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 5",
+          "layer_value": "Test text value 5",
+          "location_layer_x": "140",
+          "location_layer_y": "140"
+        }
+      ],
+      "groups": [
+        {
+          "current_group": "New group 1",
+          "new_group": "Group 1",
+          "layer_name": "Text layer 1,Text layer 2, Text layer 3, BD_2"
+        },
+        {
+          "current_group": "New group 1",
+          "new_group": "Group 2",
+          "layer_name": "Text layer 4, Text layer 5, BD_4"
+        }
+      ],
+      "custom_options": [
+        {
+          "type": "Text field",
+          "target_layer": "Text layer 1",
+          "label": "Text 1",
+          "max_length": "20",
+          "default_value": "default",
+          "allow_character": "Characters, Numbers, Special Characters",
+          "position": "below"
+        },
+        {
+          "type": "Text area",
+          "target_layer": "Text layer 2",
+          "label": "Text 2",
+          "max_length": "255",
+          "default_value": "default",
+          "allow_character": "Characters, Numbers, Special Characters",
+          "position": "below"
+        },
+        {
+          "type": "Image",
+          "target_layer": "BD_2",
+          "label": "Image 1",
+          "position": "below"
+        },
+        {
+          "type": "Radio",
+          "target_layer": "Text layer 3",
+          "label": "Radio",
+          "value": "thuyhoang,hoangthuy",
+          "position": "below"
+        },
+        {
+          "type": "Droplist",
+          "target_layer": "Text layer 4",
+          "label": "Droplist",
+          "value": "America,Spain",
+          "position": "below"
+        },
+        {
+          "type": "Picture choice",
+          "target_layer": "BD_4",
+          "label": "Picture choice",
+          "type_clipart": "Group",
+          "value_clipart": "Group 01"
+        }
+      ],
+      "customize_group": {
+        "option_group": "Radio",
+        "label_group": "Please select the option",
+        "group_name": "Group 2, Group 1"
+      },
+      "custom_options_vadidate": [
+        "Please select the option",
+        "Text 1",
+        "Text 2",
+        "Image 1",
+        "Radio",
+        "Droplist",
+        "Picture choice"
+      ],
+      "custom_options_sf": [
+        {
+          "type": "Radio",
+          "custom_name": "Please select the option",
+          "value": "Group 2"
+        },
+        {
+          "type": "Droplist",
+          "custom_name": "Droplist",
+          "value": "Spain"
+        },
+        {
+          "type": "Droplist",
+          "custom_name": "Picture choice",
+          "value": "Folder 02"
+        },
+        {
+          "type": "Picture choice",
+          "custom_name": "Folder 02",
+          "value": "BD_22"
+        }
+      ],
+      "label_print_file": "Print file has been generated",
+      "total_order_sf": "$14.99"
+    },
+    "SB_PRO_test_185": {
+      "product_info": {
+        "title": "Customize group with picture choice",
+        "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+        "image_name": "Logo1.jpg",
+        "vendor": "Uniqlo",
+        "price": "10",
+        "compare_at_price": "20"
+      },
+      "product_validate_detail": {
+        "title": "Customize group with picture choice",
+        "number_image": 1
+      },
+      "image_preview": "BD_1.png",
+      "image_printfile": "BD_3.png",
+      "layers": [
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 1",
+          "layer_value": "Test text value 1"
+        },
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 2",
+          "layer_value": "Test text value 2",
+          "location_layer_x": "50",
+          "location_layer_y": "50"
+        },
+        {
+          "layer_type": "Image",
+          "layer_value": "Test image value 2",
+          "image_name": "BD_2.png"
+        },
+        {
+          "layer_type": "Image",
+          "layer_value": "Test image value 4",
+          "image_name": "BD_4.png"
+        },
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 3",
+          "layer_value": "Test text value 3",
+          "location_layer_x": "86",
+          "location_layer_y": "86"
+        },
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 4",
+          "layer_value": "Test text value 4",
+          "location_layer_x": "120",
+          "location_layer_y": "120"
+        },
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 5",
+          "layer_value": "Test text value 5",
+          "location_layer_x": "140",
+          "location_layer_y": "140"
+        }
+      ],
+      "groups": [
+        {
+          "current_group": "New group 1",
+          "new_group": "Group 1",
+          "layer_name": "Text layer 1,Text layer 2, Text layer 3, BD_2"
+        },
+        {
+          "current_group": "New group 1",
+          "new_group": "Group 2",
+          "layer_name": "Text layer 4, Text layer 5, BD_4"
+        }
+      ],
+      "custom_options": [
+        {
+          "type": "Text field",
+          "target_layer": "Text layer 1",
+          "label": "Text 1",
+          "max_length": "20",
+          "default_value": "default",
+          "allow_character": "Characters, Numbers, Special Characters",
+          "position": "below"
+        },
+        {
+          "type": "Text area",
+          "target_layer": "Text layer 2",
+          "label": "Text 2",
+          "max_length": "255",
+          "default_value": "default",
+          "allow_character": "Characters, Numbers, Special Characters",
+          "position": "below"
+        },
+        {
+          "type": "Image",
+          "target_layer": "BD_2",
+          "label": "Image 1",
+          "position": "below"
+        },
+        {
+          "type": "Radio",
+          "target_layer": "Text layer 3",
+          "label": "Radio",
+          "value": "thuyhoang,hoangthuy",
+          "position": "below"
+        },
+        {
+          "type": "Droplist",
+          "target_layer": "Text layer 4",
+          "label": "Droplist",
+          "value": "America,Spain",
+          "position": "below"
+        },
+        {
+          "type": "Picture choice",
+          "target_layer": "BD_4",
+          "label": "Picture choice",
+          "type_clipart": "Group",
+          "value_clipart": "Group 01"
+        }
+      ],
+      "customize_group": {
+        "option_group": "Droplist",
+        "label_group": "Please select the option",
+        "image_name": "BD_5.png,BD_9.png"
+      },
+      "custom_options_vadidate": [
+        "Please select the option",
+        "Text 1",
+        "Text 2",
+        "Image 1",
+        "Radio",
+        "Droplist",
+        "Picture choice"
+      ],
+      "custom_options_sf": [
+        {
+          "type": "Picture choice",
+          "custom_name": "Please select the option",
+          "value": "Group 2"
+        },
+        {
+          "type": "Droplist",
+          "custom_name": "Droplist",
+          "value": "Spain"
+        },
+        {
+          "type": "Droplist",
+          "custom_name": "Picture choice",
+          "value": "Folder 02"
+        },
+        {
+          "type": "Picture choice",
+          "custom_name": "Folder 02",
+          "value": "Group 1"
+        },
+        {
+          "type": "Picture choice",
+          "custom_name": "Please select the option",
+          "value": "BD_9"
+        }
+      ],
+      "label_print_file": "Print file has been generated",
+      "total_order_sf": "$14.99"
+    }
+  }
+}

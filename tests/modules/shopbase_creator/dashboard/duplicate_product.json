@@ -1,0 +1,520 @@
+{
+  "api": "https://api.shopbase.com",
+  "domain": "digital-product-detail-2-prodtest.onshopbase.com",
+  "shop_name": "digital-product-detail-2-prodtest",
+  "user_id": 73782,
+  "shop_id": 10379926,
+  "username": "shopbase@beeketing.net",
+  "password": "Q(f!3Kx+6n;?Us%F",
+  "theme_name": "One Time Offer",
+  "timeout": 240000,
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "digital-product-detail-2.onshopbase.com",
+      "shop_name": "digital-product-detail-2",
+      "user_id": 73782,
+      "shop_id": 10382891,
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "theme_name": "One Time Offer"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "digital-product-detail-2-prodtest.onshopbase.com",
+      "shop_name": "digital-product-detail-2-prodtest",
+      "user_id": 73782,
+      "shop_id": 10379926,
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "theme_name": "One Time Offer",
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "digital-product-detail-2.myshopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "user_id": 88581,
+      "shop_id": 10323367,
+      "shop_name": "digital-product-detail-2",
+      "theme_name": "Video Sales Letter Offer"
+    }
+  },
+  "payment": {
+    "active": true,
+    "title": "Stripe-1",
+    "code": "stripe",
+    "provider_options": {
+      "name": "Stripe-2",
+      "public_key": "pk_test_51H0MC6CcU7rfeHrk7sE9cyETJZgKI3RR2jWs9MqL2iJ67o8M2aj0SrH56PlYgkdmbhs1HmD2ODpbwzp72Af4NIbe002OIRtxHL",
+      "secret_key": "sk_test_51H0MC6CcU7rfeHrkYB0CZVbfsSfP99Q5hhnGj7hjxbXMn6d7v6hpRlE06JoRbLd2KMWqqitg7twTBCZAKpBorMd700NXQUNss7",
+      "api_key": true
+    }
+  },
+  "cases": {
+    "SB_SC_SCP_60": {
+      "product_list": [
+        {
+          "product_body": {
+            "product": {
+              "title": "Product has not media",
+              "product_type": "online_course",
+              "published": true
+            }
+          }
+        },
+        {
+          "product_body": {
+            "product": {
+              "title": "Product uploaded media",
+              "product_type": "online_course",
+              "published": true
+            }
+          },
+          "request_content": [
+            {
+              "request_chapter": {
+                "title": "Test chapter 1",
+                "description": "",
+                "status": "published",
+                "product_id": 0,
+                "position": 1
+              },
+              "request_lesson": [
+                {
+                  "lecture": {
+                    "title": "Test lesson 1",
+                    "description": "",
+                    "status": "published",
+                    "product_id": 0,
+                    "position": 1,
+                    "section_id": 0,
+                    "medias": []
+                  },
+                  "medias": []
+                },
+                {
+                  "lecture": {
+                    "title": "Test lesson 2",
+                    "description": "",
+                    "status": "published",
+                    "product_id": 0,
+                    "position": 1,
+                    "section_id": 0,
+                    "medias": []
+                  },
+                  "medias": []
+                }
+              ]
+            }
+          ],
+          "media": [
+            {
+              "chapter_name": "Test chapter 1",
+              "lesson_name": "Test lesson 1",
+              "type_file": "Media",
+              "path_file": "data/dpro/sample_mp4.mp4"
+            }
+          ]
+        },
+        {
+          "product_body": {
+            "product": {
+              "title": "Product digital download",
+              "product_type": "digital_download",
+              "published": false
+            },
+            "dp_data": {
+              "sections": [
+                {
+                  "id": 0,
+                  "title": "",
+                  "status": "published",
+                  "position": 0,
+                  "lectures": [
+                    {
+                      "id": 0,
+                      "title": "",
+                      "status": "published",
+                      "position": 0,
+                      "medias": []
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "files_uploaded": [
+            {
+              "type_file": "file",
+              "file_path": "data/dpro/Test data.pptx",
+              "product_type": "Digital download",
+              "file_name": "Test data.pptx"
+            },
+            {
+              "type_file": "file",
+              "file_path": "data/dpro/Test data.pdf",
+              "product_type": "Digital download",
+              "file_name": "Test data.pdf"
+            },
+            {
+              "type_file": "file",
+              "file_path": "data/dpro/more_than_5MB.png",
+              "product_type": "Digital download",
+              "file_name": "more_than_5MB.png"
+            }
+          ]
+        },
+        {
+          "product_body": {
+            "product": {
+              "title": "Product coaching session",
+              "product_type": "coaching_session",
+              "published": false
+            },
+            "dp_data": {
+              "sections": [
+                {
+                  "id": 0,
+                  "title": "",
+                  "status": "published",
+                  "position": 0,
+                  "lectures": [
+                    {
+                      "id": 0,
+                      "title": "",
+                      "status": "published",
+                      "position": 0,
+                      "medias": []
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "schedule": {
+            "third_service": true,
+            "schedule_type": "Embed booking calendar",
+            "schedule": "https://calendly.com/phuongnguyen-tmm/30min"
+          }
+        }
+      ]
+    },
+    "SB_SC_SCP_63": {
+      "button_name": "Design offer",
+      "button_text": "Add your first upsell",
+      "email": "phuongnguyen4@beeketing.net",
+      "pricing": {
+        "type": "One-time payment",
+        "title": "Paid",
+        "value": "10"
+      },
+      "product_list": [
+        {
+          "product_body": {
+            "product": {
+              "title": "Product Online course with multiple lesson",
+              "product_type": "online_course",
+              "published": true
+            }
+          }
+        },
+        {
+          "product_body": {
+            "product": {
+              "title": "Product Upsell 01",
+              "product_type": "online_course",
+              "published": true
+            }
+          }
+        },
+        {
+          "product_body": {
+            "product": {
+              "title": "Product Downsell 01",
+              "product_type": "online_course",
+              "published": true
+            }
+          }
+        },
+        {
+          "product_body": {
+            "product": {
+              "title": "Product Upsell 02",
+              "product_type": "online_course",
+              "published": true
+            }
+          }
+        },
+        {
+          "product_body": {
+            "product": {
+              "title": "Product Downsell 02",
+              "product_type": "online_course",
+              "published": true
+            }
+          }
+        }
+      ],
+      "products_offer": [
+        {
+          "product_upsell_name": "Product Upsell 01",
+          "product_downsell_name": "Product Downsell 01",
+          "button_text": "Add your first upsell",
+          "button_save": "Save"
+        },
+        {
+          "product_upsell_name": "Product Upsell 02",
+          "product_downsell_name": "Product Downsell 02",
+          "button_text": "Add new upsell",
+          "button_save": "Save"
+        }
+      ],
+      "data_checkout": [
+        {
+          "accept_reject_product_upsell": [true, true],
+          "products_checkout": [
+            "Copy of Product Online course with multiple lesson",
+            "Product Upsell 02",
+            "Product Upsell 02"
+          ]
+        },
+        {
+          "accept_reject_product_upsell": [false, true, true],
+          "products_checkout": [
+            "Copy of Product Online course with multiple lesson",
+            "Product Downsell 01",
+            "Product Upsell 02"
+          ]
+        }
+      ]
+    },
+    "SB_SC_SCP_62": {
+      "product_list": [
+        {
+          "product_body": {
+            "product": {
+              "title": "Online course duplicate chapter and lesson",
+              "product_type": "online_course",
+              "published": true
+            }
+          },
+          "request_content": [
+            {
+              "request_chapter": {
+                "title": "Chapter 1",
+                "description": "",
+                "status": "published",
+                "product_id": 0,
+                "position": 1
+              },
+              "request_lesson": [
+                {
+                  "lecture": {
+                    "title": "Lesson 1",
+                    "description": "",
+                    "status": "published",
+                    "product_id": 0,
+                    "position": 1,
+                    "section_id": 0,
+                    "medias": []
+                  },
+                  "medias": []
+                },
+                {
+                  "lecture": {
+                    "title": "Lesson 2",
+                    "description": "",
+                    "status": "published",
+                    "product_id": 0,
+                    "position": 2,
+                    "section_id": 0,
+                    "medias": []
+                  },
+                  "medias": []
+                },
+                {
+                  "lecture": {
+                    "title": "Lesson 3",
+                    "description": "",
+                    "status": "published",
+                    "product_id": 0,
+                    "position": 3,
+                    "section_id": 0,
+                    "medias": []
+                  },
+                  "medias": []
+                }
+              ]
+            }
+          ],
+          "media": [
+            {
+              "chapter_name": "Chapter 1",
+              "lesson_name": "Lesson 1",
+              "type_file": "Media",
+              "path_file": "data/dpro/sample_mp4.mp4"
+            },
+            {
+              "chapter_name": "Chapter 1",
+              "lesson_name": "Lesson 2",
+              "type_file": "Media",
+              "path_file": "data/dpro/e-learning.jpg"
+            }
+          ]
+        }
+      ],
+      "attachments": {
+        "chapter_name": "Chapter 1",
+        "lesson_name": "Lesson 2",
+        "files_uploaded": [
+          {
+            "type_file": "Attachments",
+            "file_path": "data/dpro/Test data.pptx",
+            "product_type": "Digital download",
+            "file_name": "Test data.pptx"
+          },
+          {
+            "type_file": "Attachments",
+            "file_path": "data/dpro/Test data.pdf",
+            "product_type": "Digital download",
+            "file_name": "Test data.pdf"
+          },
+          {
+            "type_file": "Attachments",
+            "file_path": "data/dpro/more_than_5MB.png",
+            "product_type": "Digital download",
+            "file_name": "more_than_5MB.png"
+          }
+        ]
+      },
+      "lesson_list": ["Lesson 1", "Lesson 2", "Lesson 3"]
+    },
+    "SB_SC_SCP_77": {
+      "product_list": [
+        {
+          "product_body": {
+            "product": {
+              "title": "Product verify action of lesson",
+              "product_type": "online_course",
+              "published": true
+            }
+          },
+          "request_content": [
+            {
+              "request_chapter": {
+                "title": "Test chapter 1",
+                "description": "",
+                "status": "published",
+                "product_id": 0,
+                "position": 1
+              },
+              "request_lesson": [
+                {
+                  "lecture": {
+                    "title": "Test lesson 1: Playwright for beginner",
+                    "description": "",
+                    "status": "published",
+                    "product_id": 0,
+                    "position": 1,
+                    "section_id": 0,
+                    "medias": []
+                  },
+                  "medias": []
+                },
+                {
+                  "lecture": {
+                    "title": "Test lesson 2: What is xpath?",
+                    "description": "",
+                    "status": "unpublished",
+                    "product_id": 0,
+                    "position": 2,
+                    "section_id": 0,
+                    "medias": []
+                  },
+                  "medias": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "action_list": ["Unpublish", "Share", "Delete"]
+    },
+    "SB_SC_SCP_71": {
+      "product_list": [
+        {
+          "product_body": {
+            "product": {
+              "title": "Product verify action of chapter",
+              "product_type": "online_course",
+              "published": true
+            }
+          },
+          "request_content": [
+            {
+              "request_chapter": {
+                "title": "Test chapter 1",
+                "description": "",
+                "status": "published",
+                "product_id": 0,
+                "position": 1
+              },
+              "request_lesson": [
+                {
+                  "lecture": {
+                    "title": "Test lesson 1: Playwright for beginner",
+                    "description": "",
+                    "status": "published",
+                    "product_id": 0,
+                    "position": 1,
+                    "section_id": 0,
+                    "medias": []
+                  },
+                  "medias": []
+                },
+                {
+                  "lecture": {
+                    "title": "Test lesson 2: What is xpath?",
+                    "description": "",
+                    "status": "unpublished",
+                    "product_id": 0,
+                    "position": 2,
+                    "section_id": 0,
+                    "medias": []
+                  },
+                  "medias": []
+                }
+              ]
+            },
+            {
+              "request_chapter": {
+                "title": "Test chapter 2",
+                "description": "",
+                "status": "published",
+                "product_id": 0,
+                "position": 1
+              },
+              "request_lesson": [
+                {
+                  "lecture": {
+                    "title": "Test lesson 3: Xpath and element",
+                    "description": "",
+                    "status": "published",
+                    "product_id": 0,
+                    "position": 1,
+                    "section_id": 0,
+                    "medias": []
+                  },
+                  "medias": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "action_list": ["Unpublish", "Share", "Delete"]
+    }
+  }
+}

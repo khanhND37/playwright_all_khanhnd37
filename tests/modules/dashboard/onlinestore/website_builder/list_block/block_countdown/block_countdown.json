@@ -1,0 +1,408 @@
+{
+  "env": {
+    "dev": {
+      "domain": "wb-block-countdown.myshopbase.net",
+      "shop_name": "wb-block-countdown.myshopbase.net",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_id": 10323239,
+      "user_id": 73800,
+      "pre_condition": {
+        "product": {
+          "type": "online_course",
+          "title": "web-page-style",
+          "handle": "web-page-style",
+          "published": false
+        },
+        "apply_template": {
+          "template_id": 403,
+          "type": "product"
+        }
+      },
+      "add_section": {
+        "section": {
+          "from": {
+            "category": "Basics",
+            "template": "Single column"
+          },
+          "to": {
+            "position": {
+              "section": 1
+            },
+            "isBottom": false
+          }
+        },
+        "block": {
+          "from": {
+            "category": "Basics",
+            "template": "Countdown"
+          },
+          "to": {
+            "position": {
+              "section": 1,
+              "column": 1
+            },
+            "isBottom": false
+          }
+        }
+      }
+    },
+    "prodtest": {
+      "domain": "wb-block-countdown-prodtest.onshopbase.com",
+      "shop_name": "wb-block-countdown-prodtest.onshopbase.com",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10381887,
+      "user_id": 73782,
+      "pre_condition": {
+        "product": {
+          "type": "online_course",
+          "title": "web-page-style",
+          "handle": "web-page-style",
+          "published": false
+        },
+        "apply_template": {
+          "template_id": 10,
+          "type": "product"
+        }
+      },
+      "add_section": {
+        "section": {
+          "from": {
+            "category": "Basics",
+            "template": "Single column"
+          },
+          "to": {
+            "position": {
+              "section": 1
+            },
+            "isBottom": false
+          }
+        },
+        "block": {
+          "from": {
+            "category": "Basics",
+            "template": "Countdown"
+          },
+          "to": {
+            "position": {
+              "section": 1,
+              "column": 1
+            },
+            "isBottom": false
+          }
+        }
+      },
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "prod": {
+      "domain": "wb-block-countdown.onshopbase.com",
+      "shop_name": "wb-block-countdown.onshopbase.com",
+      "api": "https://api.shopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10381855,
+      "user_id": 73782,
+      "pre_condition": {
+        "product": {
+          "type": "online_course",
+          "title": "web-page-style",
+          "handle": "web-page-style",
+          "published": false
+        },
+        "apply_template": {
+          "template_id": 10,
+          "type": "product"
+        }
+      },
+      "add_section": {
+        "section": {
+          "from": {
+            "category": "Basics",
+            "template": "Single column"
+          },
+          "to": {
+            "position": {
+              "section": 1
+            },
+            "isBottom": false
+          }
+        },
+        "block": {
+          "from": {
+            "category": "Basics",
+            "template": "Countdown"
+          },
+          "to": {
+            "position": {
+              "section": 1,
+              "column": 1
+            },
+            "isBottom": false
+          }
+        }
+      }
+    }
+  },
+  "cases": {
+    "SB_WEB_BUILDER_LB_COUNTDOWN_BLOCK_1": {
+      "description": "Check default data",
+      "expect": {
+        "snapshot_sidebar": "default-block-countdown-sidebar.png",
+        "time_preview": {
+          "hour": "23",
+          "minute": "58"
+        },
+        "time_SF": {
+          "hour": "23",
+          "minute": "58"
+        }
+      }
+    },
+    "SB_WEB_BUILDER_LB_COUNTDOWN_BLOCK_3": {
+      "description": "Check setting data",
+      "input": {
+        "setting_block": {
+          "style": {
+            "number_color": {
+              "preset": 1
+            },
+            "unit_color": {
+              "preset": 2
+            },
+            "align": "Right",
+            "width": {
+              "unit": "%",
+              "value": 100
+            },
+            "height": {
+              "unit": "Px",
+              "value": 100
+            },
+            "background": {
+              "color": {
+                "preset": 6,
+                "hexText": "#6B5C5CA6"
+              }
+            },
+            "border": {
+              "thickness": "m",
+              "color": {
+                "preset": 3
+              }
+            },
+            "opacity": 81,
+            "radius": 100,
+            "shadow": "light",
+            "padding": {
+              "top": 3,
+              "left": 3,
+              "bottom": 3,
+              "right": 3
+            },
+            "margin": {
+              "top": 0,
+              "left": 0,
+              "bottom": 0,
+              "right": 0
+            }
+          },
+          "settings": {
+            "type": "Custom",
+            "hours": "0",
+            "minutes": "0",
+            "restart_when": "Countdown end"
+          }
+        }
+      },
+      "expect": {
+        "snapshot_preview": "setting-style-block-countdown-preview.png",
+        "snapshot_storefront": "setting-style-block-countdown-storefront.png"
+      }
+    },
+    "SB_WEB_BUILDER_LB_COUNTDOWN_BLOCK_4": {
+      "description": "Check setting Hour",
+      "input": [
+        {
+          "hour": {
+            "value": "1",
+            "expect": {
+              "value_hour": "01"
+            }
+          }
+        },
+        {
+          "hour": {
+            "value": "63",
+            "expect": {
+              "value_day": "02",
+              "value_hour": "15"
+            }
+          }
+        },
+        {
+          "hour": {
+            "value": "55555",
+            "expect": {
+              "value_day": "416",
+              "value_hour": "15"
+            }
+          }
+        },
+        {
+          "hour": {
+            "value": "",
+            "expect": {
+              "value_hour": "00"
+            }
+          }
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_LB_COUNTDOWN_BLOCK_5": {
+      "description": "Check setting Minutes",
+      "input": [
+        {
+          "hour": "00",
+          "min_per_hour": 60,
+          "min_per_day": 1440,
+          "minute": {
+            "value": "10000",
+            "expect": {
+              "value_day": "06",
+              "value_hour": "22",
+              "value_minute": "38",
+              "value_second": "57,58,59"
+            }
+          }
+        },
+        {
+          "hour": "00",
+          "min_per_hour": 60,
+          "min_per_day": 1440,
+          "minute": {
+            "value": "",
+            "expect": {
+              "value_minute": "00",
+              "value_second": "00"
+            }
+          }
+        },
+        {
+          "hour": "00",
+          "min_per_hour": 60,
+          "min_per_day": 1440,
+          "minute": {
+            "value": "40",
+            "expect": {
+              "value_minute": "39",
+              "value_second": "57,58,59"
+            }
+          }
+        },
+        {
+          "hour": "00",
+          "min_per_hour": 60,
+          "min_per_day": 1440,
+          "minute": {
+            "value": "63",
+            "expect": {
+              "value_hour": "01",
+              "value_minute": "02",
+              "value_second": "57,58,59"
+            }
+          }
+        }
+      ]
+    },
+    "DATA_DRIVEN": {
+      "description": "Check field Restart when",
+      "data": [
+        {
+          "description": "Check field restart when = countdown end",
+          "case_id": "SB_WEB_BUILDER_LB_COUNTDOWN_BLOCK_6",
+          "input": {
+            "type": "Custom",
+            "hours": "0",
+            "minutes": "1",
+            "restart_when": "Countdown end"
+          },
+          "expect": {
+            "value_hour": "00",
+            "value_minute": "00",
+            "value_second": "54,55,56,57"
+          }
+        },
+        {
+          "description": "Check field restart when = page loaded",
+          "case_id": "SB_WEB_BUILDER_LB_COUNTDOWN_BLOCK_14",
+          "input": {
+            "type": "Custom",
+            "hours": "0",
+            "minutes": "1",
+            "restart_when": "Page loaded"
+          },
+          "expect": {
+            "value_hour": "00",
+            "value_minute": "00",
+            "value_second": "57,58,59"
+          }
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_LB_COUNTDOWN_BLOCK_7": {
+      "description": "Check setting Date",
+      "input": {
+        "setting_block": {
+          "type": "Exact time"
+        }
+      },
+      "expect": {
+        "time_preview": {
+          "day": "00",
+          "hour": "23",
+          "minute": "59",
+          "second": "57,58,59"
+        },
+        "time_storefront": {
+          "day": "00",
+          "hour": "23",
+          "minute": "59",
+          "second": "55,56,57"
+        }
+      }
+    },
+    "SB_WEB_BUILDER_LB_COUNTDOWN_BLOCK_8": {
+      "description": "Check setting Time",
+      "input": {
+        "setting_block": {
+          "type": "Exact time"
+        }
+      },
+      "expect": {
+        "time_preview": {
+          "day": "00",
+          "hour": "00",
+          "minute": "59",
+          "second": "57,58,59"
+        },
+        "time_storefront": {
+          "day": "00",
+          "hour": "00",
+          "minute": "59",
+          "second": "45,46,47"
+        }
+      }
+    },
+    "SB_WEB_BUILDER_LB_COUNTDOWN_BLOCK_10": {
+      "expect": {
+        "snapshot": "tab-setting.png"
+      }
+    },
+    "SB_WEB_BUILDER_LB_COUNTDOWN_BLOCK_11": {},
+    "SB_WEB_BUILDER_LB_COUNTDOWN_BLOCK_12": {},
+    "SB_WEB_BUILDER_LB_COUNTDOWN_BLOCK_13": {}
+  }
+}

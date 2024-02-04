@@ -1,0 +1,84 @@
+{
+  "env": {
+    "prod": {
+      "domain": "au-plb-order-pod-2-prod.onshopbase.com",
+      "api": "https://api.shopbase.com",
+      "shop_name": "au-plb-order-pod-2-prod",
+      "username": "shopbase3@beeketing.net",
+      "password": "aAeg*PJR4.t6V:P",
+      "user_id": 206811,
+      "shop_id": 10379924,
+      "design_fee": 3.5
+    },
+    "prodtest": {
+      "domain": "au-plb-order-pod-2.onshopbase.com",
+      "api": "https://prod-test-api.shopbase.com",
+      "shop_name": "au-plb-order-pod-2",
+      "username": "shopbase3@beeketing.net",
+      "password": "aAeg*PJR4.t6V:P",
+      "user_id": 206811,
+      "shop_id": 10379423,
+      "design_fee": 3.5,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "domain": "au-plb-order-pod-2.myshopbase.net",
+      "api": "https://gapi.dev.shopbase.net",
+      "shop_name": "au-plb-order-pod-2",
+      "username": "shopbase4@beeketing.net",
+      "password": "H7mQdQ]Zj]%[Nm?",
+      "user_id": 89321,
+      "shop_id": 10322602,
+      "design_fee": 10
+    }
+  },
+  "customer_info": {
+    "email": "tester@maildrop.cc",
+    "first_name": "Yuki",
+    "last_name": "Onna",
+    "address": "true600 W Loop S",
+    "country": "United States",
+    "city": "Los Angeles",
+    "state": "California",
+    "zipcode": "90001",
+    "country_code": "US",
+    "phone_number": "0365555555"
+  },
+  "card_info": {
+    "number": "4242424242424242",
+    "expire_date": "12 / 26",
+    "cvv": "424",
+    "holder": "42424242"
+  },
+  "design_text": "Testing",
+  "cases": {
+    "DATA_DRIVEN": {
+      "data": [
+        {
+          "case_id": "SB_PLB_PODPL_PODPO_21",
+          "description": "Verify profit của order PLB có line POD không có dessign fee",
+          "profit_data": {
+            "payment_fee": 0.03,
+            "processing_fee": 0.04,
+            "have_design_fee": false
+          },
+          "product_handle": "test-product-automation-sleeveless-dress-1",
+          "variant_size": "XL",
+          "is_tax": true
+        },
+        {
+          "case_id": "SB_PLB_PODPL_PODPO_22",
+          "description": "Verify profit của order PLB có line POD có dessign fee",
+          "profit_data": {
+            "payment_fee": 0.03,
+            "processing_fee": 0.04,
+            "have_design_fee": true
+          },
+          "product_handle": "test-product-automation-sleeveless-dress-2",
+          "variant_size": "XL",
+          "is_tax": true
+        }
+      ]
+    }
+  }
+}

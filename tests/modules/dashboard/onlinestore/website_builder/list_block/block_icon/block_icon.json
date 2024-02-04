@@ -1,0 +1,303 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-wsb-sections-dev.myshopbase.net",
+      "shop_name": "au-wsb-sections-dev",
+      "shop_id": 10322931,
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "user_id": 73800,
+      "page_id": 11268500,
+      "add_block_icon": {
+        "parent_position": {
+          "section": 2,
+          "column": 1
+        },
+        "template": "Icon"
+      },
+      "dnd_blank_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 1
+          },
+          "isBottom": false
+        }
+      },
+      "variant": "product-1000000000342245"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-wsb-sections-prodtest.onshopbase.com",
+      "shop_name": "au-wsb-sections-prodtest",
+      "shop_id": 10379313,
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "user_id": 73782,
+      "page_id": 11093,
+      "add_block_icon": {
+        "parent_position": {
+          "section": 2,
+          "column": 1
+        },
+        "template": "Icon"
+      },
+      "dnd_blank_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 1
+          },
+          "isBottom": false
+        }
+      },
+      "variant": "product-1000000447852337",
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "prod": {
+      "domain": "au-wsb-sections.onshopbase.com",
+      "shop_name": "au-wsb-sections",
+      "api": "https://api.shopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10374561,
+      "user_id": 73782,
+      "page_id": 183581,
+      "add_block_icon": {
+        "parent_position": {
+          "section": 2,
+          "column": 1
+        },
+        "template": "Icon"
+      },
+      "dnd_blank_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 1
+          },
+          "isBottom": false
+        }
+      },
+      "variant": "product-1000000470957653"
+    }
+  },
+  "cases": {
+    "SB_WEB_BUILDER_LB_ICON_BLOCK_1": {
+      "case_title": "Check default setting khi add Icon block",
+      "data": {
+        "block": {
+          "from": {
+            "category": "Basics",
+            "template": "Icon"
+          },
+          "to": {
+            "position": {
+              "section": 1,
+              "column": 1
+            }
+          }
+        }
+      },
+      "expected": {
+        "icon_default_setting": "icon_default_setting.png",
+        "icon_default_setting_sfn": "icon_default_setting_sfn.png",
+        "icon_manual_setting": "icon_manual_setting.png",
+        "icon_manual_setting_sfn": "icon_manual_setting_sfn.png",
+        "saved": "All changes are saved"
+      }
+    },
+    "SB_WEB_BUILDER_LB_ICON_BLOCK_2": {
+      "case_title": "Check hiển thị icon block trên web front & SF khi thay đổi setting data của icon block",
+      "data": {
+        "design": {
+          "color": {
+            "preset": 4
+          },
+          "align_self": "Left",
+          "width_height": [
+            {
+              "label": "width",
+              "data": {
+                "value": 50,
+                "unit": "Px"
+              }
+            }
+          ],
+          "background": {
+            "color": {
+              "preset": 2
+            }
+          },
+          "border": {
+            "thickness": "s"
+          },
+          "opacity_radius": [
+            {
+              "label": "opacity",
+              "data": {
+                "fill": true,
+                "number": 80
+              }
+            },
+            {
+              "label": "border_radius",
+              "data": {
+                "fill": true,
+                "number": 30
+              }
+            }
+          ],
+          "box_shadow": {
+            "label": "box_shadow",
+            "data": {
+              "option": "hard",
+              "size": "L",
+              "direction": "Top Right"
+            }
+          },
+          "margin_padding": [
+            {
+              "label": "padding",
+              "data": {
+                "top": 60,
+                "left": 10,
+                "bottom": 10,
+                "right": 10,
+                "input": true
+              }
+            },
+            {
+              "label": "margin",
+              "data": {
+                "top": 20,
+                "left": 20,
+                "bottom": 10,
+                "right": 10,
+                "input": true
+              }
+            }
+          ]
+        },
+        "setting": {
+          "icon": "Home",
+          "link": "https://www.google.com"
+        }
+      },
+      "expected": {
+        "icon_design_preview": "icon_design_preview.png",
+        "icon_design_sidebar": "icon_design_sidebar.png",
+        "icon_content_preview": "icon_content_preview.png",
+        "icon_content_sidebar": "icon_content_sidebar.png",
+        "icon_design_setting_sfn": "icon_design_setting_sfn.png",
+        "saved": "All changes are saved",
+        "title": "Google"
+      }
+    },
+    "SB_WEB_BUILDER_LB_ICON_BLOCK_3": {
+      "case_title": "Check setting color",
+      "data": {
+        "design": {
+          "color": {
+            "preset": 5
+          }
+        }
+      },
+      "expected": {
+        "icon_design_color_sfn": "icon_design_color_sfn.png",
+        "saved": "All changes are saved"
+      }
+    },
+    "SB_WEB_BUILDER_LB_ICON_BLOCK_4": {
+      "case_title": "Check chọn icon",
+      "data": {
+        "setting": {
+          "fill_text_falsy": "aa",
+          "fill_text_truthy": "Home"
+        }
+      },
+      "expected": {
+        "icon_setting_name": "icon_setting_name.png",
+        "icon_setting_change_name": "icon_setting_change_name.png",
+        "icon_setting_search_name": "icon_setting_search_name.png",
+        "icon_setting_search_hover_name": "icon_setting_search_hover_name.png",
+        "icon_setting_change_name_sfn": "icon_setting_change_name_sfn.png",
+        "text_no_icon_found": "No icons found.",
+        "saved": "All changes are saved"
+      }
+    },
+    "SB_WEB_BUILDER_LB_ICON_BLOCK_19": {
+      "case_title": "Check resize width Icon block",
+      "data": {
+        "resize": {
+          "selector": {
+            "section": 2,
+            "block": 1
+          },
+          "outside": 1377,
+          "inside": 10
+        },
+        "design": {
+          "width_height": [
+            {
+              "label": "width",
+              "data": {
+                "value": 150,
+                "unit": "Px"
+              }
+            },
+            {
+              "label": "width",
+              "data": {
+                "value": 200,
+                "unit": "%"
+              }
+            }
+          ]
+        }
+      },
+      "expected": {
+        "icon_resize_outside": "icon_resize_outside.png",
+        "icon_resize_inside": "icon_resize_inside.png",
+        "icon_resize_sfn": "icon_resize_sfn.png",
+        "icon_change_width_sfn": "icon_change_width_sfn.png",
+        "saved": "All changes are saved"
+      }
+    },
+    "SB_WEB_BUILDER_LB_ICON_BLOCK_20": {
+      "case_title": "Check mở setting tab khi click Change icon trên quick bar",
+      "expected": {
+        "icon_click_change_name": "icon_click_change_name.png"
+      }
+    },
+    "SB_WEB_BUILDER_LB_ICON_BLOCK_21": {
+      "case_title": "Check remove icon block trên Quick bar setting",
+      "expected": {
+        "saved": "All changes are saved"
+      }
+    },
+    "SB_WEB_BUILDER_LB_ICON_BLOCK_22": {
+      "case_title": "Check duplicate Icon block",
+      "expected": {
+        "icon_duplicate": "icon_duplicate.png",
+        "saved": "All changes are saved"
+      }
+    },
+    "SB_WEB_BUILDER_LB_ICON_BLOCK_23": {
+      "case_title": "Check duplicate Icon block",
+      "expected": {
+        "saved": "All changes are saved"
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "env": {
+    "dev": {
+      "domain": "turn-on-off-multiple-sf.myshopbase.net",
+      "shop_name": "turn-on-off-multiple-sf",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10330013,
+      "user_id": 90252,
+      "cases": {
+        "SB_NEWECOM_MSF_MSFL_45": {
+          "data": {
+            "domain_theme_v2": "multiple-store-theme-v2.myshopbase.net",
+            "domain_theme_v3": "turn-on-off-multiple-sf.myshopbase.net"
+          },
+          "expect": {
+            "snapshot_theme_v2": "45-theme-v2-dev.png",
+            "snapshot_theme_v3": "45-theme-v3-dev.png"
+          }
+        },
+        "SB_NEWECOM_MSF_MSFL_66": {
+          "data": {
+            "theme_v3": {
+              "shop_name": "turn-on-off-multiple-sf"
+            }
+          },
+          "expect": {
+            "shop_name_v3": "turn-on-off-multiple-sf",
+            "snapshot_theme_v3": "66-sidebar-theme-v3-dev.png"
+          }
+        }
+      }
+    },
+    "prodtest": {
+      "domain": "on-off-multiple-sf-prodtest.onshopbase.com",
+      "shop_name": "on-off-multiple-sf-prodtest",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10454359,
+      "user_id": 11260206,
+      "cases": {
+        "SB_NEWECOM_MSF_MSFL_45": {
+          "data": {
+            "domain_theme_v2": "multiple-store-theme-v2-prodtest.onshopbase.com",
+            "domain_theme_v3": "on-off-multiple-sf-prodtest.onshopbase.com"
+          },
+          "expect": {
+            "snapshot_theme_v2": "45-theme-v2-prodtest.png",
+            "snapshot_theme_v3": "45-theme-v3-prodtest.png"
+          }
+        },
+        "SB_NEWECOM_MSF_MSFL_66": {
+          "expect": {
+            "shop_name_v2": "multiple-store-theme-v2-prodtest",
+            "shop_name_v3": "on-off-multiple-sf-prodtest"
+          }
+        }
+      }
+    },
+    "prod": {
+      "domain": "on-off-multiple-sf.onshopbase.com",
+      "shop_name": "on-off-multiple-sf",
+      "api": "https://api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10454362,
+      "user_id": 11260206
+    }
+  },
+  "cases": {
+    "SB_NEWECOM_MSF_MSFL_44": {
+      "expect": {
+        "url_link_document": "/admin/themes#",
+        "snapshot_popup_confirm": "44-popup-confirm-enable.png",
+        "snapshot_menu": "44-menu-sidebar.png",
+        "button_text_enable": "Enable multiple storefronts",
+        "button_text_disable": "Disable multiple storefronts",
+        "heading": "Enable multiple storefronts"
+      }
+    },
+    "SB_NEWECOM_MSF_MSFL_45": {
+      "data": {
+        "domain_theme_v2": "multiple-store-theme-v2.onshopbase.com",
+        "domain_theme_v3": "on-off-multiple-sf.onshopbase.com"
+      },
+      "expect": {
+        "status": " active ",
+        "snapshot_menu": "45-menu-sidebar.png",
+        "snapshot_theme_v2": "45-theme-v2.png",
+        "snapshot_theme_v3": "45-theme-v3.png"
+      }
+    },
+    "SB_NEWECOM_MSF_MSFL_66": {
+      "data": {
+        "theme_v2": {
+          "shop_name": "multiple-store-theme-v2",
+          "action": "Settings"
+        },
+        "theme_v3": {
+          "shop_name": "on-off-multiple-sf",
+          "action": "Settings"
+        }
+      },
+      "expect": {
+        "shop_name_v2": "multiple-store-theme-v2",
+        "shop_name_v3": "on-off-multiple-sf",
+        "snapshot_theme_v2": "66-sidebar-theme-v2.png",
+        "snapshot_theme_v3": "66-sidebar-theme-v3.png"
+      }
+    }
+  }
+}

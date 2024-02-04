@@ -1,0 +1,189 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-createcamp-plb.onshopbase.com",
+      "shop_name": "au-createcamp-plb",
+      "username": "shopbase4@beeketing.net",
+      "password": "H7mQdQ]Zj]%[Nm?",
+      "user_id": 207114,
+      "shop_id": 10379787
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-createcamp-plb-prodtest.onshopbase.com",
+      "shop_name": "au-createcamp-plb-prodtest",
+      "username": "shopbase4@beeketing.net",
+      "password": "H7mQdQ]Zj]%[Nm?",
+      "user_id": 207114,
+      "shop_id": 10379790,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-createcamp-plb-dev.myshopbase.net",
+      "username": "shopbase4@beeketing.net",
+      "password": "H7mQdQ]Zj]%[Nm?",
+      "shop_name": "au-createcamp-plb-dev",
+      "user_id": 89321,
+      "shop_id": 10322970
+    }
+  },
+  "cases": {
+    "SB_PLB_PODPL_CAM_1": {
+      "product_info": {
+        "category": "All Over Print",
+        "base_product": "Baseball Jersey"
+      },
+      "layers": [
+        {
+          "layer_type": "Text",
+          "layer_value": "Test value",
+          "location_layer_x": "1900",
+          "location_layer_y": "7460",
+          "layer_size_h": "771",
+          "layer_size_w": "2776"
+        }
+      ],
+      "pricing_info": {
+        "title": "Campaign 3D no custom option",
+        "description": "Description Campaign 3D no custom option"
+      },
+      "variant": ["S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+      "price": "$25.29",
+      "campaign_handle": "campaign-3d-no-custom-option"
+    },
+    "SB_PLB_PODPL_CAM_2": {
+      "product_info": {
+        "category": "Home & Living",
+        "base_product": "Sherpa Blanket",
+        "title": "Campaign_personalize"
+      },
+      "layers": [
+        {
+          "layer_type": "Text",
+          "layer_value": "Text 1",
+          "location_layer_x": "322",
+          "location_layer_y": "474"
+        },
+        {
+          "layer_type": "Text",
+          "layer_value": "Text 2",
+          "location_layer_x": "2187",
+          "location_layer_y": "973"
+        },
+        {
+          "layer_type": "Text",
+          "layer_value": "Text 3",
+          "location_layer_x": "171",
+          "location_layer_y": "1223"
+        },
+        {
+          "layer_type": "Image",
+          "image_name": "04.png",
+          "location_layer_x": "110",
+          "location_layer_y": "3135",
+          "layer_size_h": "1805",
+          "layer_size_w": "1449"
+        }
+      ],
+      "custom_options": [
+        {
+          "type": "Text field",
+          "target_layer": "Text layer 1",
+          "label": "Test Text field",
+          "position": "below"
+        },
+        {
+          "type": "Text area",
+          "target_layer": "Text layer 1",
+          "label": "Test Text area",
+          "position": "below"
+        },
+        {
+          "type": "Image",
+          "label": "Image",
+          "target_layer": "04",
+          "position": "below"
+        },
+        {
+          "type": "Picture choice",
+          "label": "Picture choice",
+          "target_layer": "04",
+          "type_clipart": "Folder",
+          "value_clipart": "Clipart1",
+          "type_display_clipart": "Show with Thumbnail images",
+          "position": "below"
+        },
+        {
+          "type": "Radio",
+          "value": "Text test 1>Text test 2",
+          "target_layer": "Text layer 1",
+          "label": "Test radio",
+          "position": "below"
+        },
+        {
+          "type": "Droplist",
+          "value": "Text test 1>Text test 2",
+          "target_layer": "Text layer 2",
+          "label": "Test Droplist",
+          "position": "below"
+        },
+        {
+          "type": "Checkbox",
+          "value": "Text test 1>Text test 2",
+          "target_layer": "Text layer 1",
+          "label": "Test checkbox"
+        }
+      ],
+      "custom_option_info": [
+        {
+          "type": "Text field",
+          "value": "Happy Days",
+          "custom_name": "Test Text field"
+        },
+        {
+          "type": "Text area",
+          "value": "OCG",
+          "custom_name": "Test Text area"
+        },
+        {
+          "type": "Image",
+          "value": "BD_10.png",
+          "custom_name": "Image"
+        },
+        {
+          "type": "Picture choice",
+          "value": "dinosaur-cute-kids-baby-dino-scandinavian-style-little-dinos-vector-illustration-doodle-funny-animals-design-childish-textile-214477028",
+          "custom_name": "Picture choice"
+        },
+        {
+          "type": "Radio",
+          "value": "Text test 1",
+          "custom_name": "Test radio"
+        },
+        {
+          "type": "Droplist",
+          "value": "Text test 1",
+          "custom_name": "Test Droplist"
+        },
+        {
+          "type": "Checkbox",
+          "value": "check",
+          "custom_name": "Test checkbox"
+        }
+      ],
+      "pricing_info": {
+        "title": "Campaign_personalize",
+        "description": "Description Campaign personalize"
+      },
+      "campaign_handle": "campaign-personalize"
+    },
+    "SB_PLB_PODPL_CAM_3": {
+      "base_product_name": "AOP Beach Shorts"
+    }
+  },
+  "param_threshold": 0.1,
+
+  "time_out": 1000000
+}

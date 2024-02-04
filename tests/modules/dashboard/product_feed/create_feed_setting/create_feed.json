@@ -1,0 +1,552 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "shop_name": "au-feed-connect-domain",
+      "domain": "au-feed-connect-domain.onshopbase.com",
+      "user_id": 74303,
+      "shop_id": 10480061,
+      "username": "shopbase2@beeketing.net",
+      "password": "raMse).7L/b4;k#@",
+      "snake_case": "create-feed.sbprod.tk",
+      "arr_sale_channels": ["Klaviyo", "TikTok", "Others", "Google"],
+      "cases": {
+        "SB_MAR_SALES_SC_Feed_GMC_CR_SET_FEED_V2_23": {
+          "filter_variant": [
+            {
+              "field": "Original ID",
+              "value_textbox": "1000011203540140"
+            }
+          ],
+          "variant_info": {
+            "variant_id": 1000011203540140,
+            "title": "3D Print Hoodie test seo title 3XL Sherpa Hoodie",
+            "description": "\ntest seo description",
+            "product_identifier": "custom_product",
+            "brand": "NS",
+            "google_product_category": "Apparel & Accessories",
+            "gender": "unisex",
+            "age_group": "adult"
+          }
+        }
+      }
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-feed-connect-domain-prodtest.onshopbase.com",
+      "shop_name": "au-feed-connect-domain-prodtest",
+      "user_id": 74303,
+      "shop_id": 10480060,
+      "username": "shopbase2@beeketing.net",
+      "password": "raMse).7L/b4;k#@",
+      "snake_case": "create-feed.ngochd7.website",
+      "arr_sale_channels": ["Klaviyo", "TikTok", "Others", "Google"],
+      "accounts_domain": "accounts-test.shopbase.com",
+      "cases": {
+        "SB_MAR_SALES_SC_Feed_GMC_CR_SET_FEED_V2_23": {
+          "filter_variant": [
+            {
+              "field": "Original ID",
+              "value_textbox": "1000011203538521"
+            }
+          ],
+          "variant_info": {
+            "variant_id": 1000011203538521,
+            "title": "3D Print Hoodie test seo title 3XL Sherpa Hoodie",
+            "description": "\ntest seo description",
+            "product_identifier": "custom_product",
+            "brand": "NS",
+            "google_product_category": "Apparel & Accessories",
+            "gender": "unisex",
+            "age_group": "adult"
+          }
+        }
+      }
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-create-feed-sbase.myshopbase.net",
+      "shop_name": "au-create-feed-sbase",
+      "user_id": 90243,
+      "shop_id": 10333661,
+      "username": "acon-qe-1@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "snake_case": "feedsetting-connectgmc.sbdev.tk",
+      "arr_sale_channels": ["Klaviyo test", "TikTok", "Others", "Google"],
+      "cases": {
+        "SB_MAR_SALES_SC_Feed_GMC_CR_SET_FEED_V2_23": {
+          "filter_variant": [
+            {
+              "field": "Original ID",
+              "value_textbox": "1000001779051463"
+            }
+          ],
+          "variant_info": {
+            "variant_id": 1000001779051463,
+            "title": "3D Print Hoodie test seo title 3XL Sherpa Hoodie",
+            "description": "\ntest seo description",
+            "product_identifier": "custom_product",
+            "brand": "NS",
+            "google_product_category": "Apparel & Accessories",
+            "gender": "unisex",
+            "age_group": "adult"
+          }
+        }
+      }
+    }
+  },
+  "cases": {
+    "SB_MAR_SALES_SC_Feed_GMC_CR_SET_FEED_V2_6": {
+      "primary_domain": "connect",
+      "variant_info": {
+        "title": "3D Print Full Sherpa Hoodie - Israel"
+      },
+      "feed_info": [
+        {
+          "name": "Feed API except SKU contains NS-LM",
+          "feed_type": "all_products",
+          "export_mode": "all_variation",
+          "export_lable": "Exclude the variations matching",
+          "export_rules": {
+            "field": "sku",
+            "relation": "contains",
+            "value": ["NS-LM"]
+          },
+          "sales_channel": "Google",
+          "add_variant_option_to_title": 0,
+          "product_title_mode": "default_title",
+          "product_description_mode": "default_description",
+          "brand": "Super testing man",
+          "google_product_category": "Apparel & Accessories",
+          "gender": "unisex",
+          "age_group": "adult"
+        }
+      ],
+      "type": "exclude",
+      "filter_feed": [
+        {
+          "field": "MPN (SKU)",
+          "radio": "Contains"
+        },
+        {
+          "field": "MPN (SKU)",
+          "value_textbox": "NS-LM"
+        }
+      ]
+    },
+    "SB_MAR_SALES_SC_Feed_GMC_CR_SET_FEED_V2_7": {
+      "primary_domain": "connect",
+      "feed_info": [
+        {
+          "name": "Feed API except SKU start with NS",
+          "feed_type": "all_products",
+          "export_mode": "all_variation",
+          "export_lable": "Exclude the variations matching",
+          "export_rules": {
+            "field": "sku",
+            "relation": "starts_with",
+            "value": ["NS"]
+          },
+          "sales_channel": "Google",
+          "add_variant_option_to_title": 0,
+          "product_title_mode": "default_title",
+          "product_description_mode": "default_description",
+          "brand": "Super testing man",
+          "google_product_category": "Apparel & Accessories",
+          "gender": "unisex",
+          "age_group": "adult"
+        }
+      ],
+      "type": "exclude",
+      "condition": "start with",
+      "filter_feed": [
+        {
+          "field": "MPN (SKU)",
+          "radio": "Contains"
+        },
+        {
+          "field": "MPN (SKU)",
+          "value_textbox": "NS"
+        }
+      ]
+    },
+    "SB_MAR_SALES_SC_Feed_GMC_CR_SET_FEED_V2_8": {
+      "primary_domain": "connect",
+      "feed_info": [
+        {
+          "name": "Feed API except SKU end with 163",
+          "feed_type": "all_products",
+          "export_mode": "all_variation",
+          "export_lable": "Exclude the variations matching",
+          "export_rules": {
+            "field": "sku",
+            "relation": "ends_with",
+            "value": ["163"]
+          },
+          "sales_channel": "Google",
+          "add_variant_option_to_title": 0,
+          "product_title_mode": "default_title",
+          "product_description_mode": "default_description",
+          "brand": "Super testing man",
+          "google_product_category": "Apparel & Accessories",
+          "gender": "unisex",
+          "age_group": "adult"
+        }
+      ],
+      "type": "exclude",
+      "condition": "end with",
+      "filter_feed": [
+        {
+          "field": "MPN (SKU)",
+          "radio": "Contains"
+        },
+        {
+          "field": "MPN (SKU)",
+          "value_textbox": "163"
+        }
+      ]
+    },
+    "SB_MAR_SALES_SC_Feed_GMC_CR_SET_FEED_V2_9": {
+      "primary_domain": "connect",
+      "feed_info": [
+        {
+          "name": "Feed API except SKU is equal to NS-LM",
+          "feed_type": "all_products",
+          "export_mode": "all_variation",
+          "export_lable": "Exclude the variations matching",
+          "export_rules": {
+            "field": "sku",
+            "relation": "equals",
+            "value": ["ql-bl166"]
+          },
+          "sales_channel": "Google",
+          "add_variant_option_to_title": 0,
+          "product_title_mode": "default_title",
+          "product_description_mode": "default_description",
+          "brand": "Super testing man",
+          "google_product_category": "Apparel & Accessories",
+          "gender": "unisex",
+          "age_group": "adult"
+        }
+      ],
+      "type": "exclude",
+      "condition": "equal",
+      "filter_feed": [
+        {
+          "field": "MPN (SKU)",
+          "radio": "Contains"
+        },
+        {
+          "field": "MPN (SKU)",
+          "value_textbox": "ql-bl166"
+        }
+      ]
+    },
+    "SB_MAR_SALES_SC_Feed_GMC_CR_SET_FEED_V2_11": {
+      "primary_domain": "connect",
+      "feed_info": [
+        {
+          "name": "Feed API export all variants of a product",
+          "feed_type": "all_products",
+          "export_mode": "all_variation",
+          "export_lable": "Exclude the variations matching",
+          "sales_channel": "Google",
+          "add_variant_option_to_title": 0,
+          "product_title_mode": "default_title",
+          "product_description_mode": "default_description",
+          "brand": "Super testing man",
+          "google_product_category": "Apparel & Accessories",
+          "gender": "unisex",
+          "age_group": "adult"
+        }
+      ]
+    },
+    "SB_MAR_SALES_SC_Feed_GMC_CR_SET_FEED_V2_23": {
+      "primary_domain": "connect",
+      "feed_info": [
+        {
+          "name": "Feed API test",
+          "feed_type": "collections",
+          "collections_name": ["Auto collection feed"],
+          "export_mode": "all_variation",
+          "export_lable": "Exclude the variations matching",
+          "export_rules": {
+            "field": "sku",
+            "relation": "contains",
+            "value": ["NS-LM"]
+          },
+          "sales_channel": "Google",
+          "add_variant_option_to_title": "1",
+          "product_title_mode": "seo_title",
+          "product_description_mode": "seo_description",
+          "is_custom_products": true,
+          "brand": "Super testing man",
+          "google_product_category": "Apparel & Accessories",
+          "gender": "unisex",
+          "age_group": "adult"
+        }
+      ],
+      "type": "exclude",
+      "filter_feed": [
+        {
+          "field": "Collection",
+          "input_then_select_array": [
+            {
+              "input_then_select": "Auto collection feed 2"
+            }
+          ]
+        }
+      ],
+      "title_prod_search": "Product not set collection"
+    },
+    "SB_MAR_SALES_SC_Feed_GMC_CR_SET_FEED_V2_22": {
+      "primary_domain": "connect",
+      "feed_info": [
+        {
+          "name": "Feed API - multi SKU matching contain",
+          "feed_type": "all_products",
+          "export_mode": "variation_with_rule",
+          "export_lable": "Export only variations of a product matching",
+          "export_rules": {
+            "field": "sku",
+            "relation": "contains",
+            "value": ["NS-LM", "DT-BL"]
+          },
+          "sales_channel": "Google",
+          "add_variant_option_to_title": "1",
+          "product_title_mode": "seo_title",
+          "product_description_mode": "seo_description",
+          "is_custom_products": true,
+          "brand": "Super testing man",
+          "google_product_category": "Apparel & Accessories",
+          "gender": "unisex",
+          "age_group": "adult"
+        }
+      ],
+      "type": "include",
+      "filter_feed": [
+        {
+          "field": "MPN (SKU)",
+          "radio": "Contains"
+        },
+        {
+          "field": "MPN (SKU)",
+          "value_textbox": "NS-DD216"
+        }
+      ]
+    },
+    "SB_MAR_SALES_SC_Feed_GMC_CR_SET_FEED_V2_21": {
+      "primary_domain": "connect",
+      "feed_info": [
+        {
+          "name": "Feed API - multi SKU matching contain",
+          "feed_type": "all_products",
+          "export_mode": "all_variation",
+          "export_lable": "Exclude the variations matching",
+          "export_rules": {
+            "field": "sku",
+            "relation": "contains",
+            "value": ["NS-LM", "DT-BL"]
+          },
+          "sales_channel": "Google",
+          "add_variant_option_to_title": "1",
+          "product_title_mode": "seo_title",
+          "product_description_mode": "seo_description",
+          "is_custom_products": true,
+          "brand": "Super testing man",
+          "google_product_category": "Apparel & Accessories",
+          "gender": "unisex",
+          "age_group": "adult"
+        }
+      ],
+      "type": "exclude",
+      "filter_feed": [
+        {
+          "field": "MPN (SKU)",
+          "radio": "Contains"
+        },
+        {
+          "field": "MPN (SKU)",
+          "value_textbox": "NS-LM"
+        }
+      ]
+    },
+    "SB_SET_SC_Feed_GMC_CR_SET_FEED_33": {
+      "primary_domain": "connect",
+      "feed_info": [
+        {
+          "name": "Feed API - SKU matching contain",
+          "feed_type": "all_products",
+          "export_mode": "variation_with_rule",
+          "export_lable": "Export only variations of a product matching",
+          "export_rules": {
+            "field": "sku",
+            "relation": "contains",
+            "value": ["NS-LM"]
+          },
+          "sales_channel": "Google",
+          "add_variant_option_to_title": 0,
+          "product_title_mode": "default_title",
+          "product_description_mode": "default_description",
+          "brand": "Super testing man",
+          "google_product_category": "Apparel & Accessories",
+          "gender": "unisex",
+          "age_group": "adult"
+        }
+      ],
+      "type": "include",
+      "filter_feed": [
+        {
+          "field": "MPN (SKU)",
+          "radio": "Contains"
+        },
+        {
+          "field": "MPN (SKU)",
+          "value_textbox": "DT-BL"
+        }
+      ]
+    },
+    "SB_SET_SC_Feed_GMC_CR_SET_FEED_32": {
+      "product_all_info": {
+        "title": "Auto test first_variation_option_product",
+        "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+        "image_name": "Logo1.jpg",
+        "vendor": "Uniqlo",
+        "price": "10",
+        "compare_at_price": "20",
+        "option_name_1": "Size",
+        "option_values_1": "S, M, L,",
+        "option_name_2": "Style",
+        "option_values_2": "Men, Women,"
+      },
+      "primary_domain": "connect",
+      "feed_info": [
+        {
+          "name": "Feed API - Export only first variation of each value in the first option of a product",
+          "feed_type": "all_products",
+          "export_mode": "first_variation_option_product",
+          "sales_channel": "Google",
+          "add_variant_option_to_title": 0,
+          "product_title_mode": "default_title",
+          "product_description_mode": "default_description",
+          "brand": "Super testing man",
+          "google_product_category": "Apparel & Accessories",
+          "gender": "unisex",
+          "age_group": "adult"
+        }
+      ],
+      "product_title_search": "Auto test first_variation_option_product"
+    },
+    "SB_SET_SC_Feed_GMC_CR_SET_FEED_31": {
+      "product_all_info": {
+        "title": "Auto test first_variation",
+        "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+        "image_name": "Logo1.jpg",
+        "vendor": "Uniqlo",
+        "price": "10",
+        "compare_at_price": "20",
+        "option_name_1": "Size",
+        "option_values_1": "S, M, L,"
+      },
+      "primary_domain": "connect",
+      "feed_info": [
+        {
+          "name": "Feed API - Export only first variation of a product",
+          "feed_type": "all_products",
+          "export_mode": "first_variation",
+          "sales_channel": "Google",
+          "add_variant_option_to_title": 0,
+          "product_title_mode": "default_title",
+          "product_description_mode": "default_description",
+          "brand": "Super testing man",
+          "google_product_category": "Apparel & Accessories",
+          "gender": "unisex",
+          "age_group": "adult"
+        }
+      ],
+      "product_title_search": "Auto test first_variation_option_product"
+    },
+    "EXCLUDE_OPTION_VALUE": {
+      "data": [
+        {
+          "case_id": "SB_SET_SC_Feed_GMC_CR_SET_FEED_27",
+          "description": "Check feed API với điều kiện All products kết hợp với điều kiện Export all variants + Exclude the variations matching Product option value ends with với những ký tự cuối thỏa mãn",
+          "primary_domain": "connect",
+          "feed_info": [
+            {
+              "name": "Feed API - product option value end with",
+              "feed_type": "all_products",
+              "export_mode": "all_variation",
+              "export_lable": "Exclude the variations matching",
+              "export_rules": {
+                "field": "option_value",
+                "relation": "ends_with",
+                "value": ["L"]
+              },
+              "sales_channel": "Google",
+              "add_variant_option_to_title": "1",
+              "product_title_mode": "default_title",
+              "product_description_mode": "default_description",
+              "is_custom_products": true,
+              "brand": "Super testing man",
+              "google_product_category": "Apparel & Accessories",
+              "gender": "unisex",
+              "age_group": "adult"
+            }
+          ],
+          "type": "exclude",
+          "condition": "end with",
+          "filter_feed": [
+            {
+              "field": "Size",
+              "radio": "Contains"
+            },
+            {
+              "field": "Size",
+              "value_textbox": "L"
+            }
+          ]
+        },
+        {
+          "case_id": "SB_SET_SC_Feed_GMC_CR_SET_FEED_23",
+          "description": "Check feed API với điều kiện All products kết hợp với điều kiện Export all variants + Exclude the variations matching Product option value contains thỏa mãn",
+          "primary_domain": "connect",
+          "feed_info": [
+            {
+              "name": "Feed API - product option value end with",
+              "feed_type": "all_products",
+              "export_mode": "all_variation",
+              "export_lable": "Exclude the variations matching",
+              "export_rules": {
+                "field": "option_value",
+                "relation": "contains",
+                "value": ["L"]
+              },
+              "sales_channel": "Google",
+              "add_variant_option_to_title": "1",
+              "product_title_mode": "default_title",
+              "product_description_mode": "default_description",
+              "is_custom_products": true,
+              "brand": "Super testing man",
+              "google_product_category": "Apparel & Accessories",
+              "gender": "unisex",
+              "age_group": "adult"
+            }
+          ],
+          "type": "exclude",
+          "condition": null,
+          "filter_feed": [
+            {
+              "field": "Size",
+              "radio": "Contains"
+            },
+            {
+              "field": "Size",
+              "value_textbox": "L"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

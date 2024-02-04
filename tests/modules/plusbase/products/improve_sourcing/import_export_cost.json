@@ -1,0 +1,431 @@
+{
+  "env": {
+    "prod": {
+      "odoo_host": "https://autotest-erp-plus.shopbase.dev",
+      "odoo_db": "shopbase_fulfillment",
+      "odoo_username": "qaocg",
+      "odoo_password": "LFmy=qGLvwW^E63b",
+      "api": "api.shopbase.com",
+      "time_out": 500000,
+      "raw_import_file_src": "./data/plusbase/product/prod_odoo_import_cost.csv",
+      "cases": {
+        "SB_SBFF_IS_14": {
+          "product_template_id": 1814490
+        },
+        "SB_SBFF_IS_15": {
+          "product_template_id": 1814490
+        },
+        "SB_SBFF_IS_16": {
+          "product_template_id": 1814490
+        },
+        "SB_SBFF_IS_17": {
+          "product_template_id": 1814490,
+          "sub_cases": [
+            {
+              "update_csv_data": [
+                {
+                  "column": "product_id",
+                  "row_no": 0,
+                  "value": 1111111
+                }
+              ],
+              "error_message": "ERROR: Invalid product_id (line: 2)"
+            },
+            {
+              "update_csv_data": [
+                {
+                  "column": "product_cost_rmb",
+                  "row_no": 1,
+                  "value": 80
+                },
+                {
+                  "column": "variant_id",
+                  "row_no": 2,
+                  "value": 1111111
+                }
+              ],
+              "verify_variant_cost": [
+                {
+                  "variant_id": 21158059,
+                  "fields": [
+                    {
+                      "name": "product_cost_rmb",
+                      "value": 120
+                    }
+                  ]
+                }
+              ],
+              "error_message": "ERROR: Invalid variant_id (line: 4)"
+            },
+            {
+              "update_csv_data": [
+                {
+                  "column": "product_cost_rmb",
+                  "row_no": 1,
+                  "value": 80
+                },
+                {
+                  "column": "product_cost_rmb",
+                  "row_no": 2,
+                  "value": "Test"
+                }
+              ],
+              "verify_variant_cost": [
+                {
+                  "variant_id": 21158059,
+                  "fields": [
+                    {
+                      "name": "product_cost_rmb",
+                      "value": 120
+                    }
+                  ]
+                }
+              ],
+              "error_message": "ERROR: Invalid input product_cost_rmb (line: 4)"
+            }
+          ]
+        },
+        "SB_SBFF_IS_18": {
+          "product_template_id": 1814490,
+          "shop_id": 10423462,
+          "sb_country_id": 231,
+          "verify_variant_cost": [
+            {
+              "variant_id": 21158059,
+              "fields": [
+                {
+                  "name": "product_cost_rmb",
+                  "value": 120
+                },
+                {
+                  "name": "shipping_cost_rmb",
+                  "value": 90
+                },
+                {
+                  "name": "package_weight",
+                  "value": 0.3
+                },
+                {
+                  "name": "height",
+                  "value": 25
+                },
+                {
+                  "name": "width",
+                  "value": 25
+                },
+                {
+                  "name": "length",
+                  "value": 28
+                },
+                {
+                  "name": "variant_weight",
+                  "value": 0.2
+                },
+                {
+                  "name": "volume"
+                },
+                {
+                  "name": "x_variant_weight"
+                },
+                {
+                  "name": "dom_shipping_fee"
+                },
+                {
+                  "name": "product_profit"
+                },
+                {
+                  "name": "product_cost"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "dev": {
+      "odoo_host": "https://odoo.dev.shopbase.net/",
+      "odoo_db": "sbase_fulfillment_dev",
+      "odoo_username": "admin",
+      "odoo_password": "admin",
+      "api": "gapi.dev.shopbase.net",
+      "time_out": 500000,
+      "raw_import_file_src": "./data/plusbase/product/dev_odoo_import_cost.csv",
+      "cases": {
+        "SB_SBFF_IS_14": {
+          "product_template_id": 1154868
+        },
+        "SB_SBFF_IS_15": {
+          "product_template_id": 1154868
+        },
+        "SB_SBFF_IS_16": {
+          "product_template_id": 1154868
+        },
+        "SB_SBFF_IS_17": {
+          "product_template_id": 1154868,
+          "data_imports": [
+            {
+              "step_name": "Chọn File import có field Product ID không đúng",
+              "update_csv_data": [
+                {
+                  "column": "product_id",
+                  "row_no": 0,
+                  "value": 1111111
+                }
+              ],
+              "error_message": "ERROR: Invalid product_id (line: 2)"
+            },
+            {
+              "step_name": "Chọn File import có field Variant ID không đúng File template",
+              "update_csv_data": [
+                {
+                  "column": "product_cost_rmb",
+                  "row_no": 1,
+                  "value": 80
+                },
+                {
+                  "column": "variant_id",
+                  "row_no": 2,
+                  "value": 1111111
+                }
+              ],
+              "verify_variant_cost": [
+                {
+                  "variant_id": 1259367,
+                  "fields": [
+                    {
+                      "name": "product_cost_rmb",
+                      "value": 120
+                    }
+                  ]
+                }
+              ],
+              "error_message": "ERROR: Invalid variant_id (line: 4)"
+            },
+            {
+              "step_name": "Chọn File import có line data đúng và không đúng > Verify các line có data đúng đúng với login tính toán",
+              "update_csv_data": [
+                {
+                  "column": "product_cost_rmb",
+                  "row_no": 1,
+                  "value": 80
+                },
+                {
+                  "column": "product_cost_rmb",
+                  "row_no": 2,
+                  "value": "Test"
+                }
+              ],
+              "verify_variant_cost": [
+                {
+                  "variant_id": 1259367,
+                  "fields": [
+                    {
+                      "name": "product_cost_rmb",
+                      "value": 120
+                    }
+                  ]
+                }
+              ],
+              "error_message": "ERROR: Invalid input product_cost_rmb (line: 4)"
+            }
+          ]
+        },
+        "SB_SBFF_IS_18": {
+          "product_template_id": 1154868,
+          "shop_id": 10326565,
+          "sb_country_id": 231,
+          "verify_variant_cost": [
+            {
+              "variant_id": 1259367,
+              "fields": [
+                {
+                  "name": "product_cost_rmb",
+                  "value": 120
+                },
+                {
+                  "name": "shipping_cost_rmb",
+                  "value": 90
+                },
+                {
+                  "name": "package_weight",
+                  "value": 0.3
+                },
+                {
+                  "name": "height",
+                  "value": 25
+                },
+                {
+                  "name": "width",
+                  "value": 25
+                },
+                {
+                  "name": "length",
+                  "value": 28
+                },
+                {
+                  "name": "variant_weight",
+                  "value": 0.2
+                },
+                {
+                  "name": "volume"
+                },
+                {
+                  "name": "x_variant_weight"
+                },
+                {
+                  "name": "dom_shipping_fee"
+                },
+                {
+                  "name": "product_profit"
+                },
+                {
+                  "name": "product_cost"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "prodtest": {
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://prod-test-api.shopbase.com"
+    }
+  },
+  "cases": {
+    "SB_SBFF_IS_14": {
+      "data_imports": [
+        {
+          "type": ".doc /.docx",
+          "import_file_src": "./data/plusbase/product/odoo_import_cost.docx",
+          "import_file_name": "odoo_import_cost.docx",
+          "error_message": "ERROR: Invalid file format. Please import a XLSX file."
+        },
+        {
+          "type": ".txt",
+          "import_file_src": "./data/plusbase/product/odoo_import_cost.txt",
+          "import_file_name": "odoo_import_cost.txt",
+          "error_message": "ERROR: Invalid file format. Please import a XLSX file."
+        },
+        {
+          "type": ".xlsx",
+          "import_file_src": "./data/plusbase/product/odoo_import_cost.csv",
+          "import_file_name": "odoo_import_cost.csv",
+          "error_message": "ERROR: Invalid file format. Please import a XLSX file."
+        }
+      ]
+    },
+    "SB_SBFF_IS_15": {
+      "import_file_src": "./data/plusbase/product/odoo_import_cost.xlsx",
+      "import_file_name": "odoo_import_cost.xlsx",
+      "data_imports": [
+        {
+          "empty_field": "product id",
+          "update_csv_data": [
+            {
+              "column": "product_id",
+              "row_no": 0,
+              "value": ""
+            }
+          ],
+          "error_message": "ERROR: Missing product_id (line: 2)"
+        },
+        {
+          "empty_field": "variant id",
+          "update_csv_data": [
+            {
+              "column": "variant_id",
+              "row_no": 1,
+              "value": ""
+            }
+          ],
+          "error_message": "ERROR: Missing variant_id (line: 3)"
+        },
+        {
+          "empty_field": "shipping type id",
+          "update_csv_data": [
+            {
+              "column": "shipping_type_id",
+              "row_no": 0,
+              "value": ""
+            }
+          ],
+          "error_message": ""
+        },
+        {
+          "empty_field": "warehouse id",
+          "update_csv_data": [
+            {
+              "column": "warehouse_id",
+              "row_no": 0,
+              "value": ""
+            }
+          ],
+          "error_message": ""
+        }
+      ]
+    },
+    "SB_SBFF_IS_16": {
+      "import_file_src": "./data/plusbase/product/odoo_import_cost.csv",
+      "import_file_name": "odoo_import_cost.csv",
+      "data_imports": [
+        {
+          "field": "product id",
+          "update_csv_data": [
+            {
+              "column": "product_id",
+              "row_no": 0,
+              "value": "Test"
+            }
+          ],
+          "error_message": "ERROR: Invalid input product_id (line: 2)"
+        },
+        {
+          "field": "variant id",
+          "update_csv_data": [
+            {
+              "column": "variant_id",
+              "row_no": 1,
+              "value": "Test"
+            }
+          ],
+          "error_message": "ERROR: Invalid input variant_id (line: 3)"
+        },
+        {
+          "field": "product cost rmb",
+          "update_csv_data": [
+            {
+              "column": "product_cost_rmb",
+              "row_no": 1,
+              "value": "Test"
+            }
+          ],
+          "error_message": "ERROR: Invalid input product_cost_rmb (line: 3)"
+        }
+      ]
+    },
+    "SB_SBFF_IS_17": {
+      "import_file_src": "./data/plusbase/product/odoo_import_cost.csv",
+      "import_file_name": "odoo_import_cost.csv",
+      "query_fields": ["product_cost_rmb"]
+    },
+    "SB_SBFF_IS_18": {
+      "import_file_src": "./data/plusbase/product/odoo_import_cost.csv",
+      "import_file_name": "odoo_import_cost.csv",
+      "query_fields": [
+        "product_cost_rmb",
+        "shipping_cost_rmb",
+        "package_weight",
+        "variant_weight",
+        "height",
+        "width",
+        "length",
+        "volume",
+        "x_variant_weight",
+        "dom_shipping_fee",
+        "product_profit",
+        "product_cost"
+      ]
+    }
+  }
+}

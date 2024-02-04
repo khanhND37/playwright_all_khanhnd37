@@ -1,0 +1,792 @@
+{
+  "api": "https://api.shopbase.com",
+  "domain": "auto-prod-checkout-social-id.onshopbase.com",
+  "shop_name": "auto-prod-checkout-social-id",
+  "user_id": 74303,
+  "shop_id": 10442041,
+  "username": "shopbase2@beeketing.net",
+  "password": "raMse).7L/b4;k#@",
+  "time_out": 300000,
+  "paypal_account": {
+    "username": "buyer@shopbase.com",
+    "password": "2XfWH9Ae",
+    "id": "Aeh4GpfSwN1xsoUBCqs85cjE95HEyuij_ePjpHG060nZ6hExulKGjNHcflZkzMFutnEpiLr1pS76PUBC",
+    "secret_key": "EPvncdTSFu_ia2oUpwtnHwjqENKcpOWrvhOEr8GGuj8YBn9MH5_Wr808nWUyXpu1zcKRjnqU04OQ3T4Y"
+  },
+  "shipping_address": {
+    "address1": "1600 W Loop S",
+    "address2": "",
+    "city": "Los Angeles",
+    "company": "",
+    "country": "United Kingdom",
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "cpf_or_cnpj_number": "",
+    "first_name": "Shopbase",
+    "last_name": "Auto",
+    "name": "Jena",
+    "phone": "505-646-2276",
+    "province": "",
+    "province_code": "",
+    "zip": "90001",
+    "remember_me": false
+  },
+
+  "cases": {
+    "CHECKOUT_SOCIAL_ID_WITH_PAYPAL": [
+      {
+        "case_id": "SB_CHE_CB_Jul23_05",
+        "case_name": "[Social ID_SB]Kiểm tra info address khi checkout với country Brazil bằng cổng Paypal và edit social ID trong order detail",
+        "checkout_label": "multi-step",
+        "products_checkout": [
+          {
+            "name": "Bikini",
+            "variant_id": 1000010725983284,
+            "quantity": 2
+          }
+        ],
+        "email": "testerOCG@maildrop.cc",
+        "billing_address": {
+          "first_name": "Shopbase",
+          "last_name": "Auto",
+          "address": "1600 W Loop S",
+          "country": "Brazil",
+          "state": "Acre",
+          "city": "Schenectady",
+          "zipcode": "12301",
+          "phone_number": "505-646-2276",
+          "social_id": ""
+        },
+        "list_data": {
+          "blank_social_id_shipping_3_steps": {
+            "shipping_info": {
+              "country": "Brazil",
+              "state": "Acre",
+              "city": "Schenectady",
+              "zipcode": "12301",
+              "social_id": ""
+            },
+            "message": "Please enter a CPF/CNPJ number"
+          },
+          "Fill_social_id_shipping_3_steps": {
+            "shipping_info": {
+              "social_id": "231.002.999-00"
+            },
+            "message": ""
+          },
+          "blank_social_id_billing_3_steps": {
+            "billing_info": {
+              "social_id": ""
+            },
+            "message": "Please enter a CPF/CNPJ number"
+          },
+          "Fill_social_id_billing_3_steps": {
+            "billing_info": {
+              "first_name": "Shopbase",
+              "last_name": "Auto",
+              "address": "1600 W Loop S",
+              "country": "Brazil",
+              "state": "Acre",
+              "city": "Schenectady",
+              "zipcode": "12301",
+              "phone_number": "505-646-2276",
+              "social_id": "231.002.999-00"
+            },
+            "message": ""
+          }
+        },
+        "payment_method": "PayPal",
+        "social_id": "cpf_or_cnpj_number",
+        "data_social_id": "231.002.999-00",
+        "edit_social_id": {
+          "delete_social_id": {
+            "socialID": "CPF/CNPJ number",
+            "data": "",
+            "message": "Field is required"
+          },
+          "fill_social_id": {
+            "socialID": "CPF/CNPJ number",
+            "data": "231.002.999-00-YY",
+            "message": ""
+          }
+        }
+      },
+      {
+        "case_id": "SB_CHE_CB_Jul23_07",
+        "case_name": "[Social ID_SB]Kiểm tra info address khi checkout thành công với country Italy bằng cổng Paypal và edit social ID trong order detail",
+        "checkout_label": "multi-step",
+        "products_checkout": [
+          {
+            "name": "Bikini",
+            "variant_id": 1000010725983284,
+            "quantity": 2
+          }
+        ],
+        "email": "testerOCG@maildrop.cc",
+        "billing_address": {
+          "first_name": "Shopbase",
+          "last_name": "Auto",
+          "address": "1600 W Loop S",
+          "country": "Italy",
+          "city": "juve",
+          "state": "Roma",
+          "zipcode": "12301",
+          "phone_number": "505-646-2276",
+          "social_id": ""
+        },
+        "list_data": {
+          "blank_social_id_shipping_one_page": {
+            "shipping_info": {
+              "country": "Italy",
+              "city": "juve",
+              "state": "Roma",
+              "zipcode": "12301",
+              "social_id": ""
+            },
+            "message": "Please enter a CF/PEC number"
+          },
+          "blank_social_id_shipping_3_steps": {
+            "shipping_info": {
+              "country": "Italy",
+              "city": "juve",
+              "state": "Roma",
+              "zipcode": "12301",
+              "social_id": ""
+            },
+            "message": "Please enter a CF/PEC number"
+          },
+          "Fill_social_id_shipping_3_steps": {
+            "shipping_info": {
+              "social_id": "231.002.999-00"
+            },
+            "message": ""
+          },
+          "blank_social_id_billing_3_steps": {
+            "billing_info": {
+              "social_id": ""
+            },
+            "message": "Please enter a CF/PEC number"
+          },
+          "Fill_social_id_billing_3_steps": {
+            "billing_info": {
+              "first_name": "Shopbase",
+              "last_name": "Auto",
+              "address": "1600 W Loop S",
+              "country": "Italy",
+              "city": "juve",
+              "state": "Roma",
+              "zipcode": "12301",
+              "phone_number": "505-646-2276",
+              "social_id": "231.002.999-00"
+            },
+            "message": ""
+          }
+        },
+        "payment_method": "PayPal",
+        "social_id": "cpf_or_cnpj_number",
+        "data_social_id": "231.002.999-00",
+        "edit_social_id": {
+          "delete_social_id": {
+            "socialID": "CF/PEC number",
+            "data": "",
+            "message": "Field is required"
+          },
+          "fill_social_id": {
+            "socialID": "CF/PEC number",
+            "data": "231.002.999-00-YY",
+            "message": ""
+          }
+        }
+      }
+    ],
+    "CHECKOUT_SOCIAL_ID_WITH_STRIPE": [
+      {
+        "case_id": "SB_CHE_CB_Jul23_06",
+        "case_name": "[Social ID_SB]Kiểm tra info address khi checkout với country South korea bằng cổng Stripe và edit social ID trong order detail",
+        "checkout_label": "one-page",
+        "products_checkout": [
+          {
+            "name": "Bikini",
+            "variant_id": 1000010725983284,
+            "quantity": 2
+          }
+        ],
+        "email": "testerOCG@maildrop.cc",
+        "billing_address": {
+          "first_name": "Shopbase",
+          "last_name": "Auto",
+          "address": "1600 W Loop S",
+          "country": "South Korea",
+          "city": "Anseong",
+          "state": "Seoul",
+          "zipcode": "4149",
+          "phone_number": "505-646-2276",
+          "social_id": ""
+        },
+        "list_data": {
+          "blank_social_id_shipping_one_page": {
+            "shipping_info": {
+              "country": "South Korea",
+              "state": "Seoul",
+              "zipcode": "4149",
+              "social_id": ""
+            },
+            "message": "Please enter a PCCC number"
+          },
+          "Fill_social_id_shipping_one_page": {
+            "shipping_info": {
+              "social_id": "231.002.999-00"
+            },
+            "message": ""
+          },
+          "blank_social_id_billing_one_page": {
+            "billing_info": {
+              "social_id": ""
+            },
+            "message": "Please enter a PCCC number"
+          },
+          "Fill_social_id_billing_one_page": {
+            "billing_info": {
+              "first_name": "Shopbase",
+              "last_name": "Auto",
+              "address": "1600 W Loop S",
+              "country": "South Korea",
+              "city": "Anseong",
+              "state": "Seoul",
+              "zipcode": "4149",
+              "phone_number": "505-646-2276",
+              "social_id": "231.002.999-00"
+            },
+            "message": ""
+          }
+        },
+        "payment_method": "Stripe",
+        "social_id": "cpf_or_cnpj_number",
+        "data_social_id": "231.002.999-00",
+        "edit_social_id": {
+          "delete_social_id": {
+            "socialID": "PCCC number",
+            "data": "",
+            "message": "Field is required"
+          },
+          "fill_social_id": {
+            "socialID": "PCCC number",
+            "data": "231.002.999-00-YY",
+            "message": ""
+          }
+        }
+      },
+      {
+        "case_id": "SB_CHE_CB_Jul23_08",
+        "case_name": "[Social ID_SB]Kiểm tra info address khi checkout với country China bằng cổng Stripe edit social ID trong order detail",
+        "checkout_label": "one-page",
+        "products_checkout": [
+          {
+            "name": "Bikini",
+            "variant_id": 1000010725983284,
+            "quantity": 2
+          }
+        ],
+        "email": "testerOCG@maildrop.cc",
+        "billing_address": {
+          "first_name": "Shopbase",
+          "last_name": "Auto",
+          "address": "1600 W Loop S",
+          "country": "China",
+          "city": "Anseong",
+          "state": "Jiangxi",
+          "zipcode": "4149",
+          "phone_number": "505-646-2276",
+          "social_id": ""
+        },
+        "list_data": {
+          "blank_social_id_shipping_one_page": {
+            "shipping_info": {
+              "country": "China",
+              "state": "Jiangxi",
+              "zipcode": "4149",
+              "social_id": ""
+            },
+            "message": "Please enter a Resident ID number"
+          },
+          "Fill_social_id_shipping_one_page": {
+            "shipping_info": {
+              "social_id": "231.002.999-00"
+            },
+            "message": ""
+          },
+          "blank_social_id_billing_one_page": {
+            "billing_info": {
+              "social_id": ""
+            },
+            "message": "Please enter a Resident ID number"
+          },
+          "Fill_social_id_billing_one_page": {
+            "billing_info": {
+              "first_name": "Shopbase",
+              "last_name": "Auto",
+              "address": "1600 W Loop S",
+              "country": "China",
+              "city": "Anseong",
+              "state": "Jiangxi",
+              "zipcode": "4149",
+              "phone_number": "505-646-2276",
+              "social_id": "231.002.999-00"
+            },
+            "message": ""
+          }
+        },
+        "payment_method": "Stripe",
+        "social_id": "cpf_or_cnpj_number",
+        "data_social_id": "231.002.999-00",
+        "edit_social_id": {
+          "delete_social_id": {
+            "socialID": "Resident ID number",
+            "data": "",
+            "message": "Field is required"
+          },
+          "fill_social_id": {
+            "socialID": "Resident ID number",
+            "data": "231.002.999-00-YY",
+            "message": ""
+          }
+        }
+      }
+    ],
+    "SB_CHE_CB_Jul23_09": {
+      "customers": [
+        {
+          "name": "Customer Brazil",
+          "email": "Brazil@mailtothis.com",
+          "edit_social_id": {
+            "delete_social_id": {
+              "field_name": "CPF/CNPJ number",
+              "data": "",
+              "message": "Field is required"
+            },
+            "change_social_id": {
+              "field_name": "CPF/CNPJ number",
+              "data": "231.002.999-00-ED",
+              "message": ""
+            }
+          }
+        },
+        {
+          "name": "Customer SouthKorea",
+          "email": "SouthKorea@mailtothis.com",
+          "edit_social_id": {
+            "delete_social_id": {
+              "field_name": "PCCC number",
+              "data": "",
+              "message": "Field is required"
+            },
+            "change_social_id": {
+              "field_name": "PCCC number",
+              "data": "231.002.999-00-ED",
+              "message": ""
+            }
+          }
+        },
+        {
+          "name": "Customer Italy",
+          "email": "Italy@mailtothis.com",
+          "edit_social_id": {
+            "delete_social_id": {
+              "field_name": "CF/PEC number",
+              "data": "",
+              "message": "Field is required"
+            },
+            "change_social_id": {
+              "field_name": "CF/PEC number",
+              "data": "231.002.999-00-ED",
+              "message": ""
+            }
+          }
+        },
+        {
+          "name": "Customer China",
+          "email": "China@mailtothis.com",
+          "edit_social_id": {
+            "delete_social_id": {
+              "field_name": "Resident ID number",
+              "data": "",
+              "message": "Field is required"
+            },
+            "change_social_id": {
+              "field_name": "Resident ID number",
+              "data": "231.002.999-00-ED",
+              "message": ""
+            }
+          }
+        }
+      ]
+    },
+    "SB_CHE_CB_Jul23_10": {
+      "name": "Customer Brazil",
+      "email": "Brazil@mailtothis.com",
+      "forder_name": "shopbase"
+    },
+    "SB_CHE_CB_Jul23_11": {
+      "forder_name": "shopbase",
+      "search_order": [
+        {
+          "order_country": "Brazil",
+          "customer_name": "Brazil"
+        },
+        {
+          "order_country": "China",
+          "customer_name": "China"
+        },
+        {
+          "order_country": "Italy",
+          "customer_name": "Italy"
+        },
+        {
+          "order_country": "South Korea",
+          "customer_name": "SouthKorea"
+        }
+      ],
+      "fields_social_id": [
+        "Billing CF or PEC number",
+        "Billing CPF or CNPJ number",
+        "Billing PCCC number",
+        "Billing Resident ID number"
+      ],
+      "social_id": "231.002.999-00-ED"
+    }
+  },
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "auto-prod-checkout-social-id.onshopbase.com",
+      "shop_name": "auto-prod-checkout-social-id",
+      "user_id": 74303,
+      "shop_id": 10442041,
+      "username": "shopbase2@beeketing.net",
+      "password": "raMse).7L/b4;k#@",
+      "time_out": 300000
+    },
+    "prodtest": {
+      "api": "https://api.shopbase.com",
+      "domain": "auto-prodtest-checkout-social-id.onshopbase.com",
+      "shop_name": "auto-prodtest-checkout-social-id",
+      "user_id": 74303,
+      "shop_id": 10443126,
+      "username": "shopbase2@beeketing.net",
+      "password": "raMse).7L/b4;k#@",
+      "time_out": 300000,
+      "cases": {
+        "CHECKOUT_SOCIAL_ID_WITH_PAYPAL": [
+          {
+            "case_id": "SB_CHE_CB_Jul23_05",
+            "case_name": "[Social ID_SB]Kiểm tra info address khi checkout với country Brazil bằng cổng Paypal và edit social ID trong order detail",
+            "products_checkout": [
+              {
+                "name": "Bikini",
+                "variant_id": 1000010741026404,
+                "quantity": 2
+              }
+            ]
+          },
+          {
+            "case_id": "SB_CHE_CB_Jul23_07",
+            "case_name": "[Social ID_SB]Kiểm tra info address khi checkout thành công với country Italy bằng cổng Paypal và edit social ID trong order detail",
+            "products_checkout": [
+              {
+                "name": "Bikini",
+                "variant_id": 1000010741026404,
+                "quantity": 2
+              }
+            ]
+          }
+        ],
+        "CHECKOUT_SOCIAL_ID_WITH_STRIPE": [
+          {
+            "case_id": "SB_CHE_CB_Jul23_06",
+            "case_name": "[Social ID_SB]Kiểm tra info address khi checkout với country South korea bằng cổng Stripe và edit social ID trong order detail",
+            "products_checkout": [
+              {
+                "name": "Bikini",
+                "variant_id": 1000010741026404,
+                "quantity": 2
+              }
+            ]
+          },
+          {
+            "case_id": "SB_CHE_CB_Jul23_08",
+            "case_name": "[Social ID_SB]Kiểm tra info address khi checkout với country China bằng cổng Stripe edit social ID trong order detail",
+            "products_checkout": [
+              {
+                "name": "Bikini",
+                "variant_id": 1000010741026404,
+                "quantity": 2
+              }
+            ]
+          }
+        ],
+        "SB_CHE_CB_Jul23_09": {
+          "customers": [
+            {
+              "name": "Customer Brazil",
+              "email": "Brazil@mailtothis.com",
+              "edit_social_id": {
+                "delete_social_id": {
+                  "field_name": "CPF/CNPJ number",
+                  "data": "",
+                  "message": "Field is required"
+                },
+                "change_social_id": {
+                  "field_name": "CPF/CNPJ number",
+                  "data": "231.002.999-00-ED",
+                  "message": ""
+                }
+              }
+            },
+            {
+              "name": "Customer SouthKorea",
+              "email": "SouthKorea@mailtothis.com",
+              "edit_social_id": {
+                "delete_social_id": {
+                  "field_name": "PCCC number",
+                  "data": "",
+                  "message": "Field is required"
+                },
+                "change_social_id": {
+                  "field_name": "PCCC number",
+                  "data": "231.002.999-00-ED",
+                  "message": ""
+                }
+              }
+            },
+            {
+              "name": "Customer Italy",
+              "email": "Italy@mailtothis.com",
+              "edit_social_id": {
+                "delete_social_id": {
+                  "field_name": "CF/PEC number",
+                  "data": "",
+                  "message": "Field is required"
+                },
+                "change_social_id": {
+                  "field_name": "CF/PEC number",
+                  "data": "231.002.999-00-ED",
+                  "message": ""
+                }
+              }
+            },
+            {
+              "name": "Customer China",
+              "email": "China@mailtothis.com",
+              "edit_social_id": {
+                "delete_social_id": {
+                  "field_name": "Resident ID number",
+                  "data": "",
+                  "message": "Field is required"
+                },
+                "change_social_id": {
+                  "field_name": "Resident ID number",
+                  "data": "231.002.999-00-ED",
+                  "message": ""
+                }
+              }
+            }
+          ]
+        },
+        "SB_CHE_CB_Jul23_10": {
+          "name": "Customer Brazil",
+          "email": "Brazil@mailtothis.com",
+          "forder_name": "shopbase"
+        },
+        "SB_CHE_CB_Jul23_11": {
+          "forder_name": "shopbase",
+          "search_order": [
+            {
+              "order_country": "Brazil",
+              "customer_name": "Brazil"
+            },
+            {
+              "order_country": "China",
+              "customer_name": "China"
+            },
+            {
+              "order_country": "Italy",
+              "customer_name": "Italy"
+            },
+            {
+              "order_country": "South Korea",
+              "customer_name": "SouthKorea"
+            }
+          ],
+          "fields_social_id": [
+            "Billing CF or PEC number",
+            "Billing CPF or CNPJ number",
+            "Billing PCCC number",
+            "Billing Resident ID number"
+          ],
+          "social_id": "231.002.999-00-ED"
+        }
+      }
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "auto-dev-checkout-social-id.myshopbase.net",
+      "shop_name": "auto-dev-checkout-social-id",
+      "user_id": 73800,
+      "shop_id": 10328610,
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "time_out": 300000,
+      "cases": {
+        "CHECKOUT_SOCIAL_ID_WITH_PAYPAL": [
+          {
+            "case_id": "SB_CHE_CB_Jul23_05",
+            "case_name": "[Social ID_SB]Kiểm tra info address khi checkout với country Brazil bằng cổng Paypal và edit social ID trong order detail",
+            "products_checkout": [
+              {
+                "name": "Bikini",
+                "variant_id": 1000001769952042,
+                "quantity": 2
+              }
+            ]
+          },
+          {
+            "case_id": "SB_CHE_CB_Jul23_07",
+            "case_name": "[Social ID_SB]Kiểm tra info address khi checkout thành công với country Italy bằng cổng Paypal và edit social ID trong order detail",
+            "products_checkout": [
+              {
+                "name": "Bikini",
+                "variant_id": 1000001769952042,
+                "quantity": 2
+              }
+            ]
+          }
+        ],
+        "CHECKOUT_SOCIAL_ID_WITH_STRIPE": [
+          {
+            "case_id": "SB_CHE_CB_Jul23_06",
+            "case_name": "[Social ID_SB]Kiểm tra info address khi checkout với country South korea bằng cổng Stripe và edit social ID trong order detail",
+            "products_checkout": [
+              {
+                "name": "Bikini",
+                "variant_id": 1000001769952042,
+                "quantity": 2
+              }
+            ]
+          },
+          {
+            "case_id": "SB_CHE_CB_Jul23_08",
+            "case_name": "[Social ID_SB]Kiểm tra info address khi checkout với country China bằng cổng Stripe edit social ID trong order detail",
+            "products_checkout": [
+              {
+                "name": "Bikini",
+                "variant_id": 1000001769952042,
+                "quantity": 2
+              }
+            ]
+          }
+        ],
+        "SB_CHE_CB_Jul23_09": {
+          "customers": [
+            {
+              "name": "Customer Brazil",
+              "email": "Brazil@mailtothis.com",
+              "edit_social_id": {
+                "delete_social_id": {
+                  "field_name": "CPF/CNPJ number",
+                  "data": "",
+                  "message": "Field is required"
+                },
+                "change_social_id": {
+                  "field_name": "CPF/CNPJ number",
+                  "data": "231.002.999-00-ED",
+                  "message": ""
+                }
+              }
+            },
+            {
+              "name": "Customer SouthKorea",
+              "email": "SouthKorea@mailtothis.com",
+              "edit_social_id": {
+                "delete_social_id": {
+                  "field_name": "PCCC number",
+                  "data": "",
+                  "message": "Field is required"
+                },
+                "change_social_id": {
+                  "field_name": "PCCC number",
+                  "data": "231.002.999-00-ED",
+                  "message": ""
+                }
+              }
+            },
+            {
+              "name": "Customer Italy",
+              "email": "Italy@mailtothis.com",
+              "edit_social_id": {
+                "delete_social_id": {
+                  "field_name": "CF/PEC number",
+                  "data": "",
+                  "message": "Field is required"
+                },
+                "change_social_id": {
+                  "field_name": "CF/PEC number",
+                  "data": "231.002.999-00-ED",
+                  "message": ""
+                }
+              }
+            },
+            {
+              "name": "Customer China",
+              "email": "China@mailtothis.com",
+              "edit_social_id": {
+                "delete_social_id": {
+                  "field_name": "Resident ID number",
+                  "data": "",
+                  "message": "Field is required"
+                },
+                "change_social_id": {
+                  "field_name": "Resident ID number",
+                  "data": "231.002.999-00-ED",
+                  "message": ""
+                }
+              }
+            }
+          ]
+        },
+        "SB_CHE_CB_Jul23_10": {
+          "name": "Customer Brazil",
+          "email": "Brazil@mailtothis.com",
+          "forder_name": "shopbase"
+        },
+        "SB_CHE_CB_Jul23_11": {
+          "forder_name": "shopbase",
+          "search_order": [
+            {
+              "order_country": "Brazil",
+              "customer_name": "Brazil"
+            },
+            {
+              "order_country": "China",
+              "customer_name": "China"
+            },
+            {
+              "order_country": "Italy",
+              "customer_name": "Italy"
+            },
+            {
+              "order_country": "South Korea",
+              "customer_name": "SouthKorea"
+            }
+          ],
+          "fields_social_id": [
+            "Billing CF or PEC number",
+            "Billing CPF or CNPJ number",
+            "Billing PCCC number",
+            "Billing Resident ID number"
+          ],
+          "social_id": "231.002.999-00-ED"
+        }
+      }
+    }
+  }
+}

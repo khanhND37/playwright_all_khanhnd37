@@ -1,0 +1,114 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "accounts_domain": "accounts.dev.shopbase.net",
+      "domain": "au-inside-announcement.myshopbase.net",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_name": "au-inside-announcement",
+      "user_id": 90252,
+      "shop_id": 10326956,
+      "theme_id": 3165457,
+      "cases": {
+        "SB_OLS_THE_INS_SF_ANNOUNCEMENT_BAR_2": {
+          "section": {
+            "announcement-bar": {
+              "settings": {
+                "announcement_message": "<p>This is <a href='https://www.google.com/'>a link and a image <br /><img src='https://dev-img.btdmp.com/sbase-file/10321942/2022/11/04/16675512131cc006a274.jpeg' alt='' width='47' height='47' /></a></p>"
+              }
+            }
+          }
+        }
+      }
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "accounts_domain": "accounts-test.shopbase.com",
+      "domain": "au-inside-announcement-prodtest.onshopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_name": "au-inside-announcement-prodtest",
+      "user_id": 11260206,
+      "shop_id": 10431129,
+      "theme_id": 1400003
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "accounts_domain": "accounts.shopbase.com",
+      "domain": "au-inside-announcement.onshopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_name": "au-inside-announcement",
+      "user_id": 11260206,
+      "shop_id": 10431129,
+      "theme_id": 1400000
+    }
+  },
+  "cases": {
+    "SB_OLS_THE_INS_SF_ANNOUNCEMENT_BAR_2": {
+      "section": {
+        "announcement-bar": {
+          "visible": true,
+          "settings": {
+            "announcement_message": "<p>This is <a href='https://www.google.com/'>a link and a image <br /><img src='https://img.shopbase.com/files/10328787/2022/05/27/16536379828bb04941a9.jpeg' alt='' width='47' height='47' /></a></p>",
+            "background_color": "#000000",
+            "color_text": "#FFFFFF",
+            "link": {
+              "name": "",
+              "position": 0,
+              "subject": {
+                "handle": ""
+              },
+              "type": "products",
+              "type_options": {
+                "subject": "all",
+                "subject_id": null,
+                "title": "all"
+              }
+            },
+            "show_close_button": false
+          },
+          "type": "announcement-bar",
+          "blocks": []
+        }
+      },
+      "expected": {
+        "snapshot": "TC-INS-SF-ANNOUNCEMENT-BAR-2.png",
+        "pathName": "/collections/all"
+      }
+    },
+    "SB_OLS_THE_INS_SF_ANNOUNCEMENT_BAR_3": {
+      "section": {
+        "announcement-bar": {
+          "visible": true,
+          "settings": {
+            "announcement_message": "<p style='text-align: left;'><a href='https://www.google.com/'>A link.</a> This is <em><span style='color: #f1c40f;'>text style</span></em></p>",
+            "background_color": "#9A97E0C7",
+            "color_text": "#181537",
+            "link": {
+              "name": "",
+              "position": 0,
+              "subject": {
+                "handle": ""
+              },
+              "type": "",
+              "type_options": {
+                "subject": "",
+                "subject_id": null,
+                "title": ""
+              }
+            },
+            "show_close_button": false
+          },
+          "type": "announcement-bar",
+          "blocks": []
+        }
+      },
+      "expected": {
+        "snapshot": "TC-INS-SF-ANNOUNCEMENT-BAR-3.png",
+        "pathName": "google.com"
+      }
+    }
+  }
+}

@@ -1,0 +1,973 @@
+{
+  "env": {
+    "dev": {
+      "domain": "auto-block-wb.myshopbase.net",
+      "shop_name": "auto-block-wb",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10333928,
+      "user_id": 90252,
+      "theme_id": 3238474
+    },
+    "prodtest": {
+      "domain": "auto-block-wb-prodtest.onshopbase.com",
+      "shop_name": "auto-block-wb-prodtest",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10480844,
+      "user_id": 11260206,
+      "theme_id": 1592800,
+      "accounts_domain": "accounts-test.shopbase.com",
+      "cases": {
+        "SB_WEB_BUILDER_LB_BB_01": {
+          "cases": {
+            "SB_WEB_BUILDER_LB_BB_01": {
+              "expect": {
+                "tab_setting": {
+                  "snapshot": "tab_setting_default_button_prodtest.png"
+                },
+                "buttons": [
+                  {
+                    "name": "Primary",
+                    "preview": {
+                      "snapshot": "preview_data_default_primary_button_prodtest.png",
+                      "redirect": "/admin/builder/site"
+                    },
+                    "storefront": {
+                      "snapshot": "storefront_data_default_primary_button_prodtest.png",
+                      "redirect": "/?theme_preview_id"
+                    }
+                  },
+                  {
+                    "name": "Secondary",
+                    "preview": {
+                      "snapshot": "preview_data_default_secondary_button_prodtest.png",
+                      "redirect": "/admin/builder/site"
+                    },
+                    "storefront": {
+                      "snapshot": "storefront_data_default_secondary_button_prodtest.png",
+                      "redirect": "/?theme_preview_id"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "prod": {
+      "domain": "auto-block-wb.onshopbase.com",
+      "shop_name": "auto-block-wb",
+      "api": "https://api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10480842,
+      "user_id": 11260206,
+      "theme_id": 1592793,
+      "cases": {
+        "SB_WEB_BUILDER_LB_BB_01": {
+          "expect": {
+            "tab_setting": {
+              "snapshot": "tab_setting_default_button_prod.png"
+            },
+            "buttons": [
+              {
+                "name": "Primary",
+                "preview": {
+                  "snapshot": "preview_data_default_primary_button_prod.png",
+                  "redirect": "/admin/builder/site"
+                },
+                "storefront": {
+                  "snapshot": "storefront_data_default_primary_button_prod.png",
+                  "redirect": "/?theme_preview_id"
+                }
+              },
+              {
+                "name": "Secondary",
+                "preview": {
+                  "snapshot": "preview_data_default_secondary_button_prod.png",
+                  "redirect": "/admin/builder/site"
+                },
+                "storefront": {
+                  "snapshot": "storefront_data_default_secondary_button_prod.png",
+                  "redirect": "/?theme_preview_id"
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "cases": {
+    "SB_WEB_BUILDER_LB_BB_01": {
+      "description": "Check data default when add block button",
+      "data": {
+        "page_style": {
+          "buttons": {
+            "primary": {
+              "font": "Paragraph 1",
+              "text_color": {
+                "color": {
+                  "preset": 1
+                }
+              },
+              "shape": "Square",
+              "size": "Large",
+              "background": {
+                "color": {
+                  "preset": 3
+                }
+              },
+              "border": {
+                "thickness": "none"
+              }
+            },
+            "secondary": {
+              "font": "Paragraph 1",
+              "text_color": {
+                "color": {
+                  "preset": 3
+                }
+              },
+              "shape": "Square",
+              "size": "Small",
+              "background": {
+                "color": {
+                  "preset": 1
+                }
+              },
+              "border": {
+                "thickness": "none"
+              }
+            }
+          }
+        },
+        "section_1": {
+          "dnd_section": {
+            "from": {
+              "category": "Basics",
+              "template": "Single column"
+            },
+            "to": {
+              "position": {
+                "section": 1
+              },
+              "isBottom": false
+            }
+          },
+          "dnd_block": {
+            "from": {
+              "category": "Basics",
+              "template": "Button"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "column": 1
+              }
+            }
+          }
+        }
+      },
+      "expect": {
+        "tab_setting": {
+          "snapshot": "tab_setting_default_button.png"
+        },
+        "buttons": [
+          {
+            "name": "Primary",
+            "preview": {
+              "snapshot": "preview_data_default_primary_button.png",
+              "redirect": "/admin/builder/site"
+            },
+            "storefront": {
+              "snapshot": "storefront_data_default_primary_button.png",
+              "redirect": "/?theme_preview_id"
+            }
+          },
+          {
+            "name": "Secondary",
+            "preview": {
+              "snapshot": "preview_data_default_secondary_button.png",
+              "redirect": "/admin/builder/site"
+            },
+            "storefront": {
+              "snapshot": "storefront_data_default_secondary_button.png",
+              "redirect": "/?theme_preview_id"
+            }
+          }
+        ]
+      }
+    },
+    "SB_WEB_BUILDER_LB_BB_06": {
+      "description": "Check setting button with action = Open a link",
+      "data": {
+        "section_1": {
+          "dnd_section": {
+            "from": {
+              "category": "Basics",
+              "template": "Single column"
+            },
+            "to": {
+              "position": {
+                "section": 1
+              },
+              "isBottom": false
+            }
+          },
+          "dnd_blocks": {
+            "from": {
+              "category": "Basics",
+              "template": "Button"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "column": 1
+              }
+            },
+            "duplicate": 5
+          },
+          "settings_block": [
+            {
+              "description": "Setting button has URL https + link absolute + new tab ON",
+              "show_icon": "Left",
+              "label": "SIGN IN NOW",
+              "action": "Open a link",
+              "target_url": "https://www.google.com/",
+              "new_tab": true,
+              "expect": {
+                "redirect": "https://www.google.com/"
+              }
+            },
+            {
+              "description": "Setting button has URL http + link absolute + new tab OFF",
+              "show_icon": "Right",
+              "icon": "sHopping Cart",
+              "label": "Thêm vào giỏ hàng",
+              "action": "Open a link",
+              "target_url": "http://www.example.com/main.html",
+              "new_tab": false,
+              "expect": {
+                "redirect": "http://www.example.com/main.html"
+              }
+            },
+            {
+              "description": "Setting button has URL relative + link correct + new tab ON",
+              "show_icon": "Left",
+              "icon": "Close",
+              "label": "",
+              "action": "Open a link",
+              "target_url": "/pages/about-us",
+              "new_tab": true,
+              "expect": {
+                "redirect": "/pages/about-us"
+              }
+            },
+            {
+              "description": "Setting button has URL empty + new tab ON",
+              "show_icon": "Right",
+              "label": "Close",
+              "action": "Open a link",
+              "target_url": "",
+              "new_tab": true,
+              "expect": {
+                "redirect": "/"
+              }
+            },
+            {
+              "description": "Setting button has URL relative + link wrong + new tab OFF",
+              "show_icon": "None",
+              "label": "Close",
+              "action": "Open a link",
+              "target_url": "12344",
+              "new_tab": false,
+              "expect": {
+                "redirect": "12344"
+              }
+            },
+            {
+              "description": "Setting button hasn't label + icon",
+              "show_icon": "None",
+              "label": "",
+              "action": "Open a link",
+              "target_url": "",
+              "new_tab": false,
+              "expect": {
+                "redirect": "/"
+              }
+            }
+          ]
+        }
+      },
+      "expect": {
+        "preview": "webfront_icon_and_label_button.png",
+        "storefront": "storefront_icon_and_label_button.png"
+      }
+    },
+    "SB_WEB_BUILDER_LB_BB_07": {
+      "description": "Check setting button with action = Go to page",
+      "data": {
+        "section_1": {
+          "dnd_section": {
+            "from": {
+              "category": "Basics",
+              "template": "Single column"
+            },
+            "to": {
+              "position": {
+                "section": 1
+              },
+              "isBottom": false
+            }
+          },
+          "dnd_blocks": {
+            "from": {
+              "category": "Basics",
+              "template": "Button"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "column": 1
+              }
+            },
+            "duplicate": 2
+          },
+          "settings_block": [
+            {
+              "label": "Test",
+              "action": "Go to page",
+              "page": "All products",
+              "new_tab": true,
+              "expect": {
+                "redirect": "/"
+              }
+            },
+            {
+              "label": "Test button section 3",
+              "action": "Go to page",
+              "page": "Product detail",
+              "page_option": "product test",
+              "new_tab": true,
+              "expect": {
+                "redirect": "/products/product-test"
+              }
+            },
+            {
+              "label": "Test button section 4",
+              "action": "Go to page",
+              "page": "Other Pages",
+              "page_option": "Privacy policy",
+              "new_tab": false,
+              "expect": {
+                "redirect": "policies/privacy-policy"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "SB_WEB_BUILDER_LB_BB_08": {
+      "data": {
+        "section_name": "Section Form",
+        "action": "Go to section"
+      }
+    },
+    "SB_WEB_BUILDER_LB_BB_09": {
+      "description": "Check setting button with action = Make a call",
+      "data": {
+        "section_1": {
+          "dnd_section": {
+            "from": {
+              "category": "Basics",
+              "template": "Single column"
+            },
+            "to": {
+              "position": {
+                "section": 1
+              },
+              "isBottom": false
+            }
+          },
+          "dnd_blocks": {
+            "from": {
+              "category": "Basics",
+              "template": "Button"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "column": 1
+              }
+            },
+            "duplicate": 5
+          },
+          "settings_block": [
+            {
+              "label": "Make a call 1",
+              "action": "Make a call",
+              "number": "+84 339161999",
+              "expect": {
+                "href": "tel:+84 339161999"
+              }
+            },
+            {
+              "label": "Make a call 2",
+              "action": "Make a call",
+              "number": "1-900-6098",
+              "expect": {
+                "href": "tel:1-900-6098"
+              }
+            },
+            {
+              "label": "Make a call 3",
+              "action": "Make a call",
+              "number": "0979.995.575",
+              "expect": {
+                "href": "tel:0979.995.575"
+              }
+            },
+            {
+              "label": "Make a call 4",
+              "action": "Make a call",
+              "number": "0979995575",
+              "expect": {
+                "href": "tel:0979995575"
+              }
+            },
+            {
+              "label": "Make a call 5",
+              "action": "Make a call",
+              "number": "abc@12",
+              "expect": {
+                "href": "tel:abc@12"
+              }
+            },
+            {
+              "label": "Make a call 6",
+              "action": "Make a call",
+              "number": "",
+              "expect": {
+                "href": "tel:"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "SB_WEB_BUILDER_LB_BB_10": {
+      "description": "Check setting button with action = Send Email To",
+      "data": {
+        "section_1": {
+          "dnd_section": {
+            "from": {
+              "category": "Basics",
+              "template": "Single column"
+            },
+            "to": {
+              "position": {
+                "section": 1
+              },
+              "isBottom": false
+            }
+          },
+          "dnd_blocks": {
+            "from": {
+              "category": "Basics",
+              "template": "Button"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "column": 1
+              }
+            },
+            "duplicate": 3
+          },
+          "settings_block": [
+            {
+              "label": "Email 1",
+              "action": "Send email to",
+              "email": "shopbase@beeketing.net",
+              "expect": {
+                "href": "mailto:shopbase@beeketing.net"
+              }
+            },
+            {
+              "label": "Email 2",
+              "action": "Send email to",
+              "email": "abc@beeketing.net",
+              "expect": {
+                "href": "mailto:abc@beeketing.net"
+              }
+            },
+            {
+              "label": "Email 3",
+              "action": "Send email to",
+              "email": "abc",
+              "expect": {
+                "href": "mailto:abc"
+              }
+            },
+            {
+              "label": "Email 4",
+              "action": "Send email to",
+              "email": "",
+              "expect": {
+                "href": "mailto:"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "SB_WEB_BUILDER_LB_BB_11": {
+      "description": "Check setting button with action = Copy to clipboard",
+      "data": {
+        "section_1": {
+          "dnd_section": {
+            "from": {
+              "category": "Basics",
+              "template": "Single column"
+            },
+            "to": {
+              "position": {
+                "section": 1
+              },
+              "isBottom": false
+            }
+          },
+          "dnd_blocks": {
+            "from": {
+              "category": "Basics",
+              "template": "Button"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "column": 1
+              }
+            },
+            "duplicate": 2
+          },
+          "dnd_form_blocks": {
+            "from": {
+              "category": "Basics",
+              "template": "Form"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "column": 1
+              }
+            }
+          },
+          "settings_block": [
+            {
+              "label": "Copy 1",
+              "action": "Copy to clipboard",
+              "content": "Copy hihi",
+              "expect": {
+                "paste": "Copy hihi"
+              }
+            },
+            {
+              "label": "Copy 2",
+              "action": "Copy to clipboard",
+              "content": "You can copy and paste your text with the characters to count in the text area above, or you can type your characters and words into the text area. The counter will be updated instantly, displaying the amount of characters, words, sentences, paragraphs and whitespace in your text, not to mention that the keyword density (which you can configure from the options menu) is also displayed. Character Count Online works on absolutely any device. No matter if you have a mobile phone, computer, tablet or console the counter will work perfectly!",
+              "expect": {
+                "paste": "You can copy and paste your text with the characters to count in the text area above, or you can type your characters and words into the text area. The counter will be updated instantly, displaying the amount of characters, words, sentences, paragraphs and whitespace in your text, not to mention that the keyword density (which you can configure from the options menu) is also displayed. Character Count Online works on absolutely any device. No matter if you have a mobile phone, computer, tablet o"
+              }
+            },
+            {
+              "label": "Copy 3",
+              "action": "Copy to clipboard",
+              "content": "",
+              "expect": {
+                "paste": ""
+              }
+            }
+          ]
+        }
+      }
+    },
+    "SB_WEB_BUILDER_LB_BB_12": {
+      "description": "Check setting data independently in the style tab button",
+      "data": {
+        "section_1": {
+          "dnd_section": {
+            "from": {
+              "category": "Basics",
+              "template": "Single column"
+            },
+            "to": {
+              "position": {
+                "section": 1
+              },
+              "isBottom": false
+            }
+          },
+          "dnd_block": {
+            "from": {
+              "category": "Basics",
+              "template": "Button"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "column": 1
+              }
+            }
+          },
+          "settings_block": {
+            "align": {
+              "label": "align_self",
+              "value": "Right"
+            },
+            "width": {
+              "label": "width",
+              "value": {
+                "unit": "Px",
+                "value": 200
+              }
+            },
+            "opacity": {
+              "label": "opacity",
+              "config": {
+                "fill": true,
+                "number": 90
+              }
+            },
+            "margin": {
+              "label": "margin",
+              "value": {
+                "top": 10,
+                "left": 0,
+                "bottom": 5,
+                "right": 10,
+                "input": true
+              }
+            }
+          }
+        }
+      },
+      "expect": {
+        "preview": "preview_not_unlink.png",
+        "storefront": "storefront_not_unlink.png"
+      }
+    },
+    "SB_WEB_BUILDER_LB_BB_13": {
+      "description": "Check setting sync data in the style tab button",
+      "data": {
+        "section_1": {
+          "dnd_section": {
+            "from": {
+              "category": "Basics",
+              "template": "Single column"
+            },
+            "to": {
+              "position": {
+                "section": 1
+              },
+              "isBottom": false
+            }
+          },
+          "dnd_block": {
+            "from": {
+              "category": "Basics",
+              "template": "Button"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "column": 1
+              }
+            }
+          },
+          "settings_block": {
+            "color": {
+              "label": "btn_color",
+              "value": {
+                "preset": 6,
+                "hexText": "#3ECA1ED1"
+              }
+            },
+            "height": {
+              "label": "btn_height",
+              "value": {
+                "unit": "Px",
+                "value": 50
+              }
+            },
+            "background": {
+              "label": "btn_background",
+              "value": {
+                "color": {
+                  "preset": 2
+                }
+              }
+            },
+            "border": {
+              "label": "btn_border",
+              "value": {
+                "thickness": "m",
+                "color": {
+                  "preset": 4
+                }
+              }
+            },
+            "shadow": {
+              "label": "btn_shadow",
+              "config": {
+                "option": "soft",
+                "size": "M",
+                "direction": "Top Right"
+              }
+            },
+            "radius": {
+              "label": "btn_radius",
+              "config": {
+                "fill": true,
+                "number": 12
+              }
+            },
+            "padding": {
+              "label": "btn_padding",
+              "value": {
+                "top": 30,
+                "left": 10,
+                "bottom": 30,
+                "right": 10,
+                "input": true
+              }
+            }
+          }
+        }
+      },
+      "expect": {
+        "preview": "preview_button_have_unlink.png",
+        "storefront": "storefront_button_have_unlink.png",
+        "preview_reset_unlink": "preview_button_reset_unlink.png",
+        "storefront_reset_unlink": "storefront_button_reset_unlink.png"
+      }
+    },
+    "SB_WEB_BUILDER_LB_BB_14": {
+      "description": "Check setting sync + independently data in the style tab button",
+      "data": {
+        "section_1": {
+          "dnd_section": {
+            "from": {
+              "category": "Basics",
+              "template": "Single column"
+            },
+            "to": {
+              "position": {
+                "section": 1
+              },
+              "isBottom": false
+            }
+          },
+          "dnd_block": {
+            "from": {
+              "category": "Basics",
+              "template": "Button"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "column": 1
+              }
+            }
+          },
+          "settings_block": {
+            "primary_button": {
+              "color": {
+                "label": "btn_color",
+                "value": {
+                  "preset": 4
+                }
+              },
+              "align": {
+                "label": "align_self",
+                "value": "Left"
+              },
+              "width": {
+                "label": "width",
+                "value": {
+                  "unit": "%",
+                  "value": 100
+                }
+              },
+              "height": {
+                "label": "btn_height",
+                "value": {
+                  "unit": "Px",
+                  "value": 60
+                }
+              },
+              "background": {
+                "label": "btn_background",
+                "value": {
+                  "image": {
+                    "url": "data/shopbase/front/web_builder/block.jpg",
+                    "overlay": {
+                      "preset": 2
+                    }
+                  }
+                }
+              },
+              "border": {
+                "label": "btn_border",
+                "value": {
+                  "thickness": "custom",
+                  "size": {
+                    "fill": true,
+                    "number": 12.5
+                  },
+                  "color": {
+                    "preset": 5
+                  }
+                }
+              },
+              "opacity": {
+                "label": "opacity",
+                "config": {
+                  "fill": true,
+                  "number": 90
+                }
+              },
+              "radius": {
+                "label": "btn_radius",
+                "config": {
+                  "fill": true,
+                  "number": 12
+                }
+              },
+              "shadow": {
+                "label": "btn_shadow",
+                "config": {
+                  "option": "soft",
+                  "size": "L",
+                  "direction": "Top Right"
+                }
+              },
+              "margin": {
+                "label": "margin",
+                "value": {
+                  "top": 15,
+                  "left": 20,
+                  "bottom": 15,
+                  "right": 20,
+                  "input": true
+                }
+              },
+              "padding": {
+                "label": "btn_padding",
+                "value": {
+                  "top": 5,
+                  "left": 10,
+                  "bottom": 5,
+                  "right": 10,
+                  "input": true
+                }
+              }
+            },
+            "secondary_button": {
+              "color": {
+                "label": "btn_color",
+                "value": {
+                  "preset": 4
+                }
+              },
+              "align": {
+                "label": "align_self",
+                "value": "Left"
+              },
+              "width": {
+                "label": "width",
+                "value": {
+                  "unit": "%",
+                  "value": 50
+                }
+              },
+              "opacity": {
+                "label": "opacity",
+                "config": {
+                  "fill": true,
+                  "number": 100
+                }
+              },
+              "shadow": {
+                "label": "btn_shadow",
+                "config": {
+                  "option": "soft",
+                  "size": "S",
+                  "direction": "Top Right"
+                }
+              },
+              "margin": {
+                "label": "margin",
+                "value": {
+                  "top": 30,
+                  "left": 30,
+                  "bottom": 30,
+                  "right": 30,
+                  "input": true
+                }
+              }
+            }
+          }
+        }
+      },
+      "expect": {
+        "primary_button": {
+          "preview": "preview_button_primary_all_setting.png",
+          "storefront": "storefront_button_primary_all_setting.png"
+        },
+        "secondary_button": {
+          "preview": "preview_button_secondary_all_setting.png",
+          "storefront": "storefront_button_secondary_all_setting.png"
+        }
+      }
+    },
+    "SB_WEB_BUILDER_LB_BB_15": {
+      "description": "Check remove block button",
+      "data": {
+        "section_1": {
+          "dnd_section": {
+            "from": {
+              "category": "Basics",
+              "template": "Single column"
+            },
+            "to": {
+              "position": {
+                "section": 1
+              },
+              "isBottom": false
+            }
+          },
+          "dnd_block": {
+            "from": {
+              "category": "Basics",
+              "template": "Button"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "column": 1
+              }
+            }
+          }
+        }
+      },
+      "expect": {
+        "count": 0
+      }
+    }
+  }
+}

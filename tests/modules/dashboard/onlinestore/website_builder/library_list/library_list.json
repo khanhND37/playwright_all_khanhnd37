@@ -1,0 +1,305 @@
+{
+  "env": {
+    "dev": {
+      "domain": "au-library-list.myshopbase.net",
+      "shop_name": "au-library-list",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_id": 10322685,
+      "user_id": 73800,
+      "other_shop": {
+        "domain": "au-library-list2.myshopbase.net",
+        "username": "shopbase@beeketing.net",
+        "password": "S#|j>m2N[q",
+        "shop_id": 10326839,
+        "user_id": 73800
+      }
+    },
+    "prodtest": {
+      "domain": "au-library-list-prodtest.onshopbase.com",
+      "shop_name": "au-library-list-prodtest",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10376315,
+      "user_id": 73782,
+      "other_shop": {
+        "domain": "au-library-list-prodtest1.onshopbase.com",
+        "username": "shopbase@beeketing.net",
+        "password": "Q(f!3Kx+6n;?Us%F",
+        "shop_id": 10376317,
+        "user_id": 73782
+      },
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "prod": {
+      "domain": "au-library-list.onshopbase.com",
+      "shop_name": "au-library-list",
+      "api": "https://api.shopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10376318,
+      "user_id": 73782,
+      "other_shop": {
+        "domain": "au-library-list1.onshopbase.com",
+        "username": "shopbase@beeketing.net",
+        "password": "Q(f!3Kx+6n;?Us%F",
+        "shop_id": 10321568,
+        "user_id": 73782
+      }
+    }
+  },
+  "cases": {
+    "SB_WEB_BUILDER_WB_LibraryAuto_1": {
+      "description": "Verify web base library",
+      "library": {
+        "library_id": 1,
+        "index": 1,
+        "type": "",
+        "actions": ["View"],
+        "alert": "This is Web Base - ShopBase common library. You can only see and preview the details.",
+        "alert_selector": ".s-alert__description"
+      }
+    },
+    "SB_WEB_BUILDER_WB_LibraryAuto_3": {
+      "description": "Verify create shop library",
+      "pre_condition": {
+        "title": "Already exist",
+        "description": ""
+      },
+      "input": [
+        {
+          "description_case": "Title is blank",
+          "click_create": true,
+          "title": "",
+          "description": "description library",
+          "button_selector": ".sb-popup__footer-button.sb-button--primary.is-disabled"
+        },
+        {
+          "description_case": "Input title and description > 225",
+          "title": "Title Manage your store's libraries. Library will help you easily manage your templates, your custom block code, and styles on web builder. Manage your store's libraries. Library will help you easily manage your templates, your custom block code, and styles on web builder",
+          "description": "Description Manage your store's libraries. Library will help you easily manage your templates, your custom block code, and styles on web builder. Manage your store's libraries. Library will help you easily manage your templates, your custom block code, and styles on web builder",
+          "click": ".sb-popup__footer-button.sb-button--primary",
+          "toast": "Create library successfully"
+        },
+        {
+          "description_case": "Input title already exist",
+          "click_create": true,
+          "title": "Already exist",
+          "description": "description library",
+          "click": ".sb-popup__footer-button.sb-button--primary",
+          "alert": "This library name already exists",
+          "alert_selector": ".sb-alert__danger"
+        },
+        {
+          "description_case": "Description is blank, input character and number into title",
+          "title": "title library 1@",
+          "description": "",
+          "click": ".sb-popup__footer-button.sb-button--primary",
+          "toast": "Create library successfully"
+        },
+        {
+          "description_case": "click discard",
+          "click_create": true,
+          "title": "click discard",
+          "description": "description",
+          "click": ".sb-popup__footer-button.sb-button--default"
+        },
+        {
+          "description_case": "click close",
+          "click_create": true,
+          "title": "click close",
+          "description": "description",
+          "click": ".sb-popup__header-close"
+        }
+      ],
+      "expect": {
+        "libraries": [
+          {
+            "index": 2,
+            "title": "Title library 1@",
+            "status": "true",
+            "actions": ["Edit", "Delete"]
+          },
+          {
+            "index": 3,
+            "title": "Title Manage your store's libraries. Library will help you easily manage your templates, your custom block code, and styles on web builder. Manage your store's libraries. Library will help you easily manage your templates, your custom block code, and styl",
+            "type": "Description Manage your store's libraries. Library will help you easily manage your templates, your custom block code, and styles on web builder. Manage your store's libraries. Library will help you easily manage your templates, your custom block code, an",
+            "status": "true",
+            "actions": ["Edit", "Delete"]
+          }
+        ]
+      }
+    },
+    "SB_WEB_BUILDER_WB_LibraryAuto_4": {
+      "description": "Verify action with shop library: edit",
+      "pre_condition": {
+        "title": "Edit shop library",
+        "description": ""
+      },
+      "index": 2,
+      "input": [
+        {
+          "description_case": "Title is blank",
+          "title": "",
+          "description": "description",
+          "toast": "Invalid title"
+        },
+        {
+          "description_case": "Edit success",
+          "title": "edit success",
+          "description": "description edit success",
+          "toast": "Update library details success"
+        }
+      ],
+      "expect": {
+        "snapshot": "edit-library.png",
+        "library": {
+          "index": 2,
+          "tile": "Edit success",
+          "type": "description edit success",
+          "status": "true",
+          "actions": ["Edit", "Delete"]
+        }
+      }
+    },
+    "SB_WEB_BUILDER_WB_LibraryAuto_5": {
+      "description": "Verify actions with library: enable/disable, delete",
+      "pre_condition": {
+        "title": "Delete library",
+        "description": ""
+      },
+      "index": 2,
+      "disable_status": "false",
+      "enable_status": "true",
+      "toast": "Delete library successfully"
+    },
+    "SB_WEB_BUILDER_WB_LibraryAuto_6": {
+      "description": "Verify create linked library",
+      "pre_condition": [
+        {
+          "title": "Create library",
+          "description": "Description"
+        },
+        {
+          "shop": "${other_shop}",
+          "title": "Copied library"
+        }
+      ],
+      "input": [
+        {
+          "description": "Input id shop library",
+          "title": "Create library",
+          "click": "//div[contains(@class,'sb-popup__container')]//button[contains(@class,'sb-button--primary')]",
+          "alert": "Library existed",
+          "alert_selector": ".sb-alert__title"
+        },
+        {
+          "description": "Input id library web base",
+          "id": 1,
+          "click": "//div[contains(@class,'sb-popup__container')]//button[contains(@class,'sb-button--primary')]",
+          "alert": "cannot link library web base",
+          "alert_selector": ".sb-alert__title"
+        },
+        {
+          "description": "Input id linked library",
+          "title": "Copied library",
+          "click": "//div[contains(@class,'sb-popup__container')]//button[contains(@class,'sb-button--primary')]",
+          "alert": "This store has been linked",
+          "alert_selector": ".sb-alert__title"
+        },
+        {
+          "description": "Input id not exist",
+          "id": 666666,
+          "click": "//div[contains(@class,'sb-popup__container')]//button[contains(@class,'sb-button--primary')]",
+          "alert": "Shop’s library does not exist",
+          "alert_selector": ".sb-alert__title"
+        },
+        {
+          "description": "Input id already exist but user have not permission",
+          "id": 100,
+          "click": "//div[contains(@class,'sb-popup__container')]//button[contains(@class,'sb-button--primary')]",
+          "alert": "Shop’s library does not exist",
+          "alert_selector": ".sb-alert__title"
+        },
+        {
+          "description": "Input id includes character",
+          "id": "id",
+          "click": "//div[contains(@class,'sb-popup__container')]//button[contains(@class,'sb-button--primary')]",
+          "alert": "invalid library id",
+          "alert_selector": ".sb-alert__title"
+        },
+        {
+          "description": "Input id already exist and user have permission",
+          "title": "Copy library",
+          "shop": {
+            "domain": "au-inside-banner.myshopbase.net",
+            "username": "shopbase@beeketing.net",
+            "password": "S#|j>m2N[q",
+            "shop_id": 10321568,
+            "user_id": 73800
+          },
+          "click": "//div[contains(@class,'sb-popup__container')]//button[contains(@class,'sb-button--primary')]",
+          "toast": "Create linked library successfully"
+        },
+        {
+          "description": "Verify discard",
+          "click_create": true,
+          "click": "//div[contains(@class,'sb-popup__container')]//button[contains(@class,'sb-button--default')]",
+          "id": 81
+        },
+        {
+          "description": "Verify close",
+          "click_create": true,
+          "click": ".sb-popup__header-close",
+          "id": 81
+        }
+      ],
+      "expect": {
+        "snapshot": "create-library-linked.png",
+        "libraries": [
+          {
+            "index": 2,
+            "tile": "Copy library",
+            "link": "(linked library)",
+            "status": "true",
+            "actions": ["View", "Remove"]
+          }
+        ]
+      }
+    },
+    "SB_WEB_BUILDER_WB_LibraryAuto_7": {
+      "description": "Verify update and delete root linked library",
+      "shop": "${other_shop}",
+      "library": {
+        "title": "Update and delete root library",
+        "description": ""
+      },
+      "update": {
+        "input": {
+          "title": "Updated library (linked library)",
+          "description": "Updated",
+          "type": []
+        },
+        "expect": {
+          "library_index": 2
+        }
+      },
+      "delete": {
+        "title": "Updated library",
+        "expect": {
+          "actions": ["Delete"]
+        }
+      }
+    },
+    "SB_WEB_BUILDER_WB_LibraryAuto_8": {
+      "description": "Verify actions with linked library",
+      "library_index": 2,
+      "title": "Copied library",
+      "shop": "${other_shop}",
+      "alert": "This is a linked library. You can only see and preview the details. Any changes to the original library will be synced here.",
+      "alert_selector": ".s-alert__description"
+    }
+  }
+}

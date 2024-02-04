@@ -1,0 +1,202 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-ne-save-exit-preview.myshopbase.net",
+      "shop_name": "au-ne-save-exit-preview",
+      "shop_id": 10335332,
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "user_id": 90252,
+      "theme_id": 3240208,
+      "product_path": "admin/creator/products",
+      "web_base_id": 1,
+      "apply_template": "Finance Course",
+      "type": "product",
+      "templates": ["Header - #01", "Footer - #01"]
+    },
+    "local": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-ne-save-exit-preview-prodtest.onshopbase.com",
+      "shop_name": "au-ne-save-exit-preview-prodtest",
+      "shop_id": 10493956,
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "user_id": 11260206,
+      "theme_id": 1643244,
+      "product_path": "admin/creator/products",
+      "web_base_id": 1,
+      "apply_template": "Finance Course",
+      "type": "product",
+      "templates": ["Header - Thankyou", "Footer - Minimal"]
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-ne-save-exit-preview.onshopbase.com",
+      "shop_name": "au-ne-save-exit-preview",
+      "shop_id": 10493960,
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "user_id": 11260206,
+      "product_path": "admin/creator/products",
+      "web_base_id": 1,
+      "apply_template": "Finance Course",
+      "type": "product",
+      "templates": ["Header - Burger menu", "Footer - Minimal"],
+      "accounts_domain": "accounts-test.shopbase.com",
+      "theme_id": 1643259
+    }
+  },
+  "cases": {
+    "SB_WEB_BUILDER_NAV_SAVE_1": {
+      "save_button": "save",
+      "add_category": "Header",
+      "add_blank_section": {
+        "from": {
+          "category": "Header",
+          "template": "Header - Thankyou"
+        },
+        "to": {
+          "position": {
+            "section": 3
+          },
+          "isBottom": false
+        }
+      },
+      "expected": {
+        "unsaved_message": "Unsaved changes",
+        "success_message": "All changes are saved"
+      }
+    },
+    "SB_WEB_BUILDER_NAV_SAVE_2": {
+      "add_category": "Header",
+      "add_blank_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 3
+          },
+          "isBottom": false
+        }
+      },
+      "save_button": "save",
+      "expected": {
+        "error_message": "Something went wrong, please try again later"
+      }
+    },
+    "SB_WEB_BUILDER_NAV_SAVE_3": {
+      "add_category": "Header",
+      "add_blank_section": {
+        "from": {
+          "category": "Footer",
+          "template": "Footer - Minimal"
+        },
+        "to": {
+          "position": {
+            "section": 3
+          },
+          "isBottom": false
+        }
+      },
+      "exit_button": "exit",
+      "expected": {
+        "popup_title": "Are you sure you want to leave?",
+        "warning_message": "You have unsaved changes. If you leave now, these changes will be lost and can't be recovered."
+      }
+    },
+    "SB_WEB_BUILDER_NAV_EXIT_1": {},
+    "SB_WEB_BUILDER_NAV_EXIT_2": {
+      "exit_button": "exit",
+      "expected_url": "/\\admin/themes"
+    },
+    "SB_WEB_BUILDER_NAV_EXIT_3": {
+      "exit_button": "exit",
+      "popup_actions": [
+        {
+          "title": "Click x to close popup",
+          "button": "x",
+          "expected_url": "/\\admin/builder/site",
+          "remove_layer": {
+            "position": {
+              "section": 2,
+              "block": 1
+            },
+            "option": "Remove"
+          }
+        },
+        {
+          "title": "Click stay to close popup",
+          "button": "Stay",
+          "expected_url": "/\\admin/builder/site",
+          "remove_layer": {
+            "position": {
+              "section": 1,
+              "block": 1
+            },
+            "option": "Remove"
+          }
+        },
+        {
+          "title": "Click leave to go to previous page",
+          "button": "Leave",
+          "expected_url": "/\\admin/themes",
+          "remove_layer": {
+            "position": {
+              "section": 3
+            },
+            "option": "Remove"
+          }
+        }
+      ],
+      "expected": {
+        "popup_title": "Are you sure you want to leave?",
+        "warning_message": "You have unsaved changes. If you leave now, these changes will be lost and can't be recovered."
+      }
+    },
+    "SB_WEB_BUILDER_NAV_PRE_1": {},
+    "SB_WEB_BUILDER_NAV_PRE_2": {
+      "add_category": "Header",
+      "add_blank_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 3
+          },
+          "isBottom": false
+        }
+      },
+      "expected": {
+        "success_message": "All changes are saved",
+        "attribute": "visible",
+        "value": "false",
+        "url": "theme_preview"
+      }
+    },
+    "SB_WEB_BUILDER_NAV_PRE_3": {
+      "add_category": "Header",
+      "add_blank_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 3
+          },
+          "isBottom": false
+        }
+      },
+      "expected": {
+        "success_message": "All changes are saved",
+        "url": "theme_preview",
+        "section": 10
+      }
+    }
+  }
+}

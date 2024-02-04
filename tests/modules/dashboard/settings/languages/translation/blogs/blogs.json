@@ -1,0 +1,253 @@
+{
+  "env": {
+    "local": {
+      "api": "https://gapi.dev.shopbase.net",
+      "accounts_domain": "accounts.dev.shopbase.net",
+      "domain": "au-trans-blogs.myshopbase.net",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "43AhIn|VWp;[?9&",
+      "shop_name": "au-trans-blogs",
+      "user_id": 89797,
+      "shop_id": 10333657
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "accounts_domain": "accounts.dev.shopbase.net",
+      "domain": "au-trans-blogs.myshopbase.net",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "43AhIn|VWp;[?9&",
+      "shop_name": "au-trans-blogs",
+      "user_id": 89797,
+      "shop_id": 10333657
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "accounts_domain": "accounts.shopbase.com",
+      "domain": "au-trans-blogs-prodtest.onshopbase.com",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "shop_name": "au-trans-blogs-prodtest",
+      "user_id": 11244582,
+      "shop_id": 10486133
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "accounts_domain": "accounts.shopbase.com",
+      "domain": "au-trans-blogs-prod.onshopbase.com",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "shop_name": "au-trans-blogs-prod",
+      "user_id": 11244582,
+      "shop_id": 10486135
+    }
+  },
+  "blog_info": {
+    "title": "Blog test translation",
+    "commentType": "Comments are allowed, and are automatically published"
+  },
+  "blog_post_info": {
+    "title": "Lorem ipsum",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus rutrum tellus pellentesque eu.",
+    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus rutrum tellus pellentesque eu.",
+    "visibility": "Visible",
+    "seo": true,
+    "page_title": "This is SEO page title",
+    "meta_description": "This is meta description"
+  },
+  "default_language": "English",
+  "default_language_locale": "en-us",
+  "cases": {
+    "SB_SET_TL_61": {
+      "case_description": "[DB - UI/UX] Kiểm tra màn translate detail của store data - Pages - Blogs",
+      "language_data": {
+        "language": "German",
+        "status": "Published languages",
+        "entity": "Blogs",
+        "placeholder_entity": "Blog"
+      },
+      "data_manual": {
+        "field_name": "Title",
+        "value": "Blog manual"
+      },
+      "field_name_check_auto_icon": "SEO page title",
+      "field_name_check_outdate_icon": "Title",
+      "data_edit_more_characters": {
+        "field_name": "SEO page title",
+        "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus rutrum tellus pellentesque eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus rutrum tellus pellentesque eu."
+      },
+      "invalid_value": "fake_blog",
+      "valid_value": "Blog test",
+      "blog_info": [
+        {
+          "title": "Blog 1",
+          "commentType": "Comments are allowed, and are automatically published",
+          "seo": true,
+          "page_title": "Page title blog 1",
+          "meta_description": "Meta description blog 1",
+          "hide_field": [],
+          "show_field": ["SEO page title", "Meta description", "Title"]
+        },
+        {
+          "title": "Blog 2",
+          "commentType": "Comments are allowed, and are automatically published",
+          "seo": true,
+          "page_title": "",
+          "meta_description": "",
+          "hide_field": ["Meta description"],
+          "show_field": ["Title", "SEO page title"]
+        },
+        {
+          "title": "Blog 3",
+          "commentType": "Comments are allowed, and are automatically published",
+          "seo": true,
+          "page_title": "",
+          "meta_description": "Meta description blog 3",
+          "hide_field": [],
+          "show_field": ["Meta description", "Title", "SEO page title"]
+        },
+        {
+          "title": "Blog test 4",
+          "commentType": "Comments are allowed, and are automatically published",
+          "seo": true,
+          "page_title": "Page title blog test 4",
+          "meta_description": "",
+          "hide_field": ["Meta description"],
+          "show_field": ["SEO page title", "Title"]
+        }
+      ],
+      "blog_info_edit": {
+        "title": "Blog edit",
+        "commentType": "Comments are allowed, and are automatically published",
+        "seo": true,
+        "page_title": "Page title blog edit"
+      },
+      "more_characters": "Lorem ipsum dolor sit amet consectetur adipiscing elit vehicula, venenatis natoque urna dui mi et labore et dolore magna aliqua."
+    },
+    "SB_SET_TL_96": {
+      "case_description": "[DB+SF - Function] Kiểm tra tính năng auto translate khi Enable Auto translate Pages - Blogs",
+      "language_data": {
+        "language": "Vietnamese",
+        "language_locale": "vi-vn",
+        "status": "Published languages",
+        "entity": "Blogs",
+        "placeholder_entity": "Blog"
+      },
+      "blog_info": [
+        {
+          "title": "Blog test case 96",
+          "commentType": "Comments are allowed, and are automatically published",
+          "seo": true,
+          "page_title": "Page title blog test case 96",
+          "meta_description": "This is meta description blog test case 96",
+          "expected_result_translation": [
+            {
+              "field_name": "Title",
+              "source_value": "Blog test case 96",
+              "source_type": "text",
+              "target_value": "translated Blog test case 96 to Vietnamese",
+              "target_type": "text"
+            },
+            {
+              "field_name": "SEO page title",
+              "source_value": "Page title blog test case 96",
+              "source_type": "text",
+              "target_value": "translated Page title blog test case 96 to Vietnamese",
+              "target_type": "text"
+            },
+            {
+              "field_name": "Meta description",
+              "source_value": "This is meta description blog test case 96",
+              "source_type": "text",
+              "target_value": "translated This is meta description blog test case 96 to Vietnamese",
+              "target_type": "text"
+            }
+          ]
+        }
+      ],
+      "blog_post_info": {
+        "title": "Blog post test case 96",
+        "content": "Content Blog post test case 96",
+        "excerpt": "Excerpt Blog post test case 96",
+        "visibility": "Visible",
+        "blog": "Blog test case 96",
+        "seo": true,
+        "handle": "blog-post-test-case-96",
+        "page_title": "This is SEO page title Blog post test case 96",
+        "meta_description": "This is meta description Blog post test case 96"
+      },
+      "blog_info_2": {
+        "title": "Blog test case 96 - test add and delete",
+        "commentType": "Comments are allowed, and are automatically published",
+        "seo": true,
+        "page_title": "Page title blog test case 96 - test add and delete",
+        "meta_description": "This is meta description - test add and delete"
+      },
+      "blog_info_edit": {
+        "title": "Blog edit",
+        "commentType": "Comments are allowed, and are automatically published",
+        "seo": true,
+        "page_title": "Page title blog edit",
+        "meta_description": "Meta description blog edit",
+        "handle": "blog-edit",
+        "expected_result_translation": [
+          {
+            "field_name": "Title",
+            "source_value": "Blog edit",
+            "source_type": "text",
+            "target_value": "translated Blog edit to Vietnamese",
+            "target_type": "text"
+          },
+          {
+            "field_name": "SEO page title",
+            "source_value": "Page title blog edit",
+            "source_type": "text",
+            "target_value": "translated Page title blog edit to Vietnamese",
+            "target_type": "text"
+          },
+          {
+            "field_name": "Meta description",
+            "source_value": "Meta description blog edit",
+            "source_type": "text",
+            "target_value": "translated Meta description blog edit to Vietnamese",
+            "target_type": "text"
+          }
+        ]
+      },
+      "edit_manual_translate": [
+        {
+          "input_data_type": "text",
+          "field_name": "Title",
+          "content": "Blog manual"
+        },
+        {
+          "input_data_type": "text",
+          "field_name": "SEO page title",
+          "content": "Page title blog manual"
+        },
+        {
+          "input_data_type": "text",
+          "field_name": "Meta description",
+          "content": "Meta description blog manual"
+        }
+      ],
+      "delete_translation": [
+        {
+          "input_data_type": "text",
+          "field_name": "Title",
+          "content": ""
+        },
+        {
+          "input_data_type": "text",
+          "field_name": "SEO page title",
+          "content": ""
+        },
+        {
+          "input_data_type": "text",
+          "field_name": "Meta description",
+          "content": ""
+        }
+      ],
+      "toast_success": "Successfully update this language"
+    }
+  }
+}

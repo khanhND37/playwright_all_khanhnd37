@@ -1,0 +1,112 @@
+{
+  "env": {
+    "prod": {
+      "domain": "au-skipso-prod.onshopbase.com",
+      "api": "https://api.shopbase.com",
+      "username": "plus-qe-2@beeketing.net",
+      "password": "Q37t^Q7Sa4W8",
+      "shop_name": "au-skipso-prod",
+      "shop_id": 10429556,
+      "user_id": 11248586,
+      "odoo_host": "https://autotest-erp-plus.shopbase.dev",
+      "odoo_db": "shopbase_fulfillment",
+      "odoo_username": "qaocg",
+      "odoo_password": "LFmy=qGLvwW^E63b",
+      "max_retry_time": 50000,
+      "odoo_partner_id": 13112740,
+      "cancel_reason_id": 3,
+      "processing_time": 37,
+      "update_processing_time": 8,
+      "min_shipping_time": 12,
+      "max_shipping_time": 16,
+      "shipping_types": {
+        "standard": 30,
+        "fast": 34,
+        "low": 38
+      },
+      "payment_term_id": 1
+    },
+    "prodtest": {
+      "domain": "au-skipso-prodtest.onshopbase.com",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "plus-qe-2@beeketing.net",
+      "password": "Q37t^Q7Sa4W8",
+      "shop_name": "au-skipso-prodtest",
+      "shop_id": 10430677,
+      "user_id": 11248586,
+      "odoo_host": "https://autotest-erp-plus.shopbase.dev",
+      "odoo_db": "shopbase_fulfillment",
+      "odoo_username": "qaocg",
+      "odoo_password": "LFmy=qGLvwW^E63b",
+      "max_retry_time": 50000,
+      "odoo_partner_id": 13112740,
+      "cancel_reason_id": 3,
+      "processing_time": 7,
+      "update_processing_time": 8,
+      "min_shipping_time": 10,
+      "max_shipping_time": 14,
+      "shipping_types": {
+        "standard": 30,
+        "fast": 34,
+        "low": 38
+      },
+      "payment_term_id": 1,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "domain": "au-skipso.myshopbase.net",
+      "shop_name": "au-skipso.myshopbase.net",
+      "username": "plus-qe-2@beeketing.net",
+      "password": "VDDSzj45Z0#l",
+      "api": "https://gapi.dev.shopbase.net",
+      "shop_id": 10325149,
+      "user_id": 90044,
+      "accounts_domain": "accounts.dev.shopbase.net",
+      "plb_template": {
+        "domain": "plusbase-checkout.myshopbase.net",
+        "shop_name": "plusbase-checkout.myshopbase.net",
+        "user_id": "87262",
+        "shop_id": "10060862",
+        "username": "phuongpham@beeketing.net",
+        "password": "123456",
+        "shop": "plusbase-checkout"
+      },
+      "odoo_host": "https://odoo.dev.shopbase.net",
+      "odoo_db": "sbase_fulfillment_dev",
+      "odoo_username": "admin",
+      "odoo_password": "admin",
+      "odoo_partner_id": 1003680,
+      "cancel_reason_id": 3,
+      "processing_time": 10,
+      "update_processing_time": 7,
+      "min_shipping_time": 30,
+      "max_shipping_time": 40,
+      "shipping_types": {
+        "standard": 40,
+        "fast": 9,
+        "low": 34
+      },
+      "payment_term_id": 1
+    }
+  },
+  "cases": {
+    "SB_PLB_SUQ_123": {
+      "name": "Verify time line trong SO detail sau khi SO có update product cost trên odoo, các variant có giá khác nhau",
+      "is_base_on": false
+    },
+    "SB_PLB_SUQ_124": {
+      "name": "Verify time line trong SO detail sau khi SO có update product cost trên odoo, các variant có giá bằng nhau",
+      "is_base_on": true
+    }
+  },
+  "ali_url": "https://www.aliexpress.com/item/3256805810815484.html",
+  "max_retry_time": 10,
+  "product_name": "Fashion 2023 Autumn/Winter",
+  "adjust_price": 5,
+  "variant": ["S", "Picture Color"],
+  "shipping_types_name": {
+    "standard": "PlusBase Standard Shipping",
+    "fast": "PlusBase Express Shipping",
+    "low": "PlusBase Eco Shipping"
+  }
+}

@@ -1,0 +1,383 @@
+{
+  "env": {
+    "first_section": "Section 1",
+    "dev": {
+      "domain": "au-save-as-template.myshopbase.net",
+      "shop_name": "au-save-as-template.myshopbase.net",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "user_id": 90252,
+      "shop_id": 10335585,
+      "theme_id": 3244821
+    },
+    "prodtest": {
+      "domain": "au-save-as-template-prodtest.onshopbase.com",
+      "shop_name": "au-save-as-template-prodtest.onshopbase.com",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "user_id": 11260206,
+      "shop_id": 10497404,
+      "theme_id": 1656146,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "prod": {
+      "domain": "au-save-as-template.onshopbase.com",
+      "shop_name": "au-save-as-template.onshopbase.com",
+      "api": "https://api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "user_id": 11260206,
+      "shop_id": 10497397,
+      "theme_id": 1656140
+    }
+  },
+  "libraries_action": {
+    "action": "all"
+  },
+  "cases": {
+    "TC_SAVE_AS_TEMPLATE": {
+      "data": [
+        {
+          "case_id": "SB_WEB_BUILDER_SAT_SAT_1",
+          "description": "Section_Check save section template when shop have no library",
+          "template_type": "section",
+          "open_layer": {
+            "sectionName": "Section 1"
+          },
+          "library_1st": "Auto library",
+          "cate_name": "Cate1",
+          "icon": ".list-icon span >> nth=1",
+          "tag": "shop tag",
+          "template_name": "Section template 01"
+        },
+        {
+          "case_id": "SB_WEB_BUILDER_SAT_SAT_2",
+          "description": "Section_Check save section template when shop have only one library",
+          "template_type": "section",
+          "open_layer": {
+            "sectionName": "Section 1"
+          },
+          "library_api": [
+            {
+              "library_name": {
+                "title": "Auto library",
+                "description": "",
+                "types": ["ecommerce"]
+              }
+            }
+          ],
+          "category_api": {
+            "title": "Cate1"
+          },
+          "library_2nd": "Auto library 02",
+          "cate_name": "Cate1",
+          "x_icon": true,
+          "icon": ".list-icon span >> nth=1",
+          "template_name": "Section template 02",
+          "use_template": true,
+          "expect": {
+            "snap_shot_insert_panel": "section02_insert_panel.png"
+          }
+        },
+        {
+          "case_id": "SB_WEB_BUILDER_SAT_SAT_3",
+          "description": "Section_Check save section template when shop have more than 1 library",
+          "template_type": "section",
+          "open_layer": {
+            "sectionName": "Section 1"
+          },
+          "library_api": [
+            {
+              "library_name": {
+                "title": "Auto library",
+                "description": "",
+                "types": ["ecommerce"]
+              }
+            },
+            {
+              "library_name": {
+                "title": "Auto library 2",
+                "description": "",
+                "types": ["ecommerce"]
+              }
+            }
+          ],
+          "category_api": {
+            "title": "Cate1"
+          },
+          "cate_name": "Cate1",
+          "search_library": "Auto library 02",
+          "template_name": "Section template 03",
+          "template_name_edit": "template123@",
+          "action_library_detail": {
+            "sectionName": "Section 2"
+          },
+          "index": 2,
+          "template_tab": "Section templates"
+        },
+        {
+          "case_id": "SB_WEB_BUILDER_SAT_SAT_4",
+          "description": "Block_Check save block template when shop have no library",
+          "template_type": "block",
+          "open_layer": {
+            "sectionName": "Section 1",
+            "subLayerName": "Heading",
+            "subLayerIndex": 1
+          },
+          "library_1st": "Auto library",
+          "cate_name": "Cate1",
+          "icon": ".list-icon span >> nth=1",
+          "tag": "shop tag",
+          "template_name": "Block template 01"
+        },
+        {
+          "case_id": "SB_WEB_BUILDER_SAT_SAT_5",
+          "description": "Block_Check save block template when shop have only one library",
+          "template_type": "block",
+          "open_layer": {
+            "sectionName": "Section 1",
+            "subLayerName": "Heading",
+            "subLayerIndex": 1
+          },
+          "library_api": [
+            {
+              "library_name": {
+                "title": "Auto library",
+                "description": "",
+                "types": ["ecommerce"]
+              }
+            }
+          ],
+          "category_api": {
+            "title": "Cate1"
+          },
+          "library_2nd": "Auto library 02",
+          "x_icon": true,
+          "cate_name": "Cate1",
+          "icon": ".list-icon span >> nth=1",
+          "template_name": "Block template 02",
+          "use_template": true,
+          "expect": {
+            "snap_shot_insert_panel": "block02_insert_panel.png"
+          },
+          "sleep": 60000
+        },
+        {
+          "case_id": "SB_WEB_BUILDER_SAT_SAT_6",
+          "description": "Block_Check save block template when shop have more than 1 library",
+          "template_type": "block",
+          "open_layer": {
+            "sectionName": "Section 1",
+            "subLayerName": "Heading",
+            "subLayerIndex": 1
+          },
+          "cate_name": "Cate1",
+          "search_library": "Auto library 02",
+          "library_api": [
+            {
+              "library_name": {
+                "title": "Auto library",
+                "description": "",
+                "types": ["ecommerce"]
+              }
+            },
+            {
+              "library_name": {
+                "title": "Auto library 2",
+                "description": "",
+                "types": ["ecommerce"]
+              }
+            }
+          ],
+          "category_api": {
+            "title": "Cate1"
+          },
+          "template_name": "Block template 03",
+          "template_name_edit": "template123@",
+          "action_library_detail": {
+            "sectionName": "Section 2",
+            "subLayerName": "Heading",
+            "subLayerIndex": 1
+          },
+          "index": 2,
+          "template_tab": "Block templates"
+        },
+        {
+          "case_id": "SB_WEB_BUILDER_SAT_SAT_13",
+          "description": "Page_Check save page template when shop have no library",
+          "template_type": "page",
+          "library_1st": "Auto library",
+          "tag": "shop tag",
+          "template_name": "Page template 01"
+        },
+        {
+          "case_id": "SB_WEB_BUILDER_SAT_SAT_14",
+          "description": "Page_Check save page template when shop have only one library",
+          "template_type": "page",
+          "library_api": [
+            {
+              "library_name": {
+                "title": "Auto library",
+                "description": "",
+                "types": ["ecommerce"]
+              }
+            }
+          ],
+          "library_2nd": "Auto library 02",
+          "x_icon": true,
+          "use_template": true,
+          "template_name": "Page template 02",
+          "index": 2,
+          "template_tab": "Page templates"
+        },
+        {
+          "case_id": "SB_WEB_BUILDER_SAT_SAT_15",
+          "description": "Page_Check save page template when shop have more than 1 library",
+          "template_type": "page",
+          "search_library": "Auto library 02",
+          "library_api": [
+            {
+              "library_name": {
+                "title": "Auto library",
+                "description": "",
+                "types": ["ecommerce"]
+              }
+            },
+            {
+              "library_name": {
+                "title": "Auto library 2",
+                "description": "",
+                "types": ["ecommerce"]
+              }
+            }
+          ],
+          "template_name": "Page template 03",
+          "template_name_edit": "template123@",
+          "action_library_detail": true,
+          "index": 2,
+          "template_tab": "Page templates"
+        },
+        {
+          "case_id": "SB_WEB_BUILDER_SAT_SAT_7",
+          "description": "Font_Check luồng tạo template trường hợp shop chưa có library nào",
+          "template_type": "font",
+          "library_1st": "font library",
+          "template_name": "Font template 01",
+          "fontHead": "Acme",
+          "fontPara": "Aboreto",
+          "sleep": 60000
+        },
+        {
+          "case_id": "SB_WEB_BUILDER_SAT_SAT_8",
+          "description": "font_Check save font template when shop have only one library",
+          "template_type": "font",
+          "library_api": [
+            {
+              "library_name": {
+                "title": "Auto library",
+                "description": "",
+                "types": ["ecommerce"]
+              }
+            }
+          ],
+          "library_2nd": "Auto library 02",
+          "template_name": "font template 02",
+          "fontHead": "Aguafina Script",
+          "fontPara": "Abyssinica SIL",
+          "use_template": true,
+          "expect": {
+            "snapshot_use_template": "font02_use_template.png"
+          }
+        },
+        {
+          "case_id": "SB_WEB_BUILDER_SAT_SAT_9",
+          "description": "font_Check save font template when shop have more than 1 library",
+          "template_type": "font",
+          "search_library": "Auto library 02",
+          "library_api": [
+            {
+              "library_name": {
+                "title": "Auto library",
+                "description": "",
+                "types": ["ecommerce"]
+              }
+            },
+            {
+              "library_name": {
+                "title": "Auto library 2",
+                "description": "",
+                "types": ["ecommerce"]
+              }
+            }
+          ],
+          "template_name": "font template 03",
+          "fontHead": "Acto",
+          "fontPara": "Akaya Telivigala",
+          "template_name_edit": "template123@",
+          "action_library_detail": true,
+          "index": 2,
+          "template_tab": "Styles"
+        },
+        {
+          "case_id": "SB_WEB_BUILDER_SAT_SAT_10",
+          "description": "color_Check save color template",
+          "template_type": "color",
+          "library_1st": "color library",
+          "template_name": "color template 01",
+          "color": "#87A8ER"
+        },
+        {
+          "case_id": "SB_WEB_BUILDER_SAT_SAT_11",
+          "description": "color_Check save color template when shop have only one library",
+          "template_type": "color",
+          "library_api": [
+            {
+              "library_name": {
+                "title": "Auto library",
+                "description": "",
+                "types": ["ecommerce"]
+              }
+            }
+          ],
+          "library_2nd": "Auto library 02",
+          "template_name": "color template 02",
+          "color": "#19E2E5",
+          "use_template": true,
+          "expect": {
+            "snapshot_use_template": "color02_use_template.png"
+          }
+        },
+        {
+          "case_id": "SB_WEB_BUILDER_SAT_SAT_12",
+          "description": "color_Check save color template when shop have more than 1 library",
+          "template_type": "color",
+          "search_library": "Auto library 02",
+          "library_api": [
+            {
+              "library_name": {
+                "title": "Auto library",
+                "description": "",
+                "types": ["ecommerce"]
+              }
+            },
+            {
+              "library_name": {
+                "title": "Auto library 2",
+                "description": "",
+                "types": ["ecommerce"]
+              }
+            }
+          ],
+          "template_name": "color template 03",
+          "template_name_edit": "template123@",
+          "action_library_detail": true,
+          "color": "#87A8ER",
+          "index": 3,
+          "template_tab": "Styles"
+        }
+      ]
+    }
+  }
+}

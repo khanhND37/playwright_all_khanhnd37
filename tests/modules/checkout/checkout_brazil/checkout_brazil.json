@@ -1,0 +1,131 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "username": "shopbase2@beeketing.net",
+      "password": "raMse).7L/b4;k#@",
+      "domain": "au-checkout-with-brazil.onshopbase.com",
+      "shop_name": "au-checkout-with-brazil",
+      "user_id": 74303,
+      "shop_id": 10379531
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "shopbase2@beeketing.net",
+      "password": "raMse).7L/b4;k#@",
+      "domain": "au-checkout-with-brazil-prodtest.onshopbase.com",
+      "shop_name": "au-checkout-with-brazil-prodtest",
+      "user_id": 74303,
+      "shop_id": 10379700,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-checkout-with-brazil.myshopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_name": "au-checkout-with-brazil",
+      "user_id": 73800,
+      "shop_id": 10322985
+    }
+  },
+  "cases": {
+    "SB_CHE_CB_3": {
+      "products_checkout": {
+        "productName": "T-shirt",
+        "productQty": 1
+      },
+      "shipping_address": {
+        "email": "testerOCG@maildrop.cc",
+        "first_name": "ShopBase",
+        "last_name": "Auto",
+        "address": "1600 W Loop S",
+        "country": "Brazil",
+        "state": "Acre",
+        "city": "Schenectady",
+        "zipcode": "12301",
+        "phone_number": "0336555555",
+        "cpf_cnpj_number": "123"
+      },
+      "description": "Nhập ký tự số trường CPF/ CNPJ number. Click button 'Place your order'",
+      "list_data": [
+        {
+          "shipping_cpf_cnpj_number": {
+            "cpf_cnpj_number": "123"
+          },
+          "message": "CPF only contains 11 digits and CNPJ number only contains 14 digits"
+        },
+        {
+          "shipping_cpf_cnpj_number": {
+            "cpf_cnpj_number": "1234567890123"
+          },
+          "message": "CPF only contains 11 digits and CNPJ number only contains 14 digits"
+        },
+        {
+          "shipping_cpf_cnpj_number": {
+            "cpf_cnpj_number": "123456789012345"
+          },
+          "message": "CPF only contains 11 digits and CNPJ number only contains 14 digits"
+        },
+        {
+          "shipping_cpf_cnpj_number": {
+            "cpf_cnpj_number": "!@#$."
+          },
+          "message": "CPF only contains 11 digits and CNPJ number only contains 14 digits"
+        },
+        {
+          "shipping_cpf_cnpj_number": {
+            "cpf_cnpj_number": "  "
+          },
+          "message": "Please enter a CPF/CNPJ number."
+        }
+      ]
+    },
+    "SB_CHE_CB_6": {
+      "products_checkout": {
+        "product_name": "T-shirt",
+        "product_qty": 1
+      },
+      "shipping_address": {
+        "email": "testerBrazil@maildrop.cc",
+        "first_name": "Customer",
+        "last_name": "Brazil",
+        "address": "1600 W Loop S",
+        "country": "Brazil",
+        "state": "Acre",
+        "city": "Schenectady",
+        "zipcode": "12301",
+        "phone_number": "0336555555",
+        "cpf_cnpj_number": "12345678901234"
+      },
+      "description": "Click Edit shipping address. Nhập ký tự số trường CPF/ CNPJ number. Click Save.",
+      "label": "CPF/CNPJ Number",
+      "cpf_cnpj_number_invalid": [
+        {
+          "cpf_cnpj_number": "",
+          "message": "Please enter CPF/CNPJ number"
+        },
+        {
+          "cpf_cnpj_number": "123456789012",
+          "message": "CPF only contains 11 digits and CNPJ number only contains 14 digits"
+        },
+        {
+          "cpf_cnpj_number": "23100299900",
+          "message": ""
+        },
+        {
+          "cpf_cnpj_number": "13339532000109",
+          "message": ""
+        }
+      ]
+    },
+    "SB_CHE_CB_12": {
+      "customers_name": "Customer Brazil",
+      "email": "testerBrazil@maildrop.cc",
+      "options_export": {
+        "option": "Selected customers",
+        "file": "CSV for Excel, Numbers, or other speardsheet programs"
+      }
+    }
+  }
+}

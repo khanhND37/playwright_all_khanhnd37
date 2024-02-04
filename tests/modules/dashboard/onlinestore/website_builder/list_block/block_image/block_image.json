@@ -1,0 +1,798 @@
+{
+  "env": {
+    "prod": {
+      "domain": "wb-image-block-ne.onshopbase.com",
+      "shop_name": "wb-image-block-ne",
+      "api": "https://api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10478952,
+      "user_id": 11260206,
+      "theme_id": 1584286
+    },
+    "prodtest": {
+      "domain": "wb-image-block-ne-prodtest.onshopbase.com",
+      "shop_name": "wb-image-block-ne-prodtest",
+      "api": "https://prod-test-api.shopbase.com",
+      "accounts_domain": "accounts-test.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "user_id": 11260206,
+      "shop_id": 10478949,
+      "theme_id": 1584283
+    },
+    "dev": {
+      "domain": "wb-image-block-ne.myshopbase.net",
+      "shop_name": "wb-image-block-ne",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "user_id": 90252,
+      "shop_id": 10333718,
+      "theme_id": 3218347,
+      "cases": {
+        "SB_WEB_BUILDER_LB_BI_04": {
+          "data": [
+            {
+              "settings": {
+                "image": "https://dev-img.btdmp.com/sbase-file/10325829/2023/05/19/16844901261afd3c5f46.jpeg"
+              },
+              "expect": {
+                "image": "16844901261afd3c5f46.jpeg"
+              }
+            },
+            {
+              "settings": {
+                "image": "https://dev-img.btdmp.com/sbase-file/10325829/2023/05/19/16844901261afd3c5f46.jpeg"
+              },
+              "expect": {
+                "image": ""
+              }
+            },
+            {
+              "settings": {
+                "image": "https://dev-img.btdmp.com/sbase-file/10325829/2023/05/19/16844901261afd3c5f46.jpeg"
+              },
+              "expect": {
+                "image": ""
+              }
+            },
+            {
+              "settings": {
+                "image": "https://dev-img.btdmp.com/sbase-file/10325829/2023/05/19/16844901261afd3c5f46.jpeg"
+              },
+              "expect": {
+                "image": ""
+              }
+            },
+            {
+              "settings": {
+                "image": ""
+              },
+              "expect": {
+                "image": ""
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "cases": {
+    "SB_WEB_BUILDER_LB_BI_01": {
+      "description": "Check data default when add block image",
+      "expect": {
+        "sidebar": "sidebar_default_image.png",
+        "preview": "preview_default_image.png",
+        "storefront": "storefront_default_image.png",
+        "saved": "All changes are saved"
+      }
+    },
+    "SB_WEB_BUILDER_LB_BI_04": {
+      "data": [
+        {
+          "settings": {
+            "image": "https://img.shopbase.com/files/10384695/2022/12/21/167161821011871fd3aa.jpeg",
+            "alt": "",
+            "link": {
+              "option": {
+                "handle": "",
+                "id": 0,
+                "target": "_blank",
+                "url": "https://www.google.com"
+              },
+              "type": "url"
+            }
+          },
+          "expect": {
+            "image": "167161821011871fd3aa.jpeg",
+            "redirect": "https://www.google.com",
+            "newTab": true
+          }
+        },
+        {
+          "settings": {
+            "alt": "test alt text",
+            "image": "https://img.shopbase.com/files/10384695/2022/12/21/167161821011871fd3aa.jpeg",
+            "link": {
+              "option": {
+                "handle": "",
+                "id": 0,
+                "target": "_blank",
+                "url": "/pages/privacy-policy"
+              },
+              "type": "url"
+            }
+          },
+          "expect": {
+            "image": "",
+            "redirect": "/pages/privacy-policy",
+            "newTab": true,
+            "alt": "test alt text"
+          }
+        },
+        {
+          "settings": {
+            "alt": "test alt text",
+            "image": "https://img.shopbase.com/files/10384695/2022/12/21/167161821011871fd3aa.jpeg",
+            "link": {
+              "option": {
+                "handle": "",
+                "id": 0,
+                "target": "_blank",
+                "url": ""
+              },
+              "type": "url"
+            }
+          },
+          "expect": {
+            "image": "",
+            "redirect": null
+          }
+        },
+        {
+          "settings": {
+            "alt": "",
+            "image": "https://img.shopbase.com/files/10384695/2022/12/21/167161821011871fd3aa.jpeg",
+            "link": {
+              "option": {
+                "handle": "",
+                "id": 0,
+                "target": "",
+                "url": "http://www.example.com/main.html"
+              },
+              "type": "url"
+            }
+          },
+          "expect": {
+            "image": "",
+            "redirect": "http://www.example.com/main.html",
+            "newTab": false
+          }
+        },
+        {
+          "settings": {
+            "alt": "test alt text",
+            "image": "",
+            "link": {
+              "option": {
+                "handle": "",
+                "id": 0,
+                "target": "_blank",
+                "url": "http://www.example.com/main.html"
+              },
+              "type": "url"
+            }
+          },
+          "expect": {
+            "image": "",
+            "redirect": null
+          }
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_LB_BI_05": {
+      "description": "Check setting image with action = Go to page",
+      "data": [
+        {
+          "settings": {
+            "alt": "",
+            "image": "https://img.thesitebase.net/themes/668/assets/images/default/thumbnail-video.jpg",
+            "link": {
+              "option": {
+                "url": "",
+                "target": "_blank",
+                "id": 0,
+                "handle": "products",
+                "data_type": ""
+              },
+              "type": "page"
+            }
+          },
+          "expect": {
+            "redirect": "/collections/all",
+            "newTab": true
+          }
+        },
+        {
+          "settings": {
+            "alt": "",
+            "image": "https://img.thesitebase.net/themes/668/assets/images/default/thumbnail-video.jpg",
+            "link": {
+              "option": {
+                "url": "",
+                "target": "_blank",
+                "id": 0,
+                "handle": "product-test",
+                "data_type": "product"
+              },
+              "type": "page"
+            }
+          },
+          "expect": {
+            "redirect": "/products/product-test",
+            "newTab": true
+          }
+        },
+        {
+          "settings": {
+            "alt": "",
+            "image": "https://img.thesitebase.net/themes/668/assets/images/default/thumbnail-video.jpg",
+            "link": {
+              "option": {
+                "url": "",
+                "target": "",
+                "id": 0,
+                "handle": "privacy-policy",
+                "data_type": "pages"
+              },
+              "type": "page"
+            }
+          },
+          "expect": {
+            "redirect": "/privacy-policy",
+            "newTab": false
+          }
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_LB_BI_06": {
+      "data": {
+        "section_name": "Section Form",
+        "action": "Go to section"
+      }
+    },
+    "SB_WEB_BUILDER_LB_BI_07": {
+      "description": "Check setting image with action = Make a call",
+      "data": [
+        {
+          "settings": {
+            "alt": "",
+            "image": "https://img.thesitebase.net/themes/668/assets/images/default/thumbnail-video.jpg",
+            "link": {
+              "option": {
+                "url": "+84 339161999",
+                "target": "_blank",
+                "id": 0,
+                "handle": "",
+                "data_type": ""
+              },
+              "type": "call"
+            }
+          },
+          "expect": {
+            "href": "tel:+84 339161999"
+          }
+        },
+        {
+          "settings": {
+            "alt": "",
+            "image": "https://img.thesitebase.net/themes/668/assets/images/default/thumbnail-video.jpg",
+            "link": {
+              "option": {
+                "url": "1-900-6098",
+                "target": "_blank",
+                "id": 0,
+                "handle": "",
+                "data_type": ""
+              },
+              "type": "call"
+            }
+          },
+          "expect": {
+            "href": "tel:1-900-6098"
+          }
+        },
+        {
+          "settings": {
+            "alt": "",
+            "image": "https://img.thesitebase.net/themes/668/assets/images/default/thumbnail-video.jpg",
+            "link": {
+              "option": {
+                "url": "0979.995.575",
+                "target": "_blank",
+                "id": 0,
+                "handle": "",
+                "data_type": ""
+              },
+              "type": "call"
+            }
+          },
+          "expect": {
+            "href": "tel:0979.995.575"
+          }
+        },
+        {
+          "settings": {
+            "alt": "",
+            "image": "https://img.thesitebase.net/themes/668/assets/images/default/thumbnail-video.jpg",
+            "link": {
+              "option": {
+                "url": "0979995575",
+                "target": "_blank",
+                "id": 0,
+                "handle": "",
+                "data_type": ""
+              },
+              "type": "call"
+            }
+          },
+          "expect": {
+            "href": "tel:0979995575"
+          }
+        },
+        {
+          "settings": {
+            "alt": "",
+            "image": "https://img.thesitebase.net/themes/668/assets/images/default/thumbnail-video.jpg",
+            "link": {
+              "option": {
+                "url": "abc@12",
+                "target": "_blank",
+                "id": 0,
+                "handle": "",
+                "data_type": ""
+              },
+              "type": "call"
+            }
+          },
+          "expect": {
+            "href": "tel:abc@12"
+          }
+        },
+        {
+          "settings": {
+            "alt": "",
+            "image": "https://img.thesitebase.net/themes/668/assets/images/default/thumbnail-video.jpg",
+            "link": {
+              "option": {
+                "url": "",
+                "target": "_blank",
+                "id": 0,
+                "handle": "",
+                "data_type": ""
+              },
+              "type": "call"
+            }
+          },
+          "expect": {
+            "href": "tel:"
+          }
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_LB_BI_08": {
+      "description": "Check setting image with action = Send Email To",
+      "data": [
+        {
+          "settings": {
+            "alt": "",
+            "image": "https://img.thesitebase.net/themes/668/assets/images/default/thumbnail-video.jpg",
+            "link": {
+              "option": {
+                "url": "shopbase@beeketing.net",
+                "target": "_blank",
+                "id": 0,
+                "handle": "",
+                "data_type": ""
+              },
+              "type": "email"
+            }
+          },
+          "expect": {
+            "href": "mailto:shopbase@beeketing.net"
+          }
+        },
+        {
+          "settings": {
+            "alt": "",
+            "image": "https://img.thesitebase.net/themes/668/assets/images/default/thumbnail-video.jpg",
+            "link": {
+              "option": {
+                "url": "abc@beeketing.net",
+                "target": "_blank",
+                "id": 0,
+                "handle": "",
+                "data_type": ""
+              },
+              "type": "email"
+            }
+          },
+          "expect": {
+            "href": "mailto:abc@beeketing.net"
+          }
+        },
+        {
+          "settings": {
+            "alt": "",
+            "image": "https://img.thesitebase.net/themes/668/assets/images/default/thumbnail-video.jpg",
+            "link": {
+              "option": {
+                "url": "abc",
+                "target": "_blank",
+                "id": 0,
+                "handle": "",
+                "data_type": ""
+              },
+              "type": "email"
+            }
+          },
+          "expect": {
+            "href": "mailto:abc"
+          }
+        },
+        {
+          "settings": {
+            "alt": "",
+            "image": "https://img.thesitebase.net/themes/668/assets/images/default/thumbnail-video.jpg",
+            "link": {
+              "option": {
+                "url": "",
+                "target": "_blank",
+                "id": 0,
+                "handle": "",
+                "data_type": ""
+              },
+              "type": "email"
+            }
+          },
+          "expect": {
+            "href": "mailto:"
+          }
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_LB_BI_09": {
+      "description": "Check setting image with action = Copy to clipboard",
+      "data": [
+        {
+          "settings": {
+            "alt": "",
+            "image": "https://img.thesitebase.net/themes/668/assets/images/default/thumbnail-video.jpg",
+            "link": {
+              "option": {
+                "url": "Copy hihi",
+                "target": "_blank",
+                "id": 0,
+                "handle": "",
+                "data_type": ""
+              },
+              "type": "clipboard"
+            }
+          },
+          "expect": {
+            "paste": "Copy hihi"
+          }
+        },
+        {
+          "settings": {
+            "alt": "",
+            "image": "https://img.thesitebase.net/themes/668/assets/images/default/thumbnail-video.jpg",
+            "link": {
+              "option": {
+                "url": "You can copy and paste your text with the characters to count in the text area above, or you can type your characters and words into the text area. The counter will be updated instantly, displaying the amount of characters, words, sentences, paragraphs and whitespace in your text, not to mention that the keyword density (which you can configure from the options menu) is also displayed. Character Count Online works on absolutely any device. No matter if you have a mobile phone, computer, console",
+                "target": "_blank",
+                "id": 0,
+                "handle": "",
+                "data_type": ""
+              },
+              "type": "clipboard"
+            }
+          },
+          "expect": {
+            "paste": "You can copy and paste your text with the characters to count in the text area above, or you can type your characters and words into the text area. The counter will be updated instantly, displaying the amount of characters, words, sentences, paragraphs and whitespace in your text, not to mention that the keyword density (which you can configure from the options menu) is also displayed. Character Count Online works on absolutely any device. No matter if you have a mobile phone, computer, console"
+          }
+        },
+        {
+          "settings": {
+            "alt": "",
+            "image": "https://img.thesitebase.net/themes/668/assets/images/default/thumbnail-video.jpg",
+            "link": {
+              "option": {
+                "url": "",
+                "target": "_blank",
+                "id": 0,
+                "handle": "",
+                "data_type": ""
+              },
+              "type": "clipboard"
+            }
+          },
+          "expect": {
+            "paste": ""
+          }
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_LB_BI_11": {
+      "description": "Check setting width, height block image",
+      "data": {
+        "section_1": {
+          "settings_block": [
+            {
+              "ratio": {
+                "label": "image_ratio",
+                "type": "Custom"
+              },
+              "width": {
+                "label": "width",
+                "value": {
+                  "unit": "Px",
+                  "value": 500
+                }
+              },
+              "height": {
+                "label": "height",
+                "value": {
+                  "unit": "Px",
+                  "value": 500
+                }
+              }
+            },
+            {
+              "ratio": {
+                "label": "image_ratio",
+                "type": "Custom"
+              },
+              "width": {
+                "label": "width",
+                "value": {
+                  "unit": "%",
+                  "value": 100
+                }
+              },
+              "height": {
+                "label": "height",
+                "value": {
+                  "unit": "Px",
+                  "value": 500
+                }
+              }
+            }
+          ]
+        }
+      },
+      "expect": {
+        "preview": "preview_block_image_width_height_setting.png",
+        "storefront": "storefront_block_image_width_height_setting.png",
+        "saved": "All changes are saved"
+      }
+    },
+    "SB_WEB_BUILDER_LB_BI_12": {
+      "description": "Check shape, border, opacity, radius, shadow, padding, margin block Image",
+      "data": {
+        "section_1": {
+          "duplicate": 3,
+          "settings_block": [
+            {
+              "shape": {
+                "label": "shape",
+                "type": 1
+              },
+              "align": {
+                "label": "align_self",
+                "type": "Left"
+              },
+              "border": {
+                "label": "image_border",
+                "value": {
+                  "thickness": "custom",
+                  "size": {
+                    "fill": true,
+                    "number": 3
+                  },
+                  "color": {
+                    "preset": 2
+                  }
+                }
+              },
+              "radius": {
+                "label": "image_radius",
+                "config": {
+                  "fill": true,
+                  "number": 100
+                }
+              },
+              "opacity": {
+                "label": "opacity",
+                "config": {
+                  "fill": true,
+                  "number": 100
+                }
+              },
+              "shadow": {
+                "label": "image_shadow",
+                "config": {
+                  "option": "soft",
+                  "size": "L",
+                  "direction": "Top Right"
+                }
+              },
+              "margin": {
+                "label": "margin",
+                "value": {
+                  "top": 15,
+                  "left": 20,
+                  "bottom": 15,
+                  "right": 20,
+                  "input": true
+                }
+              },
+              "padding": {
+                "label": "padding",
+                "value": {
+                  "top": 5,
+                  "left": 10,
+                  "bottom": 5,
+                  "right": 10,
+                  "input": true
+                }
+              }
+            },
+            {
+              "shape": {
+                "label": "shape",
+                "type": 2
+              },
+              "align": {
+                "label": "align_self",
+                "type": "Right"
+              },
+              "opacity": {
+                "label": "opacity",
+                "config": {
+                  "fill": true,
+                  "number": 80
+                }
+              },
+              "shadow": {
+                "label": "image_shadow",
+                "config": {
+                  "option": "hard",
+                  "size": "M",
+                  "direction": "Bottom Left"
+                }
+              },
+              "margin": {
+                "label": "margin",
+                "value": {
+                  "top": 0,
+                  "left": 20,
+                  "bottom": 15,
+                  "right": 20,
+                  "input": true
+                }
+              },
+              "padding": {
+                "label": "padding",
+                "value": {
+                  "top": 5,
+                  "left": 0,
+                  "bottom": 5,
+                  "right": 0,
+                  "input": true
+                }
+              }
+            },
+            {
+              "shape": {
+                "label": "shape",
+                "type": 3
+              },
+              "align": {
+                "label": "align_self",
+                "type": "Center"
+              },
+              "opacity": {
+                "label": "opacity",
+                "config": {
+                  "fill": true,
+                  "number": 20
+                }
+              },
+              "shadow": {
+                "label": "image_shadow",
+                "config": {
+                  "option": "soft",
+                  "size": "M",
+                  "direction": "Bottom"
+                }
+              },
+              "margin": {
+                "label": "margin",
+                "value": {
+                  "top": 0,
+                  "left": 0,
+                  "bottom": 15,
+                  "right": 20,
+                  "input": true
+                }
+              },
+              "padding": {
+                "label": "padding",
+                "value": {
+                  "top": 0,
+                  "left": 0,
+                  "bottom": 15,
+                  "right": 0,
+                  "input": true
+                }
+              }
+            },
+            {
+              "shape": {
+                "label": "shape",
+                "type": 4
+              },
+              "align": {
+                "label": "align_self",
+                "type": "Right"
+              },
+              "opacity": {
+                "label": "opacity",
+                "config": {
+                  "fill": true,
+                  "number": 0
+                }
+              },
+              "shadow": {
+                "label": "image_shadow",
+                "config": {
+                  "option": "none"
+                }
+              },
+              "margin": {
+                "label": "margin",
+                "value": {
+                  "top": 0,
+                  "left": 0,
+                  "bottom": 0,
+                  "right": 0,
+                  "input": true
+                }
+              },
+              "padding": {
+                "label": "padding",
+                "value": {
+                  "top": 0,
+                  "left": 0,
+                  "bottom": 0,
+                  "right": 0,
+                  "input": true
+                }
+              }
+            }
+          ]
+        }
+      },
+      "expect": {
+        "preview": "preview_block_image_all_setting.png",
+        "storefront": "storefront_block_image_all_setting.png",
+        "saved": "All changes are saved"
+      }
+    },
+    "SB_WEB_BUILDER_LB_BI_13": {
+      "description": "Check remove block image"
+    }
+  }
+}

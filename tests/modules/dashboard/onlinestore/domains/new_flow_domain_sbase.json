@@ -1,0 +1,91 @@
+{
+  "env": {
+    "dev": {
+      "domain": "sb-connect-domains-update.myshopbase.net",
+      "shop_name": "sb-connect-domains-update",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10334033,
+      "user_id": 90252,
+      "cases": {
+        "SB_OLS_DM_233": {
+          "expect": {
+            "learn_more_url": "https://sb-connect-domains-update.myshopbase.net/admin/domain",
+            "shopbase_managed_domains": {
+              "domain4chovy.com": {
+                "status": ["Purchased", "Not verified"],
+                "auto_renew": "Enabled",
+                "main_button": "Verify"
+              },
+              "domain3chovy.com": {
+                "status": ["Expired"],
+                "auto_renew": "Enabled",
+                "main_button": "Renew"
+              },
+              "domain2chovy.com": {
+                "status": ["Purchased"],
+                "auto_renew": "Disabled",
+                "main_button": "Manage"
+              },
+              "hdhdhdhd.net": {
+                "status": ["Processing", "Not verified"],
+                "auto_renew": "Enabled",
+                "main_button": ""
+              }
+            }
+          }
+        },
+        "SB_OLS_DM_234": {
+          "expect": {
+            "check_dns_text": "A Record and CNAME entered incorrectly"
+          }
+        },
+        "SB_OLS_DM_236": {
+          "connect_existing_domain": {
+            "input": {
+              "shopbase_domain": "huydz.com"
+            }
+          }
+        },
+        "SB_OLS_DM_237": {
+          "connect_existing_domain": {
+            "input": {
+              "shopbase_domain": "huydz.com",
+              "connected_to_other_store": "ngochd7.store"
+            }
+          }
+        }
+      }
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-force-add-domain.onshopbase.com",
+      "shop_name": "au-force-add-domain.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "shop_id": 10042921,
+      "user_id": 73782,
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "cases": {
+        "SB_OLS_DM_198": {}
+      }
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-force-add-domain-prodtest1.onshopbase.com",
+      "shop_name": "au-force-add-domain-prodtest1",
+      "username": "shopbase@beeketing.net",
+      "shop_id": 10445313,
+      "user_id": 73782,
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "cases": {
+        "SB_OLS_DM_198": {}
+      }
+    }
+  },
+  "cases": {
+    "SB_OLS_DM_198": {
+      "description": "Verify connect domain"
+    }
+  }
+}

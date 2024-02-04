@@ -1,0 +1,46 @@
+{
+  "api": "https://api.shopbase.com",
+  "domain": "au-gmc-shipping-prbase-prodlive.onshopbase.com",
+  "shop_id": 10082661,
+  "shop_name": "au-gmc-shipping-prbase-prodlive",
+  "user_id": 73800,
+  "username": "shopbase@beeketing.net",
+  "password": "Q(f!3Kx+6n;?Us%F",
+  "timeout": "18000",
+  "cases": {
+    "SB_MAR_SALES_SC_FEED_GMC_SYNC_SHIP_FEE_22": {
+      "data": {
+        "feed": "Others",
+        "feed_name": "Feed file processing",
+        "radio_btn": "Add the shipping setting to product feed",
+        "country": "TM"
+      }
+    },
+    "SB_MAR_SALES_SC_FEED_GMC_SYNC_SHIP_FEE_18": {
+      "data": [
+        {
+          "feed_name": "Others",
+          "feed_title": "Feed file with no shipping",
+          "radio_btn": "No, I needn't add the shipping to product feed",
+          "country": "US",
+          "product_shipping": "US:6.99 USD:1:7:3:10",
+          "expect": "false"
+        },
+        {
+          "feed_name": "Others",
+          "feed_title": "Feed file with shipping",
+          "radio_btn": "Add the shipping setting to product feed",
+          "country": "US",
+          "product_shipping": "US:6.99 USD:1:7:3:10",
+          "expect": "true"
+        }
+      ]
+    }
+  },
+  "env": {
+    "prodtest": {
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://prod-test-api.shopbase.com"
+    }
+  }
+}

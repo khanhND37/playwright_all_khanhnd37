@@ -1,0 +1,2505 @@
+{
+  "env": {
+    "local": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-translation-entity-wb-sb-prodtest.onshopbase.com",
+      "shop_name": "au-translation-entity-wb-sb-prodtest",
+      "accounts_domain": "accounts-test.shopbase.com",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "shop_id": 10486064,
+      "theme_id": 1618810
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "accounts_domain": "accounts.dev.shopbase.net",
+      "domain": "au-translation-entity-wb-sb.myshopbase.net",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "43AhIn|VWp;[?9&",
+      "shop_name": "au-translation-entity-wb-sb",
+      "user_id": 89797,
+      "shop_id": 10333666,
+      "theme_id": 3220065
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-translation-entity-wb-sb-prod.onshopbase.com",
+      "shop_name": "au-translation-entity-wb-sb-prod",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "shop_id": 10486066,
+      "theme_id": 1646910
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-translation-entity-wb-sb-prodtest.onshopbase.com",
+      "shop_name": "au-translation-entity-wb-sb-prodtest",
+      "accounts_domain": "accounts-test.shopbase.com",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "shop_id": 10486064,
+      "theme_id": 1618810
+    }
+  },
+  "data_enable": {
+    "language_code": "de",
+    "subfolder": "de-us",
+    "language": "German",
+    "status": "Published languages",
+    "default_language": "English"
+  },
+  "data_disable": {
+    "language_code": "fr",
+    "subfolder": "fr-us",
+    "language": "French",
+    "status": "Published languages",
+    "default_language": "English"
+  },
+  "cases": {
+    "DATA_DRIVEN_ENABLE_AUTO_TRANSLATE_SBASE": {
+      "data_cases": [
+        {
+          "case_id": "SB_SET_LG_TLL_25",
+          "case_description": "[DB+SF - Function] Kiểm tra tổng quan 1 case đầy đủ của Web builder, với shop đã setup 1 page có đầy đủ các block - All pages content - shopbase - home page",
+          "entity_name": "Website pages",
+          "page": "home",
+          "need_to_verify_pages": ["home"],
+          "entity_translate": {
+            "entity": "Website pages",
+            "page": "Home"
+          }
+        },
+        {
+          "case_id": "SB_SET_LG_TLL_04",
+          "case_description": "[DB+SF - Function] Kiểm tra tổng quan 1 case đầy đủ của Web builder, với shop đã setup 1 page có đầy đủ các block - All pages content - E-commerce pages - All collections - shopbase",
+          "entity_name": "E-commerce pages",
+          "page": "collections",
+          "entity_translate": {
+            "entity": "E-commerce pages",
+            "page": "All collections"
+          }
+        },
+        {
+          "case_id": "SB_SET_LG_TLL_12",
+          "case_description": "[DB+SF - Function] Kiểm tra tổng quan 1 case đầy đủ của Web builder, với shop đã setup 1 page có đầy đủ các block - All pages content - Blog pages - Blog posts - shopbase",
+          "page": "blog_post",
+          "entity_translate": {
+            "entity": "Blog pages",
+            "page": "Blog post"
+          }
+        },
+        {
+          "case_id": "SB_SET_LG_TLL_13",
+          "case_description": "[DB+SF - Function] Kiểm tra tính năng translate khi auto translate enable - All pages content - Member pages - My profile - shopbase",
+          "page": "my_profile",
+          "entity_translate": {
+            "entity": "Member pages",
+            "page": "My profile"
+          }
+        },
+        {
+          "case_id": "SB_SET_LG_TLL_08",
+          "case_description": "[DB+SF - Function] Kiểm tra tính năng translate khi auto translate enable - All pages content - E-commerce pages - Cart",
+          "entity_name": "Website pages",
+          "page": "cart",
+          "need_to_verify_pages": ["cart"],
+          "entity_translate": {
+            "entity": "E-commerce pages",
+            "page": "Cart"
+          }
+        },
+        {
+          "case_id": "SB_SET_LG_TLL_06",
+          "case_description": "[DB+SF - Function] Kiểm tra tính năng translate khi auto translate enable - All pages content - E-commerce pages - Checkout",
+          "page": "product",
+          "need_to_verify_pages": ["product"],
+          "entity_translate": {
+            "entity": "E-commerce pages",
+            "page": "Product detail"
+          }
+        },
+        {
+          "case_id": "SB_SET_LG_TLL_10",
+          "case_description": "[DB+SF - Function] Kiểm tra tính năng translate khi auto translate enable - All pages content - E-commerce pages - Thank you",
+          "entity_name": "Website pages",
+          "page": "thankyou",
+          "need_to_verify_pages": ["thankyou"],
+          "entity_translate": {
+            "entity": "E-commerce pages",
+            "page": "Thank you"
+          }
+        },
+        {
+          "case_id": "SB_SET_LG_TLL_15",
+          "case_description": "[DB+SF - Function] Kiểm tra tính năng translate khi auto translate disable - All pages content - Member pages - Sign up- shopbase",
+          "page": "sign_up",
+          "entity_translate": {
+            "entity": "Member pages",
+            "page": "Sign up"
+          }
+        },
+        {
+          "case_id": "SB_SET_LG_TLL_18",
+          "case_description": "[DB+SF - Function] Kiểm tra tính năng translate khi auto translate disable - All pages content - System pages - 404- shopbase",
+          "page": "not_found",
+          "entity_translate": {
+            "entity": "System pages",
+            "page": "404"
+          }
+        }
+      ],
+      "step1": {
+        "expect_block_names": [
+          "Heading",
+          "Button",
+          "Paragraph",
+          "Image",
+          "Video",
+          "Social bar",
+          "Label",
+          "Label",
+          "Label",
+          "Label",
+          "Label",
+          "Form",
+          "Form name",
+          "Message",
+          "Description",
+          "Button label",
+          "Label",
+          "Placeholder",
+          "Label",
+          "Placeholder",
+          "Option 1",
+          "Label",
+          "Placeholder",
+          "Option 1",
+          "Label",
+          "Placeholder",
+          "Option 1",
+          "Placeholder",
+          "Label",
+          "Placeholder",
+          "Label",
+          "Placeholder",
+          "Accordion",
+          "Content",
+          "Slideshow",
+          "Title",
+          "Sub heading",
+          "Heading",
+          "Description",
+          "Button label",
+          "Button label",
+          "HTML code",
+          "Tabs",
+          "Content",
+          "Featured Collection",
+          "Button Label",
+          "Toggle list",
+          "Title",
+          "Paragraph",
+          "Bullet",
+          "Title",
+          "Featured Collection",
+          "Heading",
+          "Description",
+          "Button Label",
+          "Account",
+          "Title",
+          "Product Search",
+          "Placeholder",
+          "Button label",
+          "Visitor Counter",
+          "Stock Countdown"
+        ]
+      },
+      "step2": {
+        "expectSF": [
+          {
+            "group": "Heading",
+            "items": [
+              {
+                "name": "Heading",
+                "value": "<p>Edit manual translation</p>"
+              }
+            ]
+          },
+          {
+            "group": "Button",
+            "items": [
+              {
+                "name": "Button",
+                "value": "Edit manual translation"
+              }
+            ]
+          },
+          {
+            "group": "Button",
+            "items": [
+              {
+                "name": "Button",
+                "value": ""
+              }
+            ]
+          },
+          {
+            "group": "Paragraph",
+            "items": [
+              {
+                "name": "Paragraph",
+                "value": "<p>Edit manual translation</p>"
+              }
+            ]
+          },
+          {
+            "group": "Image",
+            "items": [
+              {
+                "name": "Image",
+                "value": "Edit manual translation"
+              }
+            ]
+          },
+          {
+            "group": "Video",
+            "items": [
+              {
+                "name": "Video",
+                "value": "Edit manual translation"
+              }
+            ]
+          },
+          {
+            "group": "Social bar",
+            "items": [
+              {
+                "name": "label",
+                "value": ""
+              },
+              {
+                "name": "label",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "label",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "label",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "label",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "label",
+                "value": "Edit manual translation"
+              }
+            ]
+          },
+          {
+            "group": "Form",
+            "items": [
+              {
+                "name": "Form name",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "Message",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "Description",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "Button label",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "Label",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "Placeholder",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "Label",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "Placeholder",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "Option 1",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "Label",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "Placeholder",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "Option 1",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "Label",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "Placeholder",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "Option 1",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "Label",
+                "value": ""
+              },
+              {
+                "name": "Placeholder",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "Label",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "Placeholder",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "Label",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "Placeholder",
+                "value": "Edit manual translation"
+              }
+            ]
+          },
+          {
+            "group": "Accordion",
+            "items": [
+              {
+                "name": "content",
+                "value": "<p>Edit manual translation</p>"
+              },
+              {
+                "name": "content",
+                "value": "<p>Edit manual translation</p>"
+              }
+            ]
+          },
+          {
+            "group": "Slideshow",
+            "items": [
+              {
+                "name": "title",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "sub_heading",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "heading",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "description",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "btn_primary_label",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "btn_secondary_label",
+                "value": "Edit manual translation"
+              }
+            ]
+          },
+          {
+            "group": "HTML code",
+            "items": [
+              {
+                "name": "HTML code",
+                "value": "Edit manual translation"
+              }
+            ]
+          },
+          {
+            "group": "Tabs",
+            "items": [
+              {
+                "name": "content",
+                "value": "<p>Edit manual translation</p>"
+              },
+              {
+                "name": "content",
+                "value": "<p>Edit manual translation</p>"
+              }
+            ]
+          },
+          {
+            "group": "Featured Collection",
+            "items": [
+              {
+                "name": "Heading",
+                "value": ""
+              },
+              {
+                "name": "Description",
+                "value": ""
+              },
+              {
+                "name": "Button Label",
+                "value": "Edit manual translation"
+              }
+            ]
+          },
+          {
+            "group": "Toggle list",
+            "items": [
+              {
+                "name": "title",
+                "value": "<p>Edit manual translation</p>"
+              },
+              {
+                "name": "paragraph",
+                "value": "<p>Edit manual translation</p>"
+              }
+            ]
+          },
+          {
+            "group": "Bullet",
+            "items": [
+              {
+                "name": "title",
+                "value": "<p>Edit manual translation</p>"
+              },
+              {
+                "name": "paragraph"
+              }
+            ]
+          },
+          {
+            "group": "Featured Collection",
+            "items": [
+              {
+                "name": "Heading",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "Description",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "Button Label",
+                "value": "Edit manual translation"
+              }
+            ]
+          },
+          {
+            "group": "HTML code",
+            "items": [
+              {
+                "name": "HTML code",
+                "value": ""
+              }
+            ]
+          },
+          {
+            "group": "Account",
+            "items": [
+              {
+                "name": "title",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "paragraph"
+              }
+            ]
+          },
+          {
+            "group": "Product Search",
+            "items": [
+              {
+                "name": "Product Search",
+                "value": "Edit manual translation"
+              }
+            ]
+          },
+          {
+            "group": "Product Search",
+            "items": [
+              {
+                "name": "Product Search",
+                "value": "Edit manual translation"
+              }
+            ]
+          },
+          {
+            "group": "Visitor Counter",
+            "items": [
+              {
+                "name": "Visitor Counter",
+                "value": "<p>Edit manual translation</p>"
+              }
+            ]
+          },
+          {
+            "group": "Stock Countdown",
+            "items": [
+              {
+                "name": "Stock Countdown",
+                "value": "<p>Edit manual translation</p>"
+              }
+            ]
+          }
+        ]
+      },
+      "step4": {
+        "expectSF": [
+          {
+            "group": "Heading",
+            "items": [
+              {
+                "name": "Heading",
+                "value": "<p>thêm&nbsp;text&nbsp;ngôn&nbsp;ngữ&nbsp;khác&nbsp;vào&nbsp;đây&nbsp;!@@#$,&nbsp;在这里添加另一种语言的文本</p>"
+              }
+            ]
+          },
+          {
+            "group": "Button",
+            "items": [
+              {
+                "name": "Button",
+                "value": "tiếng việt . VIEW ALL COLLECTIONS"
+              }
+            ]
+          },
+          {
+            "group": "Button",
+            "items": [
+              {
+                "name": "Button",
+                "value": ""
+              }
+            ]
+          },
+          {
+            "group": "Paragraph",
+            "items": [
+              {
+                "name": "Paragraph",
+                "value": "<p style=\"text-align: center\" class=\"p2\"><span style=\"color: rgb(29, 28, 29)\">Be the first to know about exclusive deals, early product access, and more! We’ll sweeten the deal with 25% off your first full price purchase*</span></p>"
+              }
+            ]
+          },
+          {
+            "group": "Image",
+            "items": [
+              {
+                "name": "Image",
+                "value": "Where Style Meets Functionality"
+              }
+            ]
+          },
+          {
+            "group": "Video",
+            "items": [
+              {
+                "name": "Video",
+                "value": "The dog is a pet animal"
+              }
+            ]
+          },
+          {
+            "group": "Social bar",
+            "items": [
+              {
+                "name": "label",
+                "value": ""
+              },
+              {
+                "name": "label",
+                "value": "Facebook"
+              },
+              {
+                "name": "label",
+                "value": "Tweet"
+              },
+              {
+                "name": "label",
+                "value": "Pin it"
+              },
+              {
+                "name": "label",
+                "value": "Linkedin"
+              },
+              {
+                "name": "label",
+                "value": "test social"
+              }
+            ]
+          },
+          {
+            "group": "Form",
+            "items": [
+              {
+                "name": "Form name",
+                "value": "Contact"
+              },
+              {
+                "name": "Message",
+                "value": "Thank you! The form was submitted successfully."
+              },
+              {
+                "name": "Description",
+                "value": "Here is your coupon code. Please hurry up it will expire soon."
+              },
+              {
+                "name": "Button label",
+                "value": "Submit"
+              },
+              {
+                "name": "Label",
+                "value": "Email"
+              },
+              {
+                "name": "Placeholder",
+                "value": "Enter your email"
+              },
+              {
+                "name": "Label",
+                "value": "Select"
+              },
+              {
+                "name": "Placeholder",
+                "value": "Please select"
+              },
+              {
+                "name": "Option 1",
+                "value": "Option 1"
+              },
+              {
+                "name": "Label",
+                "value": "Checkbox"
+              },
+              {
+                "name": "Placeholder",
+                "value": "Placeholder"
+              },
+              {
+                "name": "Option 1",
+                "value": "Option 1"
+              },
+              {
+                "name": "Label",
+                "value": "Radio"
+              },
+              {
+                "name": "Placeholder",
+                "value": "Placeholder"
+              },
+              {
+                "name": "Option 1",
+                "value": "Option 1"
+              },
+              {
+                "name": "Label",
+                "value": ""
+              },
+              {
+                "name": "Placeholder",
+                "value": "Enter your email"
+              },
+              {
+                "name": "Label",
+                "value": "Text area"
+              },
+              {
+                "name": "Placeholder",
+                "value": "Your message"
+              },
+              {
+                "name": "Label",
+                "value": "First Name"
+              },
+              {
+                "name": "Placeholder",
+                "value": "Your first name"
+              }
+            ]
+          },
+          {
+            "group": "Accordion",
+            "items": [
+              {
+                "name": "content",
+                "value": "<p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" title=\"\" role=\"url\" href=\"mailto:dpro-qe-1@beeketing.net\">Make caring for your pet a breeze with our one-stop-shop for all your pet's essentials.</a></p>"
+              },
+              {
+                "name": "content",
+                "value": "<p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" title=\"\" role=\"url\" href=\"mailto:dpro-qe-1@beeketing.net\">Make caring for your pet a breeze with our one-stop-shop for all your pet's essentials.</a></p>"
+              }
+            ]
+          },
+          {
+            "group": "Slideshow",
+            "items": [
+              {
+                "name": "title",
+                "value": "Slide 2"
+              },
+              {
+                "name": "sub_heading",
+                "value": "COLLECTION"
+              },
+              {
+                "name": "heading",
+                "value": "BUSINESS BACKPACK"
+              },
+              {
+                "name": "description",
+                "value": "NEW RELEASE"
+              },
+              {
+                "name": "btn_primary_label",
+                "value": "SHOP NOW"
+              },
+              {
+                "name": "btn_secondary_label",
+                "value": "Button text"
+              }
+            ]
+          },
+          {
+            "group": "HTML code",
+            "items": [
+              {
+                "name": "HTML code",
+                "value": "Welcome to SnapGear, your ultimate destination for all your shooting needs. We are a dedicated online platform that caters to shooting enthusiasts looking to set up and enhance their shooting experience at home."
+              }
+            ]
+          },
+          {
+            "group": "Tabs",
+            "items": [
+              {
+                "name": "content",
+                "value": "<p class=\"p3\">Laptop</p>"
+              },
+              {
+                "name": "content",
+                "value": "<p class=\"p3\">Laptop</p>"
+              }
+            ]
+          },
+          {
+            "group": "Featured Collection",
+            "items": [
+              {
+                "name": "Heading",
+                "value": ""
+              },
+              {
+                "name": "Description",
+                "value": ""
+              },
+              {
+                "name": "Button Label",
+                "value": "View All"
+              }
+            ]
+          },
+          {
+            "group": "Toggle list",
+            "items": [
+              {
+                "name": "title",
+                "value": "<h4 class=\"h4\"><span style=\"color: rgb(var(--color-3))\">OUR HANDPICKED FOR YOU</span></h4>"
+              },
+              {
+                "name": "paragraph",
+                "value": "<p><span style=\"color: rgb(var(--color-5))\">This whimsical pet bed combines the enchantment of Christmas with the comfort and warmth your pet deserves. Crafted with meticulous attention to detail, this pet bed resembles a charming Christmas tree, complete with lush green fabric and adorable ornaments.</span></p>"
+              }
+            ]
+          },
+          {
+            "group": "Bullet",
+            "items": [
+              {
+                "name": "title",
+                "value": "<p class=\"p2\"><span style=\"color: rgb(var(--color-5))\">High sensitivity condenser microphone</span></p>"
+              },
+              {
+                "name": "paragraph"
+              }
+            ]
+          },
+          {
+            "group": "Featured Collection",
+            "items": [
+              {
+                "name": "Heading",
+                "value": "Your Premier Destination for Stream Enthusiasts"
+              },
+              {
+                "name": "Description",
+                "value": "Discover a world of shooting possibilities at SnapGear. As the ultimate online destination for shooting enthusiasts, we provide a comprehensive range of products, resources, and support to help you create an exceptional shooting experience right at home."
+              },
+              {
+                "name": "Button Label",
+                "value": "View All"
+              }
+            ]
+          },
+          {
+            "group": "HTML code",
+            "items": [
+              {
+                "name": "HTML code",
+                "value": ""
+              }
+            ]
+          },
+          {
+            "group": "Account",
+            "items": [
+              {
+                "name": "title",
+                "value": "My profile"
+              },
+              {
+                "name": "paragraph"
+              }
+            ]
+          },
+          {
+            "group": "Product Search",
+            "items": [
+              {
+                "name": "Product Search",
+                "value": "Search"
+              }
+            ]
+          },
+          {
+            "group": "Product Search",
+            "items": [
+              {
+                "name": "Product Search",
+                "value": "Search now"
+              }
+            ]
+          },
+          {
+            "group": "Visitor Counter",
+            "items": [
+              {
+                "name": "Visitor Counter",
+                "value": "<p class='p3'>There are <span data-type='variable' value='app.visitors'>${app.visitors}</span> people viewing this product right now.</p>"
+              }
+            ]
+          },
+          {
+            "group": "Stock Countdown",
+            "items": [
+              {
+                "name": "Stock Countdown",
+                "value": "<p class='p3'>Only <b><span data-type='variable' value='app.inventory'>${app.inventory}</span> items</b> left in stock</p>"
+              }
+            ]
+          }
+        ]
+      },
+      "step5": {
+        "expectSF": [
+          {
+            "group": "Heading",
+            "items": [
+              {
+                "name": "Heading",
+                "value": "translated <p>thêm&nbsp;text&nbsp;ngôn&nbsp;ngữ&nbsp;khác&nbsp;vào&nbsp;đây&nbsp;!@@#$,&nbsp;在这里添加另一种语言的文本</p> to German"
+              }
+            ]
+          },
+          {
+            "group": "Button",
+            "items": [
+              {
+                "name": "Button",
+                "value": "translated tiếng việt . VIEW ALL COLLECTIONS to German"
+              }
+            ]
+          },
+          {
+            "group": "Button",
+            "items": [
+              {
+                "name": "Button",
+                "value": ""
+              }
+            ]
+          },
+          {
+            "group": "Paragraph",
+            "items": [
+              {
+                "name": "Paragraph",
+                "value": "translated <p style=\"text-align: center\" class=\"p2\"><span style=\"color: rgb(29, 28, 29)\">Be the first to know about exclusive deals, early product access, and more! We’ll sweeten the deal with 25% off your first full price purchase*</span></p> to German"
+              }
+            ]
+          },
+          {
+            "group": "Image",
+            "items": [
+              {
+                "name": "Image",
+                "value": "translated Where Style Meets Functionality to German"
+              }
+            ]
+          },
+          {
+            "group": "Video",
+            "items": [
+              {
+                "name": "Video",
+                "value": "translated The dog is a pet animal to German"
+              }
+            ]
+          },
+          {
+            "group": "Social bar",
+            "items": [
+              {
+                "name": "label",
+                "value": ""
+              },
+              {
+                "name": "label",
+                "value": "translated Facebook to German"
+              },
+              {
+                "name": "label",
+                "value": "translated Tweet to German"
+              },
+              {
+                "name": "label",
+                "value": "translated Pin it to German"
+              },
+              {
+                "name": "label",
+                "value": "translated Linkedin to German"
+              },
+              {
+                "name": "label",
+                "value": "translated test social to German"
+              }
+            ]
+          },
+          {
+            "group": "Form",
+            "items": [
+              {
+                "name": "Form name",
+                "value": "translated Contact to German"
+              },
+              {
+                "name": "Message",
+                "value": "translated Thank you! The form was submitted successfully. to German"
+              },
+              {
+                "name": "Description",
+                "value": "translated Here is your coupon code. Please hurry up it will expire soon. to German"
+              },
+              {
+                "name": "Button label",
+                "value": "translated Submit to German"
+              },
+              {
+                "name": "Label",
+                "value": "translated Email to German"
+              },
+              {
+                "name": "Placeholder",
+                "value": "translated Enter your email to German"
+              },
+              {
+                "name": "Label",
+                "value": "translated Select to German"
+              },
+              {
+                "name": "Placeholder",
+                "value": "translated Please select to German"
+              },
+              {
+                "name": "Option 1",
+                "value": "translated Option 1 to German"
+              },
+              {
+                "name": "Label",
+                "value": "translated Checkbox to German"
+              },
+              {
+                "name": "Placeholder",
+                "value": "translated Placeholder to German"
+              },
+              {
+                "name": "Option 1",
+                "value": "translated Option 1 to German"
+              },
+              {
+                "name": "Label",
+                "value": "translated Radio to German"
+              },
+              {
+                "name": "Placeholder",
+                "value": "translated Placeholder to German"
+              },
+              {
+                "name": "Option 1",
+                "value": "translated Option 1 to German"
+              },
+              {
+                "name": "Label",
+                "value": ""
+              },
+              {
+                "name": "Placeholder",
+                "value": "translated Enter your email to German"
+              },
+              {
+                "name": "Label",
+                "value": "translated Text area to German"
+              },
+              {
+                "name": "Placeholder",
+                "value": "translated Your message to German"
+              },
+              {
+                "name": "Label",
+                "value": "translated First Name to German"
+              },
+              {
+                "name": "Placeholder",
+                "value": "translated Your first name to German"
+              }
+            ]
+          },
+          {
+            "group": "Accordion",
+            "items": [
+              {
+                "name": "content",
+                "value": "translated <p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" title=\"\" role=\"url\" href=\"mailto:dpro-qe-1@beeketing.net\">Make caring for your pet a breeze with our one-stop-shop for all your pet's essentials.</a></p> to German"
+              },
+              {
+                "name": "content",
+                "value": "translated <p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" title=\"\" role=\"url\" href=\"mailto:dpro-qe-1@beeketing.net\">Make caring for your pet a breeze with our one-stop-shop for all your pet's essentials.</a></p> to German"
+              }
+            ]
+          },
+          {
+            "group": "Slideshow",
+            "items": [
+              {
+                "name": "title",
+                "value": "translated Slide 2 to German"
+              },
+              {
+                "name": "sub_heading",
+                "value": "translated COLLECTION to German"
+              },
+              {
+                "name": "heading",
+                "value": "translated BUSINESS BACKPACK to German"
+              },
+              {
+                "name": "description",
+                "value": "translated NEW RELEASE to German"
+              },
+              {
+                "name": "btn_primary_label",
+                "value": "translated SHOP NOW to German"
+              },
+              {
+                "name": "btn_secondary_label",
+                "value": "translated Button text to German"
+              }
+            ]
+          },
+          {
+            "group": "HTML code",
+            "items": [
+              {
+                "name": "HTML code",
+                "value": "translated Welcome to SnapGear, your ultimate destination for all your shooting needs. We are a dedicated online platform that caters to shooting enthusiasts looking to set up and enhance their shooting experience at home. to German"
+              }
+            ]
+          },
+          {
+            "group": "Tabs",
+            "items": [
+              {
+                "name": "content",
+                "value": "translated <p class=\"p3\">Laptop</p> to German"
+              },
+              {
+                "name": "content",
+                "value": "translated <p class=\"p3\">Laptop</p> to German"
+              }
+            ]
+          },
+          {
+            "group": "Featured Collection",
+            "items": [
+              {
+                "name": "Heading",
+                "value": ""
+              },
+              {
+                "name": "Description",
+                "value": ""
+              },
+              {
+                "name": "Button Label",
+                "value": "translated View All to German"
+              }
+            ]
+          },
+          {
+            "group": "Toggle list",
+            "items": [
+              {
+                "name": "title",
+                "value": "translated <h4 class=\"h4\"><span style=\"color: rgb(var(--color-3))\">OUR HANDPICKED FOR YOU</span></h4> to German"
+              },
+              {
+                "name": "paragraph",
+                "value": "translated <p><span style=\"color: rgb(var(--color-5))\">This whimsical pet bed combines the enchantment of Christmas with the comfort and warmth your pet deserves. Crafted with meticulous attention to detail, this pet bed resembles a charming Christmas tree, complete with lush green fabric and adorable ornaments.</span></p> to German"
+              }
+            ]
+          },
+          {
+            "group": "Bullet",
+            "items": [
+              {
+                "name": "title",
+                "value": "translated <p class=\"p2\"><span style=\"color: rgb(var(--color-5))\">High sensitivity condenser microphone</span></p> to German"
+              },
+              {
+                "name": "paragraph"
+              }
+            ]
+          },
+          {
+            "group": "Featured Collection",
+            "items": [
+              {
+                "name": "Heading",
+                "value": "translated Your Premier Destination for Stream Enthusiasts to German"
+              },
+              {
+                "name": "Description",
+                "value": "translated Discover a world of shooting possibilities at SnapGear. As the ultimate online destination for shooting enthusiasts, we provide a comprehensive range of products, resources, and support to help you create an exceptional shooting experience right at home. to German"
+              },
+              {
+                "name": "Button Label",
+                "value": "translated View All to German"
+              }
+            ]
+          },
+          {
+            "group": "HTML code",
+            "items": [
+              {
+                "name": "HTML code",
+                "value": ""
+              }
+            ]
+          },
+          {
+            "group": "Account",
+            "items": [
+              {
+                "name": "title",
+                "value": "translated My profile to German"
+              },
+              {
+                "name": "paragraph"
+              }
+            ]
+          },
+          {
+            "group": "Product Search",
+            "items": [
+              {
+                "name": "Product Search",
+                "value": "translated Search to German"
+              }
+            ]
+          },
+          {
+            "group": "Product Search",
+            "items": [
+              {
+                "name": "Product Search",
+                "value": "translated Search now to German"
+              }
+            ]
+          },
+          {
+            "group": "Visitor Counter",
+            "items": [
+              {
+                "name": "Visitor Counter",
+                "value": "translated <p class='p3'>There are <span data-type='variable' value='app.visitors'>${app.visitors}</span> people viewing this product right now.</p> to German"
+              }
+            ]
+          },
+          {
+            "group": "Stock Countdown",
+            "items": [
+              {
+                "name": "Stock Countdown",
+                "value": "translated <p class='p3'>Only <b><span data-type='variable' value='app.inventory'>${app.inventory}</span> items</b> left in stock</p> to German"
+              }
+            ]
+          }
+        ]
+      },
+      "edit_translation": {
+        "value_type": "text",
+        "value": "Edit manual translation"
+      },
+      "toast_success": "Successfully update this language"
+    },
+    "DATA_DRIVEN_DISABLE_AUTO_TRANSLATE_SBASE": {
+      "data_cases": [
+        {
+          "case_id": "SB_SET_LG_TLL_11",
+          "case_description": "[DB+SF - Function] Kiểm tra tính năng translate khi auto translate disable - All pages content - Blog pages - Blog - shopbase",
+          "page": "blogs",
+          "entity_translate": {
+            "entity": "Blog pages",
+            "page": "Blog"
+          }
+        },
+        {
+          "case_id": "SB_SET_LG_TLL_14",
+          "case_description": "[DB+SF - Function] Kiểm tra tính năng translate khi auto translate disable - All pages content - Member pages - Sign in- shopbase",
+          "page": "sign_in",
+          "entity_translate": {
+            "entity": "Member pages",
+            "page": "Sign in"
+          }
+        },
+        {
+          "case_id": "SB_SET_LG_TLL_16",
+          "case_description": "[DB+SF - Function] Kiểm tra tính năng translate khi auto translate disable - All pages content - Member pages - Order history- shopbase",
+          "page": "order_history",
+          "entity_translate": {
+            "entity": "Member pages",
+            "page": "Order history"
+          }
+        },
+        {
+          "case_id": "SB_SET_LG_TLL_17",
+          "case_description": "[DB+SF - Function] Kiểm tra tính năng translate khi auto translate disable - All pages content - Member pages - Change password- shopbase",
+          "page": "change_password",
+          "entity_translate": {
+            "entity": "Member pages",
+            "page": "Change password"
+          }
+        },
+        {
+          "case_id": "SB_SET_LG_TLL_09",
+          "case_description": "[DB+SF - Function] Kiểm tra tính năng translate khi auto translate enable - All pages content - E-commerce pages - Checkout",
+          "entity_name": "Website pages",
+          "page": "checkout",
+          "need_to_verify_pages": ["checkout"],
+          "entity_translate": {
+            "entity": "E-commerce pages",
+            "page": "Checkout"
+          }
+        },
+        {
+          "case_id": "SB_SET_LG_TLL_07",
+          "case_description": "[DB+SF - Function] Kiểm tra tính năng translate khi auto translate enable - All pages content - E-commerce pages - Search result",
+          "entity_name": "Website pages",
+          "page": "search",
+          "need_to_verify_pages": ["search"],
+          "entity_translate": {
+            "entity": "E-commerce pages",
+            "page": "Search result"
+          }
+        },
+        {
+          "case_id": "SB_SET_LG_TLL_05",
+          "case_description": "[DB+SF - Function] Kiểm tra tính năng translate khi auto translate disable - All pages content - E-commerce pages - Collection detail- shopbase",
+          "page": "collection",
+          "entity_translate": {
+            "entity": "E-commerce pages",
+            "page": "Collection detail"
+          }
+        }
+      ],
+      "step1": {
+        "expect_block_names": [
+          "Heading",
+          "Button",
+          "Paragraph",
+          "Image",
+          "Video",
+          "Social bar",
+          "Label",
+          "Label",
+          "Label",
+          "Label",
+          "Label",
+          "Form",
+          "Form name",
+          "Message",
+          "Description",
+          "Button label",
+          "Label",
+          "Placeholder",
+          "Label",
+          "Placeholder",
+          "Option 1",
+          "Label",
+          "Placeholder",
+          "Option 1",
+          "Label",
+          "Placeholder",
+          "Option 1",
+          "Placeholder",
+          "Label",
+          "Placeholder",
+          "Label",
+          "Placeholder",
+          "Accordion",
+          "Content",
+          "Slideshow",
+          "Title",
+          "Sub heading",
+          "Heading",
+          "Description",
+          "Button label",
+          "Button label",
+          "HTML code",
+          "Tabs",
+          "Content",
+          "Featured Collection",
+          "Button Label",
+          "Toggle list",
+          "Title",
+          "Paragraph",
+          "Bullet",
+          "Title",
+          "Featured Collection",
+          "Heading",
+          "Description",
+          "Button Label",
+          "Account",
+          "Title",
+          "Product Search",
+          "Placeholder",
+          "Button label",
+          "Visitor Counter",
+          "Stock Countdown"
+        ]
+      },
+      "step2": {
+        "expectSF": [
+          {
+            "group": "Heading",
+            "items": [
+              {
+                "name": "Heading",
+                "value": "<p>Edit manual translation</p>"
+              }
+            ]
+          },
+          {
+            "group": "Button",
+            "items": [
+              {
+                "name": "Button",
+                "value": "Edit manual translation"
+              }
+            ]
+          },
+          {
+            "group": "Button",
+            "items": [
+              {
+                "name": "Button",
+                "value": ""
+              }
+            ]
+          },
+          {
+            "group": "Paragraph",
+            "items": [
+              {
+                "name": "Paragraph",
+                "value": "<p>Edit manual translation</p>"
+              }
+            ]
+          },
+          {
+            "group": "Image",
+            "items": [
+              {
+                "name": "Image",
+                "value": "Edit manual translation"
+              }
+            ]
+          },
+          {
+            "group": "Video",
+            "items": [
+              {
+                "name": "Video",
+                "value": "Edit manual translation"
+              }
+            ]
+          },
+          {
+            "group": "Social bar",
+            "items": [
+              {
+                "name": "label",
+                "value": ""
+              },
+              {
+                "name": "label",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "label",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "label",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "label",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "label",
+                "value": "Edit manual translation"
+              }
+            ]
+          },
+          {
+            "group": "Form",
+            "items": [
+              {
+                "name": "Form name",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "Message",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "Description",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "Button label",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "Label",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "Placeholder",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "Label",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "Placeholder",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "Option 1",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "Label",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "Placeholder",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "Option 1",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "Label",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "Placeholder",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "Option 1",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "Label",
+                "value": ""
+              },
+              {
+                "name": "Placeholder",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "Label",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "Placeholder",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "Label",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "Placeholder",
+                "value": "Edit manual translation"
+              }
+            ]
+          },
+          {
+            "group": "Accordion",
+            "items": [
+              {
+                "name": "content",
+                "value": "<p>Edit manual translation</p>"
+              },
+              {
+                "name": "content",
+                "value": "<p>Edit manual translation</p>"
+              }
+            ]
+          },
+          {
+            "group": "Slideshow",
+            "items": [
+              {
+                "name": "title",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "sub_heading",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "heading",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "description",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "btn_primary_label",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "btn_secondary_label",
+                "value": "Edit manual translation"
+              }
+            ]
+          },
+          {
+            "group": "HTML code",
+            "items": [
+              {
+                "name": "HTML code",
+                "value": "Edit manual translation"
+              }
+            ]
+          },
+          {
+            "group": "Tabs",
+            "items": [
+              {
+                "name": "content",
+                "value": "<p>Edit manual translation</p>"
+              },
+              {
+                "name": "content",
+                "value": "<p>Edit manual translation</p>"
+              }
+            ]
+          },
+          {
+            "group": "Featured Collection",
+            "items": [
+              {
+                "name": "Heading",
+                "value": ""
+              },
+              {
+                "name": "Description",
+                "value": ""
+              },
+              {
+                "name": "Button Label",
+                "value": "Edit manual translation"
+              }
+            ]
+          },
+          {
+            "group": "Toggle list",
+            "items": [
+              {
+                "name": "title",
+                "value": "<p>Edit manual translation</p>"
+              },
+              {
+                "name": "paragraph",
+                "value": "<p>Edit manual translation</p>"
+              }
+            ]
+          },
+          {
+            "group": "Bullet",
+            "items": [
+              {
+                "name": "title",
+                "value": "<p>Edit manual translation</p>"
+              },
+              {
+                "name": "paragraph"
+              }
+            ]
+          },
+          {
+            "group": "Featured Collection",
+            "items": [
+              {
+                "name": "Heading",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "Description",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "Button Label",
+                "value": "Edit manual translation"
+              }
+            ]
+          },
+          {
+            "group": "HTML code",
+            "items": [
+              {
+                "name": "HTML code",
+                "value": ""
+              }
+            ]
+          },
+          {
+            "group": "Account",
+            "items": [
+              {
+                "name": "title",
+                "value": "Edit manual translation"
+              },
+              {
+                "name": "paragraph"
+              }
+            ]
+          },
+          {
+            "group": "Product Search",
+            "items": [
+              {
+                "name": "Product Search",
+                "value": "Edit manual translation"
+              }
+            ]
+          },
+          {
+            "group": "Product Search",
+            "items": [
+              {
+                "name": "Product Search",
+                "value": "Edit manual translation"
+              }
+            ]
+          },
+          {
+            "group": "Visitor Counter",
+            "items": [
+              {
+                "name": "Visitor Counter",
+                "value": "<p>Edit manual translation</p>"
+              }
+            ]
+          },
+          {
+            "group": "Stock Countdown",
+            "items": [
+              {
+                "name": "Stock Countdown",
+                "value": "<p>Edit manual translation</p>"
+              }
+            ]
+          }
+        ]
+      },
+      "step4": {
+        "expectSF": [
+          {
+            "group": "Heading",
+            "items": [
+              {
+                "name": "Heading",
+                "value": "<p>thêm&nbsp;text&nbsp;ngôn&nbsp;ngữ&nbsp;khác&nbsp;vào&nbsp;đây&nbsp;!@@#$,&nbsp;在这里添加另一种语言的文本</p>"
+              }
+            ]
+          },
+          {
+            "group": "Button",
+            "items": [
+              {
+                "name": "Button",
+                "value": "tiếng việt . VIEW ALL COLLECTIONS"
+              }
+            ]
+          },
+          {
+            "group": "Button",
+            "items": [
+              {
+                "name": "Button",
+                "value": ""
+              }
+            ]
+          },
+          {
+            "group": "Paragraph",
+            "items": [
+              {
+                "name": "Paragraph",
+                "value": "<p style=\"text-align: center\" class=\"p2\"><span style=\"color: rgb(29, 28, 29)\">Be the first to know about exclusive deals, early product access, and more! We’ll sweeten the deal with 25% off your first full price purchase*</span></p>"
+              }
+            ]
+          },
+          {
+            "group": "Image",
+            "items": [
+              {
+                "name": "Image",
+                "value": "Where Style Meets Functionality"
+              }
+            ]
+          },
+          {
+            "group": "Video",
+            "items": [
+              {
+                "name": "Video",
+                "value": "The dog is a pet animal"
+              }
+            ]
+          },
+          {
+            "group": "Social bar",
+            "items": [
+              {
+                "name": "label",
+                "value": ""
+              },
+              {
+                "name": "label",
+                "value": "Facebook"
+              },
+              {
+                "name": "label",
+                "value": "Tweet"
+              },
+              {
+                "name": "label",
+                "value": "Pin it"
+              },
+              {
+                "name": "label",
+                "value": "Linkedin"
+              },
+              {
+                "name": "label",
+                "value": "test social"
+              }
+            ]
+          },
+          {
+            "group": "Form",
+            "items": [
+              {
+                "name": "Form name",
+                "value": "Contact"
+              },
+              {
+                "name": "Message",
+                "value": "Thank you! The form was submitted successfully."
+              },
+              {
+                "name": "Description",
+                "value": "Here is your coupon code. Please hurry up it will expire soon."
+              },
+              {
+                "name": "Button label",
+                "value": "Submit"
+              },
+              {
+                "name": "Label",
+                "value": "Email"
+              },
+              {
+                "name": "Placeholder",
+                "value": "Enter your email"
+              },
+              {
+                "name": "Label",
+                "value": "Select"
+              },
+              {
+                "name": "Placeholder",
+                "value": "Please select"
+              },
+              {
+                "name": "Option 1",
+                "value": "Option 1"
+              },
+              {
+                "name": "Label",
+                "value": "Checkbox"
+              },
+              {
+                "name": "Placeholder",
+                "value": "Placeholder"
+              },
+              {
+                "name": "Option 1",
+                "value": "Option 1"
+              },
+              {
+                "name": "Label",
+                "value": "Radio"
+              },
+              {
+                "name": "Placeholder",
+                "value": "Placeholder"
+              },
+              {
+                "name": "Option 1",
+                "value": "Option 1"
+              },
+              {
+                "name": "Label",
+                "value": ""
+              },
+              {
+                "name": "Placeholder",
+                "value": "Enter your email"
+              },
+              {
+                "name": "Label",
+                "value": "Text area"
+              },
+              {
+                "name": "Placeholder",
+                "value": "Your message"
+              },
+              {
+                "name": "Label",
+                "value": "First Name"
+              },
+              {
+                "name": "Placeholder",
+                "value": "Your first name"
+              }
+            ]
+          },
+          {
+            "group": "Accordion",
+            "items": [
+              {
+                "name": "content",
+                "value": "<p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" title=\"\" role=\"url\" href=\"mailto:dpro-qe-1@beeketing.net\">Make caring for your pet a breeze with our one-stop-shop for all your pet's essentials.</a></p>"
+              },
+              {
+                "name": "content",
+                "value": "<p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" title=\"\" role=\"url\" href=\"mailto:dpro-qe-1@beeketing.net\">Make caring for your pet a breeze with our one-stop-shop for all your pet's essentials.</a></p>"
+              }
+            ]
+          },
+          {
+            "group": "Slideshow",
+            "items": [
+              {
+                "name": "title",
+                "value": "Slide 2"
+              },
+              {
+                "name": "sub_heading",
+                "value": "COLLECTION"
+              },
+              {
+                "name": "heading",
+                "value": "BUSINESS BACKPACK"
+              },
+              {
+                "name": "description",
+                "value": "NEW RELEASE"
+              },
+              {
+                "name": "btn_primary_label",
+                "value": "SHOP NOW"
+              },
+              {
+                "name": "btn_secondary_label",
+                "value": "Button text"
+              }
+            ]
+          },
+          {
+            "group": "HTML code",
+            "items": [
+              {
+                "name": "HTML code",
+                "value": "Welcome to SnapGear, your ultimate destination for all your shooting needs. We are a dedicated online platform that caters to shooting enthusiasts looking to set up and enhance their shooting experience at home."
+              }
+            ]
+          },
+          {
+            "group": "Tabs",
+            "items": [
+              {
+                "name": "content",
+                "value": "<p class=\"p3\">Laptop</p>"
+              },
+              {
+                "name": "content",
+                "value": "<p class=\"p3\">Laptop</p>"
+              }
+            ]
+          },
+          {
+            "group": "Featured Collection",
+            "items": [
+              {
+                "name": "Heading",
+                "value": ""
+              },
+              {
+                "name": "Description",
+                "value": ""
+              },
+              {
+                "name": "Button Label",
+                "value": "View All"
+              }
+            ]
+          },
+          {
+            "group": "Toggle list",
+            "items": [
+              {
+                "name": "title",
+                "value": "<h4 class=\"h4\"><span style=\"color: rgb(var(--color-3))\">OUR HANDPICKED FOR YOU</span></h4>"
+              },
+              {
+                "name": "paragraph",
+                "value": "<p><span style=\"color: rgb(var(--color-5))\">This whimsical pet bed combines the enchantment of Christmas with the comfort and warmth your pet deserves. Crafted with meticulous attention to detail, this pet bed resembles a charming Christmas tree, complete with lush green fabric and adorable ornaments.</span></p>"
+              }
+            ]
+          },
+          {
+            "group": "Bullet",
+            "items": [
+              {
+                "name": "title",
+                "value": "<p class=\"p2\"><span style=\"color: rgb(var(--color-5))\">High sensitivity condenser microphone</span></p>"
+              },
+              {
+                "name": "paragraph"
+              }
+            ]
+          },
+          {
+            "group": "Featured Collection",
+            "items": [
+              {
+                "name": "Heading",
+                "value": "Your Premier Destination for Stream Enthusiasts"
+              },
+              {
+                "name": "Description",
+                "value": "Discover a world of shooting possibilities at SnapGear. As the ultimate online destination for shooting enthusiasts, we provide a comprehensive range of products, resources, and support to help you create an exceptional shooting experience right at home."
+              },
+              {
+                "name": "Button Label",
+                "value": "View All"
+              }
+            ]
+          },
+          {
+            "group": "HTML code",
+            "items": [
+              {
+                "name": "HTML code",
+                "value": ""
+              }
+            ]
+          },
+          {
+            "group": "Account",
+            "items": [
+              {
+                "name": "title",
+                "value": "My profile"
+              },
+              {
+                "name": "paragraph"
+              }
+            ]
+          },
+          {
+            "group": "Product Search",
+            "items": [
+              {
+                "name": "Product Search",
+                "value": "Search"
+              }
+            ]
+          },
+          {
+            "group": "Product Search",
+            "items": [
+              {
+                "name": "Product Search",
+                "value": "Search now"
+              }
+            ]
+          },
+          {
+            "group": "Visitor Counter",
+            "items": [
+              {
+                "name": "Visitor Counter",
+                "value": "<p class='p3'>There are <span data-type='variable' value='app.visitors'>${app.visitors}</span> people viewing this product right now.</p>"
+              }
+            ]
+          },
+          {
+            "group": "Stock Countdown",
+            "items": [
+              {
+                "name": "Stock Countdown",
+                "value": "<p class='p3'>Only <b><span data-type='variable' value='app.inventory'>${app.inventory}</span> items</b> left in stock</p>"
+              }
+            ]
+          }
+        ]
+      },
+      "step5": {
+        "expectSF": [
+          {
+            "group": "Heading",
+            "items": [
+              {
+                "name": "Heading",
+                "value": "translated <p>thêm&nbsp;text&nbsp;ngôn&nbsp;ngữ&nbsp;khác&nbsp;vào&nbsp;đây&nbsp;!@@#$,&nbsp;在这里添加另一种语言的文本</p> to French"
+              }
+            ]
+          },
+          {
+            "group": "Button",
+            "items": [
+              {
+                "name": "Button",
+                "value": "translated tiếng việt . VIEW ALL COLLECTIONS to French"
+              }
+            ]
+          },
+          {
+            "group": "Button",
+            "items": [
+              {
+                "name": "Button",
+                "value": ""
+              }
+            ]
+          },
+          {
+            "group": "Paragraph",
+            "items": [
+              {
+                "name": "Paragraph",
+                "value": "translated <p style=\"text-align: center\" class=\"p2\"><span style=\"color: rgb(29, 28, 29)\">Be the first to know about exclusive deals, early product access, and more! We’ll sweeten the deal with 25% off your first full price purchase*</span></p> to French"
+              }
+            ]
+          },
+          {
+            "group": "Image",
+            "items": [
+              {
+                "name": "Image",
+                "value": "translated Where Style Meets Functionality to French"
+              }
+            ]
+          },
+          {
+            "group": "Video",
+            "items": [
+              {
+                "name": "Video",
+                "value": "translated The dog is a pet animal to French"
+              }
+            ]
+          },
+          {
+            "group": "Social bar",
+            "items": [
+              {
+                "name": "label",
+                "value": ""
+              },
+              {
+                "name": "label",
+                "value": "translated Facebook to French"
+              },
+              {
+                "name": "label",
+                "value": "translated Tweet to French"
+              },
+              {
+                "name": "label",
+                "value": "translated Pin it to French"
+              },
+              {
+                "name": "label",
+                "value": "translated Linkedin to French"
+              },
+              {
+                "name": "label",
+                "value": "translated test social to French"
+              }
+            ]
+          },
+          {
+            "group": "Form",
+            "items": [
+              {
+                "name": "Form name",
+                "value": "translated Contact to French"
+              },
+              {
+                "name": "Message",
+                "value": "translated Thank you! The form was submitted successfully. to French"
+              },
+              {
+                "name": "Description",
+                "value": "translated Here is your coupon code. Please hurry up it will expire soon. to French"
+              },
+              {
+                "name": "Button label",
+                "value": "translated Submit to French"
+              },
+              {
+                "name": "Label",
+                "value": "translated Email to French"
+              },
+              {
+                "name": "Placeholder",
+                "value": "translated Enter your email to French"
+              },
+              {
+                "name": "Label",
+                "value": "translated Select to French"
+              },
+              {
+                "name": "Placeholder",
+                "value": "translated Please select to French"
+              },
+              {
+                "name": "Option 1",
+                "value": "translated Option 1 to French"
+              },
+              {
+                "name": "Label",
+                "value": "translated Checkbox to French"
+              },
+              {
+                "name": "Placeholder",
+                "value": "translated Placeholder to French"
+              },
+              {
+                "name": "Option 1",
+                "value": "translated Option 1 to French"
+              },
+              {
+                "name": "Label",
+                "value": "translated Radio to French"
+              },
+              {
+                "name": "Placeholder",
+                "value": "translated Placeholder to French"
+              },
+              {
+                "name": "Option 1",
+                "value": "translated Option 1 to French"
+              },
+              {
+                "name": "Label",
+                "value": ""
+              },
+              {
+                "name": "Placeholder",
+                "value": "translated Enter your email to French"
+              },
+              {
+                "name": "Label",
+                "value": "translated Text area to French"
+              },
+              {
+                "name": "Placeholder",
+                "value": "translated Your message to French"
+              },
+              {
+                "name": "Label",
+                "value": "translated First Name to French"
+              },
+              {
+                "name": "Placeholder",
+                "value": "translated Your first name to French"
+              }
+            ]
+          },
+          {
+            "group": "Accordion",
+            "items": [
+              {
+                "name": "content",
+                "value": "translated <p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" title=\"\" role=\"url\" href=\"mailto:dpro-qe-1@beeketing.net\">Make caring for your pet a breeze with our one-stop-shop for all your pet's essentials.</a></p> to French"
+              },
+              {
+                "name": "content",
+                "value": "translated <p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" title=\"\" role=\"url\" href=\"mailto:dpro-qe-1@beeketing.net\">Make caring for your pet a breeze with our one-stop-shop for all your pet's essentials.</a></p> to French"
+              }
+            ]
+          },
+          {
+            "group": "Slideshow",
+            "items": [
+              {
+                "name": "title",
+                "value": "translated Slide 2 to French"
+              },
+              {
+                "name": "sub_heading",
+                "value": "translated COLLECTION to French"
+              },
+              {
+                "name": "heading",
+                "value": "translated BUSINESS BACKPACK to French"
+              },
+              {
+                "name": "description",
+                "value": "translated NEW RELEASE to French"
+              },
+              {
+                "name": "btn_primary_label",
+                "value": "translated SHOP NOW to French"
+              },
+              {
+                "name": "btn_secondary_label",
+                "value": "translated Button text to French"
+              }
+            ]
+          },
+          {
+            "group": "HTML code",
+            "items": [
+              {
+                "name": "HTML code",
+                "value": "translated Welcome to SnapGear, your ultimate destination for all your shooting needs. We are a dedicated online platform that caters to shooting enthusiasts looking to set up and enhance their shooting experience at home. to French"
+              }
+            ]
+          },
+          {
+            "group": "Tabs",
+            "items": [
+              {
+                "name": "content",
+                "value": "translated <p class=\"p3\">Laptop</p> to French"
+              },
+              {
+                "name": "content",
+                "value": "translated <p class=\"p3\">Laptop</p> to French"
+              }
+            ]
+          },
+          {
+            "group": "Featured Collection",
+            "items": [
+              {
+                "name": "Heading",
+                "value": ""
+              },
+              {
+                "name": "Description",
+                "value": ""
+              },
+              {
+                "name": "Button Label",
+                "value": "translated View All to French"
+              }
+            ]
+          },
+          {
+            "group": "Toggle list",
+            "items": [
+              {
+                "name": "title",
+                "value": "translated <h4 class=\"h4\"><span style=\"color: rgb(var(--color-3))\">OUR HANDPICKED FOR YOU</span></h4> to French"
+              },
+              {
+                "name": "paragraph",
+                "value": "translated <p><span style=\"color: rgb(var(--color-5))\">This whimsical pet bed combines the enchantment of Christmas with the comfort and warmth your pet deserves. Crafted with meticulous attention to detail, this pet bed resembles a charming Christmas tree, complete with lush green fabric and adorable ornaments.</span></p> to French"
+              }
+            ]
+          },
+          {
+            "group": "Bullet",
+            "items": [
+              {
+                "name": "title",
+                "value": "translated <p class=\"p2\"><span style=\"color: rgb(var(--color-5))\">High sensitivity condenser microphone</span></p> to French"
+              },
+              {
+                "name": "paragraph"
+              }
+            ]
+          },
+          {
+            "group": "Featured Collection",
+            "items": [
+              {
+                "name": "Heading",
+                "value": "translated Your Premier Destination for Stream Enthusiasts to French"
+              },
+              {
+                "name": "Description",
+                "value": "translated Discover a world of shooting possibilities at SnapGear. As the ultimate online destination for shooting enthusiasts, we provide a comprehensive range of products, resources, and support to help you create an exceptional shooting experience right at home. to French"
+              },
+              {
+                "name": "Button Label",
+                "value": "translated View All to French"
+              }
+            ]
+          },
+          {
+            "group": "HTML code",
+            "items": [
+              {
+                "name": "HTML code",
+                "value": ""
+              }
+            ]
+          },
+          {
+            "group": "Account",
+            "items": [
+              {
+                "name": "title",
+                "value": "translated My profile to French"
+              },
+              {
+                "name": "paragraph"
+              }
+            ]
+          },
+          {
+            "group": "Product Search",
+            "items": [
+              {
+                "name": "Product Search",
+                "value": "translated Search to French"
+              }
+            ]
+          },
+          {
+            "group": "Product Search",
+            "items": [
+              {
+                "name": "Product Search",
+                "value": "translated Search now to French"
+              }
+            ]
+          },
+          {
+            "group": "Visitor Counter",
+            "items": [
+              {
+                "name": "Visitor Counter",
+                "value": "translated <p class='p3'>There are <span data-type='variable' value='app.visitors'>${app.visitors}</span> people viewing this product right now.</p> to French"
+              }
+            ]
+          },
+          {
+            "group": "Stock Countdown",
+            "items": [
+              {
+                "name": "Stock Countdown",
+                "value": "translated <p class='p3'>Only <b><span data-type='variable' value='app.inventory'>${app.inventory}</span> items</b> left in stock</p> to French"
+              }
+            ]
+          }
+        ]
+      },
+      "edit_translation": {
+        "value_type": "text",
+        "value": "Edit manual translation"
+      },
+      "toast_success": "Successfully update this language"
+    }
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "shop_name": "auto create creator",
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10328463,
+      "user_id": 90252,
+      "domain": "au-learning-onboarding.myshopbase.net",
+      "shop_name": "au-learning-onboarding",
+      "theme_criadora": 3172544
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10441570,
+      "user_id": 11260206,
+      "domain": "au-learning-onboarding.onshopbase.com",
+      "shop_name": "au-learning-onboarding",
+      "theme_criadora": 1439144
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "front-qe-2@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10443103,
+      "user_id": 11260209,
+      "domain": "prodtest-onboading-webbuilder.onshopbase.com",
+      "shop_name": "prodtest-onboading-webbuilder",
+      "theme_criadora": 1463928
+    }
+  },
+  "cases": {
+    "SB_PLB_OBD_62": {
+      "dnd_block": {
+        "from": {
+          "category": "Basics",
+          "template": "Button"
+        },
+        "to": {
+          "position": {
+            "section": 1,
+            "column": 1
+          },
+          "isBottom": false
+        }
+      }
+    },
+    "SB_PLB_OBD_63": {
+      "page_id": 3151608,
+      "snapshot_name": {
+        "icon_open_learning_center": "icon_open_learning_center_in_header.png",
+        "sidebar_popup_learning_center": "sidebar_popup_learning_center.png"
+      }
+    },
+    "SB_PLB_OBD_64": {
+      "data_search": [
+        {
+          "description": "Search đúng với một phần tên card",
+          "data": " Style for Website",
+          "expect": {
+            "card": [
+              {
+                "name": "Setup Button Style for Website"
+              }
+            ]
+          }
+        },
+        {
+          "description": "Search với một phần card nhưng viết khác chữ hoa, chữ thường",
+          "data": "BUTTon StYLe",
+          "expect": {
+            "card": [
+              {
+                "name": "Setup Button Style for Website"
+              }
+            ]
+          }
+        },
+        {
+          "description": "Search với data có chứa ký tự đặc biệt",
+          "data": "!@#$%^&*()_+?=1",
+          "expect": {
+            "message": "Oops! It seems a bit empty here..."
+          }
+        },
+        {
+          "description": "Search với tên chính xác của một card",
+          "data": "Setup Button Style for Website",
+          "expect": {
+            "card": [
+              {
+                "name": "Setup Button Style for Website"
+              }
+            ]
+          }
+        },
+        {
+          "description": "Search với card đúng với nhiều kết quả card",
+          "data": "How to set",
+          "expect": {
+            "card": [
+              {
+                "name": "How to set up color palette"
+              },
+              {
+                "name": "How to set up Typography"
+              }
+            ]
+          }
+        },
+        {
+          "description": "Search với tên một card không tồn tại",
+          "data": "How to learning WB",
+          "expect": {
+            "message": "Oops! It seems a bit empty here..."
+          }
+        }
+      ]
+    },
+    "SB_PLB_OBD_65": {
+      "snapshot_hover_card": "hover_card_onboarding.png"
+    }
+  }
+}

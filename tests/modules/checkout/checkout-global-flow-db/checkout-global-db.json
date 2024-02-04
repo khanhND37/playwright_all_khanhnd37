@@ -1,0 +1,211 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-ne-che-spay-reseller-onepage.onshopbase.com",
+      "shop_name": "au-ne-che-spay-reseller-onepage",
+      "user_id": 11247306,
+      "shop_id": 10432319,
+      "username": "opay-qe-1@beeketing.net",
+      "password": "CZFX[b_G5T:+N*Y",
+      "products_checkout": [
+        {
+          "name": "Product 1",
+          "variant_id": 1000010648249464,
+          "quantity": 2
+        },
+        {
+          "name": "Product 2",
+          "variant_id": 1000010648249488,
+          "quantity": 2
+        }
+      ],
+      "email": "testerglobalOCG@mailtothis.com",
+      "shipping_address": {
+        "address1": "814 Mission Street",
+        "address2": "",
+        "city": "Los Angeles",
+        "company": "",
+        "country_code": "BE",
+        "country_name": "Belgium",
+        "cpf_or_cnpj_number": "",
+        "first_name": "Shopbase",
+        "last_name": "Auto",
+        "name": "Jena",
+        "phone": "0111111111",
+        "province": "",
+        "province_code": "",
+        "zip": "90001",
+        "remember_me": false
+      },
+      "retry": 5
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-ne-che-spay-reseller-onepage-prodtest.onshopbase.com",
+      "shop_name": "au-ne-che-spay-reseller-onepage-prodtest",
+      "user_id": 11247306,
+      "shop_id": 10432525,
+      "username": "opay-qe-1@beeketing.net",
+      "password": "CZFX[b_G5T:+N*Y",
+      "products_checkout": [
+        {
+          "name": "Product 1",
+          "variant_id": 1000010649290390,
+          "quantity": 2
+        },
+        {
+          "name": "Product 2",
+          "variant_id": 1000010649294675,
+          "quantity": 2
+        }
+      ],
+      "email": "testerglobalOCG@mailtothis.com",
+      "shipping_address": {
+        "address1": "814 Mission Street",
+        "address2": "",
+        "city": "Los Angeles",
+        "company": "",
+        "country_code": "BE",
+        "country_name": "Belgium",
+        "cpf_or_cnpj_number": "",
+        "first_name": "Shopbase",
+        "last_name": "Auto",
+        "name": "Jena",
+        "phone": "0111111111",
+        "province": "",
+        "province_code": "",
+        "zip": "90001",
+        "remember_me": false
+      },
+      "retry": 5,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-checkout-smp-ne-one-page.myshopbase.net",
+      "shop_name": "au-checkout-smp-ne-one-page",
+      "username": "opay-qe-1@beeketing.net",
+      "password": "Z6el|q4&:hwCrVx",
+      "user_id": 90009,
+      "shop_id": 10327488,
+      "products_checkout": [
+        {
+          "name": "Product 1",
+          "variant_id": 1000001769286964,
+          "quantity": 2
+        },
+        {
+          "name": "Product 2",
+          "variant_id": 1000001769286965,
+          "quantity": 2
+        }
+      ],
+      "email": "testerglobalOCG@mailtothis.com",
+      "shipping_address": {
+        "address1": "814 Mission Street",
+        "address2": "",
+        "city": "Los Angeles",
+        "company": "",
+        "country_code": "BE",
+        "country_name": "Belgium",
+        "cpf_or_cnpj_number": "",
+        "first_name": "Shopbase",
+        "last_name": "Auto",
+        "name": "Jena",
+        "phone": "0111111111",
+        "province": "",
+        "province_code": "",
+        "zip": "90001",
+        "remember_me": false
+      },
+      "retry": 10
+    }
+  },
+  "cases": {
+    "SB_SET_GM_CSG_71": {
+      "card_info": {
+        "number": "4000000000000259",
+        "holder_name": "Shopbase Auto",
+        "expire_date": "02/29",
+        "cvv": "100"
+      },
+      "data_setting": {
+        "global_market": {
+          "name": "SB_SET_GM_CSG_71 Don't remove",
+          "price_adjustment": 10,
+          "price_adjustment_type": "price_increase",
+          "is_rounding": true,
+          "rounding": 0.88,
+          "update_fields": ["price_adjustment", "is_rounding", "rounding"]
+        }
+      },
+      "data_setting_reset": {
+        "global_market": {
+          "name": "SB_SET_GM_CSG_71 Don't remove",
+          "price_adjustment": 10,
+          "price_adjustment_type": "price_increase",
+          "is_rounding": true,
+          "rounding": 0.99,
+          "update_fields": ["price_adjustment", "is_rounding", "rounding"]
+        }
+      }
+    },
+    "SB_SET_GM_CSG_74": {
+      "refund_info": [
+        {
+          "product_name": "Product 1",
+          "product_qty": "1",
+          "shipping_fee": "0.5"
+        },
+        {
+          "product_name": "Product 2",
+          "product_qty": "1",
+          "shipping_fee": "0.5"
+        }
+      ],
+      "data_setting": {
+        "global_market": {
+          "name": "SB_SET_GM_CSG_71 Don't remove",
+          "price_adjustment": 10,
+          "price_adjustment_type": "price_increase",
+          "is_rounding": true,
+          "rounding": 0.88,
+          "update_fields": ["price_adjustment", "is_rounding", "rounding"]
+        }
+      },
+      "data_setting_reset": {
+        "global_market": {
+          "name": "SB_SET_GM_CSG_71 Don't remove",
+          "price_adjustment": 10,
+          "price_adjustment_type": "price_increase",
+          "is_rounding": true,
+          "rounding": 0.99,
+          "update_fields": ["price_adjustment", "is_rounding", "rounding"]
+        }
+      }
+    },
+    "SB_SET_GM_CSG_76": {
+      "data_setting": {
+        "global_market": {
+          "name": "SB_SET_GM_CSG_71 Don't remove",
+          "price_adjustment": 10,
+          "price_adjustment_type": "price_increase",
+          "is_rounding": true,
+          "rounding": 0.88,
+          "update_fields": ["price_adjustment", "is_rounding", "rounding"]
+        }
+      },
+      "data_setting_reset": {
+        "global_market": {
+          "name": "SB_SET_GM_CSG_71 Don't remove",
+          "price_adjustment": 10,
+          "price_adjustment_type": "price_increase",
+          "is_rounding": true,
+          "rounding": 0.99,
+          "update_fields": ["price_adjustment", "is_rounding", "rounding"]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-local-bank-account.onshopbase.com",
+      "shop_name": "au-local-bank-account",
+      "user_id": 73782,
+      "shop_id": 10370157,
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "server_domain": "onshopbase.com"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "local-bank-account-prodtest.onshopbase.com",
+      "shop_name": "local-bank-account-prodtest",
+      "user_id": 73782,
+      "shop_id": 10368448,
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "server_domain": "onshopbase.com",
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-local-bank-account.myshopbase.net",
+      "shop_name": "local-bank-account",
+      "user_id": 73800,
+      "shop_id": 10321742,
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "server_domain": "myshopbase.net"
+    }
+  },
+  "timeout": "100000",
+  "cases": {
+    "TC_SB_BAL_LBA_4": {
+      "account_info": {
+        "bank_country": "VN",
+        "bank_account_currency": "VND",
+        "bank_account_type": "Personal",
+        "email": "thuongtran@beeketing.net",
+        "head_phone": "84",
+        "phone": "38646609",
+        "select_country": "VN",
+        "zip_code": "10000",
+        "street": "Xa dan",
+        "address_details": "130 ngo 360",
+        "city": "Ha noi",
+        "bank_name": "Vietcombank",
+        "account_name": "shopbase",
+        "account_number": "123456",
+        "swift": "ABC",
+        "iban": "XYZ"
+      }
+    },
+    "TC_SB_BAL_LBA_10": {
+      "request_amount": "51"
+    },
+    "TC_SB_BAL_LBA_5": {
+      "account_info": {
+        "bank_country": "VN",
+        "bank_account_currency": "VND",
+        "bank_account_type": "Personal",
+        "email": "thuongtran@beeketing.net",
+        "head_phone": "84",
+        "phone": "38646609",
+        "select_country": "VN",
+        "zip_code": "10000",
+        "street": "Xa dan",
+        "address_details": "130 ngo 360",
+        "city": "Ha noi",
+        "bank_name": "Vietcombank",
+        "account_name": "shopbase",
+        "account_number": "123456",
+        "swift": "ABC",
+        "iban": "XYZ"
+      },
+      "message": "Successfully saved acccount details"
+    },
+    "TC_SB_BAL_LBA_11": {
+      "request_info": {
+        "source_name": "General",
+        "payment_name": "Local bank account",
+        "request_amount1": "49",
+        "message1": "The minimum requested amount must be greater than $50",
+        "request_amount2": "10000000000",
+        "message2": "The requested amount is more than your current available amount."
+      }
+    },
+    "TC_SB_BAL_LBA_12": {
+      "request_info": {
+        "source_name": "General",
+        "payment_name": "Local bank account",
+        "request_amount": "51"
+      },
+      "payout_review_info": {
+        "amount": "51",
+        "status": "under_review",
+        "method": "local_bank_account"
+      },
+      "invoice_info": {
+        "amount_cent": "-51",
+        "invoice_type": "payout",
+        "status": "success"
+      }
+    },
+    "TC_SB_BAL_LBA_8": {
+      "message": "Setting was saved successfully"
+    }
+  }
+}

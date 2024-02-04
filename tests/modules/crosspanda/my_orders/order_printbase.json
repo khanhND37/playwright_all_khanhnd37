@@ -1,0 +1,263 @@
+{
+  "env": {
+    "prod": {
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "api": "https://api.shopbase.com",
+      "domain": "au-approved-order-pbase.onshopbase.com",
+      "shop_name": "au-approved-order-pbase",
+      "timeout": 600000,
+      "crosspanda_domain": "dashboard-pod.crosspanda.com",
+      "crosspanda_username": "pbasexp@crosspanda.com",
+      "crosspanda_password": "123456",
+      "hive_pb_domain": "hive-pbase.shopbase.com",
+      "hive_pb_username": "shopbase",
+      "hive_pb_password": "UxsLHz^Wjkf35*/w",
+      "message_map_product": "Product was successfully mapped!",
+      "cases": {
+        "DATA_ORDER": {
+          "data": [
+            {
+              "case_id": "SB_XPPOD_180",
+              "title": "Check order PrintBase sync về Cross Panda",
+              "data_order_cross_panda": {
+                "tab_name": [
+                  "To order",
+                  "Failed",
+                  "Alert",
+                  "Ready to fulfill",
+                  "On hold",
+                  "Sent fulfillment request",
+                  "In processing",
+                  "Shipped",
+                  "Inventory",
+                  "All Orders"
+                ],
+                "value": [
+                  {
+                    "to_order": 0,
+                    "failed": 0,
+                    "alert": 0,
+                    "ready_to_fulfill": 1,
+                    "on_hold": 0,
+                    "sent_fulfillment_request": 0,
+                    "in_processing": 0,
+                    "shipped": 0,
+                    "inventory": 0,
+                    "all_orders": 1
+                  }
+                ]
+              },
+              "products_checkout": [
+                {
+                  "variant_id": 1000009287492974,
+                  "quantity": 5,
+                  "product_name": "Bulldog Christmas NLT16032258HAS Hawaiian Shirt 3D",
+                  "variant": "AOP Hawaii Shirt / All over print / L"
+                }
+              ]
+            },
+            {
+              "case_id": "SB_XPPOD_189",
+              "title": "Verify order sau khi approved sync on Xpanda bị cancel order",
+              "data_order_cross_panda": {
+                "tab_name": [
+                  "To order",
+                  "Failed",
+                  "Alert",
+                  "Ready to fulfill",
+                  "On hold",
+                  "Sent fulfillment request",
+                  "In processing",
+                  "Shipped",
+                  "Inventory",
+                  "All Orders"
+                ],
+                "value": [
+                  {
+                    "to_order": 0,
+                    "failed": 0,
+                    "alert": 0,
+                    "ready_to_fulfill": 1,
+                    "on_hold": 0,
+                    "sent_fulfillment_request": 0,
+                    "in_processing": 0,
+                    "shipped": 0,
+                    "inventory": 0,
+                    "all_orders": 1
+                  },
+                  {
+                    "to_order": 0,
+                    "failed": 0,
+                    "alert": 0,
+                    "ready_to_fulfill": 0,
+                    "on_hold": 0,
+                    "sent_fulfillment_request": 0,
+                    "in_processing": 0,
+                    "shipped": 0,
+                    "inventory": 0,
+                    "all_orders": 1
+                  }
+                ]
+              },
+              "product_cancel": [
+                {
+                  "quantity": 5,
+                  "cancel_reason": "CC01_Order canceled due to Buyer's request - Deduct Seller's profit"
+                }
+              ],
+              "products_checkout": [
+                {
+                  "variant_id": 1000009287492974,
+                  "quantity": 5,
+                  "product_name": "Bulldog Christmas NLT16032258HAS Hawaiian Shirt 3D",
+                  "variant": "AOP Hawaii Shirt / All over print / L"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-prodtest-approved-order-pb.onshopbase.com",
+      "shop_name": "au-prodtest-approved-order-pb",
+      "shop_id": 10430519,
+      "user_id": 73782,
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "timeout": 600000,
+      "crosspanda_domain": "dashboard-pod.crosspanda.com",
+      "crosspanda_username": "pbasexp@crosspanda.com",
+      "crosspanda_password": "123456",
+      "hive_pb_domain": "hive-pbase-prod-test.shopbase.com",
+      "hive_pb_username": "shopbase",
+      "hive_pb_password": "UxsLHz^Wjkf35*/w",
+      "message_map_product": "Product was successfully mapped!",
+      "cases": {
+        "DATA_ORDER": {
+          "data": [
+            {
+              "case_id": "SB_XPPOD_180",
+              "title": "Check order PrintBase sync về Cross Panda",
+              "data_order_cross_panda": {
+                "tab_name": [
+                  "To order",
+                  "Failed",
+                  "Alert",
+                  "Ready to fulfill",
+                  "On hold",
+                  "Sent fulfillment request",
+                  "In processing",
+                  "Shipped",
+                  "Inventory",
+                  "All Orders"
+                ],
+                "value": [
+                  {
+                    "to_order": 0,
+                    "failed": 0,
+                    "alert": 0,
+                    "ready_to_fulfill": 1,
+                    "on_hold": 0,
+                    "sent_fulfillment_request": 0,
+                    "in_processing": 0,
+                    "shipped": 0,
+                    "inventory": 0,
+                    "all_orders": 1
+                  }
+                ]
+              },
+              "products_checkout": [
+                {
+                  "product_name": "product test",
+                  "quantity": 4,
+                  "variant": "Baseball Jersey / All over print / S",
+                  "variant_id": 1000010659983090
+                }
+              ]
+            },
+            {
+              "case_id": "SB_XPPOD_189",
+              "title": "Verify order sau khi approved sync on Xpanda bị cancel order",
+              "data_order_cross_panda": {
+                "tab_name": [
+                  "To order",
+                  "Failed",
+                  "Alert",
+                  "Ready to fulfill",
+                  "On hold",
+                  "Sent fulfillment request",
+                  "In processing",
+                  "Shipped",
+                  "Inventory",
+                  "All Orders"
+                ],
+                "value": [
+                  {
+                    "to_order": 0,
+                    "failed": 0,
+                    "alert": 0,
+                    "ready_to_fulfill": 1,
+                    "on_hold": 0,
+                    "sent_fulfillment_request": 0,
+                    "in_processing": 0,
+                    "shipped": 0,
+                    "inventory": 0,
+                    "all_orders": 1
+                  },
+                  {
+                    "to_order": 0,
+                    "failed": 0,
+                    "alert": 0,
+                    "ready_to_fulfill": 0,
+                    "on_hold": 0,
+                    "sent_fulfillment_request": 0,
+                    "in_processing": 0,
+                    "shipped": 0,
+                    "inventory": 0,
+                    "all_orders": 1
+                  }
+                ]
+              },
+              "products_checkout": [
+                {
+                  "product_name": "product test",
+                  "quantity": 4,
+                  "variant": "Baseball Jersey / All over print / S",
+                  "variant_id": 1000010659983090
+                }
+              ],
+              "product_cancel": [
+                {
+                  "cancel_reason": "CC01_Order canceled due to Buyer's request - Deduct Seller's profit"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "accounts_domain": "accounts-test.shopbase.com"
+    }
+  },
+  "cases": {
+    "DATA_ORDER": {
+      "data": [
+        {
+          "case_id": "SB_XPPOD_180",
+          "title": "Check order PrintBase sync về Cross Panda"
+        },
+        {
+          "case_id": "SB_XPPOD_189",
+          "title": "Verify order sau khi approved sync on Xpanda bị cancel order",
+          "product_field_cancel": {
+            "is_send_email": true,
+            "reason": "CC01_Order canceled due to Buyer's request - Deduct Seller's profit"
+          },
+          "product_cancel": []
+        }
+      ]
+    }
+  }
+}

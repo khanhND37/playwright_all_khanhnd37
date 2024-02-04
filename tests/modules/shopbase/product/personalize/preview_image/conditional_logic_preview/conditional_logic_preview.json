@@ -1,0 +1,2600 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-conditional-logic-preview-sb.onshopbase.com",
+      "shop_name": "au-conditional-logic-preview-sb",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10382767,
+      "user_id": 73782,
+      "timeout": "380000"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-conditional-logic-preview-sb-prodtest.onshopbase.com",
+      "shop_name": "au-conditional-logic-preview-sb-prodtest",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10382768,
+      "user_id": 73782,
+      "timeout": "380000",
+      "accounts_domain": "accounts-test.shopbase.com",
+      "cases": {
+        "DATA_DRIVEN": {
+          "data": [
+            {
+              "description": "[Conditional logic preview] Add conditional logic thành công với IS EQUAL",
+              "case_id": "SB_PRO_SBP_1569",
+              "product_all_info": {
+                "title": "Product add conditional logic với IS EQUAL",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "image_preview": "BD_27.png",
+              "layers": [
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 1",
+                  "layer_value": "Test text value 1",
+                  "location_layer_x": "55",
+                  "location_layer_y": "55"
+                },
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 2",
+                  "layer_value": "Test text value 2",
+                  "location_layer_x": "86",
+                  "location_layer_y": "86"
+                },
+                {
+                  "layer_type": "Image",
+                  "image_name": "BD_2.png",
+                  "layer_name": "BD_2",
+                  "location_layer_x": "30",
+                  "location_layer_y": "30"
+                },
+                {
+                  "layer_type": "Image",
+                  "image_name": "BD_1.png",
+                  "layer_name": "BD_1",
+                  "location_layer_x": "50",
+                  "location_layer_y": "100"
+                }
+              ],
+              "custom_option_info": [
+                {
+                  "type": "Picture choice",
+                  "target_layer": "BD_2",
+                  "custom_name": "Picture choice",
+                  "label": "Picture choice",
+                  "type_clipart": "Folder",
+                  "value_clipart": "Folder 1",
+                  "position": "below"
+                },
+                {
+                  "type": "Image",
+                  "target_layer": "BD_2",
+                  "placeholder": "Please input text field",
+                  "custom_name": "Image",
+                  "label": "Image",
+                  "default_value": "text",
+                  "allow_character": "Characters, Numbers, Special Characters",
+                  "position": "below"
+                },
+                {
+                  "type": "Text field",
+                  "target_layer": "Text layer 1",
+                  "placeholder": "Please input text field",
+                  "custom_name": "Text field",
+                  "label": "Text field ",
+                  "default_value": "Text field",
+                  "allow_character": "Characters, Numbers, Special Characters",
+                  "position": "below"
+                },
+                {
+                  "type": "Text area",
+                  "target_layer": "Text layer 2",
+                  "placeholder": "Please input text field",
+                  "custom_name": "Text area",
+                  "label": "Text area ",
+                  "default_value": "Text area",
+                  "allow_character": "Characters, Numbers, Special Characters"
+                }
+              ],
+              "conditional_logic_info": [
+                {
+                  "custom_name": "Picture choice",
+                  "condition": ["is equal to>BD_2"],
+                  "then_show_value": ["Text field"]
+                }
+              ],
+              "conditional_logic_show": {
+                "list_custom": ["Picture>Picture choice>BD_2"],
+                "then_show_value": ["relative input-base"],
+                "is_show_value": [true]
+              },
+              "snapshot_name": {
+                "preview_image_condition_logic": "prodtest_preview_image_condition_logic_SB_PRO_SBP_1569.png",
+                "preview_image_block_custom_option": "prodtest_preview_image_block_custom_option_SB_PRO_SBP_1569.png"
+              }
+            },
+            {
+              "description": "[Conditional logic preview] Add conditional logic thành công với IS NOT EQUAL",
+              "case_id": "SB_PRO_SBP_1570",
+              "product_all_info": {
+                "title": "Product add conditional logic với IS NOT EQUAL",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "image_preview": "BD_27.png",
+              "layers": [
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 1",
+                  "layer_value": "Test text value 1",
+                  "location_layer_x": "55",
+                  "location_layer_y": "55"
+                },
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 2",
+                  "layer_value": "Test text value 2",
+                  "location_layer_x": "86",
+                  "location_layer_y": "86"
+                },
+                {
+                  "layer_type": "Image",
+                  "image_name": "BD_2.png",
+                  "layer_name": "BD_2",
+                  "location_layer_x": "30",
+                  "location_layer_y": "30"
+                },
+                {
+                  "layer_type": "Image",
+                  "image_name": "BD_1.png",
+                  "layer_name": "BD_1",
+                  "location_layer_x": "50",
+                  "location_layer_y": "100"
+                }
+              ],
+              "custom_option_info": [
+                {
+                  "type": "Picture choice",
+                  "target_layer": "BD_2",
+                  "custom_name": "Picture choice",
+                  "label": "Picture choice",
+                  "type_clipart": "Folder",
+                  "value_clipart": "Folder 1",
+                  "position": "below"
+                },
+                {
+                  "type": "Image",
+                  "target_layer": "BD_2",
+                  "placeholder": "Please input text field",
+                  "custom_name": "Image",
+                  "label": "Image",
+                  "default_value": "text",
+                  "allow_character": "Characters, Numbers, Special Characters",
+                  "position": "below"
+                },
+                {
+                  "type": "Text field",
+                  "target_layer": "Text layer 1",
+                  "placeholder": "Please input text field",
+                  "custom_name": "Text field",
+                  "label": "Text field ",
+                  "default_value": "Text field",
+                  "allow_character": "Characters, Numbers, Special Characters",
+                  "position": "below"
+                },
+                {
+                  "type": "Text area",
+                  "target_layer": "Text layer 2",
+                  "placeholder": "Please input text field",
+                  "custom_name": "Text area",
+                  "label": "Text area ",
+                  "default_value": "Text area",
+                  "allow_character": "Characters, Numbers, Special Characters"
+                }
+              ],
+              "conditional_logic_info": [
+                {
+                  "custom_name": "Picture choice",
+                  "condition": ["is not equal to>BD_2"],
+                  "then_show_value": ["Text field"]
+                }
+              ],
+              "conditional_logic_show": {
+                "list_custom": ["Picture>Picture choice>BD_2"],
+                "then_show_value": ["relative input-base"],
+                "is_show_value": [false]
+              },
+              "snapshot_name": {
+                "preview_image_condition_logic": "prodtest_preview_image_condition_logic_SB_PRO_SBP_1570.png",
+                "preview_image_block_custom_option": "prodtest_preview_image_block_custom_option_SB_PRO_SBP_1570.png"
+              }
+            },
+            {
+              "description": "[Conditional logic preview] Add conditional logic thành công khi sử dụng Condition NOT EQUAL và Condition EQUAL",
+              "case_id": "SB_PRO_SBP_1571",
+              "product_all_info": {
+                "title": "Product add conditional logic với IS NOT EQUAL and IS EQUAL",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "image_preview": "BD_27.png",
+              "layers": [
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 1",
+                  "layer_value": "Test text value 1",
+                  "location_layer_x": "55",
+                  "location_layer_y": "55"
+                },
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 2",
+                  "layer_value": "Test text value 2",
+                  "location_layer_x": "86",
+                  "location_layer_y": "86"
+                },
+                {
+                  "layer_type": "Image",
+                  "image_name": "BD_2.png",
+                  "layer_name": "BD_2",
+                  "location_layer_x": "30",
+                  "location_layer_y": "30"
+                },
+                {
+                  "layer_type": "Image",
+                  "image_name": "BD_1.png",
+                  "layer_name": "BD_1",
+                  "location_layer_x": "50",
+                  "location_layer_y": "100"
+                }
+              ],
+              "custom_option_info": [
+                {
+                  "type": "Picture choice",
+                  "target_layer": "BD_2",
+                  "custom_name": "Picture choice",
+                  "label": "Picture choice",
+                  "type_clipart": "Folder",
+                  "value_clipart": "Folder 1",
+                  "position": "below"
+                },
+                {
+                  "type": "Image",
+                  "target_layer": "BD_2",
+                  "placeholder": "Please input text field",
+                  "custom_name": "Image",
+                  "label": "Image",
+                  "default_value": "text",
+                  "allow_character": "Characters, Numbers, Special Characters",
+                  "position": "below"
+                },
+                {
+                  "type": "Text field",
+                  "target_layer": "Text layer 1",
+                  "placeholder": "Please input text field",
+                  "custom_name": "Text field",
+                  "label": "Text field ",
+                  "default_value": "Text field",
+                  "allow_character": "Characters, Numbers, Special Characters",
+                  "position": "below"
+                },
+                {
+                  "type": "Text area",
+                  "target_layer": "Text layer 2",
+                  "placeholder": "Please input text field",
+                  "custom_name": "Text area",
+                  "label": "Text area ",
+                  "default_value": "Text area",
+                  "allow_character": "Characters, Numbers, Special Characters"
+                }
+              ],
+              "conditional_logic_info": [
+                {
+                  "custom_name": "Picture choice",
+                  "condition": ["is equal to>BD_3", "is not equal to>BD_2"],
+                  "then_show_value": ["Text area", "Text field"]
+                }
+              ],
+              "conditional_logic_show": {
+                "list_custom": ["Picture>Picture choice>BD_3", "Picture>Picture choice>BD_2"],
+                "then_show_value": ["textarea-base", "relative input-base"],
+                "is_show_value": [true, false]
+              },
+              "snapshot_name": {
+                "preview_image_condition_logic": "prodtest_preview_image_condition_logic_SB_PRO_SBP_1571.png",
+                "preview_image_block_custom_option": "prodtest_preview_image_block_custom_option_SB_PRO_SBP_1571.png"
+              }
+            }
+          ]
+        },
+        "SB_PRO_SBP_1572": {
+          "product_all_info": {
+            "title": "Product blank value",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "image_preview": "BD_27.png",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 1",
+              "layer_value": "Test text value 1",
+              "location_layer_x": "55",
+              "location_layer_y": "55"
+            },
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 2",
+              "layer_value": "Test text value 2",
+              "location_layer_x": "86",
+              "location_layer_y": "86"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "BD_2.png",
+              "layer_name": "BD_2",
+              "location_layer_x": "30",
+              "location_layer_y": "30"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "BD_1.png",
+              "layer_name": "BD_1",
+              "location_layer_x": "50",
+              "location_layer_y": "100"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Picture choice",
+              "target_layer": "BD_2",
+              "custom_name": "Picture choice",
+              "label": "Picture choice",
+              "type_clipart": "Folder",
+              "value_clipart": "Folder 1",
+              "position": "below"
+            },
+            {
+              "type": "Image",
+              "target_layer": "BD_2",
+              "placeholder": "Please input text field",
+              "custom_name": "Image",
+              "label": "Image",
+              "default_value": "text",
+              "allow_character": "Characters, Numbers, Special Characters",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 1",
+              "placeholder": "Please input text field",
+              "custom_name": "Text field",
+              "label": "Text field ",
+              "default_value": "Text field",
+              "allow_character": "Characters, Numbers, Special Characters",
+              "position": "below"
+            },
+            {
+              "type": "Text area",
+              "target_layer": "Text layer 2",
+              "placeholder": "Please input text field",
+              "custom_name": "Text area",
+              "label": "Text area ",
+              "default_value": "Text area",
+              "allow_character": "Characters, Numbers, Special Characters"
+            }
+          ],
+          "conditional_logic_blank_value": [
+            {
+              "custom_name": "Picture choice",
+              "condition": ["is equal to>"],
+              "then_show_value": ["Text field"]
+            }
+          ],
+          "conditional_logic_blank_then_show": [
+            {
+              "custom_name": "Picture choice",
+              "condition": ["is equal to>BD_2"],
+              "then_show_value": [""]
+            }
+          ],
+          "snapshot_name": {
+            "condition_logic_blank_value": "prodtest_condition_logic_blank_value_SB_PRO_SBP_1572.png",
+            "list_condition_logic_blank_value": "prodtest_list_condition_logic_blank_value_SB_PRO_SBP_1572.png",
+            "condition_logic_blank_then_show": "prodtest_condition_logic_blank_then_show_SB_PRO_SBP_1572.png",
+            "list_condition_logic_blank_then_show": "prodtest_list_condition_logic_blank_then_show_SB_PRO_SBP_1572.png"
+          }
+        },
+        "SB_PRO_SBP_1579": {
+          "product_all_info": {
+            "title": "Product change value của CO",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "image_preview": "BD_27.png",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 1",
+              "layer_value": "Test text value 1",
+              "location_layer_x": "55",
+              "location_layer_y": "55"
+            },
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 2",
+              "layer_value": "Test text value 2",
+              "location_layer_x": "86",
+              "location_layer_y": "86"
+            },
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 3",
+              "layer_value": "Test text value 3",
+              "location_layer_x": "50",
+              "location_layer_y": "60"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "BD_2.png",
+              "layer_name": "BD_2",
+              "location_layer_x": "30",
+              "location_layer_y": "30"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Droplist",
+              "target_layer": "Text layer 3",
+              "custom_name": "Droplist",
+              "label": "Droplist",
+              "value": "value 1,value 2",
+              "default_check": "value 2",
+              "position": "below"
+            },
+            {
+              "type": "Image",
+              "target_layer": "BD_2",
+              "placeholder": "Please input text field",
+              "custom_name": "Image",
+              "label": "Image",
+              "default_value": "text",
+              "allow_character": "Characters, Numbers, Special Characters",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 1",
+              "placeholder": "Please input text field",
+              "custom_name": "Text field",
+              "label": "Text field ",
+              "default_value": "Text field",
+              "allow_character": "Characters, Numbers, Special Characters",
+              "position": "below"
+            },
+            {
+              "type": "Text area",
+              "target_layer": "Text layer 2",
+              "placeholder": "Please input text field",
+              "custom_name": "Text area",
+              "label": "Text area ",
+              "default_value": "Text area",
+              "allow_character": "Characters, Numbers, Special Characters"
+            }
+          ],
+          "conditional_logic_info": [
+            {
+              "custom_name": "Droplist",
+              "condition": ["is equal to> value 1", "is equal to> value 2"],
+              "then_show_value": ["Text field"],
+              "is_back_to_list": true
+            }
+          ],
+          "custom_option_edit": {
+            "type": "Droplist",
+            "custom_name": "Droplist",
+            "not_edit_type": true,
+            "value": "value 5,value 6",
+            "default_check": "value 6",
+            "not_other_option": true
+          },
+          "conditional_logic_edit": {
+            "custom_name": "Droplist",
+            "condition": ["> value 5", "> value 6"],
+            "then_show_value": [""]
+          },
+          "snapshot_name": {
+            "custom_option_edit_value": "prodtest_custom_option_edit_value_SB_PRO_SBP_1579.png",
+            "list_custom_option_edit_value": "prodtest_list_custom_option_edit_value_SB_PRO_SBP_1579.png",
+            "condition_logic_edit_value": "prodtest_condition_logic_edit_value_SB_PRO_SBP_1579.png",
+            "list_custom_option_readd_value": "prodtest_list_custom_option_readd_value_SB_PRO_SBP_1579.png",
+            "custom_option_delete_value": "prodtest_custom_option_delete_value_SB_PRO_SBP_1579.png"
+          }
+        },
+        "SB_PRO_SBP_1580": {
+          "product_all_info": {
+            "title": "Product conditional logic clipart folder khi edit image",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "image_preview": "BD_27.png",
+          "clipart_folder": {
+            "folder_name": "Folder 1580",
+            "group_name": "Group 1580",
+            "images": "BD_1.png,BD_2.png,BD_3.png"
+          },
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 1",
+              "layer_value": "Test text value 1",
+              "location_layer_x": "55",
+              "location_layer_y": "55"
+            },
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 2",
+              "layer_value": "Test text value 2",
+              "location_layer_x": "86",
+              "location_layer_y": "86"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "BD_2.png",
+              "layer_name": "BD_2",
+              "location_layer_x": "30",
+              "location_layer_y": "30"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Picture choice",
+              "target_layer": "BD_2",
+              "custom_name": "Picture choice",
+              "label": "Picture choice",
+              "type_clipart": "Folder",
+              "value_clipart": "Folder 1580",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 1",
+              "placeholder": "Please input text field",
+              "custom_name": "Text field",
+              "label": "Text field ",
+              "default_value": "Text field",
+              "allow_character": "Characters, Numbers, Special Characters",
+              "position": "below"
+            },
+            {
+              "type": "Text area",
+              "target_layer": "Text layer 2",
+              "placeholder": "Please input text field",
+              "custom_name": "Text area",
+              "label": "Text area ",
+              "default_value": "Text area",
+              "allow_character": "Characters, Numbers, Special Characters"
+            }
+          ],
+          "conditional_logic_info": [
+            {
+              "custom_name": "Picture choice",
+              "condition": ["is equal to>BD_2"],
+              "then_show_value": ["Text field"]
+            }
+          ],
+          "action_info": [
+            {
+              "action_name": "add image",
+              "folder_name": "Folder 1580",
+              "image_name": "BD_5.png",
+              "expected_result": true
+            },
+            {
+              "action_name": "edit image",
+              "folder_name": "Folder 1580",
+              "image_name": "BD_5.png",
+              "image_name_edit": "BD_6.png",
+              "expected_result": true
+            },
+            {
+              "action_name": "delete image",
+              "folder_name": "Folder 1580",
+              "image_name": "BD_6.png",
+              "expected_result": false
+            }
+          ]
+        },
+        "SB_PRO_SBP_1589": {
+          "product_all_info": {
+            "title": "Product preview image duplicate",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "image_preview": "BD_27.png",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 1",
+              "layer_value": "Test text value 1",
+              "location_layer_x": "55",
+              "location_layer_y": "55"
+            },
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 2",
+              "layer_value": "Test text value 2",
+              "location_layer_x": "86",
+              "location_layer_y": "86"
+            },
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 3",
+              "layer_value": "Test text value 3",
+              "location_layer_x": "50",
+              "location_layer_y": "60"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "BD_2.png",
+              "layer_name": "BD_2",
+              "location_layer_x": "30",
+              "location_layer_y": "30"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Droplist",
+              "target_layer": "Text layer 3",
+              "custom_name": "Droplist",
+              "label": "Droplist",
+              "value": "value 1,value 2",
+              "default_check": "value 2",
+              "position": "below"
+            },
+            {
+              "type": "Image",
+              "target_layer": "BD_2",
+              "placeholder": "Please input text field",
+              "custom_name": "Image",
+              "label": "Image",
+              "default_value": "text",
+              "allow_character": "Characters, Numbers, Special Characters",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 1",
+              "placeholder": "Please input text field",
+              "custom_name": "Text field",
+              "label": "Text field ",
+              "default_value": "Text field",
+              "allow_character": "Characters, Numbers, Special Characters",
+              "position": "below"
+            },
+            {
+              "type": "Text area",
+              "target_layer": "Text layer 2",
+              "placeholder": "Please input text field",
+              "custom_name": "Text area",
+              "label": "Text area ",
+              "default_value": "Text area",
+              "allow_character": "Characters, Numbers, Special Characters"
+            }
+          ],
+          "conditional_logic_info": [
+            {
+              "custom_name": "Droplist",
+              "condition": ["is equal to> value 1", "is equal to> value 2"],
+              "then_show_value": ["Text field"]
+            }
+          ],
+          "product_duplicate": "Product duplicate",
+          "snapshot_name": {
+            "preview_image_block_custom_option_duplicate": "prodtest_preview_image_block_custom_option_duplicate_SB_PRO_SBP_1589.png",
+            "custom_option_duplicate": "prodtest_custom_option_duplicate_SB_PRO_SBP_1589.png",
+            "condition_logic_duplicate": "prodtest_condition_logic_duplicate_SB_PRO_SBP_1589.png"
+          }
+        },
+        "SB_PRO_SBP_1590": {
+          "product_all_info": {
+            "title": "Product nhiều option với conditional logic",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "image_preview": "BD_27.png",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 1",
+              "layer_value": "Test text value 1",
+              "location_layer_x": "55",
+              "location_layer_y": "55"
+            },
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 2",
+              "layer_value": "Test text value 2",
+              "location_layer_x": "86",
+              "location_layer_y": "86"
+            },
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 3",
+              "layer_value": "Test text value 3",
+              "location_layer_x": "50",
+              "location_layer_y": "60"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "BD_2.png",
+              "layer_name": "BD_2",
+              "location_layer_x": "30",
+              "location_layer_y": "30"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "BD_3.png",
+              "layer_name": "BD_3",
+              "location_layer_x": "40",
+              "location_layer_y": "80"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Droplist",
+              "custom_name": "Option 1",
+              "label": "Option 1",
+              "value": "a,b",
+              "default_check": "b",
+              "position": "below"
+            },
+            {
+              "type": "Radio",
+              "custom_name": "Option 2",
+              "label": "Option 2",
+              "value": "111,222",
+              "default_check": "222",
+              "position": "below"
+            },
+            {
+              "type": "Picture choice",
+              "target_layer": "BD_2",
+              "custom_name": "Option 3",
+              "label": "Option 3",
+              "type_clipart": "Folder",
+              "value_clipart": "Folder 1590",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 1",
+              "placeholder": "Please input text field",
+              "custom_name": "Option 4",
+              "label": "Option 4",
+              "default_value": "Text field",
+              "allow_character": "Characters, Numbers, Special Characters",
+              "position": "below"
+            },
+            {
+              "type": "Text area",
+              "target_layer": "Text layer 2",
+              "placeholder": "Please input text field",
+              "custom_name": "Option 5",
+              "label": "Option 5",
+              "default_value": "Text area",
+              "allow_character": "Characters, Numbers, Special Characters",
+              "position": "below"
+            },
+            {
+              "type": "Image",
+              "target_layer": "BD_2",
+              "placeholder": "Please input text field",
+              "custom_name": "Option 6",
+              "label": "Option 6",
+              "default_value": "text",
+              "allow_character": "Characters, Numbers, Special Characters",
+              "position": "below"
+            },
+            {
+              "type": "Checkbox",
+              "custom_name": "Option 7",
+              "label": "Option 7",
+              "font": "Lilly Mae Regular",
+              "value": "a,b,c,d,e"
+            }
+          ],
+          "conditional_logic_info": [
+            {
+              "custom_name": "Option 1",
+              "condition": ["is not equal to> a"],
+              "then_show_value": ["Option 4"],
+              "is_back_to_list": "true"
+            },
+            {
+              "custom_name": "Option 2",
+              "condition": ["is not equal to> 111"],
+              "then_show_value": ["Option 5"],
+              "is_back_to_list": "true"
+            },
+            {
+              "custom_name": "Option 3",
+              "condition": ["is not equal to> artwork"],
+              "then_show_value": ["Option 7"],
+              "is_back_to_list": "true"
+            }
+          ],
+          "custom_option_data_SF": [
+            {
+              "type": "Droplist",
+              "list_custom": ["Droplist>Option 1>a"]
+            },
+            {
+              "type": "Radio",
+              "list_custom": ["Radio>Option 2>111"]
+            },
+            {
+              "type": "Picture choice",
+              "list_custom": ["Picture choice>Option 3>artwork - Back"]
+            }
+          ],
+          "snapshot_name": {
+            "custom_option_sf": "custom_option_sf_SB_PRO_SBP_1590.png",
+            "input_custom_option_sf": "input_custom_option_sf_SB_PRO_SBP_1590.png"
+          }
+        }
+      }
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-conditional-logic-preview-sb.myshopbase.net",
+      "shop_name": "au-conditional-logic-preview-sb",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_id": 10323355,
+      "user_id": 73800,
+      "timeout": "380000",
+      "cases": {
+        "DATA_DRIVEN": {
+          "data": [
+            {
+              "description": "[Conditional logic preview] Add conditional logic thành công với IS EQUAL",
+              "case_id": "SB_PRO_SBP_1569",
+              "product_all_info": {
+                "title": "Product add conditional logic với IS EQUAL",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "image_preview": "BD_27.png",
+              "layers": [
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 1",
+                  "layer_value": "Test text value 1",
+                  "location_layer_x": "55",
+                  "location_layer_y": "55"
+                },
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 2",
+                  "layer_value": "Test text value 2",
+                  "location_layer_x": "86",
+                  "location_layer_y": "86"
+                },
+                {
+                  "layer_type": "Image",
+                  "image_name": "BD_2.png",
+                  "layer_name": "BD_2",
+                  "location_layer_x": "30",
+                  "location_layer_y": "30"
+                },
+                {
+                  "layer_type": "Image",
+                  "image_name": "BD_1.png",
+                  "layer_name": "BD_1",
+                  "location_layer_x": "50",
+                  "location_layer_y": "100"
+                }
+              ],
+              "custom_option_info": [
+                {
+                  "type": "Picture choice",
+                  "target_layer": "BD_2",
+                  "custom_name": "Picture choice",
+                  "label": "Picture choice",
+                  "type_clipart": "Folder",
+                  "value_clipart": "Folder 1",
+                  "position": "below"
+                },
+                {
+                  "type": "Image",
+                  "target_layer": "BD_2",
+                  "placeholder": "Please input text field",
+                  "custom_name": "Image",
+                  "label": "Image",
+                  "default_value": "text",
+                  "allow_character": "Characters, Numbers, Special Characters",
+                  "position": "below"
+                },
+                {
+                  "type": "Text field",
+                  "target_layer": "Text layer 1",
+                  "placeholder": "Please input text field",
+                  "custom_name": "Text field",
+                  "label": "Text field ",
+                  "default_value": "Text field",
+                  "allow_character": "Characters, Numbers, Special Characters",
+                  "position": "below"
+                },
+                {
+                  "type": "Text area",
+                  "target_layer": "Text layer 2",
+                  "placeholder": "Please input text field",
+                  "custom_name": "Text area",
+                  "label": "Text area ",
+                  "default_value": "Text area",
+                  "allow_character": "Characters, Numbers, Special Characters"
+                }
+              ],
+              "conditional_logic_info": [
+                {
+                  "custom_name": "Picture choice",
+                  "condition": ["is equal to>BD_2"],
+                  "then_show_value": ["Text field"]
+                }
+              ],
+              "conditional_logic_show": {
+                "list_custom": ["Picture>Picture choice>BD_2"],
+                "then_show_value": ["relative input-base"],
+                "is_show_value": [true]
+              },
+              "snapshot_name": {
+                "preview_image_condition_logic": "dev-preview_image_condition_logic_SB_PRO_SBP_1569.png",
+                "preview_image_block_custom_option": "dev-preview_image_block_custom_option_SB_PRO_SBP_1569.png"
+              }
+            },
+            {
+              "description": "[Conditional logic preview] Add conditional logic thành công với IS NOT EQUAL",
+              "case_id": "SB_PRO_SBP_1570",
+              "product_all_info": {
+                "title": "Product add conditional logic với IS NOT EQUAL",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "image_preview": "BD_27.png",
+              "layers": [
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 1",
+                  "layer_value": "Test text value 1",
+                  "location_layer_x": "55",
+                  "location_layer_y": "55"
+                },
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 2",
+                  "layer_value": "Test text value 2",
+                  "location_layer_x": "86",
+                  "location_layer_y": "86"
+                },
+                {
+                  "layer_type": "Image",
+                  "image_name": "BD_2.png",
+                  "layer_name": "BD_2",
+                  "location_layer_x": "30",
+                  "location_layer_y": "30"
+                },
+                {
+                  "layer_type": "Image",
+                  "image_name": "BD_1.png",
+                  "layer_name": "BD_1",
+                  "location_layer_x": "50",
+                  "location_layer_y": "100"
+                }
+              ],
+              "custom_option_info": [
+                {
+                  "type": "Picture choice",
+                  "target_layer": "BD_2",
+                  "custom_name": "Picture choice",
+                  "label": "Picture choice",
+                  "type_clipart": "Folder",
+                  "value_clipart": "Folder 1",
+                  "position": "below"
+                },
+                {
+                  "type": "Image",
+                  "target_layer": "BD_2",
+                  "placeholder": "Please input text field",
+                  "custom_name": "Image",
+                  "label": "Image",
+                  "default_value": "text",
+                  "allow_character": "Characters, Numbers, Special Characters",
+                  "position": "below"
+                },
+                {
+                  "type": "Text field",
+                  "target_layer": "Text layer 1",
+                  "placeholder": "Please input text field",
+                  "custom_name": "Text field",
+                  "label": "Text field ",
+                  "default_value": "Text field",
+                  "allow_character": "Characters, Numbers, Special Characters",
+                  "position": "below"
+                },
+                {
+                  "type": "Text area",
+                  "target_layer": "Text layer 2",
+                  "placeholder": "Please input text field",
+                  "custom_name": "Text area",
+                  "label": "Text area ",
+                  "default_value": "Text area",
+                  "allow_character": "Characters, Numbers, Special Characters"
+                }
+              ],
+              "conditional_logic_info": [
+                {
+                  "custom_name": "Picture choice",
+                  "condition": ["is not equal to>BD_2"],
+                  "then_show_value": ["Text field"]
+                }
+              ],
+              "conditional_logic_show": {
+                "list_custom": ["Picture>Picture choice>BD_2"],
+                "then_show_value": ["relative input-base"],
+                "is_show_value": [false]
+              },
+              "snapshot_name": {
+                "preview_image_condition_logic": "dev-preview_image_condition_logic_SB_PRO_SBP_1570.png",
+                "preview_image_block_custom_option": "dev-preview_image_block_custom_option_SB_PRO_SBP_1570.png"
+              }
+            },
+            {
+              "description": "[Conditional logic preview] Add conditional logic thành công khi sử dụng Condition NOT EQUAL và Condition EQUAL",
+              "case_id": "SB_PRO_SBP_1571",
+              "product_all_info": {
+                "title": "Product add conditional logic với IS NOT EQUAL and IS EQUAL",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "image_preview": "BD_27.png",
+              "layers": [
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 1",
+                  "layer_value": "Test text value 1",
+                  "location_layer_x": "55",
+                  "location_layer_y": "55"
+                },
+                {
+                  "layer_type": "Text",
+                  "layer_name": "Text layer 2",
+                  "layer_value": "Test text value 2",
+                  "location_layer_x": "86",
+                  "location_layer_y": "86"
+                },
+                {
+                  "layer_type": "Image",
+                  "image_name": "BD_2.png",
+                  "layer_name": "BD_2",
+                  "location_layer_x": "30",
+                  "location_layer_y": "30"
+                },
+                {
+                  "layer_type": "Image",
+                  "image_name": "BD_1.png",
+                  "layer_name": "BD_1",
+                  "location_layer_x": "50",
+                  "location_layer_y": "100"
+                }
+              ],
+              "custom_option_info": [
+                {
+                  "type": "Picture choice",
+                  "target_layer": "BD_2",
+                  "custom_name": "Picture choice",
+                  "label": "Picture choice",
+                  "type_clipart": "Folder",
+                  "value_clipart": "Folder 1",
+                  "position": "below"
+                },
+                {
+                  "type": "Image",
+                  "target_layer": "BD_2",
+                  "placeholder": "Please input text field",
+                  "custom_name": "Image",
+                  "label": "Image",
+                  "default_value": "text",
+                  "allow_character": "Characters, Numbers, Special Characters",
+                  "position": "below"
+                },
+                {
+                  "type": "Text field",
+                  "target_layer": "Text layer 1",
+                  "placeholder": "Please input text field",
+                  "custom_name": "Text field",
+                  "label": "Text field ",
+                  "default_value": "Text field",
+                  "allow_character": "Characters, Numbers, Special Characters",
+                  "position": "below"
+                },
+                {
+                  "type": "Text area",
+                  "target_layer": "Text layer 2",
+                  "placeholder": "Please input text field",
+                  "custom_name": "Text area",
+                  "label": "Text area ",
+                  "default_value": "Text area",
+                  "allow_character": "Characters, Numbers, Special Characters"
+                }
+              ],
+              "conditional_logic_info": [
+                {
+                  "custom_name": "Picture choice",
+                  "condition": ["is equal to>BD_3", "is not equal to>BD_2"],
+                  "then_show_value": ["Text area", "Text field"]
+                }
+              ],
+              "conditional_logic_show": {
+                "list_custom": ["Picture>Picture choice>BD_3", "Picture>Picture choice>BD_2"],
+                "then_show_value": ["textarea-base", "relative input-base"],
+                "is_show_value": [true, false]
+              },
+              "snapshot_name": {
+                "preview_image_condition_logic": "dev-preview_image_condition_logic_SB_PRO_SBP_1571.png",
+                "preview_image_block_custom_option": "dev-preview_image_block_custom_option_SB_PRO_SBP_1571.png"
+              }
+            }
+          ]
+        },
+        "SB_PRO_SBP_1572": {
+          "product_all_info": {
+            "title": "Product blank value",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "image_preview": "BD_27.png",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 1",
+              "layer_value": "Test text value 1",
+              "location_layer_x": "55",
+              "location_layer_y": "55"
+            },
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 2",
+              "layer_value": "Test text value 2",
+              "location_layer_x": "86",
+              "location_layer_y": "86"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "BD_2.png",
+              "layer_name": "BD_2",
+              "location_layer_x": "30",
+              "location_layer_y": "30"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "BD_1.png",
+              "layer_name": "BD_1",
+              "location_layer_x": "50",
+              "location_layer_y": "100"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Picture choice",
+              "target_layer": "BD_2",
+              "custom_name": "Picture choice",
+              "label": "Picture choice",
+              "type_clipart": "Folder",
+              "value_clipart": "Folder 1",
+              "position": "below"
+            },
+            {
+              "type": "Image",
+              "target_layer": "BD_2",
+              "placeholder": "Please input text field",
+              "custom_name": "Image",
+              "label": "Image",
+              "default_value": "text",
+              "allow_character": "Characters, Numbers, Special Characters",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 1",
+              "placeholder": "Please input text field",
+              "custom_name": "Text field",
+              "label": "Text field ",
+              "default_value": "Text field",
+              "allow_character": "Characters, Numbers, Special Characters",
+              "position": "below"
+            },
+            {
+              "type": "Text area",
+              "target_layer": "Text layer 2",
+              "placeholder": "Please input text field",
+              "custom_name": "Text area",
+              "label": "Text area ",
+              "default_value": "Text area",
+              "allow_character": "Characters, Numbers, Special Characters"
+            }
+          ],
+          "conditional_logic_blank_value": [
+            {
+              "custom_name": "Picture choice",
+              "condition": ["is equal to>"],
+              "then_show_value": ["Text field"]
+            }
+          ],
+          "conditional_logic_blank_then_show": [
+            {
+              "custom_name": "Picture choice",
+              "condition": ["is equal to>BD_2"],
+              "then_show_value": [""]
+            }
+          ],
+          "snapshot_name": {
+            "condition_logic_blank_value": "dev-condition_logic_blank_value_SB_PRO_SBP_1572.png",
+            "list_condition_logic_blank_value": "dev-list_condition_logic_blank_value_SB_PRO_SBP_1572.png",
+            "condition_logic_blank_then_show": "dev-condition_logic_blank_then_show_SB_PRO_SBP_1572.png",
+            "list_condition_logic_blank_then_show": "dev-list_condition_logic_blank_then_show_SB_PRO_SBP_1572.png"
+          }
+        },
+        "SB_PRO_SBP_1579": {
+          "product_all_info": {
+            "title": "Product change value của CO",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "image_preview": "BD_27.png",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 1",
+              "layer_value": "Test text value 1",
+              "location_layer_x": "55",
+              "location_layer_y": "55"
+            },
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 2",
+              "layer_value": "Test text value 2",
+              "location_layer_x": "86",
+              "location_layer_y": "86"
+            },
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 3",
+              "layer_value": "Test text value 3",
+              "location_layer_x": "50",
+              "location_layer_y": "60"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "BD_2.png",
+              "layer_name": "BD_2",
+              "location_layer_x": "30",
+              "location_layer_y": "30"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Droplist",
+              "target_layer": "Text layer 3",
+              "custom_name": "Droplist",
+              "label": "Droplist",
+              "value": "value 1,value 2",
+              "default_check": "value 2",
+              "position": "below"
+            },
+            {
+              "type": "Image",
+              "target_layer": "BD_2",
+              "placeholder": "Please input text field",
+              "custom_name": "Image",
+              "label": "Image",
+              "default_value": "text",
+              "allow_character": "Characters, Numbers, Special Characters",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 1",
+              "placeholder": "Please input text field",
+              "custom_name": "Text field",
+              "label": "Text field ",
+              "default_value": "Text field",
+              "allow_character": "Characters, Numbers, Special Characters",
+              "position": "below"
+            },
+            {
+              "type": "Text area",
+              "target_layer": "Text layer 2",
+              "placeholder": "Please input text field",
+              "custom_name": "Text area",
+              "label": "Text area ",
+              "default_value": "Text area",
+              "allow_character": "Characters, Numbers, Special Characters"
+            }
+          ],
+          "conditional_logic_info": [
+            {
+              "custom_name": "Droplist",
+              "condition": ["is equal to> value 1", "is equal to> value 2"],
+              "then_show_value": ["Text field"],
+              "is_back_to_list": true
+            }
+          ],
+          "custom_option_edit": {
+            "type": "Droplist",
+            "custom_name": "Droplist",
+            "not_edit_type": true,
+            "value": "value 5,value 6",
+            "default_check": "value 6",
+            "not_other_option": true
+          },
+          "conditional_logic_edit": {
+            "custom_name": "Droplist",
+            "condition": ["> value 5", "> value 6"],
+            "then_show_value": [""]
+          },
+          "snapshot_name": {
+            "custom_option_edit_value": "dev-custom_option_edit_value_SB_PRO_SBP_1579.png",
+            "list_custom_option_edit_value": "dev-list_custom_option_edit_value_SB_PRO_SBP_1579.png",
+            "condition_logic_edit_value": "dev-condition_logic_edit_value_SB_PRO_SBP_1579.png",
+            "list_custom_option_readd_value": "dev-list_custom_option_readd_value_SB_PRO_SBP_1579.png",
+            "custom_option_delete_value": "dev-custom_option_delete_value_SB_PRO_SBP_1579.png"
+          }
+        },
+        "SB_PRO_SBP_1580": {
+          "product_all_info": {
+            "title": "Product conditional logic clipart folder khi edit image",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "image_preview": "BD_27.png",
+          "clipart_folder": {
+            "folder_name": "Folder 1580",
+            "group_name": "Group 1580",
+            "images": "BD_1.png,BD_2.png,BD_3.png"
+          },
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 1",
+              "layer_value": "Test text value 1",
+              "location_layer_x": "55",
+              "location_layer_y": "55"
+            },
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 2",
+              "layer_value": "Test text value 2",
+              "location_layer_x": "86",
+              "location_layer_y": "86"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "BD_2.png",
+              "layer_name": "BD_2",
+              "location_layer_x": "30",
+              "location_layer_y": "30"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Picture choice",
+              "target_layer": "BD_2",
+              "custom_name": "Picture choice",
+              "label": "Picture choice",
+              "type_clipart": "Folder",
+              "value_clipart": "Folder 1580",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 1",
+              "placeholder": "Please input text field",
+              "custom_name": "Text field",
+              "label": "Text field ",
+              "default_value": "Text field",
+              "allow_character": "Characters, Numbers, Special Characters",
+              "position": "below"
+            },
+            {
+              "type": "Text area",
+              "target_layer": "Text layer 2",
+              "placeholder": "Please input text field",
+              "custom_name": "Text area",
+              "label": "Text area ",
+              "default_value": "Text area",
+              "allow_character": "Characters, Numbers, Special Characters"
+            }
+          ],
+          "conditional_logic_info": [
+            {
+              "custom_name": "Picture choice",
+              "condition": ["is equal to>BD_2"],
+              "then_show_value": ["Text field"]
+            }
+          ],
+          "action_info": [
+            {
+              "action_name": "add image",
+              "folder_name": "Folder 1580",
+              "image_name": "BD_5.png",
+              "expected_result": true
+            },
+            {
+              "action_name": "edit image",
+              "folder_name": "Folder 1580",
+              "image_name": "BD_5.png",
+              "image_name_edit": "BD_6.png",
+              "expected_result": true
+            },
+            {
+              "action_name": "delete image",
+              "folder_name": "Folder 1580",
+              "image_name": "BD_6.png",
+              "expected_result": false
+            }
+          ]
+        },
+        "SB_PRO_SBP_1589": {
+          "product_all_info": {
+            "title": "Product preview image duplicate",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "image_preview": "BD_27.png",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 1",
+              "layer_value": "Test text value 1",
+              "location_layer_x": "55",
+              "location_layer_y": "55"
+            },
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 2",
+              "layer_value": "Test text value 2",
+              "location_layer_x": "86",
+              "location_layer_y": "86"
+            },
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 3",
+              "layer_value": "Test text value 3",
+              "location_layer_x": "50",
+              "location_layer_y": "60"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "BD_2.png",
+              "layer_name": "BD_2",
+              "location_layer_x": "30",
+              "location_layer_y": "30"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Droplist",
+              "target_layer": "Text layer 3",
+              "custom_name": "Droplist",
+              "label": "Droplist",
+              "value": "value 1,value 2",
+              "default_check": "value 2",
+              "position": "below"
+            },
+            {
+              "type": "Image",
+              "target_layer": "BD_2",
+              "placeholder": "Please input text field",
+              "custom_name": "Image",
+              "label": "Image",
+              "default_value": "text",
+              "allow_character": "Characters, Numbers, Special Characters",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 1",
+              "placeholder": "Please input text field",
+              "custom_name": "Text field",
+              "label": "Text field ",
+              "default_value": "Text field",
+              "allow_character": "Characters, Numbers, Special Characters",
+              "position": "below"
+            },
+            {
+              "type": "Text area",
+              "target_layer": "Text layer 2",
+              "placeholder": "Please input text field",
+              "custom_name": "Text area",
+              "label": "Text area ",
+              "default_value": "Text area",
+              "allow_character": "Characters, Numbers, Special Characters"
+            }
+          ],
+          "conditional_logic_info": [
+            {
+              "custom_name": "Droplist",
+              "condition": ["is equal to> value 1", "is equal to> value 2"],
+              "then_show_value": ["Text field"]
+            }
+          ],
+          "product_duplicate": "Product duplicate",
+          "snapshot_name": {
+            "preview_image_block_custom_option_duplicate": "dev-preview_image_block_custom_option_duplicate_SB_PRO_SBP_1589.png",
+            "custom_option_duplicate": "dev-custom_option_duplicate_SB_PRO_SBP_1589.png",
+            "condition_logic_duplicate": "dev-condition_logic_duplicate_SB_PRO_SBP_1589.png"
+          }
+        },
+        "SB_PRO_SBP_1590": {
+          "product_all_info": {
+            "title": "Product nhiều option với conditional logic",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "image_preview": "BD_27.png",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 1",
+              "layer_value": "Test text value 1",
+              "location_layer_x": "55",
+              "location_layer_y": "55"
+            },
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 2",
+              "layer_value": "Test text value 2",
+              "location_layer_x": "86",
+              "location_layer_y": "86"
+            },
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 3",
+              "layer_value": "Test text value 3",
+              "location_layer_x": "50",
+              "location_layer_y": "60"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "BD_2.png",
+              "layer_name": "BD_2",
+              "location_layer_x": "30",
+              "location_layer_y": "30"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "BD_3.png",
+              "layer_name": "BD_3",
+              "location_layer_x": "40",
+              "location_layer_y": "80"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Droplist",
+              "custom_name": "Option 1",
+              "label": "Option 1",
+              "value": "a,b",
+              "default_check": "b",
+              "position": "below"
+            },
+            {
+              "type": "Radio",
+              "custom_name": "Option 2",
+              "label": "Option 2",
+              "value": "111,222",
+              "default_check": "222",
+              "position": "below"
+            },
+            {
+              "type": "Picture choice",
+              "target_layer": "BD_2",
+              "custom_name": "Option 3",
+              "label": "Option 3",
+              "type_clipart": "Folder",
+              "value_clipart": "Folder 1590",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 1",
+              "placeholder": "Please input text field",
+              "custom_name": "Option 4",
+              "label": "Option 4",
+              "default_value": "Text field",
+              "allow_character": "Characters, Numbers, Special Characters",
+              "position": "below"
+            },
+            {
+              "type": "Text area",
+              "target_layer": "Text layer 2",
+              "placeholder": "Please input text field",
+              "custom_name": "Option 5",
+              "label": "Option 5",
+              "default_value": "Text area",
+              "allow_character": "Characters, Numbers, Special Characters",
+              "position": "below"
+            },
+            {
+              "type": "Image",
+              "target_layer": "BD_2",
+              "placeholder": "Please input text field",
+              "custom_name": "Option 6",
+              "label": "Option 6",
+              "default_value": "text",
+              "allow_character": "Characters, Numbers, Special Characters",
+              "position": "below"
+            },
+            {
+              "type": "Checkbox",
+              "custom_name": "Option 7",
+              "label": "Option 7",
+              "font": "Lilly Mae Regular",
+              "value": "a,b,c,d,e"
+            }
+          ],
+          "conditional_logic_info": [
+            {
+              "custom_name": "Option 1",
+              "condition": ["is not equal to> a"],
+              "then_show_value": ["Option 4"],
+              "is_back_to_list": "true"
+            },
+            {
+              "custom_name": "Option 2",
+              "condition": ["is not equal to> 111"],
+              "then_show_value": ["Option 5"],
+              "is_back_to_list": "true"
+            },
+            {
+              "custom_name": "Option 3",
+              "condition": ["is not equal to> artwork"],
+              "then_show_value": ["Option 7"],
+              "is_back_to_list": "true"
+            }
+          ],
+          "custom_option_data_SF": [
+            {
+              "type": "Droplist",
+              "list_custom": ["Droplist>Option 1>a"]
+            },
+            {
+              "type": "Radio",
+              "list_custom": ["Radio>Option 2>111"]
+            },
+            {
+              "type": "Picture choice",
+              "list_custom": ["Picture choice>Option 3>artwork - Back"]
+            }
+          ],
+          "snapshot_name": {
+            "custom_option_sf": "dev-custom_option_sf_SB_PRO_SBP_1590.png",
+            "input_custom_option_sf": "dev-input_custom_option_sf_SB_PRO_SBP_1590.png"
+          }
+        }
+      }
+    }
+  },
+  "max_diff_pixel_ratio": 0.05,
+  "threshold": 0.1,
+  "max_diff_pixels": 2000,
+  "cases": {
+    "DATA_DRIVEN": {
+      "data": [
+        {
+          "description": "[Conditional logic preview] Add conditional logic thành công với IS EQUAL",
+          "case_id": "SB_PRO_SBP_1569",
+          "product_all_info": {
+            "title": "Product add conditional logic với IS EQUAL",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "image_preview": "BD_27.png",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 1",
+              "layer_value": "Test text value 1",
+              "location_layer_x": "55",
+              "location_layer_y": "55"
+            },
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 2",
+              "layer_value": "Test text value 2",
+              "location_layer_x": "86",
+              "location_layer_y": "86"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "BD_2.png",
+              "layer_name": "BD_2",
+              "location_layer_x": "30",
+              "location_layer_y": "30"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "BD_1.png",
+              "layer_name": "BD_1",
+              "location_layer_x": "50",
+              "location_layer_y": "100"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Picture choice",
+              "target_layer": "BD_2",
+              "custom_name": "Picture choice",
+              "label": "Picture choice",
+              "type_clipart": "Folder",
+              "value_clipart": "Folder 1",
+              "position": "below"
+            },
+            {
+              "type": "Image",
+              "target_layer": "BD_2",
+              "placeholder": "Please input text field",
+              "custom_name": "Image",
+              "label": "Image",
+              "default_value": "text",
+              "allow_character": "Characters, Numbers, Special Characters",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 1",
+              "placeholder": "Please input text field",
+              "custom_name": "Text field",
+              "label": "Text field ",
+              "default_value": "Text field",
+              "allow_character": "Characters, Numbers, Special Characters",
+              "position": "below"
+            },
+            {
+              "type": "Text area",
+              "target_layer": "Text layer 2",
+              "placeholder": "Please input text field",
+              "custom_name": "Text area",
+              "label": "Text area ",
+              "default_value": "Text area",
+              "allow_character": "Characters, Numbers, Special Characters"
+            }
+          ],
+          "conditional_logic_info": [
+            {
+              "custom_name": "Picture choice",
+              "condition": ["is equal to>BD_2"],
+              "then_show_value": ["Text field"]
+            }
+          ],
+          "conditional_logic_show": {
+            "list_custom": ["Picture>Picture choice>BD_2"],
+            "then_show_value": ["relative input-base"],
+            "is_show_value": [true]
+          },
+          "snapshot_name": {
+            "preview_image_condition_logic": "preview_image_condition_logic_SB_PRO_SBP_1569.png",
+            "preview_image_block_custom_option": "preview_image_block_custom_option_SB_PRO_SBP_1569.png"
+          }
+        },
+        {
+          "description": "[Conditional logic preview] Add conditional logic thành công với IS NOT EQUAL",
+          "case_id": "SB_PRO_SBP_1570",
+          "product_all_info": {
+            "title": "Product add conditional logic với IS NOT EQUAL",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "image_preview": "BD_27.png",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 1",
+              "layer_value": "Test text value 1",
+              "location_layer_x": "55",
+              "location_layer_y": "55"
+            },
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 2",
+              "layer_value": "Test text value 2",
+              "location_layer_x": "86",
+              "location_layer_y": "86"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "BD_2.png",
+              "layer_name": "BD_2",
+              "location_layer_x": "30",
+              "location_layer_y": "30"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "BD_1.png",
+              "layer_name": "BD_1",
+              "location_layer_x": "50",
+              "location_layer_y": "100"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Picture choice",
+              "target_layer": "BD_2",
+              "custom_name": "Picture choice",
+              "label": "Picture choice",
+              "type_clipart": "Folder",
+              "value_clipart": "Folder 1",
+              "position": "below"
+            },
+            {
+              "type": "Image",
+              "target_layer": "BD_2",
+              "placeholder": "Please input text field",
+              "custom_name": "Image",
+              "label": "Image",
+              "default_value": "text",
+              "allow_character": "Characters, Numbers, Special Characters",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 1",
+              "placeholder": "Please input text field",
+              "custom_name": "Text field",
+              "label": "Text field ",
+              "default_value": "Text field",
+              "allow_character": "Characters, Numbers, Special Characters",
+              "position": "below"
+            },
+            {
+              "type": "Text area",
+              "target_layer": "Text layer 2",
+              "placeholder": "Please input text field",
+              "custom_name": "Text area",
+              "label": "Text area ",
+              "default_value": "Text area",
+              "allow_character": "Characters, Numbers, Special Characters"
+            }
+          ],
+          "conditional_logic_info": [
+            {
+              "custom_name": "Picture choice",
+              "condition": ["is not equal to>BD_2"],
+              "then_show_value": ["Text field"]
+            }
+          ],
+          "conditional_logic_show": {
+            "list_custom": ["Picture>Picture choice>BD_2"],
+            "then_show_value": ["relative input-base"],
+            "is_show_value": [false]
+          },
+          "snapshot_name": {
+            "preview_image_condition_logic": "preview_image_condition_logic_SB_PRO_SBP_1570.png",
+            "preview_image_block_custom_option": "preview_image_block_custom_option_SB_PRO_SBP_1570.png"
+          }
+        },
+        {
+          "description": "[Conditional logic preview] Add conditional logic thành công khi sử dụng Condition NOT EQUAL và Condition EQUAL",
+          "case_id": "SB_PRO_SBP_1571",
+          "product_all_info": {
+            "title": "Product add conditional logic với IS NOT EQUAL and IS EQUAL",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "image_preview": "BD_27.png",
+          "layers": [
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 1",
+              "layer_value": "Test text value 1",
+              "location_layer_x": "55",
+              "location_layer_y": "55"
+            },
+            {
+              "layer_type": "Text",
+              "layer_name": "Text layer 2",
+              "layer_value": "Test text value 2",
+              "location_layer_x": "86",
+              "location_layer_y": "86"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "BD_2.png",
+              "layer_name": "BD_2",
+              "location_layer_x": "30",
+              "location_layer_y": "30"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "BD_1.png",
+              "layer_name": "BD_1",
+              "location_layer_x": "50",
+              "location_layer_y": "100"
+            }
+          ],
+          "custom_option_info": [
+            {
+              "type": "Picture choice",
+              "target_layer": "BD_2",
+              "custom_name": "Picture choice",
+              "label": "Picture choice",
+              "type_clipart": "Folder",
+              "value_clipart": "Folder 1",
+              "position": "below"
+            },
+            {
+              "type": "Image",
+              "target_layer": "BD_2",
+              "placeholder": "Please input text field",
+              "custom_name": "Image",
+              "label": "Image",
+              "default_value": "text",
+              "allow_character": "Characters, Numbers, Special Characters",
+              "position": "below"
+            },
+            {
+              "type": "Text field",
+              "target_layer": "Text layer 1",
+              "placeholder": "Please input text field",
+              "custom_name": "Text field",
+              "label": "Text field ",
+              "default_value": "Text field",
+              "allow_character": "Characters, Numbers, Special Characters",
+              "position": "below"
+            },
+            {
+              "type": "Text area",
+              "target_layer": "Text layer 2",
+              "placeholder": "Please input text field",
+              "custom_name": "Text area",
+              "label": "Text area ",
+              "default_value": "Text area",
+              "allow_character": "Characters, Numbers, Special Characters"
+            }
+          ],
+          "conditional_logic_info": [
+            {
+              "custom_name": "Picture choice",
+              "condition": ["is equal to>BD_3", "is not equal to>BD_2"],
+              "then_show_value": ["Text area", "Text field"]
+            }
+          ],
+          "conditional_logic_show": {
+            "list_custom": ["Picture>Picture choice>BD_3", "Picture>Picture choice>BD_2"],
+            "then_show_value": ["textarea-base", "relative input-base"],
+            "is_show_value": [true, false]
+          },
+          "snapshot_name": {
+            "preview_image_condition_logic": "preview_image_condition_logic_SB_PRO_SBP_1571.png",
+            "preview_image_block_custom_option": "preview_image_block_custom_option_SB_PRO_SBP_1571.png"
+          }
+        }
+      ]
+    },
+    "SB_PRO_SBP_1572": {
+      "product_all_info": {
+        "title": "Product blank value",
+        "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+        "image_name": "Logo1.jpg",
+        "vendor": "Uniqlo",
+        "price": "10",
+        "compare_at_price": "20"
+      },
+      "image_preview": "BD_27.png",
+      "layers": [
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 1",
+          "layer_value": "Test text value 1",
+          "location_layer_x": "55",
+          "location_layer_y": "55"
+        },
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 2",
+          "layer_value": "Test text value 2",
+          "location_layer_x": "86",
+          "location_layer_y": "86"
+        },
+        {
+          "layer_type": "Image",
+          "image_name": "BD_2.png",
+          "layer_name": "BD_2",
+          "location_layer_x": "30",
+          "location_layer_y": "30"
+        },
+        {
+          "layer_type": "Image",
+          "image_name": "BD_1.png",
+          "layer_name": "BD_1",
+          "location_layer_x": "50",
+          "location_layer_y": "100"
+        }
+      ],
+      "custom_option_info": [
+        {
+          "type": "Picture choice",
+          "target_layer": "BD_2",
+          "custom_name": "Picture choice",
+          "label": "Picture choice",
+          "type_clipart": "Folder",
+          "value_clipart": "Folder 1",
+          "position": "below"
+        },
+        {
+          "type": "Image",
+          "target_layer": "BD_2",
+          "placeholder": "Please input text field",
+          "custom_name": "Image",
+          "label": "Image",
+          "default_value": "text",
+          "allow_character": "Characters, Numbers, Special Characters",
+          "position": "below"
+        },
+        {
+          "type": "Text field",
+          "target_layer": "Text layer 1",
+          "placeholder": "Please input text field",
+          "custom_name": "Text field",
+          "label": "Text field ",
+          "default_value": "Text field",
+          "allow_character": "Characters, Numbers, Special Characters",
+          "position": "below"
+        },
+        {
+          "type": "Text area",
+          "target_layer": "Text layer 2",
+          "placeholder": "Please input text field",
+          "custom_name": "Text area",
+          "label": "Text area ",
+          "default_value": "Text area",
+          "allow_character": "Characters, Numbers, Special Characters"
+        }
+      ],
+      "conditional_logic_blank_value": [
+        {
+          "custom_name": "Picture choice",
+          "condition": ["is equal to>"],
+          "then_show_value": ["Text field"]
+        }
+      ],
+      "conditional_logic_blank_then_show": [
+        {
+          "custom_name": "Picture choice",
+          "condition": ["is equal to>BD_2"],
+          "then_show_value": [""]
+        }
+      ],
+      "snapshot_name": {
+        "condition_logic_blank_value": "condition_logic_blank_value_SB_PRO_SBP_1572.png",
+        "list_condition_logic_blank_value": "list_condition_logic_blank_value_SB_PRO_SBP_1572.png",
+        "condition_logic_blank_then_show": "condition_logic_blank_then_show_SB_PRO_SBP_1572.png",
+        "list_condition_logic_blank_then_show": "list_condition_logic_blank_then_show_SB_PRO_SBP_1572.png"
+      }
+    },
+    "SB_PRO_SBP_1579": {
+      "product_all_info": {
+        "title": "Product change value của CO",
+        "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+        "image_name": "Logo1.jpg",
+        "vendor": "Uniqlo",
+        "price": "10",
+        "compare_at_price": "20"
+      },
+      "image_preview": "BD_27.png",
+      "layers": [
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 1",
+          "layer_value": "Test text value 1",
+          "location_layer_x": "55",
+          "location_layer_y": "55"
+        },
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 2",
+          "layer_value": "Test text value 2",
+          "location_layer_x": "86",
+          "location_layer_y": "86"
+        },
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 3",
+          "layer_value": "Test text value 3",
+          "location_layer_x": "50",
+          "location_layer_y": "60"
+        },
+        {
+          "layer_type": "Image",
+          "image_name": "BD_2.png",
+          "layer_name": "BD_2",
+          "location_layer_x": "30",
+          "location_layer_y": "30"
+        }
+      ],
+      "custom_option_info": [
+        {
+          "type": "Droplist",
+          "target_layer": "Text layer 3",
+          "custom_name": "Droplist",
+          "label": "Droplist",
+          "value": "value 1,value 2",
+          "default_check": "value 2",
+          "position": "below"
+        },
+        {
+          "type": "Image",
+          "target_layer": "BD_2",
+          "placeholder": "Please input text field",
+          "custom_name": "Image",
+          "label": "Image",
+          "default_value": "text",
+          "allow_character": "Characters, Numbers, Special Characters",
+          "position": "below"
+        },
+        {
+          "type": "Text field",
+          "target_layer": "Text layer 1",
+          "placeholder": "Please input text field",
+          "custom_name": "Text field",
+          "label": "Text field ",
+          "default_value": "Text field",
+          "allow_character": "Characters, Numbers, Special Characters",
+          "position": "below"
+        },
+        {
+          "type": "Text area",
+          "target_layer": "Text layer 2",
+          "placeholder": "Please input text field",
+          "custom_name": "Text area",
+          "label": "Text area ",
+          "default_value": "Text area",
+          "allow_character": "Characters, Numbers, Special Characters"
+        }
+      ],
+      "conditional_logic_info": [
+        {
+          "custom_name": "Droplist",
+          "condition": ["is equal to> value 1", "is equal to> value 2"],
+          "then_show_value": ["Text field"],
+          "is_back_to_list": true
+        }
+      ],
+      "custom_option_edit": {
+        "type": "Droplist",
+        "custom_name": "Droplist",
+        "not_edit_type": true,
+        "value": "value 5,value 6",
+        "default_check": "value 6",
+        "not_other_option": true
+      },
+      "conditional_logic_edit": {
+        "custom_name": "Droplist",
+        "condition": ["> value 5", "> value 6"],
+        "then_show_value": [""]
+      },
+      "snapshot_name": {
+        "custom_option_edit_value": "custom_option_edit_value_SB_PRO_SBP_1579.png",
+        "list_custom_option_edit_value": "list_custom_option_edit_value_SB_PRO_SBP_1579.png",
+        "condition_logic_edit_value": "condition_logic_edit_value_SB_PRO_SBP_1579.png",
+        "list_custom_option_readd_value": "list_custom_option_readd_value_SB_PRO_SBP_1579.png",
+        "custom_option_delete_value": "custom_option_delete_value_SB_PRO_SBP_1579.png"
+      }
+    },
+    "SB_PRO_SBP_1580": {
+      "product_all_info": {
+        "title": "Product conditional logic clipart folder khi edit image",
+        "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+        "image_name": "Logo1.jpg",
+        "vendor": "Uniqlo",
+        "price": "10",
+        "compare_at_price": "20"
+      },
+      "image_preview": "BD_27.png",
+      "clipart_folder": {
+        "folder_name": "Folder 1580",
+        "group_name": "Group 1580",
+        "images": "BD_1.png,BD_2.png,BD_3.png"
+      },
+      "layers": [
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 1",
+          "layer_value": "Test text value 1",
+          "location_layer_x": "55",
+          "location_layer_y": "55"
+        },
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 2",
+          "layer_value": "Test text value 2",
+          "location_layer_x": "86",
+          "location_layer_y": "86"
+        },
+        {
+          "layer_type": "Image",
+          "image_name": "BD_2.png",
+          "layer_name": "BD_2",
+          "location_layer_x": "30",
+          "location_layer_y": "30"
+        }
+      ],
+      "custom_option_info": [
+        {
+          "type": "Picture choice",
+          "target_layer": "BD_2",
+          "custom_name": "Picture choice",
+          "label": "Picture choice",
+          "type_clipart": "Folder",
+          "value_clipart": "Folder 1580",
+          "position": "below"
+        },
+        {
+          "type": "Text field",
+          "target_layer": "Text layer 1",
+          "placeholder": "Please input text field",
+          "custom_name": "Text field",
+          "label": "Text field ",
+          "default_value": "Text field",
+          "allow_character": "Characters, Numbers, Special Characters",
+          "position": "below"
+        },
+        {
+          "type": "Text area",
+          "target_layer": "Text layer 2",
+          "placeholder": "Please input text field",
+          "custom_name": "Text area",
+          "label": "Text area ",
+          "default_value": "Text area",
+          "allow_character": "Characters, Numbers, Special Characters"
+        }
+      ],
+      "conditional_logic_info": [
+        {
+          "custom_name": "Picture choice",
+          "condition": ["is equal to>BD_2"],
+          "then_show_value": ["Text field"]
+        }
+      ],
+      "action_info": [
+        {
+          "action_name": "add image",
+          "folder_name": "Folder 1580",
+          "image_name": "BD_5.png",
+          "expected_result": true
+        },
+        {
+          "action_name": "edit image",
+          "folder_name": "Folder 1580",
+          "image_name": "BD_5.png",
+          "image_name_edit": "BD_6.png",
+          "expected_result": true
+        },
+        {
+          "action_name": "delete image",
+          "folder_name": "Folder 1580",
+          "image_name": "BD_6.png",
+          "expected_result": false
+        }
+      ]
+    },
+    "SB_PRO_SBP_1589": {
+      "product_all_info": {
+        "title": "Product preview image duplicate",
+        "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+        "image_name": "Logo1.jpg",
+        "vendor": "Uniqlo",
+        "price": "10",
+        "compare_at_price": "20"
+      },
+      "image_preview": "BD_27.png",
+      "layers": [
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 1",
+          "layer_value": "Test text value 1",
+          "location_layer_x": "55",
+          "location_layer_y": "55"
+        },
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 2",
+          "layer_value": "Test text value 2",
+          "location_layer_x": "86",
+          "location_layer_y": "86"
+        },
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 3",
+          "layer_value": "Test text value 3",
+          "location_layer_x": "50",
+          "location_layer_y": "60"
+        },
+        {
+          "layer_type": "Image",
+          "image_name": "BD_2.png",
+          "layer_name": "BD_2",
+          "location_layer_x": "30",
+          "location_layer_y": "30"
+        }
+      ],
+      "custom_option_info": [
+        {
+          "type": "Droplist",
+          "target_layer": "Text layer 3",
+          "custom_name": "Droplist",
+          "label": "Droplist",
+          "value": "value 1,value 2",
+          "default_check": "value 2",
+          "position": "below"
+        },
+        {
+          "type": "Image",
+          "target_layer": "BD_2",
+          "placeholder": "Please input text field",
+          "custom_name": "Image",
+          "label": "Image",
+          "default_value": "text",
+          "allow_character": "Characters, Numbers, Special Characters",
+          "position": "below"
+        },
+        {
+          "type": "Text field",
+          "target_layer": "Text layer 1",
+          "placeholder": "Please input text field",
+          "custom_name": "Text field",
+          "label": "Text field ",
+          "default_value": "Text field",
+          "allow_character": "Characters, Numbers, Special Characters",
+          "position": "below"
+        },
+        {
+          "type": "Text area",
+          "target_layer": "Text layer 2",
+          "placeholder": "Please input text field",
+          "custom_name": "Text area",
+          "label": "Text area ",
+          "default_value": "Text area",
+          "allow_character": "Characters, Numbers, Special Characters"
+        }
+      ],
+      "conditional_logic_info": [
+        {
+          "custom_name": "Droplist",
+          "condition": ["is equal to> value 1", "is equal to> value 2"],
+          "then_show_value": ["Text field"]
+        }
+      ],
+      "product_duplicate": "Product duplicate",
+      "snapshot_name": {
+        "preview_image_block_custom_option_duplicate": "preview_image_block_custom_option_duplicate_SB_PRO_SBP_1589.png",
+        "custom_option_duplicate": "custom_option_duplicate_SB_PRO_SBP_1589.png",
+        "condition_logic_duplicate": "condition_logic_duplicate_SB_PRO_SBP_1589.png"
+      }
+    },
+    "SB_PRO_SBP_1590": {
+      "product_all_info": {
+        "title": "Product nhiều option với conditional logic",
+        "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+        "image_name": "Logo1.jpg",
+        "vendor": "Uniqlo",
+        "price": "10",
+        "compare_at_price": "20"
+      },
+      "image_preview": "BD_27.png",
+      "layers": [
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 1",
+          "layer_value": "Test text value 1",
+          "location_layer_x": "55",
+          "location_layer_y": "55"
+        },
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 2",
+          "layer_value": "Test text value 2",
+          "location_layer_x": "86",
+          "location_layer_y": "86"
+        },
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 3",
+          "layer_value": "Test text value 3",
+          "location_layer_x": "50",
+          "location_layer_y": "60"
+        },
+        {
+          "layer_type": "Image",
+          "image_name": "BD_2.png",
+          "layer_name": "BD_2",
+          "location_layer_x": "30",
+          "location_layer_y": "30"
+        },
+        {
+          "layer_type": "Image",
+          "image_name": "BD_3.png",
+          "layer_name": "BD_3",
+          "location_layer_x": "40",
+          "location_layer_y": "80"
+        }
+      ],
+      "custom_option_info": [
+        {
+          "type": "Droplist",
+          "custom_name": "Option 1",
+          "label": "Option 1",
+          "value": "a,b",
+          "default_check": "b",
+          "position": "below"
+        },
+        {
+          "type": "Radio",
+          "custom_name": "Option 2",
+          "label": "Option 2",
+          "value": "111,222",
+          "default_check": "222",
+          "position": "below"
+        },
+        {
+          "type": "Picture choice",
+          "target_layer": "BD_2",
+          "custom_name": "Option 3",
+          "label": "Option 3",
+          "type_clipart": "Folder",
+          "value_clipart": "Folder 1590",
+          "position": "below"
+        },
+        {
+          "type": "Text field",
+          "target_layer": "Text layer 1",
+          "placeholder": "Please input text field",
+          "custom_name": "Option 4",
+          "label": "Option 4",
+          "default_value": "Text field",
+          "allow_character": "Characters, Numbers, Special Characters",
+          "position": "below"
+        },
+        {
+          "type": "Text area",
+          "target_layer": "Text layer 2",
+          "placeholder": "Please input text field",
+          "custom_name": "Option 5",
+          "label": "Option 5",
+          "default_value": "Text area",
+          "allow_character": "Characters, Numbers, Special Characters",
+          "position": "below"
+        },
+        {
+          "type": "Image",
+          "target_layer": "BD_2",
+          "placeholder": "Please input text field",
+          "custom_name": "Option 6",
+          "label": "Option 6",
+          "default_value": "text",
+          "allow_character": "Characters, Numbers, Special Characters",
+          "position": "below"
+        },
+        {
+          "type": "Checkbox",
+          "custom_name": "Option 7",
+          "label": "Option 7",
+          "font": "Lilly Mae Regular",
+          "value": "a,b,c,d,e"
+        }
+      ],
+      "conditional_logic_info": [
+        {
+          "custom_name": "Option 1",
+          "condition": ["is not equal to> a"],
+          "then_show_value": ["Option 4"],
+          "is_back_to_list": "true"
+        },
+        {
+          "custom_name": "Option 2",
+          "condition": ["is not equal to> 111"],
+          "then_show_value": ["Option 5"],
+          "is_back_to_list": "true"
+        },
+        {
+          "custom_name": "Option 3",
+          "condition": ["is not equal to> artwork"],
+          "then_show_value": ["Option 7"],
+          "is_back_to_list": "true"
+        }
+      ],
+      "custom_option_data_SF": [
+        {
+          "type": "Droplist",
+          "list_custom": ["Droplist>Option 1>a"]
+        },
+        {
+          "type": "Radio",
+          "list_custom": ["Radio>Option 2>111"]
+        },
+        {
+          "type": "Picture choice",
+          "list_custom": ["Picture choice>Option 3>artwork - Back"]
+        }
+      ],
+      "snapshot_name": {
+        "custom_option_sf": "custom_option_sf_SB_PRO_SBP_1590.png",
+        "input_custom_option_sf": "input_custom_option_sf_SB_PRO_SBP_1590.png"
+      }
+    }
+  }
+}

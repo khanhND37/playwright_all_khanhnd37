@@ -1,0 +1,3216 @@
+{
+  "facebook_conversions_off": [
+    {
+      "id": "",
+      "token": ""
+    }
+  ],
+  "pixel_id": "",
+  "timeout": 3600000,
+  "paypal_account": {
+    "username": "buyer@shopbase.com",
+    "password": "2XfWH9Ae",
+    "id": "AfL2WyCQuIis451KPSSrSIgAAfFyiqFDgz5FPYAk4N8som1mrPVlgtK4CFZamgA8UP9GQzFfOGW6ELoP",
+    "secret_key": "EOU0iGeg1J7DEzcD9tVYBzjLD7ia_tWSQ9g9Ia-E-nK5DGenuZwXGJAtEGOY7m6pwgDD95uV0bGJGaCW"
+  },
+  "payment_method": "PayPal",
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-tracking-klavio-prod.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "user_id": 73782,
+      "shop_id": 10439574,
+      "shop_name": "au-tracking-klavio-prod",
+      "cases": {
+        "SB_SF_TKE_72": {
+          "data_test": [
+            {
+              "shop_id": "10439574",
+              "domain": "au-tracking-klavio-prod.onshopbase.com",
+              "shop_name": "au-tracking-klavio-prod",
+              "checkout_layout": "One page checkout",
+              "view_page": [
+                {
+                  "event": "PageView",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["fb-inside-1-page-checkout", "10483776"]
+                }
+              ],
+              "search": [
+                {
+                  "event": "Search",
+                  "key_value": ["shop_name", "shop_id", "search_string"],
+                  "expect_value": ["fb-inside-1-page-checkout", "10483777", "Product Test tracking event"]
+                }
+              ],
+              "view_product": [
+                {
+                  "event": "ViewContent",
+                  "key_value": [
+                    "shop_name",
+                    "shop_id",
+                    "content_name",
+                    "content_category",
+                    "content_brand",
+                    "content_type",
+                    "currency",
+                    "value"
+                  ],
+                  "expect_value": [
+                    "fb-inside-1-page-checkout",
+                    "10483770",
+                    "Product Test tracking event",
+                    "",
+                    "",
+                    "product_group",
+                    "USD",
+                    "10"
+                  ]
+                }
+              ],
+              "add_to_cart": [
+                {
+                  "event": "AddToCart",
+                  "key_value": [
+                    "shop_name",
+                    "shop_id",
+                    "content_name",
+                    "content_category",
+                    "content_brand",
+                    "content_type",
+                    "currency",
+                    "value"
+                  ],
+                  "expect_value": [
+                    "fb-inside-1-page-checkout",
+                    "10483770",
+                    "Product Test tracking event",
+                    "",
+                    "",
+                    "product_group",
+                    "USD",
+                    "10"
+                  ]
+                }
+              ],
+              "buy_now": [
+                {
+                  "event": "InitiateCheckout",
+                  "key_value": ["shop_id", "shop_name", "content_type", "currency", "value", "num_items"],
+                  "expect_value": ["10483770", "fb-inside-1-page-checkout", "product_group", "USD", "20", "2"]
+                }
+              ],
+              "add_to_by_icon": [
+                {
+                  "event": "PageView",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["fb-inside-1-page-checkout", "10483770"]
+                },
+                {
+                  "event": "CartDrawerIconClicked",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["fb-inside-1-page-checkout", "10483770"]
+                }
+              ],
+              "begin_checkout": [
+                {
+                  "event": "InitiateCheckout",
+                  "key_value": [
+                    "shop_id",
+                    "shop_name",
+                    "content_category",
+                    "content_type",
+                    "currency",
+                    "value",
+                    "num_items"
+                  ],
+                  "expect_value": ["10483770", "fb-inside-1-page-checkout", "", "product_group", "USD", "10", "1"]
+                }
+              ],
+              "promotion_code": "Test-event",
+              "use_coupon": [
+                {
+                  "event": "UseCouponCode",
+                  "key_value": ["shop_id", "shop_name", "coupon"],
+                  "expect_value": ["10483770", "fb-inside-1-page-checkout", "Test-event"]
+                }
+              ],
+              "custom_info": [
+                {
+                  "event": "AddShippingInfo",
+                  "key_value": ["shop_id", "shop_name"],
+                  "expect_value": ["10483770", "fb-inside-1-page-checkout"]
+                }
+              ],
+              "checkout_info": {
+                "email": "tester@maildrop.cc",
+                "first_name": "Hong",
+                "last_name": "Hanh",
+                "address": "1600 W Loop S",
+                "country": "United States",
+                "state": "Texas",
+                "city": "Houston",
+                "zipcode": "77027",
+                "phone_number": "0357974111"
+              },
+              "shipping_method": [
+                {
+                  "event": "SelectShippingMethod",
+                  "key_value": ["shop_id", "shop_name", "method"],
+                  "expect_value": ["10483770", "fb-inside-1-page-checkout", "Premium shipping"]
+                }
+              ],
+              "payments_info": [
+                {
+                  "event": "AddPaymentInfo",
+                  "key_value": ["shop_id", "shop_name", "type"],
+                  "expect_value": ["10483770", "fb-inside-1-page-checkout", "credit_card"]
+                },
+                {
+                  "event": "Purchase",
+                  "key_value": [
+                    "shop_id",
+                    "shop_name",
+                    "content_category",
+                    "content_type",
+                    "currency",
+                    "value",
+                    "num_items"
+                  ],
+                  "expect_value": ["10483770", "fb-inside-1-page-checkout", "", "product_group", "USD", "8", "1"]
+                }
+              ],
+              "facebook_conversions": [
+                {
+                  "id": "12335435",
+                  "token": ""
+                },
+                {
+                  "id": "14546465",
+                  "token": "adhf452345"
+                },
+                {
+                  "id": "43265526",
+                  "token": "15652wigiwre"
+                },
+                {
+                  "id": "46542656",
+                  "token": "agg45432656"
+                },
+                {
+                  "id": "1243543",
+                  "token": ""
+                }
+              ],
+              "pixelId": "12335435,14546465/adhf452345,43265526/15652wigiwre,46542656/agg45432656,1243543"
+            },
+            {
+              "shop_id": "10483768",
+              "domain": "fb-inside-3-page-checkout.onshopbase.com",
+              "shop_name": "fb-inside-3-page-checkout",
+              "checkout_layout": "3 page checkout",
+              "is_checkout_paypal": true,
+              "view_page": [
+                {
+                  "event": "PageView",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["fb-inside-3-page-checkout", "10483768"]
+                }
+              ],
+              "search": [
+                {
+                  "event": "Search",
+                  "key_value": ["shop_name", "shop_id", "search_string"],
+                  "expect_value": ["fb-inside-3-page-checkout", "10483768", "Product Test tracking event"]
+                }
+              ],
+              "view_product": [
+                {
+                  "event": "ViewContent",
+                  "key_value": [
+                    "shop_name",
+                    "shop_id",
+                    "content_name",
+                    "content_category",
+                    "content_brand",
+                    "content_type",
+                    "currency",
+                    "value"
+                  ],
+                  "expect_value": [
+                    "fb-inside-3-page-checkout",
+                    "10483768",
+                    "Product Test tracking event",
+                    "",
+                    "",
+                    "product_group",
+                    "USD",
+                    "10"
+                  ]
+                }
+              ],
+              "add_to_cart": [
+                {
+                  "event": "AddToCart",
+                  "key_value": [
+                    "shop_name",
+                    "shop_id",
+                    "content_name",
+                    "content_category",
+                    "content_brand",
+                    "content_type",
+                    "currency",
+                    "value"
+                  ],
+                  "expect_value": [
+                    "fb-inside-3-page-checkout",
+                    "10483768",
+                    "Product Test tracking event",
+                    "",
+                    "",
+                    "product_group",
+                    "USD",
+                    "10"
+                  ]
+                }
+              ],
+              "buy_now": [
+                {
+                  "event": "InitiateCheckout",
+                  "key_value": ["shop_id", "shop_name", "content_type", "currency", "value", "num_items"],
+                  "expect_value": ["10483768", "fb-inside-3-page-checkout", "product_group", "USD", "10", "1"]
+                }
+              ],
+              "add_to_by_icon": [
+                {
+                  "event": "PageView",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["fb-inside-3-page-checkout", "10483768"]
+                },
+                {
+                  "event": "CartDrawerIconClicked",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["fb-inside-3-page-checkout", "10483768"]
+                }
+              ],
+              "begin_checkout": [
+                {
+                  "event": "InitiateCheckout",
+                  "key_value": [
+                    "shop_id",
+                    "shop_name",
+                    "content_category",
+                    "content_type",
+                    "currency",
+                    "value",
+                    "num_items"
+                  ],
+                  "expect_value": ["10483768", "fb-inside-3-page-checkout", "", "product_group", "USD", "10", "1"]
+                }
+              ],
+              "promotion_code": "Test-event",
+              "use_coupon": [
+                {
+                  "event": "UseCouponCode",
+                  "key_value": ["shop_id", "shop_name", "coupon"],
+                  "expect_value": ["10483768", "fb-inside-3-page-checkout", "Test-event"]
+                }
+              ],
+              "custom_info": [
+                {
+                  "event": "AddShippingInfo",
+                  "key_value": ["shop_id", "shop_name"],
+                  "expect_value": ["10483768", "fb-inside-3-page-checkout"]
+                }
+              ],
+              "checkout_info": {
+                "email": "tester@maildrop.cc",
+                "first_name": "Hong",
+                "last_name": "Hanh",
+                "address": "1600 W Loop S",
+                "country": "United States",
+                "state": "Texas",
+                "city": "Houston",
+                "zipcode": "77027",
+                "phone_number": "0357974111"
+              },
+              "shipping_method": [
+                {
+                  "event": "SelectShippingMethod",
+                  "key_value": ["shop_id", "shop_name", "method"],
+                  "expect_value": ["10483768", "fb-inside-3-page-checkout", "Premium shipping"]
+                }
+              ],
+              "payments_info": [
+                {
+                  "event": "Purchase",
+                  "key_value": [
+                    "shop_id",
+                    "shop_name",
+                    "content_category",
+                    "content_type",
+                    "currency",
+                    "value",
+                    "num_items"
+                  ],
+                  "expect_value": ["10483768", "fb-inside-3-page-checkout", "", "product_group", "USD", "8", "1"]
+                }
+              ],
+              "facebook_conversions": [
+                {
+                  "id": "12335435",
+                  "token": ""
+                }
+              ],
+              "pixelId": "12335435"
+            },
+            {
+              "shop_id": "10483767",
+              "domain": "fb-roller-3-page-checkout-onshopbase-com.onshopbase.com",
+              "shop_name": "fb-roller-3-page-checkout.onshopbase.com",
+              "checkout_layout": "3 page checkout",
+              "is_checkout_paypal": true,
+              "view_page": [
+                {
+                  "event": "PageView",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["fb-roller-3-page-checkout.onshopbase.com", "10483767"]
+                }
+              ],
+              "search": [
+                {
+                  "event": "Search",
+                  "key_value": ["shop_name", "shop_id", "search_string"],
+                  "expect_value": [
+                    "fb-roller-3-page-checkout.onshopbase.com",
+                    "10483767",
+                    "Product Test tracking event"
+                  ]
+                }
+              ],
+              "view_product": [
+                {
+                  "event": "ViewContent",
+                  "key_value": [
+                    "shop_name",
+                    "shop_id",
+                    "content_name",
+                    "content_category",
+                    "content_brand",
+                    "content_type",
+                    "currency",
+                    "value"
+                  ],
+                  "expect_value": [
+                    "fb-roller-3-page-checkout.onshopbase.com",
+                    "10483767",
+                    "Product Test tracking event",
+                    "",
+                    "",
+                    "product_group",
+                    "USD",
+                    "10"
+                  ]
+                }
+              ],
+              "add_to_cart": [
+                {
+                  "event": "AddToCart",
+                  "key_value": [
+                    "shop_name",
+                    "shop_id",
+                    "content_name",
+                    "content_category",
+                    "content_brand",
+                    "content_type",
+                    "currency",
+                    "value"
+                  ],
+                  "expect_value": [
+                    "fb-roller-3-page-checkout.onshopbase.com",
+                    "10483767",
+                    "Product Test tracking event",
+                    "",
+                    "",
+                    "product_group",
+                    "USD",
+                    "10"
+                  ]
+                }
+              ],
+              "buy_now": [
+                {
+                  "event": "InitiateCheckout",
+                  "key_value": ["shop_id", "shop_name", "content_type", "currency", "value", "num_items"],
+                  "expect_value": [
+                    "10483767",
+                    "fb-roller-3-page-checkout.onshopbase.com",
+                    "product_group",
+                    "USD",
+                    "20",
+                    "2"
+                  ]
+                }
+              ],
+              "add_to_by_icon": [
+                {
+                  "event": "PageView",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["fb-roller-3-page-checkout.onshopbase.com", "10483767"]
+                },
+                {
+                  "event": "CartDrawerIconClicked",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["fb-roller-3-page-checkout.onshopbase.com", "10483767"]
+                }
+              ],
+              "begin_checkout": [
+                {
+                  "event": "InitiateCheckout",
+                  "key_value": [
+                    "shop_id",
+                    "shop_name",
+                    "content_category",
+                    "content_type",
+                    "currency",
+                    "value",
+                    "num_items"
+                  ],
+                  "expect_value": [
+                    "10483767",
+                    "fb-roller-3-page-checkout.onshopbase.com",
+                    "",
+                    "product_group",
+                    "USD",
+                    "10",
+                    "1"
+                  ]
+                }
+              ],
+              "promotion_code": "Test-event",
+              "use_coupon": [
+                {
+                  "event": "UseCouponCode",
+                  "key_value": ["shop_id", "shop_name", "coupon"],
+                  "expect_value": ["10483767", "fb-roller-3-page-checkout.onshopbase.com", "Test-event"]
+                }
+              ],
+              "custom_info": [],
+              "checkout_info": {
+                "email": "tester@maildrop.cc",
+                "first_name": "Hong",
+                "last_name": "Hanh",
+                "address": "1600 W Loop S",
+                "country": "United States",
+                "state": "Texas",
+                "city": "Houston",
+                "zipcode": "77027",
+                "phone_number": "0357974111"
+              },
+              "shipping_method": [],
+              "payments_info": [
+                {
+                  "event": "Purchase",
+                  "key_value": [
+                    "shop_id",
+                    "shop_name",
+                    "content_category",
+                    "content_type",
+                    "currency",
+                    "value",
+                    "num_items"
+                  ],
+                  "expect_value": [
+                    "10483767",
+                    "fb-roller-3-page-checkout.onshopbase.com",
+                    "",
+                    "product_group",
+                    "USD",
+                    "8",
+                    "1"
+                  ]
+                }
+              ],
+              "facebook_conversions": [
+                {
+                  "id": "12335435",
+                  "token": ""
+                },
+                {
+                  "id": "14546465",
+                  "token": "adhf452345"
+                },
+                {
+                  "id": "43265526",
+                  "token": "15652wigiwre"
+                },
+                {
+                  "id": "46542656",
+                  "token": "agg45432656"
+                },
+                {
+                  "id": "1243543",
+                  "token": ""
+                }
+              ],
+              "pixelId": "12335435,14546465/adhf452345,43265526/15652wigiwre,46542656/agg45432656,1243543"
+            },
+            {
+              "shop_id": "10483769",
+              "domain": "fb-roller-1-page-checkout.onshopbase.com",
+              "shop_name": "fb-roller-1-page-checkout",
+              "checkout_layout": "One page checkout",
+              "view_page": [
+                {
+                  "event": "PageView",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["fb-roller-1-page-checkout", "10483769"]
+                }
+              ],
+              "search": [
+                {
+                  "event": "Search",
+                  "key_value": ["shop_name", "shop_id", "search_string"],
+                  "expect_value": ["fb-roller-1-page-checkout", "10483769", "Product Test tracking event"]
+                }
+              ],
+              "view_product": [
+                {
+                  "event": "ViewContent",
+                  "key_value": [
+                    "shop_name",
+                    "shop_id",
+                    "content_name",
+                    "content_category",
+                    "content_brand",
+                    "content_type",
+                    "currency",
+                    "value"
+                  ],
+                  "expect_value": [
+                    "fb-roller-1-page-checkout",
+                    "10483769",
+                    "Product Test tracking event",
+                    "",
+                    "",
+                    "product_group",
+                    "USD",
+                    "10"
+                  ]
+                }
+              ],
+              "add_to_cart": [
+                {
+                  "event": "AddToCart",
+                  "key_value": [
+                    "shop_name",
+                    "shop_id",
+                    "content_name",
+                    "content_category",
+                    "content_brand",
+                    "content_type",
+                    "currency",
+                    "value"
+                  ],
+                  "expect_value": [
+                    "fb-roller-1-page-checkout",
+                    "10483769",
+                    "Product Test tracking event",
+                    "",
+                    "",
+                    "product_group",
+                    "USD",
+                    "10"
+                  ]
+                }
+              ],
+              "buy_now": [
+                {
+                  "event": "InitiateCheckout",
+                  "key_value": ["shop_id", "shop_name", "content_type", "currency", "value", "num_items"],
+                  "expect_value": ["10483769", "fb-roller-1-page-checkout", "product_group", "USD", "20", "2"]
+                }
+              ],
+              "add_to_by_icon": [
+                {
+                  "event": "PageView",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["au-tracking-klavio-prod", "10483769"]
+                },
+                {
+                  "event": "CartDrawerIconClicked",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["fb-roller-1-page-checkout", "10483769"]
+                }
+              ],
+              "begin_checkout": [
+                {
+                  "event": "InitiateCheckout",
+                  "key_value": [
+                    "shop_id",
+                    "shop_name",
+                    "content_category",
+                    "content_type",
+                    "currency",
+                    "value",
+                    "num_items"
+                  ],
+                  "expect_value": ["10483769", "fb-roller-1-page-checkout", "", "product_group", "USD", "10", "1"]
+                }
+              ],
+              "promotion_code": "Test-event",
+              "use_coupon": [
+                {
+                  "event": "UseCouponCode",
+                  "key_value": ["shop_id", "shop_name", "coupon"],
+                  "expect_value": ["10483769", "fb-roller-1-page-checkout", "Test-event"]
+                }
+              ],
+              "custom_info": [
+                {
+                  "event": "AddShippingInfo",
+                  "key_value": ["shop_id", "shop_name"],
+                  "expect_value": ["10483769", "fb-roller-1-page-checkout"]
+                }
+              ],
+              "checkout_info": {
+                "email": "tester@maildrop.cc",
+                "first_name": "Hong",
+                "last_name": "Hanh",
+                "address": "1600 W Loop S",
+                "country": "United States",
+                "state": "Texas",
+                "city": "Houston",
+                "zipcode": "77027",
+                "phone_number": "0357974111"
+              },
+              "shipping_method": [
+                {
+                  "event": "SelectShippingMethod",
+                  "key_value": ["shop_id", "shop_name", "method"],
+                  "expect_value": ["10483769", "fb-roller-1-page-checkout", "Premium shipping"]
+                }
+              ],
+              "payments_info": [
+                {
+                  "event": "AddPaymentInfo",
+                  "key_value": ["shop_id", "shop_name", "type"],
+                  "expect_value": ["10483769", "fb-roller-1-page-checkout", "credit_card"]
+                },
+                {
+                  "event": "Purchase",
+                  "key_value": [
+                    "shop_id",
+                    "shop_name",
+                    "content_category",
+                    "content_type",
+                    "currency",
+                    "value",
+                    "num_items"
+                  ],
+                  "expect_value": ["10483769", "fb-roller-1-page-checkout", "", "product_group", "USD", "8", "1"]
+                }
+              ],
+              "facebook_conversions": [
+                {
+                  "id": "12335435",
+                  "token": ""
+                },
+                {
+                  "id": "14546465",
+                  "token": "adhf452345"
+                },
+                {
+                  "id": "43265526",
+                  "token": "15652wigiwre"
+                },
+                {
+                  "id": "46542656",
+                  "token": "agg45432656"
+                },
+                {
+                  "id": "1243543",
+                  "token": ""
+                }
+              ],
+              "pixelId": "12335435,14546465/adhf452345,43265526/15652wigiwre,46542656/agg45432656,1243543"
+            },
+            {
+              "shop_id": "10483766",
+              "domain": "fb-v3-3-page-checkout-onshopbase-com.onshopbase.com",
+              "shop_name": "fb-v3-3-page-checkout.onshopbase.com",
+              "checkout_layout": "3-step checkout",
+              "view_page": [
+                {
+                  "event": "PageView",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["fb-v3-3-page-checkout.onshopbase.com", "10483766"]
+                }
+              ],
+              "search": [
+                {
+                  "event": "Search",
+                  "key_value": ["shop_name", "shop_id", "search_string"],
+                  "expect_value": ["fb-v3-3-page-checkout.onshopbase.com", "10483766", "Product Test tracking event"]
+                }
+              ],
+              "view_product": [
+                {
+                  "event": "ViewContent",
+                  "key_value": [
+                    "shop_name",
+                    "shop_id",
+                    "content_name",
+                    "content_category",
+                    "content_brand",
+                    "content_type",
+                    "currency",
+                    "value"
+                  ],
+                  "expect_value": [
+                    "fb-v3-3-page-checkout-onshopbase-com",
+                    "10483766",
+                    "Product Test tracking event",
+                    "",
+                    "",
+                    "product_group",
+                    "USD",
+                    "10"
+                  ]
+                }
+              ],
+              "add_to_cart": [
+                {
+                  "event": "AddToCart",
+                  "key_value": [
+                    "shop_name",
+                    "shop_id",
+                    "content_name",
+                    "content_category",
+                    "content_brand",
+                    "content_type",
+                    "currency",
+                    "value"
+                  ],
+                  "expect_value": [
+                    "fb-v3-3-page-checkout-onshopbase-com",
+                    "10483766",
+                    "Product Test tracking event",
+                    "",
+                    "",
+                    "product_group",
+                    "USD",
+                    "10"
+                  ]
+                }
+              ],
+              "buy_now": [
+                {
+                  "event": "InitiateCheckout",
+                  "key_value": ["shop_id", "shop_name", "content_type", "currency", "value", "num_items"],
+                  "expect_value": [
+                    "10483766",
+                    "fb-v3-3-page-checkout-onshopbase-com",
+                    "product_group",
+                    "USD",
+                    "20",
+                    "2"
+                  ]
+                }
+              ],
+              "add_to_by_icon": [
+                {
+                  "event": "PageView",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["fb-v3-3-page-checkout-onshopbase-com", "10483766"]
+                },
+                {
+                  "event": "CartDrawerIconClicked",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["fb-v3-3-page-checkout-onshopbase-com", "10483766"]
+                }
+              ],
+              "begin_checkout": [
+                {
+                  "event": "InitiateCheckout",
+                  "key_value": [
+                    "shop_id",
+                    "shop_name",
+                    "content_category",
+                    "content_type",
+                    "currency",
+                    "value",
+                    "num_items"
+                  ],
+                  "expect_value": [
+                    "10483766",
+                    "fb-v3-3-page-checkout-onshopbase-com",
+                    "",
+                    "product_group",
+                    "USD",
+                    "10",
+                    "1"
+                  ]
+                }
+              ],
+              "promotion_code": "Test-event",
+              "use_coupon": [
+                {
+                  "event": "UseCouponCode",
+                  "key_value": ["shop_id", "shop_name", "coupon"],
+                  "expect_value": ["10483766", "fb-v3-3-page-checkout-onshopbase-com", "Test-event"]
+                }
+              ],
+              "custom_info": [
+                {
+                  "event": "AddShippingInfo",
+                  "key_value": ["shop_id", "shop_name"],
+                  "expect_value": ["10483766", "fb-v3-3-page-checkout-onshopbase-com"]
+                }
+              ],
+              "checkout_info": {
+                "email": "tester@maildrop.cc",
+                "first_name": "Hong",
+                "last_name": "Hanh",
+                "address": "1600 W Loop S",
+                "country": "United States",
+                "state": "Texas",
+                "city": "Houston",
+                "zipcode": "77027",
+                "phone_number": "0357974111"
+              },
+              "shipping_method": [
+                {
+                  "event": "SelectShippingMethod",
+                  "key_value": ["shop_id", "shop_name", "method"],
+                  "expect_value": ["10483766", "fb-v3-3-page-checkout-onshopbase-com", "Premium shipping"]
+                }
+              ],
+              "payments_info": [
+                {
+                  "event": "AddPaymentInfo",
+                  "key_value": ["shop_id", "shop_name", "type"],
+                  "expect_value": ["10483766", "fb-v3-3-page-checkout-onshopbase-com", "credit_card"]
+                },
+                {
+                  "event": "Purchase",
+                  "key_value": [
+                    "shop_id",
+                    "shop_name",
+                    "content_category",
+                    "content_type",
+                    "currency",
+                    "value",
+                    "num_items"
+                  ],
+                  "expect_value": [
+                    "10483766",
+                    "fb-v3-3-page-checkout-onshopbase-com",
+                    "",
+                    "product_group",
+                    "USD",
+                    "8",
+                    "1"
+                  ]
+                }
+              ],
+              "facebook_conversions": [
+                {
+                  "id": "12335435",
+                  "token": ""
+                }
+              ],
+              "pixelId": "12335435"
+            },
+            {
+              "shop_id": "10483765",
+              "shop_name": "fb-v3-1-page-checkout.onshopbase.com",
+              "domain": "fb-v3-1-page-checkout-onshopbase-com.onshopbase.com",
+              "is_checkout_paypal": true,
+              "checkout_layout": "One page checkout",
+              "view_page": [
+                {
+                  "event": "PageView",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["fb-v3-1-page-checkout-onshopbase-com", "10483765"]
+                }
+              ],
+              "search": [
+                {
+                  "event": "Search",
+                  "key_value": ["shop_name", "shop_id", "search_string"],
+                  "expect_value": ["fb-v3-1-page-checkout-onshopbase-com", "10483765", "Product Test tracking event"]
+                }
+              ],
+              "view_product": [
+                {
+                  "event": "ViewContent",
+                  "key_value": [
+                    "shop_name",
+                    "shop_id",
+                    "content_name",
+                    "content_category",
+                    "content_brand",
+                    "content_type",
+                    "currency",
+                    "value"
+                  ],
+                  "expect_value": [
+                    "fb-v3-1-page-checkout-onshopbase-com",
+                    "10483765",
+                    "Product Test tracking event",
+                    "",
+                    "",
+                    "product_group",
+                    "USD",
+                    "10"
+                  ]
+                }
+              ],
+              "add_to_cart": [
+                {
+                  "event": "AddToCart",
+                  "key_value": [
+                    "shop_name",
+                    "shop_id",
+                    "content_name",
+                    "content_category",
+                    "content_brand",
+                    "content_type",
+                    "currency",
+                    "value"
+                  ],
+                  "expect_value": [
+                    "fb-v3-1-page-checkout-onshopbase-com",
+                    "10483765",
+                    "Product Test tracking event",
+                    "",
+                    "",
+                    "product_group",
+                    "USD",
+                    "10"
+                  ]
+                }
+              ],
+              "buy_now": [
+                {
+                  "event": "InitiateCheckout",
+                  "key_value": ["shop_id", "shop_name", "content_type", "currency", "value", "num_items"],
+                  "expect_value": [
+                    "10483765",
+                    "fb-v3-1-page-checkout-onshopbase-com",
+                    "product_group",
+                    "USD",
+                    "20",
+                    "2"
+                  ]
+                }
+              ],
+              "add_to_by_icon": [
+                {
+                  "event": "PageView",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["fb-v3-1-page-checkout-onshopbase-com", "10483765"]
+                },
+                {
+                  "event": "CartDrawerIconClicked",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["fb-v3-1-page-checkout-onshopbase-com", "10483765"]
+                }
+              ],
+              "begin_checkout": [
+                {
+                  "event": "InitiateCheckout",
+                  "key_value": [
+                    "shop_id",
+                    "shop_name",
+                    "content_category",
+                    "content_type",
+                    "currency",
+                    "value",
+                    "num_items"
+                  ],
+                  "expect_value": [
+                    "10483765",
+                    "fb-v3-1-page-checkout-onshopbase-com",
+                    "",
+                    "product_group",
+                    "USD",
+                    "10",
+                    "1"
+                  ]
+                }
+              ],
+              "promotion_code": "Test-event",
+              "use_coupon": [
+                {
+                  "event": "UseCouponCode",
+                  "key_value": ["shop_id", "shop_name", "coupon"],
+                  "expect_value": ["10483765", "fb-v3-1-page-checkout-onshopbase-com", "Test-event"]
+                }
+              ],
+              "custom_info": [],
+              "checkout_info": {
+                "email": "tester@maildrop.cc",
+                "first_name": "Hong",
+                "last_name": "Hanh",
+                "address": "1600 W Loop S",
+                "country": "United States",
+                "state": "Texas",
+                "city": "Houston",
+                "zipcode": "77027",
+                "phone_number": "0357974111"
+              },
+              "shipping_method": [],
+              "payments_info": [
+                {
+                  "event": "Purchase",
+                  "key_value": [
+                    "shop_id",
+                    "shop_name",
+                    "content_category",
+                    "content_type",
+                    "currency",
+                    "value",
+                    "num_items"
+                  ],
+                  "expect_value": [
+                    "10483765",
+                    "fb-v3-1-page-checkout-onshopbase-com",
+                    "",
+                    "product_group",
+                    "USD",
+                    "8",
+                    "1"
+                  ]
+                }
+              ],
+              "facebook_conversions": [
+                {
+                  "id": "12335435",
+                  "token": ""
+                },
+                {
+                  "id": "14546465",
+                  "token": "adhf452345"
+                },
+                {
+                  "id": "43265526",
+                  "token": "15652wigiwre"
+                },
+                {
+                  "id": "46542656",
+                  "token": "agg45432656"
+                },
+                {
+                  "id": "1243543",
+                  "token": ""
+                }
+              ],
+              "pixelId": "12335435,14546465/adhf452345,43265526/15652wigiwre,46542656/agg45432656,1243543"
+            }
+          ]
+        }
+      }
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-tracking-klavio-prodtest.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "user_id": 73782,
+      "shop_id": 10439572,
+      "shop_name": "au-tracking-klavio-prodtest",
+      "cases": {
+        "SB_SF_TKE_72": {
+          "data_test": [
+            {
+              "shop_id": "10439572",
+              "domain": "au-tracking-klavio-prodtest.onshopbase.com",
+              "shop_name": "au-tracking-klavio-prodtest",
+              "checkout_layout": "One page checkout",
+              "view_page": [
+                {
+                  "event": "PageView",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["fb-inside-1-page-checkout-prodtest", "10483810"]
+                }
+              ],
+              "search": [
+                {
+                  "event": "Search",
+                  "key_value": ["shop_name", "shop_id", "search_string"],
+                  "expect_value": ["fb-inside-1-page-checkout-prodtest", "10483810", "Product Test tracking event"]
+                }
+              ],
+              "view_product": [
+                {
+                  "event": "ViewContent",
+                  "key_value": [
+                    "shop_name",
+                    "shop_id",
+                    "content_name",
+                    "content_category",
+                    "content_brand",
+                    "content_type",
+                    "currency",
+                    "value"
+                  ],
+                  "expect_value": [
+                    "fb-inside-1-page-checkout-prodtest",
+                    "10483810",
+                    "Product Test tracking event",
+                    "",
+                    "",
+                    "product_group",
+                    "USD",
+                    "10"
+                  ]
+                }
+              ],
+              "add_to_cart": [
+                {
+                  "event": "AddToCart",
+                  "key_value": [
+                    "shop_name",
+                    "shop_id",
+                    "content_name",
+                    "content_category",
+                    "content_brand",
+                    "content_type",
+                    "currency",
+                    "value"
+                  ],
+                  "expect_value": [
+                    "fb-inside-1-page-checkout-prodtest",
+                    "10483810",
+                    "Product Test tracking event",
+                    "",
+                    "",
+                    "product_group",
+                    "USD",
+                    "10"
+                  ]
+                }
+              ],
+              "buy_now": [
+                {
+                  "event": "InitiateCheckout",
+                  "key_value": ["shop_id", "shop_name", "content_type", "currency", "value", "num_items"],
+                  "expect_value": ["10483810", "fb-inside-1-page-checkout-prodtest", "product_group", "USD", "20", "2"]
+                }
+              ],
+              "add_to_by_icon": [
+                {
+                  "event": "PageView",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["fb-inside-1-page-checkout-prodtest", "10483810"]
+                },
+                {
+                  "event": "CartDrawerIconClicked",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["fb-inside-1-page-checkout-prodtest", "10483810"]
+                }
+              ],
+              "begin_checkout": [
+                {
+                  "event": "InitiateCheckout",
+                  "key_value": [
+                    "shop_id",
+                    "shop_name",
+                    "content_category",
+                    "content_type",
+                    "currency",
+                    "value",
+                    "num_items"
+                  ],
+                  "expect_value": [
+                    "10483810",
+                    "fb-inside-1-page-checkout-prodtest",
+                    "",
+                    "product_group",
+                    "USD",
+                    "10",
+                    "1"
+                  ]
+                }
+              ],
+              "promotion_code": "Test-event",
+              "use_coupon": [
+                {
+                  "event": "UseCouponCode",
+                  "key_value": ["shop_id", "shop_name", "coupon"],
+                  "expect_value": ["10483810", "fb-inside-1-page-checkout-prodtest", "Test-event"]
+                }
+              ],
+              "custom_info": [
+                {
+                  "event": "AddShippingInfo",
+                  "key_value": ["shop_id", "shop_name"],
+                  "expect_value": ["10483810", "fb-inside-1-page-checkout-prodtest"]
+                }
+              ],
+              "checkout_info": {
+                "email": "tester@maildrop.cc",
+                "first_name": "Hong",
+                "last_name": "Hanh",
+                "address": "1600 W Loop S",
+                "country": "United States",
+                "state": "Texas",
+                "city": "Houston",
+                "zipcode": "77027",
+                "phone_number": "0357974111"
+              },
+              "shipping_method": [
+                {
+                  "event": "SelectShippingMethod",
+                  "key_value": ["shop_id", "shop_name", "method"],
+                  "expect_value": ["10483810", "fb-inside-1-page-checkout-prodtest", "Premium shipping"]
+                }
+              ],
+              "payments_info": [
+                {
+                  "event": "AddPaymentInfo",
+                  "key_value": ["shop_id", "shop_name", "type"],
+                  "expect_value": ["10483810", "fb-inside-1-page-checkout-prodtest", "credit_card"]
+                },
+                {
+                  "event": "Purchase",
+                  "key_value": [
+                    "shop_id",
+                    "shop_name",
+                    "content_category",
+                    "content_type",
+                    "currency",
+                    "value",
+                    "num_items"
+                  ],
+                  "expect_value": [
+                    "10483810",
+                    "fb-inside-1-page-checkout-prodtest",
+                    "",
+                    "product_group",
+                    "USD",
+                    "8",
+                    "1"
+                  ]
+                }
+              ],
+              "facebook_conversions": [
+                {
+                  "id": "14546465",
+                  "token": "adhf452345"
+                }
+              ],
+              "pixelId": "14546465/adhf452345"
+            },
+            {
+              "shop_id": "10483809",
+              "domain": "fb-v3-3-page-checkout-prodtest.ngochd7.website",
+              "shop_name": "fb-v3-3-page-checkout-prodtest",
+              "is_checkout_paypal": true,
+              "checkout_layout": "3-step checkout",
+              "view_page": [
+                {
+                  "event": "PageView",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["fb-v3-3-page-checkout-prodtest", "10439572"]
+                }
+              ],
+              "search": [
+                {
+                  "event": "Search",
+                  "key_value": ["shop_name", "shop_id", "search_string"],
+                  "expect_value": ["au-tracking-klavio-prodtest", "10439572", "Product Test tracking event"]
+                }
+              ],
+              "view_product": [
+                {
+                  "event": "ViewContent",
+                  "key_value": [
+                    "shop_name",
+                    "shop_id",
+                    "content_name",
+                    "content_category",
+                    "content_brand",
+                    "content_type",
+                    "currency",
+                    "value"
+                  ],
+                  "expect_value": [
+                    "au-tracking-klavio-prodtest",
+                    "10439572",
+                    "Product Test tracking event",
+                    "",
+                    "",
+                    "product_group",
+                    "USD",
+                    "10"
+                  ]
+                }
+              ],
+              "add_to_cart": [
+                {
+                  "event": "AddToCart",
+                  "key_value": [
+                    "shop_name",
+                    "shop_id",
+                    "content_name",
+                    "content_category",
+                    "content_brand",
+                    "content_type",
+                    "currency",
+                    "value"
+                  ],
+                  "expect_value": [
+                    "au-tracking-klavio-prodtest",
+                    "10439572",
+                    "Product Test tracking event",
+                    "",
+                    "",
+                    "product_group",
+                    "USD",
+                    "10"
+                  ]
+                }
+              ],
+              "buy_now": [
+                {
+                  "event": "InitiateCheckout",
+                  "key_value": ["shop_id", "shop_name", "content_type", "currency", "value", "num_items"],
+                  "expect_value": ["10439572", "au-tracking-klavio-prodtest", "product_group", "USD", "20", "2"]
+                }
+              ],
+              "add_to_by_icon": [
+                {
+                  "event": "PageView",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["au-tracking-klavio-prodtest", "10439572"]
+                },
+                {
+                  "event": "CartDrawerIconClicked",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["au-tracking-klavio-prodtest", "10439572"]
+                }
+              ],
+              "begin_checkout": [
+                {
+                  "event": "InitiateCheckout",
+                  "key_value": [
+                    "shop_id",
+                    "shop_name",
+                    "content_category",
+                    "content_type",
+                    "currency",
+                    "value",
+                    "num_items"
+                  ],
+                  "expect_value": ["10439572", "au-tracking-klavio-prodtest", "", "product_group", "USD", "10", "1"]
+                }
+              ],
+              "promotion_code": "Test-event",
+              "use_coupon": [
+                {
+                  "event": "UseCouponCode",
+                  "key_value": ["shop_id", "shop_name", "coupon"],
+                  "expect_value": ["10439572", "au-tracking-klavio-prodtest", "Test-event"]
+                }
+              ],
+              "custom_info": [
+                {
+                  "event": "AddShippingInfo",
+                  "key_value": ["shop_id", "shop_name"],
+                  "expect_value": ["10439572", "au-tracking-klavio-prodtest"]
+                }
+              ],
+              "checkout_info": {
+                "email": "tester@maildrop.cc",
+                "first_name": "Hong",
+                "last_name": "Hanh",
+                "address": "1600 W Loop S",
+                "country": "United States",
+                "state": "Texas",
+                "city": "Houston",
+                "zipcode": "77027",
+                "phone_number": "0357974111"
+              },
+              "shipping_method": [
+                {
+                  "event": "SelectShippingMethod",
+                  "key_value": ["shop_id", "shop_name", "method"],
+                  "expect_value": ["10439572", "au-tracking-klavio-prodtest", "Premium shipping"]
+                }
+              ],
+              "payments_info": [
+                {
+                  "event": "Purchase",
+                  "key_value": [
+                    "shop_id",
+                    "shop_name",
+                    "content_category",
+                    "content_type",
+                    "currency",
+                    "value",
+                    "num_items"
+                  ],
+                  "expect_value": ["10439572", "au-tracking-klavio-prodtest", "", "product_group", "USD", "8", "1"]
+                }
+              ],
+              "facebook_conversions": [
+                {
+                  "id": "12335435",
+                  "token": ""
+                }
+              ],
+              "pixelId": "12335435"
+            },
+            {
+              "shop_id": "10483813",
+              "domain": "fb-roller-3-page-checkout-prodtest.ngochd7.website",
+              "shop_name": "fb-roller-3-page-checkout-prodtest",
+              "checkout_layout": "3-step checkout",
+              "view_page": [
+                {
+                  "event": "PageView",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["au-tracking-klavio-prodtest", "10439572"]
+                }
+              ],
+              "search": [
+                {
+                  "event": "Search",
+                  "key_value": ["shop_name", "shop_id", "search_string"],
+                  "expect_value": ["au-tracking-klavio-prodtest", "10439572", "Product Test tracking event"]
+                }
+              ],
+              "view_product": [
+                {
+                  "event": "ViewContent",
+                  "key_value": [
+                    "shop_name",
+                    "shop_id",
+                    "content_name",
+                    "content_category",
+                    "content_brand",
+                    "content_type",
+                    "currency",
+                    "value"
+                  ],
+                  "expect_value": [
+                    "au-tracking-klavio-prodtest",
+                    "10439572",
+                    "Product Test tracking event",
+                    "",
+                    "",
+                    "product_group",
+                    "USD",
+                    "10"
+                  ]
+                }
+              ],
+              "add_to_cart": [
+                {
+                  "event": "AddToCart",
+                  "key_value": [
+                    "shop_name",
+                    "shop_id",
+                    "content_name",
+                    "content_category",
+                    "content_brand",
+                    "content_type",
+                    "currency",
+                    "value"
+                  ],
+                  "expect_value": [
+                    "au-tracking-klavio-prodtest",
+                    "10439572",
+                    "Product Test tracking event",
+                    "",
+                    "",
+                    "product_group",
+                    "USD",
+                    "10"
+                  ]
+                }
+              ],
+              "buy_now": [
+                {
+                  "event": "InitiateCheckout",
+                  "key_value": ["shop_id", "shop_name", "content_type", "currency", "value", "num_items"],
+                  "expect_value": ["10439572", "au-tracking-klavio-prodtest", "product_group", "USD", "20", "2"]
+                }
+              ],
+              "add_to_by_icon": [
+                {
+                  "event": "PageView",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["au-tracking-klavio-prodtest", "10439572"]
+                },
+                {
+                  "event": "CartDrawerIconClicked",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["au-tracking-klavio-prodtest", "10439572"]
+                }
+              ],
+              "begin_checkout": [
+                {
+                  "event": "InitiateCheckout",
+                  "key_value": [
+                    "shop_id",
+                    "shop_name",
+                    "content_category",
+                    "content_type",
+                    "currency",
+                    "value",
+                    "num_items"
+                  ],
+                  "expect_value": ["10439572", "au-tracking-klavio-prodtest", "", "product_group", "USD", "10", "1"]
+                }
+              ],
+              "promotion_code": "Test-event",
+              "use_coupon": [
+                {
+                  "event": "UseCouponCode",
+                  "key_value": ["shop_id", "shop_name", "coupon"],
+                  "expect_value": ["10439572", "au-tracking-klavio-prodtest", "Test-event"]
+                }
+              ],
+              "custom_info": [
+                {
+                  "event": "AddShippingInfo",
+                  "key_value": ["shop_id", "shop_name"],
+                  "expect_value": ["10439572", "au-tracking-klavio-prodtest"]
+                }
+              ],
+              "checkout_info": {
+                "email": "tester@maildrop.cc",
+                "first_name": "Hong",
+                "last_name": "Hanh",
+                "address": "1600 W Loop S",
+                "country": "United States",
+                "state": "Texas",
+                "city": "Houston",
+                "zipcode": "77027",
+                "phone_number": "0357974111"
+              },
+              "shipping_method": [
+                {
+                  "event": "SelectShippingMethod",
+                  "key_value": ["shop_id", "shop_name", "method"],
+                  "expect_value": ["10439572", "au-tracking-klavio-prodtest", "Premium shipping"]
+                }
+              ],
+              "payments_info": [
+                {
+                  "event": "AddPaymentInfo",
+                  "key_value": ["shop_id", "shop_name", "type"],
+                  "expect_value": ["10439572", "au-tracking-klavio-prodtest", "credit_card"]
+                },
+                {
+                  "event": "Purchase",
+                  "key_value": [
+                    "shop_id",
+                    "shop_name",
+                    "content_category",
+                    "content_type",
+                    "currency",
+                    "value",
+                    "num_items"
+                  ],
+                  "expect_value": ["10439572", "au-tracking-klavio-prodtest", "", "product_group", "USD", "8", "1"]
+                }
+              ],
+              "facebook_conversions": [
+                {
+                  "id": "12335435",
+                  "token": ""
+                }
+              ],
+              "pixelId": "12335435"
+            },
+            {
+              "shop_id": "10483812",
+              "domain": "fb-roller-1-page-checkout-prodtest.ngochd7.website",
+              "shop_name": "fb-roller-1-page-checkout-prodtest",
+              "is_checkout_paypal": true,
+              "checkout_layout": "One page checkout",
+              "view_page": [
+                {
+                  "event": "PageView",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["au-tracking-klavio-prodtest", "10439572"]
+                }
+              ],
+              "search": [
+                {
+                  "event": "Search",
+                  "key_value": ["shop_name", "shop_id", "search_string"],
+                  "expect_value": ["au-tracking-klavio-prodtest", "10439572", "Product Test tracking event"]
+                }
+              ],
+              "view_product": [
+                {
+                  "event": "ViewContent",
+                  "key_value": [
+                    "shop_name",
+                    "shop_id",
+                    "content_name",
+                    "content_category",
+                    "content_brand",
+                    "content_type",
+                    "currency",
+                    "value"
+                  ],
+                  "expect_value": [
+                    "au-tracking-klavio-prodtest",
+                    "10439572",
+                    "Product Test tracking event",
+                    "",
+                    "",
+                    "product_group",
+                    "USD",
+                    "10"
+                  ]
+                }
+              ],
+              "add_to_cart": [
+                {
+                  "event": "AddToCart",
+                  "key_value": [
+                    "shop_name",
+                    "shop_id",
+                    "content_name",
+                    "content_category",
+                    "content_brand",
+                    "content_type",
+                    "currency",
+                    "value"
+                  ],
+                  "expect_value": [
+                    "au-tracking-klavio-prodtest",
+                    "10439572",
+                    "Product Test tracking event",
+                    "",
+                    "",
+                    "product_group",
+                    "USD",
+                    "10"
+                  ]
+                }
+              ],
+              "buy_now": [
+                {
+                  "event": "InitiateCheckout",
+                  "key_value": ["shop_id", "shop_name", "content_type", "currency", "value", "num_items"],
+                  "expect_value": ["10439572", "au-tracking-klavio-prodtest", "product_group", "USD", "20", "2"]
+                }
+              ],
+              "add_to_by_icon": [
+                {
+                  "event": "PageView",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["au-tracking-klavio-prodtest", "10439572"]
+                },
+                {
+                  "event": "CartDrawerIconClicked",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["au-tracking-klavio-prodtest", "10439572"]
+                }
+              ],
+              "begin_checkout": [
+                {
+                  "event": "InitiateCheckout",
+                  "key_value": [
+                    "shop_id",
+                    "shop_name",
+                    "content_category",
+                    "content_type",
+                    "currency",
+                    "value",
+                    "num_items"
+                  ],
+                  "expect_value": ["10439572", "au-tracking-klavio-prodtest", "", "product_group", "USD", "10", "1"]
+                }
+              ],
+              "promotion_code": "Test-event",
+              "use_coupon": [
+                {
+                  "event": "UseCouponCode",
+                  "key_value": ["shop_id", "shop_name", "coupon"],
+                  "expect_value": ["10439572", "au-tracking-klavio-prodtest", "Test-event"]
+                }
+              ],
+              "custom_info": [],
+              "checkout_info": {
+                "email": "tester@maildrop.cc",
+                "first_name": "Hong",
+                "last_name": "Hanh",
+                "address": "1600 W Loop S",
+                "country": "United States",
+                "state": "Texas",
+                "city": "Houston",
+                "zipcode": "77027",
+                "phone_number": "0357974111"
+              },
+              "shipping_method": [],
+              "payments_info": [
+                {
+                  "event": "Purchase",
+                  "key_value": [
+                    "shop_id",
+                    "shop_name",
+                    "content_category",
+                    "content_type",
+                    "currency",
+                    "value",
+                    "num_items"
+                  ],
+                  "expect_value": ["10439572", "au-tracking-klavio-prodtest", "", "product_group", "USD", "8", "1"]
+                }
+              ],
+              "facebook_conversions": [
+                {
+                  "id": "14546465",
+                  "token": "adhf452345"
+                }
+              ],
+              "pixelId": "14546465/adhf452345"
+            },
+            {
+              "shop_id": "10483809",
+              "domain": "fb-v3-3-page-checkout-prodtest.ngochd7.website",
+              "shop_name": "fb-v3-3-page-checkout-prodtest",
+              "checkout_layout": "3-step checkout",
+              "view_page": [
+                {
+                  "event": "PageView",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["au-tracking-klavio-prodtest", "10439572"]
+                }
+              ],
+              "search": [
+                {
+                  "event": "Search",
+                  "key_value": ["shop_name", "shop_id", "search_string"],
+                  "expect_value": ["au-tracking-klavio-prodtest", "10439572", "Product Test tracking event"]
+                }
+              ],
+              "view_product": [
+                {
+                  "event": "ViewContent",
+                  "key_value": [
+                    "shop_name",
+                    "shop_id",
+                    "content_name",
+                    "content_category",
+                    "content_brand",
+                    "content_type",
+                    "currency",
+                    "value"
+                  ],
+                  "expect_value": [
+                    "au-tracking-klavio-prodtest",
+                    "10439572",
+                    "Product Test tracking event",
+                    "",
+                    "",
+                    "product_group",
+                    "USD",
+                    "10"
+                  ]
+                }
+              ],
+              "add_to_cart": [
+                {
+                  "event": "AddToCart",
+                  "key_value": [
+                    "shop_name",
+                    "shop_id",
+                    "content_name",
+                    "content_category",
+                    "content_brand",
+                    "content_type",
+                    "currency",
+                    "value"
+                  ],
+                  "expect_value": [
+                    "au-tracking-klavio-prodtest",
+                    "10439572",
+                    "Product Test tracking event",
+                    "",
+                    "",
+                    "product_group",
+                    "USD",
+                    "10"
+                  ]
+                }
+              ],
+              "buy_now": [
+                {
+                  "event": "InitiateCheckout",
+                  "key_value": ["shop_id", "shop_name", "content_type", "currency", "value", "num_items"],
+                  "expect_value": ["10439572", "au-tracking-klavio-prodtest", "product_group", "USD", "20", "2"]
+                }
+              ],
+              "add_to_by_icon": [
+                {
+                  "event": "PageView",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["au-tracking-klavio-prodtest", "10439572"]
+                },
+                {
+                  "event": "CartDrawerIconClicked",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["au-tracking-klavio-prodtest", "10439572"]
+                }
+              ],
+              "begin_checkout": [
+                {
+                  "event": "InitiateCheckout",
+                  "key_value": [
+                    "shop_id",
+                    "shop_name",
+                    "content_category",
+                    "content_type",
+                    "currency",
+                    "value",
+                    "num_items"
+                  ],
+                  "expect_value": ["10439572", "au-tracking-klavio-prodtest", "", "product_group", "USD", "10", "1"]
+                }
+              ],
+              "promotion_code": "Test-event",
+              "use_coupon": [
+                {
+                  "event": "UseCouponCode",
+                  "key_value": ["shop_id", "shop_name", "coupon"],
+                  "expect_value": ["10439572", "au-tracking-klavio-prodtest", "Test-event"]
+                }
+              ],
+              "custom_info": [
+                {
+                  "event": "AddShippingInfo",
+                  "key_value": ["shop_id", "shop_name"],
+                  "expect_value": ["10439572", "au-tracking-klavio-prodtest"]
+                }
+              ],
+              "checkout_info": {
+                "email": "tester@maildrop.cc",
+                "first_name": "Hong",
+                "last_name": "Hanh",
+                "address": "1600 W Loop S",
+                "country": "United States",
+                "state": "Texas",
+                "city": "Houston",
+                "zipcode": "77027",
+                "phone_number": "0357974111"
+              },
+              "shipping_method": [
+                {
+                  "event": "SelectShippingMethod",
+                  "key_value": ["shop_id", "shop_name", "method"],
+                  "expect_value": ["10439572", "au-tracking-klavio-prodtest", "Premium shipping"]
+                }
+              ],
+              "payments_info": [
+                {
+                  "event": "AddPaymentInfo",
+                  "key_value": ["shop_id", "shop_name", "type"],
+                  "expect_value": ["10439572", "au-tracking-klavio-prodtest", "credit_card"]
+                },
+                {
+                  "event": "Purchase",
+                  "key_value": [
+                    "shop_id",
+                    "shop_name",
+                    "content_category",
+                    "content_type",
+                    "currency",
+                    "value",
+                    "num_items"
+                  ],
+                  "expect_value": ["10439572", "au-tracking-klavio-prodtest", "", "product_group", "USD", "8", "1"]
+                }
+              ],
+              "facebook_conversions": [
+                {
+                  "id": "12335435",
+                  "token": ""
+                }
+              ],
+              "pixelId": "12335435"
+            },
+            {
+              "shop_id": "10483790",
+              "shop_name": "fb-v3-1-page-checkout-prodtest",
+              "domain": "fb-v3-1-page-checkout-prodtest.ngochd7.website",
+              "is_checkout_paypal": true,
+              "checkout_layout": "One page checkout",
+              "view_page": [
+                {
+                  "event": "PageView",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["au-tracking-klavio-prodtest", "10439572"]
+                }
+              ],
+              "search": [
+                {
+                  "event": "Search",
+                  "key_value": ["shop_name", "shop_id", "search_string"],
+                  "expect_value": ["au-tracking-klavio-prodtest", "10439572", "Product Test tracking event"]
+                }
+              ],
+              "view_product": [
+                {
+                  "event": "ViewContent",
+                  "key_value": [
+                    "shop_name",
+                    "shop_id",
+                    "content_name",
+                    "content_category",
+                    "content_brand",
+                    "content_type",
+                    "currency",
+                    "value"
+                  ],
+                  "expect_value": [
+                    "au-tracking-klavio-prodtest",
+                    "10439572",
+                    "Product Test tracking event",
+                    "",
+                    "",
+                    "product_group",
+                    "USD",
+                    "10"
+                  ]
+                }
+              ],
+              "add_to_cart": [
+                {
+                  "event": "AddToCart",
+                  "key_value": [
+                    "shop_name",
+                    "shop_id",
+                    "content_name",
+                    "content_category",
+                    "content_brand",
+                    "content_type",
+                    "currency",
+                    "value"
+                  ],
+                  "expect_value": [
+                    "au-tracking-klavio-prodtest",
+                    "10439572",
+                    "Product Test tracking event",
+                    "",
+                    "",
+                    "product_group",
+                    "USD",
+                    "10"
+                  ]
+                }
+              ],
+              "buy_now": [
+                {
+                  "event": "InitiateCheckout",
+                  "key_value": ["shop_id", "shop_name", "content_type", "currency", "value", "num_items"],
+                  "expect_value": ["10439572", "au-tracking-klavio-prodtest", "product_group", "USD", "20", "2"]
+                }
+              ],
+              "add_to_by_icon": [
+                {
+                  "event": "PageView",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["au-tracking-klavio-prodtest", "10439572"]
+                },
+                {
+                  "event": "CartDrawerIconClicked",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["au-tracking-klavio-prodtest", "10439572"]
+                }
+              ],
+              "begin_checkout": [
+                {
+                  "event": "InitiateCheckout",
+                  "key_value": [
+                    "shop_id",
+                    "shop_name",
+                    "content_category",
+                    "content_type",
+                    "currency",
+                    "value",
+                    "num_items"
+                  ],
+                  "expect_value": ["10439572", "au-tracking-klavio-prodtest", "", "product_group", "USD", "10", "1"]
+                }
+              ],
+              "promotion_code": "Test-event",
+              "use_coupon": [
+                {
+                  "event": "UseCouponCode",
+                  "key_value": ["shop_id", "shop_name", "coupon"],
+                  "expect_value": ["10439572", "au-tracking-klavio-prodtest", "Test-event"]
+                }
+              ],
+              "custom_info": [],
+              "checkout_info": {
+                "email": "tester@maildrop.cc",
+                "first_name": "Hong",
+                "last_name": "Hanh",
+                "address": "1600 W Loop S",
+                "country": "United States",
+                "state": "Texas",
+                "city": "Houston",
+                "zipcode": "77027",
+                "phone_number": "0357974111"
+              },
+              "shipping_method": [],
+              "payments_info": [
+                {
+                  "event": "Purchase",
+                  "key_value": [
+                    "shop_id",
+                    "shop_name",
+                    "content_category",
+                    "content_type",
+                    "currency",
+                    "value",
+                    "num_items"
+                  ],
+                  "expect_value": ["10439572", "au-tracking-klavio-prodtest", "", "product_group", "USD", "8", "1"]
+                }
+              ],
+              "facebook_conversions": [
+                {
+                  "id": "14546465",
+                  "token": "adhf452345"
+                }
+              ],
+              "pixelId": "14546465/adhf452345"
+            }
+          ]
+        }
+      },
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-tracking-event-facebook.myshopbase.net",
+      "username": "shopbase1@beeketing.net",
+      "password": "F|0cGtp4dQL-&s6",
+      "user_id": 74152,
+      "shop_id": 10331987,
+      "shop_name": "au-tracking-event-facebook",
+      "cases": {
+        "SB_SF_TKE_72": {
+          "data_test": [
+            {
+              "shop_id": "10331987",
+              "domain": "au-tracking-event-facebook.myshopbase.net",
+              "shop_name": "au-tracking-event-facebook",
+              "is_checkout_paypal": true,
+              "checkout_layout": "One page checkout",
+              "view_page": [
+                {
+                  "event": "PageView",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["au-tracking-event-facebook", "10331987"]
+                }
+              ],
+              "search": [
+                {
+                  "event": "Search",
+                  "key_value": ["shop_name", "shop_id", "search_string"],
+                  "expect_value": ["au-tracking-event-facebook", "10331987", "Product Test tracking event"]
+                }
+              ],
+              "view_product": [
+                {
+                  "event": "ViewContent",
+                  "key_value": [
+                    "shop_name",
+                    "shop_id",
+                    "content_name",
+                    "content_category",
+                    "content_brand",
+                    "content_type",
+                    "currency",
+                    "value"
+                  ],
+                  "expect_value": [
+                    "au-tracking-event-facebook",
+                    "10331987",
+                    "Product Test tracking event",
+                    "",
+                    "",
+                    "product_group",
+                    "USD",
+                    "10"
+                  ]
+                }
+              ],
+              "add_to_cart": [
+                {
+                  "event": "AddToCart",
+                  "key_value": [
+                    "shop_name",
+                    "shop_id",
+                    "content_name",
+                    "content_category",
+                    "content_brand",
+                    "content_type",
+                    "currency",
+                    "value"
+                  ],
+                  "expect_value": [
+                    "au-tracking-event-facebook",
+                    "10331987",
+                    "Product Test tracking event",
+                    "",
+                    "",
+                    "product_group",
+                    "USD",
+                    "10"
+                  ]
+                }
+              ],
+              "buy_now": [
+                {
+                  "event": "InitiateCheckout",
+                  "key_value": ["shop_id", "shop_name", "content_type", "currency", "value", "num_items"],
+                  "expect_value": ["10331987", "au-tracking-event-facebook", "product_group", "USD", "20", "2"]
+                }
+              ],
+              "add_to_by_icon": [
+                {
+                  "event": "PageView",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["au-tracking-event-facebook", "10331987"]
+                },
+                {
+                  "event": "CartDrawerIconClicked",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["au-tracking-event-facebook", "10331987"]
+                }
+              ],
+              "begin_checkout": [
+                {
+                  "event": "InitiateCheckout",
+                  "key_value": [
+                    "shop_id",
+                    "shop_name",
+                    "content_category",
+                    "content_type",
+                    "currency",
+                    "value",
+                    "num_items"
+                  ],
+                  "expect_value": ["10331987", "au-tracking-event-facebook", "", "product_group", "USD", "10", "1"]
+                }
+              ],
+              "promotion_code": "Test-event",
+              "use_coupon": [
+                {
+                  "event": "UseCouponCode",
+                  "key_value": ["shop_id", "shop_name", "coupon"],
+                  "expect_value": ["10331987", "au-tracking-event-facebook", "Test-event"]
+                }
+              ],
+              "custom_info": [],
+              "checkout_info": {
+                "email": "tester@maildrop.cc",
+                "first_name": "Hong",
+                "last_name": "Hanh",
+                "address": "1600 W Loop S",
+                "country": "United States",
+                "state": "Texas",
+                "city": "Houston",
+                "zipcode": "77027",
+                "phone_number": "0357974111"
+              },
+              "shipping_method": [],
+              "payments_info": [
+                {
+                  "event": "Purchase",
+                  "key_value": [
+                    "shop_id",
+                    "shop_name",
+                    "content_category",
+                    "content_type",
+                    "currency",
+                    "value",
+                    "num_items"
+                  ],
+                  "expect_value": ["10331987", "au-tracking-event-facebook", "", "product_group", "USD", "8", "1"]
+                }
+              ],
+              "facebook_conversions": [
+                {
+                  "id": "14546465",
+                  "token": "adhf452345"
+                }
+              ],
+              "pixelId": "14546465/adhf452345"
+            },
+            {
+              "shop_id": "10334382",
+              "domain": "fb-inside-3-page-checkout.myshopbase.net",
+              "shop_name": "fb-inside-3-page-checkout",
+              "checkout_layout": "3-step checkout",
+              "view_page": [
+                {
+                  "event": "PageView",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["au-tracking-event-facebook", "10331987"]
+                }
+              ],
+              "search": [
+                {
+                  "event": "Search",
+                  "key_value": ["shop_name", "shop_id", "search_string"],
+                  "expect_value": ["au-tracking-event-facebook", "10331987", "Product Test tracking event"]
+                }
+              ],
+              "view_product": [
+                {
+                  "event": "ViewContent",
+                  "key_value": [
+                    "shop_name",
+                    "shop_id",
+                    "content_name",
+                    "content_category",
+                    "content_brand",
+                    "content_type",
+                    "currency",
+                    "value"
+                  ],
+                  "expect_value": [
+                    "au-tracking-event-facebook",
+                    "10331987",
+                    "Product Test tracking event",
+                    "",
+                    "",
+                    "product_group",
+                    "USD",
+                    "10"
+                  ]
+                }
+              ],
+              "add_to_cart": [
+                {
+                  "event": "AddToCart",
+                  "key_value": [
+                    "shop_name",
+                    "shop_id",
+                    "content_name",
+                    "content_category",
+                    "content_brand",
+                    "content_type",
+                    "currency",
+                    "value"
+                  ],
+                  "expect_value": [
+                    "au-tracking-event-facebook",
+                    "10331987",
+                    "Product Test tracking event",
+                    "",
+                    "",
+                    "product_group",
+                    "USD",
+                    "10"
+                  ]
+                }
+              ],
+              "buy_now": [
+                {
+                  "event": "InitiateCheckout",
+                  "key_value": ["shop_id", "shop_name", "content_type", "currency", "value", "num_items"],
+                  "expect_value": ["10331987", "au-tracking-event-facebook", "product_group", "USD", "20", "2"]
+                }
+              ],
+              "add_to_by_icon": [
+                {
+                  "event": "PageView",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["au-tracking-event-facebook", "10331987"]
+                },
+                {
+                  "event": "CartDrawerIconClicked",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["au-tracking-event-facebook", "10331987"]
+                }
+              ],
+              "begin_checkout": [
+                {
+                  "event": "InitiateCheckout",
+                  "key_value": [
+                    "shop_id",
+                    "shop_name",
+                    "content_category",
+                    "content_type",
+                    "currency",
+                    "value",
+                    "num_items"
+                  ],
+                  "expect_value": ["10331987", "au-tracking-event-facebook", "", "product_group", "USD", "10", "1"]
+                }
+              ],
+              "promotion_code": "Test-event",
+              "use_coupon": [
+                {
+                  "event": "UseCouponCode",
+                  "key_value": ["shop_id", "shop_name", "coupon"],
+                  "expect_value": ["10331987", "au-tracking-event-facebook", "Test-event"]
+                }
+              ],
+              "custom_info": [
+                {
+                  "event": "AddShippingInfo",
+                  "key_value": ["shop_id", "shop_name"],
+                  "expect_value": ["10331987", "au-tracking-event-facebook"]
+                }
+              ],
+              "checkout_info": {
+                "email": "tester@maildrop.cc",
+                "first_name": "Hong",
+                "last_name": "Hanh",
+                "address": "1600 W Loop S",
+                "country": "Vietnam",
+                "city": "Ha Noi",
+                "zipcode": "77027",
+                "phone_number": "0357974111"
+              },
+              "shipping_method": [
+                {
+                  "event": "SelectShippingMethod",
+                  "key_value": ["shop_id", "shop_name", "method"],
+                  "expect_value": ["10331987", "au-tracking-event-facebook", "Heavy Goods Shipping"]
+                }
+              ],
+              "payments_info": [
+                {
+                  "event": "AddPaymentInfo",
+                  "key_value": ["shop_id", "shop_name", "type"],
+                  "expect_value": ["10331987", "au-tracking-event-facebook", "credit_card"]
+                },
+                {
+                  "event": "Purchase",
+                  "key_value": [
+                    "shop_id",
+                    "shop_name",
+                    "content_category",
+                    "content_type",
+                    "currency",
+                    "value",
+                    "num_items"
+                  ],
+                  "expect_value": ["10331987", "au-tracking-event-facebook", "", "product_group", "USD", "8", "1"]
+                }
+              ],
+              "facebook_conversions": [
+                {
+                  "id": "1111435465",
+                  "token": "4535fskdlghsfdg89"
+                }
+              ],
+              "pixelId": "1111435465/4535fskdlghsfdg89"
+            },
+            {
+              "shop_id": "10334384",
+              "domain": "fb-roller-3-page-checkout.myshopbase.net",
+              "shop_name": "fb-roller-3-page-checkout",
+              "is_checkout_paypal": true,
+              "checkout_layout": "3-step checkout",
+              "view_page": [
+                {
+                  "event": "PageView",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["au-tracking-event-facebook", "10331987"]
+                }
+              ],
+              "search": [
+                {
+                  "event": "Search",
+                  "key_value": ["shop_name", "shop_id", "search_string"],
+                  "expect_value": ["au-tracking-event-facebook", "10331987", "Product Test tracking event"]
+                }
+              ],
+              "view_product": [
+                {
+                  "event": "ViewContent",
+                  "key_value": [
+                    "shop_name",
+                    "shop_id",
+                    "content_name",
+                    "content_category",
+                    "content_brand",
+                    "content_type",
+                    "currency",
+                    "value"
+                  ],
+                  "expect_value": [
+                    "au-tracking-event-facebook",
+                    "10331987",
+                    "Product Test tracking event",
+                    "",
+                    "",
+                    "product_group",
+                    "USD",
+                    "10"
+                  ]
+                }
+              ],
+              "add_to_cart": [
+                {
+                  "event": "AddToCart",
+                  "key_value": [
+                    "shop_name",
+                    "shop_id",
+                    "content_name",
+                    "content_category",
+                    "content_brand",
+                    "content_type",
+                    "currency",
+                    "value"
+                  ],
+                  "expect_value": [
+                    "au-tracking-event-facebook",
+                    "10331987",
+                    "Product Test tracking event",
+                    "",
+                    "",
+                    "product_group",
+                    "USD",
+                    "10"
+                  ]
+                }
+              ],
+              "buy_now": [
+                {
+                  "event": "InitiateCheckout",
+                  "key_value": ["shop_id", "shop_name", "content_type", "currency", "value", "num_items"],
+                  "expect_value": ["10331987", "au-tracking-event-facebook", "product_group", "USD", "20", "2"]
+                }
+              ],
+              "add_to_by_icon": [
+                {
+                  "event": "PageView",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["au-tracking-event-facebook", "10331987"]
+                },
+                {
+                  "event": "CartDrawerIconClicked",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["au-tracking-event-facebook", "10331987"]
+                }
+              ],
+              "begin_checkout": [
+                {
+                  "event": "InitiateCheckout",
+                  "key_value": [
+                    "shop_id",
+                    "shop_name",
+                    "content_category",
+                    "content_type",
+                    "currency",
+                    "value",
+                    "num_items"
+                  ],
+                  "expect_value": ["10331987", "au-tracking-event-facebook", "", "product_group", "USD", "10", "1"]
+                }
+              ],
+              "promotion_code": "Test-event",
+              "use_coupon": [
+                {
+                  "event": "UseCouponCode",
+                  "key_value": ["shop_id", "shop_name", "coupon"],
+                  "expect_value": ["10331987", "au-tracking-event-facebook", "Test-event"]
+                }
+              ],
+              "custom_info": [
+                {
+                  "event": "AddShippingInfo",
+                  "key_value": ["shop_id", "shop_name"],
+                  "expect_value": ["10331987", "au-tracking-event-facebook"]
+                }
+              ],
+              "checkout_info": {
+                "email": "tester@maildrop.cc",
+                "first_name": "Hong",
+                "last_name": "Hanh",
+                "address": "1600 W Loop S",
+                "country": "United States",
+                "state": "Texas",
+                "city": "Houston",
+                "zipcode": "77027",
+                "phone_number": "0357974111"
+              },
+              "shipping_method": [
+                {
+                  "event": "SelectShippingMethod",
+                  "key_value": ["shop_id", "shop_name", "method"],
+                  "expect_value": ["10331987", "au-tracking-event-facebook", "International Shipping"]
+                }
+              ],
+              "payments_info": [
+                {
+                  "event": "Purchase",
+                  "key_value": [
+                    "shop_id",
+                    "shop_name",
+                    "content_category",
+                    "content_type",
+                    "currency",
+                    "value",
+                    "num_items"
+                  ],
+                  "expect_value": ["10331987", "au-tracking-event-facebook", "", "product_group", "USD", "8", "1"]
+                }
+              ],
+              "facebook_conversions": [
+                {
+                  "id": "12335435",
+                  "token": ""
+                }
+              ],
+              "pixelId": "12335435"
+            },
+            {
+              "shop_id": "10334383",
+              "domain": "fb-roller-1-page-checkout.myshopbase.net",
+              "shop_name": "fb-roller-1-page-checkout",
+              "checkout_layout": "One page checkout",
+              "view_page": [
+                {
+                  "event": "PageView",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["au-tracking-event-facebook", "10331987"]
+                }
+              ],
+              "search": [
+                {
+                  "event": "Search",
+                  "key_value": ["shop_name", "shop_id", "search_string"],
+                  "expect_value": ["au-tracking-event-facebook", "10331987", "Product Test tracking event"]
+                }
+              ],
+              "view_product": [
+                {
+                  "event": "ViewContent",
+                  "key_value": [
+                    "shop_name",
+                    "shop_id",
+                    "content_name",
+                    "content_category",
+                    "content_brand",
+                    "content_type",
+                    "currency",
+                    "value"
+                  ],
+                  "expect_value": [
+                    "au-tracking-event-facebook",
+                    "10331987",
+                    "Product Test tracking event",
+                    "",
+                    "",
+                    "product_group",
+                    "USD",
+                    "10"
+                  ]
+                }
+              ],
+              "add_to_cart": [
+                {
+                  "event": "AddToCart",
+                  "key_value": [
+                    "shop_name",
+                    "shop_id",
+                    "content_name",
+                    "content_category",
+                    "content_brand",
+                    "content_type",
+                    "currency",
+                    "value"
+                  ],
+                  "expect_value": [
+                    "au-tracking-event-facebook",
+                    "10331987",
+                    "Product Test tracking event",
+                    "",
+                    "",
+                    "product_group",
+                    "USD",
+                    "10"
+                  ]
+                }
+              ],
+              "buy_now": [
+                {
+                  "event": "InitiateCheckout",
+                  "key_value": ["shop_id", "shop_name", "content_type", "currency", "value", "num_items"],
+                  "expect_value": ["10331987", "au-tracking-event-facebook", "product_group", "USD", "20", "2"]
+                }
+              ],
+              "add_to_by_icon": [
+                {
+                  "event": "PageView",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["au-tracking-event-facebook", "10331987"]
+                },
+                {
+                  "event": "CartDrawerIconClicked",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["au-tracking-event-facebook", "10331987"]
+                }
+              ],
+              "begin_checkout": [
+                {
+                  "event": "InitiateCheckout",
+                  "key_value": [
+                    "shop_id",
+                    "shop_name",
+                    "content_category",
+                    "content_type",
+                    "currency",
+                    "value",
+                    "num_items"
+                  ],
+                  "expect_value": ["10331987", "au-tracking-event-facebook", "", "product_group", "USD", "10", "1"]
+                }
+              ],
+              "promotion_code": "Test-event",
+              "use_coupon": [
+                {
+                  "event": "UseCouponCode",
+                  "key_value": ["shop_id", "shop_name", "coupon"],
+                  "expect_value": ["10331987", "au-tracking-event-facebook", "Test-event"]
+                }
+              ],
+              "custom_info": [
+                {
+                  "event": "AddShippingInfo",
+                  "key_value": ["shop_id", "shop_name"],
+                  "expect_value": ["10331987", "au-tracking-event-facebook"]
+                }
+              ],
+              "checkout_info": {
+                "email": "tester@maildrop.cc",
+                "first_name": "Hong",
+                "last_name": "Hanh",
+                "address": "1600 W Loop S",
+                "country": "Vietnam",
+                "city": "Ha Noi",
+                "zipcode": "77027",
+                "phone_number": "0357974111"
+              },
+              "shipping_method": [
+                {
+                  "event": "SelectShippingMethod",
+                  "key_value": ["shop_id", "shop_name", "method"],
+                  "expect_value": ["10331987", "au-tracking-event-facebook", "Heavy Goods Shipping"]
+                }
+              ],
+              "payments_info": [
+                {
+                  "event": "AddPaymentInfo",
+                  "key_value": ["shop_id", "shop_name", "type"],
+                  "expect_value": ["10331987", "au-tracking-event-facebook", "credit_card"]
+                },
+                {
+                  "event": "Purchase",
+                  "key_value": [
+                    "shop_id",
+                    "shop_name",
+                    "content_category",
+                    "content_type",
+                    "currency",
+                    "value",
+                    "num_items"
+                  ],
+                  "expect_value": ["10331987", "au-tracking-event-facebook", "", "product_group", "USD", "8", "1"]
+                }
+              ],
+              "facebook_conversions": [
+                {
+                  "id": "12335435",
+                  "token": ""
+                },
+                {
+                  "id": "14546465",
+                  "token": "adhf452345"
+                },
+                {
+                  "id": "43265526",
+                  "token": "15652wigiwre"
+                },
+                {
+                  "id": "46542656",
+                  "token": "agg45432656"
+                },
+                {
+                  "id": "1243543",
+                  "token": ""
+                }
+              ],
+              "pixelId": "12335435,14546465/adhf452345,43265526/15652wigiwre,46542656/agg45432656,1243543"
+            },
+            {
+              "shop_id": "10334386",
+              "domain": "fb-v3-3-page-checkout.myshopbase.net",
+              "shop_name": "fb-v3-3-page-checkout",
+              "is_checkout_paypal": true,
+              "checkout_layout": "3-step checkout",
+              "view_page": [
+                {
+                  "event": "PageView",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["au-tracking-event-facebook", "10331987"]
+                }
+              ],
+              "search": [
+                {
+                  "event": "Search",
+                  "key_value": ["shop_name", "shop_id", "search_string"],
+                  "expect_value": ["au-tracking-event-facebook", "10331987", "Product Test tracking event"]
+                }
+              ],
+              "view_product": [
+                {
+                  "event": "ViewContent",
+                  "key_value": [
+                    "shop_name",
+                    "shop_id",
+                    "content_name",
+                    "content_category",
+                    "content_brand",
+                    "content_type",
+                    "currency",
+                    "value"
+                  ],
+                  "expect_value": [
+                    "au-tracking-event-facebook",
+                    "10331987",
+                    "Product Test tracking event",
+                    "",
+                    "",
+                    "product_group",
+                    "USD",
+                    "10"
+                  ]
+                }
+              ],
+              "add_to_cart": [
+                {
+                  "event": "AddToCart",
+                  "key_value": [
+                    "shop_name",
+                    "shop_id",
+                    "content_name",
+                    "content_category",
+                    "content_brand",
+                    "content_type",
+                    "currency",
+                    "value"
+                  ],
+                  "expect_value": [
+                    "au-tracking-event-facebook",
+                    "10331987",
+                    "Product Test tracking event",
+                    "",
+                    "",
+                    "product_group",
+                    "USD",
+                    "10"
+                  ]
+                }
+              ],
+              "buy_now": [
+                {
+                  "event": "InitiateCheckout",
+                  "key_value": ["shop_id", "shop_name", "content_type", "currency", "value", "num_items"],
+                  "expect_value": ["10331987", "au-tracking-event-facebook", "product_group", "USD", "20", "2"]
+                }
+              ],
+              "add_to_by_icon": [
+                {
+                  "event": "PageView",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["au-tracking-event-facebook", "10331987"]
+                },
+                {
+                  "event": "CartDrawerIconClicked",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["au-tracking-event-facebook", "10331987"]
+                }
+              ],
+              "begin_checkout": [
+                {
+                  "event": "InitiateCheckout",
+                  "key_value": [
+                    "shop_id",
+                    "shop_name",
+                    "content_category",
+                    "content_type",
+                    "currency",
+                    "value",
+                    "num_items"
+                  ],
+                  "expect_value": ["10331987", "au-tracking-event-facebook", "", "product_group", "USD", "10", "1"]
+                }
+              ],
+              "promotion_code": "Test-event",
+              "use_coupon": [
+                {
+                  "event": "UseCouponCode",
+                  "key_value": ["shop_id", "shop_name", "coupon"],
+                  "expect_value": ["10331987", "au-tracking-event-facebook", "Test-event"]
+                }
+              ],
+              "custom_info": [
+                {
+                  "event": "AddShippingInfo",
+                  "key_value": ["shop_id", "shop_name"],
+                  "expect_value": ["10331987", "au-tracking-event-facebook"]
+                }
+              ],
+              "checkout_info": {
+                "email": "tester@maildrop.cc",
+                "first_name": "Hong",
+                "last_name": "Hanh",
+                "address": "1600 W Loop S",
+                "country": "United States",
+                "state": "Texas",
+                "city": "Houston",
+                "zipcode": "77027",
+                "phone_number": "0357974111"
+              },
+              "shipping_method": [
+                {
+                  "event": "SelectShippingMethod",
+                  "key_value": ["shop_id", "shop_name", "method"],
+                  "expect_value": ["10331987", "au-tracking-event-facebook", "International Shipping"]
+                }
+              ],
+              "payments_info": [
+                {
+                  "event": "Purchase",
+                  "key_value": [
+                    "shop_id",
+                    "shop_name",
+                    "content_category",
+                    "content_type",
+                    "currency",
+                    "value",
+                    "num_items"
+                  ],
+                  "expect_value": ["10331987", "au-tracking-event-facebook", "", "product_group", "USD", "8", "1"]
+                }
+              ],
+              "facebook_conversions": [
+                {
+                  "id": "12335435",
+                  "token": ""
+                },
+                {
+                  "id": "14546465",
+                  "token": "adhf452345"
+                },
+                {
+                  "id": "43265526",
+                  "token": "15652wigiwre"
+                },
+                {
+                  "id": "46542656",
+                  "token": "agg45432656"
+                },
+                {
+                  "id": "1243543",
+                  "token": ""
+                }
+              ],
+              "pixelId": "12335435,14546465/adhf452345,43265526/15652wigiwre,46542656/agg45432656,1243543"
+            },
+            {
+              "shop_id": "10334385",
+              "shop_name": "fb-v3-1-page-checkout",
+              "domain": "fb-v3-1-page-checkout.myshopbase.net",
+              "checkout_layout": "One page checkout",
+              "view_page": [
+                {
+                  "event": "PageView",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["au-tracking-event-facebook", "10331987"]
+                }
+              ],
+              "search": [
+                {
+                  "event": "Search",
+                  "key_value": ["shop_name", "shop_id", "search_string"],
+                  "expect_value": ["au-tracking-event-facebook", "10331987", "Product Test tracking event"]
+                }
+              ],
+              "view_product": [
+                {
+                  "event": "ViewContent",
+                  "key_value": [
+                    "shop_name",
+                    "shop_id",
+                    "content_name",
+                    "content_category",
+                    "content_brand",
+                    "content_type",
+                    "currency",
+                    "value"
+                  ],
+                  "expect_value": [
+                    "au-tracking-event-facebook",
+                    "10331987",
+                    "Product Test tracking event",
+                    "",
+                    "",
+                    "product_group",
+                    "USD",
+                    "10"
+                  ]
+                }
+              ],
+              "add_to_cart": [
+                {
+                  "event": "AddToCart",
+                  "key_value": [
+                    "shop_name",
+                    "shop_id",
+                    "content_name",
+                    "content_category",
+                    "content_brand",
+                    "content_type",
+                    "currency",
+                    "value"
+                  ],
+                  "expect_value": [
+                    "au-tracking-event-facebook",
+                    "10331987",
+                    "Product Test tracking event",
+                    "",
+                    "",
+                    "product_group",
+                    "USD",
+                    "10"
+                  ]
+                }
+              ],
+              "buy_now": [
+                {
+                  "event": "InitiateCheckout",
+                  "key_value": ["shop_id", "shop_name", "content_type", "currency", "value", "num_items"],
+                  "expect_value": ["10331987", "au-tracking-event-facebook", "product_group", "USD", "20", "2"]
+                }
+              ],
+              "add_to_by_icon": [
+                {
+                  "event": "PageView",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["au-tracking-event-facebook", "10331987"]
+                },
+                {
+                  "event": "CartDrawerIconClicked",
+                  "key_value": ["shop_name", "shop_id"],
+                  "expect_value": ["au-tracking-event-facebook", "10331987"]
+                }
+              ],
+              "begin_checkout": [
+                {
+                  "event": "InitiateCheckout",
+                  "key_value": [
+                    "shop_id",
+                    "shop_name",
+                    "content_category",
+                    "content_type",
+                    "currency",
+                    "value",
+                    "num_items"
+                  ],
+                  "expect_value": ["10331987", "au-tracking-event-facebook", "", "product_group", "USD", "10", "1"]
+                }
+              ],
+              "promotion_code": "Test-event",
+              "use_coupon": [
+                {
+                  "event": "UseCouponCode",
+                  "key_value": ["shop_id", "shop_name", "coupon"],
+                  "expect_value": ["10331987", "au-tracking-event-facebook", "Test-event"]
+                }
+              ],
+              "custom_info": [
+                {
+                  "event": "AddShippingInfo",
+                  "key_value": ["shop_id", "shop_name"],
+                  "expect_value": ["10331987", "au-tracking-event-facebook"]
+                }
+              ],
+              "checkout_info": {
+                "email": "tester@maildrop.cc",
+                "first_name": "Hong",
+                "last_name": "Hanh",
+                "address": "1600 W Loop S",
+                "country": "Vietnam",
+                "city": "Ha Noi",
+                "zipcode": "77027",
+                "phone_number": "0357974111"
+              },
+              "shipping_method": [
+                {
+                  "event": "SelectShippingMethod",
+                  "key_value": ["shop_id", "shop_name", "method"],
+                  "expect_value": ["10331987", "au-tracking-event-facebook", "Heavy Goods Shipping"]
+                }
+              ],
+              "payments_info": [
+                {
+                  "event": "AddPaymentInfo",
+                  "key_value": ["shop_id", "shop_name", "type"],
+                  "expect_value": ["10331987", "au-tracking-event-facebook", "credit_card"]
+                },
+                {
+                  "event": "Purchase",
+                  "key_value": [
+                    "shop_id",
+                    "shop_name",
+                    "content_category",
+                    "content_type",
+                    "currency",
+                    "value",
+                    "num_items"
+                  ],
+                  "expect_value": ["10331987", "au-tracking-event-facebook", "", "product_group", "USD", "8", "1"]
+                }
+              ],
+              "facebook_conversions": [
+                {
+                  "id": "12335435",
+                  "token": ""
+                },
+                {
+                  "id": "14546465",
+                  "token": "adhf452345"
+                },
+                {
+                  "id": "43265526",
+                  "token": "15652wigiwre"
+                },
+                {
+                  "id": "46542656",
+                  "token": "agg45432656"
+                },
+                {
+                  "id": "1243543",
+                  "token": ""
+                }
+              ],
+              "pixelId": "12335435,14546465/adhf452345,43265526/15652wigiwre,46542656/agg45432656,1243543"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "product": {
+    "images": [
+      {
+        "src": "https://picsum.photos/600/900",
+        "position": 1
+      }
+    ],
+    "collections": [],
+    "options": [
+      {
+        "name": "Size",
+        "values": ["M", "L"]
+      }
+    ],
+    "variants": [
+      {
+        "active": true,
+        "option1": "M",
+        "price": 10,
+        "sku": "",
+        "compare_at_price": 20,
+        "cost_per_item": 10,
+        "bar_code": 0,
+        "weight": 10,
+        "weight_unit": "lb",
+        "inventory_quantity": 0,
+        "inventory_management": "",
+        "inventory_policy": "continue",
+        "requires_shipping": true,
+        "taxable": true,
+        "fulfillment_service": "shopbase",
+        "variant_images": [],
+        "shipping_profile_id": 0,
+        "title": "M",
+        "position": 1
+      },
+      {
+        "active": true,
+        "option1": "L",
+        "price": 0,
+        "sku": "",
+        "compare_at_price": 0,
+        "cost_per_item": 0,
+        "bar_code": 0,
+        "weight": 0,
+        "weight_unit": "lb",
+        "inventory_quantity": 0,
+        "inventory_management": "",
+        "inventory_policy": "continue",
+        "requires_shipping": true,
+        "taxable": true,
+        "fulfillment_service": "shopbase",
+        "variant_images": [],
+        "shipping_profile_id": 0,
+        "title": "L",
+        "position": 2
+      }
+    ],
+    "body_html": "<p><br></p>",
+    "title": "Product Test tracking event",
+    "metafields_global_title_tag": "",
+    "metafields_global_description_tag": "",
+    "custom_options": [],
+    "variantDefault": {
+      "active": true,
+      "option1": "",
+      "price": 10,
+      "sku": "",
+      "compare_at_price": 20,
+      "cost_per_item": 10,
+      "bar_code": 0,
+      "weight": 10,
+      "is_default": false,
+      "weight_unit": "lb",
+      "inventory_quantity": 0,
+      "inventory_management": "",
+      "inventory_policy": "continue",
+      "requires_shipping": true,
+      "taxable": true,
+      "fulfillment_service": "shopbase",
+      "variant_images": [],
+      "shipping_profile_id": 0
+    },
+    "tags": "",
+    "product_availability": 1,
+    "tracking_id": "",
+    "tracking_access_token": ""
+  },
+  "card": {
+    "number": "4242424242424242",
+    "holder_name": "HANH",
+    "expire_date": "12 / 33",
+    "cvv": "116"
+  },
+  "cases": {
+    "TRACKING_FACE": {}
+  }
+}

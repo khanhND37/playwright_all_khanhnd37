@@ -1,0 +1,131 @@
+{
+  "platform": "printbase",
+  "shop_template": {
+    "shipping": {
+      "domain": "au-shipping-profile-rules.onshopbase.com",
+      "username": "linhnguyen@beeketing.net",
+      "password": "J@Rvvgqq4)SWY=#"
+    }
+  },
+  "hive_info": {
+    "domain": "hive-pbase.shopbase.com",
+    "username": "shopbase",
+    "password": "UxsLHz^Wjkf35*/w"
+  },
+  "card_info": {
+    "number": "4242424242424242",
+    "holder_name": "Shopbase",
+    "expire_date": "12 / 30",
+    "cvv": "116"
+  },
+  "acc_dashboard_payment": {
+    "stripe": {
+      "stripe_secret_key": "sk_test_Pfv1RbMLdJwdO7o8FOV4d03600K0JL3zbx",
+      "stripe_platform_secret_key": "sk_test_51H1pMbHI2q8TlN76Kybx8YAFcfn9zLu6Ssc097RYoC16IqcVv8OrA0h9DCCPAkhct3ic7RF2n2J407ZvBeYB5P8t00w9v2ImaM"
+    }
+  },
+  "number_retry": 10,
+  "env": {
+    "dev": {},
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-update-checkout-pbase.onshopbase.com",
+      "shop_name": "au-update-checkout-pbase",
+      "user_id": 11247306,
+      "shop_id": 10444681,
+      "username": "opay-qe-1@beeketing.net",
+      "password": "CZFX[b_G5T:+N*Y"
+    }
+  },
+  "cases": {
+    "DATA_DRIVEN_CHECKOUT_EMBEDDED": {
+      "data": [
+        {
+          "case_id": "SB_CHE_UP_43",
+          "case_name": "[Pbase - Embedded] Change data: shipping fee, manual discount fix amount trước khi create order qua cổng Stripe",
+          "payment_method": "card",
+          "email": "tester@maildrop.cc",
+          "shipping_address": {
+            "address1": "814 Mission Street",
+            "address2": "",
+            "city": "Savaneta",
+            "company": "",
+            "country": "Aruba",
+            "country_code": "AW",
+            "country_name": "Aruba",
+            "cpf_or_cnpj_number": "",
+            "first_name": "Tester",
+            "last_name": "ShopBase",
+            "name": "Jena",
+            "phone": "7036618988",
+            "province": "",
+            "province_code": "",
+            "zip": "80001",
+            "remember_me": false
+          },
+          "products": [
+            {
+              "id": 1000000479237002,
+              "title": "Polo",
+              "variant_id": 1000010756089505,
+              "quantity": 1
+            }
+          ],
+          "data_setting": {
+            "discount": {
+              "is_update": true,
+              "title": "SB_CHE_UP_embedded_discount",
+              "value": -10,
+              "type": "manual",
+              "update_fields": ["value"]
+            },
+            "shipping_profile": {
+              "name": "xx_Auto_AOP-PoloShirtBlack-Alloverprint-5XL-SB-CHE-UP",
+              "shipping_zones": [
+                {
+                  "name": "Aruba (Auto dont remove)",
+                  "countries": [
+                    {
+                      "id": 11,
+                      "name": "Aruba",
+                      "code": "AW",
+                      "provinces": null,
+                      "is_remove": true
+                    }
+                  ],
+                  "update_fields": ["countries"]
+                }
+              ]
+            }
+          },
+          "data_reset_setting": {
+            "discount": {
+              "is_update": true,
+              "title": "SB_CHE_UP_embedded_discount",
+              "value": -5,
+              "type": "manual",
+              "update_fields": ["value"]
+            },
+            "shipping_profile": {
+              "name": "xx_Auto_AOP-PoloShirtBlack-Alloverprint-5XL-SB-CHE-UP",
+              "shipping_zones": [
+                {
+                  "name": "Aruba (Auto dont remove)",
+                  "countries": [
+                    {
+                      "id": 11,
+                      "name": "Aruba",
+                      "code": "AW",
+                      "provinces": null
+                    }
+                  ],
+                  "update_fields": ["countries"]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

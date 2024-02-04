@@ -1,0 +1,214 @@
+{
+  "env": {
+    "prod": {
+      "domain": "au-inside-footer-menu.onshopbase.com",
+      "shop_name": "au-inside-footer-menu.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "api": "https://api.shopbase.com",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10332459,
+      "user_id": 73782
+    },
+    "prodtest": {
+      "domain": "au-inside-footer-menu-prodtest.onshopbase.com",
+      "shop_name": "au-inside-footer-menu-prodtest.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "api": "https://prod-test-api.shopbase.com",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10357133,
+      "user_id": 73782,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "domain": "au-inside-footer-menu.myshopbase.net",
+      "shop_name": "au-inside-footer-menu.myshopbase.net",
+      "username": "shopbase@beeketing.net",
+      "api": "https://gapi.dev.shopbase.net",
+      "password": "S#|j>m2N[q",
+      "shop_id": 10321989,
+      "user_id": 73800,
+      "cases": {
+        "FOOTER_MENU": [
+          {
+            "id": "SB_OLS_THE_INS_SF_FOOTER_SECTION_5",
+            "expect": {
+              "desktop": {
+                "screenshot_setting_data": "web-footer-menu-default-dev.png"
+              },
+              "mobile": {
+                "screenshot_setting_data": "mobile-footer-menu-default-dev.png"
+              }
+            }
+          },
+          {
+            "id": "SB_OLS_THE_INS_SF_FOOTER_SECTION_6",
+            "data": {
+              "footer-menu": {
+                "settings": {
+                  "logo": "https://dev-img.btdmp.com/sbase-file/10062741/2022/10/09/1665331970b0528e84d2.jpeg",
+                  "mobile_logo": "https://dev-img.btdmp.com/sbase-file/10062741/2022/10/09/1665332032fcc87f8095.jpeg",
+                  "text": "<p>This is <a href=\"https://www.google.com/\">A link</a> and a <span style=\"color: #2dc26b;\"><strong>image</strong></span></p>\n<p><img src=\"https://dev-img.btdmp.com/sbase-file/10062741/2022/10/09/166533427992c3a97dea.jpeg\" alt=\"\" width=\"47\" height=\"47\" /></p>"
+                }
+              }
+            },
+            "expect": {
+              "desktop": {
+                "screenshot_setting_data": "web-footer-menu-setting-full-data-dev.png"
+              },
+              "mobile": {
+                "screenshot_setting_data": "mobile-footer-menu-setting-full-data-dev.png"
+              }
+            }
+          },
+          {
+            "id": "SB_OLS_THE_INS_SF_FOOTER_SECTION_8",
+            "expect": {
+              "desktop": {
+                "screenshot_setting_data": "web-footer-menu-setting-some-data-dev.png"
+              }
+            }
+          },
+          {
+            "id": "SB_OLS_THE_INS_SF_FOOTER_SECTION_9",
+            "expect": {
+              "desktop": {
+                "screenshot_setting_data": "web-footer-menu-setting-no-data-dev.png"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "cases": {
+    "FOOTER_MENU": [
+      {
+        "description": "Check show Footer menu desktop on SF with data default",
+        "id": "SB_OLS_THE_INS_SF_FOOTER_SECTION_5",
+        "data": {
+          "footer-menu": {
+            "blocks": [],
+            "settings": {
+              "alignment": "left",
+              "full_width": true,
+              "logo": "",
+              "logo_size": "small",
+              "main_menu": "main-menu",
+              "mobile_logo": "",
+              "mobile_logo_size": "small",
+              "text": ""
+            },
+            "type": "footer-menu",
+            "visible": true
+          }
+        },
+        "expect": {
+          "desktop": {
+            "link_menu": null,
+            "screenshot_setting_data": "web-footer-menu-default.png",
+            "visible": true
+          },
+          "mobile": {
+            "screenshot_setting_data": "mobile-footer-menu-default.png"
+          }
+        }
+      },
+      {
+        "description": "Check setting data section Footer menu when setting full data on web",
+        "id": "SB_OLS_THE_INS_SF_FOOTER_SECTION_6",
+        "data": {
+          "footer-menu": {
+            "blocks": [],
+            "settings": {
+              "alignment": "center",
+              "full_width": true,
+              "logo": "https://img.shopbase.com/files/10332459/2022/05/31/16539864129d1aec9da3.jpeg",
+              "logo_size": "medium",
+              "main_menu": "support",
+              "mobile_logo": "https://img.shopbase.com/files/10332459/2022/05/31/1653986422a86aae8a76.jpeg",
+              "mobile_logo_size": "small",
+              "text": "<p>This is <a href=\"https://www.google.com/\">A link</a> and a <span style=\"color: #2dc26b;\"><strong>image</strong></span></p>\n<p><img src=\"https://img.shopbase.com/files/10328787/2022/05/27/16536379828bb04941a9.jpeg\" alt=\"\" width=\"47\" height=\"47\" /></p>"
+            },
+            "type": "footer-menu",
+            "visible": true
+          }
+        },
+        "expect": {
+          "desktop": {
+            "link_text_url": {
+              "link_text": "a link",
+              "url": "google.com"
+            },
+            "link_menu": {
+              "link_text": "FAQs",
+              "url": "/pages/faq"
+            },
+            "screenshot_setting_data": "web-footer-menu-setting-full-data.png",
+            "visible": true
+          },
+          "mobile": {
+            "screenshot_setting_data": "mobile-footer-menu-setting-full-data.png"
+          }
+        }
+      },
+      {
+        "description": "Check setting data section Footer menu when setting some data on web",
+        "id": "SB_OLS_THE_INS_SF_FOOTER_SECTION_8",
+        "data": {
+          "footer-menu": {
+            "blocks": [],
+            "settings": {
+              "alignment": "left",
+              "full_width": false,
+              "logo": "",
+              "logo_size": "large",
+              "main_menu": "support",
+              "mobile_logo": "",
+              "mobile_logo_size": "small",
+              "text": ""
+            },
+            "type": "footer-menu",
+            "visible": true
+          }
+        },
+        "expect": {
+          "desktop": {
+            "link_menu": null,
+            "screenshot_setting_data": "web-footer-menu-setting-some-data.png",
+            "visible": true
+          },
+          "mobile": null
+        }
+      },
+      {
+        "description": "Check not show footer menu on SF when remove all block",
+        "id": "SB_OLS_THE_INS_SF_FOOTER_SECTION_9",
+        "data": {
+          "footer-menu": {
+            "blocks": [],
+            "settings": {
+              "alignment": "left",
+              "full_width": false,
+              "logo": "",
+              "logo_size": "large",
+              "main_menu": "none",
+              "mobile_logo": "",
+              "mobile_logo_size": "small",
+              "text": ""
+            },
+            "type": "footer-menu",
+            "visible": true
+          }
+        },
+        "expect": {
+          "desktop": {
+            "link_menu": null,
+            "screenshot_setting_data": "web-footer-menu-setting-no-data.png",
+            "visible": false
+          },
+          "mobile": null
+        }
+      }
+    ]
+  }
+}

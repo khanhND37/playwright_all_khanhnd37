@@ -1,0 +1,253 @@
+{
+  "env": {
+    "local": {
+      "api": "https://gapi.dev.shopbase.net",
+      "accounts_domain": "accounts.dev.shopbase.net",
+      "domain": "au-translation-pricing.myshopbase.net",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "43AhIn|VWp;[?9&",
+      "shop_name": "au-translation-pricing",
+      "user_id": 89797,
+      "shop_id": 10333948
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "accounts_domain": "accounts.dev.shopbase.net",
+      "domain": "au-translation-pricing.myshopbase.net",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "43AhIn|VWp;[?9&",
+      "shop_name": "au-translation-pricing",
+      "user_id": 89797,
+      "shop_id": 10333948
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-translation-pricing-prod.onshopbase.com",
+      "shop_name": "au-translation-pricing-prod",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "shop_id": 10486125,
+      "theme_id": 1617125
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-translation-pricing-prodtest.onshopbase.com",
+      "shop_name": "au-translation-pricing-prodtest",
+      "accounts_domain": "accounts-test.shopbase.com",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "shop_id": 10486124,
+      "theme_id": 1617122
+    }
+  },
+  "pre_condition": {
+    "product_info": {
+      "title": "product Pre-condition"
+    },
+    "blog_post_info": [
+      {
+        "title": "Blog post 1 Pre-condition",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus rutrum tellus pellentesque eu. Volutpat ac tincidunt vitae semper quis lectus nulla at ",
+        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus rutrum tellus pellentesque eu.",
+        "visibility": "Visible"
+      },
+      {
+        "title": "Blog post 2 Pre-condition",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus rutrum tellus pellentesque eu. Volutpat ac tincidunt vitae semper quis lectus nulla at ",
+        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus rutrum tellus pellentesque eu.",
+        "visibility": "Visible"
+      },
+      {
+        "title": "Blog post 3 Pre-condition",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus rutrum tellus pellentesque eu. Volutpat ac tincidunt vitae semper quis lectus nulla at ",
+        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus rutrum tellus pellentesque eu.",
+        "visibility": "Visible"
+      }
+    ]
+  },
+  "after_condition": ["de", "fr", "nl"],
+  "cases": {
+    "SB_SET_LG_PL_01": {
+      "case_description": "[DB - UI/UX] Check hiển UI popup confirm plan khi buy language - Translation Pricing",
+      "data": {
+        "language_code": "de",
+        "subfolder": "de-us",
+        "default_language": "English"
+      },
+      "text_link": "See how we calculate your price",
+      "language": "French",
+      "tooltip_text": "Upgrade to get your website fully translated."
+    },
+    "SB_SET_LG_PL_02": {
+      "case_description": "[DB - Function] Check hiển thị số lượng content , price và click confirm của popup Full-site translation - Translation Pricing",
+      "data": {
+        "language_code": "de",
+        "subfolder": "de-us",
+        "language": "German",
+        "default_language": "English"
+      },
+      "step1_expect": {
+        "contents": "4",
+        "price": "$0.07"
+      },
+      "blog_post_info": [
+        {
+          "title": "Blog post 1",
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus rutrum tellus pellentesque eu. Volutpat ac tincidunt vitae semper quis lectus nulla at ",
+          "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus rutrum tellus pellentesque eu.",
+          "visibility": "Visible"
+        },
+        {
+          "title": "Blog post 2",
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus rutrum tellus pellentesque eu. Volutpat ac tincidunt vitae semper quis lectus nulla at ",
+          "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus rutrum tellus pellentesque eu.",
+          "visibility": "Visible"
+        }
+      ],
+      "product_info": {
+        "title": "product test pricing"
+      },
+      "step2_expect": {
+        "contents": "7",
+        "price": "$0.13"
+      },
+      "step3": [
+        {
+          "text": "-10",
+          "expect": "$0.00"
+        },
+        {
+          "text": "10.5",
+          "expect": "$0.18"
+        },
+        {
+          "text": "0",
+          "expect": "$0.00"
+        },
+        {
+          "text": "99",
+          "expect": "$1.78"
+        },
+        {
+          "text": "999999",
+          "expect": "$17,999.98"
+        }
+      ],
+      "language_code2": "de"
+    },
+    "SB_SET_LG_PL_03": {
+      "case_description": "[DB - Function] Check charge thành công khi translate language sau 1 tháng sử dụng - Translation Pricing",
+      "data": {
+        "language_code": "de",
+        "subfolder": "de-us",
+        "default_language": "English"
+      },
+      "invoice_filter": {
+        "invoice": "Monthly translation service"
+      },
+      "filter_tag_invoice": "Content:  Monthly translation service",
+      "invoice_info": {
+        "domain": "au-translation-pricing.myshopbase.net",
+        "shop_name": "au-translation-pricing",
+        "amount_display": "-0.07",
+        "content": "Monthly translation service",
+        "amount": "-$0.07",
+        "status": "Success",
+        "type": "OUT",
+        "detail": "Translation service fee for German",
+        "transactions_type": "OUT",
+        "transactions_content": "Translation service fee for German",
+        "transactions_status": "Paid"
+      }
+    },
+    "SB_SET_LG_PL_04": {
+      "case_description": "[DB - Function] Check charge khi thay đổi số lượng content cho các tháng sau đó khi sử dụng translate language - Translation Pricing",
+      "data_languages": [
+        {
+          "language_code": "de",
+          "entityType": "Pages"
+        },
+        {
+          "language_code": "fr",
+          "entityType": "Products"
+        }
+      ],
+      "product_infos": [
+        {
+          "title": "product test pricing 1"
+        },
+        {
+          "title": "product test pricing 2"
+        }
+      ],
+      "invoice_filter": {
+        "invoice": "Monthly translation service"
+      },
+      "filter_tag_invoice": "Content:  Monthly translation service",
+      "invoice_info2": {
+        "domain": "au-translation-pricing.myshopbase.net",
+        "shop_name": "au-translation-pricing",
+        "amount_display": "-0.04",
+        "content": "Monthly translation service",
+        "amount": "-$0.04",
+        "status": "Success",
+        "type": "OUT",
+        "detail": "Translation service fee for French",
+        "transactions_type": "OUT",
+        "transactions_content": "Translation service fee for French",
+        "transactions_status": "Paid"
+      },
+      "step3_language_code": ["de", "nl"],
+      "filter_dutch": [
+        {
+          "field": "Invoice",
+          "select_ddl_value": "Monthly translation service"
+        },
+        {
+          "field": "Amount",
+          "radio": "Equals to",
+          "value_textbox": "-0.09"
+        }
+      ],
+      "invoice_info3_dutch": {
+        "domain": "au-translation-pricing.myshopbase.net",
+        "shop_name": "au-translation-pricing",
+        "amount_display": "-0.09",
+        "content": "Monthly translation service",
+        "amount": "-$0.09",
+        "status": "Success",
+        "type": "OUT",
+        "detail": "Translation service fee for Dutch",
+        "transactions_type": "OUT",
+        "transactions_content": "Translation service fee for Dutch",
+        "transactions_status": "Paid"
+      },
+      "filter_german": [
+        {
+          "field": "Invoice",
+          "select_ddl_value": "Monthly translation service"
+        },
+        {
+          "field": "Amount",
+          "radio": "Equals to",
+          "value_textbox": "-0.05"
+        }
+      ],
+      "invoice_info3_german": {
+        "domain": "au-translation-pricing.myshopbase.net",
+        "shop_name": "au-translation-pricing",
+        "amount_display": "-0.05",
+        "content": "Monthly translation service",
+        "amount": "-$0.05",
+        "status": "Success",
+        "type": "OUT",
+        "detail": "Translation service fee for German",
+        "transactions_type": "OUT",
+        "transactions_content": "Translation service fee for German",
+        "transactions_status": "Paid"
+      }
+    }
+  }
+}

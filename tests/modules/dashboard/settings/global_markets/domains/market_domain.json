@@ -1,0 +1,105 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "accounts_domain": "accounts.dev.shopbase.net",
+      "domain": "auto-global-markets.myshopbase.net/",
+      "connect_domain": "testdomainmarket02.sbdev.tk/",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "43AhIn|VWp;[?9&",
+      "shop_name": "auto-global-markets",
+      "user_id": 89797,
+      "shop_id": 10332224,
+      "country_proxy": "vn",
+      "key_checkout_button": 12345
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "accounts_domain": "accounts-test.shopbase.com",
+      "domain": "au-global-market-prodtest.onshopbase.com/",
+      "connect_domain": "testauto.ngochd7.website/",
+      "username": "dpro-qe-2@beeketing.net",
+      "password": "Dpro@123",
+      "shop_name": "au-global-market-prodtest",
+      "user_id": 11260292,
+      "shop_id": 10470736,
+      "country_proxy": "vn",
+      "key_checkout_button": 12345
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "accounts_domain": "accounts.shopbase.com",
+      "domain": "au-ne-library.onshopbase.com",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "shop_name": "au-ne-library",
+      "user_id": 11244582,
+      "shop_id": 10443706,
+      "country_proxy": "vn",
+      "key_checkout_button": 12345
+    }
+  },
+  "cases": {
+    "SB_SET_GM_DGM_02": {
+      "case_description": "[SF  - Function - InFsw] Kiểm tra hiển thị domain khi seller setting choose Primary domain only và buyer truy cập primary domain",
+      "domain_option": "Primary domain",
+      "data_step3": { "country": "French", "language": "Español (ES)" },
+      "data_step4": { "country": "Germany", "language": "Deutsch (DE)" },
+      "product_handle": "product-02",
+      "collection_handle": "collection-02",
+      "page_policy_handle": "policy",
+      "collection_list_handle": "collections",
+      "cart_handle": "cart",
+      "checkout_handle": "checkouts"
+    },
+    "SB_SET_GM_DGM_03": {
+      "case_description": "[SF  - Function - InFsw] Kiểm tra hiển thị buyer truy cập domain khi enable  subfolder, switch sang ngôn ngữ khác",
+      "domain_option": "Subfolders",
+      "pre_condition": {
+        "country": "Vietnam",
+        "language": "Vietnamese"
+      },
+      "flag": "https://img.thesitebase.net/img/flags/vietnam.png",
+      "language_on_global_switcher": "Tiếng Việt (VI)",
+      "product_name": "product 02",
+      "collection_handle": "collection-02",
+      "default_url": "vi-vn",
+      "data_step2": { "country": "Germany", "language": "Deutsch (DE)", "url": "de-de" }
+    },
+    "SB_SET_GM_DGM_04": {
+      "case_description": "[SF - Function - InFsw] Kiểm tra hiển thị buyer truy cập domain khi enable subfolder với user không thuộc market nào",
+      "domain_option": "Subfolders",
+      "pre_condition": {
+        "delete_country": "Vietnam",
+        "unpublish_language": "Vietnamese",
+        "country": "Angola",
+        "language": "German"
+      },
+      "data_step1": { "country": "Angola", "language": "Deutsch (DE)" },
+      "product_handle": "product-02",
+      "subfolder_url": "de-ao"
+    },
+    "SB_SET_GM_DGM_05": {
+      "case_description": "SB_SET_GM_DGM_05 - Check domain subfolder trường hợp enable redirection",
+      "domain_option": "Subfolders",
+      "pre_condition": {
+        "country": "Vietnam",
+        "language": "Vietnamese"
+      },
+      "default_url": "vi-vn",
+      "data_step3": { "country": "Germany", "language": "Deutsch (DE)", "url": "de-de" },
+      "data_step5": { "country": "Canada", "language": "English (EN)", "url": "en-ca" }
+    },
+    "SB_SET_GM_DGM_06": {
+      "case_description": "SB_SET_GM_DGM_06 - Check domain subfolder trường hợp disable redirection",
+      "domain_option": "Subfolders",
+      "pre_condition": {
+        "country": "Vietnam",
+        "language": "Vietnamese"
+      },
+      "default_url": "vi-vn",
+      "data_step3": { "country": "Germany", "language": "Deutsch (DE)", "url": "de-de" },
+      "data_step5": { "country": "Canada", "language": "English (EN)", "url": "en-ca" }
+    }
+  }
+}

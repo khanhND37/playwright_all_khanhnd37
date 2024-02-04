@@ -1,0 +1,180 @@
+{
+  "customize_path": "/admin/apps/boost-convert/ctool/customize",
+  "realtime_visitor_path": "/admin/apps/boost-convert/ctool/realtime-visitors",
+  "product_countdown_path": "/admin/apps/boost-convert/ctool/product-countdown",
+  "settings_path": "/admin/apps/boost-convert/social-proof/notifications/add",
+  "notifications_list_path": "admin/apps/boost-convert/social-proof/notifications",
+  "timer_countdown_path": "/admin/apps/boost-convert/ctool/timer-countdown/add",
+  "card_info": {
+    "number": "4242424242424242",
+    "holder_name": "Shopbase",
+    "expire_date": "12 / 34",
+    "cvv": "116"
+  },
+  "env": {
+    "local": {
+      "domain": "au-boost-convert-dev.myshopbase.net",
+      "shop_name": "au-boost-convert-dev",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10332026,
+      "user_id": 90252,
+      "accounts_domain": "accounts.dev.shopbase.net",
+      "products_checkout": [
+        {
+          "name": "product A",
+          "variant_id": 1000001774408439,
+          "quantity": 1
+        }
+      ]
+    },
+    "dev": {
+      "domain": "au-boost-convert-dev.myshopbase.net",
+      "shop_name": "au-boost-convert-dev",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10332026,
+      "user_id": 90252,
+      "accounts_domain": "accounts.dev.shopbase.net",
+      "products_checkout": [
+        {
+          "name": "product A",
+          "variant_id": 1000001774408439,
+          "quantity": 1
+        }
+      ],
+      "cases": {
+        "SB_SF_BC_13": {
+          "product_id": 1100000000829452
+        }
+      }
+    },
+    "prodtest": {
+      "domain": "au-boost-convert-prodtest.onshopbase.com",
+      "shop_name": "au-boost-convert-prodtest",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10464937,
+      "user_id": 11260206,
+      "accounts_domain": "accounts-test.shopbase.com",
+      "products_checkout": [
+        {
+          "name": "product A",
+          "variant_id": 1000010926437787,
+          "quantity": 1
+        }
+      ],
+      "cases": {
+        "SB_SF_BC_13": {
+          "product_id": 1000000486726843
+        }
+      }
+    },
+    "prod": {
+      "domain": "au-boost-convert-prod.onshopbase.com",
+      "shop_name": "au-boost-convert-prod",
+      "api": "https://api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10464939,
+      "user_id": 11260206,
+      "accounts_domain": "accounts.shopbase.com",
+      "products_checkout": [
+        {
+          "name": "product A",
+          "variant_id": 1000010926441801,
+          "quantity": 1
+        }
+      ],
+      "cases": {
+        "SB_SF_BC_13": {
+          "product_id": 1000000486726975
+        }
+      }
+    }
+  },
+  "cases": {
+    "SB_SF_BC_13": {
+      "description": "Check hiển thị Sale notification & Checkout notification",
+      "data": {
+        "product_name": ["product B", "product A"],
+        "handle": "product-a",
+        "location": "Brazil"
+      }
+    },
+    "SB_SF_BC_23": {
+      "description": "Check hiển thị countdown tool ngoài SF",
+      "data": {
+        "customize": {
+          "timer_countdown": {
+            "color": "#E85244",
+            "font_family": "store",
+            "font_size": 15
+          },
+          "product_countdown": {
+            "process_color": "#E85244",
+            "background_color": "#F2F2F2",
+            "font_family": "store",
+            "font_size": 15
+          },
+          "realtime_visitors": {
+            "text_color": "#000000",
+            "background_color": "#E85244",
+            "font_family": "store",
+            "number_color": "#FFFFFF",
+            "type": "fill",
+            "font_size": 15
+          }
+        },
+        "handle": "product-a",
+        "timer_countdown": {
+          "duration": 11,
+          "color": "#A74729",
+          "front_size": 15
+        },
+        "product_countdown": {
+          "process_color": "#C729D1",
+          "background_color": "#F2F2F2",
+          "front_size": 16,
+          "number_random_from": 10,
+          "number_random_to": 15
+        },
+        "realtime_visitor": {
+          "text_color": "#000000",
+          "background_color": "#E85244",
+          "number_color": "#DA2424",
+          "type": "outline",
+          "font_size": 18,
+          "number_random_from": 10,
+          "number_random_to": 15
+        },
+
+        "product_countdown_default": {
+          "enable": true,
+          "trigger": {
+            "target": "all"
+          },
+          "type": "number",
+          "percent_random_from": 15,
+          "percent_random_to": 40,
+          "number_random_from": 15,
+          "number_random_to": 40
+        },
+        "realtime_visitor_default": {
+          "enable": true,
+          "number_random_from": 10,
+          "number_random_to": 100,
+          "trigger": {
+            "target": "all"
+          }
+        },
+        "product_name": "product A",
+        "duration_type": "hours",
+        "timer": "11:00:00"
+      }
+    }
+  }
+}

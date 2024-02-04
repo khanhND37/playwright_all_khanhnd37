@@ -1,0 +1,179 @@
+{
+  "env": {
+    "prod": {
+      "domain": "au-find-product.onshopbase.com",
+      "api": "https://api.shopbase.com",
+      "shop_name": "au-find-product",
+      "username": "shopbase3@beeketing.net",
+      "password": "aAeg*PJR4.t6V:P",
+      "user_id": 206811,
+      "shop_id": 10384962,
+      "odoo_host": "https://autotest-erp-plus.shopbase.dev",
+      "odoo_db": "shopbase_fulfillment",
+      "odoo_username": "qaocg",
+      "odoo_password": "LFmy=qGLvwW^E63b",
+      "cancel_reason_id": 20,
+      "quotation_expired": 1979438,
+      "quotation_name": [
+        "SO10344062",
+        "SO10375655",
+        "SO10057079",
+        "SO10186758",
+        "SO10088680",
+        "SO00000000",
+        "SO10306077"
+      ],
+      "product_template_id": 1477547
+    },
+    "prodtest": {
+      "domain": "au-find-product-prodtest.onshopbase.com",
+      "api": "https://prod-test-api.shopbase.com",
+      "shop_name": "au-find-product-prodtest",
+      "username": "shopbase3@beeketing.net",
+      "password": "aAeg*PJR4.t6V:P",
+      "user_id": 206811,
+      "shop_id": 10384435,
+      "odoo_host": "https://autotest-erp-plus.shopbase.dev",
+      "odoo_db": "shopbase_fulfillment",
+      "odoo_username": "qaocg",
+      "odoo_password": "LFmy=qGLvwW^E63b",
+      "cancel_reason_id": 20,
+      "quotation_expired": 1979438,
+      "quotation_name": [
+        "SO10344062",
+        "SO10375655",
+        "SO10057079",
+        "SO10186758",
+        "SO10088680",
+        "SO00000000",
+        "SO10306077"
+      ],
+      "product_template_id": 1477547,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "domain": "au-find-product.myshopbase.net",
+      "api": "https://gapi.dev.shopbase.net",
+      "shop_name": "au-find-product",
+      "username": "shopbase3@beeketing.net",
+      "password": "=l-N&YG}g<'KLJk",
+      "user_id": 86961,
+      "shop_id": 10323640,
+      "odoo_host": "https://odoo.dev.shopbase.net/",
+      "odoo_db": "sbase_fulfillment_dev",
+      "odoo_username": "admin",
+      "odoo_password": "admin",
+      "cancel_reason_id": 3,
+      "quotation_expired": 1011132,
+      "quotation_name": ["SO11808", "SO11108", "SO10129", "SO12452", "SO12451", "SO00000", "SO12557"],
+      "product_template_id": 1145438
+    }
+  },
+  "cases": {
+    "SB_RLSBFF_PLH_FPR_6": {
+      "data_sale_order": {
+        "validity_date": "2030-11-11",
+        "x_minimum_order_quantity": 1,
+        "x_minimum_order_value": 2,
+        "x_estimated_delivery": 10,
+        "x_quote_based_on": true,
+        "payment_term_id": 3
+      },
+      "url_request": "https://www.aliexpress.com/item/3256804104668711.html",
+      "product_name": "5Pcs Gold Plated Enamel Panda Charm Pendant for Jewelry Making Bracelet Women Necklace Earrings Accessories Findings DIY",
+      "price": "$1.00",
+      "expire_date": "November 11, 2030",
+      "reason_cancel_id": 3
+    },
+    "SB_RLSBFF_PLH_FPR_7": {
+      "url_request": "https://www.aliexpress.com/item/3256802794995724.html",
+      "product_name": "Cactus Jack Letter Print Fleece Mens Sweatshirt Stranger Things Oversize Harajuku Streetwear Casual Hooded Hoodies"
+    },
+    "SB_RLSBFF_PLH_FPR_8": {
+      "validity_date": ["2041-01-01", "2020-11-11"],
+      "product_name": "New American retro high waist jeans female Y2K autumn and winter multi-pocket washed jeans high street ins multi-pocket overalls"
+    },
+    "SB_RLSBFF_PLH_FPR_9": {
+      "data": [
+        {
+          "description": "Verify quotation khi báo giá không được tích Based on the total number of all variants on Odoo",
+          "case_id": "SB_RLSBFF_PLH_FPR_9",
+          "unit_price": [10, 20, 30, 40, 50],
+          "x_quote_based_on": false,
+          "url_request": "https://www.aliexpress.com/item/3256804814098462.html"
+        },
+        {
+          "description": "Verify quotation khi báo giá chọn Based on the total number of all variants on Odoo",
+          "case_id": "SB_RLSBFF_PLH_FPR_10",
+          "unit_price": [10, 20, 30, 40, 50],
+          "x_quote_based_on": true,
+          "url_request": "https://www.aliexpress.com/item/3256804814098462.html"
+        }
+      ]
+    },
+    "SB_RLSBFF_PLH_FPR_11": {
+      "data": [
+        {
+          "index_quotation_name": 6,
+          "quotation_status": "Available",
+          "tab": "Quotation created"
+        },
+        {
+          "index_quotation_name": 1,
+          "quotation_status": "Updating",
+          "tab": "Needs update"
+        },
+        {
+          "index_quotation_name": 2,
+          "quotation_status": "Processing",
+          "tab": "Submitted request"
+        },
+        {
+          "index_quotation_name": 3,
+          "quotation_status": "Expired",
+          "tab": "Expired"
+        },
+        {
+          "index_quotation_name": 4,
+          "quotation_status": "Canceled",
+          "tab": "No result"
+        }
+      ],
+      "index_quotation_name": 5
+    },
+    "SB_RLSBFF_PLH_FPR_18": {
+      "product_name": "Men's Belt Outdoor Hunting Tactics Belt Multi functional Buckle Nylon Belt High Quality Marine Corps Canvas Plastic Buckle",
+      "tabs": ["Submitted request", "Quotation created", "Needs update", "Expired", "No result"]
+    },
+    "SB_RLSBFF_PLH_FPR_22": {
+      "validity_date": ["2020-11-11", "2041-01-01"],
+      "is_renew": true,
+      "url_request": "https://www.aliexpress.com/item/3256804104668711.html",
+      "product_name": "5Pcs Gold Plated Enamel Panda Charm Pendant for Jewelry Making Bracelet Women Necklace Earrings Accessories Findings DIY",
+      "data_sale_order": {
+        "validity_date": "2020-11-11",
+        "x_minimum_order_quantity": 1,
+        "x_minimum_order_value": 2,
+        "x_estimated_delivery": 10,
+        "x_quote_based_on": true,
+        "payment_term_id": 3
+      }
+    },
+    "SB_RLSBFF_PLH_FPR_23": {
+      "description": "Verify quotation sau khi thực hiện Renew request không thành công với quotation expired",
+      "case_id": "SB_RLSBFF_PLH_FPR_23",
+      "validity_date": ["2020-11-11"],
+      "is_renew": false,
+      "url_request": "https://www.aliexpress.com/item/3256804104668711.html",
+      "product_name": "5Pcs Gold Plated Enamel Panda Charm Pendant for Jewelry Making Bracelet Women Necklace Earrings Accessories Findings DIY",
+      "data_sale_order": {
+        "validity_date": "2020-11-11",
+        "x_minimum_order_quantity": 1,
+        "x_minimum_order_value": 2,
+        "x_estimated_delivery": 10,
+        "x_quote_based_on": true,
+        "payment_term_id": 3
+      }
+    }
+  }
+}

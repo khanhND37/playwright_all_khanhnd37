@@ -1,0 +1,263 @@
+{
+  "help_link": "https://help.shopbase.com/en/?debug=true",
+  "typesense_key_value": "TwrgKM8I7jSVoPCCMe7XcafkfgLO6KMz",
+  "cases": {
+    "SB_HC_12": {
+      "screenshot_on_about_us": "creator_on_about_us.png",
+      "section_on_explore": [
+        {
+          "section": "Web Builder",
+          "screenshot": "section_web_builder.png"
+        },
+        {
+          "section": "Create Digital Products",
+          "screenshot": "section_digital_product.png"
+        },
+        {
+          "section": "Customize Checkout",
+          "screenshot": "section_checkout.png"
+        },
+        {
+          "section": "FAQs",
+          "screenshot": "section_faq.png"
+        }
+      ],
+      "screenshot_on_explore_title": "title_explore_creator.png",
+      "category_link": "category/about-shopbase-creator"
+    },
+    "SB_HC_IMS_6": {
+      "data": [
+        {
+          "case_name": "keyword không khớp với bất kỳ bài viết nào",
+          "param": {
+            "key": "@@@@",
+            "query_by": "title+,+content",
+            "filter_by": "locale:=en&&status:=published"
+          },
+          "result": {
+            "title": "",
+            "content": ""
+          }
+        },
+        {
+          "case_name": "keyword khớp 100% với title bài viết thuộc category=general",
+          "param": {
+            "key": "Set Pricing rules on Ali Dropship Connector",
+            "query_by": "title",
+            "filter_by": "category:=general&&status:=published&&locale:=en"
+          },
+          "result": {
+            "title": "Set Pricing rules on Ali Dropship Connector",
+            "content": "pricing"
+          }
+        },
+        {
+          "case_name": "keyword khớp 100% với title bài viết thuộc category=shopbase",
+          "param": {
+            "key": "Understand ShopBase Payments",
+            "query_by": "title",
+            "filter_by": "category:=shopbase&&status:=published&&locale:=en"
+          },
+          "result": {
+            "title": "Understand ShopBase Payments",
+            "content": "ShopBase"
+          }
+        },
+        {
+          "case_name": "keyword khớp 100% với title bài viết thuộc category=printbase",
+          "param": {
+            "key": "Introduction to Custom Art in PrintBase & PrintHub",
+            "query_by": "title",
+            "filter_by": "category:=printbase&&status:=published&&locale:=en"
+          },
+          "result": {
+            "title": "Introduction to Custom Art in PrintBase & PrintHub",
+            "content": "PrintBase"
+          }
+        },
+        {
+          "case_name": "keyword khớp 100% với title bài viết thuộc category=plusbase",
+          "param": {
+            "key": "Tips for writing PlusBase product description",
+            "query_by": "title",
+            "filter_by": "category:=plusbase&&status:=published&&locale:=en"
+          },
+          "result": {
+            "title": "Tips for writing PlusBase product description",
+            "content": "product"
+          }
+        },
+        {
+          "case_name": "keyword có trong content/ title bài viết",
+          "param": {
+            "key": "Tips for writing PlusBase product description",
+            "query_by": "title+,+content",
+            "filter_by": "category:=shopbase&&status:=published&&locale:=en"
+          },
+          "result": {
+            "title": "Tips",
+            "content": "for"
+          }
+        },
+        {
+          "case_name": "keyword có trong title/content bài viết: language=vietnamese",
+          "param": {
+            "key": "Chia sẻ và cài đặt đánh giá cửa hàng từ cơ sở dữ liệu PrintBase",
+            "query_by": "title+,+content",
+            "filter_by": "category:=printbase&&status:=published&&locale:=vi"
+          },
+          "result": {
+            "title": "Chia sẻ và cài đặt đánh giá cửa hàng từ cơ sở dữ liệu PrintBase",
+            "content": "PrintBase"
+          }
+        },
+        {
+          "case_name": "keyword có trong title/content bài viết: language=chinese",
+          "param": {
+            "key": "从PrintBase数据库获取共享评论",
+            "query_by": "title+,+content",
+            "filter_by": "category:=printbase&&status:=published&&locale:=zh"
+          },
+          "result": {
+            "title": "从PrintBase数据库获取共享评论",
+            "content": "从PrintBase数据库获取共享评论"
+          }
+        }
+      ]
+    }
+  },
+  "env": {
+    "prod": {
+      "help_link": "https://help.shopbase.com",
+      "cases": {
+        "SB_HC_12": {
+          "screenshot_on_about_us": "creator_on_about_us.png",
+          "section_on_explore": [
+            {
+              "section": "Web Builder",
+              "screenshot": "section_web_builder.png"
+            },
+            {
+              "section": "Create Digital Products",
+              "screenshot": "section_digital_product.png"
+            },
+            {
+              "section": "Customize Checkout",
+              "screenshot": "section_checkout.png"
+            },
+            {
+              "section": "FAQs",
+              "screenshot": "section_faq.png"
+            }
+          ],
+          "screenshot_on_explore_title": "title_explore_creator.png",
+          "category_link": "category/about-shopbase-creator"
+        },
+        "SB_HC_IMS_6": {
+          "data": [
+            {
+              "case_name": "keyword không khớp với bất kỳ bài viết nào",
+              "param": {
+                "key": "@@@@",
+                "query_by": "title+,+content",
+                "filter_by": "locale:=en&&status:=published"
+              },
+              "result": {
+                "title": "",
+                "content": ""
+              }
+            },
+            {
+              "case_name": "keyword khớp 100% với title bài viết thuộc category=general",
+              "param": {
+                "key": "Set Pricing rules on Ali Dropship Connector",
+                "query_by": "title",
+                "filter_by": "category:=general&&status:=published&&locale:=en"
+              },
+              "result": {
+                "title": "Set Pricing rules on Ali Dropship Connector",
+                "content": "pricing"
+              }
+            },
+            {
+              "case_name": "keyword khớp 100% với title bài viết thuộc category=shopbase",
+              "param": {
+                "key": "Understand ShopBase Payments",
+                "query_by": "title",
+                "filter_by": "category:=shopbase&&status:=published&&locale:=en"
+              },
+              "result": {
+                "title": "Understand ShopBase Payments",
+                "content": "ShopBase"
+              }
+            },
+            {
+              "case_name": "keyword khớp 100% với title bài viết thuộc category=printbase",
+              "param": {
+                "key": "Introduction to Custom Art in PrintBase & PrintHub",
+                "query_by": "title",
+                "filter_by": "category:=printbase&&status:=published&&locale:=en"
+              },
+              "result": {
+                "title": "Introduction to Custom Art in PrintBase & PrintHub",
+                "content": "PrintBase"
+              }
+            },
+            {
+              "case_name": "keyword khớp 100% với title bài viết thuộc category=plusbase",
+              "param": {
+                "key": "Tips for writing PlusBase product description",
+                "query_by": "title",
+                "filter_by": "category:=plusbase&&status:=published&&locale:=en"
+              },
+              "result": {
+                "title": "Tips for writing PlusBase product description",
+                "content": "product"
+              }
+            },
+            {
+              "case_name": "keyword có trong content/ title bài viết",
+              "param": {
+                "key": "Tips for writing PlusBase product description",
+                "query_by": "title+,+content",
+                "filter_by": "category:=shopbase&&status:=published&&locale:=en"
+              },
+              "result": {
+                "title": "Tips",
+                "content": "for"
+              }
+            },
+            {
+              "case_name": "keyword có trong title/content bài viết: language=vietnamese",
+              "param": {
+                "key": "Chia sẻ và cài đặt đánh giá cửa hàng từ cơ sở dữ liệu PrintBase",
+                "query_by": "title+,+content",
+                "filter_by": "category:=printbase&&status:=published&&locale:=vi"
+              },
+              "result": {
+                "title": "Chia sẻ và cài đặt đánh giá cửa hàng từ cơ sở dữ liệu PrintBase",
+                "content": "PrintBase"
+              }
+            },
+            {
+              "case_name": "keyword có trong title/content bài viết: language=chinese",
+              "param": {
+                "key": "从PrintBase数据库获取共享评论",
+                "query_by": "title+,+content",
+                "filter_by": "category:=printbase&&status:=published&&locale:=zh"
+              },
+              "result": {
+                "title": "从PrintBase数据库获取共享评论",
+                "content": "从PrintBase数据库获取共享评论"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "prodtest": {
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://prod-test-api.shopbase.com"
+    }
+  }
+}

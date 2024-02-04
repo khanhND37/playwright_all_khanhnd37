@@ -1,0 +1,151 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-manage-campaign-pbase.myshopbase.net",
+      "shop_name": "au-manage-campaign-pbase",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_id": 10327422,
+      "user_id": 73800
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-manage-campaign-pb-prodtest.onshopbase.com",
+      "shop_name": "au-manage-campaign-pb-prodtest",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10403234,
+      "user_id": 73782,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-manage-campaign-pb.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_name": "au-manage-campaign-pb",
+      "shop_id": 10403149,
+      "user_id": 73782
+    }
+  },
+  "time_out": 800000,
+  "max_diff_pixel_ratio": 0.05,
+  "threshold": 0.1,
+  "max_diff_pixels": 2000,
+  "url_catalog": "/admin/pbase-product-base/catalogs.json",
+  "url_shipping_combo": "/admin/pbase-product-base/shipping-combos.json",
+  "cases": {
+    "SB_PRB_MC_1": {
+      "campaign_delete": "Search Campaign",
+      "campaign_search": [
+        {
+          "campaign_search": "Campaign no exist",
+          "total_product": 0
+        },
+        {
+          "campaign_search": "Search Campaign",
+          "total_product": 2
+        },
+        {
+          "campaign_search": "Search Campaign 1",
+          "total_product": 1
+        }
+      ],
+      "data": [
+        {
+          "campaign_info": {
+            "product_infos": [
+              {
+                "category": "Apparel",
+                "base_product": "V-neck T-shirt"
+              }
+            ],
+            "layers": [
+              {
+                "layer_type": "Text",
+                "layer_value": "Text 1",
+                "front_or_back": "Front"
+              }
+            ],
+            "pricing_info": {
+              "title": "Search Campaign 1"
+            }
+          }
+        },
+        {
+          "campaign_info": {
+            "product_infos": [
+              {
+                "category": "Apparel",
+                "base_product": "V-neck T-shirt"
+              }
+            ],
+            "layers": [
+              {
+                "layer_type": "Text",
+                "layer_value": "Text 1",
+                "front_or_back": "Front"
+              }
+            ],
+            "pricing_info": {
+              "title": "Search Campaign 2"
+            }
+          }
+        }
+      ]
+    },
+    "SB_PRB_MC_2": {
+      "campaign_info": {
+        "product_infos": [
+          {
+            "category": "Apparel",
+            "base_product": "V-neck T-shirt"
+          }
+        ],
+        "layers": [
+          {
+            "layer_type": "Text",
+            "layer_value": "Text 1",
+            "front_or_back": "Front"
+          }
+        ],
+        "pricing_info": {
+          "title": "Unavailable Campaign"
+        }
+      },
+      "action_campaign_unavailable": "Make 1 campaign unavailable",
+      "action_campaign_available": "Make 1 campaign available",
+      "snapshot_name": {
+        "popup_unavailable": "popup_unavailable_SB_PRB_MC_2.png",
+        "popup_available": "popup_available_SB_PRB_MC_2.png"
+      },
+      "status_unavailable": "unavailable",
+      "status_available": "available"
+    },
+    "SB_PRB_MC_6": {
+      "action_delete_available": "Delete selected campaigns",
+      "campaign_info": {
+        "product_infos": [
+          {
+            "category": "Apparel",
+            "base_product": "V-neck T-shirt"
+          }
+        ],
+        "layers": [
+          {
+            "layer_type": "Text",
+            "layer_value": "Text 1",
+            "front_or_back": "Front"
+          }
+        ],
+        "pricing_info": {
+          "title": "Campaign delete"
+        }
+      },
+      "snapshot_name": {
+        "popup_delete": "popup_delete_SB_PRB_MC_6.png"
+      }
+    }
+  }
+}

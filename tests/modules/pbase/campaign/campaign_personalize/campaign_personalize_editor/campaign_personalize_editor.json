@@ -1,0 +1,662 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-camp-personalize-editor.onshopbase.com",
+      "shop_name": "au-camp-personalize-editor",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "user_id": 73782,
+      "shop_id": 10403994,
+      "time_out": 2500000,
+      "hive_pb_domain": "hive-pbase.shopbase.com",
+      "hive_pb_username": "shopbase",
+      "hive_pb_password": "UxsLHz^Wjkf35*/w"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-camp-personalize-editor-prodtest.onshopbase.com",
+      "shop_name": "au-camp-personalize-editor-prodtest",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "user_id": 73782,
+      "shop_id": 10405304,
+      "time_out": 2500000,
+      "hive_pb_domain": "hive-pbase-prod-test.shopbase.com",
+      "hive_pb_username": "shopbase",
+      "hive_pb_password": "UxsLHz^Wjkf35*/w",
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-camp-personalize-editor.myshopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_name": "au-camp-personalize-editor",
+      "user_id": 73800,
+      "shop_id": 10322693,
+      "time_out": 2500000,
+      "hive_pb_domain": "hive-pbase.dev.shopbase.net",
+      "hive_pb_username": "shopbase",
+      "hive_pb_password": "123456",
+      "cases": {
+        "SB_PRB_LP_1": {
+          "data_text_field": {
+            "product_info": {
+              "category": "All Over Print",
+              "base_product": "AOP Beach Shorts"
+            }
+          }
+        },
+        "SB_PRB_LP_2": {
+          "product_info": {
+            "category": "All Over Print",
+            "base_product": "AOP Beach Shorts"
+          }
+        },
+        "SB_PRB_LP_3": {
+          "product_info": {
+            "category": "All Over Print",
+            "base_product": "AOP Beach Shorts"
+          }
+        }
+      }
+    }
+  },
+  "url_catalog_page": "/admin/pod/catalog",
+  "url_catalog": "/admin/pbase-product-base/catalogs.json",
+  "url_shipping_combo": "/admin/pbase-product-base/shipping-combos.json",
+  "cases": {
+    "SB_PRB_LP_1": {
+      "data_text_field": {
+        "product_info": {
+          "category": "All Over Print",
+          "base_product": "Baseball Jersey"
+        },
+        "layers": [
+          {
+            "layer_type": "Text",
+            "layer_value": "Text 1"
+          },
+          {
+            "layer_type": "Text",
+            "layer_value": "Text 2"
+          },
+          {
+            "layer_type": "Image",
+            "image_name": "background 1.png"
+          }
+        ],
+        "custom_options": {
+          "type": "Text field",
+          "target_layer": "Text layer 2",
+          "label": "Text field"
+        },
+        "data_invalid": [
+          {
+            "type": "Text field",
+            "target_layer": "Text layer 1",
+            "label": "  ",
+            "add_fail": true
+          },
+          {
+            "type": "Text field",
+            "target_layer": "Text layer 1",
+            "label": "Text field",
+            "add_fail": true
+          },
+          {
+            "type": "Text field",
+            "target_layer": "Text layer 1",
+            "max_length": "  ",
+            "add_fail": true
+          },
+          {
+            "type": "Text field",
+            "target_layer": "Text layer 1",
+            "max_length": "257",
+            "add_fail": true
+          },
+          {
+            "type": "Text field",
+            "target_layer": "Text layer 1",
+            "max_length": "1",
+            "default_value": "abc",
+            "add_fail": true
+          },
+          {
+            "type": "Text field",
+            "target_layer": "Text layer 1",
+            "default_value": "#$%^",
+            "add_fail": true
+          }
+        ],
+        "message_error": [
+          "Field is required",
+          "This label is in another custom option",
+          "Field is required",
+          "Max length must be less than 256",
+          "Max length must be less than 1",
+          "Your default value has invalid characters. We only accept characters & numbers"
+        ]
+      },
+      "data_text_area": {
+        "data_invalid": [
+          {
+            "type": "Text area",
+            "target_layer": "Text layer 1",
+            "label": "  ",
+            "add_fail": true
+          },
+          {
+            "type": "Text area",
+            "target_layer": "Text layer 1",
+            "label": "Text field",
+            "add_fail": true
+          },
+          {
+            "type": "Text area",
+            "target_layer": "Text layer 1",
+            "max_length": "  ",
+            "add_fail": true
+          },
+          {
+            "type": "Text area",
+            "target_layer": "Text layer 1",
+            "max_length": "257",
+            "add_fail": true
+          },
+          {
+            "type": "Text area",
+            "target_layer": "Text layer 1",
+            "max_length": "1",
+            "default_value": "abc",
+            "add_fail": true
+          },
+          {
+            "type": "Text area",
+            "target_layer": "Text layer 1",
+            "default_value": "#$%^",
+            "add_fail": true
+          }
+        ],
+        "message_error": [
+          "Field is required",
+          "This label is in another custom option",
+          "Field is required",
+          "Max length must be less than 256",
+          "Max length must be less than 1",
+          "Your default value has invalid characters. We only accept characters & numbers"
+        ]
+      },
+      "data_image": {
+        "data_invalid": [
+          {
+            "type": "Image",
+            "target_layer": "background 1",
+            "label": "  ",
+            "add_fail": true
+          },
+          {
+            "type": "Image",
+            "target_layer": "background 1",
+            "label": "Text field",
+            "add_fail": true
+          }
+        ],
+        "message_error": ["Field is required", "This label is in another custom option"]
+      },
+      "data_picture_choice": {
+        "data_invalid": [
+          {
+            "type": "Picture choice",
+            "type_clipart": "Folder",
+            "value_clipart": "Clipart1_1",
+            "label": "  ",
+            "add_fail": true
+          },
+          {
+            "type": "Picture choice",
+            "type_clipart": "Folder",
+            "value_clipart": "Clipart1_1",
+            "label": "Text field",
+            "add_fail": true
+          }
+        ],
+        "message_error": ["Field is required", "This label is in another custom option"]
+      },
+      "data_radio": {
+        "data_invalid": [
+          {
+            "type": "Radio",
+            "value": "Text test 1>Text test 2",
+            "target_layer": "Text layer 1",
+            "label": "  ",
+            "add_fail": true
+          },
+          {
+            "type": "Radio",
+            "value": "Text test 1>Text test 2",
+            "target_layer": "Text layer 1",
+            "label": "Text field",
+            "add_fail": true
+          },
+          {
+            "type": "Radio",
+            "target_layer": "Text layer 1",
+            "label": "Radio",
+            "add_fail": true
+          }
+        ],
+        "message_error": [
+          "Field is required",
+          "This label is in another custom option",
+          "Please finish this field",
+          "Please finish this field"
+        ]
+      },
+      "data_droplist": {
+        "data_invalid": [
+          {
+            "type": "Droplist",
+            "value": "Text test 1>Text test 2",
+            "target_layer": "Text layer 1",
+            "label": "  ",
+            "add_fail": true
+          },
+          {
+            "type": "Droplist",
+            "value": "Text test 1>Text test 2",
+            "target_layer": "Text layer 1",
+            "label": "Text field",
+            "add_fail": true
+          },
+          {
+            "type": "Droplist",
+            "target_layer": "Text layer 1",
+            "label": "Droplist",
+            "add_fail": true
+          }
+        ],
+        "message_error": [
+          "Field is required",
+          "This label is in another custom option",
+          "Please finish this field",
+          "Please finish this field"
+        ]
+      },
+      "data_checkbox": {
+        "data_invalid": [
+          {
+            "type": "Checkbox",
+            "value": "Text test 1>Text test 2",
+            "target_layer": "Text layer 1",
+            "label": "  ",
+            "add_fail": true
+          },
+          {
+            "type": "Checkbox",
+            "value": "Text test 1>Text test 2",
+            "target_layer": "Text layer 1",
+            "label": "Text field",
+            "add_fail": true
+          }
+        ],
+        "message_error": ["Field is required", "This label is in another custom option"]
+      }
+    },
+    "SB_PRB_LP_2": {
+      "product_info": {
+        "category": "All Over Print",
+        "base_product": "Baseball Jersey"
+      },
+      "layers": [
+        {
+          "layer_type": "Text",
+          "layer_value": "Text 1"
+        },
+        {
+          "layer_type": "Text",
+          "layer_value": "Text 2"
+        },
+        {
+          "layer_type": "Image",
+          "image_name": "background 1.png"
+        }
+      ],
+      "validate_name_clipart": [
+        {
+          "type_custom_option": "Picture choice",
+          "folder_name": "  ",
+          "images": ["BD_10.png"]
+        },
+        {
+          "type_custom_option": "Picture choice",
+          "folder_name": "Clipart1_1",
+          "images": ["BD_10.png"]
+        },
+        {
+          "type_custom_option": "Picture choice",
+          "folder_name": "Folder1",
+          "images": []
+        },
+        {
+          "type_custom_option": "Picture choice",
+          "folder_name": "Folder1",
+          "images": ["BD_10.png", "BD_10.png"]
+        },
+        {
+          "type_custom_option": "Picture choice",
+          "folder_name": "Folder1",
+          "images": ["product-sample-import.csv"]
+        }
+      ],
+      "clipart": {
+        "type_custom_option": "Picture choice",
+        "folder_name": "Folder1",
+        "images": ["BD_10.png"]
+      },
+      "clipart_group": {
+        "type_custom_option": "Picture choice",
+        "folder_name": "Folder2",
+        "images": ["BD_10.png"],
+        "group_name": "Group 01"
+      }
+    },
+    "SB_PRB_LP_3": {
+      "product_info": {
+        "category": "All Over Print",
+        "base_product": "Baseball Jersey"
+      },
+      "layers": [
+        {
+          "layer_type": "Text",
+          "layer_value": "Text 1"
+        }
+      ],
+      "custom_options": {
+        "type": "Text field",
+        "target_layer": "Text layer 1",
+        "label": "Text"
+      }
+    },
+    "PB_PRB_Up_72": {
+      "campaign_info": {
+        "product_infos": [
+          {
+            "category": "Apparel",
+            "base_product": "Hoodie"
+          }
+        ],
+        "layers": [
+          {
+            "layer_type": "Text",
+            "layer_value": "Text 1",
+            "front_or_back": "Front",
+            "location_layer_x": "23",
+            "location_layer_y": "36",
+            "layer_size_w": "835",
+            "layer_size_h": "280"
+          },
+          {
+            "layer_type": "Text",
+            "layer_value": "Text 2",
+            "front_or_back": "Front",
+            "location_layer_x": "333",
+            "location_layer_y": "824",
+            "layer_size_w": "708",
+            "layer_size_h": "128"
+          },
+          {
+            "layer_type": "Text",
+            "layer_value": "Text 3",
+            "front_or_back": "Front",
+            "location_layer_x": "233",
+            "location_layer_y": "336",
+            "layer_size_w": "488",
+            "layer_size_h": "158"
+          },
+          {
+            "layer_type": "Image",
+            "image_name": "BD_1.png",
+            "front_or_back": "Back"
+          }
+        ],
+        "custom_options": [
+          {
+            "type": "Image",
+            "target_layer": "BD_1",
+            "label": "CO1",
+            "position": "below"
+          },
+          {
+            "type": "Radio",
+            "target_layer": "Text layer 1",
+            "label": "CO2",
+            "position": "below",
+            "value": "a>b>c"
+          },
+          {
+            "type": "Droplist",
+            "target_layer": "Text layer 2",
+            "label": "CO3",
+            "position": "below",
+            "value": "a>b>c"
+          },
+          {
+            "type": "Text field",
+            "target_layer": "Text layer 3",
+            "label": "CO4"
+          }
+        ],
+        "pricing_info": {
+          "title": "Campaign edit custom option"
+        }
+      },
+      "custom_options_edit": [
+        {
+          "type": "Image",
+          "label": "Text CO1",
+          "label_edit": "CO1",
+          "target_layer": "BD_1"
+        },
+        {
+          "type": "Radio",
+          "label": "Text CO2",
+          "label_edit": "CO2",
+          "value": "c>d>e",
+          "target_layer": "Text layer 1"
+        },
+        {
+          "type": "Droplist",
+          "label": "Text CO3",
+          "label_edit": "CO3",
+          "value": "c>d>e",
+          "target_layer": "Text layer 2"
+        },
+        {
+          "type": "Text field",
+          "label": "Text CO4",
+          "label_edit": "CO4",
+          "target_layer": "Text layer 3"
+        }
+      ],
+      "snapshot_name": {
+        "verify_opptions_on_sf": "verify-opptions-on-sf-PB-PRB-Up-72.png"
+      }
+    },
+    "PB_PRB_Up_93": {
+      "campaign_info": {
+        "product_infos": [
+          {
+            "category": "Apparel",
+            "base_product": "Hoodie"
+          }
+        ],
+        "layers": [
+          {
+            "layer_type": "Text",
+            "layer_value": "Text 1",
+            "front_or_back": "Front",
+            "location_layer_x": "23",
+            "location_layer_y": "36",
+            "layer_size_w": "835",
+            "layer_size_h": "280"
+          },
+          {
+            "layer_type": "Text",
+            "layer_value": "Text 2",
+            "front_or_back": "Front",
+            "location_layer_x": "333",
+            "location_layer_y": "824",
+            "layer_size_w": "708",
+            "layer_size_h": "128"
+          },
+          {
+            "layer_type": "Text",
+            "layer_value": "Text 3",
+            "front_or_back": "Front",
+            "location_layer_x": "233",
+            "location_layer_y": "336",
+            "layer_size_w": "488",
+            "layer_size_h": "158"
+          },
+          {
+            "layer_type": "Image",
+            "image_name": "BD_1.png",
+            "front_or_back": "Back"
+          }
+        ],
+        "custom_options": [
+          {
+            "type": "Image",
+            "target_layer": "BD_1",
+            "label": "CO1",
+            "position": "below"
+          },
+          {
+            "type": "Radio",
+            "target_layer": "Text layer 1",
+            "label": "CO2",
+            "position": "below",
+            "value": "a>b>c"
+          },
+          {
+            "type": "Droplist",
+            "target_layer": "Text layer 2",
+            "label": "CO3",
+            "position": "below",
+            "value": "a>b>c"
+          },
+          {
+            "type": "Text field",
+            "target_layer": "Text layer 3",
+            "label": "CO4"
+          }
+        ],
+        "custom_art": [
+          {
+            "file_name": "CO text field",
+            "file_upload": "BD_2.png",
+            "applied_for": "CO4",
+            "index": 1
+          }
+        ],
+        "pricing_info": {
+          "title": "Campaign custom art"
+        }
+      }
+    },
+    "PB_PRB_Up_95": {
+      "campaign_info": {
+        "product_infos": [
+          {
+            "category": "Apparel",
+            "base_product": "Hoodie"
+          },
+          {
+            "category": "Apparel",
+            "base_product": "Tank"
+          }
+        ],
+        "layers": [
+          {
+            "layer_type": "Text",
+            "layer_value": "Text 1",
+            "front_or_back": "Front",
+            "location_layer_x": "23",
+            "location_layer_y": "36",
+            "layer_size_w": "835",
+            "layer_size_h": "280"
+          },
+          {
+            "layer_type": "Text",
+            "layer_value": "Text 2",
+            "front_or_back": "Front",
+            "location_layer_x": "333",
+            "location_layer_y": "824",
+            "layer_size_w": "708",
+            "layer_size_h": "128"
+          },
+          {
+            "layer_type": "Text",
+            "layer_value": "Text 3",
+            "front_or_back": "Front",
+            "location_layer_x": "233",
+            "location_layer_y": "336",
+            "layer_size_w": "488",
+            "layer_size_h": "158"
+          },
+          {
+            "layer_type": "Image",
+            "image_name": "BD_1.png",
+            "front_or_back": "Back"
+          }
+        ],
+        "custom_options": [
+          {
+            "type": "Image",
+            "target_layer": "BD_1",
+            "label": "CO1",
+            "position": "below"
+          },
+          {
+            "type": "Radio",
+            "target_layer": "Text layer 1",
+            "label": "CO2",
+            "position": "below",
+            "value": "a>b>c"
+          },
+          {
+            "type": "Droplist",
+            "target_layer": "Text layer 2",
+            "label": "CO3",
+            "position": "below",
+            "value": "a>b>c"
+          },
+          {
+            "type": "Text field",
+            "target_layer": "Text layer 3",
+            "label": "CO4"
+          }
+        ],
+        "pricing_info": {
+          "title": "Custom option multi base"
+        }
+      },
+      "conditional_logic_info": {
+        "custom_name": "CO2",
+        "condition": ["is not equal to>a"],
+        "then_show_value": ["CO3"]
+      },
+      "custom_option_show_sf": {
+        "list_custom": ["Image>CO1>BD_5.png", "Radio>CO2>c", "Droplist>CO3>b", "Text field>CO4>Test"]
+      },
+      "base_number": 2,
+      "snapshot_name": {
+        "preview_image_sf": "preview_image_sf-PB-PRB-Up-95.png",
+        "preview_image_sf_change_base": "preview_image_sf_change_base-PB-PRB-Up-95.png"
+      }
+    }
+  }
+}

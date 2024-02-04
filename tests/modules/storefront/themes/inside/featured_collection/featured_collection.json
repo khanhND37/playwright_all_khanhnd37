@@ -1,0 +1,235 @@
+{
+  "env": {
+    "prod": {
+      "domain": "au-inside-featured-collections.onshopbase.com",
+      "shop_name": "au-inside-featured-collections.onshopbase.com",
+      "api": "https://api.shopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10323531,
+      "user_id": 73782
+    },
+    "prodtest": {
+      "domain": "au-ins-featured-collection-prodtest.onshopbase.com",
+      "shop_name": "au-ins-featured-collection-prodtest.onshopbase.com",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10323531,
+      "user_id": 73782,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "domain": "au-ins-featured-collection.myshopbase.net",
+      "shop_name": "au-ins-featured-collection.myshopbase.net",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_id": 10321482,
+      "user_id": 73800
+    }
+  },
+  "cases": {
+    "SB_OLS_THE_INS_SF_FEATURED_COLLECTION_1": {
+      "snapshot": "INS_SF_FEATURED_COLLECTION_1.png"
+    },
+    "CHANGE_SETTINGS": {
+      "data": [
+        {
+          "case_id": "SB_OLS_THE_INS_SF_FEATURED_COLLECTION_2",
+          "description": "Check  show section with Layout Grid on SF",
+          "data": {
+            "home": {
+              "blocks": [],
+              "visible": true,
+              "data": "product",
+              "settings": {
+                "alignment": "left",
+                "collection": {
+                  "handle": "collection-2",
+                  "title": "Collection 2"
+                },
+                "display_as_text_link": false,
+                "heading": "Featured Collection",
+                "layout": "grid",
+                "limit": 15,
+                "product_per_row": 4,
+                "view_more_button_label": ""
+              },
+              "type": "featured-collection"
+            }
+          },
+          "expected": {
+            "limit": 15,
+            "layout": "grid",
+            "collection_name": "Collection 2",
+            "snapshot": "INS_SF_FEATURED_COLLECTION_2.png"
+          }
+        },
+        {
+          "case_id": "SB_OLS_THE_INS_SF_FEATURED_COLLECTION_3",
+          "description": "Check show section Featured Collection with Layout grid have button label",
+          "data": {
+            "home": {
+              "blocks": [],
+              "visible": true,
+              "data": "product",
+              "settings": {
+                "alignment": "center",
+                "collection": {
+                  "handle": "collection-2",
+                  "title": "Collection 2"
+                },
+                "display_as_text_link": false,
+                "heading": "Featured Collection 2",
+                "layout": "grid",
+                "limit": 8,
+                "product_per_row": 4,
+                "view_more_button_label": "View more"
+              },
+              "type": "featured-collection"
+            }
+          },
+          "expected": {
+            "limit": 8,
+            "layout": "grid",
+            "collection_link": "/collections/collection-2",
+            "snapshot": "INS_SF_FEATURED_COLLECTION_3.png",
+            "button_view_more": "View more"
+          }
+        },
+        {
+          "case_id": "SB_OLS_THE_INS_SF_FEATURED_COLLECTION_4",
+          "description": "Verify show section with Layout Slide",
+          "data": {
+            "home": {
+              "blocks": [],
+              "visible": true,
+              "data": "product",
+              "settings": {
+                "alignment": "left",
+                "collection": {
+                  "handle": "collection-2",
+                  "title": "Collection 2"
+                },
+                "display_as_text_link": false,
+                "heading": "Featured Collection Layout Slide 1",
+                "layout": "slider",
+                "limit": 10,
+                "product_per_row": 5,
+                "view_more_button_label": "View more"
+              },
+              "type": "featured-collection"
+            }
+          },
+          "expected": {
+            "limit": 10,
+            "layout": "slider",
+            "product_per_row": 5,
+            "snapshot_next": "featured-collection-slide-next.png",
+            "snapshot_prev,": "featured-collection-slide-prev.png",
+            "collection_name": "Collections 1",
+            "snapshot": "INS_SF_FEATURED_COLLECTION_4.png",
+            "button_view_more": "View more"
+          }
+        },
+        {
+          "case_id": "SB_OLS_THE_INS_SF_FEATURED_COLLECTION_5",
+          "description": "Verify show section with Layout Slide and button text link ",
+          "data": {
+            "home": {
+              "blocks": [],
+              "visible": true,
+              "data": "product",
+              "settings": {
+                "alignment": "center",
+                "collection": {
+                  "handle": "collection-2",
+                  "title": "Collection 2"
+                },
+                "display_as_text_link": true,
+                "heading": "Featured Collection 5",
+                "layout": "slider",
+                "limit": 20,
+                "product_per_row": 5,
+                "view_more_button_label": "View more"
+              },
+              "type": "featured-collection"
+            }
+          },
+          "expected": {
+            "snapshot": "INS_SF_FEATURED_COLLECTION_5.png",
+            "limit": 20,
+            "button_view_more": "View more",
+            "collection_name": "Collection 2",
+            "collection_link": "/collections/collection-2"
+          }
+        },
+        {
+          "case_id": "SB_OLS_THE_INS_SF_FEATURED_COLLECTION_6",
+          "description": "Verify show section Featured Collection Layout Mix setting uncheck button link",
+          "data": {
+            "home": {
+              "blocks": [],
+              "visible": true,
+              "data": "product",
+              "settings": {
+                "alignment": "center",
+                "collection": {
+                  "handle": "collection-2",
+                  "title": "Collection 2"
+                },
+                "display_as_text_link": false,
+                "heading": "Featured Collection 6",
+                "layout": "mix",
+                "limit": 8,
+                "product_per_row": 4,
+                "view_more_button_label": "View more"
+              },
+              "type": "featured-collection"
+            }
+          },
+          "expected": {
+            "layout": "mix",
+            "limit": 5,
+            "collection_name": "Collection 2",
+            "snapshot": "INS_SF_FEATURED_COLLECTION_6.png",
+            "button_view_more": "View more"
+          }
+        },
+        {
+          "case_id": "SB_OLS_THE_INS_SF_FEATURED_COLLECTION_7",
+          "description": "Verify show section Featured Collection Layout Mix and show button label",
+          "data": {
+            "home": {
+              "blocks": [],
+              "visible": true,
+              "data": "product",
+              "settings": {
+                "alignment": "left",
+                "collection": {
+                  "handle": "collection-2",
+                  "title": "Collection 2"
+                },
+                "display_as_text_link": true,
+                "heading": "Featured Collection 7",
+                "layout": "mix",
+                "limit": 8,
+                "product_per_row": 4,
+                "view_more_button_label": "View more"
+              },
+              "type": "featured-collection"
+            }
+          },
+          "expected": {
+            "layout": "mix",
+            "limit": 5,
+            "collection_name": "Collection 2",
+            "snapshot": "INS_SF_FEATURED_COLLECTION_7.png",
+            "button_view_more": "View more"
+          }
+        }
+      ]
+    }
+  }
+}

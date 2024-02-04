@@ -1,0 +1,71 @@
+{
+  "api": "https://gapi.dev.shopbase.net",
+  "username": "linhnguyen@beeketing.net",
+  "password": "123456",
+  "shop_name": "yonex9",
+  "cases": {
+    "TC_CREATE_GLOBAL_MARKET_01": {
+      "data": {
+        "url": "https://yonex9.myshopbase.net/admin/global-markets.json",
+        "method": "POST",
+        "request": {
+          "data": {
+            "name": "cpay",
+            "global_market_countries": [
+              {
+                "country_code": "CA",
+                "country_id": 38,
+                "country_name": "Canada"
+              }
+            ]
+          }
+        },
+        "response": {
+          "status": 200
+        }
+      }
+    },
+    "TC_UPDATE_GLOBAL_MARKET_01": {
+      "data": {
+        "url": "https://yonex9.myshopbase.net/admin/global-markets/{id}.json",
+        "method": "PUT",
+        "request": {
+          "data": {
+            "id": 248,
+            "name": "cpay",
+            "shop_id": 10039505,
+            "is_multiple_currency": false,
+            "currency": "CAD",
+            "exchange_rate": 0.95,
+            "exchange_rate_auto": 1.283945,
+            "is_rate_auto": false,
+            "is_rounding": true,
+            "rounding": 0.99,
+            "price_adjustment": 10,
+            "is_active": false,
+            "global_market_countries": [
+              {
+                "id": 3276,
+                "currency": "CAD",
+                "global_market_id": 248,
+                "country_id": 38,
+                "country_code": "CA",
+                "country_name": "Canada",
+                "exchange_rate": 1.283945,
+                "exchange_rate_auto": 1.283945,
+                "is_rate_auto": true,
+                "is_rounding": false,
+                "rounding": 0.99,
+                "price_adjustment": 0
+              }
+            ],
+            "price_adjustment_type": "price_increase"
+          }
+        },
+        "response": {
+          "status": 200
+        }
+      }
+    }
+  }
+}

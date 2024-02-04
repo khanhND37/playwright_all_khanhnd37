@@ -1,0 +1,855 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-plusbase-checkout-pod.onshopbase.com",
+      "shop_name": "au-plusbase-checkout-pod",
+      "user_id": 74303,
+      "shop_id": 10091371,
+      "username": "shopbase4@beeketing.net",
+      "password": "H7mQdQ]Zj]%[Nm?",
+      "cases": {
+        "SB_PLB_PODPL_POPLC_4": {
+          "case_name": "Kiểm tra checkout product POD và Dropship, cùng lineship Standard Shipping, có tax included, tip, discount percentage",
+          "case_id": "SB_PLB_PODPL_POPLC_4",
+          "is_tax_include": true,
+          "product_info": [
+            {
+              "handle": "test-product-auto-dropship1-screen-smart-watch-bluetooth",
+              "name": "(Test product) Auto Dropship1 Screen Smart Watch Bluetooth",
+              "quantity": 1,
+              "variant_id": 1000010102081081,
+              "tax_info": {
+                "tax_type": "include",
+                "tax_name": "Tax region",
+                "tax_rate": 15
+              }
+            },
+            {
+              "base_name": "Triangle Bikini Set",
+              "name": "Bikini2",
+              "quantity": 1,
+              "option": "S",
+              "variant_id": 1000010117668818,
+              "tax_info": {
+                "tax_type": "include",
+                "tax_name": "Tax region",
+                "tax_rate": 10
+              }
+            }
+          ],
+          "discount_info": {
+            "type": "Percentage",
+            "code": "AU_PERCENTAGE",
+            "value": 0.1
+          },
+          "is_add_ppc": false,
+          "layout": false
+        },
+        "SB_PLB_PODPL_POPLC_5": {
+          "case_name": "Kiểm tra checkout product POD và Dropship, khác shipping group, có tax excluded, tip, discount Fixed amount",
+          "case_id": "SB_PLB_PODPL_POPLC_5",
+          "is_tax_include": false,
+          "product_info": [
+            {
+              "handle": "test-product-auto-dropship1-screen-smart-watch-bluetooth",
+              "name": "(Test product) Auto Dropship1 Screen Smart Watch Bluetooth",
+              "quantity": 1,
+              "variant_id": 1000010102081081,
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax region",
+                "tax_rate": 15
+              }
+            },
+            {
+              "base_name": "Triangle Bikini Set",
+              "name": "Bikini2",
+              "quantity": 1,
+              "option": "S",
+              "variant_id": 1000010117668818,
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax region",
+                "tax_rate": 10
+              }
+            }
+          ],
+          "discount_info": {
+            "type": "Fix amount",
+            "code": "AU_FIX_AMOUNT",
+            "value": 10
+          },
+          "is_add_ppc": false,
+          "layout": false
+        },
+        "SB_PLB_PODPL_POPLC_6": {
+          "case_name": "Kiểm tra checkout product POD và Dropship có item combo, cùng shipping group Fast, có tax included, tip, discount Fixed amount",
+          "case_id": "SB_PLB_PODPL_POPLC_6",
+          "is_tax_include": true,
+          "product_info": [
+            {
+              "handle": "test-product-auto-dropship1-screen-smart-watch-bluetooth",
+              "name": "(Test product) Auto Dropship1 Screen Smart Watch Bluetooth",
+              "quantity": 1,
+              "option": "Set of 2 (1xBlack + 1xSilver)",
+              "variant_id": 1000010120369592,
+              "tax_info": {
+                "tax_type": "include",
+                "tax_name": "Tax region",
+                "tax_rate": 15
+              }
+            },
+            {
+              "base_name": "Triangle Bikini Set",
+              "name": "Bikini2",
+              "quantity": 1,
+              "option": "S",
+              "variant_id": 1000010117668818,
+              "tax_info": {
+                "tax_type": "include",
+                "tax_name": "Tax region",
+                "tax_rate": 10
+              }
+            }
+          ],
+          "discount_info": {
+            "type": "Fix amount",
+            "code": "AU_FIX_AMOUNT",
+            "value": 10
+          },
+          "is_add_ppc": false,
+          "layout": false
+        },
+        "SB_PLB_PODPL_POPLC_8": {
+          "case_name": "Kiểm tra checkout nhiều product POD, dropship, các product đều khác shipping group, có tax excluded, tip, discount Fixed amount",
+          "case_id": "SB_PLB_PODPL_POPLC_8",
+          "is_tax_include": false,
+          "product_info": [
+            {
+              "handle": "test-product-auto-dropship1-screen-smart-watch-bluetooth",
+              "name": "(Test product) Auto Dropship1 Screen Smart Watch Bluetooth",
+              "quantity": 1,
+              "variant_id": 1000010102081081,
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax region",
+                "tax_rate": 15
+              }
+            },
+            {
+              "handle": "french-chic-blouses-for-women-vintage-3d-floral-puff-long-sleeve-slash-neck-femme-crop-shirts-solid-color-woman-blusas-clothes",
+              "name": "French Chic Blouses For Women Vintage 3D Floral Puff Long Sleeve Slash Neck Femme Crop Shirts Solid Color Woman Blusas Clothes",
+              "quantity": 1,
+              "variant_id": 1000010120447598,
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax region",
+                "tax_rate": 15
+              }
+            },
+            {
+              "handle": "full-touch-sport-smart-watch-men-women-heart-rate-fitness-tracker-bluetooth-call-smartwatch-wristwatch-gts-2-p8-plus-watch-box",
+              "name": "Full Touch Sport Smart Watch Men Women Heart Rate Fitness Tracker Bluetooth call Smartwatch wristwatch GTS 2 P8 plus watch+Box",
+              "quantity": 1,
+              "variant_id": 1000010117600459,
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax region",
+                "tax_rate": 15
+              }
+            },
+            {
+              "base_name": "Triangle Bikini Set",
+              "name": "Bikini2",
+              "quantity": 1,
+              "option": "S",
+              "variant_id": 1000010117668818,
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax region",
+                "tax_rate": 10
+              }
+            },
+            {
+              "base_name": "Bandeau Bikini Set",
+              "name": "Bikini",
+              "quantity": 1,
+              "variant_id": 1000010117615322
+            }
+          ],
+          "discount_info": {
+            "type": "Fix amount",
+            "code": "AU_FIX_AMOUNT",
+            "value": 10
+          },
+          "is_add_ppc": false,
+          "layout": false
+        },
+        "SB_PLB_PODPL_POPLC_10": {
+          "case_name": "Kiểm tra checkout product POD và Dropship, khác shipping group, có tax excluded, tip, discount Fixed amount, có markup shipping",
+          "case_id": "SB_PLB_PODPL_POPLC_10",
+          "is_tax_include": false,
+          "product_info": [
+            {
+              "handle": "test-product-auto-dropship1-screen-smart-watch-bluetooth",
+              "name": "(Test product) Auto Dropship1 Screen Smart Watch Bluetooth",
+              "quantity": 1,
+              "variant_id": 1000010102081081,
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax region",
+                "tax_rate": 15
+              }
+            },
+            {
+              "base_name": "Kid Sweatshirt",
+              "name": "Sweater",
+              "quantity": 1,
+              "variant_id": 1000010120631014,
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax Override",
+                "tax_rate": 20
+              }
+            }
+          ],
+          "discount_info": {
+            "type": "Fix amount",
+            "code": "AU_FIX_AMOUNT",
+            "value": 10
+          },
+          "is_add_ppc": false,
+          "layout": false
+        },
+
+        "SB_PLB_PODPL_POPLC_11": {
+          "is_tax_include": true,
+          "product_info": [
+            {
+              "handle": "french-chic-blouses-for-women-vintage-3d-floral-puff-long-sleeve-slash-neck-femme-crop-shirts-solid-color-woman-blusas-clothes",
+              "name": "French Chic Blouses For Women Vintage 3D Floral Puff Long Sleeve Slash Neck Femme Crop Shirts Solid Color Woman Blusas Clothes",
+              "quantity": 1,
+              "variant_id": 1000010120447598,
+              "tax_info": {
+                "tax_type": "include",
+                "tax_name": "Tax region",
+                "tax_rate": 15
+              }
+            },
+            {
+              "handle": "test-product-auto-dropship1-screen-smart-watch-bluetooth",
+              "name": "(Test product) Auto Dropship1 Screen Smart Watch Bluetooth",
+              "quantity": 1,
+              "option": "Set of 2 (1xBlack + 1xSilver)",
+              "variant_id": 1000010120369592,
+              "tax_info": {
+                "tax_type": "include",
+                "tax_name": "Tax region",
+                "tax_rate": 15
+              }
+            },
+            {
+              "base_name": "Bandeau Bikini Set",
+              "name": "Post purchase",
+              "quantity": 1,
+              "variant_id": 1000010120773933
+            }
+          ],
+          "product_ppc_info": {
+            "base_name": "Triangle Bikini Set",
+            "name": "Bikini2",
+            "quantity": 1,
+            "variant_id": 1000010117668818,
+            "tax_info": {
+              "tax_type": "include",
+              "tax_name": "Tax region",
+              "tax_rate": 10
+            },
+            "is_add_ppc": true
+          },
+          "payment_method": "PayPal",
+          "discount_info": {
+            "type": "Fix amount",
+            "code": "AU_FIX_AMOUNT",
+            "value": 10
+          },
+          "layout": false
+        }
+      }
+    },
+    "prodtest": {
+      "domain": "au-plbase-checkout-pod-prodtest.onshopbase.com",
+      "shop_name": "au-plbase-checkout-pod-prodtest",
+      "shop_id": 10379055,
+      "username": "shopbase4@beeketing.net",
+      "password": "H7mQdQ]Zj]%[Nm?",
+      "cases": {
+        "SB_PLB_PODPL_POPLC_4": {
+          "case_name": "Kiểm tra checkout product POD và Dropship, cùng lineship Standard Shipping, có tax included, tip, discount percentage",
+          "case_id": "SB_PLB_PODPL_POPLC_4",
+          "is_tax_include": true,
+          "product_info": [
+            {
+              "handle": "test-product-auto-dropship1-screen-smart-watch-bluetooth",
+              "name": "(Test product) Auto Dropship1 Screen Smart Watch Bluetooth",
+              "quantity": 1,
+              "variant_id": 1000010121003220,
+              "tax_info": {
+                "tax_type": "include",
+                "tax_name": "Tax region",
+                "tax_rate": 15
+              }
+            },
+            {
+              "base_name": "Triangle Bikini Set",
+              "name": "Bikini2",
+              "quantity": 1,
+              "option": "S",
+              "variant_id": 1000010121001293,
+              "tax_info": {
+                "tax_type": "include",
+                "tax_name": "Tax region",
+                "tax_rate": 10
+              }
+            }
+          ],
+          "discount_info": {
+            "type": "Percentage",
+            "code": "AU_PERCENTAGE",
+            "value": 0.1
+          },
+          "is_add_ppc": false,
+          "layout": false
+        },
+        "SB_PLB_PODPL_POPLC_5": {
+          "case_name": "Kiểm tra checkout product POD và Dropship, khác shipping group, có tax excluded, tip, discount Fixed amount",
+          "case_id": "SB_PLB_PODPL_POPLC_5",
+          "is_tax_include": false,
+          "product_info": [
+            {
+              "handle": "test-product-auto-dropship1-screen-smart-watch-bluetooth",
+              "name": "(Test product) Auto Dropship1 Screen Smart Watch Bluetooth",
+              "quantity": 1,
+              "variant_id": 1000010121003220,
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax region",
+                "tax_rate": 15
+              }
+            },
+            {
+              "base_name": "Triangle Bikini Set",
+              "name": "Bikini2",
+              "quantity": 1,
+              "option": "S",
+              "variant_id": 1000010121001293,
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax region",
+                "tax_rate": 10
+              }
+            }
+          ],
+          "discount_info": {
+            "type": "Fix amount",
+            "code": "AU_FIX_AMOUNT",
+            "value": 10
+          },
+          "is_add_ppc": false,
+          "layout": false
+        },
+        "SB_PLB_PODPL_POPLC_6": {
+          "case_name": "Kiểm tra checkout product POD và Dropship có item combo, cùng shipping group Fast, có tax included, tip, discount Fixed amount",
+          "case_id": "SB_PLB_PODPL_POPLC_6",
+          "is_tax_include": true,
+          "product_info": [
+            {
+              "handle": "test-product-auto-dropship1-screen-smart-watch-bluetooth",
+              "name": "(Test product) Auto Dropship1 Screen Smart Watch Bluetooth",
+              "quantity": 1,
+              "option": "Set of 2 (1xBlack + 1xSilver)",
+              "variant_id": 1000010121733611,
+              "tax_info": {
+                "tax_type": "include",
+                "tax_name": "Tax region",
+                "tax_rate": 15
+              }
+            },
+            {
+              "base_name": "Triangle Bikini Set",
+              "name": "Bikini2",
+              "quantity": 1,
+              "option": "S",
+              "variant_id": 1000010121001293,
+              "tax_info": {
+                "tax_type": "include",
+                "tax_name": "Tax region",
+                "tax_rate": 10
+              }
+            }
+          ],
+          "discount_info": {
+            "type": "Fix amount",
+            "code": "AU_FIX_AMOUNT",
+            "value": 10
+          },
+          "is_add_ppc": false,
+          "layout": false
+        },
+        "SB_PLB_PODPL_POPLC_8": {
+          "case_name": "Kiểm tra checkout nhiều product POD, dropship, các product đều khác shipping group, có tax excluded, tip, discount Fixed amount",
+          "case_id": "SB_PLB_PODPL_POPLC_8",
+          "is_tax_include": false,
+          "product_info": [
+            {
+              "handle": "test-product-auto-dropship1-screen-smart-watch-bluetooth",
+              "name": "(Test product) Auto Dropship1 Screen Smart Watch Bluetooth",
+              "quantity": 1,
+              "variant_id": 1000010121003220,
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax region",
+                "tax_rate": 15
+              }
+            },
+            {
+              "handle": "french-chic-blouses-for-women-vintage-3d-floral-puff-long-sleeve-slash-neck-femme-crop-shirts-solid-color-woman-blusas-clothes",
+              "name": "French Chic Blouses For Women Vintage 3D Floral Puff Long Sleeve Slash Neck Femme Crop Shirts Solid Color Woman Blusas Clothes",
+              "quantity": 1,
+              "variant_id": 1000010121003449,
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax region",
+                "tax_rate": 15
+              }
+            },
+            {
+              "handle": "full-touch-sport-smart-watch-men-women-heart-rate-fitness-tracker-bluetooth-call-smartwatch-wristwatch-gts-2-p8-plus-watch-box",
+              "name": "Full Touch Sport Smart Watch Men Women Heart Rate Fitness Tracker Bluetooth call Smartwatch wristwatch GTS 2 P8 plus watch+Box",
+              "quantity": 1,
+              "variant_id": 1000010121003274,
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax region",
+                "tax_rate": 15
+              }
+            },
+            {
+              "base_name": "Triangle Bikini Set",
+              "name": "Bikini2",
+              "quantity": 1,
+              "option": "S",
+              "variant_id": 1000010121001293,
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax region",
+                "tax_rate": 10
+              }
+            },
+            {
+              "base_name": "Bandeau Bikini Set",
+              "name": "Bikini",
+              "quantity": 1,
+              "variant_id": 1000010121839383
+            }
+          ],
+          "discount_info": {
+            "type": "Fix amount",
+            "code": "AU_FIX_AMOUNT",
+            "value": 10
+          },
+          "is_add_ppc": false,
+          "layout": false
+        },
+        "SB_PLB_PODPL_POPLC_10": {
+          "case_name": "Kiểm tra checkout product POD và Dropship, khác shipping group, có tax excluded, tip, discount Fixed amount, có markup shipping",
+          "case_id": "SB_PLB_PODPL_POPLC_10",
+          "is_tax_include": false,
+          "product_info": [
+            {
+              "handle": "test-product-auto-dropship1-screen-smart-watch-bluetooth",
+              "name": "(Test product) Auto Dropship1 Screen Smart Watch Bluetooth",
+              "quantity": 1,
+              "variant_id": 1000010121003220,
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax region",
+                "tax_rate": 15
+              }
+            },
+            {
+              "base_name": "Kid Sweatshirt",
+              "name": "Sweater",
+              "quantity": 1,
+              "variant_id": 1000010121000776,
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax Override",
+                "tax_rate": 20
+              }
+            }
+          ],
+          "discount_info": {
+            "type": "Fix amount",
+            "code": "AU_FIX_AMOUNT",
+            "value": 10
+          },
+          "is_add_ppc": false,
+          "layout": false
+        },
+
+        "SB_PLB_PODPL_POPLC_11": {
+          "is_tax_include": true,
+          "product_info": [
+            {
+              "handle": "french-chic-blouses-for-women-vintage-3d-floral-puff-long-sleeve-slash-neck-femme-crop-shirts-solid-color-woman-blusas-clothes",
+              "name": "French Chic Blouses For Women Vintage 3D Floral Puff Long Sleeve Slash Neck Femme Crop Shirts Solid Color Woman Blusas Clothes",
+              "quantity": 1,
+              "variant_id": 1000010121003449,
+              "tax_info": {
+                "tax_type": "include",
+                "tax_name": "Tax region",
+                "tax_rate": 15
+              }
+            },
+            {
+              "handle": "test-product-auto-dropship1-screen-smart-watch-bluetooth",
+              "name": "(Test product) Auto Dropship1 Screen Smart Watch Bluetooth",
+              "quantity": 1,
+              "option": "Set of 2 (1xBlack + 1xSilver)",
+              "variant_id": 1000010121733611,
+              "tax_info": {
+                "tax_type": "include",
+                "tax_name": "Tax region",
+                "tax_rate": 15
+              }
+            },
+            {
+              "base_name": "Bandeau Bikini Set",
+              "name": "Post purchase",
+              "quantity": 1,
+              "variant_id": 1000010121001655
+            }
+          ],
+          "product_ppc_info": {
+            "base_name": "Triangle Bikini Set",
+            "name": "Bikini2",
+            "quantity": 1,
+            "variant_id": 1000010121001293,
+            "tax_info": {
+              "tax_type": "include",
+              "tax_name": "Tax region",
+              "tax_rate": 10
+            },
+            "is_add_ppc": true
+          },
+          "payment_method": "PayPal",
+          "discount_info": {
+            "type": "Fix amount",
+            "code": "AU_FIX_AMOUNT",
+            "value": 10
+          },
+          "layout": false
+        }
+      },
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://prod-test-api.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-plusbase-checkout-pod.myshopbase.net",
+      "shop_name": "au-plusbase-checkout-pod",
+      "user_id": 89321,
+      "shop_id": 10322562,
+      "username": "shopbase4@beeketing.net",
+      "password": "H7mQdQ]Zj]%[Nm?",
+      "cases": {
+        "SB_PLB_PODPL_POPLC_4": {
+          "product_info": [
+            {
+              "handle": "test-product-auto-dropship1-screen-smart-watch-bluetooth",
+              "name": "(Test product) Auto Dropship1 Screen Smart Watch Bluetooth",
+              "quantity": 1,
+              "variant_id": 1000001766366588,
+              "tax_info": {
+                "tax_type": "include",
+                "tax_name": "Tax region",
+                "tax_rate": 15
+              }
+            },
+            {
+              "base_name": "Triangle Bikini Set",
+              "name": "Bikini2",
+              "quantity": 1,
+              "option": "S",
+              "variant_id": 1000001766757218,
+              "tax_info": {
+                "tax_type": "include",
+                "tax_name": "Tax region",
+                "tax_rate": 10
+              }
+            }
+          ],
+          "discount_info": {
+            "type": "Percentage",
+            "code": "AU_PERCENTAGE",
+            "value": 0.1
+          },
+          "is_add_ppc": false,
+          "is_tax_include": true,
+          "layout": true
+        },
+        "SB_PLB_PODPL_POPLC_5": {
+          "product_info": [
+            {
+              "handle": "test-product-auto-dropship1-screen-smart-watch-bluetooth",
+              "name": "(Test product) Auto Dropship1 Screen Smart Watch Bluetooth",
+              "quantity": 1,
+              "variant_id": 1000001766366588,
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax region",
+                "tax_rate": 15
+              }
+            },
+            {
+              "base_name": "Triangle Bikini Set",
+              "name": "Bikini2",
+              "quantity": 1,
+              "option": "S",
+              "variant_id": 1000001766757218,
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax region",
+                "tax_rate": 10
+              }
+            }
+          ],
+          "discount_info": {
+            "type": "Fix amount",
+            "code": "AU_FIX_AMOUNT",
+            "value": 10
+          },
+          "is_add_ppc": false,
+          "is_tax_include": false,
+          "layout": true
+        },
+        "SB_PLB_PODPL_POPLC_6": {
+          "product_info": [
+            {
+              "handle": "test-product-auto-dropship1-screen-smart-watch-bluetooth",
+              "name": "(Test product) Auto Dropship1 Screen Smart Watch Bluetooth",
+              "quantity": 1,
+              "option": "Set of 2 (1xBlack + 1xSilver)",
+              "variant_id": 1000001766757445,
+              "tax_info": {
+                "tax_type": "include",
+                "tax_name": "Tax region",
+                "tax_rate": 15
+              }
+            },
+            {
+              "base_name": "Triangle Bikini Set",
+              "name": "Bikini2",
+              "quantity": 1,
+              "option": "S",
+              "variant_id": 1000001766757218,
+              "tax_info": {
+                "tax_type": "include",
+                "tax_name": "Tax region",
+                "tax_rate": 10
+              }
+            }
+          ],
+          "discount_info": {
+            "type": "Fix amount",
+            "code": "AU_FIX_AMOUNT",
+            "value": 10
+          },
+          "is_add_ppc": false,
+          "is_tax_include": true,
+          "layout": true
+        },
+        "SB_PLB_PODPL_POPLC_8": {
+          "product_info": [
+            {
+              "handle": "test-product-auto-dropship1-screen-smart-watch-bluetooth",
+              "name": "(Test product) Auto Dropship1 Screen Smart Watch Bluetooth",
+              "quantity": 1,
+              "variant_id": 1000001766366588,
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax region",
+                "tax_rate": 15
+              }
+            },
+            {
+              "handle": "french-chic-blouses-for-women-vintage-3d-floral-puff-long-sleeve-slash-neck-femme-crop-shirts-solid-color-woman-blusas-clothes",
+              "name": "French Chic Blouses For Women Vintage 3D Floral Puff Long Sleeve Slash Neck Femme Crop Shirts Solid Color Woman Blusas Clothes",
+              "quantity": 1,
+              "variant_id": 1000001766757357,
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax region",
+                "tax_rate": 15
+              }
+            },
+            {
+              "handle": "full-touch-sport-smart-watch-men-women-heart-rate-fitness-tracker-bluetooth-call-smartwatch-wristwatch-gts-2-p8-plus-watch-box",
+              "name": "Full Touch Sport Smart Watch Men Women Heart Rate Fitness Tracker Bluetooth call Smartwatch wristwatch GTS 2 P8 plus watch+Box",
+              "quantity": 1,
+              "variant_id": 1000001766376991,
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax region",
+                "tax_rate": 15
+              }
+            },
+            {
+              "base_name": "Triangle Bikini Set",
+              "name": "Bikini2",
+              "quantity": 1,
+              "option": "S",
+              "variant_id": 1000001766757218,
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax region",
+                "tax_rate": 10
+              }
+            },
+            {
+              "base_name": "Bandeau Bikini Set",
+              "name": "Bikini",
+              "quantity": 1,
+              "variant_id": 1000001766757209
+            }
+          ],
+          "discount_info": {
+            "type": "Fix amount",
+            "code": "AU_FIX_AMOUNT",
+            "value": 10
+          },
+          "is_add_ppc": false,
+          "layout": true,
+          "is_tax_include": false
+        },
+        "SB_PLB_PODPL_POPLC_10": {
+          "is_tax_include": false,
+          "product_info": [
+            {
+              "handle": "test-product-auto-dropship1-screen-smart-watch-bluetooth",
+              "name": "(Test product) Auto Dropship1 Screen Smart Watch Bluetooth",
+              "quantity": 1,
+              "variant_id": 1000001766366588,
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax region",
+                "tax_rate": 15
+              }
+            },
+            {
+              "base_name": "Kid Sweatshirt",
+              "name": "Sweater",
+              "quantity": 1,
+              "variant_id": 1000001766757300,
+              "tax_info": {
+                "tax_type": "exclude",
+                "tax_name": "Tax Override",
+                "tax_rate": 20
+              }
+            }
+          ],
+          "discount_info": {
+            "type": "Fix amount",
+            "code": "AU_FIX_AMOUNT",
+            "value": 10
+          },
+          "is_add_ppc": false,
+          "layout": true
+        },
+        "SB_PLB_PODPL_POPLC_11": {
+          "product_info": [
+            {
+              "handle": "french-chic-blouses-for-women-vintage-3d-floral-puff-long-sleeve-slash-neck-femme-crop-shirts-solid-color-woman-blusas-clothes",
+              "name": "French Chic Blouses For Women Vintage 3D Floral Puff Long Sleeve Slash Neck Femme Crop Shirts Solid Color Woman Blusas Clothes",
+              "quantity": 1,
+              "variant_id": 1000001766757357,
+              "tax_info": {
+                "tax_type": "include",
+                "tax_name": "Tax region",
+                "tax_rate": 15
+              }
+            },
+            {
+              "handle": "test-product-auto-dropship1-screen-smart-watch-bluetooth",
+              "name": "(Test product) Auto Dropship1 Screen Smart Watch Bluetooth",
+              "quantity": 1,
+              "option": "Set of 2 (1xBlack + 1xSilver)",
+              "variant_id": 1000001766757445,
+              "tax_info": {
+                "tax_type": "include",
+                "tax_name": "Tax region",
+                "tax_rate": 15
+              }
+            },
+            {
+              "base_name": "Bandeau Bikini Set",
+              "name": "Post purchase",
+              "quantity": 1,
+              "variant_id": 1000001766757240
+            }
+          ],
+          "payment_method": "PayPal",
+          "discount_info": {
+            "type": "Fix amount",
+            "code": "AU_FIX_AMOUNT",
+            "value": 10
+          },
+          "layout": true,
+          "product_ppc_info": {
+            "base_name": "Triangle Bikini Set",
+            "name": "Bikini2",
+            "quantity": 1,
+            "variant_id": 1000001766757218,
+            "tax_info": {
+              "tax_type": "include",
+              "tax_name": "Tax region",
+              "tax_rate": 10
+            },
+            "is_add_ppc": true
+          },
+          "is_tax_include": true
+        }
+      }
+    }
+  },
+  "cases": {
+    "SB_PLB_PODPL_POPLC_4": {},
+    "SB_PLB_PODPL_POPLC_5": {},
+    "SB_PLB_PODPL_POPLC_6": {},
+    "SB_PLB_PODPL_POPLC_8": {},
+    "SB_PLB_PODPL_POPLC_10": {},
+    "SB_PLB_PODPL_POPLC_11": {}
+  },
+  "shipping_address": {
+    "email": "testerOCG@shopbase.com",
+    "first_name": "Shopbase",
+    "last_name": "Auto",
+    "address": "1600 W Loop S",
+    "country": "United States",
+    "state": "California",
+    "city": "Los Angeles",
+    "zipcode": "90001",
+    "phone_number": "505-646-2276",
+    "country_code": "US"
+  },
+  "tipping_info": {
+    "tipping_amount": "5",
+    "is_old_layout": false,
+    "option": "1"
+  },
+  "shipping_method": "Standard Shipping",
+  "app_name": "usell",
+  "timeout": 1000000
+}

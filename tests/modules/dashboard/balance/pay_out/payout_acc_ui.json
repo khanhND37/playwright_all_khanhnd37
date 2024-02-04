@@ -1,0 +1,49 @@
+{
+  "time_out": 2000000,
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-payout-acc.myshopbase.net",
+      "shop_name": "au-payout-acc",
+      "user_id": 90243,
+      "shop_id": 10334164,
+      "username": "acon-qe-1@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "cases": {}
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-payout-acc-prodtest-2.onshopbase.com",
+      "shop_name": "au-payout-acc-prodtest-2",
+      "user_id": 245015,
+      "shop_id": 10482493,
+      "username": "shopbase9@beeketing.net",
+      "password": "BBSuuVcNv3@",
+      "cases": {},
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-payout-acc-prod-2.onshopbase.com",
+      "shop_name": "au-payout-acc-prod-2",
+      "user_id": 245015,
+      "shop_id": 10482492,
+      "username": "shopbase9@beeketing.net",
+      "password": "BBSuuVcNv3@",
+      "cases": {}
+    }
+  },
+  "cases": {
+    "SB_BAL_OLD_BL_126": {
+      "payout_field_delete": [
+        {
+          "field": "Paypal"
+        },
+        {
+          "field": "PingPong"
+        }
+      ],
+      "email": "acon-qe@beeketing.net"
+    }
+  }
+}

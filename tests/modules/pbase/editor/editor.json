@@ -1,0 +1,1095 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-editor-pb.onshopbase.com",
+      "shop_name": "au-editor-pb",
+      "user_id": 73782,
+      "shop_id": 10370157,
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "server_domain": "onshopbase.com"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-editor-pb-prodtest.onshopbase.com",
+      "shop_name": "au-editor-pb-prodtest",
+      "user_id": 73782,
+      "shop_id": 10376927,
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "server_domain": "onshopbase.com",
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-editor-pb1.myshopbase.net",
+      "shop_name": "au-editor-pb1",
+      "user_id": 73800,
+      "shop_id": 10322731,
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "server_domain": "myshopbase.net",
+      "cases": {
+        "SB_PRB_EDT_75": {
+          "product_info": {
+            "category": "All Over Print",
+            "product_name": "AOP Hoodie",
+            "base_add1": "AOP Beach Shorts",
+            "base_add_more": "AOP Long Pants,Leggings,AOP T-Shirt",
+            "base_default": "AOP Long Pants",
+            "number_add1": 2,
+            "number_add_more": 5
+          }
+        },
+        "SB_PRB_EDT_78": {
+          "product_info": {
+            "category": "All Over Print",
+            "product_name": "AOP Hoodie",
+            "add_product": "AOP Beach Shorts,Leggings,Tank Top",
+            "product_delete": "AOP Beach Shorts",
+            "product_remove": "AOP Hoodie,Tank Top",
+            "number_add1": 4,
+            "product_after_deleted": 3,
+            "product_after_remove": 1,
+            "button_label": "Remove product"
+          }
+        },
+        "SB_PRB_EDT_82": {
+          "case_id": "SB_PRB_EDT_82",
+          "product_info": {
+            "category": "All Over Print",
+            "product_name": "AOP Hoodie"
+          },
+          "layer_text": {
+            "layer_name": "Text layer 1",
+            "layer_type": "Text",
+            "front_or_back": "Front"
+          },
+          "layer_image": {
+            "layer_name": "AOP Hoodie Front",
+            "layer_type": "Image",
+            "image_name": "AOP Hoodie Front.jpg",
+            "front_or_back": "Front"
+          },
+          "layer_psd": {
+            "layer_name": "Template AOP Hoodie Front178",
+            "layer_type": "Image",
+            "image_name": "Template AOP Hoodie Front178.psd",
+            "front_or_back": "Front"
+          },
+          "layer_psd_loading": {
+            "layer_name": "image6",
+            "layer_type": "Image",
+            "image_name": "image6.psd",
+            "front_or_back": "Front"
+          },
+          "picture": {
+            "text": "dev_layer_text_editor",
+            "image": "dev_layer_image_editor",
+            "psd": "dev_layer_psd_editor"
+          }
+        },
+        "DATA_DRIVEN_EDIT_LAYER": {
+          "data": [
+            {
+              "description": "SB_PRB_EDT_88 - [Pbase] Verify show editor and preview khi edit các field of layer text",
+              "case_id": "SB_PRB_EDT_88",
+              "product_info": {
+                "category": "All Over Print",
+                "product_name": "AOP Hoodie",
+                "layer_name": "Text layer 1",
+                "layer_type": "Text",
+                "front_or_back": "Front"
+              },
+              "layer_text": {
+                "layer_name": "Text layer 1",
+                "layer_type": "Text",
+                "front_or_back": "Front",
+                "layer_value": "Text",
+                "location_layer_x": "1500",
+                "location_layer_y": "3800",
+                "layer_size_h": "800",
+                "layer_size_w": "4000"
+              },
+              "picture": {
+                "picture_editor": "dev_layer_text_new",
+                "picture_preview": "dev_layer_text_preview"
+              }
+            },
+            {
+              "description": "SB_PRB_EDT_90 - [Pbase] Verify show editor and preview khi edit các field of layer image",
+              "case_id": "SB_PRB_EDT_90",
+              "product_info": {
+                "category": "All Over Print",
+                "product_name": "AOP Hoodie",
+                "layer_name": "AOP Hoodie Front",
+                "layer_type": "Image",
+                "image_name": "AOP Hoodie Front.jpg",
+                "front_or_back": "Front"
+              },
+              "layer_text": {
+                "layer_name": "AOP Hoodie Front",
+                "layer_type": "Image",
+                "image_name": "AOP Hoodie Front.jpg",
+                "front_or_back": "Front",
+                "location_layer_x": "250",
+                "location_layer_y": "630",
+                "layer_size_h": "6500",
+                "layer_size_w": "6500"
+              },
+              "picture": {
+                "picture_editor": "dev_layer_image_new",
+                "picture_preview": "dev_layer_image_preview"
+              }
+            }
+          ]
+        },
+        "DATA_DRIVEN_VARIANT_EDITOR": {
+          "data": [
+            {
+              "description": "SB_PRB_EDT_79 - [Pbase]  Verify action with variant on base 2D",
+              "case_id": "SB_PRB_EDT_79",
+              "product_info": {
+                "category": "Apparel",
+                "product_name": "V-neck T-shirt"
+              },
+              "picture_name": {
+                "default_variant": "dev_variant_default_2D",
+                "selected_variant": "dev_after_add_variant_2D"
+              },
+              "variant": {
+                "base_product": "V-neck T-shirt",
+                "option_color": "Color",
+                "variant_color": "Navy,True Royal",
+                "option_size": "Size",
+                "variant_size": "M,L"
+              }
+            },
+            {
+              "description": "SB_PRB_EDT_80 - [Pbase]  Verify action with variant on base 3D",
+              "case_id": "SB_PRB_EDT_80",
+              "product_info": {
+                "category": "All Over Print",
+                "product_name": "AOP Beach Shorts"
+              },
+              "picture_name": {
+                "default_variant": "dev_variant_default_3D",
+                "selected_variant": "dev_after_add_variant_3D"
+              },
+              "variant": {
+                "base_product": "AOP Beach Shorts",
+                "option_size": "Size",
+                "variant_size": "M,L"
+              }
+            }
+          ]
+        },
+        "SB_PRB_EDT_81": {
+          "case_id": "SB_PRB_EDT_81",
+          "product_info": {
+            "category": "Apparel",
+            "product_name": "V-neck T-shirt,3/4 Sleeve Raglan Tee"
+          },
+          "layer_text": {
+            "layer_name": "Text layer 1",
+            "layer_type": "Text",
+            "front_or_back": "Front"
+          },
+          "color": "Black",
+          "base_product": "3/4 Sleeve Raglan Tee",
+          "picture": {
+            "preview_with_color": "dev_preivew_color",
+            "preview_with_base": "dev_preview_base"
+          }
+        },
+        "SB_PRB_EDT_92": {
+          "product_info": {
+            "case_id": "SB_PRB_EDT_92",
+            "category": "Drinkware",
+            "product_name": "Two-sided Mug New",
+            "image_reset_all": "Reset_all"
+          },
+          "layer_text": {
+            "layer_name": "Text layer 1",
+            "layer_type": "Text",
+            "location_layer_x": "1325",
+            "location_layer_y": "193",
+            "layer_size_h": "219",
+            "layer_size_w": "1005"
+          },
+          "DATA_DRIVEN_ACTION_BAR": {
+            "data": [
+              {
+                "step": "Click button Center vertical> Verify show layer ",
+                "case_id": "SB_PRB_EDT_92",
+                "action_bar": "Center vertical",
+                "picture_name": "dev_Center_vertical"
+              },
+              {
+                "step": "Click button Center horizontally> Verify show layer ",
+                "case_id": "SB_PRB_EDT_92",
+                "action_bar": "Center horizontally",
+                "picture_name": "dev_Center_horizontally"
+              },
+              {
+                "step": "Click button Scale to fit> Verify show layer ",
+                "case_id": "SB_PRB_EDT_92",
+                "action_bar": "Scale to fit",
+                "picture_name": "dev_Scale_to_fit"
+              }
+            ]
+          }
+        },
+        "SB_PRB_EDT_93": {
+          "case_id": "SB_PRB_EDT_93",
+          "product_info": {
+            "category": "Drinkware",
+            "product_name": "Skinny Tumbler",
+            "add_product": "Tumbler 20oz"
+          },
+          "message": "Your layer has been deleted",
+          "action_bar": "Delete in this product",
+          "layer_text": {
+            "layer_type": "Text",
+            "layer_name": "Text layer 1",
+            "layer_value": "Test value",
+            "location_layer_x": "1322",
+            "location_layer_y": "376",
+            "layer_size_h": "217",
+            "layer_size_w": "954"
+          },
+          "layers_add": [
+            {
+              "layer_type": "Text",
+              "location_layer_x": "118",
+              "location_layer_y": "826",
+              "layer_size_h": "217",
+              "layer_size_w": "954"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "artwork - Front.png",
+              "location_layer_x": "1281",
+              "location_layer_y": "1299",
+              "layer_size_h": "975",
+              "layer_size_w": "1035"
+            }
+          ],
+          "delete_layer_name": {
+            "layer_name": "artwork - Front"
+          },
+          "picture": {
+            "delete_layer": "dev_delete_layer",
+            "base_delete_layer": "dev_base_delete_layer",
+            "delete_on_action_bar": "dev_delete_on_action_bar"
+          }
+        },
+        "SB_PRB_EDT_104": {
+          "case_id": "SB_PRB_EDT_104",
+          "product_info": {
+            "category": "All Over Print",
+            "product_name": "AOP Beach Shorts,Leggings"
+          },
+          "drag": {
+            "index_from": "2",
+            "index_to": "3",
+            "index_unselect": "1"
+          },
+          "drag_default": {
+            "index_from": "2",
+            "index_to": "1",
+            "index_select": "7"
+          },
+          "drag_default_last": {
+            "index_from": "7",
+            "index_to": "1"
+          },
+          "message": "Update mockups successfully",
+          "picture": {
+            "mockup_default": "dev_mockup_default",
+            "mockup_select": "dev_mockup_select"
+          }
+        },
+        "SB_PRB_EDT_105": {
+          "case_id": "SB_PRB_EDT_105",
+          "product_info": {
+            "category": "All Over Print",
+            "product_name": "AOP T-Shirt",
+            "base_add_more": "Short Socks"
+          },
+          "mockup_index": {
+            "index_side_required": "3",
+            "index_select": "1"
+          },
+          "message_side_required": "You must choose at least 1 mockup per side (front&back)",
+          "message_required": "You must choose at least 1 mockup"
+        },
+        "SB_PRB_EDT_106": {
+          "case_id": "SB_PRB_EDT_106",
+          "product_info": {
+            "category": "All Over Print",
+            "product_name": "AOP Hoodie"
+          },
+          "layers_add": [
+            {
+              "layer_type": "Text",
+              "location_layer_x": "2550",
+              "location_layer_y": "3900",
+              "layer_size_h": "500",
+              "layer_size_w": "1900",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "AOP Hoodie Front.jpg",
+              "front_or_back": "Front"
+            }
+          ],
+          "side_name": "Back side",
+          "layer_text": "Text layer 1",
+          "layer_image": "AOP Hoodie Front",
+          "picture": {
+            "add_layer": "dev_add_layer",
+            "drag_layer": "dev_drag_layer",
+            "drag_layer_side": "dev_drag_layer_side"
+          }
+        },
+        "SB_PRB_EDT_110": {
+          "product_info": {
+            "category": "Apparel",
+            "product_name": "V-neck T-shirt"
+          },
+          "layer_image": {
+            "layer_type": "Image",
+            "image_name": "artwork - Front.png",
+            "front_or_back": "Front"
+          },
+          "variant_editor": {
+            "base_product": "V-neck T-shirt",
+            "option_color": "Color",
+            "variant_color": "Navy,True Royal",
+            "option_size": "Size",
+            "variant_size": "M,L"
+          },
+          "message_title": "Title can't be blank",
+          "pricing_info": {
+            "title": "Alone Astronaut Walking Snowillustration Painting Astronaut Luxury Multi Canvas Prints,Multi Piece Panel Canvas Gallery Art Print Print Alone Astronaut Walking Snowillustration Painting Astronaut Luxury Multi Canvas Prints, Multi Piece Panel Canvas Gallery Art Print Print Alone Astronaut Walking Snowillustration Painting Astronaut Luxury Multi Canvas Prints,Multi Piece Panel Canvas Gallery Art Print Print",
+            "description": "Description Campaign 2D",
+            "tag": "test",
+            "product_name": "V-neck T-shirt",
+            "variant": "V-neck T-shirt - White - S",
+            "photo_guide": "false",
+            "sale_price": "$30.99",
+            "compare_price": "$40.99"
+          },
+          "picture": {
+            "pricing_defautl": "dev_pricing-defautl-SB-PRB-EDT-110.png",
+            "pricing_varriant": "dev_pricing-varriant-SB-PRB-EDT-110.png",
+            "pricing_edit": "dev_pricing-edit-SB-PRB-EDT-110.png"
+          }
+        },
+        "SB_PRB_EDT_114": {
+          "product_info": {
+            "category": "Apparel",
+            "product_name": "3/4 Sleeve Raglan Tee,V-neck T-shirt"
+          },
+          "layer_image": {
+            "layer_type": "Image",
+            "image_name": "artwork - Front.png",
+            "layer_name": "artwork - Front",
+            "front_or_back": "Front"
+          },
+          "variant_editor": {
+            "base_product": "V-neck T-shirt",
+            "option_color": "Color",
+            "variant_color": "Navy,True Royal"
+          },
+          "title": "T-Shirt_01",
+          "index_color": "1",
+          "index_color_other": "2",
+          "picture": {
+            "product_main_defautl": "dev_product-main-defautl-SB-PRB-EDT-114.png",
+            "color_main": "dev_color-main-SB-PRB-EDT-114.png",
+            "select_product_main": "dev_select-product-main-SB-PRB-EDT-114.png"
+          }
+        },
+        "SB_PRB_EDT_118": {
+          "product_info": {
+            "category": "Apparel",
+            "product_name": "V-neck T-shirt,3/4 Sleeve Raglan Tee",
+            "base_second": "3/4 Sleeve Raglan Tee",
+            "base_first": "V-neck T-shirt"
+          },
+          "message": "Your layer has been synced to all products",
+          "layers_add": [
+            {
+              "layer_type": "Image",
+              "image_name": "artwork - Front.png",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Text",
+              "front_or_back": "Front"
+            }
+          ],
+          "delete_layer_name": {
+            "layer_name": "artwork - Front"
+          },
+          "layer_edit": {
+            "layer_type": "Image",
+            "image_name": "artwork - Front.png",
+            "layer_name": "artwork - Front",
+            "location_layer_x": "670",
+            "location_layer_y": "1430",
+            "layer_size_h": "700",
+            "layer_size_w": "750",
+            "front_or_back": "Front"
+          },
+          "side_name": "Front side",
+          "layer_text": "Text layer 1",
+          "layer_image": "artwork - Front",
+          "layer_sync": "Text layer 1,artwork - Front",
+          "picture": {
+            "sync_layer": "dev_sync-layer-SB-PRB-EDT-118.png",
+            "layer_sync_base_first": "dev_drag-edit-layer-sync-base-first-SB-PRB-EDT-118.png",
+            "layer_sync_base_second": "dev_drag-edit-layer-sync-base-second-SB-PRB-EDT-118.png"
+          }
+        },
+        "SB_PRB_EDT_122": {
+          "product_info": {
+            "category": "All Over Print,Apparel",
+            "product_name": "AOP Hoodie,Leggings,Classic V-neck T-shirt,Classic Unisex Tank,3/4 Sleeve Raglan Tee",
+            "base_2D_second": "Classic Unisex Tank",
+            "base_2D_first": "Classic V-neck T-shirt",
+            "category_add": "Apparel",
+            "product_add": "Premium Long Sleeve Tee"
+          },
+          "layer_image": {
+            "layer_type": "Image",
+            "image_name": "artwork - Front.png",
+            "layer_name": "artwork - Front",
+            "location_layer_x": "670",
+            "location_layer_y": "1430",
+            "layer_size_h": "700",
+            "layer_size_w": "750",
+            "front_or_back": "Front"
+          },
+          "layer_text": {
+            "layer_name": "Text layer 1",
+            "layer_type": "Text",
+            "location_layer_x": "560",
+            "location_layer_y": "600",
+            "front_or_back": "Front"
+          },
+          "picture": {
+            "icon_link": "dev_icon-link-base-SB-PRB-EDT-122.png",
+            "link_product_add": "dev_link-with-add-base-SB-PRB-EDT-122.png",
+            "preview_with_link": "dev_sync-layer-with-link-SB-PRB-EDT-122.png",
+            "off_link": "dev_off-link-SB-PRB-EDT-122.png"
+          }
+        },
+        "SB_PRB_EDT_124": {
+          "product_info": {
+            "category": "Apparel",
+            "product_name": "Classic V-neck T-shirt,Classic Unisex T-shirt",
+            "base_2D_second": "Classic Unisex T-shirt",
+            "base_2D_first": "Classic V-neck T-shirt",
+            "category_add": "Apparel",
+            "product_add": "Classic Ladies T-shirt"
+          },
+          "layer_image": {
+            "layer_type": "Image",
+            "image_name": "artwork - Front.png",
+            "layer_name": "artwork - Front",
+            "location_layer_x": "670",
+            "location_layer_y": "1430",
+            "layer_size_h": "700",
+            "layer_size_w": "750",
+            "front_or_back": "Front"
+          },
+          "layer_text": {
+            "layer_name": "Text layer 1",
+            "layer_type": "Text",
+            "layer_size_h": "467",
+            "layer_size_w": "1680",
+            "location_layer_x": "210",
+            "location_layer_y": "967",
+            "front_or_back": "Front"
+          },
+          "picture": {
+            "layer_link_off": "dev_show-layer-when-off-link-SB-PRB-EDT-124.png",
+            "layer_link_on": "dev_show-layer-when-on-link-SB-PRB-EDT-124.png",
+            "link_product_add": "dev_sync-layer-when-add-base-SB-PRB-EDT-124.png"
+          }
+        },
+        "SB_PRB_EDT_120": {
+          "product_info": {
+            "category": "Apparel",
+            "product_name": "Classic V-neck T-shirt",
+            "category_add": "Drinkware",
+            "product_add": "Two-sided Mug New"
+          },
+          "layer_image": {
+            "layer_type": "Image",
+            "image_name": "artwork - Front.png",
+            "layer_name": "artwork - Front",
+            "front_or_back": "Front"
+          },
+          "layer_edit_base_add": {
+            "layer_name": "artwork - Front",
+            "location_layer_x": "1669",
+            "location_layer_y": "295",
+            "layer_size_h": "455",
+            "layer_size_w": "483"
+          },
+          "layer_edit": {
+            "layer_name": "artwork - Front",
+            "location_layer_x": "829",
+            "location_layer_y": "113",
+            "layer_size_h": "253",
+            "layer_size_w": "269",
+            "front_or_back": "Front"
+          },
+          "action_name": "Auto-sync",
+          "picture": {
+            "edit_layer": "dev_show-layer-when-edit-SB-PRB-EDT-120.png",
+            "preview_auto_sync": "dev_show-layer-when-auto-sync-SB-PRB-EDT-120.png"
+          }
+        }
+      }
+    }
+  },
+  "timeout": "500000",
+  "max_diff_pixel_ratio": 0.05,
+  "threshold": 0.1,
+  "max_diff_pixels": 2000,
+  "cases": {
+    "SB_PRB_EDT_75": {
+      "product_info": {
+        "category": "All Over Print",
+        "product_name": "AOP Hoodie",
+        "base_add1": "AOP Beach Shorts",
+        "base_add_more": "AOP Long Pants,Leggings,AOP T-Shirt",
+        "base_default": "AOP Long Pants",
+        "number_add1": 2,
+        "number_add_more": 5
+      }
+    },
+    "SB_PRB_EDT_78": {
+      "product_info": {
+        "category": "All Over Print",
+        "product_name": "AOP Hoodie",
+        "add_product": "AOP Beach Shorts,Leggings,Tank Top",
+        "product_delete": "AOP Beach Shorts",
+        "product_remove": "AOP Hoodie,Tank Top",
+        "number_add1": 4,
+        "product_after_deleted": 3,
+        "product_after_remove": 1,
+        "button_label": "Remove product"
+      }
+    },
+    "SB_PRB_EDT_82": {
+      "case_id": "SB_PRB_EDT_82",
+      "product_info": {
+        "category": "All Over Print",
+        "product_name": "AOP Hoodie"
+      },
+      "layer_text": {
+        "layer_name": "Text layer 1",
+        "layer_type": "Text",
+        "front_or_back": "Front"
+      },
+      "layer_image": {
+        "layer_name": "AOP Hoodie Front",
+        "layer_type": "Image",
+        "image_name": "AOP Hoodie Front.jpg",
+        "front_or_back": "Front"
+      },
+      "layer_psd": {
+        "layer_name": "Template AOP Hoodie Front178",
+        "layer_type": "Image",
+        "image_name": "Template AOP Hoodie Front178.psd",
+        "front_or_back": "Front"
+      },
+      "layer_psd_loading": {
+        "layer_name": "image6",
+        "layer_type": "Image",
+        "image_name": "image6.psd",
+        "front_or_back": "Front"
+      },
+      "picture": {
+        "text": "layer_text_editor",
+        "image": "layer_image_editor",
+        "psd": "layer_psd_editor"
+      }
+    },
+    "DATA_DRIVEN_EDIT_LAYER": {
+      "data": [
+        {
+          "description": "SB_PRB_EDT_88 - [Pbase] Verify show editor and preview khi edit các field of layer text",
+          "case_id": "SB_PRB_EDT_88",
+          "product_info": {
+            "category": "All Over Print",
+            "product_name": "AOP Hoodie",
+            "layer_name": "Text layer 1",
+            "layer_type": "Text",
+            "front_or_back": "Front"
+          },
+          "layer_text": {
+            "layer_name": "Text layer 1",
+            "layer_type": "Text",
+            "front_or_back": "Front",
+            "layer_value": "Text",
+            "location_layer_x": "1500",
+            "location_layer_y": "3800",
+            "layer_size_h": "800",
+            "layer_size_w": "4000"
+          },
+          "picture": {
+            "picture_editor": "layer_text_new",
+            "picture_preview": "layer_text_preview"
+          }
+        },
+        {
+          "description": "SB_PRB_EDT_90 - [Pbase] Verify show editor and preview khi edit các field of layer image",
+          "case_id": "SB_PRB_EDT_90",
+          "product_info": {
+            "category": "All Over Print",
+            "product_name": "AOP Hoodie",
+            "layer_name": "AOP Hoodie Front",
+            "layer_type": "Image",
+            "image_name": "AOP Hoodie Front.jpg",
+            "front_or_back": "Front"
+          },
+          "layer_text": {
+            "layer_name": "AOP Hoodie Front",
+            "layer_type": "Image",
+            "image_name": "AOP Hoodie Front.jpg",
+            "front_or_back": "Front",
+            "location_layer_x": "250",
+            "location_layer_y": "630",
+            "layer_size_h": "6500",
+            "layer_size_w": "6500"
+          },
+          "picture": {
+            "picture_editor": "layer_image_new",
+            "picture_preview": "layer_image_preview"
+          }
+        }
+      ]
+    },
+    "DATA_DRIVEN_VARIANT_EDITOR": {
+      "data": [
+        {
+          "description": "SB_PRB_EDT_79 - [Pbase]  Verify action with variant on base 2D",
+          "case_id": "SB_PRB_EDT_79",
+          "product_info": {
+            "category": "Apparel",
+            "product_name": "V-neck T-shirt"
+          },
+          "picture_name": {
+            "default_variant": "variant_default_2D",
+            "selected_variant": "after_add_variant_2D"
+          },
+          "variant": {
+            "base_product": "V-neck T-shirt",
+            "option_color": "Color",
+            "variant_color": "Navy,True Royal",
+            "option_size": "Size",
+            "variant_size": "M,L"
+          }
+        },
+        {
+          "description": "SB_PRB_EDT_80 - [Pbase]  Verify action with variant on base 3D",
+          "case_id": "SB_PRB_EDT_80",
+          "product_info": {
+            "category": "All Over Print",
+            "product_name": "AOP Beach Shorts"
+          },
+          "picture_name": {
+            "default_variant": "variant_default_3D",
+            "selected_variant": "after_add_variant_3D"
+          },
+          "variant": {
+            "base_product": "AOP Beach Shorts",
+            "option_size": "Size",
+            "variant_size": "M,L"
+          }
+        }
+      ]
+    },
+    "SB_PRB_EDT_81": {
+      "case_id": "SB_PRB_EDT_81",
+      "product_info": {
+        "category": "Apparel",
+        "product_name": "V-neck T-shirt,3/4 Sleeve Raglan Tee"
+      },
+      "layer_text": {
+        "layer_name": "Text layer 1",
+        "layer_type": "Text",
+        "front_or_back": "Front"
+      },
+      "color": "Black",
+      "base_product": "3/4 Sleeve Raglan Tee",
+      "picture": {
+        "preview_with_color": "preivew_color",
+        "preview_with_base": "preview_base"
+      }
+    },
+    "SB_PRB_EDT_92": {
+      "product_info": {
+        "case_id": "SB_PRB_EDT_92",
+        "category": "Drinkware",
+        "product_name": "Two-sided Mug New",
+        "image_reset_all": "Reset_all"
+      },
+      "layer_text": {
+        "layer_name": "Text layer 1",
+        "layer_type": "Text",
+        "location_layer_x": "1325",
+        "location_layer_y": "193",
+        "layer_size_h": "219",
+        "layer_size_w": "1005"
+      },
+      "DATA_DRIVEN_ACTION_BAR": {
+        "data": [
+          {
+            "step": "Click button Center vertical> Verify show layer ",
+            "case_id": "SB_PRB_EDT_92",
+            "action_bar": "Center vertical",
+            "picture_name": "Center_vertical"
+          },
+          {
+            "step": "Click button Center horizontally> Verify show layer ",
+            "case_id": "SB_PRB_EDT_92",
+            "action_bar": "Center horizontally",
+            "picture_name": "Center_horizontally"
+          },
+          {
+            "step": "Click button Scale to fit> Verify show layer ",
+            "case_id": "SB_PRB_EDT_92",
+            "action_bar": "Scale to fit",
+            "picture_name": "Scale_to_fit"
+          }
+        ]
+      }
+    },
+    "SB_PRB_EDT_93": {
+      "case_id": "SB_PRB_EDT_93",
+      "product_info": {
+        "category": "Drinkware",
+        "product_name": "Skinny Tumbler",
+        "add_product": "Tumbler 20oz"
+      },
+      "message": "Your layer has been deleted",
+      "action_bar": "Delete in this product",
+      "layer_text": {
+        "layer_type": "Text",
+        "layer_name": "Text layer 1",
+        "layer_value": "Test value",
+        "location_layer_x": "1322",
+        "location_layer_y": "376",
+        "layer_size_h": "217",
+        "layer_size_w": "954"
+      },
+      "layers_add": [
+        {
+          "layer_type": "Text",
+          "location_layer_x": "118",
+          "location_layer_y": "826",
+          "layer_size_h": "217",
+          "layer_size_w": "954"
+        },
+        {
+          "layer_type": "Image",
+          "image_name": "artwork - Front.png",
+          "location_layer_x": "1281",
+          "location_layer_y": "1299",
+          "layer_size_h": "975",
+          "layer_size_w": "1035"
+        }
+      ],
+      "delete_layer_name": {
+        "layer_name": "artwork - Front"
+      },
+      "picture": {
+        "delete_layer": "delete_layer",
+        "base_delete_layer": "base_delete_layer",
+        "delete_on_action_bar": "delete_on_action_bar"
+      }
+    },
+    "SB_PRB_EDT_104": {
+      "case_id": "SB_PRB_EDT_104",
+      "product_info": {
+        "category": "All Over Print",
+        "product_name": "AOP Beach Shorts,Leggings"
+      },
+      "drag": {
+        "index_from": "2",
+        "index_to": "3",
+        "index_unselect": "1"
+      },
+      "drag_default": {
+        "index_from": "2",
+        "index_to": "1",
+        "index_select": "7"
+      },
+      "drag_default_last": {
+        "index_from": "7",
+        "index_to": "1"
+      },
+      "message": "Update mockups successfully",
+      "picture": {
+        "mockup_default": "mockup_default",
+        "mockup_select": "mockup_select"
+      }
+    },
+    "SB_PRB_EDT_105": {
+      "case_id": "SB_PRB_EDT_105",
+      "product_info": {
+        "category": "All Over Print",
+        "product_name": "AOP T-Shirt",
+        "base_add_more": "Short Socks"
+      },
+      "mockup_index": {
+        "index_side_required": "3",
+        "index_select": "1"
+      },
+      "message_side_required": "You must choose at least 1 mockup per side (front&back)",
+      "message_required": "You must choose at least 1 mockup"
+    },
+    "SB_PRB_EDT_106": {
+      "case_id": "SB_PRB_EDT_106",
+      "product_info": {
+        "category": "All Over Print",
+        "product_name": "AOP Hoodie"
+      },
+      "layers_add": [
+        {
+          "layer_type": "Text",
+          "location_layer_x": "2550",
+          "location_layer_y": "3900",
+          "layer_size_h": "500",
+          "layer_size_w": "1900",
+          "front_or_back": "Front"
+        },
+        {
+          "layer_type": "Image",
+          "image_name": "AOP Hoodie Front.jpg",
+          "front_or_back": "Front"
+        }
+      ],
+      "side_name": "Back side",
+      "layer_text": "Text layer 1",
+      "layer_image": "AOP Hoodie Front",
+      "picture": {
+        "add_layer": "add_layer",
+        "drag_layer": "drag_layer",
+        "drag_layer_side": "drag_layer_side"
+      }
+    },
+    "SB_PRB_EDT_110": {
+      "product_info": {
+        "category": "Apparel",
+        "product_name": "V-neck T-shirt"
+      },
+      "layer_image": {
+        "layer_type": "Image",
+        "image_name": "artwork - Front.png",
+        "front_or_back": "Front"
+      },
+      "variant_editor": {
+        "base_product": "V-neck T-shirt",
+        "option_color": "Color",
+        "variant_color": "Navy,True Royal",
+        "option_size": "Size",
+        "variant_size": "M,L"
+      },
+      "message_title": "Title can't be blank",
+      "pricing_info": {
+        "title": "Alone Astronaut Walking Snowillustration Painting Astronaut Luxury Multi Canvas Prints,Multi Piece Panel Canvas Gallery Art Print Print Alone Astronaut Walking Snowillustration Painting Astronaut Luxury Multi Canvas Prints, Multi Piece Panel Canvas Gallery Art Print Print Alone Astronaut Walking Snowillustration Painting Astronaut Luxury Multi Canvas Prints,Multi Piece Panel Canvas Gallery Art Print Print",
+        "description": "Description Campaign 2D",
+        "tag": "test",
+        "product_name": "V-neck T-shirt",
+        "variant": "V-neck T-shirt - White - S",
+        "photo_guide": "false",
+        "sale_price": "$30.99",
+        "compare_price": "$40.99"
+      },
+      "picture": {
+        "pricing_defautl": "pricing-defautl-SB-PRB-EDT-110.png",
+        "pricing_varriant": "pricing-varriant-SB-PRB-EDT-110.png",
+        "pricing_edit": "pricing-edit-SB-PRB-EDT-110.png"
+      }
+    },
+    "SB_PRB_EDT_114": {
+      "product_info": {
+        "category": "Apparel",
+        "product_name": "3/4 Sleeve Raglan Tee,V-neck T-shirt"
+      },
+      "layer_image": {
+        "layer_type": "Image",
+        "image_name": "artwork - Front.png",
+        "layer_name": "artwork - Front",
+        "front_or_back": "Front"
+      },
+      "variant_editor": {
+        "base_product": "V-neck T-shirt",
+        "option_color": "Color",
+        "variant_color": "Navy,True Royal"
+      },
+      "title": "T-Shirt_01",
+      "index_color": "1",
+      "index_color_other": "2",
+      "picture": {
+        "product_main_defautl": "product-main-defautl-SB-PRB-EDT-114.png",
+        "color_main": "color-main-SB-PRB-EDT-114.png",
+        "select_product_main": "select-product-main-SB-PRB-EDT-114.png"
+      }
+    },
+    "SB_PRB_EDT_118": {
+      "product_info": {
+        "category": "Apparel",
+        "product_name": "V-neck T-shirt,Baby One Piece",
+        "base_second": "Baby One Piece",
+        "base_first": "V-neck T-shirt"
+      },
+      "message": "Your layer has been synced to all products",
+      "layers_add": [
+        {
+          "layer_type": "Image",
+          "image_name": "artwork - Front.png",
+          "front_or_back": "Front"
+        },
+        {
+          "layer_type": "Text",
+          "front_or_back": "Front"
+        }
+      ],
+      "delete_layer_name": {
+        "layer_name": "artwork - Front"
+      },
+      "layer_edit": {
+        "layer_type": "Image",
+        "image_name": "artwork - Front.png",
+        "layer_name": "artwork - Front",
+        "location_layer_x": "670",
+        "location_layer_y": "1430",
+        "layer_size_h": "700",
+        "layer_size_w": "750",
+        "front_or_back": "Front"
+      },
+      "side_name": "Front side",
+      "layer_text": "Text layer 1",
+      "layer_image": "artwork - Front",
+      "layer_sync": "Text layer 1,artwork - Front",
+      "picture": {
+        "sync_layer": "sync-layer-SB-PRB-EDT-118.png",
+        "layer_sync_base_first": "drag-edit-layer-sync-base-first-SB-PRB-EDT-118.png",
+        "layer_sync_base_second": "drag-edit-layer-sync-base-second-SB-PRB-EDT-118.png"
+      }
+    },
+    "SB_PRB_EDT_122": {
+      "product_info": {
+        "category": "All Over Print,Apparel",
+        "product_name": "AOP Hoodie,Leggings,Classic V-neck T-shirt,Classic Unisex Tank,3/4 Sleeve Raglan Tee",
+        "base_2D_second": "Classic Unisex Tank",
+        "base_2D_first": "Classic V-neck T-shirt",
+        "category_add": "Apparel",
+        "product_add": "Classic Long Sleeve Tee"
+      },
+      "layer_image": {
+        "layer_type": "Image",
+        "image_name": "artwork - Front.png",
+        "layer_name": "artwork - Front",
+        "location_layer_x": "670",
+        "location_layer_y": "1430",
+        "layer_size_h": "700",
+        "layer_size_w": "750",
+        "front_or_back": "Front"
+      },
+      "layer_text": {
+        "layer_name": "Text layer 1",
+        "layer_type": "Text",
+        "location_layer_x": "560",
+        "location_layer_y": "600",
+        "front_or_back": "Front"
+      },
+      "picture": {
+        "icon_link": "icon-link-base-SB-PRB-EDT-122.png",
+        "link_product_add": "link-with-add-base-SB-PRB-EDT-122.png",
+        "preview_with_link": "sync-layer-with-link-SB-PRB-EDT-122.png",
+        "off_link": "off-link-SB-PRB-EDT-122.png"
+      }
+    },
+    "SB_PRB_EDT_124": {
+      "product_info": {
+        "category": "Apparel",
+        "product_name": "Classic V-neck T-shirt,Classic Unisex T-shirt",
+        "base_2D_second": "Classic Unisex T-shirt",
+        "base_2D_first": "Classic V-neck T-shirt",
+        "category_add": "Apparel",
+        "product_add": "Classic Ladies T-shirt"
+      },
+      "layer_image": {
+        "layer_type": "Image",
+        "image_name": "artwork - Front.png",
+        "layer_name": "artwork - Front",
+        "location_layer_x": "670",
+        "location_layer_y": "1430",
+        "layer_size_h": "700",
+        "layer_size_w": "750",
+        "front_or_back": "Front"
+      },
+      "layer_text": {
+        "layer_name": "Text layer 1",
+        "layer_type": "Text",
+        "layer_size_h": "467",
+        "layer_size_w": "1680",
+        "location_layer_x": "210",
+        "location_layer_y": "967",
+        "front_or_back": "Front"
+      },
+      "picture": {
+        "layer_link_off": "show-layer-when-off-link-SB-PRB-EDT-124.png",
+        "layer_link_on": "show-layer-when-on-link-SB-PRB-EDT-124.png",
+        "link_product_add": "sync-layer-when-add-base-SB-PRB-EDT-124.png"
+      }
+    },
+    "SB_PRB_EDT_120": {
+      "product_info": {
+        "category": "Apparel",
+        "product_name": "Classic V-neck T-shirt",
+        "category_add": "Drinkware",
+        "product_add": "Two-sided Mug New"
+      },
+      "layer_image": {
+        "layer_type": "Image",
+        "image_name": "artwork - Front.png",
+        "layer_name": "artwork - Front",
+        "front_or_back": "Front"
+      },
+      "layer_edit_base_add": {
+        "layer_name": "artwork - Front",
+        "location_layer_x": "1669",
+        "location_layer_y": "295",
+        "layer_size_h": "455",
+        "layer_size_w": "483"
+      },
+      "layer_edit": {
+        "layer_name": "artwork - Front",
+        "location_layer_x": "829",
+        "location_layer_y": "113",
+        "layer_size_h": "253",
+        "layer_size_w": "269",
+        "front_or_back": "Front"
+      },
+      "action_name": "Auto-sync",
+      "picture": {
+        "edit_layer": "show-layer-when-edit-SB-PRB-EDT-120.png",
+        "preview_auto_sync": "show-layer-when-auto-sync-SB-PRB-EDT-120.png"
+      }
+    }
+  }
+}

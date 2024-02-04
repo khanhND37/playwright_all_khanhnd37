@@ -1,0 +1,516 @@
+{
+  "env": {
+    "dev": {
+      "domain": "au-product-search.myshopbase.net",
+      "shop_name": "au-product-search",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "43AhIn|VWp;[?9&",
+      "shop_id": 10328798,
+      "user_id": 89797,
+      "shop_theme_id": 3189807,
+      "page_id": 3189637
+    },
+    "prodtest": {
+      "domain": "au-product-search-prodtest.onshopbase.com",
+      "shop_name": "au-product-search-prodtest",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "shop_id": 10443024,
+      "user_id": 11244582,
+      "shop_theme_id": 1501686,
+      "page_id": 1501642,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "prod": {
+      "domain": "au-product-search.onshopbase.com",
+      "shop_name": "au-product-search",
+      "api": "https://api.shopbase.com",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "shop_id": 10443517,
+      "user_id": 11244582,
+      "shop_theme_id": 1501992,
+      "page_id": 1501643
+    }
+  },
+  "data": {
+    "dnd_section": {
+      "from": {
+        "category": "Basics",
+        "template": "Single column"
+      },
+      "to": {
+        "position": {
+          "section": 1
+        },
+        "isBottom": false
+      }
+    },
+    "dnd_block": {
+      "from": {
+        "category": "Basics",
+        "template": "Product Search"
+      },
+      "to": {
+        "position": {
+          "section": 1,
+          "column": 1
+        },
+        "isBottom": false
+      }
+    }
+  },
+  "cases": {
+    "SB_NEWECOM_PS_01": {
+      "product_name": "product",
+      "expect": {
+        "snapshot_content_bar": "SB_NEWECOM_PS_01_default_content_bar_product_search.png",
+        "snapshot_design_bar": "SB_NEWECOM_PS_01_default_design_bar_product_search.png",
+        "snapshot_storefront": "SB_NEWECOM_PS_01_default_product_search_storefront.png"
+      }
+    },
+    "DATA_DRIVEN": {
+      "data_test": [
+        {
+          "description": "[Style] Verify trường Position trong tab Style của Product search",
+          "case_id": "SB_NEWECOM_PS_02",
+          "data": [
+            {
+              "product_name": "Test",
+              "snapshot_storefront": "SB_NEWECOM_PS_02_2_snapshot_storefront.png"
+            },
+            {
+              "product_name": "Test",
+              "snapshot_storefront": "SB_NEWECOM_PS_02_1_snapshot_storefront.png"
+            }
+          ]
+        },
+        {
+          "description": "[Style] Verify trường Align trong tab Style của Product search",
+          "case_id": "SB_NEWECOM_PS_03",
+          "data": [
+            {
+              "snapshot_storefront": "SB_NEWECOM_PS_03_center_sf.png",
+              "align": "Center"
+            },
+            {
+              "snapshot_storefront": "SB_NEWECOM_PS_03_left_sf.png",
+              "align": "Left"
+            },
+            {
+              "snapshot_storefront": "SB_NEWECOM_PS_03_right_sf.png",
+              "align": "Right"
+            }
+          ]
+        },
+        {
+          "description": "[Style] Verify trường Width và Height trong tab Style của Product search",
+          "case_id": "SB_NEWECOM_PS_04",
+          "data": [
+            {
+              "width": {
+                "unit": "Px",
+                "value": 30
+              },
+              "snapshot_storefront": "SB_NEWECOM_PS_04_01_width_height_sf.png"
+            },
+            {
+              "width": {
+                "unit": "%",
+                "value": 50
+              },
+              "snapshot_storefront": "SB_NEWECOM_PS_04_02_width_height_sf.png"
+            },
+            {
+              "width": {
+                "unit": "Auto"
+              },
+              "snapshot_storefront": "SB_NEWECOM_PS_04_03_width_height_sf.png"
+            },
+            {
+              "width": {
+                "unit": "Fill"
+              },
+              "snapshot_storefront": "SB_NEWECOM_PS_04_04_width_height_sf.png"
+            }
+          ]
+        },
+        {
+          "description": "[Style] Verify trường background trong tab Style của Product search",
+          "case_id": "SB_NEWECOM_PS_05",
+          "padding": {
+            "top": 20,
+            "left": 20,
+            "bottom": 20,
+            "right": 20,
+            "input": true
+          },
+          "data": [
+            {
+              "background": {
+                "color": {
+                  "preset": 3
+                }
+              },
+              "snapshot_storefront": "SB_NEWECOM_PS_05_color_background_sf.png"
+            },
+            {
+              "background": {
+                "image": {
+                  "url": "./data/shopbase/BD_5.png",
+                  "size": "Cover",
+                  "position": "5",
+                  "repeat": "no-repeat"
+                }
+              },
+              "snapshot_storefront": "SB_NEWECOM_PS_05_image_background_contain_sf.png"
+            }
+          ]
+        },
+        {
+          "description": "[Style] Verify trường border trong tab Style của Product search",
+          "case_id": "SB_NEWECOM_PS_06",
+          "data": [
+            {
+              "border": {
+                "thickness": "m",
+                "color": {
+                  "preset": 3
+                },
+                "style": "Solid",
+                "side": "All"
+              },
+              "snapshot_storefront": "SB_NEWECOM_PS_06_01_border_product_search.png"
+            },
+            {
+              "border": {
+                "thickness": "l",
+                "color": {
+                  "preset": 3
+                },
+                "style": "Dash",
+                "side": "Top"
+              },
+              "snapshot_storefront": "SB_NEWECOM_PS_06_02_border_product_search.png"
+            },
+            {
+              "border": {
+                "thickness": "s",
+                "color": {
+                  "preset": 3
+                },
+                "style": "Solid",
+                "side": "Top & Bottom"
+              },
+              "snapshot_storefront": "SB_NEWECOM_PS_06_03_border_product_search.png"
+            },
+            {
+              "border": {
+                "thickness": "m",
+                "color": {
+                  "preset": 3
+                },
+                "style": "Solid",
+                "side": "Left & Right"
+              },
+              "snapshot_storefront": "SB_NEWECOM_PS_06_04_border_product_search.png"
+            }
+          ]
+        },
+        {
+          "description": "[Style] Verify trường Shadow trong tab Style của Product search",
+          "case_id": "SB_NEWECOM_PS_07",
+          "data": [
+            {
+              "shadow": {
+                "option": "hard",
+                "size": "M",
+                "direction": "Top Right"
+              },
+              "snapshot_storefront": "SB_NEWECOM_PS_07_01_shadow_sf.png"
+            },
+            {
+              "shadow": {
+                "option": "hard",
+                "size": "S",
+                "direction": "Top Left"
+              },
+              "snapshot_storefront": "SB_NEWECOM_PS_07_02_shadow_sf.png"
+            },
+            {
+              "shadow": {
+                "option": "hard",
+                "size": "L",
+                "direction": "Bottom Right"
+              },
+              "snapshot_storefront": "SB_NEWECOM_PS_07_03_shadow_sf.png"
+            },
+            {
+              "shadow": {
+                "option": "hard",
+                "size": "L",
+                "direction": "Bottom Left"
+              },
+              "snapshot_storefront": "SB_NEWECOM_PS_07_04_shadow_sf.png"
+            },
+            {
+              "shadow": {
+                "option": "hard",
+                "size": "M",
+                "direction": "Bottom"
+              },
+              "snapshot_storefront": "SB_NEWECOM_PS_07_05_shadow_sf.png"
+            },
+            {
+              "shadow": {
+                "option": "soft",
+                "size": "M",
+                "direction": "Bottom"
+              },
+              "snapshot_storefront": "SB_NEWECOM_PS_07_06_shadow_sf.png"
+            }
+          ]
+        },
+        {
+          "description": "[Style] Verify khi thay đổi setting trường Opacity",
+          "case_id": "SB_NEWECOM_PS_08",
+          "data": [
+            {
+              "opacity": {
+                "fill": true,
+                "number": 20
+              },
+              "snapshot_storefront": "SB_NEWECOM_PS_08_01_opacity_sf.png"
+            },
+            {
+              "opacity": {
+                "fill": true,
+                "number": 90
+              },
+              "snapshot_storefront": "SB_NEWECOM_PS_08_02_opacity_sf.png"
+            }
+          ]
+        },
+        {
+          "description": "[Style] Verify khi thay đổi setting trường Radius",
+          "case_id": "SB_NEWECOM_PS_09",
+          "background": {
+            "color": {
+              "preset": 4
+            }
+          },
+          "padding": {
+            "top": 20,
+            "left": 20,
+            "bottom": 20,
+            "right": 20,
+            "input": true
+          },
+          "data": [
+            {
+              "radius": {
+                "fill": true,
+                "number": 0
+              },
+              "snapshot_storefront": "SB_NEWECOM_PS_09_01_radius_sf.png"
+            },
+            {
+              "radius": {
+                "fill": true,
+                "number": 20
+              },
+              "snapshot_storefront": "SB_NEWECOM_PS_09_02_radius_sf.png"
+            },
+            {
+              "radius": {
+                "fill": true,
+                "number": 100
+              },
+              "snapshot_storefront": "SB_NEWECOM_PS_09_03_radius_sf.png"
+            }
+          ]
+        },
+        {
+          "description": "[Style] Verify khi thay đổi setting trường Padding và Marigin",
+          "case_id": "SB_NEWECOM_PS_10",
+          "data": [
+            {
+              "padding": {
+                "top": 30,
+                "left": 30,
+                "bottom": 60,
+                "right": 26,
+                "input": true
+              },
+              "margin": {
+                "top": 13,
+                "left": 31,
+                "bottom": 23,
+                "right": 16,
+                "input": true
+              },
+              "snapshot_storefront": "SB_NEWECOM_PS_10_padding_marigin_sf.png"
+            }
+          ]
+        },
+        {
+          "description": "[Setting] Verify các giá trị mặc định trong tab Settings của Product search",
+          "case_id": "SB_NEWECOM_PS_11",
+          "data": [
+            {
+              "snapshot_setting": "SB_NEWECOM_PS_11_default_setting_product_search.png",
+              "snapshot_storefront": "SB_NEWECOM_PS_11_default_product_search_storefront.png"
+            }
+          ]
+        }
+      ]
+    },
+    "SB_NEWECOM_PS_12": {
+      "data": [
+        {
+          "description": "Tại trường type, select value =  Search Bar > Đi tới SF, verify hiển thị Product search",
+          "setting": {
+            "type": "Search bar",
+            "size": "S",
+            "button": false
+          },
+          "snapshot_storefront": "SB_NEWECOM_PS_12_type_search_bar_size_s_button_off_storefront.png"
+        },
+        {
+          "description": "Tại trường type, select value =  Search Bar > Đi tới SF, verify hiển thị Product search",
+          "setting": {
+            "type": "Search bar",
+            "size": "M",
+            "button": false
+          },
+          "snapshot_storefront": "SB_NEWECOM_PS_12_type_search_bar_size_m_button_off_storefront.png"
+        },
+        {
+          "description": "Tại trường type, select value =  Search Bar > Đi tới SF, verify hiển thị Product search",
+          "setting": {
+            "type": "Search bar",
+            "size": "L",
+            "button": false
+          },
+          "snapshot_storefront": "SB_NEWECOM_PS_12_type_search_bar_size_l_button_off_storefront.png"
+        },
+        {
+          "description": "Tại trường type, select value =  Search Bar > Đi tới SF, verify hiển thị Product search",
+          "setting": {
+            "type": "Search bar",
+            "size": "S",
+            "button": true,
+            "button_label": "Test"
+          },
+          "snapshot_storefront": "SB_NEWECOM_PS_12_type_search_bar_size_s_button_on_storefront.png"
+        },
+        {
+          "description": "Tại trường type, select value =  Search Bar > Đi tới SF, verify hiển thị Product search",
+          "setting": {
+            "type": "Search bar",
+            "size": "M",
+            "button": true,
+            "button_label": "Test"
+          },
+          "snapshot_storefront": "SB_NEWECOM_PS_12_type_search_bar_size_m_button_on_storefront.png"
+        },
+        {
+          "description": "Tại trường type, select value =  Search Bar > Đi tới SF, verify hiển thị Product search",
+          "setting": {
+            "type": "Search bar",
+            "size": "L",
+            "button": true,
+            "button_label": "Test"
+          },
+          "snapshot_storefront": "SB_NEWECOM_PS_12_type_search_bar_size_l_button_on_storefront.png"
+        },
+        {
+          "description": "Tại trường type, select value = Icon only > Đi tới SF, verify hiển thị Product search",
+          "setting": {
+            "type": "Icon only",
+            "size": "S"
+          },
+          "snapshot_storefront": "SB_NEWECOM_PS_12_type_icon_only_size_s_storefront.png"
+        },
+        {
+          "description": "Tại trường type, select value = Icon only > Đi tới SF, verify hiển thị Product search",
+          "setting": {
+            "type": "Icon only",
+            "size": "M"
+          },
+          "snapshot_storefront": "SB_NEWECOM_PS_12_type_icon_only_size_m_storefront.png"
+        },
+        {
+          "description": "Tại trường type, select value = Icon only > Đi tới SF, verify hiển thị Product search",
+          "setting": {
+            "type": "Icon only",
+            "size": "L"
+          },
+          "snapshot_storefront": "SB_NEWECOM_PS_12_type_icon_only_size_l_storefront.png"
+        }
+      ]
+    },
+    "SB_NEWECOM_PS_13": {
+      "data": [
+        {
+          "setting": {
+            "icon": "check_circle"
+          },
+          "snapshot_storefront": "SB_NEWECOM_PS_13_01_icon_product_search_storefront.png"
+        },
+        {
+          "setting": {
+            "icon": "home"
+          },
+          "snapshot_storefront": "SB_NEWECOM_PS_13_02_icon_product_search_storefront.png"
+        }
+      ]
+    },
+    "DATA_SETTING": {
+      "data_test": [
+        {
+          "description": "[Setting] Verify trường Placeholder trong tab Settings của Product search",
+          "case_id": "SB_NEWECOM_PS_14",
+          "data": [
+            {
+              "setting": {
+                "placeholder": "Search products"
+              },
+              "snapshot_storefront": "SB_NEWECOM_PS_14_01_placeholder_product_search_storefront.png"
+            },
+            {
+              "setting": {
+                "placeholder": " "
+              },
+              "snapshot_storefront": "SB_NEWECOM_PS_14_02_placeholder_product_search_storefront.png"
+            }
+          ]
+        },
+        {
+          "description": "[Setting] Verify turn on/off trường button trong tab Settings của Product search",
+          "case_id": "SB_NEWECOM_PS_15",
+          "data": [
+            {
+              "setting": {
+                "button": true
+              },
+              "snapshot_storefront": "SB_NEWECOM_PS_15_01_button_product_search_storefront.png"
+            },
+            {
+              "setting": {
+                "button": true,
+                "button_label": "Test"
+              },
+              "snapshot_storefront": "SB_NEWECOM_PS_15_02_button_product_search_storefront.png"
+            }
+          ]
+        }
+      ]
+    },
+    "SB_NEWECOM_PS_16": {
+      "snapshot_storefront": "SB_NEWECOM_PS_16_snapshot_storefront.png"
+    }
+  }
+}

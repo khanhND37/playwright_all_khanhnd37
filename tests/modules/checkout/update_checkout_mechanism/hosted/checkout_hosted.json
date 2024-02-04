@@ -1,0 +1,1304 @@
+{
+  "platform": "shopbase",
+  "acc_dashboard_payment": {
+    "stripe": {
+      "stripe_secret_key": "sk_test_Pfv1RbMLdJwdO7o8FOV4d03600K0JL3zbx"
+    },
+    "payoneer": {
+      "user_name": "MRS_67983696",
+      "password": "h6i00c3huicgqtl5g754bq86t752v2fbndg0f6kd"
+    }
+  },
+  "number_retry": 10,
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-update-checkout.onshopbase.com",
+      "shop_name": "au-update-checkout",
+      "user_id": 11247306,
+      "shop_id": 10445260,
+      "username": "opay-qe-1@beeketing.net",
+      "password": "CZFX[b_G5T:+N*Y"
+    },
+    "prodtest": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-update-checkout-prodtest.onshopbase.com",
+      "shop_name": "au-update-checkout-prodtest",
+      "user_id": 11247306,
+      "shop_id": 10445957,
+      "username": "opay-qe-1@beeketing.net",
+      "password": "CZFX[b_G5T:+N*Y",
+
+      "acc_dashboard_payment": {
+        "stripe": {
+          "stripe_secret_key": "sk_test_51KC0oyGz6vfcbTm0vOb0wxbwwaMGewcvLjI1pamhtiiaIRFQaYKKCGnTh0DtMT4R8ozjKe6E70CRwV5uCShDI9b700mTgp6cD2"
+        }
+      },
+
+      "cases": {
+        "DATA_DRIVEN_CHECKOUT_HOSTED": {
+          "data": [
+            {
+              "case_id": "SB_CHE_UP_19",
+              "case_name": "[Hosted] Change data: auto discount percentage, global market trước khi create order qua cổng iDeal",
+              "products": [
+                {
+                  "id": 1000000479730635,
+                  "title": "Post purchase",
+                  "variant_id": 1000010766902214,
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "case_id": "SB_CHE_UP_20",
+              "case_name": "[Hosted] Change data: auto discount freeship, global market trước khi create order qua cổng Bancontact",
+              "products": [
+                {
+                  "id": 1000000479730635,
+                  "title": "Post purchase",
+                  "variant_id": 1000010766902214,
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "case_id": "SB_CHE_UP_21",
+              "case_name": "[Hosted] Change data: auto discount buy x get y, global market trước khi create order qua cổng Giropay",
+              "products": [
+                {
+                  "id": 1000000479730635,
+                  "title": "Post purchase",
+                  "variant_id": 1000010766902214,
+                  "quantity": 1
+                },
+                {
+                  "id": 1000000479730634,
+                  "title": "Shirt",
+                  "variant_id": 1000010766899879,
+                  "quantity": 1
+                }
+              ],
+              "data_setting": {
+                "global_market": {
+                  "name": "SB_CHE_UP EU (dont remove)",
+                  "is_rate_auto": false,
+                  "exchange_rate": 0.9,
+                  "price_adjustment": -10,
+                  "price_adjustment_type": "price_decrease",
+                  "is_rounding": true,
+                  "rounding": 0.22,
+                  "update_fields": [
+                    "is_rate_auto",
+                    "exchange_rate",
+                    "price_adjustment",
+                    "price_adjustment_type",
+                    "is_rounding",
+                    "rounding"
+                  ]
+                },
+                "discount": {
+                  "title": "SB_CHE_UP_capture_buy_x_get_y",
+                  "type": "automatic",
+                  "is_remove": true
+                }
+              },
+              "data_reset_setting": {
+                "global_market": {
+                  "name": "SB_CHE_UP EU (dont remove)",
+                  "is_rate_auto": true,
+                  "price_adjustment": 10,
+                  "price_adjustment_type": "price_increase",
+                  "is_rounding": true,
+                  "rounding": 0.55,
+                  "update_fields": [
+                    "is_rate_auto",
+                    "price_adjustment",
+                    "price_adjustment_type",
+                    "is_rounding",
+                    "rounding"
+                  ]
+                },
+                "discount": {
+                  "is_create": true,
+                  "title": "SB_CHE_UP_capture_buy_x_get_y",
+                  "customer_buy_variants": [1000010766902214],
+                  "customer_get_variants": [1000010766899879],
+                  "quantity_ratio": {
+                    "prerequisite_quantity": 1,
+                    "entitled_quantity": 1
+                  },
+                  "value": -10,
+                  "value_type": "percentage",
+                  "type": "automatic"
+                }
+              }
+            },
+            {
+              "case_id": "SB_CHE_UP_22",
+              "case_name": "[Hosted] Change data: quantity discount, global market trước khi create order qua cổng Sofort",
+              "products": [
+                {
+                  "id": 1000000479730635,
+                  "title": "Post purchase",
+                  "variant_id": 1000010766902214,
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "case_id": "SB_CHE_UP_24",
+              "case_name": "[Hosted] Change data: product price, global market trước khi create order qua cổng Afterpay",
+              "products": [
+                {
+                  "id": 1000000479730635,
+                  "title": "Post purchase",
+                  "variant_id": 1000010766902214,
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "case_id": "SB_CHE_UP_25",
+              "case_name": "[Hosted] Change data: tax exclude trước khi create order qua cổng Unlimint",
+              "products": [
+                {
+                  "id": 1000000479730635,
+                  "title": "Post purchase",
+                  "variant_id": 1000010766902214,
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "case_id": "SB_CHE_UP_26",
+              "case_name": "[Hosted] Change data: charge tax on shipping fee trước khi create order qua cổng Ocean payment",
+              "products": [
+                {
+                  "id": 1000000479730635,
+                  "title": "Post purchase",
+                  "variant_id": 1000010766902214,
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "case_id": "SB_CHE_UP_28",
+              "case_name": "[Hosted] Change data: Global market trước khi create order qua cổng Payoneer",
+              "products": [
+                {
+                  "id": 1000000479730635,
+                  "title": "Post purchase",
+                  "variant_id": 1000010766902214,
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "case_id": "SB_CHE_UP_30",
+              "case_name": "[Hosted] Change data: thông tin variant trước khi create order có nhiều items qua cổng Payoneer",
+              "products": [
+                {
+                  "id": 1000000479730639,
+                  "title": "Bikini",
+                  "variant_id": 1000010766899889,
+                  "quantity": 1
+                },
+                {
+                  "id": 1000000479730639,
+                  "title": "Bikini",
+                  "variant_id": 1000010761296198,
+                  "quantity": 1
+                }
+              ],
+              "data_setting": {
+                "variant": [
+                  {
+                    "id": 1000010766899889,
+                    "price": 40,
+                    "update_fields": ["price"]
+                  },
+                  {
+                    "id": 1000010761296198,
+                    "price": 50,
+                    "update_fields": ["price"]
+                  }
+                ]
+              },
+              "data_reset_setting": {
+                "variant": [
+                  {
+                    "id": 1000010766899889,
+                    "price": 20,
+                    "update_fields": ["price"]
+                  },
+                  {
+                    "id": 1000010761296198,
+                    "price": 30,
+                    "update_fields": ["price"]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "SB_CHE_UP_23": {
+          "products": [
+            {
+              "id": 1000000479730639,
+              "title": "Bikini",
+              "variant_id": 1000010766899889,
+              "quantity": 1
+            }
+          ],
+          "product_ppc": "Post purchase",
+          "data_setting": {
+            "global_market": {
+              "name": "SB_CHE_UP EU (dont remove)",
+              "is_rate_auto": false,
+              "exchange_rate": 0.9,
+              "price_adjustment": -10,
+              "price_adjustment_type": "price_decrease",
+              "is_rounding": true,
+              "rounding": 0.22,
+              "update_fields": [
+                "is_rate_auto",
+                "exchange_rate",
+                "price_adjustment",
+                "price_adjustment_type",
+                "is_rounding",
+                "rounding"
+              ]
+            }
+          },
+          "data_reset_setting": {
+            "global_market": {
+              "name": "SB_CHE_UP EU (dont remove)",
+              "is_rate_auto": true,
+              "price_adjustment": 10,
+              "price_adjustment_type": "price_increase",
+              "is_rounding": true,
+              "rounding": 0.55,
+              "update_fields": ["is_rate_auto", "price_adjustment", "price_adjustment_type", "is_rounding", "rounding"]
+            }
+          }
+        }
+      }
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-update-checkout.myshopbase.net",
+      "shop_name": "au-update-checkout",
+      "user_id": 73800,
+      "shop_id": 10327923,
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+
+      "acc_dashboard_payment": {
+        "stripe": {
+          "stripe_secret_key": "sk_test_51H0MEvDrQ1c0YGaqvcoK99JXsl3cizVLw2rwkd224I2ljBzryJ3EAXldQKS7VDatwFk6JvNDwXM3wnvJJmGuVE6n00MqLP1opC"
+        }
+      },
+
+      "cases": {
+        "DATA_DRIVEN_CHECKOUT_HOSTED": {
+          "data": [
+            {
+              "case_id": "SB_CHE_UP_19",
+              "case_name": "[Hosted] Change data: auto discount percentage, global market trước khi create order qua cổng iDeal",
+              "products": [
+                {
+                  "id": 1100000000510703,
+                  "title": "Post purchase",
+                  "variant_id": 1000001769896107,
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "case_id": "SB_CHE_UP_20",
+              "case_name": "[Hosted] Change data: auto discount freeship, global market trước khi create order qua cổng Bancontact",
+              "products": [
+                {
+                  "id": 1100000000510703,
+                  "title": "Post purchase",
+                  "variant_id": 1000001769896107,
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "case_id": "SB_CHE_UP_21",
+              "case_name": "[Hosted] Change data: auto discount buy x get y, global market trước khi create order qua cổng Giropay",
+              "products": [
+                {
+                  "id": 1100000000510703,
+                  "title": "Post purchase",
+                  "variant_id": 1000001771064714,
+                  "quantity": 1
+                },
+                {
+                  "id": 1100000000526851,
+                  "title": "Shirt",
+                  "variant_id": 1000001771064505,
+                  "quantity": 1
+                }
+              ],
+              "data_setting": {
+                "global_market": {
+                  "name": "SB_CHE_UP EU (dont remove)",
+                  "is_rate_auto": false,
+                  "exchange_rate": 0.9,
+                  "price_adjustment": -10,
+                  "price_adjustment_type": "price_decrease",
+                  "is_rounding": true,
+                  "rounding": 0.22,
+                  "update_fields": [
+                    "is_rate_auto",
+                    "exchange_rate",
+                    "price_adjustment",
+                    "price_adjustment_type",
+                    "is_rounding",
+                    "rounding"
+                  ]
+                },
+                "discount": {
+                  "title": "SB_CHE_UP_capture_buy_x_get_y",
+                  "type": "automatic",
+                  "is_remove": true
+                }
+              },
+              "data_reset_setting": {
+                "global_market": {
+                  "name": "SB_CHE_UP EU (dont remove)",
+                  "is_rate_auto": true,
+                  "price_adjustment": 10,
+                  "price_adjustment_type": "price_increase",
+                  "is_rounding": true,
+                  "rounding": 0.55,
+                  "update_fields": [
+                    "is_rate_auto",
+                    "price_adjustment",
+                    "price_adjustment_type",
+                    "is_rounding",
+                    "rounding"
+                  ]
+                },
+                "discount": {
+                  "is_create": true,
+                  "title": "SB_CHE_UP_capture_buy_x_get_y",
+                  "customer_buy_variants": [1000001769896107],
+                  "customer_get_variants": [1000001771064505],
+                  "quantity_ratio": {
+                    "prerequisite_quantity": 1,
+                    "entitled_quantity": 1
+                  },
+                  "value": -10,
+                  "value_type": "percentage",
+                  "type": "automatic"
+                }
+              }
+            },
+            {
+              "case_id": "SB_CHE_UP_22",
+              "case_name": "[Hosted] Change data: quantity discount, global market trước khi create order qua cổng Sofort",
+              "products": [
+                {
+                  "id": 1100000000510703,
+                  "title": "Post purchase",
+                  "variant_id": 1000001769896107,
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "case_id": "SB_CHE_UP_24",
+              "case_name": "[Hosted] Change data: product price, global market trước khi create order qua cổng Afterpay",
+              "products": [
+                {
+                  "id": 1100000000510703,
+                  "title": "Post purchase",
+                  "variant_id": 1000001769896107,
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "case_id": "SB_CHE_UP_25",
+              "case_name": "[Hosted] Change data: tax exclude trước khi create order qua cổng Unlimint",
+              "products": [
+                {
+                  "id": 1100000000510703,
+                  "title": "Post purchase",
+                  "variant_id": 1000001769896107,
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "case_id": "SB_CHE_UP_26",
+              "case_name": "[Hosted] Change data: charge tax on shipping fee trước khi create order qua cổng Ocean payment",
+              "products": [
+                {
+                  "id": 1100000000510703,
+                  "title": "Post purchase",
+                  "variant_id": 1000001769896107,
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "case_id": "SB_CHE_UP_28",
+              "case_name": "[Hosted] Change data: Global market trước khi create order qua cổng Payoneer",
+              "products": [
+                {
+                  "id": 1100000000510703,
+                  "title": "Post purchase",
+                  "variant_id": 1000001769896107,
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "case_id": "SB_CHE_UP_30",
+              "case_name": "[Hosted] Change data: thông tin variant trước khi create order có nhiều items qua cổng Payoneer",
+              "products": [
+                {
+                  "id": 1100000000535009,
+                  "title": "Bikini",
+                  "variant_id": 1000001770261703,
+                  "quantity": 1
+                },
+                {
+                  "id": 1100000000535009,
+                  "title": "Bikini",
+                  "variant_id": 1000010761296198,
+                  "quantity": 1
+                }
+              ],
+              "data_setting": {
+                "variant": [
+                  {
+                    "id": 1000001770261703,
+                    "price": 40,
+                    "update_fields": ["price"]
+                  },
+                  {
+                    "id": 1000010761296198,
+                    "price": 50,
+                    "update_fields": ["price"]
+                  }
+                ]
+              },
+              "data_reset_setting": {
+                "variant": [
+                  {
+                    "id": 1000001770261703,
+                    "price": 20,
+                    "update_fields": ["price"]
+                  },
+                  {
+                    "id": 1000010761296198,
+                    "price": 30,
+                    "update_fields": ["price"]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "SB_CHE_UP_23": {
+          "products": [
+            {
+              "id": 1100000000535009,
+              "title": "Bikini",
+              "variant_id": 1000001770261703,
+              "quantity": 1
+            }
+          ],
+          "product_ppc": "Post purchase",
+          "data_setting": {
+            "global_market": {
+              "name": "SB_CHE_UP EU (dont remove)",
+              "is_rate_auto": false,
+              "exchange_rate": 0.9,
+              "price_adjustment": -10,
+              "price_adjustment_type": "price_decrease",
+              "is_rounding": true,
+              "rounding": 0.22,
+              "update_fields": [
+                "is_rate_auto",
+                "exchange_rate",
+                "price_adjustment",
+                "price_adjustment_type",
+                "is_rounding",
+                "rounding"
+              ]
+            }
+          },
+          "data_reset_setting": {
+            "global_market": {
+              "name": "SB_CHE_UP EU (dont remove)",
+              "is_rate_auto": true,
+              "price_adjustment": 10,
+              "price_adjustment_type": "price_increase",
+              "is_rounding": true,
+              "rounding": 0.55,
+              "update_fields": ["is_rate_auto", "price_adjustment", "price_adjustment_type", "is_rounding", "rounding"]
+            }
+          }
+        }
+      }
+    }
+  },
+  "cases": {
+    "DATA_DRIVEN_CHECKOUT_HOSTED": {
+      "data": [
+        {
+          "case_id": "SB_CHE_UP_19",
+          "case_name": "[Hosted] Change data: auto discount percentage, global market trước khi create order qua cổng iDeal",
+          "payment_method": "iDEAL",
+          "email": "tester@maildrop.cc",
+          "shipping_address": {
+            "address1": "814 Mission Street",
+            "address2": "",
+            "city": "Houston",
+            "company": "",
+            "country": "Netherlands",
+            "country_code": "NL",
+            "country_name": "Netherlands",
+            "cpf_or_cnpj_number": "",
+            "first_name": "Tester",
+            "last_name": "ShopBase",
+            "name": "Jena",
+            "phone": "7036618988",
+            "province": "",
+            "province_code": "",
+            "zip": "77027",
+            "remember_me": false
+          },
+          "products": [
+            {
+              "id": 1000000479366697,
+              "title": "Post purchase",
+              "variant_id": 1000010760990519,
+              "quantity": 1
+            }
+          ],
+          "data_setting": {
+            "global_market": {
+              "name": "SB_CHE_UP EU (dont remove)",
+              "is_rate_auto": false,
+              "exchange_rate": 0.9,
+              "price_adjustment": -10,
+              "price_adjustment_type": "price_decrease",
+              "is_rounding": true,
+              "rounding": 0.22,
+              "update_fields": [
+                "is_rate_auto",
+                "exchange_rate",
+                "price_adjustment",
+                "price_adjustment_type",
+                "is_rounding",
+                "rounding"
+              ]
+            },
+            "discount": {
+              "title": "SB_CHE_UP_19_Discount_Percent",
+              "type": "automatic",
+              "is_remove": true
+            }
+          },
+          "data_reset_setting": {
+            "global_market": {
+              "name": "SB_CHE_UP EU (dont remove)",
+              "is_rate_auto": true,
+              "price_adjustment": 10,
+              "price_adjustment_type": "price_increase",
+              "is_rounding": true,
+              "rounding": 0.55,
+              "update_fields": ["is_rate_auto", "price_adjustment", "price_adjustment_type", "is_rounding", "rounding"]
+            },
+            "discount": {
+              "is_create": true,
+              "title": "SB_CHE_UP_19_Discount_Percent",
+              "type": "automatic",
+              "value_type": "percentage",
+              "value": -20
+            }
+          }
+        },
+        {
+          "case_id": "SB_CHE_UP_20",
+          "case_name": "[Hosted] Change data: auto discount freeship, global market trước khi create order qua cổng Bancontact",
+          "payment_method": "Bancontact",
+          "email": "tester@maildrop.cc",
+          "shipping_address": {
+            "address1": "814 Mission Street",
+            "address2": "",
+            "city": "Houston",
+            "company": "",
+            "country": "Belgium",
+            "country_code": "BE",
+            "country_name": "Belgium",
+            "cpf_or_cnpj_number": "",
+            "first_name": "Tester",
+            "last_name": "ShopBase",
+            "name": "Jena",
+            "phone": "7036618988",
+            "province": "",
+            "province_code": "",
+            "zip": "77027",
+            "remember_me": false
+          },
+          "products": [
+            {
+              "id": 1000000479366697,
+              "title": "Post purchase",
+              "variant_id": 1000010760990519,
+              "quantity": 1
+            }
+          ],
+          "data_setting": {
+            "global_market": {
+              "name": "SB_CHE_UP EU (dont remove)",
+              "is_rate_auto": false,
+              "exchange_rate": 0.9,
+              "price_adjustment": -10,
+              "price_adjustment_type": "price_decrease",
+              "is_rounding": true,
+              "rounding": 0.22,
+              "update_fields": [
+                "is_rate_auto",
+                "exchange_rate",
+                "price_adjustment",
+                "price_adjustment_type",
+                "is_rounding",
+                "rounding"
+              ]
+            },
+            "discount": {
+              "is_update": true,
+              "title": "free shipping",
+              "entitled_country_ids": [82],
+              "type": "automatic",
+              "ends_at": "",
+              "update_fields": ["entitled_country_ids", "ends_at"]
+            }
+          },
+          "data_reset_setting": {
+            "global_market": {
+              "name": "SB_CHE_UP EU (dont remove)",
+              "is_rate_auto": true,
+              "price_adjustment": 10,
+              "price_adjustment_type": "price_increase",
+              "is_rounding": true,
+              "rounding": 0.55,
+              "update_fields": ["is_rate_auto", "price_adjustment", "price_adjustment_type", "is_rounding", "rounding"]
+            },
+            "discount": {
+              "is_update": true,
+              "title": "free shipping",
+              "entitled_country_ids": [20],
+              "type": "automatic",
+              "ends_at": "",
+              "update_fields": ["entitled_country_ids", "ends_at"]
+            }
+          }
+        },
+        {
+          "case_id": "SB_CHE_UP_21",
+          "case_name": "[Hosted] Change data: auto discount buy x get y, global market trước khi create order qua cổng Giropay",
+          "payment_method": "giropay",
+          "email": "tester@maildrop.cc",
+          "shipping_address": {
+            "address1": "814 Mission Street",
+            "address2": "",
+            "city": "Houston",
+            "company": "",
+            "country": "Germany",
+            "country_code": "DE",
+            "country_name": "Germany",
+            "first_name": "Tester",
+            "last_name": "ShopBase",
+            "name": "Jena",
+            "phone": "7036618988",
+            "province": "",
+            "province_code": "",
+            "zip": "77027",
+            "remember_me": false
+          },
+          "products": [
+            {
+              "id": 1000000479366697,
+              "title": "Post purchase",
+              "variant_id": 1000010760990519,
+              "quantity": 1
+            },
+            {
+              "id": 1000000479372178,
+              "title": "Shirt",
+              "variant_id": 1000010761132693,
+              "quantity": 1
+            }
+          ],
+          "data_setting": {
+            "global_market": {
+              "name": "SB_CHE_UP EU (dont remove)",
+              "is_rate_auto": false,
+              "exchange_rate": 0.9,
+              "price_adjustment": -10,
+              "price_adjustment_type": "price_decrease",
+              "is_rounding": true,
+              "rounding": 0.22,
+              "update_fields": [
+                "is_rate_auto",
+                "exchange_rate",
+                "price_adjustment",
+                "price_adjustment_type",
+                "is_rounding",
+                "rounding"
+              ]
+            },
+            "discount": {
+              "title": "SB_CHE_UP_capture_buy_x_get_y",
+              "type": "automatic",
+              "is_remove": true
+            }
+          },
+          "data_reset_setting": {
+            "global_market": {
+              "name": "SB_CHE_UP EU (dont remove)",
+              "is_rate_auto": true,
+              "price_adjustment": 10,
+              "price_adjustment_type": "price_increase",
+              "is_rounding": true,
+              "rounding": 0.55,
+              "update_fields": ["is_rate_auto", "price_adjustment", "price_adjustment_type", "is_rounding", "rounding"]
+            },
+            "discount": {
+              "is_create": true,
+              "title": "SB_CHE_UP_capture_buy_x_get_y",
+              "customer_buy_variants": [1000010760990519],
+              "customer_get_variants": [1000010761132693],
+              "quantity_ratio": {
+                "prerequisite_quantity": 1,
+                "entitled_quantity": 1
+              },
+              "value": -10,
+              "value_type": "percentage",
+              "type": "automatic"
+            }
+          }
+        },
+        {
+          "case_id": "SB_CHE_UP_22",
+          "case_name": "[Hosted] Change data: quantity discount, global market trước khi create order qua cổng Sofort",
+          "payment_method": "Sofort",
+          "email": "tester@maildrop.cc",
+          "shipping_address": {
+            "address1": "814 Mission Street",
+            "address2": "",
+            "city": "Houston",
+            "company": "",
+            "country": "Germany",
+            "country_code": "DE",
+            "country_name": "Germany",
+            "first_name": "Tester",
+            "last_name": "ShopBase",
+            "name": "Jena",
+            "phone": "7036618988",
+            "province": "",
+            "province_code": "",
+            "zip": "77027",
+            "remember_me": false
+          },
+          "products": [
+            {
+              "id": 1000000479366697,
+              "title": "Post purchase",
+              "variant_id": 1000010760990519,
+              "quantity": 1
+            }
+          ],
+          "data_setting": {
+            "global_market": {
+              "name": "SB_CHE_UP EU (dont remove)",
+              "is_rate_auto": false,
+              "exchange_rate": 0.9,
+              "price_adjustment": -10,
+              "price_adjustment_type": "price_decrease",
+              "is_rounding": true,
+              "rounding": 0.22,
+              "update_fields": [
+                "is_rate_auto",
+                "exchange_rate",
+                "price_adjustment",
+                "price_adjustment_type",
+                "is_rounding",
+                "rounding"
+              ]
+            },
+            "boost_upsell": {
+              "offer_name": "SB_CHE_UP_22",
+              "discount_data": [
+                {
+                  "key": 0,
+                  "min_quantity": 1,
+                  "value_discount": 5,
+                  "type": "amount_each"
+                },
+                {
+                  "key": 1,
+                  "min_quantity": 2,
+                  "value_discount": 2,
+                  "type": "amount_each"
+                }
+              ]
+            }
+          },
+          "data_reset_setting": {
+            "global_market": {
+              "name": "SB_CHE_UP EU (dont remove)",
+              "is_rate_auto": true,
+              "price_adjustment": 10,
+              "price_adjustment_type": "price_increase",
+              "is_rounding": true,
+              "rounding": 0.55,
+              "update_fields": ["is_rate_auto", "price_adjustment", "price_adjustment_type", "is_rounding", "rounding"]
+            },
+            "boost_upsell": {
+              "offer_name": "SB_CHE_UP_22",
+              "discount_data": [
+                {
+                  "key": 0,
+                  "min_quantity": 1,
+                  "value_discount": 2,
+                  "type": "amount_each"
+                },
+                {
+                  "key": 1,
+                  "min_quantity": 2,
+                  "value_discount": 5,
+                  "type": "amount_each"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "case_id": "SB_CHE_UP_24",
+          "case_name": "[Hosted] Change data: product price, global market trước khi create order qua cổng Afterpay",
+          "payment_method": "Afterpay",
+          "email": "tester@maildrop.cc",
+          "shipping_address": {
+            "address1": "814 Mission Street",
+            "address2": "",
+            "city": "Houston",
+            "company": "",
+            "country": "United Kingdom",
+            "country_code": "GB",
+            "country_name": "United Kingdom",
+            "cpf_or_cnpj_number": "",
+            "first_name": "Tester",
+            "last_name": "ShopBase",
+            "name": "Jena",
+            "phone": "7036618988",
+            "province": "",
+            "province_code": "",
+            "zip": "77027",
+            "remember_me": false
+          },
+          "products": [
+            {
+              "id": 1000000479366697,
+              "title": "Post purchase",
+              "variant_id": 1000010760990519,
+              "quantity": 1
+            }
+          ],
+          "data_setting": {
+            "global_market": {
+              "name": "SB_CHE_UP EU (dont remove)",
+              "is_rate_auto": false,
+              "exchange_rate": 0.9,
+              "price_adjustment": -10,
+              "price_adjustment_type": "price_decrease",
+              "is_rounding": true,
+              "rounding": 0.22,
+              "update_fields": [
+                "is_rate_auto",
+                "exchange_rate",
+                "price_adjustment",
+                "price_adjustment_type",
+                "is_rounding",
+                "rounding"
+              ]
+            },
+            "product": {
+              "handle": "post-purchase",
+              "price": 60
+            }
+          },
+          "data_reset_setting": {
+            "global_market": {
+              "name": "SB_CHE_UP EU (dont remove)",
+              "is_rate_auto": true,
+              "price_adjustment": 10,
+              "price_adjustment_type": "price_increase",
+              "is_rounding": true,
+              "rounding": 0.55,
+              "update_fields": ["is_rate_auto", "price_adjustment", "price_adjustment_type", "is_rounding", "rounding"]
+            },
+            "product": {
+              "handle": "post-purchase",
+              "price": 50
+            }
+          }
+        },
+        {
+          "case_id": "SB_CHE_UP_25",
+          "case_name": "[Hosted] Change data: tax exclude trước khi create order qua cổng Unlimint",
+          "gateway_name": "Unlimint-1",
+          "stripe_gateway_name": "Stripe-1",
+          "payment_method": "Unlimint",
+          "email": "tester@maildrop.cc",
+          "ignore_check_dashboard_payment_page": true,
+          "login_redirect_page": {
+            "card": {
+              "unlimint_card": "4000 0000 0000 0077",
+              "holder_name": "Shopbase",
+              "expire_month": "12",
+              "expire_year": "2024",
+              "cvv": "100"
+            }
+          },
+          "shipping_address": {
+            "address1": "814 Mission Street",
+            "address2": "",
+            "city": "Houston",
+            "company": "",
+            "country": "Vietnam",
+            "country_code": "VN",
+            "country_name": "Vietnam",
+            "cpf_or_cnpj_number": "",
+            "first_name": "Tester",
+            "last_name": "ShopBase",
+            "name": "Jena",
+            "phone": "7036618988",
+            "province": "",
+            "province_code": "",
+            "zip": "77027",
+            "remember_me": false
+          },
+          "products": [
+            {
+              "id": 1000000479366697,
+              "title": "Post purchase",
+              "variant_id": 1000010760990519,
+              "quantity": 1
+            }
+          ],
+          "data_setting": {
+            "tax": {
+              "taxName": "AUTO_TAX_US",
+              "country": "US",
+              "taxRate": 10,
+              "include_tax": false
+            }
+          },
+          "data_reset_setting": {
+            "tax": {
+              "taxName": "AUTO_TAX_US",
+              "country": "US",
+              "taxRate": 20,
+              "include_tax": false
+            }
+          }
+        },
+        {
+          "case_id": "SB_CHE_UP_26",
+          "case_name": "[Hosted] Change data: charge tax on shipping fee trước khi create order qua cổng Ocean payment",
+          "payment_method": "Ocean payment",
+          "ignore_check_dashboard_payment_page": true,
+          "login_redirect_page": {
+            "card": {
+              "number": "5454545454545454",
+              "expire_date": "20/24",
+              "cvv": "100",
+              "security_code": "123456"
+            }
+          },
+          "email": "tester@maildrop.cc",
+          "shipping_address": {
+            "address1": "814 Mission Street",
+            "address2": "",
+            "city": "Arvada",
+            "company": "",
+            "country": "United States",
+            "country_code": "US",
+            "country_name": "United States",
+            "cpf_or_cnpj_number": "",
+            "first_name": "Tester",
+            "last_name": "ShopBase",
+            "name": "Jena",
+            "phone": "7036618988",
+            "province": "Colorado",
+            "province_code": "CO",
+            "zip": "80001",
+            "remember_me": false
+          },
+          "products": [
+            {
+              "id": 1000000479366697,
+              "title": "Post purchase",
+              "variant_id": 1000010760990519,
+              "quantity": 1
+            }
+          ],
+          "data_setting": {
+            "tax": {
+              "taxName": "TAX ocean payment",
+              "country": "US",
+              "taxRate": 20,
+              "categories": "region",
+              "isTaxIncludedShipping": false
+            }
+          },
+          "data_reset_setting": {
+            "tax": {
+              "taxName": "TAX ocean payment",
+              "country": "US",
+              "taxRate": 10,
+              "categories": "region",
+              "isTaxIncluded": false,
+              "isTaxIncludedShipping": true
+            }
+          }
+        },
+        {
+          "case_id": "SB_CHE_UP_28",
+          "case_name": "[Hosted] Change data: Global market trước khi create order qua cổng Payoneer",
+          "payment_method": "Payoneer",
+          "login_redirect_page": {
+            "card": {
+              "number": "4444333322221111",
+              "holder_name": "SHOPBASE",
+              "expire_month": "11",
+              "expire_year": "2025",
+              "security_code": "100"
+            }
+          },
+          "email": "tester@maildrop.cc",
+          "shipping_address": {
+            "address1": "814 Mission Street",
+            "address2": "",
+            "city": "Houston",
+            "company": "",
+            "country": "Germany",
+            "country_code": "DE",
+            "country_name": "Germany",
+            "first_name": "Tester",
+            "last_name": "ShopBase",
+            "name": "Jena",
+            "phone": "7036618988",
+            "province": "",
+            "province_code": "",
+            "zip": "77027",
+            "remember_me": false
+          },
+          "products": [
+            {
+              "id": 1000000479366697,
+              "title": "Post purchase",
+              "variant_id": 1000010760990519,
+              "quantity": 1
+            }
+          ],
+          "data_setting": {
+            "global_market": {
+              "name": "SB_CHE_UP EU (dont remove)",
+              "is_rate_auto": false,
+              "exchange_rate": 0.9,
+              "price_adjustment": -10,
+              "price_adjustment_type": "price_decrease",
+              "is_rounding": true,
+              "rounding": 0.22,
+              "update_fields": [
+                "is_rate_auto",
+                "exchange_rate",
+                "price_adjustment",
+                "price_adjustment_type",
+                "is_rounding",
+                "rounding"
+              ]
+            }
+          },
+          "data_reset_setting": {
+            "global_market": {
+              "name": "SB_CHE_UP EU (dont remove)",
+              "is_rate_auto": true,
+              "price_adjustment": 10,
+              "price_adjustment_type": "price_increase",
+              "is_rounding": true,
+              "rounding": 0.55,
+              "update_fields": ["is_rate_auto", "price_adjustment", "price_adjustment_type", "is_rounding", "rounding"]
+            }
+          }
+        },
+        {
+          "case_id": "SB_CHE_UP_30",
+          "case_name": "[Hosted] Change data: thông tin variant trước khi create order có nhiều items qua cổng Payoneer",
+          "payment_method": "Payoneer",
+          "login_redirect_page": {
+            "card": {
+              "number": "4444333322221111",
+              "holder_name": "SHOPBASE",
+              "expire_month": "11",
+              "expire_year": "2025",
+              "security_code": "100"
+            }
+          },
+          "email": "tester@maildrop.cc",
+          "shipping_address": {
+            "address1": "814 Mission Street",
+            "address2": "",
+            "city": "Arvada",
+            "company": "",
+            "country": "United States",
+            "country_code": "US",
+            "country_name": "United States",
+            "cpf_or_cnpj_number": "",
+            "first_name": "Tester",
+            "last_name": "ShopBase",
+            "name": "Jena",
+            "phone": "7036618988",
+            "province": "Colorado",
+            "province_code": "CO",
+            "zip": "80001",
+            "remember_me": false
+          },
+          "products": [
+            {
+              "id": 1000000479380263,
+              "title": "Bikini",
+              "variant_id": 1000010761296197,
+              "quantity": 1
+            },
+            {
+              "id": 1000000479380263,
+              "title": "Bikini",
+              "variant_id": 1000010761296198,
+              "quantity": 1
+            }
+          ],
+          "data_setting": {
+            "variant": [
+              {
+                "id": 1000010761296197,
+                "price": 40,
+                "update_fields": ["price"]
+              },
+              {
+                "id": 1000010761296198,
+                "price": 50,
+                "update_fields": ["price"]
+              }
+            ]
+          },
+          "data_reset_setting": {
+            "variant": [
+              {
+                "id": 1000010761296197,
+                "price": 20,
+                "update_fields": ["price"]
+              },
+              {
+                "id": 1000010761296198,
+                "price": 30,
+                "update_fields": ["price"]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "SB_CHE_UP_23": {
+      "payment_method": "Klarna",
+      "email": "tester@maildrop.cc",
+      "shipping_address": {
+        "address1": "814 Mission Street",
+        "address2": "",
+        "city": "Houston",
+        "company": "",
+        "country": "United Kingdom",
+        "country_code": "GB",
+        "country_name": "United Kingdom",
+        "cpf_or_cnpj_number": "",
+        "first_name": "Tester",
+        "last_name": "ShopBase",
+        "name": "Jena",
+        "phone": "7036618988",
+        "province": "",
+        "province_code": "",
+        "zip": "77027",
+        "remember_me": false
+      },
+      "products": [
+        {
+          "id": 1000000479380263,
+          "title": "Bikini",
+          "variant_id": 1000010761296197,
+          "quantity": 1
+        }
+      ],
+      "product_ppc": "Post purchase",
+      "data_setting": {
+        "global_market": {
+          "name": "SB_CHE_UP EU (dont remove)",
+          "is_rate_auto": false,
+          "exchange_rate": 0.9,
+          "price_adjustment": -10,
+          "price_adjustment_type": "price_decrease",
+          "is_rounding": true,
+          "rounding": 0.22,
+          "update_fields": [
+            "is_rate_auto",
+            "exchange_rate",
+            "price_adjustment",
+            "price_adjustment_type",
+            "is_rounding",
+            "rounding"
+          ]
+        },
+        "post_purchase": {
+          "offer_name": "SB_CHE_UP_23 (NOT REMOVE)",
+          "discount_data": [
+            {
+              "value_discount": { "percentage_discount": 30 }
+            }
+          ]
+        }
+      },
+      "data_reset_setting": {
+        "global_market": {
+          "name": "SB_CHE_UP EU (dont remove)",
+          "is_rate_auto": true,
+          "price_adjustment": 10,
+          "price_adjustment_type": "price_increase",
+          "is_rounding": true,
+          "rounding": 0.55,
+          "update_fields": ["is_rate_auto", "price_adjustment", "price_adjustment_type", "is_rounding", "rounding"]
+        },
+        "post_purchase": {
+          "offer_name": "SB_CHE_UP_23 (NOT REMOVE)",
+          "discount_data": [
+            {
+              "value_discount": { "percentage_discount": 20 }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,972 @@
+{
+  "env": {
+    "prod": {
+      "domain": "au-rollerv3-logo-svlive.onshopbase.com",
+      "shop_name": "au-rollerv3-logo-svlive.onshopbase.com",
+      "api": "https://api.shopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10312470,
+      "user_id": 73782
+    },
+    "prodtest": {
+      "domain": "au-rollerv3-logo-svtest.onshopbase.com",
+      "shop_name": "au-rollerv3-logo-svtest.onshopbase.com",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10312467,
+      "user_id": 73782,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "domain": "au-roller-logo.myshopbase.net",
+      "shop_name": "au-roller-logo.myshopbase.net",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_id": 10321608,
+      "user_id": 73800,
+      "cases": {
+        "CHANGE_SETTINGS": {
+          "description": "Cases setting data",
+          "data": [
+            {
+              "description": "Verify show default section after add new section",
+              "case_id": "SB_OLS_THE_ROLLER_LL_1",
+              "input": {
+                "home": {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "alt_text": "",
+                        "image": null,
+                        "link": ""
+                      },
+                      "type": "logo",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "",
+                        "image": null,
+                        "link": ""
+                      },
+                      "type": "logo",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "",
+                        "image": null,
+                        "link": ""
+                      },
+                      "type": "logo",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "heading": "Logo list"
+                  },
+                  "type": "logo-list",
+                  "visible": true
+                }
+              },
+              "expect": {
+                "count_section": 1,
+                "screenshot_setting_data": "web-logo-list-data-default.png"
+              }
+            },
+            {
+              "description": "Check add block logo",
+              "case_id": "SB_OLS_THE_ROLLER_LL_4",
+              "input": {
+                "home": {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "alt_text": "",
+                        "image": "https://dev-img.btdmp.com/sbase-file/10062741/2022/09/26/1664186548e7cd9b7c75.png",
+                        "link": {
+                          "name": "",
+                          "position": 0,
+                          "subject": {
+                            "handle": "refund-policy"
+                          },
+                          "type": "policies",
+                          "type_options": {
+                            "subject": "",
+                            "title": "Refund policy"
+                          }
+                        }
+                      },
+                      "type": "logo",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "",
+                        "image": "https://dev-img.btdmp.com/sbase-file/10062741/2022/09/26/166418653564afb7e6f5.png",
+                        "link": {
+                          "name": "",
+                          "position": 0,
+                          "subject": {
+                            "handle": "refund-policy"
+                          },
+                          "type": "policies",
+                          "type_options": {
+                            "subject": "",
+                            "title": "Refund policy"
+                          }
+                        }
+                      },
+                      "type": "logo",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "heading": "Logo list 2"
+                  },
+                  "type": "logo-list",
+                  "visible": true
+                }
+              },
+              "expect": {
+                "count_section": 1,
+                "count_block": 2,
+                "logo": [
+                  {
+                    "link_logo": "/policies/refund-policy"
+                  },
+                  {
+                    "link_logo": "/policies/refund-policy"
+                  }
+                ],
+                "screenshot_setting_data": "web-logo-list-add-block.png"
+              }
+            },
+            {
+              "description": "Check drag and drop block logo",
+              "case_id": "SB_OLS_THE_ROLLER_LL_8",
+              "input": {
+                "home": {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "alt_text": "Logo5",
+                        "image": "https://dev-img.btdmp.com/sbase-file/10062741/2022/09/26/1664186840a6d48849a4.png",
+                        "link": ""
+                      },
+                      "type": "logo",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "Logo2",
+                        "image": "",
+                        "link": ""
+                      },
+                      "type": "logo",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "Logo1",
+                        "image": "https://dev-img.btdmp.com/sbase-file/10062741/2022/09/26/16641868738594122ac0.jpeg",
+                        "link": ""
+                      },
+                      "type": "logo",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "heading": "Logo list"
+                  },
+                  "type": "logo-list",
+                  "visible": true
+                }
+              },
+              "expect": {
+                "count_section": 1,
+                "count_block": 3,
+                "screenshot_setting_data": "web-logo-list-drag-drop-block.png"
+              }
+            },
+            {
+              "description": "Check hide block logo",
+              "case_id": "SB_OLS_THE_ROLLER_LL_5",
+              "input": {
+                "home": {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "alt_text": "Logo5",
+                        "image": "https://dev-img.btdmp.com/sbase-file/10062741/2022/09/26/1664186840a6d48849a4.png",
+                        "link": ""
+                      },
+                      "type": "logo",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "Logo2",
+                        "image": "",
+                        "link": ""
+                      },
+                      "type": "logo"
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "Logo1",
+                        "image": "https://dev-img.btdmp.com/sbase-file/10062741/2022/09/26/16641868738594122ac0.jpeg",
+                        "link": ""
+                      },
+                      "type": "logo",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "heading": "Logo list"
+                  },
+                  "type": "logo-list",
+                  "visible": true
+                }
+              },
+              "expect": {
+                "count_section": 1,
+                "count_block": 2,
+                "screenshot_setting_data": "web-logo-list-hide-block.png"
+              }
+            },
+            {
+              "description": "Check unhide block logo",
+              "case_id": "SB_OLS_THE_ROLLER_LL_6",
+              "input": {
+                "home": {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "alt_text": "Logo5",
+                        "image": "https://dev-img.btdmp.com/sbase-file/10062741/2022/09/26/1664186840a6d48849a4.png",
+                        "link": ""
+                      },
+                      "type": "logo",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "Logo2",
+                        "image": "",
+                        "link": ""
+                      },
+                      "type": "logo",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "Logo1",
+                        "image": "https://dev-img.btdmp.com/sbase-file/10062741/2022/09/26/16641868738594122ac0.jpeg",
+                        "link": ""
+                      },
+                      "type": "logo",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "heading": "Logo list"
+                  },
+                  "type": "logo-list",
+                  "visible": true
+                }
+              },
+              "expect": {
+                "count_section": 1,
+                "count_block": 2,
+                "screenshot_setting_data": "web-logo-list-unhide-block.png"
+              }
+            },
+            {
+              "description": "Check remove block logo",
+              "case_id": "SB_OLS_THE_ROLLER_LL_10",
+              "input": {
+                "home": {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "alt_text": "Logo2",
+                        "image": "",
+                        "link": ""
+                      },
+                      "type": "logo",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "Logo1",
+                        "image": "https://dev-img.btdmp.com/sbase-file/10062741/2022/09/27/1664247015fdca987aff.jpeg",
+                        "link": ""
+                      },
+                      "type": "logo",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "heading": "Logo list"
+                  },
+                  "type": "logo-list",
+                  "visible": true
+                }
+              },
+              "expect": {
+                "count_section": 1,
+                "count_block": 2,
+                "screenshot_setting_data": "web-logo-list-remove-block.png"
+              }
+            },
+            {
+              "description": "Check duplicate block logo",
+              "case_id": "SB_OLS_THE_ROLLER_LL_7",
+              "input": {
+                "home": {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "alt_text": "Logo1",
+                        "image": "https://dev-img.btdmp.com/sbase-file/10062741/2022/09/27/1664247015fdca987aff.jpeg",
+                        "link": ""
+                      },
+                      "type": "logo",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "Logo1",
+                        "image": "https://dev-img.btdmp.com/sbase-file/10062741/2022/09/27/1664247015fdca987aff.jpeg",
+                        "link": ""
+                      },
+                      "type": "logo",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "heading": "Logo list"
+                  },
+                  "type": "logo-list",
+                  "visible": true
+                }
+              },
+              "expect": {
+                "count_section": 1,
+                "count_block": 2,
+                "screenshot_setting_data": "web-logo-list-duplicate-block.png"
+              }
+            },
+            {
+              "description": "Verify show Logo section on SF with setting data",
+              "case_id": "SB_OLS_THE_ROLLER_LL_2",
+              "input": {
+                "home": {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "alt_text": "Logo5",
+                        "image": "https://dev-img.btdmp.com/sbase-file/10062741/2022/09/26/1664186548e7cd9b7c75.png",
+                        "link": ""
+                      },
+                      "type": "logo",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "Logo2",
+                        "image": null,
+                        "link": ""
+                      },
+                      "type": "logo",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "Logo3",
+                        "image": "https://dev-img.btdmp.com/sbase-file/10062741/2022/09/27/1664247207322e9c7957.png",
+                        "link": ""
+                      },
+                      "type": "logo",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "heading": "Logo list 2"
+                  },
+                  "type": "logo-list",
+                  "visible": true
+                }
+              },
+              "expect": {
+                "count_section": 1,
+                "count_block": 3,
+                "screenshot_setting_data": "web-logo-list-setting-data.png"
+              }
+            },
+            {
+              "description": "Verify show Logo section when having many blocks",
+              "case_id": "SB_OLS_THE_ROLLER_LL_3",
+              "input": {
+                "home": {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "alt_text": "Logo3",
+                        "image": "https://dev-img.btdmp.com/sbase-file/10062741/2022/09/27/1664247372bff4e42efb.png",
+                        "link": ""
+                      },
+                      "type": "logo",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "Logo3",
+                        "image": "https://dev-img.btdmp.com/sbase-file/10062741/2022/09/27/166424743441101db886.jpeg",
+                        "link": ""
+                      },
+                      "type": "logo",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "Logo3",
+                        "image": "https://dev-img.btdmp.com/sbase-file/10062741/2022/09/26/1664186548e7cd9b7c75.png",
+                        "link": ""
+                      },
+                      "type": "logo",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "Logo3",
+                        "image": "https://dev-img.btdmp.com/sbase-file/10062741/2022/09/27/16642475160ed433c78d.jpeg",
+                        "link": ""
+                      },
+                      "type": "logo",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "Logo3",
+                        "image": "https://dev-img.btdmp.com/sbase-file/10062741/2022/09/27/1664247677fe43aa1884.jpeg",
+                        "link": ""
+                      },
+                      "type": "logo",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "Logo3",
+                        "image": "https://dev-img.btdmp.com/sbase-file/10062741/2022/09/27/16642477844890abd4cd.jpeg",
+                        "link": ""
+                      },
+                      "type": "logo",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "heading": "Logo list 1"
+                  },
+                  "type": "logo-list",
+                  "visible": true
+                }
+              },
+              "expect": {
+                "count_section": 1,
+                "count_block": 6,
+                "screenshot_setting_data": "web-logo-list-many-blocks.png"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "cases": {
+    "CHANGE_SETTINGS": {
+      "description": "Cases setting data",
+      "data": [
+        {
+          "description": "Verify show default section after add new section",
+          "case_id": "SB_OLS_THE_ROLLER_LL_1",
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "alt_text": "",
+                    "image": null,
+                    "link": ""
+                  },
+                  "type": "logo",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "",
+                    "image": null,
+                    "link": ""
+                  },
+                  "type": "logo",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "",
+                    "image": null,
+                    "link": ""
+                  },
+                  "type": "logo",
+                  "visible": true
+                }
+              ],
+              "settings": {
+                "heading": "Logo list"
+              },
+              "type": "logo-list",
+              "visible": true
+            }
+          },
+          "expect": {
+            "count_section": 1,
+            "screenshot_setting_data": "web-logo-list-data-default.png"
+          }
+        },
+        {
+          "description": "Check add block logo",
+          "case_id": "SB_OLS_THE_ROLLER_LL_4",
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "alt_text": "",
+                    "image": "https://img.shopbase.com/files/10287692/2022/07/18/16581403820631b7da92.png",
+                    "link": {
+                      "name": "",
+                      "position": 0,
+                      "subject": {
+                        "handle": "refund-policy"
+                      },
+                      "type": "policies",
+                      "type_options": {
+                        "subject": "",
+                        "title": "Refund policy"
+                      }
+                    }
+                  },
+                  "type": "logo",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "",
+                    "image": "https://img.shopbase.com/files/10287692/2022/07/18/1658140160fabcc724cc.png",
+                    "link": {
+                      "name": "",
+                      "position": 0,
+                      "subject": {
+                        "handle": "refund-policy"
+                      },
+                      "type": "policies",
+                      "type_options": {
+                        "subject": "",
+                        "title": "Refund policy"
+                      }
+                    }
+                  },
+                  "type": "logo",
+                  "visible": true
+                }
+              ],
+              "settings": {
+                "heading": "Logo list 2"
+              },
+              "type": "logo-list",
+              "visible": true
+            }
+          },
+          "expect": {
+            "count_section": 1,
+            "count_block": 2,
+            "logo": [
+              {
+                "link_logo": "/policies/refund-policy"
+              },
+              {
+                "link_logo": "/policies/refund-policy"
+              }
+            ],
+            "screenshot_setting_data": "web-logo-list-add-block.png"
+          }
+        },
+        {
+          "description": "Check drag and drop block logo",
+          "case_id": "SB_OLS_THE_ROLLER_LL_8",
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "alt_text": "Logo5",
+                    "image": "https://img.shopbase.com/files/10287692/2022/07/22/165846027444a3b11bef.png",
+                    "link": ""
+                  },
+                  "type": "logo",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "Logo2",
+                    "image": "",
+                    "link": ""
+                  },
+                  "type": "logo",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "Logo1",
+                    "image": "https://img.shopbase.com/files/10287692/2022/07/22/165846029806fac7edda.jpeg",
+                    "link": ""
+                  },
+                  "type": "logo",
+                  "visible": true
+                }
+              ],
+              "settings": {
+                "heading": "Logo list"
+              },
+              "type": "logo-list",
+              "visible": true
+            }
+          },
+          "expect": {
+            "count_section": 1,
+            "count_block": 3,
+            "screenshot_setting_data": "web-logo-list-drag-drop-block.png"
+          }
+        },
+        {
+          "description": "Check hide block logo",
+          "case_id": "SB_OLS_THE_ROLLER_LL_5",
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "alt_text": "Logo5",
+                    "image": "https://img.shopbase.com/files/10287692/2022/07/22/165846027444a3b11bef.png",
+                    "link": ""
+                  },
+                  "type": "logo",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "Logo2",
+                    "image": "",
+                    "link": ""
+                  },
+                  "type": "logo"
+                },
+                {
+                  "settings": {
+                    "alt_text": "Logo1",
+                    "image": "https://img.shopbase.com/files/10287692/2022/07/22/165846029806fac7edda.jpeg",
+                    "link": ""
+                  },
+                  "type": "logo",
+                  "visible": true
+                }
+              ],
+              "settings": {
+                "heading": "Logo list"
+              },
+              "type": "logo-list",
+              "visible": true
+            }
+          },
+          "expect": {
+            "count_section": 1,
+            "count_block": 2,
+            "screenshot_setting_data": "web-logo-list-hide-block.png"
+          }
+        },
+        {
+          "description": "Check unhide block logo",
+          "case_id": "SB_OLS_THE_ROLLER_LL_6",
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "alt_text": "Logo5",
+                    "image": "https://img.shopbase.com/files/10287692/2022/07/22/165846027444a3b11bef.png",
+                    "link": ""
+                  },
+                  "type": "logo",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "Logo2",
+                    "image": "",
+                    "link": ""
+                  },
+                  "type": "logo",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "Logo1",
+                    "image": "https://img.shopbase.com/files/10287692/2022/07/22/165846029806fac7edda.jpeg",
+                    "link": ""
+                  },
+                  "type": "logo",
+                  "visible": true
+                }
+              ],
+              "settings": {
+                "heading": "Logo list"
+              },
+              "type": "logo-list",
+              "visible": true
+            }
+          },
+          "expect": {
+            "count_section": 1,
+            "count_block": 2,
+            "screenshot_setting_data": "web-logo-list-unhide-block.png"
+          }
+        },
+        {
+          "description": "Check remove block logo",
+          "case_id": "SB_OLS_THE_ROLLER_LL_10",
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "alt_text": "Logo2",
+                    "image": "",
+                    "link": ""
+                  },
+                  "type": "logo",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "Logo1",
+                    "image": "https://img.shopbase.com/files/10287692/2022/07/22/165846029806fac7edda.jpeg",
+                    "link": ""
+                  },
+                  "type": "logo",
+                  "visible": true
+                }
+              ],
+              "settings": {
+                "heading": "Logo list"
+              },
+              "type": "logo-list",
+              "visible": true
+            }
+          },
+          "expect": {
+            "count_section": 1,
+            "count_block": 2,
+            "screenshot_setting_data": "web-logo-list-remove-block.png"
+          }
+        },
+        {
+          "description": "Check duplicate block logo",
+          "case_id": "SB_OLS_THE_ROLLER_LL_7",
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "alt_text": "Logo1",
+                    "image": "https://img.shopbase.com/files/10287692/2022/07/22/165846029806fac7edda.jpeg",
+                    "link": ""
+                  },
+                  "type": "logo",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "Logo1",
+                    "image": "https://img.shopbase.com/files/10287692/2022/07/22/165846029806fac7edda.jpeg",
+                    "link": ""
+                  },
+                  "type": "logo",
+                  "visible": true
+                }
+              ],
+              "settings": {
+                "heading": "Logo list"
+              },
+              "type": "logo-list",
+              "visible": true
+            }
+          },
+          "expect": {
+            "count_section": 1,
+            "count_block": 2,
+            "screenshot_setting_data": "web-logo-list-duplicate-block.png"
+          }
+        },
+        {
+          "description": "Verify show Logo section on SF with setting data",
+          "case_id": "SB_OLS_THE_ROLLER_LL_2",
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "alt_text": "Logo5",
+                    "image": "https://img.shopbase.com/files/10287692/2022/07/21/1658443091889eec4918.png",
+                    "link": {
+                      "name": "",
+                      "position": 0,
+                      "subject": {
+                        "handle": ""
+                      },
+                      "type": "",
+                      "type_options": {
+                        "subject": "",
+                        "subject_id": null,
+                        "title": ""
+                      }
+                    }
+                  },
+                  "type": "logo",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "Logo2",
+                    "image": null,
+                    "link": ""
+                  },
+                  "type": "logo",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "Logo3",
+                    "image": "https://img.shopbase.com/files/10287692/2022/07/21/1658442870392bfe4d5f.png",
+                    "link": {
+                      "name": "",
+                      "position": 0,
+                      "subject": {
+                        "handle": "contact-us"
+                      },
+                      "type": "pages",
+                      "type_options": {
+                        "subject": "",
+                        "subject_id": 85293832686,
+                        "title": "Contact Us"
+                      }
+                    }
+                  },
+                  "type": "logo",
+                  "visible": true
+                }
+              ],
+              "settings": {
+                "heading": "Logo list 2"
+              },
+              "type": "logo-list",
+              "visible": true
+            }
+          },
+          "expect": {
+            "count_section": 1,
+            "count_block": 3,
+            "screenshot_setting_data": "web-logo-list-setting-data.png"
+          }
+        },
+        {
+          "description": "Verify show Logo section when having many blocks",
+          "case_id": "SB_OLS_THE_ROLLER_LL_3",
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "alt_text": "Logo3",
+                    "image": "https://img.shopbase.com/files/10287692/2022/07/21/1658442870392bfe4d5f.png",
+                    "link": ""
+                  },
+                  "type": "logo",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "Logo3",
+                    "image": "https://img.shopbase.com/files/10287692/2022/07/24/16587024157aa2e09e4f.jpeg",
+                    "link": ""
+                  },
+                  "type": "logo",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "Logo3",
+                    "image": "https://img.shopbase.com/files/10287692/2022/07/24/1658702513ee2885ce71.png",
+                    "link": ""
+                  },
+                  "type": "logo",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "Logo3",
+                    "image": "https://img.shopbase.com/files/10287692/2022/07/26/1658833700b9515e6df9.jpeg",
+                    "link": ""
+                  },
+                  "type": "logo",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "Logo3",
+                    "image": "https://img.shopbase.com/files/10287692/2022/07/26/1658833700b9515e6df9.jpeg",
+                    "link": ""
+                  },
+                  "type": "logo",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "Logo3",
+                    "image": "https://img.shopbase.com/files/10287692/2022/07/24/16587024157aa2e09e4f.jpeg",
+                    "link": ""
+                  },
+                  "type": "logo",
+                  "visible": true
+                }
+              ],
+              "settings": {
+                "heading": "Logo list 1"
+              },
+              "type": "logo-list",
+              "visible": true
+            }
+          },
+          "expect": {
+            "count_section": 1,
+            "count_block": 6,
+            "screenshot_setting_data": "web-logo-list-many-blocks.png"
+          }
+        }
+      ]
+    }
+  }
+}

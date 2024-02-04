@@ -1,0 +1,243 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-customer-history-session.onshopbase.com",
+      "domain_multi_sf": "au-customer-history-session-new-sf.onshopbase.com",
+      "shop_name": "au-customer-history-session",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10471391,
+      "user_id": 73782,
+      "report_type": "traffic_source",
+      "customer_info": {
+        "email": "tester@maildrop.cc",
+        "first_name": "My",
+        "last_name": "Beo",
+        "address": "130 Trung Phung",
+        "country": "United States",
+        "state": "Texas",
+        "city": "Houston",
+        "zipcode": "77027",
+        "phone_number": "7136978890"
+      },
+      "card_info": {
+        "number": "4242424242424242",
+        "holder_name": "My Beo Vippro",
+        "expire_date": "12 / 30",
+        "cvv": "116"
+      }
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-customer-history-session-prodtest.onshopbase.com",
+      "domain_multi_sf": "au-customer-history-session-new-sf-prodtest.onshopbase.com",
+      "shop_name": "au-customer-history-session-prodtest",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10475357,
+      "user_id": 73782,
+      "report_type": "traffic_source",
+      "customer_info": {
+        "email": "tester@maildrop.cc",
+        "first_name": "My",
+        "last_name": "Beo",
+        "address": "130 Trung Phung",
+        "country": "United States",
+        "state": "Texas",
+        "city": "Houston",
+        "zipcode": "77027",
+        "phone_number": "7136978890"
+      },
+      "card_info": {
+        "number": "4242424242424242",
+        "holder_name": "My Beo Vippro",
+        "expire_date": "12 / 30",
+        "cvv": "116"
+      },
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-customer-history-session-sb.myshopbase.net",
+      "domain_multi_sf": "au-customer-history-session-new-sf.myshopbase.net",
+      "shop_name": "au-customer-history-session-sb",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_id": 10333499,
+      "user_id": 73800,
+      "report_type": "traffic_source",
+      "customer_info": {
+        "email": "tester@maildrop.cc",
+        "first_name": "My",
+        "last_name": "Beo",
+        "address": "130 Trung Phung",
+        "country": "United States",
+        "state": "Texas",
+        "city": "Houston",
+        "zipcode": "77027",
+        "phone_number": "7136978890"
+      },
+      "card_info": {
+        "number": "4242424242424242",
+        "holder_name": "My Beo Vippro",
+        "expire_date": "12 / 30",
+        "cvv": "116"
+      }
+    }
+  },
+  "timeout": 700000,
+  "cases": {
+    "CUSTOMER UTM": {
+      "data": [
+        {
+          "case_id": "SB_ANA_CUS_SSH_4",
+          "description": "Multiple SF\\_Tracking customer khi có Source là social khi không có param utm",
+          "is_multi_sf": true,
+          "product": {
+            "title": "Product SB_ANA_CUS_SSH_4",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20",
+            "sku": "1ZLQJGJP8nU"
+          },
+          "linkUTM": "?fbclid=fb151020211620",
+          "data_session_detail": {
+            "source_identifier": "social",
+            "referring_site": "Facebook",
+            "first_page_visited": "/products/product-sb-ana-cus-ssh-4?fbclid=fb151020211620",
+            "utm_source": "Facebook",
+            "utm_medium": "referral",
+            "utm_campaign": "not set",
+            "utm_term": "not set",
+            "utm_content": "not set"
+          }
+        },
+        {
+          "case_id": "SB_ANA_CUS_SSH_12",
+          "description": "Tracking customer khi có Source là social khi không có param utm",
+          "product": {
+            "title": "Product SB_ANA_CUS_SSH_12",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20",
+            "sku": "1ZLQJGJP8nU"
+          },
+          "linkUTM": "?fbclid=fb151020211620",
+          "data_session_detail": {
+            "source_identifier": "social",
+            "referring_site": "Facebook",
+            "first_page_visited": "/products/product-sb-ana-cus-ssh-12?fbclid=fb151020211620",
+            "utm_source": "Facebook",
+            "utm_medium": "referral",
+            "utm_campaign": "not set",
+            "utm_term": "not set",
+            "utm_content": "not set"
+          }
+        },
+        {
+          "case_id": "SB_ANA_CUS_SSH_8",
+          "description": "Multiple SF\\_Tracking customer khi có Source là social",
+          "is_multi_sf": true,
+          "product": {
+            "title": "Product SB_ANA_CUS_SSH_8",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20",
+            "sku": "1ZLQJGJP8nU"
+          },
+          "linkUTM": "?utm_source=FBAds&utm_medium=proudo-apvc0808U8-zip-1-Copy&utm_campaign=proud6-apvc080808-zip&utm_content=23858053241170583&fbclid=fb151020211620",
+          "data_session_detail": {
+            "source_identifier": "social",
+            "referring_site": "Facebook",
+            "first_page_visited": "/products/product-sb-ana-cus-ssh-8?utm_source=FBAds&utm_medium=proudo-apvc0808U8-zip-1-Copy&utm_campaign=proud6-apvc080808-zip&utm_content=23858053241170583&fbclid=fb151020211620",
+            "utm_source": "FBAds",
+            "utm_medium": "proudo-apvc0808U8-zip-1-Copy",
+            "utm_campaign": "proud6-apvc080808-zip",
+            "utm_term": "not set",
+            "utm_content": "23858053241170583"
+          }
+        },
+        {
+          "case_id": "SB_ANA_CUS_SSH_6",
+          "description": "Tracking customer khi có Source là social",
+          "product": {
+            "title": "Product SB_ANA_CUS_SSH_6",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20",
+            "sku": "1ZLQJGJP8nU"
+          },
+          "linkUTM": "?utm_source=FBAds&utm_medium=proudo-apvc0808U8-zip-1-Copy&utm_campaign=proud6-apvc080808-zip&utm_content=23858053241170583&fbclid=fb151020211620",
+          "data_session_detail": {
+            "source_identifier": "social",
+            "referring_site": "Facebook",
+            "first_page_visited": "/products/product-sb-ana-cus-ssh-6?utm_source=FBAds&utm_medium=proudo-apvc0808U8-zip-1-Copy&utm_campaign=proud6-apvc080808-zip&utm_content=23858053241170583&fbclid=fb151020211620",
+            "utm_source": "FBAds",
+            "utm_medium": "proudo-apvc0808U8-zip-1-Copy",
+            "utm_campaign": "proud6-apvc080808-zip",
+            "utm_term": "not set",
+            "utm_content": "23858053241170583"
+          }
+        },
+        {
+          "case_id": "SB_ANA_CUS_SSH_14",
+          "description": "Multiple SF\\_Tracking customer có UTM Campaign",
+          "is_multi_sf": true,
+          "product": {
+            "title": "Product SB_ANA_CUS_SSH_14",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20",
+            "sku": "1ZLQJGJP8nU"
+          },
+          "linkUTM": "?utm_source=FBAds&utm_medium=proudo-apvc0808U8-zip-1-Copy&utm_campaign=proud6-apvc080808-zip&utm_content=23858053241170583",
+          "data_session_detail": {
+            "source_identifier": "direct",
+            "referring_site": "N/A",
+            "first_page_visited": "/products/product-sb-ana-cus-ssh-14?utm_source=FBAds&utm_medium=proudo-apvc0808U8-zip-1-Copy&utm_campaign=proud6-apvc080808-zip&utm_content=23858053241170583",
+            "utm_source": "FBAds",
+            "utm_medium": "proudo-apvc0808U8-zip-1-Copy",
+            "utm_campaign": "proud6-apvc080808-zip",
+            "utm_term": "not set",
+            "utm_content": "23858053241170583"
+          }
+        },
+        {
+          "case_id": "SB_ANA_CUS_SSH_9",
+          "description": "Tracking customer có UTM Campaign",
+          "product": {
+            "title": "Product SB_ANA_CUS_SSH_9",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20",
+            "sku": "1ZLQJGJP8nU"
+          },
+          "linkUTM": "?utm_source=FBAds&utm_medium=proudo-apvc0808U8-zip-1-Copy&utm_campaign=proud6-apvc080808-zip&utm_content=23858053241170583",
+          "data_session_detail": {
+            "source_identifier": "direct",
+            "referring_site": "N/A",
+            "first_page_visited": "/products/product-sb-ana-cus-ssh-9?utm_source=FBAds&utm_medium=proudo-apvc0808U8-zip-1-Copy&utm_campaign=proud6-apvc080808-zip&utm_content=23858053241170583",
+            "utm_source": "FBAds",
+            "utm_medium": "proudo-apvc0808U8-zip-1-Copy",
+            "utm_campaign": "proud6-apvc080808-zip",
+            "utm_term": "not set",
+            "utm_content": "23858053241170583"
+          }
+        }
+      ]
+    }
+  }
+}

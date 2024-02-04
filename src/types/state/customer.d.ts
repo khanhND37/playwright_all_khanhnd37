@@ -1,0 +1,1 @@
+export type GetCustomerAPI = {  page?: number;  limit?: number;  order?: string;  query?: string;};

@@ -1,0 +1,65 @@
+{
+  "api": "https://gapi.dev.shopbase.net",
+  "domain": "creator-order.myshopbase.net",
+  "username": "shopbase@beeketing.net",
+  "password": "S#|j>m2N[q",
+  "user_id": "88581",
+  "shop_id": "10321120",
+  "shop_name": "creator-order",
+  "checkout_code": "#1175008",
+  "value": "Last 90 days",
+  "cases": {
+    "TC_SB_DP_DB_DP_ACC_9": {
+      "checkout_info": {
+        "checkout_code": "#1175008",
+        "value": "Last 90 days"
+      }
+    },
+    "TC_SB_DP_DB_DP_ACC_10": {
+      "checkout_info": {
+        "line_item": "$15.00",
+        "total": "$15.00"
+      }
+    },
+    "TC_SB_DP_DB_DP_ACC_11": {
+      "checkout_info": {
+        "timeline": "test ocg abandoned a checkout",
+        "timeline_send_mail": "Did you forget something?"
+      }
+    },
+    "VERIFY_ADDITIONAL_DETAILS": {
+      "data": {
+        "description": "[Abandoned checkout detail] Verify block Additional details",
+        "case_code": "TC_SB_DP_DB_DP_ACC_12",
+        "checkout_code": "#1175008",
+        "value": "Last 90 days",
+        "checkout_data": [
+          {
+            "step": "Edit Abandoned checkout note trống",
+            "checkout_note": ""
+          },
+          {
+            "step": "Edit Abandoned checkout note dài nhiều ký tự",
+            "checkout_note": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+          },
+          {
+            "step": "Click Edit note > Input note > Click Save",
+            "checkout_note": "Edit not for digital checkout"
+          }
+        ]
+      }
+    },
+    "TC_SB_DP_DB_DP_ACC_13": {
+      "checkout_info": {
+        "name_customer": "test ocg",
+        "order_customer": "3 orders"
+      }
+    }
+  },
+  "env": {
+    "prodtest": {
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://prod-test-api.shopbase.com"
+    }
+  }
+}

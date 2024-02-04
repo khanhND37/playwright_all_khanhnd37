@@ -1,0 +1,371 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "wb-navigation-dev-loading.myshopbase.net",
+      "shop_name": "wb-navigation-dev-loading",
+      "shop_id": 10322778,
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "user_id": 73800,
+      "product_path": "admin/creator/products",
+      "dpro_option": "Design sales page",
+      "web_base_id": 1,
+      "apply_template": "Finance Course",
+      "type": "product",
+      "dpro_config": {
+        "product": {
+          "title": "Undo/Redo Test",
+          "published": true,
+          "product_type": "online_course"
+        }
+      },
+      "cases": {
+        "SB_WEB_BUILDER_NAV_UNRE_2": {
+          "dnd_section": {
+            "from": {
+              "template": "Single column"
+            }
+          }
+        }
+      }
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "wb-navigation-prod.onshopbase.com",
+      "shop_name": "wb-navigation-prod",
+      "shop_id": 10374561,
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "user_id": 73782,
+      "product_path": "admin/creator/products",
+      "dpro_option": "Design sales page",
+      "web_base_id": 1,
+      "apply_template": "Finance Course",
+      "type": "product",
+      "dpro_config": {
+        "product": {
+          "title": "Undo/Redo Test",
+          "published": true,
+          "product_type": "online_course"
+        }
+      }
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "wb-navigation-cre-prodtest.onshopbase.com",
+      "shop_name": "wb-navigation-cre-prodtest",
+      "shop_id": 10376557,
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "user_id": 73782,
+      "product_path": "admin/creator/products",
+      "dpro_option": "Design sales page",
+      "web_base_id": 1,
+      "apply_template": "Finance Course",
+      "type": "product",
+      "dpro_config": {
+        "product": {
+          "title": "Undo/Redo Test",
+          "published": true,
+          "product_type": "online_course"
+        }
+      },
+      "accounts_domain": "accounts-test.shopbase.com"
+    }
+  },
+  "cases": {
+    "SB_WEB_BUILDER_NAV_UNRE_1": {
+      "expected": {
+        "buttons": ["Undo", "Redo"],
+        "attribute_name": "disabled",
+        "value": "disabled"
+      }
+    },
+    "SB_WEB_BUILDER_NAV_UNRE_2": {
+      "dnd_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 1,
+            "isBottom": false
+          }
+        }
+      },
+      "change_name": {
+        "content": "Single column"
+      },
+      "remove_layer": {
+        "sectionName": "Single column"
+      },
+      "expected_message": {
+        "saved": "All changes are saved",
+        "unsaved": "Unsaved changes",
+        "alert": "Changes you made may not be saved."
+      }
+    },
+
+    "SB_WEB_BUILDER_NAV_UNRE_3": {
+      "dnd_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 1,
+            "isBottom": false
+          }
+        }
+      },
+      "remove_layer": {
+        "sectionName": "Section"
+      },
+      "change_settings": [
+        {
+          "select_section": {
+            "section": 2
+          },
+          "open_layer": {
+            "sectionName": "Sales"
+          },
+          "background": {
+            "label": "background",
+            "data": {
+              "color": {
+                "preset": 6,
+                "palette": {
+                  "left": 100,
+                  "top": 80
+                },
+                "colorBar": 55,
+                "opacity": 89,
+                "hexText": "#132387D6",
+                "opacityText": "69"
+              },
+              "image": {
+                "url": "data/shopbase/front/web_builder/undo-redo/test_img_1.jpg"
+              },
+              "position": "Center Top",
+              "repeat": true,
+              "size": "Contain"
+            }
+          },
+          "min_height": {
+            "label": "height",
+            "data": {
+              "value": 55,
+              "unit": "Px"
+            }
+          },
+          "border": {
+            "label": "border",
+            "data": {
+              "thickness": "custom",
+              "size": {
+                "fill": true,
+                "number": 30
+              },
+              "color": {
+                "preset": 3
+              }
+            }
+          },
+          "toggle": {
+            "button": "full_width",
+            "on": true
+          },
+          "edit_layout": [
+            {
+              "layout": {
+                "column": 1,
+                "spacing": 0
+              }
+            },
+            {
+              "layout": {
+                "column": 2,
+                "spacing": 2
+              }
+            },
+            {
+              "layout": {
+                "column": 3,
+                "spacing": 16
+              }
+            },
+            {
+              "layout": {
+                "column": 4,
+                "spacing": 30
+              }
+            },
+            {
+              "layout": {
+                "column": 5,
+                "spacing": 32
+              }
+            }
+          ],
+          "margin_padding": [
+            {
+              "label": "margin",
+              "data": {
+                "top": 18,
+                "left": 50,
+                "bottom": 122,
+                "right": 140,
+                "input": true
+              }
+            },
+            {
+              "label": "padding",
+              "data": {
+                "top": 2,
+                "left": 72,
+                "bottom": 100,
+                "right": 24,
+                "input": true
+              }
+            }
+          ],
+          "insert_section": {
+            "parentPosition": {
+              "section": 1
+            },
+            "position": ["Top", "Bottom"],
+            "template": "Footer",
+            "templateIndex": 1
+          }
+        },
+        {
+          "select_section": {
+            "section": 5
+          },
+          "open_layer": {
+            "sectionName": "About"
+          },
+          "background": {
+            "label": "background",
+            "data": {
+              "color": {
+                "preset": 6,
+                "palette": {
+                  "left": 33,
+                  "top": 69
+                },
+                "colorBar": 15,
+                "opacity": 99,
+                "hexText": "#132487D6",
+                "opacityText": "29"
+              },
+              "image": "data/shopbase/front/web_builder/undo-redo/test_img_2.jpg",
+              "position": "Center Top",
+              "repeat": true,
+              "size": "Contain"
+            }
+          },
+          "min_height": {
+            "label": "height",
+            "data": {
+              "value": 85,
+              "unit": "%"
+            }
+          },
+          "border": {
+            "label": "border",
+            "data": {
+              "thickness": "custom",
+              "size": {
+                "number": 10,
+                "fill": true
+              },
+              "color": {
+                "preset": 2
+              }
+            }
+          },
+          "toggle": {
+            "button": "full_width",
+            "on": true
+          },
+          "edit_layout": [
+            {
+              "layout": {
+                "column": 6,
+                "spacing": 32
+              }
+            },
+            {
+              "layout": {
+                "column": 2,
+                "spacing": 28
+              }
+            },
+            {
+              "layout": {
+                "column": 5,
+                "spacing": 18
+              }
+            },
+            {
+              "layout": {
+                "column": 4,
+                "spacing": 6
+              }
+            },
+            {
+              "layout": {
+                "column": 3,
+                "spacing": 4
+              }
+            }
+          ],
+          "margin_padding": [
+            {
+              "label": "margin",
+              "data": {
+                "top": 58,
+                "left": 90,
+                "bottom": 158,
+                "right": 110,
+                "input": true
+              }
+            },
+            {
+              "label": "padding",
+              "data": {
+                "top": 2,
+                "left": 22,
+                "bottom": 138,
+                "right": 68,
+                "input": true
+              }
+            }
+          ],
+          "insert_section": {
+            "parentPosition": {
+              "section": 4
+            },
+            "position": ["Top", "Bottom"],
+            "template": "Footer",
+            "templateIndex": 1
+          }
+        }
+      ],
+      "verify_layer": {
+        "sectionName": "About"
+      },
+      "redo_value": "138,22,68,2",
+      "expected_message": {
+        "saved": "All changes are saved",
+        "unsaved": "Unsaved changes",
+        "alert": "Changes you made may not be saved."
+      },
+      "max_times_undo_redo": 50
+    }
+  }
+}

@@ -1,0 +1,2128 @@
+{
+  "api": "https://api.shopbase.com",
+  "domain": "au-shipping.onshopbase.com",
+  "shop_name": "au-shipping",
+  "user_id": 73782,
+  "shop_id": 10054756,
+  "username": "shopbase@beeketing.net",
+  "password": "Q(f!3Kx+6n;?Us%F",
+  "cases": {
+    "SB_CASE_DELETE": {},
+    "CASE_COUNTRY": {
+      "data": [
+        {
+          "case_description": "Checkout thành công với nhiều country khi setting shipping zone là rest of world",
+          "case_id": "SB_SET_SP_1",
+          "shipping_zone_info": {
+            "name": "Rest of world",
+            "countries": [],
+            "price_based_shipping_rate": [
+              {
+                "name": "Price Based",
+                "price_unit": "USD",
+                "min_order_subtotal": 0,
+                "max_order_subtotal": 100,
+                "price": 5.99
+              }
+            ],
+            "type": "rest_of_world"
+          },
+          "product_info": [
+            {
+              "name": "Wallet",
+              "quantity": 1
+            }
+          ],
+          "shipping_infos": [
+            {
+              "shipping_method": "Price Based",
+              "customer_info": {
+                "email": "testerOCG@shopbase.com",
+                "first_name": "Shopbase",
+                "last_name": "Auto",
+                "address": "1600 W Loop S",
+                "country": "United States",
+                "state": "Texas",
+                "city": "Addison",
+                "zipcode": "75001",
+                "phone_number": "505-646-2276"
+              }
+            },
+            {
+              "shipping_method": "Price Based",
+              "customer_info": {
+                "email": "testerOCG@shopbase.com",
+                "first_name": "Shopbase",
+                "last_name": "Auto",
+                "address": "1600 W Loop S",
+                "country": "Vietnam",
+                "city": "Hanoi",
+                "zipcode": "10000",
+                "phone_number": "505-646-2276"
+              }
+            },
+            {
+              "shipping_method": "Price Based",
+              "customer_info": {
+                "email": "testerOCG@shopbase.com",
+                "first_name": "Shopbase",
+                "last_name": "Auto",
+                "address": "1600 W Loop S",
+                "country": "China",
+                "state": "Anhui",
+                "city": "Beijing",
+                "zipcode": "10000",
+                "phone_number": "505-646-2276"
+              }
+            }
+          ]
+        },
+        {
+          "case_description": "Checkout thành công với nhiều country khi setting shipping zone bao gồm nhiều country",
+          "case_id": "SB_SET_SP_2",
+          "shipping_zone_info": {
+            "name": "Afghanistan, Albania, Algeria",
+            "countries": [
+              {
+                "id": 1,
+                "name": "Afghanistan",
+                "code": "AF"
+              },
+              {
+                "id": 3,
+                "name": "Albania",
+                "code": "AL"
+              },
+              {
+                "id": 4,
+                "name": "Algeria",
+                "code": "DZ"
+              }
+            ],
+            "price_based_shipping_rate": [
+              {
+                "name": "Price Based",
+                "price_unit": "USD",
+                "min_order_subtotal": 0,
+                "max_order_subtotal": 100,
+                "price": 6.99
+              }
+            ],
+            "type": "specific"
+          },
+          "product_info": [
+            {
+              "name": "Wallet",
+              "quantity": 1
+            }
+          ],
+          "shipping_infos": [
+            {
+              "shipping_method": "Price Based",
+              "customer_info": {
+                "email": "testerOCG@shopbase.com",
+                "first_name": "Shopbase",
+                "last_name": "Auto",
+                "address": "1600 W Loop S",
+                "country": "Afghanistan",
+                "city": "Addison",
+                "zipcode": "75001",
+                "phone_number": "505-646-2276"
+              }
+            },
+            {
+              "shipping_method": "Price Based",
+              "customer_info": {
+                "email": "testerOCG@shopbase.com",
+                "first_name": "Shopbase",
+                "last_name": "Auto",
+                "address": "1600 W Loop S",
+                "country": "Algeria",
+                "city": "Hanoi",
+                "zipcode": "10000",
+                "phone_number": "505-646-2276"
+              }
+            },
+            {
+              "shipping_method": "Price Based",
+              "customer_info": {
+                "email": "testerOCG@shopbase.com",
+                "first_name": "Shopbase",
+                "last_name": "Auto",
+                "address": "1600 W Loop S",
+                "country": "Albania",
+                "city": "Beijing",
+                "zipcode": "10000",
+                "phone_number": "505-646-2276"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "CASE_SEVERAL_ZONES": {
+      "data": [
+        {
+          "case_description": "[Price base] Setting nhiều shipping zone với nhiều country và kiểm tra sự thay đổi rate ngoài Storefront",
+          "case_id": "SB_SET_SP_3",
+          "shipping_zone_info": [
+            {
+              "name": "Andorra",
+              "countries": [
+                {
+                  "id": 5,
+                  "name": "Andorra",
+                  "code": "AD"
+                }
+              ],
+              "price_based_shipping_rate": [
+                {
+                  "name": "Price Based AD",
+                  "price_unit": "USD",
+                  "min_order_subtotal": 0,
+                  "max_order_subtotal": 100,
+                  "price": 4.99
+                }
+              ],
+              "type": "specific"
+            },
+            {
+              "name": "Angola",
+              "countries": [
+                {
+                  "id": 6,
+                  "name": "Angola",
+                  "code": "AO"
+                }
+              ],
+              "price_based_shipping_rate": [
+                {
+                  "name": "Price Based AO",
+                  "price_unit": "USD",
+                  "min_order_subtotal": 0,
+                  "max_order_subtotal": 100,
+                  "price": 5.99
+                }
+              ],
+              "type": "specific"
+            },
+            {
+              "name": "Anguilla",
+              "countries": [
+                {
+                  "id": 7,
+                  "name": "Anguilla",
+                  "code": "AI"
+                }
+              ],
+              "price_based_shipping_rate": [
+                {
+                  "name": "Price Based AI",
+                  "price_unit": "USD",
+                  "min_order_subtotal": 0,
+                  "max_order_subtotal": 100,
+                  "price": 6.99
+                }
+              ],
+              "type": "specific"
+            }
+          ],
+          "product_info": [
+            {
+              "name": "Wallet",
+              "quantity": 1
+            }
+          ],
+          "shipping_infos": [
+            {
+              "shipping_method": {
+                "method_title": "Price Based AD"
+              },
+              "customer_info": {
+                "email": "testerOCG@shopbase.com",
+                "first_name": "Shopbase",
+                "last_name": "Auto",
+                "address": "1600 W Loop S",
+                "country": "Andorra",
+                "city": "Addison",
+                "zipcode": "75001",
+                "phone_number": "505-646-2276"
+              }
+            },
+            {
+              "shipping_method": {
+                "method_title": "Price Based AO"
+              },
+              "customer_info": {
+                "email": "testerOCG@shopbase.com",
+                "first_name": "Shopbase",
+                "last_name": "Auto",
+                "address": "1600 W Loop S",
+                "country": "Angola",
+                "city": "Hanoi",
+                "zipcode": "10000",
+                "phone_number": "505-646-2276"
+              }
+            },
+            {
+              "shipping_method": {
+                "method_title": "Price Based AI"
+              },
+              "customer_info": {
+                "email": "testerOCG@shopbase.com",
+                "first_name": "Shopbase",
+                "last_name": "Auto",
+                "address": "1600 W Loop S",
+                "country": "Anguilla",
+                "city": "Beijing",
+                "zipcode": "10000",
+                "phone_number": "505-646-2276"
+              }
+            }
+          ]
+        },
+        {
+          "case_description": "[Weight base] Setting nhiều shipping zone với nhiều country và kiểm tra sự thay đổi rate ngoài Storefront",
+          "case_id": "SB_SET_SP_6",
+          "shipping_zone_info": [
+            {
+              "name": "Armenia",
+              "countries": [
+                {
+                  "id": 10,
+                  "name": "Armenia",
+                  "code": "AM"
+                }
+              ],
+              "weight_based_shipping_rate": [
+                {
+                  "name": "Weight Based AM",
+                  "price_unit": "USD",
+                  "weight_low": 0,
+                  "weight_high": 10,
+                  "weight_unit": "lb",
+                  "price": 4.99
+                }
+              ],
+              "type": "specific"
+            },
+            {
+              "name": "Aruba",
+              "countries": [
+                {
+                  "id": 11,
+                  "name": "Aruba",
+                  "code": "AW"
+                }
+              ],
+              "weight_based_shipping_rate": [
+                {
+                  "name": "Weight Based AW",
+                  "price_unit": "USD",
+                  "weight_low": 0,
+                  "weight_high": 10,
+                  "weight_unit": "lb",
+                  "price": 5.99
+                }
+              ],
+              "type": "specific"
+            },
+            {
+              "name": "Austria",
+              "countries": [
+                {
+                  "id": 13,
+                  "name": "Austria",
+                  "code": "AT"
+                }
+              ],
+              "weight_based_shipping_rate": [
+                {
+                  "name": "Weight Based AT",
+                  "price_unit": "USD",
+                  "weight_low": 0,
+                  "weight_high": 10,
+                  "weight_unit": "lb",
+                  "price": 6.99
+                }
+              ],
+              "type": "specific"
+            }
+          ],
+          "product_info": [
+            {
+              "name": "Wallet",
+              "quantity": 1
+            }
+          ],
+          "shipping_infos": [
+            {
+              "shipping_method": {
+                "method_title": "Weight Based AM"
+              },
+              "customer_info": {
+                "email": "testerOCG@shopbase.com",
+                "first_name": "Shopbase",
+                "last_name": "Auto",
+                "address": "1600 W Loop S",
+                "country": "Armenia",
+                "city": "Addison",
+                "zipcode": "75001",
+                "phone_number": "505-646-2276"
+              }
+            },
+            {
+              "shipping_method": {
+                "method_title": "Weight Based AW"
+              },
+              "customer_info": {
+                "email": "testerOCG@shopbase.com",
+                "first_name": "Shopbase",
+                "last_name": "Auto",
+                "address": "1600 W Loop S",
+                "country": "Aruba",
+                "city": "Hanoi",
+                "zipcode": "10000",
+                "phone_number": "505-646-2276"
+              }
+            },
+            {
+              "shipping_method": {
+                "method_title": "Weight Based AT"
+              },
+              "customer_info": {
+                "email": "testerOCG@shopbase.com",
+                "first_name": "Shopbase",
+                "last_name": "Auto",
+                "address": "1600 W Loop S",
+                "country": "Austria",
+                "city": "Beijing",
+                "zipcode": "10000",
+                "phone_number": "505-646-2276"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "CASE_SEVERAL_RATES": {
+      "data": [
+        {
+          "case_description": "[Price base] Setting shipping zone với nhiều rate và kiểm tra sự thay đổi rate ngoài Storefront",
+          "case_id": "SB_SET_SP_4",
+          "shipping_zone_info": {
+            "name": "Belgium ",
+            "countries": [
+              {
+                "id": 20,
+                "name": "Belgium",
+                "code": "BE"
+              }
+            ],
+            "price_based_shipping_rate": [
+              {
+                "name": "BE Freeship",
+                "price_unit": "USD",
+                "min_order_subtotal": 0,
+                "max_order_subtotal": 0,
+                "price": 0
+              },
+              {
+                "name": "BE Max order free",
+                "price_unit": "USD",
+                "min_order_subtotal": 0,
+                "max_order_subtotal": 80,
+                "price": 0
+              },
+              {
+                "name": "BE Max order",
+                "price_unit": "USD",
+                "min_order_subtotal": 0,
+                "max_order_subtotal": 80,
+                "price": 10
+              },
+              {
+                "name": "BE Min order free",
+                "price_unit": "USD",
+                "min_order_subtotal": 50,
+                "max_order_subtotal": 0,
+                "price": 0
+              },
+              {
+                "name": "BE Min order",
+                "price_unit": "USD",
+                "min_order_subtotal": 50,
+                "max_order_subtotal": 0,
+                "price": 15
+              },
+              {
+                "name": "BE Min max free",
+                "price_unit": "USD",
+                "min_order_subtotal": 50,
+                "max_order_subtotal": 80,
+                "price": 0
+              },
+              {
+                "name": "BE Min max",
+                "price_unit": "USD",
+                "min_order_subtotal": 50,
+                "max_order_subtotal": 80,
+                "price": 20
+              }
+            ],
+            "type": "specific"
+          },
+          "customer_info": {
+            "email": "testerOCG@shopbase.com",
+            "first_name": "Shopbase",
+            "last_name": "Auto",
+            "address": "1600 W Loop S",
+            "country": "Belgium",
+            "city": "Addison",
+            "zipcode": "75001",
+            "phone_number": "505-646-2276"
+          },
+          "shipping_infos": [
+            {
+              "product_name": "Wallet",
+              "product_quantity": 1,
+              "shipping_method": [
+                {
+                  "method_title": "BE Freeship",
+                  "must_equal": true
+                },
+                {
+                  "method_title": "BE Max order free",
+                  "must_equal": true
+                },
+                {
+                  "method_title": "BE Max order",
+                  "must_equal": true
+                }
+              ]
+            },
+            {
+              "product_name": "Wallet",
+              "product_quantity": 6,
+              "shipping_method": [
+                {
+                  "method_title": "BE Freeship",
+                  "must_equal": true
+                },
+                {
+                  "method_title": "BE Max order free",
+                  "must_equal": true
+                },
+                {
+                  "method_title": "BE Max order",
+                  "must_equal": true
+                },
+                {
+                  "method_title": "BE Min order free",
+                  "must_equal": true
+                },
+                {
+                  "method_title": "BE Min order",
+                  "must_equal": true
+                },
+                {
+                  "method_title": "BE Min max free",
+                  "must_equal": true
+                },
+                {
+                  "method_title": "BE Min max",
+                  "must_equal": true
+                }
+              ]
+            },
+            {
+              "product_name": "Wallet",
+              "product_quantity": 9,
+              "shipping_method": [
+                {
+                  "method_title": "BE Freeship",
+                  "must_equal": true
+                },
+                {
+                  "method_title": "BE Min order free",
+                  "must_equal": true
+                },
+                {
+                  "method_title": "BE Min order",
+                  "must_equal": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "case_description": "[Weight base] Setting shipping zone với nhiều rate và kiểm tra sự thay đổi rate ngoài Storefront",
+          "case_id": "SB_SET_SP_7",
+          "shipping_zone_info": {
+            "name": "Belize",
+            "countries": [
+              {
+                "id": 21,
+                "name": "Belize",
+                "code": "BZ"
+              }
+            ],
+            "weight_based_shipping_rate": [
+              {
+                "name": "BZ Freeship",
+                "price_unit": "USD",
+                "weight_high": 0,
+                "weight_low": 0,
+                "price": 0
+              },
+              {
+                "name": "BZ Max order free",
+                "price_unit": "USD",
+                "weight_low": 0,
+                "weight_high": 50,
+                "price": 0
+              },
+              {
+                "name": "BZ Max order",
+                "price_unit": "USD",
+                "weight_low": 0,
+                "weight_high": 50,
+                "price": 10
+              },
+              {
+                "name": "BZ Min order free",
+                "price_unit": "USD",
+                "weight_low": 20,
+                "weight_high": 0,
+                "price": 0
+              },
+              {
+                "name": "BZ Min order",
+                "price_unit": "USD",
+                "weight_low": 20,
+                "weight_high": 0,
+                "price": 15
+              },
+              {
+                "name": "BZ Min max free",
+                "price_unit": "USD",
+                "weight_low": 20,
+                "weight_high": 50,
+                "price": 0
+              },
+              {
+                "name": "BZ Min max",
+                "price_unit": "USD",
+                "weight_low": 20,
+                "weight_high": 50,
+                "price": 20
+              }
+            ],
+            "type": "specific"
+          },
+          "customer_info": {
+            "email": "testerOCG@shopbase.com",
+            "first_name": "Shopbase",
+            "last_name": "Auto",
+            "address": "1600 W Loop S",
+            "country": "Belize",
+            "city": "Addison",
+            "zipcode": "75001",
+            "phone_number": "505-646-2276"
+          },
+          "shipping_infos": [
+            {
+              "product_name": "Wallet",
+              "product_quantity": 1,
+              "shipping_method": [
+                {
+                  "method_title": "BZ Freeship",
+                  "must_equal": true
+                },
+                {
+                  "method_title": "BZ Max order free",
+                  "must_equal": true
+                },
+                {
+                  "method_title": "BZ Max order",
+                  "must_equal": true
+                }
+              ]
+            },
+            {
+              "product_name": "Wallet",
+              "product_quantity": 6,
+              "shipping_method": [
+                {
+                  "method_title": "BZ Freeship",
+                  "must_equal": true
+                },
+                {
+                  "method_title": "BZ Max order free",
+                  "must_equal": true
+                },
+                {
+                  "method_title": "BZ Max order",
+                  "must_equal": true
+                },
+                {
+                  "method_title": "BZ Min order free",
+                  "must_equal": true
+                },
+                {
+                  "method_title": "BZ Min order",
+                  "must_equal": true
+                },
+                {
+                  "method_title": "BZ Min max free",
+                  "must_equal": true
+                },
+                {
+                  "method_title": "BZ Min max",
+                  "must_equal": true
+                }
+              ]
+            },
+            {
+              "product_name": "Wallet",
+              "product_quantity": 11,
+              "shipping_method": [
+                {
+                  "method_title": "BZ Freeship",
+                  "must_equal": true
+                },
+                {
+                  "method_title": "BZ Min order free",
+                  "must_equal": true
+                },
+                {
+                  "method_title": "BZ Min order",
+                  "must_equal": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SB_SET_SP_5": {
+      "product_info": {
+        "name": "Wallet",
+        "quantity": 5
+      },
+      "customer_info": {
+        "email": "testerOCG@shopbase.com",
+        "first_name": "Shopbase",
+        "last_name": "Auto",
+        "address": "1600 W Loop S",
+        "country": "Botswana",
+        "city": "Addison",
+        "zipcode": "75001",
+        "phone_number": "505-646-2276"
+      },
+      "shipping_zone_info": {
+        "name": "Botswana",
+        "countries": [
+          {
+            "id": 27,
+            "name": "Botswana",
+            "code": "BW"
+          }
+        ],
+        "price_based_shipping_rate": [
+          {
+            "name": "BW Min order 50",
+            "price_unit": "USD",
+            "min_order_subtotal": 50,
+            "max_order_subtotal": 0,
+            "price": 0
+          },
+          {
+            "name": "BW Min order 40",
+            "price_unit": "USD",
+            "min_order_subtotal": 40,
+            "max_order_subtotal": 0,
+            "price": 0
+          }
+        ],
+        "type": "specific"
+      },
+      "shipping_method": [
+        {
+          "method_title": "BW Min order 50"
+        },
+        {
+          "method_title": "BW Min order 40"
+        }
+      ],
+      "discount_info": [
+        {
+          "discount_code": "AU_FIX5",
+          "shipping_method": [
+            {
+              "method_title": "BW Min order 40"
+            }
+          ]
+        },
+        {
+          "discount_code": "AU_FIX15"
+        }
+      ]
+    },
+    "CASE_SHIPPING_PPC": {
+      "data": [
+        {
+          "case_description": "[Price base] Checkout order có item PPC thỏa mãn shipping rate",
+          "case_id": "SB_SET_SP_19",
+          "product_info": {
+            "name": "Watch",
+            "quantity": 2
+          },
+          "product_ppc": "T-shirt",
+          "customer_info": {
+            "email": "testerOCG@shopbase.com",
+            "first_name": "Shopbase",
+            "last_name": "Auto",
+            "address": "1600 W Loop S",
+            "country": "Bhutan",
+            "city": "Addison",
+            "zipcode": "75001",
+            "phone_number": "505-646-2276"
+          },
+          "shipping_zone_info": {
+            "name": "Bhutan",
+            "countries": [
+              {
+                "id": 24,
+                "name": "Bhutan",
+                "code": "BT"
+              }
+            ],
+            "price_based_shipping_rate": [
+              {
+                "name": "Standard BT",
+                "price_unit": "USD",
+                "min_order_subtotal": 0,
+                "max_order_subtotal": 0,
+                "price": 5.99
+              },
+              {
+                "name": "Standard BT 20",
+                "price_unit": "USD",
+                "min_order_subtotal": 20,
+                "max_order_subtotal": 0,
+                "price": 6.99
+              }
+            ],
+            "type": "specific"
+          },
+          "shipping_method": [
+            {
+              "method_title": "Standard BT",
+              "must_equal": true
+            },
+            {
+              "method_title": "Standard BT 20",
+              "must_equal": true
+            }
+          ]
+        },
+        {
+          "case_description": "[Weight base] Checkout order có item PPC thỏa mãn shipping rate",
+          "case_id": "SB_SET_SP_20",
+          "product_info": {
+            "name": "Watch",
+            "quantity": 2
+          },
+          "product_ppc": "T-shirt",
+          "customer_info": {
+            "email": "testerOCG@shopbase.com",
+            "first_name": "Shopbase",
+            "last_name": "Auto",
+            "address": "1600 W Loop S",
+            "country": "Bolivia",
+            "city": "Addison",
+            "zipcode": "75001",
+            "phone_number": "505-646-2276"
+          },
+          "shipping_zone_info": {
+            "name": "Bolivia",
+            "countries": [
+              {
+                "id": 25,
+                "name": "Bolivia",
+                "code": "BO"
+              }
+            ],
+            "weight_based_shipping_rate": [
+              {
+                "name": "Standard BO",
+                "price_unit": "USD",
+                "weight_low": 0,
+                "weight_high": 0,
+                "price": 5.99
+              },
+              {
+                "name": "Standard BO 20",
+                "price_unit": "USD",
+                "weight_low": 20,
+                "weight_high": 0,
+                "price": 6.99
+              }
+            ],
+            "type": "specific"
+          },
+          "shipping_method": [
+            {
+              "method_title": "Standard BO",
+              "must_equal": true
+            },
+            {
+              "method_title": "Standard BO 20",
+              "must_equal": true
+            }
+          ]
+        },
+        {
+          "case_description": "[Item base] Checkout order có item PPC thỏa mãn shipping rate",
+          "case_id": "SB_SET_SP_21",
+          "product_info": {
+            "name": "Watch",
+            "quantity": 1
+          },
+          "product_ppc": "T-shirt",
+          "customer_info": {
+            "email": "testerOCG@shopbase.com",
+            "first_name": "Shopbase",
+            "last_name": "Auto",
+            "address": "1600 W Loop S",
+            "country": "Ecuador",
+            "city": "Addison",
+            "zipcode": "75001",
+            "phone_number": "505-646-2276"
+          },
+          "shipping_zone_info": {
+            "name": "Ecuador",
+            "countries": [
+              {
+                "id": 64,
+                "name": "Ecuador",
+                "code": "EC"
+              }
+            ],
+            "item_based_shipping_rate": [
+              {
+                "name": "Itembase EC",
+                "price_unit": "USD",
+                "group_tag": "hello1",
+                "rules": [
+                  {
+                    "column": "sku",
+                    "condition": "notEqualSKU",
+                    "relation": "not_equals"
+                  }
+                ],
+                "first_item_price": 5,
+                "additional_item_price": 2
+              }
+            ],
+            "type": "specific"
+          },
+          "shipping_method": [
+            {
+              "method_title": "Itembase EC"
+            }
+          ]
+        }
+      ]
+    },
+    "SB_SET_SP_8": {
+      "shipping_zone_info": {
+        "name": "Bosnia",
+        "countries": [
+          {
+            "id": 26,
+            "name": "Bosnia",
+            "code": "BA"
+          }
+        ],
+        "item_based_shipping_rate": [
+          {
+            "name": "Rule 1",
+            "price_unit": "USD",
+            "group_tag": "Standard",
+            "first_item_price": 5,
+            "additional_item_price": 1,
+            "rules": [
+              {
+                "column": "sku",
+                "condition": "Rule1",
+                "relation": "contains"
+              }
+            ]
+          },
+          {
+            "name": "Rule 2",
+            "price_unit": "USD",
+            "group_tag": "Standard",
+            "first_item_price": 6,
+            "additional_item_price": 2,
+            "rules": [
+              {
+                "column": "sku",
+                "condition": "Rule2",
+                "relation": "contains"
+              }
+            ]
+          },
+          {
+            "name": "Rule 3",
+            "price_unit": "USD",
+            "group_tag": "Standard",
+            "first_item_price": 7,
+            "additional_item_price": 3,
+            "rules": [
+              {
+                "column": "sku",
+                "condition": "Rule3",
+                "relation": "contains"
+              }
+            ]
+          },
+          {
+            "name": "Rule 4",
+            "price_unit": "USD",
+            "group_tag": "Standard",
+            "first_item_price": 5,
+            "additional_item_price": 4,
+            "rules": [
+              {
+                "column": "sku",
+                "condition": "Rule4",
+                "relation": "contains"
+              }
+            ]
+          },
+          {
+            "name": "Rule 5",
+            "price_unit": "USD",
+            "group_tag": "Standard",
+            "first_item_price": 7,
+            "additional_item_price": 1,
+            "rules": [
+              {
+                "column": "sku",
+                "condition": "Rule5",
+                "relation": "contains"
+              }
+            ]
+          },
+          {
+            "name": "Freeship",
+            "price_unit": "USD",
+            "group_tag": "Standard",
+            "first_item_price": 0,
+            "additional_item_price": 0,
+            "rules": [
+              {
+                "column": "sku",
+                "condition": "Freeship",
+                "relation": "contains"
+              }
+            ]
+          },
+          {
+            "name": "All product",
+            "price_unit": "USD",
+            "group_tag": "Standard",
+            "first_item_price": 8,
+            "additional_item_price": 7
+          }
+        ],
+        "type": "specific"
+      },
+      "products": [
+        {
+          "handle": "brown-shoes",
+          "variant_sku": "Rule1"
+        },
+        {
+          "handle": "hats",
+          "variant_sku": "Rule2"
+        },
+        {
+          "handle": "jeans",
+          "variant_sku": "Rule3"
+        },
+        {
+          "handle": "socks6",
+          "variant_sku": "Rule4"
+        },
+        {
+          "handle": "rule5",
+          "variant_sku": "Rule5"
+        },
+        {
+          "handle": "rule2rule4",
+          "variant_sku": "Rule2Rule4"
+        },
+        {
+          "handle": "rule3rule5",
+          "variant_sku": "Rule3Rule5"
+        },
+        {
+          "handle": "rule2andfreeship",
+          "variant_sku": "Rule2AndFreeship"
+        }
+      ],
+      "customer_info": {
+        "email": "testerOCG@shopbase.com",
+        "first_name": "Shopbase",
+        "last_name": "Auto",
+        "address": "1600 W Loop S",
+        "country": "Bosnia",
+        "city": "Addison",
+        "zipcode": "75001",
+        "phone_number": "505-646-2276"
+      },
+      "shipping_infos": [
+        {
+          "product_info": [
+            {
+              "name": "Rule4",
+              "quantity": 4
+            }
+          ],
+          "shipping_method": [
+            {
+              "method_title": "Rule 4",
+              "rate": 17
+            }
+          ]
+        },
+        {
+          "product_info": [
+            {
+              "name": "Rule4",
+              "quantity": 2
+            },
+            {
+              "name": "Rule2",
+              "quantity": 2
+            }
+          ],
+          "shipping_method": [
+            {
+              "method_title": "Rule 2",
+              "rate": 16
+            }
+          ]
+        },
+        {
+          "product_info": [
+            {
+              "name": "Rule3",
+              "quantity": 2
+            },
+            {
+              "name": "Rule2Rule4",
+              "quantity": 2
+            }
+          ],
+          "shipping_method": [
+            {
+              "method_title": "Rule 3",
+              "rate": 18
+            }
+          ]
+        },
+        {
+          "product_info": [
+            {
+              "name": "Rule4",
+              "quantity": 2
+            },
+            {
+              "name": "All product",
+              "quantity": 2
+            }
+          ],
+          "shipping_method": [
+            {
+              "method_title": "Rule 4",
+              "rate": 23
+            }
+          ]
+        },
+        {
+          "product_info": [
+            {
+              "name": "Rule3Rule5",
+              "quantity": 2
+            },
+            {
+              "name": "Rule4",
+              "quantity": 2
+            }
+          ],
+          "shipping_method": [
+            {
+              "method_title": "Rule 3",
+              "rate": 18
+            }
+          ]
+        },
+        {
+          "product_info": [
+            {
+              "name": "Rule3",
+              "quantity": 2
+            },
+            {
+              "name": "Rule5",
+              "quantity": 2
+            }
+          ],
+          "shipping_method": [
+            {
+              "method_title": "Rule 3",
+              "rate": 12
+            }
+          ]
+        },
+        {
+          "product_info": [
+            {
+              "name": "Rule5",
+              "quantity": 2
+            },
+            {
+              "name": "Rule2AndFreeship",
+              "quantity": 2
+            }
+          ],
+          "shipping_method": [
+            {
+              "method_title": "Rule 5",
+              "rate": 12
+            }
+          ]
+        }
+      ]
+    },
+    "CASE_ITEM_BASE": {
+      "data": [
+        {
+          "case_description": "[Item base] Setting nhiều shipping rate với condition contains và kiểm tra sự thay đổi rate ngoài Storefront",
+          "case_id": "SB_SET_SP_9",
+          "product_info": [
+            {
+              "name": "Necklace",
+              "quantity": 1,
+              "handle": "necklace",
+              "variant_sku": "containSKU",
+              "product_type": "containType",
+              "vendor": "containVendor"
+            }
+          ],
+          "customer_info": {
+            "email": "testerOCG@shopbase.com",
+            "first_name": "Shopbase",
+            "last_name": "Auto",
+            "address": "1600 W Loop S",
+            "country": "Brunei",
+            "city": "Addison",
+            "zipcode": "75001",
+            "phone_number": "505-646-2276"
+          },
+          "shipping_zone_info": {
+            "name": "Brunei",
+            "countries": [
+              {
+                "id": 32,
+                "name": "Brunei",
+                "code": "BN"
+              }
+            ],
+            "item_based_shipping_rate": [
+              {
+                "name": "Contains 1",
+                "price_unit": "USD",
+                "group_tag": "hello1",
+                "rules": [
+                  {
+                    "column": "sku",
+                    "condition": "containSKU",
+                    "relation": "contains"
+                  }
+                ],
+                "first_item_price": 0,
+                "additional_item_price": 0
+              },
+              {
+                "name": "Contains 2",
+                "price_unit": "USD",
+                "group_tag": "hello2",
+                "rules": [
+                  {
+                    "column": "product_type",
+                    "condition": "containType",
+                    "relation": "contains"
+                  }
+                ],
+                "first_item_price": 0,
+                "additional_item_price": 0
+              },
+              {
+                "name": "Contains 3",
+                "price_unit": "USD",
+                "group_tag": "hello3",
+                "rules": [
+                  {
+                    "column": "vendor",
+                    "condition": "containVendor",
+                    "relation": "contains"
+                  }
+                ],
+                "first_item_price": 0,
+                "additional_item_price": 0
+              }
+            ],
+            "type": "specific"
+          },
+          "shipping_method": [
+            {
+              "method_title": "Contains 1"
+            },
+            {
+              "method_title": "Contains 2"
+            },
+            {
+              "method_title": "Contains 3"
+            }
+          ]
+        },
+        {
+          "case_description": "[Item base] Setting nhiều shipping rate với condition does not contains và kiểm tra sự thay đổi rate ngoài Storefront",
+          "case_id": "SB_SET_SP_10",
+          "product_info": [
+            {
+              "name": "Necklace",
+              "quantity": 1,
+              "handle": "necklace",
+              "variant_sku": "containSKU",
+              "product_type": "containType",
+              "vendor": "containVendor"
+            }
+          ],
+          "customer_info": {
+            "email": "testerOCG@shopbase.com",
+            "first_name": "Shopbase",
+            "last_name": "Auto",
+            "address": "1600 W Loop S",
+            "country": "Bulgaria",
+            "city": "Addison",
+            "zipcode": "75001",
+            "phone_number": "505-646-2276"
+          },
+          "shipping_zone_info": {
+            "name": "Bulgaria",
+            "countries": [
+              {
+                "id": 33,
+                "name": "Bulgaria",
+                "code": "BG"
+              }
+            ],
+            "item_based_shipping_rate": [
+              {
+                "name": "Not Contains 1",
+                "price_unit": "USD",
+                "group_tag": "hello1",
+                "rules": [
+                  {
+                    "column": "sku",
+                    "condition": "notContainSKU",
+                    "relation": "not_contains"
+                  }
+                ],
+                "first_item_price": 0,
+                "additional_item_price": 0
+              },
+              {
+                "name": "Not Contains 2",
+                "price_unit": "USD",
+                "group_tag": "hello2",
+                "rules": [
+                  {
+                    "column": "product_type",
+                    "condition": "notContainType",
+                    "relation": "not_contains"
+                  }
+                ],
+                "first_item_price": 0,
+                "additional_item_price": 0
+              },
+              {
+                "name": "Not Contains 3",
+                "price_unit": "USD",
+                "group_tag": "hello3",
+                "rules": [
+                  {
+                    "column": "vendor",
+                    "condition": "notContainVendor",
+                    "relation": "not_contains"
+                  }
+                ],
+                "first_item_price": 0,
+                "additional_item_price": 0
+              }
+            ],
+            "type": "specific"
+          },
+          "shipping_method": [
+            {
+              "method_title": "Not Contains 1"
+            },
+            {
+              "method_title": "Not Contains 2"
+            },
+            {
+              "method_title": "Not Contains 3"
+            }
+          ]
+        },
+        {
+          "case_description": "[Item base] Setting nhiều shipping rate với filter start with và kiểm tra sự thay đổi rate ngoài Storefront",
+          "case_id": "SB_SET_SP_11",
+          "product_info": [
+            {
+              "name": "Necklace",
+              "quantity": 1,
+              "handle": "necklace",
+              "variant_sku": "startSKU",
+              "product_type": "startType",
+              "vendor": "startVendor"
+            }
+          ],
+          "customer_info": {
+            "email": "testerOCG@shopbase.com",
+            "first_name": "Shopbase",
+            "last_name": "Auto",
+            "address": "1600 W Loop S",
+            "country": "Burundi",
+            "city": "Addison",
+            "zipcode": "75001",
+            "phone_number": "505-646-2276"
+          },
+          "shipping_zone_info": {
+            "name": "Burundi",
+            "countries": [
+              {
+                "id": 35,
+                "name": "Burundi",
+                "code": "BI"
+              }
+            ],
+            "item_based_shipping_rate": [
+              {
+                "name": "Start 1",
+                "price_unit": "USD",
+                "group_tag": "hello1",
+                "rules": [
+                  {
+                    "column": "sku",
+                    "condition": "startSKU",
+                    "relation": "starts_with"
+                  }
+                ],
+                "first_item_price": 0,
+                "additional_item_price": 0
+              },
+              {
+                "name": "Start 2",
+                "price_unit": "USD",
+                "group_tag": "hello2",
+                "rules": [
+                  {
+                    "column": "product_type",
+                    "condition": "startType",
+                    "relation": "starts_with"
+                  }
+                ],
+                "first_item_price": 0,
+                "additional_item_price": 0
+              },
+              {
+                "name": "Start 3",
+                "price_unit": "USD",
+                "group_tag": "hello3",
+                "rules": [
+                  {
+                    "column": "vendor",
+                    "condition": "startVendor",
+                    "relation": "starts_with"
+                  }
+                ],
+                "first_item_price": 0,
+                "additional_item_price": 0
+              }
+            ],
+            "type": "specific"
+          },
+          "shipping_method": [
+            {
+              "method_title": "Start 1"
+            },
+            {
+              "method_title": "Start 2"
+            },
+            {
+              "method_title": "Start 3"
+            }
+          ]
+        },
+        {
+          "case_description": "[Item base] Setting nhiều shipping rate với filter ends with và kiểm tra sự thay đổi rate ngoài Storefront",
+          "case_id": "SB_SET_SP_12",
+          "product_info": [
+            {
+              "name": "Necklace",
+              "quantity": 1,
+              "handle": "necklace",
+              "variant_sku": "endSKU",
+              "product_type": "endType",
+              "vendor": "endVendor"
+            }
+          ],
+          "customer_info": {
+            "email": "testerOCG@shopbase.com",
+            "first_name": "Shopbase",
+            "last_name": "Auto",
+            "address": "1600 W Loop S",
+            "country": "Cambodia",
+            "city": "Addison",
+            "zipcode": "75001",
+            "phone_number": "505-646-2276"
+          },
+          "shipping_zone_info": {
+            "name": "Cambodia",
+            "countries": [
+              {
+                "id": 36,
+                "name": "Cambodia",
+                "code": "KH"
+              }
+            ],
+            "item_based_shipping_rate": [
+              {
+                "name": "End 1",
+                "price_unit": "USD",
+                "group_tag": "hello1",
+                "rules": [
+                  {
+                    "column": "sku",
+                    "condition": "endSKU",
+                    "relation": "ends_with"
+                  }
+                ],
+                "first_item_price": 0,
+                "additional_item_price": 0
+              },
+              {
+                "name": "End 2",
+                "price_unit": "USD",
+                "group_tag": "hello2",
+                "rules": [
+                  {
+                    "column": "product_type",
+                    "condition": "endType",
+                    "relation": "ends_with"
+                  }
+                ],
+                "first_item_price": 0,
+                "additional_item_price": 0
+              },
+              {
+                "name": "End 3",
+                "price_unit": "USD",
+                "group_tag": "hello3",
+                "rules": [
+                  {
+                    "column": "vendor",
+                    "condition": "endVendor",
+                    "relation": "ends_with"
+                  }
+                ],
+                "first_item_price": 0,
+                "additional_item_price": 0
+              }
+            ],
+            "type": "specific"
+          },
+          "shipping_method": [
+            {
+              "method_title": "End 1"
+            },
+            {
+              "method_title": "End 2"
+            },
+            {
+              "method_title": "End 3"
+            }
+          ]
+        },
+        {
+          "case_description": "[Item base] Setting nhiều shipping rate với filter is Equal to và kiểm tra sự thay đổi rate ngoài Storefront",
+          "case_id": "SB_SET_SP_13",
+          "product_info": [
+            {
+              "name": "Necklace",
+              "quantity": 1,
+              "handle": "necklace",
+              "variant_sku": "equalSKU",
+              "product_type": "equalType",
+              "vendor": "equalVendor"
+            }
+          ],
+          "customer_info": {
+            "email": "testerOCG@shopbase.com",
+            "first_name": "Shopbase",
+            "last_name": "Auto",
+            "address": "1600 W Loop S",
+            "country": "Cameroon",
+            "city": "Addison",
+            "zipcode": "75001",
+            "phone_number": "505-646-2276"
+          },
+          "shipping_zone_info": {
+            "name": "Cameroon",
+            "countries": [
+              {
+                "id": 37,
+                "name": "Cameroon",
+                "code": "CM"
+              }
+            ],
+            "item_based_shipping_rate": [
+              {
+                "name": "Equal 1",
+                "price_unit": "USD",
+                "group_tag": "hello1",
+                "rules": [
+                  {
+                    "column": "sku",
+                    "condition": "equalSKU",
+                    "relation": "equals"
+                  }
+                ],
+                "first_item_price": 0,
+                "additional_item_price": 0
+              },
+              {
+                "name": "Equal 2",
+                "price_unit": "USD",
+                "group_tag": "hello2",
+                "rules": [
+                  {
+                    "column": "product_type",
+                    "condition": "equalType",
+                    "relation": "equals"
+                  }
+                ],
+                "first_item_price": 0,
+                "additional_item_price": 0
+              },
+              {
+                "name": "Equal 3",
+                "price_unit": "USD",
+                "group_tag": "hello3",
+                "rules": [
+                  {
+                    "column": "vendor",
+                    "condition": "equalVendor",
+                    "relation": "equals"
+                  }
+                ],
+                "first_item_price": 0,
+                "additional_item_price": 0
+              }
+            ],
+            "type": "specific"
+          },
+          "shipping_method": [
+            {
+              "method_title": "Equal 1"
+            },
+            {
+              "method_title": "Equal 2"
+            },
+            {
+              "method_title": "Equal 3"
+            }
+          ]
+        },
+        {
+          "case_description": "[Item base] Setting nhiều shipping rate với filter is not Equal to và kiểm tra sự thay đổi rate ngoài Storefront",
+          "case_id": "SB_SET_SP_14",
+          "product_info": [
+            {
+              "name": "Necklace",
+              "quantity": 1,
+              "handle": "necklace",
+              "variant_sku": "equalSKU",
+              "product_type": "equalType",
+              "vendor": "equalVendor"
+            }
+          ],
+          "customer_info": {
+            "email": "testerOCG@shopbase.com",
+            "first_name": "Shopbase",
+            "last_name": "Auto",
+            "address": "1600 W Loop S",
+            "country": "Comoros",
+            "city": "Addison",
+            "zipcode": "75001",
+            "phone_number": "505-646-2276"
+          },
+          "shipping_zone_info": {
+            "name": "Comoros",
+            "countries": [
+              {
+                "id": 49,
+                "name": "Comoros",
+                "code": "KM"
+              }
+            ],
+            "item_based_shipping_rate": [
+              {
+                "name": "Not Equal 1",
+                "price_unit": "USD",
+                "group_tag": "hello1",
+                "rules": [
+                  {
+                    "column": "sku",
+                    "condition": "notEqualSKU",
+                    "relation": "not_equals"
+                  }
+                ],
+                "first_item_price": 0,
+                "additional_item_price": 0
+              },
+              {
+                "name": "Not Equal 2",
+                "price_unit": "USD",
+                "group_tag": "hello2",
+                "rules": [
+                  {
+                    "column": "product_type",
+                    "condition": "notEqualType",
+                    "relation": "not_equals"
+                  }
+                ],
+                "first_item_price": 0,
+                "additional_item_price": 0
+              },
+              {
+                "name": "Not Equal 3",
+                "price_unit": "USD",
+                "group_tag": "hello3",
+                "rules": [
+                  {
+                    "column": "vendor",
+                    "condition": "notEqualVendor",
+                    "relation": "not_equals"
+                  }
+                ],
+                "first_item_price": 0,
+                "additional_item_price": 0
+              }
+            ],
+            "type": "specific"
+          },
+          "shipping_method": [
+            {
+              "method_title": "Not Equal 1"
+            },
+            {
+              "method_title": "Not Equal 2"
+            },
+            {
+              "method_title": "Not Equal 3"
+            }
+          ]
+        },
+        {
+          "case_description": "[Item base] Checkout item thỏa mãn rule exclusion của 1 shipping rate và thỏa mãn rule của 1 shipping rate khác trong cùng 1 group",
+          "case_id": "SB_SET_SP_15",
+          "product_info": [
+            {
+              "name": "Necklace",
+              "quantity": 1,
+              "handle": "necklace",
+              "variant_sku": "AP-UnisexHoodie-S-1080"
+            }
+          ],
+          "customer_info": {
+            "email": "testerOCG@shopbase.com",
+            "first_name": "Shopbase",
+            "last_name": "Auto",
+            "address": "1600 W Loop S",
+            "country": "Croatia",
+            "city": "Addison",
+            "zipcode": "75001",
+            "phone_number": "505-646-2276"
+          },
+          "shipping_zone_info": {
+            "name": "Croatia",
+            "countries": [
+              {
+                "id": 54,
+                "name": "Croatia",
+                "code": "HR"
+              }
+            ],
+            "item_based_shipping_rate": [
+              {
+                "name": "All products",
+                "price_unit": "USD",
+                "group_tag": "standard",
+                "exclude_rules": [
+                  {
+                    "column": "sku",
+                    "condition": "AP-UnisexHoodie",
+                    "relation": "matches_regex"
+                  }
+                ],
+                "first_item_price": 8,
+                "additional_item_price": 8
+              },
+              {
+                "name": "All products",
+                "price_unit": "USD",
+                "group_tag": "standard",
+                "rules": [
+                  {
+                    "column": "sku",
+                    "condition": "AP-UnisexHoodie",
+                    "relation": "matches_regex"
+                  }
+                ],
+                "first_item_price": 6.99,
+                "additional_item_price": 2.49
+              },
+              {
+                "name": "All products",
+                "price_unit": "USD",
+                "group_tag": "standard",
+                "rules": [
+                  {
+                    "column": "sku",
+                    "condition": "AP-Tumbler",
+                    "relation": "matches_regex"
+                  }
+                ],
+                "first_item_price": 6.99,
+                "additional_item_price": 6.99
+              }
+            ],
+            "type": "specific"
+          }
+        },
+        {
+          "case_description": "[Item base] Checkout 2 items, 1 item thỏa mãn rule exclusion của 1 shipping rate, 1 item thỏa mãn shipping rate",
+          "case_id": "SB_SET_SP_16",
+          "product_info": [
+            {
+              "name": "Necklace",
+              "quantity": 1,
+              "handle": "necklace",
+              "variant_sku": "AP-UnisexHoodie-S-1080"
+            },
+            {
+              "name": "T-shirt",
+              "quantity": 1,
+              "handle": "t-shirt",
+              "variant_sku": "AP-Shirt-S-1808"
+            }
+          ],
+          "customer_info": {
+            "email": "testerOCG@shopbase.com",
+            "first_name": "Shopbase",
+            "last_name": "Auto",
+            "address": "1600 W Loop S",
+            "country": "Cuba",
+            "city": "Addison",
+            "zipcode": "75001",
+            "phone_number": "505-646-2276"
+          },
+          "shipping_zone_info": {
+            "name": "Cuba",
+            "countries": [
+              {
+                "id": 55,
+                "name": "Cuba",
+                "code": "CU"
+              }
+            ],
+            "item_based_shipping_rate": [
+              {
+                "name": "All products",
+                "price_unit": "USD",
+                "group_tag": "standard",
+                "exclude_rules": [
+                  {
+                    "column": "sku",
+                    "condition": "AP-UnisexHoodie",
+                    "relation": "matches_regex"
+                  }
+                ],
+                "first_item_price": 8,
+                "additional_item_price": 8
+              },
+              {
+                "name": "All products",
+                "price_unit": "USD",
+                "group_tag": "standard",
+                "rules": [
+                  {
+                    "column": "sku",
+                    "condition": "AP-Shirt",
+                    "relation": "matches_regex"
+                  }
+                ],
+                "first_item_price": 6.99,
+                "additional_item_price": 2.49
+              },
+              {
+                "name": "All products",
+                "price_unit": "USD",
+                "group_tag": "standard",
+                "rules": [
+                  {
+                    "column": "sku",
+                    "condition": "AP-Tumbler",
+                    "relation": "matches_regex"
+                  }
+                ],
+                "first_item_price": 6.99,
+                "additional_item_price": 6.99
+              }
+            ],
+            "type": "specific"
+          }
+        },
+        {
+          "case_description": "[Item base] Checkout 2 items thỏa mãn rule exclusion của shipping rate",
+          "case_id": "SB_SET_SP_17",
+          "product_info": [
+            {
+              "name": "Necklace",
+              "quantity": 1,
+              "handle": "necklace",
+              "variant_sku": "AP-UnisexHoodie-S-1080"
+            },
+            {
+              "name": "T-shirt",
+              "quantity": 1,
+              "handle": "t-shirt",
+              "variant_sku": "AP-Shirt-S-1808"
+            }
+          ],
+          "customer_info": {
+            "email": "testerOCG@shopbase.com",
+            "first_name": "Shopbase",
+            "last_name": "Auto",
+            "address": "1600 W Loop S",
+            "country": "Denmark",
+            "city": "Addison",
+            "zipcode": "75001",
+            "phone_number": "505-646-2276"
+          },
+          "shipping_zone_info": {
+            "name": "Denmark",
+            "countries": [
+              {
+                "id": 59,
+                "name": "Denmark",
+                "code": "DK"
+              }
+            ],
+            "item_based_shipping_rate": [
+              {
+                "name": "All products",
+                "price_unit": "USD",
+                "group_tag": "standard",
+                "exclude_rules": [
+                  {
+                    "column": "sku",
+                    "condition": "AP-UnisexHoodie",
+                    "relation": "matches_regex"
+                  }
+                ],
+                "first_item_price": 9.99,
+                "additional_item_price": 8.99
+              },
+              {
+                "name": "All products",
+                "price_unit": "USD",
+                "group_tag": "standard",
+                "exclude_rules": [
+                  {
+                    "column": "sku",
+                    "condition": "AP-Tumbler",
+                    "relation": "matches_regex"
+                  }
+                ],
+                "first_item_price": 8,
+                "additional_item_price": 8
+              },
+              {
+                "name": "All products",
+                "price_unit": "USD",
+                "group_tag": "standard",
+                "rules": [
+                  {
+                    "column": "sku",
+                    "condition": "AP-Shirt",
+                    "relation": "matches_regex"
+                  }
+                ],
+                "first_item_price": 8.99,
+                "additional_item_price": 6.99
+              },
+              {
+                "name": "All products",
+                "price_unit": "USD",
+                "group_tag": "standard",
+                "rules": [
+                  {
+                    "column": "sku",
+                    "condition": "AP-Shirt",
+                    "relation": "matches_regex"
+                  }
+                ],
+                "first_item_price": 6.99,
+                "additional_item_price": 2.49
+              }
+            ],
+            "type": "specific"
+          }
+        },
+        {
+          "case_description": "[Item base] Checkout 2 items, 1 item thỏa mãn rule exclusion của 1 shipping rate và thỏa mãn rule của 1 shipping rate khác không cùng 1 group",
+          "case_id": "SB_SET_SP_18",
+          "product_info": [
+            {
+              "name": "Necklace",
+              "quantity": 1,
+              "handle": "necklace",
+              "variant_sku": "AP-UnisexHoodie-S-1080"
+            },
+            {
+              "name": "T-shirt",
+              "quantity": 1,
+              "handle": "t-shirt",
+              "variant_sku": "AP-Shirt-S-1808"
+            }
+          ],
+          "customer_info": {
+            "email": "testerOCG@shopbase.com",
+            "first_name": "Shopbase",
+            "last_name": "Auto",
+            "address": "1600 W Loop S",
+            "country": "Dominica",
+            "city": "Addison",
+            "zipcode": "75001",
+            "phone_number": "505-646-2276"
+          },
+          "shipping_zone_info": {
+            "name": "Dominica",
+            "countries": [
+              {
+                "id": 61,
+                "name": "Dominica",
+                "code": "DM"
+              }
+            ],
+            "item_based_shipping_rate": [
+              {
+                "name": "All products",
+                "price_unit": "USD",
+                "group_tag": "express",
+                "exclude_rules": [
+                  {
+                    "column": "sku",
+                    "condition": "AP-UnisexHoodie",
+                    "relation": "matches_regex"
+                  }
+                ],
+                "first_item_price": 9.99,
+                "additional_item_price": 8.99
+              },
+              {
+                "name": "Express shipping",
+                "price_unit": "USD",
+                "group_tag": "express",
+                "exclude_rules": [
+                  {
+                    "column": "sku",
+                    "condition": "AP-Shirt",
+                    "relation": "matches_regex"
+                  }
+                ],
+                "first_item_price": 8.99,
+                "additional_item_price": 6.99
+              },
+              {
+                "name": "All products",
+                "price_unit": "USD",
+                "group_tag": "standard",
+                "first_item_price": 8,
+                "additional_item_price": 6
+              },
+              {
+                "name": "All products",
+                "price_unit": "USD",
+                "group_tag": "standard",
+                "rules": [
+                  {
+                    "column": "sku",
+                    "condition": "AP-Shirt",
+                    "relation": "matches_regex"
+                  }
+                ],
+                "first_item_price": 6.99,
+                "additional_item_price": 2.49
+              }
+            ],
+            "type": "specific"
+          },
+          "shipping_method": [
+            {
+              "method_title": "All products"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "env": {
+    "prodtest": {
+      "domain": "au-shipping-prodtest.onshopbase.com",
+      "shop_name": "au-shipping-prodtest",
+      "shop_id": 10231414,
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://prod-test-api.shopbase.com"
+    },
+    "env": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-shipping-sbase.myshopbase.net",
+      "shop_name": "au-shipping-sbase",
+      "user_id": 73800,
+      "shop_id": 10323562,
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q"
+    }
+  }
+}

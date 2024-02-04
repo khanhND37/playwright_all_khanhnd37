@@ -1,0 +1,1176 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "auto-block-wb.myshopbase.net",
+      "shop_name": "auto-block-wb",
+      "shop_id": 10333928,
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "user_id": 90252,
+      "theme_test": "[Repeated content] Template run auto",
+      "test_lib": "[Repeated content] Don't delete",
+      "cases": {
+        "SB_WEB_BUILDER_LB_BRC_14": {
+          "expect": {
+            "default_data_on_mobile": "14-slide-default-data-on-mobile-dev.png",
+            "setting_data_desktop_wf": "14-slide-setting-data-desktop-wf-dev.png",
+            "setting_data_mobile_wf": "14-slide-setting-data-mobile-wf-dev.png",
+            "setting_data_desktop_sf": "14-slide-setting-data-desktop-sf-dev.png",
+            "setting_data_mobile_sf": "14-slide-setting-data-mobile-sf-dev.png"
+          }
+        }
+      }
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "auto-block-wb-prodtest.onshopbase.com",
+      "shop_name": "auto-block-wb-prodtest",
+      "shop_id": 10480844,
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "user_id": 11260206,
+      "theme_test": "[Repeated content] Template run auto",
+      "test_lib": "[Repeated content] Don't delete"
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "auto-block-wb.onshopbase.com",
+      "shop_name": "auto-block-wb",
+      "shop_id": 10480842,
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "user_id": 11260206,
+      "theme_test": "[Repeated content] Template run auto",
+      "test_lib": "[Repeated content] Don't delete"
+    }
+  },
+  "cases": {
+    "SB_WEB_BUILDER_LB_BRC_01": {
+      "data": {
+        "section_1": {
+          "section": 1
+        },
+        "block_name": "Repeated content",
+        "add_block_repeated": {
+          "parent_position": {
+            "section": 1,
+            "row": 1,
+            "column": 1
+          },
+          "basics_cate": "Basics",
+          "template": "Repeated content"
+        },
+        "add_block_in_container": {
+          "add_container": {
+            "parent_position": {
+              "section": 2,
+              "column": 1
+            },
+            "basics_cate": "Basics",
+            "template": "Container"
+          },
+          "add_block": {
+            "parent_position": {
+              "section": 2,
+              "column": 1,
+              "block": 1
+            },
+            "basics_cate": "Basics",
+            "template": "Repeated content"
+          }
+        },
+        "add_block_in_tab": {
+          "add_tab": {
+            "parent_position": {
+              "section": 2,
+              "column": 1
+            },
+            "basics_cate": "Basics",
+            "template": "Tabs"
+          },
+          "add_block_lvl1": {
+            "level": 1,
+            "row": 1,
+            "column": 1
+          }
+        },
+        "add_block_in_accordion": {
+          "add_accordion": {
+            "parent_position": {
+              "section": 3,
+              "column": 1
+            },
+            "basics_cate": "Basics",
+            "template": "Accordion"
+          },
+          "add_block_lvl1": {
+            "level": 1,
+            "row": 1,
+            "column": 1
+          }
+        }
+      },
+      "expect": {
+        "data_default": "01-data-default-block.png",
+        "block_in_blank_section_desktop": "01-add-block-desktop.png",
+        "block_in_blank_section_mobile": "01-add-block-mobile.png",
+        "add_block_in_container_msg": "You can't add a tab, accordion or repeated content inside a container",
+        "block_on_storefront": "01-block-repeated-on-storefront.png"
+      }
+    },
+    "SB_WEB_BUILDER_LB_BRC_02": {
+      "data": {
+        "section_name": "Section 2",
+        "block_name": "Repeated content",
+        "add_block_auto": {
+          "add": {
+            "parent_position": {
+              "section": 2,
+              "column": 1
+            },
+            "basics_cate": "Basics",
+            "template": "Repeated content"
+          },
+          "item_index": 1,
+          "block_name": "Icon",
+          "position": {
+            "section": 2,
+            "block": 1
+          },
+          "position_block_duplicate": {
+            "section": 2,
+            "block": 2
+          }
+        },
+        "quickbar_buttons": [
+          "Edit repeated content",
+          "Move up",
+          "Move down",
+          "Duplicate",
+          "Hide",
+          "Save as template",
+          "Delete"
+        ],
+        "edit_button": "Edit repeated content",
+        "save_block": {
+          "template_name": "02 Test repeated content",
+          "library": {
+            "new": true,
+            "title": "02 - Library 02"
+          },
+          "category": {
+            "new": true,
+            "title": "02 - Cate Test"
+          }
+        }
+      },
+      "expect": {
+        "tab_active": "active",
+        "disabled_button": "disabled",
+        "block_z_index": "5",
+        "selected": "selected",
+        "duplicate_block_snapshot": "02-Duplicated-Repeated-Content.png",
+        "save_success_msg": "Save template successfully to Category 02 - Cate Test."
+      }
+    },
+    "SB_WEB_BUILDER_LB_BRC_03": {
+      "data": [
+        {
+          "step": "Resize block Repeated content width > min width và < max width",
+          "position": {
+            "section": 1,
+            "block": 1
+          },
+          "set_unit_width": {
+            "unit": "px"
+          },
+          "resize": {
+            "at_position": "left",
+            "to_specific_point": {
+              "x": 210
+            }
+          },
+          "width_item": 157
+        },
+        {
+          "step": "Resize block Repeated content width = min width block",
+          "position": {
+            "section": 1,
+            "block": 2
+          },
+          "set_unit_width": {
+            "unit": "px"
+          },
+          "resize": {
+            "at_position": "left",
+            "to_specific_point": {
+              "x": 364
+            }
+          },
+          "width_item": 80
+        },
+        {
+          "step": "Resize block Repeated content width < min width block",
+          "position": {
+            "section": 1,
+            "block": 3
+          },
+          "set_unit_width": {
+            "unit": "px"
+          },
+          "resize": {
+            "at_position": "right",
+            "to_specific_point": {
+              "x": -400
+            }
+          },
+          "width_item": 80
+        }
+      ],
+      "expect": {
+        "resize_sf": "03-Grid-width-resize-sf.png"
+      }
+    },
+    "SB_WEB_BUILDER_LB_BRC_04": {
+      "data": [
+        {
+          "step": "Resize block Repeated content width > min width và < max width",
+          "position": {
+            "section": 1,
+            "block": 1
+          },
+          "set_unit_width": {
+            "unit": "px"
+          },
+          "resize": {
+            "at_position": "left",
+            "to_specific_point": {
+              "x": 210
+            }
+          }
+        },
+        {
+          "step": "Resize block Repeated content width = min width block",
+          "position": {
+            "section": 1,
+            "block": 2
+          },
+          "set_unit_width": {
+            "unit": "px"
+          },
+          "resize": {
+            "at_position": "left",
+            "to_specific_point": {
+              "x": 364
+            }
+          }
+        },
+        {
+          "step": "Resize block Repeated content width < min width block",
+          "position": {
+            "section": 1,
+            "block": 3
+          },
+          "set_unit_width": {
+            "unit": "px"
+          },
+          "resize": {
+            "at_position": "right",
+            "to_specific_point": {
+              "x": -400
+            }
+          }
+        }
+      ],
+      "expect": {
+        "resize_sf": "04-Carousel-width-resize-sf.png"
+      }
+    },
+    "SB_WEB_BUILDER_LB_BRC_05": {
+      "data": {
+        "add_block": {
+          "parent_position": {
+            "section": 2,
+            "column": 1
+          },
+          "basics_cate": "Basics",
+          "template": "Repeated content"
+        },
+        "position_block": {
+          "section": 2,
+          "block": 1
+        },
+        "item_index": 1,
+        "set_data_each_item": [
+          {
+            "item": 0,
+            "text": "Item 1"
+          },
+          {
+            "item": 1,
+            "text": "Item 2"
+          },
+          {
+            "item": 2,
+            "text": "Item 3"
+          },
+          {
+            "item": 3,
+            "text": "Item 4"
+          }
+        ],
+        "dnd_item2_to_item_10": {
+          "from": {
+            "item": 2
+          },
+          "to": {
+            "item": 10
+          }
+        },
+        "remove_item": {
+          "item": 10,
+          "button": "delete"
+        },
+        "deleted_item": " Item 10 "
+      },
+      "expect": {
+        "snapshot_sidebar": "05-drag-drop-item-sidebar.png",
+        "snapshot_preview": "05-drag-drop-item-preview.png",
+        "new_item_title": " Item 5 ",
+        "item_title": " Item 10 ",
+        "disabled": "disabled"
+      }
+    },
+    "SB_WEB_BUILDER_LB_BRC_06": {
+      "data": {
+        "dnd_block_into_blank_section": {
+          "from": {
+            "position": {
+              "section": 1,
+              "row": 2,
+              "column": 1,
+              "block": 2
+            }
+          },
+          "to": {
+            "position": {
+              "section": 2,
+              "row": 1,
+              "column": 1
+            }
+          }
+        },
+        "design": {
+          "border": {
+            "color": {
+              "code": "color_4",
+              "opacity": 100
+            },
+            "side": "all",
+            "size": 10,
+            "style": "solid",
+            "thickness": "large"
+          }
+        },
+        "dnd_item": [
+          {
+            "expand_layer": {
+              "section_name": "Section 1"
+            },
+            "dnd": {
+              "section_name": "Section 1",
+              "sub_layer_1": "Item 1",
+              "sub_layer_2": "Item 5"
+            }
+          },
+          {
+            "expand_layer": {
+              "section_name": "Section 2"
+            },
+            "dnd": {
+              "section_name": "Section 2",
+              "sub_layer_1": "Item 1",
+              "sub_layer_2": "Item 4"
+            }
+          }
+        ]
+      },
+      "expect": {
+        "snapshot_wf": "06-dnd-item-wf.png",
+        "snapshot_sf": "06-dnd-item-sf.png"
+      }
+    },
+    "SB_WEB_BUILDER_LB_BRC_07": {
+      "data": {
+        "dnd_block_into_blank_section": {
+          "from": {
+            "position": {
+              "section": 1,
+              "row": 2,
+              "column": 1,
+              "block": 2
+            }
+          },
+          "to": {
+            "position": {
+              "section": 2,
+              "row": 1,
+              "column": 1
+            }
+          }
+        },
+        "design": {
+          "border": {
+            "color": {
+              "code": "color_4",
+              "opacity": 100
+            },
+            "side": "all",
+            "size": 10,
+            "style": "solid",
+            "thickness": "large"
+          }
+        }
+      },
+      "expect": {
+        "snapshot_add_item_less_equal_wf": "07-add-item-less-than-or-equal-to-item-per-row-wf.png",
+        "snapshot_add_item_less_equal_sf": "07-add-item-less-than-or-equal-to-item-per-row-sf.png",
+        "snapshot_add_item_more_wf": "07-add-item-more-than-item-per-row-wf.png",
+        "snapshot_add_item_more_sf": "07-add-item-more-than-item-per-row-sf.png"
+      }
+    },
+    "SB_WEB_BUILDER_LB_BRC_08": {
+      "data": {
+        "add_block": {
+          "parent_position": {
+            "section": 2,
+            "column": 1
+          },
+          "basics_cate": "Basics",
+          "template": "Repeated content"
+        },
+        "add_padding": {
+          "padding": {
+            "top": 15,
+            "left": 15,
+            "bottom": 15,
+            "right": 15
+          }
+        },
+        "item_index": 1,
+        "dnd_block_into_item": [
+          {
+            "step": "Dnd block không được cho phép add vào block Repeated content",
+            "dnd": {
+              "from": {
+                "category": "Basics",
+                "template": "Bullet"
+              },
+              "to": {
+                "position": {
+                  "section": 2,
+                  "block": 1
+                },
+                "repeated": {
+                  "item": 2,
+                  "block": 1
+                },
+                "isBottom": false
+              }
+            },
+            "toast_message": "Only some certain blocks can be dragged into Repeated content"
+          },
+          {
+            "step": "Dnd block template được cho phép add vào block Repeated content",
+            "dnd": {
+              "from": {
+                "category": "Template",
+                "template": "Icon template"
+              },
+              "to": {
+                "position": {
+                  "section": 2,
+                  "block": 1
+                },
+                "repeated": {
+                  "item": 2,
+                  "block": 1
+                },
+                "isBottom": false
+              }
+            },
+            "component": "icon"
+          },
+          {
+            "step": "Dnd block template không được cho phép add vào block Repeated content",
+            "dnd": {
+              "from": {
+                "category": "Template",
+                "template": "Bullet template"
+              },
+              "to": {
+                "position": {
+                  "section": 2,
+                  "block": 1
+                },
+                "repeated": {
+                  "item": 2,
+                  "block": 2
+                },
+                "isBottom": false
+              }
+            },
+            "toast_message": "Only some certain blocks can be dragged into Repeated content"
+          }
+        ],
+        "dnd_other_block_into_item": [
+          {
+            "step": "Dnd block được cho phép add vào block Repeated content",
+            "dnd": {
+              "from": {
+                "position": {
+                  "section": 3,
+                  "column": 1,
+                  "block": 1
+                }
+              },
+              "to": {
+                "position": {
+                  "section": 2,
+                  "row": 1,
+                  "column": 1,
+                  "block": 1,
+                  "repeated": {
+                    "item": 2,
+                    "block": 2
+                  }
+                }
+              }
+            },
+            "component": "paragraph"
+          },
+          {
+            "step": "Dnd block không được cho phép add vào block Repeated content",
+            "dnd": {
+              "from": {
+                "position": {
+                  "section": 3,
+                  "column": 2,
+                  "block": 1
+                }
+              },
+              "to": {
+                "position": {
+                  "section": 2,
+                  "block": 1,
+                  "repeated": {
+                    "item": 1,
+                    "block": 3
+                  }
+                }
+              }
+            },
+            "toast_message": "Only some certain blocks can be dragged into Repeated content"
+          }
+        ],
+        "dnd_between_items": {
+          "dnd": {
+            "from": {
+              "position": {
+                "section": 2,
+                "row": 1,
+                "column": 1,
+                "block": 1,
+                "repeated": {
+                  "item": 1,
+                  "block": 1
+                }
+              }
+            },
+            "to": {
+              "position": {
+                "section": 2,
+                "row": 1,
+                "column": 1,
+                "block": 1,
+                "repeated": {
+                  "item": 3,
+                  "block": 2
+                }
+              }
+            }
+          },
+          "toast_message": "You cannot move block between repeated items"
+        }
+      },
+      "expect": {
+        "snapshot_preview": "08-add-block-into-item-sidebar.png",
+        "snapshot_sf": "08-add-block-into-item-storefront.png"
+      }
+    },
+    "SB_WEB_BUILDER_LB_BRC_09": {
+      "data": {
+        "section_name": "Section 1",
+        "expand_layer": {
+          "sectionName": "Section 1",
+          "isExpand": true
+        },
+        "open_item": {
+          "sectionName": "Section 1",
+          "subLayerName": "Item 1"
+        },
+        "open_row_item": {
+          "sectionName": "Item 1",
+          "subLayerName": "Row"
+        },
+        "open_column_item": {
+          "sectionName": "Item 1",
+          "subLayerName": "Column"
+        }
+      },
+      "expect": {
+        "item_setting": "No customizable styles available",
+        "screenshot_layer_repeated": "09-layer-repeated.png",
+        "screenshot_default_setting_column": "09-default-setting-column.png",
+        "screenshot_layer_item": "09-layer-item.png"
+      }
+    },
+    "SB_WEB_BUILDER_LB_BRC_10": {
+      "data": {
+        "block_item_1": {
+          "section": 1,
+          "repeated": {
+            "item": 0,
+            "block": 1
+          }
+        },
+        "block_item_2": {
+          "section": 1,
+          "repeated": {
+            "item": 1,
+            "block": 1
+          }
+        }
+      },
+      "expect": {
+        "breadcrumb": ["Section 1", "Row", "Column", "Repeated content", "Item 1", "Row", "Column"]
+      }
+    },
+    "SB_WEB_BUILDER_LB_BRC_11": {
+      "data": {
+        "dnd_block_into_item": {
+          "from": {
+            "category": "Basics",
+            "template": "Paragraph"
+          },
+          "to": {
+            "position": {
+              "section": 1,
+              "block": 1
+            },
+            "repeated": {
+              "item": 2,
+              "block": 1
+            },
+            "isBottom": true
+          }
+        },
+        "block_item": {
+          "section": 1,
+          "repeated": {
+            "item": 0,
+            "block": 1
+          }
+        },
+        "setting_column_vertical": {
+          "layout": {
+            "direction": "Vertical",
+            "align": "Top"
+          },
+          "clipping": true,
+          "border": {
+            "thickness": "m",
+            "style": "Dash",
+            "side": "All",
+            "color": {
+              "preset": 3
+            }
+          }
+        },
+        "setting_column_horizontal": {
+          "layout": {
+            "direction": "Horizontal",
+            "align": "Top"
+          },
+          "clipping": false,
+          "border": {
+            "thickness": "m",
+            "style": "Solid",
+            "side": "All",
+            "color": {
+              "preset": 5
+            }
+          }
+        }
+      },
+      "expect": {
+        "default_data_column_sidebar": "11-default-data-column-sidebar.png",
+        "setting_column_vertical_wf": "11-setting-column-vertical_wf.png",
+        "setting_column_vertical_sf": "11-setting-column-vertical_sf.png",
+        "setting_column_horizontal_wf": "11-setting-column-horizontal-wf.png",
+        "setting_column_horizontal_sf": "11-setting-column-horizontal-sf.png"
+      }
+    },
+    "SB_WEB_BUILDER_LB_BRC_12": {
+      "data": {
+        "dnd_block_into_item": [
+          {
+            "from": {
+              "category": "Basics",
+              "template": "Button"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "block": 1
+              },
+              "repeated": {
+                "item": 2,
+                "block": 1
+              },
+              "isBottom": true
+            }
+          },
+          {
+            "from": {
+              "category": "Basics",
+              "template": "Paragraph"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "block": 1
+              },
+              "repeated": {
+                "item": 2,
+                "block": 2
+              },
+              "isBottom": true
+            }
+          },
+          {
+            "from": {
+              "category": "Basics",
+              "template": "Divider"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "block": 1
+              },
+              "repeated": {
+                "item": 2,
+                "block": 3
+              },
+              "isBottom": true
+            }
+          }
+        ],
+        "block_image": {
+          "section": 1,
+          "row": 2,
+          "repeated": {
+            "item": 0,
+            "block": 1
+          }
+        },
+        "block_button": {
+          "section": 1,
+          "row": 2,
+          "repeated": {
+            "item": 0,
+            "block": 2
+          }
+        },
+        "block_paragraph": {
+          "section": 1,
+          "row": 2,
+          "repeated": {
+            "item": 0,
+            "block": 3
+          }
+        },
+        "setting_block_button": {
+          "item": 0,
+          "text": "Go to cart",
+          "width": {
+            "value": 80,
+            "unit": "%"
+          },
+          "background": {
+            "color": {
+              "preset": 3,
+              "opacity": 50
+            }
+          },
+          "padding": {
+            "top": 10,
+            "left": 10,
+            "right": 10,
+            "bottom": 10,
+            "input": true
+          }
+        },
+        "setting_block_paragraph": {
+          "text": "Your Creative writing career accelerated",
+          "color": {
+            "color": {
+              "preset": 2
+            }
+          },
+          "background": {
+            "color": {
+              "preset": 3,
+              "opacity": 50
+            }
+          }
+        },
+        "dnd_block_out_of_item": {
+          "from": {
+            "position": {
+              "section": 1,
+              "row": 2,
+              "column": 1,
+              "block": 1,
+              "repeated": {
+                "item": 1,
+                "block": 3
+              }
+            }
+          },
+          "to": {
+            "position": {
+              "section": 2,
+              "row": 1,
+              "column": 1
+            }
+          }
+        }
+      },
+      "expect": {
+        "not_sync_content_between_items": "12-not-sync-content-between-items.png",
+        "sync_style_between_items": "12-sync-style-between-items.png",
+        "sync_data_text_editor_between_items": "12-sync-data-text-editor-between-items.png",
+        "sync_number_of_blocks_in_item_after_delete_block": "12-sync-number-of-blocks-in-item-after-delete-block.png",
+        "sync_number_of_blocks_in_item_after_dnd_block_out_of_item": "12-sync-number-of-blocks-in-item-after-dnd-block-out-of-item.png",
+        "sync_data_between_block_sf": "12-sync-and-not-sync-data-between-block-in-item_sf.png"
+      }
+    },
+    "SB_WEB_BUILDER_LB_BRC_13": {
+      "data": {
+        "desktop": {
+          "no_of_items": 5,
+          "align": "Left",
+          "spacing": 10,
+          "slider_item": "57.1429%",
+          "slider_spacing": "31.25%"
+        },
+        "mobile": {
+          "no_of_items": 3,
+          "align": "Left",
+          "spacing": 2,
+          "slider_item": "28.5714%",
+          "slider_spacing": "6.25%"
+        }
+      },
+      "layout_grid_desktop": {
+        "layout": {
+          "name": "Grid",
+          "align": "flex-start",
+          "arrow": true,
+          "autoplay": "none",
+          "direction": "vertical",
+          "dots": true,
+          "loop": true,
+          "nav_position": "bottom",
+          "nav_type": "thumbnail",
+          "number_color": {
+            "code": "color_5",
+            "opacity": 100
+          },
+          "overlay_color": {
+            "code": "",
+            "opacity": 0
+          },
+          "partial": false,
+          "quantity": 1,
+          "shape": "rectangle",
+          "size": 5,
+          "size_card": "large",
+          "spacing": 10,
+          "unit_color": {
+            "code": "color_5",
+            "opacity": 100
+          },
+          "unit_position": "right"
+        }
+      },
+      "layout_grid_mobile": {
+        "layout": {
+          "name": "Grid",
+          "loop": true,
+          "size": 3,
+          "spacing": 2,
+          "align": "center",
+          "autoplay": "none",
+          "arrow": true,
+          "dots": true,
+          "partial": false
+        }
+      },
+      "expect": {
+        "setting_data_desktop_wf": "13-grid-setting-data-desktop-wf.png",
+        "setting_data_mobile_wf": "13-grid-setting-data-mobile-wf.png",
+        "setting_data_desktop_sf": "13-grid-setting-data-desktop-sf.png",
+        "setting_data_mobile_sf": "13-grid-setting-data-mobile-sf.png"
+      }
+    },
+    "SB_WEB_BUILDER_LB_BRC_14": {
+      "data": {
+        "dnd_block": [
+          {
+            "from": {
+              "category": "Template",
+              "template": "Template 10 items"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "row": 2,
+                "block": 1
+              },
+              "isBottom": true
+            }
+          },
+          {
+            "from": {
+              "category": "Template",
+              "template": "Template 3 items"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "row": 2,
+                "block": 2
+              },
+              "isBottom": true
+            }
+          }
+        ],
+        "desktop": {
+          "spacing": 24,
+          "setting_block_2": {
+            "expand_layer": {
+              "section_name": "Section 1"
+            },
+            "open_layer": {
+              "section_name": "Section 1",
+              "block_name": "Template 10 items"
+            },
+            "autoplay_index": 2,
+            "toggle_arrow": false,
+            "spacing": 0,
+            "toggle_dot": true,
+            "no_of_items": 2,
+            "toggle_show_partial": true
+          },
+          "setting_block_3": {
+            "expand_layer": {
+              "section_name": "Section 1"
+            },
+            "open_layer": {
+              "section_name": "Section 1",
+              "block_name": "Template 3 items"
+            },
+            "toggle_arrow": true,
+            "spacing": 20,
+            "toggle_dot": true,
+            "no_of_items": 4,
+            "toggle_show_partial": true
+          },
+          "block_1": {
+            "layout": {
+              "name": "Slide",
+              "align": "flex-start",
+              "arrow": true,
+              "autoplay": "none",
+              "direction": "vertical",
+              "dots": true,
+              "loop": true,
+              "nav_position": "bottom",
+              "nav_type": "thumbnail",
+              "number_color": {
+                "code": "color_5",
+                "opacity": 100
+              },
+              "overlay_color": {
+                "code": "",
+                "opacity": 0
+              },
+              "partial": false,
+              "quantity": 1,
+              "shape": "rectangle",
+              "size": 4,
+              "size_card": "large",
+              "spacing": 24,
+              "unit_color": {
+                "code": "color_5",
+                "opacity": 100
+              },
+              "unit_position": "right"
+            }
+          },
+          "block_2": {
+            "layout": {
+              "name": "Slide",
+              "arrow": false,
+              "autoplay": "none",
+              "dots": true,
+              "loop": true,
+              "partial": true,
+              "size": 4,
+              "spacing": 0,
+              "align": "center"
+            }
+          },
+          "block_3": {
+            "layout": {
+              "name": "Slide",
+              "align": "flex-start",
+              "arrow": true,
+              "autoplay": "none",
+              "direction": "vertical",
+              "dots": true,
+              "loop": true,
+              "nav_position": "bottom",
+              "nav_type": "thumbnail",
+              "number_color": {
+                "code": "color_5",
+                "opacity": 100
+              },
+              "overlay_color": {
+                "code": "",
+                "opacity": 0
+              },
+              "partial": true,
+              "quantity": 1,
+              "shape": "rectangle",
+              "size": 4,
+              "size_card": "large",
+              "spacing": 24,
+              "unit_color": {
+                "code": "color_5",
+                "opacity": 100
+              },
+              "unit_position": "right"
+            }
+          }
+        },
+        "mobile": {
+          "setting_block_2": {
+            "expand_layer": {
+              "section_name": "Section 1"
+            },
+            "open_layer": {
+              "section_name": "Section 1",
+              "block_name": "Template 10 items"
+            },
+            "autoplay_index": 2,
+            "toggle_arrow": false,
+            "spacing": 0,
+            "toggle_dot": true,
+            "no_of_items": 3,
+            "toggle_show_partial": true
+          },
+          "setting_block_3": {
+            "expand_layer": {
+              "section_name": "Section 1"
+            },
+            "open_layer": {
+              "section_name": "Section 1",
+              "block_name": "Template 3 items"
+            },
+            "toggle_arrow": false,
+            "spacing": 5,
+            "toggle_dot": false,
+            "no_of_items": 1,
+            "toggle_show_partial": false
+          },
+          "block_1": {
+            "layout": {
+              "name": "Slide",
+              "loop": true,
+              "size": 2,
+              "spacing": 16,
+              "align": "center",
+              "autoplay": "none",
+              "arrow": true,
+              "dots": true,
+              "partial": false
+            }
+          },
+          "block_2": {
+            "layout": {
+              "name": "Slide",
+              "loop": true,
+              "size": 3,
+              "spacing": 16,
+              "align": "center",
+              "autoplay": "none",
+              "arrow": false,
+              "dots": true,
+              "partial": true
+            }
+          },
+          "block_3": {
+            "layout": {
+              "name": "Slide",
+              "loop": true,
+              "size": 1,
+              "spacing": 16,
+              "align": "center",
+              "autoplay": "none",
+              "arrow": false,
+              "dots": false,
+              "partial": false
+            }
+          }
+        }
+      },
+      "expect": {
+        "default_data_on_mobile": "14-slide-default-data-on-mobile.png",
+        "setting_data_desktop_wf": "14-slide-setting-data-desktop-wf.png",
+        "setting_data_mobile_wf": "14-slide-setting-data-mobile-wf.png",
+        "setting_data_desktop_sf": "14-slide-setting-data-desktop-sf.png",
+        "setting_data_mobile_sf": "14-slide-setting-data-mobile-sf.png"
+      }
+    },
+    "SB_WEB_BUILDER_LB_BRC_15": {
+      "data": {
+        "width": {
+          "unit": "%",
+          "value": 100
+        },
+        "height": {
+          "unit": "px",
+          "value": 300
+        }
+      },
+      "expect": {
+        "setting_data_wf": "15-setting-data-block-repeated-content_wf.png",
+        "setting_data_sf": "15-setting-data-block-repeated-content_sf.png"
+      }
+    }
+  }
+}

@@ -1,0 +1,314 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-editor-sb.onshopbase.com",
+      "shop_name": "au-editor-sb",
+      "user_id": 73782,
+      "shop_id": 10380916,
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "server_domain": "onshopbase.com"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-editor-sb-prodtest.onshopbase.com",
+      "shop_name": "au-editor-sb-prodtest",
+      "user_id": 73782,
+      "shop_id": 10380917,
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "server_domain": "onshopbase.com",
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-editor-sb1.myshopbase.net",
+      "shop_name": "au-editor-sb1",
+      "user_id": 73800,
+      "shop_id": 10325741,
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "server_domain": "myshopbase.net"
+    }
+  },
+  "timeout": "500000",
+  "snapshot_options": {
+    "maxDiffPixelRatio": 0.05,
+    "threshold": 0.1,
+    "maxDiffPixels": 2000
+  },
+  "customer": {
+    "email": "tester@maildrop.cc",
+    "first_name": "Thuong",
+    "last_name": "Tran",
+    "address": "1600 W Loop S",
+    "country": "Vietnam",
+    "city": "Houston",
+    "zipcode": "111"
+  },
+  "card": {
+    "card_number": "4242424242424242",
+    "card_holder_name": "Thuong",
+    "expire_date": "12 / 30",
+    "cvv": "116"
+  },
+  "cases": {
+    "SB_PRH_ODR_21": {
+      "tab_name": "All",
+      "DATA_DRIVEN_ORDER_EXIST": {
+        "data": [
+          {
+            "step": "Verify search with order name exist",
+            "value_exist": "#1001",
+            "number_order": 1
+          },
+          {
+            "step": "Verify search with product name exist in order",
+            "value_exist": "Test search",
+            "number_order": 3
+          }
+        ]
+      },
+      "DATA_DRIVEN_ORDER_NOT_EXIST": {
+        "data": [
+          {
+            "step": "Verify search with order name not exist",
+            "value_not_exist": "1000#",
+            "message": "Could not found any orders matching"
+          },
+          {
+            "step": "Verify search with product name not exist in order",
+            "value_not_exist": "product not exist",
+            "message": "Could not found any orders matching"
+          }
+        ]
+      }
+    },
+    "DATA_DRIVEN_VERIFY_SYNC_ORDER": {
+      "data": [
+        {
+          "enable": true,
+          "description": "SB_PRH_ODR_22 - Verify sync order chỉ chứa product not map về tab [Other Fulfillment Services] ",
+          "case_id": "SB_PRH_ODR_22",
+          "order_info": {
+            "product_name_first": "Product not map",
+            "product_name_second": "Product not map",
+            "tab_name": "Other Fulfillment Services",
+            "order_status": "Unfulfilled",
+            "number_line_item": 2
+          },
+          "variant_line1": {
+            "size": "M",
+            "color": "White",
+            "style": "Tshirt"
+          },
+          "variant_line2": {
+            "size": "L",
+            "color": "Blue",
+            "style": "Hoodie"
+          },
+          "picture": "infor-order-SB-PRH-ODR-22.png"
+        },
+        {
+          "enable": true,
+          "description": "SB_PRH_ODR_23 - Verify sync order chỉ chứa product mapped về tab [Awaiting payment]",
+          "case_id": "SB_PRH_ODR_23",
+          "order_info": {
+            "product_name_first": "Product mapped",
+            "product_name_second": "Product mapped",
+            "tab_name": "Awaiting Payment",
+            "order_status": "Awaiting Payment",
+            "number_line_item": 2
+          },
+          "variant_line1": {
+            "size": "M",
+            "color": "White",
+            "style": "Tshirt"
+          },
+          "variant_line2": {
+            "size": "S",
+            "color": "Blue",
+            "style": "Hoodie"
+          },
+          "picture": "infor-order-SB-PRH-ODR-23.png"
+        },
+        {
+          "enable": true,
+          "description": "SB_PRH_ODR_24 - Verify sync order chỉ chứa campaign về tab [Awaiting Payment]",
+          "case_id": "SB_PRH_ODR_24",
+          "order_info": {
+            "product_name_first": "campaign order",
+            "product_name_second": "campaign order",
+            "tab_name": "Awaiting Payment",
+            "order_status": "Awaiting Payment",
+            "number_line_item": 2
+          },
+          "variant_line1": {
+            "size": "M",
+            "color": "White",
+            "style": "Classic Unisex Tank"
+          },
+          "variant_line2": {
+            "size": "L",
+            "style": "Cut and Sew Zip Hoodie"
+          },
+          "picture": "infor-order-SB-PRH-ODR-24.png"
+        },
+        {
+          "enable": true,
+          "description": "SB_PRH_ODR_25 - Verify sync order chứa cả campaign và product not map sẽ tách đơn về 2 tab [Awaiting Payment] và [Other Fulfillment Services]",
+          "case_id": "SB_PRH_ODR_25",
+          "order_info": {
+            "product_name_first": "campaign order",
+            "product_name_second": "Product not map",
+            "tab_name": "Awaiting Payment",
+            "tab_name_second": "Other Fulfillment Services",
+            "order_status": "Partially",
+            "number_line_item": 1
+          },
+          "variant_line1": {
+            "size": "M",
+            "color": "White",
+            "style": "Classic Unisex Tank"
+          },
+          "variant_line2": {
+            "size": "M",
+            "color": "White",
+            "style": "Tshirt"
+          },
+          "picture": "infor-order-SB-PRH-ODR-25",
+          "picture_partially": "infor-order-partially-SB-PRH-ODR-25.png"
+        },
+        {
+          "enable": true,
+          "description": "SB_PRH_ODR_26 - Verify sync order chứa campaign và line item mapped về tab [Awaiting Payment]",
+          "case_id": "SB_PRH_ODR_26",
+          "order_info": {
+            "product_name_first": "campaign order",
+            "product_name_second": "Product mapped",
+            "tab_name": "Awaiting Payment",
+            "order_status": "Awaiting Payment",
+            "number_line_item": 2
+          },
+          "variant_line1": {
+            "size": "M",
+            "color": "White",
+            "style": "Classic Unisex Tank"
+          },
+          "variant_line2": {
+            "size": "S",
+            "color": "Blue",
+            "style": "Hoodie"
+          },
+          "picture": "infor-order-SB-PRH-ODR-26"
+        }
+      ]
+    },
+    "DATA_DRIVEN_VERIFY_ACTION_ORDER": {
+      "data": [
+        {
+          "enable": true,
+          "description": "SB_PRH_ODR_27 - Verify Cancel thành công order",
+          "case_id": "SB_PRH_ODR_27",
+          "order_info": {
+            "product_name": "campaign order",
+            "tab_name": "Awaiting Payment",
+            "tab_name_second": "Cancelled",
+            "action_name": "Cancel",
+            "button_confirm": "Confirm",
+            "order_status": "Awaiting Payment",
+            "number_line_item": 1
+          },
+          "message": "All changes were successfully saved",
+          "variant_line": {
+            "size": "M",
+            "color": "White",
+            "style": "Classic Unisex Tank"
+          },
+          "picture": "order-after-cancel-SB-PRH-ODR-27.png"
+        },
+        {
+          "enable": true,
+          "description": "SB_PRH_ODR_28 - Verify Hold, Unhold thành công order",
+          "case_id": "SB_PRH_ODR_28",
+          "order_info": {
+            "product_name": "campaign order",
+            "tab_name": "Awaiting Payment",
+            "tab_name_second": "On Hold",
+            "action_name": "Hold",
+            "button_confirm": "Hold",
+            "action_unhold": "Unhold",
+            "order_status": "Awaiting Payment",
+            "number_line_item": 1
+          },
+          "message": "All changes were successfully saved",
+          "variant_line": {
+            "size": "M",
+            "color": "White",
+            "style": "Classic Unisex Tank"
+          },
+          "picture": "order-after-hold-SB-PRH-ODR-28.png",
+          "picture_unhold": "order-after-unhold-SB-PRH-ODR-28.png"
+        }
+      ]
+    },
+    "SB_PRH_ODR_29": {
+      "order_info": {
+        "product_name": "campaign order",
+        "tab_name": "Awaiting Payment",
+        "tab_name_second": "Awaiting Shipment",
+        "order_status": "Awaiting Payment",
+        "message": "Successfully paid off one invoice for total amount: $17.98",
+        "message_empty": "Could not found any orders matching",
+        "number_line_item": 1
+      },
+      "variant_line": {
+        "size": "M",
+        "color": "White",
+        "style": "Classic Unisex Tank"
+      },
+      "picture": "order-shipment-SB-PRH-ODR-29.png"
+    },
+    "SB_PRH_ODR_30": {
+      "order_info": {
+        "product_name": "Product map partially",
+        "tab_name": "All",
+        "tab_name_second": "Awaiting Payment",
+        "status_awaiting_payment": "Awaiting Payment",
+        "number_line_item": 1,
+        "sku": "PH-AP-ClassicUnisexTank-White-M"
+      },
+      "map_info": {
+        "title": "Product map partially",
+        "action": "Edit mapping",
+        "app_name": "PrintHub"
+      },
+      "variant_mapping": [
+        {
+          "variant_product": "M",
+          "variant_base": "M",
+          "index": 3
+        }
+      ],
+      "variant_line": {
+        "size": "M"
+      },
+      "picture": {
+        "order_in_review": "order-in-review-SB-PRH-ODR-30.png",
+        "order_after_mapped": "order-after-mapped-SB-PRH-ODR-30.png"
+      }
+    },
+    "SB_PRH_ODR_31": {
+      "order_info": {
+        "product_name": "Base only ship US",
+        "tab_name": "All",
+        "status": "Failed",
+        "message": "Item has 1 error: These items don't ship to the customer's location",
+        "number_line_item": 1,
+        "button_label": "Map product"
+      },
+      "picture": "order-SB-PRH-ODR-31.png"
+    }
+  }
+}

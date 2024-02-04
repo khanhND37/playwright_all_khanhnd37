@@ -1,0 +1,82 @@
+{
+  "env": {
+    "dev": {
+      "domain": "auto-ali-productcost.myshopbase.net",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "shopbase3@beeketing.net",
+      "password": "=l-N&YG}g<'KLJk",
+      "shop_name": "auto-ali-productcost",
+      "shop_id": "10322612",
+      "user_id": "86961",
+      "odoo_host": "https://odoo.dev.shopbase.net/",
+      "odoo_db": "sbase_fulfillment_dev",
+      "odoo_username": "admin",
+      "odoo_password": "admin",
+      "partner_id": 5678
+    },
+    "prodtest": {
+      "domain": "auto-ali-productcost-prodtest.onshopbase.com",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "shopbase3@beeketing.net",
+      "password": "aAeg*PJR4.t6V:P",
+      "shop_name": "auto-ali-productcost-prodtest",
+      "shop_id": "10373544",
+      "user_id": "206811",
+      "odoo_host": "https://autotest-erp-plus.shopbase.dev",
+      "odoo_db": "shopbase_fulfillment",
+      "odoo_username": "qaocg",
+      "odoo_password": "LFmy=qGLvwW^E63b",
+      "partner_id": 10126342,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "prod": {
+      "domain": "auto-ali-productcost.onshopbase.com",
+      "api": "https://api.shopbase.com",
+      "username": "shopbase3@beeketing.net",
+      "password": "aAeg*PJR4.t6V:P",
+      "shop_name": "auto-ali-productcost",
+      "shop_id": "10373541",
+      "user_id": "206811",
+      "odoo_host": "https://autotest-erp-plus.shopbase.dev",
+      "odoo_db": "shopbase_fulfillment",
+      "odoo_username": "qaocg",
+      "odoo_password": "LFmy=qGLvwW^E63b",
+      "partner_id": 10126342
+    }
+  },
+  "data_limit": 150,
+  "cases": {
+    "SB_PLB_CTL_ALP_49_50_51": {
+      "data": [
+        {
+          "case_id": "SB_PLB_CTL_ALP_49",
+          "description": "Verify request với link product có price <= $150",
+          "product_request": {
+            "name": "New in Denim Pants Solid Color Wide Leg Straight Mid Waist Pockets Bottoms Loose Fit Zipper Fly Jeans Men Clothes",
+            "url": "https://www.aliexpress.com/item/3256804886353268.html",
+            "status_crawl": "Available"
+          }
+        },
+        {
+          "case_id": "SB_PLB_CTL_ALP_50",
+          "description": "Verify request với link product có price > $150 và <= $150",
+          "product_request": {
+            "name": "GIGABYTE B550M AORUS ELITE Motherboard AMD B550 Socket AM4 DDR4 HDMI-compatible 128GB PCI-E 4.0 M.2 OverLocking B550 Mainboard",
+            "url": "https://www.aliexpress.us/item/1005001703074345.html",
+            "variants": [["Motherboard+CPU+RAM"], ["Motherboard+CPU"], ["Motherboards"]],
+            "status_crawl": "Available"
+          }
+        },
+        {
+          "case_id": "SB_PLB_CTL_ALP_51",
+          "description": "Verify request với link product có price > $150",
+          "product_request": {
+            "name": "Winter Women Real Rabbit Fur Coat Long Style Silver Fox Fur Collar Hood Natural Fur Jacket Thick Warm Overcoat Luxury Outerwear",
+            "url": "https://www.aliexpress.com/item/1005005672535286.html",
+            "status_crawl": "No Result"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-product-in-collection.myshopbase.net",
+      "shop_name": "au-product-in-collection",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_id": 10322875,
+      "user_id": 73800
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-product-in-collection-prodtest.onshopbase.com",
+      "shop_name": "au-product-in-collection-prodtest",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10379065,
+      "user_id": 73782,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-product-in-collection.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_name": "au-product-in-collection",
+      "shop_id": 10376378,
+      "user_id": 73782
+    }
+  },
+  "time_out": 580000,
+  "max_diff_pixel_ratio": 0.05,
+  "threshold": 0.1,
+  "max_diff_pixels": 2000,
+  "cases": {
+    "SB_CL_SPC_11": {
+      "collection_manual": {
+        "collection_title": "Collection add product",
+        "collection_type": "Manual",
+        "product_title": ["Rebecca Stern, Breath I"]
+      },
+      "product_add": ["3D Apparel - American By Birth"],
+      "product_sort": ["Rebecca Stern, Breath I", "3D Apparel - American By Birth"],
+      "activity_log": {
+        "username": "shopbase@beeketing.net",
+        "category": "Collection",
+        "activity": "delete_product_in_collection"
+      }
+    },
+    "SB_CL_SPC_12": {
+      "collection_manual": {
+        "collection_title": "Collection sync product manual",
+        "collection_type": "Manual",
+        "product_title": ["Rebecca Stern, Breath I"]
+      },
+      "product_add": ["3D Premium Quilt - To My Daughter"]
+    },
+    "SB_CL_SPC_13": {
+      "collection_manual": {
+        "collection_title": "Collection sync product bulk update",
+        "collection_type": "Manual",
+        "product_title": ["Rebecca Stern, Breath I"]
+      },
+      "product_add": ["3D Knight Templar Apparel Ver 2"],
+      "bulk_update_add_collection": {
+        "condition_type": "All conditions",
+        "conditions": ["Product title > contains > 3D Knight Templar Apparel Ver 2"],
+        "actions": ["Add to collection > Collection sync product bulk update"],
+        "bulk_update_info": {
+          "filter_validate": "Product title contains \"3D Knight Templar Apparel Ver 2\"",
+          "update_for_validate": "All variants",
+          "action_validate": "Add to collection Collection sync product bulk update",
+          "number_of_update_validate": "1"
+        }
+      },
+      "bulk_update_remove_collection": {
+        "condition_type": "All conditions",
+        "conditions": ["Product title > contains > 3D Knight Templar Apparel Ver 2"],
+        "actions": ["Remove from collection > Collection sync product bulk update"],
+        "bulk_update_info": {
+          "filter_validate": "Product title contains \"3D Knight Templar Apparel Ver 2\"",
+          "update_for_validate": "All variants",
+          "action_validate": "Remove from collection Collection sync product bulk update",
+          "number_of_update_validate": "1"
+        }
+      }
+    },
+    "SB_CL_SPC_14": {
+      "collection_manual": {
+        "collection_title": "Collection add product list",
+        "collection_type": "Manual",
+        "product_title": ["Rebecca Stern, Breath I"]
+      },
+      "product_add": ["3D Print Full Sherpa Hoodie - Greece"]
+    },
+    "SB_CL_SPC_15": {
+      "product_info": {
+        "title": "Product collection",
+        "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+        "image_name": "Logo1.jpg",
+        "vendor": "Uniqlo",
+        "price": "10",
+        "compare_at_price": "20"
+      },
+      "collection_manual": {
+        "collection_title": "Collection delete product",
+        "collection_type": "Manual",
+        "product_title": ["Product collection"]
+      }
+    }
+  }
+}

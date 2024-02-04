@@ -1,0 +1,2018 @@
+{
+  "env": {
+    "prod": {
+      "domain": "au-inside-gallery-image.onshopbase.com",
+      "shop_name": "au-inside-gallery-image.onshopbase.com",
+      "api": "https://api.shopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F"
+    },
+    "prodtest": {
+      "domain": "au-inside-gallery-image-prodtest.onshopbase.com",
+      "shop_name": "au-inside-gallery-image-prodtest.onshopbase.com",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "domain": "au-inside-gallery-image.myshopbase.net",
+      "shop_name": "au-inside-gallery-image",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_id": 10321584,
+      "user_id": 73800,
+      "cases": {
+        "SB_OLS_THE_INS_SF_GALLERY_IMAGE_1": {
+          "description": "Verify show default section after add new section",
+          "data": {
+            "input": {
+              "home": {
+                "blocks": [
+                  {
+                    "settings": {
+                      "alt_text": "",
+                      "default_setting_id": null,
+                      "image": null
+                    },
+                    "type": "gallery-image",
+                    "visible": true
+                  },
+                  {
+                    "settings": {
+                      "alt_text": "",
+                      "default_setting_id": null,
+                      "image": null
+                    },
+                    "type": "gallery-image",
+                    "visible": true
+                  },
+                  {
+                    "settings": {
+                      "alt_text": "",
+                      "default_setting_id": null,
+                      "image": null
+                    },
+                    "type": "gallery-image",
+                    "visible": true
+                  },
+                  {
+                    "settings": {
+                      "alt_text": "",
+                      "default_setting_id": null,
+                      "image": null
+                    },
+                    "type": "gallery-image",
+                    "visible": true
+                  },
+                  {
+                    "settings": {
+                      "alt_text": "",
+                      "default_setting_id": null,
+                      "image": null
+                    },
+                    "type": "gallery-image",
+                    "visible": true
+                  },
+                  {
+                    "settings": {
+                      "alt_text": "",
+                      "default_setting_id": null,
+                      "image": null
+                    },
+                    "type": "gallery-image",
+                    "visible": true
+                  },
+                  {
+                    "settings": {
+                      "alt_text": "",
+                      "default_setting_id": null,
+                      "image": null
+                    },
+                    "type": "gallery-image",
+                    "visible": true
+                  },
+                  {
+                    "settings": {
+                      "alt_text": "",
+                      "default_setting_id": null,
+                      "image": null
+                    },
+                    "type": "gallery-image",
+                    "visible": true
+                  }
+                ],
+                "settings": {
+                  "content_alignment": "left",
+                  "default_setting_id": null,
+                  "full_width": false,
+                  "heading": "Gallery Image",
+                  "image_per_row": 4,
+                  "no_spacing": false,
+                  "number_of_row": 4
+                },
+                "type": "gallery-image",
+                "visible": true
+              }
+            },
+            "expect": {
+              "count_section": 1,
+              "snapshot": "web-gallery-image-data-default.png"
+            }
+          }
+        },
+        "SECTION": {
+          "description": "Cases setting data",
+          "data": [
+            {
+              "description": "Verify show section after setting section with 1 block",
+              "id": "SB_OLS_THE_INS_SF_GALLERY_IMAGE_2",
+              "input": {
+                "home": {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "alt_text": "image 1",
+                        "default_setting_id": null,
+                        "image": "https://dev-img.btdmp.com/10321/10321584/products/1663926716389.jpg"
+                      },
+                      "type": "gallery-image",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "content_alignment": "center",
+                    "default_setting_id": null,
+                    "full_width": true,
+                    "heading": "Gallery Image header 1",
+                    "image_per_row": 6,
+                    "no_spacing": true,
+                    "number_of_row": 3
+                  },
+                  "type": "gallery-image",
+                  "visible": true
+                }
+              },
+              "expect": {
+                "count_section": 1,
+                "snapshot": "web-gallery-image-setting-one-block.png"
+              }
+            },
+            {
+              "description": "Verify show section after setting section with many blocks",
+              "id": "SB_OLS_THE_INS_SF_GALLERY_IMAGE_3",
+              "input": {
+                "home": {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "alt_text": "",
+                        "default_setting_id": null,
+                        "image": "https://dev-img.btdmp.com/10321/10321584/products/1663926958812.jpg"
+                      },
+                      "type": "gallery-image",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "Alt text 2",
+                        "default_setting_id": null,
+                        "image": "https://dev-img.btdmp.com/10321/10321584/products/1663926971285.jpg"
+                      },
+                      "type": "gallery-image",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "",
+                        "default_setting_id": null,
+                        "image": "https://dev-img.btdmp.com/10321/10321584/products/1663926988170.jpg"
+                      },
+                      "type": "gallery-image",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "image 1",
+                        "default_setting_id": null,
+                        "image": "https://dev-img.btdmp.com/10321/10321584/products/1663926999343.jpg"
+                      },
+                      "type": "gallery-image",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "",
+                        "default_setting_id": null,
+                        "image": "https://dev-img.btdmp.com/10321/10321584/products/1663927015230.jpg"
+                      },
+                      "type": "gallery-image",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "",
+                        "default_setting_id": null,
+                        "image": "https://dev-img.btdmp.com/10321/10321584/products/1663927028926.jpg"
+                      },
+                      "type": "gallery-image",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "",
+                        "default_setting_id": null,
+                        "image": "https://dev-img.btdmp.com/10321/10321584/products/1663927041086.jpg"
+                      },
+                      "type": "gallery-image",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "content_alignment": "left",
+                    "default_setting_id": null,
+                    "full_width": false,
+                    "heading": "",
+                    "image_per_row": 3,
+                    "no_spacing": false,
+                    "number_of_row": 2
+                  },
+                  "type": "gallery-image",
+                  "visible": true
+                }
+              },
+              "expect": {
+                "snapshot": "web-gallery-image-setting-many-blocks.png"
+              }
+            },
+            {
+              "description": "Verify show section after hide some blocks",
+              "id": "SB_OLS_THE_INS_SF_GALLERY_IMAGE_4",
+              "input": {
+                "home": {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "alt_text": "",
+                        "default_setting_id": null,
+                        "image": "https://dev-img.btdmp.com/10321/10321584/products/1663926958812.jpg"
+                      },
+                      "type": "gallery-image"
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "Alt text 2",
+                        "default_setting_id": null,
+                        "image": "https://dev-img.btdmp.com/10321/10321584/products/1663926971285.jpg"
+                      },
+                      "type": "gallery-image"
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "",
+                        "default_setting_id": null,
+                        "image": "https://dev-img.btdmp.com/10321/10321584/products/1663926988170.jpg"
+                      },
+                      "type": "gallery-image",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "image 1",
+                        "default_setting_id": null,
+                        "image": "https://dev-img.btdmp.com/10321/10321584/products/1663926999343.jpg"
+                      },
+                      "type": "gallery-image",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "",
+                        "default_setting_id": null,
+                        "image": "https://dev-img.btdmp.com/10321/10321584/products/1663927015230.jpg"
+                      },
+                      "type": "gallery-image",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "",
+                        "default_setting_id": null,
+                        "image": "https://dev-img.btdmp.com/10321/10321584/products/1663927028926.jpg"
+                      },
+                      "type": "gallery-image",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "",
+                        "default_setting_id": null,
+                        "image": "https://dev-img.btdmp.com/10321/10321584/products/1663927041086.jpg"
+                      },
+                      "type": "gallery-image",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "content_alignment": "left",
+                    "default_setting_id": null,
+                    "full_width": false,
+                    "heading": "",
+                    "image_per_row": 3,
+                    "no_spacing": false,
+                    "number_of_row": 2
+                  },
+                  "type": "gallery-image",
+                  "visible": true
+                }
+              },
+              "expect": {
+                "snapshot": "web-gallery-image-setting-hide-some-blocks.png"
+              }
+            },
+            {
+              "description": "Verify show section after hide all blocks",
+              "id": "SB_OLS_THE_INS_SF_GALLERY_IMAGE_5",
+              "input": {
+                "home": {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "alt_text": "",
+                        "default_setting_id": null,
+                        "image": "https://dev-img.btdmp.com/10321/10321584/products/1663926958812.jpg"
+                      },
+                      "type": "gallery-image"
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "Alt text 2",
+                        "default_setting_id": null,
+                        "image": "https://dev-img.btdmp.com/10321/10321584/products/1663926971285.jpg"
+                      },
+                      "type": "gallery-image"
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "",
+                        "default_setting_id": null,
+                        "image": "https://dev-img.btdmp.com/10321/10321584/products/1663926988170.jpg"
+                      },
+                      "type": "gallery-image"
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "image 1",
+                        "default_setting_id": null,
+                        "image": "https://dev-img.btdmp.com/10321/10321584/products/1663926999343.jpg"
+                      },
+                      "type": "gallery-image"
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "",
+                        "default_setting_id": null,
+                        "image": "https://dev-img.btdmp.com/10321/10321584/products/1663927015230.jpg"
+                      },
+                      "type": "gallery-image"
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "",
+                        "default_setting_id": null,
+                        "image": "https://dev-img.btdmp.com/10321/10321584/products/1663927028926.jpg"
+                      },
+                      "type": "gallery-image"
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "",
+                        "default_setting_id": null,
+                        "image": "https://dev-img.btdmp.com/10321/10321584/products/1663927041086.jpg"
+                      },
+                      "type": "gallery-image"
+                    }
+                  ],
+                  "settings": {
+                    "content_alignment": "left",
+                    "default_setting_id": null,
+                    "full_width": false,
+                    "heading": "heading Gallery image",
+                    "image_per_row": 3,
+                    "no_spacing": false,
+                    "number_of_row": 2
+                  },
+                  "type": "gallery-image",
+                  "visible": true
+                }
+              },
+              "expect": {
+                "snapshot": "web-gallery-image-setting-hide-all-blocks.png"
+              }
+            },
+            {
+              "description": "Verify show section after hide section",
+              "id": "SB_OLS_THE_INS_SF_GALLERY_IMAGE_6",
+              "input": {
+                "home": {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "alt_text": "",
+                        "default_setting_id": null,
+                        "image": "https://dev-img.btdmp.com/10321/10321584/products/1663926958812.jpg"
+                      },
+                      "type": "gallery-image",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "Alt text 2",
+                        "default_setting_id": null,
+                        "image": "https://dev-img.btdmp.com/10321/10321584/products/1663926971285.jpg"
+                      },
+                      "type": "gallery-image",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "",
+                        "default_setting_id": null,
+                        "image": "https://dev-img.btdmp.com/10321/10321584/products/1663926988170.jpg"
+                      },
+                      "type": "gallery-image",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "image 1",
+                        "default_setting_id": null,
+                        "image": "https://dev-img.btdmp.com/10321/10321584/products/1663926999343.jpg"
+                      },
+                      "type": "gallery-image",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "",
+                        "default_setting_id": null,
+                        "image": "https://dev-img.btdmp.com/10321/10321584/products/1663927015230.jpg"
+                      },
+                      "type": "gallery-image",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "",
+                        "default_setting_id": null,
+                        "image": "https://dev-img.btdmp.com/10321/10321584/products/1663927028926.jpg"
+                      },
+                      "type": "gallery-image",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "",
+                        "default_setting_id": null,
+                        "image": "https://dev-img.btdmp.com/10321/10321584/products/1663927041086.jpg"
+                      },
+                      "type": "gallery-image",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "content_alignment": "left",
+                    "default_setting_id": null,
+                    "full_width": false,
+                    "heading": "heading Gallery image",
+                    "image_per_row": 3,
+                    "no_spacing": false,
+                    "number_of_row": 2
+                  },
+                  "type": "gallery-image"
+                }
+              },
+              "expect": {
+                "count_section": 0
+              }
+            }
+          ]
+        },
+        "SB_OLS_THE_INS_SF_GALLERY_IMAGE_8": {
+          "description": "Verify Preview image in gallery image section",
+          "data": {
+            "input": {
+              "home": {
+                "blocks": [
+                  {
+                    "settings": {
+                      "alt_text": "image 1",
+                      "default_setting_id": null,
+                      "image": "https://dev-img.btdmp.com/10321/10321584/products/1663926716389.jpg"
+                    },
+                    "type": "gallery-image",
+                    "visible": true
+                  },
+                  {
+                    "settings": {
+                      "alt_text": "",
+                      "default_setting_id": null,
+                      "image": null
+                    },
+                    "type": "gallery-image",
+                    "visible": true
+                  }
+                ],
+                "settings": {
+                  "content_alignment": "center",
+                  "default_setting_id": null,
+                  "full_width": true,
+                  "heading": "Gallery Image header 1",
+                  "image_per_row": 6,
+                  "no_spacing": true,
+                  "number_of_row": 3
+                },
+                "type": "gallery-image",
+                "visible": true
+              }
+            }
+          }
+        },
+        "MULTIPLE_SECTIONS": [
+          {
+            "description": "Verify show section when duplicate section Gallery image",
+            "id": "SB_OLS_THE_INS_SF_GALLERY_IMAGE_7",
+            "data": {
+              "home": {
+                "default": [
+                  {
+                    "blocks": [
+                      {
+                        "settings": {
+                          "alt_text": "",
+                          "default_setting_id": null,
+                          "image": "https://dev-img.btdmp.com/10321/10321584/products/1663926958812.jpg"
+                        },
+                        "type": "gallery-image",
+                        "visible": true
+                      },
+                      {
+                        "settings": {
+                          "alt_text": "Alt text 2",
+                          "default_setting_id": null,
+                          "image": "https://dev-img.btdmp.com/10321/10321584/products/1663926971285.jpg"
+                        },
+                        "type": "gallery-image",
+                        "visible": true
+                      },
+                      {
+                        "settings": {
+                          "alt_text": "",
+                          "default_setting_id": null,
+                          "image": "https://dev-img.btdmp.com/10321/10321584/products/1663927041086.jpg"
+                        },
+                        "type": "gallery-image",
+                        "visible": true
+                      }
+                    ],
+                    "settings": {
+                      "content_alignment": "left",
+                      "default_setting_id": null,
+                      "full_width": false,
+                      "heading": "heading Gallery image",
+                      "image_per_row": 3,
+                      "no_spacing": false,
+                      "number_of_row": 2
+                    },
+                    "type": "gallery-image",
+                    "visible": true
+                  },
+                  {
+                    "blocks": [
+                      {
+                        "settings": {
+                          "alt_text": "",
+                          "default_setting_id": null,
+                          "image": "https://dev-img.btdmp.com/10321/10321584/products/1663926958812.jpg"
+                        },
+                        "type": "gallery-image",
+                        "visible": true
+                      },
+                      {
+                        "settings": {
+                          "alt_text": "Alt text 2",
+                          "default_setting_id": null,
+                          "image": "https://dev-img.btdmp.com/10321/10321584/products/1663926971285.jpg"
+                        },
+                        "type": "gallery-image",
+                        "visible": true
+                      },
+                      {
+                        "settings": {
+                          "alt_text": "",
+                          "default_setting_id": null,
+                          "image": "https://dev-img.btdmp.com/10321/10321584/products/1663927041086.jpg"
+                        },
+                        "type": "gallery-image",
+                        "visible": true
+                      }
+                    ],
+                    "settings": {
+                      "content_alignment": "left",
+                      "default_setting_id": null,
+                      "full_width": false,
+                      "heading": "heading Gallery image",
+                      "image_per_row": 3,
+                      "no_spacing": false,
+                      "number_of_row": 2
+                    },
+                    "type": "gallery-image",
+                    "visible": true
+                  },
+                  {
+                    "blocks": [
+                      {
+                        "settings": {
+                          "alt_text": "",
+                          "color_background_content": "#194d33",
+                          "first_button_label": "Shop now",
+                          "first_button_link": "",
+                          "heading": "INSIDE SHOPBASE THEME",
+                          "image": null,
+                          "image_link": {},
+                          "second_button_label": "Read story",
+                          "second_button_link": "",
+                          "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                          "text_alignment": "center"
+                        },
+                        "type": "slideshow",
+                        "visible": true
+                      },
+                      {
+                        "settings": {
+                          "alt_text": "",
+                          "color_background_content": "#194d33",
+                          "first_button_label": "Shop now",
+                          "first_button_link": "",
+                          "heading": "INSIDE SHOPBASE THEME",
+                          "image": null,
+                          "image_link": {},
+                          "second_button_label": "Read story",
+                          "second_button_link": "",
+                          "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                          "text_alignment": "center"
+                        },
+                        "type": "slideshow",
+                        "visible": true
+                      },
+                      {
+                        "settings": {
+                          "alt_text": "",
+                          "color_background_content": "#194d33",
+                          "first_button_label": "Shop now",
+                          "first_button_link": "",
+                          "heading": "INSIDE SHOPBASE THEME",
+                          "image": null,
+                          "image_link": {},
+                          "second_button_label": "Read story",
+                          "second_button_link": "",
+                          "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                          "text_alignment": "center"
+                        },
+                        "type": "slideshow",
+                        "visible": true
+                      }
+                    ],
+                    "settings": {
+                      "change_slides_every": 6,
+                      "current_layout": "single_slide",
+                      "full_width": false,
+                      "opacity": 30,
+                      "parallax": false,
+                      "ratio": "21:9"
+                    },
+                    "type": "slideshow",
+                    "visible": true
+                  },
+                  {
+                    "app": "upsell",
+                    "blocks": [],
+                    "settings": {},
+                    "type": "best-seller",
+                    "visible": true
+                  },
+                  {
+                    "app": "upsell",
+                    "blocks": [],
+                    "settings": {},
+                    "type": "recently-viewed-and-featured-products",
+                    "visible": true
+                  }
+                ]
+              }
+            },
+            "expect": {
+              "index_section": null,
+              "snapshot": "web-gallery-image-setting-duplicate-section.png",
+              "count_section": 2
+            }
+          },
+          {
+            "description": "Verify show section after delete section gallery image",
+            "id": "SB_OLS_THE_INS_SF_GALLERY_IMAGE_10",
+            "data": {
+              "home": {
+                "default": [
+                  {
+                    "blocks": [
+                      {
+                        "settings": {
+                          "alt_text": "",
+                          "color_background_content": "#194d33",
+                          "first_button_label": "Shop now",
+                          "first_button_link": "",
+                          "heading": "INSIDE SHOPBASE THEME",
+                          "image": null,
+                          "image_link": {},
+                          "second_button_label": "Read story",
+                          "second_button_link": "",
+                          "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                          "text_alignment": "center"
+                        },
+                        "type": "slideshow",
+                        "visible": true
+                      },
+                      {
+                        "settings": {
+                          "alt_text": "",
+                          "color_background_content": "#194d33",
+                          "first_button_label": "Shop now",
+                          "first_button_link": "",
+                          "heading": "INSIDE SHOPBASE THEME",
+                          "image": null,
+                          "image_link": {},
+                          "second_button_label": "Read story",
+                          "second_button_link": "",
+                          "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                          "text_alignment": "center"
+                        },
+                        "type": "slideshow",
+                        "visible": true
+                      },
+                      {
+                        "settings": {
+                          "alt_text": "",
+                          "color_background_content": "#194d33",
+                          "first_button_label": "Shop now",
+                          "first_button_link": "",
+                          "heading": "INSIDE SHOPBASE THEME",
+                          "image": null,
+                          "image_link": {},
+                          "second_button_label": "Read story",
+                          "second_button_link": "",
+                          "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                          "text_alignment": "center"
+                        },
+                        "type": "slideshow",
+                        "visible": true
+                      }
+                    ],
+                    "settings": {
+                      "change_slides_every": 6,
+                      "current_layout": "single_slide",
+                      "full_width": false,
+                      "opacity": 30,
+                      "parallax": false,
+                      "ratio": "21:9"
+                    },
+                    "type": "slideshow",
+                    "visible": true
+                  },
+                  {
+                    "blocks": [],
+                    "data": "product",
+                    "settings": {
+                      "alignment": "left",
+                      "collection": null,
+                      "display_as_text_link": false,
+                      "heading": "Best Selling",
+                      "layout": "slider",
+                      "limit": 15,
+                      "product_per_row": 5,
+                      "view_more_button_label": "View more"
+                    },
+                    "type": "featured-collection",
+                    "visible": true
+                  },
+                  {
+                    "app": "upsell",
+                    "blocks": [],
+                    "settings": {},
+                    "type": "best-seller",
+                    "visible": true
+                  },
+                  {
+                    "app": "upsell",
+                    "blocks": [],
+                    "settings": {},
+                    "type": "recently-viewed-and-featured-products",
+                    "visible": true
+                  },
+                  {
+                    "app": "upsell",
+                    "blocks": [],
+                    "settings": {},
+                    "type": "cart-recommendations",
+                    "visible": true
+                  }
+                ]
+              }
+            },
+            "expect": {
+              "index_section": [
+                {
+                  "type_section": "slideshow",
+                  "index": 0
+                },
+                {
+                  "type_section": "featured-collection",
+                  "index": 1
+                }
+              ],
+              "snapshot": null,
+              "count_section": 0
+            }
+          },
+          {
+            "description": "Verify show section after change position section gallery image",
+            "id": "SB_OLS_THE_INS_SF_GALLERY_IMAGE_9",
+            "data": {
+              "home": {
+                "default": [
+                  {
+                    "blocks": [
+                      {
+                        "settings": {
+                          "alt_text": "",
+                          "default_setting_id": null,
+                          "image": "https://dev-img.btdmp.com/10321/10321584/products/1663926958812.jpg"
+                        },
+                        "type": "gallery-image",
+                        "visible": true
+                      },
+                      {
+                        "settings": {
+                          "alt_text": "Alt text 2",
+                          "default_setting_id": null,
+                          "image": "https://dev-img.btdmp.com/10321/10321584/products/1663926971285.jpg"
+                        },
+                        "type": "gallery-image",
+                        "visible": true
+                      },
+                      {
+                        "settings": {
+                          "alt_text": "",
+                          "default_setting_id": null,
+                          "image": "https://dev-img.btdmp.com/10321/10321584/products/1663927041086.jpg"
+                        },
+                        "type": "gallery-image",
+                        "visible": true
+                      }
+                    ],
+                    "settings": {
+                      "content_alignment": "left",
+                      "default_setting_id": null,
+                      "full_width": false,
+                      "heading": "heading Gallery image",
+                      "image_per_row": 3,
+                      "no_spacing": false,
+                      "number_of_row": 2
+                    },
+                    "type": "gallery-image",
+                    "visible": true
+                  },
+                  {
+                    "blocks": [
+                      {
+                        "settings": {
+                          "alt_text": "",
+                          "color_background_content": "#194d33",
+                          "first_button_label": "Shop now",
+                          "first_button_link": "",
+                          "heading": "INSIDE SHOPBASE THEME",
+                          "image": null,
+                          "image_link": {},
+                          "second_button_label": "Read story",
+                          "second_button_link": "",
+                          "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                          "text_alignment": "center"
+                        },
+                        "type": "slideshow",
+                        "visible": true
+                      },
+                      {
+                        "settings": {
+                          "alt_text": "",
+                          "color_background_content": "#194d33",
+                          "first_button_label": "Shop now",
+                          "first_button_link": "",
+                          "heading": "INSIDE SHOPBASE THEME",
+                          "image": null,
+                          "image_link": {},
+                          "second_button_label": "Read story",
+                          "second_button_link": "",
+                          "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                          "text_alignment": "center"
+                        },
+                        "type": "slideshow",
+                        "visible": true
+                      },
+                      {
+                        "settings": {
+                          "alt_text": "",
+                          "color_background_content": "#194d33",
+                          "first_button_label": "Shop now",
+                          "first_button_link": "",
+                          "heading": "INSIDE SHOPBASE THEME",
+                          "image": null,
+                          "image_link": {},
+                          "second_button_label": "Read story",
+                          "second_button_link": "",
+                          "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                          "text_alignment": "center"
+                        },
+                        "type": "slideshow",
+                        "visible": true
+                      }
+                    ],
+                    "settings": {
+                      "change_slides_every": 6,
+                      "current_layout": "single_slide",
+                      "full_width": false,
+                      "opacity": 30,
+                      "parallax": false,
+                      "ratio": "21:9"
+                    },
+                    "type": "slideshow",
+                    "visible": true
+                  },
+                  {
+                    "blocks": [],
+                    "data": "product",
+                    "settings": {
+                      "alignment": "left",
+                      "collection": null,
+                      "display_as_text_link": false,
+                      "heading": "Best Selling",
+                      "layout": "slider",
+                      "limit": 15,
+                      "product_per_row": 5,
+                      "view_more_button_label": "View more"
+                    },
+                    "type": "featured-collection",
+                    "visible": true
+                  },
+                  {
+                    "app": "upsell",
+                    "blocks": [],
+                    "settings": {},
+                    "type": "best-seller",
+                    "visible": true
+                  },
+                  {
+                    "app": "upsell",
+                    "blocks": [],
+                    "settings": {},
+                    "type": "recently-viewed-and-featured-products",
+                    "visible": true
+                  },
+                  {
+                    "app": "upsell",
+                    "blocks": [],
+                    "settings": {},
+                    "type": "cart-recommendations",
+                    "visible": true
+                  }
+                ]
+              }
+            },
+            "expect": {
+              "index_section": [
+                {
+                  "type_section": "gallery-image",
+                  "index": 0
+                },
+                {
+                  "type_section": "slideshow",
+                  "index": 1
+                },
+                {
+                  "type_section": "featured-collection",
+                  "index": 2
+                }
+              ],
+              "snapshot": null,
+              "count_section": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "cases": {
+    "SB_OLS_THE_INS_SF_GALLERY_IMAGE_1": {
+      "description": "Verify show default section after add new section",
+      "data": {
+        "input": {
+          "home": {
+            "blocks": [
+              {
+                "settings": {
+                  "alt_text": "",
+                  "default_setting_id": null,
+                  "image": null
+                },
+                "type": "gallery-image",
+                "visible": true
+              },
+              {
+                "settings": {
+                  "alt_text": "",
+                  "default_setting_id": null,
+                  "image": null
+                },
+                "type": "gallery-image",
+                "visible": true
+              },
+              {
+                "settings": {
+                  "alt_text": "",
+                  "default_setting_id": null,
+                  "image": null
+                },
+                "type": "gallery-image",
+                "visible": true
+              },
+              {
+                "settings": {
+                  "alt_text": "",
+                  "default_setting_id": null,
+                  "image": null
+                },
+                "type": "gallery-image",
+                "visible": true
+              },
+              {
+                "settings": {
+                  "alt_text": "",
+                  "default_setting_id": null,
+                  "image": null
+                },
+                "type": "gallery-image",
+                "visible": true
+              },
+              {
+                "settings": {
+                  "alt_text": "",
+                  "default_setting_id": null,
+                  "image": null
+                },
+                "type": "gallery-image",
+                "visible": true
+              },
+              {
+                "settings": {
+                  "alt_text": "",
+                  "default_setting_id": null,
+                  "image": null
+                },
+                "type": "gallery-image",
+                "visible": true
+              },
+              {
+                "settings": {
+                  "alt_text": "",
+                  "default_setting_id": null,
+                  "image": null
+                },
+                "type": "gallery-image",
+                "visible": true
+              }
+            ],
+            "settings": {
+              "content_alignment": "left",
+              "default_setting_id": null,
+              "full_width": false,
+              "heading": "Gallery Image",
+              "image_per_row": 4,
+              "no_spacing": false,
+              "number_of_row": 4
+            },
+            "type": "gallery-image",
+            "visible": true
+          }
+        },
+        "expect": {
+          "count_section": 1,
+          "snapshot": "web-gallery-image-data-default.png"
+        }
+      }
+    },
+    "SECTION": {
+      "description": "Cases setting data",
+      "data": [
+        {
+          "description": "Verify show section after setting section with 1 block",
+          "id": "SB_OLS_THE_INS_SF_GALLERY_IMAGE_2",
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "alt_text": "image 1",
+                    "default_setting_id": null,
+                    "image": "https://img.shopbase.com/files/10225015/2022/07/01/16566592767234b2643b.jpeg"
+                  },
+                  "type": "gallery-image",
+                  "visible": true
+                }
+              ],
+              "settings": {
+                "content_alignment": "center",
+                "default_setting_id": null,
+                "full_width": true,
+                "heading": "Gallery Image header 1",
+                "image_per_row": 6,
+                "no_spacing": true,
+                "number_of_row": 3
+              },
+              "type": "gallery-image",
+              "visible": true
+            }
+          },
+          "expect": {
+            "count_section": 1,
+            "snapshot": "web-gallery-image-setting-one-block.png"
+          }
+        },
+        {
+          "description": "Verify show section after setting section with many blocks",
+          "id": "SB_OLS_THE_INS_SF_GALLERY_IMAGE_3",
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "alt_text": "",
+                    "default_setting_id": null,
+                    "image": "https://img.shopbase.com/files/10225015/2022/07/01/1656662086670d3eb4b1.jpeg"
+                  },
+                  "type": "gallery-image",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "Alt text 2",
+                    "default_setting_id": null,
+                    "image": "https://img.shopbase.com/files/10225015/2022/07/01/16566619171f0a4628da.jpeg"
+                  },
+                  "type": "gallery-image",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "",
+                    "default_setting_id": null,
+                    "image": "https://img.shopbase.com/files/10225015/2022/07/01/16566619396e944036d7.jpeg"
+                  },
+                  "type": "gallery-image",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "image 1",
+                    "default_setting_id": null,
+                    "image": "https://img.shopbase.com/files/10225015/2022/07/01/165666215918ba67dfac.jpeg"
+                  },
+                  "type": "gallery-image",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "",
+                    "default_setting_id": null,
+                    "image": "https://img.shopbase.com/files/10225015/2022/07/01/165666213858411d934b.jpeg"
+                  },
+                  "type": "gallery-image",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "",
+                    "default_setting_id": null,
+                    "image": "https://img.shopbase.com/files/10225015/2022/07/01/16566621823c70d57f3f.jpeg"
+                  },
+                  "type": "gallery-image",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "",
+                    "default_setting_id": null,
+                    "image": "https://img.shopbase.com/files/10225015/2022/07/01/1656662148d09f0ed826.jpeg"
+                  },
+                  "type": "gallery-image",
+                  "visible": true
+                }
+              ],
+              "settings": {
+                "content_alignment": "left",
+                "default_setting_id": null,
+                "full_width": false,
+                "heading": "",
+                "image_per_row": 3,
+                "no_spacing": false,
+                "number_of_row": 2
+              },
+              "type": "gallery-image",
+              "visible": true
+            }
+          },
+          "expect": {
+            "snapshot": "web-gallery-image-setting-many-blocks.png"
+          }
+        },
+        {
+          "description": "Verify show section after hide some blocks",
+          "id": "SB_OLS_THE_INS_SF_GALLERY_IMAGE_4",
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "alt_text": "",
+                    "default_setting_id": null,
+                    "image": "https://img.shopbase.com/files/10225015/2022/07/01/1656662086670d3eb4b1.jpeg"
+                  },
+                  "type": "gallery-image"
+                },
+                {
+                  "settings": {
+                    "alt_text": "Alt text 2",
+                    "default_setting_id": null,
+                    "image": "https://img.shopbase.com/files/10225015/2022/07/01/16566619171f0a4628da.jpeg"
+                  },
+                  "type": "gallery-image"
+                },
+                {
+                  "settings": {
+                    "alt_text": "",
+                    "default_setting_id": null,
+                    "image": "https://img.shopbase.com/files/10225015/2022/07/01/16566619396e944036d7.jpeg"
+                  },
+                  "type": "gallery-image",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "image 1",
+                    "default_setting_id": null,
+                    "image": "https://img.shopbase.com/files/10225015/2022/07/01/165666215918ba67dfac.jpeg"
+                  },
+                  "type": "gallery-image",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "",
+                    "default_setting_id": null,
+                    "image": "https://img.shopbase.com/files/10225015/2022/07/01/165666213858411d934b.jpeg"
+                  },
+                  "type": "gallery-image",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "",
+                    "default_setting_id": null,
+                    "image": "https://img.shopbase.com/files/10225015/2022/07/01/16566621823c70d57f3f.jpeg"
+                  },
+                  "type": "gallery-image",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "",
+                    "default_setting_id": null,
+                    "image": "https://img.shopbase.com/files/10225015/2022/07/01/1656662148d09f0ed826.jpeg"
+                  },
+                  "type": "gallery-image",
+                  "visible": true
+                }
+              ],
+              "settings": {
+                "content_alignment": "left",
+                "default_setting_id": null,
+                "full_width": false,
+                "heading": "",
+                "image_per_row": 3,
+                "no_spacing": false,
+                "number_of_row": 2
+              },
+              "type": "gallery-image",
+              "visible": true
+            }
+          },
+          "expect": {
+            "snapshot": "web-gallery-image-setting-hide-some-blocks.png"
+          }
+        },
+        {
+          "description": "Verify show section after hide all blocks",
+          "id": "SB_OLS_THE_INS_SF_GALLERY_IMAGE_5",
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "alt_text": "",
+                    "default_setting_id": null,
+                    "image": "https://img.shopbase.com/files/10225015/2022/07/01/1656662086670d3eb4b1.jpeg"
+                  },
+                  "type": "gallery-image"
+                },
+                {
+                  "settings": {
+                    "alt_text": "Alt text 2",
+                    "default_setting_id": null,
+                    "image": "https://img.shopbase.com/files/10225015/2022/07/01/16566619171f0a4628da.jpeg"
+                  },
+                  "type": "gallery-image"
+                },
+                {
+                  "settings": {
+                    "alt_text": "",
+                    "default_setting_id": null,
+                    "image": "https://img.shopbase.com/files/10225015/2022/07/01/16566619396e944036d7.jpeg"
+                  },
+                  "type": "gallery-image"
+                },
+                {
+                  "settings": {
+                    "alt_text": "image 1",
+                    "default_setting_id": null,
+                    "image": "https://img.shopbase.com/files/10225015/2022/07/01/165666215918ba67dfac.jpeg"
+                  },
+                  "type": "gallery-image"
+                },
+                {
+                  "settings": {
+                    "alt_text": "",
+                    "default_setting_id": null,
+                    "image": "https://img.shopbase.com/files/10225015/2022/07/01/165666213858411d934b.jpeg"
+                  },
+                  "type": "gallery-image"
+                },
+                {
+                  "settings": {
+                    "alt_text": "",
+                    "default_setting_id": null,
+                    "image": "https://img.shopbase.com/files/10225015/2022/07/01/16566621823c70d57f3f.jpeg"
+                  },
+                  "type": "gallery-image"
+                },
+                {
+                  "settings": {
+                    "alt_text": "",
+                    "default_setting_id": null,
+                    "image": "https://img.shopbase.com/files/10225015/2022/07/01/1656662148d09f0ed826.jpeg"
+                  },
+                  "type": "gallery-image"
+                }
+              ],
+              "settings": {
+                "content_alignment": "left",
+                "default_setting_id": null,
+                "full_width": false,
+                "heading": "heading Gallery image",
+                "image_per_row": 3,
+                "no_spacing": false,
+                "number_of_row": 2
+              },
+              "type": "gallery-image",
+              "visible": true
+            }
+          },
+          "expect": {
+            "snapshot": "web-gallery-image-setting-hide-all-blocks.png"
+          }
+        },
+        {
+          "description": "Verify show section after hide section",
+          "id": "SB_OLS_THE_INS_SF_GALLERY_IMAGE_6",
+          "input": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "alt_text": "",
+                    "default_setting_id": null,
+                    "image": "https://img.shopbase.com/files/10225015/2022/07/01/1656662086670d3eb4b1.jpeg"
+                  },
+                  "type": "gallery-image",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "Alt text 2",
+                    "default_setting_id": null,
+                    "image": "https://img.shopbase.com/files/10225015/2022/07/01/16566619171f0a4628da.jpeg"
+                  },
+                  "type": "gallery-image",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "",
+                    "default_setting_id": null,
+                    "image": "https://img.shopbase.com/files/10225015/2022/07/01/16566619396e944036d7.jpeg"
+                  },
+                  "type": "gallery-image",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "image 1",
+                    "default_setting_id": null,
+                    "image": "https://img.shopbase.com/files/10225015/2022/07/01/165666215918ba67dfac.jpeg"
+                  },
+                  "type": "gallery-image",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "",
+                    "default_setting_id": null,
+                    "image": "https://img.shopbase.com/files/10225015/2022/07/01/165666213858411d934b.jpeg"
+                  },
+                  "type": "gallery-image",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "",
+                    "default_setting_id": null,
+                    "image": "https://img.shopbase.com/files/10225015/2022/07/01/16566621823c70d57f3f.jpeg"
+                  },
+                  "type": "gallery-image",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "",
+                    "default_setting_id": null,
+                    "image": "https://img.shopbase.com/files/10225015/2022/07/01/1656662148d09f0ed826.jpeg"
+                  },
+                  "type": "gallery-image",
+                  "visible": true
+                }
+              ],
+              "settings": {
+                "content_alignment": "left",
+                "default_setting_id": null,
+                "full_width": false,
+                "heading": "heading Gallery image",
+                "image_per_row": 3,
+                "no_spacing": false,
+                "number_of_row": 2
+              },
+              "type": "gallery-image"
+            }
+          },
+          "expect": {
+            "count_section": 0
+          }
+        }
+      ]
+    },
+    "SB_OLS_THE_INS_SF_GALLERY_IMAGE_8": {
+      "description": "Verify Preview image in gallery image section",
+      "data": {
+        "input": {
+          "home": {
+            "blocks": [
+              {
+                "settings": {
+                  "alt_text": "image 1",
+                  "default_setting_id": null,
+                  "image": "https://img.shopbase.com/files/10225015/2022/07/01/16566592767234b2643b.jpeg"
+                },
+                "type": "gallery-image",
+                "visible": true
+              },
+              {
+                "settings": {
+                  "alt_text": "",
+                  "default_setting_id": null,
+                  "image": null
+                },
+                "type": "gallery-image",
+                "visible": true
+              }
+            ],
+            "settings": {
+              "content_alignment": "center",
+              "default_setting_id": null,
+              "full_width": true,
+              "heading": "Gallery Image header 1",
+              "image_per_row": 6,
+              "no_spacing": true,
+              "number_of_row": 3
+            },
+            "type": "gallery-image",
+            "visible": true
+          }
+        }
+      }
+    },
+    "MULTIPLE_SECTIONS": [
+      {
+        "description": "Verify show section when duplicate section Gallery image",
+        "id": "SB_OLS_THE_INS_SF_GALLERY_IMAGE_7",
+        "data": {
+          "home": {
+            "default": [
+              {
+                "blocks": [
+                  {
+                    "settings": {
+                      "alt_text": "",
+                      "default_setting_id": null,
+                      "image": "https://img.shopbase.com/files/10225015/2022/07/01/1656662086670d3eb4b1.jpeg"
+                    },
+                    "type": "gallery-image",
+                    "visible": true
+                  },
+                  {
+                    "settings": {
+                      "alt_text": "Alt text 2",
+                      "default_setting_id": null,
+                      "image": "https://img.shopbase.com/files/10225015/2022/07/01/16566619171f0a4628da.jpeg"
+                    },
+                    "type": "gallery-image",
+                    "visible": true
+                  },
+                  {
+                    "settings": {
+                      "alt_text": "",
+                      "default_setting_id": null,
+                      "image": "https://img.shopbase.com/files/10225015/2022/07/01/1656662148d09f0ed826.jpeg"
+                    },
+                    "type": "gallery-image",
+                    "visible": true
+                  }
+                ],
+                "settings": {
+                  "content_alignment": "left",
+                  "default_setting_id": null,
+                  "full_width": false,
+                  "heading": "heading Gallery image",
+                  "image_per_row": 3,
+                  "no_spacing": false,
+                  "number_of_row": 2
+                },
+                "type": "gallery-image",
+                "visible": true
+              },
+              {
+                "blocks": [
+                  {
+                    "settings": {
+                      "alt_text": "",
+                      "default_setting_id": null,
+                      "image": "https://img.shopbase.com/files/10225015/2022/07/01/1656662086670d3eb4b1.jpeg"
+                    },
+                    "type": "gallery-image",
+                    "visible": true
+                  },
+                  {
+                    "settings": {
+                      "alt_text": "Alt text 2",
+                      "default_setting_id": null,
+                      "image": "https://img.shopbase.com/files/10225015/2022/07/01/16566619171f0a4628da.jpeg"
+                    },
+                    "type": "gallery-image",
+                    "visible": true
+                  },
+                  {
+                    "settings": {
+                      "alt_text": "",
+                      "default_setting_id": null,
+                      "image": "https://img.shopbase.com/files/10225015/2022/07/01/1656662148d09f0ed826.jpeg"
+                    },
+                    "type": "gallery-image",
+                    "visible": true
+                  }
+                ],
+                "settings": {
+                  "content_alignment": "left",
+                  "default_setting_id": null,
+                  "full_width": false,
+                  "heading": "heading Gallery image",
+                  "image_per_row": 3,
+                  "no_spacing": false,
+                  "number_of_row": 2
+                },
+                "type": "gallery-image",
+                "visible": true
+              },
+              {
+                "blocks": [
+                  {
+                    "settings": {
+                      "alt_text": "",
+                      "color_background_content": "#194d33",
+                      "first_button_label": "Shop now",
+                      "first_button_link": "",
+                      "heading": "INSIDE SHOPBASE THEME",
+                      "image": null,
+                      "image_link": {},
+                      "second_button_label": "Read story",
+                      "second_button_link": "",
+                      "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                      "text_alignment": "center"
+                    },
+                    "type": "slideshow",
+                    "visible": true
+                  },
+                  {
+                    "settings": {
+                      "alt_text": "",
+                      "color_background_content": "#194d33",
+                      "first_button_label": "Shop now",
+                      "first_button_link": "",
+                      "heading": "INSIDE SHOPBASE THEME",
+                      "image": null,
+                      "image_link": {},
+                      "second_button_label": "Read story",
+                      "second_button_link": "",
+                      "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                      "text_alignment": "center"
+                    },
+                    "type": "slideshow",
+                    "visible": true
+                  },
+                  {
+                    "settings": {
+                      "alt_text": "",
+                      "color_background_content": "#194d33",
+                      "first_button_label": "Shop now",
+                      "first_button_link": "",
+                      "heading": "INSIDE SHOPBASE THEME",
+                      "image": null,
+                      "image_link": {},
+                      "second_button_label": "Read story",
+                      "second_button_link": "",
+                      "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                      "text_alignment": "center"
+                    },
+                    "type": "slideshow",
+                    "visible": true
+                  }
+                ],
+                "settings": {
+                  "change_slides_every": 6,
+                  "current_layout": "single_slide",
+                  "full_width": false,
+                  "opacity": 30,
+                  "parallax": false,
+                  "ratio": "21:9"
+                },
+                "type": "slideshow",
+                "visible": true
+              },
+              {
+                "app": "upsell",
+                "blocks": [],
+                "settings": {},
+                "type": "best-seller",
+                "visible": true
+              },
+              {
+                "app": "upsell",
+                "blocks": [],
+                "settings": {},
+                "type": "recently-viewed-and-featured-products",
+                "visible": true
+              }
+            ]
+          }
+        },
+        "expect": {
+          "index_section": null,
+          "snapshot": "web-gallery-image-setting-duplicate-section.png",
+          "count_section": 2
+        }
+      },
+      {
+        "description": "Verify show section after delete section gallery image",
+        "id": "SB_OLS_THE_INS_SF_GALLERY_IMAGE_10",
+        "data": {
+          "home": {
+            "default": [
+              {
+                "blocks": [
+                  {
+                    "settings": {
+                      "alt_text": "",
+                      "color_background_content": "#194d33",
+                      "first_button_label": "Shop now",
+                      "first_button_link": "",
+                      "heading": "INSIDE SHOPBASE THEME",
+                      "image": null,
+                      "image_link": {},
+                      "second_button_label": "Read story",
+                      "second_button_link": "",
+                      "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                      "text_alignment": "center"
+                    },
+                    "type": "slideshow",
+                    "visible": true
+                  },
+                  {
+                    "settings": {
+                      "alt_text": "",
+                      "color_background_content": "#194d33",
+                      "first_button_label": "Shop now",
+                      "first_button_link": "",
+                      "heading": "INSIDE SHOPBASE THEME",
+                      "image": null,
+                      "image_link": {},
+                      "second_button_label": "Read story",
+                      "second_button_link": "",
+                      "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                      "text_alignment": "center"
+                    },
+                    "type": "slideshow",
+                    "visible": true
+                  },
+                  {
+                    "settings": {
+                      "alt_text": "",
+                      "color_background_content": "#194d33",
+                      "first_button_label": "Shop now",
+                      "first_button_link": "",
+                      "heading": "INSIDE SHOPBASE THEME",
+                      "image": null,
+                      "image_link": {},
+                      "second_button_label": "Read story",
+                      "second_button_link": "",
+                      "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                      "text_alignment": "center"
+                    },
+                    "type": "slideshow",
+                    "visible": true
+                  }
+                ],
+                "settings": {
+                  "change_slides_every": 6,
+                  "current_layout": "single_slide",
+                  "full_width": false,
+                  "opacity": 30,
+                  "parallax": false,
+                  "ratio": "21:9"
+                },
+                "type": "slideshow",
+                "visible": true
+              },
+              {
+                "blocks": [],
+                "data": "product",
+                "settings": {
+                  "alignment": "left",
+                  "collection": null,
+                  "display_as_text_link": false,
+                  "heading": "Best Selling",
+                  "layout": "slider",
+                  "limit": 15,
+                  "product_per_row": 5,
+                  "view_more_button_label": "View more"
+                },
+                "type": "featured-collection",
+                "visible": true
+              },
+              {
+                "app": "upsell",
+                "blocks": [],
+                "settings": {},
+                "type": "best-seller",
+                "visible": true
+              },
+              {
+                "app": "upsell",
+                "blocks": [],
+                "settings": {},
+                "type": "recently-viewed-and-featured-products",
+                "visible": true
+              },
+              {
+                "app": "upsell",
+                "blocks": [],
+                "settings": {},
+                "type": "cart-recommendations",
+                "visible": true
+              }
+            ]
+          }
+        },
+        "expect": {
+          "index_section": [
+            {
+              "type_section": "slideshow",
+              "index": 0
+            },
+            {
+              "type_section": "featured-collection",
+              "index": 1
+            }
+          ],
+          "snapshot": null,
+          "count_section": 0
+        }
+      },
+      {
+        "description": "Verify show section after change position section gallery image",
+        "id": "SB_OLS_THE_INS_SF_GALLERY_IMAGE_9",
+        "data": {
+          "home": {
+            "default": [
+              {
+                "blocks": [
+                  {
+                    "settings": {
+                      "alt_text": "",
+                      "default_setting_id": null,
+                      "image": "https://img.shopbase.com/files/10225015/2022/07/01/1656662086670d3eb4b1.jpeg"
+                    },
+                    "type": "gallery-image",
+                    "visible": true
+                  },
+                  {
+                    "settings": {
+                      "alt_text": "Alt text 2",
+                      "default_setting_id": null,
+                      "image": "https://img.shopbase.com/files/10225015/2022/07/01/16566619171f0a4628da.jpeg"
+                    },
+                    "type": "gallery-image",
+                    "visible": true
+                  },
+                  {
+                    "settings": {
+                      "alt_text": "",
+                      "default_setting_id": null,
+                      "image": "https://img.shopbase.com/files/10225015/2022/07/01/1656662148d09f0ed826.jpeg"
+                    },
+                    "type": "gallery-image",
+                    "visible": true
+                  }
+                ],
+                "settings": {
+                  "content_alignment": "left",
+                  "default_setting_id": null,
+                  "full_width": false,
+                  "heading": "heading Gallery image",
+                  "image_per_row": 3,
+                  "no_spacing": false,
+                  "number_of_row": 2
+                },
+                "type": "gallery-image",
+                "visible": true
+              },
+              {
+                "blocks": [
+                  {
+                    "settings": {
+                      "alt_text": "",
+                      "color_background_content": "#194d33",
+                      "first_button_label": "Shop now",
+                      "first_button_link": "",
+                      "heading": "INSIDE SHOPBASE THEME",
+                      "image": null,
+                      "image_link": {},
+                      "second_button_label": "Read story",
+                      "second_button_link": "",
+                      "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                      "text_alignment": "center"
+                    },
+                    "type": "slideshow",
+                    "visible": true
+                  },
+                  {
+                    "settings": {
+                      "alt_text": "",
+                      "color_background_content": "#194d33",
+                      "first_button_label": "Shop now",
+                      "first_button_link": "",
+                      "heading": "INSIDE SHOPBASE THEME",
+                      "image": null,
+                      "image_link": {},
+                      "second_button_label": "Read story",
+                      "second_button_link": "",
+                      "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                      "text_alignment": "center"
+                    },
+                    "type": "slideshow",
+                    "visible": true
+                  },
+                  {
+                    "settings": {
+                      "alt_text": "",
+                      "color_background_content": "#194d33",
+                      "first_button_label": "Shop now",
+                      "first_button_link": "",
+                      "heading": "INSIDE SHOPBASE THEME",
+                      "image": null,
+                      "image_link": {},
+                      "second_button_label": "Read story",
+                      "second_button_link": "",
+                      "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                      "text_alignment": "center"
+                    },
+                    "type": "slideshow",
+                    "visible": true
+                  }
+                ],
+                "settings": {
+                  "change_slides_every": 6,
+                  "current_layout": "single_slide",
+                  "full_width": false,
+                  "opacity": 30,
+                  "parallax": false,
+                  "ratio": "21:9"
+                },
+                "type": "slideshow",
+                "visible": true
+              },
+              {
+                "blocks": [],
+                "data": "product",
+                "settings": {
+                  "alignment": "left",
+                  "collection": null,
+                  "display_as_text_link": false,
+                  "heading": "Best Selling",
+                  "layout": "slider",
+                  "limit": 15,
+                  "product_per_row": 5,
+                  "view_more_button_label": "View more"
+                },
+                "type": "featured-collection",
+                "visible": true
+              },
+              {
+                "app": "upsell",
+                "blocks": [],
+                "settings": {},
+                "type": "best-seller",
+                "visible": true
+              },
+              {
+                "app": "upsell",
+                "blocks": [],
+                "settings": {},
+                "type": "recently-viewed-and-featured-products",
+                "visible": true
+              },
+              {
+                "app": "upsell",
+                "blocks": [],
+                "settings": {},
+                "type": "cart-recommendations",
+                "visible": true
+              }
+            ]
+          }
+        },
+        "expect": {
+          "index_section": [
+            {
+              "type_section": "gallery-image",
+              "index": 0
+            },
+            {
+              "type_section": "slideshow",
+              "index": 1
+            },
+            {
+              "type_section": "featured-collection",
+              "index": 2
+            }
+          ],
+          "snapshot": null,
+          "count_section": 1
+        }
+      }
+    ]
+  }
+}

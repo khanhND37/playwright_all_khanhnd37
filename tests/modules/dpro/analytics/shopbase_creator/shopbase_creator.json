@@ -1,0 +1,675 @@
+{
+  "env": {
+    "prod": {
+      "hive_domain": "hive.shopbase.com",
+      "hive_username": "shopbase",
+      "hive_password": "UxsLHz^Wjkf35*/w",
+      "api": "https://api.shopbase.com",
+      "domain": "au-dpro-analytics.onshopbase.com",
+      "shop_name": "au-dpro-analytics",
+      "username": "shopbase2@beeketing.net",
+      "password": "raMse).7L/b4;k#@",
+      "shop_id": 10388554,
+      "user_id": 74303,
+      "time_zone": "Asia/Bangkok",
+      "handle": "product-digital-testing",
+      "locale_format": "fr-CA",
+      "param": ["utm_source", "source_medium", "utm_campaign", "utm_term", "utm_content", "utm_medium"],
+      "time_out_api_calling": 14000,
+      "time_out_tc": 300000,
+      "retry_time": 7,
+      "customer_info": {
+        "email": "buyer@beeketing.net",
+        "first_name": "Shane",
+        "last_name": "Lee",
+        "address": "130 Trung Phung",
+        "country": "Vietnam",
+        "state": "Dong Da",
+        "city": "Hanoi",
+        "zipcode": "100000",
+        "phone_number": "0968746587"
+      },
+      "data_analytics": {
+        "summary": {
+          "total_sales": 0,
+          "total_profit": 0,
+          "total_orders": 0,
+          "total_items": 0,
+          "total_aov": 0,
+          "total_aop": 0,
+          "total_aoi": 0,
+          "view_content": 0,
+          "session_convert": 0,
+          "conversion_rate": 0,
+          "first_time": 0,
+          "returning": 0,
+          "sales_before": 0
+        }
+      },
+      "price_product": {
+        "summary": 0,
+        "sbase": 0,
+        "upsell": 0,
+        "shipping": 0,
+        "totalProductCheckout": 0
+      }
+    },
+    "prodtest": {
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://prod-test-api.shopbase.com"
+    }
+  },
+  "cases": {
+    "SB_ANA_ANA_SB_CREATOR_3": {
+      "data": [
+        {
+          "time_zone": "Asia/Bangkok"
+        },
+        {
+          "time_zone": "Etc/UTC"
+        },
+        {
+          "time_zone": "Asia/Kathmandu"
+        }
+      ]
+    },
+    "SB_ANA_ANA_SB_CREATOR_4": {
+      "time_zone": "Asia/Bangkok",
+      "day_changes": {
+        "before_1_day": 0,
+        "before_the_day": 1
+      },
+      "data_init_dashboards": {
+        "sales": 0,
+        "profits": 0,
+        "total_orders": 0,
+        "total_items": 0,
+        "conversion_rate": 0
+      }
+    },
+    "SB_ANA_ANA_SB_CREATOR_5": {
+      "second_shop_domain": "walter-sb-creator.onshopbase.com",
+      "second_shop_handle": "Video",
+      "second_shop_id": 10415826,
+      "data_updated": {
+        "total_sales_update": 10,
+        "total_orders_update": 1,
+        "view_content_update": 1,
+        "session_convert_update": 1
+      },
+      "data_analytics": {
+        "summary": {
+          "total_sales": 0,
+          "view_content": 0,
+          "session_convert": 0,
+          "cr_rate": 0,
+          "total_orders": 0
+        }
+      }
+    },
+    "SB_ANA_ANA_SB_CREATOR_9": {
+      "data_updated": {
+        "total_sales_update": 10,
+        "total_orders_update": 1,
+        "view_content_update": 1,
+        "session_convert_update": 1
+      },
+      "data_analytics": {
+        "summary": {
+          "total_sales": 0,
+          "view_content": 0,
+          "session_convert": 0,
+          "cr_rate": 0,
+          "total_orders": 0
+        }
+      }
+    },
+    "CASE_REFUND": {
+      "data": [
+        {
+          "case_id": "SB_ANA_ANA_SB_CREATOR_10",
+          "case_description": "Kiểm tra các chart Total sales, Conversion rate, Total orders đối với trường hợp partially refund order trong ShopBase Creator",
+          "reason": "Refund for testing",
+          "RefundAmount": "5",
+          "data_updated_after_checkout_success": {
+            "total_orders_update": 1,
+            "view_content_update": 1,
+            "session_convert_update": 1
+          },
+          "data_updated": {
+            "total_orders_update": 0,
+            "view_content_update": 0,
+            "session_convert_update": 0
+          },
+          "data_analytics": {
+            "summary": {
+              "total_sales": 0,
+              "view_content": 0,
+              "session_convert": 0,
+              "cr_rate": 0,
+              "total_orders": 0
+            }
+          }
+        },
+        {
+          "case_id": "SB_ANA_ANA_SB_CREATOR_11",
+          "case_description": "Kiểm tra các chart Total sales, Conversion rate, Total orders đối với trường hợp fully refund order trong ShopBase Creator",
+          "reason": "Refund for testing",
+          "RefundAmount": "10",
+          "data_updated_after_checkout_success": {
+            "total_orders_update": 1,
+            "view_content_update": 1,
+            "session_convert_update": 1
+          },
+          "data_updated": {
+            "total_orders_update": 0,
+            "view_content_update": 0,
+            "session_convert_update": 0
+          },
+          "data_analytics": {
+            "summary": {
+              "total_sales": 0,
+              "view_content": 0,
+              "session_convert": 0,
+              "cr_rate": 0,
+              "total_orders": 0
+            }
+          }
+        }
+      ]
+    },
+    "SB_ANA_ANA_SB_CREATOR_13": {},
+    "SB_ANA_ANA_SB_CREATOR_18": {
+      "data_updated": {
+        "views": 1,
+        "orders": 0,
+        "session_converted": 0,
+        "net_quantity": 0,
+        "orders_summary": 0
+      }
+    },
+    "SB_ANA_ANA_SB_CREATOR_19": {
+      "data_updated": {
+        "views": 1,
+        "orders": 1,
+        "session_converted": 1,
+        "net_quantity": 1,
+        "orders_summary": 1
+      }
+    },
+    "CASE_OPTION_SALERP": {
+      "data": [
+        {
+          "case_id": "SB_ANA_ANA_SB_CREATOR_22",
+          "case_description": "Kiểm tra value với filter Product has sales trong sales report Analytics",
+          "option_data": "Product with sales"
+        },
+        {
+          "case_id": "SB_ANA_ANA_SB_CREATOR_23",
+          "case_description": "Kiểm tra value với filter Product has no sales trong sales report Analytics",
+          "option_data": "Product without sales"
+        },
+        {
+          "case_id": "SB_ANA_ANA_SB_CREATOR_24",
+          "case_description": "Kiểm tra value với filter Both trong sales report Analytics",
+          "option_data": "All products"
+        }
+      ]
+    },
+    "SB_ANA_ANA_SB_CREATOR_25": {
+      "data_updated": {
+        "views": 1,
+        "orders": 1,
+        "session_converted": 1,
+        "net_quantity": 1,
+        "orders_summary": 1
+      }
+    },
+    "SB_ANA_ANA_SB_CREATOR_28": {
+      "successful": [
+        {
+          "report_by": "product",
+          "value_search": "Product digital testing"
+        },
+        {
+          "report_by": "product_type",
+          "value_search": "Digital download"
+        },
+        {
+          "report_by": "pricing_type",
+          "value_search": "One-time payment"
+        },
+        {
+          "report_by": "member_type",
+          "value_search": "Returning member"
+        }
+      ],
+      "unsuccessful": [
+        {
+          "report_by": "product",
+          "value_search": "Untitle name"
+        },
+        {
+          "report_by": "product_type",
+          "value_search": "Unavilable Type"
+        },
+        {
+          "report_by": "pricing_type",
+          "value_search": "Unavailable Pricing Type"
+        },
+        {
+          "report_by": "member_type",
+          "value_search": "Unavilable Member type"
+        }
+      ]
+    },
+    "TRAFFIC_BY_CHANNELS": {
+      "data": [
+        {
+          "case_id": "SB_ANA_ANA_SB_CREATOR_29",
+          "description": "Kiểm tra dashboard hiển thị phần Traffic by channels đối với các trường hợp open Storefront từ các source khác nhau with finished checkout",
+          "report_type": "traffic_source_with_sale",
+          "data": {
+            "finished_checkout": [
+              {
+                "case_name": "Directly open store front with finished checkout",
+                "refer_link": "",
+                "channel": "direct",
+                "referrer": "N/A",
+                "data_updated": {
+                  "view_page_update": 1,
+                  "conversion_rate_update": 1,
+                  "total_orders_update": 1
+                }
+              },
+              {
+                "case_name": "Open store front with finished checkout from Facebook",
+                "refer_link": "?fbclid=IwAR29tj4i8nFGysI0qOMziQFIIY7wWIvPK3h_-fs6-ynM5XQMe-KItacXHjc",
+                "channel": "social",
+                "referrer": "Facebook",
+                "data_updated": {
+                  "view_page_update": 1,
+                  "conversion_rate_update": 1,
+                  "total_orders_update": 1
+                }
+              },
+              {
+                "case_name": "Open store front with finished checkout from Google",
+                "refer_link": "?gclid=IwAR29tj4i8nFGysI0qOMziQFIIY7wWIvPK3h_-fs6-ynM5XQMe-KItacXHjc",
+                "channel": "search",
+                "referrer": "Google",
+                "data_updated": {
+                  "view_page_update": 1,
+                  "conversion_rate_update": 1,
+                  "total_orders_update": 1
+                }
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "SB_ANA_ANA_SB_CREATOR_29",
+          "description": "Kiểm tra dashboard hiển thị phần Traffic by channels đối với các trường hợp open Storefront từ các source khác nhau with unfinished checkout",
+          "report_type": "traffic_source_with_sale",
+          "data": {
+            "unfinished_checkout": [
+              {
+                "case_name": "Directly open store front with unfinished checkout",
+                "refer_link": "",
+                "channel": "direct",
+                "referrer": "N/A",
+                "data_updated": {
+                  "view_page_update": 1,
+                  "conversion_rate_update": 0,
+                  "total_orders_update": 0
+                }
+              },
+              {
+                "case_name": "Open store front with unfinished checkout from Facebook",
+                "refer_link": "?fbclid=IwAR29tj4i8nFGysI0qOMziQFIIY7wWIvPK3h_-fs6-ynM5XQMe-KItacXHjc",
+                "channel": "social",
+                "referrer": "Facebook",
+                "data_updated": {
+                  "view_page_update": 1,
+                  "conversion_rate_update": 0,
+                  "total_orders_update": 0
+                }
+              },
+              {
+                "case_name": "Open store front with unfinished checkout from Google",
+                "refer_link": "?gclid=IwAR29tj4i8nFGysI0qOMziQFIIY7wWIvPK3h_-fs6-ynM5XQMe-KItacXHjc",
+                "channel": "search",
+                "referrer": "Google",
+                "data_updated": {
+                  "view_page_update": 1,
+                  "conversion_rate_update": 0,
+                  "total_orders_update": 0
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "TRAFFIC_BY_CAMPAIGNS": {
+      "data": [
+        {
+          "case_id": "SB_ANA_ANA_SB_CREATOR_32",
+          "description": "Checkout with no UTM param on URL with finished checkout",
+          "filter_by": "utm_source",
+          "case_data": {
+            "finished_checkout": [
+              {
+                "case_name": "Directly open link Storefront with finished checkout",
+                "refer_link": "",
+                "source": "direct",
+                "medium": "none",
+                "campaigns": "not_set",
+                "term": "not_set",
+                "content": "not_set",
+                "data_updated": {
+                  "view_content_update": 1,
+                  "total_orders_update": 1,
+                  "session_converted_update": 1,
+                  "total_items_update": 1
+                }
+              },
+              {
+                "case_name": "Open link Storefront from Facebook with finished checkout",
+                "refer_link": "?fbclid=IwAR29tj4i8nFGysI0qOMziQFIIY7wWIvPK3h_-fs6-ynM5XQMe-KItacXHjc",
+                "source": "Facebook",
+                "medium": "referral",
+                "campaigns": "not_set",
+                "term": "not_set",
+                "content": "not_set",
+                "data_updated": {
+                  "view_content_update": 1,
+                  "total_orders_update": 1,
+                  "session_converted_update": 1,
+                  "total_items_update": 1
+                }
+              },
+              {
+                "case_name": "Open link Storefront from Google with finished checkout",
+                "refer_link": "?gclid=IwAR29tj4i8nFGysI0qOMziQFIIY7wWIvPK3h_-fs6-ynM5XQMe-KItacXHjc",
+                "source": "Google",
+                "medium": "organic",
+                "campaigns": "not_set",
+                "term": "not_set",
+                "content": "not_set",
+                "data_updated": {
+                  "view_content_update": 1,
+                  "total_orders_update": 1,
+                  "session_converted_update": 1,
+                  "total_items_update": 1
+                }
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "SB_ANA_ANA_SB_CREATOR_32",
+          "description": "Checkout with no UTM param on URL with unfinished checkout",
+          "filter_by": "utm_source",
+          "case_data": {
+            "unfinished_checkout": [
+              {
+                "case_name": "Directly open link Storefront with unfinished checkout",
+                "refer_link": "",
+                "source": "direct",
+                "medium": "none",
+                "campaigns": "not_set",
+                "term": "not_set",
+                "content": "not_set",
+                "data_updated": {
+                  "view_content_update": 1,
+                  "total_orders_update": 0,
+                  "session_converted_update": 0,
+                  "total_items_update": 0
+                }
+              },
+              {
+                "case_name": "Open link Storefront from Facebook with unfinished checkout",
+                "refer_link": "?fbclid=IwAR29tj4i8nFGysI0qOMziQFIIY7wWIvPK3h_-fs6-ynM5XQMe-KItacXHjc",
+                "source": "Facebook",
+                "medium": "referral",
+                "campaigns": "not_set",
+                "term": "not_set",
+                "content": "not_set",
+                "data_updated": {
+                  "view_content_update": 1,
+                  "total_orders_update": 0,
+                  "session_converted_update": 0,
+                  "total_items_update": 0
+                }
+              },
+              {
+                "case_name": "Open link Storefront from Google with unfinished checkout",
+                "refer_link": "?gclid=IwAR29tj4i8nFGysI0qOMziQFIIY7wWIvPK3h_-fs6-ynM5XQMe-KItacXHjc",
+                "source": "Google",
+                "medium": "organic",
+                "campaigns": "not_set",
+                "term": "not_set",
+                "content": "not_set",
+                "data_updated": {
+                  "view_content_update": 1,
+                  "total_orders_update": 0,
+                  "session_converted_update": 0,
+                  "total_items_update": 0
+                }
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "SB_ANA_ANA_SB_CREATOR_33",
+          "description": "Checkout with UTM param on URL with finished checkout",
+          "filter_by": "utm_source",
+          "case_data": {
+            "finished_checkout": [
+              {
+                "case_name": "Directly open link Storefront with finished checkout",
+                "refer_link": "",
+                "source": "direct",
+                "medium": "none",
+                "campaigns": "not_set",
+                "term": "not_set",
+                "content": "not_set",
+                "data_updated": {
+                  "view_content_update": 1,
+                  "total_orders_update": 1,
+                  "session_converted_update": 1,
+                  "total_items_update": 1
+                }
+              },
+              {
+                "case_name": "Open link Storefront from Facebook with finished checkout",
+                "refer_link": "?fbclid=IwAR29tj4i8nFGysI0qOMziQFIIY7wWIvPK3h_-fs6-ynM5XQMe-KItacXHjc",
+                "source": "Facebook",
+                "medium": "referral",
+                "campaigns": "not_set",
+                "term": "not_set",
+                "content": "not_set",
+                "data_updated": {
+                  "view_content_update": 1,
+                  "total_orders_update": 1,
+                  "session_converted_update": 1,
+                  "total_items_update": 1
+                }
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "SB_ANA_ANA_SB_CREATOR_33",
+          "description": "Checkout with UTM param on URL with unfinished checkout",
+          "filter_by": "utm_source",
+          "case_data": {
+            "unfinished_checkout": [
+              {
+                "case_name": "Directly open link Storefront with unfinished checkout",
+                "refer_link": "",
+                "source": "direct",
+                "medium": "none",
+                "campaigns": "not_set",
+                "term": "not_set",
+                "content": "not_set",
+                "data_updated": {
+                  "view_content_update": 1,
+                  "total_orders_update": 0,
+                  "session_converted_update": 0,
+                  "total_items_update": 0
+                }
+              },
+              {
+                "case_name": "Open link Storefront from Facebook with unfinished checkout",
+                "refer_link": "?fbclid=IwAR29tj4i8nFGysI0qOMziQFIIY7wWIvPK3h_-fs6-ynM5XQMe-KItacXHjc",
+                "source": "Facebook",
+                "medium": "referral",
+                "campaigns": "not_set",
+                "term": "not_set",
+                "content": "not_set",
+                "data_updated": {
+                  "view_content_update": 1,
+                  "total_orders_update": 0,
+                  "session_converted_update": 0,
+                  "total_items_update": 0
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "SB_ANA_ANA_SB_CREATOR_34": {
+      "filter_by": "utm_source",
+      "case_data": {
+        "unfinished_checkout": [
+          {
+            "case_name": "Open link Storefront from Facebook with unfinished checkout",
+            "refer_link": "?fbclid=IwAR29tj4i8nFGysI0qOMziQFIIY7wWIvPK3h_-fs6-ynM5XQMe-KItacXHjc",
+            "source": "Facebook",
+            "medium": "referral",
+            "campaigns": "not_set",
+            "term": "not_set",
+            "content": "not_set",
+            "data_updated": {
+              "view_content_update": 1,
+              "total_orders_update": 0,
+              "session_converted_update": 0,
+              "total_items_update": 0
+            }
+          }
+        ]
+      }
+    },
+    "SB_ANA_ANA_SB_CREATOR_35": {
+      "filter_by": "utm_source",
+      "case_data": {
+        "unfinished_checkout": [
+          {
+            "case_name": "Open link Storefront from Facebook with unfinished checkout",
+            "refer_link": "?fbclid=IwAR29tj4i8nFGysI0qOMziQFIIY7wWIvPK3h_-fs6-ynM5XQMe-KItacXHjc",
+            "source": "Facebook",
+            "medium": "referral",
+            "campaigns": "not_set",
+            "term": "not_set",
+            "content": "not_set",
+            "data_updated": {
+              "view_content_update": 1,
+              "total_orders_update": 0,
+              "session_converted_update": 0,
+              "total_items_update": 0
+            }
+          }
+        ]
+      },
+      "case_search": [
+        {
+          "case": "1",
+          "case_name": "Kiểm tra trường hợp search với value không tồn tại trong Traffic by campaigns",
+          "content": "Wrong search UTM source"
+        },
+        {
+          "case": "2",
+          "case_name": "Kiểm tra với trường hợp search với value tồn tại trong Traffic by campaigns",
+          "content": "facebook"
+        },
+        {
+          "case": "3",
+          "case_name": "Kiểm tra trường hợp chọn set column = UTM source nhưng search với column UTM medium với value không tồn tại trong Traffic by campaigns",
+          "content": "Wrong search UTM medium"
+        },
+        {
+          "case": "4",
+          "case_name": "Kiểm tra trường hợp chọn set column = UTM source nhưng search với column UTM medium với value tồn tại trong Traffic by campaigns",
+          "content": "social"
+        }
+      ]
+    },
+    "SB_ANA_ANA_SB_CREATOR_36": {
+      "filter_by": "utm_source",
+      "case_data": {
+        "finished_checkout": [
+          {
+            "case_name": "Directly open link Storefront with finished checkout",
+            "refer_link": "",
+            "source": "direct",
+            "medium": "none",
+            "campaigns": "not_set",
+            "term": "not_set",
+            "content": "not_set",
+            "data_updated": {
+              "view_content_update": 1,
+              "total_orders_update": 1,
+              "session_converted_update": 1,
+              "total_items_update": 1
+            }
+          }
+        ]
+      }
+    },
+    "ADD_STAFF_FULL_PERMISSIONS": {
+      "data": [
+        {
+          "case_id": "SB_ANA_ANA_SB_CREATOR_38",
+          "description": "ADD STAFF",
+          "id_staff": "79726",
+          "data_analytics": {
+            "summary": {
+              "total_sales": 0,
+              "view_content": 0,
+              "session_convert": 0,
+              "cr_rate": 0,
+              "total_orders": 0
+            }
+          },
+          "username": "duyenvu1+2500@beeketing.net",
+          "password": "Dalab@256",
+          "domain": "au-dpro-analytics.onshopbase.com"
+        }
+      ]
+    },
+    "ADD_STAFF_NO_PERMISSIONS_ANA": {
+      "data": [
+        {
+          "case_id": "SB_ANA_ANA_SB_CREATOR_39",
+          "description": "ADD STAFF",
+          "id_staff": "79726",
+          "data_analytics": {
+            "summary": {
+              "total_sales": 0,
+              "view_content": 0,
+              "session_convert": 0,
+              "cr_rate": 0,
+              "total_orders": 0
+            }
+          },
+          "username": "duyenvu1+2500@beeketing.net",
+          "password": "Dalab@256",
+          "domain": "au-dpro-analytics.onshopbase.com"
+        }
+      ]
+    }
+  }
+}

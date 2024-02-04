@@ -1,0 +1,380 @@
+{
+  "paging_param": {
+    "page": "1",
+    "limit": "50"
+  },
+  "param_threshold": 0.1,
+  "max_diff_pixel_ratio": 0.05,
+  "max_diff_pixels": 2000,
+  "env": {
+    "local": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-members.myshopbase.net",
+      "shop_name": "au-members",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "user_id": 73800,
+      "shop_id": 10323172
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-members.myshopbase.net",
+      "shop_name": "au-members",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "user_id": 73800,
+      "shop_id": 10323172
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-members-podtest.onshopbase.com",
+      "shop_name": "au-members-podtest",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "user_id": 73782,
+      "shop_id": 10381972,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-member-prod.onshopbase.com",
+      "shop_name": "au-member-prod",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "user_id": 73782,
+      "shop_id": 10381973
+    }
+  },
+  "timeout": 1000,
+  "cases": {
+    "SB_SC_SCM_1": {
+      "data_create_member": [
+        {
+          "first_name": "test",
+          "last_name": "ocg",
+          "note": "Create member by api",
+          "phone": "",
+          "calling_code": "84",
+          "tags": "",
+          "country_id": 237
+        }
+      ],
+      "member_info": {
+        "img": "icon-user.ee92ec03.svg",
+        "last_signed_in": "-"
+      }
+    },
+    "SB_SC_SCM_2": {},
+    "SB_SC_SCM_3": {
+      "data_create_member": [
+        {
+          "first_name": "test",
+          "last_name": "ocg",
+          "note": "Create member by api",
+          "phone": "",
+          "calling_code": "84",
+          "tags": "",
+          "country_id": 237
+        }
+      ],
+      "keyword_member_empty": "!@#$#RT@#$",
+      "keyword": "test ocg"
+    },
+    "SB_SC_SCM_6": {
+      "data_create_member": [
+        {
+          "first_name": "test",
+          "last_name": "ocg",
+          "note": "Create member by api",
+          "phone": "",
+          "calling_code": "84",
+          "tags": "",
+          "country_id": 237
+        }
+      ],
+      "list_label_add_member": ["First name", "Last name", "Email", "Country", "Phone number", "Notes", "Tags"],
+      "list_label": ["First name", "Last name", "Email", "Country", "Phone number", "Tags"],
+      "create_member_email_duplicate": {
+        "email": "shopbase@beeketing.net",
+        "first_name": "ocg",
+        "last_name": "test",
+        "note": "string",
+        "phone": "0358121435",
+        "tags": "Test",
+        "country": "Vietnam"
+      },
+      "list_data_create_member_successful": [
+        {
+          "description": "Bỏ trống First name",
+          "data": {
+            "email": "shopbase@beeketing.net",
+            "last_name": "test",
+            "note": "string",
+            "phone": "0358121435",
+            "tags": "Test",
+            "country": "Vietnam",
+            "not_send_email": true
+          }
+        },
+        {
+          "description": "Bỏ trống last name",
+          "data": {
+            "email": "shopbase01@beeketing.net",
+            "first_name": "ocg",
+            "note": "string",
+            "phone": "0358121435",
+            "tags": "Test",
+            "country": "Vietnam"
+          }
+        },
+        {
+          "description": "Nhập Email trùng với Email đã bị xóa",
+          "data": {
+            "email": "shopbase03@beeketing.net",
+            "first_name": "ocg",
+            "last_name": "test",
+            "note": "string",
+            "phone": "0358121435",
+            "tags": "Test",
+            "country": "Vietnam"
+          }
+        },
+        {
+          "description": "Bỏ trống phone",
+          "data": {
+            "email": "shopbase04@beeketing.net",
+            "first_name": "ocg",
+            "last_name": "test",
+            "note": "string",
+            "tags": "Test",
+            "country": "Vietnam"
+          }
+        },
+        {
+          "description": "Bỏ trống notes",
+          "data": {
+            "email": "shopbase05@beeketing.net",
+            "first_name": "ocg",
+            "last_name": "test",
+            "tags": "Test",
+            "country": "Vietnam"
+          }
+        },
+        {
+          "description": "Bỏ trống tags",
+          "data": {
+            "email": "shopbase06@beeketing.net",
+            "first_name": "ocg",
+            "last_name": "test",
+            "note": "string",
+            "country": "Vietnam"
+          }
+        },
+        {
+          "description": "Nhập > 1 tags",
+          "data": {
+            "email": "shopbase07@mailinator.com",
+            "first_name": "ocg",
+            "last_name": "test",
+            "note": "string",
+            "country": "Vietnam",
+            "tags": "VIP, SPECIAL"
+          }
+        }
+      ],
+      "list_data_create_member_false": [
+        {
+          "description": "Bỏ trống Email",
+          "label": "Email",
+          "data": {
+            "email": "",
+            "first_name": "ocg",
+            "last_name": "test",
+            "note": "string",
+            "phone": "0358121435",
+            "tags": "Test",
+            "country": "Vietnam"
+          },
+          "message": "Please fill in member email."
+        },
+        {
+          "description": "Nhập Email sai định dạng (nhập khác các ký tự: a-z, 0-9, ._%+-)",
+          "label": "Email",
+          "data": {
+            "email": "shopbase@",
+            "first_name": "ocg",
+            "last_name": "test",
+            "note": "string",
+            "phone": "0358121435",
+            "tags": "Test",
+            "country": "Vietnam"
+          },
+          "message": "Please fill in valid email format."
+        },
+        {
+          "description": "Nhập phone sai định dạng (nhập khác các ký tự: a-z,._%+-)",
+          "label": "Phone number",
+          "data": {
+            "email": "shopbase@beeketing.net",
+            "first_name": "ocg",
+            "last_name": "test",
+            "note": "string",
+            "phone": "test",
+            "tags": "Test",
+            "country": "Vietnam"
+          },
+          "message": "Please fill in valid phone format."
+        }
+      ],
+      "subject_email_create_member": "Welcome to",
+      "email": "shopbase07",
+      "email_not_send": "shopbase"
+    },
+    "SB_SC_SCM_4": {
+      "publish_product": "Publish",
+      "data_create_member": [
+        {
+          "first_name": "test",
+          "last_name": "ocg",
+          "note": "Create member by api",
+          "phone": "",
+          "calling_code": "84",
+          "tags": "",
+          "country_id": 237
+        },
+        {
+          "first_name": "hoa",
+          "last_name": "nguyen",
+          "note": "Create member by api",
+          "phone": "",
+          "calling_code": "84",
+          "tags": "",
+          "country_id": 237
+        }
+      ],
+      "product_list": [
+        {
+          "product": {
+            "type": "online_course",
+            "title": "Internet Security",
+            "handle": "internet-security",
+            "published": true
+          }
+        },
+        {
+          "product": {
+            "type": "coaching_session",
+            "title": "Certified Solution",
+            "handle": "certified-solution",
+            "published": true
+          }
+        }
+      ],
+      "product_name": "Internet Security"
+    },
+    "SB_SC_SCM_5": {
+      "data_create_member": [
+        {
+          "first_name": "test",
+          "last_name": "ocg01",
+          "note": "Create member by api",
+          "phone": "",
+          "calling_code": "84",
+          "tags": "",
+          "country_id": 237
+        },
+        {
+          "first_name": "test",
+          "last_name": "ocg02",
+          "note": "Create member by api",
+          "phone": "",
+          "calling_code": "84",
+          "tags": "",
+          "country_id": 237
+        },
+        {
+          "first_name": "test",
+          "last_name": "ocg03",
+          "note": "Create member by api",
+          "phone": "",
+          "calling_code": "84",
+          "tags": "",
+          "country_id": 237
+        }
+      ],
+      "option_sort": [" Newest added ", " Oldest added ", " Most sales ", " Contact A - Z ", " Contact Z - A "],
+      "sort_by": [
+        {
+          "selected_sort": "Newest added",
+          "members_sorted": [
+            {
+              "member_name": "test ocg03"
+            },
+            {
+              "member_name": "test ocg02"
+            },
+            {
+              "member_name": "test ocg01"
+            }
+          ]
+        },
+        {
+          "selected_sort": "Oldest added",
+          "members_sorted": [
+            {
+              "member_name": "test ocg01"
+            },
+            {
+              "member_name": "test ocg02"
+            },
+            {
+              "member_name": "test ocg03"
+            }
+          ]
+        },
+        {
+          "selected_sort": "Contact A - Z",
+          "members_sorted": [
+            {
+              "member_name": "test ocg01"
+            },
+            {
+              "member_name": "test ocg02"
+            },
+            {
+              "member_name": "test ocg03"
+            }
+          ]
+        },
+        {
+          "selected_sort": "Contact Z - A",
+          "members_sorted": [
+            {
+              "member_name": "test ocg03"
+            },
+            {
+              "member_name": "test ocg02"
+            },
+            {
+              "member_name": "test ocg01"
+            }
+          ]
+        },
+        {
+          "selected_sort": "Most sales",
+          "members_sorted": [
+            {
+              "member_name": "test ocg01"
+            },
+            {
+              "member_name": "test ocg02"
+            },
+            {
+              "member_name": "test ocg03"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

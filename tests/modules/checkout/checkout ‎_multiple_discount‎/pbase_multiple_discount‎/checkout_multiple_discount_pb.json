@@ -1,0 +1,728 @@
+{
+  "api": "https://gapi.dev.shopbase.net",
+  "domain": "au-pb-multi-discount.myshopbase.net",
+  "shop_name": "au-pb-multi-discount",
+  "user_id": 90009,
+  "shop_id": 10334179,
+  "username": "opay-qe-1@beeketing.net",
+  "password": "Z6el|q4&:hwCrVx",
+  "shipping_method": "Premium shipping",
+  "card_info": {
+    "number": "4242424242424242",
+    "holder_name": "Shopbase Auto",
+    "expire_date": "12 / 23",
+    "cvv": "116"
+  },
+  "email": "testerOCG@mailtothis.com",
+  "shipping_address": {
+    "address1": "814 Mission Street",
+    "address2": "",
+    "city": "Los Angeles",
+    "company": "",
+    "country": "United States",
+    "country_code": "US",
+    "country_name": "United States",
+    "cpf_or_cnpj_number": "",
+    "first_name": "Tester",
+    "last_name": "ShopBase",
+    "name": "Jena",
+    "phone": "7036618988",
+    "province": "New York",
+    "province_code": "NY",
+    "zip": "10001",
+    "remember_me": false
+  },
+
+  "acc_dashboard_payment": {
+    "stripe": {
+      "stripe_secret_key": "sk_test_Pfv1RbMLdJwdO7o8FOV4d03600K0JL3zbx"
+    },
+    "payoneer": {
+      "user_name": "MRS_67983696",
+      "password": "h6i00c3huicgqtl5g754bq86t752v2fbndg0f6kd"
+    }
+  },
+
+  "discount_resets": [
+    {
+      "title": "Automatic_discount_freeship",
+      "ends_at": "",
+      "update_fields": ["ends_at"]
+    },
+    {
+      "title": "Automatic_discount_20percent",
+      "ends_at": "",
+      "update_fields": ["ends_at"]
+    }
+  ],
+
+  "boost_upsell_reset": [
+    {
+      "offer": "Auto upsell offer pre-purchase",
+      "id": 2354453
+    },
+    {
+      "offer": "Auto upsell offer post-purchase",
+      "id": 2354453
+    },
+    {
+      "offer": "Auto upsell offer in cart",
+      "id": 2354453
+    },
+    {
+      "offer": "Auto upsell offer bundle",
+      "id": 2354453
+    }
+  ],
+
+  "tipping_info": {
+    "percentages": [5, 10, 15],
+    "is_enable": true,
+    "is_old_layout": false,
+    "option": "1"
+  },
+
+  "cases": {
+    "DRIVEN_PB_MULTIPLE_DISCOUNT": [
+      {
+        "case_id": "SB_DC_MD_PB_01",
+        "case_name": "[Pbase] Order nhập nhiều manual discount và nhiều platform discount vào order và kiểm tra checkout flow, cả 2 loại discount đều có discount freeship",
+        "product": [
+          {
+            "name": "Bikini",
+            "variant_id": 1000009412695279,
+            "quantity": 2
+          },
+          {
+            "name": "Post purchase",
+            "variant_id": 1000009412695279,
+            "quantity": 2
+          }
+        ],
+        "discount_codes_before": [
+          {
+            "code": "Manual_discount_20percent"
+          },
+          {
+            "code": "Manual_free_shipping_us"
+          },
+          {
+            "code": "Manual_discount_fixamt_5$"
+          },
+          {
+            "code": "Manual_discount_20percent_2"
+          },
+          {
+            "code": "Manual_discount_buyxgety_50%"
+          }
+        ],
+        "discounts_replace": [
+          {
+            "replace": "Manual_discount_fixamt_5$",
+            "by": "Opay-discount-percent-10"
+          },
+          {
+            "replace": "Manual_free_shipping_us",
+            "by": "Opay-discount-freeship"
+          }
+        ],
+        "discount_codes_after": [
+          {
+            "code": "Manual_discount_20percent"
+          },
+          {
+            "code": "Opay-discount-freeship"
+          },
+          {
+            "code": "Opay-discount-percent-10"
+          },
+          {
+            "code": "Manual_discount_20percent_2"
+          },
+          {
+            "code": "Manual_discount_buyxgety_50%"
+          }
+        ],
+        "expected_result_before": {
+          "subTotal": 79,
+          "discount": 106.99,
+          "taxes": 7.9,
+          "shipping": 5.99,
+          "tipping": 3.95,
+          "total": 90.85
+        },
+        "expected_result_after": {
+          "subTotal": 66,
+          "discount": 119.99,
+          "taxes": 6.6,
+          "shipping": 5.99,
+          "tipping": 3.3,
+          "total": 75.9
+        }
+      },
+      {
+        "case_id": "SB_DC_MD_PB_02",
+        "case_name": "[Pbase] Order nhập nhiều manual discount (Không có discount freeship) và nhiều platform discount (có discount freeship) vào order và kiểm tra checkout flow",
+        "product": [
+          {
+            "name": "Bikini",
+            "variant_id": 1000009412695279,
+            "quantity": 5
+          },
+          {
+            "name": "Post purchase",
+            "variant_id": 1000009412695279,
+            "quantity": 2
+          }
+        ],
+        "discount_codes_before": [
+          {
+            "code": "Manual_discount_20percent"
+          },
+          {
+            "code": "Manual_discount_buyxgety_50%_2"
+          },
+          {
+            "code": "Manual_discount_fixamt_5$"
+          },
+          {
+            "code": "Manual_discount_20percent_2"
+          },
+          {
+            "code": "Manual_discount_buyxgety_50%"
+          }
+        ],
+        "discounts_replace": [
+          {
+            "replace": "Manual_discount_buyxgety_50%_2",
+            "by": "Opay-discount-percent-10"
+          },
+          {
+            "replace": "Manual_discount_buyxgety_50%",
+            "by": "Opay-discount-freeship"
+          }
+        ],
+        "discount_codes_after": [
+          {
+            "code": "Manual_discount_20percent"
+          },
+          {
+            "code": "Opay-discount-freeship"
+          },
+          {
+            "code": "Opay-discount-percent-10"
+          },
+          {
+            "code": "Manual_discount_20percent_2"
+          },
+          {
+            "code": "Manual_discount_fixamt_5$"
+          }
+        ],
+        "expected_result_before": {
+          "subTotal": 135,
+          "discount": 165,
+          "taxes": 13.5,
+          "shipping": 5.99,
+          "tipping": 6.75,
+          "total": 161.24
+        },
+        "expected_result_after": {
+          "subTotal": 195,
+          "discount": 110.99,
+          "taxes": 19.5,
+          "shipping": 5.99,
+          "tipping": 9.75,
+          "total": 218.26
+        }
+      },
+      {
+        "case_id": "SB_DC_MD_PB_03",
+        "case_name": "[Pbase] Order nhập nhiều manual discount và nhiều platform discount vào order và kiểm tra checkout flow, cả 2 loại discount đều có discount freeship, platform discount đều là discount freeship",
+        "product": [
+          {
+            "name": "Bikini",
+            "variant_id": 1000009412695279,
+            "quantity": 2
+          },
+          {
+            "name": "Post purchase",
+            "variant_id": 1000009412695279,
+            "quantity": 2
+          }
+        ],
+        "discount_codes_before": [
+          {
+            "code": "Manual_discount_20percent"
+          },
+          {
+            "code": "Manual_free_shipping_us"
+          },
+          {
+            "code": "Manual_discount_fixamt_5$"
+          },
+          {
+            "code": "Manual_discount_20percent_2"
+          },
+          {
+            "code": "Manual_discount_buyxgety_50%"
+          }
+        ],
+        "discounts_replace": [
+          {
+            "replace": "Manual_free_shipping_us",
+            "by": "Opay-discount-freeship-2"
+          },
+          {
+            "replace": "Manual_discount_buyxgety_50%",
+            "by": "Opay-discount-freeship"
+          }
+        ],
+        "discount_codes_after": [
+          {
+            "code": "Manual_discount_20percent"
+          },
+          {
+            "code": "Opay-discount-freeship-2"
+          },
+          {
+            "code": "Opay-discount-freeship"
+          },
+          {
+            "code": "Manual_discount_20percent_2"
+          },
+          {
+            "code": "Manual_discount_fixamt_5$"
+          }
+        ],
+        "expected_result_before": {
+          "subTotal": 79,
+          "discount": 106.99,
+          "taxes": 7.9,
+          "shipping": 5.99,
+          "tipping": 3.95,
+          "total": 90.85
+        },
+        "expected_result_after": {
+          "subTotal": 123,
+          "discount": 62.99,
+          "taxes": 12.3,
+          "shipping": 5.99,
+          "tipping": 6.15,
+          "total": 141.45
+        }
+      }
+    ],
+    "DRIVEN_PB_MULTIPLE_DISCOUNT_2": [
+      {
+        "case_id": "SB_DC_MD_PB_04",
+        "case_name": "[Pbase] Order có apply auto discount freeship, nhập nhiều manual discount và nhiều platform discount vào order và kiểm tra checkout flow, cả 2 loại discount còn lại không có discount free ship",
+        "product": [
+          {
+            "name": "Bikini",
+            "variant_id": 1000009412695279,
+            "quantity": 2
+          },
+          {
+            "name": "Post purchase",
+            "variant_id": 1000009412695279,
+            "quantity": 2
+          }
+        ],
+        "discount_codes": [
+          {
+            "code": "Automatic_discount_freeship",
+            "title": "Automatic_discount_freeship",
+            "ends_at": "",
+            "update_fields": ["ends_at"]
+          },
+          {
+            "code": "Manual_discount_20percent"
+          },
+          {
+            "code": "Opay-discount-percent-10"
+          },
+          {
+            "code": "Manual_discount_fixamt_5$"
+          },
+          {
+            "code": "Opay-discount-percent-5"
+          },
+          {
+            "code": "Manual_discount_buyxgety_50%"
+          }
+        ],
+        "expected_result": {
+          "subTotal": 82,
+          "discount": 103.99,
+          "taxes": 8.2,
+          "shipping": 5.99,
+          "tipping": 4.1,
+          "total": 94.3
+        }
+      },
+      {
+        "case_id": "SB_DC_MD_PB_05",
+        "case_name": "[Pbase] Order có apply auto discount freeship, nhập nhiều manual discount và nhiều platform discount vào order và kiểm tra checkout flow, cả 3 loại discount  có discount free ship",
+        "product": [
+          {
+            "name": "Bikini",
+            "variant_id": 1000009412695279,
+            "quantity": 2
+          },
+          {
+            "name": "Post purchase",
+            "variant_id": 1000009412695279,
+            "quantity": 2
+          }
+        ],
+        "discount_codes": [
+          {
+            "code": "Automatic_discount_freeship",
+            "title": "Automatic_discount_freeship",
+            "ends_at": "",
+            "update_fields": ["ends_at"]
+          },
+          {
+            "code": "Manual_discount_20percent"
+          },
+          {
+            "code": "Opay-discount-percent-10"
+          },
+          {
+            "code": "Manual_discount_fixamt_5$"
+          },
+          {
+            "code": "Opay-discount-freeship"
+          },
+          {
+            "code": "Manual_free_shipping_us"
+          }
+        ],
+        "expected_result": {
+          "subTotal": 141,
+          "discount": 44.99,
+          "taxes": 14.1,
+          "shipping": 5.99,
+          "tipping": 7.05,
+          "total": 162.15
+        }
+      },
+      {
+        "case_id": "SB_DC_MD_PB_06",
+        "case_name": "[Pbase] Order có apply auto discount, nhập nhiều manual discount và nhiều platform discount vào order và kiểm tra checkout flow, cả 3 loại discount đều không có discount free ship",
+        "product": [
+          {
+            "name": "Bikini",
+            "variant_id": 1000009412695279,
+            "quantity": 2
+          },
+          {
+            "name": "Post purchase",
+            "variant_id": 1000009412695279,
+            "quantity": 2
+          }
+        ],
+        "discount_codes": [
+          {
+            "code": "Automatic_discount_20percent",
+            "title": "Automatic_discount_20percent",
+            "ends_at": "",
+            "update_fields": ["ends_at"]
+          },
+          {
+            "code": "Manual_discount_20percent"
+          },
+          {
+            "code": "Opay-discount-percent-10"
+          },
+          {
+            "code": "Manual_discount_fixamt_5$"
+          },
+          {
+            "code": "Opay-discount-percent-5"
+          },
+          {
+            "code": "Manual_discount_buyxgety_50%"
+          }
+        ],
+        "expected_result": {
+          "subTotal": 46,
+          "discount": 134,
+          "taxes": 4.6,
+          "shipping": 5.99,
+          "tipping": 2.3,
+          "total": 58.89
+        }
+      }
+    ],
+    "DRIVEN_PB_MULTIPLE_DISCOUNT_3": [
+      {
+        "case_id": "SB_DC_MD_PB_07",
+        "case_name": "[Pbase] Order Pbase có thỏa mãn Freeshipping, apply auto discount freeship",
+        "product": [
+          {
+            "name": "Bikini",
+            "variant_id": 1000009412695279,
+            "quantity": 2
+          },
+          {
+            "name": "Post purchase",
+            "variant_id": 1000009412695279,
+            "quantity": 2
+          }
+        ],
+        "shipping_zone": {
+          "zone_name": "DOMESTIC",
+          "rate": 70,
+          "max_discount_amt": null
+        },
+        "discount_codes": [
+          {
+            "code": "Automatic_discount_freeship",
+            "title": "Automatic_discount_freeship",
+            "ends_at": "",
+            "update_fields": ["ends_at"]
+          },
+          {
+            "code": "Manual_discount_20percent"
+          },
+          {
+            "code": "Manual_discount_fixamt_5$"
+          },
+          {
+            "code": "Manual_discount_buyxgety_50%"
+          }
+        ],
+        "expected_result": {
+          "subTotal": 109,
+          "discount": 76.99,
+          "taxes": 10.9,
+          "shipping": 5.99,
+          "tipping": 5.45,
+          "total": 125.35
+        }
+      },
+      {
+        "case_id": "SB_DC_MD_PB_08",
+        "case_name": "[Pbase] Order Pbase có thỏa mãn Freeshipping, apply auto discount price, manual discount price",
+        "product": [
+          {
+            "name": "Bikini",
+            "variant_id": 1000009412695279,
+            "quantity": 2
+          },
+          {
+            "name": "Post purchase",
+            "variant_id": 1000009412695279,
+            "quantity": 2
+          }
+        ],
+        "shipping_zone": {
+          "zone_name": "DOMESTIC",
+          "rate": 70,
+          "max_discount_amt": null
+        },
+        "discount_codes": [
+          {
+            "code": "Automatic_discount_20percent",
+            "title": "Automatic_discount_20percent",
+            "ends_at": "",
+            "update_fields": ["ends_at"]
+          },
+          {
+            "code": "Manual_discount_20percent"
+          },
+          {
+            "code": "Manual_discount_fixamt_5$"
+          },
+          {
+            "code": "Manual_discount_buyxgety_50%"
+          }
+        ],
+        "expected_result": {
+          "subTotal": 73,
+          "discount": 107,
+          "taxes": 7.3,
+          "shipping": 0,
+          "tipping": 3.65,
+          "total": 83.95
+        }
+      },
+      {
+        "case_id": "SB_DC_MD_PB_09",
+        "case_name": "[Pbase] Order Pbase có thỏa mãn Freeshipping, apply auto discount price, platform discount có discount free ship",
+        "product": [
+          {
+            "name": "Bikini",
+            "variant_id": 1000009412695279,
+            "quantity": 2
+          },
+          {
+            "name": "Post purchase",
+            "variant_id": 1000009412695279,
+            "quantity": 2
+          }
+        ],
+        "shipping_zone": {
+          "zone_name": "DOMESTIC",
+          "rate": 70,
+          "max_discount_amt": null
+        },
+        "discount_codes": [
+          {
+            "code": "Automatic_discount_20percent",
+            "title": "Automatic_discount_20percent",
+            "ends_at": "",
+            "update_fields": ["ends_at"]
+          },
+          {
+            "code": "Manual_discount_20percent"
+          },
+          {
+            "code": "Manual_discount_fixamt_5$"
+          },
+          {
+            "code": "Opay-discount-freeship"
+          }
+        ],
+        "expected_result": {
+          "subTotal": 123,
+          "discount": 62.99,
+          "taxes": 12.3,
+          "shipping": 5.99,
+          "tipping": 6.15,
+          "total": 141.45
+        }
+      },
+      {
+        "case_id": "SB_DC_MD_PB_10",
+        "case_name": "[Pbase] Order Pbase có thỏa mãn Freeshipping, apply auto discount price, platform discount có discount free ship, sử dụng line ship Fast shipping",
+        "product": [
+          {
+            "name": "Bikini",
+            "variant_id": 1000009412695279,
+            "quantity": 2
+          },
+          {
+            "name": "Post purchase",
+            "variant_id": 1000009412695279,
+            "quantity": 2
+          }
+        ],
+        "shipping_zone": {
+          "zone_name": "DOMESTIC",
+          "rate": 70,
+          "max_discount_amt": null
+        },
+        "shipping_method": "Fast shipping",
+        "discount_codes_before": [
+          {
+            "code": "Manual_discount_20percent"
+          },
+          {
+            "code": "Manual_free_shipping_us"
+          },
+          {
+            "code": "Manual_discount_fixamt_5$"
+          },
+          {
+            "code": "Manual_discount_20percent_2"
+          },
+          {
+            "code": "Manual_discount_buyxgety_50%"
+          }
+        ],
+        "discounts_replace": [
+          {
+            "replace": "Manual_free_shipping_us",
+            "by": "Opay-discount-freeship-2"
+          },
+          {
+            "replace": "Manual_discount_buyxgety_50%",
+            "by": "Opay-discount-freeship"
+          }
+        ],
+        "discount_codes_after": [
+          {
+            "code": "Manual_discount_20percent"
+          },
+          {
+            "code": "Opay-discount-freeship-2"
+          },
+          {
+            "code": "Opay-discount-freeship"
+          },
+          {
+            "code": "Manual_discount_20percent_2"
+          },
+          {
+            "code": "Manual_discount_fixamt_5$"
+          }
+        ],
+        "expected_result_before": {
+          "subTotal": 79,
+          "discount": 106.99,
+          "taxes": 7.9,
+          "shipping": 5.99,
+          "tipping": 3.95,
+          "total": 90.85
+        },
+        "expected_result_after": {
+          "subTotal": 123,
+          "discount": 62.99,
+          "taxes": 12.3,
+          "shipping": 5.99,
+          "tipping": 6.15,
+          "total": 141.45
+        }
+      }
+    ],
+    "SB_DC_MD_PB_11": {
+      "product": [
+        {
+          "name": "Bikini",
+          "variant_id": 1000009412695279,
+          "quantity": 2
+        },
+        {
+          "name": "Post purchase",
+          "variant_id": 1000009412695279,
+          "quantity": 2
+        }
+      ],
+      "discount_codes_before": [
+        {
+          "code": "Automatic_discount_20percent",
+          "title": "Automatic_discount_20percent",
+          "ends_at": "",
+          "update_fields": ["ends_at"]
+        },
+        {
+          "code": "Opay-discount-freeship"
+        }
+      ],
+      "discounts_replace": [
+        {
+          "replace": "Opay-discount-freeship"
+        }
+      ],
+      "expected_result_before": {
+        "subTotal": 144,
+        "discount": 41.99,
+        "taxes": 14.4,
+        "shipping": 5.99,
+        "tipping": 7.2,
+        "total": 165.6
+      },
+      "expected_result_after": {
+        "subTotal": 144,
+        "discount": 36,
+        "taxes": 14.4,
+        "shipping": 0,
+        "tipping": 7.2,
+        "total": 165.6
+      }
+    }
+  }
+}

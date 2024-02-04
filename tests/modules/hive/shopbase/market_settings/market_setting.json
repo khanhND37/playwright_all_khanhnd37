@@ -1,0 +1,501 @@
+{
+  "hive_domain": "hive.dev.shopbase.net",
+  "hive_username": "shopbase",
+  "hive_password": "123456",
+  "default_negative": 0,
+  "default_alert": 0,
+  "api": "https://gapi.dev.shopbase.net",
+  "accounts": [
+    {
+      "domain": "quanleglobalmarket.myshopbase.net",
+      "api": "https://gapi.dev.shopbase.net",
+      "shop_domain": "quanleglobalmarket.myshopbase.net",
+      "username": "quanle1+2@beeketing.net",
+      "mail": "qaocgnotfull",
+      "password": "Abc@12345",
+      "balance": -1,
+      "shop_name": "quanleglobalmarket",
+      "shop_id": "10320753",
+      "user_id": "89064"
+    },
+    {
+      "domain": "quan-morocco.myshopbase.net",
+      "api": "https://gapi.dev.shopbase.net",
+      "shop_domain": "quan-morocco.myshopbase.net",
+      "username": "quanle1+3@beeketing.net",
+      "mail": "quanocg",
+      "password": "Abc@12345",
+      "balance": 0,
+      "shop_name": "quan-morocco",
+      "shop_id": "10320773",
+      "user_id": "89066"
+    }
+  ],
+  "subjectAlert": "Your ShopBase Balance reached the alert amount",
+  "subjectTopup": "topup balance",
+  "details_of_balance": "Auto recharge top up",
+  "bannerAlert": "Your current balance is less than the alert threshold.",
+  "cases": {
+    "SET_MAR": [
+      {
+        "case_id": "SB_SB_HIVE_GLO_MAR_87",
+        "case_name": "Tạo market với negative và alert để giá trị mặc định",
+        "case_create": true,
+        "region_code": "VN",
+        "payment_methods": [
+          {
+            "name": "PingPong - billing@shopbase.com",
+            "display_name": "PingPong",
+            "key": "PingPong account",
+            "value": "billing@shopbase.com"
+          },
+          {
+            "name": "Payoneer - billing@shopbase.com",
+            "display_name": "Payoneer",
+            "key": "Payoneer account:",
+            "value": "billing@shopbase.com"
+          }
+        ],
+        "user_id": [89064, 89066],
+        "default_methods": {
+          "name": "PingPong - billing@shopbase.com",
+          "display_name": "PingPong",
+          "key": "PingPong account",
+          "value": "billing@shopbase.com"
+        },
+        "negative": "",
+        "alert": ""
+      },
+      {
+        "case_id": "SB_SB_HIVE_GLO_MAR_88",
+        "case_name": "Tạo market với negative và alert nhập giá trị mới",
+        "case_create": true,
+        "region_code": "VN",
+        "negative": "6000",
+        "alert": "6700",
+        "payment_methods": [
+          {
+            "name": "PingPong - billing@shopbase.com",
+            "display_name": "PingPong",
+            "key": "PingPong account",
+            "value": "billing@shopbase.com"
+          },
+          {
+            "name": "Payoneer - billing@shopbase.com",
+            "display_name": "Payoneer",
+            "key": "Payoneer account:",
+            "value": "billing@shopbase.com"
+          }
+        ],
+        "default_methods": {
+          "name": "PingPong - billing@shopbase.com",
+          "display_name": "PingPong",
+          "key": "PingPong account",
+          "value": "billing@shopbase.com"
+        },
+        "user_id": [89064, 89066]
+      }
+    ],
+    "SB_SB_HIVE_GLO_MAR_86": {
+      "columns": [
+        {
+          "name": "Region Name"
+        },
+        {
+          "name": "Enabled"
+        },
+        {
+          "name": "Approved"
+        },
+        {
+          "name": "Created at"
+        },
+        {
+          "name": "Updated at"
+        }
+      ]
+    },
+    "SB_SB_HIVE_GLO_MAR_87": {
+      "region_code": "VN",
+      "country": "Vietnam",
+      "approved": true,
+      "negative": 0,
+      "alert": 50,
+      "payment_methods": [
+        {
+          "name": "Bank Transfer 9800327112",
+          "display_name": "US Bank Account",
+          "key": "Routing number:",
+          "value": "084106768"
+        },
+        {
+          "name": "Payoneer - billing@shopbase.com",
+          "display_name": "Payoneer",
+          "key": "Payoneer account:",
+          "value": "billing@shopbase.com"
+        },
+        {
+          "name": "PingPong - billing@shopbase.com",
+          "display_name": "PingPong",
+          "key": "PingPong account",
+          "value": "billing@shopbase.com"
+        }
+      ],
+      "default_methods": "Bank Transfer 9800327112"
+    },
+    "SB_SB_HIVE_GLO_MAR_88": {
+      "region_code": "VN",
+      "country": "Vietnam",
+      "approved": false,
+      "enable": true,
+      "negative": 6000,
+      "alert": 6700,
+      "payment_methods": [
+        {
+          "name": "Bank Transfer 9800327112",
+          "display_name": "US Bank Account",
+          "key": "Routing number:",
+          "value": "084106768"
+        },
+        {
+          "name": "Payoneer - billing@shopbase.com",
+          "display_name": "Payoneer",
+          "key": "Payoneer account:",
+          "value": "billing@shopbase.com"
+        },
+        {
+          "name": "PingPong - billing@shopbase.com",
+          "display_name": "PingPong",
+          "key": "PingPong account",
+          "value": "billing@shopbase.com"
+        }
+      ],
+      "default_methods": "Bank Transfer 9800327112"
+    },
+    "SB_SB_HIVE_GLO_MAR_89": {
+      "region_code": "VN",
+      "country": "Vietnam",
+      "approved": true,
+      "negative": 0,
+      "alert": 50,
+      "payment_methods": [
+        {
+          "name": "Bank Transfer 9800327112",
+          "display_name": "US Bank Account",
+          "key": "Routing number:",
+          "value": "084106768"
+        },
+        {
+          "name": "Payoneer - billing@shopbase.com",
+          "display_name": "Payoneer",
+          "key": "Payoneer account:",
+          "value": "billing@shopbase.com"
+        },
+        {
+          "name": "PingPong - billing@shopbase.com",
+          "display_name": "PingPong",
+          "key": "PingPong account",
+          "value": "billing@shopbase.com"
+        }
+      ],
+      "default_methods": "Bank Transfer 9800327112"
+    },
+    "SB_SB_HIVE_GLO_MAR_90": {
+      "region_code": "USG",
+      "approved": true,
+      "negative": 10000,
+      "alert": 1500,
+      "payment_methods": [
+        {
+          "name": "Bank Transfer 9800327112",
+          "display_name": "US Bank Account",
+          "key": "Routing number:",
+          "value": "084106768"
+        },
+        {
+          "name": "Payoneer - billing@shopbase.com",
+          "display_name": "Payoneer",
+          "key": "Payoneer account:",
+          "value": "billing@shopbase.com"
+        },
+        {
+          "name": "PingPong - billing@shopbase.com",
+          "display_name": "PingPong",
+          "key": "PingPong account",
+          "value": "billing@shopbase.com"
+        }
+      ],
+      "default_methods": "Bank Transfer 9800327112"
+    },
+    "SB_SB_HIVE_GLO_MAR_92": {
+      "region_code": "VN",
+      "approved": false,
+      "enable": false,
+      "negative": 0,
+      "alert": 50,
+      "payment_methods_old": [
+        {
+          "name": "Bank Transfer 9800327112",
+          "display_name": "US Bank Account",
+          "key": "Routing number:",
+          "value": "084106768"
+        },
+        {
+          "name": "Payoneer - billing@shopbase.com",
+          "display_name": "Payoneer",
+          "key": "Payoneer account:",
+          "value": "billing@shopbase.com"
+        },
+        {
+          "name": "PingPong - billing@shopbase.com",
+          "display_name": "PingPong",
+          "key": "PingPong account",
+          "value": "billing@shopbase.com"
+        }
+      ],
+      "payment_methods_new": [
+        {
+          "name": "Payoneer - billing@shopbase.com",
+          "display_name": "Payoneer",
+          "key": "Payoneer account:",
+          "value": "billing@shopbase.com"
+        }
+      ],
+      "default_methods_new": "Payoneer - billing@shopbase.com",
+      "default_methods_old": "Bank Transfer 9800327112"
+    },
+    "SB_SB_HIVE_GLO_MAR_91": {
+      "region_code": "VN",
+      "approved": false,
+      "enable": false,
+      "negative": 0,
+      "alert": 50,
+      "payment_methods_old": [
+        {
+          "name": "Bank Transfer 9800327112",
+          "display_name": "US Bank Account",
+          "key": "Routing number:",
+          "value": "084106768"
+        },
+        {
+          "name": "Payoneer - billing@shopbase.com",
+          "display_name": "Payoneer",
+          "key": "Payoneer account:",
+          "value": "billing@shopbase.com"
+        },
+        {
+          "name": "PingPong - billing@shopbase.com",
+          "display_name": "PingPong",
+          "key": "PingPong account",
+          "value": "billing@shopbase.com"
+        }
+      ],
+      "default_methods_old": "Bank Transfer 9800327112"
+    },
+    "SB_SB_HIVE_GLO_MAR_94": {
+      "account": {
+        "domain": "au-global-frozen.myshopbase.net",
+        "api": "https://gapi.dev.shopbase.net",
+        "shop_domain": "au-global-frozen.myshopbase.net",
+        "username": "quanle1+4@beeketing.net",
+        "password": "Abc@12345",
+        "shop_name": "au-global-frozen",
+        "shop_id": "10322192",
+        "user_id": 89190
+      },
+      "title_bar": "Your account has been temporarily suspended for non-payment. Please promptly settle your balance to resume use of ShopBase.",
+      "profile_body_api": {
+        "id": 89190,
+        "shop_id": 10322192,
+        "avatar": "",
+        "confirm_password": "",
+        "email": "quanle1+4@beeketing.net",
+        "first_name": "Quan",
+        "is_receive_notification": false,
+        "name": "Quan OCG",
+        "new_password": "",
+        "last_name": "OCG",
+        "phone_user": "0982821254",
+        "verify_email_status": "not_sent_yet",
+        "calling_code": "84",
+        "promoter_code": "",
+        "active_promoter_code": false,
+        "otp_settings": {
+          "account": {
+            "disabled": false
+          },
+          "payment": {
+            "disabled": false
+          },
+          "payout": {
+            "disabled": false
+          }
+        },
+        "birthday": 476236800,
+        "birthday_month": 2,
+        "birthday_day": 3,
+        "birthday_year": 1985,
+        "country": "Vietnam",
+        "address": "130 Trung Phung",
+        "social_platform": "Facebook",
+        "personal_website": "vietnamabc",
+        "company": "",
+        "username": "quanle1+4@beeketing.net",
+        "is_dev_store": false,
+        "completed_partner_survey": false,
+        "phone_number_verify_status": "not_sent_yet",
+        "owner_status": {
+          "phone_number_verify_status": "not_sent_yet",
+          "email": "quanle1+4@beeketing.net",
+          "phone_user": "0982821254",
+          "calling_code": "84",
+          "verify_email_status": "not_sent_yet"
+        },
+        "crisp_token_id": "540a2a7b-398c-11ed-bd18-a211c1492d32",
+        "created_at": 1663750035,
+        "locale_code": "",
+        "previous_phone": "0982821254"
+      },
+      "declined_profile_body_api": {
+        "id": 89190,
+        "shop_id": 10322192,
+        "avatar": "",
+        "confirm_password": "",
+        "email": "quanle1+4@beeketing.net",
+        "first_name": "add_card_declined_Quan",
+        "is_receive_notification": false,
+        "name": "Quan OCG",
+        "new_password": "",
+        "last_name": "OCG",
+        "phone_user": "0982821254",
+        "verify_email_status": "not_sent_yet",
+        "calling_code": "84",
+        "promoter_code": "",
+        "active_promoter_code": false,
+        "otp_settings": {
+          "account": {
+            "disabled": false
+          },
+          "payment": {
+            "disabled": false
+          },
+          "payout": {
+            "disabled": false
+          }
+        },
+        "birthday": 476236800,
+        "birthday_month": 2,
+        "birthday_day": 3,
+        "birthday_year": 1985,
+        "country": "Vietnam",
+        "address": "130 Trung Phung",
+        "social_platform": "Facebook",
+        "personal_website": "vietnamabc",
+        "company": "",
+        "username": "quanle1+4@beeketing.net",
+        "is_dev_store": false,
+        "completed_partner_survey": false,
+        "phone_number_verify_status": "not_sent_yet",
+        "owner_status": {
+          "phone_number_verify_status": "not_sent_yet",
+          "email": "quanle1+4@beeketing.net",
+          "phone_user": "0982821254",
+          "calling_code": "84",
+          "verify_email_status": "not_sent_yet"
+        },
+        "crisp_token_id": "540a2a7b-398c-11ed-bd18-a211c1492d32",
+        "created_at": 1663750035,
+        "locale_code": "",
+        "previous_phone": "0982821254"
+      }
+    },
+    "SB_SB_HIVE_GLO_MAR_96": {
+      "region_code": "VN",
+      "default_methods": "Bank Transfer 9800327112",
+      "payment_methods": [
+        {
+          "name": "Bank Transfer 9800327112",
+          "display_name": "US Bank Account",
+          "key": "Routing number:",
+          "value": "084106768"
+        }
+      ]
+    },
+    "SB_SB_HIVE_GLO_MAR_97": {
+      "region_code_dupplicate": "USG",
+      "region_code_old": "VN",
+      "approved": true,
+      "negative": 0,
+      "alert": 50,
+      "payment_methods_old": [
+        {
+          "name": "Bank Transfer 9800327112",
+          "display_name": "US Bank Account",
+          "key": "Routing number:",
+          "value": "084106768"
+        },
+        {
+          "name": "Payoneer - billing@shopbase.com",
+          "display_name": "Payoneer",
+          "key": "Payoneer account:",
+          "value": "billing@shopbase.com"
+        },
+        {
+          "name": "PingPong - billing@shopbase.com",
+          "display_name": "PingPong",
+          "key": "PingPong account",
+          "value": "billing@shopbase.com"
+        },
+        {
+          "name": "CreditCard",
+          "display_name": "Credit card"
+        }
+      ],
+      "payment_methods_new": [
+        {
+          "name": "Payoneer - billing@shopbase.com",
+          "display_name": "Payoneer",
+          "key": "Payoneer account:",
+          "value": "billing@shopbase.com"
+        }
+      ],
+      "default_methods_new": "Payoneer - billing@shopbase.com",
+      "default_methods_old": "Bank Transfer 9800327112"
+    },
+    "SB_SB_HIVE_GLO_MAR_98": {
+      "region_code_edit": "VN",
+      "region_code": "Bangladesh",
+      "approved": true,
+      "enable": false,
+      "negative": 0,
+      "alert": 50,
+      "payment_methods": [
+        {
+          "name": "Bank Transfer 9800327112",
+          "display_name": "US Bank Account",
+          "key": "Routing number:",
+          "value": "084106768"
+        },
+        {
+          "name": "Payoneer - billing@shopbase.com",
+          "display_name": "Payoneer",
+          "key": "Payoneer account:",
+          "value": "billing@shopbase.com"
+        },
+        {
+          "name": "PingPong - billing@shopbase.com",
+          "display_name": "PingPong",
+          "key": "PingPong account",
+          "value": "billing@shopbase.com"
+        }
+      ],
+      "default_methods": "Payoneer - billing@shopbase.com"
+    }
+  },
+  "env": {
+    "prodtest": {
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://prod-test-api.shopbase.com"
+    }
+  }
+}

@@ -1,0 +1,268 @@
+{
+  "add_section": {
+    "from": {
+      "category": "Test template",
+      "template": "Test section"
+    },
+    "to": {
+      "position": {
+        "section": 0
+      }
+    }
+  },
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-web-page-style.onshopbase.com",
+      "shop_name": "au-web-page-style",
+      "shop_id": 10452581,
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "user_id": 11260206,
+      "theme_test": "[Web page style] Template run auto"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-web-page-style-prodtest.onshopbase.com",
+      "shop_name": "au-web-page-style-prodtest",
+      "shop_id": 10484152,
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "user_id": 11260206,
+      "accounts_domain": "accounts-test.shopbase.com",
+      "theme_test": "[Web page style] Template run auto"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-web-page-style.myshopbase.net",
+      "shop_name": "au-web-page-style",
+      "shop_id": 10334447,
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "user_id": 90252,
+      "theme_test": "[Web page style] Template run auto"
+    }
+  },
+  "cases": {
+    "SET_STYLE": {
+      "data": [
+        {
+          "case_id": "SB_WEB_BUILDER_WEB_PAGE_STYLE_4",
+          "description": "Check change Colors with page style",
+          "type": "Page",
+          "is_apply_library": false,
+          "style": [
+            {
+              "styling": "Colors",
+              "colors": ["#F7F9FC", "#C6D6EC", "#493CDD", "#452060", "#160A1F"],
+              "snapshot_preview": "choose_color_page_style_preview.png"
+            },
+            {
+              "styling": "Fonts",
+              "fonts": [
+                {
+                  "tab": "Heading",
+                  "font": "Aguafina Script",
+                  "size": [
+                    {
+                      "tag": "Heading 1",
+                      "value": 60
+                    },
+                    {
+                      "tag": "Heading 2",
+                      "value": 20
+                    },
+                    {
+                      "tag": "Heading 3",
+                      "value": 37
+                    },
+                    {
+                      "tag": "Heading 4",
+                      "value": 32
+                    }
+                  ]
+                },
+                {
+                  "tab": "Paragraph",
+                  "font": "Aladin",
+                  "size": [
+                    {
+                      "tag": "Paragraph 1",
+                      "value": 22
+                    },
+                    {
+                      "tag": "Paragraph 2",
+                      "value": 24
+                    },
+                    {
+                      "tag": "Paragraph 3",
+                      "value": 12
+                    }
+                  ]
+                }
+              ],
+              "snapshot_preview": "choose_font_page_style_preview.png"
+            }
+          ],
+          "expected": {
+            "snapshots": {
+              "storefront": "choose_color_font_page_style_storefront.png"
+            }
+          }
+        },
+        {
+          "case_id": "SB_WEB_BUILDER_WEB_PAGE_STYLE_6",
+          "description": "Check change Colors with web style",
+          "type": "Web",
+          "is_apply_library": false,
+          "style": [
+            {
+              "styling": "Colors",
+              "colors": ["#FCFDED", "#EAF28C", "#4030E8", "#555C0A", "#1A1C03"],
+              "snapshot_preview": "choose_color_web_style_preview.png"
+            },
+            {
+              "styling": "Fonts",
+              "fonts": [
+                {
+                  "tab": "Heading",
+                  "font": "Alkalami",
+                  "size": [
+                    {
+                      "tag": "Heading 1",
+                      "value": 60
+                    },
+                    {
+                      "tag": "Heading 2",
+                      "value": 20
+                    },
+                    {
+                      "tag": "Heading 3",
+                      "value": 37
+                    },
+                    {
+                      "tag": "Heading 4",
+                      "value": 32
+                    }
+                  ]
+                },
+                {
+                  "tab": "Paragraph",
+                  "font": "Abyssinica SIL",
+                  "size": [
+                    {
+                      "tag": "Paragraph 1",
+                      "value": 22
+                    },
+                    {
+                      "tag": "Paragraph 2",
+                      "value": 24
+                    },
+                    {
+                      "tag": "Paragraph 3",
+                      "value": 12
+                    }
+                  ]
+                }
+              ],
+              "snapshot_preview": "choose_font_web_style_preview.png"
+            }
+          ],
+          "expected": {
+            "snapshots": {
+              "storefront": "choose_color_font_web_style_storefront.png"
+            }
+          }
+        }
+      ]
+    },
+    "STYLE_LIBRARY": {
+      "data": [
+        {
+          "case_id": "SB_WEB_BUILDER_WEB_PAGE_STYLE_5",
+          "description": "Check choose Colors from library with page style",
+          "type": "Page",
+          "is_apply_library": true,
+          "style": [
+            {
+              "styling": "Colors",
+              "color_library": "Test color library",
+              "snapshot": "case5_library_color_page_style_preview.png"
+            },
+            {
+              "styling": "Fonts",
+              "font_library": 1,
+              "snapshot": "case5_library_font_page_style_preview.png"
+            }
+          ],
+          "expected": {
+            "snapshots": {
+              "storefront": "case5_library_font_color_page_style_storefront.png"
+            }
+          }
+        },
+        {
+          "case_id": "SB_WEB_BUILDER_WEB_PAGE_STYLE_7",
+          "description": "Check choose Colors from library with web style",
+          "type": "Web",
+          "is_apply_library": true,
+          "style": [
+            {
+              "styling": "Colors",
+              "color_library": "Test color 2 library",
+              "snapshot": "case7_library_color_web_style_preview.png"
+            },
+            {
+              "styling": "Fonts",
+              "font_library": 2,
+              "snapshot": "case7_library_font_web_style_preview.png"
+            }
+          ],
+          "expected": {
+            "snapshots": {
+              "storefront": "case7_library_font_color_web_style_storefront.png"
+            }
+          }
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_WEB_PAGE_STYLE_8": {
+      "description": "Check setting Buttons",
+      "expand_section": {
+        "section_name": "Test section"
+      },
+      "open_block_button": {
+        "section_name": "Test section",
+        "block_name": "Button"
+      },
+      "styling": "Buttons",
+      "setting": [
+        {
+          "button": "Primary",
+          "font": "Heading 2",
+          "shape": 2,
+          "size": "Medium",
+          "shadow": 3
+        },
+        {
+          "button": "Secondary",
+          "font": "Paragraph 3",
+          "shape": 3,
+          "size": "Small",
+          "shadow": 2
+        }
+      ],
+      "expect": {
+        "snapshot_webfront": "case8_setting_button_preview.png",
+        "snapshot_sf": "case8_setting_button_storefront.png"
+      }
+    },
+    "SB_WEB_BUILDER_WEB_PAGE_STYLE_10": {
+      "description": "Check setting Page styles",
+      "type": "Web",
+      "snapshot_page": "case10_page_style.png",
+      "snapshot_web": "case10_web_style.png",
+      "snapshot_sf": "case10_web_style_sf.png"
+    }
+  }
+}

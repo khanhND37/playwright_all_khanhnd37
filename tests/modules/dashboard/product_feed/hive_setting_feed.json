@@ -1,0 +1,163 @@
+{
+  "env": {
+    "prod": {
+      "hive_domain": "hive.shopbase.com",
+      "hive_username": "shopbase",
+      "hive_password": "123456",
+      "api": "https://api.shopbase.com",
+      "domain": "au-product-feed-hive.onshopbase.com",
+      "shop_name": "au-product-feed-hive",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10082665,
+      "user_id": 73800,
+      "timeout": "30000"
+    },
+    "prodtest": {
+      "hive_domain": "hive-test.shopbase.com",
+      "hive_username": "shopbase",
+      "hive_password": "123456",
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-product-feed-hive-prodtest.onshopbase.com",
+      "shop_name": "au-product-feed-hive",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10364588,
+      "user_id": 73800,
+      "timeout": "30000",
+      "accounts_domain": "accounts-test.shopbase.com"
+    }
+  },
+  "cases": {
+    "CHECK_ENABLE_PRODUCT_FEED": {
+      "data": [
+        {
+          "case_id": "SB_SET_SC_Feed_GMC_SET_FEED_HIVE_7",
+          "enabled": "",
+          "sandbox_id": "",
+          "approved": ""
+        },
+        {
+          "case_id": "SB_SET_SC_Feed_GMC_SET_FEED_HIVE_8",
+          "enabled": "checked",
+          "sandbox_id": "",
+          "approved": ""
+        },
+        {
+          "case_id": "SB_SET_SC_Feed_GMC_SET_FEED_HIVE_9",
+          "enabled": "checked",
+          "sandbox_id": "73800",
+          "approved": ""
+        }
+      ]
+    },
+    "CHECK_UPDATE_SETTING_FEED": {
+      "data": [
+        {
+          "case_id": "SB_SET_SC_Feed_GMC_SET_FEED_HIVE_5",
+          "obj": {
+            "name_before": "Others test",
+            "feed_name": "Others test update change title product feed automation",
+            "feed_title": "Others test update change title product feed automation",
+            "code": "other_test",
+            "dashboard_ui": "full_others",
+            "icon": "Shopbase.png",
+            "short_description": "Other test update change short description product feed",
+            "description": "Other test update change description product feed",
+            "feed_limitation": "1",
+            "when_exceeding_limit": "Disable sales channel",
+            "priority": "1",
+            "approve_checkbox": "checked",
+            "sync_method": "File",
+            "schedule_time": "Every 1 hour",
+            "variant_limitation": "10",
+            "when_exceeding_variant_limitation": "Stop when reaching limit",
+            "file_limitation": "1",
+            "when_exceeding_file_limit": "Stop when reaching limit",
+            "file_type": "csv"
+          }
+        },
+        {
+          "case_id": "SB_SET_SC_Feed_GMC_SET_FEED_HIVE_6",
+          "obj": {
+            "name_before": "Others test update change title product feed automation",
+            "feed_name": "Others test",
+            "feed_title": "Others test",
+            "code": "other_test",
+            "dashboard_uI": "full_others",
+            "icon": "85229.png",
+            "short_description": "Other test",
+            "description": "Other test",
+            "feed_limitation": "3",
+            "when_exceeding_limit": "Disable sales channel",
+            "priority": "1000",
+            "approve_checkbox": "checked",
+            "sync_method": "File",
+            "schedule_time": "Every 1 hour",
+            "variant_limitation": "100",
+            "when_exceeding_variant_limitation": "Stop when reaching limit",
+            "file_limitation": "1",
+            "when_exceeding_file_limit": "Stop when reaching limit",
+            "file_type": "csv"
+          }
+        }
+      ]
+    },
+    "CHECK_LOGIC_EXCEEDING_LIMITATION": {
+      "data": [
+        {
+          "case_id": "SB_SET_SC_Feed_GMC_SET_FEED_HIVE_21",
+          "obj": {
+            "name": "Other test",
+            "feed_name": "number 1",
+            "variant_limitation": "1000",
+            "when_exceeding_variant_limitation": "Stop when reaching limit",
+            "file_limitation": "",
+            "when_exceeding_file_limit": "Stop when reaching limit",
+            "total_products_verify": "92",
+            "the_number_of_link": 1
+          }
+        },
+        {
+          "case_id": "SB_SET_SC_Feed_GMC_SET_FEED_HIVE_22",
+          "obj": {
+            "name": "Other test",
+            "feed_name": "number 2",
+            "variant_limitation": "10",
+            "when_exceeding_variant_limitation": "Stop when reaching limit",
+            "file_limitation": "",
+            "when_exceeding_file_limit": "Stop when reaching limit",
+            "total_products_verify": "10",
+            "the_number_of_link": 1
+          }
+        },
+        {
+          "case_id": "SB_SET_SC_Feed_GMC_SET_FEED_HIVE_25",
+          "obj": {
+            "name": "Other test",
+            "feed_name": "number 3",
+            "variant_limitation": "1000",
+            "when_exceeding_variant_limitation": "Split into more links",
+            "file_limitation": "",
+            "when_exceeding_file_limit": "Stop when reaching limit",
+            "total_products_verify": "92",
+            "the_number_of_link": 1
+          }
+        },
+        {
+          "case_id": "SB_SET_SC_Feed_GMC_SET_FEED_HIVE_26",
+          "obj": {
+            "name": "Other test",
+            "feed_name": "number 4",
+            "variant_limitation": "10",
+            "when_exceeding_variant_limitation": "Split into more links",
+            "file_limitation": "",
+            "when_exceeding_file_limit": "Stop when reaching limit",
+            "total_products_verify": "92",
+            "the_number_of_link": 10
+          }
+        }
+      ]
+    }
+  }
+}

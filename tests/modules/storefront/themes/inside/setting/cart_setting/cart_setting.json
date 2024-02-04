@@ -1,0 +1,666 @@
+{
+  "env": {
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "domain": "au-inside-cart-setting-prodtest.onshopbase.com",
+      "shop_name": "au-inside-cart-setting-prodtest.onshopbase.com",
+      "user_id": 73782,
+      "shop_id": 10359571,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "domain": "au-inside-setting-cart.onshopbase.com",
+      "shop_name": "au-inside-setting-cart.onshopbase.com",
+      "user_id": 73782,
+      "shop_id": 10341646
+    },
+    "dev": {
+      "domain": "au-v2-cart-setting.myshopbase.net",
+      "shop_name": "au-v2-cart-setting.myshopbase.net",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10331970,
+      "user_id": 90252
+    }
+  },
+  "cases": {
+    "CART_SETTING": {
+      "data": [
+        {
+          "description": "Desktop_Check display default data with cart type = Open cart drawer",
+          "case_id": "SB_OLS_THE_INS_SF_CART_SETTING_16",
+          "open_cartdrawer": true,
+          "icon_cart_draw": "[data-section='header'] .mini-cart",
+          "expect": {
+            "product_page": {
+              "product_handle": "writer-s-club-chair",
+              "product_name": "Writer's Club Chair",
+              "sticky_button": ".sticky-button span",
+              "redirect_link": {
+                "redirect_selector": ".cart-drawer-footer [name='checkout']",
+                "redirect_url": "/checkout",
+                "wait_element": ".checkout-product__name"
+              }
+            },
+            "home_page": {
+              "featured_product": {
+                "product_name": "Rebecca Stern"
+              },
+              "featured_collection": {
+                "product_name": "Livingston Demilune Console"
+              },
+              "app_widget": {
+                "type_app": "[type='best-seller']"
+              }
+            }
+          },
+          "input": [
+            {
+              "cart": {
+                "cart_type": "drawer",
+                "enable_trust_badge": true,
+                "mini_cart_checkout": true,
+                "mini_cart_checkout_help_text": null,
+                "show_total_savings": false,
+                "trust_badge": "https://img.btdmp.com/themes/3/assets/trust_badge.png"
+              }
+            },
+            {
+              "cart_goal": {
+                "cart_goal_amount": "150",
+                "cart_goal_enable": false,
+                "cart_goal_motivational_message": "Buy {{variable}} more to enjoy FREE Shipping",
+                "cart_goal_reach_message": "Congrats! You are eligible for FREE Shipping"
+              }
+            }
+          ]
+        },
+        {
+          "description": "Mobile_Check display default data with cart type = Open cart drawer",
+          "case_id": "SB_OLS_THE_INS_SF_CART_SETTING_17",
+          "open_cartdrawer": true,
+          "expect": {
+            "mobile": true,
+            "product_page": {
+              "product_handle": "writer-s-club-chair",
+              "product_name": "Writer's Club Chair"
+            }
+          },
+          "input": [
+            {
+              "cart": {
+                "cart_type": "drawer",
+                "enable_trust_badge": true,
+                "mini_cart_checkout": true,
+                "mini_cart_checkout_help_text": null,
+                "show_total_savings": false,
+                "trust_badge": "https://img.btdmp.com/themes/3/assets/trust_badge.png"
+              }
+            },
+            {
+              "cart_goal": {
+                "cart_goal_amount": "150",
+                "cart_goal_enable": false,
+                "cart_goal_motivational_message": "Buy {{variable}} more to enjoy FREE Shipping",
+                "cart_goal_reach_message": "Congrats! You are eligible for FREE Shipping"
+              }
+            }
+          ]
+        },
+        {
+          "description": "Desktop_Check cart when setting cart with cart type = Refresh current page",
+          "case_id": "SB_OLS_THE_INS_SF_CART_SETTING_18",
+          "icon_cart_draw": "[data-section='header'] .mini-cart",
+          "open_cartdrawer": true,
+          "expect": {
+            "product_page": {
+              "product_handle": "writer-s-club-chair",
+              "product_name": "Writer's Club Chair",
+              "sticky_button": ".sticky-button span",
+              "icon_cart_draw": "[data-section='header'] .mini-cart",
+              "redirect_link": {
+                "redirect_selector": ".cart-drawer-footer [name='checkout']",
+                "redirect_url": "/checkout",
+                "wait_element": ".checkout-product__name"
+              }
+            },
+            "home_page": {
+              "featured_product": {
+                "icon_cart_draw": "[data-section='header'] .mini-cart",
+                "product_name": "Rebecca Stern"
+              },
+              "featured_collection": {
+                "icon_cart_draw": "[data-section='header'] .mini-cart",
+                "product_name": "Livingston Demilune Console"
+              },
+              "app_widget": {
+                "icon_cart_draw": "[data-section='header'] .mini-cart",
+                "type_app": "[type='best-seller']"
+              }
+            },
+            "gotocart_button": {
+              "redirect_link": {
+                "redirect_selector": ".cart-drawer-summary__go-to-cart",
+                "redirect_url": "/cart",
+                "wait_element": ".product-cart-wrapper"
+              },
+              "verify_image": "16618317775ef9f91aef.jpeg"
+            }
+          },
+          "input": [
+            {
+              "cart": {
+                "cart_type": "refresh",
+                "enable_trust_badge": true,
+                "mini_cart_checkout": false,
+                "mini_cart_checkout_help_text": null,
+                "show_total_savings": false,
+                "trust_badge": "https://img.shopbase.com/files/10341646/2022/08/30/16618317775ef9f91aef.jpeg"
+              }
+            },
+            {
+              "cart_goal": {
+                "cart_goal_amount": "150",
+                "cart_goal_enable": false,
+                "cart_goal_motivational_message": "Buy {{variable}} more to enjoy FREE Shipping",
+                "cart_goal_reach_message": "Congrats! You are eligible for FREE Shipping"
+              }
+            }
+          ]
+        },
+        {
+          "description": "Mobile_Check display default data with cart type = Open cart drawer",
+          "case_id": "SB_OLS_THE_INS_SF_CART_SETTING_19",
+          "open_cartdrawer": true,
+          "expect": {
+            "mobile": true,
+            "product_page": {
+              "product_handle": "writer-s-club-chair",
+              "product_name": "Writer's Club Chair",
+              "icon_cart_draw": ".cart-container label"
+            },
+            "gotocart_button": {
+              "redirect_link": {
+                "redirect_selector": ".cart-drawer-summary__go-to-cart",
+                "redirect_url": "/cart",
+                "wait_element": ".product-cart-wrapper"
+              },
+              "verify_image": "16618317775ef9f91aef.jpeg"
+            }
+          },
+          "input": [
+            {
+              "cart": {
+                "cart_type": "refresh",
+                "enable_trust_badge": true,
+                "mini_cart_checkout": false,
+                "mini_cart_checkout_help_text": null,
+                "show_total_savings": false,
+                "trust_badge": "https://img.shopbase.com/files/10341646/2022/08/30/16618317775ef9f91aef.jpeg"
+              }
+            },
+            {
+              "cart_goal": {
+                "cart_goal_amount": "150",
+                "cart_goal_enable": false,
+                "cart_goal_motivational_message": "Buy {{variable}} more to enjoy FREE Shipping",
+                "cart_goal_reach_message": "Congrats! You are eligible for FREE Shipping"
+              }
+            }
+          ]
+        },
+        {
+          "description": "Desktop_Check cart when setting cart with cart type = Go to cart page",
+          "case_id": "SB_OLS_THE_INS_SF_CART_SETTING_20",
+          "icon_cart_draw": "[data-section='header'] .mini-cart",
+          "expect": {
+            "product_page": {
+              "product_handle": "writer-s-club-chair",
+              "product_name": "Writer's Club Chair",
+              "redirect_link": {
+                "redirect_selector": ".product__form span:has-text('Add to cart')",
+                "redirect_url": "/cart",
+                "wait_element": ".product-cart-wrapper .product-cart__name"
+              }
+            },
+            "home_page": {
+              "featured_product": {
+                "product_name": "Rebecca Stern",
+                "redirect_link": {
+                  "redirect_selector": ".product__form .btn-add-cart",
+                  "redirect_url": "/cart",
+                  "wait_element": ".product-cart-wrapper .product-cart__name"
+                }
+              },
+              "featured_collection": {
+                "product_name": "Livingston Demilune Console",
+                "redirect_link": {
+                  "redirect_selector": ".featured-collection span:has-text('Add to cart') >> nth=0",
+                  "redirect_url": "/cart",
+                  "wait_element": ".product-cart-wrapper .product-cart__name"
+                }
+              },
+              "app_widget": {
+                "type_app": "[type='best-seller']"
+              }
+            }
+          },
+          "input": [
+            {
+              "cart": {
+                "cart_type": "page",
+                "enable_trust_badge": true,
+                "mini_cart_checkout": false,
+                "mini_cart_checkout_help_text": null,
+                "show_total_savings": false,
+                "trust_badge": ""
+              }
+            },
+            {
+              "cart_goal": {
+                "cart_goal_amount": "150",
+                "cart_goal_enable": false,
+                "cart_goal_motivational_message": "Buy {{variable}} more to enjoy FREE Shipping",
+                "cart_goal_reach_message": "Congrats! You are eligible for FREE Shipping"
+              }
+            }
+          ]
+        },
+        {
+          "description": "Mobile_Check cart when setting cart with cart type = Go to cart page",
+          "case_id": "SB_OLS_THE_INS_SF_CART_SETTING_21",
+          "expect": {
+            "mobile": true,
+            "product_page": {
+              "product_handle": "writer-s-club-chair",
+              "product_name": "Writer's Club Chair",
+              "redirect_link": {
+                "redirect_selector": ".product__form span:has-text('Add to cart')",
+                "redirect_url": "/cart",
+                "wait_element": ".product-cart-wrapper .product-cart__name"
+              }
+            }
+          },
+          "input": [
+            {
+              "cart": {
+                "cart_type": "page",
+                "enable_trust_badge": true,
+                "mini_cart_checkout": false,
+                "mini_cart_checkout_help_text": null,
+                "show_total_savings": false,
+                "trust_badge": ""
+              }
+            },
+            {
+              "cart_goal": {
+                "cart_goal_amount": "150",
+                "cart_goal_enable": false,
+                "cart_goal_motivational_message": "Buy {{variable}} more to enjoy FREE Shipping",
+                "cart_goal_reach_message": "Congrats! You are eligible for FREE Shipping"
+              }
+            }
+          ]
+        },
+        {
+          "description": "Desktop_Check cart when setting cart with cart type = Go to checkout page",
+          "case_id": "SB_OLS_THE_INS_SF_CART_SETTING_22",
+          "expect": {
+            "product_page": {
+              "product_handle": "writer-s-club-chair",
+              "product_name": "Writer's Club Chair",
+              "redirect_link": {
+                "redirect_selector": ".product__form span:has-text('Add to cart')",
+                "redirect_url": "/checkout",
+                "wait_element": ".checkout-product__name"
+              }
+            }
+          },
+          "input": [
+            {
+              "cart": {
+                "cart_type": "check_out",
+                "enable_trust_badge": false,
+                "mini_cart_checkout": false,
+                "mini_cart_checkout_help_text": null,
+                "show_total_savings": false,
+                "trust_badge": "https://img.shopbase.com/files/10341646/2022/08/30/1661858576a6d683eedd.jpeg"
+              }
+            },
+            {
+              "cart_goal": {
+                "cart_goal_amount": "150",
+                "cart_goal_enable": false,
+                "cart_goal_motivational_message": "Buy {{variable}} more to enjoy FREE Shipping",
+                "cart_goal_reach_message": "Congrats! You are eligible for FREE Shipping"
+              }
+            }
+          ]
+        },
+        {
+          "description": "Mobile_Check cart when setting cart with cart type = Go to checkout page",
+          "case_id": "SB_OLS_THE_INS_SF_CART_SETTING_23",
+          "expect": {
+            "mobile": true,
+            "product_page": {
+              "product_handle": "writer-s-club-chair",
+              "product_name": "Writer's Club Chair",
+              "product_price": "$8.00",
+              "oppen_toggle": true,
+              "redirect_link": {
+                "redirect_selector": ".product__form span:has-text('Add to cart')",
+                "redirect_url": "/checkout",
+                "wait_element": ".total-recap__final-price"
+              }
+            }
+          },
+          "input": [
+            {
+              "cart": {
+                "cart_type": "check_out",
+                "enable_trust_badge": false,
+                "mini_cart_checkout": false,
+                "mini_cart_checkout_help_text": null,
+                "show_total_savings": false,
+                "trust_badge": "https://img.shopbase.com/files/10341646/2022/08/30/1661858576a6d683eedd.jpeg"
+              }
+            },
+            {
+              "cart_goal": {
+                "cart_goal_amount": "150",
+                "cart_goal_enable": false,
+                "cart_goal_motivational_message": "Buy {{variable}} more to enjoy FREE Shipping",
+                "cart_goal_reach_message": "Congrats! You are eligible for FREE Shipping"
+              }
+            }
+          ]
+        },
+        {
+          "description": "Check display trustbadge when cart page no have product",
+          "case_id": "SB_OLS_THE_INS_SF_CART_SETTING_24",
+          "expect": {
+            "cart_page": {
+              "cart_empty_selector": ".cart-empty",
+              "cart_draw_empty_selector": ".cart-drawer-empty p"
+            }
+          },
+          "input": [
+            {
+              "cart": {
+                "cart_type": "drawer",
+                "enable_trust_badge": true,
+                "mini_cart_checkout": true,
+                "mini_cart_checkout_help_text": null,
+                "show_total_savings": false,
+                "trust_badge": "https://img.btdmp.com/themes/3/assets/trust_badge.png"
+              }
+            },
+            {
+              "cart_goal": {
+                "cart_goal_amount": "150",
+                "cart_goal_enable": false,
+                "cart_goal_motivational_message": "Buy {{variable}} more to enjoy FREE Shipping",
+                "cart_goal_reach_message": "Congrats! You are eligible for FREE Shipping"
+              }
+            }
+          ]
+        },
+        {
+          "description": "Cart goal_Desktop_Check display cart goal with default data Enable Cart Goal = unchecked ",
+          "case_id": "SB_OLS_THE_INS_SF_CART_SETTING_25",
+          "open_cartdrawer": true,
+          "icon_cart_draw": "[data-section='header'] .mini-cart",
+          "expect": {
+            "product_page": {
+              "product_handle": "writer-s-club-chair",
+              "product_name": "Writer's Club Chair"
+            },
+            "cart_page": {
+              "cart_goal_selector": ".cart-goal .cart-goal__motivational-message",
+              "cart_draw_goal_selector": ".cart-drawer .cart-goal__motivational-message"
+            }
+          },
+          "input": [
+            {
+              "cart_goal": {
+                "cart_goal_amount": "150",
+                "cart_goal_enable": false,
+                "cart_goal_motivational_message": "Buy {{variable}} more to enjoy FREE Shipping",
+                "cart_goal_reach_message": "Congrats! You are eligible for FREE Shipping"
+              }
+            },
+            {
+              "cart": {
+                "cart_type": "drawer",
+                "enable_trust_badge": true,
+                "mini_cart_checkout": true,
+                "mini_cart_checkout_help_text": null,
+                "show_total_savings": false,
+                "trust_badge": "https://img.btdmp.com/themes/3/assets/trust_badge.png"
+              }
+            }
+          ]
+        },
+        {
+          "description": "Cart goal_Mobile_Check display cart goal with default data Enable Cart Goal = unchecked ",
+          "case_id": "SB_OLS_THE_INS_SF_CART_SETTING_26",
+          "open_cartdrawer": true,
+          "icon_cart_draw": ".cart-container label",
+          "expect": {
+            "mobile": true,
+            "product_page": {
+              "product_handle": "writer-s-club-chair",
+              "product_name": "Writer's Club Chair"
+            },
+            "cart_page": {
+              "cart_goal_selector": ".cart-goal .cart-goal__motivational-message",
+              "cart_draw_goal_selector": ".cart-drawer .cart-goal__motivational-message"
+            }
+          },
+          "input": [
+            {
+              "cart_goal": {
+                "cart_goal_amount": "150",
+                "cart_goal_enable": false,
+                "cart_goal_motivational_message": "Buy {{variable}} more to enjoy FREE Shipping",
+                "cart_goal_reach_message": "Congrats! You are eligible for FREE Shipping"
+              }
+            },
+            {
+              "cart": {
+                "cart_type": "drawer",
+                "enable_trust_badge": true,
+                "mini_cart_checkout": true,
+                "mini_cart_checkout_help_text": null,
+                "show_total_savings": false,
+                "trust_badge": "https://img.btdmp.com/themes/3/assets/trust_badge.png"
+              }
+            }
+          ]
+        },
+        {
+          "description": "Cart goal_Desktop_Check display cart goal with Enable Cart Goal = checked & valid data",
+          "case_id": "SB_OLS_THE_INS_SF_CART_SETTING_27",
+          "open_cartdrawer": true,
+          "icon_cart_draw": "[data-section='header'] .mini-cart",
+          "expect": {
+            "product_page": {
+              "product_handle": "writer-s-club-chair",
+              "product_name": "Writer's Club Chair"
+            },
+            "cart_page": {
+              "cart_goal_selector": ".cart-goal .cart-goal__motivational-message",
+              "cart_draw_goal_selector": ".cart-drawer .cart-goal__motivational-message"
+            }
+          },
+          "input": [
+            {
+              "cart_goal": {
+                "cart_goal_amount": "8",
+                "cart_goal_enable": true,
+                "cart_goal_motivational_message": "Buy {{variable}} more to enjoy FREE Shipping edited <3",
+                "cart_goal_reach_message": "Congrats! You are eligible for FREE Shipping edited <3"
+              }
+            },
+            {
+              "cart": {
+                "cart_type": "drawer",
+                "enable_trust_badge": true,
+                "mini_cart_checkout": true,
+                "mini_cart_checkout_help_text": null,
+                "show_total_savings": false,
+                "trust_badge": "https://img.btdmp.com/themes/3/assets/trust_badge.png"
+              }
+            }
+          ]
+        },
+        {
+          "description": "Cart goal_Mobile_Check display cart goal with Enable Cart Goal = checked & valid data",
+          "case_id": "SB_OLS_THE_INS_SF_CART_SETTING_28",
+          "open_cartdrawer": true,
+          "icon_cart_draw": ".cart-container label",
+          "expect": {
+            "mobile": true,
+            "product_page": {
+              "product_handle": "writer-s-club-chair",
+              "product_name": "Writer's Club Chair"
+            },
+            "cart_page": {
+              "cart_goal_selector": ".cart-goal .cart-goal__motivational-message",
+              "cart_draw_goal_selector": ".cart-drawer .cart-goal__motivational-message"
+            }
+          },
+          "input": [
+            {
+              "cart_goal": {
+                "cart_goal_amount": "8",
+                "cart_goal_enable": true,
+                "cart_goal_motivational_message": "Buy {{variable}} more to enjoy FREE Shipping <3",
+                "cart_goal_reach_message": "Congrats! You are eligible for FREE Shipping <3"
+              }
+            },
+            {
+              "cart": {
+                "cart_type": "drawer",
+                "enable_trust_badge": true,
+                "mini_cart_checkout": true,
+                "mini_cart_checkout_help_text": null,
+                "show_total_savings": false,
+                "trust_badge": "https://img.btdmp.com/themes/3/assets/trust_badge.png"
+              }
+            }
+          ]
+        },
+        {
+          "description": "Cart goal_Desktop_Check display cart goal with Enable Cart Goal = checked & blank data",
+          "case_id": "SB_OLS_THE_INS_SF_CART_SETTING_29",
+          "open_cartdrawer": true,
+          "icon_cart_draw": "[data-section='header'] .mini-cart",
+          "expect": {
+            "product_page": {
+              "product_handle": "writer-s-club-chair",
+              "product_name": "Writer's Club Chair"
+            },
+            "cart_page": {
+              "cart_goal_selector": ".cart-goal .cart-goal__motivational-message",
+              "cart_draw_goal_selector": ".cart-drawer .cart-goal__motivational-message"
+            }
+          },
+          "input": [
+            {
+              "cart_goal": {
+                "cart_goal_amount": "1.5",
+                "cart_goal_enable": true,
+                "cart_goal_motivational_message": "",
+                "cart_goal_reach_message": ""
+              }
+            },
+            {
+              "cart": {
+                "cart_type": "drawer",
+                "enable_trust_badge": true,
+                "mini_cart_checkout": true,
+                "mini_cart_checkout_help_text": null,
+                "show_total_savings": false,
+                "trust_badge": "https://img.btdmp.com/themes/3/assets/trust_badge.png"
+              }
+            }
+          ]
+        },
+        {
+          "description": "Cart goal_Mobile_Check display cart goal with Enable Cart Goal = checked & blank data",
+          "case_id": "SB_OLS_THE_INS_SF_CART_SETTING_30",
+          "open_cartdrawer": true,
+          "icon_cart_draw": ".cart-container label",
+          "expect": {
+            "mobile": true,
+            "product_page": {
+              "product_handle": "writer-s-club-chair",
+              "product_name": "Writer's Club Chair"
+            },
+            "cart_page": {
+              "cart_goal_selector": ".cart-goal .cart-goal__motivational-message",
+              "cart_draw_goal_selector": ".cart-drawer .cart-goal__motivational-message"
+            }
+          },
+          "input": [
+            {
+              "cart_goal": {
+                "cart_goal_amount": "1.5",
+                "cart_goal_enable": true,
+                "cart_goal_motivational_message": "",
+                "cart_goal_reach_message": ""
+              }
+            },
+            {
+              "cart": {
+                "cart_type": "drawer",
+                "enable_trust_badge": true,
+                "mini_cart_checkout": true,
+                "mini_cart_checkout_help_text": null,
+                "show_total_savings": false,
+                "trust_badge": "https://img.btdmp.com/themes/3/assets/trust_badge.png"
+              }
+            }
+          ]
+        },
+        {
+          "description": "Cart goal_Desktop_Check cart goal with valid data but no have product",
+          "case_id": "SB_OLS_THE_INS_SF_CART_SETTING_31",
+          "expect": {
+            "cart_page": {
+              "cart_empty_selector": ".cart-empty",
+              "cart_draw_empty_selector": ".cart-drawer-empty p"
+            }
+          },
+          "input": [
+            {
+              "cart_goal": {
+                "cart_goal_amount": "8",
+                "cart_goal_enable": true,
+                "cart_goal_motivational_message": "Buy {{variable}} more to enjoy FREE Shipping <3",
+                "cart_goal_reach_message": "Congrats! You are eligible for FREE Shipping <3"
+              }
+            },
+            {
+              "cart": {
+                "cart_type": "drawer",
+                "enable_trust_badge": true,
+                "mini_cart_checkout": true,
+                "mini_cart_checkout_help_text": null,
+                "show_total_savings": false,
+                "trust_badge": "https://img.btdmp.com/themes/3/assets/trust_badge.png"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

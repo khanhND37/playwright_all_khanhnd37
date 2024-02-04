@@ -1,0 +1,742 @@
+{
+  "env": {
+    "dev": {
+      "username": "shopbase9@beeketing.net",
+      "password": "AutoBilling@123",
+      "user_id": "89201",
+      "api": "https://gapi.dev.shopbase.net",
+      "timeout": 300000,
+      "pricing": {
+        "when_choose_this_plan": "When choose this plan, you can only fulfill orders with ShopBase. The payment gateway of your store will be disabled so you will no longer be able to accept new orders from your customers. You can re-enable payment gateway at any time.",
+        "your_subscription_fee": "Your subscription fee of the new plan is free, we will refund the remaining fee of your current plan to your ShopBase Balance.",
+        "only_use_shopbase_fulfillment_service": "Only use ShopBase Fulfillment Service",
+        "i_want_this_option": "Yes, I want this option",
+        "if_you_only_want_to_fulfill_your_dropship": "If you only want to fulfill your Dropship or Print-on-Demand orders (without using ShopBase Storefront), you can use ShopBase Fulfillment Service with absolutely no subscription fees. We deliver high-quality & competitive-price products, guarantee shipping time to ensure your customer's happiness. Please be aware that your store will not be able to accept new orders when you switch to this free plan. Do you agree?",
+        "switch_to_shopbase_fulfillment_service_only": "Switch to ShopBase Fulfillment Service Only",
+        "your_trial_has_ended_choose_plan": "Your trial has ended, please choose a plan to continue",
+        "your_trial_has_ended": "Your trial has ended.",
+        "your_subscription_has_ended": "Your subscription has ended",
+        "store_saved_30_days": "We will save this store for 30 days. After that time, it will be removed from your account.",
+        "store_saved_to_resume_use_PB": "Its data is still saved in case you activate your plan to resume use of PrintBase.",
+        "switch_to_another_shop": "Switch to another shop",
+        "activate_pb_plan": "Activate PrintBase plan",
+        "review_your_subscription": "Review your subscription",
+        "replace_create_card": "Replace credit card",
+        "billing_information": "Billing information",
+        "billing_address": "Billing address",
+        "pick_a_plan_for_your_store": "Pick a plan for your store",
+        "more_features": "More Features, Support & Security With No Hidden Fees",
+        "shopbase_isnt_your_thing": "ShopBase isn’t your thing? Cancel before {date} and no payment needed"
+      },
+      "confirm_plan": {
+        "confirm_plan": "Confirm plan",
+        "start_plan": "Start plan",
+        "apply": "Apply",
+        "pick_a_plan": "Pick a plan",
+        "billing_information": "Billing information",
+        "replace_credit_card": "Replace credit card",
+        "review_your_subscription": "Review your subscription",
+        "discount_code": "Discount code",
+        "billed_now": "Billed now",
+        "subscription_fee": "Subscription fee",
+        "price_on_time": "{price} on {time}",
+        "time_left_in_your_trial": "You have {day_count} days left in your trial",
+        "invalid_or_expired_code": "Invalid or expired code.",
+        "please_click_to_apply_to_validate_your_coupon": "Please click to Apply to validate your coupon.",
+        "no_current_plan_charge_result": {
+          "not_have_current_package": "You will be charged {price_on_time} for your new subscription.",
+          "in_free_trial": "After the trial ends, you will pay {price_on_time} for the cycle from {period_start} to {period_end}.",
+          "apply_coupon": "The coupon is successfully applied!",
+          "this_is_secure_by_128_bit": "This is a secure 128-bit SSL Encrypted payment. You're safe",
+          "you_will_be_charge_item": "You will pay {price_on_time} for your new subscription (from {period_start} to {period_end}) as a result of this change.",
+          "apply_coupon_trial": "When the trial ends on {period_start}, you will be charged {price_on_time} of the subscription for 1 months, then get extra {extend_days} till {period_end}."
+        }
+      },
+      "cases": {
+        "SB_BAL_BILL_BFL_447": {
+          "outside_data": 1,
+          "domain": "au-sb-billing-free-trial.myshopbase.net",
+          "shop_id": "10321622",
+          "period": "Monthly",
+          "plan": "Basic Base",
+          "price": "$19.00",
+          "data": {
+            "url": "https://gapi.dev.shopbase.net/admin/qc-tools/update-qc-shop",
+            "method": "POST",
+            "request": {
+              "data": {
+                "id": 10321622,
+                "status": "active",
+                "payment_status": "free_trial",
+                "end_free_trial_at": 0,
+                "subscription_expired_at": 0,
+                "package": "",
+                "package_type": "",
+                "package_id": []
+              }
+            },
+            "response": {
+              "status": 200,
+              "data": {
+                "success": true,
+                "message": ""
+              }
+            }
+          },
+          "packages": [
+            {
+              "package_name": "Fulfillment Only",
+              "price": "Free",
+              "staff_accounts": 1,
+              "transaction_fee": "",
+              "domain": ""
+            },
+            {
+              "package_name": "Basic Base",
+              "price": 19,
+              "staff_accounts": 5,
+              "transaction_fee": "2%",
+              "domain": 2
+            },
+            {
+              "package_name": "Standard Base",
+              "price": 59,
+              "staff_accounts": 10,
+              "transaction_fee": "1%",
+              "domain": 10
+            },
+            {
+              "package_name": "Pro Base",
+              "price": 249,
+              "staff_accounts": 120,
+              "transaction_fee": "0.5%",
+              "domain": 20
+            }
+          ]
+        },
+        "SB_BAL_BILL_BFL_448": {
+          "outside_data": 1,
+          "domain": "au-sb-billing-free-trial.myshopbase.net",
+          "period": "Monthly",
+          "plan": "Standard Base",
+          "price": "$59.00",
+          "data": {
+            "url": "https://gapi.dev.shopbase.net/admin/qc-tools/update-qc-shop",
+            "method": "POST",
+            "request": {
+              "data": {
+                "id": 10321622,
+                "status": "active",
+                "payment_status": "free_trial",
+                "end_free_trial_at": 3,
+                "subscription_expired_at": 3,
+                "package": "",
+                "package_type": "",
+                "package_id": []
+              }
+            },
+            "response": {
+              "status": 200,
+              "data": {
+                "success": true,
+                "message": ""
+              }
+            }
+          },
+          "data_update": {
+            "url": "https://gapi.dev.shopbase.net/admin/qc-tools/update-qc-shop",
+            "method": "POST",
+            "request": {
+              "data": {
+                "id": 10321622,
+                "end_free_trial_at": 0,
+                "subscription_expired_at": 0,
+                "charge_sub": true
+              }
+            },
+            "response": {
+              "status": 200,
+              "data": {
+                "success": true,
+                "message": ""
+              }
+            }
+          },
+          "packages": [
+            {
+              "package_name": "Basic Base",
+              "price": 19,
+              "staff_accounts": 5,
+              "transaction_fee": "2%",
+              "domain": 2
+            },
+            {
+              "package_name": "Standard Base",
+              "price": 59,
+              "staff_accounts": 10,
+              "transaction_fee": "1%",
+              "domain": 10
+            },
+            {
+              "package_name": "Pro Base",
+              "price": 249,
+              "staff_accounts": 120,
+              "transaction_fee": "0.5%",
+              "domain": 20
+            }
+          ]
+        },
+        "SB_BAL_BILL_BFL_450": {
+          "outside_data": 1,
+          "domain": "au-sb-billing-free-trial.myshopbase.net",
+          "period": "Monthly",
+          "plan": "Fulfillment Only",
+          "price": "$0.00",
+          "packages": [
+            {
+              "package_name": "Fulfillment Only",
+              "price": "Free",
+              "staff_accounts": 1,
+              "transaction_fee": "",
+              "domain": ""
+            },
+            {
+              "package_name": "Basic Base",
+              "price": 19,
+              "staff_accounts": 5,
+              "transaction_fee": "2%",
+              "domain": 2
+            },
+            {
+              "package_name": "Standard Base",
+              "price": 59,
+              "staff_accounts": 10,
+              "transaction_fee": "1%",
+              "domain": 10
+            },
+            {
+              "package_name": "Pro Base",
+              "price": 249,
+              "staff_accounts": 120,
+              "transaction_fee": "0.5%",
+              "domain": 20
+            }
+          ],
+          "data": {
+            "url": "https://gapi.dev.shopbase.net/admin/qc-tools/update-qc-shop",
+            "method": "POST",
+            "request": {
+              "data": {
+                "id": 10321622,
+                "status": "active",
+                "payment_status": "free_trial",
+                "end_free_trial_at": 3,
+                "subscription_expired_at": 3,
+                "package": "",
+                "package_type": "",
+                "package_id": []
+              }
+            },
+            "response": {
+              "status": 200,
+              "data": {
+                "success": true,
+                "message": ""
+              }
+            }
+          },
+          "data_update": {
+            "url": "https://gapi.dev.shopbase.net/admin/qc-tools/update-qc-shop",
+            "method": "POST",
+            "request": {
+              "data": {
+                "id": 10321622,
+                "end_free_trial_at": 0,
+                "subscription_expired_at": 0,
+                "charge_sub": true
+              }
+            },
+            "response": {
+              "status": 200,
+              "data": {
+                "success": true,
+                "message": ""
+              }
+            }
+          },
+          "product": {
+            "product_name": "T-Shirt",
+            "quantity": "2"
+          },
+          "customer_info": {
+            "email": "shopbase@beeketing.net",
+            "first_name": "Shop",
+            "last_name": "Base",
+            "address": "1600 W Loop S",
+            "country": "United States",
+            "state": "California",
+            "city": "Chico",
+            "zipcode": "90001",
+            "phone_number": "505-646-2276"
+          },
+          "card_info": {
+            "number": "4242424242424242",
+            "holder_name": "ShopBase",
+            "expire_date": "12 / 25",
+            "cvv": "116"
+          }
+        },
+        "SB_BAL_BILL_BFL_456": {
+          "outside_data": 1,
+          "domain": "au-sb-billing-free-trial.myshopbase.net",
+          "period": "Monthly",
+          "plan": "Basic Base",
+          "price": "$19.00",
+          "data": {
+            "url": "https://gapi.dev.shopbase.net/admin/qc-tools/update-qc-shop",
+            "method": "POST",
+            "request": {
+              "data": {
+                "id": 10321622,
+                "status": "active",
+                "payment_status": "free_trial",
+                "end_free_trial_at": 0,
+                "subscription_expired_at": 0,
+                "end_free_trial_at_minute": 3,
+                "subscription_expired_at_minute": 3,
+                "package": "",
+                "package_type": "",
+                "package_id": []
+              }
+            },
+            "response": {
+              "status": 200,
+              "data": {
+                "success": true,
+                "message": ""
+              }
+            }
+          },
+          "packages": [
+            {
+              "package_name": "Basic Base",
+              "price": 19,
+              "staff_accounts": 5,
+              "transaction_fee": "2%",
+              "domain": 2
+            },
+            {
+              "package_name": "Standard Base",
+              "price": 59,
+              "staff_accounts": 10,
+              "transaction_fee": "1%",
+              "domain": 10
+            },
+            {
+              "package_name": "Pro Base",
+              "price": 249,
+              "staff_accounts": 120,
+              "transaction_fee": "0.5%",
+              "domain": 20
+            }
+          ]
+        },
+        "SB_BAL_BILL_BFL_457": {
+          "outside_data": 1,
+          "domain": "au-sb-billing-free-trial.myshopbase.net",
+          "period": "Monthly",
+          "plan": "Basic Base",
+          "price": "$19.00",
+          "coupon": "datatest100day",
+          "data": {
+            "url": "https://gapi.dev.shopbase.net/admin/qc-tools/update-qc-shop",
+            "method": "POST",
+            "request": {
+              "data": {
+                "id": 10321622,
+                "status": "active",
+                "payment_status": "free_trial",
+                "end_free_trial_at": 0,
+                "subscription_expired_at": 0,
+                "end_free_trial_at_minute": 3,
+                "subscription_expired_at_minute": 3,
+                "package": "",
+                "package_type": "",
+                "package_id": []
+              }
+            },
+            "response": {
+              "status": 200,
+              "data": {
+                "success": true,
+                "message": ""
+              }
+            }
+          },
+          "packages": [
+            {
+              "package_name": "Basic Base",
+              "price": 19,
+              "staff_accounts": 5,
+              "transaction_fee": "2%",
+              "domain": 2
+            },
+            {
+              "package_name": "Standard Base",
+              "price": 59,
+              "staff_accounts": 10,
+              "transaction_fee": "1%",
+              "domain": 10
+            },
+            {
+              "package_name": "Pro Base",
+              "price": 249,
+              "staff_accounts": 120,
+              "transaction_fee": "0.5%",
+              "domain": 20
+            }
+          ]
+        },
+        "SB_BAL_BILL_BFL_458": {
+          "outside_data": 1,
+          "domain": "au-sb-billing-free-trial.myshopbase.net",
+          "period": "Monthly",
+          "plan": "Basic Base",
+          "price": "$19.00",
+          "coupon": "datatest10",
+          "coupon_type": "percentage",
+          "coupon_value": "10",
+          "data": {
+            "url": "https://gapi.dev.shopbase.net/admin/qc-tools/update-qc-shop",
+            "method": "POST",
+            "request": {
+              "data": {
+                "id": 10321622,
+                "status": "active",
+                "payment_status": "free_trial",
+                "end_free_trial_at": 0,
+                "subscription_expired_at": 0,
+                "end_free_trial_at_minute": 3,
+                "subscription_expired_at_minute": 3,
+                "package": "",
+                "package_type": "",
+                "package_id": []
+              }
+            },
+            "response": {
+              "status": 200,
+              "data": {
+                "success": true,
+                "message": ""
+              }
+            }
+          },
+          "packages": [
+            {
+              "package_name": "Basic Base",
+              "price": 19,
+              "staff_accounts": 5,
+              "transaction_fee": "2%",
+              "domain": 2
+            },
+            {
+              "package_name": "Standard Base",
+              "price": 59,
+              "staff_accounts": 10,
+              "transaction_fee": "1%",
+              "domain": 10
+            },
+            {
+              "package_name": "Pro Base",
+              "price": 249,
+              "staff_accounts": 120,
+              "transaction_fee": "0.5%",
+              "domain": 20
+            }
+          ]
+        },
+        "SB_BAL_BILL_BFL_459": {
+          "outside_data": 1,
+          "domain": "au-sb-billing-free-trial.myshopbase.net",
+          "period": "Monthly",
+          "plan": "Standard Base",
+          "price": "$59.00",
+          "coupon": "datatest10",
+          "coupon_type": "percentage",
+          "coupon_value": 10,
+          "data": {
+            "url": "https://gapi.dev.shopbase.net/admin/qc-tools/update-qc-shop",
+            "method": "POST",
+            "request": {
+              "data": {
+                "id": 10321622,
+                "status": "active",
+                "payment_status": "free_trial",
+                "end_free_trial_at": 0,
+                "subscription_expired_at": 0,
+                "end_free_trial_at_minute": 5,
+                "subscription_expired_at_minute": 5,
+                "package": "",
+                "package_type": "",
+                "package_id": []
+              }
+            },
+            "response": {
+              "status": 200,
+              "data": {
+                "success": true,
+                "message": ""
+              }
+            }
+          },
+          "data_update": {
+            "url": "https://gapi.dev.shopbase.net/admin/qc-tools/update-qc-shop",
+            "method": "POST",
+            "request": {
+              "data": {
+                "id": 10321622,
+                "end_free_trial_at": 0,
+                "subscription_expired_at": 0,
+                "charge_sub": true
+              }
+            },
+            "response": {
+              "status": 200,
+              "data": {
+                "success": true,
+                "message": ""
+              }
+            }
+          },
+          "packages": [
+            {
+              "package_name": "Basic Base",
+              "price": 19,
+              "staff_accounts": 5,
+              "transaction_fee": "2%",
+              "domain": 2
+            },
+            {
+              "package_name": "Standard Base",
+              "price": 59,
+              "staff_accounts": 10,
+              "transaction_fee": "1%",
+              "domain": 10
+            },
+            {
+              "package_name": "Pro Base",
+              "price": 249,
+              "staff_accounts": 120,
+              "transaction_fee": "0.5%",
+              "domain": 20
+            }
+          ]
+        },
+        "SB_BAL_BILL_BFL_460": {
+          "outside_data": 1,
+          "domain": "au-sb-billing-free-trial.myshopbase.net",
+          "period": "Monthly",
+          "plan": "Basic Base",
+          "price": "$19.00",
+          "coupon": "extend10day",
+          "coupon_type": "freetrial",
+          "coupon_value": 10,
+          "data": {
+            "url": "https://gapi.dev.shopbase.net/admin/qc-tools/update-qc-shop",
+            "method": "POST",
+            "request": {
+              "data": {
+                "id": 10321622,
+                "status": "active",
+                "payment_status": "free_trial",
+                "end_free_trial_at": 0,
+                "subscription_expired_at": 0,
+                "end_free_trial_at_minute": 5,
+                "subscription_expired_at_minute": 5,
+                "package": "",
+                "package_type": "",
+                "package_id": []
+              }
+            },
+            "response": {
+              "status": 200,
+              "data": {
+                "success": true,
+                "message": ""
+              }
+            }
+          },
+          "data_update": {
+            "url": "https://gapi.dev.shopbase.net/admin/qc-tools/update-qc-shop",
+            "method": "POST",
+            "request": {
+              "data": {
+                "id": 10321622,
+                "end_free_trial_at": 0,
+                "subscription_expired_at": 0,
+                "charge_sub": true
+              }
+            },
+            "response": {
+              "status": 200,
+              "data": {
+                "success": true,
+                "message": ""
+              }
+            }
+          },
+          "packages": [
+            {
+              "package_name": "Basic Base",
+              "price": 19,
+              "staff_accounts": 5,
+              "transaction_fee": "2%",
+              "domain": 2
+            },
+            {
+              "package_name": "Standard Base",
+              "price": 59,
+              "staff_accounts": 10,
+              "transaction_fee": "1%",
+              "domain": 10
+            },
+            {
+              "package_name": "Pro Base",
+              "price": 249,
+              "staff_accounts": 120,
+              "transaction_fee": "0.5%",
+              "domain": 20
+            }
+          ]
+        },
+        "SB_BAL_BILL_BFL_461": {
+          "outside_data": 1,
+          "domain": "au-sb-billing-free-trial.myshopbase.net",
+          "shop_id": "10321622",
+          "period": "Monthly",
+          "plan": "Basic Base",
+          "price": "$19.00",
+          "data": {
+            "url": "https://gapi.dev.shopbase.net/admin/qc-tools/update-qc-shop",
+            "method": "POST",
+            "request": {
+              "data": {
+                "id": 10321622,
+                "status": "active",
+                "payment_status": "free_trial",
+                "end_free_trial_at": 0,
+                "subscription_expired_at": 0,
+                "package": "",
+                "package_type": "",
+                "package_id": []
+              }
+            },
+            "response": {
+              "status": 200,
+              "data": {
+                "success": true,
+                "message": ""
+              }
+            }
+          },
+          "invoices": [
+            {
+              "content": "Subscription fee collecting",
+              "status": "Success",
+              "type": "OUT",
+              "detail": "Paid for subscription bill {period_start} - {period_end}",
+              "transactions": [
+                {
+                  "type": "OUT",
+                  "content": "The payment for the subscription bill {period_start} - {period_end}",
+                  "status": "Paid"
+                }
+              ]
+            }
+          ]
+        },
+        "SB_BAL_BILL_BFL_468": {
+          "outside_data": 1,
+          "domain": "au-sb-billing-free-trial.myshopbase.net",
+          "shop_id": "10321622",
+          "period": "Monthly",
+          "plan": "Standard Base",
+          "price": "$59.00",
+          "coupon": "datatest10",
+          "coupon_type": "percentage",
+          "coupon_value": 10,
+          "data": {
+            "url": "https://gapi.dev.shopbase.net/admin/qc-tools/update-qc-shop",
+            "method": "POST",
+            "request": {
+              "data": {
+                "id": 10321622,
+                "status": "active",
+                "payment_status": "free_trial",
+                "end_free_trial_at": 0,
+                "subscription_expired_at": 0,
+                "package": "",
+                "package_type": "",
+                "package_id": []
+              }
+            },
+            "response": {
+              "status": 200,
+              "data": {
+                "success": true,
+                "message": ""
+              }
+            }
+          },
+          "invoices": [
+            {
+              "content": "Subscription fee collecting",
+              "status": "Success",
+              "type": "OUT",
+              "detail": "Paid for subscription bill {period_start} - {period_end}",
+              "transactions": [
+                {
+                  "type": "OUT",
+                  "content": "The payment for the subscription bill {period_start} - {period_end}",
+                  "status": "Paid"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "prodtest": {
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "quanle1@beeketing.net",
+      "password": "Ocg@123456",
+      "user_id": 11215901,
+      "shop_id": 10441604,
+      "shop_name": "au-billing-change-plan-with-card-declined-prodtest",
+      "domain": "au-billing-change-plan-with-card-declined-prodtest.onshopbase.com"
+    },
+    "prod": {
+      "accounts_domain": "accounts.shopbase.com",
+      "api": "https://api.shopbase.com",
+      "username": "quanle1@beeketing.net",
+      "password": "Ocg@123456",
+      "user_id": 11215901,
+      "shop_id": 10441601,
+      "shop_name": "au-billing-change-plan-with-card-declined",
+      "domain": "au-billing-change-plan-with-card-declined.onshopbase.com"
+    }
+  },
+  "cases": {
+    "SB_BAL_BILL_BFL_447": {},
+    "SB_BAL_BILL_BFL_448": {},
+    "SB_BAL_BILL_BFL_450": {},
+    "SB_BAL_BILL_BFL_456": {},
+    "SB_BAL_BILL_BFL_457": {},
+    "SB_BAL_BILL_BFL_458": {},
+    "SB_BAL_BILL_BFL_459": {},
+    "SB_BAL_BILL_BFL_460": {},
+    "SB_BAL_BILL_BFL_461": {},
+    "SB_BAL_BILL_BFL_468": {}
+  }
+}

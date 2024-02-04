@@ -1,0 +1,451 @@
+{
+  "api": "https://gapi.dev.shopbase.net",
+  "domain": "shipping-profile-sbase.myshopbase.net",
+  "shop_name": "shipping-profile-sbase",
+  "username": "nganmai@beeketing.net",
+  "password": "123456",
+  "cases": {
+    "TC_SB_SET_SP_SPS_35": {
+      "profile_data_1": {
+        "is_general": false,
+        "name": "T-shirt profile - TC35",
+        "shipping_zones": [
+          {
+            "name": "Vietnam",
+            "item_based_shipping_rate": [
+              {
+                "name": "Economy shipping",
+                "additional_item_price": 6,
+                "first_item_price": 7
+              },
+              {
+                "name": "Standard shipping",
+                "additional_item_price": 5,
+                "first_item_price": 8
+              },
+              {
+                "name": "Fast shipping",
+                "additional_item_price": 7,
+                "first_item_price": 8
+              }
+            ],
+            "price_based_shipping_rate": [
+              {
+                "name": "Standard shipping",
+                "min_order_subtotal": 0,
+                "max_order_subtotal": 150,
+                "price": 10
+              }
+            ],
+            "weight_based_shipping_rate": [
+              {
+                "name": "Express Shipping",
+                "weight_high": 500,
+                "weight_low": 10,
+                "weight_unit": "lb",
+                "price": 10
+              }
+            ],
+            "countries": [
+              {
+                "id": 237,
+                "name": "Vietnam",
+                "code": "VN"
+              }
+            ]
+          }
+        ],
+        "variant_ids": ["1000001765346208"]
+      },
+      "profile_data_2": {
+        "is_general": false,
+        "name": "Jeans profile - TC35",
+        "shipping_zones": [
+          {
+            "name": "Vietnam",
+            "item_based_shipping_rate": [
+              {
+                "name": "Fast shipping",
+                "additional_item_price": 5,
+                "first_item_price": 8
+              },
+              {
+                "name": "Express shipping",
+                "additional_item_price": 7,
+                "first_item_price": 9
+              },
+              {
+                "name": "Fast shipping",
+                "additional_item_price": 4,
+                "first_item_price": 4
+              }
+            ],
+            "price_based_shipping_rate": [
+              {
+                "name": "Standard shipping",
+                "min_order_subtotal": 0,
+                "max_order_subtotal": 150,
+                "price": 2
+              }
+            ],
+            "countries": [
+              {
+                "id": 237,
+                "name": "Vietnam",
+                "code": "VN"
+              }
+            ]
+          }
+        ],
+        "variant_ids": ["1000001765346475"]
+      }
+    },
+    "TC_SB_SET_SP_SPS_52_53_54": {
+      "shipping_zones_create": [
+        {
+          "name": "Afghanistan",
+          "countries": [
+            {
+              "code": "AF",
+              "id": 1,
+              "name": "Afghanistan",
+              "provinces": null
+            }
+          ]
+        }
+      ],
+      "shipping_zones_edit": [
+        {
+          "name": "Afghanistan-Edit",
+          "id": null,
+          "countries": [
+            {
+              "code": "AF",
+              "id": 1,
+              "name": "Afghanistan",
+              "provinces": null
+            },
+            {
+              "code": "US",
+              "id": 231,
+              "name": "United States",
+              "provinces": [
+                {
+                  "code": "AL",
+                  "country_id": 231,
+                  "id": 891,
+                  "name": "Alabama"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Vietnam",
+          "countries": [
+            {
+              "id": 237,
+              "name": "Vietnam",
+              "code": "VN"
+            }
+          ]
+        }
+      ]
+    },
+    "TC_SB_SET_SP_SPS_55_58_61": {
+      "shipping_zones_create": [
+        {
+          "name": "Afghanistan",
+          "countries": [
+            {
+              "code": "AF",
+              "id": 1,
+              "name": "Afghanistan",
+              "provinces": null
+            }
+          ]
+        }
+      ],
+      "item_based_shipping_rate_create": {
+        "type": "item_based",
+        "rates": [
+          {
+            "name": "Economy shipping",
+            "additional_item_price": 6,
+            "first_item_price": 7
+          }
+        ]
+      },
+      "item_based_shipping_rate_edit": {
+        "type": "item_based",
+        "rates": [
+          {
+            "name": "Economy shipping",
+            "additional_item_price": 6,
+            "first_item_price": 7,
+            "id": null
+          }
+        ]
+      },
+      "weight_based_shipping_rate_create": {
+        "type": "weight_based",
+        "rates": [
+          {
+            "name": "Standard Shipping",
+            "weight_high": 200,
+            "weight_low": 0,
+            "weight_unit": "lb",
+            "price": 8
+          }
+        ]
+      },
+      "weight_based_shipping_rate_edit": {
+        "type": "weight_based",
+        "rates": [
+          {
+            "id": null,
+            "name": "Standard Shipping",
+            "weight_high": 200,
+            "weight_low": 0,
+            "weight_unit": "lb",
+            "price": 5
+          },
+          {
+            "name": "Express Shipping",
+            "weight_high": 400,
+            "weight_low": 0,
+            "weight_unit": "lb",
+            "price": 10
+          }
+        ]
+      },
+      "price_based_shipping_rate_create": {
+        "type": "price_based",
+        "rates": [
+          {
+            "name": "Exp shipping",
+            "price": 9
+          },
+          {
+            "name": "Express shipping",
+            "min_order_subtotal": 50,
+            "price": 10
+          }
+        ]
+      },
+      "price_based_shipping_rate_edit": {
+        "type": "price_based",
+        "rates": [
+          {
+            "id": null,
+            "name": "Exp shipping",
+            "min_order_subtotal": 0,
+            "max_order_subtotal": 50,
+            "price": 9
+          },
+          {
+            "id": null,
+            "name": "Express shipping",
+            "min_order_subtotal": 50,
+            "price": 10
+          }
+        ]
+      }
+    },
+    "TC_SB_SET_SP_SPS_55_58_35": {
+      "profile_data_create": {
+        "is_general": false,
+        "name": "Auto Custom Profile - TC55",
+        "shipping_zones": [],
+        "variant_ids": []
+      },
+      "profile_data_edit": {
+        "is_general": false,
+        "name": "Auto Custom Profile - TC55",
+        "shipping_zones": [
+          {
+            "name": "Vietnam",
+            "countries": [
+              {
+                "id": 237,
+                "name": "Vietnam",
+                "code": "VN"
+              }
+            ]
+          }
+        ],
+        "variant_ids": []
+      }
+    },
+    "TC_SB_SET_SP_SPS_38_40_41_42": {
+      "profile_data": {
+        "is_general": false,
+        "name": "Auto Custom Profile - TC38",
+        "shipping_zones": [],
+        "variant_ids": []
+      },
+      "shipping_zones_create": [
+        {
+          "name": "Afghanistan",
+          "countries": [
+            {
+              "code": "AF",
+              "id": 1,
+              "name": "Afghanistan",
+              "provinces": null
+            }
+          ]
+        }
+      ],
+      "shipping_zones_edit": [
+        {
+          "name": "Afghanistan-Edit",
+          "id": null,
+          "countries": [
+            {
+              "code": "AF",
+              "id": 1,
+              "name": "Afghanistan",
+              "provinces": null
+            },
+            {
+              "code": "US",
+              "id": 231,
+              "name": "United States",
+              "provinces": [
+                {
+                  "code": "AL",
+                  "country_id": 231,
+                  "id": 891,
+                  "name": "Alabama"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Vietnam",
+          "countries": [
+            {
+              "id": 237,
+              "name": "Vietnam",
+              "code": "VN"
+            }
+          ]
+        }
+      ]
+    },
+    "TC_SB_SET_SP_SPS_76_79_82": {
+      "profile_data": {
+        "is_general": false,
+        "name": "Auto Custom Profile - TC76",
+        "shipping_zones": [],
+        "variant_ids": []
+      },
+      "shipping_zones_create": [
+        {
+          "name": "Afghanistan",
+          "countries": [
+            {
+              "code": "AF",
+              "id": 1,
+              "name": "Afghanistan",
+              "provinces": null
+            }
+          ]
+        }
+      ],
+      "item_based_shipping_rate_create": {
+        "type": "item_based",
+        "rates": [
+          {
+            "name": "Economy shipping",
+            "additional_item_price": 6,
+            "first_item_price": 7
+          }
+        ]
+      },
+      "item_based_shipping_rate_edit": {
+        "type": "item_based",
+        "rates": [
+          {
+            "name": "Economy shipping",
+            "additional_item_price": 6,
+            "first_item_price": 7,
+            "id": null
+          }
+        ]
+      },
+      "weight_based_shipping_rate_create": {
+        "type": "weight_based",
+        "rates": [
+          {
+            "name": "Standard Shipping",
+            "weight_high": 200,
+            "weight_low": 0,
+            "weight_unit": "lb",
+            "price": 8
+          }
+        ]
+      },
+      "weight_based_shipping_rate_edit": {
+        "type": "weight_based",
+        "rates": [
+          {
+            "id": null,
+            "name": "Standard Shipping",
+            "weight_high": 200,
+            "weight_low": 0,
+            "weight_unit": "lb",
+            "price": 5
+          },
+          {
+            "name": "Express Shipping",
+            "weight_high": 400,
+            "weight_low": 0,
+            "weight_unit": "lb",
+            "price": 10
+          }
+        ]
+      },
+      "price_based_shipping_rate_create": {
+        "type": "price_based",
+        "rates": [
+          {
+            "name": "Exp shipping",
+            "price": 9
+          },
+          {
+            "name": "Express shipping",
+            "min_order_subtotal": 50,
+            "price": 10
+          }
+        ]
+      },
+      "price_based_shipping_rate_edit": {
+        "type": "price_based",
+        "rates": [
+          {
+            "id": null,
+            "name": "Exp shipping",
+            "min_order_subtotal": 0,
+            "max_order_subtotal": 50,
+            "price": 9
+          },
+          {
+            "id": null,
+            "name": "Express shipping",
+            "min_order_subtotal": 50,
+            "price": 10
+          }
+        ]
+      }
+    }
+  },
+  "env": {
+    "prodtest": {
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://prod-test-api.shopbase.com"
+    }
+  }
+}

@@ -1,0 +1,1290 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "auto-block-wb.myshopbase.net",
+      "shop_name": "auto-block-wb",
+      "shop_id": 10333928,
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "user_id": 90252,
+      "theme_test": "[Slideshow] Template run auto"
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "auto-block-wb.onshopbase.com",
+      "shop_name": "auto-block-wb",
+      "shop_id": 10480842,
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "user_id": 11260206,
+      "theme_test": "[Slideshow] Template run auto"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "auto-block-wb-prodtest.onshopbase.com",
+      "shop_name": "auto-block-wb-prodtest",
+      "shop_id": 10480844,
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "user_id": 11260206,
+      "accounts_domain": "accounts-test.shopbase.com",
+      "theme_test": "[Slideshow] Template run auto"
+    }
+  },
+  "cases": {
+    "SB_WEB_BUILDER_LB_SLS_01": {
+      "add_block": {
+        "parent_position": {
+          "section": 1,
+          "column": 1
+        },
+        "template": "Slideshow"
+      },
+      "dnd_block": {
+        "from": {
+          "category": "Basics",
+          "template": "Slideshow"
+        },
+        "to": {
+          "position": {
+            "section": 1,
+            "block": 1
+          }
+        }
+      },
+      "expected": {
+        "default_layout": "Full",
+        "default_filled_color": {
+          "attribute": "style",
+          "value": ""
+        },
+        "default_content_position": {
+          "attribute": "value",
+          "value": "middle-center"
+        },
+        "default_align": {
+          "attribute": "value",
+          "value": "center"
+        },
+        "default_width": {
+          "value": "100",
+          "unit": "%"
+        },
+        "default_height": {
+          "value": "600",
+          "unit": "Px"
+        },
+        "default_background": {
+          "attribute": "style"
+        },
+        "default_border": "none",
+        "default_opacity": "100",
+        "default_radius": "0",
+        "default_shadow": "none",
+        "default_padding": "0,0,0,0",
+        "default_margin": "0,0,0,0"
+      }
+    },
+    "SB_WEB_BUILDER_LB_SLS_02": {
+      "add_block": {
+        "parent_position": {
+          "section": 1,
+          "column": 1
+        },
+        "template": "Slideshow"
+      },
+      "block_slideshow": {
+        "section": 1,
+        "block": 1
+      },
+      "expected": {
+        "attribute": "class",
+        "value": "selected",
+        "bread_crumb": "Slideshow"
+      }
+    },
+    "SB_WEB_BUILDER_LB_SLS_03": {
+      "add_block": {
+        "parent_position": {
+          "section": 1,
+          "column": 1
+        },
+        "template": "Slideshow"
+      },
+      "block_slideshow": {
+        "section": 1,
+        "block": 1
+      },
+      "full": {
+        "layout": "Full"
+      },
+      "split": {
+        "layout": "Split"
+      },
+      "expected": {
+        "layout_split": "split",
+        "layout_full": "full"
+      }
+    },
+    "SB_WEB_BUILDER_LB_SLS_04": {
+      "add_block": {
+        "parent_position": {
+          "section": 1,
+          "column": 1
+        },
+        "template": "Slideshow"
+      },
+      "block_slideshow": {
+        "section": 1,
+        "block": 1
+      },
+      "layout_style": {
+        "layout": "Split"
+      },
+      "clear_content": {
+        "sub_heading": "",
+        "heading": "",
+        "description": ""
+      },
+      "turn_off_buttons": [
+        {
+          "button": 1,
+          "is_on": false
+        },
+        {
+          "button": 2,
+          "is_on": false
+        }
+      ],
+      "expected": {
+        "layout_split": "split"
+      }
+    },
+    "SB_WEB_BUILDER_LB_SLS_05": {
+      "add_block": {
+        "parent_position": {
+          "section": 1,
+          "column": 1
+        },
+        "template": "Slideshow"
+      },
+      "block_slideshow": {
+        "section": 1,
+        "block": 1
+      },
+      "duplicated_block": {
+        "section": 1,
+        "block": 2
+      },
+      "expected": {
+        "value": "selected",
+        "default_layout": "Full",
+        "default_content_position": {
+          "attribute": "value",
+          "value": "middle-center"
+        },
+        "default_align": {
+          "attribute": "value",
+          "value": "center"
+        },
+        "default_width": {
+          "value": "100",
+          "unit": "%"
+        },
+        "default_height": {
+          "value": "600",
+          "unit": "Px"
+        },
+        "default_background": {
+          "attribute": "style"
+        },
+        "default_border": "none",
+        "default_opacity": "100",
+        "default_radius": "0",
+        "default_shadow": "none",
+        "default_padding": "0,0,0,0",
+        "default_margin": "0,0,0,0"
+      }
+    },
+    "SB_WEB_BUILDER_LB_SLS_06": {
+      "add_block": {
+        "parent_position": {
+          "section": 1,
+          "column": 1
+        },
+        "template": "Slideshow"
+      },
+      "block_slideshow": {
+        "section": 1,
+        "block": 1
+      },
+      "slideshow": "Slideshow"
+    },
+    "SB_WEB_BUILDER_LB_SLS_07": {
+      "add_block": {
+        "parent_position": {
+          "section": 1,
+          "column": 1
+        },
+        "template": "Slideshow"
+      },
+      "block_slideshow": {
+        "section": 1,
+        "block": 1
+      },
+      "style_data": [
+        {
+          "layout": "Full",
+          "color": {
+            "label": "filled_color",
+            "value": {
+              "preset": 3
+            }
+          },
+          "content_position": {
+            "label": "content_position",
+            "position": 1
+          },
+          "align": {
+            "label": "align_self",
+            "type": "Left"
+          },
+          "width": {
+            "label": "width",
+            "value": {
+              "unit": "%",
+              "value": 50
+            }
+          },
+          "height": {
+            "label": "height",
+            "value": {
+              "unit": "Px",
+              "value": 250
+            }
+          },
+          "background": {
+            "label": "background",
+            "value": {
+              "color": {
+                "preset": 2
+              }
+            }
+          },
+          "border": {
+            "label": "border",
+            "value": {
+              "thickness": "m"
+            }
+          },
+          "opacity": {
+            "label": "opacity",
+            "config": {
+              "fill": true,
+              "number": 80
+            }
+          },
+          "radius": {
+            "label": "border_radius",
+            "config": {
+              "fill": true,
+              "number": 50
+            }
+          },
+          "shadow": {
+            "label": "box_shadow",
+            "config": {
+              "option": "hard",
+              "size": "L",
+              "direction": "Top Right"
+            }
+          },
+          "padding": {
+            "label": "padding",
+            "value": {
+              "input": true,
+              "top": 10,
+              "left": 20,
+              "bottom": 10,
+              "right": 20
+            }
+          },
+          "margin": {
+            "label": "margin",
+            "value": {
+              "input": true,
+              "top": 20,
+              "left": 80,
+              "bottom": 44,
+              "right": 100
+            }
+          },
+          "expected": {
+            "position_css": "static",
+            "content_position_css": "top-left",
+            "opacity_css": "0.8",
+            "radius_css": "50px",
+            "shadow_css": "rgb(0, 0, 0) 12px -12px 0px 0px",
+            "border_css": "4px solid",
+            "margin_css": "20px 100px 44px 80px",
+            "padding_css": "10px 20px"
+          }
+        },
+        {
+          "layout": "Split",
+          "color": {
+            "label": "filled_color",
+            "value": {
+              "preset": 3
+            }
+          },
+          "content_position": {
+            "label": "content_position",
+            "position": 9
+          },
+          "align": {
+            "label": "align_self",
+            "type": "Right"
+          },
+          "width": {
+            "label": "width",
+            "value": {
+              "unit": "Px",
+              "value": 1000
+            }
+          },
+          "height": {
+            "label": "height",
+            "value": {
+              "unit": "%",
+              "value": 12
+            }
+          },
+          "background": {
+            "label": "background",
+            "value": {
+              "color": {
+                "preset": 2
+              }
+            }
+          },
+          "border": {
+            "label": "border",
+            "value": {
+              "thickness": "l"
+            }
+          },
+          "opacity": {
+            "label": "opacity",
+            "config": {
+              "fill": true,
+              "number": 30
+            }
+          },
+          "radius": {
+            "label": "border_radius",
+            "config": {
+              "fill": true,
+              "number": 76
+            }
+          },
+          "shadow": {
+            "label": "box_shadow",
+            "config": {
+              "option": "hard",
+              "size": "M",
+              "direction": "Bottom Right"
+            }
+          },
+          "padding": {
+            "label": "padding",
+            "value": {
+              "input": true,
+              "top": 30,
+              "left": 22,
+              "bottom": 15,
+              "right": 22
+            }
+          },
+          "margin": {
+            "label": "margin",
+            "value": {
+              "input": true,
+              "top": 60,
+              "left": 44,
+              "bottom": 60,
+              "right": 44
+            }
+          },
+          "expected": {
+            "position_css": "static",
+            "content_position_css": "bottom-right",
+            "opacity_css": "0.3",
+            "radius_css": "76px",
+            "shadow_css": "rgb(0, 0, 0) 8px 8px 0px 0px",
+            "border_css": "10px solid",
+            "margin_css": "60px 44px",
+            "padding_css": "30px 22px 15px"
+          }
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_LB_SLS_08": {
+      "add_block": {
+        "parent_position": {
+          "section": 1,
+          "column": 1
+        },
+        "template": "Slideshow"
+      },
+      "new_slide": 4,
+      "duplicate_slide": 2,
+      "last_slide": 8,
+      "delete_slides": [7, 6, 5, 4, 3, 2],
+      "buttons": [1, 2],
+      "dnd_slide": {
+        "from": {
+          "slide": 4
+        },
+        "to": {
+          "slide": 2
+        }
+      },
+      "expected": {
+        "content": {
+          "default_sub_heading": "Deal of the week",
+          "default_heading": "40% off Suffix",
+          "default_description": "Description"
+        },
+        "button": {
+          "default_label": "Button text",
+          "default_attribute": "placeholder",
+          "default_value": "https://"
+        },
+        "pagination_dot": 8,
+        "delay_duration": "3",
+        "slide_name": "Slide 4"
+      }
+    },
+    "SB_WEB_BUILDER_LB_SLS_09": {
+      "add_block": {
+        "parent_position": {
+          "section": 1,
+          "column": 1
+        },
+        "template": "Slideshow"
+      },
+      "block_slideshow": {
+        "section": 1,
+        "block": 1
+      },
+      "layout_split": {
+        "layout": {
+          "flip_content": true,
+          "loop": true,
+          "type": "split",
+          "visible_arrows": false,
+          "visible_pagination": false,
+          "visible_partially": false
+        }
+      },
+      "content_width": [
+        {
+          "layout": {
+            "flip_content": true,
+            "loop": true,
+            "type": "full",
+            "visible_arrows": true,
+            "visible_pagination": true,
+            "visible_partially": true
+          },
+          "width": {
+            "value": 801,
+            "unit": "px"
+          }
+        },
+        {
+          "layout": {
+            "flip_content": true,
+            "loop": true,
+            "type": "full",
+            "visible_arrows": true,
+            "visible_pagination": true,
+            "visible_partially": true
+          },
+          "width": {
+            "value": 50,
+            "unit": "px"
+          }
+        }
+      ],
+      "expected": {
+        "full_value": "full",
+        "split_value": "split",
+        "partially_value": "partially",
+        "layout_attribute": "VueCarousel-slide slideshow__slide slideshow__slide--partially"
+      }
+    },
+    "SB_WEB_BUILDER_LB_SLS_10": {
+      "add_block": {
+        "parent_position": {
+          "section": 1,
+          "column": 1
+        },
+        "template": "Slideshow"
+      },
+      "edit_content": {
+        "sub_heading": "",
+        "heading": "Test Heading",
+        "description": "test slideshow"
+      },
+      "turn_off_buttons": [
+        {
+          "button": 1,
+          "is_on": false
+        },
+        {
+          "button": 2,
+          "is_on": false
+        }
+      ],
+      "edit_button_1": {
+        "button": 1,
+        "is_on": true,
+        "label": "",
+        "action": "Go to page",
+        "select": {
+          "label": "page",
+          "option": "All products",
+          "index": 1
+        },
+        "new_tab": true
+      },
+      "edit_button_2": [
+        {
+          "slides": [
+            {
+              "background": {
+                "color": {
+                  "code": "color_1",
+                  "opacity": 100
+                },
+                "image": "",
+                "img": {
+                  "action": {
+                    "option": {
+                      "data_type": "",
+                      "handle": "",
+                      "id": 0,
+                      "target": "",
+                      "url": ""
+                    },
+                    "type": "url"
+                  },
+                  "overlay": {
+                    "code": "color_5",
+                    "opacity": 20
+                  },
+                  "position": "center center",
+                  "repeat": "no-repeat",
+                  "size": "cover",
+                  "src": "https://img.thesitebase.net/themes/668/assets/images/default/slideshow-background.jpg"
+                },
+                "mode": "image"
+              },
+              "btn_primary_label": "",
+              "btn_primary_link": {
+                "option": {
+                  "url": "",
+                  "target": "_blank",
+                  "id": 0,
+                  "handle": "products",
+                  "data_type": ""
+                },
+                "type": "page"
+              },
+              "btn_secondary_label": "button",
+              "btn_secondary_link": {
+                "option": {
+                  "url": "",
+                  "target": "",
+                  "id": 0,
+                  "handle": "products",
+                  "data_type": ""
+                },
+                "type": "page"
+              },
+              "description": "test slideshow",
+              "heading": "Test Heading",
+              "show_btn_primary": false,
+              "show_btn_secondary": true,
+              "sub_heading": "",
+              "title": "Slide 1"
+            },
+            {
+              "background": {
+                "color": {
+                  "code": "color_1",
+                  "opacity": 100
+                },
+                "image": "",
+                "img": {
+                  "action": {
+                    "option": {
+                      "data_type": "",
+                      "handle": "",
+                      "id": 0,
+                      "target": "",
+                      "url": ""
+                    },
+                    "type": "url"
+                  },
+                  "overlay": {
+                    "code": "color_5",
+                    "opacity": 20
+                  },
+                  "position": "center center",
+                  "repeat": "no-repeat",
+                  "size": "cover",
+                  "src": "https://img.thesitebase.net/themes/668/assets/images/default/slideshow-background.jpg"
+                },
+                "mode": "image"
+              },
+              "btn_primary_label": "Button text",
+              "btn_primary_link": {
+                "option": {
+                  "data_type": "",
+                  "handle": "",
+                  "id": 0,
+                  "target": "",
+                  "url": ""
+                },
+                "type": "url"
+              },
+              "btn_secondary_label": "Button text",
+              "btn_secondary_link": {
+                "option": {
+                  "data_type": "",
+                  "handle": "",
+                  "id": 0,
+                  "target": "",
+                  "url": ""
+                },
+                "type": "url"
+              },
+              "description": "Description",
+              "heading": "40% off Suffix",
+              "show_btn_primary": true,
+              "show_btn_secondary": false,
+              "sub_heading": "Deal of the week",
+              "title": "Slide 2"
+            },
+            {
+              "background": {
+                "color": {
+                  "code": "color_1",
+                  "opacity": 100
+                },
+                "image": "",
+                "img": {
+                  "action": {
+                    "option": {
+                      "data_type": "",
+                      "handle": "",
+                      "id": 0,
+                      "target": "",
+                      "url": ""
+                    },
+                    "type": "url"
+                  },
+                  "overlay": {
+                    "code": "color_5",
+                    "opacity": 20
+                  },
+                  "position": "center center",
+                  "repeat": "no-repeat",
+                  "size": "cover",
+                  "src": "https://img.thesitebase.net/themes/668/assets/images/default/slideshow-background.jpg"
+                },
+                "mode": "image"
+              },
+              "btn_primary_label": "Button text",
+              "btn_primary_link": {
+                "option": {
+                  "data_type": "",
+                  "handle": "",
+                  "id": 0,
+                  "target": "",
+                  "url": ""
+                },
+                "type": "url"
+              },
+              "btn_secondary_label": "Button text",
+              "btn_secondary_link": {
+                "option": {
+                  "data_type": "",
+                  "handle": "",
+                  "id": 0,
+                  "target": "",
+                  "url": ""
+                },
+                "type": "url"
+              },
+              "description": "Description",
+              "heading": "40% off Suffix",
+              "show_btn_primary": true,
+              "show_btn_secondary": false,
+              "sub_heading": "Deal of the week",
+              "title": "Slide 3"
+            }
+          ],
+          "expected": {
+            "redirect_url": "collections/all"
+          }
+        },
+        {
+          "slides": [
+            {
+              "background": {
+                "color": {
+                  "code": "color_1",
+                  "opacity": 100
+                },
+                "image": "",
+                "img": {
+                  "action": {
+                    "option": {
+                      "data_type": "",
+                      "handle": "",
+                      "id": 0,
+                      "target": "",
+                      "url": ""
+                    },
+                    "type": "url"
+                  },
+                  "overlay": {
+                    "code": "color_5",
+                    "opacity": 20
+                  },
+                  "position": "center center",
+                  "repeat": "no-repeat",
+                  "size": "cover",
+                  "src": "https://img.thesitebase.net/themes/668/assets/images/default/slideshow-background.jpg"
+                },
+                "mode": "image"
+              },
+              "btn_primary_label": "",
+              "btn_primary_link": {
+                "option": {
+                  "url": "",
+                  "target": "_blank",
+                  "id": 0,
+                  "handle": "products",
+                  "data_type": ""
+                },
+                "type": "page"
+              },
+              "btn_secondary_label": "button",
+              "btn_secondary_link": {
+                "option": {
+                  "url": "youtube.com",
+                  "target": "",
+                  "id": 0,
+                  "handle": "",
+                  "data_type": ""
+                },
+                "type": "url"
+              },
+              "description": "test slideshow",
+              "heading": "Test Heading",
+              "show_btn_primary": false,
+              "show_btn_secondary": true,
+              "sub_heading": "",
+              "title": "Slide 1"
+            },
+            {
+              "background": {
+                "color": {
+                  "code": "color_1",
+                  "opacity": 100
+                },
+                "image": "",
+                "img": {
+                  "action": {
+                    "option": {
+                      "data_type": "",
+                      "handle": "",
+                      "id": 0,
+                      "target": "",
+                      "url": ""
+                    },
+                    "type": "url"
+                  },
+                  "overlay": {
+                    "code": "color_5",
+                    "opacity": 20
+                  },
+                  "position": "center center",
+                  "repeat": "no-repeat",
+                  "size": "cover",
+                  "src": "https://img.thesitebase.net/themes/668/assets/images/default/slideshow-background.jpg"
+                },
+                "mode": "image"
+              },
+              "btn_primary_label": "Button text",
+              "btn_primary_link": {
+                "option": {
+                  "data_type": "",
+                  "handle": "",
+                  "id": 0,
+                  "target": "",
+                  "url": ""
+                },
+                "type": "url"
+              },
+              "btn_secondary_label": "Button text",
+              "btn_secondary_link": {
+                "option": {
+                  "data_type": "",
+                  "handle": "",
+                  "id": 0,
+                  "target": "",
+                  "url": ""
+                },
+                "type": "url"
+              },
+              "description": "Description",
+              "heading": "40% off Suffix",
+              "show_btn_primary": true,
+              "show_btn_secondary": false,
+              "sub_heading": "Deal of the week",
+              "title": "Slide 2"
+            },
+            {
+              "background": {
+                "color": {
+                  "code": "color_1",
+                  "opacity": 100
+                },
+                "image": "",
+                "img": {
+                  "action": {
+                    "option": {
+                      "data_type": "",
+                      "handle": "",
+                      "id": 0,
+                      "target": "",
+                      "url": ""
+                    },
+                    "type": "url"
+                  },
+                  "overlay": {
+                    "code": "color_5",
+                    "opacity": 20
+                  },
+                  "position": "center center",
+                  "repeat": "no-repeat",
+                  "size": "cover",
+                  "src": "https://img.thesitebase.net/themes/668/assets/images/default/slideshow-background.jpg"
+                },
+                "mode": "image"
+              },
+              "btn_primary_label": "Button text",
+              "btn_primary_link": {
+                "option": {
+                  "data_type": "",
+                  "handle": "",
+                  "id": 0,
+                  "target": "",
+                  "url": ""
+                },
+                "type": "url"
+              },
+              "btn_secondary_label": "Button text",
+              "btn_secondary_link": {
+                "option": {
+                  "data_type": "",
+                  "handle": "",
+                  "id": 0,
+                  "target": "",
+                  "url": ""
+                },
+                "type": "url"
+              },
+              "description": "Description",
+              "heading": "40% off Suffix",
+              "show_btn_primary": true,
+              "show_btn_secondary": false,
+              "sub_heading": "Deal of the week",
+              "title": "Slide 3"
+            }
+          ],
+          "expected": {
+            "redirect_url": "youtube.com"
+          }
+        },
+        {
+          "slides": [
+            {
+              "background": {
+                "color": {
+                  "code": "color_1",
+                  "opacity": 100
+                },
+                "image": "",
+                "img": {
+                  "action": {
+                    "option": {
+                      "data_type": "",
+                      "handle": "",
+                      "id": 0,
+                      "target": "",
+                      "url": ""
+                    },
+                    "type": "url"
+                  },
+                  "overlay": {
+                    "code": "color_5",
+                    "opacity": 20
+                  },
+                  "position": "center center",
+                  "repeat": "no-repeat",
+                  "size": "cover",
+                  "src": "https://img.thesitebase.net/themes/668/assets/images/default/slideshow-background.jpg"
+                },
+                "mode": "image"
+              },
+              "btn_primary_label": "",
+              "btn_primary_link": {
+                "option": {
+                  "url": "",
+                  "target": "_blank",
+                  "id": 0,
+                  "handle": "products",
+                  "data_type": ""
+                },
+                "type": "page"
+              },
+              "btn_secondary_label": "button",
+              "btn_secondary_link": {
+                "option": {
+                  "url": "https://www.youtube.com",
+                  "target": "",
+                  "id": 0,
+                  "handle": "",
+                  "data_type": ""
+                },
+                "type": "url"
+              },
+              "description": "test slideshow",
+              "heading": "Test Heading",
+              "show_btn_primary": false,
+              "show_btn_secondary": true,
+              "sub_heading": "",
+              "title": "Slide 1"
+            },
+            {
+              "background": {
+                "color": {
+                  "code": "color_1",
+                  "opacity": 100
+                },
+                "image": "",
+                "img": {
+                  "action": {
+                    "option": {
+                      "data_type": "",
+                      "handle": "",
+                      "id": 0,
+                      "target": "",
+                      "url": ""
+                    },
+                    "type": "url"
+                  },
+                  "overlay": {
+                    "code": "color_5",
+                    "opacity": 20
+                  },
+                  "position": "center center",
+                  "repeat": "no-repeat",
+                  "size": "cover",
+                  "src": "https://img.thesitebase.net/themes/668/assets/images/default/slideshow-background.jpg"
+                },
+                "mode": "image"
+              },
+              "btn_primary_label": "Button text",
+              "btn_primary_link": {
+                "option": {
+                  "data_type": "",
+                  "handle": "",
+                  "id": 0,
+                  "target": "",
+                  "url": ""
+                },
+                "type": "url"
+              },
+              "btn_secondary_label": "Button text",
+              "btn_secondary_link": {
+                "option": {
+                  "data_type": "",
+                  "handle": "",
+                  "id": 0,
+                  "target": "",
+                  "url": ""
+                },
+                "type": "url"
+              },
+              "description": "Description",
+              "heading": "40% off Suffix",
+              "show_btn_primary": true,
+              "show_btn_secondary": false,
+              "sub_heading": "Deal of the week",
+              "title": "Slide 2"
+            },
+            {
+              "background": {
+                "color": {
+                  "code": "color_1",
+                  "opacity": 100
+                },
+                "image": "",
+                "img": {
+                  "action": {
+                    "option": {
+                      "data_type": "",
+                      "handle": "",
+                      "id": 0,
+                      "target": "",
+                      "url": ""
+                    },
+                    "type": "url"
+                  },
+                  "overlay": {
+                    "code": "color_5",
+                    "opacity": 20
+                  },
+                  "position": "center center",
+                  "repeat": "no-repeat",
+                  "size": "cover",
+                  "src": "https://img.thesitebase.net/themes/668/assets/images/default/slideshow-background.jpg"
+                },
+                "mode": "image"
+              },
+              "btn_primary_label": "Button text",
+              "btn_primary_link": {
+                "option": {
+                  "data_type": "",
+                  "handle": "",
+                  "id": 0,
+                  "target": "",
+                  "url": ""
+                },
+                "type": "url"
+              },
+              "btn_secondary_label": "Button text",
+              "btn_secondary_link": {
+                "option": {
+                  "data_type": "",
+                  "handle": "",
+                  "id": 0,
+                  "target": "",
+                  "url": ""
+                },
+                "type": "url"
+              },
+              "description": "Description",
+              "heading": "40% off Suffix",
+              "show_btn_primary": true,
+              "show_btn_secondary": false,
+              "sub_heading": "Deal of the week",
+              "title": "Slide 3"
+            }
+          ],
+          "expected": {
+            "redirect_url": "https://www.youtube.com"
+          }
+        }
+      ],
+      "add_image": {
+        "file": "data/shopbase/front/background.jpg",
+        "size": "Contain",
+        "position": 4
+      },
+      "add_video": {
+        "url": "https://www.youtube.com/watch?v=8UVNT4wvIGY"
+      },
+      "expected": {
+        "default_sub_heading": "Deal of the week",
+        "default_heading": "40% off Suffix",
+        "default_description": "Description",
+        "sub_heading_sf": "",
+        "heading_sf": "Test Heading",
+        "description_sf": "test slideshow",
+        "button_1_label": "",
+        "button_2_label": "button",
+        "redirect_url": "collections/all",
+        "video_url": "8UVNT4wvIGY"
+      }
+    },
+    "SB_WEB_BUILDER_LB_SLS_11": {
+      "add_block": {
+        "parent_position": {
+          "section": 1,
+          "column": 1
+        },
+        "template": "Slideshow"
+      },
+      "slide_2": 2,
+      "slide_3": 3,
+      "resizer_positions": ["top", "left", "bottom", "right", "top-left", "top-right", "bottom-left", "bottom-right"],
+      "expected": {
+        "attribute": "class",
+        "slide_active": "active"
+      }
+    },
+    "SB_WEB_BUILDER_LB_SLS_12": {
+      "add_block": {
+        "parent_position": {
+          "section": 1,
+          "column": 1
+        },
+        "template": "Slideshow"
+      },
+      "min_width": [
+        {
+          "slide_1": 1,
+          "width": {
+            "value": 790,
+            "unit": "px"
+          },
+          "expected": {
+            "content_width": 598
+          }
+        },
+        {
+          "slide_1": 1,
+          "width": {
+            "value": 0,
+            "unit": "px"
+          },
+          "expected": {
+            "content_width": 64
+          }
+        }
+      ],
+      "max_width": [
+        {
+          "slide_1": 1,
+          "width": {
+            "value": 802,
+            "unit": "px"
+          },
+          "expected": {
+            "content_width": 610
+          }
+        },
+        {
+          "slide_1": 1,
+          "width": {
+            "value": 1270,
+            "unit": "px"
+          },
+          "expected": {
+            "content_width": 736
+          }
+        }
+      ],
+      "min_height": {
+        "height": {
+          "unit": "auto",
+          "value": 0
+        }
+      },
+      "validate_content": {
+        "sub_heading": "A3JD5eWRWNCZKJ9FUpYZ96Cgf3gC9AydQUvWuYzrDHEXFQaDq",
+        "heading": "MfvrykrgRwLbFdYEiABZLgiCnju5udaVJ9w5qJCv5uzhcAkARkviLdzPT9uVgcNrV",
+        "description": "5J2B3JUJWgHRCvRb6wXFrqbcZwn4JjcxvLpJb7bpnby8gxaUwTehSHkbvb6TypgytzqeBLpSYH3AzdvKYbkxmz3FQhV3fYmWEA8XDPLVDhjmxgkBx5TFcpYhETfVZr8Wi72CQrEa9HUdkNUF2hPSkxmmYABCDmxA9LVA2F3KEpWW3ixjrMwUPkRDBuDf3TANnApQWfDQfyb7U4RVrT2CRSyr9GhUV"
+      },
+      "content_spacing": [
+        {
+          "type": "sub-heading",
+          "spacing": "4px"
+        },
+        {
+          "type": "heading",
+          "spacing": "4px"
+        },
+        {
+          "type": "description",
+          "spacing": "24px"
+        }
+      ],
+      "expected": {
+        "no_limit": {
+          "sub_heading": "A3JD5eWRWNCZKJ9FUpYZ96Cgf3gC9AydQUvWuYzrDHEXFQaDq",
+          "heading": "MfvrykrgRwLbFdYEiABZLgiCnju5udaVJ9w5qJCv5uzhcAkARkviLdzPT9uVgcNrV",
+          "description": "5J2B3JUJWgHRCvRb6wXFrqbcZwn4JjcxvLpJb7bpnby8gxaUwTehSHkbvb6TypgytzqeBLpSYH3AzdvKYbkxmz3FQhV3fYmWEA8XDPLVDhjmxgkBx5TFcpYhETfVZr8Wi72CQrEa9HUdkNUF2hPSkxmmYABCDmxA9LVA2F3KEpWW3ixjrMwUPkRDBuDf3TANnApQWfDQfyb7U4RVrT2CRSyr9GhUV"
+        }
+      }
+    },
+    "SB_WEB_BUILDER_LB_SLS_14": {
+      "add_block": {
+        "parent_position": {
+          "section": 1,
+          "column": 1
+        },
+        "template": "Slideshow"
+      },
+      "split_layout": {
+        "layout": "Split"
+      },
+      "expected": {
+        "mobile_content_padding": "40px 40px 64px"
+      }
+    },
+    "SB_WEB_BUILDER_LB_SLS_15": {
+      "add_block": {
+        "parent_position": {
+          "section": 1,
+          "column": 1
+        },
+        "template": "Slideshow"
+      }
+    },
+    "SB_WEB_BUILDER_LB_SLS_16": {
+      "add_block": {
+        "parent_position": {
+          "section": 1,
+          "column": 1
+        },
+        "template": "Slideshow"
+      },
+      "autoplay_on": {
+        "autoplay": true,
+        "delay": 3,
+        "pause_on_hover": false
+      },
+      "loop_off": {
+        "layout": {
+          "flip_content": false,
+          "loop": false,
+          "type": "full",
+          "visible_arrows": true,
+          "visible_pagination": true,
+          "visible_partially": false
+        }
+      },
+      "loop_on": {
+        "layout": {
+          "flip_content": false,
+          "loop": true,
+          "type": "full",
+          "visible_arrows": true,
+          "visible_pagination": true,
+          "visible_partially": false
+        }
+      }
+    }
+  }
+}

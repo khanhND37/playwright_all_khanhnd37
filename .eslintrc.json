@@ -1,0 +1,30 @@
+{
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:playwright/playwright-test",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "prettier"
+  ],
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "rules": {
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "semi": ["error", "always"],
+    "object-curly-spacing": ["error", "always"],
+    "space-before-blocks": ["error", "always"],
+    "keyword-spacing": 1,
+    "no-console": 1,
+    "playwright/missing-playwright-await": 2,
+    "playwright/no-page-pause": 1,
+    "linebreak-style": 0,
+    "eslint linebreak-style": [0, "error", "windows"],
+    "camelcase": [1, { "ignoreDestructuring": true, "ignoreImports": true, "properties": "never" }],
+    "max-len": ["error", { "code": 120 , "ignoreStrings": true, "ignoreTemplateLiterals": true}],
+    "playwright/no-networkidle": 0,
+    "playwright/no-wait-for-timeout": 0,
+    "playwright/no-conditional-in-test": 0
+  }
+}

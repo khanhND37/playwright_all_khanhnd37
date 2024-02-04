@@ -1,0 +1,270 @@
+{
+  "api": "https://gapi.dev.shopbase.net",
+  "domain": "digital-product-list-2.myshopbase.net",
+  "username": "shopbase@beeketing.net",
+  "password": "S#|j>m2N[q",
+  "user_id": "73800",
+  "shop_id": 10323459,
+  "shop_name": "digital-product-list-2",
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-digital-product-list-dashboard.onshopbase.com",
+      "shop_name": "au-digital-product-list-dashboard",
+      "user_id": "11244582",
+      "shop_id": 10429473,
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-digital-product-list-dashboard-prodtest.onshopbase.com",
+      "shop_name": "au-digital-product-list-dashboard-prodtest",
+      "user_id": "11244582",
+      "shop_id": 10429570,
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "digital-product-list-2.myshopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "user_id": "73800",
+      "shop_id": 10323459,
+      "shop_name": "digital-product-list-2"
+    }
+  },
+  "products": [
+    {
+      "product": {
+        "title": "Digital Product Online Course",
+        "product_type": "online_course",
+        "published": true
+      }
+    },
+    {
+      "product": {
+        "title": "Digital Product Online Course unpublished",
+        "product_type": "online_course",
+        "published": false
+      }
+    },
+    {
+      "product": {
+        "title": "Digital Product digital download unpublished",
+        "product_type": "digital_download",
+        "published": false
+      }
+    },
+    {
+      "product": {
+        "title": "Digital Product coaching session unpublished",
+        "product_type": "coaching_session",
+        "published": false
+      }
+    },
+    {
+      "product": {
+        "title": "Online Course not complete",
+        "product_type": "online_course",
+        "published": true
+      }
+    },
+    {
+      "product": {
+        "title": "Product Digital download",
+        "product_type": "digital_download",
+        "published": true
+      },
+      "dp_data": {
+        "sections": [
+          {
+            "id": 0,
+            "title": "",
+            "status": "published",
+            "position": 0,
+            "lectures": [
+              {
+                "id": 0,
+                "title": "",
+                "status": "published",
+                "position": 0,
+                "medias": []
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "product": {
+        "title": "Coaching session product api",
+        "product_type": "coaching_session",
+        "published": true
+      },
+      "dp_data": {
+        "sections": [
+          {
+            "id": 0,
+            "title": "",
+            "status": "published",
+            "position": 0,
+            "lectures": [
+              {
+                "id": 0,
+                "title": "",
+                "status": "published",
+                "position": 0,
+                "medias": []
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "cases": {
+    "DATA_FILTER_PRODUCT": {
+      "data": [
+        {
+          "description": "Kiểm tra get all product list",
+          "case_id": "SB_SC_SCP_31",
+          "product_list": {
+            "filter": "",
+            "total_product": 7
+          }
+        },
+        {
+          "description": "Get product list với published_status null",
+          "case_id": "SB_SC_SCP_30",
+          "product_list": {
+            "filter": "?published_status=",
+            "total_product": 7
+          }
+        },
+        {
+          "description": "Get product list với status = published",
+          "case_id": "SB_SC_SCP_29",
+          "product_list": {
+            "filter": "?published_status=published",
+            "total_product": 0
+          }
+        },
+        {
+          "description": "Get product list với status = unpublished",
+          "case_id": "SB_SC_SCP_28",
+          "product_list": {
+            "filter": "?published_status=unpublished",
+            "total_product": 7
+          }
+        },
+        {
+          "description": "Get product list với title null",
+          "case_id": "SB_SC_SCP_27",
+          "product_list": {
+            "filter": "?title=",
+            "total_product": 7
+          }
+        },
+        {
+          "description": "Get product list với title chứa ký tự đặc biệt",
+          "case_id": "SB_SC_SCP_26",
+          "product_list": {
+            "filter": "?title=!@$%23@%$^%%abcdefgh",
+            "total_product": 7
+          }
+        },
+        {
+          "description": "Get product list với title mode contains",
+          "case_id": "SB_SC_SCP_25",
+          "product_list": {
+            "filter": "?title_mode=contains&title=product",
+            "total_product": 6
+          }
+        },
+        {
+          "description": "Get product list với title mode not_contains",
+          "case_id": "SB_SC_SCP_24",
+          "product_list": {
+            "filter": "?title=abc&title_mode=not_contains",
+            "total_product": 7
+          }
+        },
+        {
+          "description": "Get product list với product_type=coaching_session",
+          "case_id": "SB_SC_SCP_23",
+          "product_list": {
+            "filter": "?product_type=coaching_session",
+            "total_product": 2
+          }
+        },
+        {
+          "description": "Get product list với product_type=digital_download",
+          "case_id": "SB_SC_SCP_22",
+          "product_list": {
+            "filter": "?product_type=digital_download",
+            "total_product": 2
+          }
+        },
+        {
+          "description": "Get product list với member = null",
+          "case_id": "SB_SC_SCP_21",
+          "product_list": {
+            "filter": "?member=",
+            "total_product": 7
+          }
+        },
+        {
+          "description": "Get list product với \"member\" khác số (text hoặc ký tự đặc biệt)",
+          "case_id": "SB_SC_SCP_20",
+          "product_list": {
+            "filter": "?member_mode=equals&member=abc!@%",
+            "total_product": 7
+          }
+        },
+        {
+          "description": "Get product list với member là số âm",
+          "case_id": "SB_SC_SCP_19",
+          "product_list": {
+            "filter": "?member_mode=less_than&member=-1",
+            "total_product": 0
+          }
+        },
+        {
+          "description": "Get product list với member=0",
+          "case_id": "SB_SC_SCP_18",
+          "product_list": {
+            "filter": "?member_mode=more_than&member=0",
+            "total_product": 7
+          }
+        },
+        {
+          "description": "Get product list filter kết hợp title,status",
+          "case_id": "SB_SC_SCP_17",
+          "product_list": {
+            "filter": "?published_status=published&title_mode=contains&title=api",
+            "total_product": 0
+          }
+        },
+        {
+          "description": "Get product list filter kết hợp title,status,member",
+          "case_id": "SB_SC_SCP_16",
+          "product_list": {
+            "filter": "?published_status=published&title_mode=contains&title=api&member_mode=equals&member=0",
+            "total_product": 0
+          }
+        },
+        {
+          "description": "Get product list filter kết hợp title,status,product_type",
+          "case_id": "SB_SC_SCP_15",
+          "product_list": {
+            "filter": "?published_status=published&title_mode=contains&title=api&product_type=coaching_session",
+            "total_product": 0
+          }
+        }
+      ]
+    }
+  }
+}

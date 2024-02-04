@@ -1,0 +1,501 @@
+{
+  "env": {
+    "local": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-sticky-atc.myshopbase.net",
+      "shop_name": "au-sticky-atc",
+      "shop_id": 10326852,
+      "username": "dpro-qe-1@beeketing.net  ",
+      "password": "43AhIn|VWp;[?9&",
+      "user_id": 89797,
+      "theme_id": 3164277
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-sticky-atc.myshopbase.net",
+      "shop_name": "au-sticky-atc",
+      "shop_id": 10326852,
+      "username": "dpro-qe-1@beeketing.net  ",
+      "password": "43AhIn|VWp;[?9&",
+      "user_id": 89797,
+      "theme_id": 3164277
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-sticky-atc.onshopbase.com",
+      "shop_name": "au-sticky-atc",
+      "shop_id": 10428974,
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "theme_id": 1393145
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-sticky-atc-prod-test.onshopbase.com",
+      "shop_name": "au-sticky-atc-prod-test",
+      "shop_id": 10429224,
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "theme_id": 1393674,
+      "accounts_domain": "accounts-test.shopbase.com"
+    }
+  },
+  "cases": {
+    "SB_WEB_BUILDER_ST_ATC_01": {
+      "do_not_select": true,
+      "hide_when_has_one_value": true,
+      "show_combination": true,
+      "expected": {
+        "step_1": [
+          {
+            "product_title": "Product no custom option",
+            "snapshot": "product-no-custom-option.png"
+          },
+          {
+            "product_title": "Product has custom option (text, image required)",
+            "snapshot": "product-has-custom-option-text-and-image-required.png"
+          },
+          {
+            "product_title": "product 1 custom option text required",
+            "snapshot": "product-1-custom-option-text-required.png"
+          },
+          {
+            "product_title": "product 1 co text no required and no variant",
+            "snapshot": "product-1-co-text-no-required-and-no-variant.png"
+          },
+          {
+            "product_title": "product 1 custom option required different text",
+            "snapshot": "product-1-custom-option-required-different-text.png"
+          }
+        ],
+        "step_2": [
+          {
+            "product_handle": "product-no-custom-option",
+            "snapshot": "mobile-product-no-custom-option.png"
+          },
+          {
+            "product_handle": "product-1-custom-option-text-required",
+            "snapshot": "mobile-product-1-custom-option-text-required.png"
+          },
+          {
+            "product_handle": "product-1-co-text-no-required-and-no-variant",
+            "snapshot": "mobile-product-1-co-text-no-required-and-no-variant.png"
+          },
+          {
+            "product_handle": "product-1-custom-option-required-different-text",
+            "snapshot": "mobile-product-1-custom-option-required-different-text.png"
+          }
+        ],
+        "step_3": [
+          {
+            "product_title": "Product no custom option",
+            "snapshot": "view-gallery-product-no-custom-option.png"
+          },
+          {
+            "product_title": "Product has custom option (text, image required)",
+            "snapshot": "view-gallery-product-has-custom-option-text-and-image-required.png"
+          },
+          {
+            "product_title": "product 1 custom option text required",
+            "snapshot": "view-gallery-product-1-custom-option-text-required.png"
+          },
+          {
+            "product_title": "product 1 co text no required and no variant",
+            "snapshot": "view-gallery-product-1-co-text-no-required-and-no-variant.png"
+          },
+          {
+            "product_title": "product 1 custom option required different text",
+            "snapshot": "view-gallery-product-1-custom-option-required-different-text.png"
+          }
+        ]
+      }
+    },
+    "SB_WEB_BUILDER_ST_ATC_02": {
+      "step_1": [
+        {
+          "product_title": "Multiple variant product",
+          "do_not_select": true,
+          "hide_when_has_one_value": true,
+          "show_combination": true,
+          "default_selected": [
+            {
+              "placeholder": "Size"
+            }
+          ],
+          "expected": [
+            {
+              "on_click": "S",
+              "hidden_variants": ["White", "Red"]
+            },
+            {
+              "on_click": "M",
+              "variants": ["White", "Red"]
+            }
+          ]
+        },
+        {
+          "product_title": "Multiple variant product",
+          "auto_choose_variant": true,
+          "hide_when_has_one_value": true,
+          "show_combination": true,
+          "default_selected": ["S"],
+          "expected": [
+            {
+              "on_click": "S",
+              "hidden_variants": ["White", "Red"]
+            },
+            {
+              "on_click": "M",
+              "variants": ["White", "Red"]
+            }
+          ]
+        },
+        {
+          "product_title": "Multiple variant product",
+          "do_not_select": true,
+          "hide_when_has_one_value": false,
+          "show_combination": true,
+          "default_selected": [
+            {
+              "placeholder": "Size"
+            },
+            {
+              "value": "Red"
+            }
+          ],
+          "expected": [
+            {
+              "on_click": "S",
+              "variants": ["Red"]
+            },
+            {
+              "on_click": "M",
+              "variants": ["White", "Red"]
+            }
+          ]
+        },
+        {
+          "product_title": "Multiple variant product",
+          "auto_choose_variant": true,
+          "hide_when_has_one_value": false,
+          "show_combination": true,
+          "default_selected": [
+            {
+              "value": "S"
+            },
+            {
+              "value": "Red"
+            }
+          ],
+          "expected": [
+            {
+              "on_click": "S",
+              "variants": ["Red"]
+            },
+            {
+              "on_click": "M",
+              "variants": ["White", "Red"]
+            }
+          ]
+        },
+        {
+          "product_title": "Multiple variant product",
+          "do_not_select": true,
+          "hide_when_has_one_value": true,
+          "show_combination": false,
+          "default_selected": [
+            {
+              "placeholder": "Size"
+            },
+            {
+              "placeholder": "Colors"
+            }
+          ],
+          "expected": [
+            {
+              "on_click": "S",
+              "variants": ["White", "Red"]
+            },
+            {
+              "on_click": "M",
+              "variants": ["White", "Red"]
+            }
+          ]
+        },
+        {
+          "product_title": "Multiple variant product",
+          "auto_choose_variant": true,
+          "hide_when_has_one_value": true,
+          "show_combination": false,
+          "default_selected": [
+            {
+              "value": "S"
+            },
+            {
+              "value": "Red"
+            }
+          ],
+          "expected": [
+            {
+              "on_click": "S",
+              "variants": ["White", "Red"]
+            },
+            {
+              "on_click": "M",
+              "variants": ["White", "Red"]
+            }
+          ]
+        },
+        {
+          "product_title": "Product 1 variant",
+          "do_not_select": true,
+          "hide_when_has_one_value": true,
+          "show_combination": true,
+          "expected_active_count": 0
+        },
+        {
+          "product_title": "Product 1 variant",
+          "auto_choose_variant": true,
+          "hide_when_has_one_value": true,
+          "show_combination": true,
+          "expected_active_count": 0
+        },
+        {
+          "product_title": "Product 1 variant",
+          "do_not_select": true,
+          "hide_when_has_one_value": false,
+          "show_combination": true,
+          "default_selected": [
+            {
+              "value": "S"
+            }
+          ]
+        },
+        {
+          "product_title": "Product 1 variant",
+          "auto_choose_variant": true,
+          "hide_when_has_one_value": false,
+          "show_combination": true,
+          "default_selected": [
+            {
+              "value": "S"
+            }
+          ]
+        },
+        {
+          "product_title": "Product 1 variant",
+          "do_not_select": true,
+          "hide_when_has_one_value": true,
+          "show_combination": false,
+          "expected_active_count": 0
+        },
+        {
+          "product_title": "Product 1 variant",
+          "auto_choose_variant": true,
+          "hide_when_has_one_value": true,
+          "show_combination": false,
+          "expected_active_count": 0
+        },
+        {
+          "product_title": "Product 2 variant",
+          "do_not_select": true,
+          "hide_when_has_one_value": true,
+          "show_combination": true,
+          "expected_active_count": 0
+        },
+        {
+          "product_title": "Product 2 variant",
+          "auto_choose_variant": true,
+          "hide_when_has_one_value": true,
+          "show_combination": true,
+          "expected_active_count": 0
+        },
+        {
+          "product_title": "Product 2 variant",
+          "do_not_select": true,
+          "hide_when_has_one_value": false,
+          "show_combination": true,
+          "default_selected": [
+            {
+              "value": "M"
+            }
+          ]
+        },
+        {
+          "product_title": "Product 2 variant",
+          "auto_choose_variant": true,
+          "hide_when_has_one_value": false,
+          "show_combination": true,
+          "default_selected": [
+            {
+              "value": "M"
+            }
+          ]
+        },
+        {
+          "product_title": "Product 2 variant",
+          "do_not_select": true,
+          "hide_when_has_one_value": true,
+          "show_combination": false,
+          "default_selected": [
+            {
+              "placeholder": "Size"
+            }
+          ],
+          "expected": [
+            {
+              "on_click": "Size",
+              "variants": ["S", "M"]
+            }
+          ]
+        },
+        {
+          "product_title": "Product 2 variant",
+          "auto_choose_variant": true,
+          "hide_when_has_one_value": true,
+          "show_combination": false,
+          "default_selected": [
+            {
+              "value": "M"
+            }
+          ],
+          "expected": [
+            {
+              "on_click": "M",
+              "variants": ["S", "M"]
+            }
+          ]
+        }
+      ],
+      "step_2": {
+        "product_title": "Multiple variant product",
+        "do_not_select": true,
+        "hide_when_has_one_value": false,
+        "show_combination": false,
+        "sticky_on_clicks": ["S", "Red"],
+        "variants": ["S", "Red"]
+      },
+      "step_3": {
+        "product_title": "Multiple variant product",
+        "do_not_select": true,
+        "hide_when_has_one_value": false,
+        "show_combination": false,
+        "variant_on_clicks": ["S", "Red"],
+        "default_selected": [
+          {
+            "value": "S"
+          },
+          {
+            "value": "Red"
+          }
+        ]
+      },
+      "step_4": {
+        "product_handle": "green-shirt",
+        "do_not_select": true,
+        "hide_when_has_one_value": false,
+        "show_combination": false,
+        "sticky_on_clicks": ["S", "Red"],
+        "variants": ["S", "Red"]
+      },
+      "step_5": {
+        "product_handle": "green-shirt",
+        "do_not_select": true,
+        "hide_when_has_one_value": false,
+        "show_combination": false,
+        "variant_on_clicks": ["S", "Red"],
+        "default_selected": [
+          {
+            "value": "S"
+          },
+          {
+            "value": "Red"
+          }
+        ]
+      },
+      "step_6": {
+        "product_title": "Multiple variant product",
+        "do_not_select": true,
+        "hide_when_has_one_value": false,
+        "show_combination": false,
+        "sticky_on_clicks": ["S", "White"]
+      }
+    },
+    "SB_WEB_BUILDER_ST_ATC_09": {
+      "step_1": {
+        "product_title": "Multiple variant product",
+        "do_not_select": true,
+        "hide_when_has_one_value": false,
+        "show_combination": false,
+        "snapshot": "sticky-error-message.png"
+      },
+      "step_2": {
+        "product_handle": "green-shirt",
+        "do_not_select": true,
+        "hide_when_has_one_value": false,
+        "show_combination": false,
+        "sticky_on_clicks": ["S", "Red"]
+      },
+      "step_3": {
+        "product_handle": "green-shirt",
+        "do_not_select": true,
+        "hide_when_has_one_value": false,
+        "show_combination": false,
+        "snapshot": "mobile-sticky-error-message.png"
+      },
+      "step_4": {
+        "product_handle": "green-shirt",
+        "do_not_select": true,
+        "hide_when_has_one_value": false,
+        "show_combination": false,
+        "sticky_on_clicks": ["S", "Red"]
+      }
+    },
+    "SB_WEB_BUILDER_ST_ATC_10": {
+      "product_a": {
+        "product_handle": "product-1-custom-option-required-different-text",
+        "co_example": "CO example",
+        "img": "data/shopbase/artwork_case_06.jpg",
+        "default_selected": [
+          {
+            "placeholder": "Size"
+          },
+          {
+            "placeholder": "Color"
+          }
+        ],
+        "snapshot": "product-1-custom-option-required-different-text-sticky-error-message.png",
+        "sticky_on_clicks": ["M", "Green"]
+      },
+      "product_b": {
+        "product_handle": "product-1-custom-option-text-required",
+        "co_example": "Love dog",
+        "default_selected": [
+          {
+            "placeholder": "Size"
+          },
+          {
+            "placeholder": "Color"
+          }
+        ],
+        "snapshot": "product-1-custom-option-text-required-sticky-error-message.png",
+        "sticky_on_clicks": ["M", "Green"]
+      },
+      "product_c": {
+        "product_handle": "product-1-custom-option-text-no-required",
+        "default_selected": [
+          {
+            "placeholder": "Size"
+          },
+          {
+            "placeholder": "Color"
+          }
+        ],
+        "snapshot": "product-1-custom-option-text-no-required-sticky-error-message.png",
+        "sticky_on_clicks": ["M", "Green"]
+      }
+    }
+  }
+}

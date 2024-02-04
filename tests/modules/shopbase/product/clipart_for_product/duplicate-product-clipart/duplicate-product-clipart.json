@@ -1,0 +1,1164 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-duplicate-product-clipart.onshopbase.com",
+      "shop_name": "au-duplicate-product-clipart",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10422854,
+      "user_id": 73782,
+      "timeout": 1000000,
+      "prefix_snapshot": "prod"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-duplicate-product-clipart-prod-test.onshopbase.com",
+      "shop_name": "au-duplicate-product-clipart-prod-test",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10422855,
+      "user_id": 73782,
+      "timeout": 1000000,
+      "prefix_snapshot": "prodtest"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-duplicate-product-clipart-dev.myshopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_name": "au-duplicate-product-clipart-dev",
+      "user_id": 73800,
+      "shop_id": 10325438,
+      "timeout": 1000000,
+      "cases": {
+        "DATA_DRIVEN": {
+          "data": [
+            {
+              "description": "Check khi add new product với folder clipart khi chọn Show with Thumbnail images tại màn Product detail",
+              "case_id": "SB_PRO_SBP_ICFP_13",
+              "case_driven": [
+                {
+                  "clipart_folder_info": [
+                    {
+                      "folder_name": "folder duplicate 13",
+                      "images": ["BD_1.png>anh2.jpg", "BD_4.png"]
+                    }
+                  ],
+                  "product_all_info": {
+                    "title": "Product duplicate folder clipart 13",
+                    "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                    "image_name": "Logo1.jpg",
+                    "vendor": "Uniqlo",
+                    "price": "10",
+                    "compare_at_price": "20"
+                  },
+                  "button_click_open_editor": "Create custom option only",
+                  "duplicate_name": "Copy of Product duplicate folder clipart",
+                  "duplicate_name_logic": "Conditional copy of Product duplicate folder clipart",
+                  "custom_option_info": [
+                    {
+                      "custom_name": "Picture choice",
+                      "default_name": "Custom Option 1",
+                      "label": "Picture choice",
+                      "type": "Picture choice",
+                      "type_clipart": "Folder",
+                      "values": "folder duplicate 13",
+                      "index": 1,
+                      "type_display_clipart": "Show with Thumbnail images",
+                      "add_another_option": "yes"
+                    },
+                    {
+                      "type": "Text field",
+                      "custom_name": "Text field",
+                      "label": "Text field",
+                      "default_name": "Custom Option 2",
+                      "index": 2,
+                      "position": 1,
+                      "allow_following": "Characters,Numbers,Special Characters"
+                    }
+                  ],
+                  "conditional_logic_info": {
+                    "field": "Value",
+                    "custom_name": "Picture choice",
+                    "condition": ["is equal to>BD_1"],
+                    "then_show_value": ["Text field"]
+                  },
+                  "picture": {
+                    "custom_option_detail": "custom_option_detail_1_SB_PRO_SBP_ICFP_13_dev.png",
+                    "conditional_logic": "conditional_logic_1_SB_PRO_SBP_ICFP_13_dev.png",
+                    "conditional_logic_duplicate": "conditional_logic_duplicate_1_SB_PRO_SBP_ICFP_13_dev.png"
+                  }
+                },
+                {
+                  "clipart_folder_info": [
+                    {
+                      "folder_name": "folder duplicate 13.1",
+                      "group_name": "Group 13",
+                      "images": ["BD_1.png", "BD_2.png"]
+                    },
+                    {
+                      "folder_name": "folder duplicate 13.2",
+                      "group_name": "Group 13",
+                      "images": ["BD_3.png", "BD_4.png"]
+                    }
+                  ],
+                  "product_all_info": {
+                    "title": "Product duplicate group clipart 13",
+                    "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                    "image_name": "Logo1.jpg",
+                    "vendor": "Uniqlo",
+                    "price": "10",
+                    "compare_at_price": "20"
+                  },
+                  "button_click_open_editor": "Create custom option only",
+                  "duplicate_name": "Copy of Product duplicate group clipart",
+                  "duplicate_name_logic": "Conditional copy of Product duplicate group clipart",
+                  "custom_option_info": [
+                    {
+                      "custom_name": "Picture choice",
+                      "default_name": "Custom Option 1",
+                      "label": "Picture choice",
+                      "type": "Picture choice",
+                      "type_clipart": "Group",
+                      "values": "Group 13",
+                      "index": 1,
+                      "type_display_clipart": "Show as a droplist with Clipart names",
+                      "add_another_option": "yes"
+                    },
+                    {
+                      "type": "Text field",
+                      "custom_name": "Text field",
+                      "label": "Text field",
+                      "default_name": "Custom Option 2",
+                      "index": 2,
+                      "position": 1,
+                      "allow_following": "Characters,Numbers,Special Characters"
+                    }
+                  ],
+                  "conditional_logic_info": {
+                    "field": "Value",
+                    "custom_name": "Picture choice",
+                    "condition": ["is equal to>folder duplicate 13.1"],
+                    "then_show_value": ["Text field"]
+                  },
+                  "picture": {
+                    "custom_option_detail": "custom_option_detail_2_SB_PRO_SBP_ICFP_13_dev.png",
+                    "conditional_logic": "conditional_logic_2_SB_PRO_SBP_ICFP_13_dev.png",
+                    "conditional_logic_duplicate": "conditional_logic_duplicate_2_SB_PRO_SBP_ICFP_13_dev.png"
+                  }
+                }
+              ]
+            },
+            {
+              "description": " Check khi add new product với folder clipart khi chọn Show as a droplist with Clipart names tại màn Product detail",
+              "case_id": "SB_PRO_SBP_ICFP_14",
+              "case_driven": [
+                {
+                  "clipart_folder_info": [
+                    {
+                      "folder_name": "folder duplicate 14",
+                      "images": ["BD_1.png>anh2.jpg", "BD_4.png"]
+                    }
+                  ],
+                  "product_all_info": {
+                    "title": "Product duplicate folder clipart Preview image 14",
+                    "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                    "image_name": "Logo1.jpg",
+                    "vendor": "Uniqlo",
+                    "price": "10",
+                    "compare_at_price": "20"
+                  },
+                  "image_preview": "BD_27.png",
+                  "button_click_open_editor": "Create Preview image",
+                  "layer": [
+                    {
+                      "layer_type": "Image",
+                      "image_name": "BD_2.png",
+                      "not_layer_list": true,
+                      "not_back_layer_list": true
+                    },
+                    {
+                      "layer_type": "Text",
+                      "not_layer_list": true,
+                      "not_back_layer_list": true
+                    }
+                  ],
+                  "duplicate_name": "Copy of Product duplicate folder clipart",
+                  "duplicate_name_logic": "Conditional copy of Product duplicate folder clipart",
+                  "custom_option_info": [
+                    {
+                      "custom_name": "Picture choice",
+                      "label": "Picture choice",
+                      "type": "Picture choice",
+                      "target_layer": "BD_2",
+                      "index": 1,
+                      "type_clipart": "Folder",
+                      "value_clipart": "folder duplicate 14",
+                      "type_display_clipart": "Show with Thumbnail images",
+                      "position": "below"
+                    },
+                    {
+                      "type": "Text field",
+                      "target_layer": "Text layer 1",
+                      "placeholder": "Please input text field",
+                      "custom_name": "Text field 1",
+                      "label": "Text field 1",
+                      "default_value": "Text field",
+                      "allow_character": "Characters, Numbers, Special Characters"
+                    }
+                  ],
+                  "conditional_logic_info": {
+                    "field": "Value",
+                    "custom_name": "Picture choice",
+                    "condition": ["is equal to>BD_1"],
+                    "then_show_value": ["Text field 1"]
+                  },
+                  "picture": {
+                    "custom_option_detail": "custom_option_detail_1_SB_PRO_SBP_ICFP_14_dev.png",
+                    "conditional_logic": "conditional_logic_1_SB_PRO_SBP_ICFP_14_dev.png",
+                    "conditional_logic_duplicate": "conditional_logic_duplicate_1_SB_PRO_SBP_ICFP_14_dev.png",
+                    "preview_page": "preview_page_1_SB_PRO_SBP_ICFP_14_dev.png"
+                  }
+                },
+                {
+                  "clipart_folder_info": [
+                    {
+                      "folder_name": "folder duplicate 14.1",
+                      "group_name": "Group 14",
+                      "images": ["BD_1.png", "BD_2.png"]
+                    },
+                    {
+                      "folder_name": "folder duplicate 14.2",
+                      "group_name": "Group 14",
+                      "images": ["BD_3.png", "BD_4.png"]
+                    }
+                  ],
+                  "product_all_info": {
+                    "title": "Product duplicate group clipart 14",
+                    "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                    "image_name": "Logo1.jpg",
+                    "vendor": "Uniqlo",
+                    "price": "10",
+                    "compare_at_price": "20"
+                  },
+                  "button_click_open_editor": "Create Preview image",
+                  "image_preview": "BD_27.png",
+                  "layer": [
+                    {
+                      "layer_type": "Image",
+                      "image_name": "BD_2.png",
+                      "not_layer_list": true,
+                      "not_back_layer_list": true
+                    },
+                    {
+                      "layer_type": "Text",
+                      "not_layer_list": true,
+                      "not_back_layer_list": true
+                    }
+                  ],
+                  "duplicate_name": "Copy of Product duplicate group clipart",
+                  "duplicate_name_logic": "Conditional copy of Product duplicate group clipart",
+                  "custom_option_info": [
+                    {
+                      "custom_name": "Picture choice",
+                      "label": "Picture choice",
+                      "type": "Picture choice",
+                      "target_layer": "BD_2",
+                      "index": 1,
+                      "type_clipart": "Group",
+                      "value_clipart": "Group 14",
+                      "type_display_clipart": "Show as a droplist with Clipart names",
+                      "position": "below"
+                    },
+                    {
+                      "type": "Text field",
+                      "target_layer": "Text layer 1",
+                      "placeholder": "Please input text field",
+                      "custom_name": "Text field 1",
+                      "label": "Text field 1",
+                      "default_value": "Text field",
+                      "allow_character": "Characters, Numbers, Special Characters"
+                    }
+                  ],
+                  "conditional_logic_info": {
+                    "field": "Value",
+                    "custom_name": "Picture choice",
+                    "condition": ["is equal to>folder duplicate 14.1"],
+                    "then_show_value": ["Text field 1"]
+                  },
+                  "picture": {
+                    "custom_option_detail": "custom_option_detail_2_SB_PRO_SBP_ICFP_14_dev.png",
+                    "conditional_logic": "conditional_logic_2_SB_PRO_SBP_ICFP_14_dev.png",
+                    "conditional_logic_duplicate": "conditional_logic_duplicate_2_SB_PRO_SBP_ICFP_14_dev.png",
+                    "preview_page": "preview_page_2_SB_PRO_SBP_ICFP_14_dev.png"
+                  }
+                }
+              ]
+            },
+            {
+              "description": " Check khi add new product với folder clipart khi chọn Show as a droplist with Clipart names tại màn Product detail",
+              "case_id": "SB_PRO_SBP_ICFP_15",
+              "case_driven": [
+                {
+                  "clipart_folder_info": [
+                    {
+                      "folder_name": "folder duplicate 15",
+                      "images": ["BD_1.png>anh2.jpg", "BD_4.png"]
+                    }
+                  ],
+                  "product_all_info": {
+                    "title": "Product duplicate folder clipart Print file 15",
+                    "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                    "image_name": "Logo1.jpg",
+                    "vendor": "Uniqlo",
+                    "price": "10",
+                    "compare_at_price": "20"
+                  },
+                  "image_preview": "BD_27.png",
+                  "button_click_open_editor": "Create Print file",
+                  "layer": [
+                    {
+                      "layer_type": "Image",
+                      "image_name": "BD_2.png",
+                      "not_layer_list": true,
+                      "not_back_layer_list": true
+                    },
+                    {
+                      "layer_type": "Text",
+                      "not_layer_list": true,
+                      "not_back_layer_list": true
+                    }
+                  ],
+                  "duplicate_name": "Copy of Product duplicate folder clipart 15",
+                  "duplicate_name_logic": "Conditional copy of Product duplicate folder clipart 15",
+                  "custom_option_info": [
+                    {
+                      "custom_name": "Picture choice",
+                      "label": "Picture choice",
+                      "type": "Picture choice",
+                      "target_layer": "BD_2",
+                      "index": 1,
+                      "type_clipart": "Folder",
+                      "value_clipart": "folder duplicate 15",
+                      "type_display_clipart": "Show with Thumbnail images",
+                      "position": "below"
+                    },
+                    {
+                      "type": "Text field",
+                      "target_layer": "Text layer 1",
+                      "placeholder": "Please input text field",
+                      "custom_name": "Text field 1",
+                      "label": "Text field 1",
+                      "default_value": "Text field",
+                      "allow_character": "Characters, Numbers, Special Characters"
+                    }
+                  ],
+                  "conditional_logic_info": {
+                    "field": "Value",
+                    "custom_name": "Picture choice",
+                    "condition": ["is equal to>BD_1"],
+                    "then_show_value": ["Text field 1"]
+                  },
+                  "picture": {
+                    "custom_option_detail": "custom_option_detail_1_SB_PRO_SBP_ICFP_15_dev.png",
+                    "conditional_logic": "conditional_logic_1_SB_PRO_SBP_ICFP_15_dev.png",
+                    "conditional_logic_duplicate": "conditional_logic_duplicate_1_SB_PRO_SBP_ICFP_15_dev.png",
+                    "preview_page": "preview_page_1_SB_PRO_SBP_ICFP_15_dev.png"
+                  }
+                },
+                {
+                  "clipart_folder_info": [
+                    {
+                      "folder_name": "folder duplicate 15.1",
+                      "group_name": "Group 15",
+                      "images": ["BD_1.png", "BD_2.png"]
+                    },
+                    {
+                      "folder_name": "folder duplicate 15.2",
+                      "group_name": "Group 15",
+                      "images": ["BD_3.png", "BD_4.png"]
+                    }
+                  ],
+                  "product_all_info": {
+                    "title": "Product duplicate group clipart 15",
+                    "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                    "image_name": "Logo1.jpg",
+                    "vendor": "Uniqlo",
+                    "price": "10",
+                    "compare_at_price": "20"
+                  },
+                  "button_click_open_editor": "Create Print file",
+                  "image_preview": "BD_27.png",
+                  "layer": [
+                    {
+                      "layer_type": "Image",
+                      "image_name": "BD_2.png",
+                      "not_layer_list": true,
+                      "not_back_layer_list": true
+                    },
+                    {
+                      "layer_type": "Text",
+                      "not_layer_list": true,
+                      "not_back_layer_list": true
+                    }
+                  ],
+                  "duplicate_name": "Copy of Product duplicate group clipart 15",
+                  "duplicate_name_logic": "Conditional copy of Product duplicate group clipart 15",
+                  "custom_option_info": [
+                    {
+                      "custom_name": "Picture choice",
+                      "label": "Picture choice",
+                      "type": "Picture choice",
+                      "target_layer": "BD_2",
+                      "index": 1,
+                      "type_clipart": "Group",
+                      "value_clipart": "Group 15",
+                      "type_display_clipart": "Show as a droplist with Clipart names",
+                      "position": "below"
+                    },
+                    {
+                      "type": "Text field",
+                      "target_layer": "Text layer 1",
+                      "placeholder": "Please input text field",
+                      "custom_name": "Text field 1",
+                      "label": "Text field 1",
+                      "default_value": "Text field",
+                      "allow_character": "Characters, Numbers, Special Characters"
+                    }
+                  ],
+                  "conditional_logic_info": {
+                    "field": "Value",
+                    "custom_name": "Picture choice",
+                    "condition": ["is equal to>folder duplicate 15.1"],
+                    "then_show_value": ["Text field 1"]
+                  },
+                  "picture": {
+                    "custom_option_detail": "custom_option_detail_2_SB_PRO_SBP_ICFP_15_dev.png",
+                    "conditional_logic": "conditional_logic_2_SB_PRO_SBP_ICFP_15_dev.png",
+                    "conditional_logic_duplicate": "conditional_logic_duplicate_2_SB_PRO_SBP_ICFP_15_dev.png",
+                    "preview_page": "preview_page_2_SB_PRO_SBP_ICFP_15_dev.png"
+                  }
+                }
+              ]
+            },
+            {
+              "description": " Check khi duplicate Product chứa Print File và Image Preview",
+              "case_id": "SB_PRO_SBP_ICFP_16",
+              "case_driven": [
+                {
+                  "clipart_folder_info": [
+                    {
+                      "folder_name": "folder duplicate 16",
+                      "images": ["BD_1.png>anh2.jpg", "BD_4.png"]
+                    }
+                  ],
+                  "product_all_info": {
+                    "title": "Product duplicate folder clipart Preview image/Print file 16",
+                    "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                    "image_name": "Logo1.jpg",
+                    "vendor": "Uniqlo",
+                    "price": "10",
+                    "compare_at_price": "20"
+                  },
+                  "image_preview": "BD_27.png",
+                  "image_print_file": "BD_23.png",
+                  "button_click_open_editor": "Create Preview image",
+                  "layer": [
+                    {
+                      "layer_type": "Image",
+                      "image_name": "BD_2.png",
+                      "not_layer_list": true,
+                      "not_back_layer_list": true
+                    },
+                    {
+                      "layer_type": "Text",
+                      "not_layer_list": true,
+                      "not_back_layer_list": true
+                    }
+                  ],
+                  "duplicate_name": "Copy of Product duplicate folder clipart 16",
+                  "duplicate_name_logic": "Conditional copy of Product duplicate folder clipart 16",
+                  "custom_option_info": [
+                    {
+                      "custom_name": "Picture choice",
+                      "label": "Picture choice",
+                      "type": "Picture choice",
+                      "target_layer": "BD_2",
+                      "index": 1,
+                      "type_clipart": "Folder",
+                      "value_clipart": "folder duplicate 16",
+                      "type_display_clipart": "Show with Thumbnail images",
+                      "position": "below"
+                    },
+                    {
+                      "type": "Text field",
+                      "target_layer": "Text layer 1",
+                      "placeholder": "Please input text field",
+                      "custom_name": "Text field 1",
+                      "label": "Text field 1",
+                      "default_value": "Text field",
+                      "allow_character": "Characters, Numbers, Special Characters"
+                    }
+                  ],
+                  "conditional_logic_info": {
+                    "field": "Value",
+                    "custom_name": "Picture choice",
+                    "condition": ["is equal to>BD_1"],
+                    "then_show_value": ["Text field 1"]
+                  },
+                  "picture": {
+                    "custom_option_detail": "custom_option_detail_1_SB_PRO_SBP_ICFP_16_dev.png",
+                    "conditional_logic": "conditional_logic_1_SB_PRO_SBP_ICFP_16_dev.png",
+                    "conditional_logic_duplicate": "conditional_logic_duplicate_1_SB_PRO_SBP_ICFP_16_dev.png",
+                    "preview_page": "preview_page_1_SB_PRO_SBP_ICFP_16_dev.png",
+                    "print_file_page": "print_file_page_1_SB_PRO_SBP_ICFP_16_dev.png"
+                  }
+                },
+                {
+                  "clipart_folder_info": [
+                    {
+                      "folder_name": "folder duplicate 16.1",
+                      "group_name": "Group 16",
+                      "images": ["BD_1.png", "BD_2.png"]
+                    },
+                    {
+                      "folder_name": "folder duplicate 16.2",
+                      "group_name": "Group 16",
+                      "images": ["BD_3.png", "BD_4.png"]
+                    }
+                  ],
+                  "product_all_info": {
+                    "title": "Product duplicate group clipart 16",
+                    "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                    "image_name": "Logo1.jpg",
+                    "vendor": "Uniqlo",
+                    "price": "10",
+                    "compare_at_price": "20"
+                  },
+                  "button_click_open_editor": "Create Preview image",
+                  "image_preview": "BD_27.png",
+                  "image_print_file": "BD_23.png",
+                  "layer": [
+                    {
+                      "layer_type": "Image",
+                      "image_name": "BD_2.png",
+                      "not_layer_list": true,
+                      "not_back_layer_list": true
+                    },
+                    {
+                      "layer_type": "Text",
+                      "not_layer_list": true,
+                      "not_back_layer_list": true
+                    }
+                  ],
+                  "duplicate_name": "Copy of Product duplicate group clipart 16",
+                  "duplicate_name_logic": "Conditional copy of Product duplicate group clipart 16",
+                  "custom_option_info": [
+                    {
+                      "custom_name": "Picture choice",
+                      "label": "Picture choice",
+                      "type": "Picture choice",
+                      "target_layer": "BD_2",
+                      "index": 1,
+                      "type_clipart": "Group",
+                      "value_clipart": "Group 16",
+                      "type_display_clipart": "Show as a droplist with Clipart names",
+                      "position": "below"
+                    },
+                    {
+                      "type": "Text field",
+                      "target_layer": "Text layer 1",
+                      "placeholder": "Please input text field",
+                      "custom_name": "Text field 1",
+                      "label": "Text field 1",
+                      "default_value": "Text field",
+                      "allow_character": "Characters, Numbers, Special Characters"
+                    }
+                  ],
+                  "conditional_logic_info": {
+                    "field": "Value",
+                    "custom_name": "Picture choice",
+                    "condition": ["is equal to>folder duplicate 16.1"],
+                    "then_show_value": ["Text field 1"]
+                  },
+                  "picture": {
+                    "custom_option_detail": "custom_option_detail_2_SB_PRO_SBP_ICFP_16_dev.png",
+                    "conditional_logic": "conditional_logic_2_SB_PRO_SBP_ICFP_16_dev.png",
+                    "conditional_logic_duplicate": "conditional_logic_duplicate_2_SB_PRO_SBP_ICFP_16_dev.png",
+                    "preview_page": "preview_page_2_SB_PRO_SBP_ICFP_16_dev.png",
+                    "print_file_page": "print_file_page_2_SB_PRO_SBP_ICFP_16_dev.png"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "cases": {
+    "DATA_DRIVEN": {
+      "data": [
+        {
+          "description": "Check khi add new product với folder clipart khi chọn Show with Thumbnail images tại màn Product detail",
+          "case_id": "SB_PRO_SBP_ICFP_13",
+          "case_driven": [
+            {
+              "clipart_folder_info": [
+                {
+                  "folder_name": "folder duplicate 13",
+                  "images": ["BD_1.png>anh2.jpg", "BD_4.png"]
+                }
+              ],
+              "product_all_info": {
+                "title": "Product duplicate folder clipart 13",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "button_click_open_editor": "Create custom option only",
+              "duplicate_name": "Copy of Product duplicate folder clipart",
+              "duplicate_name_logic": "Conditional copy of Product duplicate folder clipart",
+              "custom_option_info": [
+                {
+                  "custom_name": "Picture choice",
+                  "default_name": "Custom Option 1",
+                  "label": "Picture choice",
+                  "type": "Picture choice",
+                  "type_clipart": "Folder",
+                  "values": "folder duplicate 13",
+                  "index": 1,
+                  "type_display_clipart": "Show with Thumbnail images",
+                  "add_another_option": "yes"
+                },
+                {
+                  "type": "Text field",
+                  "custom_name": "Text field",
+                  "label": "Text field",
+                  "default_name": "Custom Option 2",
+                  "index": 2,
+                  "position": 1,
+                  "allow_following": "Characters,Numbers,Special Characters"
+                }
+              ],
+              "conditional_logic_info": {
+                "field": "Value",
+                "custom_name": "Picture choice",
+                "condition": ["is equal to>BD_1"],
+                "then_show_value": ["Text field"]
+              },
+              "picture": {
+                "custom_option_detail": "custom_option_detail_1_SB_PRO_SBP_ICFP_13.png",
+                "conditional_logic": "conditional_logic_1_SB_PRO_SBP_ICFP_13.png",
+                "conditional_logic_duplicate": "conditional_logic_duplicate_1_SB_PRO_SBP_ICFP_13.png"
+              }
+            },
+            {
+              "clipart_folder_info": [
+                {
+                  "folder_name": "folder duplicate 13.1",
+                  "group_name": "Group 13",
+                  "images": ["BD_1.png", "BD_2.png"]
+                },
+                {
+                  "folder_name": "folder duplicate 13.2",
+                  "group_name": "Group 13",
+                  "images": ["BD_3.png", "BD_4.png"]
+                }
+              ],
+              "product_all_info": {
+                "title": "Product duplicate group clipart 13",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "button_click_open_editor": "Create custom option only",
+              "duplicate_name": "Copy of Product duplicate group clipart",
+              "duplicate_name_logic": "Conditional copy of Product duplicate group clipart",
+              "custom_option_info": [
+                {
+                  "custom_name": "Picture choice",
+                  "default_name": "Custom Option 1",
+                  "label": "Picture choice",
+                  "type": "Picture choice",
+                  "type_clipart": "Group",
+                  "values": "Group 13",
+                  "index": 1,
+                  "type_display_clipart": "Show as a droplist with Clipart names",
+                  "add_another_option": "yes"
+                },
+                {
+                  "type": "Text field",
+                  "custom_name": "Text field",
+                  "label": "Text field",
+                  "default_name": "Custom Option 2",
+                  "index": 2,
+                  "position": 1,
+                  "allow_following": "Characters,Numbers,Special Characters"
+                }
+              ],
+              "conditional_logic_info": {
+                "field": "Value",
+                "custom_name": "Picture choice",
+                "condition": ["is equal to>folder duplicate 13.1"],
+                "then_show_value": ["Text field"]
+              },
+              "picture": {
+                "custom_option_detail": "custom_option_detail_2_SB_PRO_SBP_ICFP_13.png",
+                "conditional_logic": "conditional_logic_2_SB_PRO_SBP_ICFP_13.png",
+                "conditional_logic_duplicate": "conditional_logic_duplicate_2_SB_PRO_SBP_ICFP_13.png"
+              }
+            }
+          ]
+        },
+        {
+          "description": " Check khi add new product với folder clipart khi chọn Show as a droplist with Clipart names tại màn Product detail",
+          "case_id": "SB_PRO_SBP_ICFP_14",
+          "case_driven": [
+            {
+              "clipart_folder_info": [
+                {
+                  "folder_name": "folder duplicate 14",
+                  "images": ["BD_1.png>anh2.jpg", "BD_4.png"]
+                }
+              ],
+              "product_all_info": {
+                "title": "Product duplicate folder clipart Preview image 14",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "image_preview": "BD_27.png",
+              "button_click_open_editor": "Create Preview image",
+              "layer": [
+                {
+                  "layer_type": "Image",
+                  "image_name": "BD_2.png",
+                  "not_layer_list": true,
+                  "not_back_layer_list": true
+                },
+                {
+                  "layer_type": "Text",
+                  "not_layer_list": true,
+                  "not_back_layer_list": true
+                }
+              ],
+              "duplicate_name": "Copy of Product duplicate folder clipart",
+              "duplicate_name_logic": "Conditional copy of Product duplicate folder clipart",
+              "custom_option_info": [
+                {
+                  "custom_name": "Picture choice",
+                  "label": "Picture choice",
+                  "type": "Picture choice",
+                  "target_layer": "BD_2",
+                  "index": 1,
+                  "type_clipart": "Folder",
+                  "value_clipart": "folder duplicate 14",
+                  "type_display_clipart": "Show with Thumbnail images",
+                  "position": "below"
+                },
+                {
+                  "type": "Text field",
+                  "target_layer": "Text layer 1",
+                  "placeholder": "Please input text field",
+                  "custom_name": "Text field 1",
+                  "label": "Text field 1",
+                  "default_value": "Text field",
+                  "allow_character": "Characters, Numbers, Special Characters"
+                }
+              ],
+              "conditional_logic_info": {
+                "field": "Value",
+                "custom_name": "Picture choice",
+                "condition": ["is equal to>BD_1"],
+                "then_show_value": ["Text field 1"]
+              },
+              "picture": {
+                "custom_option_detail": "custom_option_detail_1_SB_PRO_SBP_ICFP_14.png",
+                "conditional_logic": "conditional_logic_1_SB_PRO_SBP_ICFP_14.png",
+                "conditional_logic_duplicate": "conditional_logic_duplicate_1_SB_PRO_SBP_ICFP_14.png",
+                "preview_page": "preview_page_1_SB_PRO_SBP_ICFP_14.png"
+              }
+            },
+            {
+              "clipart_folder_info": [
+                {
+                  "folder_name": "folder duplicate 14.1",
+                  "group_name": "Group 14",
+                  "images": ["BD_1.png", "BD_2.png"]
+                },
+                {
+                  "folder_name": "folder duplicate 14.2",
+                  "group_name": "Group 14",
+                  "images": ["BD_3.png", "BD_4.png"]
+                }
+              ],
+              "product_all_info": {
+                "title": "Product duplicate group clipart 14",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "button_click_open_editor": "Create Preview image",
+              "image_preview": "BD_27.png",
+              "layer": [
+                {
+                  "layer_type": "Image",
+                  "image_name": "BD_2.png",
+                  "not_layer_list": true,
+                  "not_back_layer_list": true
+                },
+                {
+                  "layer_type": "Text",
+                  "not_layer_list": true,
+                  "not_back_layer_list": true
+                }
+              ],
+              "duplicate_name": "Copy of Product duplicate group clipart",
+              "duplicate_name_logic": "Conditional copy of Product duplicate group clipart",
+              "custom_option_info": [
+                {
+                  "custom_name": "Picture choice",
+                  "label": "Picture choice",
+                  "type": "Picture choice",
+                  "target_layer": "BD_2",
+                  "index": 1,
+                  "type_clipart": "Group",
+                  "value_clipart": "Group 14",
+                  "type_display_clipart": "Show as a droplist with Clipart names",
+                  "position": "below"
+                },
+                {
+                  "type": "Text field",
+                  "target_layer": "Text layer 1",
+                  "placeholder": "Please input text field",
+                  "custom_name": "Text field 1",
+                  "label": "Text field 1",
+                  "default_value": "Text field",
+                  "allow_character": "Characters, Numbers, Special Characters"
+                }
+              ],
+              "conditional_logic_info": {
+                "field": "Value",
+                "custom_name": "Picture choice",
+                "condition": ["is equal to>folder duplicate 14.1"],
+                "then_show_value": ["Text field 1"]
+              },
+              "picture": {
+                "custom_option_detail": "custom_option_detail_2_SB_PRO_SBP_ICFP_14.png",
+                "conditional_logic": "conditional_logic_2_SB_PRO_SBP_ICFP_14.png",
+                "conditional_logic_duplicate": "conditional_logic_duplicate_2_SB_PRO_SBP_ICFP_14.png",
+                "preview_page": "preview_page_2_SB_PRO_SBP_ICFP_14.png"
+              }
+            }
+          ]
+        },
+        {
+          "description": " Check khi add new product với folder clipart khi chọn Show as a droplist with Clipart names tại màn Product detail",
+          "case_id": "SB_PRO_SBP_ICFP_15",
+          "case_driven": [
+            {
+              "clipart_folder_info": [
+                {
+                  "folder_name": "folder duplicate 15",
+                  "images": ["BD_1.png>anh2.jpg", "BD_4.png"]
+                }
+              ],
+              "product_all_info": {
+                "title": "Product duplicate folder clipart Print file 15",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "image_preview": "BD_27.png",
+              "button_click_open_editor": "Create Print file",
+              "layer": [
+                {
+                  "layer_type": "Image",
+                  "image_name": "BD_2.png",
+                  "not_layer_list": true,
+                  "not_back_layer_list": true
+                },
+                {
+                  "layer_type": "Text",
+                  "not_layer_list": true,
+                  "not_back_layer_list": true
+                }
+              ],
+              "duplicate_name": "Copy of Product duplicate folder clipart 15",
+              "duplicate_name_logic": "Conditional copy of Product duplicate folder clipart 15",
+              "custom_option_info": [
+                {
+                  "custom_name": "Picture choice",
+                  "label": "Picture choice",
+                  "type": "Picture choice",
+                  "target_layer": "BD_2",
+                  "index": 1,
+                  "type_clipart": "Folder",
+                  "value_clipart": "folder duplicate 15",
+                  "type_display_clipart": "Show with Thumbnail images",
+                  "position": "below"
+                },
+                {
+                  "type": "Text field",
+                  "target_layer": "Text layer 1",
+                  "placeholder": "Please input text field",
+                  "custom_name": "Text field 1",
+                  "label": "Text field 1",
+                  "default_value": "Text field",
+                  "allow_character": "Characters, Numbers, Special Characters"
+                }
+              ],
+              "conditional_logic_info": {
+                "field": "Value",
+                "custom_name": "Picture choice",
+                "condition": ["is equal to>BD_1"],
+                "then_show_value": ["Text field 1"]
+              },
+              "picture": {
+                "custom_option_detail": "custom_option_detail_1_SB_PRO_SBP_ICFP_15.png",
+                "conditional_logic": "conditional_logic_1_SB_PRO_SBP_ICFP_15.png",
+                "conditional_logic_duplicate": "conditional_logic_duplicate_1_SB_PRO_SBP_ICFP_15.png",
+                "preview_page": "preview_page_1_SB_PRO_SBP_ICFP_15.png"
+              }
+            },
+            {
+              "clipart_folder_info": [
+                {
+                  "folder_name": "folder duplicate 15.1",
+                  "group_name": "Group 15",
+                  "images": ["BD_1.png", "BD_2.png"]
+                },
+                {
+                  "folder_name": "folder duplicate 15.2",
+                  "group_name": "Group 15",
+                  "images": ["BD_3.png", "BD_4.png"]
+                }
+              ],
+              "product_all_info": {
+                "title": "Product duplicate group clipart 15",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "button_click_open_editor": "Create Print file",
+              "image_preview": "BD_27.png",
+              "layer": [
+                {
+                  "layer_type": "Image",
+                  "image_name": "BD_2.png",
+                  "not_layer_list": true,
+                  "not_back_layer_list": true
+                },
+                {
+                  "layer_type": "Text",
+                  "not_layer_list": true,
+                  "not_back_layer_list": true
+                }
+              ],
+              "duplicate_name": "Copy of Product duplicate group clipart 15",
+              "duplicate_name_logic": "Conditional copy of Product duplicate group clipart 15",
+              "custom_option_info": [
+                {
+                  "custom_name": "Picture choice",
+                  "label": "Picture choice",
+                  "type": "Picture choice",
+                  "target_layer": "BD_2",
+                  "index": 1,
+                  "type_clipart": "Group",
+                  "value_clipart": "Group 15",
+                  "type_display_clipart": "Show as a droplist with Clipart names",
+                  "position": "below"
+                },
+                {
+                  "type": "Text field",
+                  "target_layer": "Text layer 1",
+                  "placeholder": "Please input text field",
+                  "custom_name": "Text field 1",
+                  "label": "Text field 1",
+                  "default_value": "Text field",
+                  "allow_character": "Characters, Numbers, Special Characters"
+                }
+              ],
+              "conditional_logic_info": {
+                "field": "Value",
+                "custom_name": "Picture choice",
+                "condition": ["is equal to>folder duplicate 15.1"],
+                "then_show_value": ["Text field 1"]
+              },
+              "picture": {
+                "custom_option_detail": "custom_option_detail_2_SB_PRO_SBP_ICFP_15.png",
+                "conditional_logic": "conditional_logic_2_SB_PRO_SBP_ICFP_15.png",
+                "conditional_logic_duplicate": "conditional_logic_duplicate_2_SB_PRO_SBP_ICFP_15.png",
+                "preview_page": "preview_page_2_SB_PRO_SBP_ICFP_15.png"
+              }
+            }
+          ]
+        },
+        {
+          "description": " Check khi duplicate Product chứa Print File và Image Preview",
+          "case_id": "SB_PRO_SBP_ICFP_16",
+          "case_driven": [
+            {
+              "clipart_folder_info": [
+                {
+                  "folder_name": "folder duplicate 16",
+                  "images": ["BD_1.png>anh2.jpg", "BD_4.png"]
+                }
+              ],
+              "product_all_info": {
+                "title": "Product duplicate folder clipart Preview image/Print file 16",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "image_preview": "BD_27.png",
+              "image_print_file": "BD_23.png",
+              "button_click_open_editor": "Create Preview image",
+              "layer": [
+                {
+                  "layer_type": "Image",
+                  "image_name": "BD_2.png",
+                  "not_layer_list": true,
+                  "not_back_layer_list": true
+                },
+                {
+                  "layer_type": "Text",
+                  "not_layer_list": true,
+                  "not_back_layer_list": true
+                }
+              ],
+              "duplicate_name": "Copy of Product duplicate folder clipart 16",
+              "duplicate_name_logic": "Conditional copy of Product duplicate folder clipart 16",
+              "custom_option_info": [
+                {
+                  "custom_name": "Picture choice",
+                  "label": "Picture choice",
+                  "type": "Picture choice",
+                  "target_layer": "BD_2",
+                  "index": 1,
+                  "type_clipart": "Folder",
+                  "value_clipart": "folder duplicate 16",
+                  "type_display_clipart": "Show with Thumbnail images",
+                  "position": "below"
+                },
+                {
+                  "type": "Text field",
+                  "target_layer": "Text layer 1",
+                  "placeholder": "Please input text field",
+                  "custom_name": "Text field 1",
+                  "label": "Text field 1",
+                  "default_value": "Text field",
+                  "allow_character": "Characters, Numbers, Special Characters"
+                }
+              ],
+              "conditional_logic_info": {
+                "field": "Value",
+                "custom_name": "Picture choice",
+                "condition": ["is equal to>BD_1"],
+                "then_show_value": ["Text field 1"]
+              },
+              "picture": {
+                "custom_option_detail": "custom_option_detail_1_SB_PRO_SBP_ICFP_16.png",
+                "conditional_logic": "conditional_logic_1_SB_PRO_SBP_ICFP_16.png",
+                "conditional_logic_duplicate": "conditional_logic_duplicate_1_SB_PRO_SBP_ICFP_16.png",
+                "preview_page": "preview_page_1_SB_PRO_SBP_ICFP_16.png",
+                "print_file_page": "print_file_page_1_SB_PRO_SBP_ICFP_16.png"
+              }
+            },
+            {
+              "clipart_folder_info": [
+                {
+                  "folder_name": "folder duplicate 16.1",
+                  "group_name": "Group 16",
+                  "images": ["BD_1.png", "BD_2.png"]
+                },
+                {
+                  "folder_name": "folder duplicate 16.2",
+                  "group_name": "Group 16",
+                  "images": ["BD_3.png", "BD_4.png"]
+                }
+              ],
+              "product_all_info": {
+                "title": "Product duplicate group clipart 16",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "button_click_open_editor": "Create Preview image",
+              "image_preview": "BD_27.png",
+              "image_print_file": "BD_23.png",
+              "layer": [
+                {
+                  "layer_type": "Image",
+                  "image_name": "BD_2.png",
+                  "not_layer_list": true,
+                  "not_back_layer_list": true
+                },
+                {
+                  "layer_type": "Text",
+                  "not_layer_list": true,
+                  "not_back_layer_list": true
+                }
+              ],
+              "duplicate_name": "Copy of Product duplicate group clipart 16",
+              "duplicate_name_logic": "Conditional copy of Product duplicate group clipart 16",
+              "custom_option_info": [
+                {
+                  "custom_name": "Picture choice",
+                  "label": "Picture choice",
+                  "type": "Picture choice",
+                  "target_layer": "BD_2",
+                  "index": 1,
+                  "type_clipart": "Group",
+                  "value_clipart": "Group 16",
+                  "type_display_clipart": "Show as a droplist with Clipart names",
+                  "position": "below"
+                },
+                {
+                  "type": "Text field",
+                  "target_layer": "Text layer 1",
+                  "placeholder": "Please input text field",
+                  "custom_name": "Text field 1",
+                  "label": "Text field 1",
+                  "default_value": "Text field",
+                  "allow_character": "Characters, Numbers, Special Characters"
+                }
+              ],
+              "conditional_logic_info": {
+                "field": "Value",
+                "custom_name": "Picture choice",
+                "condition": ["is equal to>folder duplicate 16.1"],
+                "then_show_value": ["Text field 1"]
+              },
+              "picture": {
+                "custom_option_detail": "custom_option_detail_2_SB_PRO_SBP_ICFP_16.png",
+                "conditional_logic": "conditional_logic_2_SB_PRO_SBP_ICFP_16.png",
+                "conditional_logic_duplicate": "conditional_logic_duplicate_2_SB_PRO_SBP_ICFP_16.png",
+                "preview_page": "preview_page_2_SB_PRO_SBP_ICFP_16.png",
+                "print_file_page": "print_file_page_2_SB_PRO_SBP_ICFP_16.png"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

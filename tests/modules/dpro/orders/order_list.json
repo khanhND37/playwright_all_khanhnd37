@@ -1,0 +1,286 @@
+{
+  "api": "https://gapi.dev.shopbase.net",
+  "domain": "creator-order-dev-3.myshopbase.net",
+  "username": "shopbase@beeketing.net",
+  "password": "S#|j>m2N[q",
+  "user_id": "73800",
+  "shop_id": "10324057",
+  "shop_name": "creator-order-dev-3",
+  "second_shop_name": "digital-product-list-2",
+  "second_domain": "digital-product-list-2.myshopbase.net",
+  "timeout": 300000,
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "creator-order-dev-3.myshopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "user_id": "73800",
+      "shop_id": "10324057",
+      "shop_name": "creator-order-dev-3",
+      "second_shop_name": "digital-product-list-2",
+      "second_domain": "digital-product-list-2.myshopbase.net"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "creator-order-prodtest.onshopbase.com",
+      "shop_name": "creator-order-prodtest",
+      "user_id": "73782",
+      "shop_id": 10378313,
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "second_shop_name": "au-creator-page-prodtest",
+      "second_domain": "au-creator-page-prodtest.onshopbase.com",
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "creator-order-prod.onshopbase.com",
+      "shop_name": "creator-order-prod",
+      "user_id": "73782",
+      "shop_id": 10378441,
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "second_shop_name": "au-creator-page-prod",
+      "second_domain": "au-creator-page-prod.onshopbase.com"
+    }
+  },
+  "cases": {
+    "SB_SC_SCO_07": {
+      "type_search_order": "IdOrder",
+      "order_id_like": "100",
+      "order_id_equal": "1001",
+      "search_order": [
+        {
+          "description_step": "Search name order: not exist",
+          "search_order": "abc"
+        },
+        {
+          "description_step": "Search name order có ký tự đặc biệt",
+          "search_order": "!@$#%#$"
+        }
+      ]
+    },
+    "SB_SC_SCO_09": {
+      "list_data_filter_order_status": [
+        {
+          "description_step": "Filter theo trường Status = Paid > Click Apply",
+          "status_order": "paid",
+          "param": {
+            "financial_status": "paid"
+          },
+          "filter_order": {
+            "filter_type": "Status",
+            "filter_value": "Paid"
+          }
+        },
+        {
+          "description_step": "Filter theo trường Status = Pending > Click Apply ",
+          "status_order": "pending",
+          "param": {
+            "financial_status": "pending"
+          },
+          "filter_order": {
+            "filter_type": "Status",
+            "filter_value": "Pending"
+          }
+        },
+        {
+          "description_step": "Filter theo trường Status = Authorized > Click Apply",
+          "status_order": "authorized",
+          "param": {
+            "financial_status": "authorized"
+          },
+          "filter_order": {
+            "filter_type": "Status",
+            "filter_value": "Authorized"
+          }
+        },
+        {
+          "description_step": "Filter theo trường Status = Refunded > Click Apply",
+          "status_order": "refunded",
+          "param": {
+            "financial_status": "refunded"
+          },
+          "filter_order": {
+            "filter_type": "Status",
+            "filter_value": "Refunded"
+          }
+        },
+        {
+          "description_step": "Filter theo trường Status = Partially refunded > Click Apply",
+          "status_order": "partially refunded",
+          "param": {
+            "financial_status": "partially_refunded"
+          },
+          "filter_order": {
+            "filter_type": "Status",
+            "filter_value": "Partially refunded"
+          }
+        },
+        {
+          "description_step": "Filter theo trường Status = Payment in process > Click Apply",
+          "status_order": "payment in process",
+          "param": {
+            "financial_status": "payment_in_process"
+          },
+          "filter_order": {
+            "filter_type": "Status",
+            "filter_value": "Payment in process"
+          }
+        },
+        {
+          "description_step": "Filter theo trường Status = Voided > Click Apply",
+          "status_order": "voided",
+          "param": {
+            "financial_status": "voided"
+          },
+          "filter_order": {
+            "filter_type": "Status",
+            "filter_value": "Voided"
+          }
+        },
+        {
+          "description_step": "Filter theo trường Status = Partially paid > Click Apply",
+          "status_order": "partially_paid",
+          "param": {
+            "financial_status": "partially paid"
+          },
+          "filter_order": {
+            "filter_type": "Status",
+            "filter_value": "Partially paid"
+          }
+        }
+      ]
+    },
+    "SB_SC_SCO_10": {
+      "list_data_filter_product_order": [
+        {
+          "description_step": "Filter theo trường Products Chọn option Product name contains, Input text filter = Online cource ->  Click Done",
+          "filter_order": {
+            "filter_type": "Product",
+            "filter_value": "Product name contains",
+            "filter_text": "Complete Ethical Hacking Bootcamp"
+          },
+          "param": {
+            "search_option": "order_name",
+            "product_name": "Complete Ethical Hacking Bootcamp"
+          }
+        },
+        {
+          "description_step": "Filter theo trường Lineitem Products chứa ký tự đặc biệt Chọn option Product name contains, Input text filter = Online cource !@#$% -> Click Done",
+          "filter_type": "Product",
+          "value_filter": "Product name contains",
+          "product_name_filter": "Complete Ethical Hacking Bootcamp !@#$%",
+          "filter_order": {
+            "filter_type": "Product",
+            "filter_value": "Product name contains",
+            "filter_text": "Complete Ethical Hacking Bootcamp !@#$%"
+          },
+          "param": {
+            "search_option": "order_name",
+            "product_name": "Complete Ethical Hacking Bootcamp !@#$%"
+          }
+        }
+      ]
+    },
+    "SB_SC_SCO_13": {
+      "list_data_filter_order_test": {
+        "filter_order": {
+          "filter_type": "Test orders",
+          "filter_value": "Yes"
+        },
+        "param": {
+          "is_test_order": true
+        }
+      }
+    },
+    "SB_SC_SCO_05": {
+      "status": "paid",
+      "second_shop_name": "no-order-test",
+      "second_domain": "no-order-test.onshopbase.com"
+    },
+    "SB_SC_SCO_11": {
+      "param": {
+        "created_at_min": "",
+        "created_at_max": ""
+      },
+      "list_data_filter_order_date": [
+        {
+          "description_step": "Filter theo trường Order date: today > Click Done",
+          "filter_order": {
+            "filter_type": "Order date",
+            "filter_date": "today"
+          }
+        },
+        {
+          "description_step": "Filter theo trường Order date theo thời gian last7days > Click Done",
+          "filter_order": {
+            "filter_type": "Order date",
+            "filter_date": "last7days"
+          }
+        },
+        {
+          "description_step": "Filter theo trường Order date theo thisMonth > Click Done",
+          "filter_order": {
+            "filter_type": "Order date",
+            "filter_date": "thisMonth"
+          }
+        }
+      ]
+    },
+    "SB_SC_SCO_12": {
+      "param": {
+        "refund_at_min": "",
+        "refund_at_max": ""
+      },
+      "list_data_filter_refund_date": [
+        {
+          "description_step": "Filter theo trường Refund date: today> Click Done",
+          "filter_order": {
+            "filter_type": "Refund date",
+            "filter_date": "today"
+          }
+        },
+        {
+          "description_step": "Filter theo trường Refund date theo thời gian last7days > Click Done",
+          "filter_order": {
+            "filter_type": "Refund date",
+            "filter_date": "last7days"
+          }
+        },
+        {
+          "description_step": "Filter theo trường Refund date theo thời gian thisMonth > Click Done",
+          "filter_order": {
+            "filter_type": "Refund date",
+            "filter_date": "thisMonth"
+          }
+        }
+      ]
+    },
+    "SB_SC_SCO_15": {
+      "orders_by_date": [
+        {
+          "export_type": "Orders by date",
+          "date_value": "today"
+        },
+        {
+          "export_type": "Orders by date",
+          "date_value": "last7days"
+        },
+        {
+          "export_type": "Orders by date",
+          "date_value": "thisMonth"
+        }
+      ],
+      "param_date": {
+        "created_at_min": "",
+        "created_at_max": ""
+      },
+      "param_search": {
+        "search_keyword": "#1003",
+        "search_option": "order_name"
+      }
+    }
+  }
+}

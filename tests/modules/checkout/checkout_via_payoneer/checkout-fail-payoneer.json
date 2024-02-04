@@ -1,0 +1,292 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-eu-payment.onshopbase.com",
+      "shop_name": "au-eu-payment",
+      "username": "shopbase2@beeketing.net",
+      "password": "raMse).7L/b4;k#@",
+      "cases": {
+        "CHECKOUT_FAIL_PAYONEER": [
+          {
+            "case_id": "SB_CHE_POE_09",
+            "products_checkout": [
+              {
+                "name": "Checkout fail",
+                "variant_id": 1000010668637750,
+                "quantity": 1
+              }
+            ]
+          },
+          {
+            "case_id": "SB_CHE_POE_10",
+            "products_checkout": [
+              {
+                "name": "SB_CHE_POE_10",
+                "variant_id": 1000010383466617,
+                "quantity": 1
+              }
+            ]
+          },
+          {
+            "case_id": "SB_CHE_POE_11",
+            "products_checkout": [
+              {
+                "name": "Require 3Ds",
+                "variant_id": 1000010668637572,
+                "quantity": 1
+              }
+            ]
+          },
+          {
+            "case_id": "SB_CHE_POE_12",
+            "products_checkout": [
+              {
+                "name": "SB_CHE_POE_12",
+                "variant_id": 1000010383466589,
+                "quantity": 1
+              }
+            ]
+          }
+        ],
+        "SB_CHE_POE_14": {
+          "products_checkout": [
+            {
+              "name": "Checkout fail PPC target",
+              "variant_id": 1000010668637747,
+              "quantity": 1
+            }
+          ]
+        },
+        "SB_CHE_POE_15": {
+          "products_checkout": [
+            {
+              "name": "Checkout fail PPC target",
+              "variant_id": 1000010668637747,
+              "quantity": 1
+            }
+          ]
+        }
+      }
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-eu-payment-prodtest.onshopbase.com",
+      "shop_name": "au-eu-payment-prodtest",
+      "username": "shopbase2@beeketing.net",
+      "password": "raMse).7L/b4;k#@"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-checkout-eu-payment.myshopbase.net",
+      "shop_name": "au-checkout-eu-payment",
+      "user_id": 73800,
+      "shop_id": 10324278,
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "cases": {
+        "CHECKOUT_FAIL_PAYONEER": [
+          {
+            "case_id": "SB_CHE_POE_09",
+            "products_checkout": [
+              {
+                "name": "Checkout fail",
+                "variant_id": 1000001769537989,
+                "quantity": 1
+              }
+            ]
+          },
+          {
+            "case_id": "SB_CHE_POE_10",
+            "products_checkout": [
+              {
+                "name": "SB_CHE_POE_10",
+                "variant_id": 1000001767074090,
+                "quantity": 1
+              }
+            ]
+          },
+          {
+            "case_id": "SB_CHE_POE_11",
+            "products_checkout": [
+              {
+                "name": "Require 3Ds",
+                "variant_id": 1000001769683273,
+                "quantity": 1
+              }
+            ]
+          },
+          {
+            "case_id": "SB_CHE_POE_12",
+            "products_checkout": [
+              {
+                "name": "SB_CHE_POE_12",
+                "variant_id": 1000001767074066,
+                "quantity": 1
+              }
+            ]
+          }
+        ],
+        "SB_CHE_POE_14": {
+          "products_checkout": [
+            {
+              "name": "Checkout fail PPC target",
+              "variant_id": 1000001769537961,
+              "quantity": 1
+            }
+          ]
+        },
+        "SB_CHE_POE_15": {
+          "products_checkout": [
+            {
+              "name": "Checkout fail PPC target",
+              "variant_id": 1000001769537961,
+              "quantity": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "cases": {
+    "CHECKOUT_FAIL_PAYONEER": [
+      {
+        "case_id": "SB_CHE_POE_09",
+        "case_name": "[Checkout Failed] Checkout không thành công qua cổng Payoneer khi payment bị declined by risk rule",
+        "card_info": {
+          "number": "4444333322221111",
+          "holder_name": "SHOPBASE",
+          "expire_month": "11",
+          "expire_year": "2025",
+          "cvv": "100"
+        },
+        "products_checkout": [
+          {
+            "name": "Checkout fail",
+            "variant_id": 1000010668639823,
+            "quantity": 1
+          }
+        ],
+        "country": "BE",
+        "error_message": "Blocked by risk management (possibly fraudulent customer)."
+      },
+      {
+        "case_id": "SB_CHE_POE_10",
+        "case_name": "[Checkout Failed] Checkout không thành công qua cổng Payoneer khi payment bị declined by risk: fields validation failed",
+        "card_info": {
+          "number": "4444333322221111",
+          "holder_name": "REFUSED34",
+          "expire_month": "11",
+          "expire_year": "2025",
+          "cvv": "100"
+        },
+        "products_checkout": [
+          {
+            "name": "SB_CHE_POE_10",
+            "variant_id": 1000010383491404,
+            "quantity": 1
+          }
+        ],
+        "country": "BE",
+        "error_message": "Payment request failed. Please try again!"
+      },
+      {
+        "case_id": "SB_CHE_POE_11",
+        "case_name": "[Checkout Failed] Checkout không thành công qua cổng Payoneer với 3Ds V2 khi frictionless failed",
+        "card_info": {
+          "number": "4444333322221111",
+          "holder_name": "3ds2-frictionless-failed",
+          "expire_month": "11",
+          "expire_year": "2025",
+          "cvv": "100"
+        },
+        "card_info_success": {
+          "number": "4444333322221111",
+          "holder_name": "3ds2-frictionless-identified",
+          "expire_month": "11",
+          "expire_year": "2025",
+          "cvv": "100"
+        },
+        "products_checkout": [
+          {
+            "name": "Require 3Ds",
+            "variant_id": 1000010680488248,
+            "quantity": 1
+          }
+        ],
+        "country": "VN",
+        "error_message": "Your payment failed"
+      },
+      {
+        "case_id": "SB_CHE_POE_12",
+        "case_name": "[Checkout Failed] Checkout không thành công qua cổng Payoneer với 3Ds V2 khi frictionless rejected",
+        "card_info": {
+          "number": "4444333322221111",
+          "holder_name": "3ds2-frictionless-rejected",
+          "expire_month": "11",
+          "expire_year": "2025",
+          "cvv": "100"
+        },
+        "card_info_success": {
+          "number": "4444333322221111",
+          "holder_name": "3ds2-frictionless-identified",
+          "expire_month": "11",
+          "expire_year": "2025",
+          "cvv": "100"
+        },
+        "products_checkout": [
+          {
+            "name": "SB_CHE_POE_12",
+            "variant_id": 1000010383491462,
+            "quantity": 1
+          }
+        ],
+        "country": "US",
+        "error_message": "Your payment failed"
+      }
+    ],
+    "SB_CHE_POE_14": {
+      "card_info": {
+        "number": "4444333322221111",
+        "holder_name": "SHOPBASE",
+        "expire_month": "11",
+        "expire_year": "2025",
+        "cvv": "100"
+      },
+      "products_checkout": [
+        {
+          "name": "Checkout fail PPC target",
+          "variant_id": 1000010668639845,
+          "quantity": 1
+        }
+      ],
+      "products_post_purchase": "Checkout fail PPC recommend",
+      "country": "DE"
+    },
+    "SB_CHE_POE_15": {
+      "card_info": {
+        "number": "4444333322221111",
+        "holder_name": "SHOPBASE",
+        "expire_month": "11",
+        "expire_year": "2025",
+        "cvv": "100"
+      },
+      "card_info_fail_3ds": {
+        "number": "4444333322221111",
+        "holder_name": "3ds2-frictionless-failed",
+        "expire_month": "11",
+        "expire_year": "2025",
+        "cvv": "100"
+      },
+      "products_checkout": [
+        {
+          "name": "Checkout fail PPC target",
+          "variant_id": 1000010668639845,
+          "quantity": 1
+        }
+      ],
+      "products_post_purchase": "Checkout fail PPC 3Ds recommend",
+      "country": "DE"
+    }
+  }
+}

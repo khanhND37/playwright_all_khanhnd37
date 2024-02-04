@@ -1,0 +1,67 @@
+{
+  "domain": "accounts.shopbase.com",
+  "username": "shopbase1@beeketing.net",
+  "password": "=7#d2L9b3SuuA*%Q",
+  "is_merge_case_data": true,
+  "cases": {
+    "DATA_DRIVEN": {
+      "outside_data": 1,
+      "data": [
+        {
+          "case_id": "TC_DD_001",
+          "shop_name": "test-plb",
+          "shop_domain": "test-plb.onshopbase.com",
+          "shop_xyz": 1
+        },
+        {
+          "case_id": "TC_DD_002",
+          "shop_name": "huyentong-test",
+          "shop_domain": "huyentong-plusbase.onshopbase.com",
+          "shop_xyz": 1
+        }
+      ]
+    },
+    "DATA_DRIVEN_CUSTOM_SHOP": {
+      "description": "Data driven with fixture",
+      "data": [
+        {
+          "case_id": "TC_DD_003",
+          "domain": "au-inside-banner.myshopbase.net",
+          "shop_name": "au-inside-banner",
+          "api": "https://gapi.dev.shopbase.net",
+          "username": "shopbase@beeketing.net",
+          "password": "S#|j>m2N[q",
+          "shop_id": 10321568,
+          "user_id": 73800
+        },
+        {
+          "case_id": "TC_DD_004",
+          "domain": "au-inside-image-with-text.myshopbase.net",
+          "shop_name": "au-inside-image-with-text",
+          "api": "https://gapi.dev.shopbase.net",
+          "username": "shopbase@beeketing.net",
+          "password": "S#|j>m2N[q",
+          "shop_id": 10321476,
+          "user_id": 73800
+        }
+      ]
+    }
+  },
+  "env": {
+    "prod": {
+      "cases": {
+        "DATA_DRIVEN": {
+          "outside_data": 2,
+          "data": [
+            {
+              "case_id": "TC_DD_001",
+              "shop_name": "prod-test-prod",
+              "shop_domain": "prod-test-prod.onshopbase.com",
+              "shop_xyz": 999999
+            }
+          ]
+        }
+      }
+    }
+  }
+}

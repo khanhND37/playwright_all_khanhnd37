@@ -1,0 +1,643 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-bulk-duplicate-campaign-phub.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "user_id": 73782,
+      "shop_id": 10403480,
+      "shop_name": "au-bulk-duplicate-campaign-phub"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-bulk-duplicate-campaign-phub-prodtest.onshopbase.com",
+      "shop_name": "au-bulk-duplicate-campaign-phub-prodtest",
+      "user_id": 73782,
+      "shop_id": 10403485,
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-bulk-duplicate-campaign-sbase.myshopbase.net",
+      "shop_name": "au-bulk-duplicate-campaign-sbase",
+      "user_id": 73800,
+      "shop_id": 10326788,
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "cases": {
+        "SB_PRH_BDC_03": {
+          "campaign_origin": {
+            "pricing_info": {
+              "title": "Campaign 2D 1 side"
+            },
+            "product_infos": [
+              {
+                "category": "Apparel",
+                "base_product": "Unisex T-shirt"
+              }
+            ],
+            "layers": [
+              {
+                "layer_type": "Image",
+                "image_name": "BD_9.png",
+                "location_layer_x": "705",
+                "location_layer_y": "140",
+                "layer_size_h": "881",
+                "layer_size_w": "661",
+                "front_or_back": "Front"
+              }
+            ]
+          },
+          "artwork_valid": "BD_10.png",
+          "data": [
+            {
+              "artwork_name": "product-sample-import.csv",
+              "title": "product-sample-import.csv",
+              "message": "Support .PNG files only.",
+              "status": "Failed"
+            },
+            {
+              "artwork_name": "Dog 1.png",
+              "title": "Dog 1.png",
+              "message": "Artwork dimension must be 2100px at least.",
+              "status": "Failed"
+            }
+          ]
+        },
+        "DATA_DRIVEN": {
+          "data": [
+            {
+              "case_id": "SB_PRH_BDC_5",
+              "description": "Verify bulk duplicate thành công cho campaign 2D 1 Base 1 side Front",
+              "campaign_origin": {
+                "pricing_info": {
+                  "title": "Campaign 2D 1 side"
+                },
+                "product_infos": [
+                  {
+                    "category": "Apparel",
+                    "base_product": "Unisex T-shirt"
+                  }
+                ],
+                "layers": [
+                  {
+                    "layer_type": "Image",
+                    "image_name": "BD_9.png",
+                    "location_layer_x": "705",
+                    "location_layer_y": "140",
+                    "layer_size_h": "881",
+                    "layer_size_w": "661",
+                    "front_or_back": "Front"
+                  }
+                ]
+              },
+              "artwork_name": "BD_10.png",
+              "title": "BD_10",
+              "picture": {
+                "front_side": "SB_PRB_BDC_05_artwork_sf_dev.png"
+              },
+              "campaign_detail": {
+                "campaign_name": "BD_10",
+                "tags": "cotton,unisex t-shirt",
+                "style": ["Unisex T-shirt"],
+                "color": ["White", "Black", "Dark Chocolate", "Ash"],
+                "size": ["S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+                "number_image": 16
+              }
+            },
+            {
+              "case_id": "SB_PRH_BDC_6",
+              "description": "Verify bulk duplicate thành công cho campaign 2D có 1Base 2 side",
+              "campaign_origin": {
+                "pricing_info": {
+                  "title": "Campaign 2D 2 side"
+                },
+                "product_infos": [
+                  {
+                    "category": "Apparel",
+                    "base_product": "Unisex Hoodie"
+                  }
+                ],
+                "layers": [
+                  {
+                    "layer_type": "Image",
+                    "image_name": "BD_9.png",
+                    "location_layer_x": "705",
+                    "location_layer_y": "140",
+                    "layer_size_h": "881",
+                    "layer_size_w": "661",
+                    "front_or_back": "Front"
+                  },
+                  {
+                    "layer_type": "Text",
+                    "location_layer_x": "463",
+                    "location_layer_y": "1100",
+                    "layer_size_h": "200",
+                    "layer_size_w": "1175",
+                    "front_or_back": "Back"
+                  }
+                ]
+              },
+              "artwork_name": "BD_7.png",
+              "artwork_back": "BD_6.png",
+              "title": "BD_7",
+              "picture": {
+                "front_side": "SB_PRH_BDC_6_artwork_sf_front_dev.png",
+                "back_side": "SB_PRH_BDC_6_artwork_sf_back_dev.png"
+              },
+              "campaign_detail": {
+                "campaign_name": "BD_7",
+                "tags": "hoodie",
+                "style": ["Unisex Hoodie"],
+                "color": ["White", "Black", "Sports Grey", "Charcoal"],
+                "size": ["S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+                "number_image": 16
+              }
+            },
+            {
+              "case_id": "SB_PRH_BDC_7",
+              "description": "Verify bulk duplicate thành công cho campaign 2D có nhiều Base 2 side",
+              "campaign_origin": {
+                "pricing_info": {
+                  "title": "Campaign 2D multiple product 2 side"
+                },
+                "product_infos": [
+                  {
+                    "category": "Apparel",
+                    "base_product": "Ladies T-shirt"
+                  },
+                  {
+                    "category": "Apparel",
+                    "base_product": "Crewneck Sweatshirt"
+                  },
+                  {
+                    "category": "Apparel",
+                    "base_product": "V-neck T-shirt"
+                  }
+                ],
+                "layers": [
+                  {
+                    "layer_type": "Image",
+                    "image_name": "BD_9.png",
+                    "location_layer_x": "705",
+                    "location_layer_y": "140",
+                    "layer_size_h": "881",
+                    "layer_size_w": "661",
+                    "front_or_back": "Back"
+                  },
+                  {
+                    "layer_type": "Text",
+                    "location_layer_x": "463",
+                    "location_layer_y": "1100",
+                    "layer_size_h": "200",
+                    "layer_size_w": "1175",
+                    "front_or_back": "Front"
+                  }
+                ]
+              },
+              "artwork_name": "BD_3.png",
+              "artwork_back": "BD_4.png",
+              "title": "BD_3",
+              "picture": {
+                "front_side": "SB_PRH_BDC_7_artwork_sf_front_dev.png"
+              },
+              "campaign_detail": {
+                "campaign_name": "BD_3",
+                "tags": "t-shirt,ladies,cotton,crewneck,sweatshirt,v-neck",
+                "style": ["Ladies T-shirt", "Crewneck Sweatshirt", "V-neck T-shirt"],
+                "color": ["White", "Black", "Sports Grey", "Dark Heather", "Ash", "Asphalt"],
+                "size": ["S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL", "XS"],
+                "number_image": 48
+              }
+            },
+            {
+              "case_id": "SB_PRH_BDC_8",
+              "description": "Verify bulk duplicate thành công cho campaign 3D 1 Base 1 side",
+              "campaign_origin": {
+                "pricing_info": {
+                  "title": "Campaign 3D 1 side"
+                },
+                "product_infos": [
+                  {
+                    "category": "Home & Living",
+                    "base_product": "Quilt"
+                  }
+                ],
+                "layers": [
+                  {
+                    "layer_type": "Image",
+                    "image_name": "BD_9.png",
+                    "location_layer_x": "705",
+                    "location_layer_y": "140",
+                    "layer_size_h": "881",
+                    "layer_size_w": "661"
+                  }
+                ]
+              },
+              "artwork_name": "ArtworkWL.png",
+              "title": "ArtworkWL",
+              "picture": {
+                "front_side": "SB_PRH_BDC_8_artwork_sf_front_dev.png"
+              },
+              "campaign_detail": {
+                "campaign_name": "ArtworkWL",
+                "tags": "all-over-print,quilt",
+                "style": ["Quilt"],
+                "color": ["All over print"],
+                "size": ["Single", "Twin", "Queen", "King", "Super King"],
+                "number_image": 4
+              }
+            },
+            {
+              "case_id": "SB_PRH_BDC_11",
+              "description": "Verify bulk duplicate thành công cho campaign từ màn campaign details",
+              "campaign_origin": {
+                "pricing_info": {
+                  "title": "Beverage Mug"
+                },
+                "product_infos": [
+                  {
+                    "category": "Drinkware",
+                    "base_product": "Beverage Mug"
+                  }
+                ],
+                "layers": [
+                  {
+                    "layer_type": "Image",
+                    "image_name": "BD_9.png",
+                    "location_layer_x": "705",
+                    "location_layer_y": "140",
+                    "layer_size_h": "881",
+                    "layer_size_w": "661"
+                  }
+                ]
+              },
+              "artwork_name": "BD_11.png",
+              "title": "BD_11",
+              "picture": {
+                "front_side": "SB_PRH_BDC_11_artwork_sf_front_dev.png"
+              },
+              "campaign_detail": {
+                "campaign_name": "BD_11",
+                "tags": "mug",
+                "style": ["Beverage Mug"],
+                "color": ["White", "Black"],
+                "size": ["11oz", "15oz"],
+                "number_image": 16
+              }
+            },
+            {
+              "case_id": "SB_PRH_BDC_17",
+              "description": "Check bulk duplicate thành công với campaign gốc có status = Unavailable",
+              "campaign_origin": {
+                "pricing_info": {
+                  "title": "Campaign unavailable"
+                },
+                "product_infos": [
+                  {
+                    "category": "Apparel",
+                    "base_product": "Crewneck Sweatshirt"
+                  }
+                ],
+                "layers": [
+                  {
+                    "layer_type": "Image",
+                    "image_name": "BD_9.png",
+                    "location_layer_x": "705",
+                    "location_layer_y": "140",
+                    "layer_size_h": "881",
+                    "layer_size_w": "661"
+                  }
+                ],
+                "is_available": true
+              },
+              "artwork_name": "BD_5.png",
+              "title": "BD_5",
+              "campaign_detail": {
+                "campaign_name": "BD_5",
+                "tags": "crewneck,sweatshirt",
+                "style": ["Crewneck Sweatshirt"],
+                "color": ["White", "Black", "Sports Grey", "Ash"],
+                "size": ["S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+                "number_image": 12
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "api": "https://api.shopbase.com",
+  "domain": "au-bulk-duplicate-campaign-phub.onshopbase.com",
+  "username": "shopbase@beeketing.net",
+  "password": "Q(f!3Kx+6n;?Us%F",
+  "user_id": 73782,
+  "shop_id": 10403480,
+  "shop_name": "au-bulk-duplicate-campaign-phub",
+  "timeout": 2000000,
+  "cases": {
+    "SB_PRH_BDC_03": {
+      "campaign_origin": {
+        "pricing_info": {
+          "title": "Campaign 2D 1 side"
+        },
+        "product_infos": [
+          {
+            "category": "Apparel",
+            "base_product": "Unisex T-shirt"
+          }
+        ],
+        "layers": [
+          {
+            "layer_type": "Image",
+            "image_name": "BD_9.png",
+            "location_layer_x": "705",
+            "location_layer_y": "140",
+            "layer_size_h": "881",
+            "layer_size_w": "661",
+            "front_or_back": "Front"
+          }
+        ]
+      },
+      "artwork_valid": "BD_10.png",
+      "data": [
+        {
+          "artwork_name": "product-sample-import.csv",
+          "title": "product-sample-import.csv",
+          "message": "Support .PNG files only.",
+          "status": "Failed"
+        },
+        {
+          "artwork_name": "Dog 1.png",
+          "title": "Dog 1.png",
+          "message": "Artwork dimension must be 2100px at least.",
+          "status": "Failed"
+        }
+      ]
+    },
+    "DATA_DRIVEN": {
+      "data": [
+        {
+          "case_id": "SB_PRH_BDC_5",
+          "description": "Verify bulk duplicate thành công đỗi với campaign 2D 1 Base 1 side Front",
+          "campaign_origin": {
+            "pricing_info": {
+              "title": "Campaign 2D 1 side"
+            },
+            "product_infos": [
+              {
+                "category": "Apparel",
+                "base_product": "Unisex T-shirt"
+              }
+            ],
+            "layers": [
+              {
+                "layer_type": "Image",
+                "image_name": "BD_9.png",
+                "location_layer_x": "705",
+                "location_layer_y": "140",
+                "layer_size_h": "881",
+                "layer_size_w": "661",
+                "front_or_back": "Front"
+              }
+            ]
+          },
+          "artwork_name": "artwork1 - Front.png",
+          "title": "artwork1 - Front",
+          "picture": {
+            "front_side": "SB_PRH_BDC_5_artwork_sf.png"
+          },
+          "campaign_detail": {
+            "campaign_name": "artwork1 - Front",
+            "tags": "cotton,unisex t-shirt",
+            "style": ["Unisex T-shirt"],
+            "color": ["White", "Black", "Dark Chocolate", "Ash"],
+            "size": ["S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+            "number_image": 16
+          }
+        },
+        {
+          "case_id": "SB_PRH_BDC_6",
+          "description": "Verify bulk duplicate thành công cho campaign 2D có 1Base 2 side",
+          "campaign_origin": {
+            "pricing_info": {
+              "title": "Campaign 2D 2 side"
+            },
+            "product_infos": [
+              {
+                "category": "Apparel",
+                "base_product": "Long Sleeve Tee"
+              }
+            ],
+            "layers": [
+              {
+                "layer_type": "Image",
+                "image_name": "BD_9.png",
+                "location_layer_x": "705",
+                "location_layer_y": "140",
+                "layer_size_h": "881",
+                "layer_size_w": "661",
+                "front_or_back": "Front"
+              },
+              {
+                "layer_type": "Text",
+                "location_layer_x": "463",
+                "location_layer_y": "1100",
+                "layer_size_h": "200",
+                "layer_size_w": "1175",
+                "front_or_back": "Back"
+              }
+            ]
+          },
+          "artwork_name": "BD_7.png",
+          "artwork_back": "BD_6.png",
+          "title": "BD_7",
+          "picture": {
+            "front_side": "SB_PRH_BDC_6_artwork_sf_front.png",
+            "back_side": "SB_PRH_BDC_6_artwork_sf_back.png"
+          },
+          "campaign_detail": {
+            "campaign_name": "BD_7",
+            "tags": "long-sleeve,t-shirt",
+            "style": ["Long Sleeve Tee"],
+            "color": ["White", "Black", "Sports Grey", "Ash"],
+            "size": ["S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+            "number_image": 16
+          }
+        },
+        {
+          "case_id": "SB_PRH_BDC_7",
+          "description": "Verify bulk duplicate thành công cho campaign 2D có nhiều Base 2 side",
+          "campaign_origin": {
+            "pricing_info": {
+              "title": "Campaign 2D multiple product 2 side"
+            },
+            "product_infos": [
+              {
+                "category": "Apparel",
+                "base_product": "Ladies T-shirt"
+              },
+              {
+                "category": "Apparel",
+                "base_product": "Crewneck Sweatshirt"
+              },
+              {
+                "category": "Apparel",
+                "base_product": "V-neck T-shirt"
+              }
+            ],
+            "layers": [
+              {
+                "layer_type": "Image",
+                "image_name": "BD_9.png",
+                "location_layer_x": "705",
+                "location_layer_y": "140",
+                "layer_size_h": "881",
+                "layer_size_w": "661",
+                "front_or_back": "Back"
+              },
+              {
+                "layer_type": "Text",
+                "location_layer_x": "463",
+                "location_layer_y": "1100",
+                "layer_size_h": "200",
+                "layer_size_w": "1175",
+                "front_or_back": "Front"
+              }
+            ]
+          },
+          "artwork_name": "BD_3.png",
+          "artwork_back": "BD_4.png",
+          "title": "BD_3",
+          "picture": {
+            "front_side": "SB_PRH_BDC_7_artwork_sf_front.png"
+          },
+          "campaign_detail": {
+            "campaign_name": "BD_3",
+            "tags": "t-shirt,ladies,cotton,crewneck,sweatshirt,v-neck",
+            "style": ["Ladies T-shirt", "Crewneck Sweatshirt", "V-neck T-shirt"],
+            "color": ["White", "Black", "Sports Grey", "Dark Heather", "Ash", "Navy"],
+            "size": ["S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL", "XS"],
+            "number_image": 52
+          }
+        },
+        {
+          "case_id": "SB_PRH_BDC_8",
+          "description": "Verify bulk duplicate thành công cho campaign 3D 1 Base 1 side",
+          "campaign_origin": {
+            "pricing_info": {
+              "title": "Campaign 3D 1 side"
+            },
+            "product_infos": [
+              {
+                "category": "Home & Living",
+                "base_product": "Quilt"
+              }
+            ],
+            "layers": [
+              {
+                "layer_type": "Image",
+                "image_name": "BD_9.png",
+                "location_layer_x": "705",
+                "location_layer_y": "140",
+                "layer_size_h": "881",
+                "layer_size_w": "661"
+              }
+            ]
+          },
+          "artwork_name": "ArtworkWL.png",
+          "title": "ArtworkWL",
+          "picture": {
+            "front_side": "SB_PRH_BDC_8_artwork_sf_front.png"
+          },
+          "campaign_detail": {
+            "campaign_name": "ArtworkWL",
+            "tags": "all-over-print,quilt",
+            "style": ["Quilt"],
+            "color": ["All over print"],
+            "size": ["Single", "Twin", "Queen", "King", "Super King"],
+            "number_image": 4
+          }
+        },
+        {
+          "case_id": "SB_PRH_BDC_11",
+          "description": "Verify bulk duplicate thành công cho campaign từ màn campaign details",
+          "campaign_origin": {
+            "pricing_info": {
+              "title": "Beverage Mug"
+            },
+            "product_infos": [
+              {
+                "category": "Drinkware",
+                "base_product": "Beverage Mug"
+              }
+            ],
+            "layers": [
+              {
+                "layer_type": "Image",
+                "image_name": "BD_9.png",
+                "location_layer_x": "705",
+                "location_layer_y": "140",
+                "layer_size_h": "881",
+                "layer_size_w": "661"
+              }
+            ]
+          },
+          "artwork_name": "BD_11.png",
+          "title": "BD_11",
+          "picture": {
+            "front_side": "SB_PRH_BDC_11_artwork_sf_front.png"
+          },
+          "campaign_detail": {
+            "campaign_name": "BD_11",
+            "tags": "mug",
+            "style": ["Beverage Mug"],
+            "color": ["White", "Black"],
+            "size": ["11oz", "15oz"],
+            "number_image": 16
+          }
+        },
+        {
+          "case_id": "SB_PRH_BDC_17",
+          "description": "Check bulk duplicate thành công với campaign gốc có status = Unavailable",
+          "campaign_name": "Campaign unavailable",
+          "campaign_origin": {
+            "pricing_info": {
+              "title": "Campaign unavailable"
+            },
+            "product_infos": [
+              {
+                "category": "Apparel",
+                "base_product": "Crewneck Sweatshirt"
+              }
+            ],
+            "layers": [
+              {
+                "layer_type": "Image",
+                "image_name": "BD_9.png",
+                "location_layer_x": "705",
+                "location_layer_y": "140",
+                "layer_size_h": "881",
+                "layer_size_w": "661"
+              }
+            ],
+            "is_available": true
+          },
+          "artwork_name": "BD_5.png",
+          "title": "BD_5",
+          "campaign_detail": {
+            "campaign_name": "BD_5",
+            "tags": "crewneck,sweatshirt",
+            "style": ["Crewneck Sweatshirt"],
+            "color": ["White", "Black", "Sports Grey", "Ash"],
+            "size": ["S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+            "number_image": 12
+          }
+        }
+      ]
+    }
+  }
+}

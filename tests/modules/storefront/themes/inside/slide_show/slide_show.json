@@ -1,0 +1,1079 @@
+{
+  "env": {
+    "prod": {
+      "domain": "au-inside-slideshow.onshopbase.com",
+      "shop_name": "au-inside-slideshow.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "api": "https://api.shopbase.com",
+      "shop_id": 10338182,
+      "user_id": 73782
+    },
+    "prodtest": {
+      "domain": "au-inside-slideshow-prodtest.onshopbase.com",
+      "shop_name": "au-inside-slideshow-prodtest.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "api": "https://prod-test-api.shopbase.com",
+      "shop_id": 10351658,
+      "user_id": 73782,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "domain": "au-inside-slideshow.myshopbase.net",
+      "shop_name": "au-inside-slideshow.myshopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "api": "https://gapi.dev.shopbase.net",
+      "shop_id": 10321995,
+      "user_id": 73800,
+      "cases": {
+        "SETTING_BLOCK": {
+          "data": [
+            {
+              "description": "Verify show section when setting layout = Single",
+              "id": "SB_OLS_THE_INS_SF_SLIDESHOW_2",
+              "data": {
+                "home": {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "alt_text": "Slide1",
+                        "color_background_content": "#194d33",
+                        "first_button_label": "Shop now",
+                        "first_button_link": {
+                          "title": "",
+                          "url": "/collections"
+                        },
+                        "heading": "INSIDE SHOPBASE",
+                        "image": "https://dev-img.btdmp.com/sbase-file/10062741/2022/10/09/16653361417b2c986b64.png",
+                        "image_link": {
+                          "title": "",
+                          "url": "/pages/contact-us"
+                        },
+                        "second_button_label": "Read story",
+                        "second_button_link": {
+                          "title": "",
+                          "url": "/collections/all"
+                        },
+                        "text": "<p>THIS IS A SLIDE</p>",
+                        "text_alignment": "left"
+                      },
+                      "type": "slideshow",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "change_slides_every": 4,
+                    "current_layout": "single_slide",
+                    "full_width": true,
+                    "opacity": 50,
+                    "parallax": true,
+                    "ratio": "4:1"
+                  },
+                  "type": "slideshow",
+                  "visible": true
+                }
+              },
+              "expect": {
+                "count_block": 1,
+                "count_section": 1,
+                "snapshot": "web-slide-show-layout-single.png",
+                "image_link": "/pages/contact-us",
+                "first_button_link": "/collections",
+                "second_button_link": "/collections/all"
+              }
+            },
+            {
+              "description": "Verify show section when setting layout = Box",
+              "id": "SB_OLS_THE_INS_SF_SLIDESHOW_3",
+              "data": {
+                "home": {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "alt_text": "",
+                        "color_background_content": "#1E2285",
+                        "first_button_label": "",
+                        "first_button_link": {
+                          "title": "",
+                          "url": "/"
+                        },
+                        "heading": "",
+                        "image": "https://dev-img.btdmp.com/sbase-file/10062741/2022/10/09/16653361417b2c986b64.png",
+                        "image_link": {
+                          "title": "",
+                          "url": "/"
+                        },
+                        "second_button_label": "Read story",
+                        "second_button_link": {
+                          "title": "",
+                          "url": "/"
+                        },
+                        "text": "<p>THIS IS A SLIDE</p>",
+                        "text_alignment": "right"
+                      },
+                      "type": "slideshow",
+                      "visible": true
+                    }
+                  ],
+                  "settings": {
+                    "change_slides_every": 4,
+                    "current_layout": "box_slide",
+                    "full_width": true,
+                    "opacity": 0,
+                    "parallax": false,
+                    "ratio": "3:1"
+                  },
+                  "type": "slideshow",
+                  "visible": true
+                }
+              },
+              "expect": {
+                "count_block": 1,
+                "count_section": 1,
+                "snapshot": "web-slide-show-layout-box.png"
+              }
+            },
+            {
+              "description": "Verify show section when setting many block slides",
+              "id": "SB_OLS_THE_INS_SF_SLIDESHOW_4",
+              "data": {
+                "home": {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "alt_text": "",
+                        "color_background_content": "#194d33",
+                        "first_button_label": "Shop now",
+                        "first_button_link": "",
+                        "heading": "INSIDE SHOPBASE THEME",
+                        "image": "https://dev-img.btdmp.com/sbase-file/10062741/2022/10/09/1665336250854eb8265e.jpeg",
+                        "image_link": {},
+                        "second_button_label": "Read story",
+                        "second_button_link": "",
+                        "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                        "text_alignment": "center"
+                      },
+                      "type": "slideshow",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "",
+                        "color_background_content": "#194d33",
+                        "first_button_label": "Shop now",
+                        "first_button_link": "",
+                        "heading": "INSIDE SHOPBASE THEME",
+                        "image": "https://dev-img.btdmp.com/sbase-file/10062741/2022/10/09/16653361417b2c986b64.png",
+                        "image_link": {},
+                        "second_button_label": "Read story",
+                        "second_button_link": "",
+                        "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                        "text_alignment": "center"
+                      },
+                      "type": "slideshow",
+                      "visible": true
+                    }
+                  ],
+                  "handles": [],
+                  "settings": {
+                    "change_slides_every": 5,
+                    "current_layout": "single_slide",
+                    "full_width": false,
+                    "opacity": 30,
+                    "parallax": false,
+                    "ratio": "fit"
+                  },
+                  "type": "slideshow",
+                  "visible": true
+                }
+              },
+              "expect": {
+                "count_block": 2,
+                "count_section": 1,
+                "snapshot": "web-slide-show-setting-many-block.png",
+                "icon_next_prev": true,
+                "snapshot_next": "web-slide-show-setting-many-block-next-slide2.png",
+                "snapshot_prev": "web-slide-show-setting-many-block-prev-slide1.png"
+              }
+            },
+            {
+              "description": "Verify show section when setting change position + duplicate block",
+              "id": "SB_OLS_THE_INS_SF_SLIDESHOW_5",
+              "data": {
+                "home": {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "alt_text": "",
+                        "color_background_content": "#194d33",
+                        "first_button_label": "Shop now",
+                        "first_button_link": "",
+                        "heading": "INSIDE SHOPBASE THEME",
+                        "image": "https://dev-img.btdmp.com/sbase-file/10062741/2022/10/09/1665336250854eb8265e.jpeg",
+                        "image_link": {},
+                        "second_button_label": "Read story",
+                        "second_button_link": "",
+                        "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                        "text_alignment": "center"
+                      },
+                      "type": "slideshow",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "",
+                        "color_background_content": "#194d33",
+                        "first_button_label": "Shop now",
+                        "first_button_link": "",
+                        "heading": "INSIDE SHOPBASE THEME",
+                        "image": "https://dev-img.btdmp.com/sbase-file/10062741/2022/10/09/16653361417b2c986b64.png",
+                        "image_link": {},
+                        "second_button_label": "Read story",
+                        "second_button_link": "",
+                        "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                        "text_alignment": "center"
+                      },
+                      "type": "slideshow",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "",
+                        "color_background_content": "#194d33",
+                        "first_button_label": "Shop now",
+                        "first_button_link": "",
+                        "heading": "INSIDE SHOPBASE THEME1",
+                        "image": "https://dev-img.btdmp.com/sbase-file/10062741/2022/10/09/16653361417b2c986b64.png",
+                        "image_link": {},
+                        "second_button_label": "Read story",
+                        "second_button_link": "",
+                        "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                        "text_alignment": "center"
+                      },
+                      "type": "slideshow",
+                      "visible": true
+                    }
+                  ],
+                  "handles": [],
+                  "settings": {
+                    "change_slides_every": 12,
+                    "current_layout": "single_slide",
+                    "full_width": false,
+                    "opacity": 30,
+                    "parallax": false,
+                    "ratio": "4:1"
+                  },
+                  "type": "slideshow",
+                  "visible": true
+                }
+              },
+              "expect": {
+                "count_block": 3,
+                "count_section": 1,
+                "snapshot": "web-slide-show-setting-change-position-duplicate-block.png"
+              }
+            },
+            {
+              "description": "Verify show section when setting hide block",
+              "id": "SB_OLS_THE_INS_SF_SLIDESHOW_6",
+              "data": {
+                "home": {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "alt_text": "",
+                        "color_background_content": "#194d33",
+                        "first_button_label": "Shop now",
+                        "first_button_link": "",
+                        "heading": "INSIDE SHOPBASE THEME",
+                        "image": "https://dev-img.btdmp.com/sbase-file/10062741/2022/10/09/1665336250854eb8265e.jpeg",
+                        "image_link": {},
+                        "second_button_label": "Read story",
+                        "second_button_link": "",
+                        "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                        "text_alignment": "center"
+                      },
+                      "type": "slideshow"
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "",
+                        "color_background_content": "#194d33",
+                        "first_button_label": "Shop now",
+                        "first_button_link": "",
+                        "heading": "INSIDE SHOPBASE THEME1",
+                        "image": "https://dev-img.btdmp.com/sbase-file/10062741/2022/10/09/16653361417b2c986b64.png",
+                        "image_link": {},
+                        "second_button_label": "Read story",
+                        "second_button_link": "",
+                        "text": "BLOCK 2",
+                        "text_alignment": "center"
+                      },
+                      "type": "slideshow",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "",
+                        "color_background_content": "#194d33",
+                        "first_button_label": "Shop now",
+                        "first_button_link": "",
+                        "heading": "INSIDE SHOPBASE THEME1",
+                        "image": "https://dev-img.btdmp.com/sbase-file/10062741/2022/10/09/16653361417b2c986b64.png",
+                        "image_link": {},
+                        "second_button_label": "Read story",
+                        "second_button_link": "",
+                        "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                        "text_alignment": "center"
+                      },
+                      "type": "slideshow",
+                      "visible": true
+                    }
+                  ],
+                  "handles": [],
+                  "settings": {
+                    "change_slides_every": 12,
+                    "current_layout": "single_slide",
+                    "full_width": false,
+                    "opacity": 30,
+                    "parallax": false,
+                    "ratio": "4:1"
+                  },
+                  "type": "slideshow",
+                  "visible": true
+                }
+              },
+              "expect": {
+                "count_block": 2,
+                "count_section": 1,
+                "snapshot": "web-slide-show-setting-hide-block.png"
+              }
+            },
+            {
+              "description": "Verify show section when setting hide section",
+              "id": "SB_OLS_THE_INS_SF_SLIDESHOW_7",
+              "data": {
+                "home": {
+                  "blocks": [
+                    {
+                      "settings": {
+                        "alt_text": "",
+                        "color_background_content": "#194d33",
+                        "first_button_label": "Shop now",
+                        "first_button_link": "",
+                        "heading": "INSIDE SHOPBASE THEME",
+                        "image": "https://dev-img.btdmp.com/sbase-file/10062741/2022/10/09/1665336250854eb8265e.jpeg",
+                        "image_link": {},
+                        "second_button_label": "Read story",
+                        "second_button_link": "",
+                        "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                        "text_alignment": "center"
+                      },
+                      "type": "slideshow",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "",
+                        "color_background_content": "#194d33",
+                        "first_button_label": "Shop now",
+                        "first_button_link": "",
+                        "heading": "INSIDE SHOPBASE THEME",
+                        "image": "https://dev-img.btdmp.com/sbase-file/10062741/2022/10/09/16653361417b2c986b64.png",
+                        "image_link": {},
+                        "second_button_label": "Read story",
+                        "second_button_link": "",
+                        "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                        "text_alignment": "center"
+                      },
+                      "type": "slideshow",
+                      "visible": true
+                    },
+                    {
+                      "settings": {
+                        "alt_text": "",
+                        "color_background_content": "#194d33",
+                        "first_button_label": "Shop now",
+                        "first_button_link": "",
+                        "heading": "INSIDE SHOPBASE THEME1",
+                        "image": "https://dev-img.btdmp.com/sbase-file/10062741/2022/10/09/16653361417b2c986b64.png",
+                        "image_link": {},
+                        "second_button_label": "Read story",
+                        "second_button_link": "",
+                        "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                        "text_alignment": "center"
+                      },
+                      "type": "slideshow",
+                      "visible": true
+                    }
+                  ],
+                  "handles": [],
+                  "settings": {
+                    "change_slides_every": 12,
+                    "current_layout": "single_slide",
+                    "full_width": false,
+                    "opacity": 30,
+                    "parallax": false,
+                    "ratio": "4:1"
+                  },
+                  "type": "slideshow"
+                }
+              },
+              "expect": {
+                "count_section": 0
+              }
+            }
+          ]
+        },
+        "SB_OLS_THE_INS_SF_SLIDESHOW_8": {
+          "description": "Verify show section when setting change position section",
+          "id": "SB_OLS_THE_INS_SF_SLIDESHOW_8",
+          "data": {
+            "pages": {
+              "home": {
+                "default": [
+                  {
+                    "blocks": [
+                      {
+                        "settings": {
+                          "alt_text": "",
+                          "collection": {
+                            "handle": "lighting",
+                            "id": 86736218565,
+                            "title": "Lighting"
+                          },
+                          "image": ""
+                        },
+                        "type": "collection",
+                        "visible": true
+                      }
+                    ],
+                    "data": "collection",
+                    "settings": {
+                      "button_type": "button",
+                      "current_layout": "default",
+                      "heading": "Collection list",
+                      "image_styles": "square",
+                      "label_button": "View more",
+                      "product_per_row": 2,
+                      "title_alignment": "left",
+                      "title_background": true,
+                      "title_position": "inside_image"
+                    },
+                    "type": "collection-list",
+                    "visible": true
+                  },
+                  {
+                    "blocks": [
+                      {
+                        "settings": {
+                          "alt_text": "",
+                          "color_background_content": "#194d33",
+                          "first_button_label": "Shop now",
+                          "first_button_link": "",
+                          "heading": "INSIDE SHOPBASE THEME",
+                          "image": "https://dev-img.btdmp.com/sbase-file/10062741/2022/10/10/166537665594912540c7.jpeg",
+                          "image_link": {},
+                          "second_button_label": "Read story",
+                          "second_button_link": "",
+                          "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                          "text_alignment": "center"
+                        },
+                        "type": "slideshow",
+                        "visible": true
+                      },
+                      {
+                        "settings": {
+                          "alt_text": "",
+                          "color_background_content": "#194d33",
+                          "first_button_label": "Shop now",
+                          "first_button_link": "",
+                          "heading": "INSIDE SHOPBASE THEME",
+                          "image": "https://dev-img.btdmp.com/sbase-file/10062741/2022/10/10/1665376681a29a0febb7.png",
+                          "image_link": {},
+                          "second_button_label": "Read story",
+                          "second_button_link": "",
+                          "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                          "text_alignment": "center"
+                        },
+                        "type": "slideshow",
+                        "visible": true
+                      },
+                      {
+                        "settings": {
+                          "alt_text": "",
+                          "color_background_content": "#194d33",
+                          "first_button_label": "Shop now",
+                          "first_button_link": "",
+                          "heading": "INSIDE SHOPBASE THEME1",
+                          "image": "https://dev-img.btdmp.com/sbase-file/10062741/2022/10/10/1665376681a29a0febb7.png",
+                          "image_link": {},
+                          "second_button_label": "Read story",
+                          "second_button_link": "",
+                          "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                          "text_alignment": "center"
+                        },
+                        "type": "slideshow",
+                        "visible": true
+                      }
+                    ],
+                    "settings": {
+                      "change_slides_every": 12,
+                      "current_layout": "single_slide",
+                      "full_width": false,
+                      "opacity": 30,
+                      "parallax": false,
+                      "ratio": "21:9"
+                    },
+                    "type": "slideshow",
+                    "visible": true
+                  },
+                  {
+                    "blocks": [],
+                    "settings": {
+                      "custom_html_code": "",
+                      "custom_html_full_width": false
+                    },
+                    "type": "custom-html",
+                    "visible": true
+                  }
+                ]
+              }
+            }
+          },
+          "expect": {
+            "snapshot": "web-slide-show-setting-change-position-section.png"
+          }
+        },
+        "SB_OLS_THE_INS_SF_SLIDESHOW_1": {
+          "snapshot": "web-slide-show-data-default.png"
+        }
+      }
+    }
+  },
+  "cases": {
+    "SETTING_BLOCK": {
+      "data": [
+        {
+          "description": "Verify show section when setting layout = Single",
+          "id": "SB_OLS_THE_INS_SF_SLIDESHOW_2",
+          "data": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "alt_text": "Slide1",
+                    "color_background_content": "#194d33",
+                    "first_button_label": "Shop now",
+                    "first_button_link": {
+                      "title": "",
+                      "url": "/collections"
+                    },
+                    "heading": "INSIDE SHOPBASE",
+                    "image": "https://img.btdmp.com/files/10339433/2022/06/15/16552859571a798fdba8.png",
+                    "image_link": {
+                      "title": "",
+                      "url": "/pages/contact-us"
+                    },
+                    "second_button_label": "Read story",
+                    "second_button_link": {
+                      "title": "",
+                      "url": "/collections/all"
+                    },
+                    "text": "<p>THIS IS A SLIDE</p>",
+                    "text_alignment": "left"
+                  },
+                  "type": "slideshow",
+                  "visible": true
+                }
+              ],
+              "settings": {
+                "change_slides_every": 4,
+                "current_layout": "single_slide",
+                "full_width": true,
+                "opacity": 50,
+                "parallax": true,
+                "ratio": "4:1"
+              },
+              "type": "slideshow",
+              "visible": true
+            }
+          },
+          "expect": {
+            "count_block": 1,
+            "count_section": 1,
+            "snapshot": "web-slide-show-layout-single.png",
+            "image_link": "/pages/contact-us",
+            "first_button_link": "/collections",
+            "second_button_link": "/collections/all"
+          }
+        },
+        {
+          "description": "Verify show section when setting layout = Box",
+          "id": "SB_OLS_THE_INS_SF_SLIDESHOW_3",
+          "data": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "alt_text": "",
+                    "color_background_content": "#1E2285",
+                    "first_button_label": "",
+                    "first_button_link": {
+                      "title": "",
+                      "url": "/"
+                    },
+                    "heading": "",
+                    "image": "https://img.btdmp.com/files/10339433/2022/06/15/16552859571a798fdba8.png",
+                    "image_link": {
+                      "title": "",
+                      "url": "/"
+                    },
+                    "second_button_label": "Read story",
+                    "second_button_link": {
+                      "title": "",
+                      "url": "/"
+                    },
+                    "text": "<p>THIS IS A SLIDE</p>",
+                    "text_alignment": "right"
+                  },
+                  "type": "slideshow",
+                  "visible": true
+                }
+              ],
+              "settings": {
+                "change_slides_every": 4,
+                "current_layout": "box_slide",
+                "full_width": true,
+                "opacity": 0,
+                "parallax": false,
+                "ratio": "3:1"
+              },
+              "type": "slideshow",
+              "visible": true
+            }
+          },
+          "expect": {
+            "count_block": 1,
+            "count_section": 1,
+            "snapshot": "web-slide-show-layout-box.png"
+          }
+        },
+        {
+          "description": "Verify show section when setting many block slides",
+          "id": "SB_OLS_THE_INS_SF_SLIDESHOW_4",
+          "data": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "alt_text": "",
+                    "color_background_content": "#194d33",
+                    "first_button_label": "Shop now",
+                    "first_button_link": "",
+                    "heading": "INSIDE SHOPBASE THEME",
+                    "image": "https://img.btdmp.com/files/10339433/2022/06/16/16553648334228e1aaa8.jpeg",
+                    "image_link": {},
+                    "second_button_label": "Read story",
+                    "second_button_link": "",
+                    "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                    "text_alignment": "center"
+                  },
+                  "type": "slideshow",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "",
+                    "color_background_content": "#194d33",
+                    "first_button_label": "Shop now",
+                    "first_button_link": "",
+                    "heading": "INSIDE SHOPBASE THEME",
+                    "image": "https://img.btdmp.com/files/10339433/2022/06/16/165536487499902bb76d.png",
+                    "image_link": {},
+                    "second_button_label": "Read story",
+                    "second_button_link": "",
+                    "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                    "text_alignment": "center"
+                  },
+                  "type": "slideshow",
+                  "visible": true
+                }
+              ],
+              "handles": [],
+              "settings": {
+                "change_slides_every": 5,
+                "current_layout": "single_slide",
+                "full_width": false,
+                "opacity": 30,
+                "parallax": false,
+                "ratio": "fit"
+              },
+              "type": "slideshow",
+              "visible": true
+            }
+          },
+          "expect": {
+            "count_block": 2,
+            "count_section": 1,
+            "snapshot": "web-slide-show-setting-many-block.png",
+            "icon_next_prev": true,
+            "snapshot_next": "web-slide-show-setting-many-block-next-slide2.png",
+            "snapshot_prev": "web-slide-show-setting-many-block-prev-slide1.png"
+          }
+        },
+        {
+          "description": "Verify show section when setting change position + duplicate block",
+          "id": "SB_OLS_THE_INS_SF_SLIDESHOW_5",
+          "data": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "alt_text": "",
+                    "color_background_content": "#194d33",
+                    "first_button_label": "Shop now",
+                    "first_button_link": "",
+                    "heading": "INSIDE SHOPBASE THEME",
+                    "image": "https://img.btdmp.com/files/10339433/2022/06/16/16553648334228e1aaa8.jpeg",
+                    "image_link": {},
+                    "second_button_label": "Read story",
+                    "second_button_link": "",
+                    "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                    "text_alignment": "center"
+                  },
+                  "type": "slideshow",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "",
+                    "color_background_content": "#194d33",
+                    "first_button_label": "Shop now",
+                    "first_button_link": "",
+                    "heading": "INSIDE SHOPBASE THEME",
+                    "image": "https://img.btdmp.com/files/10339433/2022/06/16/165536487499902bb76d.png",
+                    "image_link": {},
+                    "second_button_label": "Read story",
+                    "second_button_link": "",
+                    "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                    "text_alignment": "center"
+                  },
+                  "type": "slideshow",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "",
+                    "color_background_content": "#194d33",
+                    "first_button_label": "Shop now",
+                    "first_button_link": "",
+                    "heading": "INSIDE SHOPBASE THEME1",
+                    "image": "https://img.btdmp.com/files/10339433/2022/06/16/165536487499902bb76d.png",
+                    "image_link": {},
+                    "second_button_label": "Read story",
+                    "second_button_link": "",
+                    "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                    "text_alignment": "center"
+                  },
+                  "type": "slideshow",
+                  "visible": true
+                }
+              ],
+              "handles": [],
+              "settings": {
+                "change_slides_every": 12,
+                "current_layout": "single_slide",
+                "full_width": false,
+                "opacity": 30,
+                "parallax": false,
+                "ratio": "4:1"
+              },
+              "type": "slideshow",
+              "visible": true
+            }
+          },
+          "expect": {
+            "count_block": 3,
+            "count_section": 1,
+            "snapshot": "web-slide-show-setting-change-position-duplicate-block.png"
+          }
+        },
+        {
+          "description": "Verify show section when setting hide block",
+          "id": "SB_OLS_THE_INS_SF_SLIDESHOW_6",
+          "data": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "alt_text": "",
+                    "color_background_content": "#194d33",
+                    "first_button_label": "Shop now",
+                    "first_button_link": "",
+                    "heading": "INSIDE SHOPBASE THEME",
+                    "image": "https://img.btdmp.com/files/10339433/2022/06/16/16553648334228e1aaa8.jpeg",
+                    "image_link": {},
+                    "second_button_label": "Read story",
+                    "second_button_link": "",
+                    "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                    "text_alignment": "center"
+                  },
+                  "type": "slideshow"
+                },
+                {
+                  "settings": {
+                    "alt_text": "",
+                    "color_background_content": "#194d33",
+                    "first_button_label": "Shop now",
+                    "first_button_link": "",
+                    "heading": "INSIDE SHOPBASE THEME1",
+                    "image": "https://img.btdmp.com/files/10339433/2022/06/16/165536487499902bb76d.png",
+                    "image_link": {},
+                    "second_button_label": "Read story",
+                    "second_button_link": "",
+                    "text": "BLOCK 2",
+                    "text_alignment": "center"
+                  },
+                  "type": "slideshow",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "",
+                    "color_background_content": "#194d33",
+                    "first_button_label": "Shop now",
+                    "first_button_link": "",
+                    "heading": "INSIDE SHOPBASE THEME1",
+                    "image": "https://img.btdmp.com/files/10339433/2022/06/16/165536487499902bb76d.png",
+                    "image_link": {},
+                    "second_button_label": "Read story",
+                    "second_button_link": "",
+                    "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                    "text_alignment": "center"
+                  },
+                  "type": "slideshow",
+                  "visible": true
+                }
+              ],
+              "handles": [],
+              "settings": {
+                "change_slides_every": 12,
+                "current_layout": "single_slide",
+                "full_width": false,
+                "opacity": 30,
+                "parallax": false,
+                "ratio": "4:1"
+              },
+              "type": "slideshow",
+              "visible": true
+            }
+          },
+          "expect": {
+            "count_block": 2,
+            "count_section": 1,
+            "snapshot": "web-slide-show-setting-hide-block.png"
+          }
+        },
+        {
+          "description": "Verify show section when setting hide section",
+          "id": "SB_OLS_THE_INS_SF_SLIDESHOW_7",
+          "data": {
+            "home": {
+              "blocks": [
+                {
+                  "settings": {
+                    "alt_text": "",
+                    "color_background_content": "#194d33",
+                    "first_button_label": "Shop now",
+                    "first_button_link": "",
+                    "heading": "INSIDE SHOPBASE THEME",
+                    "image": "https://img.btdmp.com/files/10339433/2022/06/16/16553648334228e1aaa8.jpeg",
+                    "image_link": {},
+                    "second_button_label": "Read story",
+                    "second_button_link": "",
+                    "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                    "text_alignment": "center"
+                  },
+                  "type": "slideshow",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "",
+                    "color_background_content": "#194d33",
+                    "first_button_label": "Shop now",
+                    "first_button_link": "",
+                    "heading": "INSIDE SHOPBASE THEME",
+                    "image": "https://img.btdmp.com/files/10339433/2022/06/16/165536487499902bb76d.png",
+                    "image_link": {},
+                    "second_button_label": "Read story",
+                    "second_button_link": "",
+                    "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                    "text_alignment": "center"
+                  },
+                  "type": "slideshow",
+                  "visible": true
+                },
+                {
+                  "settings": {
+                    "alt_text": "",
+                    "color_background_content": "#194d33",
+                    "first_button_label": "Shop now",
+                    "first_button_link": "",
+                    "heading": "INSIDE SHOPBASE THEME1",
+                    "image": "https://img.btdmp.com/files/10339433/2022/06/16/165536487499902bb76d.png",
+                    "image_link": {},
+                    "second_button_label": "Read story",
+                    "second_button_link": "",
+                    "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                    "text_alignment": "center"
+                  },
+                  "type": "slideshow",
+                  "visible": true
+                }
+              ],
+              "handles": [],
+              "settings": {
+                "change_slides_every": 12,
+                "current_layout": "single_slide",
+                "full_width": false,
+                "opacity": 30,
+                "parallax": false,
+                "ratio": "4:1"
+              },
+              "type": "slideshow"
+            }
+          },
+          "expect": {
+            "count_section": 0
+          }
+        }
+      ]
+    },
+    "SB_OLS_THE_INS_SF_SLIDESHOW_8": {
+      "description": "Verify show section when setting change position section",
+      "data": {
+        "pages": {
+          "home": {
+            "default": [
+              {
+                "blocks": [
+                  {
+                    "settings": {
+                      "alt_text": "",
+                      "collection": {
+                        "handle": "lighting",
+                        "id": 86736218565,
+                        "title": "Lighting"
+                      },
+                      "image": ""
+                    },
+                    "type": "collection",
+                    "visible": true
+                  }
+                ],
+                "data": "collection",
+                "settings": {
+                  "button_type": "button",
+                  "current_layout": "default",
+                  "heading": "Collection list",
+                  "image_styles": "square",
+                  "label_button": "View more",
+                  "product_per_row": 2,
+                  "title_alignment": "left",
+                  "title_background": true,
+                  "title_position": "inside_image"
+                },
+                "type": "collection-list",
+                "visible": true
+              },
+              {
+                "blocks": [
+                  {
+                    "settings": {
+                      "alt_text": "",
+                      "color_background_content": "#194d33",
+                      "first_button_label": "Shop now",
+                      "first_button_link": "",
+                      "heading": "INSIDE SHOPBASE THEME",
+                      "image": "https://img.btdmp.com/files/10339433/2022/06/16/16553648334228e1aaa8.jpeg",
+                      "image_link": {},
+                      "second_button_label": "Read story",
+                      "second_button_link": "",
+                      "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                      "text_alignment": "center"
+                    },
+                    "type": "slideshow",
+                    "visible": true
+                  },
+                  {
+                    "settings": {
+                      "alt_text": "",
+                      "color_background_content": "#194d33",
+                      "first_button_label": "Shop now",
+                      "first_button_link": "",
+                      "heading": "INSIDE SHOPBASE THEME",
+                      "image": "https://img.btdmp.com/files/10339433/2022/06/16/165536487499902bb76d.png",
+                      "image_link": {},
+                      "second_button_label": "Read story",
+                      "second_button_link": "",
+                      "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                      "text_alignment": "center"
+                    },
+                    "type": "slideshow",
+                    "visible": true
+                  },
+                  {
+                    "settings": {
+                      "alt_text": "",
+                      "color_background_content": "#194d33",
+                      "first_button_label": "Shop now",
+                      "first_button_link": "",
+                      "heading": "INSIDE SHOPBASE THEME1",
+                      "image": "https://img.btdmp.com/files/10339433/2022/06/16/165536487499902bb76d.png",
+                      "image_link": {},
+                      "second_button_label": "Read story",
+                      "second_button_link": "",
+                      "text": "TELL YOUR BRAND STORY THROUGH IMAGES",
+                      "text_alignment": "center"
+                    },
+                    "type": "slideshow",
+                    "visible": true
+                  }
+                ],
+                "settings": {
+                  "change_slides_every": 12,
+                  "current_layout": "single_slide",
+                  "full_width": false,
+                  "opacity": 30,
+                  "parallax": false,
+                  "ratio": "21:9"
+                },
+                "type": "slideshow",
+                "visible": true
+              },
+              {
+                "blocks": [],
+                "settings": {
+                  "custom_html_code": "",
+                  "custom_html_full_width": false
+                },
+                "type": "custom-html",
+                "visible": true
+              }
+            ]
+          }
+        }
+      },
+      "expect": {
+        "snapshot": "web-slide-show-setting-change-position-section.png"
+      }
+    },
+    "SB_OLS_THE_INS_SF_SLIDESHOW_1": {
+      "snapshot": "web-slide-show-data-default.png"
+    }
+  }
+}

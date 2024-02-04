@@ -1,0 +1,494 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-product-in-collection-auto.myshopbase.net",
+      "shop_name": "au-product-in-collection-auto",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_id": 10322773,
+      "user_id": 73800
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-product-in-collection-auto-prodtest.onshopbase.com",
+      "shop_name": "au-product-in-collection-auto-prodtest",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10378071,
+      "user_id": 73782,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-product-in-collection-auto.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_name": "au-product-in-collection-auto",
+      "shop_id": 10377552,
+      "user_id": 73782
+    }
+  },
+  "time_out": 900000,
+  "max_diff_pixel_ratio": 0.05,
+  "threshold": 0.1,
+  "max_diff_pixels": 2000,
+  "cases": {
+    "DATA_DRIVEN": {
+      "time_out": 200000,
+      "data": [
+        {
+          "description": "Check sync product vào collection auto rule [product tag]",
+          "case_id": "SB_CL_SPC_22",
+          "collection_info": {
+            "collection_title": "collection auto SB_CL_SPC_22",
+            "collection_type": "Automated",
+            "condition_type": "any condition",
+            "conditions": [
+              "Product title>contains>shopbase 01",
+              "Product vendor>contains>test vendor",
+              "Product tag>is equal to>test tag",
+              "Product type>contains>test type",
+              "Product price>is equal to>150",
+              "Compare at price>is equal to>150",
+              "Weight>is equal to>150",
+              "Inventory stock>is equal to>150",
+              "Variant title>contains>Tank Top"
+            ],
+            "product_collection": ["Product tag SB_CL_SPC_22"]
+          },
+          "product_info": {
+            "title": "Product tag SB_CL_SPC_22",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20",
+            "tag": "test tag"
+          },
+          "product_info_edit": {
+            "title": "Product tag SB_CL_SPC_22",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20",
+            "tag": "test sync tag"
+          },
+          "field_edit": "Tag",
+          "value_edit": "test sync tag",
+          "value_revert_edit": "test tag"
+        },
+        {
+          "description": "Check sync product vào collection auto rule [product type]",
+          "case_id": "SB_CL_SPC_23",
+          "collection_info": {
+            "collection_title": "collection auto SB_CL_SPC_23",
+            "collection_type": "Automated",
+            "condition_type": "any condition",
+            "conditions": [
+              "Product title>contains>shopbase 01",
+              "Product vendor>contains>test vendor",
+              "Product type>contains>type SB_CL_SPC_23",
+              "Product price>is equal to>150",
+              "Compare at price>is equal to>150",
+              "Weight>is equal to>150",
+              "Inventory stock>is equal to>150",
+              "Variant title>contains>Tank Top"
+            ],
+            "product_collection": ["Product type SB_CL_SPC_23"]
+          },
+          "product_info": {
+            "title": "Product type SB_CL_SPC_23",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20",
+            "product_type": "type SB_CL_SPC_23"
+          },
+          "field_edit": "Product type",
+          "value_edit": "Test sync product type",
+          "value_revert_edit": "type SB_CL_SPC_23"
+        },
+        {
+          "description": "Check sync product vào collection auto rule [variant title]",
+          "case_id": "SB_CL_SPC_24",
+          "collection_info": {
+            "collection_title": "collection auto SB_CL_SPC_24",
+            "collection_type": "Automated",
+            "condition_type": "any condition",
+            "conditions": [
+              "Product title>contains>shopbase 01",
+              "Product vendor>contains>test vendor",
+              "Product type>contains>test type",
+              "Product price>is equal to>150",
+              "Compare at price>is equal to>150",
+              "Weight>is equal to>150",
+              "Inventory stock>is equal to>150",
+              "Variant title>contains>Hoodie"
+            ],
+            "product_collection": ["Product variant title SB_CL_SPC_24"]
+          },
+          "product_info": {
+            "title": "Product variant title SB_CL_SPC_24",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20",
+            "value_size": "S",
+            "value_style": "Hoodie"
+          },
+          "field_edit": "Product variant",
+          "value_edit": {
+            "value_style": "T-shirt"
+          },
+          "value_revert_edit": {
+            "value_style": "Hoodie"
+          }
+        },
+        {
+          "description": "Check sync product vào collection auto rule [product price]",
+          "case_id": "SB_CL_SPC_25",
+          "collection_info": {
+            "collection_title": "collection auto SB_CL_SPC_25",
+            "collection_type": "Automated",
+            "condition_type": "any condition",
+            "conditions": [
+              "Product title>contains>shopbase 01",
+              "Product vendor>contains>test vendor",
+              "Product type>contains>test type",
+              "Product price>is equal to>50",
+              "Compare at price>is equal to>150",
+              "Weight>is equal to>150",
+              "Inventory stock>is equal to>150",
+              "Variant title>contains>Tank Top"
+            ],
+            "product_collection": ["Product price SB_CL_SPC_25"]
+          },
+          "product_info": {
+            "title": "Product price SB_CL_SPC_25",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "50",
+            "compare_at_price": "20"
+          },
+          "field_edit": "Price",
+          "value_edit": "0",
+          "value_revert_edit": "50"
+        },
+        {
+          "description": "Check sync product vào collection auto rule [Compare at price]",
+          "case_id": "SB_CL_SPC_26",
+          "collection_info": {
+            "collection_title": "collection auto SB_CL_SPC_26",
+            "collection_type": "Automated",
+            "condition_type": "any condition",
+            "conditions": [
+              "Product title>contains>shopbase 01",
+              "Product vendor>contains>test vendor",
+              "Product type>contains>test type",
+              "Product price>is equal to>150",
+              "Compare at price>is equal to>50",
+              "Weight>is equal to>150",
+              "Inventory stock>is equal to>150",
+              "Variant title>contains>Tank Top"
+            ],
+            "product_collection": ["Product compare at price SB_CL_SPC_26"]
+          },
+          "product_info": {
+            "title": "Product compare at price SB_CL_SPC_26",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "50"
+          },
+          "field_edit": "Compare at price",
+          "value_edit": "0",
+          "value_revert_edit": "50"
+        },
+        {
+          "description": "Check sync product vào collection auto rule [Weight]",
+          "case_id": "SB_CL_SPC_27",
+          "collection_info": {
+            "collection_title": "collection auto SB_CL_SPC_27",
+            "collection_type": "Automated",
+            "condition_type": "any condition",
+            "conditions": [
+              "Product title>contains>shopbase 01",
+              "Product vendor>contains>test vendor",
+              "Product type>contains>test type",
+              "Product price>is equal to>150",
+              "Compare at price>is equal to>150",
+              "Weight>is equal to>50",
+              "Inventory stock>is equal to>150",
+              "Variant title>contains>Tank Top"
+            ],
+            "product_collection": ["Product weight SB_CL_SPC_27"]
+          },
+          "product_info": {
+            "title": "Product weight SB_CL_SPC_27",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20",
+            "weight": "50"
+          },
+          "field_edit": "Weight",
+          "value_edit": "0",
+          "value_revert_edit": "50"
+        },
+        {
+          "description": "Check sync product vào collection auto rule [Inventory stock]",
+          "case_id": "SB_CL_SPC_28",
+          "collection_info": {
+            "collection_title": "collection auto SB_CL_SPC_28",
+            "collection_type": "Automated",
+            "condition_type": "any condition",
+            "conditions": [
+              "Product title>contains>shopbase 01",
+              "Product vendor>contains>test vendor",
+              "Product type>contains>test type",
+              "Product price>is equal to>150",
+              "Compare at price>is equal to>150",
+              "Weight>is equal to>150",
+              "Inventory stock>is equal to>50",
+              "Variant title>contains>Tank Top"
+            ],
+            "product_collection": ["Product inventory stock SB_CL_SPC_28"]
+          },
+          "product_info": {
+            "title": "Product inventory stock SB_CL_SPC_28",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20",
+            "inventory_policy": "ShopBase tracks this product's inventory",
+            "quantity": "50"
+          },
+          "field_edit": "Inventory stock",
+          "value_edit": "0",
+          "value_revert_edit": "50"
+        },
+        {
+          "description": "Check sync product vào collection auto rule [product title]",
+          "case_id": "SB_CL_SPC_16",
+          "collection_info": {
+            "collection_title": "collection auto SB_CL_SPC_16",
+            "collection_type": "Automated",
+            "condition_type": "any condition",
+            "conditions": [
+              "Product title>contains>shopbase SB_CL_SPC_16",
+              "Product vendor>contains>test vendor",
+              "Product tag>is equal to>tag SB_CL_SPC_16",
+              "Product type>contains>test type",
+              "Product price>is equal to>150",
+              "Compare at price>is equal to>150",
+              "Weight>is equal to>150",
+              "Inventory stock>is equal to>150",
+              "Variant title>contains>Tank Top"
+            ],
+            "product_collection": ["shopbase SB_CL_SPC_16"]
+          },
+          "product_info": {
+            "title": "shopbase SB_CL_SPC_16",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "product_info_edit": {
+            "title": "title edit SB_CL_SPC_16",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "field_edit": "Title",
+          "value_edit": "title edit SB_CL_SPC_16",
+          "value_revert_edit": "shopbase SB_CL_SPC_16"
+        }
+      ]
+    },
+    "SB_CL_SPC_17": {
+      "time_out": 160000,
+      "product_info": [
+        {
+          "title": "Product auto A SB_CL_SPC_17",
+          "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+          "image_name": "Logo1.jpg",
+          "vendor": "shopbase",
+          "price": "70",
+          "compare_at_price": "20",
+          "tag": "Shopbase"
+        },
+        {
+          "title": "Product auto B SB_CL_SPC_17",
+          "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+          "image_name": "Logo1.jpg",
+          "vendor": "product",
+          "price": "70",
+          "compare_at_price": "20",
+          "tag": "abc"
+        }
+      ],
+      "collection_delete": ["Collection auto A SB_CL_SPC_17", "Collection auto B SB_CL_SPC_17"],
+      "collection_info1": {
+        "collection_title": "Collection auto A SB_CL_SPC_17",
+        "collection_type": "Automated",
+        "condition_type": "all conditions",
+        "sort_order": "manual",
+        "conditions": [
+          "Product tag>is equal to>shopbase",
+          "Product title>contains>Product",
+          "Product price>is equal to>70"
+        ],
+        "product_collection": ["Product auto A SB_CL_SPC_17"]
+      },
+      "collection_info2": {
+        "collection_title": "Collection auto B SB_CL_SPC_17",
+        "collection_type": "Automated",
+        "condition_type": "any condition",
+        "sort_order": "manual",
+        "conditions": [
+          "Product tag>is equal to>shopbase",
+          "Product title>contains>SB_CL_SPC_17",
+          "Product price>is equal to>70"
+        ],
+        "product_collection": ["Product auto A SB_CL_SPC_17", "Product auto B SB_CL_SPC_17"]
+      }
+    },
+    "SB_CL_SPC_18": {
+      "time_out": 150000,
+      "collection_info": {
+        "collection_title": "Collection auto A",
+        "collection_type": "Automated",
+        "condition_type": "all conditions",
+        "sort_order": "manual",
+        "conditions": [
+          "Product tag>is equal to>shopbase",
+          "Product title>contains>Product",
+          "Product price>is equal to>70"
+        ],
+        "product_collection": ["product import"]
+      },
+      "product_info": {
+        "title": "product import"
+      }
+    },
+    "SB_CL_SPC_19": {
+      "time_out": 300000,
+      "collection_info": {
+        "collection_title": "Collection auto bulk update",
+        "collection_type": "Automated",
+        "condition_type": "any condition",
+        "sort_order": "manual",
+        "conditions": [
+          "Product tag>is equal to>update",
+          "Product title>contains>Update",
+          "Product vendor>contains>update",
+          "Variant title>contains>M",
+          "Product price>is equal to>100",
+          "Compare at price>is equal to>100"
+        ]
+      },
+      "bulk_update_info": [
+        {
+          "product_title": ["3D Print Full Sherpa Hoodie - Uganda"],
+          "image_snapshot": "block-add-collections-auto-add-tag.png",
+          "condition_type": "All conditions",
+          "conditions": ["Product title >contains >3D Print Full Sherpa Hoodie - Uganda"],
+          "actions": ["Add tags > update"],
+          "bulk_update_info": {
+            "filter_validate": "Product title contains \"3D Print Full Sherpa Hoodie - Uganda\"",
+            "update_for_validate": "All variants",
+            "action_validate": "Add tags update",
+            "number_of_update_validate": "1"
+          }
+        },
+        {
+          "product_title": ["Update 3D Print Full Sherpa Hoodie - Lebanon"],
+          "image_snapshot": "block-add-collections-auto-add-title.png",
+          "condition_type": "All conditions",
+          "conditions": ["Product title >contains >3D Print Full Sherpa Hoodie - Lebanon"],
+          "actions": ["Add text to product title>Update>At the beginning"],
+          "bulk_update_info": {
+            "filter_validate": "Product title contains \"3D Print Full Sherpa Hoodie - Lebanon\"",
+            "update_for_validate": "All variants",
+            "action_validate": "Add text Update to product title",
+            "number_of_update_validate": "1"
+          }
+        },
+        {
+          "product_title": ["Air Jordan 13 - Limited Edition - Texas - U.S.A"],
+          "image_snapshot": "block-add-collections-auto-change-vendor.png",
+          "condition_type": "All conditions",
+          "conditions": ["Product title>contains >Air Jordan 13 - Limited Edition - Texas - U.S.A"],
+          "actions": ["Change product vendor to>update"],
+          "bulk_update_info": {
+            "filter_validate": "Product title contains \"Air Jordan 13 - Limited Edition - Texas - U.S.A\"",
+            "update_for_validate": "All variants",
+            "action_validate": "Change product vendor to update",
+            "number_of_update_validate": "1"
+          }
+        },
+        {
+          "product_title": ["3D Print Full Blanket - Sea Turtle - Mom to Son"],
+          "image_snapshot": "block-add-collections-auto-change-variant.png",
+          "condition_type": "All conditions",
+          "conditions": ["Product title>contains >3D Print Full Blanket - Sea Turtle - Mom to Son"],
+          "actions": ["change_variant_option_value> Size > S > M"],
+          "bulk_update_info": {
+            "filter_validate": "Product title contains \"3D Print Full Blanket - Sea Turtle - Mom to Son\"",
+            "update_for_validate": "All variants",
+            "action_validate": "Change variant's option Size from value S to value M",
+            "number_of_update_validate": "1"
+          }
+        },
+        {
+          "product_title": ["3D Knight Templar Apparel"],
+          "image_snapshot": "block-add-collections-auto-change-price.png",
+          "condition_type": "All conditions",
+          "conditions": ["Product title>contains >3D Knight Templar Apparel"],
+          "actions": ["Change price to>100"],
+          "bulk_update_info": {
+            "filter_validate": "Product title contains \"3D Knight Templar Apparel\"",
+            "update_for_validate": "All variants",
+            "action_validate": "Change price to 100 USD",
+            "number_of_update_validate": "1"
+          }
+        },
+        {
+          "product_title": ["3D Apparel - These Colors Run They Reload"],
+          "image_snapshot": "block-add-collections-auto-change-compare-at-price.png",
+          "condition_type": "All conditions",
+          "conditions": ["Product title>contains >3D Apparel - These Colors Run They Reload"],
+          "actions": ["Change compare-at-price to>100"],
+          "bulk_update_info": {
+            "filter_validate": "Product title contains \"3D Apparel - These Colors Run They Reload\"",
+            "update_for_validate": "All variants",
+            "action_validate": "Change compare-at-price to 100 USD",
+            "number_of_update_validate": "1"
+          }
+        }
+      ]
+    },
+    "SB_CL_SPC_21": {
+      "time_out": 150000,
+      "collection_info": {
+        "collection_title": "Collection delete",
+        "collection_type": "Automated",
+        "condition_type": "any condition",
+        "conditions": ["Product tag>is equal to>update", "Product title>contains>Update"],
+        "message": "1 collection deleted"
+      }
+    }
+  }
+}

@@ -1,0 +1,374 @@
+{
+  "env": {
+    "local": {
+      "api": "https://api.shopbase.com",
+      "domain": "dp-checkout-prod.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_name": "dp-checkout-prod.onshopbase.com",
+      "shop_id": 10373994,
+      "user_id": 73782,
+      "product_info": {
+        "product": {
+          "product_type": "online_course",
+          "title": "Product Online Course",
+          "published": true,
+          "product_pricing_type": "One-time payment",
+          "pricing_title": "Price test",
+          "amount": "33.33",
+          "apply_template": {
+            "template_id": 18,
+            "type": "product"
+          }
+        }
+      },
+      "product_free_info": {
+        "product": {
+          "product_type": "digital_download",
+          "title": "Product Digital Download Free",
+          "published": true
+        }
+      }
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "digital-product-checout-1.myshopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "user_id": "73800",
+      "shop_id": "10322330",
+      "shop_name": "digital-product-checout-1",
+      "product_info": {
+        "product": {
+          "product_type": "online_course",
+          "title": "Product Online Course",
+          "published": true,
+          "product_pricing_type": "One-time payment",
+          "pricing_title": "Price test",
+          "amount": "33.33",
+          "apply_template": {
+            "template_id": 559,
+            "type": "product"
+          }
+        }
+      },
+      "product_free_info": {
+        "product": {
+          "product_type": "digital_download",
+          "title": "Product Digital Download Free",
+          "published": true
+        }
+      }
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "dp-checkout-creator.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_name": "dp-checkout-creator.onshopbase.com",
+      "shop_id": 10373841,
+      "user_id": 73782,
+      "product_info": {
+        "product": {
+          "product_type": "online_course",
+          "title": "Product Online Course",
+          "published": true,
+          "product_pricing_type": "One-time payment",
+          "pricing_title": "Frice test",
+          "amount": "33.33",
+          "apply_template": {
+            "template_id": 18,
+            "type": "product"
+          }
+        }
+      },
+      "product_free_info": {
+        "product": {
+          "product_type": "digital_download",
+          "title": "Product Digital Download Free",
+          "published": true
+        }
+      },
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "dp-checkout-prod.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_name": "dp-checkout-prod.onshopbase.com",
+      "shop_id": 10373994,
+      "user_id": 73782,
+      "product_info": {
+        "product": {
+          "product_type": "online_course",
+          "title": "Product Online Course",
+          "published": true,
+          "product_pricing_type": "One-time payment",
+          "pricing_title": "Price test",
+          "amount": "33.33",
+          "apply_template": {
+            "template_id": 18,
+            "type": "product"
+          }
+        }
+      },
+      "product_free_info": {
+        "product": {
+          "product_type": "digital_download",
+          "title": "Product Digital Download Free",
+          "published": true
+        }
+      }
+    }
+  },
+  "cases": {
+    "SB_SC_SCSF_SCSFC_01": {
+      "email": "phuongnguyen4@beeketing.net",
+      "card_number": "4242424242424242",
+      "card_expire_date": "09/30",
+      "card_cvv": 111,
+      "product_free_handle": "product-online-course-free",
+      "product_handle": "product-online-course"
+    },
+    "SB_SC_SCSF_SCSFC_02": {
+      "product_handle": "product-online-course",
+      "email": "phuongnguyen4@beeketing.net",
+      "card_number": "4242424242424242",
+      "card_validate": [
+        {
+          "card_number": "",
+          "err_msg": "Your card number is invalid"
+        },
+        {
+          "card_number": "1234 5678 4567",
+          "err_msg": "Your card number is invalid"
+        },
+        {
+          "card_number": "1234 5678 4568 2555",
+          "err_msg": "Your card number is invalid"
+        }
+      ],
+      "expire_date": [
+        {
+          "date": "",
+          "err_msg": "Your cards expiration year is invalid"
+        },
+        {
+          "date": "02/02",
+          "err_msg": "Your card's expiration year is in the past"
+        }
+      ],
+      "card_cvv": {
+        "cvv": "",
+        "date": "02/25",
+        "err_msg": "Your cvv is invalid"
+      }
+    },
+    "SB_SC_SCSF_SCSFC_03": {
+      "email": "thupham@beeketing.net",
+      "card_number": "4111111111111111",
+      "card_expire_date": "09/30",
+      "card_cvv": "111"
+    },
+    "SB_SC_SCSF_SCSFC_04": {
+      "email": "thupham@beeketing.net",
+      "card_number": "4111111111111111",
+      "card_expire_date": "09/30",
+      "card_cvv": "111",
+      "account_password": "123456"
+    },
+    "SB_SC_SCSF_SCSFC_06": {
+      "paypal_account": {
+        "username": "buyer@shopbase.com",
+        "password": "2XfWH9Ae",
+        "id": "Aeh4GpfSwN1xsoUBCqs85cjE95HEyuij_ePjpHG060nZ6hExulKGjNHcflZkzMFutnEpiLr1pS76PUBC",
+        "secret_key": "EPvncdTSFu_ia2oUpwtnHwjqENKcpOWrvhOEr8GGuj8YBn9MH5_Wr808nWUyXpu1zcKRjnqU04OQ3T4Y"
+      }
+    },
+    "SB_SC_SCSF_SCSFC_20": {
+      "email": "thupham@beeketing.net",
+      "card_number": "4111111111111111",
+      "card_expire_date": "09/30",
+      "card_cvv": "111",
+      "account_password": "123456",
+      "discounts": [
+        {
+          "code": "DISCOUNT FIX AMOUNT",
+          "discount": "-$3.33"
+        },
+        {
+          "code": "DISCOUNT 10%",
+          "discount": "10%"
+        }
+      ]
+    },
+    "SB_SC_SCSF_SCSFC_13": {
+      "email": "thupham@beeketing.net",
+      "account_password": "123456"
+    },
+    "SB_SC_SCSF_SCSFC_14": {
+      "snapshot_options": {
+        "max_diff_pixel_ratio": 0.05,
+        "thres_hold": 0.1,
+        "max_diff_pixels": 2000
+      },
+      "background": {
+        "image": "data/shopbase/front/web_builder/logo-light.png"
+      },
+      "data": [
+        {
+          "snapshot_name": "checkout-form.png",
+          "width": {
+            "unit": "Px",
+            "value": 800,
+            "width_value": 800
+          },
+          "border": {
+            "thickness": "custom",
+            "size": {
+              "fill": true,
+              "number": 4
+            },
+            "color": {
+              "preset": 6,
+              "hexText": "#E62626"
+            }
+          },
+          "background": {
+            "image": "data/shopbase/front/web_builder/logo-light.png"
+          },
+          "margin": {
+            "top": 5,
+            "left": 10,
+            "bottom": 15,
+            "right": 15,
+            "input": true
+          },
+          "padding": {
+            "top": 20,
+            "left": 20,
+            "bottom": 20,
+            "right": 20,
+            "input": true
+          },
+          "settings_info": {
+            "content": "Test customize WB 01"
+          },
+          "shadow": "light"
+        },
+        {
+          "snapshot_name": "checkout-form-2.png",
+          "width": {
+            "unit": "Px",
+            "value": 300,
+            "width_value": 300
+          },
+          "border": {
+            "thickness": "none"
+          },
+          "background": {
+            "color": {
+              "preset": 1
+            }
+          },
+          "margin": {
+            "top": 0,
+            "left": 0,
+            "bottom": 0,
+            "right": 0,
+            "input": true
+          },
+          "padding": {
+            "top": 0,
+            "left": 0,
+            "bottom": 0,
+            "right": 0,
+            "input": true
+          },
+          "settings_info": {
+            "content": "Test customize WB 02"
+          },
+          "shadow": "light"
+        },
+        {
+          "snapshot_name": "checkout-form-3.png",
+          "width": {
+            "unit": "%",
+            "value": 100,
+            "width_value": 1120
+          },
+          "align": "left",
+          "border": {
+            "thickness": "none"
+          },
+          "background": {
+            "color": {
+              "preset": 1
+            }
+          },
+          "margin": {
+            "top": 0,
+            "left": 0,
+            "bottom": 0,
+            "right": 0,
+            "input": true
+          },
+          "padding": {
+            "top": 0,
+            "left": 0,
+            "bottom": 0,
+            "right": 0,
+            "input": true
+          },
+          "settings_info": {
+            "content": "Test customize WB 03"
+          },
+          "shadow": "light"
+        }
+      ]
+    },
+    "SB_SC_SCSF_SCSFC_15": {
+      "paynow_label": ["Payyyyyy nowww", "Pay @%^V", ""],
+      "time_out": 30000,
+      "link_to_terms_of_services": "/pages/terms-of-service",
+      "link_to_privacy_policy": "/pages/privacy-policy",
+      "new_link_to_term_of_services": [
+        {
+          "case": "blank",
+          "link": ""
+        },
+        {
+          "case": "link",
+          "link": "https://www.google.com/"
+        },
+        {
+          "case": "param_page",
+          "link": "/page/abcd.shopbase"
+        },
+        {
+          "case": "param_product",
+          "link": "abcd.shopbase"
+        }
+      ],
+      "new_link_to_privacy_policy": [
+        {
+          "case": "blank",
+          "link": ""
+        },
+        {
+          "case": "link",
+          "link": "https://www.google.com/"
+        },
+        {
+          "case": "param_page",
+          "link": "/page/abcd.shopbase"
+        },
+        {
+          "case": "param_product",
+          "link": "abcd.shopbase"
+        }
+      ]
+    }
+  }
+}

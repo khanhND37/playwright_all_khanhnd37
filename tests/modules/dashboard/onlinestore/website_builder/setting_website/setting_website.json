@@ -1,0 +1,174 @@
+{
+  "timeout": 1000000,
+  "param_threshold": 0.1,
+  "max_diff_pixel_ratio": 0.05,
+  "max_diff_pixels": 2000,
+  "url_reference": "admin/preferences",
+  "personalize": "/admin/settings/personalize",
+  "card_info": {
+    "number": "4242424242424242",
+    "holder_name": "My",
+    "expire_date": "12 / 30",
+    "cvv": "116"
+  },
+  "shipping_info": {
+    "email": "tester@maildrop.cc",
+    "first_name": "Hong",
+    "last_name": "Hanh",
+    "address": "1600 W Loop S",
+    "country": "United States",
+    "state": "Texas",
+    "city": "Houston",
+    "zipcode": "77027",
+    "phone_number": "0357974111"
+  },
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-setting-website-buider.onshopbase.com",
+      "shop_name": "au-setting-website-buider",
+      "user_id": 74303,
+      "shop_id": 10397507,
+      "username": "shopbase2@beeketing.net",
+      "password": "raMse).7L/b4;k#@"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-setting-website-buider-prod.onshopbase.com",
+      "shop_name": "au-setting-website-buider-prod",
+      "shop_id": 10397509,
+      "user_id": 74303,
+      "username": "shopbase2@beeketing.net",
+      "password": "raMse).7L/b4;k#@",
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "website-setting-manual.myshopbase.net",
+      "shop_name": "website-setting-manual",
+      "shop_id": 10324373,
+      "use_id": 73800,
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "theme_inside": 3151562,
+      "theme_criadora": 3151608
+    }
+  },
+  "cases": {
+    "SB_WEB_BUILDER_STI_WEB_5": {
+      "website_builder": true,
+      "setting_general": {
+        "logo": "./data/shopbase/artwork5.jpg",
+        "favicon": "./data/shopbase/anh2.jpg",
+        "description": "Testing update change block Meta description",
+        "title": "Testing update change block title",
+        "additional_scripts_body": "automation test",
+        "additional_scripts_head": "<meta name='google-site-verification' content='0zXVPzvIJ0cDrjmBaswrechm--lPJDt_KzYKpgn2uxI'/>"
+      },
+      "image": "SB_WEB_BUILDER_STI_WEB_5.png"
+    },
+    "SB_WEB_BUILDER_STI_WEB_6": {
+      "setting_reference": {
+        "favicon": "./data/shopbase/artwork.png",
+        "description": "Testing update change block Meta description preference",
+        "title": "Testing update change block title preference",
+        "additional_scripts_head": "automation test header",
+        "additional_scripts_body": "automation test body"
+      },
+      "picture": {
+        "preference_1": "SB_WEB_BUILDER_STI_WEB_6_preference_1.png",
+        "preference_2": "SB_WEB_BUILDER_STI_WEB_6_preference_2.png",
+        "general": "SB_WEB_BUILDER_STI_WEB_6_general.png"
+      }
+    },
+    "SB_WEB_BUILDER_STI_WEB_13": {
+      "website_builder": true,
+      "setting_general": {
+        "logo": "./data/shopbase/artwork5.jpg",
+        "favicon": "./data/shopbase/anh2.jpg",
+        "description": "Testing update change block Meta description preference",
+        "title": "Testing update change block title preference",
+        "additional_scripts_head": "<meta name='google-site-verification' content='0zXVPzvIJ0cDrjmBaswrechm--lPJDt_KzYKpgn2uxI'/>",
+        "additional_scripts_body": "<script type='text/javascript'>\n    let addressNew = 'Me Linh Ha Noi'\n    let phoneNew = '0999 999 999'\n\n\n    let interval;\n    let intervalFooter;\n    let addressLength = 0;\n    let count = 0\n    function checkUrlChange() {\n\n        let theme = JSON.parse(document.getElementById('__INITIAL_STATE__').textContent).theme.handle\n        if (theme == 'inside') {\n\n            var intervalFooter = setInterval(function () {\n                var check = changePageFooterInside();\n                if (check && check > 10) {\n                    clearInterval(intervalFooter);\n                }\n            }, 100);\n\n        }\n        if (theme == 'roller') {\n\n            var intervalFooter = setInterval(function () {\n                var check = changePageFooterRoller();\n                if (check) {\n                    clearInterval(intervalFooter);\n                }\n            }, 100);\n\n            // intervalFooter = setInterval(changePageFooterRoller, 100);\n        }\n\n        if (window.location.pathname == '/pages/contact-us') {\n            interval = setInterval(changePageContactUs, 100);\n        }\n    }\n\n    window.sbsdk.ready(function () {\n        window.sbsdk.page.onLoad(function () {\n            // code here\n            checkUrlChange()\n        });\n    });\n\n    function changePageContactUs() {\n\n        let className = ''\n        let theme = JSON.parse(document.getElementById('__INITIAL_STATE__').textContent).theme.handle\n        if (theme == 'inside') {\n            className = 'other-page-content'\n        }\n        if (theme == 'roller') {\n            className = 'page-content'\n        }\n        if (!className) {\n            return\n        }\n\n        let contactForm = document.getElementsByClassName(className)[0]\n        if (!contactForm) {\n            return\n        }\n        if (!contactForm.getElementsByTagName('ul')[0]) {\n            return\n        }\n        // change phone\n        let phoneOld = contactForm.getElementsByTagName('ul')[0].getElementsByTagName('li')[1].innerHTML\n        if (!phoneOld) {\n            return\n        }\n        let splitPhone = phoneOld.split('</strong>')\n        if (splitPhone.length < 2) {\n            return;\n        }\n        splitPhone[1] = ' ' + phoneNew\n        document.getElementsByClassName(className)[0].getElementsByTagName('ul')[0].getElementsByTagName('li')[1].innerHTML = splitPhone.join('</strong>')\n\n        // change address\n        let addressOld = contactForm.getElementsByTagName('ul')[0].getElementsByTagName('li')[2].innerHTML\n        if (!addressOld) {\n            return\n        }\n        let splitAddress = addressOld.split('</strong>')\n        if (splitAddress.length < 2) {\n            return;\n        }\n        splitAddress[1] = ' ' + addressNew\n        document.getElementsByClassName(className)[0].getElementsByTagName('ul')[0].getElementsByTagName('li')[2].innerHTML = splitAddress.join('</strong>')\n        clearInterval(interval)\n    }\n\n    function changePageFooterInside() {\n        let footer = document.getElementsByClassName('site-footer__information')[0]\n        // change phone\n        let groupTagA = footer.getElementsByTagName('a')\n        if (!groupTagA) {\n            return\n        }\n        let index = 0\n        let checkFindTel = false\n        for (let i = 0; i < groupTagA.length; i++) {\n            if (groupTagA[i].href.includes('tel')) {\n                index = i\n                checkFindTel = true\n            }\n        }\n        if (!checkFindTel) {\n            return\n        }\n\n        let phoneElement = groupTagA[index]\n        if (!phoneElement) {\n            return\n        }\n\n        let hrefPhone = groupTagA[index].href\n        if (hrefPhone) {\n            let splitHref = hrefPhone.split(':')\n            if (splitHref.length >= 2) {\n                splitHref[1] = phoneNew\n                groupTagA[index].href = splitHref.join(':')\n            }\n        }\n\n        // change address\n        if (!footer.getElementsByTagName('p')[0]) {\n            return\n        }\n\n        if (footer.getElementsByTagName('p').length < 1) {\n            return\n        }\n        addressLength = footer.getElementsByTagName('p').length - 1\n\n        // if (footer && footer.getElementsByTagName('p')[addressLength].innerHTML === addressNew && phoneElement && phoneElement.innerHTML === phoneNew) {\n        //     console.log('aa')\n        //     return true\n        // }\n\n        document.getElementsByClassName('site-footer__information')[0].getElementsByTagName('a')[index].innerText = phoneNew\n        document.getElementsByClassName('site-footer__information')[0].getElementsByTagName('p')[addressLength].innerText = addressNew\n        return count++\n    }\n\n    function changePageFooterRoller() {\n        let footer = document.getElementsByClassName('footer-style-none')[0]\n        if (!footer) {\n            return\n        }\n        if (!footer.getElementsByTagName('ul')[0]) {\n            return\n        }\n        // change phone\n        let footPhone = footer.getElementsByTagName('ul')[0].getElementsByTagName('li')[1].innerHTML\n        if (!footPhone || (footPhone && footPhone == phoneNew)) {\n            return true\n        }\n        document.getElementsByClassName('footer-style-none')[0].getElementsByTagName('ul')[0].getElementsByTagName('li')[1].innerHTML = phoneNew\n\n        // change address\n        let footAddress = footer.getElementsByTagName('ul')[0].getElementsByTagName('li')[2].innerHTML\n        if (!footAddress || (footAddress && footAddress == addressNew)) {\n            return true\n        }\n        document.getElementsByClassName('footer-style-none')[0].getElementsByTagName('ul')[0].getElementsByTagName('li')[2].innerHTML = addressNew\n        return true\n    }\n\n</script>\n"
+      },
+      "script_display_head": {
+        "element": "//head//meta[@name='google-site-verification']",
+        "content": "0zXVPzvIJ0cDrjmBaswrechm--lPJDt_KzYKpgn2uxI"
+      },
+      "custom_code_body": "(//body//script[@type='text/javascript'])[1]",
+      "picture": {
+        "general": "SB_WEB_BUILDER_STI_WEB_13_general.png"
+      }
+    },
+    "SB_WEB_BUILDER_STI_WEB_11": {
+      "setting_reference": {
+        "favicon": "./data/shopbase/artwork.png",
+        "description": "Testing update change block Meta description SB_WEB_BUILDER_STI_WEB_11",
+        "title": "Testing update change block title SB_WEB_BUILDER_STI_WEB_11",
+        "additional_scripts_head": "automation test header SB_WEB_BUILDER_STI_WEB_11",
+        "additional_scripts_body": "automation test body SB_WEB_BUILDER_STI_WEB_11"
+      },
+      "picture": {
+        "sidebar": "SB_WEB_BUILDER_STI_WEB_11_nav_sidebar.png",
+        "general": "SB_WEB_BUILDER_STI_WEB_11_general.png"
+      }
+    },
+    "SB_WEB_BUILDER_STI_WEB_12": {
+      "website_builder": true,
+      "setting_general": {
+        "logo": "./data/shopbase/artwork5.jpg",
+        "favicon": "./data/shopbase/anh2.jpg",
+        "description": "Testing update change block Meta description SB_WEB_BUILDER_STI_WEB_12",
+        "title": "Testing update change block title SB_WEB_BUILDER_STI_WEB_12",
+        "additional_scripts_head": "automation test header SB_WEB_BUILDER_STI_WEB_12",
+        "additional_scripts_body": "automation test body SB_WEB_BUILDER_STI_WEB_12"
+      },
+      "picture": {
+        "favicon": "SB_WEB_BUILDER_STI_WEB_12.png",
+        "sidebar": "SB_WEB_BUILDER_STI_WEB_12_sidebar.png"
+      }
+    },
+    "SB_WEB_BUILDER_STI_WEB_10": {
+      "website_builder": true,
+      "product_all_info": {
+        "title": "Product set generate print file là OFF Manually generate",
+        "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+        "image_name": "Logo1.jpg",
+        "vendor": "Uniqlo",
+        "price": "10",
+        "compare_at_price": "20"
+      },
+      "image_preview": "BD_27.png",
+      "image_print_file": "BD_23.png",
+      "is_disable_generate_print_file": true,
+      "layers": [
+        {
+          "layer_type": "Text",
+          "layer_name": "Text layer 1",
+          "layer_value": "Test text value 1",
+          "location_layer_x": "55",
+          "location_layer_y": "55"
+        }
+      ],
+      "custom_option_info": [
+        {
+          "type": "Text field",
+          "target_layer": "Text layer 1",
+          "placeholder": "Please input text field",
+          "custom_name": "Text field",
+          "label": "Text field ",
+          "default_value": "Text field",
+          "allow_character": "Characters, Numbers, Special Characters"
+        }
+      ],
+      "custom_option_data_SF": {
+        "list_custom": ["Text field>Text field>Test"]
+      },
+      "picture": {
+        "personalize": "SB_WEB_BUILDER_STI_WEB_10.png",
+        "print_file_block_generate_file": "print_file_block_generate_file_SB_WEB_BUILDER_STI_WEB_10",
+        "print_file_block_generated_file": "print_file_block_generated_file_SB_WEB_BUILDER_STI_WEB_10"
+      }
+    }
+  }
+}

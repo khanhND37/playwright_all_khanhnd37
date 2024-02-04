@@ -1,0 +1,235 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "accounts_domain": "accounts.dev.shopbase.net",
+      "domain": "au-translation-entity-collection-dev.myshopbase.net",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "43AhIn|VWp;[?9&",
+      "shop_name": "au-translation-entity-collection-dev",
+      "user_id": 89797,
+      "shop_id": 10333602,
+      "default_language": "English",
+      "publish_language": "German",
+      "unpublish_language": "French"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "accounts_domain": "accounts-test.shopbase.com",
+      "domain": "au-entity-collection-prodtest.onshopbase.com",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "shop_name": "au-entity-collection-prodtest",
+      "user_id": 11244582,
+      "shop_id": 10483867,
+      "default_language": "English",
+      "publish_language": "German",
+      "unpublish_language": "French"
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "accounts_domain": "accounts.shopbase.com",
+      "domain": "au-entity-collection-prod.onshopbase.com",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "shop_name": "au-entity-collection-prod",
+      "user_id": 11244582,
+      "shop_id": 10483866,
+      "default_language": "English",
+      "publish_language": "German",
+      "unpublish_language": "French"
+    }
+  },
+  "data_input_dashboard": [
+    {
+      "inputDataType": "text",
+      "inputData": "",
+      "searchCondition": {
+        "fieldIndex": 0,
+        "fieldName": "Title"
+      }
+    },
+    {
+      "inputDataType": "html",
+      "inputData": "",
+      "searchCondition": {
+        "fieldIndex": 0,
+        "fieldName": "Description (optional)"
+      }
+    },
+    {
+      "inputDataType": "text",
+      "inputData": "",
+      "searchCondition": {
+        "fieldIndex": 0,
+        "fieldName": "Meta description"
+      }
+    },
+    {
+      "inputDataType": "text",
+      "inputData": "",
+      "searchCondition": {
+        "fieldIndex": 0,
+        "fieldName": "Page title"
+      }
+    }
+  ],
+  "cases": {
+    "SB_SET_TL_60": {
+      "case_description": "[DB - UI/UX] Kiểm tra màn translate detail của store data - Products - Collections",
+      "collection_data": [
+        {
+          "title": "collection 1",
+          "description": "Description (optional) collection 1",
+          "meta_description": "Meta description collection 1",
+          "meta_title": "Page title collection 1",
+          "hide_field": [],
+          "show_field": ["Description (optional)", "Page title", "Meta description", "Title"]
+        },
+        {
+          "title": "collection 2",
+          "description": "",
+          "meta_description": "",
+          "meta_title": "",
+          "hide_field": ["Description (optional)", "Page title", "Meta description"],
+          "show_field": ["Title"]
+        },
+        {
+          "title": "collection 3",
+          "description": "",
+          "meta_description": "Meta description collection 3",
+          "meta_title": "Page title collection 3",
+          "hide_field": ["Description (optional)"],
+          "show_field": ["Page title", "Meta description", "Title"]
+        },
+        {
+          "title": "collection 4",
+          "description": "Description (optional) collection 4",
+          "meta_description": "Meta description collection 4",
+          "meta_title": "",
+          "hide_field": ["Page title"],
+          "show_field": ["Description (optional)", "Meta description", "Title"]
+        },
+        {
+          "title": "collection 5",
+          "description": "Description (optional) collection 5",
+          "meta_description": "",
+          "meta_title": "Page title collection 5",
+          "hide_field": ["Meta description"],
+          "show_field": ["Description (optional)", "Page title", "Title"]
+        }
+      ],
+      "invalid_value": "fake_collection",
+      "valid_value": "collection",
+      "more_characters": "Lorem ipsum dolor sit amet consectetur adipiscing elit vehicula, venenatis natoque urna dui mi et."
+    },
+    "SB_SET_TL_79": {
+      "case_description": "[DB+SF - Function] Kiểm tra tính năng auto translate khi Enable Auto translate Products - Collections",
+      "publish_language": "Vietnamese",
+      "language_global_switcher": { "language": "VI" },
+      "locale_info": "vi-vn",
+      "collection_data": [
+        {
+          "title": "collection A",
+          "description": "!@#$%^",
+          "meta_description": "thêm text ngôn ngữ khác vào đây !@@#$, 在这里添加另一种语言的文本",
+          "meta_title": "Page title collection"
+        },
+        {
+          "title": "collection B",
+          "description": "edit collection",
+          "meta_description": "",
+          "meta_title": ""
+        },
+        {
+          "title": "collection C",
+          "description": "delete collection",
+          "meta_description": "",
+          "meta_title": ""
+        }
+      ],
+      "collection_data_manual": {
+        "title": "collection A manual",
+        "description": "create collection",
+        "meta_description": "meta_description manual",
+        "meta_title": "meta_title manual"
+      },
+      "collection_data_edit": {
+        "title": "collection B edit",
+        "description": "!@#$%^",
+        "meta_description": "thêm text ngôn ngữ khác vào đây !@@#$, 在这里添加另一种语言的文本",
+        "meta_title": "Page title collection",
+        "handle": "collection-b"
+      },
+      "edit_dashboard_translation": {
+        "title": "edit dashboard title",
+        "description": "edit dashboard description",
+        "meta_description": "edit dashboard meta description",
+        "meta_title": "edit dashboard meta title"
+      },
+      "auto_translation_data": {
+        "title": "translated collection B edit to Vietnamese",
+        "description": "translated !@#$%^ to Vietnamese",
+        "meta_description": "translated thêm text ngôn ngữ khác vào đây !@@#$, 在这里添加另一种语言的文本 to Vietnamese",
+        "meta_title": "translated Page title collection to Vietnamese"
+      }
+    },
+    "SB_SET_TL_78": {
+      "case_description": "[DB+SF - Function] Kiểm tra tính năng auto translate khi Disable Auto translate của Products - Collections",
+      "publish_language": "German",
+      "language_global_switcher": { "language": "DE" },
+      "locale_info": "de-vn",
+      "collection_data": [
+        {
+          "title": "collection A",
+          "description": "!@#$%^",
+          "meta_description": "thêm text ngôn ngữ khác vào đây !@@#$, 在这里添加另一种语言的文本",
+          "meta_title": "Page title collection"
+        },
+        {
+          "title": "collection B",
+          "description": "edit collection",
+          "meta_description": "",
+          "meta_title": ""
+        },
+        {
+          "title": "collection C",
+          "description": "delete collection",
+          "meta_description": "",
+          "meta_title": ""
+        }
+      ],
+      "collection_data_manual": {
+        "title": "collection A manual",
+        "description": "create collection",
+        "meta_description": "meta_description manual",
+        "meta_title": "meta_title manual"
+      },
+      "collection_data_edit": {
+        "title": "collection B edit",
+        "description": "!@#$%^",
+        "meta_description": "thêm text ngôn ngữ khác vào đây !@@#$, 在这里添加另一种语言的文本",
+        "meta_title": "Page title collection",
+        "handle": "collection-b"
+      },
+      "edit_dashboard_translation": {
+        "title": "edit dashboard title",
+        "description": "edit dashboard description",
+        "meta_description": "edit dashboard meta description",
+        "meta_title": "edit dashboard meta title"
+      },
+      "auto_translation_data": {
+        "title": "translated collection B edit to German",
+        "description": "translated !@#$%^ to German",
+        "meta_description": "translated thêm text ngôn ngữ khác vào đây !@@#$, 在这里添加另一种语言的文本 to German",
+        "meta_title": "translated Page title collection to German"
+      },
+      "blank_data": {
+        "title": "",
+        "description": "",
+        "meta_description": "",
+        "meta_title": ""
+      }
+    }
+  }
+}

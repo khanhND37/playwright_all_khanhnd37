@@ -1,0 +1,151 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "plus-upsell.onshopbase.com",
+      "shop_name": "plus-upsell.onshopbase.com",
+      "username": "shopbase2@beeketing.net",
+      "password": "raMse).7L/b4;k#@",
+      "shop_id": 10351680,
+      "user_id": 74303,
+      "plb_template_upsell": {
+        "domain": "template-plusbase-automated-upsell.onshopbase.com",
+        "shop_name": "template-plusbase-automated-upsell.onshopbase.com",
+        "user_id": "74303",
+        "shop_id": "10343643",
+        "username": "shopbase2@beeketing.net",
+        "password": "raMse).7L/b4;k#@"
+      },
+      "odoo_host": "https://autotest-erp-plus.shopbase.dev",
+      "odoo_db": "shopbase_fulfillment",
+      "odoo_username": "qaocg",
+      "odoo_password": "LFmy=qGLvwW^E63b",
+      "offer_id": [64242],
+      "product_upsell_id": 1137712,
+      "variant_id": 7270789
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "plus-upsell-prodtest.onshopbase.com",
+      "shop_name": "plus-upsell-prodtest.onshopbase.com",
+      "username": "shopbase2@beeketing.net",
+      "password": "raMse).7L/b4;k#@",
+      "shop_id": 10351962,
+      "user_id": 74303,
+      "plb_template_upsell": {
+        "domain": "template-plusbase-automated-upsell-prodtestt.onshopbase.com",
+        "shop_name": "template-plusbase-automated-upsell-prodtestt.onshopbase.com",
+        "user_id": "74303",
+        "shop_id": "10351961",
+        "username": "shopbase2@beeketing.net",
+        "password": "raMse).7L/b4;k#@"
+      },
+      "odoo_host": "https://autotest-erp-plus.shopbase.dev",
+      "odoo_db": "shopbase_fulfillment",
+      "odoo_username": "qaocg",
+      "odoo_password": "LFmy=qGLvwW^E63b",
+      "offer_id": [64243],
+      "product_upsell_id": 1137712,
+      "variant_id": 7270789,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "plus-upsell2.myshopbase.net",
+      "shop_name": "plus-upsell2.myshopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_id": 10320479,
+      "user_id": 73800,
+      "plb_template_upsell": {
+        "domain": "template-plusbase-automated-upsell.myshopbase.net",
+        "shop_name": "template-plusbase-automated-upsell.myshopbase.net",
+        "user_id": "73800",
+        "shop_id": "10320499",
+        "username": "shopbase@beeketing.net",
+        "password": "S#|j>m2N[q"
+      },
+      "odoo_host": "https://odoo.dev.shopbase.net/",
+      "odoo_db": "sbase_fulfillment_dev",
+      "odoo_username": "admin",
+      "odoo_password": "admin",
+      "offer_id": [230],
+      "product_upsell_id": 1144349,
+      "variant_id": 1218168
+    }
+  },
+  "theme": "roller",
+  "country_currency": "United States",
+  "shipping_address": {
+    "email": "qaautoupsell@maildrop.cc",
+    "first_name": "auto upsell",
+    "last_name": "analytics",
+    "address": "1600 W Loop S",
+    "country": "United States",
+    "country_code": "US",
+    "state": "California",
+    "city": "California",
+    "zipcode": "90001",
+    "phone_number": "2028610737"
+  },
+  "shipping_type": ["PlusBase Standard Shipping"],
+  "shipping_method": "Standard Shipping",
+  "data_analytics": {
+    "summary": {
+      "view_content": 0,
+      "total_profit": 0
+    },
+    "auto_upsell": {
+      "total_profit": 0
+    }
+  },
+  "time_out_api_calling": 200000,
+  "time_out_tc": 900000,
+  "tax_rate": 0.15,
+  "cases": {
+    "SB_AUP_ANALYTICS": [
+      {
+        "case_id": "SB_AUP_80",
+        "description": "Kiểm tra total profit trong analytics sau khi checkout order có store discount percentage, có add item post-purchase có discount",
+        "product_target": {
+          "name": "(Test product) Auto-plus1",
+          "quantity": "1"
+        },
+        "products_recommended": "(Test product) Auto-plus2",
+        "discount": {
+          "type": "percentage",
+          "code": "auto_percentage"
+        },
+        "offer_discount": {
+          "type": "percentage",
+          "value": 10
+        },
+        "tax_infor": {
+          "type": "exclude",
+          "rate": 15
+        }
+      },
+      {
+        "case_id": "SB_AUP_88",
+        "description": "Kiểm tra total profit trong analytics sau khi checkout có store discount Freeship, có add item post-purchase có discount",
+        "product_target": {
+          "name": "(Test product) Auto-plus1",
+          "quantity": "2"
+        },
+        "products_recommended": "(Test product) Auto-plus2",
+        "discount": {
+          "type": "freeship",
+          "code": "auto_freeship"
+        },
+        "offer_discount": {
+          "type": "percentage",
+          "value": 10
+        },
+        "tax_infor": {
+          "type": "exclude",
+          "rate": 15
+        }
+      }
+    ]
+  }
+}

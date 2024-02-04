@@ -1,0 +1,173 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-crop-image-co-image-each-base-prod.onshopbase.com",
+      "shop_name": "au-crop-image-co-image-each-base-prod",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10401246,
+      "user_id": 73782,
+      "timeout": 900000
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-crop-image-co-image-each-base-prodtest.onshopbase.com",
+      "shop_name": "au-crop-image-co-image-each-base-prodtest",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10401249,
+      "user_id": 73782,
+      "timeout": 900000,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-crop-image-co-image-each-base-dev.myshopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_name": "au-crop-image-CO-image-each-base-dev",
+      "user_id": 73800,
+      "shop_id": 10324831,
+      "timeout": 1900000,
+      "param_threshold": 0.1,
+      "prefix_snapshot": "dev"
+    }
+  },
+  "cases": {
+    "DATA_DRIVEN": {
+      "data": [
+        {
+          "description": "Check crop image voi Campaign  tao CO chung target layer",
+          "case_id": "SB_PRB_CI_1",
+          "product_info": [
+            {
+              "category": "Apparel",
+              "base_product": "Classic Unisex Tank"
+            },
+            {
+              "category": "Home & Living",
+              "base_product": "Quilt"
+            }
+          ],
+          "message": "Your layer has been synced to all products",
+          "layers_add": [
+            {
+              "layer_type": "Image",
+              "image_name": "artwork - Front.jpg",
+              "front_or_back": "Front"
+            }
+          ],
+          "camp_title": "Campaign tao CO chung target layer",
+          "custom_option_info": {
+            "type": "Image",
+            "value": "anh2.jpg",
+            "custom_name": "Image"
+          },
+          "layer_image": "artwork - Front",
+          "layer_sync": "artwork - Front",
+          "custom_options": {
+            "type": "Image",
+            "target_layer": "artwork - Front"
+          },
+          "count_zoom_in": 3,
+          "count_zoom_out": 10,
+          "themes_setting": "Inside",
+          "picture": {
+            "name_image_active": "SB_PRB_CI_1_image_active.png",
+            "name_image_zoom_in": "SB_PRB_CI_1_view_image_zoom_in.png",
+            "name_image_zoom_out": "SB_PRB_CI_1_view_image_zoom_out.png",
+            "name_image_crop_success": "SB_PRB_CI_1_view_image_crop.png",
+            "name_image_choose_file": "SB_PRB_CI_1_ui_choose_file.png"
+          }
+        },
+        {
+          "description": "Check crop image voi Campaign tao CO Image theo tung base",
+          "case_id": "SB_PRB_CI_2",
+          "product_info": [
+            {
+              "category": "Apparel",
+              "base_product": "Unisex Hoodie"
+            },
+            {
+              "category": "Apparel",
+              "base_product": "Ladies T-shirt"
+            }
+          ],
+          "layers_add": [
+            {
+              "layer_type": "Image",
+              "image_name": "artwork - Front.jpg",
+              "front_or_back": "Front"
+            },
+            {
+              "layer_type": "Image",
+              "image_name": "artwork-quilt.jpg",
+              "front_or_back": "Front"
+            }
+          ],
+          "camp_title": "Check crop image voi Campaign tao CO Image theo tung base",
+          "custom_option_info": {
+            "type": "Image",
+            "value": "anh2.jpg",
+            "custom_name": "Image"
+          },
+          "layer_image": "artwork - Front",
+          "layer_sync": "artwork - Front",
+          "custom_options": {
+            "type": "Image",
+            "target_layer_base_product": ["artwork - Front", "artwork-quilt"]
+          },
+          "count_zoom_in": 3,
+          "count_zoom_out": 10,
+          "themes_setting": "Inside",
+          "picture": {
+            "name_image_active": "SB_PRB_CI_2_image_active.png",
+            "name_image_zoom_in": "SB_PRB_CI_2_view_image_zoom_in.png",
+            "name_image_zoom_out": "SB_PRB_CI_2_view_image_zoom_out.png",
+            "name_image_crop_success": "SB_PRB_CI_2_view_image_crop.png",
+            "name_image_choose_file": "SB_PRB_CI_2_ui_choose_file.png"
+          }
+        },
+        {
+          "description": "Check crop image với product  CO image có preview  của Shopbase",
+          "case_id": "SB_PRB_CI_3",
+          "product_info": [
+            {
+              "category": "Apparel",
+              "base_product": "Classic Unisex Tank"
+            }
+          ],
+          "layers_add": [
+            {
+              "layer_type": "Image",
+              "image_name": "artwork - Front.jpg",
+              "front_or_back": "Front"
+            }
+          ],
+          "camp_title": "Crop image voi product CO image co preview cua Shopbase",
+          "custom_option_info": {
+            "type": "Image",
+            "value": "artwork.png",
+            "custom_name": "Image"
+          },
+          "layer_image": "artwork - Front",
+          "custom_options": {
+            "type": "Image",
+            "target_layer": "artwork - Front"
+          },
+          "count_zoom_in": 3,
+          "count_zoom_out": 10,
+          "themes_setting": "Inside",
+          "picture": {
+            "name_image_active": "SB_PRB_CI_3_image_active.png",
+            "name_image_zoom_in": "SB_PRB_CI_3_view_image_zoom_in.png",
+            "name_image_zoom_out": "SB_PRB_CI_3_view_image_zoom_out.png",
+            "name_image_crop_success": "SB_PRB_CI_3_view_image_crop.png",
+            "name_image_choose_file": "SB_PRB_CI_3_ui_choose_file.png"
+          }
+        }
+      ]
+    }
+  }
+}

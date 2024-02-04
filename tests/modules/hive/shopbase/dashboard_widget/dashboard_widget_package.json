@@ -1,0 +1,173 @@
+{
+  "env": {
+    "local": {
+      "api": "https://gapi.dev.shopbase.net",
+      "hive_domain": "hive.dev.shopbase.net",
+      "hive_username": "shopbase",
+      "hive_password": "123456",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "user_id": 73800
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "hive_domain": "hive.dev.shopbase.net",
+      "hive_username": "shopbase",
+      "hive_password": "123456",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "user_id": 73800
+    },
+    "prodtest": {
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://prod-test-api.shopbase.com"
+    }
+  },
+  "cases": {
+    "SB_HM_WG_3": {
+      "message_success": "has been successfully created.",
+      "widgets": [
+        {
+          "id": 1,
+          "tabs": {
+            "logic": {
+              "name": "Widget Basic Auto: Join Tele group",
+              "status": true,
+              "screen": "ShopBase Home",
+              "business_types": ["Dropshipping", "PrintBase", "PlusBase", "Creator"],
+              "packages": [
+                "Basic Base (yearly)",
+                "PrintBase (monthly)",
+                "PlusBase (monthly)",
+                "DigitalProduct Pro (yearly)"
+              ]
+            },
+            "ui": {
+              "widget_type": "basic",
+              "title": "Basic: Join our private group for priority customers",
+              "description": "We are here to support you whenever you need.",
+              "primary_button": {
+                "text": "Connect with us now",
+                "link": "https://www.shopbase.com/"
+              },
+              "secondary_button": {
+                "text": "Survey",
+                "link": "https://www.printbase.com/"
+              },
+              "image": "./assets/widget/widget.jpeg"
+            }
+          }
+        },
+        {
+          "id": 2,
+          "tabs": {
+            "logic": {
+              "name": "Widget Center Auto: PrintBase Getting Started Tutorial",
+              "status": true,
+              "screen": "ShopBase Home",
+              "business_types": ["Dropshipping", "PrintBase", "PlusBase", "Creator"],
+              "packages": [
+                "Basic Base (yearly)",
+                "PrintBase (monthly)",
+                "PlusBase (monthly)",
+                "DigitalProduct Pro (yearly)"
+              ]
+            },
+            "ui": {
+              "widget_type": "center",
+              "title": "Center: Join our private group for priority customers",
+              "description": "We are here to support you whenever you need.",
+              "primary_button": {
+                "text": "Connect with us now",
+                "link": "https://www.shopbase.com/"
+              },
+              "secondary_button": {},
+              "image": "./assets/widget/widget.jpeg"
+            }
+          }
+        },
+        {
+          "id": 3,
+          "tabs": {
+            "logic": {
+              "name": "Widget List Auto: eBook Black Friday - Thanksgiving",
+              "status": true,
+              "screen": "ShopBase Home",
+              "business_types": ["Dropshipping", "PrintBase", "PlusBase", "Creator"],
+              "packages": [
+                "Basic Base (yearly)",
+                "PrintBase (monthly)",
+                "PlusBase (monthly)",
+                "DigitalProduct Pro (yearly)"
+              ]
+            },
+            "ui": {
+              "widget_type": "list",
+              "title": "List: Join our private group for priority customers",
+              "description": "We are here to support you whenever you need.",
+              "primary_button": {},
+              "secondary_button": {},
+              "image": "",
+              "childs": [
+                {
+                  "title": "Checklist to reach your sales goal!",
+                  "descripition": "To hit the ultimate goal of getting online sales, do not be distracted with petty thing.",
+                  "link": "https://www.shopbase.com/14-day-challenge",
+                  "image_url": "https://img.shopbase.com/files/internal/media/1633507244669a70c30f.png"
+                },
+                {
+                  "title": "Boost your store CR up to 5% - 7%",
+                  "descripition": "Use countdown timers and stock, sales notifications and more created by Boost Convert app to turn your customers & FOMO into quick buying decisions",
+                  "link": "https://drive.google.com/file/d/1aw-A8alrlXZIQgkLsVKTJqfIaEe60ZZ6/view",
+                  "image_url": "https://img.shopbase.com/files/internal/media/16335072459b0f704b2b.png"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "shops": [
+        {
+          "param": "region=vietnam&package=basic&business_type=General%20Dropship&screen=0&no_cache=true&user_id=73800",
+          "package": "Basic Base (yearly)",
+          "domain": "au-widget-sb-home.myshopbase.net",
+          "shop_name": "au-widget-sb-home",
+          "shop_id": 10324211,
+          "expect_widget_ids": [1, 2, 3]
+        },
+        {
+          "param": "region=vietnam&package=creator_free_trial&business_type=creator&screen=0&user_id=73800&no_cache=true",
+          "package": "DigitalProduct Pro (yearly)",
+          "domain": "au-widget-creator.myshopbase.net",
+          "shop_name": "au-widget-creator",
+          "shop_id": 10324234,
+          "expect_widget_ids": [1, 2, 3]
+        },
+        {
+          "param": "region=vietnam&package=pro&business_type=General%20Dropship&screen=0&user_id=73800&no_cache=true",
+          "package": "Pro Base (yearly)",
+          "domain": "au-widget-sb-package.myshopbase.net",
+          "shop_name": "au-widget-sb-package",
+          "shop_id": 10324296,
+          "expect_widget_ids": []
+        },
+        {
+          "param": "region=vietnam&package=print_base&business_type=pbase&screen=0&user_id=73800&no_cache=true",
+          "package": "PrintBase (monthly)",
+          "domain": "au-widget-printbase.myshopbase.net",
+          "shop_name": "au-widget-printbase",
+          "shop_id": 10324297,
+          "expect_widget_ids": [1, 2, 3]
+        },
+        {
+          "param": "region=vietnam&package=plus_base&business_type=PlusBase&screen=0&user_id=73800&no_cache=true",
+          "package": "PlusBase (monthly)",
+          "domain": "au-widget-plusbase.myshopbase.net",
+          "shop_name": "au-widget-plusbase",
+          "shop_id": 10324298,
+          "expect_widget_ids": [1, 2, 3]
+        }
+      ]
+    }
+  }
+}

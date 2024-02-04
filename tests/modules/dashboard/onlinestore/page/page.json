@@ -1,0 +1,91 @@
+{
+  "env": {
+    "dev": {
+      "domain": "au-page.myshopbase.net",
+      "shop_name": "au-page",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_id": 10321317,
+      "user_id": 73800
+    },
+    "prodtest": {
+      "domain": "au-page-prodtest1.onshopbase.com",
+      "shop_name": "au-page-prodtest1",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10431397,
+      "user_id": 11260206,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "prod": {
+      "domain": "au-page1.onshopbase.com",
+      "shop_name": "au-page1",
+      "api": "https://api.shopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10363464,
+      "user_id": 73782
+    }
+  },
+  "cases": {
+    "SB_OLS_PG_7": {
+      "case_description": "Verify a page with status Hidden on SF",
+      "page": {
+        "title": "hidden page",
+        "description": "Test hidden page"
+      },
+      "expect": {
+        "url": "/pages/hidden-page",
+        "snapshot_visible": "page_visible.png",
+        "not_found_title": "404 Page Not Found",
+        "not_found_text": "The page you requested does not exist"
+      }
+    },
+    "SB_OLS_PG_13": {
+      "case_description": "Verify on SF after Delete a page",
+      "page": {
+        "title": "Page test template",
+        "url": "test-template"
+      },
+      "expect": {
+        "not_found_title": "404 Page Not Found",
+        "not_found_text": "The page you requested does not exist"
+      }
+    },
+    "SB_OLS_PG_9": {
+      "case_description": "Verify Edit page content",
+      "current_page": {
+        "title": "page content",
+        "description": "Test description",
+        "url": "page-content"
+      },
+      "update_page": {
+        "title": "Edited page title",
+        "description": "Edited description",
+        "url": "edited-page"
+      },
+      "expect": {
+        "snapshot_edited": "edited_page_info.png"
+      }
+    },
+    "SB_OLS_PG_10": {
+      "case_description": "Create a new page with Contact-us template",
+      "contact_us": {
+        "title": "Page test template",
+        "description": "Description test template",
+        "template": "Contact Us",
+        "url": "test-template"
+      },
+      "all_reviews": {
+        "template": "All Reviews"
+      },
+      "expect": {
+        "url": "test-template",
+        "snapshot_contact_us": "contactUs.png",
+        "snapshot_all_reviews": "all_review.png"
+      }
+    }
+  }
+}

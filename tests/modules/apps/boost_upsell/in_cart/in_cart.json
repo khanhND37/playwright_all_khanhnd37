@@ -1,0 +1,185 @@
+{
+  "env": {
+    "local": {
+      "domain": "au-upsell-in-cart-prodtest.onshopbase.com",
+      "shop_name": "au-upsell-in-cart-prodtest",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10439782,
+      "user_id": 11260206,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "domain": "au-upsell-in-cart-dev.myshopbase.net",
+      "shop_name": "au-upsell-in-cart-dev",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10328329,
+      "user_id": 90252
+    },
+    "prodtest": {
+      "domain": "au-upsell-in-cart-prodtest.onshopbase.com",
+      "shop_name": "au-upsell-in-cart-prodtest",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10439782,
+      "user_id": 11260206,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "prod": {
+      "domain": "au-upsell-in-cart-prod.onshopbase.com",
+      "shop_name": "au-upsell-in-cart-prod",
+      "api": "https://api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10439784,
+      "user_id": 11260206,
+      "accounts_domain": "accounts.shopbase.com"
+    }
+  },
+  "cases": {
+    "SB_BUS_ICO_11": {
+      "case_id": "SB_BUS_ICO_11",
+      "offer_name": "Offer case 11",
+      "target_product": " product A",
+      "recommended_product": "product B",
+      "target_product_handle": "product-a"
+    },
+    "SB_BUS_ICO_10": {
+      "case_id": "SB_BUS_ICO_10",
+      "target_product": "product target",
+      "recommended_product": "product recommended",
+      "target_product_handle": "product-target"
+    },
+    "SB_BUS_ICO_9": {
+      "case_id": "SB_BUS_ICO_9",
+      "target_product": "product target case 9",
+      "target_product_handle": "product-target-case-9",
+      "recommended_product": "product custom option",
+      "recommended_product_variant": "M",
+      "fill_custom_option": "test incart"
+    },
+    "SB_BUS_ICO_108": {
+      "description": "Check performance của offer in-cart",
+      "data": {
+        "offer": {
+          "create": {
+            "activated": true,
+            "enable_discount": false,
+            "offer_type": "in-cart",
+            "offer_name": "Offer incart",
+            "offer_message": "Add matching product",
+            "offer_title": "Wait {{last_name}}! We've got a special offer for you.",
+            "target_type": "all",
+            "target_ids": [],
+            "condition": {
+              "target": {
+                "match": "any",
+                "conditions": [
+                  {
+                    "key": 0,
+                    "field": "title",
+                    "relation": "equals",
+                    "value": ""
+                  }
+                ]
+              },
+              "using_recommend_display": false,
+              "recommend": {
+                "match": "any",
+                "conditions": [
+                  {
+                    "key": 0,
+                    "field": "title",
+                    "relation": "equals",
+                    "value": ""
+                  }
+                ]
+              },
+              "recommend_display": [
+                {
+                  "conditions": [
+                    {
+                      "option": {
+                        "field": "variant_option",
+                        "relation": "equals",
+                        "value": ""
+                      },
+                      "value": {
+                        "field": "variant_value",
+                        "relation": "equals",
+                        "value": ""
+                      }
+                    }
+                  ],
+                  "expects": [
+                    {
+                      "option": {
+                        "field": "variant_option",
+                        "relation": "equals",
+                        "value": ""
+                      },
+                      "value": {
+                        "field": "variant_value",
+                        "relation": "equals",
+                        "value": ""
+                      }
+                    }
+                  ]
+                }
+              ],
+              "in_cart": {
+                "base_category": {
+                  "from_product_with": "lowest-price",
+                  "from_these_categories": [110, 109, 111, 112, 113, 114, 115, 116]
+                },
+                "product": {
+                  "recommend_variant_with": "lowest-price"
+                }
+              }
+            },
+            "recommend_type": "product",
+            "recommend_ids": [],
+            "discount_data": "{}",
+            "target_handpicked": {
+              "collections": [],
+              "products": []
+            },
+            "offer_product_updated": true,
+            "shop_id": 0
+          },
+          "handle": ["product-b"]
+        },
+        "verify": {
+          "target_product_handle": "product-a",
+          "add_to_order": "product B",
+          "checkout_info": {
+            "email": "nule@qa.team",
+            "first_name": "Nu",
+            "last_name": "Le",
+            "address": "130 Trung Phung",
+            "city": "Ha Noi",
+            "country": "Vietnam",
+            "zip": "100000",
+            "phone": "0364240695",
+            "cardNumber": "4242424242424242",
+            "shippingMethod": false,
+            "cardHolder": "TEST NAME",
+            "expireDate": "12/31",
+            "cvv": "123"
+          },
+          "performance": {
+            "acr_add_cart": 1,
+            "acr_checkout": 1,
+            "acr_rate": 100,
+            "acr_sales": 11,
+            "acr_view": 1
+          }
+        }
+      }
+    }
+  }
+}

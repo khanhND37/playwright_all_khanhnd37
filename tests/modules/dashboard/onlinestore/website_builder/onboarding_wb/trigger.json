@@ -1,0 +1,94 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "shopbase3@beeketing.net",
+      "password": "=l-N&YG}g<'KLJk",
+      "shop_id": 10329340,
+      "user_id": 86961,
+      "domain": "shop-test-trigger.myshopbase.net",
+      "shop_name": "shop-test-trigger",
+      "theme_criadora": 3180101
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "username": "front-qe-2@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10446311,
+      "user_id": 11260209,
+      "domain": "onboarding-webbuilder.onshopbase.com",
+      "shop_name": "onboarding-webbuilder",
+      "theme_criadora": 1463929
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "front-qe-2@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10443103,
+      "user_id": 11260209,
+      "domain": "prodtest-onboading-webbuilder.onshopbase.com",
+      "shop_name": "prodtest-onboading-webbuilder",
+      "theme_criadora": 1463928
+    }
+  },
+  "cases": {
+    "SB_PLB_OBD_60": {
+      "snapshot_name": {
+        "learning_center": "learning_center.png"
+      },
+      "card_onboarding": [
+        {
+          "title": "Insert new content",
+          "content": "Drag and drop a section template that is relevant to the design you want to build"
+        },
+        {
+          "title": "Insert new content",
+          "content": "To build a new section from scratch, you can drop a layout preset section and add blocks inside it"
+        },
+        {
+          "title": "Insert new content",
+          "content": "By default, blocks dropped into the canvas are automatically laid out from top to bottom"
+        },
+        {
+          "title": "Insert new content",
+          "content": "If you want a block to float and run out of the normal layout flow, you can switch its position into manual"
+        }
+      ],
+      "trigger_code": "click_element:button_insert"
+    },
+    "SB_PLB_OBD_62": {
+      "trigger_code": "click_element:button_insert",
+      "card_onboarding": [
+        {
+          "title": "Insert new content",
+          "content": "Drag and drop a section template that is relevant to the design you want to build"
+        },
+        {
+          "title": "Insert new content",
+          "content": "To build a new section from scratch, you can drop a layout preset section and add blocks inside it"
+        },
+        {
+          "title": "Insert new content",
+          "content": "By default, blocks dropped into the canvas are automatically laid out from top to bottom"
+        },
+        {
+          "title": "Insert new content",
+          "content": "If you want a block to float and run out of the normal layout flow, you can switch its position into manual"
+        }
+      ],
+      "dnd_block": {
+        "from": {
+          "category": "Basics",
+          "template": "Button"
+        },
+        "to": {
+          "position": {
+            "section": 1,
+            "column": 1
+          },
+          "isBottom": false
+        }
+      }
+    }
+  }
+}

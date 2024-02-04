@@ -1,0 +1,137 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-clipart-product.onshopbase.com",
+      "shop_name": "au-clipart-product",
+      "username": "shopbase9@beeketing.net",
+      "password": "BBSuuVcNv3@",
+      "shop_id": 10368014,
+      "user_id": 245015,
+      "timeout": "600000"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-clipart-product-prod-test.onshopbase.com",
+      "shop_name": "au-clipart-product-prod-test",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10432497,
+      "user_id": 73782,
+      "timeout": "600000",
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-clipart-for-improve-product-dev.myshopbase.net",
+      "shop_name": "au-clipart-for-improve-product-dev",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_id": 10327498,
+      "user_id": 73800,
+      "timeout": "600000"
+    }
+  },
+  "cases": {
+    "SB_PRO_SBP_ICFP_1": {
+      "textTooltip": "A clipart is a set of pre-made images that buyers can select as they wish. Learn more",
+      "product_all_info": {
+        "title": "Product add new clipart folder",
+        "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+        "image_name": "Logo1.jpg",
+        "vendor": "Uniqlo",
+        "price": "10",
+        "compare_at_price": "20"
+      },
+      "custom_option_info": {
+        "default_name": "Custom Option 1",
+        "custom_name": "Custom option",
+        "type": "Picture choice"
+      },
+      "clipart_folder_info": {
+        "folder_name": "Folder 1",
+        "group_name": "group 1",
+        "images": ["image1.jpeg>BD_1.png", "image2.jpeg", "image3.jpeg > BD_2.png"]
+      },
+      "image_thumbnail_edit": {
+        "image_preview": "image1.jpeg",
+        "image_thumbnail": "BD_3.png"
+      },
+      "image_thumbnail_delete": {
+        "image_preview": "image3.jpeg"
+      },
+      "image_preview_delete": "image3.jpeg"
+    },
+    "SB_PRO_SBP_ICFP_2": {
+      "product_all_info": {
+        "title": "Product edit clipart folder",
+        "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+        "image_name": "Logo1.jpg",
+        "vendor": "Uniqlo",
+        "price": "10",
+        "compare_at_price": "20"
+      },
+      "custom_option_info": {
+        "default_name": "Custom Option 1",
+        "custom_name": "Custom option",
+        "type": "Picture choice",
+        "type_clipart": "Folder",
+        "values": "Folder 1"
+      },
+      "clipart_folder_info": {
+        "folder_name": "Folder Edit",
+        "group_name": "group 1"
+      },
+      "image_preview_delete": "image3.jpeg",
+      "image_add_more": "BD_11.png"
+    },
+    "SB_PRO_SBP_ICFP_27": {
+      "clipart_folder_info": {
+        "type_custom_option": "Picture choice",
+        "folder_name": "Folder 27",
+        "group_name": "Group 27",
+        "images": ["artwork_case_06.jpg"]
+      },
+      "product_all_info": {
+        "title": "Product clipart created from preview page",
+        "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+        "image_name": "Logo1.jpg",
+        "vendor": "Uniqlo",
+        "price": "10",
+        "compare_at_price": "20"
+      },
+      "image_preview": "BD_27.png",
+      "button_click_open_editor": "Create Preview image",
+      "layer": {
+        "layer_type": "Image",
+        "image_name": "BD_2.png",
+        "not_layer_list": true,
+        "not_back_layer_list": true
+      },
+      "custom_option_info": {
+        "custom_name": "Picture choice",
+        "label": "Picture choice",
+        "type": "Picture choice",
+        "target_layer": "BD_2",
+        "index": 1,
+        "type_clipart": "Folder",
+        "value_clipart": "Folder 27",
+        "type_display_clipart": "Show with Thumbnail images",
+        "not_other_option": true
+      },
+      "custom_option_SF": [
+        {
+          "type": "Picture choice",
+          "custom_name": "Picture choice",
+          "value": "artwork_case_06"
+        }
+      ],
+      "picture": {
+        "block_CO": "block-CO-SB-PRO-SBP-ICFP-27.png",
+        "preview_page": "peview-page-SB-PRO-SBP-ICFP-27.png",
+        "clipart_sf": "clipart-sf-SB-PRO-SBP-ICFP-27.png",
+        "clipart_detail_phub": "clipart-detail-phub-SB-PRO-SBP-ICFP-27.png"
+      }
+    }
+  }
+}

@@ -1,0 +1,240 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "username": "opay-qe-2@beeketing.net",
+      "password": "Opay@123",
+      "domain": "au-payments-rotation.onshopbase.com",
+      "user_id": 11260682,
+      "shop_id": 10488040,
+      "shop_name": "au-payments-rotation",
+      "products_checkout": [
+        {
+          "name": "Product 1",
+          "variant_id": 1000011288922167,
+          "quantity": 1
+        }
+      ],
+      "stripe_id_1": 3292543,
+      "stripe_id_2": 3292544,
+      "payment_method_3_party": "Payoneer"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "opay-qe-2@beeketing.net",
+      "password": "Opay@123",
+      "domain": "au-payments-rotation-prodtest.onshopbase.com",
+      "user_id": 11260682,
+      "shop_id": 10488290,
+      "shop_name": "au-payments-rotation-prodtest",
+      "products_checkout": [
+        {
+          "name": "Product 1",
+          "variant_id": 1000011292501042,
+          "quantity": 1
+        }
+      ],
+      "accounts_domain": "accounts-test.shopbase.com",
+      "stripe_id_1": 3293090,
+      "stripe_id_2": 3293091,
+      "payment_method_3_party": "Payoneer"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "opay-qe-1@beeketing.net",
+      "password": "Z6el|q4&:hwCrVx",
+      "domain": "au-payments-rotation.myshopbase.net",
+      "user_id": 90009,
+      "shop_id": 10334944,
+      "shop_name": "au-payments-rotation",
+      "products_checkout": [
+        {
+          "name": "Product 1",
+          "variant_id": 1000001781550158,
+          "quantity": 1
+        }
+      ],
+      "stripe_id_1": 134538829,
+      "stripe_id_2": 134538830,
+      "payment_method_3_party": "Payoneer"
+    }
+  },
+  "cases": {
+    "SB_ROTATION_PAYMENT": [
+      {
+        "case_id": "SB_CHE_UPP_15",
+        "case_name": "Kiểm tra rotation payment method iDEAL",
+        "country": {
+          "country_name": "Germany",
+          "country_code": "de",
+          "currency": "EUR"
+        },
+        "payment_method": "iDEAL",
+        "payment_code": "ideal",
+        "email": "ideal@mailtothis.com",
+        "shipping_address": {
+          "address1": "814 Mission Street",
+          "address2": "",
+          "city": "Los Angeles",
+          "company": "",
+          "country_code": "NL",
+          "country_name": "Netherlands",
+          "cpf_or_cnpj_number": "",
+          "first_name": "Shopbase",
+          "last_name": "Auto",
+          "name": "Jena",
+          "phone": "0111111111",
+          "province": "Bremen",
+          "province_code": "",
+          "zip": "90001",
+          "remember_me": false
+        }
+      },
+      {
+        "case_id": "SB_CHE_UPP_14",
+        "case_name": "Kiểm tra rotation payment method Giropay",
+        "country": {
+          "country_name": "Germany",
+          "country_code": "de",
+          "currency": "EUR"
+        },
+        "payment_method": "giropay",
+        "payment_code": "giropay",
+        "email": "giropay@mailtothis.com",
+        "shipping_address": {
+          "address1": "814 Mission Street",
+          "address2": "",
+          "city": "Los Angeles",
+          "company": "",
+          "country_code": "DE",
+          "country_name": "Germany",
+          "cpf_or_cnpj_number": "",
+          "first_name": "Shopbase",
+          "last_name": "Auto",
+          "name": "Jena",
+          "phone": "0111111111",
+          "province": "Bremen",
+          "province_code": "",
+          "zip": "90001",
+          "remember_me": false
+        }
+      },
+      {
+        "case_id": "SB_CHE_UPP_13",
+        "case_name": "Kiểm tra rotation payment method Bancontact",
+        "country": {
+          "country_name": "Belgium",
+          "country_code": "BE",
+          "currency": "EUR"
+        },
+        "payment_method": "Bancontact",
+        "payment_code": "bancontact",
+        "email": "bancontact@mailtothis.com",
+        "shipping_address": {
+          "address1": "814 Mission Street",
+          "address2": "",
+          "city": "Los Angeles",
+          "company": "",
+          "country_code": "BE",
+          "country_name": "Belgium",
+          "cpf_or_cnpj_number": "",
+          "first_name": "Shopbase",
+          "last_name": "Auto",
+          "name": "Jena",
+          "phone": "0111111111",
+          "province": "",
+          "province_code": "",
+          "zip": "90001",
+          "remember_me": false
+        }
+      },
+      {
+        "case_id": "SB_CHE_UPP_12",
+        "case_name": "Kiểm tra rotation payment method Sofort",
+        "country": {
+          "country_name": "Germany",
+          "country_code": "de",
+          "currency": "EUR"
+        },
+        "payment_method": "Sofort",
+        "payment_code": "sofort",
+        "email": "sofort@mailtothis.com",
+        "shipping_address": {
+          "address1": "814 Mission Street",
+          "address2": "",
+          "city": "Los Angeles",
+          "company": "",
+          "country_code": "DE",
+          "country_name": "Germany",
+          "cpf_or_cnpj_number": "",
+          "first_name": "Shopbase",
+          "last_name": "Auto",
+          "name": "Jena",
+          "phone": "0111111111",
+          "province": "Bremen",
+          "province_code": "",
+          "zip": "90001",
+          "remember_me": false
+        }
+      },
+      {
+        "case_id": "SB_CHE_UPP_11",
+        "case_name": "Kiểm tra rotation payment method SEPA direct debit",
+        "country": {
+          "country_name": "Germany",
+          "country_code": "de",
+          "currency": "EUR"
+        },
+        "payment_method": "SEPA Direct Debit",
+        "payment_code": "sepa_debit",
+        "email": "sepa@mailtothis.com",
+        "shipping_address": {
+          "address1": "814 Mission Street",
+          "address2": "",
+          "city": "Los Angeles",
+          "company": "",
+          "country_code": "DE",
+          "country_name": "Germany",
+          "cpf_or_cnpj_number": "",
+          "first_name": "Shopbase",
+          "last_name": "Auto",
+          "name": "Jena",
+          "phone": "0111111111",
+          "province": "Bremen",
+          "province_code": "",
+          "zip": "90001",
+          "remember_me": false
+        }
+      }
+    ],
+    "SB_CHE_UPP_10": {
+      "country": {
+        "country_name": "United Kingdom",
+        "country_code": "GB",
+        "currency": "GBP"
+      },
+      "payment_code": {
+        "klarna_code": "klarna",
+        "afterpay_code": "afterpay"
+      },
+      "email": "bnpl@mailtothis.com",
+      "shipping_address": {
+        "address1": "New Burlington St",
+        "address2": "",
+        "city": "London",
+        "company": "",
+        "country_code": "GB",
+        "country_name": "United Kingdom",
+        "cpf_or_cnpj_number": "",
+        "first_name": "Shopbase",
+        "last_name": "Auto",
+        "name": "Jena",
+        "phone": "0111111111",
+        "province": "",
+        "province_code": "",
+        "zip": "90001",
+        "remember_me": false
+      }
+    }
+  }
+}

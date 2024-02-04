@@ -1,0 +1,340 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "accounts_domain": "accounts.dev.shopbase.net",
+      "domain": "au-inside-typography.myshopbase.net",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_name": "au-inside-typography",
+      "user_id": 90252,
+      "shop_id": 10327350,
+      "theme_id": 3165565,
+      "variant_id": 1000001769175839
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "accounts_domain": "accounts-test.shopbase.com",
+      "domain": "au-inside-typography-prodtest.onshopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_name": "au-inside-typography-prodtest",
+      "user_id": 11260206,
+      "shop_id": 10431387,
+      "theme_id": 1403712,
+      "variant_id": 1000010648111159
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "accounts_domain": "accounts.shopbase.com",
+      "domain": "au-inside-typography.onshopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_name": "au-inside-typography",
+      "user_id": 11260206,
+      "shop_id": 10431380,
+      "theme_id": 1400591,
+      "variant_id": 1000010647770880
+    }
+  },
+  "cases": {
+    "DATA_DRIVEN": {
+      "data": [
+        {
+          "case_id": "SB_OLS_THE_INS_SF_TYPOGRAPHY_SETTING_1",
+          "case_name": "với data typography mặc định",
+          "change_settings": {
+            "settings": {
+              "typography": {
+                "type_body_family": {
+                  "family": "'Mulish', sans-serif",
+                  "variant": "regular"
+                },
+                "type_body_size": 14,
+                "type_button_capitalize": true,
+                "type_button_family": {
+                  "family": "'Mulish', sans-serif",
+                  "variant": "regular"
+                },
+                "type_heading_capitalize": true,
+                "type_heading_family": {
+                  "family": "'Playfair Display SC', serif",
+                  "variant": "regular"
+                },
+                "type_heading_size": 48,
+                "type_heading_size_mobile": 48
+              }
+            }
+          },
+          "steps": [
+            {
+              "title": "product",
+              "path": "products/product-example",
+              "expected_snapshot": "TC-INS-SF-TYPOGRAPHY-SETTING-PRODUCT-DEFAULT.png"
+            },
+            {
+              "title": "password",
+              "path": "password",
+              "selector": "xpathBlankPage",
+              "expected_snapshot": "TC-INS-SF-TYPOGRAPHY-SETTING-PASSWORD-DEFAULT.png"
+            },
+            {
+              "title": "collection detail",
+              "path": "collections/new-arrivals",
+              "expected_snapshot": "TC-INS-SF-TYPOGRAPHY-SETTING-COLLECTION-DEFAULT.png"
+            },
+            {
+              "title": "collection list",
+              "path": "collections",
+              "expected_snapshot": "TC-INS-SF-TYPOGRAPHY-SETTING-COLLECTIONS-DEFAULT.png"
+            },
+            {
+              "title": "cart",
+              "path": "cart",
+              "expected_snapshot": "TC-INS-SF-TYPOGRAPHY-SETTING-CART-DEFAULT.png"
+            },
+            {
+              "title": "DMCA",
+              "path": "policies/ip",
+              "expected_snapshot": "TC-INS-SF-TYPOGRAPHY-SETTING-DMCA-DEFAULT.png"
+            },
+            {
+              "title": "error",
+              "path": "error",
+              "expected_snapshot": "TC-INS-SF-TYPOGRAPHY-SETTING-ERROR-DEFAULT.png"
+            },
+            {
+              "title": "sign in",
+              "path": "login",
+              "expected_snapshot": "TC-INS-SF-TYPOGRAPHY-SETTING-LOGIN-DEFAULT.png"
+            },
+            {
+              "title": "sign up",
+              "path": "register",
+              "expected_snapshot": "TC-INS-SF-TYPOGRAPHY-SETTING-REGISTER-DEFAULT.png"
+            },
+            {
+              "title": "404",
+              "path": "pages/xxx",
+              "expected_snapshot": "TC-INS-SF-TYPOGRAPHY-SETTING-NOTFOUND-DEFAULT.png"
+            },
+            {
+              "title": "contact us",
+              "path": "pages/contact-us",
+              "expected_snapshot": "TC-INS-SF-TYPOGRAPHY-SETTING-CONTACT-US-DEFAULT.png"
+            },
+            {
+              "title": "search",
+              "path": "search",
+              "expected_snapshot": "TC-INS-SF-TYPOGRAPHY-SETTING-SEARCH-DEFAULT.png"
+            }
+          ],
+          "expected": {
+            "snapshot_announcement": "TC-INS-SF-TYPOGRAPHY-SETTING-ANNOUNCEMENT-DEFAULT.png",
+            "snapshot_header": "TC-INS-SF-TYPOGRAPHY-SETTING-HEADER-DEFAULT.png",
+            "snapshot_footer": "TC-INS-SF-TYPOGRAPHY-SETTING-FOOTER-DEFAULT.png",
+            "snapshot_home": "TC-INS-SF-TYPOGRAPHY-SETTING-HOME-DEFAULT.png",
+            "snapshot_cart_drawer": "TC-INS-SF-TYPOGRAPHY-SETTING-CART-DRAWER-DEFAULT.png",
+            "snapshot_currency_language_modal": "TC-INS-SF-TYPOGRAPHY-SETTING-CURRENCY-LANGUAGE_MODAL-DEFAULT.png"
+          }
+        },
+        {
+          "case_id": "SB_OLS_THE_INS_SF_TYPOGRAPHY_SETTING_2",
+          "case_name": "khi change data typography font = google font",
+          "change_settings": {
+            "settings": {
+              "typography": {
+                "type_body_family": {
+                  "family": "'Akaya Telivigala', display",
+                  "variant": "regular"
+                },
+                "type_body_size": 16,
+                "type_button_capitalize": false,
+                "type_button_family": {
+                  "family": "'Roboto', sans-serif",
+                  "variant": "300italic"
+                },
+                "type_heading_capitalize": false,
+                "type_heading_family": {
+                  "family": "'Advent Pro', sans-serif",
+                  "variant": "700"
+                },
+                "type_heading_size": 41,
+                "type_heading_size_mobile": 40
+              }
+            }
+          },
+          "steps": [
+            {
+              "title": "product",
+              "path": "products/product-example",
+              "expected_snapshot": "TC-INS-SF-TYPOGRAPHY-SETTING-PRODUCT-GOOGLE.png"
+            },
+            {
+              "title": "password",
+              "path": "password",
+              "selector": "xpathBlankPage",
+              "expected_snapshot": "TC-INS-SF-TYPOGRAPHY-SETTING-PASSWORD-GOOGLE.png"
+            },
+            {
+              "title": "collection detail",
+              "path": "collections/new-arrivals",
+              "expected_snapshot": "TC-INS-SF-TYPOGRAPHY-SETTING-COLLECTION-GOOGLE.png"
+            },
+            {
+              "title": "collection list",
+              "path": "collections",
+              "expected_snapshot": "TC-INS-SF-TYPOGRAPHY-SETTING-COLLECTIONS-GOOGLE.png"
+            },
+            {
+              "title": "cart",
+              "path": "cart",
+              "expected_snapshot": "TC-INS-SF-TYPOGRAPHY-SETTING-CART-GOOGLE.png"
+            },
+            {
+              "title": "DMCA",
+              "path": "policies/ip",
+              "expected_snapshot": "TC-INS-SF-TYPOGRAPHY-SETTING-DMCA-GOOGLE.png"
+            },
+            {
+              "title": "error",
+              "path": "error",
+              "expected_snapshot": "TC-INS-SF-TYPOGRAPHY-SETTING-ERROR-GOOGLE.png"
+            },
+            {
+              "title": "sign in",
+              "path": "login",
+              "expected_snapshot": "TC-INS-SF-TYPOGRAPHY-SETTING-LOGIN-GOOGLE.png"
+            },
+            {
+              "title": "sign up",
+              "path": "register",
+              "expected_snapshot": "TC-INS-SF-TYPOGRAPHY-SETTING-REGISTER-GOOGLE.png"
+            },
+            {
+              "title": "404",
+              "path": "pages/xxx",
+              "expected_snapshot": "TC-INS-SF-TYPOGRAPHY-SETTING-NOTFOUND-GOOGLE.png"
+            },
+            {
+              "title": "contact us",
+              "path": "pages/contact-us",
+              "expected_snapshot": "TC-INS-SF-TYPOGRAPHY-SETTING-CONTACT-US-GOOGLE.png"
+            },
+            {
+              "title": "search",
+              "path": "search",
+              "expected_snapshot": "TC-INS-SF-TYPOGRAPHY-SETTING-SEARCH-GOOGLE.png"
+            }
+          ],
+          "expected": {
+            "snapshot_announcement": "TC-INS-SF-TYPOGRAPHY-SETTING-ANNOUNCEMENT-GOOGLE.png",
+            "snapshot_header": "TC-INS-SF-TYPOGRAPHY-SETTING-HEADER-GOOGLE.png",
+            "snapshot_footer": "TC-INS-SF-TYPOGRAPHY-SETTING-FOOTER-GOOGLE.png",
+            "snapshot_home": "TC-INS-SF-TYPOGRAPHY-SETTING-HOME-GOOGLE.png",
+            "snapshot_cart_drawer": "TC-INS-SF-TYPOGRAPHY-SETTING-CART-DRAWER-GOOGLE.png",
+            "snapshot_currency_language_modal": "TC-INS-SF-TYPOGRAPHY-SETTING-CURRENCY_LANGUAGE_MODAL-GOOGLE.png"
+          }
+        },
+        {
+          "case_id": "SB_OLS_THE_INS_SF_TYPOGRAPHY_SETTING_3",
+          "case_name": "khi change data typography font = system font",
+          "change_settings": {
+            "settings": {
+              "typography": {
+                "type_body_family": {
+                  "family": "'Arial', 'Helvetica Neue', Helvetica, sans-serif",
+                  "variant": "700"
+                },
+                "type_body_size": 12,
+                "type_button_capitalize": true,
+                "type_button_family": {
+                  "family": "'Helvetica Neue', 'HelveticaNeue', Helvetica, Arial, sans-serif",
+                  "variant": "700"
+                },
+                "type_heading_capitalize": false,
+                "type_heading_family": {
+                  "family": "'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Lucida, Helvetica, Arial, sans-serif",
+                  "variant": "300"
+                },
+                "type_heading_size": 47,
+                "type_heading_size_mobile": 47
+              }
+            }
+          },
+          "steps": [
+            {
+              "title": "product",
+              "path": "products/product-example",
+              "expected_snapshot": "TC-INS-SF-TYPOGRAPHY-SETTING-PRODUCT-SYSTEM.png"
+            },
+            {
+              "title": "password",
+              "path": "password",
+              "selector": "xpathBlankPage",
+              "expected_snapshot": "TC-INS-SF-TYPOGRAPHY-SETTING-PASSWORD-SYSTEM.png"
+            },
+            {
+              "title": "collection detail",
+              "path": "collections/new-arrivals",
+              "expected_snapshot": "TC-INS-SF-TYPOGRAPHY-SETTING-COLLECTION-SYSTEM.png"
+            },
+            {
+              "title": "collection list",
+              "path": "collections",
+              "expected_snapshot": "TC-INS-SF-TYPOGRAPHY-SETTING-COLLECTIONS-SYSTEM.png"
+            },
+            {
+              "title": "cart",
+              "path": "cart",
+              "expected_snapshot": "TC-INS-SF-TYPOGRAPHY-SETTING-CART-SYSTEM.png"
+            },
+            {
+              "title": "DMCA",
+              "path": "policies/ip",
+              "expected_snapshot": "TC-INS-SF-TYPOGRAPHY-SETTING-DMCA-SYSTEM.png"
+            },
+            {
+              "title": "error",
+              "path": "error",
+              "expected_snapshot": "TC-INS-SF-TYPOGRAPHY-SETTING-ERROR-SYSTEM.png"
+            },
+            {
+              "title": "sign in",
+              "path": "login",
+              "expected_snapshot": "TC-INS-SF-TYPOGRAPHY-SETTING-LOGIN-SYSTEM.png"
+            },
+            {
+              "title": "sign up",
+              "path": "register",
+              "expected_snapshot": "TC-INS-SF-TYPOGRAPHY-SETTING-REGISTER-SYSTEM.png"
+            },
+            {
+              "title": "404",
+              "path": "pages/xxx",
+              "expected_snapshot": "TC-INS-SF-TYPOGRAPHY-SETTING-NOTFOUND-SYSTEM.png"
+            },
+            {
+              "title": "contact us",
+              "path": "pages/contact-us",
+              "expected_snapshot": "TC-INS-SF-TYPOGRAPHY-SETTING-CONTACT-US-SYSTEM.png"
+            },
+            {
+              "title": "search",
+              "path": "search",
+              "expected_snapshot": "TC-INS-SF-TYPOGRAPHY-SETTING-SEARCH-SYSTEM.png"
+            }
+          ],
+          "expected": {
+            "snapshot_announcement": "TC-INS-SF-TYPOGRAPHY-SETTING-ANNOUNCEMENT-SYSTEM.png",
+            "snapshot_header": "TC-INS-SF-TYPOGRAPHY-SETTING-HEADER-SYSTEM.png",
+            "snapshot_footer": "TC-INS-SF-TYPOGRAPHY-SETTING-FOOTER-SYSTEM.png",
+            "snapshot_home": "TC-INS-SF-TYPOGRAPHY-SETTING-HOME-SYSTEM.png",
+            "snapshot_cart_drawer": "TC-INS-SF-TYPOGRAPHY-SETTING-CART-DRAWER-SYSTEM.png",
+            "snapshot_currency_language_modal": "TC-INS-SF-TYPOGRAPHY-SETTING-CURRENCY-LANGUAGE_MODAL-SYSTEM.png"
+          }
+        }
+      ]
+    }
+  }
+}

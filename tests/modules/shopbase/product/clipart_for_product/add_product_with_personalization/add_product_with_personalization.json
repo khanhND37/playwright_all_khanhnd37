@@ -1,0 +1,612 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-add-product-with-personalization-prod.onshopbase.com",
+      "shop_name": "au-add-product-with-personalization-prod",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10420089,
+      "user_id": 73782,
+      "timeout": 1000000
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-add-product-with-personalization-prodtest.onshopbase.com",
+      "shop_name": "au-add-product-with-personalization-prodtest",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10420092,
+      "user_id": 73782,
+      "timeout": 1000000,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-add-product-with-personalization-dev.myshopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_name": "au-add-product-with-personalization-dev",
+      "user_id": 73800,
+      "shop_id": 10326453,
+      "timeout": 1000000,
+      "prefix_snapshot": "dev",
+      "cases": {
+        "DATA_DRIVEN": {
+          "data": [
+            {
+              "description": "Check khi Add new product Image Preview với Custom option - Picture Choice với folder clipart",
+              "case_id": "SB_PRO_SBP_ICFP_9",
+              "clipart_folder_info": [
+                {
+                  "folder_name": "Personalization clipart",
+                  "group_name": "Group 9",
+                  "images": ["BD_1.png>anh2.jpg", "BD_4.png"]
+                }
+              ],
+              "product_all_info": {
+                "title": "Product Image Preview với Custom option - Picture Choice với folder clipart",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "image_preview": "BD_27.png",
+              "button_click_open_editor": "Create Preview image",
+              "layer": {
+                "layer_type": "Image",
+                "image_name": "BD_2.png",
+                "not_layer_list": true,
+                "not_back_layer_list": true
+              },
+              "custom_option_info": [
+                {
+                  "custom_name": "Picture choice",
+                  "label": "Picture choice",
+                  "type": "Picture choice",
+                  "target_layer": "BD_2",
+                  "index": 1,
+                  "type_clipart": "Folder",
+                  "value_clipart": "Personalization clipart",
+                  "type_display_clipart": "Show with Thumbnail images"
+                }
+              ],
+              "custom_option_SF": [
+                {
+                  "type": "Picture choice",
+                  "custom_name": "Picture choice",
+                  "value": "BD_1"
+                },
+                {
+                  "type": "Picture choice",
+                  "custom_name": "Picture choice",
+                  "value": "BD_4"
+                }
+              ],
+              "picture": {
+                "picture_choice_sf": "picture-choice-SF-SB-PRO-SBP-ICFP-9-dev.png",
+                "personalization_product_detail": "personalization-product-detail-SB-PRO-SBP-ICFP-9-dev.png",
+                "product_image_in_cart": "product-image-in-cart-SB-PRO-SBP-ICFP-9-dev.png",
+                "preview_image_SF": "preview-image-SF_SB-PRO-SBP-ICFP-9-dev.png",
+                "preview_editor": "preview-editor-SB-PRO-SBP-ICFP-9-dev.png",
+                "image_preview": "image_preview-SB-PRO-SBP-ICFP-9-dev.png"
+              }
+            },
+            {
+              "description": "Check khi Add new product Image Preview với Custom option - Picture Choice với group clipart",
+              "case_id": "SB_PRO_SBP_ICFP_10",
+              "clipart_folder_info": [
+                {
+                  "folder_name": "Folder 10.1",
+                  "group_name": "Group 10",
+                  "images": ["Cat 1.png", "Cat 2.png"]
+                },
+                {
+                  "folder_name": "Folder 10.2",
+                  "group_name": "Group 10",
+                  "images": ["BD_11.png", "BD_12.png"]
+                }
+              ],
+              "product_all_info": {
+                "title": "Product Image Preview với Custom option - Picture Choice với group clipart",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "image_preview": "BD_27.png",
+              "button_click_open_editor": "Create Preview image",
+              "layer": {
+                "layer_type": "Image",
+                "image_name": "BD_1.png",
+                "not_layer_list": true,
+                "not_back_layer_list": true
+              },
+              "custom_option_info": [
+                {
+                  "custom_name": "Picture choice",
+                  "label": "Picture choice",
+                  "type": "Picture choice",
+                  "target_layer": "BD_1",
+                  "index": 1,
+                  "type_clipart": "Group",
+                  "value_clipart": "Group 10",
+                  "type_display_clipart": "Show as a droplist with Clipart names"
+                }
+              ],
+              "custom_option_SF": [
+                {
+                  "type": "Picture choice group show droplist",
+                  "custom_name": "Picture choice",
+                  "value": "Cat 1",
+                  "label": "Picture choice",
+                  "folder_clipart": "Folder 10.1"
+                },
+                {
+                  "type": "Picture choice group show droplist",
+                  "custom_name": "Picture choice",
+                  "value": "Cat 1",
+                  "label": "Picture choice",
+                  "folder_clipart": "Folder 10.1"
+                },
+                {
+                  "type": "Picture choice group show droplist",
+                  "custom_name": "Picture choice",
+                  "value": "BD_11",
+                  "label": "Picture choice",
+                  "folder_clipart": "Folder 10.2"
+                },
+                {
+                  "type": "Picture choice group show droplist",
+                  "custom_name": "Picture choice",
+                  "value": "BD_12",
+                  "label": "Picture choice",
+                  "folder_clipart": "Folder 10.2"
+                }
+              ],
+              "picture": {
+                "picture_choice_sf": "picture-choice-SF-SB-PRO-SBP-ICFP-10-dev.png",
+                "personalization_product_detail": "personalization-product-detail-SB-PRO-SBP-ICFP-10-dev.png",
+                "product_image_in_cart": "product-image-in-cart-SB-PRO-SBP-ICFP-10-dev.png",
+                "preview_image_SF": "preview_image_SF-SB-PRO-SBP-ICFP-10-dev.png",
+                "preview_editor": "preview-editor-SB-PRO-SBP-ICFP-10-dev.png",
+                "image_preview": "image_preview-SB-PRO-SBP-ICFP-10-dev.png"
+              }
+            },
+            {
+              "description": "Check khi Add new product Print File với Custom option - Picture Choice với folder clipart",
+              "case_id": "SB_PRO_SBP_ICFP_11",
+              "clipart_folder_info": [
+                {
+                  "folder_name": "Folder 11",
+                  "group_name": "Group 11",
+                  "images": ["BD_1.png>anh2.jpg", "BD_4.png"]
+                }
+              ],
+              "product_all_info": {
+                "title": "Product Print file với Custom option - Picture Choice với folder clipart",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "image_preview": "BD_27.png",
+              "button_click_open_editor": "Create Print file",
+              "layer": {
+                "layer_type": "Image",
+                "image_name": "BD_2.png",
+                "not_layer_list": true,
+                "not_back_layer_list": true
+              },
+              "custom_option_info": [
+                {
+                  "custom_name": "Picture choice",
+                  "label": "Picture choice",
+                  "type": "Picture choice",
+                  "target_layer": "BD_2",
+                  "index": 1,
+                  "type_clipart": "Folder",
+                  "value_clipart": "Personalization clipart",
+                  "type_display_clipart": "Show with Thumbnail images"
+                }
+              ],
+              "custom_option_SF": [
+                {
+                  "type": "Picture choice",
+                  "custom_name": "Picture choice",
+                  "value": "BD_1"
+                },
+                {
+                  "type": "Picture choice",
+                  "custom_name": "Picture choice",
+                  "value": "BD_4"
+                }
+              ],
+              "picture": {
+                "picture_choice_sf": "picture-choice-SF-SB-PRO-SBP-ICFP-11-dev.png",
+                "personalization_product_detail": "personalization-product-detail-SB-PRO-SBP-ICFP-11-dev.png",
+                "product_image_in_cart": "product-image-in-cart-SB-PRO-SBP-ICFP-11-dev.png",
+                "preview_image_SF": "preview_image_SF_SB-PRO-SBP-ICFP-11-dev.png",
+                "preview_editor": "preview-editor-SB-PRO-SBP-ICFP-11-dev.png",
+                "image_preview": "image_preview-SB-PRO-SBP-ICFP-11-dev.png"
+              }
+            },
+            {
+              "description": "Check khi Add new product Print File với Custom option - Picture Choice với group clipart",
+              "case_id": "SB_PRO_SBP_ICFP_12",
+              "clipart_folder_info": [
+                {
+                  "folder_name": "Folder 12.1",
+                  "group_name": "Group 12",
+                  "images": ["BD_1.png", "BD_2.png"]
+                },
+                {
+                  "folder_name": "Folder 12.2",
+                  "group_name": "Group 12",
+                  "images": ["BD_3.png", "BD_4.png"]
+                }
+              ],
+              "product_all_info": {
+                "title": "Product Print file với Custom option - Picture Choice với group clipart",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "image_preview": "BD_27.png",
+              "button_click_open_editor": "Create Print file",
+              "layer": {
+                "layer_type": "Image",
+                "image_name": "BD_5.png",
+                "not_layer_list": true,
+                "not_back_layer_list": true
+              },
+              "custom_option_info": [
+                {
+                  "custom_name": "Picture choice",
+                  "label": "Picture choice",
+                  "type": "Picture choice",
+                  "target_layer": "BD_5",
+                  "index": 1,
+                  "type_clipart": "Group",
+                  "value_clipart": "Group 12",
+                  "type_display_clipart": "Show as a droplist with Clipart names"
+                }
+              ],
+              "custom_option_SF": [
+                {
+                  "type": "Picture choice group show droplist",
+                  "custom_name": "Picture choice",
+                  "value": "BD_1",
+                  "label": "Picture choice",
+                  "folder_clipart": "Folder 12.1"
+                },
+                {
+                  "type": "Picture choice group show droplist",
+                  "custom_name": "Picture choice",
+                  "value": "BD_2",
+                  "label": "Picture choice",
+                  "folder_clipart": "Folder 12.1"
+                },
+                {
+                  "type": "Picture choice group show droplist",
+                  "custom_name": "Picture choice",
+                  "value": "BD_3",
+                  "label": "Picture choice",
+                  "folder_clipart": "Folder 12.2"
+                },
+                {
+                  "type": "Picture choice group show droplist",
+                  "custom_name": "Picture choice",
+                  "value": "BD_4",
+                  "label": "Picture choice",
+                  "folder_clipart": "Folder 12.2"
+                }
+              ],
+              "picture": {
+                "picture_choice_sf": "picture-choice-SF-SB-PRO-SBP-ICFP-12-dev.png",
+                "personalization_product_detail": "personalization-product-detail-SB-PRO-SBP-ICFP-12-dev.png",
+                "product_image_in_cart": "product-image-in-cart-SB-PRO-SBP-ICFP-12-dev.png",
+                "preview_image_SF": "preview_image_SF_SB-PRO-SBP-ICFP-12-dev.png",
+                "preview_editor": "preview-editor-SB-PRO-SBP-ICFP-12-dev.png",
+                "image_preview": "image_preview-SB-PRO-SBP-ICFP-12-dev.png"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "cases": {
+    "DATA_DRIVEN": {
+      "data": [
+        {
+          "description": "Check khi Add new product Image Preview với Custom option - Picture Choice với folder clipart",
+          "case_id": "SB_PRO_SBP_ICFP_9",
+          "clipart_folder_info": [
+            {
+              "folder_name": "Personalization clipart",
+              "group_name": "Group 9",
+              "images": ["BD_1.png>anh2.jpg", "BD_4.png"]
+            }
+          ],
+          "product_all_info": {
+            "title": "Product Image Preview với Custom option - Picture Choice với folder clipart",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "image_preview": "BD_27.png",
+          "button_click_open_editor": "Create Preview image",
+          "layer": {
+            "layer_type": "Image",
+            "image_name": "BD_2.png",
+            "not_layer_list": true,
+            "not_back_layer_list": true
+          },
+          "custom_option_info": [
+            {
+              "custom_name": "Picture choice",
+              "label": "Picture choice",
+              "type": "Picture choice",
+              "target_layer": "BD_2",
+              "index": 1,
+              "type_clipart": "Folder",
+              "value_clipart": "Personalization clipart",
+              "type_display_clipart": "Show with Thumbnail images"
+            }
+          ],
+          "custom_option_SF": [
+            {
+              "type": "Picture choice",
+              "custom_name": "Picture choice",
+              "value": "BD_1"
+            },
+            {
+              "type": "Picture choice",
+              "custom_name": "Picture choice",
+              "value": "BD_4"
+            }
+          ],
+          "picture": {
+            "picture_choice_sf": "picture-choice-SF-SB-PRO-SBP-ICFP-9.png",
+            "personalization_product_detail": "personalization-product-detail-SB-PRO-SBP-ICFP-9.png",
+            "product_image_in_cart": "product-image-in-cart-SB-PRO-SBP-ICFP-9.png",
+            "preview_image_SF": "preview-image-SF_SB-PRO-SBP-ICFP-9.png",
+            "preview_editor": "preview-editor-SB-PRO-SBP-ICFP-9.png",
+            "image_preview": "image_preview-SB-PRO-SBP-ICFP-9.png"
+          }
+        },
+        {
+          "description": "Check khi Add new product Image Preview với Custom option - Picture Choice với group clipart",
+          "case_id": "SB_PRO_SBP_ICFP_10",
+          "clipart_folder_info": [
+            {
+              "folder_name": "Folder 10.1",
+              "group_name": "Group 10",
+              "images": ["Cat 1.png", "Cat 2.png"]
+            },
+            {
+              "folder_name": "Folder 10.2",
+              "group_name": "Group 10",
+              "images": ["BD_11.png", "BD_12.png"]
+            }
+          ],
+          "product_all_info": {
+            "title": "Product Image Preview với Custom option - Picture Choice với group clipart",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "image_preview": "BD_27.png",
+          "button_click_open_editor": "Create Preview image",
+          "layer": {
+            "layer_type": "Image",
+            "image_name": "BD_1.png",
+            "not_layer_list": true,
+            "not_back_layer_list": true
+          },
+          "custom_option_info": [
+            {
+              "custom_name": "Picture choice",
+              "label": "Picture choice",
+              "type": "Picture choice",
+              "target_layer": "BD_1",
+              "index": 1,
+              "type_clipart": "Group",
+              "value_clipart": "Group 10",
+              "type_display_clipart": "Show as a droplist with Clipart names"
+            }
+          ],
+          "custom_option_SF": [
+            {
+              "type": "Picture choice group show droplist",
+              "custom_name": "Picture choice",
+              "value": "Cat 1",
+              "label": "Picture choice",
+              "folder_clipart": "Folder 10.1"
+            },
+            {
+              "type": "Picture choice group show droplist",
+              "custom_name": "Picture choice",
+              "value": "Cat 1",
+              "label": "Picture choice",
+              "folder_clipart": "Folder 10.1"
+            },
+            {
+              "type": "Picture choice group show droplist",
+              "custom_name": "Picture choice",
+              "value": "BD_11",
+              "label": "Picture choice",
+              "folder_clipart": "Folder 10.2"
+            },
+            {
+              "type": "Picture choice group show droplist",
+              "custom_name": "Picture choice",
+              "value": "BD_12",
+              "label": "Picture choice",
+              "folder_clipart": "Folder 10.2"
+            }
+          ],
+          "picture": {
+            "picture_choice_sf": "picture-choice-SF-SB-PRO-SBP-ICFP-10.png",
+            "personalization_product_detail": "personalization-product-detail-SB-PRO-SBP-ICFP-10.png",
+            "product_image_in_cart": "product-image-in-cart-SB-PRO-SBP-ICFP-10.png",
+            "preview_image_SF": "preview_image_SF-SB-PRO-SBP-ICFP-10.png",
+            "preview_editor": "preview-editor-SB-PRO-SBP-ICFP-10.png",
+            "image_preview": "image_preview-SB-PRO-SBP-ICFP-10.png"
+          }
+        },
+        {
+          "description": "Check khi Add new product Print File với Custom option - Picture Choice với folder clipart",
+          "case_id": "SB_PRO_SBP_ICFP_11",
+          "clipart_folder_info": [
+            {
+              "folder_name": "Folder 11",
+              "group_name": "Group 11",
+              "images": ["BD_1.png>anh2.jpg", "BD_4.png"]
+            }
+          ],
+          "product_all_info": {
+            "title": "Product Print file với Custom option - Picture Choice với folder clipart",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "image_preview": "BD_27.png",
+          "button_click_open_editor": "Create Print file",
+          "layer": {
+            "layer_type": "Image",
+            "image_name": "BD_2.png",
+            "not_layer_list": true,
+            "not_back_layer_list": true
+          },
+          "custom_option_info": [
+            {
+              "custom_name": "Picture choice",
+              "label": "Picture choice",
+              "type": "Picture choice",
+              "target_layer": "BD_2",
+              "index": 1,
+              "type_clipart": "Folder",
+              "value_clipart": "Personalization clipart",
+              "type_display_clipart": "Show with Thumbnail images"
+            }
+          ],
+          "custom_option_SF": [
+            {
+              "type": "Picture choice",
+              "custom_name": "Picture choice",
+              "value": "BD_1"
+            },
+            {
+              "type": "Picture choice",
+              "custom_name": "Picture choice",
+              "value": "BD_4"
+            }
+          ],
+          "picture": {
+            "picture_choice_sf": "picture-choice-SF-SB-PRO-SBP-ICFP-11.png",
+            "personalization_product_detail": "personalization-product-detail-SB-PRO-SBP-ICFP-11.png",
+            "product_image_in_cart": "product-image-in-cart-SB-PRO-SBP-ICFP-11.png",
+            "preview_image_SF": "preview_image_SF_SB-PRO-SBP-ICFP-11.png",
+            "preview_editor": "preview-editor-SB-PRO-SBP-ICFP-11.png",
+            "image_preview": "image_preview-SB-PRO-SBP-ICFP-11.png"
+          }
+        },
+        {
+          "description": "Check khi Add new product Print File với Custom option - Picture Choice với group clipart",
+          "case_id": "SB_PRO_SBP_ICFP_12",
+          "clipart_folder_info": [
+            {
+              "folder_name": "Folder 12.1",
+              "group_name": "Group 12",
+              "images": ["BD_1.png", "BD_2.png"]
+            },
+            {
+              "folder_name": "Folder 12.2",
+              "group_name": "Group 12",
+              "images": ["BD_3.png", "BD_4.png"]
+            }
+          ],
+          "product_all_info": {
+            "title": "Product Print file với Custom option - Picture Choice với group clipart",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "image_preview": "BD_27.png",
+          "button_click_open_editor": "Create Print file",
+          "layer": {
+            "layer_type": "Image",
+            "image_name": "BD_5.png",
+            "not_layer_list": true,
+            "not_back_layer_list": true
+          },
+          "custom_option_info": [
+            {
+              "custom_name": "Picture choice",
+              "label": "Picture choice",
+              "type": "Picture choice",
+              "target_layer": "BD_5",
+              "index": 1,
+              "type_clipart": "Group",
+              "value_clipart": "Group 12",
+              "type_display_clipart": "Show as a droplist with Clipart names"
+            }
+          ],
+          "custom_option_SF": [
+            {
+              "type": "Picture choice group show droplist",
+              "custom_name": "Picture choice",
+              "value": "BD_1",
+              "label": "Picture choice",
+              "folder_clipart": "Folder 12.1"
+            },
+            {
+              "type": "Picture choice group show droplist",
+              "custom_name": "Picture choice",
+              "value": "BD_2",
+              "label": "Picture choice",
+              "folder_clipart": "Folder 12.1"
+            },
+            {
+              "type": "Picture choice group show droplist",
+              "custom_name": "Picture choice",
+              "value": "BD_3",
+              "label": "Picture choice",
+              "folder_clipart": "Folder 12.2"
+            },
+            {
+              "type": "Picture choice group show droplist",
+              "custom_name": "Picture choice",
+              "value": "BD_4",
+              "label": "Picture choice",
+              "folder_clipart": "Folder 12.2"
+            }
+          ],
+          "picture": {
+            "picture_choice_sf": "picture-choice-SF-SB-PRO-SBP-ICFP-12.png",
+            "personalization_product_detail": "personalization-product-detail-SB-PRO-SBP-ICFP-12.png",
+            "product_image_in_cart": "product-image-in-cart-SB-PRO-SBP-ICFP-12.png",
+            "preview_image_SF": "preview_image_SF_SB-PRO-SBP-ICFP-12.png",
+            "preview_editor": "preview-editor-SB-PRO-SBP-ICFP-12.png",
+            "image_preview": "image_preview-SB-PRO-SBP-ICFP-12.png"
+          }
+        }
+      ]
+    }
+  }
+}

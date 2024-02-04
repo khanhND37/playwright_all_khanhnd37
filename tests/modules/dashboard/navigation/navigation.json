@@ -1,0 +1,608 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-navigationdb.onshopbase.com",
+      "shop_name": "au-navigationdb",
+      "shop_id": 10356106,
+      "user_id": 73782,
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "theme_id": 894713
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-navigation-prodtest.onshopbase.com",
+      "shop_name": "au-navigation-prodtest",
+      "shop_id": 10386303,
+      "user_id": 73782,
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "accounts_domain": "accounts-test.shopbase.com",
+      "theme_id": 1300618
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-navigation.myshopbase.net",
+      "shop_name": "au-navigation",
+      "shop_id": 10323536,
+      "user_id": 73800,
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "theme_id": 3142131
+    }
+  },
+  "cases": {
+    "CREATE": {
+      "data": [
+        {
+          "case_id": "SB_OLS_NVG_13",
+          "description": "Check show Legal when add menu",
+          "data": {
+            "menu": {
+              "name": "ALegalMenu",
+              "submenu": [
+                {
+                  "status": "createMenu",
+                  "name": "submenu1",
+                  "link": "Policies",
+                  "data": "Refund policy"
+                },
+                {
+                  "status": "createMenuItem",
+                  "name": "submenu2",
+                  "link": "Policies",
+                  "data": "Privacy policy"
+                },
+                {
+                  "status": "createMenuItem",
+                  "name": "submenu3",
+                  "link": "Policies",
+                  "data": "Shipping policy"
+                },
+                {
+                  "status": "createMenuItem",
+                  "name": "submenu4",
+                  "link": "Policies",
+                  "data": "Terms of service"
+                }
+              ]
+            },
+            "data_header": {
+              "header": {
+                "visible": true,
+                "settings": {
+                  "cart_icon": "bag",
+                  "content_alignment": "left",
+                  "current_layout": "inline",
+                  "enable_language_currency_mobile": true,
+                  "enable_search": true,
+                  "enable_top_menu": false,
+                  "fixed_header": false,
+                  "full_width": false,
+                  "header_padding": 8,
+                  "logo": "https://img.shopbase.com/files/10090758/2020/07/01/1593575286b23430b5d5.png",
+                  "logo_size": "medium",
+                  "main": "alegalmenu",
+                  "menu_position": "center",
+                  "mobile_logo": "",
+                  "mobile_logo_size": "medium",
+                  "show_cart": true,
+                  "top_menu": "topbar-menu"
+                },
+                "type": "header",
+                "blocks": []
+              }
+            },
+            "expect": [
+              {
+                "name": "submenu1",
+                "title": "Refund Policy"
+              },
+              {
+                "name": "submenu2",
+                "title": "Privacy Policy"
+              },
+              {
+                "name": "submenu3",
+                "title": "Shipping Policy"
+              },
+              {
+                "name": "submenu4",
+                "title": "Terms Of Service"
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "SB_OLS_NVG_12",
+          "description": "Check button Create from template",
+          "data": {
+            "menu": {
+              "name": "ATemplateMenu",
+              "submenu": [
+                {
+                  "status": "createMenu",
+                  "name": "submenu1",
+                  "link": "Pages",
+                  "data": "All reviews"
+                },
+                {
+                  "status": "createMenuItem",
+                  "name": "submenu2",
+                  "link": "Pages",
+                  "data": "Contact us"
+                },
+                {
+                  "status": "createMenuItem",
+                  "name": "submenu3",
+                  "link": "Pages",
+                  "data": "About Us"
+                }
+              ]
+            },
+            "data_header": {
+              "header": {
+                "visible": true,
+                "settings": {
+                  "cart_icon": "bag",
+                  "content_alignment": "left",
+                  "current_layout": "inline",
+                  "enable_language_currency_mobile": true,
+                  "enable_search": true,
+                  "enable_top_menu": false,
+                  "fixed_header": false,
+                  "full_width": false,
+                  "header_padding": 8,
+                  "logo": "https://img.shopbase.com/files/10090758/2020/07/01/1593575286b23430b5d5.png",
+                  "logo_size": "medium",
+                  "main": "atemplatemenu",
+                  "menu_position": "center",
+                  "mobile_logo": "",
+                  "mobile_logo_size": "medium",
+                  "show_cart": true,
+                  "top_menu": "topbar-menu"
+                },
+                "type": "header",
+                "blocks": []
+              }
+            },
+            "expect": [
+              {
+                "name": "submenu1",
+                "title": "All reviews"
+              },
+              {
+                "name": "submenu2",
+                "title": "Contact us"
+              },
+              {
+                "name": "submenu3",
+                "title": "About Us"
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "SB_OLS_NVG_8",
+          "description": "Check user add new menu",
+          "data": {
+            "menu": {
+              "name": "ANewMenu",
+              "submenu": [
+                {
+                  "status": "createMenu",
+                  "name": "submenu1",
+                  "link": "Blogs",
+                  "data": "News"
+                },
+                {
+                  "status": "createMenuItem",
+                  "name": "submenu2",
+                  "link": "Pages",
+                  "data": "Contact us"
+                }
+              ]
+            },
+            "data_header": {
+              "header": {
+                "visible": true,
+                "settings": {
+                  "cart_icon": "bag",
+                  "content_alignment": "left",
+                  "current_layout": "inline",
+                  "enable_language_currency_mobile": true,
+                  "enable_search": true,
+                  "enable_top_menu": false,
+                  "fixed_header": false,
+                  "full_width": false,
+                  "header_padding": 8,
+                  "logo": "https://img.shopbase.com/files/10090758/2020/07/01/1593575286b23430b5d5.png",
+                  "logo_size": "medium",
+                  "main": "anewmenu",
+                  "menu_position": "center",
+                  "mobile_logo": "",
+                  "mobile_logo_size": "medium",
+                  "show_cart": true,
+                  "top_menu": "topbar-menu"
+                },
+                "type": "header",
+                "blocks": []
+              }
+            },
+            "expect": [
+              {
+                "name": "submenu1",
+                "title": "News"
+              },
+              {
+                "name": "submenu2",
+                "title": "Contact us"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "UPDATE": {
+      "pre_data": [
+        {
+          "custom_collection": {
+            "collection_type": "custom",
+            "disjunctive": true,
+            "body_html": "",
+            "title": "Sale",
+            "rules": [
+              {
+                "column": "tag",
+                "relation": "equals",
+                "condition": ""
+              }
+            ],
+            "metafields": [
+              {
+                "namespace": "global",
+                "key": "description_tag",
+                "value": "",
+                "value_type": "string"
+              },
+              {
+                "namespace": "global",
+                "key": "title_tag",
+                "value": "",
+                "value_type": "string"
+              }
+            ],
+            "collection_availability": 1,
+            "handle": ""
+          }
+        },
+        {
+          "custom_collection": {
+            "collection_type": "custom",
+            "disjunctive": true,
+            "body_html": "",
+            "title": "Apparel",
+            "rules": [
+              {
+                "column": "tag",
+                "relation": "equals",
+                "condition": ""
+              }
+            ],
+            "metafields": [
+              {
+                "namespace": "global",
+                "key": "description_tag",
+                "value": "",
+                "value_type": "string"
+              },
+              {
+                "namespace": "global",
+                "key": "title_tag",
+                "value": "",
+                "value_type": "string"
+              }
+            ],
+            "collection_availability": 1,
+            "handle": ""
+          }
+        }
+      ],
+
+      "data": [
+        {
+          "case_id": "SB_OLS_NVG_4",
+          "description": "Check user edit menu",
+          "data": {
+            "menu": {
+              "name": "ANewMenu",
+              "submenu": [
+                {
+                  "status": "updateMenuItem",
+                  "order": 1,
+                  "name": "submenu1",
+                  "link": "Home page"
+                },
+                {
+                  "status": "updateMenuItem",
+                  "order": 2,
+                  "name": "submenu2",
+                  "link": "Collections",
+                  "data": "Sale"
+                }
+              ]
+            },
+            "expect": [
+              {
+                "name": "submenu1",
+                "title": "Homepage"
+              },
+              {
+                "name": "submenu2",
+                "title": "Sale"
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "SB_OLS_NVG_5",
+          "description": "Check user add item on menu",
+          "data": {
+            "menu": {
+              "name": "ANewMenu",
+              "submenu": [
+                {
+                  "status": "createMenuItem",
+                  "name": "submenu3",
+                  "link": "Policies",
+                  "data": "Refund policy"
+                }
+              ]
+            },
+            "expect": [
+              {
+                "name": "submenu1",
+                "title": "Homepage"
+              },
+              {
+                "name": "submenu2",
+                "title": "Sale"
+              },
+              {
+                "li": "submenu3",
+                "title": "Refund Policy"
+              }
+            ]
+          }
+        },
+        {
+          "case_id": "SB_OLS_NVG_130",
+          "description": "Check add available collection on menu from collection page dashboard",
+          "data": {
+            "menu": {
+              "name": "ANewMenu",
+              "submenu": [
+                {
+                  "status": "updateMenuItem",
+                  "order": 1,
+                  "name": "submenu1",
+                  "link": "Collections",
+                  "data": "Apparel"
+                }
+              ]
+            },
+            "expect": [
+              {
+                "name": "submenu1",
+                "title": "Apparel"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "SB_OLS_NVG_131": {
+      "data": {
+        "pre_data": {
+          "custom_collection": {
+            "collection_type": "custom",
+            "disjunctive": true,
+            "body_html": "",
+            "title": "Collection131",
+            "rules": [
+              {
+                "column": "tag",
+                "relation": "equals",
+                "condition": ""
+              }
+            ],
+            "metafields": [
+              {
+                "namespace": "global",
+                "key": "description_tag",
+                "value": "",
+                "value_type": "string"
+              },
+              {
+                "namespace": "global",
+                "key": "title_tag",
+                "value": "",
+                "value_type": "string"
+              }
+            ],
+            "collection_availability": 1,
+            "handle": ""
+          },
+          "menu": {
+            "name": "ANewMenu",
+            "submenu": [
+              {
+                "status": "createMenu",
+                "name": "sub menu 1 case 131",
+                "link": "Blogs",
+                "data": "News"
+              },
+              {
+                "status": "createMenuItem",
+                "name": "sub menu 2 case 131",
+                "link": "Pages",
+                "data": "Contact us"
+              }
+            ]
+          }
+        },
+        "test_data": {
+          "collection": "Collection131",
+          "menu": {
+            "name": "ANewMenu",
+            "submenu": {
+              "status": "updateMenuItem",
+              "order": 1,
+              "name": "menu case 131",
+              "link": "Collections",
+              "data": "Collection131"
+            }
+          },
+          "expect": [
+            {
+              "name": "menu case 131",
+              "title": "Collection131"
+            }
+          ]
+        }
+      }
+    },
+    "SB_OLS_NVG_6": {
+      "data": {
+        "menu": {
+          "name": "Menu case 6",
+          "submenu": {
+            "name": "Sub menu case 6",
+            "status": "createMenu",
+            "link": "Blogs",
+            "data": "News"
+          }
+        }
+      }
+    },
+    "SB_OLS_NVG_14": {
+      "data": {
+        "create_menu": {
+          "name": "Menu case 14",
+          "submenu": [
+            {
+              "status": "createMenu",
+              "name": "Sub menu 01",
+              "link": "Pages",
+              "data": "All reviews"
+            },
+            {
+              "status": "createMenuItem",
+              "name": "Sub menu 02",
+              "link": "Pages",
+              "data": "Contact us"
+            },
+            {
+              "status": "createMenuItem",
+              "name": "Sub menu 03",
+              "link": "Pages",
+              "data": "About Us"
+            }
+          ]
+        },
+        "menu": {
+          "name": "Menu case 14",
+          "submenu": [
+            {
+              "name": "Sub menu 03",
+              "order": 3
+            },
+            {
+              "name": "Sub menu 02",
+              "order": 2
+            }
+          ]
+        },
+        "data_header": {
+          "header": {
+            "visible": true,
+            "settings": {
+              "cart_icon": "bag",
+              "content_alignment": "left",
+              "current_layout": "inline",
+              "enable_language_currency_mobile": true,
+              "enable_search": true,
+              "enable_top_menu": false,
+              "fixed_header": false,
+              "full_width": false,
+              "header_padding": 8,
+              "logo": "https://img.shopbase.com/files/10090758/2020/07/01/1593575286b23430b5d5.png",
+              "logo_size": "medium",
+              "main": "menu-case",
+              "menu_position": "center",
+              "mobile_logo": "",
+              "mobile_logo_size": "medium",
+              "show_cart": true,
+              "top_menu": "topbar-menu"
+            },
+            "type": "header",
+            "blocks": []
+          }
+        },
+        "expect": [
+          {
+            "selector": [".site-nav >li"],
+            "title": "All reviews"
+          },
+          {
+            "selector": [".site-nav >li", ".site-nav--has-grandchildren>li"],
+            "title": "Contact us"
+          },
+          {
+            "selector": [".site-nav >li", ".site-nav--has-grandchildren>li", ".site-nav--has-great-grandchild>li"],
+            "title": "About Us"
+          }
+        ]
+      }
+    },
+    "SB_OLS_NVG_10": {
+      "data": {
+        "menu": {
+          "name": "Menu case 10",
+          "submenu": {
+            "name": "Sub menu case 10",
+            "status": "createMenu",
+            "link": "Blogs",
+            "data": "News"
+          }
+        }
+      }
+    },
+    "SB_OLS_NVG_125": {
+      "first_lock": [
+        {
+          "page_locks": ["/collections/all"]
+        },
+        {
+          "page_locks": ["/collections/all", "/collections"]
+        },
+        {
+          "page_locks": ["/collections/all", "/collections", "/search"]
+        }
+      ],
+      "second_lock": [
+        {
+          "page_locks": ["/collections", "/search"]
+        },
+        {
+          "page_locks": ["/search"]
+        },
+        {
+          "page_locks": []
+        }
+      ]
+    },
+    "SB_OLS_NVG_9": {}
+  }
+}

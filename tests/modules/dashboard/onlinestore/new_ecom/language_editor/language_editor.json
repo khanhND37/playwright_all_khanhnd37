@@ -1,0 +1,247 @@
+{
+  "env": {
+    "prod": {
+      "domain": "language-editor.onshopbase.com",
+      "shop_name": "language-editor",
+      "shop_id": 10463480,
+      "user_id": 11260206,
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "api": "https://api.shopbase.com",
+      "link": "locale-editor?handle=668&lang=en",
+      "themes_setting_v3": 1582957,
+      "themes_setting_roller": 1582959,
+      "themes_setting_Inside": 1583618,
+      "name_theme": "[Theme Auto ko edit & xoá] Packwise"
+    },
+    "prodtest": {
+      "domain": "language-editor-prodtest.onshopbase.com",
+      "shop_name": "language-editor-prodtest",
+      "shop_id": 10463482,
+      "user_id": 11260206,
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "api": "https://prod-test-api.shopbase.com",
+      "link": "locale-editor?handle=668&lang=en",
+      "themes_setting_v3": 1582682,
+      "themes_setting_roller": 1582684,
+      "themes_setting_Inside": 1583611,
+      "name_theme": "[Theme Auto ko edit & xoá] Packwise"
+    },
+    "dev": {
+      "domain": "language-editor.myshopbase.net",
+      "shop_name": "language-editor",
+      "shop_id": 10331344,
+      "user_id": 90252,
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "api": "https://gapi.dev.shopbase.net",
+      "link": "locale-editor?handle=668&lang=en",
+      "themes_setting_v3": 3218220,
+      "themes_setting_roller": 3218221,
+      "themes_setting_Inside": 3218299,
+      "name_theme": "[Theme Auto ko edit & xoá] Packwise"
+    }
+  },
+  "cases": {
+    "SB_OLS_THE_LE_39": {
+      "description": "Check data default của màn language editor",
+      "theme_test": "[Theme Auto ko edit & xoá] Packwise",
+      "data": {},
+      "expect": {
+        "list_dropdown_sort": ["Key", "English Phrase", "Phrase"],
+        "change_type": [
+          {
+            "index_dropdown": 1,
+            "type": "Criadora Theme",
+            "show_droplist_page": true
+          },
+          {
+            "index_dropdown": 1,
+            "type": "Roller Theme",
+            "show_droplist_page": true
+          },
+          {
+            "index_dropdown": 1,
+            "type": "Inside Theme",
+            "show_droplist_page": true
+          },
+          {
+            "index_dropdown": 1,
+            "type": "Boost Upsell App",
+            "show_droplist_page": false
+          },
+          {
+            "index_dropdown": 1,
+            "type": "Product Reviews App",
+            "show_droplist_page": false
+          },
+          {
+            "index_dropdown": 1,
+            "type": "Boost Convert App",
+            "show_droplist_page": false
+          },
+          {
+            "index_dropdown": 1,
+            "type": "Check Out",
+            "show_droplist_page": false
+          }
+        ]
+      }
+    },
+    "SB_OLS_THE_LE_40": {
+      "description": "Check change ngôn ngữ thành công với Page = Products + theme Ciadora + language = English",
+      "theme_test": "[Theme Auto ko edit & xoá] Packwise",
+      "data": {
+        "add_theme": "Packwise",
+        "search_filter": {
+          "select_page": "Products",
+          "key_search": "Add to cart"
+        },
+        "title": "Add to cart",
+        "edit_phrase": ["add cart ciadora 1", "add cart ciadora 2"],
+        "sf": {
+          "link": "products/reed-diffuser-feu-de-bois",
+          "change_lang": "Français (FR)",
+          "locale_key_search": "Ajouter au panier"
+        }
+      },
+      "expect": {}
+    },
+    "SB_OLS_THE_LE_41": {
+      "description": "Check change ngôn ngữ thành công với Page = Cart + theme Roller + language = French",
+      "theme_test": "[Theme Auto ko edit & xoá] Roller",
+      "data": {
+        "add_theme": "roller",
+        "search_filter": {
+          "select_page": "Cart",
+          "select_type": "Roller Theme",
+          "select_language": "French"
+        },
+        "title": "There are no items in your cart.",
+        "phrase": "Il n'y a aucun article dans votre panier.",
+        "edit_phrase": "Il n'y a aucun produit dans votre panier. Veuillez vous rendre sur la page d'accueil pour acheter",
+        "sf": {
+          "link": "cart",
+          "change_lang": "Francaise"
+        }
+      },
+      "expect": {}
+    },
+    "SB_OLS_THE_LE_42": {
+      "description": "Check change ngôn ngữ thành công với Page = All page + theme Inside + language = English",
+      "theme_test": "[Theme Auto ko edit & xoá] Inside",
+      "data": {
+        "add_theme": "inside",
+        "search_filter": {
+          "select_type": "Inside Theme",
+          "key_search": "fEa"
+        },
+        "title": "Featured",
+        "edit_phrase": "Test",
+        "sf": {
+          "link": "collections/new-arrivals"
+        }
+      },
+      "expect": {}
+    },
+    "SB_OLS_THE_LE_43": {
+      "description": "Check change ngôn ngữ thành công với Boost Upsell App + language = English",
+      "theme_test": "[Theme Auto ko edit & xoá] Inside",
+      "data": {
+        "search_filter": {
+          "select_type": "Boost Upsell App",
+          "key_search": "cta"
+        },
+        "title": "Add more items",
+        "edit_phrase": "Add products",
+        "sf": {
+          "link": "products/reed-diffuser-feu-de-bois"
+        },
+        "sleep": 60000
+      },
+      "expect": {}
+    },
+    "SB_OLS_THE_LE_44": {
+      "description": "Check change ngôn ngữ thành công với Product Review App + language = Vietnamese",
+      "theme_test": "[Theme Auto ko edit & xoá] Inside",
+      "data": {
+        "add_theme": "inside",
+        "search_filter": {
+          "select_type": "Product Reviews App",
+          "key_search": "Be the first to write a review",
+          "select_language": "Spanish"
+        },
+        "title": "Be the first to write a review",
+        "phrase": "Sé la primera en escribir una reseña.",
+        "edit_phrase": "Escribe una reseña, amigo mío",
+        "sf": {
+          "link": "products/reed-diffuser-feu-de-bois",
+          "change_lang": "Spanish"
+        }
+      },
+      "expect": {}
+    },
+    "SB_OLS_THE_LE_45": {
+      "description": "Check change ngôn ngữ thành công với Checkout + language = English",
+      "theme_test": "[Theme Auto ko edit & xoá] Packwise",
+      "data": {
+        "search_filter": {
+          "select_type": "Check Out",
+          "key_search": "order_summary"
+        },
+        "title": "Order Summary",
+        "edit_phrase": "Summary",
+        "sf": {
+          "link": "products/reed-diffuser-feu-de-bois"
+        }
+      },
+      "expect": {}
+    },
+    "SB_OLS_THE_LE_46": {
+      "description": "Check change ngôn ngữ không thành công",
+      "theme_test": "[Theme Auto ko edit & xoá] Packwise",
+      "data": {
+        "search_filter": {
+          "select_type": "Criadora Theme"
+        },
+        "title": "About us",
+        "edit_phrase": ""
+      },
+      "expect": {
+        "alert_content": "This language is incomplete\n\n1 translations are missing. You can to show missing translations.You can filter this page to show missing translations."
+      }
+    },
+    "SB_OLS_THE_LE_47": {
+      "description": "Check change ngôn ngữ thành data trống",
+      "theme_test": "[Theme Auto ko edit & xoá] Packwise",
+      "data": {
+        "search_filter": {
+          "select_type": "Product Reviews App",
+          "key_search": "Be the first to write a review"
+        },
+        "title": "Be the first to write a review",
+        "edit_phrase": "",
+        "sf": {
+          "link": "products/reed-diffuser-feu-de-bois"
+        }
+      },
+      "expect": {}
+    },
+    "SB_OLS_THE_LE_48": {
+      "description": "Check download và upload file",
+      "theme_test": "[Theme Auto ko edit & xoá] Packwise",
+      "data": {
+        "search_filter": {
+          "select_type": "Roller Theme"
+        },
+        "upload": "locale_roller.json"
+      },
+      "expect": {
+        "download": "locale.json",
+        "title": "Example collection title",
+        "edit_phrase": "Edit locale collection title"
+      }
+    }
+  }
+}

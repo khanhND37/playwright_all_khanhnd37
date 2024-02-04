@@ -1,0 +1,847 @@
+{
+  "env": {
+    "dev": {
+      "domain": "auto-block-wb.myshopbase.net",
+      "shop_name": "auto-block-wb",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "user_id": 90252,
+      "shop_id": 10333928,
+      "lib_id": 19711
+    },
+    "prodtest": {
+      "domain": "auto-block-wb-prodtest.onshopbase.com",
+      "shop_name": "auto-block-wb-prodtest",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "user_id": 11260206,
+      "shop_id": 10480844,
+      "lib_id": 27213
+    },
+    "prod": {
+      "domain": "auto-block-wb.onshopbase.com",
+      "shop_name": "auto-block-wb",
+      "api": "https://api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "user_id": 11260206,
+      "shop_id": 10480842,
+      "lib_id": 31826
+    }
+  },
+  "cases": {
+    "SB_WEB_BUILDER_SECTION_SETTING_155": {
+      "description": "Section_Check remove section trên side bar",
+      "data": {
+        "template_name": "WB 1 section have data"
+      }
+    },
+    "SB_WEB_BUILDER_SECTION_SETTING_156": {
+      "description": "Section_Side bar_Check thay đổi content & icon của section",
+      "data": {
+        "template_name": "WB 1 section empty",
+        "change": [
+          {
+            "data": {
+              "name": "header section",
+              "icon": "block_container"
+            },
+            "expect": {
+              "section_name": "header section",
+              "icon": "url(#clip0_3812_55404)"
+            }
+          },
+          {
+            "data": {
+              "name": "",
+              "icon": "video"
+            },
+            "expect": {
+              "section_name": "Section",
+              "icon": "url(#clip0_3398_55003)"
+            }
+          }
+        ]
+      }
+    },
+    "SB_WEB_BUILDER_SECTION_SETTING_161": {
+      "description": "Row_Side bar_Check remove row trên side bar",
+      "data": {
+        "template_name": "WB 1 section empty"
+      }
+    },
+    "SB_WEB_BUILDER_LB_CONTAINER_BLOCK_13": {
+      "description": "Check set column align & spacing trường hợp layout = vertical",
+      "data": {
+        "template_name": "WB 1 section 2 column",
+        "child_blocks": [
+          {
+            "from": {
+              "category": "Basics",
+              "template": "Paragraph"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "column": 1
+              }
+            }
+          },
+          {
+            "from": {
+              "category": "Basics",
+              "template": "Icon"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "column": 1
+              }
+            }
+          }
+        ],
+        "column_on_sidebar": {
+          "sectionName": "Single column",
+          "subLayerName": "Column",
+          "subLayerIndex": 1
+        },
+        "layout_data": [
+          {
+            "layout": {
+              "direction": "vertical",
+              "align": "flex-start",
+              "spacing": 20
+            },
+            "style_web_front": "justify-content: flex-start; --gap: 20px; position: relative; padding: 0px;",
+            "snapshot_column_vertical_web_front": "13_align_top.png"
+          },
+          {
+            "layout": {
+              "direction": "vertical",
+              "align": "center",
+              "spacing": 0
+            },
+            "style_web_front": "justify-content: safe center;",
+            "snapshot_column_vertical_web_front": "13_align_center.png"
+          },
+          {
+            "layout": {
+              "direction": "vertical",
+              "align": "flex-end",
+              "spacing": 64
+            },
+            "style_web_front": "justify-content: flex-end; --gap: 64px; position: relative; padding: 0px;",
+            "snapshot_column_vertical_web_front": "13_align_bottom.png"
+          },
+          {
+            "layout": {
+              "direction": "vertical",
+              "align": "space-between"
+            },
+            "style_web_front": "justify-content: space-between;",
+            "snapshot_column_vertical_web_front": "13_align_space_distribute.png"
+          }
+        ],
+        "expected": {
+          "saved": "All changes are saved"
+        }
+      }
+    },
+    "SB_WEB_BUILDER_LB_CONTAINER_BLOCK_14": {
+      "description": "Check set column align & spacing trường hợp layout = horizontal",
+      "data": {
+        "template_name": "WB 1 section 2 column",
+        "child_blocks": [
+          {
+            "from": {
+              "category": "Basics",
+              "template": "Paragraph"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "column": 1
+              }
+            }
+          },
+          {
+            "from": {
+              "category": "Basics",
+              "template": "Icon"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "column": 1
+              }
+            }
+          }
+        ],
+        "column_on_sidebar": {
+          "sectionName": "Single column",
+          "subLayerName": "Column",
+          "subLayerIndex": 1
+        },
+        "layout_data": [
+          {
+            "layout": {
+              "direction": "horizontal",
+              "align": "flex-start",
+              "spacing": 20
+            },
+            "style_web_front": "justify-content: flex-start; --gap: 20px; position: relative; padding: 0px;",
+            "snapshot_column_horizontal_web_front": "14_align_left.png"
+          },
+          {
+            "layout": {
+              "direction": "horizontal",
+              "align": "center",
+              "spacing": 0
+            },
+            "style_web_front": "justify-content: safe center;",
+            "snapshot_column_horizontal_web_front": "14_align_center.png"
+          },
+          {
+            "layout": {
+              "direction": "horizontal",
+              "align": "flex-end",
+              "spacing": 64
+            },
+            "style_web_front": "justify-content: flex-end; --gap: 64px; position: relative; padding: 0px;",
+            "snapshot_column_horizontal_web_front": "14_align_right.png"
+          },
+          {
+            "layout": {
+              "direction": "horizontal",
+              "align": "space-between"
+            },
+            "style_web_front": "justify-content: space-between;",
+            "snapshot_column_horizontal_web_front": "14_align_space_distribute.png"
+          }
+        ],
+        "expected": {
+          "saved": "All changes are saved"
+        }
+      }
+    },
+    "SB_WEB_BUILDER_LB_CONTAINER_BLOCK_15": {
+      "description": "Check hiển thị column khi resize width block con (layout = horizontal)",
+      "data": {
+        "template_name": "WB 1 section 2 column",
+        "child_blocks": [
+          {
+            "from": {
+              "category": "Basics",
+              "template": "Rating"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "column": 1
+              }
+            },
+            "width": {
+              "unit": "px",
+              "value": 600
+            }
+          },
+          {
+            "from": {
+              "category": "Basics",
+              "template": "Icon"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "column": 1
+              }
+            },
+            "width": {
+              "unit": "px",
+              "value": 300
+            }
+          }
+        ],
+        "column_on_sidebar": {
+          "sectionName": "Single column",
+          "subLayerName": "Column",
+          "subLayerIndex": 1
+        },
+        "layout_data": {
+          "layout": {
+            "direction": "horizontal",
+            "align": "flex-start"
+          }
+        },
+        "child_blocks_on_web_front": {
+          "section": 1,
+          "row": 1,
+          "column": 1,
+          "block": 2
+        },
+        "set_child_width": {
+          "width": {
+            "unit": "px",
+            "value": 500
+          }
+        },
+        "expected": {
+          "saved": "All changes are saved",
+          "snapshot_on_SF": "15_resize_child_blocks.png"
+        }
+      }
+    },
+    "SB_WEB_BUILDER_LB_CONTAINER_BLOCK_16": {
+      "description": "Check hiển thị column khi resize height block con (layout = vertical)",
+      "data": {
+        "template_name": "WB 1 section 2 column",
+        "child_blocks": [
+          {
+            "from": {
+              "category": "Basics",
+              "template": "Bullet"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "column": 1
+              }
+            },
+            "height": {
+              "unit": "px",
+              "value": 300
+            }
+          },
+          {
+            "from": {
+              "category": "Basics",
+              "template": "Toggle list"
+            },
+            "to": {
+              "position": {
+                "section": 1,
+                "column": 1
+              }
+            },
+            "height": {
+              "unit": "px",
+              "value": 400
+            }
+          }
+        ],
+        "column_on_sidebar": {
+          "sectionName": "Single column",
+          "subLayerName": "Column",
+          "subLayerIndex": 1
+        },
+        "layout_data": {
+          "layout": {
+            "direction": "vertical",
+            "align": "flex-start"
+          },
+          "background": {
+            "color": {
+              "code": "color_2",
+              "opacity": 100
+            }
+          }
+        },
+        "child_blocks_on_web_front": {
+          "section": 1,
+          "row": 1,
+          "column": 1,
+          "block": 2
+        },
+        "set_child_height": {
+          "height": {
+            "unit": "px",
+            "value": 500
+          }
+        },
+        "expected": {
+          "saved": "All changes are saved",
+          "snapshot_on_SF": "16_resize_child_blocks.png"
+        }
+      }
+    },
+    "SB_WEB_BUILDER_SECTION_SETTING_44": {
+      "description": "Check section, row, column với data default",
+      "data": {
+        "template_name": "WB 1 section empty",
+        "position_section": {
+          "from": {
+            "category": "Basics",
+            "template": "Single column"
+          },
+          "to": {
+            "position": {
+              "section": 1
+            },
+            "isBottom": false
+          }
+        },
+        "row_on_sidebar": {
+          "sectionName": "Single column",
+          "subLayerName": "Row",
+          "subLayerIndex": 1
+        },
+        "column_on_sidebar": {
+          "sectionName": "Single column",
+          "subLayerName": "Column",
+          "subLayerIndex": 1
+        },
+        "expected": {
+          "saved": "All changes are saved",
+          "section_preview": "44_data_default_section_preview.png",
+          "sidebar_section": "44_side_bar_section.png",
+          "row_preview": "44_data_default_row_preview.png",
+          "column_preview": "44_data_default_column_preview.png"
+        }
+      }
+    },
+    "SB_WEB_BUILDER_SECTION_SETTING_45": {
+      "description": "Section_Check setting data content + design của section",
+      "data": {
+        "template_name": "WB 1 section empty",
+        "add_section": {
+          "number": 2,
+          "column": {
+            "background": {
+              "color": {
+                "code": "#C9DA29",
+                "opacity": 50
+              }
+            },
+            "mode": "color"
+          }
+        },
+        "sections": [
+          {
+            "content": {
+              "name": "Section 1"
+            },
+            "design": {
+              "background": {
+                "color": {
+                  "code": "color_2",
+                  "opacity": 100
+                },
+                "mode": "color"
+              },
+              "border": {
+                "color": {
+                  "code": "color_3",
+                  "opacity": 100
+                },
+                "side": "all",
+                "size": 1,
+                "style": "solid",
+                "thickness": "small"
+              },
+              "full_width": true,
+              "margin": {
+                "bottom": 2,
+                "left": 0,
+                "right": 3,
+                "top": 40
+              },
+              "padding": {
+                "bottom": 12,
+                "left": 11,
+                "right": 5,
+                "top": 10
+              }
+            }
+          },
+          {
+            "content": {
+              "name": "Section 2"
+            },
+            "design": {
+              "background": {
+                "img": {
+                  "src": "https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/10/hinh-ve-cute-11-1.jpg.webp"
+                },
+                "mode": "image"
+              },
+              "border": {
+                "color": {
+                  "code": "#23DB1A",
+                  "opacity": 100
+                },
+                "side": "top",
+                "size": 4,
+                "style": "dashed",
+                "thickness": "medium"
+              },
+              "margin": {
+                "bottom": 2,
+                "left": 0,
+                "right": 3,
+                "top": 40
+              },
+              "padding": {
+                "bottom": 0,
+                "left": 10,
+                "right": 10,
+                "top": 0
+              }
+            }
+          },
+          {
+            "content": {
+              "name": "Section 3"
+            },
+            "design": {
+              "background": {
+                "mode": "video",
+                "video": {
+                  "fallback_image": "",
+                  "id": "hx01FdFIj_o",
+                  "overlay": {
+                    "code": "",
+                    "opacity": 40
+                  },
+                  "parallax": false,
+                  "platform": "youtube",
+                  "src": "https://www.youtube.com/watch?v=sNz3QU-lR54&t=19s",
+                  "thumbnail": "https://img.youtube.com/vi/hx01FdFIj_o/hqdefault.jpg"
+                }
+              },
+              "border": {
+                "color": {
+                  "code": "color_5",
+                  "opacity": 100
+                },
+                "side": "all",
+                "size": 10,
+                "style": "dashed",
+                "thickness": "custom"
+              },
+              "full_width": true,
+              "margin": {
+                "bottom": 0,
+                "left": 5,
+                "right": 0,
+                "top": 20
+              },
+              "padding": {
+                "bottom": 0,
+                "left": 10,
+                "right": 10,
+                "top": 0
+              }
+            }
+          }
+        ],
+        "section_on_sidebar": {
+          "sectionName": "Single column",
+          "sectionIndex": 1
+        },
+        "expected": {
+          "saved": "All changes are saved",
+          "snapshot_on_preview": "45_setting_data_section_preview.png",
+          "snapshot_on_SF": "45_setting_data_section_SF.png"
+        }
+      }
+    },
+    "SB_WEB_BUILDER_SECTION_SETTING_46": {
+      "description": "Row_Check setting data design của row",
+      "data": {
+        "template_name": "WB 1 section empty",
+        "add_row": {
+          "number": 3,
+          "layout": "two-column",
+          "column": {
+            "background": {
+              "color": {
+                "code": "#C9DA29",
+                "opacity": 50
+              },
+              "mode": "color"
+            }
+          }
+        },
+        "rows": [
+          {
+            "row": {
+              "sectionName": "Single column",
+              "subLayerName": "Row",
+              "subLayerIndex": 2
+            },
+            "background": {
+              "color": {
+                "code": "color_2",
+                "opacity": 100
+              },
+              "mode": "color"
+            },
+            "border": {
+              "color": {
+                "code": "color_3",
+                "opacity": 100
+              },
+              "side": "all",
+              "size": 1,
+              "style": "solid",
+              "thickness": "small"
+            },
+            "layouts": {
+              "gutter": 0
+            },
+            "margin": {
+              "bottom": 2,
+              "left": 0,
+              "right": 3,
+              "top": 40
+            },
+            "padding": {
+              "bottom": 12,
+              "left": 11,
+              "right": 5,
+              "top": 10
+            }
+          },
+          {
+            "row": {
+              "sectionName": "Single column",
+              "subLayerName": "Row",
+              "subLayerIndex": 3
+            },
+            "background": {
+              "img": {
+                "src": "https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/10/hinh-ve-cute-11-1.jpg.webp"
+              },
+              "mode": "image"
+            },
+            "border": {
+              "color": {
+                "code": "#0DFB2C",
+                "opacity": 100
+              },
+              "side": "top",
+              "size": 4,
+              "style": "dashed",
+              "thickness": "medium"
+            },
+            "layouts": {
+              "gutter": 5
+            },
+            "margin": {
+              "bottom": 2,
+              "left": 0,
+              "right": 3,
+              "top": 40
+            },
+            "padding": {
+              "bottom": 0,
+              "left": 10,
+              "right": 10,
+              "top": 0
+            }
+          },
+          {
+            "row": {
+              "sectionName": "Single column",
+              "subLayerName": "Row",
+              "subLayerIndex": 4
+            },
+            "background": {
+              "img": {
+                "overlay": {
+                  "code": "color_3",
+                  "opacity": 40
+                },
+                "position": "center center",
+                "repeat": "no-repeat",
+                "size": "cover",
+                "src": "https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/10/hinh-ve-cute-1.jpg.webp"
+              },
+              "mode": "image"
+            },
+            "border": {
+              "color": {
+                "code": "color_5",
+                "opacity": 100
+              },
+              "side": "all",
+              "size": 10,
+              "style": "dashed",
+              "thickness": "custom"
+            },
+            "layouts": {
+              "gutter": 32
+            },
+            "margin": {
+              "bottom": 0,
+              "left": 5,
+              "right": 0,
+              "top": 20
+            },
+            "padding": {
+              "bottom": 0,
+              "left": 10,
+              "right": 10,
+              "top": 0
+            }
+          }
+        ],
+        "row_on_sidebar": {
+          "sectionName": "Single column",
+          "subLayerName": "Row",
+          "subLayerIndex": 1
+        },
+        "expected": {
+          "saved": "All changes are saved",
+          "snapshot_on_preview": "46_setting_data_row_preview.png",
+          "snapshot_on_SF": "46_setting_data_row_SF.png"
+        }
+      }
+    },
+    "SB_WEB_BUILDER_SECTION_SETTING_47": {
+      "description": "Column_Check setting data design của Column",
+      "data": {
+        "template_name": "WB 1 section empty",
+        "columns": [
+          {
+            "column": {
+              "sectionName": "Single column",
+              "subLayerName": "Column",
+              "subLayerIndex": 1
+            },
+            "background": {
+              "color": {
+                "code": "color_2",
+                "opacity": 100
+              },
+              "mode": "color"
+            },
+            "border": {
+              "color": {
+                "code": "color_3",
+                "opacity": 100
+              },
+              "side": "all",
+              "size": 1,
+              "style": "solid",
+              "thickness": "small"
+            },
+            "padding": {
+              "bottom": 12,
+              "left": 11,
+              "right": 5,
+              "top": 10
+            }
+          },
+          {
+            "column": {
+              "sectionName": "Single column",
+              "subLayerName": "Column",
+              "subLayerIndex": 2
+            },
+            "background": {
+              "img": {
+                "src": "https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/10/hinh-ve-cute-11-1.jpg.webp"
+              },
+              "mode": "image"
+            },
+            "border": {
+              "color": {
+                "code": "#E51010",
+                "opacity": 100
+              },
+              "side": "top",
+              "size": 4,
+              "style": "dashed",
+              "thickness": "medium"
+            },
+            "padding": {
+              "bottom": 0,
+              "left": 10,
+              "right": 10,
+              "top": 100
+            }
+          },
+          {
+            "column": {
+              "sectionName": "Single column",
+              "subLayerName": "Column",
+              "subLayerIndex": 3
+            },
+            "background": {
+              "img": {
+                "overlay": {
+                  "code": "color_3",
+                  "opacity": 40
+                },
+                "position": "center center",
+                "repeat": "no-repeat",
+                "size": "cover",
+                "src": "https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/10/hinh-ve-cute-1.jpg.webp"
+              },
+              "mode": "image"
+            },
+            "border": {
+              "color": {
+                "code": "color_5",
+                "opacity": 100
+              },
+              "side": "all",
+              "size": 10,
+              "style": "dashed",
+              "thickness": "custom"
+            },
+            "padding": {
+              "bottom": 0,
+              "left": 10,
+              "right": 10,
+              "top": 0
+            }
+          },
+          {
+            "column": {
+              "sectionName": "Single column",
+              "subLayerName": "Column",
+              "subLayerIndex": 4
+            },
+            "background": {
+              "color": {
+                "code": "color_4",
+                "opacity": 87
+              },
+              "mode": "color"
+            },
+            "border": {
+              "color": {
+                "code": "",
+                "opacity": 100
+              },
+              "side": "all",
+              "size": 10,
+              "style": "dashed",
+              "thickness": "custom"
+            },
+            "padding": {
+              "bottom": 0,
+              "left": 0,
+              "right": 0,
+              "top": 0
+            }
+          }
+        ],
+        "column_on_sidebar": {
+          "sectionName": "Single column",
+          "subLayerName": "Column",
+          "subLayerIndex": 1
+        },
+        "expected": {
+          "saved": "All changes are saved",
+          "snapshot_on_preview": "47_setting_data_column_preview.png",
+          "snapshot_on_SF": "47_setting_data_column_SF.png"
+        }
+      }
+    }
+  }
+}

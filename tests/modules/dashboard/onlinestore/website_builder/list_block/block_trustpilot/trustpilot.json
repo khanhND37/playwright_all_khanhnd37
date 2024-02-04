@@ -1,0 +1,628 @@
+{
+  "env": {
+    "dev": {
+      "domain": "au-trust-pilot-dev.myshopbase.net",
+      "shop_name": "au-trust-pilot-dev",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10332264,
+      "user_id": 90252,
+      "theme_test": 3201329
+    },
+    "prodtest": {
+      "domain": "au-trust-pilot-prodtest.onshopbase.com",
+      "shop_name": "au-trust-pilot-prodtest",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10467842,
+      "user_id": 11260206,
+      "theme_test": 1535412
+    },
+    "prod": {
+      "domain": "au-trust-pilot-prod.onshopbase.com",
+      "shop_name": "au-trust-pilot-prod",
+      "api": "https://api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10467845,
+      "user_id": 11260206,
+      "theme_test": 1535506
+    }
+  },
+  "cases": {
+    "SB_WEB_BUILDER_LB_TP_02": {
+      "description": "Verify default data của block [Trustpilot]",
+      "data": {
+        "section_1": {
+          "dnd_block": {
+            "from": {
+              "category": "Basics",
+              "template": "Trustpilot"
+            },
+            "to": {
+              "position": {
+                "section": 1
+              },
+              "isBottom": false
+            }
+          }
+        }
+      },
+      "expect": {
+        "preview_desktop": "02-data-default-preview-desktop-block-trustpilot.png",
+        "preview_mobile": "02-data-default-preview-mobile-block-trustpilot.png"
+      }
+    },
+    "SB_WEB_BUILDER_LB_TP_03": {
+      "description": "Verify block [Trustpilot] có domain plan Free",
+      "data": {
+        "section_1": {
+          "dnd_blocks": [
+            {
+              "from": {
+                "category": "Basics",
+                "template": "Trustpilot"
+              },
+              "to": {
+                "position": {
+                  "section": 1
+                },
+                "isBottom": true
+              },
+              "trustpilot": {
+                "package": "free",
+                "domain": "shop-multi-sb-2023.onshopbase.com",
+                "type": ["Micro Review Count", "Review Collector"]
+              }
+            },
+            {
+              "from": {
+                "category": "Basics",
+                "template": "Trustpilot"
+              },
+              "to": {
+                "position": {
+                  "section": 1
+                },
+                "isBottom": true
+              },
+              "trustpilot": {
+                "package": "free",
+                "domain": "https://chuc-newecom.onshopbase.com",
+                "type": ["Micro Review Count", "Review Collector"],
+                "redirect": "https://www.trustpilot.com/review/chuc-newecom.onshopbase.com?utm_medium=trustbox&utm_source=MicroReviewCount"
+              }
+            },
+            {
+              "from": {
+                "category": "Basics",
+                "template": "Trustpilot"
+              },
+              "to": {
+                "position": {
+                  "section": 1
+                },
+                "isBottom": true
+              },
+              "trustpilot": {
+                "package": "free",
+                "domain": "shop-multi-sb-2023.onshopbase.com",
+                "select_type": "Review Collector",
+                "redirect": "https://www.trustpilot.com/review/shop-multi-sb-2023.onshopbase.com?utm_medium=trustbox&utm_source=TrustBoxReviewCollector"
+              }
+            }
+          ]
+        }
+      },
+      "expect": {
+        "preview": "03-preview-domain-free-block-trustpilot.png",
+        "sf": "03-sf-domain-free-block-trustpilot.png"
+      }
+    },
+    "SB_WEB_BUILDER_LB_TP_04": {
+      "description": "Verify block [Trustpilot] có domain plan Standard",
+      "data": {
+        "section_1": {
+          "dnd_blocks": {
+            "from": {
+              "category": "Basics",
+              "template": "Trustpilot"
+            },
+            "to": {
+              "position": {
+                "section": 1
+              },
+              "isBottom": false
+            },
+            "duplicate": 5,
+            "settings_block": [
+              {
+                "description": "Nhập domain > Chọn type = Micro Button",
+                "package": "standard",
+                "domain": "https://www.dugood.org/",
+                "select_type": "Micro Button",
+                "redirect": "https://www.trustpilot.com/review/www.dugood.org?utm_medium=trustbox&utm_source=MicroButton"
+              },
+              {
+                "description": "Nhập domain > Chọn type = Micro Review Count",
+                "package": "standard",
+                "domain": "sbgfunding.com",
+                "select_type": "Micro Review Count",
+                "redirect": "https://www.trustpilot.com/review/sbgfunding.com?utm_medium=trustbox&utm_source=MicroReviewCount"
+              },
+              {
+                "description": "Nhập domain > Chọn type = Micro Star",
+                "package": "standard",
+                "domain": "https://www.dugood.org/",
+                "select_type": "Micro Star",
+                "redirect": "https://www.trustpilot.com/review/www.dugood.org?utm_medium=trustbox&utm_source=MicroStar"
+              },
+              {
+                "description": "Nhập domain > Chọn type = Micro TrustScore",
+                "package": "standard",
+                "domain": "https://www.dugood.org/",
+                "select_type": "Micro TrustScore",
+                "redirect": "https://www.trustpilot.com/review/www.dugood.org?utm_medium=trustbox&utm_source=MicroTrustScore"
+              },
+              {
+                "description": "Nhập domain > Chọn type = Review Collector",
+                "package": "standard",
+                "domain": "https://www.dugood.org/",
+                "select_type": "Review Collector",
+                "redirect": "https://www.trustpilot.com/review/www.dugood.org?utm_medium=trustbox&utm_source=TrustBoxReviewCollector"
+              },
+              {
+                "description": "Nhập domain > Chọn type = Default - Micro Combo",
+                "package": "standard",
+                "domain": "https://www.dugood.org/",
+                "type": [
+                  "Micro Button",
+                  "Micro Combo",
+                  "Micro Review Count",
+                  "Micro Star",
+                  "Micro TrustScore",
+                  "Review Collector"
+                ],
+                "redirect": "https://www.trustpilot.com/review/www.dugood.org?utm_medium=trustbox&utm_source=MicroCombo"
+              }
+            ]
+          }
+        }
+      },
+      "expect": {
+        "preview": "04-preview-domain-standard-block-trustpilot.png",
+        "sf": "04-sf-domain-standard-block-trustpilot.png"
+      }
+    },
+    "SB_WEB_BUILDER_LB_TP_05": {
+      "description": "Verify không show block [Trustpilot] với domain không hợp lệ",
+      "data": {
+        "section_1": {
+          "dnd_blocks": [
+            {
+              "from": {
+                "category": "Basics",
+                "template": "Trustpilot"
+              },
+              "to": {
+                "position": {
+                  "section": 1
+                },
+                "isBottom": false
+              },
+              "trustpilot": {
+                "domain": "ahihi.com",
+                "message": "No Trustpilot account was found."
+              }
+            },
+            {
+              "from": {
+                "category": "Basics",
+                "template": "Trustpilot"
+              },
+              "to": {
+                "position": {
+                  "section": 1
+                },
+                "isBottom": false
+              },
+              "trustpilot": {
+                "domain": "vw.trendie.c",
+                "message": "Invalid domain"
+              }
+            }
+          ]
+        }
+      },
+      "expect": {}
+    },
+    "SB_WEB_BUILDER_LB_TP_06": {
+      "description": "Verify show block [Trustpilot] khi thay đổi data + resize block",
+      "data": {
+        "section_1": {
+          "dnd_block": {
+            "from": {
+              "category": "Basics",
+              "template": "Trustpilot"
+            },
+            "to": {
+              "position": {
+                "section": 1
+              }
+            }
+          }
+        },
+        "domain": "vetpetni.co.uk",
+        "resize": {
+          "resize_less_than_row": -200,
+          "resize_more_than_row": 900,
+          "resize_min": -1120,
+          "left": "left",
+          "right": "right",
+          "top": "top",
+          "bottom": "bottom",
+          "top_left": "top-left",
+          "top_right": "top-right",
+          "bottom_left": "bottom-left",
+          "bottom_right": "bottom-right"
+        },
+        "styles": [
+          {
+            "align": {
+              "label": "align_self",
+              "type": "Right"
+            },
+            "width": {
+              "label": "width",
+              "value": {
+                "unit": "%",
+                "value": 50
+              }
+            },
+            "background": {
+              "label": "background",
+              "value": {
+                "image": {
+                  "url": "data/shopbase/front/background.jpg"
+                }
+              }
+            },
+            "border": {
+              "label": "border",
+              "value": {
+                "thickness": "s",
+                "color": {
+                  "preset": 3
+                }
+              }
+            },
+            "radius": {
+              "label": "border_radius",
+              "config": {
+                "fill": true,
+                "number": 13
+              }
+            },
+            "shadow": {
+              "label": "box_shadow",
+              "config": {
+                "option": "soft",
+                "size": "S",
+                "direction": "Top Left"
+              }
+            },
+            "padding": {
+              "label": "padding",
+              "value": {
+                "top": 5,
+                "left": 5,
+                "bottom": 5,
+                "right": 5,
+                "input": true
+              }
+            },
+            "margin": {
+              "label": "margin",
+              "value": {
+                "top": 20,
+                "left": 40,
+                "bottom": 0,
+                "right": 30,
+                "input": true
+              }
+            }
+          },
+          {
+            "align": {
+              "label": "align_self",
+              "type": "Center"
+            },
+            "width": {
+              "label": "width",
+              "value": {
+                "unit": "Fill"
+              }
+            },
+            "background": {
+              "label": "background",
+              "value": {
+                "color": {
+                  "preset": 1
+                }
+              }
+            },
+            "border": {
+              "label": "border",
+              "value": {
+                "thickness": "l",
+                "color": {
+                  "preset": 2
+                }
+              }
+            },
+            "radius": {
+              "label": "border_radius",
+              "config": {
+                "fill": true,
+                "number": 0
+              }
+            },
+            "shadow": {
+              "label": "box_shadow",
+              "config": {
+                "option": "hard",
+                "size": "L",
+                "direction": "Bottom Left"
+              }
+            },
+            "padding": {
+              "label": "padding",
+              "value": {
+                "top": 0,
+                "left": 0,
+                "bottom": 0,
+                "right": 0,
+                "input": true
+              }
+            },
+            "margin": {
+              "label": "margin",
+              "value": {
+                "top": 20,
+                "left": 40,
+                "bottom": 0,
+                "right": 30,
+                "input": true
+              }
+            }
+          },
+          {
+            "align": {
+              "label": "align_self",
+              "type": "Center"
+            },
+            "width": {
+              "label": "width",
+              "value": {
+                "unit": "px",
+                "value": 3000
+              }
+            },
+            "background": {
+              "label": "background",
+              "value": {
+                "color": {
+                  "preset": 2
+                }
+              }
+            },
+            "radius": {
+              "label": "border_radius",
+              "config": {
+                "fill": true,
+                "number": 0
+              }
+            },
+            "shadow": {
+              "label": "box_shadow",
+              "config": {
+                "option": "none",
+                "size": "",
+                "direction": ""
+              }
+            },
+            "padding": {
+              "label": "padding",
+              "value": {
+                "top": 0,
+                "left": 0,
+                "bottom": 0,
+                "right": 0,
+                "input": true
+              }
+            },
+            "margin": {
+              "label": "margin",
+              "value": {
+                "top": 0,
+                "left": 0,
+                "bottom": 0,
+                "right": 0,
+                "input": true
+              }
+            }
+          },
+          {
+            "align": {
+              "label": "align_self",
+              "type": "Left"
+            },
+            "width": {
+              "label": "width",
+              "value": {
+                "unit": "px",
+                "value": 300
+              }
+            },
+            "background": {
+              "label": "background",
+              "value": {
+                "color": {
+                  "preset": 3,
+                  "opacity": 50
+                },
+                "image": {
+                  "url": "data/shopbase/front/background.jpg",
+                  "size": "Cover",
+                  "position": 5,
+                  "overlay": {
+                    "preset": 3
+                  },
+                  "repeat": false
+                }
+              }
+            },
+            "border": {
+              "label": "border",
+              "value": {
+                "thickness": "m",
+                "color": {
+                  "preset": 5
+                }
+              }
+            },
+            "radius": {
+              "label": "border_radius",
+              "config": {
+                "fill": true,
+                "number": 20
+              }
+            },
+            "shadow": {
+              "label": "box_shadow",
+              "config": {
+                "option": "hard",
+                "size": "M",
+                "direction": "Top Right"
+              }
+            },
+            "padding": {
+              "label": "padding",
+              "value": {
+                "top": 20,
+                "left": 40,
+                "bottom": 0,
+                "right": 30,
+                "input": true
+              }
+            },
+            "margin": {
+              "label": "margin",
+              "value": {
+                "top": 5,
+                "left": 5,
+                "bottom": 5,
+                "right": 5,
+                "input": true
+              }
+            }
+          }
+        ]
+      },
+      "expect": {
+        "block_max_width": 1120,
+        "block_min_width": 20
+      }
+    },
+    "SB_WEB_BUILDER_LB_TP_07": {
+      "description": "Check show quickbar settings ở block [Trustpilot]",
+      "data": {
+        "section_1": {
+          "dnd_blocks": [
+            {
+              "from": {
+                "category": "Basics",
+                "template": "Trustpilot"
+              },
+              "to": {
+                "position": {
+                  "section": 1
+                },
+                "isBottom": true
+              },
+              "trustpilot": {
+                "package": "standard",
+                "domain": "vetpetni.co.uk",
+                "select_type": "Micro Button"
+              }
+            },
+            {
+              "from": {
+                "category": "Basics",
+                "template": "Trustpilot"
+              },
+              "to": {
+                "position": {
+                  "section": 1
+                },
+                "isBottom": true
+              },
+              "trustpilot": {
+                "package": "standard",
+                "domain": "https://chuc-newecom.onshopbase.com",
+                "select_type": "Micro Review Count"
+              }
+            },
+            {
+              "from": {
+                "category": "Basics",
+                "template": "Trustpilot"
+              },
+              "to": {
+                "position": {
+                  "section": 1
+                },
+                "isBottom": true
+              },
+              "trustpilot": {
+                "package": "standard",
+                "domain": "vetpetni.co.uk",
+                "select_type": "Micro Review Count"
+              }
+            }
+          ]
+        }
+      },
+      "expect": {
+        "preview": "07-preview-quickbar-setting-block-trustpilot.png",
+        "sf": "07-sf-quickbar-setting-block-trustpilot.png"
+      }
+    },
+    "SB_WEB_BUILDER_LB_TP_08": {
+      "description": "Verify xóa block trust pilot thành công",
+      "data": {
+        "section_1": {
+          "dnd_block": {
+            "from": {
+              "category": "Basics",
+              "template": "Trustpilot"
+            },
+            "to": {
+              "position": {
+                "section": 1
+              },
+              "isBottom": false
+            },
+            "domain": "vetpetni.co.uk"
+          }
+        }
+      },
+      "expect": {
+        "preview": "07-preview-quickbar-setting-block-trustpilot.png",
+        "sf": "07-sf-quickbar-setting-block-trustpilot.png"
+      }
+    }
+  }
+}

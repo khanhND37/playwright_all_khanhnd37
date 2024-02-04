@@ -1,0 +1,164 @@
+{
+  "platform": "plusbase",
+  "acc_dashboard_payment": {
+    "stripe": {
+      "stripe_secret_key": "sk_test_Pfv1RbMLdJwdO7o8FOV4d03600K0JL3zbx",
+      "stripe_platform_secret_key": "sk_test_51H1pMbHI2q8TlN76Kybx8YAFcfn9zLu6Ssc097RYoC16IqcVv8OrA0h9DCCPAkhct3ic7RF2n2J407ZvBeYB5P8t00w9v2ImaM"
+    }
+  },
+  "card_info": {
+    "number": "4242424242424242",
+    "holder_name": "Shopbase",
+    "expire_date": "12 / 30",
+    "cvv": "116",
+    "sepa_card": "NL39 RABO 0300 0652 64"
+  },
+  "number_retry": 10,
+  "env": {
+    "dev": {},
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-update-checkout-plbase.onshopbase.com",
+      "shop_name": "au-update-checkout-plbase",
+      "user_id": 11247306,
+      "shop_id": 10444610,
+      "username": "opay-qe-1@beeketing.net",
+      "password": "CZFX[b_G5T:+N*Y"
+    }
+  },
+  "cases": {
+    "DATA_DRIVEN_CHECKOUT_EMBEDDED": {
+      "data": [
+        {
+          "case_id": "SB_CHE_UP_64",
+          "case_name": "[Plbase - Embedded] Change data: markup shipping fee, auto discount percentage trước khi create order qua cổng Credit card",
+          "payment_method": "card",
+          "email": "tester@maildrop.cc",
+          "shipping_address": {
+            "address1": "814 Mission Street",
+            "address2": "",
+            "city": "New York",
+            "company": "",
+            "country": "United States",
+            "country_code": "US",
+            "country_name": "United States",
+            "cpf_or_cnpj_number": "",
+            "first_name": "Tester",
+            "last_name": "ShopBase",
+            "name": "Jena",
+            "phone": "7036618988",
+            "province": "New York",
+            "province_code": "NY",
+            "zip": "10001",
+            "remember_me": false
+          },
+          "products": [
+            {
+              "id": 1000000479218192,
+              "title": "(Test product) Auto-cpay2",
+              "variant_id": 1000010755387331,
+              "quantity": 1
+            }
+          ],
+          "data_setting": {
+            "discount": {
+              "is_update": true,
+              "title": "SB_CHE_UP_embedded_discount",
+              "value": -10,
+              "type": "manual",
+              "update_fields": ["value"]
+            },
+            "markup_shipping": {
+              "name": "United States",
+              "item_based_shipping_rate": [
+                {
+                  "name": "Standard Shipping",
+                  "first_item_price": 2,
+                  "additional_item_price": 6,
+                  "update_fields": ["first_item_price", "additional_item_price"]
+                }
+              ],
+              "update_fields": ["item_based_shipping_rate"]
+            }
+          },
+          "data_reset_setting": {
+            "discount": {
+              "is_update": true,
+              "title": "SB_CHE_UP_embedded_discount",
+              "value": -5,
+              "type": "manual",
+              "update_fields": ["value"]
+            },
+            "markup_shipping": {
+              "name": "United States",
+              "item_based_shipping_rate": [
+                {
+                  "name": "Standard Shipping",
+                  "first_item_price": 6,
+                  "additional_item_price": 5,
+                  "update_fields": ["first_item_price", "additional_item_price"]
+                }
+              ],
+              "update_fields": ["item_based_shipping_rate"]
+            }
+          }
+        },
+        {
+          "case_id": "SB_CHE_UP_65",
+          "case_name": "[Plbase - Embedded] Change data: tipping, manual discount buy x get y trước khi create order qua cổng SEPA",
+          "payment_method": "SEPA Direct Debit",
+          "email": "tester@maildrop.cc",
+          "shipping_address": {
+            "address1": "814 Mission Street",
+            "address2": "",
+            "city": "Houston",
+            "company": "",
+            "country": "Germany",
+            "country_code": "DE",
+            "country_name": "Germany",
+            "first_name": "Tester",
+            "last_name": "ShopBase",
+            "name": "Jena",
+            "phone": "7036618988",
+            "province": "",
+            "province_code": "",
+            "zip": "77027",
+            "remember_me": false
+          },
+          "products": [
+            {
+              "id": 1000000479218192,
+              "title": "(Test product) Auto-cpay2",
+              "variant_id": 1000010755387331,
+              "quantity": 1
+            },
+            {
+              "id": 1000000479218221,
+              "title": "(Test product) Auto-cpay1",
+              "variant_id": 1000010755388865,
+              "quantity": 1
+            }
+          ],
+          "data_setting": {
+            "discount": {
+              "is_update": true,
+              "title": "SB_CHE_UP_embedded_buy_x_get_y",
+              "value": -20,
+              "type": "manual",
+              "update_fields": ["value"]
+            }
+          },
+          "data_reset_setting": {
+            "discount": {
+              "is_update": true,
+              "title": "SB_CHE_UP_embedded_buy_x_get_y",
+              "value": -10,
+              "type": "manual",
+              "update_fields": ["value"]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

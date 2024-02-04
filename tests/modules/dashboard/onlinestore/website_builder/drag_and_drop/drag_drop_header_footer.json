@@ -1,0 +1,521 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-drag-drop-header-footer-dev.myshopbase.net",
+      "shop_name": "au-drag-drop-header-footer-dev",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "user_id": 90252,
+      "shop_id": 10333832,
+      "lib_id": 19057
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-drag-drop-header-footer-prodtest.onshopbase.com",
+      "shop_name": "au-drag-drop-header-footer-prodtest",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "user_id": 11260206,
+      "shop_id": 10480288,
+      "lib_id": 31160
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-drag-drop-header-footer.onshopbase.com",
+      "shop_name": "au-drag-drop-header-footer",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "user_id": 11260206,
+      "shop_id": 10480296,
+      "lib_id": 31161
+    }
+  },
+  "cases": {
+    "SB_WEB_BUILDER_DnD_11": {
+      "description": "Section_Check di chuyển các section trên Layer giữa Header/Body/Footer",
+      "data": {
+        "template_name": "WB 6 section",
+        "dnd": [
+          {
+            "description": "Drag section body vào header",
+            "from": {
+              "sectionName": "Section 3"
+            },
+            "to": {
+              "sectionName": "Section 1"
+            },
+            "expect": {
+              "sections_area": ["Section 3", "Section 1", "Section 2"],
+              "color": "rgb(4, 180, 133)",
+              "toast": "Section moved to header. It will now be visible on all pages in this store"
+            }
+          },
+          {
+            "description": "Drag section header với section header",
+            "from": {
+              "sectionName": "Section 1"
+            },
+            "to": {
+              "sectionName": "Section 3"
+            },
+            "expect": {
+              "sections_area": ["Section 3", "Section 1", "Section 2"],
+              "color": "rgb(4, 180, 133)"
+            }
+          },
+          {
+            "description": "Drag section header vào body",
+            "from": {
+              "sectionName": "Section 1"
+            },
+            "to": {
+              "sectionName": "Section 4"
+            },
+            "expect": {
+              "sections_area": ["Section 1", "Section 4"],
+              "color": "rgb(94, 106, 110)"
+            }
+          },
+          {
+            "description": "Drag section body vào footer",
+            "from": {
+              "sectionName": "Section 4"
+            },
+            "to": {
+              "sectionName": "Section 5"
+            },
+            "expect": {
+              "sections_area": ["Section 4", "Section 5", "Section 6"],
+              "color": "rgb(4, 180, 133)",
+              "toast": "Section moved to footer. It will now be visible on all pages in this store"
+            }
+          },
+          {
+            "description": "Drag section footer với section footer",
+            "from": {
+              "sectionName": "Section 6"
+            },
+            "to": {
+              "sectionName": "Section 4"
+            },
+            "expect": {
+              "sections_area": ["Section 4", "Section 5", "Section 6"],
+              "color": "rgb(4, 180, 133)"
+            }
+          },
+          {
+            "description": "Drag section header vào section footer",
+            "from": {
+              "sectionName": "Section 2"
+            },
+            "to": {
+              "sectionName": "Section 4"
+            },
+            "expect": {
+              "sections_area": ["Section 2", "Section 4", "Section 5", "Section 6"],
+              "color": "rgb(4, 180, 133)"
+            }
+          },
+          {
+            "description": "Drag section footer vào section header",
+            "from": {
+              "sectionName": "Section 2"
+            },
+            "to": {
+              "sectionName": "Section 3"
+            },
+            "expect": {
+              "sections_area": ["Section 2", "Section 3"],
+              "color": "rgb(4, 180, 133)"
+            }
+          }
+        ],
+        "webfront": [
+          {
+            "sections": ["Section 2", "Section 3", "Section 4", "Section 5", "Section 6"],
+            "color": "rgb(4, 180, 133)"
+          },
+          {
+            "body": true,
+            "sections": ["Section 1"],
+            "color": "rgb(0, 150, 237)"
+          }
+        ]
+      }
+    },
+    "SB_WEB_BUILDER_DnD_12": {
+      "description": "Section_Kéo section từ bảng Insert panel vào WB + xóa section ở header/footer",
+      "data": {
+        "template_name": "WB 3 section",
+        "dnd": [
+          {
+            "description": "Drag & drop section vào vùng footer",
+            "position_section": {
+              "from": {
+                "category": "Basics",
+                "template": "Single column"
+              },
+              "to": {
+                "position": {
+                  "section": 3
+                },
+                "isBottom": false
+              }
+            },
+            "expect": {
+              "color": "rgb(4, 180, 133)",
+              "toast": "Section moved to footer. It will now be visible on all pages in this store"
+            },
+            "delete": {
+              "toast": false
+            }
+          },
+          {
+            "description": "Drag & drop section vào vùng body",
+            "position_section": {
+              "from": {
+                "category": "Basics",
+                "template": "Single column"
+              },
+              "to": {
+                "position": {
+                  "section": 2
+                },
+                "isBottom": false
+              }
+            },
+            "expect": {
+              "body": true,
+              "color": "rgb(0, 150, 237)"
+            },
+            "delete": {
+              "toast": false
+            }
+          },
+          {
+            "description": "Drag & drop section vào vùng header",
+            "position_section": {
+              "from": {
+                "category": "Basics",
+                "template": "Single column"
+              },
+              "to": {
+                "position": {
+                  "section": 1
+                },
+                "isBottom": true
+              }
+            },
+            "expect": {
+              "color": "rgb(4, 180, 133)",
+              "toast": "Section moved to header. It will now be visible on all pages in this store"
+            },
+            "delete": {
+              "toast": false
+            }
+          }
+        ]
+      }
+    },
+    "SB_WEB_BUILDER_DnD_13": {
+      "decription": "Add section ở viền top/bottom section trên webfront",
+      "data": {
+        "template_name": "WB 3 section",
+        "dnd": [
+          {
+            "description": "Click Icon + Add section ở top ở vùng header",
+            "sectionName": "Section 1",
+            "top": true,
+            "expect": {
+              "color": "rgb(4, 180, 133)",
+              "toast": "Section moved to header. It will now be visible on all pages in this store"
+            }
+          },
+          {
+            "description": "Click Icon + Add section ở bottom ở vùng header",
+            "sectionName": "Section 1",
+            "expect": {
+              "color": "rgb(4, 180, 133)",
+              "toast": "Section moved to header. It will now be visible on all pages in this store"
+            }
+          },
+          {
+            "description": "Click Icon + Add section ở top ở vùng body",
+            "sectionName": "Section 2",
+            "top": true,
+            "expect": {
+              "body": true,
+              "color": "rgb(0, 150, 237)"
+            }
+          },
+          {
+            "description": "Click Icon + Add section ở bottom ở vùng body",
+            "sectionName": "Section 2",
+            "expect": {
+              "body": true,
+              "color": "rgb(0, 150, 237)"
+            }
+          },
+          {
+            "description": "Click Icon + Add section ở top ở vùng footer",
+            "sectionName": "Section 3",
+            "top": true,
+            "expect": {
+              "color": "rgb(4, 180, 133)",
+              "toast": "Section moved to footer. It will now be visible on all pages in this store"
+            }
+          },
+          {
+            "description": "Click Icon + Add section ở top ở vùng footer",
+            "sectionName": "Section 3",
+            "expect": {
+              "color": "rgb(4, 180, 133)",
+              "toast": "Section moved to footer. It will now be visible on all pages in this store"
+            }
+          }
+        ]
+      }
+    },
+    "SB_WEB_BUILDER_DnD_15": {
+      "description": "Block_Kéo block từ bảng Insert panel vào WB + xóa block ở header/footer",
+      "data": {
+        "template_name": "WB section contains 1 block",
+        "dnd": [
+          {
+            "description": "Drag & drop block vào vùng header",
+            "position_block": {
+              "from": {
+                "category": "Basics",
+                "template": "Heading"
+              },
+              "to": {
+                "position": {
+                  "section": 1
+                },
+                "isBottom": false
+              }
+            },
+            "expect": {
+              "color": "rgb(4, 180, 133)",
+              "toast": "Block moved to header. It will now be visible on all pages in this store"
+            },
+            "delete": {
+              "toast": false
+            }
+          },
+          {
+            "description": "Drag & drop block vào vùng body",
+            "position_block": {
+              "from": {
+                "category": "Basics",
+                "template": "Heading"
+              },
+              "to": {
+                "position": {
+                  "section": 2
+                },
+                "isBottom": true
+              }
+            },
+            "expect": {
+              "body": true,
+              "color": "rgb(0, 150, 237)"
+            },
+            "delete": {
+              "toast": false
+            }
+          },
+          {
+            "description": "Drag & drop block vào vùng footer",
+            "position_block": {
+              "from": {
+                "category": "Basics",
+                "template": "Heading"
+              },
+              "to": {
+                "position": {
+                  "section": 3
+                },
+                "isBottom": false
+              }
+            },
+            "expect": {
+              "color": "rgb(4, 180, 133)",
+              "toast": "Block moved to footer. It will now be visible on all pages in this store"
+            },
+            "delete": {
+              "toast": false
+            }
+          }
+        ]
+      }
+    },
+    "SB_WEB_BUILDER_DnD_16": {
+      "description": "Block_Dịch chuyển block trên webfront",
+      "data": {
+        "template_name": "WB section contains 1 block",
+        "dnd": [
+          {
+            "description": "Drag & drop block footer vào vùng header",
+            "position_block": {
+              "from": {
+                "position": {
+                  "section": 3,
+                  "row": 1,
+                  "column": 1,
+                  "block": 1
+                }
+              },
+              "to": {
+                "position": {
+                  "section": 1,
+                  "row": 1,
+                  "column": 1
+                }
+              }
+            },
+            "expect": {
+              "color": "rgb(4, 180, 133)",
+              "toast": false
+            }
+          },
+          {
+            "description": "Drag & drop block header vào vùng body",
+            "position_block": {
+              "from": {
+                "position": {
+                  "section": 1,
+                  "row": 1,
+                  "column": 1,
+                  "block": 2
+                }
+              },
+              "to": {
+                "position": {
+                  "section": 2,
+                  "row": 1,
+                  "column": 1
+                }
+              }
+            },
+            "expect": {
+              "body": true,
+              "color": "rgb(0, 150, 237)"
+            }
+          }
+        ]
+      }
+    },
+    "SB_WEB_BUILDER_DnD_17": {
+      "decription": "Add row ở viền top/bottom row trên webfront",
+      "data": {
+        "template_name": "WB 3 section",
+        "dnd": [
+          {
+            "description": "Click Icon + Add row ở bottom ở vùng header",
+            "sectionName": "Section 1",
+            "expect": {
+              "color": "rgb(4, 180, 133)"
+            }
+          },
+          {
+            "description": "Click Icon + Add row ở top ở vùng header",
+            "sectionName": "Section 1",
+            "top": true,
+            "expect": {
+              "color": "rgb(4, 180, 133)"
+            }
+          },
+          {
+            "description": "Click Icon + Add row ở bottom ở vùng body",
+            "sectionName": "Section 2",
+            "expect": {
+              "body": true,
+              "color": "rgb(0, 150, 237)"
+            }
+          },
+          {
+            "description": "Click Icon + Add row ở top ở vùng body",
+            "sectionName": "Section 2",
+            "top": true,
+            "expect": {
+              "body": true,
+              "color": "rgb(0, 150, 237)"
+            }
+          },
+          {
+            "description": "Click Icon + Add row ở top ở vùng footer",
+            "sectionName": "Section 3",
+            "expect": {
+              "color": "rgb(4, 180, 133)"
+            }
+          },
+          {
+            "description": "Click Icon + Add row ở top ở vùng footer",
+            "sectionName": "Section 3",
+            "top": true,
+            "expect": {
+              "color": "rgb(4, 180, 133)"
+            }
+          }
+        ]
+      }
+    },
+    "SB_WEB_BUILDER_DnD_18": {
+      "decription": "Add column ở viền left/right column trên webfront",
+      "data": {
+        "template_name": "WB 3 section",
+        "dnd": [
+          {
+            "description": "Click Icon + Add column ở right ở vùng header",
+            "sectionName": "Section 1",
+            "expect": {
+              "color": "rgb(4, 180, 133)"
+            }
+          },
+          {
+            "description": "Click Icon + Add column ở left ở vùng header",
+            "sectionName": "Section 1",
+            "left": true,
+            "expect": {
+              "color": "rgb(4, 180, 133)"
+            }
+          },
+          {
+            "description": "Click Icon + Add column ở right ở vùng body",
+            "sectionName": "Section 2",
+            "expect": {
+              "body": true,
+              "color": "rgb(0, 150, 237)"
+            }
+          },
+          {
+            "description": "Click Icon + Add column ở left ở vùng body",
+            "sectionName": "Section 2",
+            "left": true,
+            "expect": {
+              "body": true,
+              "color": "rgb(0, 150, 237)"
+            }
+          },
+          {
+            "description": "Click Icon + Add column ở right ở vùng footer",
+            "sectionName": "Section 3",
+            "expect": {
+              "color": "rgb(4, 180, 133)"
+            }
+          },
+          {
+            "description": "Click Icon + Add column ở left ở vùng footer",
+            "sectionName": "Section 3",
+            "left": true,
+            "expect": {
+              "color": "rgb(4, 180, 133)"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "accounts_domain": "accounts.dev.shopbase.net",
+      "domain": "au-translation-entity-pod-description-dev.myshopbase.net",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "43AhIn|VWp;[?9&",
+      "shop_name": "au-translation-entity-pod-description-dev",
+      "user_id": 89797,
+      "shop_id": 10333753,
+      "default_language": "English",
+      "publish_language": "German",
+      "unpublish_language": "French",
+      "precondition_data": [
+        {
+          "pod_name": "AOP Beach Shorts",
+          "description": "Beach shorts description"
+        },
+        {
+          "pod_name": "AOP Long Pants",
+          "description": "Long Pants description"
+        }
+      ]
+    },
+    "local": {
+      "api": "https://prod-test-api.shopbase.com",
+      "accounts_domain": "accounts-test.shopbase.com",
+      "domain": "au-entity-pod-description-prodtest.onshopbase.com",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "shop_name": "au-entity-pod-description-prodtest",
+      "user_id": 11244582,
+      "shop_id": 10483669,
+      "default_language": "English",
+      "publish_language": "German",
+      "unpublish_language": "French",
+      "precondition_data": [
+        {
+          "pod_name": "AOP Beach Shorts",
+          "description": "Beach shorts description"
+        },
+        {
+          "pod_name": "AOP Long Pants",
+          "description": "Long Pants description"
+        }
+      ]
+    },
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "accounts_domain": "accounts.shopbase.com",
+      "domain": "au-translation-entity-pod-description-prod.onshopbase.com",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "shop_name": "au-translation-entity-pod-description-prod",
+      "user_id": 11244582,
+      "shop_id": 10483668,
+      "default_language": "English",
+      "publish_language": "German",
+      "unpublish_language": "French",
+      "precondition_data": [
+        {
+          "pod_name": "AOP Beach Shorts",
+          "description": "Beach shorts description"
+        },
+        {
+          "pod_name": "AOP Long Pants",
+          "description": "Long Pants description"
+        }
+      ]
+    }
+  },
+  "cases": {
+    "SB_SET_TL_69": {
+      "case_description": "[DB - UI/UX] Kiểm tra màn translate detail của store data - Online store - POD description template",
+      "invalid_value": "fake_pod",
+      "valid_value": "AOP",
+      "more_characters": "Lorem ipsum dolor sit amet consectetur adipiscing elit vehicula, venenatis natoque urna dui mi et.",
+      "language": "German",
+      "pod": "AOP Beach Shorts"
+    },
+    "SB_SET_TL_81": {
+      "case_description": "[DB+SF - Function] Kiểm tra tính năng auto translate khi Enable Auto translate Online store - POD description template",
+      "language": "Vietnamese",
+      "language_global_switcher": { "language": "VI" },
+      "data_edit": {
+        "pod_name": "Leggings",
+        "description": "Thêm vào đây !@@#$, 在这里添加另一种语言的文本",
+        "handle": "product-base-on-leggings"
+      },
+      "edit_dashboard_translation": "edit dashboard description",
+      "pod": "Leggings"
+    },
+    "SB_SET_TL_80": {
+      "case_description": "[DB+SF - Function] Kiểm tra tính năng auto translate khi Disable Auto translate Online store - POD description template",
+      "language": "German",
+      "language_global_switcher": { "language": "DE" },
+      "data_edit": {
+        "pod_name": "Leggings",
+        "description": "Thêm vào đây !@@#$, 在这里添加另一种语言的文本",
+        "handle": "product-base-on-leggings"
+      },
+      "edit_dashboard_translation": "edit dashboard description",
+      "pod": "Leggings"
+    }
+  }
+}

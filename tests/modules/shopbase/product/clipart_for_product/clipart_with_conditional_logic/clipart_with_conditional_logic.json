@@ -1,0 +1,375 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-add-product-with-group-clipart-prod.onshopbase.com",
+      "shop_name": "au-add-product-with-group-clipart-prod",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10406862,
+      "user_id": 73782,
+      "timeout": 900000
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-add-product-with-group-clipart-prodtest.onshopbase.com",
+      "shop_name": "au-add-product-with-group-clipart-prodtest",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10406871,
+      "user_id": 73782,
+      "timeout": 900000,
+      "accounts_domain": "accounts-test.shopbase.com",
+      "cases": {
+        "DATA_DRIVEN": {
+          "data": [
+            {
+              "description": "Check khi add new product với folder clipart khi  khi thêm conditional logic với các CO khác tại màn Product detail",
+              "case_id": "SB_PRO_SBP_ICFP_7",
+              "clipart_folder_info": [
+                {
+                  "folder_name": "folder 7",
+                  "group_name": "Group clipart folder",
+                  "images": ["BD_11.png", "BD_12.png"]
+                }
+              ],
+              "product_info": {
+                "title": "Product folder clipart khi khi thêm conditional logic",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "100",
+                "compare_at_price": "200"
+              },
+              "custom_option_info": [
+                {
+                  "custom_name": "Picture choice",
+                  "default_name": "Custom Option 1",
+                  "label": "Picture choice",
+                  "type": "Picture choice",
+                  "type_clipart": "Folder",
+                  "values": "folder 7",
+                  "index": 1,
+                  "type_display_clipart": "Show with Thumbnail images",
+                  "add_another_option": "yes"
+                },
+                {
+                  "type": "Text area",
+                  "custom_name": "Text area",
+                  "label": "Text area",
+                  "default_name": "Custom Option 2",
+                  "index": 2,
+                  "position": 1,
+                  "allow_following": "Characters,Numbers,Special Characters"
+                }
+              ],
+              "conditional_logic_info": {
+                "field": "Value",
+                "custom_name": "Picture choice",
+                "condition": ["is equal to>BD_11"],
+                "then_show_value": ["Text area"]
+              },
+              "custom_option_SF": [
+                {
+                  "type": "Picture choice",
+                  "custom_name": "Picture choice",
+                  "value": "BD_12"
+                },
+                {
+                  "type": "Picture choice",
+                  "custom_name": "Picture choice",
+                  "value": "BD_11"
+                },
+                {
+                  "type": "Text area",
+                  "custom_name": "Text area",
+                  "value": "Text sample"
+                }
+              ],
+              "picture": {
+                "custom_option_SF": "clipart-folder-sf-1-SB-PRO-SBP-ICFP-7-prod-test.png",
+                "product_info_in_cart": "product-image-in-cart-SB-PRO-SBP-ICFP-7-prod-test.png",
+                "custom_option_detail": "custom-option-detail-SB-PRO-SBP-ICFP-7-prod-test.png",
+                "conditional_logic_detail": "conditional-logic-detail-SB-PRO-SBP-ICFP-7-prod-test.png"
+              }
+            },
+            {
+              "description": "Check khi add new product với group clipart khi khi thêm conditional logic với các CO khác tại màn Product detaill",
+              "case_id": "SB_PRO_SBP_ICFP_8",
+              "clipart_folder_info": [
+                {
+                  "folder_name": "folder 8",
+                  "group_name": "Group thumbnail 78",
+                  "images": ["BD_11.png", "BD_12.png"]
+                },
+                {
+                  "folder_name": "folder 88",
+                  "group_name": "Group thumbnail 78",
+                  "images": ["BD_13.png", "BD_14.png"]
+                }
+              ],
+              "product_info": {
+                "title": "Product group clipart khi chọn Show with Thumbnail images",
+                "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+                "image_name": "Logo1.jpg",
+                "vendor": "Uniqlo",
+                "price": "10",
+                "compare_at_price": "20"
+              },
+              "custom_option_info": [
+                {
+                  "custom_name": "Picture choice",
+                  "default_name": "Custom Option 1",
+                  "label": "Picture choice",
+                  "type": "Picture choice",
+                  "target_layer": "No",
+                  "index": 1,
+                  "type_clipart": "Group",
+                  "values": "Group thumbnail 78",
+                  "type_display_clipart": "Show as a droplist with Clipart names",
+                  "add_another_option": "yes"
+                },
+                {
+                  "type": "Text area",
+                  "custom_name": "Text area",
+                  "label": "Text area",
+                  "default_name": "Custom Option 2",
+                  "index": 2,
+                  "position": 1,
+                  "allow_following": "Characters,Numbers,Special Characters"
+                }
+              ],
+              "conditional_logic_info": {
+                "field": "Value",
+                "custom_name": "Picture choice",
+                "condition": ["is equal to>folder 88"],
+                "then_show_value": ["Text area"]
+              },
+              "custom_option_SF": [
+                {
+                  "type": "Picture choice group show droplist",
+                  "custom_name": "Picture choice",
+                  "value": "BD_11",
+                  "label": "Picture choice",
+                  "folder_clipart": "folder 8"
+                },
+                {
+                  "type": "Picture choice group show droplist",
+                  "custom_name": "Picture choice",
+                  "value": "BD_12",
+                  "label": "Picture choice",
+                  "folder_clipart": "folder 8"
+                },
+                {
+                  "type": "Picture choice group show droplist",
+                  "custom_name": "Picture choice",
+                  "value": "BD_13",
+                  "label": "Picture choice",
+                  "folder_clipart": "folder 88"
+                },
+                {
+                  "type": "Picture choice group show droplist",
+                  "custom_name": "Picture choice",
+                  "value": "BD_14",
+                  "label": "Picture choice",
+                  "folder_clipart": "folder 88"
+                },
+                {
+                  "type": "Text area",
+                  "custom_name": "Text area",
+                  "value": "Text sample"
+                }
+              ],
+              "picture": {
+                "custom_option_detail": "custom-option-detail-SB-PRO-SBP-ICFP-8-prod-test.png",
+                "custom_option_SF": "clipart-group-sf-1-SB-PRO-SBP-ICFP-8-prod-test.png",
+                "product_info_in_cart": "product-image-in-cart-SB-PRO-SBP-ICFP-8-prod-test.png",
+                "conditional_logic_detail": "conditional-logic-detail-SB-PRO-SBP-ICFP-8-prod-test.png"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-add-product-with-group-clipart-dev.myshopbase.net",
+      "shop_name": "au-add-product-with-group-clipart-dev",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_id": 10325499,
+      "user_id": 73800,
+      "timeout": 900000
+    }
+  },
+  "cases": {
+    "DATA_DRIVEN": {
+      "data": [
+        {
+          "description": "Check khi add new product với folder clipart khi  khi thêm conditional logic với các CO khác tại màn Product detail",
+          "case_id": "SB_PRO_SBP_ICFP_7",
+          "clipart_folder_info": [
+            {
+              "folder_name": "folder 7",
+              "group_name": "Group clipart folder",
+              "images": ["BD_11.png", "BD_12.png"]
+            }
+          ],
+          "product_info": {
+            "title": "Product folder clipart khi khi thêm conditional logic",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "100",
+            "compare_at_price": "200"
+          },
+          "custom_option_info": [
+            {
+              "custom_name": "Picture choice",
+              "default_name": "Custom Option 1",
+              "label": "Picture choice",
+              "type": "Picture choice",
+              "type_clipart": "Folder",
+              "values": "folder 7",
+              "index": 1,
+              "type_display_clipart": "Show with Thumbnail images",
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Text area",
+              "custom_name": "Text area",
+              "label": "Text area",
+              "default_name": "Custom Option 2",
+              "index": 2,
+              "position": 1,
+              "allow_following": "Characters,Numbers,Special Characters"
+            }
+          ],
+          "conditional_logic_info": {
+            "field": "Value",
+            "custom_name": "Picture choice",
+            "condition": ["is equal to>BD_11"],
+            "then_show_value": ["Text area"]
+          },
+          "custom_option_SF": [
+            {
+              "type": "Picture choice",
+              "custom_name": "Picture choice",
+              "value": "BD_12"
+            },
+            {
+              "type": "Picture choice",
+              "custom_name": "Picture choice",
+              "value": "BD_11"
+            },
+            {
+              "type": "Text area",
+              "custom_name": "Text area",
+              "value": "Text sample"
+            }
+          ],
+          "picture": {
+            "custom_option_SF": "clipart-folder-sf-1-SB-PRO-SBP-ICFP-7.png",
+            "product_info_in_cart": "product-image-in-cart-SB-PRO-SBP-ICFP-7.png",
+            "custom_option_detail": "custom-option-detail-SB-PRO-SBP-ICFP-7.png",
+            "conditional_logic_detail": "conditional-logic-detail-SB-PRO-SBP-ICFP-7.png"
+          }
+        },
+        {
+          "description": "Check khi add new product với group clipart khi khi thêm conditional logic với các CO khác tại màn Product detaill",
+          "case_id": "SB_PRO_SBP_ICFP_8",
+          "clipart_folder_info": [
+            {
+              "folder_name": "folder 8",
+              "group_name": "Group thumbnail 78",
+              "images": ["BD_11.png", "BD_12.png"]
+            },
+            {
+              "folder_name": "folder 88",
+              "group_name": "Group thumbnail 78",
+              "images": ["BD_13.png", "BD_14.png"]
+            }
+          ],
+          "product_info": {
+            "title": "Product group clipart khi chọn Show with Thumbnail images",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20"
+          },
+          "custom_option_info": [
+            {
+              "custom_name": "Picture choice",
+              "default_name": "Custom Option 1",
+              "label": "Picture choice",
+              "type": "Picture choice",
+              "target_layer": "No",
+              "index": 1,
+              "type_clipart": "Group",
+              "values": "Group thumbnail 78",
+              "type_display_clipart": "Show as a droplist with Clipart names",
+              "add_another_option": "yes"
+            },
+            {
+              "type": "Text area",
+              "custom_name": "Text area",
+              "label": "Text area",
+              "default_name": "Custom Option 2",
+              "index": 2,
+              "position": 1,
+              "allow_following": "Characters,Numbers,Special Characters"
+            }
+          ],
+          "conditional_logic_info": {
+            "field": "Value",
+            "custom_name": "Picture choice",
+            "condition": ["is equal to>folder 88"],
+            "then_show_value": ["Text area"]
+          },
+          "custom_option_SF": [
+            {
+              "type": "Picture choice group show droplist",
+              "custom_name": "Picture choice",
+              "value": "BD_11",
+              "label": "Picture choice",
+              "folder_clipart": "folder 8"
+            },
+            {
+              "type": "Picture choice group show droplist",
+              "custom_name": "Picture choice",
+              "value": "BD_12",
+              "label": "Picture choice",
+              "folder_clipart": "folder 8"
+            },
+            {
+              "type": "Picture choice group show droplist",
+              "custom_name": "Picture choice",
+              "value": "BD_13",
+              "label": "Picture choice",
+              "folder_clipart": "folder 88"
+            },
+            {
+              "type": "Picture choice group show droplist",
+              "custom_name": "Picture choice",
+              "value": "BD_14",
+              "label": "Picture choice",
+              "folder_clipart": "folder 88"
+            },
+            {
+              "type": "Text area",
+              "custom_name": "Text area",
+              "value": "Text sample"
+            }
+          ],
+          "picture": {
+            "custom_option_detail": "custom-option-detail-SB-PRO-SBP-ICFP-8.png",
+            "custom_option_SF": "clipart-group-sf-1-SB-PRO-SBP-ICFP-8.png",
+            "product_info_in_cart": "product-image-in-cart-SB-PRO-SBP-ICFP-8.png",
+            "conditional_logic_detail": "conditional-logic-detail-SB-PRO-SBP-ICFP-8.png"
+          }
+        }
+      ]
+    }
+  }
+}

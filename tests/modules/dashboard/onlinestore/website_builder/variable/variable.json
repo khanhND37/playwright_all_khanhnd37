@@ -1,0 +1,537 @@
+{
+  "env": {
+    "dev": {
+      "domain": "ne-variable-dev.myshopbase.net",
+      "shop_name": "ne-variable-dev",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "user_id": 73800,
+      "shop_id": 10326624,
+      "shop_theme_id": 3163352,
+      "page_id": 3189227,
+      "product_01_image": "1684925713915.jpeg",
+      "colletion_01_image": "1684999699027.jpg"
+    },
+    "prod": {
+      "domain": "au-variable-prod.onshopbase.com",
+      "shop_name": "au-variable-prod",
+      "api": "https://api.shopbase.com",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "shop_id": 10436140,
+      "shop_theme_id": 1417938,
+      "page_id": 1500685,
+      "product_01_image": "1687751360459e95c2ef.jpeg"
+    },
+    "prodtest": {
+      "domain": "au-variable-prodtest.onshopbase.com",
+      "shop_name": "au-variable-prodtest",
+      "api": "https://api.shopbase.com",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "user_id": 11244582,
+      "shop_id": 10434956,
+      "shop_theme_id": 1414974,
+      "page_id": 1500679,
+      "product_01_image": "1687404151323.jpeg"
+    }
+  },
+  "dnd_blank_section": {
+    "from": {
+      "category": "Basics",
+      "template": "Single column"
+    },
+    "to": {
+      "position": {
+        "section": 1
+      },
+      "isBottom": false
+    }
+  },
+  "block_data": {
+    "setting_on_quickbar": [
+      {
+        "block_name": "Heading",
+        "block_component": "heading"
+      },
+      {
+        "block_name": "Paragraph",
+        "block_component": "paragraph"
+      }
+    ],
+    "setting_on_sidebar": {
+      "block_image": {
+        "block_name": "Image",
+        "block_component": "block_image",
+        "widget_image": "image",
+        "widget_text": "alt"
+      },
+      "block_button": {
+        "block_name": "Button",
+        "block_component": "button",
+        "widget_text": "title"
+      },
+      "block_form": {
+        "block_name": "Form",
+        "block_component": "block_form",
+        "widget_text": "form_title"
+      }
+    },
+    "block_position": {
+      "section": 1,
+      "block": 1
+    }
+  },
+  "cases": {
+    "TC_NORMAL_BLOCK": {
+      "SB_SC_SCWB_01": {
+        "description": "Verify set variable cho block không cần force bind data với data source = None",
+        "source_type_section": "Shop",
+        "variable_fields_image": [
+          {
+            "variable": "Default logo",
+            "value": "1680075761db58b96048.png"
+          }
+        ],
+        "variable_fields_text": [
+          {
+            "variable": "Shop name",
+            "attribute": "shop.name"
+          },
+          {
+            "variable": "Shop domain",
+            "attribute": "shop.domain"
+          }
+        ]
+      },
+      "SB_SC_SCWB_02": {
+        "description": "Verify set variable cho block không cần force bind data với data source = Product",
+        "source_type_section": "Product",
+        "source_data_section": "Product test variable 02",
+        "variable_fields_image": [
+          {
+            "variable": "Product's media Image"
+          }
+        ],
+        "variable_fields_text": [
+          {
+            "variable": "Product's Title",
+            "attribute": "product.title",
+            "value": "Product test variable 02"
+          },
+          {
+            "variable": "Product's type",
+            "attribute": "product.product_type",
+            "value": "Type 01"
+          },
+          {
+            "variable": "Product's vendor",
+            "attribute": "product.vendor",
+            "value": "Vender 01"
+          },
+          {
+            "variable": "Product's Inventory Quantity",
+            "attribute": "product.variant.quantity",
+            "value": "0"
+          },
+          {
+            "variable": "Page title",
+            "attribute": "product.meta_title",
+            "value": "SEO title"
+          },
+          {
+            "variable": "Page description",
+            "attribute": "product.meta_description",
+            "value": "SEO description"
+          }
+        ]
+      },
+      "SB_SC_SCWB_03": {
+        "description": "Verify set variable cho block không cần force bind data với data source = Collection",
+        "source_type_section": "Collection",
+        "source_data_section": "Collection 01",
+        "variable_fields_image": [
+          {
+            "variable": "Collection's Thumbnail Image"
+          }
+        ],
+        "variable_fields_text": [
+          {
+            "variable": "Collection's Title",
+            "attribute": "collection.title",
+            "value": "Collection 01"
+          },
+          {
+            "variable": "Number of Collection's Product",
+            "attribute": "collection.count",
+            "value": "1"
+          },
+          {
+            "variable": "Page title",
+            "attribute": "collection.meta_title",
+            "value": "SEO title collection"
+          },
+          {
+            "variable": "Page description",
+            "attribute": "collection.meta_description",
+            "value": "SEO description collection"
+          }
+        ]
+      },
+      "SB_SC_SCWB_04": {
+        "description": "Verify set variable cho block không cần force bind data với data source = Blog",
+        "source_type_section": "Blog",
+        "source_data_section": "block 01",
+        "variable_fields_text": [
+          {
+            "variable": "Blog's Title",
+            "attribute": "blog.title",
+            "value": "block 01"
+          }
+        ]
+      },
+      "SB_SC_SCWB_05": {
+        "description": "Verify set variable cho block không cần force bind data với data source = Blog post",
+        "source_type_section": "Blog post",
+        "source_data_section": "Blog post 01",
+        "variable_fields_text": [
+          {
+            "variable": "Blog's Title",
+            "attribute": "blog_post.title",
+            "value": "Blog post 01"
+          },
+          {
+            "variable": "Blog's Excerpt",
+            "attribute": "blog_post.excerpt",
+            "value": "Test blog post"
+          }
+        ]
+      }
+    },
+    "SB_SC_SCWB_6": {
+      "description": "Verify set variable cho block không cần force bind data với data source = Current page",
+      "page_setting": "product",
+      "data": [
+        {
+          "page_name": "Product detail",
+          "source_type_page": "Product",
+          "variable_fields_text": [
+            {
+              "variable": "Product's Title",
+              "value": "Product test variable 02"
+            }
+          ],
+          "variable_fields_image": [
+            {
+              "variable": "Product's media Image",
+              "value": "1684925713915.jpeg"
+            }
+          ]
+        },
+        {
+          "page_name": "Collection detail",
+          "source_type_page": "Collection",
+          "variable_fields_text": [
+            {
+              "variable": "Collection's Title",
+              "value": "All products"
+            }
+          ],
+          "variable_fields_image": [
+            {
+              "variable": "Collection's Thumbnail Image",
+              "value": "1684999699027.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    "SB_SC_SCWB_15": {
+      "description": "Verify list source tại trường data source của các page",
+      "page_not_entity": ["Home", "All collections", "Error", "404"],
+      "page_entity": ["Collection detail", "Product detail", "Blog", "Blog post"]
+    },
+    "SB_SC_SCWB_8": {
+      "description": "Verify set variable cho block khi block nằm trong container và container nằm trong section với data source của container # None",
+      "container_source": [
+        {
+          "source_type": "Product",
+          "source_data": "product 01",
+          "variable": "Product's Title"
+        },
+        {
+          "source_type": "Collection",
+          "source_data": "Collection 01",
+          "variable": "Collection's Title"
+        }
+      ]
+    },
+    "SB_SC_SCWB_9": {
+      "description": "Verify set variable cho block khi block nằm trong container và container nằm trong section với data source của container = None",
+      "section_source": [
+        {
+          "source_type": "Product",
+          "source_data": "product 01",
+          "variable": "Product's Title"
+        },
+        {
+          "source_type": "Collection",
+          "source_data": "Collection 01",
+          "variable": "Collection's Title"
+        }
+      ]
+    },
+    "SB_SC_SCWB_22": {
+      "description": "Verify popup connect data source tại tab content của block",
+      "data": [
+        {
+          "block_type": "Product",
+          "block_name": "Product price",
+          "block_component": "price"
+        },
+        {
+          "block_type": "Blog post",
+          "block_name": "Comments",
+          "block_component": "comment"
+        }
+      ],
+      "search_no_result": "abc",
+      "search_have_result": "01"
+    },
+    "SB_SC_SCWB_10": {
+      "description": "Verify set variable cho block khi block nằm trong tabs và tabs nằm trong section với data source của tabs # None",
+      "item": "Item 1",
+      "tabs_source": [
+        {
+          "source_type": "Product",
+          "source_data": "product 01",
+          "variable": "Product's Title"
+        },
+        {
+          "source_type": "Collection",
+          "source_data": "Collection 01",
+          "variable": "Collection's Title"
+        }
+      ]
+    },
+    "SB_SC_SCWB_11": {
+      "description": "Verify set variable cho block khi block nằm trong tabs và tabs nằm trong section với data source của tabs = None",
+      "item": "Item 1",
+      "section_source": [
+        {
+          "source_type": "Product",
+          "source_data": "product 01",
+          "variable": "Product's Title"
+        },
+        {
+          "source_type": "Collection",
+          "source_data": "Collection 01",
+          "variable": "Collection's Title"
+        }
+      ]
+    },
+    "SB_SC_SCWB_12": {
+      "description": "Verify set variable cho block khi block nằm trong container , container > tabs > section với data source của containe và tabs = None, section # None",
+      "block_template": {
+        "from": {
+          "category": "Basics",
+          "template": "Heading"
+        },
+        "to": {
+          "position": {
+            "section": 1,
+            "block": 1
+          },
+          "container": true,
+          "isBottom": false
+        }
+      },
+      "item": "Item 1",
+      "section_source": [
+        {
+          "source_type": "Product",
+          "source_data": "product 01",
+          "variable": "Product's Title"
+        },
+        {
+          "source_type": "Collection",
+          "source_data": "Collection 01",
+          "variable": "Collection's Title"
+        }
+      ]
+    },
+    "SB_SC_SCWB_13": {
+      "description": "Verify set variable cho block khi block nằm trong container , container >  tabs > section với data source của containe = None, Tabs # None",
+      "item": "Item 1",
+      "tabs_source": [
+        {
+          "source_type": "Product",
+          "source_data": "product 01",
+          "variable": "Product's Title"
+        },
+        {
+          "source_type": "Collection",
+          "source_data": "Collection 01",
+          "variable": "Collection's Title"
+        }
+      ]
+    },
+    "SB_SC_SCWB_14": {
+      "description": "Verify set variable cho block khi block nằm trong container , container >  tabs > section với data source của containe # None",
+      "item": "Item 1",
+      "container_source": [
+        {
+          "source_type": "Product",
+          "source_data": "product 01",
+          "variable": "Product's Title"
+        },
+        {
+          "source_type": "Collection",
+          "source_data": "Collection 01",
+          "variable": "Collection's Title"
+        }
+      ]
+    },
+    "SB_SC_SCWB_18": {
+      "description": "Verify block force bind khi connect data source = None",
+      "block_type_product": [
+        {
+          "block_name": "Variant picker",
+          "block_component": "variants"
+        },
+        {
+          "block_name": "Product gallery",
+          "block_component": "media"
+        },
+        {
+          "block_name": "Product price",
+          "block_component": "price"
+        },
+        {
+          "block_name": "Quantity",
+          "block_component": "quantity_selector"
+        },
+        {
+          "block_name": "Accessories",
+          "block_component": "accessory"
+        },
+        {
+          "block_name": "Estimated Delivery",
+          "block_component": "eta_delivery"
+        },
+        {
+          "block_name": "Quantity discount",
+          "block_component": "quantity"
+        }
+      ],
+      "block_type_collection": {
+        "block_name": "Featured Collection",
+        "block_component": "featured_collection"
+      },
+      "block_type_blog_post": {
+        "block_name": "Comments",
+        "block_component": "comment"
+      },
+      "expected": {
+        "WF_type_collection": "18_WF_snapshot_type_collection.png",
+        "SF_type_collection": "18_SF_snapshot_type_collection.png",
+        "WF_type_blog_post": "18_WF_snapshot_type_blog_post.png",
+        "SF_type_blog_post": "18_SF_snapshot_type_blog_post.png"
+      }
+    },
+    "SB_SC_SCWB_16": {
+      "description": "Verify tab content của section",
+      "page_setting": "product",
+      "snapshot_content_section": "16_content_section.png",
+      "first_product": "Product test variable 02"
+    },
+    "SB_SC_SCWB_17": {
+      "description": "Verify widget khi chọn data variable tại tab content",
+      "search_no_result": "abc",
+      "search_have_result": "01"
+    },
+    "SB_SC_SCWB_19": {
+      "description": " Verify block force bind khi connect data source # None cùng loại với block",
+      "page_setting": "product",
+      "data_source": {
+        "product": "product 01",
+        "collection": "Collection 01",
+        "blog_post": "Blog post 01"
+      },
+      "block_type_product": [
+        {
+          "block_name": "Product gallery",
+          "block_component": "media"
+        },
+        {
+          "block_name": "Product price",
+          "block_component": "price"
+        },
+        {
+          "block_name": "Quantity",
+          "block_component": "quantity_selector"
+        },
+        {
+          "block_name": "Accessories",
+          "block_component": "accessory"
+        },
+        {
+          "block_name": "Stock Countdown",
+          "block_component": "stock-countdown"
+        },
+        {
+          "block_name": "Estimated Delivery",
+          "block_component": "eta_delivery"
+        }
+      ],
+      "block_type_collection": {
+        "block_name": "Featured collection",
+        "block_component": "featured_collection"
+      },
+      "block_type_blog_post": {
+        "block_name": "Comments",
+        "block_component": "comment"
+      },
+      "expected": {
+        "SF_type_collection_current": "19_SF_snapshot_type_collection_current.png",
+        "SF_type_collection_select": "19_SF_snapshot_type_collection_select.png",
+        "SF_type_blogpost_current": "19_SF_snapshot_type_blogpost_current.png",
+        "SF_type_blogpost_select": "19_SF_snapshot_type_blogpost_select.png"
+      }
+    },
+    "SB_SC_SCWB_21": {
+      "description": " Verify Connect data source cho section tại tab content của block",
+      "block_type_product": [
+        {
+          "block_name": "Estimated Delivery",
+          "block_component": "eta_delivery"
+        },
+        {
+          "block_name": "Quantity discount",
+          "block_component": "quantity"
+        },
+        {
+          "block_name": "Product gallery",
+          "block_component": "media"
+        },
+        {
+          "block_name": "Quantity",
+          "block_component": "quantity_selector"
+        }
+      ],
+      "block_type_collection": {
+        "block_name": "Featured Collection",
+        "block_component": "featured_collection"
+      },
+      "block_type_blog_post": {
+        "block_name": "Comments",
+        "block_component": "comment"
+      },
+      "product_source": "product 01",
+      "collection_source": "Collection 01",
+      "blogpost_source": "Blog post 01"
+    }
+  }
+}

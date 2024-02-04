@@ -1,0 +1,158 @@
+{
+  "api": "https://api.shopbase.com",
+  "domain": "au-roller-featured-product.onshopbase.com",
+  "username": "shopbase@beeketing.net",
+  "password": "Q(f!3Kx+6n;?Us%F",
+  "user_id": 73782,
+  "shop_id": 10075446,
+  "shop_name": "au-roller-featured-product",
+  "timeout": "120000",
+  "cases": {
+    "TC_SB_PRO_PPD_35": {
+      "title": "Product_Test_Organization",
+      "organization": ["Shopbase", "Test", "hoant_test"]
+    },
+    "TC_SB_PRO_PPD_37": {
+      "title": "17284823_Show_Size_Guide",
+      "title_size_guide": "SIZE CHART"
+    },
+    "TC_SB_PRO_PPD_38": {
+      "title": "Product C",
+      "errorMessage": ["Please select a Size", "Please select a Color", "Please select a Style"],
+      "value_add_to_cart_info": {
+        "size": "M",
+        "color": "#FF0000",
+        "style": "Maxi",
+        "quantity": 2
+      },
+      "value_validate": "M / Blue / Maxi"
+    },
+    "TC_SB_PRO_PPD_45": {
+      "title": ["Product A.1", "Product A.2", "Product A.3", "Product A.4"],
+      "errorMessage": [
+        "Please finish this field",
+        "Please finish this field",
+        "Please upload a file.",
+        "Please finish this field"
+      ]
+    },
+    "TC_SB_PRO_PPD_40": {
+      "title": ["Product A.1", "Product A.2"],
+      "max_length_value": [30, 140],
+      "errorMessage": [
+        "Your custom text has invalid characters. We only accept characters & numbers.",
+        "Your custom text has invalid characters. We only accept characters & special characters."
+      ],
+      "custom_option_value_01": [
+        {
+          "custom_name": "Text file",
+          "type": "Text field",
+          "value": "!@#$"
+        },
+        {
+          "custom_name": "Text area",
+          "type": "Text area",
+          "value": "1213"
+        }
+      ],
+      "custom_option_value_02": [
+        {
+          "custom_name": "Text file",
+          "type": "Text field",
+          "value": "Test custom option 01"
+        },
+        {
+          "custom_name": "Text area",
+          "type": "Text area",
+          "value": "Test custom option"
+        }
+      ],
+      "custom_option_validate": ["Text file: Test custom option 01", "Text area: Test custom option"]
+    },
+    "TC_SB_PRO_PPD_42": {
+      "title": "Product A.3",
+      "custom_option_value": {
+        "custom_name": "Image",
+        "type": "Image",
+        "value": "Did I Do Something Wrong.png"
+      },
+      "custom_option_validate": "Image: https://img.btdmp.com/cart-files/2022/8/3/10355734/pUZqMA-8-23-42-did-20i-20do-20something-20wrong.png"
+    },
+    "TC_SB_PRO_PPD_43": {
+      "title": ["Product A.5", "Product A.6", "Product A.4"],
+      "custom_option_value": [
+        {
+          "custom_name": "Radio",
+          "type": "Radio",
+          "value": "Test_02"
+        },
+        {
+          "custom_name": "Droplist",
+          "type": "Droplist",
+          "value": "Test_04"
+        },
+        {
+          "custom_name": "Picture choice",
+          "type": "Picture choice",
+          "value": "Image_02"
+        }
+      ],
+      "custom_option_validate": ["Radio: Test_02", "Droplist: Test_04", "Picture choice: Image_02"]
+    },
+    "TC_SB_PRO_PPD_55": {
+      "title": ["Product B image", "Product B.1 _Test image variant"],
+      "image_product_validate": ["@1659671230257.png", "@1659671315853.png"],
+      "varaint_product": [
+        {
+          "size": "M"
+        },
+        {
+          "size": "M"
+        }
+      ],
+      "image_variant_validate": ["@1659671230257.png", "@1659671315864.png"]
+    },
+    "TC_SB_PRO_PPD_58": {
+      "title": "Test_image_product_group_variant",
+      "varaint_product": [
+        {
+          "size": "M"
+        },
+        {
+          "size": "S"
+        }
+      ],
+      "image_validate": ["1659684189ee7390632e.png,1659684196b4b3c3000a.png", "1659671368416.jpg,1659671368427.jpg"]
+    },
+    "TC_SB_PRO_PPD_53": {
+      "title": "Product test sticky",
+      "sticky_value": {
+        "size": "M",
+        "color": "Red",
+        "style": "Maxi",
+        "quantity": 2
+      },
+      "value_validate": "M / Red / Maxi"
+    },
+    "TC_SB_PRO_PPD_63": {
+      "title": "Product_Test_Thumb",
+      "image_validate_01": "@1659691155561.png",
+      "product": ["Product B.1 _Test image variant", "Product B.2_Test image variant"],
+      "variant_product": [
+        {
+          "size": "M"
+        },
+        {
+          "size": "S"
+        }
+      ],
+      "image_validate_02": ["@1659671315864.png", "@1659692459634.png"]
+    }
+  },
+  "env": {
+    "prodtest": {
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://prod-test-api.shopbase.com"
+    }
+  }
+}

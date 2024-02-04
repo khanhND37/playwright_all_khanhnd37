@@ -1,0 +1,135 @@
+{
+  "env": {
+    "dev": {
+      "domain": "wb-block-video.myshopbase.net",
+      "shop_name": "wb-block-video",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_id": 10323396,
+      "user_id": 73800,
+      "pre_condition": {
+        "product": {
+          "type": "online_course",
+          "title": "quickbar-block",
+          "handle": "quickbar-block",
+          "published": false
+        },
+        "apply_template": {
+          "template_id": 403,
+          "type": "product"
+        }
+      }
+    },
+    "prodtest": {
+      "domain": "au-quickbar-block-prodtest.onshopbase.com",
+      "shop_name": "au-quickbar-block-prodtest",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10383981,
+      "user_id": 73782,
+      "pre_condition": {
+        "product": {
+          "type": "online_course",
+          "title": "quickbar-block",
+          "handle": "quickbar-block",
+          "published": false
+        },
+        "apply_template": {
+          "template_id": 10,
+          "type": "product"
+        }
+      },
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "prod": {
+      "domain": "au-quickbar-block.onshopbase.com",
+      "shop_name": "au-quickbar-block",
+      "api": "https://api.shopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10383980,
+      "user_id": 73782,
+      "pre_condition": {
+        "product": {
+          "type": "online_course",
+          "title": "quickbar-block",
+          "handle": "quickbar-block",
+          "published": false
+        },
+        "apply_template": {
+          "template_id": 10,
+          "type": "product"
+        }
+      }
+    }
+  },
+  "cases": {
+    "SB_WEB_BUILDER_BB_53": {
+      "description": "Quick bar block",
+      "data": {
+        "section_1": {
+          "dnd_section": {
+            "from": {
+              "category": "Basics",
+              "template": "Single column"
+            },
+            "to": {
+              "position": {
+                "section": 1
+              },
+              "isBottom": false
+            }
+          },
+          "dnd_blocks": [
+            {
+              "from": {
+                "category": "Basics",
+                "template": "Heading"
+              },
+              "to": {
+                "position": {
+                  "section": 1,
+                  "column": 1
+                }
+              },
+              "isBottom": false
+            },
+            {
+              "from": {
+                "category": "Basics",
+                "template": "Paragraph"
+              },
+              "to": {
+                "position": {
+                  "section": 1,
+                  "column": 1
+                }
+              },
+              "isBottom": true
+            },
+            {
+              "from": {
+                "category": "Basics",
+                "template": "Bullet"
+              },
+              "to": {
+                "position": {
+                  "section": 1,
+                  "column": 1
+                }
+              },
+              "isBottom": true
+            }
+          ]
+        }
+      },
+      "snapshots": {
+        "layer_hide": "layer-when-hide.png",
+        "layer_remove": "layer-when-remove.png",
+        "storefront": "preview-storefront.png"
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "env": {
+    "timeout": 60000,
+    "dev": {
+      "domain": "au-charge-multi.myshopbase.net",
+      "shop_name": "au-charge-multi",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "front-qe-2@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10333791,
+      "user_id": 90883
+    },
+    "prodtest": {
+      "domain": "multi-stf-charge-prodtest.onshopbase.com",
+      "shop_name": "multi-stf-charge-prodtest",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "front-qe-2@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10486331,
+      "user_id": 11260209
+    },
+    "prod": {
+      "domain": "multi-stf-charge.onshopbase.com",
+      "shop_name": "multi-stf-charge",
+      "api": "https://api.shopbase.com",
+      "username": "front-qe-2@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10486332,
+      "user_id": 11260209
+    }
+  },
+  "cases": {
+    "SB_NEWECOM_MSF_MSFL_166": {
+      "data": {
+        "template_name": "Packwise",
+        "days_expired": 10,
+        "price_storefront": 10
+      },
+      "expect": {
+        "heading_popup": "Activate storefront",
+        "content": "Subscription fee collecting"
+      }
+    },
+    "SB_NEWECOM_MSF_MSFL_169": {
+      "data": {
+        "template_name": "Packwise",
+        "days_expired": 30,
+        "price_storefront": 10
+      },
+      "expect": {
+        "heading_popup": "Activate storefront",
+        "content": "Subscription fee collecting"
+      }
+    },
+    "SB_NEWECOM_MSF_MSFL_167": {
+      "data": {
+        "template_name": "Packwise",
+        "days_expired": 56,
+        "price_storefront": 10
+      },
+      "expect": {
+        "heading_popup": "Activate storefront",
+        "content": "Subscription fee collecting"
+      }
+    }
+  }
+}

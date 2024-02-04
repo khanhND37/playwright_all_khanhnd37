@@ -1,0 +1,494 @@
+{
+  "env": {
+    "dev": {
+      "env": "dev",
+      "domain": "au-block-breadcrumb.myshopbase.net",
+      "shop_name": "au-block-breadcrumb",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "43AhIn|VWp;[?9&",
+      "shop_id": 10326782,
+      "user_id": 89797,
+      "site_id": 3163738,
+      "page_id": 3194054,
+      "dnd_blank_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 1
+          },
+          "isBottom": false
+        }
+      },
+      "add_block": {
+        "parent_position": {
+          "section": 1,
+          "column": 1
+        },
+        "template": "Breadcrumb"
+      },
+      "section_name": {
+        "content": "Test New Section"
+      }
+    },
+    "prodtest": {
+      "env": "prodtest",
+      "domain": "au-breadcrumb-prodtest.onshopbase.com",
+      "shop_name": "au-breadcrumb-prodtest",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "shop_id": 10428021,
+      "user_id": 11244582,
+      "site_id": 1390840,
+      "page_id": 1515223,
+      "dnd_blank_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 1
+          },
+          "isBottom": false
+        }
+      },
+      "add_block": {
+        "parent_position": {
+          "section": 1,
+          "column": 1
+        },
+        "template": "Breadcrumb"
+      },
+      "section_name": {
+        "content": "Test New Section"
+      },
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "prod": {
+      "env": "prod",
+      "domain": "au-wb-block-breadcrumb-prod.onshopbase.com",
+      "shop_name": "au-wb-block-breadcrumb-prod",
+      "api": "https://api.shopbase.com",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "shop_id": 10427484,
+      "user_id": 11244582,
+      "site_id": 1389566,
+      "page_id": 1515195,
+      "dnd_blank_section": {
+        "from": {
+          "category": "Basics",
+          "template": "Single column"
+        },
+        "to": {
+          "position": {
+            "section": 1
+          },
+          "isBottom": false
+        }
+      },
+      "add_block": {
+        "parent_position": {
+          "section": 1,
+          "column": 1
+        },
+        "template": "Breadcrumb"
+      },
+      "section_name": {
+        "content": "Test New Section"
+      }
+    }
+  },
+  "cases": {
+    "SB_WEB_BUILDER_PRD_01": {
+      "expect": {
+        "action": {},
+        "snapshot": {
+          "preview": "block-breadcrumb.png",
+          "tab_settings": "tab-setting-breadcrumb.png",
+          "preview_mobile": "preview-mobile.png"
+        },
+        "breadcrumb_content": {
+          "product": "Home/All/Test Breadcrumb Product Title",
+          "collection": "Home/All",
+          "collections": "Home/All collections",
+          "blog_post": "Home/News/Blog test breadcrumb",
+          "blog": "Home/News",
+          "custom": "Home/ Page breadcrumb"
+        }
+      },
+      "data": {
+        "pages": ["collections", "product", "collection", "blog", "blog_post"]
+      }
+    },
+    "SB_WEB_BUILDER_PRD_32": {
+      "expect": {
+        "snapshot": {
+          "two_block": "duplicate-block.png",
+          "one_block": "block-breadcrumb.png"
+        }
+      }
+    },
+    "SB_WEB_BUILDER_PRD_33": {
+      "expect": {
+        "snapshot": {},
+        "breadcrumb_content": {
+          "default": "Home/All/Test Breadcrumb Product Title",
+          "hide_home_page": "All/Test Breadcrumb Product Title",
+          "hide_current_page": "Home/All"
+        }
+      },
+      "data": {
+        "widgets": ["hide_home_page", "hide_current_page"]
+      }
+    },
+    "SB_WEB_BUILDER_PRD_02": {
+      "expect": {
+        "snapshot": {
+          "slash": "breadcrumb-slash.png",
+          "arrow_outline": "breadcrumb-arrow-outline.png",
+          "arrow_fill": "breadcrumb-arrow-fill.png",
+          "double_arrow": "breadcrumb-double-arrow.png",
+          "dot": "breadcrumb-dot.png"
+        }
+      },
+      "data": {
+        "seperators": {
+          "slash": "Slash",
+          "arrow_outline": "Arrow outline",
+          "arrow_fill": "Arrow fill",
+          "double_arrow": "Double arrow",
+          "dot": "Dot"
+        }
+      }
+    },
+    "SB_WEB_BUILDER_PRD_34": {
+      "expect": {
+        "snapshot": {
+          "resized": "block-breadcrumb-resized.png",
+          "default": "block-breadcrumb-default.png"
+        }
+      },
+      "data": {
+        "resize_width": 800,
+        "default": 1020
+      }
+    },
+    "SB_WEB_BUILDER_PRD_03": {
+      "data": {
+        "styles": [
+          {
+            "align": {
+              "label": "align_self",
+              "type": "Right"
+            },
+            "width": {
+              "label": "width",
+              "value": {
+                "unit": "Px",
+                "value": 200
+              }
+            },
+            "background": {
+              "label": "background",
+              "value": {
+                "color": {
+                  "preset": 3,
+                  "opacity": 50
+                }
+              }
+            },
+            "opacity": {
+              "label": "opacity",
+              "config": {
+                "fill": true,
+                "number": 100
+              }
+            },
+            "radius": {
+              "label": "border_radius",
+              "config": {
+                "fill": true,
+                "number": 0
+              }
+            },
+            "shadow": {
+              "label": "box_shadow",
+              "config": {
+                "option": "hard",
+                "size": "M",
+                "direction": "Top Right"
+              }
+            },
+            "padding": {
+              "label": "padding",
+              "value": {
+                "top": 5,
+                "left": 10,
+                "bottom": 5,
+                "right": 10,
+                "input": true
+              }
+            },
+            "margin": {
+              "label": "margin",
+              "value": {
+                "top": 15,
+                "left": 20,
+                "bottom": 15,
+                "right": 20,
+                "input": true
+              }
+            }
+          },
+          {
+            "align": {
+              "label": "align_self",
+              "type": "Left"
+            },
+            "width": {
+              "label": "width",
+              "value": {
+                "unit": "%",
+                "value": 20
+              }
+            },
+            "background": {
+              "label": "background",
+              "value": {
+                "color": {
+                  "preset": 2
+                }
+              }
+            },
+            "opacity": {
+              "label": "opacity",
+              "config": {
+                "fill": true,
+                "number": 80
+              }
+            },
+            "radius": {
+              "label": "border_radius",
+              "config": {
+                "fill": true,
+                "number": 10
+              }
+            },
+            "shadow": {
+              "label": "box_shadow",
+              "config": {
+                "option": "soft",
+                "size": "S",
+                "direction": "Top Left"
+              }
+            },
+            "padding": {
+              "label": "padding",
+              "value": {
+                "top": 0,
+                "left": 0,
+                "bottom": 0,
+                "right": 0,
+                "input": true
+              }
+            },
+            "margin": {
+              "label": "margin",
+              "value": {
+                "top": 15,
+                "left": 20,
+                "bottom": 15,
+                "right": 20,
+                "input": true
+              }
+            }
+          },
+          {
+            "align": {
+              "label": "align_self",
+              "type": "Center"
+            },
+            "width": {
+              "label": "width",
+              "value": {
+                "unit": "%",
+                "value": 20
+              }
+            },
+            "background": {
+              "label": "background",
+              "value": {
+                "color": {
+                  "preset": 2
+                }
+              }
+            },
+            "opacity": {
+              "label": "opacity",
+              "config": {
+                "fill": true,
+                "number": 20
+              }
+            },
+            "radius": {
+              "label": "border_radius",
+              "config": {
+                "fill": true,
+                "number": 15
+              }
+            },
+            "shadow": {
+              "label": "box_shadow",
+              "config": {
+                "option": "hard",
+                "size": "L",
+                "direction": "Bottom Left"
+              }
+            },
+            "padding": {
+              "label": "padding",
+              "value": {
+                "top": 0,
+                "left": 0,
+                "bottom": 0,
+                "right": 0,
+                "input": true
+              }
+            },
+            "margin": {
+              "label": "margin",
+              "value": {
+                "top": 15,
+                "left": 20,
+                "bottom": 15,
+                "right": 20,
+                "input": true
+              }
+            }
+          },
+          {
+            "align": {
+              "label": "align_self",
+              "type": "Center"
+            },
+            "width": {
+              "label": "width",
+              "value": {
+                "unit": "%",
+                "value": 20
+              }
+            },
+            "background": {
+              "label": "background",
+              "value": {
+                "color": {
+                  "preset": 2
+                }
+              }
+            },
+            "opacity": {
+              "label": "opacity",
+              "config": {
+                "fill": true,
+                "number": 20
+              }
+            },
+            "radius": {
+              "label": "border_radius",
+              "config": {
+                "fill": true,
+                "number": 15
+              }
+            },
+            "shadow": {
+              "label": "box_shadow",
+              "config": {
+                "option": "soft",
+                "size": "L",
+                "direction": "Bottom Left"
+              }
+            },
+            "padding": {
+              "label": "padding",
+              "value": {
+                "top": 0,
+                "left": 0,
+                "bottom": 0,
+                "right": 0,
+                "input": true
+              }
+            },
+            "margin": {
+              "label": "margin",
+              "value": {
+                "top": 15,
+                "left": 20,
+                "bottom": 15,
+                "right": 20,
+                "input": true
+              }
+            }
+          }
+        ]
+      },
+      "expect": {
+        "snapshot": {
+          "default": "block-breadcrumb-default.png",
+          "hovered": "block-breadcrumb-hover.png"
+        }
+      }
+    },
+    "SB_WEB_BUILDER_PRD_5": {
+      "data": {
+        "blog_post": "blog-test-breadcrumb",
+        "product": "Test Breadcrumb Product Title",
+        "collection": "Test Breadcrumb Collection Title",
+        "path": {
+          "home": "",
+          "collection": "/collections/test-breadcrumb-collection-title",
+          "all": "/collections/all"
+        }
+      },
+      "expect": {
+        "breadcrumb_content": {
+          "blog_post": "Home/News/Blog test breadcrumb",
+          "product_home": "Home/All/Test Breadcrumb Product Title",
+          "product_all": "Home/All/Test Breadcrumb Product Title",
+          "product_collection": "Home/Test Breadcrumb Collection Title/Test Breadcrumb Product Title",
+          "collection": "Home/Test Breadcrumb Collection Title"
+        },
+        "path": {
+          "home": "",
+          "collection": "/collections/test-breadcrumb-collection-title",
+          "product_home": "/products/new-breadcrumb-product-title"
+        }
+      }
+    },
+    "SB_WEB_BUILDER_PRD_35": {
+      "shop_data": {
+        "domain": {
+          "dev": "au-quantity-creator.myshopbase.net",
+          "prod": "au-quantity-creator.onshopbase.com"
+        },
+        "shop_name": "au-quantity-creator"
+      }
+    },
+    "SB_WEB_BUILDER_PRD_70": {
+      "page_handle": "page-test-breadcrumb",
+      "product_name": "Test Breadcrumb Product Title",
+      "blog_post_name": "Blog",
+      "breadcrumb_content": {
+        "home": "Home",
+        "product_detail": "Home/All/Test Breadcrumb Product Title",
+        "blog_post": "Home/News/Blog test breadcrumb",
+        "custom": "Home/Page test breadcrumb"
+      }
+    }
+  }
+}

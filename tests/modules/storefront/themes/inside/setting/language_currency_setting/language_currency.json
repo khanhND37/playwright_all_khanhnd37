@@ -1,0 +1,534 @@
+{
+  "env": {
+    "prod": {
+      "domain": "au-inside-language-currency-setting.onshopbase.com",
+      "shop_name": "au-inside-language-currency-setting.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "api": "https://api.shopbase.com",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10343753,
+      "user_id": 73782
+    },
+    "prodtest": {
+      "domain": "au-inside-language-currency-setting-prodtest.onshopbase.com",
+      "shop_name": "au-inside-language-currency-setting-prodtest.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "api": "https://prod-test-api.shopbase.com",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "shop_id": 10352679,
+      "user_id": 73782,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "domain": "au-inside-language-currency-setting.myshopbase.net",
+      "shop_name": "au-inside-language-currency-setting.myshopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "api": "https://gapi.dev.shopbase.net",
+      "shop_id": 10321994,
+      "user_id": 73800,
+      "cases": {
+        "LANGUAGE_CURRENCY": [
+          {
+            "description": "Desktop_Mobile_Check show some language + some currency + without currency",
+            "id": "SB_OLS_THE_INS_SF_LANGUAGE_CURRENCY_1",
+            "data": null,
+            "output": {
+              "button_buy_now": "BUY NOW",
+              "type_price": false,
+              "type_currency": "$",
+              "popup_currency_language": {
+                "global_active": "USD | EN",
+                "currency": "USD CAD AUD GBP EUR JPY",
+                "currency_active": "USD",
+                "language": "English Francaise Spanish German",
+                "language_active": "English"
+              }
+            },
+            "change_data": [
+              {
+                "currency": "EUR",
+                "language": "Francaise",
+                "save": true,
+                "cancel": false,
+                "close": false,
+                "output": {
+                  "global_active": "EUR | FR",
+                  "button_buy_now": "ACHETEZ MAINTENANT",
+                  "type_price": false,
+                  "type_currency": "€"
+                }
+              },
+              {
+                "currency": "GBP",
+                "language": "Spanish",
+                "save": false,
+                "cancel": true,
+                "close": false,
+                "output": {
+                  "global_active": "EUR | FR",
+                  "button_buy_now": "ACHETEZ MAINTENANT",
+                  "type_price": false,
+                  "type_currency": "€"
+                }
+              },
+              {
+                "currency": "GBP",
+                "language": "Spanish",
+                "save": false,
+                "cancel": false,
+                "close": true,
+                "output": {
+                  "global_active": "EUR | FR",
+                  "button_buy_now": "ACHETEZ MAINTENANT",
+                  "type_price": false,
+                  "type_currency": "€"
+                }
+              },
+              {
+                "currency": "GBP",
+                "language": "Spanish",
+                "save": true,
+                "cancel": false,
+                "close": false,
+                "output": {
+                  "global_active": "GBP | ES",
+                  "button_buy_now": "COMPRA AHORA",
+                  "type_price": false,
+                  "type_currency": "£"
+                }
+              }
+            ]
+          },
+          {
+            "description": "Desktop_Mobile_Check show all language + all currency + with currency",
+            "id": "SB_OLS_THE_INS_SF_LANGUAGE_CURRENCY_3",
+            "data": [
+              {
+                "currency": {
+                  "all_currencies": true,
+                  "enable_conversion": true,
+                  "format_type": "with",
+                  "support_currencies": "USD CAD AUD GBP EUR JPY"
+                }
+              },
+              {
+                "locale": {
+                  "all_languages": true,
+                  "default": "en",
+                  "enable_translation": true,
+                  "support_locales": "en=English fr=Francaise es=Spanish de=German"
+                }
+              }
+            ],
+            "output": {
+              "button_buy_now": "BUY NOW",
+              "type_price": "SGD",
+              "type_currency": "$",
+              "popup_currency_language": {
+                "global_active": "SGD | EN",
+                "currency": 155,
+                "currency_active": "SGD",
+                "language": 59,
+                "language_active": "English"
+              }
+            },
+            "change_data": [
+              {
+                "currency": "CNY",
+                "language": "中文 (简体) (Zhōngwén Jiǎntǐ)",
+                "save": true,
+                "cancel": false,
+                "close": false,
+                "output": {
+                  "global_active": "CNY | ZH-CN",
+                  "button_buy_now": "立即购买",
+                  "type_price": "CNY",
+                  "type_currency": "¥"
+                }
+              }
+            ]
+          },
+          {
+            "description": "Desktop_Mobile_Check show language + not show currency",
+            "id": "SB_OLS_THE_INS_SF_LANGUAGE_CURRENCY_5",
+            "data": [
+              {
+                "currency": {
+                  "all_currencies": true,
+                  "enable_conversion": false,
+                  "format_type": "with",
+                  "support_currencies": "USD CAD AUD GBP EUR JPY"
+                }
+              },
+              {
+                "locale": {
+                  "all_languages": false,
+                  "default": "fr",
+                  "enable_translation": true,
+                  "support_locales": "fr=Francaise es=Spanish"
+                }
+              }
+            ],
+            "output": {
+              "button_buy_now": "ACHETEZ MAINTENANT",
+              "type_price": false,
+              "type_currency": "$",
+              "popup_currency_language": {
+                "global_active": "USD | FR",
+                "currency": null,
+                "currency_active": false,
+                "language": "Francaise Spanish",
+                "language_active": "Francaise"
+              }
+            },
+            "change_data": [
+              {
+                "currency": null,
+                "language": "Spanish",
+                "save": true,
+                "cancel": false,
+                "close": false,
+                "output": {
+                  "global_active": "USD | ES",
+                  "button_buy_now": "COMPRA AHORA",
+                  "type_price": false,
+                  "type_currency": "$"
+                }
+              }
+            ]
+          },
+          {
+            "description": "Desktop_Mobile_Check not show language + show currency",
+            "id": "SB_OLS_THE_INS_SF_LANGUAGE_CURRENCY_7",
+            "data": [
+              {
+                "currency": {
+                  "all_currencies": true,
+                  "enable_conversion": true,
+                  "format_type": "with",
+                  "support_currencies": "USD CAD AUD GBP EUR JPY"
+                }
+              },
+              {
+                "locale": {
+                  "all_languages": false,
+                  "default": "fr",
+                  "enable_translation": false,
+                  "support_locales": "fr=Francaise es=Spanish"
+                }
+              }
+            ],
+            "output": {
+              "button_buy_now": "BUY NOW",
+              "type_price": "SGD",
+              "type_currency": "$",
+              "popup_currency_language": {
+                "global_active": "SGD | EN",
+                "currency": 155,
+                "currency_active": "SGD",
+                "language": null,
+                "language_active": false
+              }
+            },
+            "change_data": [
+              {
+                "currency": "BAM",
+                "language": null,
+                "save": true,
+                "cancel": false,
+                "close": false,
+                "output": {
+                  "global_active": "BAM | EN",
+                  "button_buy_now": "BUY NOW",
+                  "type_price": "BAM",
+                  "type_currency": "KM"
+                }
+              }
+            ]
+          },
+          {
+            "description": "Desktop_Mobile_Check not show language + not show currency",
+            "id": "SB_OLS_THE_INS_SF_LANGUAGE_CURRENCY_9",
+            "data": [
+              {
+                "currency": {
+                  "all_currencies": true,
+                  "enable_conversion": false,
+                  "format_type": "with",
+                  "support_currencies": "USD CAD AUD GBP EUR JPY"
+                }
+              },
+              {
+                "locale": {
+                  "all_languages": false,
+                  "default": "fr",
+                  "enable_translation": false,
+                  "support_locales": "fr=Francaise es=Spanish"
+                }
+              }
+            ],
+            "output": {
+              "button_buy_now": "BUY NOW",
+              "type_price": false,
+              "type_currency": "$",
+              "popup_currency_language": null
+            },
+            "change_data": null
+          }
+        ]
+      }
+    }
+  },
+  "cases": {
+    "LANGUAGE_CURRENCY": [
+      {
+        "description": "Desktop_Mobile_Check show some language + some currency + without currency",
+        "id": "SB_OLS_THE_INS_SF_LANGUAGE_CURRENCY_1",
+        "data": null,
+        "output": {
+          "button_buy_now": "BUY NOW",
+          "type_price": false,
+          "type_currency": "$",
+          "popup_currency_language": {
+            "global_active": "USD | EN",
+            "currency": "USD CAD AUD GBP EUR JPY",
+            "currency_active": "USD",
+            "language": "English Francaise Spanish German",
+            "language_active": "English"
+          }
+        },
+        "change_data": [
+          {
+            "currency": "EUR",
+            "language": "Francaise",
+            "save": true,
+            "cancel": false,
+            "close": false,
+            "output": {
+              "global_active": "EUR | FR",
+              "button_buy_now": "ACHETEZ MAINTENANT",
+              "type_price": false,
+              "type_currency": "€"
+            }
+          },
+          {
+            "currency": "GBP",
+            "language": "Spanish",
+            "save": false,
+            "cancel": true,
+            "close": false,
+            "output": {
+              "global_active": "EUR | FR",
+              "button_buy_now": "ACHETEZ MAINTENANT",
+              "type_price": false,
+              "type_currency": "€"
+            }
+          },
+          {
+            "currency": "GBP",
+            "language": "Spanish",
+            "save": false,
+            "cancel": false,
+            "close": true,
+            "output": {
+              "global_active": "EUR | FR",
+              "button_buy_now": "ACHETEZ MAINTENANT",
+              "type_price": false,
+              "type_currency": "€"
+            }
+          },
+          {
+            "currency": "GBP",
+            "language": "Spanish",
+            "save": true,
+            "cancel": false,
+            "close": false,
+            "output": {
+              "global_active": "GBP | ES",
+              "button_buy_now": "COMPRA AHORA",
+              "type_price": false,
+              "type_currency": "£"
+            }
+          }
+        ]
+      },
+      {
+        "description": "Desktop_Mobile_Check show all language + all currency + with currency",
+        "id": "SB_OLS_THE_INS_SF_LANGUAGE_CURRENCY_3",
+        "data": [
+          {
+            "currency": {
+              "all_currencies": true,
+              "enable_conversion": true,
+              "format_type": "with",
+              "support_currencies": "USD CAD AUD GBP EUR JPY"
+            }
+          },
+          {
+            "locale": {
+              "all_languages": true,
+              "default": "en",
+              "enable_translation": true,
+              "support_locales": "en=English fr=Francaise es=Spanish de=German"
+            }
+          }
+        ],
+        "output": {
+          "button_buy_now": "BUY NOW",
+          "type_price": "USD",
+          "type_currency": "$",
+          "popup_currency_language": {
+            "global_active": "USD | EN",
+            "currency": 155,
+            "currency_active": "USD",
+            "language": 59,
+            "language_active": "English"
+          }
+        },
+        "change_data": [
+          {
+            "currency": "CNY",
+            "language": "中文 (简体) (Zhōngwén Jiǎntǐ)",
+            "save": true,
+            "cancel": false,
+            "close": false,
+            "output": {
+              "global_active": "CNY | ZH-CN",
+              "button_buy_now": "立即购买",
+              "type_price": "CNY",
+              "type_currency": "¥"
+            }
+          }
+        ]
+      },
+      {
+        "description": "Desktop_Mobile_Check show language + not show currency",
+        "id": "SB_OLS_THE_INS_SF_LANGUAGE_CURRENCY_5",
+        "data": [
+          {
+            "currency": {
+              "all_currencies": true,
+              "enable_conversion": false,
+              "format_type": "with",
+              "support_currencies": "USD CAD AUD GBP EUR JPY"
+            }
+          },
+          {
+            "locale": {
+              "all_languages": false,
+              "default": "fr",
+              "enable_translation": true,
+              "support_locales": "fr=Francaise es=Spanish"
+            }
+          }
+        ],
+        "output": {
+          "button_buy_now": "ACHETEZ MAINTENANT",
+          "type_price": false,
+          "type_currency": "$",
+          "popup_currency_language": {
+            "global_active": "USD | FR",
+            "currency": null,
+            "currency_active": false,
+            "language": "Francaise Spanish",
+            "language_active": "Francaise"
+          }
+        },
+        "change_data": [
+          {
+            "currency": null,
+            "language": "Spanish",
+            "save": true,
+            "cancel": false,
+            "close": false,
+            "output": {
+              "global_active": "USD | ES",
+              "button_buy_now": "COMPRA AHORA",
+              "type_price": false,
+              "type_currency": "$"
+            }
+          }
+        ]
+      },
+      {
+        "description": "Desktop_Mobile_Check not show language + show currency",
+        "id": "SB_OLS_THE_INS_SF_LANGUAGE_CURRENCY_7",
+        "data": [
+          {
+            "currency": {
+              "all_currencies": true,
+              "enable_conversion": true,
+              "format_type": "with",
+              "support_currencies": "USD CAD AUD GBP EUR JPY"
+            }
+          },
+          {
+            "locale": {
+              "all_languages": false,
+              "default": "fr",
+              "enable_translation": false,
+              "support_locales": "fr=Francaise es=Spanish"
+            }
+          }
+        ],
+        "output": {
+          "button_buy_now": "BUY NOW",
+          "type_price": "USD",
+          "type_currency": "$",
+          "popup_currency_language": {
+            "global_active": "USD | EN",
+            "currency": 155,
+            "currency_active": "USD",
+            "language": null,
+            "language_active": false
+          }
+        },
+        "change_data": [
+          {
+            "currency": "BAM",
+            "language": null,
+            "save": true,
+            "cancel": false,
+            "close": false,
+            "output": {
+              "global_active": "BAM | EN",
+              "button_buy_now": "BUY NOW",
+              "type_price": "BAM",
+              "type_currency": "KM"
+            }
+          }
+        ]
+      },
+      {
+        "description": "Desktop_Mobile_Check not show language + not show currency",
+        "id": "SB_OLS_THE_INS_SF_LANGUAGE_CURRENCY_9",
+        "data": [
+          {
+            "currency": {
+              "all_currencies": true,
+              "enable_conversion": false,
+              "format_type": "with",
+              "support_currencies": "USD CAD AUD GBP EUR JPY"
+            }
+          },
+          {
+            "locale": {
+              "all_languages": false,
+              "default": "fr",
+              "enable_translation": false,
+              "support_locales": "fr=Francaise es=Spanish"
+            }
+          }
+        ],
+        "output": {
+          "button_buy_now": "BUY NOW",
+          "type_price": false,
+          "type_currency": "$",
+          "popup_currency_language": null
+        },
+        "change_data": null
+      }
+    ]
+  }
+}

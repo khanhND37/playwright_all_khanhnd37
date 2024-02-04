@@ -1,0 +1,65 @@
+{
+  "env": {
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "dp-checkout-auto.myshopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "shop_name": "dp-checkout-auto.myshopbase.net",
+      "user_id": 73800,
+      "shop_id": 10322779
+    },
+    "prodtest": {
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://prod-test-api.shopbase.com"
+    }
+  },
+  "cases": {
+    "SB_DP_DPSF_CDP_OR_B_9": {
+      "products": [
+        {
+          "product": {
+            "product_type": "digital_download",
+            "title": "Digital Product unpublished Digital Download",
+            "published": false
+          }
+        },
+        {
+          "product": {
+            "product_type": "online_course",
+            "title": "Digital Product unpublish Online Course",
+            "published": false
+          }
+        },
+        {
+          "product": {
+            "product_type": "digital_download",
+            "title": "Digital Product published Digital Download",
+            "published": true
+          }
+        },
+        {
+          "product": {
+            "product_type": "coaching_session",
+            "title": "Digital publish Product Coaching Session",
+            "published": false
+          }
+        }
+      ],
+      "data": [
+        {
+          "type": "published",
+          "description": "Gửi request GET lấy thông tin 1 product published trong order bump"
+        },
+        {
+          "type": "unpublished",
+          "description": "Gửi request GET lấy thông tin 1 product unpublish trong order bump"
+        },
+        {
+          "type": "many_products",
+          "description": "Gửi request GET lấy thông tin nhiều product trong order bump"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,562 @@
+{
+  "api": "https://api.shopbase.com",
+  "domain": "au-digital-product-list-dashboard-prodtest.onshopbase.com",
+  "shop_name": "au-digital-product-list-dashboard-prodtest",
+  "user_id": "11244582",
+  "shop_id": 10429570,
+  "username": "dpro-qe-1@beeketing.net",
+  "password": "Wb]$s>mZIm6We,x",
+  "timeout": 240000,
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-digital-product-list-dashboard.onshopbase.com",
+      "shop_name": "au-digital-product-list-dashboard",
+      "user_id": 11244582,
+      "shop_id": 10429473,
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-digital-product-list-dashboard-prodtest.onshopbase.com",
+      "shop_name": "au-digital-product-list-dashboard-prodtest",
+      "user_id": "11244582",
+      "shop_id": 10429570,
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "Wb]$s>mZIm6We,x",
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-digital-product-list-dashboard.myshopbase.net",
+      "username": "dpro-qe-1@beeketing.net",
+      "password": "43AhIn|VWp;[?9&",
+      "user_id": 89797,
+      "shop_id": 10326900,
+      "shop_name": "au-digital-product-list-dashboard"
+    }
+  },
+  "cases": {
+    "SB_SC_SCP_34": {
+      "product_title": [
+        {
+          "title": "",
+          "err_msg": "Please fill in product title",
+          "product_type": "online_course"
+        },
+        {
+          "title": "Special %$^*(@#&) _0-",
+          "product_type": "digital_download"
+        }
+      ],
+      "product_handle": {
+        "title": "Test Digital",
+        "handle": "test-digital-123",
+        "product_type": "online_course"
+      },
+      "product_types": [
+        {
+          "title": "Test Digital Online course",
+          "product_type": "online_course",
+          "handle": "test-digital-online-course"
+        },
+        {
+          "title": "Test Digital download",
+          "product_type": "digital_download",
+          "handle": "test-digital-download"
+        },
+        {
+          "title": "Test Digital coaching session",
+          "handle": "test-digital-coaching-session",
+          "product_type": "coaching_session"
+        }
+      ],
+      "product_success": {
+        "title": "Create product successfully",
+        "handle": "create-product-success",
+        "product_type": "coaching_session"
+      }
+    },
+    "SB_SC_SCP_39": {
+      "product": {
+        "title": "Test Digital product detail",
+        "product_type": "online_course"
+      },
+      "thumbnail_upload": [
+        {
+          "file_path": "data/dpro/more_than_2MB.png",
+          "err_msg": "Image size is too big. Please use a file size smaller than 2MB."
+        },
+        {
+          "file_path": "data/dpro/Test data.pdf",
+          "err_msg": "Invalid format. Supported file format: .jpg, .jpeg and .png."
+        },
+        {
+          "file_path": "data/dpro/e-learning.jpg"
+        }
+      ],
+      "thumbnail_link": [
+        {
+          "file": "link",
+          "file_path": "https://img.btdmp.com/10049/10049974/products/0x360@1648835723f84aaf318e.jpeg"
+        },
+        {
+          "file": "link",
+          "file_path": "https://test-hub.ocg.to/admin/th/case/68376/change/?_changelist_filters=module__pk__exact%3D1296",
+          "err_msg": "URL format is invalid. Please try another URL."
+        }
+      ]
+    },
+    "SB_SC_SCP_44": {
+      "product": {
+        "title": "Test Digital Online course Add section",
+        "product_type": "online_course"
+      },
+      "section_title": [
+        {
+          "type": "section",
+          "title": " ",
+          "description": "Test title null",
+          "status": "published",
+          "err_msg": "Please fill in chapter title"
+        },
+        {
+          "type": "section",
+          "title": "What is Lorem Ipsum?Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was",
+          "description": "Test title max length",
+          "status": "published"
+        },
+        {
+          "type": "section",
+          "title": "Special %$^*(@#&) _0-",
+          "description": "Test title special character",
+          "status": "published"
+        },
+        {
+          "type": "section",
+          "title": "Section test 1",
+          "description": "Test duplicate title",
+          "status": "published"
+        },
+        {
+          "type": "section",
+          "title": "Section test 1",
+          "description": "Test duplicate title",
+          "status": "unpublished"
+        }
+      ],
+      "section_description": [
+        {
+          "type": "section",
+          "title": "section test 2",
+          "description": "https://accounts.shopbase.com/shop/select",
+          "status": "unpublished"
+        },
+        {
+          "type": "section",
+          "title": "section test 3",
+          "description": "https://www.youtube.com/watch?v=tCgaplgkGQs&ab_channel=S%C6%B0T%E1%BB%ADRV",
+          "status": "unpublished"
+        }
+      ],
+      "section_status": [
+        {
+          "type": "section",
+          "title": "section test 4",
+          "description": "This is test section",
+          "status": "published"
+        },
+        {
+          "type": "section",
+          "title": "section test 5",
+          "description": "This is test section",
+          "status": "unpublished"
+        }
+      ]
+    },
+    "SB_SC_SCP_47": {
+      "product": {
+        "title": "Test Digital Online course Add Lecture",
+        "product_type": "online_course"
+      },
+      "section": {
+        "title": "section test lecture",
+        "description": "This is test section",
+        "status": "unpublished"
+      },
+      "lecture_title": [
+        {
+          "title": " ",
+          "description": "This is test lesson",
+          "status": "unpublished",
+          "err_msg": "Please fill in lesson title"
+        },
+        {
+          "title": "Special %$^*(@#&) _0-",
+          "description": "This is test lesson",
+          "status": "published"
+        },
+        {
+          "title": "Lecture test 1",
+          "description": "This is test lesson",
+          "status": "unpublished"
+        }
+      ],
+      "lecture_status": [
+        {
+          "title": "lecture test 4",
+          "text": "",
+          "status": "published"
+        },
+        {
+          "title": "lecture test 5",
+          "text": "",
+          "status": "unpublished"
+        }
+      ]
+    },
+    "SB_SC_SCP_48": {
+      "product": {
+        "title": "Test Digital Online course Add media for lecture",
+        "product_type": "online_course"
+      },
+      "section": {
+        "title": "section test lecture",
+        "description": "This is test section",
+        "status": "unpublished"
+      },
+      "lecture": {
+        "title": "Test lecture media",
+        "text": "This is text",
+        "description": "This is test lesson",
+        "status": "unpublished"
+      },
+      "media": [
+        {
+          "type_file": "Media",
+          "path_file": "data/dpro/39.png"
+        },
+        {
+          "type_file": "Media",
+          "path_file": "data/dpro/Test data.pdf",
+          "err_msg": "This file type is not accepted"
+        },
+        {
+          "type_file": "Media",
+          "path_file": "data/dpro/more_than_2MB.png"
+        }
+      ],
+      "media_link": [
+        {
+          "type_file": "link",
+          "path_file": "https://img.btdmp.com/10274/10274954/products/origin/1645768188273.jpg",
+          "msg": "Added lesson successfully!"
+        },
+        {
+          "type_file": "link",
+          "path_file": "https://test-hub.ocg.to/admin/th/case/66956/change/?_changelist_filters=module__pk__exact%3D1296",
+          "err_msg": "URL format is invalid. Please try another URL."
+        }
+      ],
+      "upload_success": {
+        "type_file": "Media",
+        "path_file": "data/dpro/e-learning.jpg"
+      }
+    },
+    "SB_SC_SCP_51": {
+      "product": {
+        "title": "Product digital download test section title",
+        "handle": "product-digital-download-test",
+        "product_type": "digital_download"
+      },
+      "files": {
+        "type_file": "link",
+        "path_file": "https://monosnap.com/file/dtid9Y0yEhPcZzQxfhWxEp3bbrmgEw",
+        "type_product": "Digital download"
+      },
+      "section": [
+        {
+          "title": "",
+          "description": "",
+          "status": "unpublished",
+          "type": "Digital download"
+        },
+        {
+          "title": "Special %$^*(@#&) _0-",
+          "description": "",
+          "status": "published",
+          "type": "Digital download"
+        }
+      ]
+    },
+    "SB_SC_SCP_52": {
+      "product": {
+        "title": "Product digital download test section upload file",
+        "handle": "product-digital-download-test-section-upload-file",
+        "product_type": "digital_download"
+      },
+      "section": {
+        "title": "Test digital download with files"
+      },
+      "media": [
+        {
+          "type_file": "Attachments",
+          "path_file": "data/shopbase/front/slideshow.csv",
+          "err_msg": "File format is not supported!"
+        },
+        {
+          "type_file": "Attachments",
+          "path_file": "data/dpro/Test data.pdf",
+          "file_name": "Test data.pdf"
+        },
+        {
+          "type_file": "Attachments",
+          "path_file": "data/dpro/Test data.pptx",
+          "file_name": "Test data.pptx"
+        }
+      ],
+      "media_link": [
+        {
+          "type_file": "link",
+          "path_file": "https://monosnap.com/file/dtid9Y0yEhPcZzQxfhWxEp3bbrmgEw",
+          "file_name": "https://monosnap.com/file/dtid9Y0yEhPcZzQxfhWxEp3bbrmgEw"
+        },
+        {
+          "type_file": "link",
+          "path_file": "https://imgv3.fotor.com/images/blog-cover-image/Image-Upscaler-2.jpg",
+          "file_name": "https://imgv3.fotor.com/images/blog-cover-image/Image-Upscaler-2.jpg"
+        }
+      ],
+      "edit_file": [
+        {
+          "file_name": "Test data.pptx",
+          "new_name": "edit file name successfully"
+        },
+        {
+          "file_name": "edit file name successfully",
+          "new_name": "test.png"
+        },
+        {
+          "file_name": "test.png",
+          "new_name": "",
+          "err_msg": "Please input file name"
+        }
+      ],
+      "delete_file": "Test data.pdf"
+    },
+    "SB_SC_SCP_53": {
+      "product": {
+        "title": "Product digital download test status",
+        "handle": "product-digital-download-test-status",
+        "product_type": "digital_download"
+      },
+      "section": {
+        "title": "Content digital download",
+        "status": "published",
+        "type_file": "Attachments",
+        "path_file": "data/dpro/Test data.pptx"
+      },
+      "section_edit": {
+        "title": "Content digital download edit",
+        "status": "unpublished"
+      }
+    },
+    "SB_SC_SCP_41": {
+      "product": {
+        "title": "Test Coaching session",
+        "handle": "test-coaching-sesion-1111",
+        "product_type": "coaching_session"
+      },
+      "data_input_link_schedule": [
+        {
+          "schedule_type": "Embed booking calendar",
+          "schedule": "https://calendly.com/phuongnguyen-tmm/30min"
+        },
+        {
+          "schedule_type": "Embed booking calendar",
+          "schedule": "https://nguyenphuong-0.youcanbook.me"
+        }
+      ],
+      "data_input_not_link_schedule": [
+        {
+          "third_service": true,
+          "schedule_type": "Embed booking calendar",
+          "schedule": "imgur.com",
+          "link": "https://imgur.com"
+        },
+        {
+          "schedule_type": "Embed booking calendar",
+          "schedule": "imgur",
+          "link": "https://imgur"
+        },
+        {
+          "third_service": true,
+          "schedule_type": "Embed booking calendar",
+          "schedule": "https://imgur.com",
+          "link": "https://imgur.com"
+        },
+        {
+          "third_service": true,
+          "schedule_type": "Embed booking calendar",
+          "schedule": "http://tracuunnt.gdt.gov.vn/tcnnt/mstdn.jsp",
+          "link": "http://tracuunnt.gdt.gov.vn/tcnnt/mstdn.jsp"
+        },
+        {
+          "schedule_type": "Embed booking calendar",
+          "schedule": "tracuunnt.gdt.gov.vn",
+          "link": "https://tracuunnt.gdt.gov.vn"
+        },
+        {
+          "third_service": true,
+          "schedule_type": "Embed booking calendar",
+          "schedule": "HTTPS://imgur.com",
+          "link": "https://imgur.com"
+        },
+        {
+          "schedule_type": "Embed booking calendar",
+          "schedule": "htps://imgur.com",
+          "link": "https://htps://imgur.com"
+        },
+        {
+          "third_service": true,
+          "schedule_type": "Embed booking calendar",
+          "schedule": " https://imgur.com ",
+          "link": "https://imgur.com"
+        },
+        {
+          "third_service": true,
+          "schedule_type": "Embed booking calendar",
+          "schedule": "imgur.com",
+          "link": "https://imgur.com"
+        }
+      ],
+      "data_input_link_custom_calendar": [
+        {
+          "schedule_type": "Custom calendar link",
+          "schedule": "https://calendly.com/phuongnguyen-tmm/30min"
+        },
+        {
+          "schedule_type": "Custom calendar link",
+          "schedule": "https://savvycal.com/phuong-nguyen-tmm/81094a6e"
+        },
+        {
+          "schedule_type": "Custom calendar link",
+          "schedule": "https://app.squarespacescheduling.com/schedule.php?owner=26724397&calendarID=7040192"
+        }
+      ]
+    },
+    "SB_SC_SCP_49": {
+      "product": {
+        "title": "Test Digital Online course Add media for lecture",
+        "product_type": "online_course"
+      },
+      "section": {
+        "title": "section test lecture",
+        "description": "This is test section",
+        "status": "unpublished"
+      },
+      "lecture": {
+        "title": "Test lecture media",
+        "text": "This is text",
+        "description": "This is test lesson",
+        "status": "unpublished"
+      },
+      "media": [
+        {
+          "type_file": "Media",
+          "path_file": "data/dpro/file_example_AVI.avi"
+        },
+        {
+          "type_file": "Media",
+          "path_file": "data/dpro/file_test_mov.mov"
+        },
+        {
+          "type_file": "Media",
+          "path_file": "data/dpro/sample_f4v.f4v"
+        },
+        {
+          "type_file": "Media",
+          "path_file": "data/dpro/sample_flv.flv"
+        },
+        {
+          "type_file": "Media",
+          "path_file": "data/dpro/sample_m4v.m4v"
+        },
+        {
+          "type_file": "Media",
+          "path_file": "data/dpro/sample_mkv.mkv"
+        },
+        {
+          "type_file": "Media",
+          "path_file": "data/dpro/sample_wmv.wmv"
+        },
+        {
+          "type_file": "Media",
+          "path_file": "data/dpro/file_WEBM.webm"
+        },
+        {
+          "type_file": "Media",
+          "path_file": "data/dpro/Test data.pdf",
+          "err_msg": "This file type is not accepted"
+        }
+      ],
+      "media_link": [
+        {
+          "type_file": "link",
+          "path_file": "https://www.youtube.com/watch?v=n_PxYUOvwJA&ab_channel=ShopBaseVietnam",
+          "msg": "Added lesson successfully!"
+        },
+        {
+          "type_file": "link",
+          "path_file": "https://test-hub.ocg.to/admin/th/case/66956/change/?_changelist_filters=module__pk__exact%3D1296",
+          "err_msg": "URL format is invalid. Please try another URL."
+        }
+      ],
+      "upload_success": {
+        "type_file": "Media",
+        "path_file": "data/dpro/sample_mp4.mp4"
+      }
+    },
+    "SB_SC_SCP_40": {
+      "products": [
+        {
+          "title": "Test Digital Online course",
+          "product_type": "online_course"
+        },
+        {
+          "title": "Test Digital Download",
+          "product_type": "digital_download"
+        },
+        {
+          "title": "Test Digital Coaching session",
+          "product_type": "coaching_session"
+        }
+      ],
+      "page_titles": [
+        {
+          "title": "Test page title on search engine Lorem Ipsum is simply dummy text of the printing",
+          "max_length_msg": "70 / 70  suggested characters"
+        },
+        {
+          "title": "Special %$^*(@#) _0-"
+        },
+        {
+          "title": ""
+        }
+      ],
+      "meta_descriptions": [
+        {
+          "description": "Special $^*(@#) _0-"
+        },
+        {
+          "description": "Hi Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic",
+          "max_length_msg": "320 / 320  suggested characters"
+        },
+        {
+          "description": ""
+        }
+      ]
+    }
+  }
+}

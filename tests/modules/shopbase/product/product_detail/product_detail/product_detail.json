@@ -1,0 +1,167 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-product-details-sb.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "user_id": 73782,
+      "shop_id": 10398081,
+      "shop_name": "au-product-details-sb",
+      "timeout": "900000",
+      "info_sbase_source": {
+        "domain": "shop-clone-shopbase2.onshopbase.com",
+        "shop_id": 10424922,
+        "shop_name": "shop-clone-shopbase2"
+      }
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-product-details-sb-prodtest.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "user_id": 73782,
+      "shop_id": 10398085,
+      "shop_name": "au-product-details-sb-prodtest",
+      "timeout": "900000",
+      "info_sbase_source": {
+        "domain": "shop-clone-shopbase02-test.onshopbase.com",
+        "shop_id": 10375640,
+        "shop_name": "shop-clone-shopbase02-test"
+      },
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-product-details-sb.myshopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "user_id": 73800,
+      "shop_id": 10324390,
+      "shop_name": "au-product-details-sb",
+      "timeout": "900000",
+      "info_sbase_source": {
+        "domain": "shop-clone-shopbase2.myshopbase.net",
+        "shop_id": 10322606,
+        "shop_name": "shop-clone-shopbase2"
+      }
+    }
+  },
+  "create_product_success": "Product was created successfully!",
+  "max_diff_pixel_ratio": 0.05,
+  "threshold": 0.5,
+  "max_diff_pixels": 2000,
+  "collection_url": "collections",
+  "timeout": 900000,
+  "email_scheduler": "quanle1@beeketing.net",
+  "cases": {
+    "DATA_DRIVEN": {
+      "data": [
+        {
+          "case_id": "SB_PRO_PD_88",
+          "case_name": "[Add product] Verify add Product availability của product unchecked checkbox : [Online store listing pages] và [Search Engine Bot Crawlers, Sitemap files]",
+          "product_all_info": {
+            "title": "Product uncheck checkbox Online store listing pages",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20",
+            "collections": ["Quan collection"],
+            "product_availability_online_store": false
+          },
+          "expected_result": 0
+        },
+        {
+          "case_id": "SB_PRO_test_110",
+          "case_name": "[Add product] Verify add Product availability của product checked checkbox : [Online store listing pages] và [Search Engine Bot Crawlers, Sitemap files]",
+          "product_all_info": {
+            "title": "Product check checkbox Online store listing pages",
+            "description": "Made from 100% heavyweight cotton, this is the ultimate basic T-shirt.",
+            "image_name": "Logo1.jpg",
+            "vendor": "Uniqlo",
+            "price": "10",
+            "compare_at_price": "20",
+            "collections": ["Quan collection"],
+            "product_availability_online_store": true
+          },
+          "expected_result": 1
+        }
+      ]
+    },
+    "SB_PRO_PD_93": {
+      "product_info": [
+        {
+          "category": "Apparel",
+          "base_product": "V-neck T-shirt"
+        }
+      ],
+      "layers": [
+        {
+          "layer_type": "Image",
+          "image_name": "BD_6.png"
+        },
+        {
+          "layer_type": "Text"
+        }
+      ],
+      "pricing_info": {
+        "title": "Campaign launching"
+      },
+      "snapshot_name": {
+        "variant_detail": "variant_detail_SB_PRO_PD_93.png"
+      }
+    },
+    "SB_PRO_test_102": {
+      "product_detail": {
+        "product_name": "Product medias",
+        "image_URL": "https://www.youtube.com/watch?v=ux3pu3fq2s4, https://vimeo.com/716208763, https://cdn.sforum.vn/sforum/wp-content/uploads/2018/11/2-9.png",
+        "image_name": "BD_1.png"
+      },
+      "product_detail_sf": {
+        "title": "Product medias",
+        "medias": "https://www.youtube.com/watch?v=ux3pu3fq2s4, https://vimeo.com/716208763, https://cdn.sforum.vn/sforum/wp-content/uploads/2018/11/2-9.png, BD_1.png"
+      }
+    },
+    "SB_PRO_test_103": {
+      "product_detail": {
+        "product_name": "Product export and import",
+        "image_URL": "https://www.youtube.com/watch?v=ux3pu3fq2s4, https://vimeo.com/716208763"
+      },
+      "export_info": {
+        "product_export": "Selected products",
+        "file_format": "CSV for Excel, Numbers, or other spreadsheet programs"
+      },
+      "forder_name": "product_detail/export_case_103",
+      "image_URL": "https://www.youtube.com/embed/ux3pu3fq2s4, https://player.vimeo.com/video/716208763",
+      "import_info": {
+        "override": true,
+        "status": "Completed",
+        "process": "Imported 1/1 products."
+      },
+      "product_detail_sf": {
+        "title": "Product medias",
+        "medias": "https://www.youtube.com/watch?v=ux3pu3fq2s4, https://img.btdmp.com/10124/10124464/products/16081123750ec64cad68.jpeg"
+      }
+    },
+    "SB_PRO_test_100": {
+      "product_detail": {
+        "product_name": "Product clone",
+        "image_URL": "https://www.youtube.com/watch?v=ux3pu3fq2s4, https://vimeo.com/716208763, https://cdn.sforum.vn/sforum/wp-content/uploads/2018/11/2-9.png"
+      },
+      "img_name": "image_to_clone.png",
+      "clone_info": {
+        "type": "product",
+        "second_shop": "shop-clone-shopbase2",
+        "action": "Override the existing products",
+        "keep_id": false,
+        "status": "Completed"
+      },
+      "message": "Importing 1 product to store ",
+      "product_detail_sf": {
+        "title": "Product medias",
+        "medias": "https://www.youtube.com/watch?v=ux3pu3fq2s4, https://player.vimeo.com/video/716208763?thumbnail=https://i.vimeocdn.com/video/1443682479-03118f0f36e0fab68efbad0706b109b99a5509b447f1cf16c1e788c08cc9ecd5-d_200x150, https://cdn.sforum.vn/sforum/wp-content/uploads/2018/11/2-9.png"
+      }
+    }
+  }
+}

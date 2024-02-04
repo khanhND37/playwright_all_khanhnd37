@@ -1,0 +1,114 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "username": "opay-qe-1@beeketing.net",
+      "password": "CZFX[b_G5T:+N*Y",
+      "domain": "au-co-ne-1-page-3rd-party-ppc.onshopbase.com",
+      "shop_name": "au-co-ne-1-page-3rd-party-ppc",
+      "products_checkout_ppc": [
+        {
+          "name": "WINNER 3rd full album [Remember]",
+          "variant_id": 1000011259786696,
+          "quantity": 1
+        },
+        {
+          "name": "WINNER 3rd full album [Remember]",
+          "variant_id": 1000011259786697,
+          "quantity": 1
+        }
+      ]
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "opay-qe-1@beeketing.net",
+      "password": "CZFX[b_G5T:+N*Y",
+      "domain": "au-co-ne-1-page-3rd-party-ppc-prodtest.onshopbase.com",
+      "shop_name": "au-co-ne-1-page-3rd-party-ppc-prodtest",
+      "products_checkout_ppc": [
+        {
+          "name": "WINNER 3rd full album [Remember]",
+          "variant_id": 1000011259789338,
+          "quantity": 1
+        },
+        {
+          "name": "WINNER 3rd full album [Remember]",
+          "variant_id": 1000011259789339,
+          "quantity": 1
+        }
+      ],
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "opay-qe-1@beeketing.net",
+      "password": "Z6el|q4&:hwCrVx",
+      "domain": "au-co-ne-1-page-3rd-party-ppcsb.myshopbase.net",
+      "shop_name": "au-co-ne-1-page-3rd-party-ppcsb",
+      "products_checkout_ppc": [
+        {
+          "name": "WINNER 3rd full album [Remember]",
+          "variant_id": 1000001780831425,
+          "quantity": 1
+        },
+        {
+          "name": "WINNER 3rd full album [Remember]",
+          "variant_id": 1000001780831426,
+          "quantity": 1
+        }
+      ]
+    }
+  },
+  "cases": {
+    "SB_CHE_CHEN_NE_1PAGE_PPC": [
+      {
+        "case_id": "SB_NEWECOM_CO_63",
+        "case_name": "NE - paypal-pro gateway - Checkout one page có add PPC",
+        "payment_method": "paypal-pro",
+        "product_ppc_name": "Bikini"
+      },
+      {
+        "case_id": "SB_NEWECOM_CO_47",
+        "case_name": "Unlimint - checkout 1 page có add PPC thành công",
+        "payment_method": "Unlimint",
+        "product_ppc_name": "Bikini"
+      },
+      {
+        "case_id": "SB_NEWECOM_CO_31",
+        "case_name": "Kiểm tra order detail khi checkout thành công với cổng Checkout.com, checkout 1 page có add PPC",
+        "payment_method": "CheckoutCom",
+        "product_ppc_name": "Bikini"
+      },
+      {
+        "case_id": "SB_NEWECOM_CO_64",
+        "case_name": "NE - paypal-pro gateway - Checkout one page không add PPC",
+        "payment_method": "paypal-pro",
+        "product_ppc_name": ""
+      },
+      {
+        "case_id": "SB_NEWECOM_CO_48",
+        "case_name": "Unlimint - checkout 1 page thành công, không add PPC",
+        "payment_method": "Unlimint",
+        "product_ppc_name": ""
+      },
+      {
+        "case_id": "SB_NEWECOM_CO_32",
+        "case_name": "Kiểm tra order detail khi checkout thành công với cổng Checkout.com, checkout 1 page không add PPC",
+        "payment_method": "CheckoutCom",
+        "product_ppc_name": ""
+      },
+      {
+        "case_id": "SB_NEWECOM_CO_41",
+        "case_name": "Kiểm tra order detail khi checkout thành công với cổng Braintree, checkout 1 page không add PPC",
+        "payment_method": "Braintree",
+        "product_ppc_name": ""
+      },
+      {
+        "case_id": "SB_NEWECOM_CO_40",
+        "case_name": "Kiểm tra order detail khi checkout thành công với cổng Braintree, checkout 1 page có add PPC",
+        "payment_method": "Braintree",
+        "product_ppc_name": "Bikini"
+      }
+    ]
+  }
+}

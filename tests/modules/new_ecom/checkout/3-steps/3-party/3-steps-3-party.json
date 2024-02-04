@@ -1,0 +1,104 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "username": "opay-qe-1@beeketing.net",
+      "password": "CZFX[b_G5T:+N*Y",
+      "domain": "au-checkout-ne-3-steps-3-party.onshopbase.com",
+      "shop_name": "au-checkout-ne-3-steps-3-party",
+      "products_checkout": [
+        {
+          "name": "BLACKPINK 1st full album [THE ALBUM]",
+          "variant_id": 1000010893020658,
+          "quantity": 2
+        },
+        {
+          "name": "[Still live] BIGBANG T-shirts",
+          "variant_id": 1000010893020653,
+          "quantity": 2
+        }
+      ],
+      "timeout": 25000
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "opay-qe-1@beeketing.net",
+      "password": "CZFX[b_G5T:+N*Y",
+      "domain": "au-checkout-ne-3-steps-3-party-prodtest.onshopbase.com",
+      "shop_name": "au-checkout-ne-3-steps-3-party-prodtest",
+      "products_checkout": [
+        {
+          "name": "BLACKPINK 1st full album [THE ALBUM]",
+          "variant_id": 1000010893020667,
+          "quantity": 2
+        },
+        {
+          "name": "[Still live] BIGBANG T-shirts",
+          "variant_id": 1000010893020663,
+          "quantity": 2
+        }
+      ],
+      "accounts_domain": "accounts-test.shopbase.com",
+      "timeout": 25000
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "opay-qe-1@beeketing.net",
+      "password": "Z6el|q4&:hwCrVx",
+      "domain": "au-checkout-ne-3-steps-3-party.myshopbase.net",
+      "shop_name": "au-checkout-ne-3-steps-3-party",
+      "user_id": 90009,
+      "shop_id": 10325104,
+      "products_checkout": [
+        {
+          "name": "BLACKPINK 1st full album [THE ALBUM]",
+          "variant_id": 1000001773822540,
+          "quantity": 2
+        },
+        {
+          "name": "[Still live] BIGBANG T-shirts",
+          "variant_id": 1000001773822536,
+          "quantity": 2
+        }
+      ],
+      "timeout": 35000
+    }
+  },
+  "cases": {
+    "SB_CHE_CHEN_NE_3STEPS": [
+      {
+        "case_id": "SB_NEWECOM_CO_60",
+        "case_name": "NE - paypal-pro gateway - Checkout 3 steps",
+        "payment_method": "paypal-pro"
+      },
+      {
+        "case_id": "SB_NEWECOM_CO_44",
+        "case_name": "Unlimint - checkout 3 steps thành công",
+        "payment_method": "Unlimint"
+      },
+      {
+        "case_id": "SB_NEWECOM_CO_50",
+        "case_name": "Unlimint - checkout với 3Ds thành công",
+        "payment_method": "Unlimint",
+        "is_3Ds": true,
+        "card_info": {
+          "unlimint_card": "4000000000000002",
+          "holder_name": "Shopbase",
+          "expire_month": "12",
+          "expire_year": "2029",
+          "cvv": "100"
+        }
+      },
+      {
+        "case_id": "SB_NEWECOM_CO_28",
+        "case_name": "Kiểm tra order detail khi checkout thành công với cổng Checkout.com, checkout 3 steps",
+        "payment_method": "CheckoutCom"
+      },
+      {
+        "case_id": "SB_NEWECOM_CO_37",
+        "case_name": "Kiểm tra order detail khi checkout thành công với cổng Braintree, checkout 3 steps",
+        "payment_method": "Braintree"
+      }
+    ]
+  }
+}

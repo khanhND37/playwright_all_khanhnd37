@@ -1,0 +1,323 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "username": "qe-2@beeketing.net",
+      "password": "Qe2@OCGQE",
+      "domain": "au-multiple-discounts-special.onshopbase.com",
+      "shipping_address": {
+        "email": "testerOCG@mailtothis.com",
+        "first_name": "ShopBase",
+        "last_name": "Auto",
+        "address": "1600 W Loop S",
+        "city": "Los Angeles",
+        "country": "United States",
+        "state": "New York",
+        "country_code": "US",
+        "country_name": "United States",
+        "zipcode": "10001",
+        "phone_number": "0336555555"
+      },
+      "secret_key": "",
+      "gateway_code": "",
+      "retry": 5
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "qe-2@beeketing.net",
+      "password": "Qe2@OCGQE",
+      "domain": "au-multiple-discounts-special-prodtest.onshopbase.com",
+      "shipping_address": {
+        "email": "testerOCG@mailtothis.com",
+        "first_name": "ShopBase",
+        "last_name": "Auto",
+        "address": "1600 W Loop S",
+        "city": "Los Angeles",
+        "country": "United States",
+        "state": "New York",
+        "country_code": "US",
+        "country_name": "United States",
+        "zipcode": "10001",
+        "phone_number": "0336555555"
+      },
+      "secret_key": "",
+      "gateway_code": "",
+      "retry": 5,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "opay-qe-2@beeketing.net",
+      "password": "Opay@123",
+      "domain": "au-multiple-discounts-special.myshopbase.net",
+      "shipping_address": {
+        "email": "testerOCG@mailtothis.com",
+        "first_name": "ShopBase",
+        "last_name": "Auto",
+        "address": "1600 W Loop S",
+        "city": "Los Angeles",
+        "country": "United States",
+        "state": "New York",
+        "country_code": "US",
+        "country_name": "United States",
+        "zipcode": "10001",
+        "phone_number": "0336555555"
+      },
+      "secret_key": "",
+      "gateway_code": "",
+      "retry": 10
+    }
+  },
+  "cases": {
+    "SB_COPAGE_APLLY_DISCOUNT": [
+      {
+        "case_id": "SB_DC_MD_SB_41",
+        "case_name": "Apply các discount freeship thỏa mãn vào order",
+        "products_checkout": [
+          {
+            "name": "Bikini",
+            "quantity": 1,
+            "price": 40
+          },
+          {
+            "name": "Bikini 2",
+            "quantity": 1,
+            "price": 30
+          },
+          {
+            "name": "Post purchase",
+            "quantity": 1,
+            "price": 50
+          }
+        ],
+        "discount_code": ["Free_shipping_1", "Free_shipping_2", "Free_shipping_3"],
+        "quatity_discount_apply": 2,
+        "expect_order": {
+          "subtotal": 61.72,
+          "discount_value": 122.22,
+          "tax": 6.17,
+          "shipping": 5.39,
+          "tip": 3.08,
+          "total": 70.97
+        }
+      },
+      {
+        "case_id": "SB_DC_MD_SB_39",
+        "case_name": "Apply các discount fixamount không thỏa mãn vào order",
+        "products_checkout": [
+          {
+            "name": "Bikini",
+            "quantity": 1,
+            "price": 40
+          },
+          {
+            "name": "Bikini 2",
+            "quantity": 1,
+            "price": 30
+          },
+          {
+            "name": "Post purchase",
+            "quantity": 1,
+            "price": 50
+          }
+        ],
+        "discount_code": ["Fixamt_1", "Fixamt_2", "Fixamt_3", "Fixamt_4", "Fixamt_5"],
+        "expect_order": {
+          "subtotal": 61.72,
+          "discount_value": 122.22,
+          "tax": 6.17,
+          "shipping": 5.39,
+          "tip": 3.08,
+          "total": 70.97
+        }
+      },
+      {
+        "case_id": "SB_DC_MD_SB_38",
+        "case_name": "Apply các discount percentage không thỏa mãn vào order",
+        "products_checkout": [
+          {
+            "name": "Bikini",
+            "quantity": 1,
+            "price": 40
+          },
+          {
+            "name": "Bikini 2",
+            "quantity": 1,
+            "price": 30
+          },
+          {
+            "name": "Post purchase",
+            "quantity": 1,
+            "price": 50
+          }
+        ],
+        "discount_code": ["Percent_1", "Percent_2", "Percent_3", "Percent_4", "Percent_5"],
+        "expect_order": {
+          "subtotal": 61.72,
+          "discount_value": 122.22,
+          "tax": 6.17,
+          "shipping": 5.39,
+          "tip": 3.08,
+          "total": 70.97
+        }
+      }
+    ],
+    "SB_DC_MD_SB_40": {
+      "discount_code": ["buyxgety_1", "buyxgety_2", "buyxgety_3"],
+      "products_checkout": [
+        {
+          "name": "Bikini",
+          "quantity": 1,
+          "price": 40
+        },
+        {
+          "name": "Bikini 2",
+          "quantity": 1,
+          "price": 30
+        },
+        {
+          "name": "Post purchase",
+          "quantity": 1,
+          "price": 50
+        }
+      ],
+      "expect_order": {
+        "subtotal": 61.72,
+        "discount_value": 122.22,
+        "tax": 6.17,
+        "shipping": 5.39,
+        "tip": 3.08,
+        "total": 70.97
+      }
+    },
+    "SB_DC_MD_SB_44": {
+      "products_checkout": [
+        {
+          "name": "Bikini",
+          "quantity": 1,
+          "price": 40,
+          "handle": "bikini"
+        },
+        {
+          "name": "Bikini 2",
+          "quantity": 1,
+          "price": 40
+        },
+        {
+          "name": "Post purchase",
+          "quantity": 1,
+          "price": 50
+        }
+      ],
+      "country": {
+        "country_name": "Germany",
+        "country_code": "de",
+        "currency": "EUR"
+      },
+      "discount_code": ["Fixamt_1", "Fixamt_2", "Percent_1", "Percent_2", "buyxgety_1"],
+      "expect_order": {
+        "subtotal": 61.72,
+        "discount_value": 122.22,
+        "tax": 6.17,
+        "shipping": 5.39,
+        "tip": 3.08,
+        "total": 70.97
+      },
+      "expect_order_switch_currency": {
+        "subtotal": 198.39,
+        "discount_value": 135.8,
+        "tax": 6.86,
+        "shipping": 5.99,
+        "tip": 3.43,
+        "total": 78.87
+      }
+    },
+    "SB_DC_MD_SB_30": {
+      "shareable_link": "au-domain/?discount=Opay_auto_shareable_link",
+      "discount_code": [
+        "Opay_Discount_Fixamt",
+        "SB_30_Discount_Percent_2",
+        "Opay_Discount_Fixamt_1",
+        "Auto_Free_shipping_1"
+      ],
+      "products_checkout": [
+        {
+          "name": "Bikini",
+          "quantity": 1,
+          "price": 40
+        }
+      ],
+      "expect_order": {
+        "subtotal": 65,
+        "discount_value": 122.99,
+        "tax": 6.5,
+        "shipping": 5.99,
+        "tip": 3.25,
+        "total": 74.75
+      }
+    },
+    "SB_DC_MD_SB_29": {
+      "products_checkout": [
+        {
+          "name": "Bikini",
+          "quantity": 2,
+          "price": 40
+        },
+        {
+          "name": "Post purchase",
+          "quantity": 2,
+          "price": 50
+        }
+      ],
+      "discount_code": [
+        "Opay_Discount_Percent",
+        "SB_29_Discount_Fixamt",
+        "Opay_Discount_Fixamt_1",
+        "Auto_Free_shipping_1"
+      ]
+    },
+    "SB_DC_MD_SB_28": {
+      "products_checkout": [
+        {
+          "name": "Bikini",
+          "quantity": 2,
+          "price": 40
+        },
+        {
+          "name": "Post purchase",
+          "quantity": 2,
+          "price": 50
+        }
+      ],
+      "discount_code": [
+        "SB_28_Discount_Percent",
+        "SB_28_Discount_Percent_1",
+        "SB_28_Discount_Fixamt",
+        "SB_28_Free_shipping"
+      ],
+      "expect_order": {
+        "subtotal": 0,
+        "discount_value": 185.99,
+        "tax": 0,
+        "shipping": 5.99,
+        "tip": 0,
+        "total": 0
+      }
+    },
+    "SB_DC_MD_SB_27": {
+      "products_checkout": [
+        {
+          "name": "Bikini",
+          "quantity": 2,
+          "price": 40
+        },
+        {
+          "name": "Post purchase",
+          "quantity": 2,
+          "price": 50
+        }
+      ],
+      "discount_code": ["SB_27_Discount_Percent_1", "SB_27_Discount_Fixamt", "SB_27_Free_shipping"]
+    }
+  }
+}

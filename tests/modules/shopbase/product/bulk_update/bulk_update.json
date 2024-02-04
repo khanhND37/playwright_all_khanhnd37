@@ -1,0 +1,478 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-bulk-update-sbase.onshopbase.com",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "user_id": 73782,
+      "shop_id": 10405110,
+      "shop_name": "au-bulk-update-sbase"
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "au-bulk-update-sbase-prodtest.onshopbase.com",
+      "shop_name": "au-bulk-update-sbase-prodtest",
+      "user_id": 73782,
+      "shop_id": 10405111,
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "au-bulk-update-sbase.myshopbase.net",
+      "shop_name": "au-bulk-update-sbase",
+      "user_id": 73800,
+      "shop_id": 10325235,
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q"
+    }
+  },
+  "email_scheduler": "xuyenpham@beeketing.net",
+  "api": "https://api.shopbase.com",
+  "domain": "au-bulk-update-sbase.onshopbase.com",
+  "username": "shopbase@beeketing.net",
+  "password": "Q(f!3Kx+6n;?Us%F",
+  "user_id": 73782,
+  "shop_id": 10405110,
+  "shop_name": "au-bulk-update-sbase",
+  "timeout": "2000000",
+  "cases": {
+    "DATA_DRIVEN": {
+      "data": [
+        {
+          "case_id": "SB_PRO_BUD_417",
+          "status": "Completed",
+          "process": "Imported 1/1 products.",
+          "description_case": "[Sbase_BulkUpdate] Create bulk update thành công khi filter theo Collection và relation is equal to,chọn Only update some variants với action Delete custom options với relation_contains",
+          "path_csv": "/data/shopbase/SB_PRO_BUD_417.csv",
+          "bulk_update_info": {
+            "condition_type": "All conditions",
+            "conditions": ["Collection >is equal to >SB_PRO_BUD_417"],
+            "variants": {
+              "variants_match": "All conditions",
+              "condition_variants": ["Variant price > is equal to > 59.99"]
+            },
+            "actions": ["Delete custom options > contains > CO"]
+          },
+          "filter_validate": "Collection is equal to \"SB_PRO_BUD_417\"",
+          "validate_bulk_update_info": {
+            "update_for_validate": "Variant price is equal to \"59.99 USD\"",
+            "action_validate": "Delete custom options which their option name contains \"CO\"",
+            "number_of_update_validate": "1"
+          },
+          "product_name": "SB_PRO_BUD_417",
+          "picture": {
+            "picture_dashboard": "SB-PRO-BUD-417-dashboard-bulk-update.png",
+            "picture_sf": "SB-PRO-BUD-417-sf-bulk-update.png"
+          },
+          "action": "Delete custom options"
+        },
+        {
+          "case_id": "SB_PRO_BUD_418",
+          "status": "Completed",
+          "process": "Imported 1/1 products.",
+          "description_case": "Sbase_BulkUpdate] Create bulk update thành công khi filter theo Product Price và relation is equal to, tích chọn Only update some variants filter theo Variant weight và relation is equal to với action Change price to",
+          "path_csv": "/data/shopbase/SB_PRO_BUD_418.csv",
+          "bulk_update_info": {
+            "condition_type": "All conditions",
+            "conditions": ["Product price >is equal to >54.99"],
+            "variants": {
+              "variants_match": "All conditions",
+              "condition_variants": ["Variant weight > is equal to > 100"]
+            },
+            "actions": ["Change price to > 60"]
+          },
+          "price": "60",
+          "filter_validate": "Product price is equal to \"54.99 USD\"",
+          "validate_bulk_update_info": {
+            "update_for_validate": "Variant weight is equal to \"100\"",
+            "action_validate": "Change price to 60 USD",
+            "number_of_update_validate": "1"
+          },
+          "product_name": "SB_PRO_BUD_418",
+          "picture": {
+            "picture_sf": "SB-PRO-BUD-418-sf-bulk-update.png"
+          },
+          "action": "Change price to"
+        },
+        {
+          "case_id": "SB_PRO_BUD_419",
+          "status": "Completed",
+          "process": "Imported 1/1 products.",
+          "description_case": "[Sbase_BulkUpdate] Create bulk update thành công khi filter theo Comprate at price và relation is equal to với action Add text to Product title",
+          "path_csv": "/data/shopbase/SB_PRO_BUD_419.csv",
+          "bulk_update_info": {
+            "condition_type": "All conditions",
+            "conditions": ["Compare at price >is equal to > 50"],
+            "actions": ["Add text to product title > Update > At the beginning"]
+          },
+          "filter_validate": "Compare at price is equal to \"50 USD\"",
+          "validate_bulk_update_info": {
+            "update_for_validate": "All variants",
+            "action_validate": "Add text \"Update\" to product title",
+            "number_of_update_validate": "1"
+          },
+          "product_name": "Update SB_PRO_BUD_419",
+          "action": "Add text to product title"
+        },
+        {
+          "case_id": "SB_PRO_BUD_425",
+          "status": "Completed",
+          "process": "Imported 1/1 products.",
+          "description_case": "[Sbase_BulkUpdate] Create bulk update thành công khi filter theo product title và relation contains với action \"Change product description to\"",
+          "path_csv": "/data/shopbase/SB_PRO_BUD_425.csv",
+          "bulk_update_info": {
+            "condition_type": "All conditions",
+            "conditions": ["Product title >is equal to > SB_PRO_BUD_425"],
+            "actions": [
+              "Change product description to > Two-sided printed shirts are available for $5 more each shirt."
+            ]
+          },
+          "filter_validate": "Product title is equal to \"SB_PRO_BUD_425\"",
+          "validate_bulk_update_info": {
+            "update_for_validate": "All variants",
+            "action_validate": "Change product description to Two-sided printed shirts are available for $5 more each shirt.",
+            "number_of_update_validate": "1"
+          },
+          "product_name": "SB_PRO_BUD_425",
+          "picture_description_dashboard": "SB-PRO-BUD-425-dashboard-description.png",
+          "description": "Two-sided printed shirts are available for $5 more each shirt.",
+          "action": "Change product description to"
+        },
+        {
+          "case_id": "SB_PRO_BUD_426",
+          "status": "Completed",
+          "process": "Imported 1/1 products.",
+          "description_case": "[Sbase_BulkUpdate] Create bulk update thành công khi filter theo product title và relation contains với Action Add text to product description",
+          "path_csv": "/data/shopbase/SB_PRO_BUD_426.csv",
+          "bulk_update_info": {
+            "condition_type": "All conditions",
+            "conditions": ["Product title >is equal to > SB_PRO_BUD_426"],
+            "actions": ["Add text to product description > Update 1 > At the beginning"]
+          },
+          "filter_validate": "Product title is equal to \"SB_PRO_BUD_426\"",
+          "validate_bulk_update_info": {
+            "update_for_validate": "All variants",
+            "action_validate": "Add text \"Update 1\" to product description",
+            "number_of_update_validate": "1"
+          },
+          "product_name": "SB_PRO_BUD_426",
+          "picture": {
+            "picture_dashboard": "SB-PRO-BUD-426-dashboard.png",
+            "picture_sf": "SB-PRO-BUD-426-sf.png"
+          },
+          "action": "Add text to product description"
+        },
+        {
+          "case_id": "SB_PRO_BUD_427",
+          "status": "Completed",
+          "process": "Imported 1/1 products.",
+          "description_case": "[Sbase_BulkUpdate] Create bulk update thành công khi filter theo product title và relation contains với action Add text to product title",
+          "path_csv": "/data/shopbase/SB_PRO_BUD_427.csv",
+          "bulk_update_info": {
+            "condition_type": "All conditions",
+            "conditions": ["Product title >is equal to > SB_PRO_BUD_427"],
+            "actions": ["Add text to product title > update > At the end"]
+          },
+          "filter_validate": "Product title is equal to \"SB_PRO_BUD_427\"",
+          "validate_bulk_update_info": {
+            "update_for_validate": "All variants",
+            "action_validate": "Add text \"update\" to product title",
+            "number_of_update_validate": "1"
+          },
+          "product_name": "SB_PRO_BUD_427 update",
+          "action": "Add text to product title"
+        },
+        {
+          "case_id": "SB_PRO_BUD_428",
+          "status": "Completed",
+          "process": "Imported 1/1 products.",
+          "description_case": "[Sbase_BulkUpdate] Create bulk update thành công khi filter theo product title và relation contains với Action Remove text from product title",
+          "path_csv": "/data/shopbase/SB_PRO_BUD_428.csv",
+          "bulk_update_info": {
+            "condition_type": "All conditions",
+            "conditions": ["Product title >contains > SB_PRO_BUD_428"],
+            "actions": ["Remove text from product title > Arizona Cardinals 2DA0153"]
+          },
+          "filter_validate": "Product title contains \"SB_PRO_BUD_428\"",
+          "validate_bulk_update_info": {
+            "update_for_validate": "All variants",
+            "action_validate": "Remove text Arizona Cardinals 2DA0153 from product title",
+            "number_of_update_validate": "1"
+          },
+          "product_name": "SB_PRO_BUD_428",
+          "action": "Remove text from product title"
+        },
+        {
+          "case_id": "SB_PRO_BUD_429",
+          "status": "Completed",
+          "process": "Imported 1/1 products.",
+          "description_case": "[Sbase_BulkUpdate] Create bulk update thành công khi filter theo product title và relation contains với Action Change product vendor to",
+          "path_csv": "/data/shopbase/SB_PRO_BUD_429.csv",
+          "bulk_update_info": {
+            "condition_type": "All conditions",
+            "conditions": ["Product title > is equal to > SB_PRO_BUD_429"],
+            "actions": ["Change product vendor to > ShopBase"]
+          },
+          "filter_validate": "Product title is equal to \"SB_PRO_BUD_429\"",
+          "validate_bulk_update_info": {
+            "update_for_validate": "All variants",
+            "action_validate": "Change product vendor to ShopBase",
+            "number_of_update_validate": "1"
+          },
+          "product_name": "SB_PRO_BUD_429",
+          "vendor": "ShopBase",
+          "picture": {
+            "picture_dashboard": "SB-PRO-BUD-429-dashboard.png"
+          },
+          "action": "Change product vendor to"
+        },
+        {
+          "case_id": "SB_PRO_BUD_430",
+          "status": "Completed",
+          "process": "Imported 1/1 products.",
+          "description_case": "[Sbase_BulkUpdate] Create bulk update thành công khi filter theo product title và relation contains với Action Add tag",
+          "path_csv": "/data/shopbase/SB_PRO_BUD_430.csv",
+          "bulk_update_info": {
+            "condition_type": "All conditions",
+            "conditions": ["Product title > contains > SB_PRO_BUD_430"],
+            "actions": ["Add tags > thuyhoang"]
+          },
+          "filter_validate": "Product title contains \"SB_PRO_BUD_430\"",
+          "validate_bulk_update_info": {
+            "update_for_validate": "All variants",
+            "action_validate": "Add tags thuyhoang",
+            "number_of_update_validate": "1"
+          },
+          "product_name": "SB_PRO_BUD_430",
+          "tag": "thuyhoang",
+          "picture": {
+            "picture_dashboard": "SB-PRO-BUD-430-dashboard.png"
+          },
+          "action": "Add tags"
+        },
+        {
+          "case_id": "SB_PRO_BUD_431",
+          "status": "Completed",
+          "process": "Imported 1/1 products.",
+          "description_case": "[Sbase_BulkUpdate] Create bulk update thành công khi filter theo product title và relation contains với Action Remove tags",
+          "path_csv": "/data/shopbase/SB_PRO_BUD_431.csv",
+          "bulk_update_info": {
+            "condition_type": "All conditions",
+            "conditions": ["Product title > contains > SB_PRO_BUD_431"],
+            "actions": ["Remove tags > contains > bmw motorrad"]
+          },
+          "filter_validate": "Product title contains \"SB_PRO_BUD_431\"",
+          "validate_bulk_update_info": {
+            "update_for_validate": "All variants",
+            "action_validate": "Remove tags contains bmw motorrad",
+            "number_of_update_validate": "1"
+          },
+          "product_name": "SB_PRO_BUD_431",
+          "tag": "bmw motorrad",
+          "picture": {
+            "picture_dashboard": "SB-PRO-BUD-431-dashboard.png"
+          },
+          "action": "Remove tags"
+        },
+        {
+          "case_id": "SB_PRO_BUD_432",
+          "status": "Completed",
+          "process": "Imported 1/1 products.",
+          "description_case": "Bulk update thành công khi filter theo product title và relation contains với Action Add Custom options",
+          "path_csv": "/data/shopbase/SB_PRO_BUD_432.csv",
+          "bulk_update_info": {
+            "condition_type": "All conditions",
+            "conditions": ["Product title > is equal to > SB_PRO_BUD_432"],
+            "actions": ["Add custom options > After"],
+            "custom_option": [
+              {
+                "type": "Text field",
+                "default_name": "Custom Option 1",
+                "custom_name": "CO1",
+                "label": "CO1",
+                "index": 1,
+                "position": 1,
+                "placeholder": "Please input text field",
+                "default_value": "text",
+                "allow_following": "Characters, Numbers, Special Characters",
+                "add_another_option": "no"
+              }
+            ]
+          },
+          "filter_validate": "Product title is equal to \"SB_PRO_BUD_432\"",
+          "validate_bulk_update_info": {
+            "update_for_validate": "All variants",
+            "action_validate": "Add custom options \"CO1\" After existing custom options",
+            "number_of_update_validate": "1"
+          },
+          "product_name": "SB_PRO_BUD_432",
+          "picture": {
+            "picture_dashboard": "SB-PRO-BUD-432-dashboard_bulk_update.png",
+            "picture_sf": "SB-PRO-BUD-432-sf-bulk-update.png"
+          },
+          "action": "Add custom options"
+        },
+        {
+          "case_id": "SB_PRO_BUD_433",
+          "status": "Completed",
+          "process": "Imported 1/1 products.",
+          "description_case": "Bulk update thành công khi filter theo product title và relation contains với Action Add Custom options",
+          "path_csv": "/data/shopbase/SB_PRO_BUD_433.csv",
+          "bulk_update_info": {
+            "condition_type": "All conditions",
+            "conditions": ["Product title > is equal to > SB_PRO_BUD_433"],
+            "actions": ["Replace custom options > CO1"],
+            "custom_option": [
+              {
+                "type": "Text field",
+                "default_name": "To option",
+                "custom_name": "CO8",
+                "label": "CO8",
+                "index": 1,
+                "position": 1,
+                "placeholder": "Please input text field",
+                "default_value": "text",
+                "allow_following": "Characters, Numbers, Special Characters",
+                "is_not_collapse_custom_option": true,
+                "add_another_option": "no"
+              }
+            ]
+          },
+          "filter_validate": "Product title is equal to \"SB_PRO_BUD_433\"",
+          "validate_bulk_update_info": {
+            "update_for_validate": "All variants",
+            "action_validate": "Replace custom options from \"CO1\" to \"CO8\"",
+            "number_of_update_validate": "1"
+          },
+          "product_name": "SB_PRO_BUD_433",
+          "picture": {
+            "picture_dashboard": "SB-PRO-BUD-433-dashboard-bulk-update.png",
+            "picture_sf": "SB-PRO-BUD-433-sf-bulk-update.png"
+          },
+          "action": "Replace custom options"
+        },
+        {
+          "case_id": "SB_PRO_BUD_434",
+          "status": "Completed",
+          "process": "Imported 1/1 products.",
+          "description_case": "[Sbase_BulkUpdate] Create bulk update thành công khi filter theo product title và relation contains với action Change variant's option value",
+          "path_csv": "/data/shopbase/SB_PRO_BUD_434.csv",
+          "bulk_update_info": {
+            "condition_type": "All conditions",
+            "conditions": ["Product title >is equal to > SB_PRO_BUD_434"],
+            "actions": ["Change variant's option value > TYPE > Normal Hoodie > Hoodie"]
+          },
+          "filter_validate": "Product title is equal to \"SB_PRO_BUD_434\"",
+          "validate_bulk_update_info": {
+            "update_for_validate": "All variants",
+            "action_validate": "Change variant's option TYPE from value Normal Hoodie to value Hoodie",
+            "number_of_update_validate": "1"
+          },
+          "product_name": "SB_PRO_BUD_434",
+          "picture": {
+            "picture_dashboard": "SB-PRO-BUD-434-dashboard-bulk-update.png",
+            "picture_sf": "SB-PRO-BUD-434-sf-bulk-update.png"
+          },
+          "action": "Change variant's option value"
+        },
+        {
+          "case_id": "SB_PRO_BUD_440",
+          "status": "Completed",
+          "process": "Imported 1/1 products.",
+          "description_case": "[Sbase_BulkUpdate] Create bulk update thành công khi filter theo product title và relation contains với action Find and Replace text in SKU",
+          "path_csv": "/data/shopbase/SB_PRO_BUD_440.csv",
+          "bulk_update_info": {
+            "condition_type": "All conditions",
+            "conditions": ["Product title >is equal to > SB_PRO_BUD_440"],
+            "actions": ["Find and replace text in SKU > TC-z12AULVU9H-001 > SKU-UPDATE"]
+          },
+          "filter_validate": "Product title is equal to \"SB_PRO_BUD_440\"",
+          "validate_bulk_update_info": {
+            "update_for_validate": "All variants",
+            "action_validate": "Find and replace text \"TC-z12AULVU9H-001\" to \"SKU-UPDATE\" in SKU",
+            "number_of_update_validate": "1"
+          },
+          "product_name": "SB_PRO_BUD_440",
+          "sku": "SKU-UPDATE",
+          "action": "Find and replace text in SKU"
+        },
+        {
+          "case_id": "SB_PRO_BUD_441",
+          "status": "Completed",
+          "process": "Imported 1/1 products.",
+          "description_case": "[Sbase_BulkUpdate] Create bulk update thành công khi filter theo product title và relation containsvới action Add text to SKU",
+          "path_csv": "/data/shopbase/SB_PRO_BUD_441.csv",
+          "bulk_update_info": {
+            "condition_type": "All conditions",
+            "conditions": ["Product title >is equal to > SB_PRO_BUD_441"],
+            "actions": ["Add text to SKU > Update > At the beginning"]
+          },
+          "filter_validate": "Product title is equal to \"SB_PRO_BUD_441\"",
+          "validate_bulk_update_info": {
+            "update_for_validate": "All variants",
+            "action_validate": "Add text Update to SKU  At the beginning",
+            "number_of_update_validate": "1"
+          },
+          "product_name": "SB_PRO_BUD_441",
+          "sku": "UpdatePH-AOP-Tumbler20oz-Alloverprint-20oz-082862",
+          "action": "Add text to SKU"
+        },
+        {
+          "case_id": "SB_PRO_BUD_496",
+          "status": "Completed",
+          "process": "Imported 1/1 products.",
+          "description_case": "[Create bulk update] Bulk update với nhiều Action",
+          "path_csv": "/data/shopbase/SB_PRO_BUD_496.csv",
+          "bulk_update_info": {
+            "condition_type": "All conditions",
+            "conditions": ["Product title >is equal to > SB_PRO_BUD_496"],
+            "actions": [
+              "Change product description to > Update",
+              "Add to collection > SB_PRO_BUD_496",
+              "Add tags > SB_PRO_BUD_496",
+              "Change price to > 50"
+            ]
+          },
+          "filter_validate": "Product title is equal to \"SB_PRO_BUD_496\"",
+          "validate_bulk_update_info": {
+            "update_for_validate": "All variants",
+            "action_validate": "Change product description to Update, Add to collection SB_PRO_BUD_496, Add tags sb_pro_bud_496, Change price to 50 USD",
+            "number_of_update_validate": "2"
+          },
+          "picture": {
+            "description_dashboard": "SB-PRO-BUD-496-dashboard-description.png",
+            "description_sf": "SB-PRO-BUD-496-sf-bulk-update.png",
+            "organization_dashboard": "SB-PRO-BUD-496-organization-dashboard.png",
+            "price_sf": "SB-PRO-BUD-496-price-sf.png"
+          },
+          "product_name": "SB_PRO_BUD_496",
+          "action": "Some actions",
+          "tag": "sb_pro_bud_496",
+          "price": "50"
+        },
+        {
+          "case_id": "SB_PRO_BUD_497",
+          "status": "Completed",
+          "process": "Imported 20/20 products.",
+          "description_case": "[Create bulk update] Bulk update với nhiều product",
+          "path_csv": "/data/shopbase/SB_PRO_BUD_497.csv",
+          "bulk_update_info": {
+            "condition_type": "All conditions",
+            "conditions": ["Product title > contains > Long Sleeve"],
+            "actions": ["Add text to product title > Update > At the beginning"]
+          },
+          "filter_validate": "Product title contains \"Long Sleeve\"",
+          "validate_bulk_update_info": {
+            "update_for_validate": "All variants",
+            "action_validate": "Add text \"Update\" to product title",
+            "number_of_update_validate": "20"
+          },
+          "product_name": "Long Sleeve"
+        }
+      ]
+    }
+  }
+}

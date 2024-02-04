@@ -1,0 +1,239 @@
+{
+  "env": {
+    "prod": {
+      "api": "https://api.shopbase.com",
+      "domain": "au-create-campaign-accessories.onshopbase.com",
+      "shop_name": "au-create-campaign-accessories",
+      "username": "acon-qe-1@beeketing.net",
+      "password": "%zF72w9k7g%_Jwj",
+      "user_id": 11260208,
+      "shop_id": 10496969
+    },
+    "prodtest": {
+      "api": "https://prod-test-api.shopbase.com",
+      "domain": "auto-create-campaign-accessories-prodtest.onshopbase.com",
+      "shop_name": "auto-create-campaign-accessories-prodtest",
+      "username": "shopbase@beeketing.net",
+      "password": "Q(f!3Kx+6n;?Us%F",
+      "user_id": 73782,
+      "shop_id": 10494465,
+      "accounts_domain": "accounts-test.shopbase.com"
+    },
+    "dev": {
+      "api": "https://gapi.dev.shopbase.net",
+      "domain": "auto-create-campaign-accessories.myshopbase.net",
+      "username": "shopbase@beeketing.net",
+      "password": "S#|j>m2N[q",
+      "user_id": 73800,
+      "shop_name": "auto-create-campaign-accessories",
+      "shop_id": 10335385
+    }
+  },
+  "timeout": "1000000",
+  "cases": {
+    "DATA_CAMPAIGN": {
+      "data": [
+        {
+          "case_id": "SB_PB_PLB_PH_BP_295",
+          "description": "Create campaign for base Face Mask",
+          "launch_campaign": {
+            "product_infos": [
+              {
+                "category": "Accessories",
+                "base_product": "Face Mask"
+              }
+            ],
+            "pricing_info": {
+              "title": "Face Mask"
+            },
+            "layers": [
+              {
+                "layer_type": "Image",
+                "image_name": "BD_15.png"
+              }
+            ]
+          },
+          "picture": {
+            "image_sf": "mockup-image-prod",
+            "description": "description-prod",
+            "image_list": "image-list-prod",
+            "color": "image-color-prod",
+            "style": "image-style-prod",
+            "size": "image-size-prod"
+          }
+        },
+        {
+          "case_id": "SB_PB_PLB_PH_BP_297",
+          "description": "Create campaign for base Tote Bag",
+          "launch_campaign": {
+            "product_infos": [
+              {
+                "category": "Accessories",
+                "base_product": "Tote Bag"
+              }
+            ],
+            "pricing_info": {
+              "title": "Tote Bag"
+            },
+            "layers": [
+              {
+                "layer_type": "Image",
+                "image_name": "BD_15.png"
+              }
+            ]
+          },
+          "picture": {
+            "image_sf": "mockup-image-prod",
+            "description": "description-prod",
+            "image_list": "image-list-prod",
+            "color": "image-color-prod",
+            "style": "image-style-prod",
+            "size": "image-size-prod"
+          }
+        },
+        {
+          "case_id": "SB_PB_PLB_PH_BP_313",
+          "description": "Create campaign for base AOP Tote Bag",
+          "launch_campaign": {
+            "product_infos": [
+              {
+                "category": "Accessories",
+                "base_product": "AOP Tote Bag"
+              }
+            ],
+            "pricing_info": {
+              "title": "AOP Tote Bag"
+            },
+            "layers": [
+              {
+                "layer_type": "Image",
+                "image_name": "BD_15.png"
+              }
+            ]
+          },
+          "picture": {
+            "image_sf": "mockup-image-prod",
+            "description": "description-prod",
+            "image_list": "image-list-prod",
+            "color": "image-color-prod",
+            "style": "image-style-prod",
+            "size": "image-size-prod"
+          }
+        }
+      ]
+    },
+    "DATA_DUPLICATE_CAMPAIGN": {
+      "data": [
+        {
+          "case_id": "SB_PB_PLB_PH_BP_388",
+          "description": "Duplicate campaign for base Face Mask",
+          "campaign_origin": "SB_PB_PLB_PH_BP_388",
+          "pricing_infor": {
+            "title": "Duplicate of SB_PB_PLB_PH_BP_388"
+          },
+          "keep_artwork": true,
+          "picture": {
+            "image_sf": "SB_PB_PLB_PH_BP_295-mockup-image-prod",
+            "description": "SB_PB_PLB_PH_BP_295-description-prod",
+            "image_list": "SB_PB_PLB_PH_BP_295-image-list-prod",
+            "color": "SB_PB_PLB_PH_BP_295-image-color-prod",
+            "style": "SB_PB_PLB_PH_BP_295-image-style-prod",
+            "size": "SB_PB_PLB_PH_BP_295-image-size-prod"
+          }
+        },
+        {
+          "case_id": "SB_PB_PLB_PH_BP_389",
+          "description": "Duplicate campaign for base Tote Bag",
+          "campaign_origin": "SB_PB_PLB_PH_BP_389",
+          "pricing_infor": {
+            "title": "Duplicate of SB_PB_PLB_PH_BP_389"
+          },
+          "keep_artwork": true,
+          "picture": {
+            "image_sf": "SB_PB_PLB_PH_BP_297-mockup-image-prod",
+            "description": "SB_PB_PLB_PH_BP_297-description-prod",
+            "image_list": "SB_PB_PLB_PH_BP_297-image-list-prod",
+            "color": "SB_PB_PLB_PH_BP_297-image-color-prod",
+            "style": "SB_PB_PLB_PH_BP_297-image-style-prod",
+            "size": "SB_PB_PLB_PH_BP_297-image-size-prod"
+          }
+        },
+        {
+          "case_id": "SB_PB_PLB_PH_BP_390",
+          "description": "Duplicate campaign for base AOP Tote Bag",
+          "campaign_origin": "SB_PB_PLB_PH_BP_390",
+          "pricing_infor": {
+            "title": "Duplicate of SB_PB_PLB_PH_BP_390"
+          },
+          "keep_artwork": true,
+          "picture": {
+            "image_sf": "SB_PB_PLB_PH_BP_313-mockup-image-prod",
+            "description": "SB_PB_PLB_PH_BP_313-description-prod",
+            "image_list": "SB_PB_PLB_PH_BP_313-image-list-prod",
+            "color": "SB_PB_PLB_PH_BP_313-image-color-prod",
+            "style": "SB_PB_PLB_PH_BP_313-image-style-prod",
+            "size": "SB_PB_PLB_PH_BP_313-image-size-prod"
+          }
+        }
+      ]
+    },
+    "DATA_BULK_DUPLICATE_CAMPAIGN": {
+      "data": [
+        {
+          "case_id": "SB_PB_PLB_PH_BP_436",
+          "description": "Bulk duplicate campaign for base Face Mask",
+          "campaign_origin": "SB_PB_PLB_PH_BP_388",
+          "campaign_name": "BD_10",
+          "upload_infor": {
+            "is_column": true,
+            "artwork": "./data/shopbase/BD_10.png"
+          },
+          "picture": {
+            "image_sf": "mockup-image-prod",
+            "description": "description-prod",
+            "image_list": "image-list-prod",
+            "color": "image-color-prod",
+            "style": "image-style-prod",
+            "size": "image-size-prod"
+          }
+        },
+        {
+          "case_id": "SB_PB_PLB_PH_BP_437",
+          "description": "Bulk duplicate campaign for base Tote Bag",
+          "campaign_origin": "SB_PB_PLB_PH_BP_389",
+          "campaign_name": "BD_11",
+          "upload_infor": {
+            "is_column": true,
+            "artwork": "./data/shopbase/BD_11.png"
+          },
+          "picture": {
+            "image_sf": "mockup-image-prod",
+            "description": "description-prod",
+            "image_list": "image-list-prod",
+            "color": "image-color-prod",
+            "style": "image-style-prod",
+            "size": "image-size-prod"
+          }
+        },
+        {
+          "case_id": "SB_PB_PLB_PH_BP_438",
+          "description": "Bulk duplicate campaign for base AOP Tote Bag",
+          "campaign_origin": "SB_PB_PLB_PH_BP_390",
+          "campaign_name": "Template AOP Tote Bag",
+          "upload_infor": {
+            "is_column": true,
+            "artwork": "./data/shopbase/Template AOP Tote Bag.png"
+          },
+          "picture": {
+            "image_sf": "mockup-image-prod",
+            "description": "description-prod",
+            "image_list": "image-list-prod",
+            "color": "image-color-prod",
+            "style": "image-style-prod",
+            "size": "image-size-prod"
+          }
+        }
+      ]
+    }
+  }
+}

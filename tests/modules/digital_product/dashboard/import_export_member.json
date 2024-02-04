@@ -1,0 +1,162 @@
+{
+  "api": "https://gapi.stag.shopbase.net",
+  "domain_download": "https://assets-stag.btdmp.com",
+  "domain": "test-fresh-sale-01.stag.myshopbase.net",
+  "shop_name": "test-fresh-sale-01.stag.myshopbase.net",
+  "username": "huongle@beeketing.net",
+  "password": "@tester123",
+  "user_id": 4570,
+  "shop_id": 10080926,
+  "value_default": {
+    "img": "icon-user.ee92ec03.svg",
+    "value": "-",
+    "sale": "$0.00"
+  },
+  "btn_import": "Import members",
+  "btn_cancel": "Cancel",
+  "max_record": 50,
+  "cases": {
+    "TC_SB_DP_DB_MB_26": {
+      "data": {
+        "file_path": "./assets/import_member_csv/member_success.csv",
+        "is_overwrite": false,
+        "data_import": {
+          "first_name": "Lisa",
+          "last_name": "Benneth",
+          "email": "autotest@gmail.com",
+          "country": "Canada",
+          "country_code": "CA",
+          "value": ""
+        }
+      },
+      "param_after": {
+        "keyword": "autotest@gmail.com"
+      },
+      "param_before": {}
+    },
+    "TC_SB_DP_DB_MB_6": {
+      "template": [
+        "First Name,Last Name,Email,Country,Country Code,Phone,Tags,Note",
+        "Lisa,Benneth,lisa.benneth@shopbase.com,Canada,CA,,,"
+      ],
+      "file_upload": {
+        "file_path": "./assets/import_member_csv/member_success.csv",
+        "is_overwrite": false
+      },
+      "default_data": {
+        "title": "Import members",
+        "link_template": "https://s3-us-west-2.amazonaws.com/assets.shopbase.com/import-file-sample/members.csv",
+        "file_uploaded": 0,
+        "value": true
+      },
+      "param": {
+        "limit": 10000
+      },
+      "progress_popup": {
+        "title": "Import in progress",
+        "content": "We're currently importing your members. This should take less than 10 minutes. If you'd like, you can close this dialog box and continue working.     Please reload this page to see the imported members.",
+        "value": true
+      },
+      "message": "Invalid file format. Please upload the correct file.",
+      "data": [
+        {
+          "file_path": "./assets/import_member_csv/member_addTestColumn.csv",
+          "is_overwrite": false,
+          "is_import": false
+        },
+        {
+          "file_path": "./assets/import_member_csv/member_subNoteColumn.csv",
+          "is_overwrite": false,
+          "is_import": false
+        },
+        {
+          "file_path": "./assets/import_member_csv/members_nullEmail.csv",
+          "is_overwrite": false,
+          "is_import": true
+        },
+        {
+          "file_path": "./assets/import_member_csv/member_invalidEmail.csv",
+          "is_overwrite": false,
+          "is_import": true
+        }
+      ]
+    },
+    "TC_SB_DP_DB_MB_7": {
+      "data": [
+        {
+          "options": {
+            "option": "Current page",
+            "file": "CSV for Excel, Numbers, or other spreadsheet programs"
+          },
+          "param": {
+            "limit": 50,
+            "page": 1
+          }
+        },
+        {
+          "options": {
+            "option": "All members",
+            "file": "CSV for Excel, Numbers, or other spreadsheet programs"
+          },
+          "param": {}
+        },
+        {
+          "options": {
+            "option": "Current page",
+            "file": "Plain CSV"
+          },
+          "param": {
+            "limit": 50,
+            "page": 1
+          }
+        },
+        {
+          "options": {
+            "option": "All members",
+            "file": "Plain CSV"
+          },
+          "param": {}
+        },
+        {
+          "options": {
+            "option": "Current page",
+            "file": "CSV for Excel, Numbers, or other spreadsheet programs"
+          },
+          "param": {
+            "limit": 50,
+            "page": 1,
+            "keyword": "hongle@beeketing.net"
+          }
+        },
+        {
+          "options": {
+            "option": "All members",
+            "file": "CSV for Excel, Numbers, or other spreadsheet programs"
+          },
+          "param": {
+            "limit": 50,
+            "page": 1,
+            "keyword": "beeketing.net"
+          }
+        },
+        {
+          "total_selected": 2,
+          "options": {
+            "option": "Current page",
+            "file": "CSV for Excel, Numbers, or other spreadsheet programs"
+          },
+          "param": {
+            "limit": 50,
+            "page": 1
+          }
+        }
+      ]
+    }
+  },
+  "env": {
+    "prodtest": {
+      "accounts_domain": "accounts-test.shopbase.com",
+      "api": "https://prod-test-api.shopbase.com"
+    }
+  }
+}

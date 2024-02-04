@@ -1,0 +1,676 @@
+{
+  "category": "Block container",
+  "position_block_container": {
+    "section": 1,
+    "row": 1,
+    "column": 1,
+    "block": 1
+  },
+  "env": {
+    "dev": {
+      "domain": "auto-block-wb.myshopbase.net",
+      "shop_name": "auto-block-wb",
+      "api": "https://gapi.dev.shopbase.net",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10333928,
+      "user_id": 90252,
+      "theme_id": 3225285
+    },
+    "prodtest": {
+      "domain": "auto-block-wb-prodtest.onshopbase.com",
+      "shop_name": "auto-block-wb-prodtest",
+      "api": "https://prod-test-api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10480844,
+      "user_id": 11260206,
+      "theme_id": 1600360
+    },
+    "prod": {
+      "domain": "auto-block-wb.onshopbase.com",
+      "shop_name": "auto-block-wb",
+      "api": "https://api.shopbase.com",
+      "username": "front-qe-1@beeketing.net",
+      "password": "Front@123",
+      "shop_id": 10480842,
+      "user_id": 11260206,
+      "theme_id": 1600362
+    }
+  },
+  "cases": {
+    "SB_WEB_BUILDER_LB_CONTAINER_BLOCK_01": {
+      "block_container": "Block container default",
+      "default_data": {
+        "align_self": "center",
+        "background": {
+          "color": {
+            "code": "color_1",
+            "opacity": 100
+          }
+        },
+        "border": {
+          "color": { "code": "color_4", "opacity": 100 },
+          "side": "all",
+          "size": 0,
+          "style": "solid",
+          "thickness": "none"
+        },
+        "border_radius": 0,
+        "box_shadow": {
+          "blur": 0,
+          "color": {
+            "code": "#000000",
+            "opacity": 0
+          },
+          "direction": "bottom_right",
+          "size": "small",
+          "spread": 0,
+          "type": "none",
+          "x": 0,
+          "y": 0
+        },
+        "clipping_content": true,
+        "height": {
+          "unit": "auto",
+          "value": 0
+        },
+        "layout": {
+          "align": "flex-start",
+          "direction": "vertical",
+          "spacing": 0
+        },
+        "margin": {
+          "bottom": 0,
+          "left": 0,
+          "right": 0,
+          "top": 0
+        },
+        "opacity": 100,
+        "padding": {
+          "bottom": 32,
+          "left": 0,
+          "right": 0,
+          "top": 32
+        },
+        "position": "unset",
+        "width": {
+          "unit": "%",
+          "value": 100
+        }
+      },
+      "expected": {
+        "background": "",
+        "border": "",
+        "border_radius": "0px",
+        "box_shadow": "",
+        "height": "64px",
+        "margin": "0px",
+        "opacity": "1",
+        "padding": "32px 0px"
+      }
+    },
+    "SB_WEB_BUILDER_LB_CONTAINER_BLOCK_02": {
+      "description": "Check set container align & spacing trường hợp layout = vertical",
+      "paragraph_default": {
+        "align_self": "center",
+        "position": "unset"
+      },
+      "icon_default": {
+        "align_self": "center",
+        "position": "unset"
+      },
+      "block_container": {
+        "section": 2,
+        "row": 1,
+        "column": 1
+      },
+      "block_icon": {
+        "section": 2,
+        "row": 1,
+        "column": 1,
+        "block": 2
+      },
+      "dnd_block_container": {
+        "from": {
+          "category": "Block container",
+          "template": "Block container case 2"
+        },
+        "to": {
+          "position": {
+            "section": 1,
+            "column": 1
+          }
+        },
+        "isBottom": true
+      },
+      "dnd_block_icon": {
+        "from": {
+          "category": "Basics",
+          "template": "Icon"
+        },
+        "to": {
+          "position": {
+            "section": 2,
+            "column": 1
+          }
+        }
+      },
+      "layout_data": [
+        {
+          "layout": {
+            "direction": "Vertical",
+            "align": "Top",
+            "spacing": 120
+          },
+          "style_web_front": "justify-content: flex-start; --gap: 64px;"
+        },
+        {
+          "layout": {
+            "direction": "Vertical",
+            "align": "Center",
+            "spacing": -50
+          },
+          "style_web_front": "justify-content: safe center; --gap: 0px;"
+        },
+        {
+          "layout": {
+            "direction": "Vertical",
+            "align": "Bottom",
+            "spacing": 1500
+          },
+          "style_web_front": "justify-content: flex-end; --gap: 64px;"
+        },
+        {
+          "layout": {
+            "direction": "Vertical",
+            "align": "SpaceDistribute"
+          },
+          "style_web_front": "justify-content: space-between;"
+        }
+      ]
+    },
+    "SB_WEB_BUILDER_LB_CONTAINER_BLOCK_03": {
+      "description": "Check set container align & spacing trường hợp layout = Horizontal",
+      "block_container": {
+        "section": 2,
+        "row": 1,
+        "column": 1
+      },
+      "dnd_block_container": {
+        "from": {
+          "category": "Block container",
+          "template": "Block container case 3"
+        },
+        "to": {
+          "position": {
+            "section": 1,
+            "column": 1
+          }
+        },
+        "isBottom": false
+      },
+      "dnd_block_bullet": {
+        "from": {
+          "category": "Basics",
+          "template": "Bullet"
+        },
+        "to": {
+          "position": {
+            "section": 2,
+            "column": 1
+          }
+        }
+      },
+      "layout_default": {
+        "direction": "Horizontal"
+      },
+      "layout_data": [
+        {
+          "layout": {
+            "direction": "Horizontal",
+            "align": "Left",
+            "spacing": 120
+          },
+          "style_web_front": "justify-content: flex-start; --gap: 64px"
+        },
+        {
+          "layout": {
+            "direction": "Horizontal",
+            "align": "Center",
+            "spacing": -50
+          },
+          "style_web_front": "justify-content: safe center; --gap: 0px"
+        },
+        {
+          "layout": {
+            "direction": "Horizontal",
+            "align": "Right",
+            "spacing": 1500
+          },
+          "style_web_front": "justify-content: flex-end; --gap: 64px"
+        },
+        {
+          "layout": {
+            "direction": "Horizontal",
+            "align": "SpaceDistribute"
+          },
+          "style_web_front": "justify-content: space-between"
+        }
+      ],
+      "expected": {
+        "saved": "All changes are saved"
+      }
+    },
+    "SB_WEB_BUILDER_LB_CONTAINER_BLOCK_04": {
+      "description": "Check hiển thị container khi set width(layout = horizontal)",
+      "dnd_block_container": {
+        "from": {
+          "category": "Block container",
+          "template": "Block container case 4"
+        },
+        "to": {
+          "position": {
+            "section": 1,
+            "column": 1
+          }
+        },
+        "isBottom": false
+      },
+      "container_on_web_front": {
+        "section": 2,
+        "row": 1,
+        "column": 1,
+        "block": 1
+      },
+      "layout": {
+        "direction": "Horizontal",
+        "align": "Left"
+      },
+      "set_container_width": [
+        {
+          "description": "Set container width < child block width, expect all block not change width",
+          "width": {
+            "unit": "Px",
+            "value": 200
+          },
+          "style": "width: 200px;",
+          "snapshot_on_SF": "04_snapshot_container_less_than_block.png"
+        },
+        {
+          "description": "Set container width is Auto, expect container width equal to total width of child block",
+          "width": {
+            "unit": "auto"
+          },
+          "style": "width: fit-content;",
+          "snapshot_on_SF": "04_snapshot_container_width_auto.png"
+        }
+      ],
+      "expected": {
+        "saved": "All changes are saved"
+      }
+    },
+    "SB_WEB_BUILDER_LB_CONTAINER_BLOCK_4.1": {
+      "description": "Check hiển thị container khi resize width block con(layout = horizontal)",
+      "dnd_block_container": {
+        "from": {
+          "category": "Block container",
+          "template": "Block container case 4.1"
+        },
+        "to": {
+          "position": {
+            "section": 1,
+            "column": 1
+          }
+        },
+        "isBottom": false
+      },
+      "container_on_web_front": {
+        "section": 2,
+        "row": 1,
+        "column": 1,
+        "block": 1
+      },
+      "child_blocks_on_web_front": {
+        "section": 2,
+        "row": 1,
+        "column": 1,
+        "block": 3
+      },
+      "set_container_width": {
+        "width": {
+          "unit": "Px",
+          "value": 750
+        }
+      },
+      "set_child_width": {
+        "width": {
+          "unit": "Px",
+          "value": 300
+        }
+      },
+      "expected": {
+        "saved": "All changes are saved",
+        "snapshot_on_SF": "041_resize_child_blocks.png"
+      }
+    },
+    "SB_WEB_BUILDER_LB_CONTAINER_BLOCK_05": {
+      "description": "Check hiển thị container khi set height(layout = vertical)",
+      "dnd_block_container": {
+        "from": {
+          "category": "Block container",
+          "template": "Block container case 5"
+        },
+        "to": {
+          "position": {
+            "section": 1,
+            "column": 1
+          }
+        },
+        "isBottom": false
+      },
+      "container_on_web_front": {
+        "section": 2,
+        "row": 1,
+        "column": 1,
+        "block": 1
+      },
+      "set_container_height": [
+        {
+          "description": "Set container height < child block height, expect all block not change height",
+          "height": {
+            "unit": "Px",
+            "value": 150
+          },
+          "style": "height: 150px;",
+          "snapshot_on_SF": "05_snapshot_container_less_than_block.png"
+        },
+        {
+          "description": "Set container height is Auto, expect container height equal to total height of child block",
+          "height": {
+            "unit": "auto"
+          },
+          "style": "height: auto;",
+          "snapshot_on_SF": "05_snapshot_container_height_auto.png"
+        }
+      ],
+      "expected": {
+        "saved": "All changes are saved"
+      }
+    },
+    "SB_WEB_BUILDER_LB_CONTAINER_BLOCK_5.1": {
+      "description": "Check hiển thị container khi resize block con(layout = vertical)",
+      "dnd_block_container": {
+        "from": {
+          "category": "Block container",
+          "template": "Block container case 5.1"
+        },
+        "to": {
+          "position": {
+            "section": 1,
+            "column": 1
+          }
+        },
+        "isBottom": false
+      },
+      "container_height": "height: 250px;",
+      "resize_child_blocks": {
+        "selector": {
+          "section": 2,
+          "block": 3
+        },
+        "outside": 1020
+      },
+      "expected": {
+        "saved": "All changes are saved",
+        "snapshot_on_SF": "051_resize_child_blocks.png"
+      }
+    },
+    "SB_WEB_BUILDER_LB_CONTAINER_BLOCK_06": {
+      "description": "Check trường Align của các block apply theo container layout",
+      "child_blocks": [
+        {
+          "from": {
+            "category": "Basics",
+            "template": "Heading"
+          },
+          "to": {
+            "position": {
+              "section": 1,
+              "column": 1,
+              "block": 1
+            },
+            "container": true
+          }
+        },
+        {
+          "from": {
+            "category": "Basics",
+            "template": "Paragraph"
+          },
+          "to": {
+            "position": {
+              "section": 1,
+              "column": 1,
+              "block": 1
+            },
+            "container": true
+          }
+        },
+        {
+          "from": {
+            "category": "Basics",
+            "template": "Button"
+          },
+          "to": {
+            "position": {
+              "section": 1,
+              "column": 1,
+              "block": 1
+            },
+            "container": true
+          }
+        },
+        {
+          "from": {
+            "category": "Basics",
+            "template": "Icon"
+          },
+          "to": {
+            "position": {
+              "section": 1,
+              "column": 1,
+              "block": 1
+            },
+            "container": true
+          }
+        }
+      ],
+      "block_container": "Block container case 6",
+      "expected": {
+        "align_vertical": "06_align_vertical.png",
+        "align_horizontal": "06_align_horizontal.png"
+      },
+      "container_on_web_front": {
+        "section": 1,
+        "row": 1,
+        "column": 1,
+        "block": 1
+      },
+      "layout": {
+        "direction": "Horizontal",
+        "align": "Left",
+        "spacing": 0
+      }
+    },
+    "SB_WEB_BUILDER_LB_CONTAINER_BLOCK_07": {
+      "description": "Check di chuyển vị trí container",
+      "dnd_block_container": {
+        "from": {
+          "category": "Block container",
+          "template": "Block container case 7"
+        },
+        "to": {
+          "position": {
+            "section": 1,
+            "column": 1
+          }
+        },
+        "isBottom": false
+      },
+      "dnd_in_preview": {
+        "from": {
+          "position": {
+            "section": 1,
+            "column": 1
+          }
+        },
+        "to": {
+          "position": {
+            "section": 1,
+            "column": 1
+          },
+          "top": 0
+        }
+      },
+      "dnd": {
+        "from": {
+          "position": {
+            "section": 2,
+            "column": 1,
+            "block": 1
+          }
+        },
+        "to": {
+          "position": {
+            "section": 1,
+            "row": 1,
+            "column": 1
+          }
+        }
+      }
+    },
+    "SB_WEB_BUILDER_LB_CONTAINER_BLOCK_08": {
+      "description": "Check trường clip content",
+      "dnd_block_container": {
+        "from": {
+          "category": "Block container",
+          "template": "Block container case 8"
+        },
+        "to": {
+          "position": {
+            "section": 1,
+            "column": 1
+          }
+        },
+        "isBottom": false
+      },
+      "container_on_web_front": {
+        "section": 2,
+        "row": 1,
+        "column": 1,
+        "block": 1
+      },
+      "expected": {
+        "saved": "All changes are saved",
+        "snapshot_clipcontent_off": "08_clipcontent_off.png"
+      },
+      "overflow": "overflow-hidden",
+      "attribute_false": "false",
+      "attribute_true": "true"
+    },
+    "SB_WEB_BUILDER_LB_CONTAINER_BLOCK_10": {
+      "description": "Check remove container block trên Quick bar setting",
+      "expected": {
+        "saved": "All changes are saved"
+      },
+      "container_on_web_front": {
+        "section": 1,
+        "row": 1
+      }
+    },
+    "SB_WEB_BUILDER_LB_CONTAINER_BLOCK_11": {
+      "description": "Check duplicate container block trên Quick bar setting",
+      "expected": {
+        "saved": "All changes are saved",
+        "snapshot_duplicate_container": "11_duplicate_container.png"
+      },
+      "container_on_web_front": {
+        "section": 1,
+        "row": 1
+      }
+    },
+    "SB_WEB_BUILDER_LB_CONTAINER_BLOCK_12": {
+      "description": "Check remove container block trên Side bar setting",
+      "expected": {
+        "saved": "All changes are saved"
+      }
+    },
+    "SB_WEB_BUILDER_LB_CONTAINER_BLOCK_17": {
+      "description": "Check trường Align của các block apply theo column layout",
+      "column_on_sidebar": {
+        "sectionName": "Section",
+        "subLayerName": "Column",
+        "subLayerIndex": 1
+      },
+      "child_blocks": [
+        {
+          "from": {
+            "category": "Basics",
+            "template": "Heading"
+          },
+          "to": {
+            "position": {
+              "section": 1,
+              "column": 1
+            }
+          }
+        },
+        {
+          "from": {
+            "category": "Basics",
+            "template": "Paragraph"
+          },
+          "to": {
+            "position": {
+              "section": 1,
+              "column": 1
+            }
+          }
+        },
+        {
+          "from": {
+            "category": "Basics",
+            "template": "Button"
+          },
+          "to": {
+            "position": {
+              "section": 1,
+              "column": 1
+            }
+          }
+        },
+        {
+          "from": {
+            "category": "Basics",
+            "template": "Icon"
+          },
+          "to": {
+            "position": {
+              "section": 1,
+              "column": 1
+            }
+          }
+        }
+      ],
+      "layout": {
+        "direction": "Horizontal",
+        "align": "Left"
+      },
+      "expected": {
+        "align_vertical": "06_align_vertical.png",
+        "align_horizontal": "06_align_horizontal.png"
+      }
+    }
+  }
+}
